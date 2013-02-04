@@ -112,7 +112,7 @@ static int set_value_from_table(lua_State *L, int index, const char *field, enum
 	case INT_ARRAY:
 		if (ltype == LUA_TTABLE) {
 			// Init a dynarray, using the lua table's length
-			dynarray_init((struct dynarray *)result, lua_objlen(L, -1), sizeof(int));
+			dynarray_init((struct dynarray *)result, lua_rawlen(L, -1), sizeof(int));
 			lua_pushnil(L);
 			// Fill the dynarray with the content of the lua table
 			while (lua_next(L, -2) != 0) {
@@ -139,7 +139,7 @@ static int set_value_from_table(lua_State *L, int index, const char *field, enum
 	case FLOAT_ARRAY:
 		if (ltype == LUA_TTABLE) {
 			// Init a dynarray, using the lua table's length
-			dynarray_init((struct dynarray *)result, lua_objlen(L, -1), sizeof(float));
+			dynarray_init((struct dynarray *)result, lua_rawlen(L, -1), sizeof(float));
 			lua_pushnil(L);
 			// Fill the dynarray with the content of the lua table
 			while (lua_next(L, -2) != 0) {
@@ -166,7 +166,7 @@ static int set_value_from_table(lua_State *L, int index, const char *field, enum
 	case STRING_ARRAY:
 		if (ltype == LUA_TTABLE) {
 			// Init a dynarray, using the lua table's length
-			dynarray_init((struct dynarray *)result, lua_objlen(L, -1), sizeof(char *));
+			dynarray_init((struct dynarray *)result, lua_rawlen(L, -1), sizeof(char *));
 			lua_pushnil(L);
 			// Fill the dynarray with the content of the lua table
 			while (lua_next(L, -2) != 0) {
@@ -817,7 +817,7 @@ void init_luaconfig()
 {
 	int i;
 
-	luaL_reg lfuncs[] = {
+	luaL_Reg lfuncs[] = {
 		{"addon", lua_register_addon},
 		{"tux_animation", lua_tuxanimation_ctor},
 		{"tux_rendering_config", lua_tuxrendering_config_ctor},

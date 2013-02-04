@@ -125,7 +125,7 @@ obstacle_states = {
 };
 
 function get_obstacle_state_id(id, state)
-	a = rawget(obstacle_states, id);
+	local a = rawget(obstacle_states, id);
 	if (a == nil) then
 		error("Obstacle number " .. id .. " does not have any states defined.", 2);
 	end
@@ -139,13 +139,13 @@ function get_obstacle_state_id(id, state)
 end
 
 function change_obstacle_state(label, state)
-	id = get_obstacle_type(label);
+	local id = get_obstacle_type(label);
 
 	change_obstacle_type(label, get_obstacle_state_id(id, state));
 end
 
 function cmp_obstacle_state(label, state)
-	id = get_obstacle_type(label);
+	local id = get_obstacle_type(label);
 
 	return (id == get_obstacle_state_id(id, state));
 end
@@ -214,12 +214,13 @@ end
 -- '\4'    small blue
 -- '\5'    small yellow   display_console_message()
 function apply_bbcode(text,magic_num_b,magic_num_nrm)
-	text = string.gsub(text,  '%[b%]', magic_num_b)
+	local text = string.gsub(text,  '%[b%]', magic_num_b)
 	text = string.gsub(text, '%[/b%]', magic_num_nrm)
 	return text
 end
 
 function npc_says_random(...)
+	arg = {...}
 	if (arg[#arg] == "NO_WAIT") then
 		npc_says(arg[math.random(#arg-1)],"NO_WAIT")
 	else
@@ -228,6 +229,7 @@ function npc_says_random(...)
 end
 
 function tux_says_random(...)
+	arg = {...}
 	if (arg[#arg] == "NO_WAIT") then
 		tux_says(arg[math.random(#arg-1)],"NO_WAIT")
 	else
@@ -236,6 +238,7 @@ function tux_says_random(...)
 end
 
 function get_random(...)
+	arg = {...}
 	return arg[math.random(#arg)]
 end
 
@@ -331,7 +334,7 @@ function del_health(num_points)
 end
 
 function difficulty()
-	levels = {"easy", "normal", "hard"}
+	local levels = {"easy", "normal", "hard"}
 	return levels[difficulty_level()+1]
 end
 
