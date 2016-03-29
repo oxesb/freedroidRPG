@@ -117,12 +117,14 @@ return {
 				change_obstacle_type("59-Teleporter", 19) --Prime the teleporter!
 				add_obstacle(59, 57.6, 29.5, 16)
 				play_sound("effects/new_teleporter_sound.ogg")
-				-- We would like the teleportation to be a little delayed for effect, but that's NYI, so...
+				-- We would like the teleportation to be a little delayed for effect.
 				Spencer:teleport("59-Teleporter-1")
 				Spencer:set_destination("59-Teleporter-1")
-				Bender:teleport("59-Teleporter-2")
+				delay_game(2.5)
+				Bender:teleport("59-Teleporter-1")
 				Bender:set_destination("59-Teleporter-2", "Bender")
-				guard:teleport("59-Teleporter-3", "Town-TuxGuard")
+				delay_game(2.5)
+				guard:teleport("59-Teleporter-1", "Town-TuxGuard")
 				guard:set_destination("59-Teleporter-3")
 				HF_Spencer_teleported = true
 			end

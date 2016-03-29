@@ -94,6 +94,10 @@ return {
 			show("node29")
 		end
 
+		if ((not (Tux_told_Spencer_about_Bob_and_Jim)) and ((Tux:has_met("Bob")) and (knows_spencer_office))) then
+			show("node55")
+		end
+
 		show("node99")
 	end,
 
@@ -659,12 +663,76 @@ return {
 		code = function()
 			Npc:says(_"You've faced countless dangers so far. Are you sure you're willing to face more?")
 			Tux:says(_"Bring it on!")
-			Npc:says(_"That's exactly what I wanted to hear.")
-			Npc:says(_"Now listen carefully, this is the plan...")
-			Tux:end_quest("Propagating a faulty firmware update", _"The town is saved, but there's still a lot to do. I agreed to continue fighting the robot armies with the Red Guard.")
-			hide("node65")
-			win_game()
+			if (not Act2_knows_the_noise) then
+				Npc:says(_"But you should take some credit. Talk with the townspeople first.", "NO_WAIT")
+				--; TRANSLATORS: dorms = dormitory (plural)
+				Npc:says(_"One of my man reported that a certain girl wanted to talk to you, on the dorms south of the town. It seemed important, you might want to talk with her first.")
+				next("node99")
+			else
+				Npc:says(_"That's exactly what I wanted to hear.")
+				Npc:says(_"Now listen carefully, this is the plan...")
+				Tux:end_quest("Propagating a faulty firmware update", _"The town is saved, but there's still a lot to do. I agreed to continue fighting the robot armies with the Red Guard.") -- This was left between the two talk statements because next one is an interference followed by a delay.
+				Npc:says(_"*Bzzt*")
+				hide("node65", "node66")
+				delay_game(0.5) -- We need this because EndAct is here. You cannot move while in delay.
+				endact_I() -- I could just play a Title file, except that we must resyncronize some vars as well.
+				show("node67") -- This can only be shown AFTER the delays.
+			end
+
+		end,
+	},
+	{
+		id = "node67",
+		text = _"...Sorry, I missed the plan, some *annoying* entity which calls itself 'Dvorak' appeared, left me a message, and left. Can you repeat, please?",
+		code = function()
+			Npc:says(_"Dvorak?")
+			Tux:says(_"Yes, do you what him (or it) is?", "NO_WAIT")
+			Npc:says(_"Nope, never heard of.")
+			Tux:says(_"So, you were telling me a plan...?")
+			Npc:says(_"Ah, right, of course. Listen carefully, this is the plan...")
+			Npc:says(_"Some time ago I figured a portal which leads to south hemisphere... south of what was once known as Brazil, these details aren't important anymore.")
+			Npc:says(_"Anyway, fact is, the snowstorm there delayed the bots, but it wouldn't take too long to they get here, and they are much stronger than normal ones you've been facing so far. For instance, their armor is much better, and we had difficulty killing them with our Exterminators.")
+			Npc:says(_"Therefore, I've sent some scouts to guard there and prevent bots coming here.")
+			if (Tux_told_Spencer_about_Bob_and_Jim) then
+				Npc:says(_"You've already gone there, so you must have idea of the sittuation.")
+				Npc:says(_"This is your task, Linarian: If the 999 which protected the powergrid on the other side is still alive, go to the 629 which guards the gate and show him these credentials.")
+				Npc:says(_"If the bots somehow got in, Bob and Jim might be dead and our situation is about to get worse, in this case come here as fast as a Linarian can run.")
+				Tux:says(_"I understand. Go to the portal near the Disruptor Shield Base, and get past the 629 which guards a gate after the portal. If it's dead, come here and tell you.")
+			else
+				Npc:says(_"Nevertheless, at east of the Disruptor Shield Base should be a portal. I'm not sure how it's right now, but get in and use it.")
+				Npc:says(_"If I record correctly, this will lead you to room which is protected by a 999 Cerebrum. There's a locked gate and a bot protecting it, show to the bot those credentials and it'll let you go in.")
+				Npc:says(_"If the friendly bots there are dead, run as fast a Linarian can run, and come back here to report me.")
+				Tux:says(_"Find a portal east of the Disruptor Shield Base, get past the bot which protecs the gate. If there's no bot, come tell you. Seems easy enough.")
+			end
+			Npc:says(_"Yes. Go to the RR Resorts south of there. The RR Resorts was a cryonics facility for former MS staff. See if you can unfreeze anyone there, get answers.") -- Such information should be given by WillGapes, and Spencer should just order player to explore.
+			Npc:says(_"Bring anyone straight here. Understood?")
+			Tux:says(_"Yes. I'll be going now.")
+			Act2_opengate=true
+			hide("node67")
 			end_dialog()
+		end,
+	},
+	{
+		id = "node55",
+		text = _"Are there members of the Red Guard called Bob and Jim?",
+		code = function()
+			Npc:says(_"They are still alive?! They probably need help!")
+			Tux:says(_"Actually it seems that they are in pretty good shape.")
+			Npc:says(_"Hm... I sent them to find a certain portal. Did they find it?")
+			if (Tux_heard_Bob_and_Jim_story) then
+				Tux:says(_"Yeah!")
+				Npc:says(_"Excellent!")
+			else
+				Tux:says(_"Em... I'm not sure, but inside the room they were guarding I saw something like it.")
+				Npc:says(_"So they found the portal.")
+			end
+			Npc:says(_"How did they survive?")
+			Tux:says(_"Fortunately, the portal was inside of little fortress and they hid there.")
+			Npc:says(_"Good to hear that. Their mission was not only to find the portal, but to stay there and keep guarding it. So they survived and keep helping us.")
+			Tux:says(_"Helping? What do you mean?")
+			Npc:says(_"They prevent more bots from teleporting to our continent.")
+			Tux_told_Spencer_about_Bob_and_Jim = true
+			hide("node55")
 		end,
 	},
 	{

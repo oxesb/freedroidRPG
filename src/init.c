@@ -1223,4 +1223,94 @@ void ThouHastWon(void)
 
 };				// void ThouHastWon(void)
 
+void ThouHastDelay(float delay)
+{
+	int now;
+
+	// Disable delay while performing benchmark.
+	if (!skip_initial_menus) {
+	    // Hide Screens
+		GameConfig.Inventory_Visible = FALSE;
+		GameConfig.CharacterScreen_Visible = FALSE;
+		now = SDL_GetTicks();
+
+
+		while ((SDL_GetTicks() - now < 1000 * delay)) { // Use a function variable...
+			StartTakingTimeForFPSCalculation();
+
+			AssembleCombatPicture(DO_SCREEN_UPDATE | SHOW_ITEMS);
+
+			UpdateCountersForThisFrame();
+
+			DoAllMovementAndAnimations();
+			move_enemies();
+
+			ComputeFPSForThisFrame();
+		}
+	}
+
+	input_handle();
+
+};				// void ThouHastDelay(float)
+
+
+/**
+ * This function displays the end-act title file.
+ * Not only that, but this also changes the Act variables,
+ * Keeping the act-related functions and such in-check.
+ *
+ * Please note that only Act 1/2 are supported (yet).
+ * This function must be changed to accept a bigger deal of acts.
+ */
+void EndOfAct(void)
+{
+	// TODO: Here we should advance the lua and the C variable for act in 1.
+
+	// Display that the act finished
+	DebugPrintf(1, "\n%s(): Real function call confirmed.", __FUNCTION__);
+	append_new_game_message(_("End of Act 1.\n"));
+	SetNewBigScreenMessage(_("End of Act 1.\n"));
+
+	// Make next act enemies a little stronger. It increments bot HP in 30% and EXP reward in 15%.
+	// It also makes the bot react a little faster after being hit. It also affects friends, so
+	// they don't be easier to kill than the hostile ones (keeping the balance)
+	//
+	// Although such way to increment difficulty has it's concerns, it's still doable
+	// however should be changed later. It has shown to be useful when all you need is to
+	// give the player a little more challenge and make new levelups a little more doable,
+	// giving more experience, and as the player probably have a good weapon, increasing HP.
+	int type;
+	enemy *erot, *nerot;
+
+	type=0;
+	while (type <= ENEMY_ROTATION_MODELS_AVAILABLE) {
+		Droidmap[type].maxenergy *= 1.3;
+		// NOTE: Drop of decimal point is itendended. Don't try to "fix" this. (below)
+		Droidmap[type].experience_reward *= 1.15;
+		Droidmap[type].recover_time_after_getting_hit *= 0.95;
+
+		type += 1;
+	}
+
+	// Now, we restore droid's HP. Otherwise, ugly HP bars would show up.
+	BROWSE_ALIVE_BOTS_SAFE(erot, nerot) {
+		erot->energy = Droidmap[erot->type].maxenergy;
+	}
+
+
+	// Update 123's and 139's sensors to see Tux invisible. Otherwise, they would be too weak.
+	Droidmap[get_droid_type("123")].sensor_id=get_sensor_id_by_name("infrared");
+	Droidmap[get_droid_type("139")].sensor_id=get_sensor_id_by_name("infrared");
+
+
+
+	// Now it's time for the end act title file...
+	if (!skip_initial_menus)
+		PlayATitleFile("EndOfAct1.lua");
+
+	input_handle();
+
+};				// void EndOfAct(void)
+
+
 #undef _init_c

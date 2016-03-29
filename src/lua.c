@@ -969,6 +969,22 @@ static int lua_win_game(lua_State *L)
 	return 0;
 }
 
+static int lua_delay_game(lua_State *L)
+{
+	float duration = luaL_checknumber(L, 1);
+
+	ThouHastDelay(duration);
+
+	return 0;
+}
+
+static int lua_end_act_1(lua_State *L)
+{
+	EndOfAct();
+
+	return 0;
+}
+
 static int lua_play_sound(lua_State *L)
 {
 	const char *filename = luaL_checkstring(L, 1);
@@ -1394,6 +1410,12 @@ luaL_Reg lfuncs[] = {
 
 	{"win_game", lua_win_game},
 	// Finish the game.
+
+	{"delay_game", lua_delay_game},
+	// Delays the game.
+
+	{"endact_I", lua_end_act_1},
+	// Finish the act.
 
 	{"game_time", lua_get_game_time},
 	{"game_date", lua_get_game_date},

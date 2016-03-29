@@ -56,6 +56,8 @@ void PrepareStartOfNewCharacter(char *startpos);
 void prepare_level_editor(void);
 void ThouArtDefeated(void);
 void ThouHastWon(void);
+void EndOfAct(void);
+void ThouHastDelay(float);
 void PlayATitleFile(char *Filename);
 
 // event.c

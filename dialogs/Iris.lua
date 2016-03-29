@@ -237,6 +237,7 @@ return {
 		id = "node53",
 		text = _"What do you mean?",
 		code = function()
+			Act2_knows_the_noise=true
 			Npc:says(_"I... I'm not sure.")
 			Npc:says(_"It could be just background noise. Maybe it's not even that. But there's still something a little weird about it.")
 			Npc:says(_"More than a little, when I think about it.")

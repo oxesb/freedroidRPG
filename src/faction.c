@@ -45,6 +45,7 @@ static struct {
 } factions[] = {
 		{ FACTION_SELF, "self" },
 		{ FACTION_BOTS, "ms" },
+		{ FACTION_BOTS_TWO, "rr" },
 		{ FACTION_REDGUARD, "redguard" },
 		{ FACTION_RESISTANCE, "resistance" },
 		{ FACTION_CIVILIAN, "civilian" },
@@ -123,6 +124,7 @@ void init_factions()
 		set_faction_state(FACTION_SELF, i, FRIENDLY);
 	}
 	set_faction_state(FACTION_SELF, FACTION_BOTS, HOSTILE);
+	set_faction_state(FACTION_SELF, FACTION_BOTS_TWO, HOSTILE);
 
 	/* The "civilian" faction represents all normally non-fighting
 	   characters.
@@ -132,12 +134,15 @@ void init_factions()
 		set_faction_state(FACTION_CIVILIAN, i, FRIENDLY);
 	}
 	set_faction_state(FACTION_CIVILIAN, FACTION_BOTS, HOSTILE);
+	set_faction_state(FACTION_CIVILIAN, FACTION_BOTS_TWO, HOSTILE);
+
 	
 	/* Crazy faction is for people that were pissed off by tux. They are civilians that are hostile to Tux. */
 	for (i = 0; i < FACTION_NUMBER_OF_FACTIONS; i++) {
 		set_faction_state(FACTION_CRAZY, i, FRIENDLY);
 	}
 	set_faction_state(FACTION_CRAZY, FACTION_BOTS, HOSTILE);
+	set_faction_state(FACTION_CRAZY, FACTION_BOTS_TWO, HOSTILE);
 	set_faction_state(FACTION_CRAZY, FACTION_SELF, HOSTILE);
 
 	/* The "red guard" faction is hostile to the resistance and bots, friendly towards the rest. */
@@ -145,6 +150,7 @@ void init_factions()
 		set_faction_state(FACTION_REDGUARD, i, FRIENDLY);
 	}
 	set_faction_state(FACTION_REDGUARD, FACTION_BOTS, HOSTILE);
+	set_faction_state(FACTION_REDGUARD, FACTION_BOTS_TWO, HOSTILE);
 	set_faction_state(FACTION_REDGUARD, FACTION_RESISTANCE, HOSTILE);
 
 	/* Resistance is similar to red guards. */
@@ -152,12 +158,20 @@ void init_factions()
 		set_faction_state(FACTION_RESISTANCE, i, FRIENDLY);
 	}	   
 	set_faction_state(FACTION_RESISTANCE, FACTION_BOTS, HOSTILE);
+	set_faction_state(FACTION_RESISTANCE, FACTION_BOTS_TWO, HOSTILE);
 	set_faction_state(FACTION_RESISTANCE, FACTION_REDGUARD, HOSTILE);
 
 	/* MegaSys hate everyone, and everything, except perhaps their shareholders but those are dead. */
 	for (i = 0; i < FACTION_NUMBER_OF_FACTIONS; i++) {
 		set_faction_state(FACTION_BOTS, i, HOSTILE);
+		set_faction_state(FACTION_BOTS, FACTION_BOTS_TWO, FRIENDLY);
 	}
+
+	for (i = 0; i < FACTION_NUMBER_OF_FACTIONS; i++) {
+		set_faction_state(FACTION_BOTS_TWO, i, HOSTILE);
+		set_faction_state(FACTION_BOTS, FACTION_BOTS_TWO, FRIENDLY);
+	}
+
 
 	/* Singularity hates everyone but Tux and bots */
 	for (i = 0; i < FACTION_NUMBER_OF_FACTIONS; i++) {
@@ -165,6 +179,7 @@ void init_factions()
 	}
 	set_faction_state(FACTION_SINGULARITY, FACTION_SELF, FRIENDLY);
 	set_faction_state(FACTION_SINGULARITY, FACTION_BOTS, FRIENDLY);
+	set_faction_state(FACTION_SINGULARITY, FACTION_BOTS_TWO, FRIENDLY);
 
 	/* Neutral does not attack anyone, neither is it being attacked */
 	for (i = 0; i < FACTION_NUMBER_OF_FACTIONS; i++) {
