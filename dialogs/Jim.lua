@@ -18,7 +18,7 @@
 ----------------------------------------------------------------------
 --[[WIKI
 PERSONALITY = { "Robotic" },
-BACKSTORY = "$$NAME$$ is part of Act 2. He locked himself on the portal room after his brother went missing (probably dead)."
+BACKSTORY = "$$NAME$$ was part of Act 2. He locked himself on the portal room after his brother went missing (probably dead)."
 WIKI]]--
 
 local Npc = FDrpg.get_npc()

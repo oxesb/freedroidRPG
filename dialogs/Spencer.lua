@@ -217,7 +217,7 @@ return {
 			if (not Tux:done_quest("The yellow toolkit")) then
 				Npc:says(_"I think our teleporter service man, Dixon, has some problem. You might want to talk to him.")
 			elseif (not Dixon_mood) or
-			       (Dixon_mood < 50) then
+				   (Dixon_mood < 50) then
 				Npc:says(_"Dixon told me about the matter with his toolkit. He seemed pretty impressed by you.")
 			elseif (Dixon_mood < 120) then
 				Npc:says(_"Dixon has his toolkit back.", "NO_WAIT")
@@ -675,7 +675,7 @@ return {
 				Npc:says(_"*Bzzt*")
 				hide("node65", "node66")
 				delay_game(0.5) -- We need this because EndAct is here. You cannot move while in delay.
-				endact_I() -- I could just play a Title file, except that we must resyncronize some vars as well.
+				endact_I() -- TODO: This has to be moved to Act2GateKeeper later, when properly splitting files. C functions handled here.
 				show("node67") -- This can only be shown AFTER the delays.
 			end
 
@@ -690,24 +690,17 @@ return {
 			Npc:says(_"Nope, never heard of.")
 			Tux:says(_"So, you were telling me a plan...?")
 			Npc:says(_"Ah, right, of course. Listen carefully, this is the plan...")
-			Npc:says(_"Some time ago I figured a portal which leads to south hemisphere... south of what was once known as Brazil, these details aren't important anymore.")
-			Npc:says(_"Anyway, fact is, the snowstorm there delayed the bots, but it wouldn't take too long to they get here, and they are much stronger than normal ones you've been facing so far. For instance, their armor is much better, and we had difficulty killing them with our Exterminators.")
-			Npc:says(_"Therefore, I've sent some scouts to guard there and prevent bots coming here.")
-			if (Tux_told_Spencer_about_Bob_and_Jim) then
-				Npc:says(_"You've already gone there, so you must have idea of the sittuation.")
-				Npc:says(_"This is your task, Linarian: If the 999 which protected the powergrid on the other side is still alive, go to the 629 which guards the gate and show him these credentials.")
-				Npc:says(_"If the bots somehow got in, Bob and Jim might be dead and our situation is about to get worse, in this case come here as fast as a Linarian can run.")
-				Tux:says(_"I understand. Go to the portal near the Disruptor Shield Base, and get past the 629 which guards a gate after the portal. If it's dead, come here and tell you.")
-			else
-				Npc:says(_"Nevertheless, at east of the Disruptor Shield Base should be a portal. I'm not sure how it's right now, but get in and use it.")
-				Npc:says(_"If I record correctly, this will lead you to room which is protected by a 999 Cerebrum. There's a locked gate and a bot protecting it, show to the bot those credentials and it'll let you go in.")
-				Npc:says(_"If the friendly bots there are dead, run as fast a Linarian can run, and come back here to report me.")
-				Tux:says(_"Find a portal east of the Disruptor Shield Base, get past the bot which protecs the gate. If there's no bot, come tell you. Seems easy enough.")
-			end
-			Npc:says(_"Yes. Go to the RR Resorts south of there. The RR Resorts was a cryonics facility for former MS staff. See if you can unfreeze anyone there, get answers.") -- Such information should be given by WillGapes, and Spencer should just order player to explore.
-			Npc:says(_"Bring anyone straight here. Understood?")
-			Tux:says(_"Yes. I'll be going now.")
+			Npc:says(_"One of my intelligence team just found out a certain Resort which apparently the great and powerful from MS used to dispose certain kinds of people...")
+			Npc:says(_"They would freeze the person which knew too much with certain pretexts, or so I was told. It's very far but we can use the Hell Fortress Landing Zone just west from here. However beware, once you leave, you may not be able to get back.")
+			Tux:says(_"So I should go to this so-called resort and get some intel from cryonized former MS staff. How can I report it back to you?")
+			Npc:says(_"Do not worry, I'll arrange to Richard, the computer guy around here, to contact you.")
+			Tux:says(_"Yes. In this case I'll be going now.")
 			Act2_opengate=true
+			-- Open the gates
+			change_obstacle_state("Act2FreighterAccess01", "opened")
+			change_obstacle_state("Act2FreighterAccess02", "opened")
+			change_obstacle_state("ServerRoomDoor", "opened")
+
 			hide("node67")
 			end_dialog()
 		end,

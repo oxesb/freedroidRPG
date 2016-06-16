@@ -6647,6 +6647,102 @@ Silent=0
 <LuaCode> teleport("42from74") </LuaCode>
 * End of trigger *
 
+##############
+## Level 75 ##
+##############
+
+##############
+## Level 76 ##
+##############
+
+* New event trigger *
+Name="Act2RockSlide01"
+Trigger at label="Act2RockSlide01"
+Silent=1
+<LuaCode>
+if (not act2_begin) then
+	act2_begin = true
+	play_sound("effects/Blast_Sound_0.ogg")
+	add_obstacle(76, 89.5, 71.5, 37)
+	delay_game(0.1)
+	add_obstacle(76, 89.5, 72.5, 37)
+	delay_game(0.1)
+	add_obstacle(76, 89.5, 73.5, 37)
+	delay_game(0.1)
+	add_obstacle(76, 89.5, 74.5, 37)
+	delay_game(0.1)
+	display_big_message(_"You are unable to return. The only way is foward.")
+	display_big_message(_"RUMBLE! A earthquake happened!")
+end
+</LuaCode>
+* End of trigger *
+
+* New event trigger *
+Name="Act2RockSlide02"
+Trigger at label="Act2RockSlide02"
+Silent=1
+<LuaCode>
+if (not act2_begin) then
+	act2_begin = true
+	play_sound("effects/Blast_Sound_0.ogg")
+	add_obstacle(76, 89.5, 71.5, 37)
+	delay_game(0.1)
+	add_obstacle(76, 89.5, 72.5, 37)
+	delay_game(0.1)
+	add_obstacle(76, 89.5, 73.5, 37)
+	delay_game(0.1)
+	add_obstacle(76, 89.5, 74.5, 37)
+	delay_game(0.1)
+	display_big_message(_"You are unable to return. The only way is foward.")
+	display_big_message(_"RUMBLE! A earthquake happened!")
+end
+</LuaCode>
+* End of trigger *
+
+* New event trigger *
+Name="Act2RockSlide03"
+Trigger at label="Act2RockSlide03"
+Silent=1
+<LuaCode>
+if (not act2_begin) then
+	act2_begin = true
+	play_sound("effects/Blast_Sound_0.ogg")
+	add_obstacle(76, 89.5, 71.5, 37)
+	delay_game(0.1)
+	add_obstacle(76, 89.5, 72.5, 37)
+	delay_game(0.1)
+	add_obstacle(76, 89.5, 73.5, 37)
+	delay_game(0.1)
+	add_obstacle(76, 89.5, 74.5, 37)
+	delay_game(0.1)
+	display_big_message(_"You are unable to return. The only way is foward.")
+	display_big_message(_"RUMBLE! A earthquake happened!")
+end
+</LuaCode>
+* End of trigger *
+
+* New event trigger *
+Name="Act2RockSlide04"
+Trigger at label="Act2RockSlide04"
+Silent=1
+<LuaCode>
+if (not act2_begin) then
+	act2_begin = true
+	play_sound("effects/Blast_Sound_0.ogg")
+	add_obstacle(76, 89.5, 71.5, 37)
+	delay_game(0.1)
+	add_obstacle(76, 89.5, 72.5, 37)
+	delay_game(0.1)
+	add_obstacle(76, 89.5, 73.5, 37)
+	delay_game(0.1)
+	add_obstacle(76, 89.5, 74.5, 37)
+	delay_game(0.1)
+	display_big_message(_"You are unable to return. The only way is foward.")
+	display_big_message(_"RUMBLE! A earthquake happened!")
+end
+</LuaCode>
+* End of trigger *
+
 ################
 ## NPC Deaths ##
 ################

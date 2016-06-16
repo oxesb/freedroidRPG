@@ -42,7 +42,7 @@ return {
 		text = _"Hi! I'm new here.",
 		code = function()
 			Npc:says(_"Good. Just select an empty hibernation chamber and go sleep.")
-			Npc:says(_"I really don't care to whatever you do here, I wish I was just slepping like the others with knows too much, but the guy at my side had to have someone to help him.")
+			Npc:says(_"I really don't care to whatever you do here, I wish I was just sleeping like the others which knows too much, but the guy at my side had to have someone to help him.")
 			Npc:says(_"I know nothing. So if you're thinking in doing me silly questions, forget it, I won't answer.") -- Maybe later allow the player to make questions and enrage this NPC...
 			hide("node0")
 		end,
@@ -73,19 +73,19 @@ return {
 		code = function()
 			if (Tux:get_skill("melee") >= 1) then
 				if (Tux:train_skill(1000, 1, "melee")) then
-					Tux:del_health(100)
 					Npc:says(_"Let us begin then.")
 					Npc:says(_"Please equip this screwdriver. I don't want to get hurt.") -- Maybe give tux a screwdriver latter, as a token?
 					Npc:says(_"Also, put all your possessions near the tree, no cheating.")
 					Tux:says(_"Done. What I do now? Should I try to hit you?")
 					Npc:says(_"No. Nothing so dangerous.")
-					Npc:says(_"I'll spawn a 883 Dalex to you fight with.")
+					Npc:says(_"I'll spawn a 883 Droid to you fight with.")
 					Tux:says(_"Are you crazy?? With a screwdriver! What about 'dangerous'??")
 					Npc:says(_"Nothing dangerous for [b]my[/b] health, of course. Good luck! Don't die!")
+					Tux:del_health(100) -- Do not move from here, sound effect reasons.
 					Npc:says(_"[b]...some painful time latter...[/b]")
-					Tux:says(_"Ugh. Done, the 883 is dead, and I am half-alive. Who changed that thing to see me while invisible??")
+					Tux:says(_"Ugh. Done, the 883 is dead, and surprisingly I'm alive. Who changed that thing to see me while invisible??")
 					Npc:says(_"I did the best 883 I could. To defeat it with a screwdriver, you must be very special. You are my apprentice now.")
-					Npc:says(_"This is enough training. I don't have more bots to you do insane fights with.")
+					Npc:says(_"However, this is enough training for now. I don't have more bots to you do insane fights with.")
 					hide("node12")
 				else
 					if (Tux:get_gold() >= 1000) then
@@ -96,7 +96,7 @@ return {
 					end
 				end
 			else
-				Npc:says(_"Hey, wake up! if you challenge a bee, you'll die. You must learn some melee fighting first. Then I can teach you more.")
+				Npc:says(_"Hey, wake up! if you challenge a bee, you'll die. You must have learned some melee fighting earlier in order to understand what I'm about to tell you.")
 			end
 		end,
 	},

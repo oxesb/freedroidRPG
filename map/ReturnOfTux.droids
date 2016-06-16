@@ -528,6 +528,7 @@ Level=61
 ** Beginning of new Level **
 Level=62
 
+T=751: PosX=71 PosY=29 Faction="civilian" UseDialog="Act2GateKeeper" ShortLabel=_"Landing Zone Control Droid" Marker=0 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=4
 ** End of this levels Special Forces data **
 ---------------------------------------------------------
 ** Beginning of new Level **
@@ -596,10 +597,7 @@ Level=74
 
 T=999: PosX=76 PosY=73 Faction="civilian" UseDialog="CerebrumPortalGuardian" ShortLabel=_"999 Cerebrum" Marker=9999 RushTux=1 Fixed=0 DropItemId="none" MaxDistanceToHome=0
 T=476: PosX=83 PosY=74 Faction="civilian" UseDialog="Singularity-Drone" ShortLabel=_"476 Coward" Marker=9999 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=0
-T=629: PosX=76 PosY=65 Faction="civilian" UseDialog="Act2GateKeeper" ShortLabel=_"629 Spitfire" Marker=9999 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=0
-T=GUN: PosX=34 PosY=38 Faction="rr" UseDialog="AfterTakeover" ShortLabel=_"Crossroad Autogun" Marker=0 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=0
-T=GUN: PosX=77 PosY=25 Faction="rr" UseDialog="AfterTakeover" ShortLabel=_"Autogun" Marker=0 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=0
-T=751: PosX=76 PosY=26 Faction="rr" UseDialog="AfterTakeover" ShortLabel=_"Power Guard" Marker=0 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=0 UseSensor="radar"
+T=629: PosX=76 PosY=65 Faction="civilian" UseDialog="Singularity-Drone" ShortLabel=_"629 Spitfire" Marker=9999 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=0
 ** End of this levels Special Forces data **
 ---------------------------------------------------------
 ** Beginning of new Level **
@@ -614,6 +612,19 @@ T=883: PosX=32 PosY=14 Faction="rr" UseDialog="AfterTakeover" ShortLabel=_"Car C
 T=834: PosX=36 PosY=31 Faction="rr" UseDialog="AfterTakeover" ShortLabel=_"Quick Assassin" Marker=0 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=15
 T=WOR: PosX=49 PosY=48 Faction="neutral" UseDialog="Act2ProgrammingChief" ShortLabel=_"MS Ex-Chief Programming Officer" Marker=0 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=0
 T=GUB: PosX=53 PosY=44 Faction="neutral" UseDialog="Act2SecurityChief" ShortLabel=_"MS Ex-Chief Security Officer" Marker=0 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=0
+** End of this levels Special Forces data **
+---------------------------------------------------------
+** Beginning of new Level **
+Level=76
+
+T=GUN: PosX=34 PosY=38 Faction="rr" UseDialog="AfterTakeover" ShortLabel=_"Crossroad Autogun" Marker=0 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=0
+T=GUN: PosX=77 PosY=25 Faction="rr" UseDialog="AfterTakeover" ShortLabel=_"Autogun" Marker=0 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=0
+T=751: PosX=76 PosY=26 Faction="rr" UseDialog="AfterTakeover" ShortLabel=_"Power Guard" Marker=0 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=0 UseSensor="radar"
+** End of this levels Special Forces data **
+---------------------------------------------------------
+** Beginning of new Level **
+Level=77
+
 ** End of this levels Special Forces data **
 ---------------------------------------------------------
 *** End of Droid Data ***
