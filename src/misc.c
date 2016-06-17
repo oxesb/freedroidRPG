@@ -47,6 +47,11 @@
 #  include <signal.h>
 #endif
 
+#ifdef __WIN32__
+// For _access()
+#include <io.h>
+#endif
+
 static int world_is_frozen = 0;
 long oneframedelay = 0;
 float FPSover1 = 10;
@@ -57,21 +62,22 @@ Uint32 Onehundred_Frame_SDL_Ticks;
 int framenr = 0;
 long Overall_Frames_Displayed = 0;
 
-char *our_homedir = NULL;
-char *our_config_dir = NULL;
-
 struct data_dir data_dirs[] = {
-	[GRAPHICS_DIR]= { "graphics",      "" },
-	[FONT_DIR]=     { "graphics/font", "" },
-	[SOUND_DIR]=    { "sound",         "" },
-	[MUSIC_DIR]=    { "sound/music",   "" },
-	[MAP_DIR]=      { "map",           "" },
-	[TITLES_DIR]=   { "map/titles",    "" },
-	[DIALOG_DIR]=   { "dialogs",       "" },
+	[CONFIG_DIR]=      { "configdir",                   "" },
+	[GUI_DIR]=         { "data/gui",                    "" },
+	[GRAPHICS_DIR]=    { "data/graphics",               "" },
+	[FONT_DIR]=        { "data/fonts",                  "" },
+	[SOUND_DIR]=       { "data/sound",                  "" },
+	[MUSIC_DIR]=       { "data/sound/music",            "" },
+	[BASE_DIR]=        { "data/base",                   "" },
+	[BASE_TITLES_DIR]= { "data/base/titles",            "" },
+	[MAP_DIR]=         { "data/storyline/act1",         "" },
+	[MAP_TITLES_DIR]=  { "data/storyline/act1/titles",  "" },
+	[MAP_DIALOG_DIR]=  { "data/storyline/act1/dialogs", "" },
 #ifdef ENABLE_NLS
-	[LOCALE_DIR]=   { "locale",        "" },
+	[LOCALE_DIR]=      { "locale",                      "" },
 #endif
-	[LUA_MOD_DIR]=  { "lua_modules",   "" }
+	[LUA_MOD_DIR]=     { "lua_modules",                 "" }
 };
 #define WELL_KNOWN_DATA_FILE "lua_modules/FDdialog.lua"
 
@@ -602,7 +608,7 @@ void ShowGenericButtonFromList(int ButtonIndex)
 	// Load button image if required
 	struct image *img = &btn->button_image;
 	if (!image_loaded(img)) {
-		load_image(img, btn->button_image_file_name, NO_MOD);
+		load_image(img, GUI_DIR, btn->button_image_file_name, NO_MOD);
 
 		// Maybe we had '0' entries for the height or width of this button in the list.
 		// This means that we will take the real width and the real height from the image
@@ -625,9 +631,10 @@ int init_data_dirs_path()
 	int i, j;
 	FILE *f;
 	char file_path[PATH_MAX];
+	const int FIRST_DATA_DIR = 1; // data_dirs[0] is CONFIG_DIR, set in prepare_execution()
 
 	// Reset the data dirs paths
-	for (i = 0; i < LAST_DATA_DIR; i++) {
+	for (i = FIRST_DATA_DIR; i < LAST_DATA_DIR; i++) {
 		data_dirs[i].path[0] = '\0';
 	}
 
@@ -645,7 +652,7 @@ int init_data_dirs_path()
 
 		if ((f = fopen(file_path, "r")) != NULL) {
 			// File found, so now fill the data dir paths
-			for (j = 0; j < LAST_DATA_DIR; j++) {
+			for (j = FIRST_DATA_DIR; j < LAST_DATA_DIR; j++) {
 				char *dir = top_data_dir[i];
 				const char *subdir = data_dirs[j].name;
 #ifdef ENABLE_NLS
@@ -679,50 +686,131 @@ int init_data_dirs_path()
 	return 0;
 }
 
+/**
+ * Check if a directory exists
+ *
+ * @param dirname            Subdir to check, relatively to the directory specified by subdir_handle
+ * @param subdir_handle      Handle to one of the well known data subdirs
+ * @param check_if_writable  If TRUE, also check if the directory is writable
+ * @param error_report       If TRUE, report any error to the user, else be silent
+ *
+ * @return  0 is directory exists and is writable (if requested),
+ *          1 if directory exists but is not writable (if requested),
+ *          2 if directory does not exist,
+ *         -1 in case of errors.
+ */
+int check_directory(const char *dirname, int subdir_handle, int check_if_writable, int error_report)
+{
+	if (subdir_handle < 0 || subdir_handle >= LAST_DATA_DIR) {
+		error_message(__FUNCTION__, "Called with a wrong subdir handle (%d)", PLEASE_INFORM, subdir_handle);
+		return -1;
+	}
+
+	char dir_path[PATH_MAX];
+	int nb = snprintf(dir_path, PATH_MAX, "%s/%s", data_dirs[subdir_handle].path, dirname);
+	if (nb >= PATH_MAX) {
+		*dir_path = 0;
+		error_message(__FUNCTION__, "Pathname too long (max is %d): %s/%s",
+		              PLEASE_INFORM, PATH_MAX, data_dirs[subdir_handle].path, dirname);
+		return -1;
+	}
+
+	// First check if directory exists
+#ifdef __WIN32__
+	int rtn = _access(dir_path, 0x0);
+#else
+	int rtn = access(dir_path, F_OK);
+#endif
+
+	if (rtn == -1) {
+		error_message(__FUNCTION__, "Directory not found: %s", error_report | PLEASE_INFORM, dir_path);
+		return 2;
+	}
+
+	// Then check if the directory is writable, if requested
+	if (!check_if_writable)
+		return TRUE;
+
+#ifdef __WIN32__
+	rtn = _access(dir_path, 0x06);
+#else
+	rtn = access(dir_path, W_OK);
+#endif
+
+	if (rtn == -1) {
+		error_message(__FUNCTION__, "Directory not writable: %s", error_report | PLEASE_INFORM, dir_path);
+		return 1;
+	}
+
+	return 0;
+}
+
 /* -----------------------------------------------------------------
  * check if a given filename exists in subdir.
  *
  * fills in the (ALLOC'd) string and returns 1 if okay, 0 on error.
  * file_path's length HAS to be PATH_MAX.
  * ----------------------------------------------------------------- */
-static int _file_exists(const char *fname, const char *subdir, char *file_path)
+static int _file_exists(char *fpath, const char *subdir, const char *fname, const char *fext)
 {
-	int nb = snprintf(file_path, PATH_MAX, "%s/%s", subdir, fname);
+	int nb;
+	if (fext)
+		nb = snprintf(fpath, PATH_MAX, "%s/%s%s", subdir, fname, fext);
+	else
+		nb = snprintf(fpath, PATH_MAX, "%s/%s", subdir, fname);
+
 	if (nb >= PATH_MAX) {
-		*file_path = 0;
-		error_message(__FUNCTION__, "Pathname too long (max is %d): %s/%s",
-					 NO_REPORT, PATH_MAX, subdir, fname);
+		*fpath = '\0';
+		if (fext)
+			error_message(__FUNCTION__, "Pathname too long (max is %d): %s/%s%s", PLEASE_INFORM, PATH_MAX, subdir, fname, fext);
+		else
+			error_message(__FUNCTION__, "Pathname too long (max is %d): %s/%s", PLEASE_INFORM, PATH_MAX, subdir, fname);
 		return 0;
 	}
 
-	FILE *fp = fopen(file_path, "r");
-	if (!fp) {
+#ifdef __WIN32__
+	int access_rtn = _access(fpath, 0x04);
+#else
+	int access_rtn = access(fpath, R_OK);
+#endif
+
+	if (access_rtn == -1) {
 		/* not found */
-		*file_path = 0;
 		return 0;
 	}
 
-	fclose(fp);
 	return 1;
 }
 
-/* -----------------------------------------------------------------
+/**
  * Find a filename in subdir (using a data_dir handle).
  *
- * fills in the (ALLOC'd) string and returns 1 if okay, 0 on error.
- * file_path's length HAS to be PATH_MAX.
- * ----------------------------------------------------------------- */
-int find_file(const char *fname, int subdir_handle, char *file_path, int error_report)
+ * Fills in the fpath with <subdir>/<fname><fext>, and check if that
+ * file exists.
+ *
+ * \param fpath           pre-alloc'd string, filled by the function. Its length HAS to be PATH_MAX
+ * \param subdir_handle   index to one of the known data dirs
+ * \param fname           file name
+ * \param fext            file extension (including the '.') (NULL if no file extension is to be added)
+ * \param error_report    error output flag
+ *
+ * \return 1 is the file exists, 0 otherwise
+**/
+int find_file(char *fpath, int subdir_handle, const char *fname, const char *fext, int error_report)
 {
 	if (subdir_handle < 0 || subdir_handle >= LAST_DATA_DIR) {
 		error_message(__FUNCTION__, "Called with a wrong subdir handle (%d)",
-		             error_report | PLEASE_INFORM, subdir_handle);
+		              error_report | PLEASE_INFORM, subdir_handle);
 		return 0;
 	}
 
-	if (!_file_exists(fname, data_dirs[subdir_handle].path, file_path)) {
-		error_message(__FUNCTION__, "File %s not found in %s",
-		             error_report, fname, data_dirs[subdir_handle].name);
+	if (!_file_exists(fpath, data_dirs[subdir_handle].path, fname, fext)) {
+		if (fext)
+			error_once_message(ONCE_PER_RUN, __FUNCTION__, "File %s.%s not found in %s",
+			                   error_report, fname, fext, data_dirs[subdir_handle].name);
+		else
+			error_once_message(ONCE_PER_RUN, __FUNCTION__, "File %s not found in %s",
+			                   error_report, fname, data_dirs[subdir_handle].name);
 		return 0;
 	}
 
@@ -737,7 +825,7 @@ int find_file(const char *fname, int subdir_handle, char *file_path, int error_r
  * fills in the (ALLOC'd) string and returns 1 if okay, 0 on error.
  * file_path's length HAS to be PATH_MAX.
  * ----------------------------------------------------------------- */
-int find_suffixed_file(const char *fname, const char *suffix, int subdir_handle, char *file_path, int error_report)
+int find_suffixed_file(char *fpath, int subdir_handle, const char *fname, const char *suffix, int error_report)
 {
 	char suffixed_fname[PATH_MAX];
 	char *actual_fname = (char *)fname;
@@ -746,7 +834,7 @@ int find_suffixed_file(const char *fname, const char *suffix, int subdir_handle,
 		int fname_length = strlen(fname);
 		int suffix_length = strlen(suffix);
 		if ((fname_length + suffix_length + 1) >= PATH_MAX) {
-			*file_path = 0;
+			*fpath = 0;
 			error_message(__FUNCTION__, "Filename + suffix too long (max is %d): %s, with suffix: %s",
 			              PLEASE_INFORM, PATH_MAX, fname, suffix);
 			return 0;
@@ -762,7 +850,7 @@ int find_suffixed_file(const char *fname, const char *suffix, int subdir_handle,
 		actual_fname = suffixed_fname;
 	}
 
-	return find_file(actual_fname, subdir_handle, file_path, error_report);
+	return find_file(fpath, subdir_handle, actual_fname, NULL, error_report);
 }
 
 /* -----------------------------------------------------------------
@@ -778,7 +866,7 @@ int find_suffixed_file(const char *fname, const char *suffix, int subdir_handle,
  * fills in the (ALLOC'd) string and returns 1 if okay, 0 on error.
  * file_path's length HAS to be PATH_MAX.
  * ----------------------------------------------------------------- */
-int find_localized_file(const char *fname, int subdir_handle, char *file_path, int error_report)
+int find_localized_file(char *fpath, int subdir_handle, const char *fname, int error_report)
 {
 #ifdef ENABLE_NLS
 	if (subdir_handle < 0 || subdir_handle >= LAST_DATA_DIR) {
@@ -790,7 +878,7 @@ int find_localized_file(const char *fname, int subdir_handle, char *file_path, i
 	char *used_locale = lang_get();
 
 	if (!used_locale || strlen(used_locale) == 0) {
-		return find_file(fname, subdir_handle, file_path, error_report);
+		return find_file(fpath, subdir_handle, fname, NULL, error_report);
 	}
 
 	// A locale name is typically of the form language[_territory][.codeset][@modifier]
@@ -816,7 +904,7 @@ int find_localized_file(const char *fname, int subdir_handle, char *file_path, i
 			             error_report, PATH_MAX, data_dirs[subdir_handle].path, locale, fname);
 			break;
 		}
-		if (_file_exists(fname, l10ndir, file_path)) {
+		if (_file_exists(fpath, l10ndir, fname, NULL)) {
 			free(locale);
 			return 1;
 		}
@@ -826,10 +914,10 @@ int find_localized_file(const char *fname, int subdir_handle, char *file_path, i
 #endif
 
 	// Localized version not found. Use untranslated version.
-	return find_file(fname, subdir_handle, file_path, error_report);
+	return find_file(fpath, subdir_handle, fname, NULL, error_report);
 }
 
-int find_encoded_file(const char *fname, int subdir_handle, char *file_path, int error_report)
+int find_encoded_file(char *fpath, int subdir_handle, const char *fname, int error_report)
 {
 #ifdef ENABLE_NLS
 	if (subdir_handle < 0 || subdir_handle >= LAST_DATA_DIR) {
@@ -841,7 +929,7 @@ int find_encoded_file(const char *fname, int subdir_handle, char *file_path, int
 	char *used_encoding = lang_get_encoding();
 
 	if (!used_encoding || !strlen(used_encoding) || !strcmp(used_encoding, "ASCII")) {
-		return find_file(fname, subdir_handle, file_path, error_report);
+		return find_file(fpath, subdir_handle, fname, NULL, error_report);
 	}
 
 	char encoded_dir[PATH_MAX];
@@ -849,14 +937,14 @@ int find_encoded_file(const char *fname, int subdir_handle, char *file_path, int
 	if (nb >= PATH_MAX) {
 		error_message(__FUNCTION__, "Dirname too long (max is %d): %s/%s - Using default encoding version of %s",
 		             error_report, PATH_MAX, data_dirs[subdir_handle].path, used_encoding, fname);
-		return find_file(fname, subdir_handle, file_path, error_report);
+		return find_file(fpath, subdir_handle, fname, NULL, error_report);
 	}
-	if (_file_exists(fname, encoded_dir, file_path))
+	if (_file_exists(fpath, encoded_dir, fname, NULL))
 		return TRUE;
 #endif
 
 	// Encoded version not found. Use default encoding version.
-	return find_file(fname, subdir_handle, file_path, error_report);
+	return find_file(fpath, subdir_handle, fname, NULL, error_report);
 }
 
 /**
@@ -1056,31 +1144,29 @@ void update_frames_displayed(void)
 
 /**
  * This function is used to generate an integer in range of all
- * numbers from 0 to UpperBound.
+ * numbers from 0 to upper_bound.
  */
-int MyRandom(int UpperBound)
+int MyRandom(int upper_bound)
 {
-
-	if (!UpperBound)
+	if (upper_bound == 0)
 		return 0;
 
 	float tmp;
-	int PureRandom;
+	int pure_random;
 	int dice_val;		/* the result in [0, UpperBound] */
 
-	PureRandom = rand();
-	tmp = 1.0 * PureRandom / RAND_MAX;	/* random number in [0;1] */
+	pure_random = rand();
+	tmp = 1.0 * pure_random / RAND_MAX;	/* random number in [0;1] */
 
 	/* 
 	 * we always round OFF for the resulting int, therefore
 	 * we first add 0.99999 to make sure that UpperBound has
 	 * roughly the same probablity as the other numbers 
 	 */
-	dice_val = (int)(tmp * (1.0 * UpperBound + 0.99999));
+	dice_val = (int)(tmp * (1.0 * upper_bound + 0.99999));
 
 	return (dice_val);
-
-};				// int MyRandom ( int UpperBound ) 
+}
 
 /**
  * This function teleports the influencer to a new position on the
@@ -1229,27 +1315,26 @@ int level_exists(int level_num)
 }
 
 /*----------------------------------------------------------------------
- * LoadGameConfig(): load saved options from config-file
+ * load_game_config: load saved options from config-file
  *
  * this should be the first of all load/save functions called
  * as here we read the $HOME-dir and create the config-subdir if necessary
  *
  *----------------------------------------------------------------------*/
-int LoadGameConfig(void)
+int load_game_config(void)
 {
-	char fname[5000];
+	char fname[PATH_MAX];
 	FILE *configfile;
 
-	if (!our_config_dir) {
-		DebugPrintf(1, "No useble config-dir. No config-loading possible\n");
-		return (OK);
+	if (!strlen(data_dirs[CONFIG_DIR].path)) {
+		return OK;
 	}
 
-	sprintf(fname, "%s/fdrpg.cfg", our_config_dir);
+	find_file(fname, CONFIG_DIR, "fdrpg.cfg", NULL, SILENT);
 	if ((configfile = fopen(fname, "rb")) == NULL) {
 		fprintf(stderr, "\nUnable to open configuration file %s\n", fname);
 		lang_set(GameConfig.locale, NULL);
-		return (ERR);
+		return ERR;
 	}
 
 	char *stuff = (char *)malloc(FS_filelength(configfile) + 1);
@@ -1270,23 +1355,31 @@ int LoadGameConfig(void)
 		return ERR;
 	}
 
+	// GameConfig.locale is initialized (in ResetGameConfigToDefaultValues())
+	// before the configuration is loaded (so that any error message can be
+	// translated). The memory pointed to by GameConfig.locale will be lost
+	// when loading the configuration. So we have to free it, if needed.
+	char *tmp_ptr = GameConfig.locale;
 	load_freedroid_configuration(stuff);
+	if (tmp_ptr && tmp_ptr != GameConfig.locale)
+		free(tmp_ptr);
 	lang_set(GameConfig.locale, NULL);
 
 	configfile = NULL;
 	free(stuff);
 
 	if (!GameConfig.freedroid_version_string || strcmp(GameConfig.freedroid_version_string, VERSION)) {
-		error_message(__FUNCTION__, "\
-Settings file found in your ~/.freedroid_rpg dir does not\n\
-seem to be from the same version as this installation of FreedroidRPG.\n\
-This is perfectly normal if you have just upgraded your version of\n\
-FreedroidRPG.  However, the loading of your settings will be canceled now,\n\
-because the format of the settings file is no longer supported.\n\
-No need to panic.  The default settings will be used instead and a new\n\
-settings file will be generated.", NO_REPORT);
+		error_message(__FUNCTION__,
+		              "Settings file found in your ~/.freedroid_rpg dir does not\n"
+		              "seem to be from the same version as this installation of FreedroidRPG.\n"
+		              "This is perfectly normal if you have just upgraded your version of\n"
+		              "FreedroidRPG.  However, the loading of your settings will be canceled now,\n"
+		              "because the format of the settings file is no longer supported.\n"
+		              "No need to panic.  The default settings will be used instead and a new\n"
+		              "settings file will be generated.",
+		              NO_REPORT);
 		ResetGameConfigToDefaultValues();
-		return (ERR);
+		return ERR;
 	};
 
 	// Now we will turn off the skills and inventory screen and that, cause
@@ -1298,16 +1391,16 @@ settings file will be generated.", NO_REPORT);
 	GameConfig.skill_explanation_screen_visible = FALSE;
 	GameConfig.Automap_Visible = TRUE;
 
-	return (OK);
+	return OK;
 }
 
 /*----------------------------------------------------------------------
- * SaveGameConfig: do just that
+ * save_game_config: do just that
  * Return: -1 on error, -2 if immediate exit is needed, 0 otherwise
  *----------------------------------------------------------------------*/
-int SaveGameConfig(void)
+int save_game_config(void)
 {
-	char fname[5000];
+	char fname[PATH_MAX];
 	int current_width;
 	int current_height;
 	FILE *config_file;
@@ -1317,8 +1410,7 @@ int SaveGameConfig(void)
 	// Then the config dir is not initialized.  We catch this case and return
 	// control to the operating system immediately if that happens...
 
-	if (our_config_dir == NULL || our_config_dir[0] == '\0') {
-		DebugPrintf(-4, "It seems that the game couldn't start up at all... therefore we need not save any configuration information.\n");
+	if (!strlen(data_dirs[CONFIG_DIR].path)) {
 		return -2;
 	}
 
@@ -1326,7 +1418,7 @@ int SaveGameConfig(void)
 	// That indicates, that the game did start up already.
 	// Therefore we can do the normal save config stuff...
 
-	sprintf(fname, "%s/fdrpg.cfg", our_config_dir);
+	find_file(fname, CONFIG_DIR, "fdrpg.cfg", NULL, SILENT);
 	if ((config_file = fopen(fname, "wb")) == NULL) {
 		DebugPrintf(-4, "Unable to open configuration file %s for writing\n", fname);
 		return -1;
@@ -1336,7 +1428,7 @@ int SaveGameConfig(void)
 	// version number string.  This will be useful so that later
 	// versions of FreedroidRPG can identify old config files and decide
 	// not to use them in some cases.
-	//
+
 	if (GameConfig.freedroid_version_string) {
 		free(GameConfig.freedroid_version_string);
 	}
@@ -1345,13 +1437,14 @@ int SaveGameConfig(void)
 	// We preserve the current resolution, modify it a bit, such that
 	// the preselected resolution will come to effect next time, save
 	// it and then we restore the current settings again.
-	//
+
 	current_width = GameConfig.screen_width;
 	current_height = GameConfig.screen_height;
 	GameConfig.screen_width = GameConfig.next_time_width_of_screen;
 	GameConfig.screen_height = GameConfig.next_time_height_of_screen;
 
 	// Now write the actual data
+
 	savestruct_autostr = alloc_autostr(4096);
 	save_freedroid_configuration(savestruct_autostr);
 	if (fwrite(savestruct_autostr->value, savestruct_autostr->length, 1, config_file) != 1) {
@@ -1377,6 +1470,7 @@ static void free_memory_before_exit(void)
 	clear_enemies();
 	clear_npcs();
 	free_tux();
+	free_graphics();
 
 	// free the widgets
 	free_game_ui();
@@ -1393,6 +1487,7 @@ static void free_memory_before_exit(void)
 	free_current_ship();
 	leveleditor_cleanup();
 	free_error_msg_store();
+	gameconfig_clean();
 }
 
 /**
@@ -1409,7 +1504,7 @@ void Terminate(int exit_code)
 	// Save the config file only in case of success.
 
 	if (exit_code == EXIT_SUCCESS) {
-		if (SaveGameConfig() == -2) {
+		if (save_game_config() == -2) {
 			exit_code = -1;
 			goto IMMEDIATE_EXIT;
 		}
@@ -1438,13 +1533,15 @@ IMMEDIATE_EXIT:
 	if (!run_from_term) {
 		if (exit_code == EXIT_FAILURE) {
 			int rtn;
+			char outfn[PATH_MAX];
 			fflush(stdout);
 			fflush(stderr);
-			char *cmd = MyMalloc(strlen(our_config_dir) + strlen(OPENTXT_CMD) + 20);
-			sprintf(cmd, "%s %s/fdrpg_out.txt", OPENTXT_CMD, our_config_dir);
+			find_file(outfn, CONFIG_DIR, "fdrpg_out.txt", NULL, NO_REPORT);
+			char *cmd = MyMalloc(strlen(OPENTXT_CMD) + strlen(outfn) + 2); // +1 for the whitespace after the cmd name +1 for the terminating \0
+			sprintf(cmd, "%s %s", OPENTXT_CMD, outfn);
 			rtn = system(cmd);
 			if (rtn == -1) // We use the return value mainly to avoid a compilation warning
-				DebugPrintf(-1, "system call failed: \"%s\" returned %d", cmd, rtn);
+				fprintf(stderr, "system call failed: \"%s\" returned %d", cmd, rtn);
 			free(cmd);
 		}
 	}

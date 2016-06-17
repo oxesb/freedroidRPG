@@ -231,6 +231,7 @@ void error_message(const char *fn, const char *fmt, int error_type, ...)
 		fprintf(stderr, "\nFreedroidRPG will terminate now to draw attention to the problems it could\n"
 		                "not resolve. We are sorry if that interrupts a major game of yours.\n"
 		                "---------------------------------------------------------------------------------\n");
+		print_trace(0);
 	} else {
 		fprintf(stderr, "---------------------------------------------------------------------------------\n");
 	}
@@ -434,10 +435,14 @@ char *ReadAndMallocStringFromDataOptional(char *SearchString, const char *StartI
 		return 0;
 
 	// Now we allocate memory and copy the string (even empty string)...
-	StringLength = EndOfStringPointer - SearchPointer;
-	ReturnString = MyMalloc(StringLength + 1);
+	// Note: in order to have clang-analyzer correctly analyze this code,
+	// the MyMalloc argument has to be the same than the length used
+	// in strncpy. Using MyMalloc(xxx + 1), as it was done before,
+	// generates a false clang-analyzer report.
+	StringLength = EndOfStringPointer - SearchPointer + 1;
+	ReturnString = MyMalloc(StringLength);
 	strncpy(ReturnString, SearchPointer, StringLength);
-	ReturnString[StringLength] = 0;
+	ReturnString[StringLength - 1] = 0;
 
 	return ReturnString;
 }

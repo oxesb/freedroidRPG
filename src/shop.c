@@ -167,7 +167,7 @@ void ShowRescaledItem(int position, int TuxItemRow, item * ShowItem)
 	static struct image equipped_icon;
 
 	if (!image_loaded(&equipped_icon)) {
-		load_image(&equipped_icon, "cursors/mouse_cursor_0003.png", NO_MOD);
+		load_image(&equipped_icon, GUI_DIR, "cursors/mouse_cursor_0003.png", NO_MOD);
 	}
 
 	TuxItemRowRect.x = 55 * GameConfig.screen_width / 640;
@@ -239,8 +239,8 @@ void ShowItemPicture(int PosX, int PosY, int Number)
 			sprintf(ConstructedFileName, "items/%s/portrait_%04d.jpg", ItemMap[Number].item_rotation_series_prefix, i + 1);
 
 			// Look for the next file
-			if (find_file(ConstructedFileName, GRAPHICS_DIR, fpath, SILENT)) {
-				load_image(&item_rotation_img[i], ConstructedFileName, NO_MOD);
+			if (find_file(fpath, GRAPHICS_DIR, ConstructedFileName, NULL, SILENT)) {
+				load_image(&item_rotation_img[i], GRAPHICS_DIR, ConstructedFileName, NO_MOD);
 			} else {
 				NumberOfImagesInThisRotation = i;
 

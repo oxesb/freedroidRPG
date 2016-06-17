@@ -59,7 +59,7 @@ void blit_mouse_cursor(void)
 	if (!loaded) {
 		for (i = 0; i < 10; i++) {
 			sprintf(constructed_filename, "cursors/mouse_cursor_%04d.png", i);
-			load_image(&mouse_cursors[i], constructed_filename, NO_MOD);
+			load_image(&mouse_cursors[i], GUI_DIR, constructed_filename, NO_MOD);
 		}
 		loaded = TRUE;
 	}
@@ -208,7 +208,7 @@ int do_graphical_number_selection_in_range(int lower_range, int upper_range, int
 	StoreMenuBackground(1);
 
 	if (!image_loaded(&selection_knob)) {
-		load_image(&selection_knob, "mouse_buttons/number_selector_selection_knob.png", NO_MOD);
+		load_image(&selection_knob, GUI_DIR, "mouse_buttons/number_selector_selection_knob.png", NO_MOD);
 	}
 
 	knob_target_rect.w = selection_knob.w;
@@ -839,7 +839,7 @@ void InitVideo(void)
 		sprintf(window_title_string, "FreedroidRPG %s", VERSION);
 		SDL_WM_SetCaption(window_title_string, "");
 
-		if (find_file(ICON_FILE, GRAPHICS_DIR, fpath, PLEASE_INFORM)) {
+		if (find_file(fpath, GUI_DIR, ICON_FILE, NULL, PLEASE_INFORM)) {
 			SDL_Surface *icon = IMG_Load(fpath);
 			SDL_WM_SetIcon(icon, NULL);
 			SDL_FreeSurface(icon);
@@ -1132,17 +1132,22 @@ void save_screenshot(const char *filename, int width)
 	SDL_FreeSurface(screenshot);
 }
 
-void reload_graphics(void)
+void free_graphics(void)
 {
 	free_floor_tiles();
-	load_floor_tiles();
 	free_obstacle_graphics();
-	load_all_obstacles(FALSE);
 	// Free all items graphics. Graphics will be loaded when needed.
 	free_item_graphics();
 	// Free all enemies graphics. Graphics for an enemy will be loaded
 	// when the enemy is encountered.
 	free_enemy_graphics();
+}
+
+void reload_graphics(void)
+{
+	free_graphics();
+	load_floor_tiles();
+	load_all_obstacles(FALSE);
 	reload_tux_graphics();
 }
 

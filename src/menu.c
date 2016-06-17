@@ -228,8 +228,8 @@ int DoMenuSelection(char *InitialText, char **MenuTexts, int FirstItem, const ch
 		    strcmp(MenuTexts[MenuPosition - 1 + VertScrollOffset], " ")) {
 			// We load the thumbnail, or at least we try to do it...
 			//
-			LoadAndShowThumbnail(MenuTexts[MenuPosition - 1 + VertScrollOffset]);
-			LoadAndShowStats(MenuTexts[MenuPosition - 1 + VertScrollOffset]);
+			load_and_show_thumbnail(MenuTexts[MenuPosition - 1 + VertScrollOffset]);
+			load_and_show_stats(MenuTexts[MenuPosition - 1 + VertScrollOffset]);
 		}
 		// Draw the menu's  background
 		//
@@ -813,7 +813,7 @@ static int Startup_handle(int n)
 		game_root_mode = ROOT_IS_GAME;
 		skip_initial_menus = 1;
 		char fpp[PATH_MAX];
-		find_file("levels.dat", MAP_DIR, fpp, PLEASE_INFORM | IS_FATAL);
+		find_file(fpp, MAP_DIR, "levels.dat", NULL, PLEASE_INFORM | IS_FATAL);
 		LoadShip(fpp, 0);
 		PrepareStartOfNewCharacter("TutorialTuxStart");
 		skip_initial_menus = 0;
@@ -824,10 +824,10 @@ static int Startup_handle(int n)
 	case OPTIONS_POSITION:
 		return MENU_OPTIONS;
 	case CREDITS_POSITION:
-		PlayATitleFile("Credits.lua");
+		play_title_file(BASE_TITLES_DIR, "Credits.lua");
 		break;
 	case CONTRIBUTE_POSITION:
-		PlayATitleFile("Contribute.lua");
+		play_title_file(BASE_TITLES_DIR, "Contribute.lua");
 		break;
 	case (-1):
 	case EXIT_FREEDROID_POSITION:
@@ -974,7 +974,7 @@ static int Escape_handle(int n)
 		GameOver = TRUE;
 		return EXIT_MENU;
 	case SAVE_GAME_POSITION:
-		SaveGame();
+		save_game();
 		break;
 	case QUIT_POSITION:
 		DebugPrintf(2, "\nvoid EscapeMenu( void ): Quit requested by user.  Terminating...");
@@ -1687,7 +1687,7 @@ static int do_savegame_selection_and_act(int action)
 		int FinalDecision = DoMenuSelection(SafetyText, MenuTexts, 1, "title.jpg", NULL);
 
 		if (FinalDecision == 1)
-			DeleteGame();
+			delete_game();
 		rtn = TRUE;
 		break;
 	}
@@ -1727,7 +1727,6 @@ int Single_Player_Menu(void)
 	int can_continue = FALSE;
 	int MenuPosition = 1;
 	char *MenuTexts[MAX_MENU_ITEMS];
-	char *char_name = NULL;
 
 	enum {
 		NEW_HERO_POSITION = 1,
@@ -1752,22 +1751,22 @@ int Single_Player_Menu(void)
 		switch (MenuPosition) {
 		case NEW_HERO_POSITION:
 			while (EnterPressed() || SpacePressed()) ;
-			char_name = get_new_character_name();
+			char *char_name = get_new_character_name();
 			if (char_name && strlen(char_name)) {
 				char fp[PATH_MAX];
-				find_file("levels.dat", MAP_DIR, fp, PLEASE_INFORM | IS_FATAL);
+				find_file(fp, MAP_DIR, "levels.dat", NULL, PLEASE_INFORM | IS_FATAL);
 				LoadShip(fp, 0);
 				PrepareStartOfNewCharacter("NewTuxStartGameSquare");
 				free(Me.character_name);
 				Me.character_name = strdup(char_name);
 				can_continue = TRUE;
-				free(char_name);
 			}
+			if (char_name)
+				free(char_name);
 			break;
 
 		case LOAD_EXISTING_HERO_POSITION:
 			while (EnterPressed() || SpacePressed()) ;
-
 			if (Load_Existing_Hero_Menu() == TRUE)
 				can_continue = TRUE;
 			break;
@@ -1786,7 +1785,7 @@ int Single_Player_Menu(void)
 			break;
 		}
 	}
-	return (TRUE);
+	return TRUE;
 }
 
 #undef _menu_c

@@ -55,7 +55,7 @@
 #include <iconv.h>
 #endif
 
-void Init_Game_Data(void);
+void init_game_data(void);
 void UpdateCountersForThisFrame();
 void DoAllMovementAndAnimations(void);
 
@@ -181,14 +181,14 @@ void next_startup_percentage(int done)
  *  3. some text to display in a scrolling fashion
  *
  */
-void PlayATitleFile(char *Filename)
+void play_title_file(int subdir_handle, char *filename)
 {
 	struct title_screen screen = { NULL, NULL, NULL };
 	char fpath[PATH_MAX];
 
 	while (SpacePressed() || MouseLeftPressed()) ;
 
-	if (find_localized_file(Filename, TITLES_DIR, fpath, PLEASE_INFORM)) {
+	if (find_localized_file(fpath, subdir_handle, filename, PLEASE_INFORM)) {
 		set_lua_ctor_upvalue(LUA_CONFIG, "title_screen", &screen);
 		run_lua_file(LUA_CONFIG, fpath);
 
@@ -225,11 +225,11 @@ void PlayATitleFile(char *Filename)
 					error_once_message(ONCE_PER_GAME, __FUNCTION__,
 				                       "Error during Title text conversion (title: %s - encoding: %s): %s\n"
 					                   "Invalid sequence:\n--->%.20s...<---",
-									   PLEASE_INFORM, Filename, lang_get_encoding(), strerror(errno), in_ptr);
+									   PLEASE_INFORM, filename, lang_get_encoding(), strerror(errno), in_ptr);
 				} else {
 					error_once_message(ONCE_PER_GAME, __FUNCTION__,
 				                       "Error during Title text conversion (title: %s - encoding: %s): %s",
-									   NO_REPORT, Filename, lang_get_encoding(), strerror(errno));
+									   NO_REPORT, filename, lang_get_encoding(), strerror(errno));
 				}
 				free(converted_text);
 			} else {
@@ -262,199 +262,6 @@ void PlayATitleFile(char *Filename)
 }
 
 /**
- * This function loads all the constant concerning robot archetypes
- * from a section in memory to the actual archetype structures.
- */
-static void Get_Robot_Data(void *DataPointer)
-{
-	int RobotIndex = 0;
-	char *RobotPointer;
-	char *EndOfDataPointer;
-	int i;
-
-#define ROBOT_SECTION_BEGIN_STRING "*** Start of Robot Data Section: ***"
-#define ROBOT_SECTION_END_STRING "*** End of Robot Data Section: ***"
-#define NEW_ROBOT_BEGIN_STRING "** Start of new Robot: **"
-#define DROIDNAME_BEGIN_STRING "Droidname: "
-#define PORTRAIT_FILENAME_WITHOUT_EXT "Droid portrait file name (without extension) to use=\""
-
-#define DROID_PORTRAIT_ROTATION_SERIES_NAME_PREFIX "Droid uses portrait rotation series with prefix=\""
-
-#define MAXSPEED_BEGIN_STRING "Maximum speed of this droid: "
-#define CLASS_BEGIN_STRING "Class of this droid: "
-#define MAXENERGY_BEGIN_STRING "Maximum energy of this droid: "
-#define BASE_HEALING_BEGIN_STRING "Rate of healing: "
-#define SENSOR_ID_BEGIN_STRING "Sensor ID=\""
-#define EXPERIENCE_REWARD_BEGIN_STRING "Experience_Reward gained for destroying one of this type: "
-#define WEAPON_ITEM_BEGIN_STRING "Weapon item=\""
-#define GREETING_SOUND_STRING "Greeting Sound number="
-#define DROID_DEATH_SOUND_FILE_NAME "Death sound file name=\""
-#define DROID_ATTACK_ANIMATION_SOUND_FILE_NAME "Attack animation sound file name=\""
-#define TO_HIT_STRING "Chance of this robot scoring a hit="
-#define GETTING_HIT_MODIFIER_STRING "Chance modifier, that this robot gets hit="
-#define IS_HUMAN_SPECIFICATION_STRING "Is this 'droid' a human : "
-#define INDIVIDUAL_SHAPE_SPECIFICATION_STRING "Individual shape of this droid or just -1 for classic ball shaped : "
-#define NOTES_BEGIN_STRING "Notes concerning this droid=_\""
-
-	RobotPointer = LocateStringInData(DataPointer, ROBOT_SECTION_BEGIN_STRING);
-	EndOfDataPointer = LocateStringInData(DataPointer, ROBOT_SECTION_END_STRING);
-
-	DebugPrintf(1, "\n\nStarting to read Robot data...\n\n");
-	// At first, we must allocate memory for the droid specifications.
-	// How much?  That depends on the number of droids defined in freedroid.ruleset.
-	// So we have to count those first.  ok.  lets do it.
-
-	Number_Of_Droid_Types = CountStringOccurences(DataPointer, NEW_ROBOT_BEGIN_STRING);
-	if (NB_DROID_TYPES < Number_Of_Droid_Types + 2) {
-		error_message(__FUNCTION__, "\
-The value of %d for \"NB_DROID_TYPES\" defined in struct.h is less than %d\n\
-which is \"Number_of_Droid_Types\" + 2. Please increase the value of \"NB_DROID_TYPES\"!",
-			PLEASE_INFORM | IS_FATAL, NB_DROID_TYPES, Number_Of_Droid_Types + 2);
-	}
-
-	// Not that we know how many robots are defined in freedroid.ruleset, we can allocate
-	// a fitting amount of memory.
-	i = sizeof(droidspec);
-	Droidmap = MyMalloc(i * (Number_Of_Droid_Types + 1) + 1);
-	DebugPrintf(1, "\nWe have counted %d different droid types in the game data file.", Number_Of_Droid_Types);
-	DebugPrintf(2, "\nMEMORY HAS BEEN ALLOCATED.\nTHE READING CAN BEGIN.\n");
-
-	//Now we start to read the values for each robot:
-	//Of which parts is it composed, which stats does it have?
-	while ((RobotPointer = strstr(RobotPointer, NEW_ROBOT_BEGIN_STRING)) != NULL) {
-		DebugPrintf(2, "\n\nFound another Robot specification entry!  Lets add that to the others!");
-		RobotPointer++;	// to avoid doubly taking this entry
-		char *EndOfThisRobot = strstr(RobotPointer, NEW_ROBOT_BEGIN_STRING);
-		if (EndOfThisRobot)
-			EndOfThisRobot[0] = 0;
-
-		// Now we read in the Name of this droid.  We consider as a name the rest of the
-		// line with the DROIDNAME_BEGIN_STRING until the "\n" is found.
-		Droidmap[RobotIndex].droidname = ReadAndMallocStringFromData(RobotPointer, DROIDNAME_BEGIN_STRING, "\n");
-
-		// Now we read in the default short_description_text for this droid.
-		Droidmap[RobotIndex].default_short_description = ReadAndMallocStringFromDataOptional(RobotPointer, "Default description:_\"", "\"");
-		if (!Droidmap[RobotIndex].default_short_description)
-			Droidmap[RobotIndex].default_short_description = strdup("");
-
-		// Now we read in the prefix of the file names in the rotation series
-		// to use for the console droid rotation
-		Droidmap[RobotIndex].droid_portrait_rotation_series_prefix =
-		    ReadAndMallocStringFromData(RobotPointer, DROID_PORTRAIT_ROTATION_SERIES_NAME_PREFIX, "\"");
-
-		// Now we read in the file name of the death sound for this droid.  
-		// Is should be enclosed in double-quotes.
-		//
-		Droidmap[RobotIndex].droid_death_sound_file_name =
-		    ReadAndMallocStringFromData(RobotPointer, DROID_DEATH_SOUND_FILE_NAME, "\"");
-
-		// Now we read in the file name of the attack animation sound for this droid.  
-		// Is should be enclosed in double-quotes.
-		//
-		Droidmap[RobotIndex].droid_attack_animation_sound_file_name =
-		    ReadAndMallocStringFromData(RobotPointer, DROID_ATTACK_ANIMATION_SOUND_FILE_NAME, "\"");
-
-		// Now we read in the maximal speed this droid can go. 
-		ReadValueFromString(RobotPointer, MAXSPEED_BEGIN_STRING, "%f", &Droidmap[RobotIndex].maxspeed, EndOfDataPointer);
-
-		// Now we read in the class of this droid.
-		ReadValueFromString(RobotPointer, CLASS_BEGIN_STRING, "%d", &Droidmap[RobotIndex].class, EndOfDataPointer);
-
-		// Now we read in the maximal energy this droid can store. 
-		ReadValueFromString(RobotPointer, MAXENERGY_BEGIN_STRING, "%f", &Droidmap[RobotIndex].maxenergy, EndOfDataPointer);
-
-		// Now we read in the lose_health rate.
-		ReadValueFromString(RobotPointer, BASE_HEALING_BEGIN_STRING, "%f", &Droidmap[RobotIndex].healing_friendly, EndOfDataPointer);
-		Droidmap[RobotIndex].healing_hostile = Droidmap[RobotIndex].healing_friendly;
-
-		// Now we read what sensor this robot use.
-		char *tmp_sensor_ID = ReadAndMallocStringFromDataOptional(RobotPointer, SENSOR_ID_BEGIN_STRING, "\"");
-		if (!tmp_sensor_ID)
-			tmp_sensor_ID = strdup("spectral"); // Default value if no sensor defined.
-		Droidmap[RobotIndex].sensor_id = get_sensor_id_by_name(tmp_sensor_ID);
-		free(tmp_sensor_ID);
-
-		// Now we read in range of vision of this droid
-		ReadValueFromString(RobotPointer, "Aggression distance of this droid=", "%f",
-				    &Droidmap[RobotIndex].aggression_distance, EndOfDataPointer);
-
-		// Now we read in range of vision of this droid
-		ReadValueFromString(RobotPointer, "Time spent eyeing Tux=", "%f",
-				    &Droidmap[RobotIndex].time_spent_eyeing_tux, EndOfDataPointer);
-
-		// Now we experience_reward to be had for destroying one droid of this type
-		ReadValueFromString(RobotPointer, EXPERIENCE_REWARD_BEGIN_STRING, "%hd",
-				    &Droidmap[RobotIndex].experience_reward, EndOfDataPointer);
-
-		// Now we read in the monster level = maximum treasure chest to pick from
-		ReadValueFromStringWithDefault(RobotPointer, "Drops item class=", "%hd", "-1", 
-					       &Droidmap[RobotIndex].drop_class, EndOfDataPointer);
-
-		char *tmp_item_id = ReadAndMallocStringFromData(RobotPointer, WEAPON_ITEM_BEGIN_STRING, "\"");
-		Droidmap[RobotIndex].weapon_item.type = get_item_type_by_id(tmp_item_id);
-		free(tmp_item_id);
-		ReadValueFromStringWithDefault(RobotPointer, "Gun muzzle height=", "%d", "30", &Droidmap[RobotIndex].gun_muzzle_height, EndOfDataPointer);
-
-		// Now we read in the % chance for droid to drop botpart
-		ReadValueFromStringWithDefault(RobotPointer, "Percent to drop Entropy Inverter=", "%hd", "0",
-					       &Droidmap[RobotIndex].amount_of_entropy_inverters, EndOfDataPointer);
-		ReadValueFromStringWithDefault(RobotPointer, "Percent to drop Plasma Transistor=", "%hd", "0",
-					       &Droidmap[RobotIndex].amount_of_plasma_transistors, EndOfDataPointer);
-		ReadValueFromStringWithDefault(RobotPointer, "Percent to drop Superconducting Relay Unit=", "%hd", "0",
-					       &Droidmap[RobotIndex].amount_of_superconductors, EndOfDataPointer);
-		ReadValueFromStringWithDefault(RobotPointer, "Percent to drop Antimatter-Matter Converter=", "%hd", "0",
-					       &Droidmap[RobotIndex].amount_of_antimatter_converters, EndOfDataPointer);
-		ReadValueFromStringWithDefault(RobotPointer, "Percent to drop Tachyon Condensator=", "%hd", "0",
-					       &Droidmap[RobotIndex].amount_of_tachyon_condensators, EndOfDataPointer);
-
-		// Now we read in the greeting sound type of this droid type
-		ReadValueFromString(RobotPointer, GREETING_SOUND_STRING, "%hd",
-				    &Droidmap[RobotIndex].greeting_sound_type, EndOfDataPointer);
-
-		// Now we read in the to-hit chance this robot has in combat against an unarmored target
-		ReadValueFromString(RobotPointer, TO_HIT_STRING, "%hd", &Droidmap[RobotIndex].to_hit, EndOfDataPointer);
-
-		// Now we read in the modifier, that increases/decreases the chance of this robot getting hit
-		ReadValueFromString(RobotPointer, "Time to recover after getting hit=", "%f",
-				    &Droidmap[RobotIndex].recover_time_after_getting_hit, EndOfDataPointer);
-
-		// Now we read in the is_human flag of this droid type
-		ReadValueFromString(RobotPointer, IS_HUMAN_SPECIFICATION_STRING, "%hd", &Droidmap[RobotIndex].is_human, EndOfDataPointer);
-
-		// Now we read in the Graphics to associate with this droid type
-		char *enemy_surface = ReadAndMallocStringFromData(RobotPointer, "Filename prefix for graphics=\"", "\"");
-		Droidmap[RobotIndex].individual_shape_nr = 0;
-		for (i=0; i < ENEMY_ROTATION_MODELS_AVAILABLE; i++) {
-			if (PrefixToFilename[i] && !strcmp(enemy_surface, PrefixToFilename[i])){
-				Droidmap[RobotIndex].individual_shape_nr = i;
-				break;
-			}
-		}
-		free(enemy_surface);
-
-		// Now we read in the notes about this droid type
-		Droidmap[RobotIndex].notes = ReadAndMallocStringFromData(RobotPointer, NOTES_BEGIN_STRING, "\"");
-
-		// Now we're potentially ready to process the next droid.  Therefore we proceed to
-		// the next number in the Droidmap array.
-		RobotIndex++;
-		if (EndOfThisRobot)
-			EndOfThisRobot[0] = '*';	// We put back the star at its place
-	}
-
-	struct difficulty *diff = dynarray_member(&difficulties, GameConfig.difficulty_level, sizeof(struct difficulty));
-
-	for (i = 0; i < Number_Of_Droid_Types; i++) {
-		Droidmap[i].maxspeed *= diff->droid_max_speed;
-		Droidmap[i].maxenergy *= diff->droid_hpmax;
-		Droidmap[i].experience_reward *= diff->droid_experience_reward;
-		Droidmap[i].aggression_distance *= diff->droid_aggression_distance;
-		Droidmap[i].healing_friendly *= diff->droid_friendly_healing;
-		Droidmap[i].healing_hostile *= diff->droid_hostile_healing;
-	}
-};				// int Get_Robot_Data ( void )
-
-/**
  * Load the configuration of the fdrpg "engine", that is the game independent data
  */
 static void load_fdrpg_config()
@@ -464,7 +271,7 @@ static void load_fdrpg_config()
 	// Load the languages specs
 	dynarray_free(&lang_specs);
 	dynarray_free(&lang_codesets);
-	if (find_file("languages.lua", MAP_DIR, fpath, PLEASE_INFORM)) {
+	if (find_file(fpath, BASE_DIR, "languages.lua", NULL, PLEASE_INFORM)) {
 		run_lua_file(LUA_CONFIG, fpath);
 	}
 }
@@ -473,57 +280,50 @@ static void load_fdrpg_config()
  * This function loads all the constant variables of the game from
  * a data file, using mainly subroutines which do the main work.
  */
-void Init_Game_Data()
+void init_game_data()
 {
 	char fpath[PATH_MAX];
-	char *Data;
 
 	// Load difficulties.
-	find_file("difficulties.lua", MAP_DIR, fpath, PLEASE_INFORM | IS_FATAL);
+	find_file(fpath, BASE_DIR, "difficulties.lua", NULL, PLEASE_INFORM | IS_FATAL);
 	run_lua_file(LUA_CONFIG, fpath);
 
 	// Load skills and programs (spells) information
-	find_file("skill_specs.lua", MAP_DIR, fpath, PLEASE_INFORM | IS_FATAL);
+	find_file(fpath, BASE_DIR, "skill_specs.lua", NULL, PLEASE_INFORM | IS_FATAL);
 	run_lua_file(LUA_CONFIG, fpath);
 
 	// Load the blast data (required for the bullets to load)
-	find_file("blast_specs.lua", MAP_DIR, fpath, PLEASE_INFORM | IS_FATAL);
+	find_file(fpath, BASE_DIR, "blast_specs.lua", NULL, PLEASE_INFORM | IS_FATAL);
 	run_lua_file(LUA_CONFIG, fpath);
 
 	// Load the bullet data (required for the item archetypes to load)
 	//
 	dynarray_free(&bullet_specs);
-	find_file("bullet_specs.lua", MAP_DIR, fpath, PLEASE_INFORM | IS_FATAL);
+	find_file(fpath, BASE_DIR, "bullet_specs.lua", NULL, PLEASE_INFORM | IS_FATAL);
 	run_lua_file(LUA_CONFIG, fpath);
 
 	// Load Tux animation and rendering specifications.
 	tux_rendering_load_specs("tuxrender_specs.lua");
 
-	// Load Bot animation definitions and animations
-	// must be before Get_Robot_Data()
-	Load_Enemy_Surfaces();
-
 	// Item archetypes must be loaded too
-	find_file("item_specs.lua", MAP_DIR, fpath, PLEASE_INFORM | IS_FATAL);
+	find_file(fpath, BASE_DIR, "item_specs.lua", NULL, PLEASE_INFORM | IS_FATAL);
 	run_lua_file(LUA_CONFIG, fpath);
 
 	// Load add-on specifications.
-	find_file("addon_specs.lua", MAP_DIR, fpath, PLEASE_INFORM | IS_FATAL);
+	find_file(fpath, BASE_DIR, "addon_specs.lua", NULL, PLEASE_INFORM | IS_FATAL);
 	run_lua_file(LUA_CONFIG, fpath);
 
 	// Time to eat some droid archetypes...
-	find_file("droid_archetypes.dat", MAP_DIR, fpath, PLEASE_INFORM | IS_FATAL);
-	Data = ReadAndMallocAndTerminateFile(fpath, "*** End of this Freedroid data File ***");
-	Get_Robot_Data(Data);
-	free(Data);
+	find_file(fpath, BASE_DIR, "droid_specs.lua", NULL, PLEASE_INFORM | IS_FATAL);
+	run_lua_file(LUA_CONFIG, fpath);
 
 	// Load obstacle specifications.
 	dynarray_init(&obstacle_map, 512, sizeof(struct obstacle_spec));
-	find_file("obstacle_specs.lua", MAP_DIR, fpath, PLEASE_INFORM | IS_FATAL);
+	find_file(fpath, BASE_DIR, "obstacle_specs.lua", NULL, PLEASE_INFORM | IS_FATAL);
 	run_lua_file(LUA_CONFIG, fpath);
 
 	// Load floor tile specifications.
-	find_file("floor_tiles.lua", MAP_DIR, fpath, PLEASE_INFORM | IS_FATAL);
+	find_file(fpath, BASE_DIR, "floor_tiles.lua", NULL, PLEASE_INFORM | IS_FATAL);
 	run_lua_file(LUA_CONFIG, fpath);
 	dirty_animated_floor_tile_list();
 
@@ -547,6 +347,7 @@ char usage_string[] = ""
 "                    [-r Y | --resolution=Y]  Y = 99 lists hardcoded resolutions.\n"
 "                                             Y may also be of the form 'WxH' e.g. '800x600'\n"
 "                    [-d X | --debug=X]       X = 0-5; default 1\n"
+"                    [-b Z | --benchmark=Z]   Z = text | dialog | loadship | loadgame | savegame | dynarray | mapgen | leveltest\n"
 "\n"
 "Please report bugs either by entering them into the bug tracker on our website at:\n\n"
 "http://bugs.freedroid.org\n\n"
@@ -748,7 +549,7 @@ void PrepareStartOfNewCharacter(char *start_label)
 	GetEventTriggers("events.dat");
 
 	if (!skip_initial_menus)
-		PlayATitleFile("StartOfGame.lua");
+		play_title_file(MAP_TITLES_DIR, "StartOfGame.lua");
 
 	init_npcs();
 	init_factions();
@@ -795,7 +596,7 @@ void prepare_level_editor()
 	game_status = INSIDE_LVLEDITOR;
 	skip_initial_menus = 1;
 	char fp[PATH_MAX];
-	find_file("levels.dat", MAP_DIR, fp, PLEASE_INFORM | IS_FATAL);
+	find_file(fp, MAP_DIR, "levels.dat", NULL, PLEASE_INFORM | IS_FATAL);
 	LoadShip(fp, 0);
 	PrepareStartOfNewCharacter("NewTuxStartGameSquare");
 	skip_initial_menus = 0;
@@ -857,6 +658,16 @@ void ResetGameConfigToDefaultValues(void)
 		free(GameConfig.locale);
 	}
 	GameConfig.locale = my_strdup("");
+}
+
+/**
+ * Release all allocated memory stored in GameConfig
+ */
+void gameconfig_clean()
+{
+	if (GameConfig.locale) {
+		free(GameConfig.locale);
+	}
 }
 
 /** 
@@ -933,8 +744,16 @@ static void detect_available_resolutions(void)
 
 void prepare_execution(int argc, char *argv[])
 {
+	// Note: If not run from term, we have no way to inform the user
+	// at that point in case of error (the graphic subsystem is not
+	// yet initialized).
+	// So, the user will not catch the error output, and the game
+	// will apparently abort silently...
+	// TODO: Use SDL2 SDL_ShowSimpleMessageBox()
+
 #if defined HAVE_UNISTD_H && defined HAVE_DIRNAME
-	// change working directory to the executable's directory
+	// Change working directory to the executable's directory,
+	// all data dirs being searched relatively to that directory.
 	if (chdir(dirname(argv[0])))
 		fprintf(stderr, "Couldn't change working directory to %s.\n", dirname(argv[0]));
 #endif
@@ -943,6 +762,7 @@ void prepare_execution(int argc, char *argv[])
 	// Real code to get such a capability has to use setupterm() and
 	// tigetnum() from the ncurses lib.
 	// In order to avoid a dependency to ncurses, we use here a simple trick.
+
 	run_from_term = FALSE;
 	term_has_color_cap = FALSE;
 #ifndef __WIN32__
@@ -953,43 +773,53 @@ void prepare_execution(int argc, char *argv[])
 
 	// Get the homedir, and define the directory where the config file and
 	// the savegames will be stored
+
+	data_dirs[CONFIG_DIR].path[0] = '\0';
+
 #if __WIN32__
 
-	our_homedir = ".";
 	// There is no real homedir on Windows.
 	// So we use the user's "My Documents" as a home directory.
 	char mydocuments_path[MAX_PATH];
 	if (SHGetSpecialFolderPath(0, mydocuments_path, CSIDL_PERSONAL, FALSE)) {
-		our_homedir = strdup(mydocuments_path);
+		sprintf(data_dirs[CONFIG_DIR].path, "%s/FreedroidRPG", mydocuments_path);
+	} else {
+		sprintf(data_dirs[CONFIG_DIR].path, "./FreedroidRPG");
 	}
-	our_config_dir = MyMalloc(strlen(our_homedir) + 20);
-	sprintf(our_config_dir, "%s/FreedroidRPG", our_homedir);
 
 #else
 
-	// first we need the user's homedir for loading/saving stuff
+	char *our_homedir = NULL;
+
 	if ((our_homedir = getenv("HOME")) == NULL) {
 		our_homedir = ".";
 	}
-	our_config_dir = MyMalloc(strlen(our_homedir) + 20);
-	sprintf(our_config_dir, "%s/.freedroid_rpg", our_homedir);
+	sprintf(data_dirs[CONFIG_DIR].path, "%s/.freedroid_rpg", our_homedir);
 
 #endif
 
-	struct stat statbuf;
+	int check_dir = check_directory("", CONFIG_DIR, TRUE, SILENT);
 
-#if __WIN32__
-	if (stat(our_config_dir, &statbuf) == -1) {
-		_mkdir(our_config_dir);
+	// If config dir is not writable, we have a problem !
+
+	if (check_dir == 1) {
+		fprintf(stderr, "config subdir %s is not writable.\n", data_dirs[CONFIG_DIR].path);
+		exit(EXIT_FAILURE);
 	}
-#else
-	if (stat(our_config_dir, &statbuf) == -1) {
-		if (mkdir(our_config_dir, S_IREAD | S_IWRITE | S_IEXEC) == -1) {
-			free(our_config_dir);
-			our_config_dir = NULL;
+
+	// If config dir does not exist, create it
+
+	if (check_dir == 2) {
+#		if __WIN32__
+		int mkdir_result = _mkdir(data_dirs[CONFIG_DIR].path);
+#		else
+		int mkdir_result = mkdir(data_dirs[CONFIG_DIR].path, S_IREAD | S_IWRITE | S_IEXEC);
+#		endif
+		if (mkdir_result == -1) {
+			fprintf(stderr, "Was not able to create %s to store the configuration and the savegames.\n", data_dirs[CONFIG_DIR].path);
+			exit(EXIT_FAILURE);
 		}
 	}
-#endif
 
 	// If not run from a terminal, stdout and stderr are redirect to a text file
 	// written in the config dir (fdrpg_out.txt).
@@ -998,29 +828,33 @@ void prepare_execution(int argc, char *argv[])
 	// in the directory of the current process. They will be removed when the process
 	// ends, because they are empty.
 	if (!run_from_term) {
-		char *filename = MyMalloc(strlen(our_config_dir) + 15);
-		sprintf(filename, "%s/fdrpg_out.txt", our_config_dir);
+		char filename[PATH_MAX];
+		find_file(filename, CONFIG_DIR, "fdrpg_out.txt", NULL, NO_REPORT);
 		if (!freopen(filename, "w", stdout)) {
-			DebugPrintf(-4, "Was not able to redirect stdout to %s/fdrpg_out.txt", our_config_dir);
+			fprintf(stderr, "Was not able to redirect stdout to %s. Errno: %d", filename, errno);
+			run_from_term = TRUE; // Pretend it, to avoid Terminate() to try to open fdrpg_out.txt
+		} else {
+			if (dup2(fileno(stdout), fileno(stderr)) == -1) {
+				fprintf(stderr, "Was not able to redirect stderr to stdout. Errno: %d", errno);
+				run_from_term = TRUE; // Pretend it, to avoid Terminate() to try to open fdrpg_out.txt
+			} else {
+				// stdout and stderr are redirected, print an
+				// informative message
+				fprintf(stderr, "Hello!  This window contains the DEBUG OUTPUT of FreedroidRPG.\n"
+				                "\n"
+				                "Normally you would not see this message or this window, but apparently\n"
+				                "FreedroidRPG has terminated because of an error of some sort.\n"
+				                "\n"
+				                "You might wish to inspect the debug output below.  Maybe sending the\n"
+				                "debug output (or at least the lower end of the debug output) to the\n"
+				                "FreedroidRPG developers could help them to track down the problem.\n"
+				                "\n"
+				                "Well, it's no guarantee that we can solve any bug, but it's certainly\n"
+				                "better than nothing.  Thanks anyway for your interest in FreedroidRPG.\n"
+				                "\n\n"
+				                "--start of real debug log--\n\n");
+			}
 		}
-		free(filename);
-		if (dup2(fileno(stdout), fileno(stderr)) == -1) {
-			DebugPrintf(-4, "Was not able to redirect stderr to stdout. Errno: %d", errno);
-		}
-
-		fprintf(stderr, "Hello!  This window contains the DEBUG OUTPUT of FreedroidRPG.\n"
-		                "\n"
-		                "Normally you would not see this message or this window, but apparently\n"
-		                "FreedroidRPG has terminated because of an error of some sort.\n"
-		                "\n"
-		                "You might wish to inspect the debug output below.  Maybe sending the\n"
-		                "debug output (or at least the lower end of the debug output) to the\n"
-		                "FreedroidRPG developers could help them to track down the problem.\n"
-		                "\n"
-		                "Well, it's no guarantee that we can solve any bug, but it's certainly\n"
-		                "better than nothing.  Thanks anyway for your interest in FreedroidRPG.\n"
-		                "\n\n"
-		                "--start of real debug log--\n\n");
 	}
 
 	// We mention the version of FreedroidRPG, so that debug reports
@@ -1055,7 +889,7 @@ void InitFreedroid(int argc, char **argv)
 
 	load_fdrpg_config();
 
-	LoadGameConfig();
+	load_game_config();
 
 	if (SDL_Init(SDL_INIT_VIDEO) == -1)
 		error_message(__FUNCTION__, "Couldn't initialize SDL: %s", PLEASE_INFORM | IS_FATAL, SDL_GetError());
@@ -1093,7 +927,7 @@ void InitFreedroid(int argc, char **argv)
 
 	init_audio();
 
-	Init_Game_Data();
+	init_game_data();
 
 	/* 
 	 * Initialize random-number generator in order to make 
@@ -1175,7 +1009,7 @@ void ThouArtDefeated(void)
 	}
 	input_handle();
 	if (!skip_initial_menus && (game_root_mode == ROOT_IS_GAME))
-		PlayATitleFile("GameLost.lua");
+		play_title_file(BASE_TITLES_DIR, "GameLost.lua");
 
 	do_death_menu();
 
@@ -1217,7 +1051,7 @@ void ThouHastWon(void)
 	//
 	//PlayATitleFile("EndOfGame.title");
 	if (!skip_initial_menus)
-		PlayATitleFile("Credits.lua");
+		play_title_file(BASE_TITLES_DIR, "Credits.lua");
 
 	input_handle();
 
@@ -1283,7 +1117,7 @@ void EndOfAct(void)
 	enemy *erot, *nerot;
 
 	type=0;
-	while (type <= ENEMY_ROTATION_MODELS_AVAILABLE) {
+	while (type <= Number_Of_Droid_Types) {
 		Droidmap[type].maxenergy *= 1.3;
 		// NOTE: Drop of decimal point is itendended. Don't try to "fix" this. (below)
 		Droidmap[type].experience_reward *= 1.15;
@@ -1306,7 +1140,7 @@ void EndOfAct(void)
 
 	// Now it's time for the end act title file...
 	if (!skip_initial_menus)
-		PlayATitleFile("EndOfAct1.lua");
+		play_title_file(MAP_TITLES_DIR, "EndOfAct1.lua");
 
 	input_handle();
 

@@ -135,50 +135,57 @@ static void ShowPlayground(enemy *target);
 
 static void display_takeover_help()
 {
-	PlayATitleFile("TakeoverInstructions.lua");
+	play_title_file(BASE_TITLES_DIR, "TakeoverInstructions.lua");
 }
 
 /** 
- * Display the picture of a droid
+ * Display the portrait of a droid
  */
 static void show_droid_picture(int PosX, int PosY, int type)
 {
-	char filename[5000];
-	static char LastImageSeriesPrefix[1000] = "NONE_AT_ALL";
-#define NUMBER_OF_IMAGES_IN_DROID_PORTRAIT_ROTATION 32
-	static struct image droid_images[NUMBER_OF_IMAGES_IN_DROID_PORTRAIT_ROTATION];
-	int RotationIndex;
+	static char *last_gfx_prefix = NULL;
+	static int last_rotation_nb = 0;
+	static struct image *droid_images = NULL;
 
-	if (!strcmp(Droidmap[type].droid_portrait_rotation_series_prefix, "NONE_AVAILABLE_YET"))
+	if (Droidmap[type].portrait_rotations == 0)
 		return;
 
 	// Maybe we have to reload the whole image series
-	//
-	if (strcmp(LastImageSeriesPrefix, Droidmap[type].droid_portrait_rotation_series_prefix)) {
+
+	if (!droid_images || !last_gfx_prefix || (last_gfx_prefix != Droidmap[type].gfx_prefix)) {
 		int i;
-		for (i = 0; i < NUMBER_OF_IMAGES_IN_DROID_PORTRAIT_ROTATION; i++) {
-			delete_image(&droid_images[i]);
 
-			sprintf(filename, "droids/%s/portrait_%04d.jpg", Droidmap[type].droid_portrait_rotation_series_prefix, i + 1);
+		if (droid_images) {
+			for (i = 0; i < last_rotation_nb; i++) {
+				delete_image(&droid_images[i]);
+			}
+			free(droid_images);
+			droid_images = NULL;
+		}
 
-			load_image(&droid_images[i], filename, NO_MOD);
+		droid_images = (struct image *)MyMalloc(sizeof(struct image) * Droidmap[type].portrait_rotations);
+
+		char filename[5000];
+		for (i = 0; i < Droidmap[type].portrait_rotations; i++) {
+			sprintf(filename, "%s/portrait_%04d.jpg", Droidmap[type].gfx_prefix, i + 1);
+			load_image(&droid_images[i], GRAPHICS_DIR, filename, NO_MOD);
 		}
 			
-		strcpy(LastImageSeriesPrefix, Droidmap[type].droid_portrait_rotation_series_prefix);
+		last_gfx_prefix = Droidmap[type].gfx_prefix;
+		last_rotation_nb = Droidmap[type].portrait_rotations;
 	}
 
-	RotationIndex = (SDL_GetTicks() / 50);
-
-	RotationIndex =
-	    RotationIndex - (RotationIndex / NUMBER_OF_IMAGES_IN_DROID_PORTRAIT_ROTATION) * NUMBER_OF_IMAGES_IN_DROID_PORTRAIT_ROTATION;
+	// Play the whole rotation in 1000 milliseconds.
+	int rotation_index = ((SDL_GetTicks() * last_rotation_nb) / 1000) % last_rotation_nb;
+	struct image *img = &droid_images[rotation_index];
 
 	// Compute the maximum uniform scale to apply to the bot image so that it fills
 	// the droid portrait image, and center the image.
-	struct image *img = &droid_images[RotationIndex];
 	float scale = min((float)Droid_Image_Window.w / (float)img->w, (float)Droid_Image_Window.h / (float)img->h);
 	moderately_finepoint pos;
 	pos.x = (float)PosX + ((float)Droid_Image_Window.w - (float)img->w * scale) / 2.0;
 	pos.y = (float)PosY + ((float)Droid_Image_Window.h - (float)img->h * scale) / 2.0;
+
 	display_image_on_screen(img, pos.x, pos.y, IMAGE_SCALE_TRANSFO(scale));
 }
 
@@ -218,7 +225,7 @@ static void init_droid_description(struct widget_text *w, int droidtype)
 	autostr_append(w->text, _("Unit Type %s\n"), Droidmap[droidtype].droidname);
 	autostr_append(w->text, _("Entry : %d\n"), droidtype + 1);
 
-	if ((weapon_type = Droidmap[droidtype].weapon_item.type) >= 0)	// make sure item != -1 
+	if ((weapon_type = Droidmap[droidtype].weapon_id) >= 0)	// make sure item != -1
 		item_name = D_(item_specs_get_name(weapon_type));	// does not segfault
 	else
 		item_name = _("none");
@@ -771,7 +778,7 @@ static void GetTakeoverGraphics(void)
 	if (TakeoverGraphicsAreAlreadyLoaded)
 		return;
 
-	load_image(&img, TO_BLOCK_FILE, NO_MOD);
+	load_image(&img, GRAPHICS_DIR, TO_BLOCK_FILE, NO_MOD);
 
 	// Get the fill-blocks 
 	for (i = 0; i < NUM_FILL_BLOCKS; i++, curx += FILL_BLOCK_LEN + 2) {
@@ -932,15 +939,15 @@ static void ShowPlayground(enemy * target)
     
 	static struct image bg;
 	if (!image_loaded(&bg)) {
-		load_image(&bg, "backgrounds/takeover_console.png", NO_MOD);
+		load_image(&bg, GRAPHICS_DIR, "backgrounds/takeover_console.png", NO_MOD);
 	}
 
 	display_image_on_screen(&bg, GameConfig.screen_width / 2 - 340, GameConfig.screen_height / 2 - 294, IMAGE_NO_TRANSFO);
 
 	if (target) {
-		int rotation_model = set_rotation_model_for_this_robot(target);
-		int offsetx = -enemy_images[rotation_model][0][0].offset_x;
-		int offsety = -enemy_images[rotation_model][0][0].offset_y;
+		struct droidspec *droid_spec = &Droidmap[target->type];
+		int offsetx = -droid_spec->droid_images[0][0].offset_x;
+		int offsety = -droid_spec->droid_images[0][0].offset_y;
 		Set_Rect(Target_Rect, xoffs + DroidStart[!YourColor].x + 20 + offsetx, (yoffs - 80) + offsety, User_Rect.w, User_Rect.h);
 		PutIndividuallyShapedDroidBody(target, Target_Rect, FALSE, FALSE);
 	}

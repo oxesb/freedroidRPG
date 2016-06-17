@@ -61,7 +61,6 @@
 // Here you can control the debug level for the various modules, or at least
 // that's the way it is planned to be.  Turn on and off debugging as you like.
 //
-#define SAVE_LOAD_GAME_DEBUG 1
 enum {
 	NO_REPORT     = 0,
 	PLEASE_INFORM = 1 << 1,   // Print a message inviting the user to inform us about the error
@@ -98,7 +97,6 @@ enum {
 	ALL_SOUND_OUTPUTS
 };
 
-#define ENEMY_ROTATION_MODELS_AVAILABLE 43
 #define ROTATION_ANGLES_PER_ROTATION_MODEL 8
 
 #define MAX_ENEMY_MOVEMENT_PHASES 999
@@ -1272,7 +1270,13 @@ enum obstacle_types {
 	ISO_CONSOLE_SECURE_E = 492,
 	ISO_CONSOLE_SECURE_S = 493,
 	ISO_CONSOLE_SECURE_W = 494,
-	ISO_CONSOLE_SECURE_N = 495
+	ISO_CONSOLE_SECURE_N = 495,
+
+	ISO_CAVE_WALL_DARK_H = 496,
+	ISO_CAVE_WALL_DARK_V = 497,
+	ISO_CAVE_CORNER_DARK_SE = 498,
+	ISO_CAVE_CORNER_DARK_NW = 499,
+	ISO_CAVE_CORNER_DARK_SW = 500
 };
 
 enum {
@@ -1585,13 +1589,17 @@ enum chat_context_state {
 
 // Indexes of known data dirs (used in conjunction with data_dirs[])
 enum data_dir_handle {
-	GRAPHICS_DIR = 0,
+	CONFIG_DIR = 0,
+	GUI_DIR,
+	GRAPHICS_DIR,
 	FONT_DIR,
 	SOUND_DIR,
 	MUSIC_DIR,
+	BASE_DIR,
+	BASE_TITLES_DIR,
 	MAP_DIR,
-	TITLES_DIR,
-	DIALOG_DIR,
+	MAP_TITLES_DIR,
+	MAP_DIALOG_DIR,
 #ifdef ENABLE_NLS
 	LOCALE_DIR,
 #endif

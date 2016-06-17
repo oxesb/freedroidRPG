@@ -365,40 +365,65 @@ typedef struct item {
 typedef struct droidspec {
 	char *droidname;
 	char *default_short_description;
-	char *droid_portrait_rotation_series_prefix;
-	char *droid_death_sound_file_name;
-	char *droid_attack_animation_sound_file_name;
+	char *notes;		// notes on the droid of this type
+	short int is_human;
 	int class;
-	float maxenergy;	// the maximum energy the batteries can carry
-	int sensor_id;		// What sensor is the most common to this droid?
+	short int is_a_living;
 
+	// Droid's abilities
+	float maxspeed;
+	float maxenergy;	// the maximum energy the batteries can carry
 	float healing_friendly; // the energy/second the droid heals as a friendly towards Tux
 	float healing_hostile;  // the energy/second the droid heals as a hostile towards Tux
-
-	float maxspeed;
-
-	short experience_reward;	// experience_reward for the elimination of one droid of this type
-
+	short to_hit;		// chance that this droid hits an unarmoured target
 	float aggression_distance;
 	float time_spent_eyeing_tux;
+	float recover_time_after_getting_hit;
+	short experience_reward;	// experience_reward for the elimination of one droid of this type
 
+	// Equipment
+	int weapon_id;
+	int sensor_id;		// What sensor is the most common to this droid?
+
+	// Dropped items
 	short int drop_class;
-
-	item weapon_item;
-	int gun_muzzle_height;
-
 	short int amount_of_plasma_transistors;
 	short int amount_of_superconductors;
 	short int amount_of_antimatter_converters;
 	short int amount_of_entropy_inverters;
 	short int amount_of_tachyon_condensators;
 
-	short greeting_sound_type;	// which sample to play in order to 'greet' the influencer?
-	short to_hit;		// chance that this droid hits an unarmoured target
-	float recover_time_after_getting_hit;
-	char *notes;		// notes on the droid of this type
-	short int is_human;
-	short individual_shape_nr;
+	// Rendering
+	char *gfx_prefix;
+	int gun_muzzle_height;
+	struct image droid_images[ROTATION_ANGLES_PER_ROTATION_MODEL][MAX_ENEMY_MOVEMENT_PHASES];
+	int walk_animation_first_image;
+	int walk_animation_last_image;
+	int walk_animation_speed_factor;
+	int attack_animation_first_image;
+	int attack_animation_last_image;
+	int attack_animation_speed_factor;
+	int gethit_animation_first_image;
+	int gethit_animation_last_image;
+	int gethit_animation_speed_factor;
+	int death_animation_first_image;
+	int death_animation_last_image;
+	int death_animation_speed_factor;
+	int stand_animation_first_image;
+	int stand_animation_last_image;
+	int stand_animation_speed_factor;
+	struct image portrait;
+	int portrait_rotations;
+	int gfx_prepared;
+
+	// Sounds
+	char *greeting_sound;	// which sample to play in order to 'greet' the influencer?
+	char *attack_sound;
+	char *death_sound;
+	char *voice_samples_path;
+	int   voice_samples_first;
+	int   voice_samples_last;
+	int   voice_samples_probability;
 } droidspec;
 
 typedef char s_char; // Used for pointer to static string which are not to be saved

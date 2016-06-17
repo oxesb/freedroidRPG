@@ -30,9 +30,19 @@
 #include "BFont.h"
 
 #ifdef __GNUC__
-#define PRINTF_FMT_ATTRIBUTE(fmt,firstarg) __attribute__ ((format(printf,fmt,firstarg)));
+#	define PRINTF_FMT_ATTRIBUTE(fmt,firstarg) __attribute__ ((format(printf,fmt,firstarg)))
 #else
-#define PRINTF_FMT_ATTRIBUTE(fmt,firstarg)
+#	define PRINTF_FMT_ATTRIBUTE(fmt,firstarg)
+#endif
+
+#ifdef __clang__
+#	if __has_feature(attribute_analyzer_noreturn)
+#		define CLANG_ANALYZER_NORETURN __attribute__((analyzer_noreturn))
+#	else
+#		define CLANG_ANALYZER_NORETURN
+#	endif
+#else
+#	define CLANG_ANALYZER_NORETURN
 #endif
 
 // main.c 
@@ -47,6 +57,7 @@ void update_obstacle_automap(int z, obstacle *our_obstacle);
 // init.c
 void prepare_execution(int, char **);
 void ResetGameConfigToDefaultValues(void);
+void gameconfig_clean(void);
 void clear_out_arrays_for_fresh_game(void);
 void next_startup_percentage(int Percentage);
 void ParseCommandLine(int argc, char *const argv[]);
@@ -58,7 +69,7 @@ void ThouArtDefeated(void);
 void ThouHastWon(void);
 void EndOfAct(void);
 void ThouHastDelay(float);
-void PlayATitleFile(char *Filename);
+void play_title_file(int, char *);
 
 // event.c
 void GetEventTriggers(const char *EventsAndEventTriggersFilename);
@@ -175,7 +186,6 @@ void PutBlast(int);
 void PutEnemy(enemy * e, int x, int y, int mask, int highlight);
 void PutMouseMoveCursor(void);
 int set_rotation_index_for_this_robot(enemy * ThisRobot);
-int set_rotation_model_for_this_robot(enemy * ThisRobot);
 int level_is_visible(int level_num);
 void get_visible_levels(void);
 void reset_visible_levels(void);
@@ -288,9 +298,8 @@ void open_gl_check_error_status(const char *name_of_calling_function);
 // blocks.c 
 void iso_load_bullet_surfaces(void);
 void Load_Mouse_Move_Cursor_Surfaces(void);
-void LoadAndPrepareEnemyRotationModelNr(int RotationModel);
+void load_droid_animation_images(struct droidspec *);
 void free_enemy_graphics(void);
-void Load_Enemy_Surfaces(void);
 void Load_Blast_Surfaces(void);
 void load_floor_tiles(void);
 void free_floor_tiles(void);
@@ -328,17 +337,18 @@ void draw_quad(const int16_t vx[4], const int16_t vy[4], int r, int g, int b, in
 uint32_t sdl_get_pixel(SDL_Surface *surf, int x, int y);
 void sdl_put_pixel(SDL_Surface *surf, int x, int y, uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha);
 void save_screenshot(const char *filename, int width);
+void free_graphics(void);
 void reload_graphics(void);
 void clear_screen(void);
 
 // saveloadgame.c 
 int find_saved_games(struct dirent ***);
-void LoadAndShowThumbnail(char *CoreFilename);
-int SaveGame(void);
+void load_and_show_thumbnail(char *CoreFilename);
+int save_game(void);
 int load_backup_game(void);
 int load_game(void);
-int DeleteGame(void);
-void LoadAndShowStats(char *CoreFilename);
+int delete_game(void);
+void load_and_show_stats(char *CoreFilename);
 
 // mission.c 
 void CompleteMission(const char *);
@@ -423,9 +433,9 @@ void Takeover_Set_Capsule_Sound(void);
 void Takeover_Game_Won_Sound(void);
 void Takeover_Game_Deadlock_Sound(void);
 void Takeover_Game_Lost_Sound(void);
-void play_greeting_sound(enemy *ThisRobot);
-void play_enter_attack_run_state_sound(enemy *ThisRobot);
-void play_death_sound_for_bot(enemy * ThisRobot);
+void play_droid_greeting_sound(enemy *ThisRobot);
+void play_droid_attack_sound(enemy *ThisRobot);
+void play_droid_death_sound(enemy * ThisRobot);
 void play_item_sound(int item_type, struct gps *item_pos);
 void BulletReflectedSound(void);
 void Play_Spell_ForceToEnergy_Sound(void);
@@ -584,10 +594,11 @@ int MouseCursorIsInRect(const SDL_Rect *, int, int);
 int MouseCursorIsOnButton(int ButtonIndex, int x, int y);
 void *MyMemmem(char *haystack, size_t haystacklen, char *needle, size_t needlelen);
 int init_data_dirs_path();
-int find_file(const char *, int, char *, int);
-int find_suffixed_file(const char *, const char *, int, char *, int);
-int find_localized_file(const char *, int, char *, int);
-int find_encoded_file(const char *, int, char *, int);
+int check_directory(const char *, int, int, int);
+int find_file(char *, int, const char *, const char *, int);
+int find_suffixed_file(char *, int, const char *, const char *, int);
+int find_localized_file(char *, int, const char *, int);
+int find_encoded_file(char *, int, const char *, int);
 void Pause(void);
 void ComputeFPSForThisFrame(void);
 void StartTakingTimeForFPSCalculation(void);
@@ -597,8 +608,8 @@ void update_frames_displayed(void);
 int MyRandom(int);
 void Teleport(int LNum, float X, float Y, int WithSound, int with_animation_reset);
 void teleport_to_level_center(int);
-int SaveGameConfig(void);
-int LoadGameConfig(void);
+int save_game_config(void);
+int load_game_config(void);
 void Terminate(int);
 uint32_t pot_gte(uint32_t v);
 obstacle *give_pointer_to_obstacle_with_label(const char *, int *);
@@ -676,8 +687,8 @@ char *LocateStringInData(char *SearchBeginPointer, const char *SearchTextPointer
 void DebugPrintf(int db_level, const char *fmt, ...) PRINTF_FMT_ATTRIBUTE(2,3);
 void clean_error_msg_store();
 void free_error_msg_store();
-void error_message(const char *, const char *, int, ...) PRINTF_FMT_ATTRIBUTE(2,4);
-void error_once_message(int, const char *, const char *, int, ...) PRINTF_FMT_ATTRIBUTE(3,5);
+void error_message(const char *, const char *, int, ...) PRINTF_FMT_ATTRIBUTE(2,4) CLANG_ANALYZER_NORETURN;
+void error_once_message(int, const char *, const char *, int, ...) PRINTF_FMT_ATTRIBUTE(3,5) CLANG_ANALYZER_NORETURN;
 void alert_window(const char *text, ...) PRINTF_FMT_ATTRIBUTE(1,2);
 void alert_once_window(int, const char *text, ...) PRINTF_FMT_ATTRIBUTE(2,3);
 void *MyMalloc(long);
@@ -853,7 +864,7 @@ void end_image_batch(void);
 void display_image_on_screen(struct image *img, int x, int y, struct image_transformation t);
 void display_image_on_map(struct image *img, float X, float Y, struct image_transformation t);
 void create_subimage(struct image *source, struct image *new_img, SDL_Rect *rect);
-void load_image(struct image *, const char *, int);
+void load_image(struct image *, int, const char *, int);
 void load_image_surface(struct image *img, const char *filepath, int use_offset_file);
 void free_image_surface(struct image *img);
 void delete_image(struct image *img);

@@ -1722,8 +1722,6 @@ void draw_grid_on_the_floor(int mask)
 	if (y > our_level->ylen)
 		y = our_level->ylen;
 
-	float dd;
-
 	if (GameConfig.grid_mode == 1) {	// large grid
 
 		if (LineStart < 0)
@@ -1736,20 +1734,24 @@ void draw_grid_on_the_floor(int mask)
 			ColEnd = our_level->xlen;
 
 		// Draw horizontal lines.
+		int dd;
 		for (dd = LineStart; dd <= LineEnd; dd++) {
-			draw_line_on_map(ColStart, dd, ColEnd, dd, 0x99, 0xFF, 0xFF, 1);	// light cyan
+			draw_line_on_map((float)ColStart, (float)dd, (float)ColEnd, (float)dd, 0x99, 0xFF, 0xFF, 1);	// light cyan
 		}
 
 		// Draw vertical lines.
 		for (dd = ColStart; dd <= ColEnd; dd++) {
-			draw_line_on_map(dd, LineStart, dd, LineEnd, 0x99, 0xFF, 0xFF, 1);	// light cyan
+			draw_line_on_map((float)dd, (float)LineStart, (float)dd, (float)LineEnd, 0x99, 0xFF, 0xFF, 1);	// light cyan
 		}
 	}
 
-	for (dd = 0; dd <= 1; dd += .5)	// quick-placement grid
-	{
+	// quick-placement grid
+	float dd = 0.0;
+	int i;
+	for (i = 0; i < 3; i++)	{
 		draw_line_on_map(x - 1.5, y - dd, x + 0.5, y - dd, 0xFF, 0x00, 0xFF, 1);	// magenta
 		draw_line_on_map(x - dd, y - 1.5, x - dd, y + 0.5, 0xFF, 0x00, 0xFF, 1);	// magenta
+		dd += 0.5;
 	}
 
 	// Draw the level borders.
@@ -2132,7 +2134,7 @@ void tux_rendering_load_specs(const char *config_filename)
 
 	tux_rendering_init();
 
-	find_file(config_filename, MAP_DIR, fpath, PLEASE_INFORM | IS_FATAL);
+	find_file(fpath, BASE_DIR, config_filename, NULL, PLEASE_INFORM | IS_FATAL);
 	run_lua_file(LUA_CONFIG, fpath);
 	tux_rendering_validate(); // check mandatory specifications/configurations
 
@@ -2386,7 +2388,7 @@ void PutEnemyEnergyBar(enemy *e, SDL_Rect TargetRectangle)
 		float PercentageDone = 0;
 		int barnum = 0;
 		// If Percentage > 100%, several bars are drawn (one bar == 100% of maxenergy)
-		for (; Percentage > 0; Percentage -= PercentageDone, barnum++) {
+		while (Percentage > 0) {
 			if (Percentage >= 1)
 				PercentageDone = 1;
 			else
@@ -2404,6 +2406,9 @@ void PutEnemyEnergyBar(enemy *e, SDL_Rect TargetRectangle)
 			// tweak as needed, this alters the transparency
 			c1.a = 140;
 			drawIsoEnergyBar(x, y, 1, 5, 5, w, PercentageDone, &c1, &c2);
+
+			Percentage -= PercentageDone;
+			barnum++;
 		}
 
 #endif
@@ -2490,30 +2495,10 @@ int set_rotation_index_for_this_robot(enemy * ThisRobot)
 };				// int set_rotation_index_for_this_robot ( enemy* ThisRobot ) 
 
 /**
- *
- *
- */
-int set_rotation_model_for_this_robot(enemy * ThisRobot)
-{
-	int RotationModel = Droidmap[ThisRobot->type].individual_shape_nr;
-
-	// A sanity check for roation model to use can never hurt...
-	//
-	if ((RotationModel < 0) || (RotationModel >= ENEMY_ROTATION_MODELS_AVAILABLE)) {
-		error_message(__FUNCTION__, "\
-There was a rotation model type given, that exceeds the number of rotation models allowed and loaded in FreedroidRPG.", PLEASE_INFORM | IS_FATAL);
-	}
-
-	return (RotationModel);
-
-};				// int set_rotation_model_for_this_robot ( enemy* ThisRobot ) 
-
-/**
  * This function is here to blit the 'body' of a droid to the screen.
  */
 void PutIndividuallyShapedDroidBody(enemy * ThisRobot, SDL_Rect TargetRectangle, int mask, int highlight)
 {
-	int RotationModel;
 	int RotationIndex;
 	moderately_finepoint bot_pos;
 	float zf = 1.0;
@@ -2530,13 +2515,13 @@ void PutIndividuallyShapedDroidBody(enemy * ThisRobot, SDL_Rect TargetRectangle,
 	// We properly set the rotation model number for this robot, i.e.
 	// which shape (like 302, 247 or proffa) to use for drawing this bot.
 	//
-	RotationModel = set_rotation_model_for_this_robot(ThisRobot);
+	struct droidspec *droid_spec = &Droidmap[ThisRobot->type];
 
 	// Maybe the rotation model we're going to use now isn't yet loaded. 
 	// Now in this case, we must load it immediately, or a segfault may
 	// result...
 	//
-	LoadAndPrepareEnemyRotationModelNr(RotationModel);
+	load_droid_animation_images(droid_spec);
 
 	// Maybe we don't have an enemy here that would really stick to the 
 	// exact size of a block but be somewhat bigger or smaller instead.
@@ -2546,15 +2531,15 @@ void PutIndividuallyShapedDroidBody(enemy * ThisRobot, SDL_Rect TargetRectangle,
 	//
 	if ((TargetRectangle.x != 0) && (TargetRectangle.y != 0)) {
 		if (use_open_gl) {
-			TargetRectangle.x -= (enemy_images[RotationModel][RotationIndex][0].w) / 2;
-			TargetRectangle.y -= (enemy_images[RotationModel][RotationIndex][0].h) / 2;
-			TargetRectangle.w = enemy_images[RotationModel][RotationIndex][0].w;
-			TargetRectangle.h = enemy_images[RotationModel][RotationIndex][0].h;
+			TargetRectangle.x -= (droid_spec->droid_images[RotationIndex][0].w) / 2;
+			TargetRectangle.y -= (droid_spec->droid_images[RotationIndex][0].h) / 2;
+			TargetRectangle.w = droid_spec->droid_images[RotationIndex][0].w;
+			TargetRectangle.h = droid_spec->droid_images[RotationIndex][0].h;
 		} else {
-			TargetRectangle.x -= (enemy_images[RotationModel][RotationIndex][0].surface->w) / 2;
-			TargetRectangle.y -= (enemy_images[RotationModel][RotationIndex][0].surface->h) / 2;
-			TargetRectangle.w = enemy_images[RotationModel][RotationIndex][0].surface->w;
-			TargetRectangle.h = enemy_images[RotationModel][RotationIndex][0].surface->h;
+			TargetRectangle.x -= (droid_spec->droid_images[RotationIndex][0].surface->w) / 2;
+			TargetRectangle.y -= (droid_spec->droid_images[RotationIndex][0].surface->h) / 2;
+			TargetRectangle.w = droid_spec->droid_images[RotationIndex][0].surface->w;
+			TargetRectangle.h = droid_spec->droid_images[RotationIndex][0].surface->h;
 		}
 	}
 	// Maybe the enemy is desired e.g. for the takeover game, so a pixel position on
@@ -2563,7 +2548,7 @@ void PutIndividuallyShapedDroidBody(enemy * ThisRobot, SDL_Rect TargetRectangle,
 	//
 	if ((TargetRectangle.x != 0) && (TargetRectangle.y != 0)) {
 		RotationIndex = 0;
-		display_image_on_screen(&enemy_images[RotationModel][RotationIndex][0],
+		display_image_on_screen(&droid_spec->droid_images[RotationIndex][0],
 										  TargetRectangle.x, TargetRectangle.y, IMAGE_NO_TRANSFO);
 		return;
 	}
@@ -2586,18 +2571,18 @@ void PutIndividuallyShapedDroidBody(enemy * ThisRobot, SDL_Rect TargetRectangle,
 	bot_pos.x = ThisRobot->virt_pos.x;
 	bot_pos.y = ThisRobot->virt_pos.y;
 
-	struct image *img = &enemy_images[RotationModel][RotationIndex][(int)ThisRobot->animation_phase];
+	struct image *img = &droid_spec->droid_images[RotationIndex][(int)ThisRobot->animation_phase];
 	display_image_on_map(img, bot_pos.x, bot_pos.y, set_image_transformation(zf, zf, r, g, b, 1.0, highlight));
 
 	if (GameConfig.enemy_energy_bars_visible) {
 		int screen_x, screen_y;
 		translate_map_point_to_screen_pixel(ThisRobot->virt_pos.x, ThisRobot->virt_pos.y, &screen_x, &screen_y);
 
-		int bar_width = min(enemy_images[RotationModel][RotationIndex][0].w, ENERGYBAR_MAXWIDTH);
+		int bar_width = min(droid_spec->droid_images[RotationIndex][0].w, ENERGYBAR_MAXWIDTH);
 		TargetRectangle.x = screen_x - (bar_width * zf) / 2;
-		TargetRectangle.y = screen_y - (enemy_images[RotationModel][RotationIndex][0].h * zf) / 1;
+		TargetRectangle.y = screen_y - (droid_spec->droid_images[RotationIndex][0].h * zf) / 1;
 		TargetRectangle.w = bar_width * zf;
-		TargetRectangle.h = enemy_images[RotationModel][RotationIndex][0].h * zf;
+		TargetRectangle.h = droid_spec->droid_images[RotationIndex][0].h * zf;
 		PutEnemyEnergyBar(ThisRobot, TargetRectangle);
 	}
 }
@@ -2821,7 +2806,7 @@ void PutRadialBlueSparks(float PosX, float PosY, float Radius, int SparkType, ui
 						PLEASE_INFORM | IS_FATAL, SparkType);
 			}
 
-			find_file(ConstructedFilename, GRAPHICS_DIR, fpath, PLEASE_INFORM | IS_FATAL);
+			find_file(fpath, GRAPHICS_DIR, ConstructedFilename, NULL, PLEASE_INFORM | IS_FATAL);
 
 			tmp_surf = our_IMG_load_wrapper(fpath);
 			if (tmp_surf == NULL) {

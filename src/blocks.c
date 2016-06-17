@@ -35,7 +35,7 @@
 
 #include "lvledit/lvledit_display.h"
 
-static int current_enemy_nr;
+static struct droidspec *current_droid_spec;
 
 static int __enemy_animation(const char *filename, int *rotation, int *phase, int *first_image, int **last_image)
 {
@@ -50,11 +50,11 @@ static int __enemy_animation(const char *filename, int *rotation, int *phase, in
 		int first_image;
 		int *last_image;
 	} animations[] = {
-		{ "enemy_rot_%02d_walk-%02d.png", first_walk_animation_image[current_enemy_nr], &last_walk_animation_image[current_enemy_nr] },
-		{ "enemy_rot_%02d_attack-%02d.png", first_attack_animation_image[current_enemy_nr], &last_attack_animation_image[current_enemy_nr] },
-		{ "enemy_rot_%02d_gethit-%02d.png", first_gethit_animation_image[current_enemy_nr], &last_gethit_animation_image[current_enemy_nr] },
-		{ "enemy_rot_%02d_death-%02d.png", first_death_animation_image[current_enemy_nr], &last_death_animation_image[current_enemy_nr] },
-		{ "enemy_rot_%02d_stand-%02d.png", first_stand_animation_image[current_enemy_nr], &last_stand_animation_image[current_enemy_nr] }
+		{ "enemy_rot_%02d_walk-%02d.png",   current_droid_spec->walk_animation_first_image,   &current_droid_spec->walk_animation_last_image   },
+		{ "enemy_rot_%02d_attack-%02d.png", current_droid_spec->attack_animation_first_image, &current_droid_spec->attack_animation_last_image },
+		{ "enemy_rot_%02d_gethit-%02d.png", current_droid_spec->gethit_animation_first_image, &current_droid_spec->gethit_animation_last_image },
+		{ "enemy_rot_%02d_death-%02d.png",  current_droid_spec->death_animation_first_image,  &current_droid_spec->death_animation_last_image  },
+		{ "enemy_rot_%02d_stand-%02d.png",  current_droid_spec->stand_animation_first_image,  &current_droid_spec->stand_animation_last_image  }
 	};
 
 	for (i = 0; i < sizeof(animations) / sizeof(animations[0]); i++) {
@@ -67,7 +67,7 @@ static int __enemy_animation(const char *filename, int *rotation, int *phase, in
 
 	if (i == sizeof(animations) / sizeof(animations[0])) {
 		error_message(__FUNCTION__, "Unexpected image filename '%s' for enemy '%s'.", PLEASE_INFORM,
-			filename, PrefixToFilename[current_enemy_nr]);
+			filename, current_droid_spec->gfx_prefix);
 		return -1;
 	}
 
@@ -92,7 +92,7 @@ static struct image *get_storage_for_enemy_image(const char *filename)
 	if (__enemy_animation(filename, &rotation_index, &phase_index, &first_animation_image, NULL))
 		return NULL;
 
-	return &enemy_images[current_enemy_nr][rotation_index][first_animation_image + phase_index - 1];
+	return &current_droid_spec->droid_images[rotation_index][first_animation_image + phase_index - 1];
 }
 
 static struct image *compute_number_of_phases_for_enemy(const char *filename)
@@ -114,52 +114,53 @@ static struct image *compute_number_of_phases_for_enemy(const char *filename)
  * It's typically called once whenever the enemy type is first encountered
  * in one run of the engine.
  */
-static void load_enemy_graphics(int enemy_model_nr)
+static void load_enemy_graphics(struct droidspec *droid_spec)
 {
 	char atlas_filename[4096];
 	char atlas_directory[4096];
 
-	sprintf(atlas_filename, "droids/%s/atlas.txt", PrefixToFilename[enemy_model_nr]);
-	sprintf(atlas_directory, "droids/%s/", PrefixToFilename[enemy_model_nr]);
+	sprintf(atlas_filename, "%s/atlas.txt", droid_spec->gfx_prefix);
+	sprintf(atlas_directory, "%s/", droid_spec->gfx_prefix);
+
+	current_droid_spec = droid_spec;
 
 	// The information about cycle length needs to be entered into the
 	// corresponding arrays (usually initialized in blocks.c, for those
 	// series, that don't have an image archive yet...)
 	//
-	last_walk_animation_image[enemy_model_nr] = 0;
-	last_attack_animation_image[enemy_model_nr] = 0;
-	last_gethit_animation_image[enemy_model_nr] = 0;
-	last_death_animation_image[enemy_model_nr] = 0;
-	last_stand_animation_image[enemy_model_nr] = 0;
+	droid_spec->walk_animation_last_image = 0;
+	droid_spec->attack_animation_last_image = 0;
+	droid_spec->gethit_animation_last_image = 0;
+	droid_spec->death_animation_last_image = 0;
+	droid_spec->stand_animation_last_image = 0;
 
-	current_enemy_nr = enemy_model_nr;
 	if (load_texture_atlas(atlas_filename, atlas_directory, compute_number_of_phases_for_enemy)) {
 		error_message(__FUNCTION__, "Unable to access the texture atlas for enemy '%s' at '%s'.",
-			PLEASE_INFORM | IS_FATAL, PrefixToFilename[enemy_model_nr], atlas_filename);
+			PLEASE_INFORM | IS_FATAL, droid_spec->gfx_prefix, atlas_filename);
 	}
 
-	first_walk_animation_image[enemy_model_nr] = 1;
-	first_attack_animation_image[enemy_model_nr] = last_walk_animation_image[enemy_model_nr] + 1;
-	last_attack_animation_image[enemy_model_nr] += last_walk_animation_image[enemy_model_nr];
-	first_gethit_animation_image[enemy_model_nr] = last_attack_animation_image[enemy_model_nr] + 1;
-	last_gethit_animation_image[enemy_model_nr] += last_attack_animation_image[enemy_model_nr];
-	first_death_animation_image[enemy_model_nr] = last_gethit_animation_image[enemy_model_nr] + 1;
-	last_death_animation_image[enemy_model_nr] += last_gethit_animation_image[enemy_model_nr];
-	first_stand_animation_image[enemy_model_nr] = last_death_animation_image[enemy_model_nr] + 1;
-	last_stand_animation_image[enemy_model_nr] += last_death_animation_image[enemy_model_nr];
+	droid_spec->walk_animation_first_image   = 1;
+	droid_spec->attack_animation_first_image = droid_spec->walk_animation_last_image + 1;
+	droid_spec->attack_animation_last_image += droid_spec->walk_animation_last_image;
+	droid_spec->gethit_animation_first_image = droid_spec->attack_animation_last_image + 1;
+	droid_spec->gethit_animation_last_image += droid_spec->attack_animation_last_image;
+	droid_spec->death_animation_first_image  = droid_spec->gethit_animation_last_image + 1;
+	droid_spec->death_animation_last_image  += droid_spec->gethit_animation_last_image;
+	droid_spec->stand_animation_first_image  = droid_spec->death_animation_last_image + 1;
+	droid_spec->stand_animation_last_image  += droid_spec->death_animation_last_image;
 
 	// Now some error checking against more phases in this enemy animation than
 	// currently allowed from the array size...
 	//
-	if (last_stand_animation_image[enemy_model_nr] >= MAX_ENEMY_MOVEMENT_PHASES) {
+	if (droid_spec->stand_animation_last_image >= MAX_ENEMY_MOVEMENT_PHASES) {
 		error_message(__FUNCTION__,
-			"The number of images found in the image collection for enemy model %d is bigger than currently allowed (found %d images, max. %d).",
-			PLEASE_INFORM | IS_FATAL, enemy_model_nr, last_stand_animation_image[enemy_model_nr], MAX_ENEMY_MOVEMENT_PHASES);
+			"The number of images found in the image collection for enemy model %s is bigger than currently allowed (found %d images, max. %d).",
+			PLEASE_INFORM | IS_FATAL, droid_spec->droidname, droid_spec->stand_animation_last_image, MAX_ENEMY_MOVEMENT_PHASES);
 	}
 
 	if (load_texture_atlas(atlas_filename, atlas_directory, get_storage_for_enemy_image)) {
 		error_message(__FUNCTION__, "Unable to load texture atlas for enemy '%s' at %s.",
-			PLEASE_INFORM | IS_FATAL, PrefixToFilename[enemy_model_nr], atlas_filename);
+			PLEASE_INFORM | IS_FATAL, droid_spec->gfx_prefix, atlas_filename);
 	}
 }
 
@@ -176,7 +177,7 @@ void Load_Blast_Surfaces(void)
 	for (i = 0; i < sizeof(Blastmap) / sizeof(Blastmap[0]); i++) {
 		for (j = 0; j < Blastmap[i].phases; j++) {
 			sprintf(fpath, "blasts/%s_%04d.png", Blastmap[i].name, j + 1);
-			load_image(&Blastmap[i].images[j], fpath, USE_OFFSET);
+			load_image(&Blastmap[i].images[j], GRAPHICS_DIR, fpath, USE_OFFSET);
 		}
 	}
 }
@@ -192,7 +193,7 @@ static void load_item_graphics(int item_type)
 	sprintf(our_filename, "items/%s", spec->item_inv_file_name);
 
 	// Load the inventory image	
-	find_file(our_filename, GRAPHICS_DIR, fpath, PLEASE_INFORM | IS_FATAL);
+	find_file(fpath, GRAPHICS_DIR, our_filename, NULL, PLEASE_INFORM | IS_FATAL);
 
 	original_img = IMG_Load(fpath);
 	if (original_img == NULL) {
@@ -251,7 +252,7 @@ static void load_item_graphics(int item_type)
 	// Load ingame image
 	if (strcmp(spec->item_rotation_series_prefix, "NONE_AVAILABLE_YET")) {
 		sprintf(our_filename, "items/%s/ingame.png", spec->item_rotation_series_prefix);
-		load_image(&spec->ingame_image, our_filename, USE_OFFSET);
+		load_image(&spec->ingame_image, GRAPHICS_DIR, our_filename, USE_OFFSET);
 	} else {
 		memcpy(&spec->ingame_image, &spec->inventory_image, sizeof(struct image));
 	}
@@ -330,7 +331,7 @@ void Load_Mouse_Move_Cursor_Surfaces(void)
 
 	for (j = 0; j < NUMBER_OF_MOUSE_CURSOR_PICTURES; j++) {
 		sprintf(our_filename, "cursors/mouse_move_cursor_%d.png", j);
-		load_image(&MouseCursorImageList[j], our_filename, NO_MOD);
+		load_image(&MouseCursorImageList[j], GUI_DIR, our_filename, NO_MOD);
 	}
 
 };				// void Load_Mouse_Move_Cursor_Surfaces( void )
@@ -354,7 +355,7 @@ void iso_load_bullet_surfaces(void)
 			for (k = 0; k < BULLET_DIRECTIONS; k++) {
 				sprintf(constructed_filename, "bullets/iso_bullet_%s_%02d_%04d.png", bullet_spec->name, k, j + 1);
 
-				load_image(&bullet_spec->image[k][j], constructed_filename, USE_OFFSET);
+				load_image(&bullet_spec->image[k][j], GRAPHICS_DIR, constructed_filename, USE_OFFSET);
 			}
 		}
 	}
@@ -406,32 +407,19 @@ in graphics displayed, but FreedroidRPG will continue to work.", NO_REPORT, offs
 
 };				// void get_offset_for_iso_image_from_file_and_path ( fpath , our_iso_image )
 
-static int EnemyFullyPrepared[ENEMY_ROTATION_MODELS_AVAILABLE];
-
 /**
  *
  *
  */
-void LoadAndPrepareEnemyRotationModelNr(int ModelNr)
+void load_droid_animation_images(struct droidspec *this_droid_spec)
 {
-	// Now a sanity check against using rotation types, that don't exist
-	// in FreedroidRPG at all!
-	//
-	if ((ModelNr < 0) || (ModelNr >= ENEMY_ROTATION_MODELS_AVAILABLE)) {
-		error_message(__FUNCTION__, "\
-FreedroidRPG received a rotation model number that does not exist: %d", PLEASE_INFORM | IS_FATAL, ModelNr);
-	}
-	// Now we can check if the given rotation model type was perhaps already
-	// allocated and loaded and fully prepared.  Then of course we need not 
-	// do anything here...  Otherwise we can have trust and mark it as loaded
-	// already...
-	//
-	if (EnemyFullyPrepared[ModelNr])
+	if (!this_droid_spec->is_a_living || this_droid_spec->gfx_prepared)
 		return;
-	EnemyFullyPrepared[ModelNr] = TRUE;
+
 	Activate_Conservative_Frame_Computation();
 
-	load_enemy_graphics(ModelNr);
+	load_enemy_graphics(this_droid_spec);
+	this_droid_spec->gfx_prepared = TRUE;
 }
 
 void free_enemy_graphics(void)
@@ -439,144 +427,36 @@ void free_enemy_graphics(void)
 	int i;
 	int rotation_index, phase_index;
 
-	for (i = 0; i < ENEMY_ROTATION_MODELS_AVAILABLE; i++) {
-		if (!EnemyFullyPrepared[i])
-			continue;
-
-		for (rotation_index = 0; rotation_index < ROTATION_ANGLES_PER_ROTATION_MODEL; rotation_index++) {
-			for (phase_index = 0; phase_index < MAX_ENEMY_MOVEMENT_PHASES; phase_index++)
-				delete_image(&enemy_images[i][rotation_index][phase_index]);
+	for (i = 0; i < Number_Of_Droid_Types; i++) {
+		if (Droidmap[i].gfx_prepared) {
+			for (rotation_index = 0; rotation_index < ROTATION_ANGLES_PER_ROTATION_MODEL; rotation_index++) {
+				for (phase_index = 0; phase_index < MAX_ENEMY_MOVEMENT_PHASES; phase_index++)
+					delete_image(&Droidmap[i].droid_images[rotation_index][phase_index]);
+			}
+			Droidmap[i].gfx_prepared = FALSE;
 		}
-		EnemyFullyPrepared[i] = FALSE;
+		if (image_loaded(&Droidmap[i].portrait))
+			delete_image(&Droidmap[i].portrait);
 	}
-}
-
-/**
- * Read the Enemy Surfaces details from the data stream.
- */
-void get_enemy_surfaces_data(char *DataPointer)
-{
-	char *SurfacePointer;
-	char *EndOfSurfaceData;
-	int SurfaceIndex = 0;
-
-#define ENEMY_SURFACES_SECTION_BEGIN_STRING "*** Start of Enemy Surfaces Section: ***"
-#define ENEMY_SURFACES_SECTION_END_STRING "*** End of Enemy Surfaces Section: ***"
-#define NEW_SURFACE_BEGIN_STRING "** Start of new surface specification subsection **"
-
-#define SURFACES_FILE_NAME_BEGIN_STRING "PrefixToFilename=\""
-#define SURFACES_WALK_ANI_SPEED_BEGIN_STRING "droid_walk_animation_speed_factor="
-#define SURFACES_ATTACK_ANI_SPEED_BEGIN_STRING "droid_attack_animation_speed_factor="
-#define SURFACES_GETHIT_ANI_SPEED_BEGIN_STRING "droid_gethit_animation_speed_factor="
-#define SURFACES_DEATH_ANI_SPEED_BEGIN_STRING "droid_death_animation_speed_factor="
-#define SURFACES_STAND_ANI_SPEED_BEGIN_STRING "droid_stand_animation_speed_factor="
-
-
-	EndOfSurfaceData = LocateStringInData(DataPointer, ENEMY_SURFACES_SECTION_END_STRING);
-
- 	DebugPrintf(1, "\n\nStarting to read surfaces data...\n\n");
-
-	SurfacePointer = DataPointer;
-
-	while ((SurfacePointer = strstr(SurfacePointer, NEW_SURFACE_BEGIN_STRING)) != NULL) {
-		if (SurfaceIndex >= ENEMY_ROTATION_MODELS_AVAILABLE) {
-			error_message(__FUNCTION__, "enemy_surfaces.dat specifies more surfaces than ENEMY_ROTATION_MODELS_AVAILABLE (%d) allows.", PLEASE_INFORM | IS_FATAL, ENEMY_ROTATION_MODELS_AVAILABLE);
-		}
-
- 		DebugPrintf(1, "\n\nFound another surface specification entry!  Lets add that to the others!");
-		SurfacePointer++;
-
-		PrefixToFilename[SurfaceIndex] = ReadAndMallocStringFromData(SurfacePointer, SURFACES_FILE_NAME_BEGIN_STRING, "\"");
-
-		ReadValueFromStringWithDefault(SurfacePointer, SURFACES_WALK_ANI_SPEED_BEGIN_STRING,
-			"%d", "0", &(droid_walk_animation_speed_factor[SurfaceIndex]), EndOfSurfaceData);
-		ReadValueFromStringWithDefault(SurfacePointer, SURFACES_ATTACK_ANI_SPEED_BEGIN_STRING,
-			"%d", "0", &(droid_attack_animation_speed_factor[SurfaceIndex]), EndOfSurfaceData);
-		ReadValueFromStringWithDefault(SurfacePointer, SURFACES_GETHIT_ANI_SPEED_BEGIN_STRING,
-			"%d", "0", &(droid_gethit_animation_speed_factor[SurfaceIndex]), EndOfSurfaceData);
-		ReadValueFromStringWithDefault(SurfacePointer, SURFACES_DEATH_ANI_SPEED_BEGIN_STRING,
-			"%d", "0", &(droid_death_animation_speed_factor[SurfaceIndex]), EndOfSurfaceData);
-		ReadValueFromStringWithDefault(SurfacePointer, SURFACES_STAND_ANI_SPEED_BEGIN_STRING,
-			"%d", "0", &(droid_stand_animation_speed_factor[SurfaceIndex]), EndOfSurfaceData);
-
-		SurfaceIndex++;
-	}
-
- 	DebugPrintf(1, "\nEnd of get_enemy_surfaces_data ( char* DataPointer ) reached.");
-}
-
-/**
- * This function creates all the surfaces, that are necessary to blit the
- * 'head' and 'shoes' of an enemy.  The numbers are not dealt with here.
- */
-void Load_Enemy_Surfaces(void)
-{
-	int i;
-
-	for (i = 0; i < ENEMY_ROTATION_MODELS_AVAILABLE; i++) {
-		struct image empty = EMPTY_IMAGE;
-		chat_portrait_of_droid[i] = empty;
-	}
-
-	// When using the new tux image collection files, the animation cycle
-	// lengths for droids will be taken from the image collection file itself.
-	// That is good, because it's so dynamic.  However, it also means, that
-	// the real animation phase lengths and that will in general not be known
-	// until the graphics for that bot has been loaded.  But on the other hand
-	// it might happen that some phase computation is done before the first
-	// blit already.  In that case, uninitialized data structs might cause 
-	// severe harm.  Therefore we initialize some sane default values, that should
-	// protect against certain cases of wrong phase counts.
-	//
-	for (i = 0; i < ENEMY_ROTATION_MODELS_AVAILABLE; i++) {
-		first_walk_animation_image[i] = 1;
-		last_walk_animation_image[i] = 1;
-		first_attack_animation_image[i] = 1;
-		last_attack_animation_image[i] = 1;
-		first_gethit_animation_image[i] = 1;
-		last_gethit_animation_image[i] = 1;
-		first_death_animation_image[i] = 1;
-		last_death_animation_image[i] = 1;
-		first_stand_animation_image[i] = 1;
-		last_stand_animation_image[i] = 1;
-	}
-
-
-	char fpath[PATH_MAX];
-	char *Data;
-
-	find_file("enemy_surfaces.dat", MAP_DIR, fpath, PLEASE_INFORM | IS_FATAL);
-	Data = ReadAndMallocAndTerminateFile(fpath, "*** End of this Freedroid data File ***");
-	get_enemy_surfaces_data(Data);
-	free(Data);
 }
 
 static void load_droid_portrait(int type)
 {
 	char fpath[1024];
 
-	strcpy(fpath, "droids/");
-	strcat(fpath, PrefixToFilename[Droidmap[type].individual_shape_nr]);
+	strcpy(fpath, Droidmap[type].gfx_prefix);
 	strcat(fpath, "/portrait.png");
 
-	load_image(&chat_portrait_of_droid[type], fpath, NO_MOD);
+	load_image(&Droidmap[type].portrait, GRAPHICS_DIR, fpath, NO_MOD);
 }
 
 struct image *get_droid_portrait_image(int type)
 {
-	if (type >= ENEMY_ROTATION_MODELS_AVAILABLE) {
-		error_message(__FUNCTION__, "Tried to load a portrait image of a bot those type is #%d, but the maximum configured value is %d."
-				                   "ENEMY_ROTATION_MODELS_AVAILABLE should be raised.", 
-				                   PLEASE_INFORM | IS_FATAL,
-				                   type, ENEMY_ROTATION_MODELS_AVAILABLE - 1);
-		return NULL;
-	}
-	
-	if (!image_loaded(&chat_portrait_of_droid[type])) {
+	if (!image_loaded(&Droidmap[type].portrait)) {
 		load_droid_portrait(type);
 	}
 
-	return &chat_portrait_of_droid[type];
+	return &Droidmap[type].portrait;
 }
 
 /**
@@ -607,7 +487,7 @@ struct image *get_map_label_image()
 	static struct image img = EMPTY_IMAGE;
 
 	if (!image_loaded(&img))
-		load_image(&img, "level_editor_map_label_indicator.png", USE_OFFSET);
+		load_image(&img, GUI_DIR, "level_editor/map_label_indicator.png", USE_OFFSET);
 
 	return &img;
 }
