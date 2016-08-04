@@ -23,7 +23,15 @@ local Tux = FDrpg.get_tux()
 return {
 	EveryTime = function()
 		play_sound("effects/Menu_Item_Deselected_Sound_0.ogg")
-		cli_says(_"Access Denied.")
+		Npc:says(_"[b]Loading terminal...[/b]")
+		if (Tux:has_item("PC LOAD LETTER")) then
+			cli_says(_"Access Denied.")
+		else
+			Npc:says(_"[b]No instructions to load this terminal.[/b]")
+			Tux:says(_"help", "NO_WAIT")
+			Npc:says(_"This terminal needs instructions to be loaded. Instructions can be requested at last floor of factory north from town.")
+			Npc:says(_"[b]WARNING:[/b] Not everyone comes back alive. You also need to have special authorization from big boss to go there.")
+		end
 		end_dialog()
 		show("node99") -- Better safe than sorry.
 	end,

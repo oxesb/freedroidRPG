@@ -86,6 +86,7 @@ npc_list{
 	"Act2SecurityChief",     --[[ _"Pitiable Man - Ex-Security Officer" ]]--
 	"Act2ProgrammingChief",  --[[ _"CPO - ex-Programmer Officer" ]]--
 	"Act2GateKeeper",        --[[ _"Landing Zone Control Droid" ]]--
+	"Act2FactoryTerminal",
 	"614_portal",            --[[ _"614 - Gate Guard Bot ]]--
 	"614_cryo",              --[[ _"614 - Cryo Lab Guard Bot" ]]--
 	"24-Controllable-Bot",

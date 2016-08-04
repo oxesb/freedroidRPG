@@ -23,18 +23,28 @@ local Tux = FDrpg.get_tux()
 return {
 	EveryTime = function()
 		play_sound("effects/Menu_Item_Deselected_Sound_0.ogg")
-		Npc:says(_"[b]Loading biologic credentials.[/b]")
-		if (not RRTerminal_connected) then
-			if (takeover(12)) then -- I prefer a fixed number of charges...
-				show("node0")
-				RRTerminal_connected = true
-				Npc:says(_"[b]Welcome to this terminal.[/b]")
+		Npc:says(_"[b]Loading terminal...[/b]")
+		if (Tux:has_item("PC LOAD LETTER")) then
+			Npc:says(_"[b]Loading biologic credentials.[/b]")
+			if (not RRTerminal_connected) then
+				if (takeover(12)) then -- I prefer a fixed number of charges...
+					show("node0")
+					RRTerminal_connected = true
+					Npc:says(_"[b]Welcome to this terminal.[/b]")
+				else
+					Npc:says(_"[b]Access Denied.[/b]")
+				end
 			else
-				Npc:says(_"[b]Access Denied.[/b]")
+				show("node0")
+				Npc:says(_"[b]Welcome to this terminal.[/b]")
 			end
+
 		else
-			show("node0")
-			Npc:says(_"[b]Welcome to this terminal.[/b]")
+			Npc:says(_"[b]No instructions to load this terminal.[/b]")
+			Tux:says(_"help", "NO_WAIT")
+			Npc:says(_"This terminal needs instructions to be loaded. Instructions can be requested at last floor of factory north from town.")
+			Npc:says(_"[b]WARNING:[/b] Not everyone comes back alive. You also need to have special authorization from big boss to go there.")
+			end_dialog()
 		end
 		show("node99")
 	end,

@@ -6743,6 +6743,205 @@ end
 </LuaCode>
 * End of trigger *
 
+##############
+## Level 77 ##
+##############
+
+##############
+## Level 78 ##
+##############
+
+* New event trigger *
+Name=_"To Underground F1"
+Trigger at label="RRFSecretArea"
+Silent=0
+<LuaCode>
+	if (cmp_obstacle_state("RRF1AccessTrapdoor", "opened")) then
+    	display_big_message("STOP CHEATING!!") -- Shouldn't happen.
+    	hurt_tux(100)
+	end
+</LuaCode>
+* End of trigger *
+
+* New event trigger *
+Name=_"To Underground F2"
+Trigger at label="78to79"
+Silent=0
+<LuaCode>
+	if (cmp_obstacle_state("RRF2AccessTrapdoor", "opened")) then
+		teleport("79fromX0")
+	end
+</LuaCode>
+* End of trigger *
+
+##############
+## Level 79 ##
+##############
+
+* New event trigger *
+Name=_"To Ground Level"
+Trigger at label="79toX0"
+Silent=0
+<LuaCode>
+		teleport("78from79")
+</LuaCode>
+* End of trigger *
+
+* New event trigger *
+Name=_"To Underground F3"
+Trigger at label="79toX1"
+Silent=0
+<LuaCode>
+		teleport("80fromX0")
+</LuaCode>
+* End of trigger *
+
+##############
+## Level 80 ##
+##############
+
+* New event trigger *
+Name=_"To Underground F2"
+Trigger at label="80toX0"
+Silent=0
+<LuaCode>
+		teleport("79fromX1")
+</LuaCode>
+* End of trigger *
+
+* New event trigger *
+Name=_"To Underground F4"
+Trigger at label="80toX1"
+Silent=0
+<LuaCode>
+		teleport("81fromX0")
+</LuaCode>
+* End of trigger *
+
+##############
+## Level 81 ##
+##############
+
+* New event trigger *
+Name=_"To Underground F3"
+Trigger at label="81toX0"
+Silent=0
+<LuaCode>
+		teleport("80fromX1")
+</LuaCode>
+* End of trigger *
+
+* New event trigger *
+Name=_"To Underground F5"
+Trigger at label="81toX1"
+Silent=0
+<LuaCode>
+		teleport("82fromX0")
+</LuaCode>
+* End of trigger *
+
+##############
+## Level 82 ##
+##############
+
+* New event trigger *
+Name=_"To Underground F4"
+Trigger at label="82toX0"
+Silent=0
+<LuaCode>
+		teleport("81fromX1")
+</LuaCode>
+* End of trigger *
+
+* New event trigger *
+Name=_"To Underground F6"
+Trigger at label="82toX1"
+Silent=0
+<LuaCode>
+		teleport("83fromX0")
+</LuaCode>
+* End of trigger *
+
+##############
+## Level 83 ##
+##############
+
+* New event trigger *
+Name=_"To Underground F5"
+Trigger at label="83toX0"
+Silent=0
+<LuaCode>
+		teleport("82fromX1")
+</LuaCode>
+* End of trigger *
+
+* New event trigger *
+Name=_"To Underground F7"
+Trigger at label="83toX1"
+Silent=0
+<LuaCode>
+		teleport("84fromX0")
+</LuaCode>
+* End of trigger *
+
+##############
+## Level 84 ##
+##############
+
+* New event trigger *
+Name=_"To Underground F6"
+Trigger at label="84toX0"
+Silent=0
+<LuaCode>
+		teleport("83fromX1")
+</LuaCode>
+* End of trigger *
+
+* New event trigger *
+Name=_"To Underground F8"
+Trigger at label="84toX1"
+Silent=0
+<LuaCode>
+		teleport("85fromX0")
+</LuaCode>
+* End of trigger *
+
+##############
+## Level 85 ##
+##############
+
+* New event trigger *
+Name=_"To Underground F7"
+Trigger at label="85toX0"
+Silent=0
+<LuaCode>
+		teleport("84fromX1")
+</LuaCode>
+* End of trigger *
+
+* New event trigger *
+Name=_"To Underground F9"
+Trigger at label="85toX1"
+Silent=0
+<LuaCode>
+		teleport("86fromX0")
+</LuaCode>
+* End of trigger *
+
+##############
+## Level 86 ##
+##############
+
+* New event trigger *
+Name=_"To Underground F8"
+Trigger at label="86toX0"
+Silent=0
+<LuaCode>
+		teleport("85fromX1")
+</LuaCode>
+* End of trigger *
+
+
 ################
 ## NPC Deaths ##
 ################

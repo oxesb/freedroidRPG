@@ -528,7 +528,7 @@ Level=61
 ** Beginning of new Level **
 Level=62
 
-T=751: PosX=71 PosY=29 Faction="civilian" UseDialog="Act2GateKeeper" ShortLabel=_"Landing Zone Control Droid" Marker=0 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=4
+T=751: PosX=71 PosY=30 Faction="civilian" UseDialog="Act2GateKeeper" ShortLabel=_"Landing Zone Control Droid" Marker=0 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=4
 ** End of this levels Special Forces data **
 ---------------------------------------------------------
 ** Beginning of new Level **
@@ -624,6 +624,51 @@ T=751: PosX=76 PosY=26 Faction="rr" UseDialog="AfterTakeover" ShortLabel=_"Power
 ---------------------------------------------------------
 ** Beginning of new Level **
 Level=77
+
+** End of this levels Special Forces data **
+---------------------------------------------------------
+** Beginning of new Level **
+Level=78
+
+** End of this levels Special Forces data **
+---------------------------------------------------------
+** Beginning of new Level **
+Level=79
+
+** End of this levels Special Forces data **
+---------------------------------------------------------
+** Beginning of new Level **
+Level=80
+
+** End of this levels Special Forces data **
+---------------------------------------------------------
+** Beginning of new Level **
+Level=81
+
+** End of this levels Special Forces data **
+---------------------------------------------------------
+** Beginning of new Level **
+Level=82
+
+** End of this levels Special Forces data **
+---------------------------------------------------------
+** Beginning of new Level **
+Level=83
+
+** End of this levels Special Forces data **
+---------------------------------------------------------
+** Beginning of new Level **
+Level=84
+
+** End of this levels Special Forces data **
+---------------------------------------------------------
+** Beginning of new Level **
+Level=85
+
+** End of this levels Special Forces data **
+---------------------------------------------------------
+** Beginning of new Level **
+Level=86
 
 ** End of this levels Special Forces data **
 ---------------------------------------------------------
