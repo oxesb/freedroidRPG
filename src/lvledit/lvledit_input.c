@@ -23,7 +23,7 @@
  *
  */
 
-#define _leveleditor_input_c
+#define _leveleditor_input_c 1
 
 #include "system.h"
 
@@ -190,7 +190,7 @@ void leveleditor_process_input()
 	level_editor_auto_scroll();
 
 	if (EscapePressed()) {
-		level_editor_done = DoLevelEditorMainMenu();
+		level_editor_done = do_level_editor_main_menu();
 	}
 	while (EscapePressed())
 		SDL_Delay(1);

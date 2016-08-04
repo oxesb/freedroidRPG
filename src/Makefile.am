@@ -20,7 +20,7 @@ freedroidRPG_SOURCES = \
 	benchmark.c BFont.c blocks.c bullet.c \
 	character.c chat.c colldet.c \
 	dynarray.c \
-	enemy.c event.c \
+	enemy.c event.c extint_macros.h \
 	faction.c floor_tiles.c font.c \
 	game_ui.c getopt.c getopt1.c graphics.c \
 	hud.c \
@@ -70,6 +70,7 @@ freedroidRPG_SOURCES = \
 	\
 	savegame/convert.c savegame/savegame.h \
 	savegame/filters_0_16.c \
+	savegame/filters_0_16_1.c \
 	\
 	widgets/widgets.c widgets/widgets.h \
 	widgets/widget_background.c widgets/widget_background.h \

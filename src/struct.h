@@ -53,16 +53,16 @@ struct dynarray {
 	void *arr;
 	int size;
 	int capacity;
+	int sparse;
+	int *used_members;
 };
+
+#define SPARSE_DYNARRAY { .sparse = 1 }
 
 typedef struct dynarray item_dynarray;
 typedef struct dynarray string_dynarray;
-
-typedef struct upgrade_socket_dynarray {
-	struct upgrade_socket *arr;
-	int size;
-	int capacity;
-} upgrade_socket_dynarray;
+typedef struct dynarray upgrade_socket_dynarray;
+typedef struct dynarray bullet_sparsedynarray;
 
 struct font {
 	int height;
@@ -149,7 +149,7 @@ typedef struct configuration_for_freedroid {
 	int skill_explanation_screen_visible;
 	int enemy_energy_bars_visible;
 	int effect_countdowns_visible;
-	int limit_framerate;
+	int framerate_limit;
 	int omit_obstacles_in_level_editor;
 	int omit_map_labels_in_level_editor;
 	int omit_enemies_in_level_editor;
@@ -358,7 +358,7 @@ typedef struct item {
 	int ammo_clip;		// how much bullets in the clip, IN CASE OF WEAPON
 	point inventory_position;
 
-	struct upgrade_socket_dynarray upgrade_sockets;
+	upgrade_socket_dynarray upgrade_sockets;
 	int quality;
 } item;
 
@@ -697,7 +697,7 @@ typedef struct bullet {
 
 	int faction;
 	uint8_t hit_type;		//hit bots, humans, both?
-} bullet, *Bullet;
+} bullet;
 
 typedef struct melee_shot	// this is a melee shot
 {
@@ -971,11 +971,11 @@ typedef struct pathfinder_context {
 	int timestamp;
 } pathfinder_context;
 
-typedef struct {
+struct shop_decision {
 	int shop_command;
 	int item_selected;
 	int number_selected;
-} shop_decision;
+};
 
 struct auto_string {
 	char *value;

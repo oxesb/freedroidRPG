@@ -21,7 +21,7 @@
  * @brief Handles all the keybindings and input.
  */
 
-#define _keyboard_c
+#define _keyboard_c 1
 
 #include "defs.h"
 #include "struct.h"
@@ -298,7 +298,7 @@ static int display_keychart(unsigned int startidx, unsigned int cursor, int high
 
 	blit_background("shoppe.jpg");
 
-	ShadowingRectangle(Screen, keychart_rect);
+	draw_shadowing_rectangle(keychart_rect);
 
 	put_string_centered(Para_Font, get_font_height(Para_Font), _("Key chart"));
 
@@ -537,9 +537,9 @@ static int input_key(int keynum, int value)
 			if (Me.spellcasting_skill > 0)
 				Me.spellcasting_skill -= 1;
 		} else if (KEYPRESS("cheat_drop_random_item")) {
-			DropRandomItem(Me.pos.z, Me.pos.x, Me.pos.y, 3, FALSE);
+			drop_random_item(Me.pos.z, Me.pos.x, Me.pos.y, 3, FALSE);
 		} else if (KEYPRESS("cheat_drop_random_magical_item")) {
-			DropRandomItem(Me.pos.z, Me.pos.x, Me.pos.y, 3, TRUE);
+			drop_random_item(Me.pos.z, Me.pos.x, Me.pos.y, 3, TRUE);
 		} else if (KEYPRESS("cheat_respawn_level")) {
 			respawn_level(Me.pos.z);
 		} else if (KEYPRESS("cheat_reload_graphics")) {

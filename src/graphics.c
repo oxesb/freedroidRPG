@@ -26,7 +26,7 @@
  * This file contains graphics primitives, such as initialisation of SDL
  * and video modes.
  */
-#define _graphics_c
+#define _graphics_c 1
 
 #include "pngfuncs.h"
 
@@ -47,22 +47,23 @@ static const SDL_VideoInfo *vid_info;
 void blit_mouse_cursor(void)
 {
 	static int loaded = FALSE;
-	int i;
 	static struct image mouse_cursors[16];
-	char constructed_filename[2000];
-	int cursor_index = (-1);
-	point cursoff = { 0, 0 };
 
 	// On the first function call ever, we load the surfaces for the
 	// flags into memory.
 	//
 	if (!loaded) {
+		int i;
 		for (i = 0; i < 10; i++) {
+			char constructed_filename[2000];
 			sprintf(constructed_filename, "cursors/mouse_cursor_%04d.png", i);
 			load_image(&mouse_cursors[i], GUI_DIR, constructed_filename, NO_MOD);
 		}
 		loaded = TRUE;
 	}
+
+	int cursor_index = -1;
+	struct point cursoff = { 0, 0 };
 
 	switch (mouse_cursor) {
 	case MOUSE_CURSOR_SCROLL_UP:
@@ -764,12 +765,8 @@ static void set_video_mode_for_open_gl(void)
  * This function initialises the video display and opens up a 
  * window for graphics display.
  */
-void InitVideo(void)
+void init_video(void)
 {
-	char vid_driver[81];
-	Uint32 video_flags = 0;	// flags for SDL video mode 
-	char fpath[PATH_MAX];
-
 	// Tell SDL to center the window once we make it
 	putenv("SDL_VIDEO_CENTERED=1");
 
@@ -778,6 +775,7 @@ void InitVideo(void)
 	//
 	// NOTE:  This has got NOTHING to do with OpenGL and OpenGL venour or the like yet...
 	//
+	char vid_driver[81];
 	if (SDL_VideoDriverName(vid_driver, 80)) {
 		DebugPrintf(-4, "\nVideo system type: %s.", vid_driver);
 	} else {
@@ -806,6 +804,7 @@ void InitVideo(void)
 	if (use_open_gl) {
 		set_video_mode_for_open_gl();
 	} else {
+		Uint32 video_flags = 0;	// flags for SDL video mode
 		if (GameConfig.fullscreen_on)
 			video_flags |= SDL_FULLSCREEN;
 
@@ -839,6 +838,7 @@ void InitVideo(void)
 		sprintf(window_title_string, "FreedroidRPG %s", VERSION);
 		SDL_WM_SetCaption(window_title_string, "");
 
+		char fpath[PATH_MAX];
 		if (find_file(fpath, GUI_DIR, ICON_FILE, NULL, PLEASE_INFORM)) {
 			SDL_Surface *icon = IMG_Load(fpath);
 			SDL_WM_SetIcon(icon, NULL);
@@ -857,7 +857,7 @@ void InitVideo(void)
 	SDL_ShowCursor(SDL_DISABLE);
 
 	SDL_initFramerate(&SDL_FPSmanager);
-	SDL_setFramerate(&SDL_FPSmanager, 40);
+	SDL_setFramerate(&SDL_FPSmanager, GameConfig.framerate_limit);
 }
 
 /**
@@ -955,37 +955,37 @@ void draw_quad(const int16_t vx[4], const int16_t vy[4], int r, int g, int b, in
  * This function draws a transparent black rectangle over a specified
  * area on the screen.
  */
-void ShadowingRectangle(SDL_Surface * Surface, SDL_Rect Area)
+void draw_shadowing_rectangle(SDL_Rect area)
 {
-	draw_rectangle(&Area, 0, 0, 0, 150);
+	draw_rectangle(&area, 0, 0, 0, 150);
 }
 
 /**
  * This function draws a transparent white rectangle over a specified
  * area on the screen.
  */
-void HighlightRectangle(SDL_Surface * Surface, SDL_Rect Area)
+void draw_highlight_rectangle(SDL_Rect area)
 {
-	draw_rectangle(&Area, 255, 255, 255, 100);
+	draw_rectangle(&area, 255, 255, 255, 100);
 }
 
 /*
  * Draw an 'expanded' pixel.
  * Used to draw thick lines.
  */
-static void draw_expanded_pixel(SDL_Surface * Surface, int x, int y, int xincr, int yincr, int thickness, int r, int g, int b)
+static void draw_expanded_pixel(int x, int y, int xincr, int yincr, uint8_t r, uint8_t g, uint8_t b, int thickness)
 {
 	int i;
 
-	sdl_put_pixel(Surface, x, y, r, g, b, 255);
+	sdl_put_pixel(Screen, x, y, r, g, b, 255);
 
 	if (thickness <= 1)
 		return;
 	for (i = x + xincr; i != x + thickness * xincr; i += xincr) {
-		sdl_put_pixel(Surface, i, y, r, g, b, 255);
+		sdl_put_pixel(Screen, i, y, r, g, b, 255);
 	}
 	for (i = y + yincr; i != y + thickness * yincr; i += yincr) {
-		sdl_put_pixel(Surface, x, i, r, g, b, 255);
+		sdl_put_pixel(Screen, x, i, r, g, b, 255);
 	}
 }
 
@@ -993,7 +993,7 @@ static void draw_expanded_pixel(SDL_Surface * Surface, int x, int y, int xincr, 
  * This function draws a line in SDL mode.
  * Classical Bresenham algorithm 
  */
-static void draw_line_sdl(SDL_Surface *Surface, int x1, int y1, int x2, int y2, int r, int g, int b, int thickness)
+static void draw_line_sdl(int x1, int y1, int x2, int y2, uint8_t r, uint8_t g, uint8_t b, int thickness)
 {
 	if (use_open_gl)
 		return;
@@ -1022,7 +1022,7 @@ static void draw_line_sdl(SDL_Surface *Surface, int x1, int y1, int x2, int y2, 
 	if (delta_y < delta_x) {
 		error_accum = delta_x >> 1;
 		while (x1 != x2) {
-			draw_expanded_pixel(Surface, x1, y1, incr_x, incr_y, thickness, r, g, b);
+			draw_expanded_pixel(x1, y1, incr_x, incr_y, r, g, b, thickness);
 			error_accum += delta_y;
 			if (error_accum > delta_x) {
 				error_accum -= delta_x;
@@ -1030,11 +1030,11 @@ static void draw_line_sdl(SDL_Surface *Surface, int x1, int y1, int x2, int y2, 
 			}
 			x1 += incr_x;
 		}
-		draw_expanded_pixel(Surface, x1, y1, incr_x, incr_y, thickness, r, g, b);
+		draw_expanded_pixel(x1, y1, incr_x, incr_y, r, g, b, thickness);
 	} else {
 		error_accum = delta_y >> 1;
 		while (y1 != y2) {
-			draw_expanded_pixel(Surface, x1, y1, incr_x, incr_y, thickness, r, g, b);
+			draw_expanded_pixel(x1, y1, incr_x, incr_y, r, g, b, thickness);
 			error_accum += delta_x;
 			if (error_accum > delta_y) {
 				error_accum -= delta_y;
@@ -1042,14 +1042,14 @@ static void draw_line_sdl(SDL_Surface *Surface, int x1, int y1, int x2, int y2, 
 			}
 			y1 += incr_y;
 		}
-		draw_expanded_pixel(Surface, x1, y1, incr_x, incr_y, thickness, r, g, b);
+		draw_expanded_pixel(x1, y1, incr_x, incr_y, r, g, b, thickness);
 	}
 }
 
 /**
  * This function draws a line in OpenGL mode.
  */
-static void draw_line_opengl(int x1, int y1, int x2, int y2, int r, int g, int b, int width)
+static void draw_line_opengl(int x1, int y1, int x2, int y2, uint8_t r, uint8_t g, uint8_t b, int width)
 {
 #ifdef HAVE_LIBGL
 	glLineWidth(width);
@@ -1068,10 +1068,10 @@ static void draw_line_opengl(int x1, int y1, int x2, int y2, int r, int g, int b
 #endif
 }
 
-void draw_line(float x1, float y1, float x2, float y2, uint8_t r, uint8_t g, uint8_t b, int width)
+void draw_line(int x1, int y1, int x2, int y2, uint8_t r, uint8_t g, uint8_t b, int width)
 {
 	if (!use_open_gl) {
-		draw_line_sdl(Screen, x1, y1, x2, y2, r, g, b, width);
+		draw_line_sdl(x1, y1, x2, y2, r, g, b, width);
 	} else {
 		draw_line_opengl(x1, y1, x2, y2, r, g, b, width);
 	}

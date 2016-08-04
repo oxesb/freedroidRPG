@@ -28,7 +28,7 @@
  * (Not all of the) Initialization routines for FreedroidRPG.
  */
 
-#define _init_c
+#define _init_c 1
 
 #include "system.h"
 
@@ -75,9 +75,8 @@ void clear_out_arrays_for_fresh_game(void)
 	for (i = 0; i < MAX_MELEE_SHOTS; i++)
 		delete_melee_shot(&AllMeleeShots[i]);
 
-	for (i = 0; i < MAXBULLETS; i++) {
-		DeleteBullet(i, FALSE);
-	}
+	dynarray_free(&all_bullets);
+
 	for (i = 0; i < MAXBLASTS; i++) {
 		DeleteBlast(i);
 	}
@@ -250,7 +249,7 @@ void play_title_file(int subdir_handle, char *filename)
 		SDL_SetClipRect(Screen, NULL);
 		set_current_font(Para_Font);
 
-		ScrollText(screen.text,screen.background);
+		scroll_text(screen.text,screen.background);
 
 		clear_screen();
 		our_SDL_flip_wrapper();
@@ -373,11 +372,8 @@ screen_resolution hard_resolutions[] = {
  *  parse command line arguments and set global switches 
  *  exit on error, so we don't need to return success status
  * -----------------------------------------------------------------*/
-void ParseCommandLine(int argc, char *const argv[])
+void parse_command_line(int argc, char *const argv[])
 {
-	int c;
-	int resolution_code = 1;
-
 	static struct option long_options[] = {
 		{"version",     0, 0, 'v'},
 		{"help",        0, 0, 'h'},
@@ -397,7 +393,7 @@ void ParseCommandLine(int argc, char *const argv[])
 	};
 
 	while (1) {
-		c = getopt_long(argc, argv, "vel:onqsb:h?d::r:wft", long_options, NULL);
+		int c = getopt_long(argc, argv, "vel:onqsb:h?d::r:wft", long_options, NULL);
 		if (c == -1)
 			break;
 
@@ -468,7 +464,7 @@ void ParseCommandLine(int argc, char *const argv[])
 					GameConfig.screen_height = atoi(y);
 				} else {
 
-					resolution_code = atoi(optarg);
+					int resolution_code = atoi(optarg);
 
 					if (resolution_code >= 0 && resolution_code < nb_res) {
 						GameConfig.screen_width = hard_resolutions[resolution_code].xres;
@@ -572,7 +568,7 @@ void PrepareStartOfNewCharacter(char *start_label)
 	// Now we read in the mission targets for this mission
 	// Several different targets may be specified simultaneously
 	//
-	GetQuestList("quests.dat");
+	get_quest_list("quests.dat");
 
 	switch_background_music(curShip.AllLevels[Me.pos.z]->Background_Song_Name);
 
@@ -627,7 +623,7 @@ void ResetGameConfigToDefaultValues(void)
 	GameConfig.Draw_Position = TRUE;
 	GameConfig.All_Texts_Switch = FALSE;
 	GameConfig.enemy_energy_bars_visible = TRUE;
-	GameConfig.limit_framerate = TRUE;
+	GameConfig.framerate_limit = 40;
 	GameConfig.skip_light_radius = FALSE;
 	GameConfig.omit_obstacles_in_level_editor = FALSE;
 	GameConfig.omit_map_labels_in_level_editor = TRUE;
@@ -904,13 +900,13 @@ void InitFreedroid(int argc, char **argv)
 
 	detect_available_resolutions();
 
-	ParseCommandLine(argc, argv);
+	parse_command_line(argc, argv);
 
 	LightRadiusInit();
 
 	init_timer();
 
-	InitVideo();
+	init_video();
 
 	// Adapt button positions for the current screen resolution. Note: At this
 	// point the video mode was already initialized, therefore we know if OpenGL

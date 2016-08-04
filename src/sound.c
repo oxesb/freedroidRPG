@@ -29,9 +29,7 @@
  * This file contains sound related functions
  */
 
-#ifndef _sound_c
-#define _sound_c
-#endif
+#define _sound_c 1
 
 #include "defs.h"
 #include "struct.h"
@@ -295,8 +293,6 @@ static void _channel_done(int channel)
 
 static void _load_background_music(void)
 {
-	char fpath[PATH_MAX];
-
 	if (!sound_on)
 		return;
 
@@ -310,6 +306,7 @@ static void _load_background_music(void)
 
 	// Load a new background music, if one is set to be played
 	if (music_filename) {
+		char fpath[PATH_MAX];
 		if (find_file(fpath, MUSIC_DIR, music_filename, NULL, PLEASE_INFORM)) {
 			loaded_music = Mix_LoadMUS(fpath);
 			if (!loaded_music) {

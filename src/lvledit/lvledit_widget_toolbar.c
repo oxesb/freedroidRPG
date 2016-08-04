@@ -37,17 +37,16 @@
 static struct widget_lvledit_categoryselect *previous_category = NULL;
 static int num_blocks_per_line = 0;
 
-static int display_info_idx = 0;
+static int display_info_idx = -1;
 
 static int toolbar_mousepress(struct widget *vt, SDL_Event *event, int select)
 {
 	struct widget_lvledit_categoryselect *cs = get_current_object_type();
 	int i;
-	int x;
 	int idx = -1;
 
 	for (i = 0; i < num_blocks_per_line; i++) {
-		x = INITIAL_BLOCK_WIDTH / 2 + INITIAL_BLOCK_WIDTH * i;
+		int x = INITIAL_BLOCK_WIDTH / 2 + INITIAL_BLOCK_WIDTH * i;
 
 		if (event->button.x > x && event->button.x < x + INITIAL_BLOCK_WIDTH)
 			idx = cs->toolbar_first_block + i;
@@ -290,11 +289,11 @@ static void toolbar_display(struct widget *vt)
 		display_image_on_screen(img, TargetRectangle.x - img->offset_x * zoom_factor, TargetRectangle.y - img->offset_y * zoom_factor, IMAGE_SCALE_TRANSFO(zoom_factor));
 
 		if (cindex == cs->selected_tile_nb) {
-			HighlightRectangle(Screen, TargetRectangle);
+			draw_highlight_rectangle(TargetRectangle);
 			if (display_info_idx != -1) {
 				// Display information about the currently selected object
 				leveleditor_print_object_info(cs->type, cs->indices, display_info_idx, VanishingMessage);
-				VanishingMessageEndDate = SDL_GetTicks() + 100;
+				VanishingMessageEndDate = SDL_GetTicks() + 2*(int)(Frame_Time()*1000.0f);
 			}
 		}
 

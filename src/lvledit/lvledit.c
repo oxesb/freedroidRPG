@@ -27,7 +27,7 @@
  * This file contains all functions for the heart of the level editor.
  */
 
-#define _leveleditor_c
+#define _leveleditor_c 1
 
 #include "system.h"
 
@@ -275,9 +275,6 @@ void LevelEditor()
 
 		StartTakingTimeForFPSCalculation();
 		update_frames_displayed();
-
-		if (GameConfig.limit_framerate)
-			SDL_Delay(10);
 
 		leveleditor_process_input();
 		update_widgets();

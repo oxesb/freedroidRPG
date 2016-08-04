@@ -22,7 +22,7 @@
  *
  */
 
-#define _lvledit_widgets_c
+#define _lvledit_widgets_c 1
 
 #include "system.h"
 
@@ -256,7 +256,7 @@ static void zoom_in_button_right_click(struct widget_button *wb)
 	} else {
 		sprintf(VanishingMessage, _("Could not change zoom factor."));
 	}
-	VanishingMessageEndDate = SDL_GetTicks() + 1000;
+	VanishingMessageEndDate = SDL_GetTicks() + max(1000, 2*(int)(Frame_Time()*1000.0f));
 }
 
 //
@@ -616,9 +616,8 @@ struct widget_group *get_lvledit_ui()
 	int i, j;
 
 	// Build buttons using the array above.
-	struct widget_button *button;
 	for (i = 0; i < sizeof(b) / sizeof(b[0]); i++) {
-		button = widget_button_create();
+		struct widget_button *button = widget_button_create();
 
 		// Set text and tooltip.
 		button->text = b[i].text; 

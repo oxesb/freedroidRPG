@@ -29,7 +29,7 @@
  * extras of the influencer.
  */
 
-#define _influ_c
+#define _influ_c 1
 
 #include "system.h"
 
@@ -46,7 +46,7 @@
 #define LEVEL_JUMP_DEBUG 1
 
 static void CheckForTuxOutOfMap();
-static void AnalyzePlayersMouseClick();
+static void analyze_players_mouse_click();
 
 static int no_left_button_press_in_previous_analyze_mouse_click = FALSE;
 
@@ -93,8 +93,8 @@ static void limit_tux_speed()
 	 * jerking motion towards the enemy.  To stop this from happening, we force
 	 * Tux NOT to stand still when he is first charging a new target.  He stands
 	 * still ONLY when he changes target during a swing. */
-	static enemy *previous_target;
-	enemy *current_target = enemy_resolve_address(Me.current_enemy_target_n,
+	static enemy *previous_target = NULL;
+	struct enemy *current_target = enemy_resolve_address(Me.current_enemy_target_n,
 												  &Me.current_enemy_target_addr);
 
 	if (Me.weapon_item.type >= 0) {
@@ -753,7 +753,7 @@ void move_tux()
 	// is over the game_map widget (the widget is not in its DEFAULT state), no further event handling
 	// is done by the widget system and AnalyzePlayersMouseClick is called.
 	if (game_map->state != DEFAULT)
-		AnalyzePlayersMouseClick();
+		analyze_players_mouse_click();
 
 	if (MouseLeftPressed())
 		no_left_button_press_in_previous_analyze_mouse_click = FALSE;
@@ -939,29 +939,61 @@ void animate_tux()
 void start_tux_death_explosions(void)
 {
 	int i;
-	int counter;
-
-	DebugPrintf(1, "\n%s(): Real function call confirmed.", __FUNCTION__);
 
 	// create a few shifted explosions...
 	for (i = 0; i < 10; i++) {
 
 		// find a free blast
-		counter = 0;
+		int counter = 0;
 		while (AllBlasts[counter++].type != INFOUT) ;
 		counter -= 1;
 		if (counter >= MAXBLASTS) {
-			error_message(__FUNCTION__, "Ran out of blasts!!!", PLEASE_INFORM | IS_FATAL);
+			error_message(__FUNCTION__, "Ran out of blasts!!!", PLEASE_INFORM);
 		}
-		AllBlasts[counter].type = DROIDBLAST;
-		AllBlasts[counter].pos.x = Me.pos.x - 0.125 / 2 + MyRandom(10) * 0.05;
-		AllBlasts[counter].pos.y = Me.pos.y - 0.125 / 2 + MyRandom(10) * 0.05;
-		AllBlasts[counter].phase = i;
+
+		// create a blast at a random position, at a 0.5 radius around Tux (but not "on" Tux)
+		struct blast *new_blast = &AllBlasts[counter];
+		float rand_x, rand_y;
+		int loop_protect; // protect against an infinite loop, in case MyRandom() always draws 0
+
+		loop_protect = 0;
+		do {
+			rand_x = -0.5f + MyRandom(10) * 0.1f;
+			loop_protect++;
+		} while(rand_x == 0.0f && loop_protect < 10);
+		if (loop_protect == 10) {
+			// fallback to a default value
+			rand_x = 0.1f;
+		}
+
+		loop_protect = 0;
+		do {
+			rand_y = -0.5f + MyRandom(10) * 0.1f;
+			loop_protect++;
+		} while(rand_y == 0.0f && loop_protect < 10);
+		if (loop_protect == 10) {
+			// fallback to a default value
+			rand_y = -0.1f;
+		}
+
+		new_blast->type = DROIDBLAST;
+		new_blast->pos.x = Me.pos.x + rand_x;
+		new_blast->pos.y = Me.pos.y + rand_y;
+		new_blast->pos.z = Me.pos.z;
+		new_blast->phase = i;
+		new_blast->faction = FACTION_SELF;
+		new_blast->damage_per_second = 0;
+
+		// check that the blast is not on an invalid position
+		if (!resolve_virtual_position(&new_blast->pos, &new_blast->pos)) {
+			// just ignore that blast...
+			new_blast->pos.x = 0;
+			new_blast->pos.y = 0;
+			new_blast->pos.z = 0;
+			DeleteBlast(counter);
+		}
 	}
-
-	DebugPrintf(1, "\n%s(): Usual end of function reached.", __FUNCTION__);
-
-};				// void start_tux_death_explosions ( void )
+}
 
 /**
  * This function opens a menu when tux dies, asking the
@@ -970,10 +1002,7 @@ void start_tux_death_explosions(void)
  */
 void do_death_menu()
 {
-	char *MenuTexts[100];
-	int done = FALSE;
-	int MenuPosition = 1;
-	int i;
+	char *menu_texts[100];
 
 	game_status = INSIDE_MENU;
 
@@ -985,21 +1014,23 @@ void do_death_menu()
 		QUIT_TO_MAIN_POSITION,
 		QUIT_POSITION
 	};
+
+	int done = FALSE;
 	while (!done) {
-		i = 0;
-		MenuTexts[i++] = _("Load Latest");
-		MenuTexts[i++] = _("Load Backup");
+		int i = 0;
+		menu_texts[i++] = _("Load Latest");
+		menu_texts[i++] = _("Load Backup");
 		if (game_root_mode == ROOT_IS_GAME) {
-			MenuTexts[i++] = _("Quit to Main Menu");
+			menu_texts[i++] = _("Quit to Main Menu");
 		} else { // if (game_root_mode == ROOT_IS_LVLEDIT) {
-			MenuTexts[i++] = _("Return to Editor");
+			menu_texts[i++] = _("Return to Editor");
 		}
-		MenuTexts[i++] = _("Exit FreedroidRPG");
-		MenuTexts[i++] = "";
+		menu_texts[i++] = _("Exit FreedroidRPG");
+		menu_texts[i++] = "";
 
-		MenuPosition = DoMenuSelection("", MenuTexts, 1, "--GAME_BACKGROUND--", Menu_Font);
+		int menu_position = DoMenuSelection("", menu_texts, 1, "--GAME_BACKGROUND--", Menu_Font);
 
-		switch (MenuPosition) {
+		switch (menu_position) {
 		case LOAD_LATEST_POSITION:
 			load_game();
 			done = !done;
@@ -1150,21 +1181,13 @@ void perform_tux_ranged_attack(short int weapon_type, bullet *bullet_parameters,
 
 	float muzzle_offset_factor = 0.5;
 
-	// Search for the first free bullet entry in the bullet list and initialize
-	// with default values
+	// Create a new bullet with default values
 
-	int bullet_index = find_free_bullet_index();
-	if (bullet_index == -1) {
-		// We are out of free bullet slots.
-		// This should not happen, an error message was displayed,
-		return;
-	}
-
-	struct bullet *new_bullet = &(AllBullets[bullet_index]);
+	struct bullet new_bullet;
 	if (bullet_parameters)
-		memcpy(new_bullet, bullet_parameters, sizeof(struct bullet));
+		memcpy(&new_bullet, bullet_parameters, sizeof(struct bullet));
 	else
-		bullet_init_for_player(new_bullet, ItemMap[weapon_type].weapon_bullet_type, weapon_type);
+		bullet_init_for_player(&new_bullet, ItemMap[weapon_type].weapon_bullet_type, weapon_type);
 
 	// Set up recharging time for the Tux...
 	// The firewait time is modified by the ranged weapon skill
@@ -1183,13 +1206,12 @@ void perform_tux_ranged_attack(short int weapon_type, bullet *bullet_parameters,
 	if ( (fabs(target_location.x - Me.pos.x) <= muzzle_offset_factor + dist_epsilon) &&
 	     (fabs(target_location.y - Me.pos.y) <= muzzle_offset_factor + dist_epsilon) ) {
 
-		new_bullet->pos.x = target_location.x;
-		new_bullet->pos.y = target_location.y;
-		CheckBulletCollisions(bullet_index);
-
-		/* If the bullet exploded, we're done */
-		if (new_bullet->type == INFOUT)
+		new_bullet.pos.x = target_location.x;
+		new_bullet.pos.y = target_location.y;
+		if (check_bullet_collisions(&new_bullet)) {
+			/* If the bullet exploded, we're done */
 			return;
+		}
 	}
 
 	// Second case: The target is not near Tux (or a first-case bullet traversed
@@ -1214,11 +1236,13 @@ void perform_tux_ranged_attack(short int weapon_type, bullet *bullet_parameters,
 
 	// Set the bullet parameters
 
-	new_bullet->pos.x = muzzle_position.x;
-	new_bullet->pos.y = muzzle_position.y;
-	new_bullet->speed.x = attack_vector.x * ItemMap[weapon_type].weapon_bullet_speed;
-	new_bullet->speed.y = attack_vector.y * ItemMap[weapon_type].weapon_bullet_speed;
-	new_bullet->angle = -(atan2(attack_vector.y, attack_vector.x) * 180 / M_PI + 90 + 45);
+	new_bullet.pos.x = muzzle_position.x;
+	new_bullet.pos.y = muzzle_position.y;
+	new_bullet.speed.x = attack_vector.x * ItemMap[weapon_type].weapon_bullet_speed;
+	new_bullet.speed.y = attack_vector.y * ItemMap[weapon_type].weapon_bullet_speed;
+	new_bullet.angle = -(atan2(attack_vector.y, attack_vector.x) * 180 / M_PI + 90 + 45);
+
+	dynarray_add(&all_bullets, &new_bullet, sizeof(struct bullet));
 }
 
 /**
@@ -1377,10 +1401,6 @@ int perform_tux_attack(int use_mouse_cursor_for_targeting)
 			new_shot->damage = Me.base_damage + MyRandom(Me.damage_modifier);
 			new_shot->owner = -1;	//no "bot class number" owner
 			new_shot->time_to_hit = tux_anim.attack.duration / 2;
-
-			// Slow or paralyze enemies if the player has bonuses with those effects.
-			erot->frozen += Me.slowing_melee_targets;
-			erot->paralysation_duration_left += Me.paralyzing_melee_targets;
 
 			hit_something = TRUE;
 		}
@@ -1552,16 +1572,13 @@ void check_for_droids_to_attack_or_talk_with()
  * click and so this function analyzes the situation and decides what to
  * do.
  */
-static void AnalyzePlayersMouseClick()
+static void analyze_players_mouse_click()
 {
-	int tmp;
-
 	// This flag avoids the mouse_move_target to change while the user presses
 	// LMB to start a combo action.
 	static int wait_mouseleft_release = FALSE;
 
 	// No action is associated to MouseLeftRelease event or state.
-	//
 
 	if (!MouseLeftPressed()) {
 		wait_mouseleft_release = FALSE;
@@ -1575,7 +1592,8 @@ static void AnalyzePlayersMouseClick()
 
 		Me.mouse_move_target_combo_action_type = NO_COMBO_ACTION_SET;
 
-		if ((tmp = clickable_obstacle_below_mouse_cursor(&obj_lvl, TRUE)) != -1) {
+		int tmp = clickable_obstacle_below_mouse_cursor(&obj_lvl, TRUE);
+		if (tmp != -1) {
 			get_obstacle_spec(obj_lvl->obstacle_list[tmp].type)->action_fn(obj_lvl, tmp);
 			if (Me.mouse_move_target_combo_action_type != NO_COMBO_ACTION_SET)
 				wait_mouseleft_release = TRUE;

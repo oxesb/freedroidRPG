@@ -22,7 +22,7 @@
  *
  */
 
-#define _benchmark_c
+#define _benchmark_c 1
 
 #include "system.h"
 
@@ -95,13 +95,13 @@ static int event_test()
 static int loadship_bench()
 {
 	int failed = TRUE;
-	int loop = 10;
 
 	// Find a ship file to load
 	char fp[PATH_MAX];
 	if (find_file(fp, MAP_DIR, "levels.dat", NULL, NO_REPORT)) {
 		// Load it many times
 		timer_start();
+		int loop = 10;
 		while (loop--) {
 			LoadShip(fp, 0);
 		}
@@ -196,7 +196,7 @@ static int mapgen_bench()
 {
 	int loop = 100;
 	extern void CreateNewMapLevel(int);
-	extern int delete_map_level(int);
+	extern void delete_map_level(int);
 	timer_start();
 	while (loop--) {
 		CreateNewMapLevel(0);

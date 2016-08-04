@@ -53,7 +53,7 @@ hardcoded_types = [ "list_head_t", "keybind_t_array" ]
 # This list contains types for which read/write functions will be added to the
 # generated files.
 
-additional_types = [ "bullet_array", "blast_array", "spell_active_array", "melee_shot_array" ]
+additional_types = [ "bullet_sparsedynarray", "blast_array", "spell_active_array", "melee_shot_array" ]
 
 #=====
 # End of user modifiable part
@@ -293,6 +293,19 @@ def main():
 
             impl_str += 'define_write_xxx_dynarray(%s);\n' % s_name
             impl_str += 'define_read_xxx_dynarray(%s);\n' % s_name
+
+        elif '_sparsedynarray' in s_name:
+
+            s_name = s_name.replace('_sparsedynarray', '')
+            func_name = s_name.replace('struct ', '')
+
+            header_str += '/*! \ingroup genrw */\n'
+            header_str += 'void write_%s_sparsedynarray(struct auto_string *, %s_sparsedynarray *);\n' % (func_name, s_name)
+            header_str += '/*! \ingroup genrw */\n'
+            header_str += 'void read_%s_sparsedynarray(lua_State *, int, %s_sparsedynarray *);\n' % (func_name, s_name)
+
+            impl_str += 'define_write_xxx_sparsedynarray(%s);\n' % s_name
+            impl_str += 'define_read_xxx_sparsedynarray(%s);\n' % s_name
 
     output_h.write(header_str)
     output_c.write(impl_str) 

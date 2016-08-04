@@ -1,6 +1,6 @@
-/* 
+/*
  *
- *   Copyright (c) 2004-2010 Arthur Huillet
+ *   Copyright (c) 2016 Samuel Degrande
  *
  *
  *  This file is part of Freedroid
@@ -16,12 +16,25 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
 
-void edit_level_dimensions(void);
-int do_level_editor_main_menu(void);
-int get_number_popup(const char *, const char *);
+#if !defined(INTERN_FOR)
+#	undef EXTERN
+#	undef INITIALIZER
+#elif INTERN_FOR == 1
+#	undef  EXTERN
+#	define EXTERN
+#	undef  INITIALIZER
+#	define INITIALIZER(v) = v
+#else
+#	undef  EXTERN
+#	define EXTERN extern
+#	undef  INITIALIZER
+#	define INITIALIZER(v)
+#endif
+
+#undef INTERN_FOR

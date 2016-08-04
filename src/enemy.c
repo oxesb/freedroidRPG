@@ -30,7 +30,7 @@
  * themselves, their fireing, animation and such.
  */
 
-#define _enemy_c
+#define _enemy_c 1
 
 #include "system.h"
 
@@ -45,10 +45,10 @@
 static int next_bot_id = 1; // defines the id of the next created enemy.
 
 static int TurnABitTowardsPosition(Enemy, float, float, float);
-static void MoveToMeleeCombat(Enemy, gps *, moderately_finepoint *);
+static void move_to_melee_combat(struct enemy *, struct gps *, struct moderately_finepoint *);
 static void MoveAwayFromMeleeCombat(Enemy, moderately_finepoint *);
 static void ReachMeleeCombat(Enemy, gps *, moderately_finepoint *, pathfinder_context *);
-static void RawStartEnemysShot(enemy *, float, float);
+static void raw_start_enemys_shot(enemy *, float, float);
 static int is_potential_target(enemy * this_robot, gps * target_pos, float *squared_best_dist);
 static int can_see_tux(enemy *);
 
@@ -885,7 +885,7 @@ static void enemy_drop_treasure(struct enemy *this_droid)
 	// there is still some chance, that the enemy will have (and drop) some other
 	// valuables, that the Tux can then collect afterwards.
 	//
-	DropRandomItem(this_droid->pos.z, this_droid->pos.x, this_droid->pos.y, Droidmap[this_droid->type].drop_class, FALSE);
+	drop_random_item(this_droid->pos.z, this_droid->pos.x, this_droid->pos.y, Droidmap[this_droid->type].drop_class, FALSE);
 }
 
 /**
@@ -1009,6 +1009,13 @@ static int kill_enemy(enemy * target, char givexp, int killertype)
 			append_new_game_message(_("[s]%s[v] died."), target->short_description_text);
 		 */
 	}
+
+	// Clean the bot status, to avoid to color the bot corpse
+
+	target->frozen = 0;
+	target->poison_duration_left = 0;
+	target->poison_damage_per_sec = 0;
+	target->paralysation_duration_left = 0;
 
 	// NOTE:  We reset the animation phase to the first death animation image
 	//        here.  But this may be WRONG!  In the case that the enemy graphics
@@ -1787,7 +1794,7 @@ static void state_machine_attack(enemy * ThisRobot, moderately_finepoint * new_m
 			ReachMeleeCombat(ThisRobot, &move_pos, new_move_target, pf_ctx);
 			break;
 		case MOVE_MELEE:
-			MoveToMeleeCombat(ThisRobot, &move_pos, new_move_target);
+			move_to_melee_combat(ThisRobot, &move_pos, new_move_target);
 			break;
 		case MOVE_AWAY:
 			MoveAwayFromMeleeCombat(ThisRobot, new_move_target);
@@ -1803,7 +1810,7 @@ static void state_machine_attack(enemy * ThisRobot, moderately_finepoint * new_m
 
 	/* Great suggestion of Sarayan : we do not care about friendly fire, and make bullets go through people of the same side. */
 	if (shoot_target && ThisRobot->firewait <= 0)
-		RawStartEnemysShot(ThisRobot, move_pos.x - ThisRobot->virt_pos.x, move_pos.y - ThisRobot->virt_pos.y);
+		raw_start_enemys_shot(ThisRobot, move_pos.x - ThisRobot->virt_pos.x, move_pos.y - ThisRobot->virt_pos.y);
 
 }
 
@@ -2173,48 +2180,41 @@ void set_bullet_speed_to_target_direction(bullet * NewBullet, float bullet_speed
  * through the pointer ThisRobot at the target VECTOR xdist ydist, which
  * is a DISTANCE VECTOR, NOT ABSOLUTE COORDINATES OF THE TARGET!!!
  */
-static void RawStartEnemysShot(enemy * ThisRobot, float xdist, float ydist)
+static void raw_start_enemys_shot(enemy * this_robot, float xdist, float ydist)
 {
 	// If the robot is not in walk or stand animation, i.e. if it's in
 	// gethit, death or attack animation, then we can't start another
 	// shot/attack right now...
 	//
-	if ((ThisRobot->animation_type != WALK_ANIMATION) && (ThisRobot->animation_type != STAND_ANIMATION))
+	if ((this_robot->animation_type != WALK_ANIMATION) && (this_robot->animation_type != STAND_ANIMATION))
 		return;
 
 	/* First of all, check what kind of weapon the bot has : ranged or melee */
-	struct itemspec weapon_spec = ItemMap[Droidmap[ThisRobot->type].weapon_id];
+	struct itemspec weapon_spec = ItemMap[Droidmap[this_robot->type].weapon_id];
 
 	if (!weapon_spec.weapon_is_melee) {	/* ranged */
 
-		// find a bullet entry, that isn't currently used...
-		//
-		int bullet_index = find_free_bullet_index();
-		if (bullet_index == -1) {
-			// We are out of free bullet slots.
-			// This should not happen, an error message was displayed,
-			return;
-		}
+		struct bullet new_bullet;
 
-		bullet *new_bullet = &(AllBullets[bullet_index]);
-
-		bullet_init_for_enemy(new_bullet, weapon_spec.weapon_bullet_type,
-		                      Droidmap[ThisRobot->type].weapon_id, ThisRobot);
+		bullet_init_for_enemy(&new_bullet, weapon_spec.weapon_bullet_type,
+		                      Droidmap[this_robot->type].weapon_id, this_robot);
 
 		// We send the bullet onto it's way towards the given target
 		float bullet_speed = (float)weapon_spec.weapon_bullet_speed;
-		set_bullet_speed_to_target_direction(new_bullet, bullet_speed, xdist, ydist);
+		set_bullet_speed_to_target_direction(&new_bullet, bullet_speed, xdist, ydist);
 
 		// Enemies also have to respect the angle modifier in their weapons...
-		new_bullet->angle = -(90 + 45 + 180 * atan2(new_bullet->speed.y, new_bullet->speed.x) / M_PI);
+		new_bullet.angle = -(90 + 45 + 180 * atan2(new_bullet.speed.y, new_bullet.speed.x) / M_PI);
 
 		// At this point we mention, that when not moving anywhere, the robot should also
 		// face into the direction of the shot
-		ThisRobot->previous_angle = new_bullet->angle + 180;
+		this_robot->previous_angle = new_bullet.angle + 180;
 
 		// Change bullet starting position so that they don't hit the shooter...
-		new_bullet->pos.x += (new_bullet->speed.x) / (bullet_speed) * 0.5;
-		new_bullet->pos.y += (new_bullet->speed.y) / (bullet_speed) * 0.5;
+		new_bullet.pos.x += (new_bullet.speed.x) / (bullet_speed) * 0.5;
+		new_bullet.pos.y += (new_bullet.speed.y) / (bullet_speed) * 0.5;
+
+		dynarray_add(&all_bullets, &new_bullet, sizeof(struct bullet));
 
 	} else {		/* melee weapon */
 
@@ -2227,43 +2227,43 @@ static void RawStartEnemysShot(enemy * ThisRobot, float xdist, float ydist)
 
 		melee_shot *NewShot = &(AllMeleeShots[shot_index]);
 
-		NewShot->attack_target_type = ThisRobot->attack_target_type;
+		NewShot->attack_target_type = this_robot->attack_target_type;
 		NewShot->mine = FALSE;	/* shot comes from a bot not tux */
 
-		if (ThisRobot->attack_target_type == ATTACK_TARGET_IS_ENEMY) {
-			NewShot->bot_target_n = ThisRobot->bot_target_n;
-			NewShot->bot_target_addr = ThisRobot->bot_target_addr;
+		if (this_robot->attack_target_type == ATTACK_TARGET_IS_ENEMY) {
+			NewShot->bot_target_n = this_robot->bot_target_n;
+			NewShot->bot_target_addr = this_robot->bot_target_addr;
 		} else {	/* enemy bot attacking tux */
 			enemy_set_reference(&NewShot->bot_target_n, &NewShot->bot_target_addr, NULL);
 		}
 
-		NewShot->to_hit = Droidmap[ThisRobot->type].to_hit;
+		NewShot->to_hit = Droidmap[this_robot->type].to_hit;
 		NewShot->damage = weapon_spec.weapon_base_damage + MyRandom(weapon_spec.weapon_damage_modifier);
-		NewShot->owner = ThisRobot->id;
+		NewShot->owner = this_robot->id;
 	}
 
-	ThisRobot->ammo_left--;
-	if (ThisRobot->ammo_left > 0) {
-		ThisRobot->firewait += weapon_spec.weapon_attack_time;
+	this_robot->ammo_left--;
+	if (this_robot->ammo_left > 0) {
+		this_robot->firewait += weapon_spec.weapon_attack_time;
 	} else {
-		ThisRobot->ammo_left = weapon_spec.weapon_ammo_clip_size;
-		if (ThisRobot->firewait < weapon_spec.weapon_reloading_time)
-			ThisRobot->firewait = weapon_spec.weapon_reloading_time;
+		this_robot->ammo_left = weapon_spec.weapon_ammo_clip_size;
+		if (this_robot->firewait < weapon_spec.weapon_reloading_time)
+			this_robot->firewait = weapon_spec.weapon_reloading_time;
 	}
 
-	if (ThisRobot->firewait < weapon_spec.weapon_attack_time)
-		ThisRobot->firewait = weapon_spec.weapon_attack_time;
+	if (this_robot->firewait < weapon_spec.weapon_attack_time)
+		this_robot->firewait = weapon_spec.weapon_attack_time;
 
-	if (Droidmap[ThisRobot->type].attack_animation_last_image - Droidmap[ThisRobot->type].attack_animation_first_image > 1) {
-		ThisRobot->animation_phase = ((float)Droidmap[ThisRobot->type].attack_animation_first_image) + 0.1;
-		ThisRobot->animation_type = ATTACK_ANIMATION;
-		ThisRobot->current_angle = -(-90 + 180 * atan2(ydist, xdist) / M_PI);
+	if (Droidmap[this_robot->type].attack_animation_last_image - Droidmap[this_robot->type].attack_animation_first_image > 1) {
+		this_robot->animation_phase = ((float)Droidmap[this_robot->type].attack_animation_first_image) + 0.1;
+		this_robot->animation_type = ATTACK_ANIMATION;
+		this_robot->current_angle = -(-90 + 180 * atan2(ydist, xdist) / M_PI);
 	}
 
 	if (!weapon_spec.weapon_is_melee)
-		fire_bullet_sound(weapon_spec.weapon_bullet_type, &ThisRobot->pos);
+		fire_bullet_sound(weapon_spec.weapon_bullet_type, &this_robot->pos);
 	else
-		play_melee_weapon_missed_sound(&ThisRobot->pos);
+		play_melee_weapon_missed_sound(&this_robot->pos);
 };				// void RawStartEnemysShot( enemy* ThisRobot , float xdist , float ydist )
 
 /**
@@ -2301,15 +2301,15 @@ static int ConsideredMoveIsFeasible(Enemy ThisRobot, moderately_finepoint StepVe
  * - halt as soon as one of those positions is free
  */
 
-static void MoveToMeleeCombat(enemy *ThisRobot, gps *target_pos, moderately_finepoint *set_move_tgt)
+static void move_to_melee_combat(struct enemy *this_robot, struct gps *target_pos, struct moderately_finepoint *set_move_tgt)
 {
-	freeway_context frw_ctx = { is_friendly(ThisRobot->faction, FACTION_SELF), {ThisRobot->bot_target_addr, NULL} };
+	freeway_context frw_ctx = { is_friendly(this_robot->faction, FACTION_SELF), {this_robot->bot_target_addr, NULL} };
 
 	// All computations are done in the target's level
 	gps bot_vpos;
-	update_virtual_position(&bot_vpos, &ThisRobot->pos, target_pos->z);
+	update_virtual_position(&bot_vpos, &this_robot->pos, target_pos->z);
 
-	// Compute a unit vector from target to ThisRobot
+	// Compute a unit vector from target to this_robot
 	moderately_finepoint vector_from_target = { bot_vpos.x, bot_vpos.y };	//
 	normalize_vect(target_pos->x, target_pos->y, &(vector_from_target.x), &(vector_from_target.y));
 	vector_from_target.x -= target_pos->x;
@@ -2323,7 +2323,6 @@ static void MoveToMeleeCombat(enemy *ThisRobot, gps *target_pos, moderately_fine
 	float angles_to_try[8] = { 0, 45, -45, 90, -90, 135, -135, 180 };
 	int a;
 	for (a = 0; a < 8; ++a) {
-		int target_reachable = FALSE;
 		moderately_finepoint checked_vector = { vector_from_target.x, vector_from_target.y };
 		RotateVectorByAngle(&checked_vector, angles_to_try[a]);
 		moderately_finepoint checked_pos =
@@ -2335,7 +2334,7 @@ static void MoveToMeleeCombat(enemy *ThisRobot, gps *target_pos, moderately_fine
 
 		if (way_free_of_droids(target_pos->x, target_pos->y, checked_pos.x, checked_pos.y, target_pos->z, &frw_ctx)) {
 			// If the checked_pos is free, also check that the target is reachable
-			target_reachable =
+			int target_reachable =
 			    DirectLineColldet(checked_pos.x, checked_pos.y, target_pos->x, target_pos->y, target_pos->z,
 					      &WalkablePassFilter);
 			if (target_reachable) {	// The position has been found
@@ -2347,7 +2346,7 @@ static void MoveToMeleeCombat(enemy *ThisRobot, gps *target_pos, moderately_fine
 	}
 
 	// Transform back into ThisRobot's reference level
-	update_virtual_position(&bot_vpos, &final_pos, ThisRobot->pos.z);
+	update_virtual_position(&bot_vpos, &final_pos, this_robot->pos.z);
 	set_move_tgt->x = bot_vpos.x;
 	set_move_tgt->y = bot_vpos.y;
 }

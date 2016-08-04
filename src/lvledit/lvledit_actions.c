@@ -26,7 +26,7 @@
  * This file contains all the actions performed by the level editor, ie. the functions that act on the level.
  */
 
-#define _leveleditor_actions_c
+#define _leveleditor_actions_c 1
 
 #include "system.h"
 
@@ -241,18 +241,18 @@ obstacle *action_create_obstacle_user(Level EditLevel, double x, double y, int n
  * Change an obstacle label, possibly removing it.
  * @return the number of actions that were pushed on the stack.
  */
-static int action_change_obstacle_label(level *EditLevel, obstacle *obstacle, char *name, int undoable)
+static int action_change_obstacle_label(struct level *edit_level, struct obstacle *our_obstacle, char *name, int undoable)
 {
 	// If the obstacle already has a label, remove it
-	char *old_label = get_obstacle_extension(EditLevel, obstacle, OBSTACLE_EXTENSION_LABEL);
+	char *old_label = get_obstacle_extension(edit_level, our_obstacle, OBSTACLE_EXTENSION_LABEL);
 	if (old_label) {
 		old_label = strdup(old_label);
-		del_obstacle_extension(EditLevel, obstacle, OBSTACLE_EXTENSION_LABEL);
+		del_obstacle_extension(edit_level, our_obstacle, OBSTACLE_EXTENSION_LABEL);
 	}
 
 	// Create the undo action if appropriate
 	if (undoable) {
-		action_push(ACT_SET_OBSTACLE_LABEL, obstacle, old_label);
+		action_push(ACT_SET_OBSTACLE_LABEL, our_obstacle, old_label);
 	} else {
 		if (old_label) {
 			free(old_label);
@@ -265,7 +265,7 @@ static int action_change_obstacle_label(level *EditLevel, obstacle *obstacle, ch
 		return 0;
 
 	// Assign the new label
-	add_obstacle_extension(EditLevel, obstacle, OBSTACLE_EXTENSION_LABEL, strdup(name));
+	add_obstacle_extension(edit_level, our_obstacle, OBSTACLE_EXTENSION_LABEL, strdup(name));
 
 	return undoable;
 }
@@ -278,7 +278,7 @@ void action_change_obstacle_label_user(level *EditLevel, obstacle *our_obstacle)
 		return;
 
 	char *old_label = get_obstacle_extension(EditLevel, our_obstacle, OBSTACLE_EXTENSION_LABEL);
-	name = GetEditableStringInPopupWindow(1000, _("\nPlease enter obstacle label: \n\n"), old_label ? old_label : "");
+	name = get_editable_string_in_popup_window(1000, _("\nPlease enter obstacle label: \n\n"), old_label ? old_label : "");
 	
 	if (name) {
 		action_change_obstacle_label(EditLevel, our_obstacle, name, 1);
@@ -630,7 +630,7 @@ void level_editor_action_change_map_label_user(level *EditLevel, float x, float 
 
 	while (1) {
 		// Show popup window to enter a new map label
-		name = GetEditableStringInPopupWindow(sizeof(suggested_label) - 1, _("\nPlease enter map label: \n\n"), suggested_label);
+		name = get_editable_string_in_popup_window(sizeof(suggested_label) - 1, _("\nPlease enter map label: \n\n"), suggested_label);
 		if (!name || (old_name && !strcmp(name, old_name))) {
 			// Do not change label
 			free(name);
@@ -686,12 +686,9 @@ void action_create_map_label(level *lvl, int x, int y, char *label_name)
  */
 void action_remove_map_label(level *lvl, int x, int y)
 {
-	char *old_label_name;
-	map_label *m;
-
-	m = get_map_label_from_coords(lvl, x, y);
+	struct map_label *m = get_map_label_from_coords(lvl, x, y);
 	if (m) {
-		old_label_name = strdup(m->label_name);
+		char *old_label_name = strdup(m->label_name);
 
 		remove_element_from_selection(m);
 
@@ -701,11 +698,10 @@ void action_remove_map_label(level *lvl, int x, int y)
 	}
 }
 
-enemy *action_create_enemy(level *lvl, enemy *en)
+void action_create_enemy(level *lvl, enemy *en)
 {
 	enemy_insert_into_lists(en, TRUE);
 	action_push(ACT_REMOVE_ENEMY, en);
-	return en;
 }
 
 void action_remove_enemy(level *lvl, enemy *en)
@@ -1044,14 +1040,11 @@ static int get_chest_contents(level *l, obstacle *o, item *items[MAX_ITEMS_IN_IN
 	return curitem;
 }
 
-void level_editor_edit_chest(obstacle *o)
+void level_editor_edit_chest(struct obstacle *o)
 {
-	item *chest_items[MAX_ITEMS_IN_INVENTORY];
-	item *user_items[2];
-	int chest_nb_items;
-	int done = 0;
-	shop_decision shop_order;
-	item *tmp;
+	struct item *chest_items[MAX_ITEMS_IN_INVENTORY];
+	struct item *user_items[2];
+	struct shop_decision shop_order;
 
 	item dummy_addtochest;
 	init_item(&dummy_addtochest);
@@ -1070,10 +1063,11 @@ void level_editor_edit_chest(obstacle *o)
 				     PLEASE_INFORM | IS_FATAL);
 	}
 
+	int done = 0;
 	while (!done) {
 
 		// Build the list of items in the chest
-		chest_nb_items = get_chest_contents(CURLEVEL(), o, chest_items);
+		int chest_nb_items = get_chest_contents(CURLEVEL(), o, chest_items);
 
 		// Display the shop interface
 		done = GreatShopInterface(chest_nb_items, chest_items, 1, user_items, &shop_order);
@@ -1086,18 +1080,20 @@ void level_editor_edit_chest(obstacle *o)
 			dynarray_del(itemlist, shop_order.item_selected, sizeof(item));
 			break;
 		case SELL_1_ITEM:
-			tmp = ItemDropFromLevelEditor();
-			if (tmp) {
+			{
+				struct item *tmp = ItemDropFromLevelEditor();
+				if (tmp) {
 
-				if (!itemlist) {
-					itemlist = dynarray_alloc(10, sizeof(item));
-					add_obstacle_extension(CURLEVEL(), o, OBSTACLE_EXTENSION_CHEST_ITEMS, itemlist);
+					if (!itemlist) {
+						itemlist = dynarray_alloc(10, sizeof(item));
+						add_obstacle_extension(CURLEVEL(), o, OBSTACLE_EXTENSION_CHEST_ITEMS, itemlist);
+					}
+
+					dynarray_add(itemlist, tmp, sizeof(item));
+
+					// delete the ground copy
+					DeleteItem(tmp);
 				}
-
-				dynarray_add(itemlist, tmp, sizeof(item)); 
-
-				// delete the ground copy
-				DeleteItem(tmp);
 			}
 			break;
 		default:

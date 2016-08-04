@@ -28,7 +28,7 @@
  * This file contains all menu functions and their subfunctions
  */
 
-#define _menu_c
+#define _menu_c 1
 
 #include "system.h"
 
@@ -50,6 +50,8 @@ int Single_Player_Menu(void);
 #define AUTO_SCROLL_RATE (0.02f)
 
 #define MAX_MENU_ITEMS 100
+
+static int game_needs_restart = FALSE;
 
 /**
  * This function tells over which menu item the mouse cursor would be,
@@ -78,17 +80,16 @@ static int MouseCursorIsOverMenuItem(int first_menu_item_pos_y, int h)
  *
  *
  */
-static void print_menu_text(char *InitialText, char *MenuTexts[], int first_menu_item_pos_y, const char *background_name, void *MenuFont)
+static void print_menu_text(char *initial_text, char *menu_texts[], int first_menu_item_pos_y, const char *background_name, void *menu_font)
 {
-	char open_gl_string[2000];
-
 	InitiateMenu(background_name);
 
 	// Maybe if this is the very first startup menu, we should also print
 	// out some status variables like whether using OpenGL or not DIRECTLY
 	// ON THE MENU SCREEN...
 	//
-	if (!strcmp(MenuTexts[0], SINGLE_PLAYER_STRING)) {
+	if (!strcmp(menu_texts[0], SINGLE_PLAYER_STRING)) {
+		char open_gl_string[2000];
 		put_string_right(FPS_Display_Font, GameConfig.screen_height - 0.7 * get_font_height(get_current_font()), freedroid_version);
 		// printf ("\n%s %s  \n", PACKAGE, VERSION);
 #ifdef HAVE_LIBGL
@@ -107,10 +108,10 @@ static void print_menu_text(char *InitialText, char *MenuTexts[], int first_menu
 	// Now that the possible font-changing small info printing is
 	// done, we can finally set the right font for the menu itself.
 	//
-	if (MenuFont == NULL)
+	if (menu_font == NULL)
 		set_current_font(Menu_Font);
 	else
-		set_current_font((struct font *) MenuFont);
+		set_current_font((struct font *) menu_font);
 
 };				// void print_menu_text ( ... )
 
@@ -233,7 +234,7 @@ int DoMenuSelection(char *InitialText, char **MenuTexts, int FirstItem, const ch
 		}
 		// Draw the menu's  background
 		//
-		ShadowingRectangle(Screen, BackgroundRect);
+		draw_shadowing_rectangle(BackgroundRect);
 
 		// Display each option
 		//
@@ -274,7 +275,7 @@ int DoMenuSelection(char *InitialText, char **MenuTexts, int FirstItem, const ch
 				HighlightRect.y = first_menu_item_pos_y + i * h;
 				HighlightRect.w = width + 2 * h;
 				HighlightRect.h = h;
-				HighlightRectangle(Screen, HighlightRect);
+				draw_highlight_rectangle(HighlightRect);
 
 				if (auto_scroll_run == TRUE) {
 					auto_scroll_start += AUTO_SCROLL_RATE;
@@ -865,7 +866,7 @@ static int Game_handle(int n)
 	case DIFFICULTY:
 		GameConfig.difficulty_level++;
 		GameConfig.difficulty_level %= 3;
-		alert_window("%s", _("You need to restart FreedroidRPG for the changes to take effect.\n\nSorry for the inconvenience."));
+		game_needs_restart = TRUE;
 		return CONTINUE_MENU;
 	case LEAVE_MENU:
 		return EXIT_MENU;
@@ -904,6 +905,11 @@ static int Options_handle(int n)
 	};
 	switch (n) {
 	case (-1):
+	case LEAVE_OPTIONS_MENU:
+		if (game_needs_restart) {
+			alert_window(_("You need to restart FreedroidRPG for some changes to take effect.\n\nSorry for the inconvenience."));
+			game_needs_restart = 0;
+		}
 		return EXIT_MENU;
 		break;
 #ifdef ENABLE_NLS
@@ -923,8 +929,6 @@ static int Options_handle(int n)
 		return MENU_OSD;
 	case PERFORMANCE_TWEAKS_OPTIONS:
 		return MENU_PERFORMANCE;
-	case LEAVE_OPTIONS_MENU:
-		return EXIT_MENU;
 	default:
 		break;
 	}
@@ -1103,7 +1107,7 @@ static int Resolution_handle(int n)
 			while (EnterPressed() || SpacePressed()) ;
 			GameConfig.next_time_width_of_screen = screen_resolutions[i].xres;
 			GameConfig.next_time_height_of_screen = screen_resolutions[i].yres;
-			alert_window(_("You selected %d x %d pixels.\n\nYou need to restart FreedroidRPG for the changes to take effect.\n\nSorry for the inconvenience."),  screen_resolutions[i].xres, screen_resolutions[i].yres);
+			game_needs_restart = TRUE;
 			return CONTINUE_MENU;
 		}
 		++j;
@@ -1183,7 +1187,7 @@ static int Graphics_handle(int n)
 #ifndef __WIN32__
 		SDL_WM_ToggleFullScreen(Screen);
 #else
-		alert_window(_("You need to restart FreedroidRPG for the changes to take effect.\n\nSorry for the inconvenience."));
+		game_needs_restart = TRUE;
 #endif
 		break;
 
@@ -1283,14 +1287,14 @@ static int Sound_handle(int n)
 			while (RightPressed()) ;
 			GameConfig.Current_Sound_Output_Fmt =
 				(GameConfig.Current_Sound_Output_Fmt + 1) % ALL_SOUND_OUTPUTS;
-			alert_window(_("You need to restart FreedroidRPG for the changes to take effect.\n\nSorry for the inconvenience."));
+			game_needs_restart = TRUE;
 		}
 
 		if (LeftPressed()) {
 			while (LeftPressed()) ;
 			GameConfig.Current_Sound_Output_Fmt =
 				(GameConfig.Current_Sound_Output_Fmt - 1) == -1 ? ALL_SOUND_OUTPUTS-1 : (GameConfig.Current_Sound_Output_Fmt - 1);
-			alert_window(_("You need to restart FreedroidRPG for the changes to take effect.\n\nSorry for the inconvenience."));
+			game_needs_restart = TRUE;
 		}
 		break;
 
@@ -1344,7 +1348,7 @@ static void Sound_fill(char *MenuTexts[MAX_MENU_ITEMS])
 static int Performance_handle(int n)
 {
 	enum {
-		SET_LIMIT_FRAMERATE_FLAG = 1,
+		SET_FRAMERATE_LIMIT = 1,
 		SKIP_LIGHT_RADIUS_MODE,
 		SKIP_SHADOWS,
 		TOGGLE_LAZYLOAD,
@@ -1354,9 +1358,20 @@ static int Performance_handle(int n)
 	case (-1):
 		return EXIT_MENU;
 
-	case SET_LIMIT_FRAMERATE_FLAG:
-		while (EnterPressed() || SpacePressed() || MouseLeftPressed()) ;
-		GameConfig.limit_framerate = !GameConfig.limit_framerate;
+	case SET_FRAMERATE_LIMIT:
+		if (LeftPressed()) {
+			while (LeftPressed());
+			if (GameConfig.framerate_limit >= 10) {
+				GameConfig.framerate_limit -= 10;
+				SDL_setFramerate(&SDL_FPSmanager, GameConfig.framerate_limit);
+			}
+		} else if (RightPressed()) {
+			while (RightPressed());
+			if (GameConfig.framerate_limit <= (FPS_UPPER_LIMIT - 10)) {
+				GameConfig.framerate_limit += 10;
+				SDL_setFramerate(&SDL_FPSmanager, GameConfig.framerate_limit);
+			}
+		}
 		break;
 
 	case SKIP_LIGHT_RADIUS_MODE:
@@ -1382,6 +1397,7 @@ static int Performance_handle(int n)
 		break;
 
 	}
+
 	return CONTINUE_MENU;
 }
 
@@ -1389,7 +1405,10 @@ static void Performance_fill(char *MenuTexts[])
 {
 	char Options[20][1000];
 	int i = 0;
-	sprintf(Options[i], _("Limit framerate (powersaving): %s"), GameConfig.limit_framerate ? _("YES") : _("NO"));
+	if (GameConfig.framerate_limit == 0)
+		sprintf(Options[i], _("FPS limit: none"));
+	else
+		sprintf(Options[i], _("FPS limit: %d"), GameConfig.framerate_limit);
 	strncpy(MenuTexts[i], Options[i], 1024);
 	i++;
 	sprintf(Options[i], _("Show light radius: %s"), GameConfig.skip_light_radius ? _("NO") : _("YES"));
