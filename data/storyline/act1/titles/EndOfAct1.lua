@@ -40,7 +40,7 @@ I'll keep you posted.
 
 Oh, and by the way...
 I'm still waiting for you.
-I didn't moved an inch since you woke up.
+I haven't left this place since you woke up.
 Now that the beloved town of yours is safe...
 ...Wouldn't it be a good time to save me as well?
 

@@ -683,9 +683,9 @@ return {
 	},
 	{
 		id = "node67",
-		text = _"...Sorry, I missed the plan, some *annoying* entity which calls itself 'Dvorak' appeared, left me a message, and left. Can you repeat, please?",
+		text = _"...Sorry, I missed the plan, some *annoying* entity which calls itself 'Dvorak' appeared, gave me a message, and left. Can you repeat, please?",
 		code = function()
-			Npc:says(_"Dvorak?")
+			Npc:says(_"Dvorak?") -- Please notice Spencer doesn't really cares with it at first.
 			Tux:says(_"Yes, do you what him (or it) is?", "NO_WAIT")
 			Npc:says(_"Nope, never heard of.")
 			Tux:says(_"So, you were telling me a plan...?")
