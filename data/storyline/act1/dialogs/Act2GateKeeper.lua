@@ -42,6 +42,7 @@ return {
 			Npc:says(_"Good luck on the unknown.")
 			delay_game(0.2) -- for effect
 			Tux:teleport("Act2StartGameSquare") -- TODO: This must be included on endact_1() function and called here...
+			revive_faction("ms") -- fixme: This is to be removed.
 			end_dialog()
 		end,
 	},

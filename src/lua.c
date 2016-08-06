@@ -1047,6 +1047,33 @@ static int lua_run_from_dialog(lua_State *L)
 	return 1;
 }
 
+// TODO FIXME: This function must be removed for release.
+static int lua_revive_faction(lua_State *L)
+{
+
+	const char *fact = luaL_checkstring(L, 1);
+
+	enemy *erot, *nerot;
+	BROWSE_DEAD_BOTS_SAFE(erot, nerot) {
+
+		if (erot->faction != get_faction_id(fact)) {
+			continue;
+		}
+		erot->will_respawn = TRUE;
+	}
+
+	// fRespawn all levels -- improper coding
+	int i = 0;
+	while (i <= 86) { // fixme: Hardcoded lvls value
+		respawn_level(i);
+		i++;
+	}
+
+	return 0;
+
+}
+
+
 static int lua_running_benchmark(lua_State *L)
 {
 	lua_pushboolean(L, (do_benchmark) != NULL);
@@ -1401,8 +1428,14 @@ luaL_Reg lfuncs[] = {
 	  to a specified faction. The second argument is
 	  optional, and specifies whether or not the faction
 	  will respawn. It can only be the string "no_respawn".
+
+	  revive_faction() is a hack to undo kill_faction().
+	  It's meant for testing only and should not be used
+	  ingame without "special care".
 	*/
 	{"kill_faction", lua_kill_faction},
+
+	{"revive_faction", lua_revive_faction},
 
 	{"user_input_string", lua_user_input_string},
 
