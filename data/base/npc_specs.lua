@@ -82,6 +82,7 @@ npc_list{
 	"AfterTakeover",
 	"Act2-TerminalColemak",
 	"Act2-TerminalDenied",
+	"Act2-Colemak",          --[[ _"Colemak", _"Dvorak's acquittance - Colemak" ]]--
 	"Act2RRGateTerminal",
 	"Act2SecurityChief",     --[[ _"Pitiable Man - Ex-Security Officer" ]]--
 	"Act2ProgrammingChief",  --[[ _"CPO - ex-Programmer Officer" ]]--

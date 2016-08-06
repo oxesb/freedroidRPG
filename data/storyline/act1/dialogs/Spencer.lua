@@ -694,7 +694,8 @@ return {
 			Npc:says(_"They would freeze the person which knew too much with certain pretexts, or so I was told. It's very far but we can use the Hell Fortress Landing Zone just west from here. However beware, once you leave, you may not be able to get back.")
 			Tux:says(_"So I should go to this so-called resort and get some intel from cryonized former MS staff. How can I report it back to you?")
 			Npc:says(_"Do not worry, I'll arrange to Richard, the computer guy around here, to contact you.")
-			Tux:says(_"Yes. In this case I'll be going now.")
+            Npc:says(_"Also, you should prepare yourself for the trip. I'm not sure how long you'll walk and how many bots you'll come across until you find survivors.")
+			Tux:says(_"I understand. In this case I'll be going now.")
 			Act2_opengate=true
 			-- Open the gates
 			change_obstacle_state("Act2FreighterAccess01", "opened")

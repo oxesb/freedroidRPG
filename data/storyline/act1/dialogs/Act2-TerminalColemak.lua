@@ -43,7 +43,8 @@ return {
 			Npc:says(_"[b]No instructions to load this terminal.[/b]")
 			Tux:says(_"help", "NO_WAIT")
 			Npc:says(_"This terminal needs instructions to be loaded. Instructions can be requested at last floor of factory north from town.")
-			Npc:says(_"[b]WARNING:[/b] Not everyone comes back alive. You also need to have special authorization from big boss to go there.")
+			Npc:says(_"[b]WARNING:[/b] Not everyone comes back alive. Specially if a battle is necessary. You also need to have special authorization from big boss to go to final floor.") 
+			-- Not everyone survives: Look for dead bodies. Battle necessary: Battle Droids. Auth -- You won't find it at last floor.
 			end_dialog()
 		end
 		show("node99")
@@ -79,8 +80,9 @@ return {
 			Npc:says(_"[b]Closing oxygen vial...[/b]", "NO_WAIT") -- Can't tell what's their definition of vial.
 			Npc:says(_"[b]Closing water vial...[/b]", "NO_WAIT")
 			Npc:says(_"[b]Closing memory wiper vial...[/b]")
-			Npc:says(_"[b]WARNING: PATIENT ID #1337 'Colemak' HAS BEEN SUCCESSFULLY UNCRYONIZED![/b]")
-			Npc:says(_"Current Memory Loss: 0.00%%") -- oO He didn't had his memory wipped! Of course *someone* disrupted the "memory wipper" fluids...
+			Npc:says(_"[b]WARNING: PATIENT ID #1337 'Colemak' HAS BEEN UNCRYONIZED![/b]")
+			play_sound("music/NewTutorialStage.ogg") -- Things are now weird
+			Npc:says(_"Current Memory Loss: 0.00%%") -- oO He hadn't his memory wipped! Of course *someone* disrupted the "memory wipper" fluids...
 
 			-- hostilize the cryo keepers
 			Act2SecurityChief:set_faction("rr")
@@ -95,14 +97,17 @@ return {
 			delay_game(1.0)
 
 			-- Colemak kill them. This is unexplained, but the game is terminated... for now...
+			create_droid("75-ColemakSpawn", "ARH", "self", "Act2-Colemak", "radar")
+			local Colemak = FDrpg.get_npc("Act2-Colemak") -- Load this new NPC
+			delay_game(0.2)
 			Act2SecurityChief:drop_dead()
-			delay_game(0.5)
+			delay_game(0.4)
 			Act2ProgrammingChief:drop_dead()
 			delay_game(0.5)
+			Colemak:set_name(_"Colemak")
+			Colemak:set_rush_tux(true)
 
-			 -- Sorry, nothing more to see here! Finishes the game.
-			display_big_message(_"--- Continues ---")
-			win_game()
+			 -- Colemak will carry scripts from here on.
 			end_dialog()
 		end,
 	},

@@ -30,7 +30,8 @@ return {
 			Npc:says(_"[b]No instructions to load this terminal.[/b]")
 			Tux:says(_"help", "NO_WAIT")
 			Npc:says(_"This terminal needs instructions to be loaded. Instructions can be requested at last floor of factory north from town.")
-			Npc:says(_"[b]WARNING:[/b] Not everyone comes back alive. You also need to have special authorization from big boss to go there.")
+			Npc:says(_"[b]WARNING:[/b] Not everyone comes back alive. Specially if a battle is necessary. You also need to have special authorization from big boss to go to final floor.") 
+			-- Not everyone survives: Look for dead bodies. Battle necessary: Battle Droids. Auth -- You won't find it at last floor.
 		end
 		end_dialog()
 		show("node99") -- Better safe than sorry.
