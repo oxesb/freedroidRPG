@@ -36,7 +36,7 @@ local Tux = FDrpg.get_tux()
 return {
 	FirstTime = function()
 
-		Npc:set_rush_tux(false)
+		Npc:set_rush_tux(false) -- While we could check for RT state, this NPC should never be called without it.
 
 	end,
 
@@ -44,7 +44,7 @@ return {
 		if (not Act2_TalkedToColemak) then
 			next("intro")
 		else
-			next("node99")
+			next("node99") -- Player should not leave this dialog. It's not my fault if you pressed 'ESC'.
 		end
 
 	end,
