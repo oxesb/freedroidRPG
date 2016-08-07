@@ -164,13 +164,11 @@ void init_factions()
 	/* MegaSys hate everyone, and everything, except perhaps their shareholders but those are dead. */
 	for (i = 0; i < FACTION_NUMBER_OF_FACTIONS; i++) {
 		set_faction_state(FACTION_BOTS, i, HOSTILE);
-		set_faction_state(FACTION_BOTS, FACTION_BOTS_TWO, FRIENDLY);
+		set_faction_state(FACTION_BOTS_TWO, i, HOSTILE);
 	}
 
-	for (i = 0; i < FACTION_NUMBER_OF_FACTIONS; i++) {
-		set_faction_state(FACTION_BOTS_TWO, i, HOSTILE);
-		set_faction_state(FACTION_BOTS, FACTION_BOTS_TWO, FRIENDLY);
-	}
+	set_faction_state(FACTION_BOTS, FACTION_BOTS_TWO, FRIENDLY);
+	set_faction_state(FACTION_BOTS_TWO, FACTION_BOTS, FRIENDLY);
 
 
 	/* Singularity hates everyone but Tux and bots */
