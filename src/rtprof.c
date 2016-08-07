@@ -677,6 +677,7 @@ struct probe_counter *probe_counter_create(char *title, int max)
  */
 void probe_counter_add(struct probe_counter *probe, int value)
 {
+	// cppcheck-suppress variableScope
 	static int negative_reported = FALSE;
 
 	if (!probe_active)
@@ -958,6 +959,7 @@ struct probe_graph1D *probe_graph1D_create(char *title, int max, int div)
  */
 void probe_graph1D_add(struct probe_graph1D *probe, int val)
 {
+	// cppcheck-suppress variableScope
 	static int negative_reported = FALSE;
 
 	if (!probe_active)
@@ -1075,6 +1077,7 @@ struct probe_graph2D *probe_graph2D_create(char *title, int max_x, int max_y, in
  */
 void probe_graph2D_add(struct probe_graph2D *probe, int val_x, int val_y)
 {
+	// cppcheck-suppress variableScope
 	static int negative_reported = FALSE;
 
 	if (!probe_active)

@@ -134,6 +134,7 @@ static int map_handle_event(struct widget *w, SDL_Event *event)
 
 void widget_lvledit_map_display_cursor()
 {
+	// cppcheck-suppress variableScope
 	static int dragging = FALSE;
 
 	if (active_tool)
