@@ -81,7 +81,7 @@ return {
 			Npc:says(_"[b]Closing water vial...[/b]", "NO_WAIT")
 			Npc:says(_"[b]Closing memory wiper vial...[/b]")
 			Npc:says(_"[b]WARNING: PATIENT ID #1337 'Colemak' HAS BEEN UNCRYONIZED![/b]")
-			play_sound("music/NewTutorialStage.ogg") -- Things are now weird
+			switch_background_music("NewTutorialStage.ogg") -- Things are now weird, so we add weird music!
 			Npc:says(_"Current Memory Loss: 0.00%%") -- oO He hadn't his memory wipped! Of course *someone* disrupted the "memory wipper" fluids...
 
 			-- hostilize the cryo keepers

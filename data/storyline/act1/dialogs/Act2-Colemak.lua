@@ -17,7 +17,7 @@
 -- MA 02111-1307 USA
 ----------------------------------------------------------------------
 --[[WIKI
-PERSONALITY = { "Enigmatic" },
+PERSONALITY = { "Enigmatic", "Friendly", "Helpful" },
 MARKERS = { NPCID1 = "Dvorak" },
 PURPOSE = "$$NAME$$ is a human who worked for $$NPCID1$$ before the Great Assault. He joined MS and helped $$NPCID1$$ to figure
 	 out that the only way to save the planet was after the Great Assault. While $$NPCID1$$ thought $$NAME$$ died, $$NAME$$ was
@@ -116,6 +116,9 @@ return {
 		id = "node99",
 		text = _"Let's find Dvorak! (end game)",
 		code = function()
+			-- Switch music back to town.ogg -- not needed (yet)
+			--switch_background_music("town.ogg") 
+
 			-- We don't have content from here on. The end.
 			hide("node99")
 			display_big_message(_"--- Continues ---")
