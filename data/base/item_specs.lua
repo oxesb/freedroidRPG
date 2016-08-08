@@ -2952,6 +2952,17 @@ item_list{
 ----------------------------------------------------------------------
 
 {
+	id = "Arcane Lore",
+	name =_"Arcane Lore",
+	base_price = 0,
+	inventory = {x = 1, y = 1, image = "script/inv_image.png" },
+	drop = {sound = "Item_Drop_Sound_4.ogg"},
+	description =_[[A Compact Disk saying 'Arcane Lore'. Supposed to hack RR1979 anti-hacking terminals.]],
+	rotation_series = "script",
+},
+----------------------------------------------------------------------
+
+{
 	id = "Cheat Gun",
 	name =_"Cheat Gun",
 	slot = "weapon",

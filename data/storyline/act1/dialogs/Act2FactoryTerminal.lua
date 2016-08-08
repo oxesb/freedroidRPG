@@ -25,23 +25,32 @@ return {
 		play_sound("effects/Menu_Item_Deselected_Sound_0.ogg")
 		Act2BotFactory_prompt = "tux@gateserv.rr: ~ #"
 
-		cli_says(_"Login : ", "NO_WAIT")
-		--; TRANSLATORS: username, maybe this should stay in lowercase letters?
-		Tux:says(_"tux", "NO_WAIT")
-		cli_says(_"Entering as tux", "NO_WAIT")
-		Npc:says("", "NO_WAIT")
-
-		if (cmp_obstacle_state("Act2BotFactory", "closed")) then
-			Npc:says(_"R&R Factory gate status: CLOSED", "NO_WAIT")
-			show("node0")
-		elseif (cmp_obstacle_state("Act2BotFactory", "opened")) then
-			Npc:says(_"R&R Factory gate status: OPEN", "NO_WAIT")
-			show("node10")
+		if (not Tux:has_item("Arcane Lore")) then
+			cli_says(_"Connection refused. ", "NO_WAIT")
+			Npc:says(_"This is a RR1979 secure terminal immune to hack attempts.") -- RR 1979 is ACT2 Review Request on Review Board...
+			end_dialog()
 		else
-			Npc:says("GAME BUG. PLEASE REPORT, RRGATE_TERMINAL EveryTime LuaCode")
+			Npc:says(_"[b]Arcane Lore[/b] - Special disk to hack secure RR1979 terminals.", "NO_WAIT")
+			Npc:says(_"[b]User tux created.[/b] Enjoy!", "NO_WAIT")
+			Npc:says("")
+			cli_says(_"Login : ", "NO_WAIT")
+			--; TRANSLATORS: username, maybe this should stay in lowercase letters?
+			Tux:says(_"tux", "NO_WAIT")
+			cli_says(_"Entering as tux", "NO_WAIT")
+			Npc:says("", "NO_WAIT")
+
+			if (cmp_obstacle_state("Act2BotFactory", "closed")) then
+				Npc:says(_"R&R Factory gate status: CLOSED", "NO_WAIT")
+				show("node0")
+			elseif (cmp_obstacle_state("Act2BotFactory", "opened")) then
+				Npc:says(_"R&R Factory gate status: OPEN", "NO_WAIT")
+				show("node10")
+			else
+				Npc:says("GAME BUG. PLEASE REPORT, RRGATE_TERMINAL EveryTime LuaCode")
+			end
+			cli_says(Act2BotFactory_prompt, "NO_WAIT")
+			show("node99")
 		end
-		cli_says(Act2BotFactory_prompt, "NO_WAIT")
-		show("node99")
 	end,
 
 	{
