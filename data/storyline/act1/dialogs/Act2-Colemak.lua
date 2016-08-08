@@ -56,7 +56,7 @@ return {
 			--; TRANSLATORS: %s = Tux:get_player_name()
 			Npc:says(_"Hello, my name is Colemak. I am an old friend of yours, %s.", Tux:get_player_name())
 			Act2_TalkedToColemak=true
-			show("guyinfo","youinfo","bossinfo")
+			show("nameinfo","youinfo")
 			hide("intro")
 		end,
 	},
@@ -92,9 +92,19 @@ return {
 			Npc:says(_"Well, as you might be aware, if you figure out too much you're cryonized.", "NO_WAIT")
 			Npc:says(_"Only the ones who figures out about MS big boss are actually killed.")
 			Npc:says(_"The reason is simple. Killing would be too noisy, while cryonizing keeps them undercover.")
-			Npc:says(_"Thankfully they never figured out about what I truly knew. I was cryonized for figuring out that Hell Fortress Factory Boss had a pessoal teletransport network and used it to grab the money and goon vacations in tropical islands.")
+			Npc:says(_"Thankfully they never figured out about what I truly knew. I was cryonized for figuring out that Hell Fortress Factory Boss had a pessoal teletransport network and used it to grab the money and go on vacations in tropical islands.")
 			Tux:says(_"Ironic.")
 			hide("youinfo")
+		end,
+	},
+
+	{
+		id = "nameinfo",
+		text = _"HOW DO YOU KNOW MY NAME?!",
+		code = function()
+			Npc:says(_"Why, Dvorak told me, of course.")
+			Tux:says(_"Ok, what's going on here?!")
+			hide("nameinfo") show("bossinfo", "guyinfo")
 		end,
 	},
 
