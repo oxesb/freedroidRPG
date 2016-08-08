@@ -80,6 +80,7 @@ npc_list{
 	"Bender",                --[[ _"Bender", _"Bender - The strongest one" ]]--
 	"Arthur",                --[[ _"Arthur", _"Arthur - Game developer" ]]--
 	"AfterTakeover",
+	"Act2-Vending-Machine",  --[[TRM]]--
 	"Act2-TerminalColemak",
 	"Act2-TerminalDenied",
 	"Act2-Colemak",          --[[ _"Colemak", _"Dvorak's acquittance - Colemak" ]]--
@@ -188,6 +189,16 @@ items = {
 	 {"Industrial coolant"},
 	 {"Barf's Energy Drink"},
 	 {"Diet supplement"},
+	}
+}
+
+npc_shop{
+name = "Act2-Vending-Machine",
+items = {
+	 {"Bottled ice", 3},
+	 {"9x19mm Ammunition"},
+	 {"Barf's Energy Drink"},
+	 {"Diet supplement", 2},
 	}
 }
 
