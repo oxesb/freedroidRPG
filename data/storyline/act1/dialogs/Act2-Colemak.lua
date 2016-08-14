@@ -36,15 +36,23 @@ local Tux = FDrpg.get_tux()
 return {
 
 	EveryTime = function()
-		if (not Act2_TalkedToColemak) then
-			next("intro")
-		else
-			next("node99") -- This is here if something went wrong.
-		end
+
+-- 		"I have secrets to tell, let me get close to you first so no one will overhear us."
 
 		if (Npc:get_rush_tux()) then
 			Npc:set_rush_tux(false)
+		end	
+
+		if (not Act2_TalkedToColemak) then -- First time, jump to intro. Last time, endgame
+			next("intro")
+		elseif (not Act2_DvorakPlanDownload) then
+			next("endgame")
+		else
+			Npc:says(_"Please go to the Terminal you used to uncryonize me and issue the [b]download[/b] command.")
+			end_dialog()
 		end
+
+	
 
 	end,
 
@@ -54,7 +62,6 @@ return {
 		code = function()
 			--; TRANSLATORS: %s = Tux:get_player_name()
 			Npc:says(_"Hello, my name is Colemak. I am an old friend of yours, %s.", Tux:get_player_name())
-			Act2_TalkedToColemak=true
 			show("nameinfo","youinfo")
 			hide("intro")
 		end,
@@ -67,8 +74,8 @@ return {
 			Npc:says(_"Well, as you aren't trying to kill me as some irrational birds I've met, I'll say to you.")
 			Npc:says(_"They aren't humans. They were part of the devious plan of the MS big boss.", "NO_WAIT")
 			Npc:says(_"They are bots, which thinks they are humans. What better way to kill humans that with humans?")
-			Npc:says(_"Thankfully the plan failed, the bots turned out to be too perfect. So he used...")
-			Tux:says(_"The Great Assault. Thanks, I understand it now.")
+			Npc:says(_"Thankfully the plan failed, the bots turned out to be too human for his liking. So he used...")
+			Tux:says(_"The Great Assault. Thanks, I understand now.")
 			hide("guyinfo")
 		end,
 	},
@@ -91,7 +98,7 @@ return {
 			Npc:says(_"Well, as you might be aware, if you figure out too much you're cryonized.", "NO_WAIT")
 			Npc:says(_"Only the ones who figures out about MS big boss are actually killed.")
 			Npc:says(_"The reason is simple. Killing would be too noisy, while cryonizing keeps them undercover.")
-			Npc:says(_"Thankfully they never figured out about what I truly knew. I was cryonized for figuring out that Hell Fortress Factory Boss had a pessoal teletransport network and used it to grab the money and go on vacations in tropical islands.")
+			Npc:says(_"Thankfully they never figured out about what I truly knew. I was cryonized for figuring out that Hell Fortress Factory Boss had a teletransport network only for him which he used to grab the money and go on vacations in tropical islands.")
 			Tux:says(_"Ironic.")
 			hide("youinfo")
 		end,
@@ -111,7 +118,7 @@ return {
 		id = "lhcinfo",
 		text = _"High Council? Tell me more...",
 		code = function()
-			Npc:says(_"I thought you already knew all that, being a former ship commander and all...?", "NO_WAIT")
+			Npc:says(_"I thought you already knew all that, being a former ship commander and all...?")
 			Tux:says(_"I was cryonized, so I forgot. Would you mind helping me to find my memories?")
 			Npc:says(_"You should find Dvorak first, he was a good friend of yours. Like, your guide.")
 			Npc:says(_"He surely will know what you should do next.")
@@ -120,18 +127,38 @@ return {
 		end,
 	},
 
-
 	{
 		id = "node99",
+		text = _"That's too much for me. Give me a minute or two to process all this information, please.",
+		code = function()
+			Npc:says(_"Don't worry my friend. Take all time you need, and then come back to talk with me.")
+			Tux:says(_"Thanks, Colemak. I'll talk to you as soon as I'm ready.")
+			Npc:says("", "NO_WAIT") -- White division line
+			Npc:says(_"[b]Important: Colemak locked the Resort gates to prevent enemies from coming.[/b]")
+			-- Normalizes music
+			switch_background_music("town.ogg") 
+			Act2_TalkedToColemak=true
+			change_obstacle_state("RRResorts-NorthGate", "closed")
+			--change_obstacle_state("RRResorts-SouthGate", "closed") -- Wasn't open
+			hide("node99")
+			end_dialog()
+		end,
+	},
+
+	{
+		id = "endgame",
 		text = _"Let's find Dvorak! (end game)",
 		code = function()
-			-- Switch music back to town.ogg -- not needed (yet)
-			--switch_background_music("town.ogg") 
+			Npc:says(_"So, are you ready?")
+			Tux:says(_"Yes I am!")
+			Npc:says(_"As you must be aware, bots were on Dvorak's track.", "NO_WAIT")
+			Npc:says(_"Thankfully for you, Dvorak uploaded a detailed plan for you on my Cryo terminal.")
+			Npc:says(_"I'll now unlock the [b]download[/b] command. Download the plans for me, pretty please.", "NO_WAIT")
+			Npc:says(_"It's cryptographed so only you are able to read. Inform me about what Dvorak left there!")
+			Act2_DvorakPlanDownload=true
 
-			-- We don't have content from here on. The end.
-			hide("node99")
-			display_big_message(_"--- Continues ---")
-			win_game()
+			-- This is a fix for credits not being played (thanks wlan2)
+			-- Cursor state is not reset on win_game() so you should interact with terminal.
 			end_dialog()
 		end,
 	},

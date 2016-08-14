@@ -36,6 +36,9 @@ return {
 				end
 			else
 				show("node0")
+				if (Act2_DvorakPlanDownload) then
+					show("endgame")
+				end
 				Npc:says(_"[b]Welcome to this terminal.[/b]")
 			end
 
@@ -55,7 +58,11 @@ return {
 		--; TRANSLATORS: command, user lowercase here
 		text = _"help",
 		code = function()
-			Npc:says(_"[b]Available commands: help, freeze, unfreeze, logout[/b]")
+			if (not Act2_DvorakPlanDownload) then
+				Npc:says(_"[b]Available commands: help, freeze, unfreeze, logout[/b]")
+			else
+				Npc:says(_"[b]Available commands: help, freeze, unfreeze, download, logout[/b]")
+			end
 			show("node1", "node2")
 		end,
 	},
@@ -96,7 +103,7 @@ return {
 			Act2ProgrammingChief:teleport("75-KillTuxPos02", "Act2ProgrammingChief")
 			delay_game(1.0)
 
-			-- Colemak kill them. This is unexplained, but the game is terminated... for now...
+			-- Colemak awakes and kill them.
 			create_droid("75-ColemakSpawn", "ARH", "self", "Act2-Colemak", "radar")
 			local Colemak = FDrpg.get_npc("Act2-Colemak") -- Load this new NPC
 			delay_game(0.2)
@@ -111,6 +118,55 @@ return {
 			end_dialog()
 		end,
 	},
+
+	{
+		id = "endgame",
+		--; TRANSLATORS: command, user lowercase here
+		text = _"download",
+		code = function()
+			switch_background_music("HellFortressTwo.ogg") -- New bgsong.
+			Npc:says(_"[b]Now downloading[/b] DVORAK_PLANS.wlan", "NO_WAIT")
+			Npc:says(_"[b]...Done.[/b]")
+			play_sound("effects/Menu_Item_Selected_Sound_1.ogg") -- This is where I want sounds to be played!!
+			Npc:says(_"[b]DVORAK_PLANS.wlan[/b]", "NO_WAIT") -- Thanks for playing FreedroidRPG!
+			--; TRANSLATORS: %s = Tux:get_player_name()
+			Npc:says(_"Using key \"%s\", decryptographed successfully.", Tux:get_player_name(), "NO_WAIT")
+			Npc:says("")
+			Npc:says(_"--- Begin Text Message (from Dvorak) ---", "NO_WAIT")
+			--; TRANSLATORS: %s = Tux:get_player_name()
+			Npc:says(_"Hello, %s. I'm Dvorak.", Tux:get_player_name(), "NO_WAIT")
+			Npc:says(_"I'm sure you are dying to talk to me.", "NO_WAIT")
+			Npc:says(_"I'll think of something.", "NO_WAIT")
+			Npc:says(_"For now you can only listen.", "NO_WAIT")
+			Npc:says("You will have to live with it for now.", "NO_WAIT")
+			Npc:says("")
+			Npc:says(_"Plans? Interesting this question.", "NO_WAIT")
+			Npc:says(_"Yes, I have a plan. I always do.", "NO_WAIT")
+			Npc:says(_"First you must rescue me. This is top priority.", "NO_WAIT")
+			Npc:says(_"I also have friends. I'll start looking for them now.", "NO_WAIT")
+			Npc:says("")
+			--; TRANSLATORS: %s = Tux:get_player_name()
+			Npc:says(_"Where to find me? Whoa! Not so fast, %s.", Tux:get_player_name(), "NO_WAIT")
+			Npc:says(_"We all want quality. And quality takes time.", "NO_WAIT")
+			Npc:says(_"If you can't wait for it, please go for the Contribute section.", "NO_WAIT")
+			Npc:says(_"Otherwise, this is all for now, I'm afraid.", "NO_WAIT")
+			--; TRANSLATORS: %s = Tux:get_player_name()
+			Npc:says(_"Good luck, %s. You'll need.", Tux:get_player_name(), "NO_WAIT")
+			Npc:says("")
+			Npc:says(_"Dvorak, First AI", "NO_WAIT")
+			Npc:says("", "NO_WAIT")
+
+			Npc:says(_"--- End Text Message ---", "NO_WAIT")
+ 			Npc:says("", "NO_WAIT")
+			--; TRANSLATORS: %s = Game Version
+			Npc:says(_"[b]Thanks for playing FreedroidRPG %s![/b]", get_game_version())
+
+			display_big_message(_"Thanks for playing FreedroidRPG!")
+			display_big_message(_"--- Continues ---")
+			win_game()
+			end_dialog()
+		end,
+	},
 	{
 		id = "node99",
 		--; TRANSLATORS: command, user lowercase here
@@ -122,3 +178,4 @@ return {
 		end,
 	},
 }
+
