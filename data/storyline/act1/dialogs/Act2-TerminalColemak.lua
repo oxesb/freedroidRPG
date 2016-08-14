@@ -79,43 +79,48 @@ return {
 		--; TRANSLATORS: command, user lowercase here
 		text = _"unfreeze",
 		code = function()
-			Npc:says(_"[b]WARNING: Decryonization in progress![/b]")
-			Npc:says(_"[b]...[/b]")
-			Npc:says(_"[b]...[/b]")
-			--; TRANSLATORS: Keep First Letter (Of Word) Case Please.
-			Npc:says(_"[b]...Initiating Final Unfreezing Sequences...[/b]")
-			Npc:says(_"[b]Closing oxygen vial...[/b]", "NO_WAIT") -- Can't tell what's their definition of vial.
-			Npc:says(_"[b]Closing water vial...[/b]", "NO_WAIT")
-			Npc:says(_"[b]Closing memory wiper vial...[/b]")
-			Npc:says(_"[b]WARNING: PATIENT ID #1337 'Colemak' HAS BEEN UNCRYONIZED![/b]")
-			switch_background_music("NewTutorialStage.ogg") -- Things are now weird, so we add weird music!
-			Npc:says(_"Current Memory Loss: 0.00%%") -- oO He hadn't his memory wipped! Of course *someone* disrupted the "memory wipper" fluids...
+			if (Act2_ColemakAwake) then
+				Npc:says(_"[b]Failure: Either the capsule is empty or too damaged to follow proper unfreezing protocols.[/b]")
+			else
+				Npc:says(_"[b]WARNING: Decryonization in progress![/b]")
+				Npc:says(_"[b]...[/b]")
+				Npc:says(_"[b]...[/b]")
+				--; TRANSLATORS: Keep First Letter (Of Word) Case Please.
+				Npc:says(_"[b]...Initiating Final Unfreezing Sequences...[/b]")
+				Npc:says(_"[b]Closing oxygen vial...[/b]", "NO_WAIT") -- Can't tell what's their definition of vial.
+				Npc:says(_"[b]Closing water vial...[/b]", "NO_WAIT")
+				Npc:says(_"[b]Closing memory wiper vial...[/b]")
+				Npc:says(_"[b]WARNING: PATIENT ID #1337 'Colemak' HAS BEEN UNCRYONIZED![/b]")
+				switch_background_music("NewTutorialStage.ogg") -- Things are now weird, so we add weird music!
+				Act2_ColemakAwake=true
+				Npc:says(_"Current Memory Loss: 0.00%%") -- oO He hadn't his memory wipped! Of course *someone* disrupted the "memory wipper" fluids...
 
-			-- hostilize the cryo keepers
-			Act2SecurityChief:set_faction("rr")
-			Act2ProgrammingChief:set_faction("rr")
+				-- hostilize the cryo keepers
+				Act2SecurityChief:set_faction("rr")
+				Act2ProgrammingChief:set_faction("rr")
 
-			--teletransport them, with delay
-			play_sound("effects/new_teleporter_sound.ogg")
-			delay_game(0.5)
-			Act2SecurityChief:teleport("75-KillTuxPos01", "Act2SecurityChief")
-			delay_game(0.5)
-			Act2ProgrammingChief:teleport("75-KillTuxPos02", "Act2ProgrammingChief")
-			delay_game(1.0)
+				--teletransport them, with delay
+				play_sound("effects/new_teleporter_sound.ogg")
+				delay_game(0.5)
+				Act2SecurityChief:teleport("75-KillTuxPos01", "Act2SecurityChief")
+				delay_game(0.5)
+				Act2ProgrammingChief:teleport("75-KillTuxPos02", "Act2ProgrammingChief")
+				delay_game(1.0)
 
-			-- Colemak awakes and kill them.
-			create_droid("75-ColemakSpawn", "ARH", "self", "Act2-Colemak", "radar")
-			local Colemak = FDrpg.get_npc("Act2-Colemak") -- Load this new NPC
-			delay_game(0.2)
-			Act2SecurityChief:drop_dead()
-			delay_game(0.4)
-			Act2ProgrammingChief:drop_dead()
-			delay_game(0.5)
-			Colemak:set_name(_"Colemak")
-			Colemak:set_rush_tux(true)
+				-- Colemak awakes and kill them.
+				create_droid("75-ColemakSpawn", "ARH", "self", "Act2-Colemak", "radar")
+				local Colemak = FDrpg.get_npc("Act2-Colemak") -- Load this new NPC
+				delay_game(0.2)
+				Act2SecurityChief:drop_dead()
+				delay_game(0.4)
+				Act2ProgrammingChief:drop_dead()
+				delay_game(0.5)
+				Colemak:set_name(_"Colemak")
+				Colemak:set_rush_tux(true)
 
-			 -- Colemak will carry scripts from here on.
-			end_dialog()
+				 -- Colemak will carry scripts from here on.
+				end_dialog()
+			end
 		end,
 	},
 
