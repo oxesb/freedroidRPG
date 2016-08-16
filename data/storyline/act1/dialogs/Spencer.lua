@@ -94,10 +94,6 @@ return {
 			show("node29")
 		end
 
-		if ((not (Tux_told_Spencer_about_Bob_and_Jim)) and ((Tux:has_met("Bob")) and (knows_spencer_office))) then
-			show("node55")
-		end
-
 		show("node99")
 	end,
 
@@ -706,29 +702,6 @@ return {
 
 			hide("node67")
 			end_dialog()
-		end,
-	},
-	{
-		id = "node55",
-		text = _"Are there members of the Red Guard called Bob and Jim?",
-		code = function()
-			Npc:says(_"They are still alive?! They probably need help!")
-			Tux:says(_"Actually it seems that they are in pretty good shape.")
-			Npc:says(_"Hm... I sent them to find a certain portal. Did they find it?")
-			if (Tux_heard_Bob_and_Jim_story) then
-				Tux:says(_"Yeah!")
-				Npc:says(_"Excellent!")
-			else
-				Tux:says(_"Em... I'm not sure, but inside the room they were guarding I saw something like it.")
-				Npc:says(_"So they found the portal.")
-			end
-			Npc:says(_"How did they survive?")
-			Tux:says(_"Fortunately, the portal was inside of little fortress and they hid there.")
-			Npc:says(_"Good to hear that. Their mission was not only to find the portal, but to stay there and keep guarding it. So they survived and keep helping us.")
-			Tux:says(_"Helping? What do you mean?")
-			Npc:says(_"They prevent more bots from teleporting to our continent.")
-			Tux_told_Spencer_about_Bob_and_Jim = true
-			hide("node55")
 		end,
 	},
 	{

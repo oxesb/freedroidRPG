@@ -46,7 +46,6 @@ npc_list{
 	"Kevin",                 --[[ _"Kevin - Hacker" ]]--
 	"Karol",                 --[[ _"Karol - Shop owner" ]]--
 	"John",
-	"Jim",                   --[[ _"Jim" ]]--
 	"Jennifer",
 	"Jasmine",               --[[ _"Jasmine", _"Jasmine - Girlfriend of a true Hacker" ]]--
 	"Iris",                  --[[ _"Iris", _"Iris - bot hunter" ]]--
@@ -70,12 +69,10 @@ npc_list{
 	"Cult-Member",             --[[ _"Cult Member" ]]--
 	"Cryo-Terminal",         --[[TRM]]--
 	"c-net",                 --[[TRM]]--
-	"CerebrumPortalGuardian",--[[ _"999 Cerebrum", _"Cerebrum - Portal Guardian" ]]--
 	"Chandra",
 	"Butch",                 --[[ _"Butch - Arena Master" ]]--
 	"Bruce",                 --[[ _"Bruce - Mine Worker" ]]--
 	--	"Boris",
-	"Bob",                   --[[ _"Bob" ]]--
 	"Benjamin",              --[[ _"Benjamin - Gunsmith" ]]--
 	"Bender",                --[[ _"Bender", _"Bender - The strongest one" ]]--
 	"Arthur",                --[[ _"Arthur", _"Arthur - Game developer" ]]--
@@ -89,7 +86,6 @@ npc_list{
 	"Act2ProgrammingChief",  --[[ _"CPO - ex-Programmer Officer" ]]--
 	"Act2GateKeeper",        --[[ _"Landing Zone Control Droid" ]]--
 	"Act2FactoryTerminal",
-	"614_portal",            --[[ _"614 - Gate Guard Bot ]]--
 	"614_cryo",              --[[ _"614 - Cryo Lab Guard Bot" ]]--
 	"24-Controllable-Bot",
 	"Guy"} -- check this dialog first until we can check every dialog independently

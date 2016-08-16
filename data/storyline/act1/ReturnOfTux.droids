@@ -412,9 +412,6 @@ Level=41
 ** Beginning of new Level **
 Level=42
 
-T=614: PosX=51 PosY=15 Faction="redguard" UseDialog="614_portal" ShortLabel=_"614 - Gate Guard Bot" Marker=9999 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=0
-T=GUA: PosX=50 PosY=13 Faction="redguard" UseDialog="Bob" ShortLabel=_"Red Guard Member" Marker=9999 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=0
-T=GUA: PosX=56 PosY=3 Faction="redguard" UseDialog="Jim" ShortLabel=_"Red Guard Member" Marker=9999 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=0
 ** End of this levels Special Forces data **
 ---------------------------------------------------------
 ** Beginning of new Level **
@@ -595,7 +592,6 @@ Level=73
 ** Beginning of new Level **
 Level=74
 
-T=999: PosX=76 PosY=73 Faction="civilian" UseDialog="CerebrumPortalGuardian" ShortLabel=_"999 Cerebrum" Marker=9999 RushTux=1 Fixed=0 DropItemId="none" MaxDistanceToHome=0
 T=476: PosX=83 PosY=74 Faction="civilian" UseDialog="Singularity-Drone" ShortLabel=_"476 Coward" Marker=9999 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=0
 T=629: PosX=76 PosY=65 Faction="civilian" UseDialog="Singularity-Drone" ShortLabel=_"629 Spitfire" Marker=9999 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=0
 ** End of this levels Special Forces data **
