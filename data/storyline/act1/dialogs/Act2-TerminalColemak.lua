@@ -135,7 +135,7 @@ return {
 			play_sound("effects/Menu_Item_Selected_Sound_1.ogg") -- This is where I want sounds to be played!!
 			Npc:says(_"[b]DVORAK_PLANS.wlan[/b]", "NO_WAIT") -- Thanks for playing FreedroidRPG!
 			--; TRANSLATORS: %s = Tux:get_player_name()
-			Npc:says(_"Using key \"%s\", decryptographed successfully.", Tux:get_player_name(), "NO_WAIT")
+			Npc:says(_"Using key \"%s\", decrypted successfully.", Tux:get_player_name(), "NO_WAIT")
 			Npc:says("")
 			Npc:says(_"--- Begin Text Message (from Dvorak) ---", "NO_WAIT")
 			--; TRANSLATORS: %s = Tux:get_player_name()
