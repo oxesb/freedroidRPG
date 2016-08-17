@@ -108,7 +108,7 @@ float calc_distance(float pos1_x, float pos1_y, float pos2_x, float pos2_y);
 float vect_len(moderately_finepoint our_vector);
 enemy *GetLivingDroidBelowMouseCursor(void);
 void tux_wants_to_attack_now(int use_mouse_cursor_for_targeting);
-int perform_tux_attack(int use_mouse_cursor_for_targeting);
+int perform_tux_attack(int);
 void TuxReloadWeapon(void);
 void correct_tux_position_according_to_jump(void);
 void InitInfluPositionHistory(void);
@@ -146,20 +146,19 @@ void RotateVectorByAngle(moderately_finepoint * vector, float rot_angle);
 void move_bullets(void);
 void do_melee_damage(void);
 void delete_bullet(int);
-void StartBlast(float, float, int, int, int, int, char *);
+void start_blast(float, float, int, int, int, int, char *);
 void animate_blasts(void);
-void DeleteBlast(int num);
+void delete_blast(int);
 int get_blast_type_by_name(const char *name);
 void move_active_spells(void);
 void DeleteSpell(int num);
 void clear_active_spells(void);
 void clear_active_bullets(void);
 int check_bullet_collisions(struct bullet *);
-void CheckBlastCollisions(int num);
+void check_blast_collisions(struct blast *);
 void bullet_init_for_player(struct bullet *, int, short int);
 void bullet_init_for_enemy(struct bullet *, int, short int, struct enemy*);
-int find_free_melee_shot_index(void);
-void delete_melee_shot(melee_shot *);
+void delete_melee_shot(int);
 int GetBulletByName(const char *bullet_name);
 
 // view.c 
@@ -181,7 +180,7 @@ struct tux_part_render_data *tux_get_part_render_data(char *part_name);
 void tux_rendering_load_specs(const char *config_filename);
 void put_bullet(struct bullet *, int);
 void PutItem(item *CurItem, int mask, int put_thrown_items_flag, int highlight_item);
-void PutBlast(int);
+void put_blast(struct blast *);
 void PutEnemy(enemy * e, int x, int y, int mask, int highlight);
 void PutMouseMoveCursor(void);
 int set_rotation_index_for_this_robot(enemy * ThisRobot);
@@ -287,6 +286,7 @@ void blit_open_gl_stretched_texture_light_radius(int decay_x, int decay_y);
 void gl_draw_rectangle(SDL_Rect *, int, int, int, int);
 int safely_initialize_our_default_open_gl_parameters(void);
 void blit_background(const char *background);
+struct background *get_background(const char *);
 void set_gl_clip_rect(const SDL_Rect *clip);
 void unset_gl_clip_rect(void);
 
@@ -664,8 +664,6 @@ int chat_with_droid(Enemy ChatDroid);
 
 int display_text(const char *, int, int, const SDL_Rect*, float);
 
-int scroll_text(char *, const char *);
-
 int ImprovedCheckLineBreak(char *, const SDL_Rect*, float);
 char *get_string(int, const char *, const char *);
 void printf_SDL(SDL_Surface * screen, int x, int y, const char *fmt, ...) PRINTF_FMT_ATTRIBUTE(4,5);
@@ -771,6 +769,13 @@ int validate_dialogs(void);
 struct chat_context *chat_get_current_context();
 void chat_run();
 void free_chat_widgets();
+
+// title.c
+struct widget_group *title_screen_create(void);
+void title_screen_free(void);
+void title_screen_set_background(const char *);
+void title_screen_set_text(const char *, struct font*);
+void title_screen_run();
 
 // leveleditor_input.c
 void leveleditor_process_input(void);

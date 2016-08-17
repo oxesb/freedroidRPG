@@ -520,7 +520,7 @@ void save_game_data(struct auto_string *strout)
 	autostr_append(strout, "\n");
 
 	autostr_append(strout, "blast_array");
-	write_blast_array(strout, AllBlasts, MAXBLASTS);
+	write_blast_sparsedynarray(strout, &all_blasts);
 	autostr_append(strout, "\n");
 
 	autostr_append(strout, "spell_active_array");
@@ -528,7 +528,7 @@ void save_game_data(struct auto_string *strout)
 	autostr_append(strout, "\n");
 
 	autostr_append(strout, "melee_shot_array");
-	write_melee_shot_array(strout, AllMeleeShots, MAX_MELEE_SHOTS);
+	write_melee_shot_sparsedynarray(strout, &all_melee_shots);
 	autostr_append(strout, "\n");
 
 	autostr_append(strout, "factions{\n");
@@ -601,13 +601,7 @@ static int bullet_array_ctor(lua_State *L)
 
 static int blast_array_ctor(lua_State *L)
 {
-	int i;
-	for (i = 0; i < lua_rawlen(L, 1) && i < MAXBLASTS; i++) {
-		lua_rawgeti(L, 1, i+1);
-		read_blast(L, -1, &AllBlasts[i]);
-		lua_pop(L, 1);
-	}
-
+	read_blast_sparsedynarray(L, 1, &all_blasts);
 	return 0;
 }
 
@@ -626,13 +620,7 @@ static int spell_active_array_ctor(lua_State *L)
 
 static int melee_shot_array_ctor(lua_State *L)
 {
-	int i;
-	for (i = 0; i < lua_rawlen(L, 1) && i < MAX_MELEE_SHOTS; i++) {
-		lua_rawgeti(L, 1, i+1);
-		read_melee_shot(L, -1, &AllMeleeShots[i]);
-		lua_pop(L, 1);
-	}
-
+	read_melee_shot_sparsedynarray(L, 1, &all_melee_shots);
 	return 0;
 }
 

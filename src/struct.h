@@ -63,6 +63,8 @@ typedef struct dynarray item_dynarray;
 typedef struct dynarray string_dynarray;
 typedef struct dynarray upgrade_socket_dynarray;
 typedef struct dynarray bullet_sparsedynarray;
+typedef struct dynarray melee_shot_sparsedynarray;
+typedef struct dynarray blast_sparsedynarray;
 
 struct font {
 	int height;
@@ -1087,6 +1089,14 @@ struct langspec {
 struct codeset {
 	char *language;
 	char *encoding;
+};
+
+struct background {
+	const char *filename;
+	struct image img;
+	int x;
+	int y;
+	int must_scale;
 };
 
 struct title_screen {

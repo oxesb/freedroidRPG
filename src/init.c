@@ -70,16 +70,12 @@ int run_from_term = FALSE;
  */
 void clear_out_arrays_for_fresh_game(void)
 {
-	int i;
-
-	for (i = 0; i < MAX_MELEE_SHOTS; i++)
-		delete_melee_shot(&AllMeleeShots[i]);
+	dynarray_free(&all_melee_shots);
 
 	dynarray_free(&all_bullets);
 
-	for (i = 0; i < MAXBLASTS; i++) {
-		DeleteBlast(i);
-	}
+	dynarray_free(&all_blasts);
+
 	clear_active_spells();
 
 	clear_enemies();
@@ -247,12 +243,13 @@ void play_title_file(int subdir_handle, char *filename)
 		switch_background_music(screen.song);
 
 		SDL_SetClipRect(Screen, NULL);
-		set_current_font(Para_Font);
 
-		scroll_text(screen.text,screen.background);
-
-		clear_screen();
-		our_SDL_flip_wrapper();
+		// Create title_screen widget, set its content and display it
+		title_screen_create();
+		title_screen_set_background(screen.background);
+		title_screen_set_text(screen.text, Para_Font);
+		title_screen_run();
+		title_screen_free();
 
 		free(screen.background);
 		free(screen.song);

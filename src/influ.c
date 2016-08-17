@@ -945,16 +945,8 @@ void start_tux_death_explosions(void)
 	// create a few shifted explosions...
 	for (i = 0; i < 10; i++) {
 
-		// find a free blast
-		int counter = 0;
-		while (AllBlasts[counter++].type != INFOUT) ;
-		counter -= 1;
-		if (counter >= MAXBLASTS) {
-			error_message(__FUNCTION__, "Ran out of blasts!!!", PLEASE_INFORM);
-		}
-
 		// create a blast at a random position, at a 0.5 radius around Tux (but not "on" Tux)
-		struct blast *new_blast = &AllBlasts[counter];
+		struct blast new_blast;
 		float rand_x, rand_y;
 		int loop_protect; // protect against an infinite loop, in case MyRandom() always draws 0
 
@@ -978,21 +970,17 @@ void start_tux_death_explosions(void)
 			rand_y = -0.1f;
 		}
 
-		new_blast->type = DROIDBLAST;
-		new_blast->pos.x = Me.pos.x + rand_x;
-		new_blast->pos.y = Me.pos.y + rand_y;
-		new_blast->pos.z = Me.pos.z;
-		new_blast->phase = i;
-		new_blast->faction = FACTION_SELF;
-		new_blast->damage_per_second = 0;
+		new_blast.type = DROIDBLAST;
+		new_blast.pos.x = Me.pos.x + rand_x;
+		new_blast.pos.y = Me.pos.y + rand_y;
+		new_blast.pos.z = Me.pos.z;
+		new_blast.phase = i;
+		new_blast.faction = FACTION_SELF;
+		new_blast.damage_per_second = 0;
 
 		// check that the blast is not on an invalid position
-		if (!resolve_virtual_position(&new_blast->pos, &new_blast->pos)) {
-			// just ignore that blast...
-			new_blast->pos.x = 0;
-			new_blast->pos.y = 0;
-			new_blast->pos.z = 0;
-			DeleteBlast(counter);
+		if (resolve_virtual_position(&new_blast.pos, &new_blast.pos)) {
+			dynarray_add(&all_blasts, &new_blast, sizeof(struct blast));
 		}
 	}
 }
@@ -1386,23 +1374,17 @@ int perform_tux_attack(int use_mouse_cursor_for_targeting)
 				continue;
 
 			// Set up a melee attack
-			int shot_index = find_free_melee_shot_index();
-			if (shot_index == -1) {
-				// We are out of free melee shot slots.
-				// This should not happen, an error message was displayed,
-				return 0;
-			}
+			struct melee_shot new_melee_shot;
+			new_melee_shot.attack_target_type = ATTACK_TARGET_IS_ENEMY;
+			new_melee_shot.mine = TRUE;
+			new_melee_shot.bot_target_n = erot->id;
+			new_melee_shot.bot_target_addr = erot;
+			new_melee_shot.to_hit = Me.to_hit;
+			new_melee_shot.damage = Me.base_damage + MyRandom(Me.damage_modifier);
+			new_melee_shot.owner = -1;	//no "bot class number" owner
+			new_melee_shot.time_to_hit = tux_anim.attack.duration / 2;
 
-			melee_shot *new_shot = &(AllMeleeShots[shot_index]);
-
-			new_shot->attack_target_type = ATTACK_TARGET_IS_ENEMY;
-			new_shot->mine = TRUE;
-			new_shot->bot_target_n = erot->id;
-			new_shot->bot_target_addr = erot;
-			new_shot->to_hit = Me.to_hit;
-			new_shot->damage = Me.base_damage + MyRandom(Me.damage_modifier);
-			new_shot->owner = -1;	//no "bot class number" owner
-			new_shot->time_to_hit = tux_anim.attack.duration / 2;
+			dynarray_add(&all_melee_shots, &new_melee_shot, sizeof(struct melee_shot));
 
 			hit_something = TRUE;
 		}
