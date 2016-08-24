@@ -86,24 +86,6 @@ static void autoscroll_text_update(struct widget *w)
 	if (!wat->text)
 		return;
 
-	// If a new text was submitted, recomputes offset limits and scrolling speed.
-	if (wat->new_content) {
-		set_current_font(wat->font);
-		// At start, the text is displayed 'under' the bottom of widget's rect
-		wat->offset_start = w->rect.h;
-		wat->offset_current = (float)wat->offset_start;
-		// Scroll ends when the last line of the text is displayed 'over' the widget's_rect
-		int lines_needed = get_lines_needed(wat->text, w->rect, 1.0);
-		wat->offset_stop = -lines_needed * get_font_height(get_current_font());
-		// Scrolling speed: 1 line per second
-		wat->scrolling_speed = (float)get_font_height(get_current_font()) / 1.0f;
-		wat->scrolling_speed_mult = 1;
-
-		wat->new_content = FALSE;
-
-		return;
-	}
-
 	// New text's offset
 	wat->offset_current -= (wat->scrolling_speed * (float)wat->scrolling_speed_mult) * Frame_Time();
 
@@ -125,7 +107,7 @@ static void autoscroll_text_update(struct widget *w)
 			if (line_reached->at_line >= 0)
 				at_offset = wat->offset_start - line_reached->at_line * get_font_height(wat->font);
 			else
-				at_offset = wat->offset_stop + (-line_reached->at_line) * get_font_height(wat->font);
+				at_offset = wat->offset_stop + (-line_reached->at_line - 1) * get_font_height(wat->font);
 
 			if ((wat->offset_current <= (float)at_offset)) {
 				line_reached->cb(wat, line_reached->at_line);
@@ -214,6 +196,7 @@ struct widget_autoscroll_text *widget_autoscroll_text_create()
 
 	wat->text = NULL; // No text currently submitted
 	wat->font = Para_Font;
+	wat->scrolling_speed = 0.0f;
 	wat->scroll_interaction_disabled = FALSE;
 	dynarray_init(&wat->line_reached_callbacks, 2, sizeof(struct line_reached_callback));
 
@@ -233,15 +216,84 @@ struct widget_autoscroll_text *widget_autoscroll_text_create()
  */
 void widget_autoscroll_set_text(struct widget_autoscroll_text *w, const char *text, struct font *font)
 {
+	struct widget *wb = WIDGET(w);
+
 	if (w->text)
 		free(w->text);
 	w->text = strdup(text);
+
 	w->font = font;
-	w->offset_current = 0.0f;
-	w->offset_start = 0;
-	w->offset_stop = 1;
+	struct font *tmp_font = get_current_font();
+	set_current_font(font);
+
+	// At start, the text is displayed 'under' the bottom of widget's rect
+	w->offset_start = wb->rect.h;
+	w->offset_current = (float)w->offset_start;
+	// Scroll ends when the last line of the text is displayed 'over' the widget's_rect
+	int lines_needed = get_lines_needed(w->text, wb->rect, 1.0);
+	w->offset_stop = -lines_needed * get_font_height(font);
+	// Set default speed
+	widget_autoscroll_set_scrolling_speed(w, 0.0f);
+	w->scrolling_speed_mult = 1;
+
 	w->scroll_interaction_disabled = FALSE;
-	w->new_content = TRUE;
+
+	set_current_font(tmp_font);
+}
+
+/**
+ * \brief Set scrolling speed.
+ * \ingroup gui2d_autoscroll_text
+ *
+ * \details Set the speed (in lines per second) of the scrolling. If \e speed is 0,
+ * set to default speed (1 line per second). This function can not be called before the
+ * text is set (using widget_autoscroll_set_text()).
+ *
+ * \param w      Pointer to the widget_autoscroll_text object
+ * \param speed  Scrolling speed in lines per second (if 0.0, set to default speed)
+ */
+void widget_autoscroll_set_scrolling_speed(struct widget_autoscroll_text *w, float speed)
+{
+	if (!w->text) {
+		error_message(__FUNCTION__, "widget_autoscroll_set_text() must be called before this function.",
+		              PLEASE_INFORM);
+		return;
+	}
+
+	if (speed > 0.0f) {
+		w->scrolling_speed = speed;
+	} else {
+		// Default : 1 line / second
+		w->scrolling_speed = (float)get_font_height(w->font) / 1.0f;
+	}
+}
+
+/**
+ * \brief Compute and set the scrolling speed based on a duration.
+ * \ingroup gui2d_autoscroll_text
+ *
+ * \details The scrolling speed is set so that the whole text (minus \e silence_lines)
+ * is scrolled in \e duration seconds.
+ * The formula is: speed = (nb_lines_of_whole_text - silence_lines) / duration
+ *
+ * \param w              Pointer to the widget_autoscroll_text object
+ * \param duration       Duration (in seconds) to scroll the whole text (minus \e silence_lines)
+ * \param silence_lines  Number of lines to subtract from the whole number of text lines,
+ *                       to compute the scroll speed.
+ */
+void widget_autoscroll_set_scrolling_duration(struct widget_autoscroll_text *w, float duration, int silence_lines)
+{
+	if (!w->text) {
+		error_message(__FUNCTION__, "widget_autoscroll_set_text() must be called before this function.",
+		              PLEASE_INFORM);
+		return;
+	}
+
+	struct widget *wb = WIDGET(w);
+
+	int nb_lines = get_lines_needed(w->text, wb->rect, 1.0) - silence_lines;
+	int scroll_offset = wb->rect.h + nb_lines * get_font_height(w->font);
+	w->scrolling_speed = (float)scroll_offset / (duration/1000.0f);
 }
 
 /**
@@ -265,10 +317,13 @@ void widget_autoscroll_disable_scroll_interaction(struct widget_autoscroll_text 
  * \brief Register a function to be called when a given line is scrolled in or out
  * \ingroup gui2d_autoscroll_text
  *
- * \details This function registers a callback to be called when the 'at_line'
- * line of the text appears out from the bottom of the widget (if at_line is
- * positive) or when the 'at_line' line before the end of the text disappears
- * on the top of the widget (if at_line is negative).\n
+ * \details This function registers a callback to be called when a given line
+ * of text appears out from the bottom of the widget (if at_line is positive),
+ * or when a given line of text disappears on the top of the widget (if at_line
+ * is negative).\n
+ * The line number triggering the callback is defined by 'at_line'. If positive,
+ * that's the nth line of the text. If negative, it defines a line before the
+ * end of the text (-1 is the last line, -2 is the line before the last line, ...).
  * Note: The callback is called only the first time the 'at_line' is reached,
  * after which it is disabled.
  *
@@ -298,7 +353,7 @@ void widget_autoscroll_call_at_line(struct widget_autoscroll_text * wat, int at_
  */
 int widget_autoscroll_text_can_scroll_up(struct widget_autoscroll_text *w)
 {
-	if (w->new_content)
+	if (!w->text)
 		return FALSE;
 
 	if (w->scroll_interaction_disabled)
@@ -320,7 +375,7 @@ int widget_autoscroll_text_can_scroll_up(struct widget_autoscroll_text *w)
  */
 int widget_autoscroll_text_can_scroll_down(struct widget_autoscroll_text *w)
 {
-	if (w->new_content)
+	if (!w->text)
 		return FALSE;
 
 	if (w->scroll_interaction_disabled)
@@ -339,7 +394,7 @@ int widget_autoscroll_text_can_scroll_down(struct widget_autoscroll_text *w)
  */
 void widget_autoscroll_text_scroll_up(struct widget_autoscroll_text *w)
 {
-	if (w->new_content)
+	if (!w->text)
 		return;
 
 	if (w->scroll_interaction_disabled)
@@ -359,7 +414,7 @@ void widget_autoscroll_text_scroll_up(struct widget_autoscroll_text *w)
  */
 void widget_autoscroll_text_scroll_down(struct widget_autoscroll_text *w)
 {
-	if (w->new_content)
+	if (!w->text)
 		return;
 
 	if (w->scroll_interaction_disabled)

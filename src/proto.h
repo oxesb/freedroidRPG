@@ -411,6 +411,9 @@ void close_audio(void);
 void set_music_volume(float);
 void set_SFX_volume(float);
 void switch_background_music(char *);
+int play_voice(const char *, int, float *);
+void resume_voice(int);
+void stop_voice(int);
 int play_sound(const char *);
 void play_sound_v(const char *, float);
 void play_sound_at_position(const char *, struct gps *, struct gps *);
@@ -775,7 +778,7 @@ struct widget_group *title_screen_create(void);
 void title_screen_free(void);
 void title_screen_set_background(const char *);
 void title_screen_set_text(const char *, struct font*);
-void title_screen_run();
+void title_screen_run(struct title_screen *);
 
 // leveleditor_input.c
 void leveleditor_process_input(void);
