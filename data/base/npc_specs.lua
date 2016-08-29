@@ -80,6 +80,7 @@ npc_list{
 	"Act2-Vending-Machine",  --[[TRM]]--
 	"Act2-TerminalColemak",
 	"Act2-TerminalDenied",
+	"Act2-Fred",             --[[ _"Fred" ]]--
 	"Act2-Colemak",          --[[ _"Colemak", _"Dvorak's acquittance - Colemak" ]]--
 	"Act2RRGateTerminal",
 	"Act2SecurityChief",     --[[ _"Pitiable Man - Ex-Security Officer" ]]--
@@ -195,6 +196,14 @@ items = {
 	 {"9x19mm Ammunition"},
 	 {"Barf's Energy Drink"},
 	 {"Diet supplement", 2},
+	}
+}
+
+npc_shop{
+name = "Act2-Fred",
+items = {
+	 {"Electronic Noise Generator"},
+	 {".50 BMG (12.7x99mm) Ammunition", 2}
 	}
 }
 

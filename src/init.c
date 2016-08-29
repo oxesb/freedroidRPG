@@ -1106,12 +1106,15 @@ void EndOfAct(void)
 	append_new_game_message(_("End of Act 1.\n"));
 	SetNewBigScreenMessage(_("End of Act 1.\n"));
 
-	// Make next act enemies a little stronger. It increments bot HP in 30% and EXP reward in 15%.
+	// Make next act enemies a little stronger. It increments bot HP in 67% and EXP reward in 25%.
 	// It also makes the bot react a little faster after being hit. It also affects friends, so
 	// they don't be easier to kill than the hostile ones (keeping the balance)
 	//
-	// Although such way to increment difficulty has it's concerns, it's still doable
-	// however should be changed later. It has shown to be useful when all you need is to
+	// Bots will also move 10% faster than before, and when they're against tux, they'll heal
+	// 5% more than before, making they harder as they're not to be found in big numbers.
+	// 
+	// Although such way to increment difficulty has it's concerns, it's still doable.
+	// However, should be changed later. It has shown to be useful when all you need is to
 	// give the player a little more challenge and make new levelups a little more doable,
 	// giving more experience, and as the player probably have a good weapon, increasing HP.
 	int type;
@@ -1119,10 +1122,12 @@ void EndOfAct(void)
 
 	type=0;
 	while (type <= Number_Of_Droid_Types) {
-		Droidmap[type].maxenergy *= 1.3;
+		Droidmap[type].maxenergy *= 1.67;
 		// NOTE: Drop of decimal point is itendended. Don't try to "fix" this. (below)
-		Droidmap[type].experience_reward *= 1.15;
+		Droidmap[type].experience_reward *= 1.25;
 		Droidmap[type].recover_time_after_getting_hit *= 0.95;
+		Droidmap[type].maxspeed *= 1.10;
+		Droidmap[type].healing_hostile *= 1.05;
 
 		type += 1;
 	}
@@ -1134,8 +1139,19 @@ void EndOfAct(void)
 
 
 	// Update 123's and 139's sensors to see Tux invisible. Otherwise, they would be too weak.
+	// Also changes some melee droids sensors for makeup. Concern: This shouldn't be done on C.
 	Droidmap[get_droid_type("123")].sensor_id=get_sensor_id_by_name("infrared");
 	Droidmap[get_droid_type("139")].sensor_id=get_sensor_id_by_name("infrared");
+	Droidmap[get_droid_type("516")].sensor_id=get_sensor_id_by_name("xray");
+	Droidmap[get_droid_type("598")].sensor_id=get_sensor_id_by_name("infrared");
+	Droidmap[get_droid_type("751")].sensor_id=get_sensor_id_by_name("xray");
+
+	// This changes some human models so they won't get killed by stronger bots.
+	Droidmap[get_droid_type("GUA")].sensor_id=get_sensor_id_by_name("infrared");
+	Droidmap[get_droid_type("GUA")].aggression_distance *= 1.5;
+	Droidmap[get_droid_type("GUB")].sensor_id=get_sensor_id_by_name("infrared");
+	Droidmap[get_droid_type("GUB")].aggression_distance *= 1.5;
+	Droidmap[get_droid_type("PRO")].maxenergy *= 2.0; // Please note it's ×2 over ×1.67
 
 
 
