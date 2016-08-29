@@ -107,7 +107,7 @@ return {
 				Npc:says(_"Deal. You can now buy [b]Small EMP Shockwave Generator[/b].")
 				Tux:del_item_backpack("Antimatter-Matter Converter", 100)
 				sell_item("Small EMP Shockwave Generator", 1, "Act2-Fred")
-				hide("smallemp") -- show("bigemp")
+				hide("smallemp") -- show "bigemp"
 				show("addoncraft") -- Finished GRENADES branch.
 			else
 				Npc:says(_"But you need the 100 Antimatter Converters. I won't start selling the grenades without them.")
