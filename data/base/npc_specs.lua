@@ -77,6 +77,7 @@ npc_list{
 	"Bender",                --[[ _"Bender", _"Bender - The strongest one" ]]--
 	"Arthur",                --[[ _"Arthur", _"Arthur - Game developer" ]]--
 	"AfterTakeover",
+	"Act2-Yadda",            --[[ _"Master Yadda" ]]--
 	"Act2-Vending-Machine",  --[[TRM]]--
 	"Act2-TerminalColemak",
 	"Act2-TerminalDenied",

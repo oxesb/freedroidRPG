@@ -102,7 +102,7 @@ return {
 		id = "smallemp",
 		text = _"Do you sell EMP grenades? I'll pay you with 100 Antimatter Converters.",
 		code = function()
-			Npc:says(_"Oh, EMP, Electromagnetic Pulse Grenades. Yes, I do. I amuse myself everyday that they cannot hurt the C-64 virus anomaly over there.")
+			Npc:says(_"Oh, EMP, Electromagnetic Pulse Grenades. Yes, I do. I amuse myself everyday that they cannot hurt the C-64 virus anomaly you'll be meeting soon enough if you already didn't.")
 			if (Tux:count_item_backpack("Antimatter-Matter Converter") >= 100) then
 				Npc:says(_"Deal. You can now buy [b]Small EMP Shockwave Generator[/b].")
 				Tux:del_item_backpack("Antimatter-Matter Converter", 100)

@@ -716,13 +716,14 @@ Level=95
 ** Beginning of new Level **
 Level=96
 
-T=C64: PosX=34 PosY=19 Faction="ms" UseDialog="AfterTakeover" ShortLabel=_"C-64 Virus" Marker=0 RushTux=0 Fixed=0 DropItemId="Source Book of Light" MaxDistanceToHome=7
 T=PRO: PosX=32 PosY=10 Faction="neutral" UseDialog="Act2-Fred" ShortLabel=_"Fred" Marker=0 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=4
+T=KEV: PosX=34 PosY=19 Faction="neutral" UseDialog="Act2-Yadda" ShortLabel=_"Master Yadda" Marker=0 RushTux=0 Fixed=0 DropItemId="Source Book of Light" MaxDistanceToHome=0
 ** End of this levels Special Forces data **
 ---------------------------------------------------------
 ** Beginning of new Level **
 Level=97
 
+T=C64: PosX=32 PosY=36 Faction="ms" UseDialog="AfterTakeover" ShortLabel=_"C64 Virus" Marker=0 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=15
 ** End of this levels Special Forces data **
 ---------------------------------------------------------
 *** End of Droid Data ***
