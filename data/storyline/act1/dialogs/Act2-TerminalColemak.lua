@@ -130,10 +130,10 @@ return {
 		text = _"download",
 		code = function()
 			switch_background_music("HellFortressTwo.ogg") -- New bgsong.
-			Npc:says(_"[b]Now downloading[/b] DVORAK_PLANS.wlan", "NO_WAIT")
+			Npc:says(_"[b]Now downloading[/b] DVORAK_PLANS.lua", "NO_WAIT")
 			Npc:says(_"[b]...Done.[/b]")
 			play_sound("effects/Menu_Item_Selected_Sound_1.ogg") -- This is where I want sounds to be played!!
-			Npc:says(_"[b]DVORAK_PLANS.wlan[/b]", "NO_WAIT") -- Thanks for playing FreedroidRPG!
+			Npc:says(_"[b]DVORAK_PLANS.lua[/b]", "NO_WAIT") -- Thanks for playing FreedroidRPG!
 			--; TRANSLATORS: %s = Tux:get_player_name()
 			Npc:says(_"Using key \"%s\", decrypted successfully.", Tux:get_player_name(), "NO_WAIT")
 			Npc:says("")
