@@ -102,7 +102,7 @@ return {
 		id = "smallemp",
 		text = _"Do you sell EMP grenades? I'll pay you with 50 Antimatter Converters.",
 		code = function()
-			Npc:says(_"Oh, EMP, Electromagnetic Pulse Grenades. Yes, I do. I amuse myself everyday that they cannot hurt the C-64 virus anomaly you'll be meeting soon enough if you already didn't.")
+			Npc:says(_"Oh, EMP, Electromagnetic Pulse Grenades. Yes, I do. I amuse myself every day that they cannot hurt the C-64 virus anomaly you'll be meeting soon enough if you already didn't.")
 			if (Tux:count_item_backpack("Antimatter-Matter Converter") >= 50) then
 				Npc:says(_"Deal. You can now buy [b]Small EMP Shockwave Generator[/b].")
 				Tux:del_item_backpack("Antimatter-Matter Converter", 50)
@@ -164,13 +164,13 @@ return {
 	},
 	{
 		id = "node99",
-		text = _"I'll leave this strange man to his... evildoings.",
+		text = _"I'll leave this strange man to his... evil doings.",
 		code = function()
 			Npc:says_random(_"...",
 							_"You joke now, but a bot soon will teach you to be more serious.",
 							_"Evildoer? You don't even know me.",
 							_"...But it's you who is killing bots left and right...",
-							_"Having survived the Great Assault doesn't makes me an evildoer.")
+							_"Having survived the Great Assault doesn't make me an evildoer.")
 			end_dialog()
 		end,
 	},
