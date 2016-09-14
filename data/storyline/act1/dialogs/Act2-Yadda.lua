@@ -18,7 +18,7 @@
 ----------------------------------------------------------------------
 --[[WIKI
 PERSONALITY = { "Arrogant", "Wise" },
-PURPOSE = "$$NAME$$ is a strange monk who follows the path of light. In future may require good Karma to engage conversation with. Gives quest to slay evil viruses. Give Source Book of Light, Light Saber and Light Staff. Sells player Laser Power Pack and small plasma grenades. Is a pacifist with a weak resolve, thus why he sells Tux grenades and etc. May summon droids to help Tux in certain quests."
+PURPOSE = "$$NAME$$ is a strange monk who follows the path of light. In future may require good Karma to engage conversation with. Gives quest to slay evil viruses. Give Source Book of Light, Light Saber and Light Staff. Sells player Laser Power Pack and small plasma grenades. Is a pacifist with a weak resolve, thus why he sells Tux grenades etc. May summon droids to help Tux in certain quests."
 WIKI]]--
 
 local Npc = FDrpg.get_npc()
@@ -45,10 +45,10 @@ return {
 			show("evil")
 		end
 
-		-- Yadda's wise advices
+		-- Yadda's wise advises
 		Yadda_times=Yadda_times + 1
 		if (Yadda_times==1) then
-			Npc:says(_"Come and seek my lightly advices, and you'll find out truth and light.")
+			Npc:says(_"Come and seek my lightly advises, and you'll find out truth and light.")
 		elseif (Yadda_times==7) then
 			Npc:says(_"Persistence is the way to perfection.")
 		elseif (Yadda_times==13) then
@@ -59,21 +59,24 @@ return {
 			Npc:says(_"Hey, did you knew this is the 37th time you ask for my enlightenment? I'll teach you a secret. There is a mini boss on this area. Might be worth checking out.")
 			show("C64gate")
 		elseif (Yadda_times < 20) then
-			Npc:says_random(_"In matters of destroying bots, style, not brute force, is the vital thing.", --after Oscar Wilde's The Importance of Being Earnest (1895)
-							_"Any fool can bust a bot open; the art consists in knowing how to exploit it.", --after quote attributed to Frank Wedekind
+			-- All texts below are quotes adapted to FreedroidRPG world.
+			Npc:says_random(_"In matters of destroying bots, style, not brute force, is the vital thing.",
+							_"Any fool can bust a bot open; the art consists in knowing how to exploit it.",
 							_"The knife is without measure, for if you hit a bot right, out will come treasure.",
 							_"When the linarian fall, the bots reigns.",
+							_"A linarian is only finished when he gives up.",
 							_"Yadda Yadda Yadda.",
-							_"Basically, it's just a jump to the left, and a step to the right... You see?") --after "Time Warp" lyrics from Rocky Horror Show (1973)
+							_"Basically, it's just a jump to the left, and a step to the right... You see?")
 		elseif (Yadda_times < 40) then
+			-- Texts below aren't quotes, but advises.
 			Npc:says_random(_"No one knows what the future awaits. Except Master Yadda.",
 							_"Yadda Yadda Yadda.",
 							_"The secret of the sure victory is siding with Master Yadda.",
 							_"Kill bots first, ask questions later.",
 							_"There was the Experimental Alpha Class. If you meet one, your death is close.", -- Bots 0xx, relies on special skills.
-							_"If you can think, you're sentient. This won't make you a lifeform though.",
+							_"If you can think, you're sentient. This won't make you a life-form though.",
 							_"Lamps are nice. Always carry one with you. You never know when you'll need them.",
-							_"Bots will aim whatever is in front of them. Which usually is you.")
+							_"Bots will aim whatever is in front of them. Which, in most cases, will be you.")
 		else
 			Npc:says(_"You're very dedicated, seeking my advice, and wise words that much. But I have nothing else to tell you. Besides that: ")
 			--; TRANSLATORS: %d = number of times talked to Yadda
@@ -116,7 +119,7 @@ return {
 		code = function()
 			Npc:says(_"The Pandora Box! How do you dare to bring doom to those lands!!", "NO_WAIT")
 			--; TRANSLATORS: woza futhi zisize mina → Come and aid me (Zulu, Google Translated)
-			Npc:says(_"Woza futhi zisize mina, minions! Let's kill this doombringer!")
+			Npc:says(_"Woza futhi zisize mina, minions! Let's kill this doom bringer!")
 			Npc:set_faction("ms")
 			create_droid("Act2-YaddaRef1", "GUB", "ms", "AfterTakeover", "radar")
 			create_droid("Act2-YaddaRef2", "GUA", "ms", "AfterTakeover", "radar")
@@ -130,7 +133,7 @@ return {
 			Npc:says_random(_"Stay on the path of light.",
 							_"I'm pure wisdom. If you follow my words you'll have success.",
 							_"Wisdom is more worth than rubies. But if it's my wisdom, it'll be more worth than the whole universe!",
-							_"Take as much time you need to reflect on what I said, and you'll become wise. Because I am the wisest man on this universe.")
+							_"Take as much time you need to reflect on what I said, and you'll become wise, because I am the wisest man on this universe.")
 			end_dialog()
 		end,
 	},
