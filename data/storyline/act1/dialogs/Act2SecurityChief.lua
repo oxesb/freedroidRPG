@@ -62,7 +62,7 @@ return {
 		text = _"Do you have a name?",
 		code = function()
 			Npc:says(_"Who cares? I long forgot my name. All I know is the work I must do.")
-			Npc:says(_"Call me 'pitiable man'. Because this is what I am.")
+			Npc:says(_"Call me 'pitiable man', because this is what I am.")
 			Npc:set_name("Pitiable Man - Ex-Security Officer")
 			hide("node2")
 		end,
@@ -96,7 +96,7 @@ return {
 					end
 				end
 			else
-				Npc:says(_"Hey, wake up! if you challenge a bee, you'll die. You must have learned some melee fighting earlier in order to understand what I'm about to tell you.")
+				Npc:says(_"Hey, wake up! If you challenge a bee, you'll die. You must have learned some melee fighting earlier in order to understand what I'm about to tell you.")
 			end
 		end,
 	},

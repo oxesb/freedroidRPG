@@ -19,7 +19,7 @@
 --[[WIKI
 PERSONALITY = { "Brilliant" },
 PURPOSE = "$$NAME$$ will help to improve Tux\'s abilities. Will also give Tux some more background on Act2.",
-BACKSTORY = "$$NAME$$ is part of Act2. He is an ex-Megasys Programming Chief Officer, which can improve Tux's programming. However he requires previous knowledge which can be obtained with Soreson."
+BACKSTORY = "$$NAME$$ is part of Act2. He is an ex-Megasys Programming Chief Officer, which can improve Tux's programming. However, he requires previous knowledge which can be obtained with Soreson."
 WIKI]]--
 
 local Npc = FDrpg.get_npc()
@@ -74,8 +74,8 @@ return {
 				Npc:says(_"No. Man, you don't know the basic. It's hard to teach a linarian, you know?")
 				Npc:says(_"Either you learn some programming first, or you get out of my face!")
 			else
-				Npc:says(_"Hum. You look like someone who will have no problem in learning programming.")
-				Npc:says(_"I charge a lot, though. 10,000 circuits, and one training point. It's a bargain if you think well, you surely is rich. And besides, coding can overheat you, take care!")
+				Npc:says(_"Hum. You look like someone who will have no problem in learning to program properly.")
+				Npc:says(_"I charge a lot, though. 10,000 circuits, and one training point. It's a bargain if you think well, you surely are rich. And besides, coding can overheat you, take care!")
 				hide("node50") show("node60")
 			end
 		end,
@@ -92,15 +92,15 @@ return {
 					Tux:says(_"Yes. I see a ball going up and down, hitting two moving walls.")
 					Npc:says(_"This is called ping-pong. It's a very nice game.")
 					Tux:says(_"Seems simple.")
-					Npc:says(_"Yes. but it's much more complex than you think. It's not the code I'm talking about, or even the ball going up and down. The important is not the program on itself. It's the art of programming.")
+					Npc:says(_"Yes. But it's much more complex than you think. It's not the code I'm talking about, or even the ball going up and down. The important is not the program on itself. It's the art of programming.")
 					Npc:says(_"Once you understand how the bytes flows, how they sum and they bitwise, how to use the Tachyons and to transform bits in bytes and bytes in bits, you'll become a true programming master.")
 					Tux:says(_"What should I do?")
-					Npc:says(_"Now, look at source code, and replicate the ping pong, but not with the simple AI I included. I want a sentient ping pong field, with air friction, gravity, virtual reality, I want also to you consider the solar effect over tachyon particles and the E-particle emission on field due to atrict with two antigrav rackets.") -- Are tachyons the way to contact Linarius?
+					Npc:says(_"Now, look at source code, and replicate the ping pong, but not with the simple AI I included. I want a sentient ping pong field, with air friction, gravity, virtual reality, I want also to you consider the solar effect over tachyon particles and the E-particle emission on field due to friction with two antigrav rackets.") -- Are tachyons the way to contact Linarius?
 					Tux:says(_"Yes sir! Will be done sir!")
 					Npc:says(_"[b]...some time later...[/b]")
 					Npc:says(_"Very good. The E-particle emission is a little off, but this can be forgiven.")
 					Npc:says(_"You're good to go.")
-					Npc:says(_"By the way, you've learnt very fast the exponential overflow over E-particles. You have an unnatural talent to it, even bigger than MS President. Did you sold your soul by any chance?")
+					Npc:says(_"By the way, you've learned very fast the exponential overflow over E-particles. You have an unnatural talent to it, even bigger than MS President. Have you sold your soul by any chance?")
 					Npc:says(_"This is enough training for today.")
 					hide("node60")
 				else

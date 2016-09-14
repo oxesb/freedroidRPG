@@ -96,6 +96,7 @@ return {
 				Npc:says(_"Current Memory Loss: 0.00%%") -- oO He hadn't his memory wiped! Of course *someone* disrupted the "memory wiper" fluids...
 
 				-- make the cryo keepers hostile
+                -- FIXME: Maybe we should check if they're alive first?
 				Act2SecurityChief:set_faction("rr")
 				Act2ProgrammingChief:set_faction("rr")
 
