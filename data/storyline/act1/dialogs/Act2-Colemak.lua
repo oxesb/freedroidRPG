@@ -154,11 +154,11 @@ return {
 			Npc:says(_"As you must be aware, bots were on Dvorak's track.", "NO_WAIT")
 			Npc:says(_"Thankfully for you, Dvorak uploaded a detailed plan for you on my Cryo terminal.")
 			Npc:says(_"I'll now unlock the [b]download[/b] command. Download the plans for me, pretty please.", "NO_WAIT")
-			Npc:says(_"It's cryptographed so only you are able to read. Inform me about what Dvorak left there!")
+			Npc:says(_"It's encrypted so only you are able to read. Inform me about what Dvorak left there!")
 			Act2_DvorakPlanDownload=true
 
-			-- This is a fix for credits not being played (thanks wlan2)
-			-- Cursor state is not reset on win_game() so you should interact with terminal.
+			-- This was a fix for credits not being played (thanks wlan2)
+			-- Cursor state is not reset on win_game() so you had to interact with terminal.
 			end_dialog()
 		end,
 	},

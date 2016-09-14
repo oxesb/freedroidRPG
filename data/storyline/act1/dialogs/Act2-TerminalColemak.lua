@@ -47,7 +47,7 @@ return {
 			Tux:says(_"help", "NO_WAIT")
 			Npc:says(_"This terminal needs instructions to be loaded. Instructions can be requested at last floor of factory north from town.")
 			Npc:says(_"[b]WARNING:[/b] Not everyone comes back alive. Specially if a battle is necessary. You also need to have special authorization from big boss to go to final floor.") 
-			-- Not everyone survives: Look for dead bodies. Battle necessary: Battle Droids. Auth -- You won't find it at last floor.
+			-- Not everyone survives: Look for dead bodies. Battle necessary: Battle Droids. Authorization -- You won't get it at last floor.
 			end_dialog()
 		end
 		show("node99")
@@ -93,13 +93,13 @@ return {
 				Npc:says(_"[b]WARNING: PATIENT ID #1337 'Colemak' HAS BEEN UNCRYONIZED![/b]")
 				switch_background_music("NewTutorialStage.ogg") -- Things are now weird, so we add weird music!
 				Act2_ColemakAwake=true
-				Npc:says(_"Current Memory Loss: 0.00%%") -- oO He hadn't his memory wipped! Of course *someone* disrupted the "memory wipper" fluids...
+				Npc:says(_"Current Memory Loss: 0.00%%") -- oO He hadn't his memory wiped! Of course *someone* disrupted the "memory wiper" fluids...
 
-				-- hostilize the cryo keepers
+				-- make the cryo keepers hostile
 				Act2SecurityChief:set_faction("rr")
 				Act2ProgrammingChief:set_faction("rr")
 
-				--teletransport them, with delay
+				-- teletransport them, with delay
 				play_sound("effects/new_teleporter_sound.ogg")
 				delay_game(0.5)
 				Act2SecurityChief:teleport("75-KillTuxPos01", "Act2SecurityChief")
