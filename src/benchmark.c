@@ -247,6 +247,70 @@ static int level_test()
 	return failed;
 }
 
+/**
+ * Create a map of the levels
+ */
+#include "lvledit/lvledit_display.h"
+static int map_graph()
+{
+	timer_start();
+
+	// Open output file
+	struct auto_string *str = alloc_autostr(128);
+	FILE *out = fopen("/tmp/freedroid_level_graph.graph", "w");
+	if (!out)
+		return 1;
+	
+	// Load ship
+	char fp[2048];
+	find_file(fp, MAP_DIR, "levels.dat", NULL, NO_REPORT);
+	LoadShip(fp, 0);
+
+	// For each level, dump its connections
+	autostr_printf(str, "strict graph level_map {\nlayout=neato\nstart=random\n");
+	int i;
+	for (i = 0; i <= curShip.num_levels; i++) {
+		level *l = curShip.AllLevels[i];
+		if (!l) {
+			continue;
+		}
+
+		// Save level connections
+		autostr_append(str, "%d [href=\"freedroid_level_%02d.png\"];\n%d  -- {", i, i, i);
+
+		int links[4] = { l->jump_target_north, l->jump_target_south, l->jump_target_east, l->jump_target_west };
+		int j;
+		for (j = 0; j < 4; j++) {
+			if (links[j] != -1) {
+				autostr_append(str, "%d ", links[j]);
+			}
+		}
+
+	   	autostr_append(str, " }\n");
+		
+		// Take level screenshot
+		teleport_to_level_center(i);
+		lvledit_set_zoomfact(9.0);
+		GameConfig.zoom_is_on = TRUE;
+		game_status = INSIDE_LVLEDITOR;
+		AssembleCombatPicture(ONLY_SHOW_MAP_AND_TEXT | SHOW_ITEMS | OMIT_TUX | OMIT_ENEMIES | ZOOM_OUT | OMIT_BLASTS | SKIP_LIGHT_RADIUS | NO_CURSOR | OMIT_ITEMS_LABEL);
+
+		char fname[50];
+		sprintf(fname, "/tmp/freedroid_level_%02d.png", i);
+		save_screenshot(fname, 0);
+	}
+
+	autostr_append(str, "}\n");
+
+	// Write output file	
+	fprintf(out, "%s", str->value);
+	free_autostr(str);
+	fclose(out);
+
+	timer_stop();
+	return 0;
+}
+
 static int graphics_bench()
 {
 	// Load ship
@@ -304,6 +368,7 @@ int benchmark()
 			{ "leveltest",       level_test },
 			{ "graphics",        graphics_bench },
 			{ "graphicsloading", graphicsloading_bench },
+			{ "mapgraph",        map_graph },
 	};
 
 	int i;
