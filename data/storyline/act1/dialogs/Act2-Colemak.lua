@@ -134,12 +134,16 @@ return {
 			Npc:says(_"Don't worry my friend. Take all time you need, and then come back to talk with me.")
 			Tux:says(_"Thanks, Colemak. I'll talk to you as soon as I'm ready.")
 			Npc:says("", "NO_WAIT") -- White division line
-			Npc:says(_"[b]Important: Colemak locked the Resort gates to prevent enemies from coming.[/b]")
+			Npc:says(_"[b]Important: Colemak locked the Power Grid gates to prevent enemies from coming from the Factory.[/b]")
+			Npc:says("", "NO_WAIT") -- White division line
+			Npc:says(_"[b]Notice: Area south of RR Resorts is now available.[/b]")
 			-- Normalizes music
 			switch_background_music("town.ogg") 
 			Act2_TalkedToColemak=true
+			change_obstacle_state("Act2CityGate", "closed")
 			change_obstacle_state("RRResorts-NorthGate", "closed")
-			--change_obstacle_state("RRResorts-SouthGate", "closed") -- Wasn't open
+			change_obstacle_state("RRResorts-SouthGate", "opened")
+			change_obstacle_state("Act2-IcySummerGate", "opened")
 			hide("node99")
 			end_dialog()
 		end,
