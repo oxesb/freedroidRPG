@@ -61,7 +61,7 @@ return {
 			Tux:says(_"I'm a rich bird. Just name a price and I'll buy.")
 			Npc:says(_"Then let's do a game. You bring me a fifty of something which you think I need, and in return, I unlock new things so you can buy them. I won't accept repeated items. Deal?")
 			Tux:says(_"Deal.")
-			hide("node10") show("vmx", "smallemp", "762ammo")
+			hide("node10") show("special01", "bombs01", "ammo01")
 		end,
 	},
 	{
@@ -82,7 +82,7 @@ return {
 	},
 	{ -- Unlock special items (eg. Teleport Homing Beacon)
 	  -- When finishing this branch, Tux may to include add-ons to equipment.
-		id = "vmx",
+		id = "special01",
 		text = _"Do you sell VMX grenades? I'll pay you with 50 Tachyon Condensators.",
 		code = function()
 			Npc:says(_"Oh, VMX, those bombs to kill biological beings... And commodore 64 viruses.")
@@ -90,16 +90,32 @@ return {
 				Npc:says(_"Deal. You can now buy [b]VMX Gas Grenade[/b].")
 				Tux:del_item_backpack("Tachyon Condensator", 50)
 				sell_item("VMX Gas Grenade", 1, "Act2-Fred")
-				hide("vmx")
-				show("addonequip") -- Finished SPECIAL branch.
+				hide("special01")
+				show("special02")
 			else
 				Npc:says(_"But you need the 50 Tachyon Condensators. I won't start selling the VMX grenade without them.")
 			end
 		end,
 	},
+	{
+		id = "special02",
+		text = _"Do you sell Teleporter homing beacon? I'll pay you with 50 Diet supplement.",
+		code = function()
+			Npc:says(_"Oh, Teleporter homing beacon. Very useful to warp away from danger. Of course you will need one.")
+			if (Tux:count_item_backpack("Diet supplement") >= 50) then
+				Npc:says(_"Deal. You can now buy [b]Teleporter Homing Beacon[/b].")
+				Tux:del_item_backpack("Diet supplement", 50)
+				sell_item("Teleporter homing beacon", 1, "Act2-Fred")
+				hide("special02")
+				show("addonequip") -- Finished SPECIAL branch.
+			else
+				Npc:says(_"But you need the 50 Diet supplement. I won't start selling the teleporters without them.")
+			end
+		end,
+	},
 	{ -- Unlocks further grenades and bombs
 	  -- When finishing this branch, Tux may require to craft add-ons.
-		id = "smallemp",
+		id = "bombs01",
 		text = _"Do you sell EMP grenades? I'll pay you with 50 Antimatter Converters.",
 		code = function()
 			Npc:says(_"Oh, EMP, Electromagnetic Pulse Grenades. Yes, I do. I amuse myself every day that they cannot hurt the C-64 virus anomaly you'll be meeting soon enough if you already didn't.")
@@ -107,16 +123,32 @@ return {
 				Npc:says(_"Deal. You can now buy [b]Small EMP Shockwave Generator[/b].")
 				Tux:del_item_backpack("Antimatter-Matter Converter", 50)
 				sell_item("Small EMP Shockwave Generator", 1, "Act2-Fred")
-				hide("smallemp") -- show "bigemp"
-				show("addoncraft") -- Finished GRENADES branch.
+				hide("bombs01")
+				show("bombs02")
 			else
 				Npc:says(_"But you need the 50 Antimatter Converters. I won't start selling the grenades without them.")
 			end
 		end,
 	},
+	{
+		id = "bombs02",
+		text = _"Do you sell bigger EMP grenades? I'll pay you with 50 Entropy Inverters.",
+		code = function()
+			Npc:says(_"So the small bombs aren't doing their job? Don't worry, I do have something more powerful.")
+			if (Tux:count_item_backpack("Entropy Inverter") >= 50) then
+				Npc:says(_"Deal. You can now buy [b]EMP Shockwave Generator[/b].")
+				Tux:del_item_backpack("Entropy Inverter", 50)
+				sell_item("EMP Shockwave Generator", 1, "Act2-Fred")
+				hide("bombs02")
+				show("addoncraft") -- Finished GRENADES branch.
+			else
+				Npc:says(_"But you need the 50 Entropy Inverters. I won't start selling the big EMP grenade without them.")
+			end
+		end,
+	},
 	{ -- Unlocks further ammo (and possibly guns)
 	  -- When finishing this branch, Tux may require Barrett.
-		id = "762ammo",
+		id = "ammo01",
 		text = _"Do you sell 7.62x39mm Ammunition for the popular AK-47? I'll pay you with 50 Plasma Transistors.",
 		code = function()
 			Npc:says(_"So you found an AK-47, uhm? It's a good weapon, I doubt you'll find a better one so soon on this part of the country.")
@@ -124,10 +156,28 @@ return {
 				Npc:says(_"Deal. You can now buy [b]7.62x39mm Ammunition[/b].")
 				Tux:del_item_backpack("Plasma Transistor", 50)
 				sell_item("7.62x39mm Ammunition", 1, "Act2-Fred")
-				hide("762ammo")
-				show("barrett") -- Finished AMMO/GUN branch.
+				hide("ammo01")
+				show("ammo02")
 			else
 				Npc:says(_"But you need the 50 Plasma Transistors. I won't start selling the ammo without them.")
+			end
+		end,
+	},
+	{
+		id = "ammo02",
+		text = _"Do you sell Laser Power Pack? I'll pay you with 50... Laser Power Pack.",
+		code = function()
+			Npc:says(_"...")
+			Npc:says(_"Sorry, I'm speechless now. Your offer is... well, I'll accept it.")
+			Npc:says(_"Laser Power Packs are the main energy source for Light Sabers.")
+			if (Tux:count_item_backpack("Laser power pack") >= 50) then
+				Npc:says(_"Deal. You can now buy [b]Laser power pack[/b].")
+				Tux:del_item_backpack("Laser power pack", 50)
+				sell_item("Laser power pack", 1, "Act2-Fred")
+				hide("ammo02")
+				show("barrett") -- Finished AMMO/GUN branch.
+			else
+				Npc:says(_"Now, I really hope you manage to find Laser Power Pack to buy Laser Power Pack.")
 			end
 		end,
 	},
