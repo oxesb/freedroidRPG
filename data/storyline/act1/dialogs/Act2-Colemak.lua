@@ -151,14 +151,14 @@ return {
 
 	{
 		id = "endgame",
-		text = _"Let's find Dvorak! (end game)",
+		text = _"Let's find Dvorak!",
 		code = function()
 			Npc:says(_"So, are you ready?")
 			Tux:says(_"Yes I am!")
 			Npc:says(_"As you must be aware, bots were on Dvorak's track.", "NO_WAIT")
 			Npc:says(_"Thankfully for you, Dvorak uploaded a detailed plan for you on my Cryo terminal.")
 			Npc:says(_"I'll now unlock the [b]download[/b] command. Download the plans for me, pretty please.", "NO_WAIT")
-			Npc:says(_"It's encrypted so only you are able to read. Inform me about what Dvorak left there!")
+			Npc:says(_"It's encrypted and requires a key, but I'm sure you'll find it. Inform me about what Dvorak left there!")
 			Act2_DvorakPlanDownload=true
 
 			-- This was a fix for credits not being played (thanks wlan2)

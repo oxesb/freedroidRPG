@@ -6941,6 +6941,32 @@ Silent=0
 </LuaCode>
 * End of trigger *
 
+##############
+## Level 96 ##
+##############
+
+* New event trigger *
+Name=_"To Mainland via underground"
+Trigger at label="96to98"
+Silent=0
+<LuaCode>
+		teleport("98from96")
+</LuaCode>
+* End of trigger *
+
+##############
+## Level 98 ##
+##############
+
+* New event trigger *
+Name=_"To Icy Summer Island"
+Trigger at label="98to96"
+Silent=0
+<LuaCode>
+		teleport("96from98")
+</LuaCode>
+* End of trigger *
+
 
 ################
 ## NPC Deaths ##

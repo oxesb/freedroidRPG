@@ -130,47 +130,52 @@ return {
 		--; TRANSLATORS: command, user lowercase here
 		text = _"download",
 		code = function()
-			switch_background_music("HellFortressTwo.ogg") -- New bgsong.
-			Npc:says(_"[b]Now downloading[/b] DVORAK_PLANS.lua", "NO_WAIT")
-			Npc:says(_"[b]...Done.[/b]")
-			play_sound("effects/Menu_Item_Selected_Sound_1.ogg") -- This is where I want sounds to be played!!
-			Npc:says(_"[b]DVORAK_PLANS.lua[/b]", "NO_WAIT") -- Thanks for playing FreedroidRPG!
-			--; TRANSLATORS: %s = Tux:get_player_name()
-			Npc:says(_"Using key \"%s\", decrypted successfully.", Tux:get_player_name(), "NO_WAIT")
-			Npc:says("")
-			Npc:says(_"--- Begin Text Message (from Dvorak) ---", "NO_WAIT")
-			--; TRANSLATORS: %s = Tux:get_player_name()
-			Npc:says(_"Hello, %s. I'm Dvorak.", Tux:get_player_name(), "NO_WAIT")
-			Npc:says(_"I'm sure you are dying to talk to me.", "NO_WAIT")
-			Npc:says(_"I'll think of something.", "NO_WAIT")
-			Npc:says(_"For now you can only listen.", "NO_WAIT")
-			Npc:says("You will have to live with it for now.", "NO_WAIT")
-			Npc:says("")
-			Npc:says(_"Plans? Interesting this question.", "NO_WAIT")
-			Npc:says(_"Yes, I have a plan. I always do.", "NO_WAIT")
-			Npc:says(_"First you must rescue me. This is top priority.", "NO_WAIT")
-			Npc:says(_"I also have friends. I'll start looking for them now.", "NO_WAIT")
-			Npc:says("")
-			--; TRANSLATORS: %s = Tux:get_player_name()
-			Npc:says(_"Where to find me? Whoa! Not so fast, %s.", Tux:get_player_name(), "NO_WAIT")
-			Npc:says(_"We all want quality. And quality takes time.", "NO_WAIT")
-			Npc:says(_"If you can't wait for it, please go for the Contribute section.", "NO_WAIT")
-			Npc:says(_"Otherwise, this is all for now, I'm afraid.", "NO_WAIT")
-			--; TRANSLATORS: %s = Tux:get_player_name()
-			Npc:says(_"Good luck, %s. You'll need.", Tux:get_player_name(), "NO_WAIT")
-			Npc:says("")
-			Npc:says(_"Dvorak, First AI", "NO_WAIT")
-			Npc:says("", "NO_WAIT")
+			if (Tux:has_item("Dvorak's Butterfly")) then
+				switch_background_music("HellFortressTwo.ogg") -- New bgsong.
+				Npc:says(_"[b]Now downloading[/b] DVORAK_PLANS.lua", "NO_WAIT")
+				Npc:says(_"[b]...Done.[/b]")
+				play_sound("effects/Menu_Item_Selected_Sound_1.ogg") -- This is where I want sounds to be played!!
+				Npc:says(_"[b]DVORAK_PLANS.lua[/b]", "NO_WAIT") -- Thanks for playing FreedroidRPG!
+				--; TRANSLATORS: %s = Tux:get_player_name()
+				Npc:says(_"Using key \"%s\", decrypted successfully.", Tux:get_player_name(), "NO_WAIT")
+				Npc:says("")
+				Npc:says(_"--- Begin Text Message (from Dvorak) ---", "NO_WAIT")
+				--; TRANSLATORS: %s = Tux:get_player_name()
+				Npc:says(_"Hello, %s. I'm Dvorak.", Tux:get_player_name(), "NO_WAIT")
+				Npc:says(_"I'm sure you are dying to talk to me.", "NO_WAIT")
+				Npc:says(_"I'll think of something.", "NO_WAIT")
+				Npc:says(_"For now you can only listen.", "NO_WAIT")
+				Npc:says("You will have to live with it for now.", "NO_WAIT")
+				Npc:says("")
+				Npc:says(_"Plans? Interesting this question.", "NO_WAIT")
+				Npc:says(_"Yes, I have a plan. I always do.", "NO_WAIT")
+				Npc:says(_"First you must rescue me. This is top priority.", "NO_WAIT")
+				Npc:says(_"I also have friends. I'll start looking for them now.", "NO_WAIT")
+				Npc:says("")
+				--; TRANSLATORS: %s = Tux:get_player_name()
+				Npc:says(_"Where to find me? Whoa! Not so fast, %s.", Tux:get_player_name(), "NO_WAIT")
+				Npc:says(_"We all want quality. And quality takes time.", "NO_WAIT")
+				Npc:says(_"If you can't wait for it, please go for the Contribute section.", "NO_WAIT")
+				Npc:says(_"Otherwise, this is all for now, I'm afraid.", "NO_WAIT")
+				--; TRANSLATORS: %s = Tux:get_player_name()
+				Npc:says(_"Good luck, %s. You'll need.", Tux:get_player_name(), "NO_WAIT")
+				Npc:says("")
+				Npc:says(_"Dvorak, First AI", "NO_WAIT")
+				Npc:says("", "NO_WAIT")
 
-			Npc:says(_"--- End Text Message ---", "NO_WAIT")
- 			Npc:says("", "NO_WAIT")
-			--; TRANSLATORS: %s = Game Version
-			Npc:says(_"[b]Thanks for playing FreedroidRPG %s![/b]", get_game_version())
+				Npc:says(_"--- End Text Message ---", "NO_WAIT")
+	 			Npc:says("", "NO_WAIT")
+				--; TRANSLATORS: %s = Game Version
+				Npc:says(_"[b]Thanks for playing FreedroidRPG %s![/b]", get_game_version())
 
-			display_big_message(_"Thanks for playing FreedroidRPG!")
-			display_big_message(_"--- Continues ---")
-			win_game()
-			end_dialog()
+				display_big_message(_"Thanks for playing FreedroidRPG!")
+				display_big_message(_"--- Continues ---")
+				win_game()
+			else
+				Npc:says(_"[b]Failure:[/b] A proof of authorization by Dvorak is required.")
+				Npc:says(_"[b]Information:[/b] You might find it south of the town.")
+				end_dialog()
+			end
 		end,
 	},
 	{

@@ -2962,6 +2962,17 @@ item_list{
 ----------------------------------------------------------------------
 
 {
+	id = "Dvorak's Butterfly",
+	name =_"Dvorak's Butterfly",
+	base_price = 0,
+	inventory = {x = 2, y = 2, image = "inventory_image_bug.png" },
+	drop = {sound = "Item_Drop_Sound_0.ogg"},
+	description =_[[This is a very strange item. From far, it looks like a butterfly, but if you examine closely, you will start to notice the oddness of this trinket. Dvorak's proof and credentials.]],
+	rotation_series = "NONE_AVAILABLE_YET",
+},
+----------------------------------------------------------------------
+
+{
 	id = "Cheat Gun",
 	name =_"Cheat Gun",
 	slot = "weapon",
