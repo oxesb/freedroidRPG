@@ -30,6 +30,7 @@ return {
 		Yadda_TP_cost=1
 		Yadda_books_bought=0
 		Yadda_vmx_saber=20+(math.random(5,7)*difficulty_level())
+		show("pgpkey", "node99")
 		Npc:says(_"Welcome to my temple of peace. People say I am the wisest man alive on the world, but I think I am the best on the universe!", "NO_WAIT")
 		cli_says(_"And in case you're wondering: ", "NO_WAIT")
 	end,
@@ -53,7 +54,7 @@ return {
 		-- Yadda's wise advises and time-dependent events.
 		Yadda_times=Yadda_times + 1
 		if (Yadda_times==1) then
-			Npc:says(_"Come and seek my lightly advises, and you'll find out truth and light.")
+			Npc:says(_"Come and seek my lightly advises every now and then, and you'll find out truth and light.")
 		elseif (Yadda_times==3) then
 			Npc:says(_"The only skill worth acquiring in the world: Light.")
 			show("book")
@@ -83,7 +84,7 @@ return {
 							_"Yadda Yadda Yadda.",
 							_"Basically, it's just a jump to the left, and a step to the right... You see?")
 		elseif (Yadda_times < 40) then
-			-- Texts below aren't quotes, but advises.
+			-- Texts below aren't quotes, but advises. Some disagree, specially the Yadda parts.
 			Npc:says_random(_"No one knows what the future awaits. Except Master Yadda.",
 							_"Yadda Yadda Yadda.",
 							_"The secret of the sure victory is siding with Master Yadda.",
@@ -102,6 +103,19 @@ return {
 		show("node99")
 	end,
 
+	{
+		id = "pgpkey",
+		text = _"Master, I've been looking for a PGP key in order to unlock a certain file.",
+		code = function()
+			Tux:says(_"Your wisdom is not mensurable, it's so high to be understood by mere mortals like me, you surely must know where I can find it.")
+			 -- Tux probably expected: “You're quite right, except for one thing. I do not know where this key is.”
+			Npc:says(_"Indeed, you're quite right there.", "NO_WAIT")
+			Npc:says(_"You can find it walking south and entering on the first hole you see.") -- TODO: Maybe "hole" could be rewritten.
+			Tux:says(_"I thought you would tell me in a riddle.") -- “Actually, I thought you wouldn't tell me at all.”
+			Npc:says(_"Well, you would find it if you explored this map for two minutes. To be asking it you must be as lazy as me, so I decided to just tell you right away. Please enjoy this Island.")
+			hide("pgpkey")
+		end,
+	},
 	{
 		id = "C64gate",
 		text = _"I heard there was a dangerous bot which needs killing. Where is it?",

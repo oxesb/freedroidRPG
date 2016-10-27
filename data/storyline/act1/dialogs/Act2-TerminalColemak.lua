@@ -130,14 +130,14 @@ return {
 		--; TRANSLATORS: command, user lowercase here
 		text = _"download",
 		code = function()
-			if (Tux:has_item("Dvorak's Butterfly")) then
+			if (Tux:has_item("PGP key")) then
 				switch_background_music("HellFortressTwo.ogg") -- New bgsong.
 				Npc:says(_"[b]Now downloading[/b] DVORAK_PLANS.lua", "NO_WAIT")
 				Npc:says(_"[b]...Done.[/b]")
 				play_sound("effects/Menu_Item_Selected_Sound_1.ogg") -- This is where I want sounds to be played!!
 				Npc:says(_"[b]DVORAK_PLANS.lua[/b]", "NO_WAIT") -- Thanks for playing FreedroidRPG!
 				--; TRANSLATORS: %s = Tux:get_player_name()
-				Npc:says(_"Using key \"%s\", decrypted successfully.", Tux:get_player_name(), "NO_WAIT")
+				Npc:says(_"Using PGP key \"%s\", decrypted successfully.", Tux:get_player_name(), "NO_WAIT")
 				Npc:says("")
 				Npc:says(_"--- Begin Text Message (from Dvorak) ---", "NO_WAIT")
 				--; TRANSLATORS: %s = Tux:get_player_name()
@@ -172,8 +172,10 @@ return {
 				display_big_message(_"--- Continues ---")
 				win_game()
 			else
-				Npc:says(_"[b]Failure:[/b] A proof of authorization by Dvorak is required.")
-				Npc:says(_"[b]Information:[/b] You might find it south of the town.")
+				Npc:says(_"[b]Failure:[/b] You do not have a PGP Key.")
+				-- TODO: “no while, no file” → the meaning is you won't get a key if you don't explore first.
+				-- TODO: A better wording is yet to be found.
+				Npc:says(_"[b]Information:[/b] The comment header of the file says: No while, no file.")
 				end_dialog()
 			end
 		end,
