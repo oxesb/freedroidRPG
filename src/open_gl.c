@@ -123,8 +123,11 @@ void drawIsoEnergyBar(int x, int y, int z, int h, int d, int length, float fill,
 	int l = (int)(fill * length);
 	int l2 = (int)length * (1.0 - fill);
 	int lcos, lsin, l2cos, l2sin;
+
+	end_image_batch(__FUNCTION__);
+
 	glColor4ub(c1->r, c1->g, c1->b, c1->a);
-	glDisable(GL_TEXTURE_2D);
+	use_shader(NO_SHADER);
 	glBegin(GL_QUADS);
 
 	lcos = (int)rint(l * COS_28);
@@ -141,7 +144,6 @@ void drawIsoEnergyBar(int x, int y, int z, int h, int d, int length, float fill,
 	drawISOXZQuad(x + lcos, y - lsin - h, z, d, l2);
 
 	glEnd();
-	glEnable(GL_TEXTURE_2D);
 	glColor4ub(255, 255, 255, 255);
 #endif
 };				// void drawIsoEnergyBar(int dir, int x, int y, int z, int h, int d, int length, float fill, myColor *c1, myColor *c2  ) 
@@ -244,7 +246,7 @@ static SDL_Surface *pad_image_for_texture(SDL_Surface * our_surface)
 static void do_make_texture_out_of_surface(struct image * our_image, int txw, int txh, void *data)
 {
 	// Stop any image batch being constructed, if relevant
-	end_image_batch();
+	end_image_batch(__FUNCTION__);
 
 	glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 
@@ -305,13 +307,7 @@ void make_texture_out_of_surface(struct image * our_image)
 #endif
 }
 
-/**
- * This function does the first part of the OpenGL parameter 
- * initialization.  We've made this chunk of code into a separate function
- * such that the frequent issues with OpenGL drivers can be attributed to
- * a particular spot in the code more easily.
- */
-void safely_set_open_gl_viewport_and_matrix_mode(void)
+static void safely_set_open_gl_viewport_and_matrix_mode(void)
 {
 #ifdef HAVE_LIBGL
 
@@ -338,7 +334,7 @@ void safely_set_some_open_gl_flags_and_shade_model(void)
 
 	glClearColor(0.0, 0.0, 0.0, 1.0);
 
-	glEnable(GL_TEXTURE_2D);
+	glDisable(GL_TEXTURE_2D);
 
 	glShadeModel(GL_FLAT);
 
@@ -358,7 +354,7 @@ void safely_set_some_open_gl_flags_and_shade_model(void)
 /**
  * Initialize the OpenGL interface.
  */
-int safely_initialize_our_default_open_gl_parameters(void)
+int init_open_gl(void)
 {
 #ifdef HAVE_LIBGL
 	init_opengl_debug();
@@ -367,6 +363,7 @@ int safely_initialize_our_default_open_gl_parameters(void)
 	glGetIntegerv(GL_MAX_TEXTURE_SIZE, &gl_max_texture_size);
 	open_gl_check_error_status(__FUNCTION__);
 
+	init_shaders();
 #endif
 
 	return TRUE;
@@ -385,9 +382,9 @@ void RestoreMenuBackground(int backup_slot)
 
 		// Stop any image batch being constructed, 
 		// so that struct image does not get confused.
-		end_image_batch();
+		end_image_batch(__FUNCTION__);
 
-		glDisable(GL_TEXTURE_2D);
+		use_shader(NO_SHADER);
 		glEnable(GL_TEXTURE_RECTANGLE_ARB);
 		glBindTexture(GL_TEXTURE_RECTANGLE_ARB, (StoredMenuBackgroundTex[backup_slot]));
 
@@ -402,7 +399,6 @@ void RestoreMenuBackground(int backup_slot)
 		glVertex2i(w, 0);
 		glEnd();
 
-		glEnable(GL_TEXTURE_2D);
 		glDisable(GL_TEXTURE_RECTANGLE_ARB);
 
 #endif
@@ -430,15 +426,14 @@ void StoreMenuBackground(int backup_slot)
 #ifdef HAVE_LIBGL
 		// Stop any image batch being constructed, 
 		// so that struct image does not get confused.
-		end_image_batch();
+		end_image_batch(__FUNCTION__);
 
-		glFlush();
+		glFinish();
 
 		if (StoredMenuBackgroundTex[backup_slot] == 0) {
 			glGenTextures(1, &StoredMenuBackgroundTex[backup_slot]);
 		}
 
-		glDisable(GL_TEXTURE_2D);
 		glEnable(GL_TEXTURE_RECTANGLE_ARB);
 		glBindTexture(GL_TEXTURE_RECTANGLE_ARB, StoredMenuBackgroundTex[backup_slot]);
 		glTexParameteri(GL_TEXTURE_RECTANGLE_ARB, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
@@ -447,7 +442,6 @@ void StoreMenuBackground(int backup_slot)
 		glCopyTexImage2D(GL_TEXTURE_RECTANGLE_ARB, 0, GL_RGBA, 0, 0, GameConfig.screen_width, GameConfig.screen_height, 0);
 		open_gl_check_error_status(__FUNCTION__);
 
-		glEnable(GL_TEXTURE_2D);
 		glDisable(GL_TEXTURE_RECTANGLE_ARB);
 
 #endif
@@ -486,7 +480,7 @@ void set_up_stretched_texture_for_light_radius(void)
 
 	// Stop any image batch being constructed, 
 	// so that struct image does not get confused.
-	end_image_batch();
+	end_image_batch(__FUNCTION__);
 
 	// Some protection against creating this texture twice...
 	//
@@ -551,7 +545,7 @@ void light_radius_update_stretched_texture(void)
 
 	// Stop any image batch being constructed, 
 	// so that struct image does not get confused.
-	end_image_batch();
+	end_image_batch(__FUNCTION__);
 
 	glBindTexture(GL_TEXTURE_2D, light_radius_stretch_texture);
 	glTexSubImage2D(GL_TEXTURE_2D, 0,
@@ -611,31 +605,23 @@ void blit_open_gl_stretched_texture_light_radius(int decay_x, int decay_y)
 };				// void blit_open_gl_stretched_texture_light_radius ( void )
 
 /**
- * Draw a colored rectangle on screen in OpenGL.
- *
- * @param rect The rectangular area.
- * @param r The red color value.
- * @param g The green color value.
- * @param b The blue color value.
- * @param a The alpha color value.
+ * Draw a colored rectangle on screen, given its 4 points.
  */
-void gl_draw_rectangle(SDL_Rect *rect, int r, int g, int b, int a)
+void gl_draw_quad(const struct point vertices[4], int r, int g, int b, int a)
 {
 #ifdef HAVE_LIBGL
-	glDisable(GL_TEXTURE_2D);
+	use_shader(NO_SHADER);
 
 	glColor4ub(r, g, b, a);
 
 	glBegin(GL_QUADS);
-	glVertex2i(rect->x, rect->y);
-	glVertex2i(rect->x, rect->y + rect->h);
-	glVertex2i(rect->x + rect->w, rect->y + rect->h);
-	glVertex2i(rect->x + rect->w, rect->y);
+	glVertex2i(vertices[0].x, vertices[0].y);
+	glVertex2i(vertices[1].x, vertices[1].y);
+	glVertex2i(vertices[2].x, vertices[2].y);
+	glVertex2i(vertices[3].x, vertices[3].y);
 	glEnd();
 
 	glColor4ub(255, 255, 255, 255);
-
-	glEnable(GL_TEXTURE_2D);
 #endif
 }
 
@@ -715,6 +701,7 @@ void blit_background(const char *background)
 		y += GameConfig.screen_height;
 
 
+	gl_debug_marker(__FUNCTION__);
 	display_image_on_screen(&bg->img, x, y, set_image_transformation(scalex, scaley, 1.0, 1.0, 1.0, 1.0, 0));
 }
 
@@ -722,7 +709,7 @@ void set_gl_clip_rect(const SDL_Rect *clip)
 {
 #ifdef HAVE_LIBGL
 	// Flush image batch. Scissor test shouldn't affect it.
-	end_image_batch();
+	end_image_batch(__FUNCTION__);
 
 	if (use_open_gl) {
 		glScissor(clip->x, GameConfig.screen_height - (clip->y + clip->h), clip->w, clip->h);

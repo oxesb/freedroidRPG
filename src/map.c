@@ -58,7 +58,8 @@ void init_map_tile(struct map_tile* tile)
 	for (i = 1; i < MAX_FLOOR_LAYERS; i++)
 		tile->floor_values[i] = ISO_FLOOR_EMPTY;
 	dynarray_init(&tile->glued_obstacles, 0, sizeof(int));
-	INIT_LIST_HEAD(&tile->volatile_obstacles);
+	tile->volatile_obstacles = (list_head_t*)MyMalloc(sizeof(list_head_t));
+	INIT_LIST_HEAD(tile->volatile_obstacles);
 	tile->timestamp = 0;
 }
 
@@ -833,6 +834,14 @@ static char *decode_map(level *loadlevel, char *data)
 
 			for (layer = 0; layer < loadlevel->floor_layers; layer++) {
 				tmp = strtol(this_line + 4 * (loadlevel->floor_layers * col + layer), NULL, 10);
+				if (tmp >= underlay_floor_tiles.size) {
+					if (tmp < MAX_UNDERLAY_FLOOR_TILES || (tmp - MAX_UNDERLAY_FLOOR_TILES) >= overlay_floor_tiles.size) {
+						error_message(__FUNCTION__, "Level %d at (%d, %d) in layer #%d uses an unknown floor tile: %d.", PLEASE_INFORM,
+								loadlevel->levelnum, col, i, layer, tmp);
+						tmp = ISO_FLOOR_EMPTY;
+					}
+				}
+
 				Buffer[col].floor_values[layer] = (Uint16) tmp;
 			}
 		}
@@ -948,7 +957,7 @@ static int smash_obstacles_only_on_tile(float x, float y, int lvl, int map_x, in
 	int target_idx;
 	struct obstacle *target_obstacle;
 	int smashed_something = FALSE;
-	struct moderately_finepoint blast_start_pos;
+	struct pointf blast_start_pos;
 
 	// First some security checks against touching the outsides of the map...
 
@@ -1058,35 +1067,24 @@ int smash_obstacle(float x, float y, int lvl)
 }				// int smash_obstacle ( float x , float y );
 
 /**
- * This function returns the map brick code of the tile that occupies the
- * given position in the given layer.
+ * This function returns the map brick code of the tiles that occupies the
+ * given position. The return value is an array for all floor layers.
  * Floor layers are indexed from 0 to lvl->floor_layers - 1. The lowest
  * floor layer is #0. Every map has at least one layer.
+ * If there are no floor tiles, the function may return NULL, which is
+ * equivalent to an array full of ISO_FLOOR_EMPTY.
  */
-Uint16 get_map_brick(level *lvl, float x, float y, int layer)
+uint16_t *get_map_brick(level *lvl, float x, float y)
 {
-	Uint16 BrickWanted;
-	int RoundX, RoundY;
-
 	gps vpos = { x, y, lvl->levelnum };
 	gps rpos;
 	if (!resolve_virtual_position(&rpos, &vpos)) {
-		return ISO_FLOOR_EMPTY;
-	}
-	RoundX = (int)rintf(rpos.x);
-	RoundY = (int)rintf(rpos.y);
-
-	BrickWanted = curShip.AllLevels[rpos.z]->map[RoundY][RoundX].floor_values[layer];
-
-	if (BrickWanted >= underlay_floor_tiles.size) {
-		if (BrickWanted < MAX_UNDERLAY_FLOOR_TILES || (BrickWanted - MAX_UNDERLAY_FLOOR_TILES) >= overlay_floor_tiles.size) {
-			error_message(__FUNCTION__, "Level %d at %d %d in %d layer uses an unknown floor tile: %d.", PLEASE_INFORM,
-				lvl->levelnum, RoundX, RoundY, layer, BrickWanted);
-			return ISO_FLOOR_EMPTY;
-		}
+		return NULL;
 	}
 
-	return BrickWanted;
+	int roundX = (int)rintf(rpos.x);
+	int roundY = (int)rintf(rpos.y);
+	return curShip.AllLevels[rpos.z]->map[roundY][roundX].floor_values;
 }
 
 /**
@@ -1187,10 +1185,12 @@ void free_ship_level(level *lvl)
 	int col = 0;
 
 	// Map tiles
+	remove_volatile_obstacles(lvl->levelnum);
 	for (row = 0; row < lvl->ylen; row++) {
 		if (lvl->map[row]) {
 			for (col = 0; col < lvl->xlen; col++) {
 				dynarray_free(&lvl->map[row][col].glued_obstacles);
+				free(lvl->map[row][col].volatile_obstacles);
 			}
 
 			free(lvl->map[row]);
@@ -2033,9 +2033,9 @@ inline float translate_pixel_to_map_location(float axis_x, float axis_y, int giv
 	//
 
 	if (give_x) {
-		return (Me.pos.x + (axis_x / ((float)iso_floor_tile_width)) + (axis_y / ((float)iso_floor_tile_height)));
+		return (Me.pos.x + (axis_x / ((float)FLOOR_TILE_WIDTH)) + (axis_y / ((float)FLOOR_TILE_HEIGHT)));
 	} else {
-		return (Me.pos.y - (axis_x / ((float)iso_floor_tile_width)) + (axis_y / ((float)iso_floor_tile_height)));
+		return (Me.pos.y - (axis_x / ((float)FLOOR_TILE_WIDTH)) + (axis_y / ((float)FLOOR_TILE_HEIGHT)));
 	}
 
 };				// int translate_pixel_to_map_location ( int axis_x , int axis_y , int give_x ) 
@@ -2048,10 +2048,10 @@ float translate_pixel_to_zoomed_map_location(float axis_x, float axis_y, int giv
 {
 	float zf = lvledit_zoomfact();
 	if (give_x) {
-		return (Me.pos.x + (zf * axis_x / ((float)iso_floor_tile_width)) + (zf * axis_y / ((float)iso_floor_tile_height)));
+		return (Me.pos.x + (zf * axis_x / ((float)FLOOR_TILE_WIDTH)) + (zf * axis_y / ((float)FLOOR_TILE_HEIGHT)));
 		// return ( ( axis_x / ISO_WIDTH ) + ( axis_y / ISO_HEIGHT ) ) ;
 	} else {
-		return (Me.pos.y - (zf * axis_x / ((float)iso_floor_tile_width)) + (zf * axis_y / ((float)iso_floor_tile_height)));
+		return (Me.pos.y - (zf * axis_x / ((float)FLOOR_TILE_WIDTH)) + (zf * axis_y / ((float)FLOOR_TILE_HEIGHT)));
 		// return ( - ( axis_x / ISO_WIDTH ) + ( axis_y / ISO_HEIGHT ) ) ;
 	}
 
@@ -2061,9 +2061,9 @@ float translate_pixel_to_zoomed_map_location(float axis_x, float axis_y, int giv
  *
  *
  */
-moderately_finepoint translate_point_to_map_location(float axis_x, float axis_y, int zoom_is_on)
+pointf translate_point_to_map_location(float axis_x, float axis_y, int zoom_is_on)
 {
-	moderately_finepoint position;
+	pointf position;
 	if (zoom_is_on) {
 		position.x = translate_pixel_to_zoomed_map_location(axis_x, axis_y, TRUE);
 		position.y = translate_pixel_to_zoomed_map_location(axis_x, axis_y, FALSE);
@@ -2072,6 +2072,12 @@ moderately_finepoint translate_point_to_map_location(float axis_x, float axis_y,
 		position.y = translate_pixel_to_map_location(axis_x, axis_y, FALSE);
 	}
 	return position;
+}
+
+int map_is_zoomed_out(void)
+{
+	/* XXX should not check for leveleditor here! */
+	return game_status == INSIDE_LVLEDITOR && GameConfig.zoom_is_on;
 }
 
 /**
@@ -2084,31 +2090,35 @@ moderately_finepoint translate_point_to_map_location(float axis_x, float axis_y,
  * @param zoom_factor zoom factor in use
  * 
  */
-void translate_map_point_to_screen_pixel_func(float x_map_pos, float y_map_pos, int *x_res, int *y_res)
+void translate_map_point_to_screen_pixel_func(float X, float Y, int *x_res, int *y_res)
 {
 	float zoom_factor = 1.0;
 
-	/* XXX should not check for leveleditor here! */
-	if (game_status == INSIDE_LVLEDITOR && GameConfig.zoom_is_on) {
+#define R (int)
+#define factX FLOOR_TILE_WIDTH*0.5*zoom_factor
+#define factY FLOOR_TILE_HEIGHT*0.5*zoom_factor
+	if (map_is_zoomed_out()) {
 		zoom_factor = lvledit_zoomfact_inv();
 	}
-#define R ceilf
-#define factX iso_floor_tile_width*0.5*zoom_factor
-#define factY iso_floor_tile_height*0.5*zoom_factor
-	if (x_res != NULL) {
-		//obstacles oscillent *x_res = UserCenter_x + R( (x_map_pos - Me.pos.x) * factX) + R((Me . pos . y - y_map_pos) * factX);
-		//murs tilent pas -- en fait si
-		*x_res = UserCenter_x + R(x_map_pos * factX) - R(y_map_pos * factX) + R(Me.pos.y * factX) - R(factX * Me.pos.x);
-		//murs tilent pas ET tux oscille *x_res = UserCenter_x + R( x_map_pos * factX) - R(y_map_pos * factX) + R((Me.pos.y - Me.pos.x) * factX);
-		//original "devtrack" - murs tilent pas *x_res = ( UserCenter_x + R ( ( x_map_pos - y_map_pos )  * factX  ) + R ( ( Me . pos . y - Me . pos . x ) * factX ) );
 
-	}
-	if (y_res != NULL) {
-		//*y_res = UserCenter_y + R( (x_map_pos - Me.pos.x)* factY ) + R((y_map_pos - Me . pos . y)* factY);
-		*y_res = UserCenter_y + R(x_map_pos * factY) + R(y_map_pos * factY) - R(Me.pos.x * factY) - R(factY * Me.pos.y);
-		//*y_res = UserCenter_y + R( x_map_pos * factY ) + R(y_map_pos * factY) - R((Me.pos.x + Me.pos.y) * factY);
-		//*y_res=( UserCenter_y + R ( ( x_map_pos + y_map_pos )  * factY ) - R( (  Me . pos . x + Me . pos . y ) * factY ));
-	}
+	/* Translating from the map coordinate system into the screen coordinate
+	   system is not easy to do correctly, because the screen coordinate system
+	   is discrete (integer coordinates).  The result is that careless
+	   translation can lead to elements that are fixed on the map (such as
+	   obstacles) to "jitter" when the player is moving, especially when movement
+	   happens along the screen axes.  This is why "rounding" is needed at an
+	   intermediary step.
+
+	   Translating a vector on the map to a vector on screen is as follows: x =
+	   (X - Y) * FLOOR_TILE_WIDTH y = (X + Y) * FLOOR_TILE_HEIGHT
+
+	   To translate a point, one has to take into account the "base"
+	   coordinate: the screen's origin is centered on the player (Me.pos) and depends
+	   on the interface screens currently opened (UserCenter).  The player coordinate
+	   is rounded at an intermediary step to avoid jitter when the player moves.
+	  */
+	*x_res = UserCenter_x + factX * (X - Y) - R(factX * (Me.pos.x - Me.pos.y));
+	*y_res = UserCenter_y + factY * (X + Y) - R(factY * (Me.pos.x + Me.pos.y));
 #undef R
 #undef factX
 #undef factY

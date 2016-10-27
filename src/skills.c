@@ -394,7 +394,7 @@ int do_skill(int skill_index, int spell_cost)
 	case PROGRAM_FORM_BULLET:
 		Me.temperature += spell_cost;
 
-		moderately_finepoint target_location;
+		pointf target_location;
 		target_location.x = translate_pixel_to_map_location(input_axis.x, input_axis.y, TRUE);
 		target_location.y = translate_pixel_to_map_location(input_axis.x, input_axis.y, FALSE);
 
@@ -502,7 +502,7 @@ void do_radial_skill(int skill_index, int pos_x, int pos_y, int from_tux)
 	new_spell.paralyze_duration = strcmp(SpellSkillMap[skill_index].effect, "paralyze") ? 0 : effdur;
 	new_spell.damage = hitdmg;
 
-	dynarray_add(&all_spells, &new_spell, sizeof(struct spell));
+	sparse_dynarray_add(&all_spells, &new_spell, sizeof(struct spell));
 }
 
 /**

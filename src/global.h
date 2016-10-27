@@ -75,10 +75,10 @@ extern list_head_t level_bots_head[MAX_LEVELS];
 
 EXTERN ship curShip;		/* the current ship-data */
 
-EXTERN bullet_sparsedynarray all_bullets INITIALIZER(SPARSE_DYNARRAY);
-EXTERN melee_shot_sparsedynarray all_melee_shots INITIALIZER(SPARSE_DYNARRAY);
-EXTERN blast_sparsedynarray all_blasts INITIALIZER(SPARSE_DYNARRAY);
-EXTERN spell_sparsedynarray all_spells INITIALIZER(SPARSE_DYNARRAY);
+EXTERN bullet_sparse_dynarray all_bullets;
+EXTERN melee_shot_sparse_dynarray all_melee_shots;
+EXTERN blast_sparse_dynarray all_blasts;
+EXTERN spell_sparse_dynarray all_spells;
 
 EXTERN int sound_on;		// Toggle TRUE/FALSE for turning sounds on/off 
 EXTERN int debug_level;		// 0=no debug 1=some debug messages 2=...etc 
@@ -174,10 +174,6 @@ EXTERN GLuint StoredMenuBackgroundTex[2];
 EXTERN struct tux_motion_class_images *tux_images;
 EXTERN struct dynarray obstacle_images;
 
-EXTERN float iso_floor_tile_width;
-EXTERN float iso_floor_tile_height;
-EXTERN float iso_floor_tile_width_over_two;
-EXTERN float iso_floor_tile_height_over_two;
 EXTERN int vid_bpp;		// bits per pixel 
 
 //===================================================================

@@ -1624,4 +1624,11 @@ enum load_image_mod_flags {
 // Draw quads borders (OpenGL only)
 #define DEBUG_QUAD_BORDER 0
 
+enum shader {
+	NO_SHADER = 0,
+	BLITTER_SHADER = 1,
+};
+
+#define FLOOR_TILE_WIDTH 134
+#define FLOOR_TILE_HEIGHT 66
 #endif

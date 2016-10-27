@@ -99,15 +99,13 @@ typedef void (APIENTRYP PFNGLGETOBJECTPTRLABELPROC) (const void *ptr, GLsizei bu
 PFNGLDEBUGMESSAGECONTROLPROC glDebugMessageControl;
 PFNGLDEBUGMESSAGECALLBACKPROC glDebugMessageCallback;
 
+PFNGLSTRINGMARKERGREMEDYPROC my_glStringMarkerGREMEDY;
+
 #define DBG_FLAG(f) { f, #f }
 struct debug_flag {
 	GLenum flag_value;
 	char *flag_descr;
 } debug_flags[] = {
-	DBG_FLAG(GL_DEBUG_OUTPUT_SYNCHRONOUS),
-	DBG_FLAG(GL_DEBUG_NEXT_LOGGED_MESSAGE_LENGTH),
-	DBG_FLAG(GL_DEBUG_CALLBACK_FUNCTION),
-	DBG_FLAG(GL_DEBUG_CALLBACK_USER_PARAM),
 	DBG_FLAG(GL_DEBUG_SOURCE_API),
 	DBG_FLAG(GL_DEBUG_SOURCE_WINDOW_SYSTEM),
 	DBG_FLAG(GL_DEBUG_SOURCE_SHADER_COMPILER),
@@ -124,25 +122,9 @@ struct debug_flag {
 	DBG_FLAG(GL_DEBUG_TYPE_PUSH_GROUP),
 	DBG_FLAG(GL_DEBUG_TYPE_POP_GROUP),
 	DBG_FLAG(GL_DEBUG_SEVERITY_NOTIFICATION),
-	DBG_FLAG(GL_MAX_DEBUG_GROUP_STACK_DEPTH),
-	DBG_FLAG(GL_DEBUG_GROUP_STACK_DEPTH),
-	DBG_FLAG(GL_BUFFER),
-	DBG_FLAG(GL_SHADER),
-	DBG_FLAG(GL_PROGRAM),
-	DBG_FLAG(GL_QUERY),
-	DBG_FLAG(GL_PROGRAM_PIPELINE),
-	DBG_FLAG(GL_SAMPLER),
-	DBG_FLAG(GL_DISPLAY_LIST),
-	DBG_FLAG(GL_MAX_LABEL_LENGTH),
-	DBG_FLAG(GL_MAX_DEBUG_MESSAGE_LENGTH),
-	DBG_FLAG(GL_MAX_DEBUG_LOGGED_MESSAGES),
-	DBG_FLAG(GL_DEBUG_LOGGED_MESSAGES),
 	DBG_FLAG(GL_DEBUG_SEVERITY_HIGH),
 	DBG_FLAG(GL_DEBUG_SEVERITY_MEDIUM),
 	DBG_FLAG(GL_DEBUG_SEVERITY_LOW),
-	DBG_FLAG(GL_DEBUG_OUTPUT),
-	{ 0x0503, "GL_STACK_OVERFLOW" },
-	{ 0x0504, "GL_STACK_UNDERFLOW" }
 };
 #undef DBG_FLAG
 
@@ -156,7 +138,7 @@ static struct debug_flag *find_debug_flag(GLenum value)
 	return NULL;
 }
 
-static void gl_debug_callback(GLenum source, GLenum type, GLuint id,
+static void APIENTRY gl_debug_callback(GLenum source, GLenum type, GLuint id,
 							GLenum severity, GLsizei length, const GLchar* message,
 							GLvoid* userParam)
 {
@@ -228,11 +210,26 @@ int init_opengl_debug(void)
 	}
 
 	glEnable(GL_DEBUG_OUTPUT);
-	glEnable(GL_DEBUG_OUTPUT_SYNCHRONOUS);
+	/* Note: uncomment the following line if you want to use gdb with a
+	   breakpoint in gl_debug_callback() and want to have the OpenGL call
+	   leading to the debug report be in the current execution calling stack */
+	//glEnable(GL_DEBUG_OUTPUT_SYNCHRONOUS);
 	glDebugMessageCallback(&gl_debug_callback, NULL);
 	glDebugMessageControl(GL_DONT_CARE, GL_DONT_CARE, GL_DONT_CARE, 0, NULL, GL_TRUE);
 
+	/* Check if GREMEDY_string_marker is available */
+	if (strstr(extensions, "GL_GREMEDY_string_marker")) {
+		my_glStringMarkerGREMEDY = SDL_GL_GetProcAddress("glStringMarkerGREMEDY");
+	}
+
 	return 0;
+}
+
+void gl_debug_marker(const char *str)
+{
+	if (my_glStringMarkerGREMEDY) {
+		my_glStringMarkerGREMEDY(strlen(str), str);
+	}
 }
 
 #else // defined(HAVE_LIBGL) && (!defined __WIN32__)
@@ -240,6 +237,10 @@ int init_opengl_debug(void)
 int init_opengl_debug(void)
 {
 	return 1;
+}
+
+void gl_debug_marker(const char *str)
+{
 }
 
 #endif // defined(HAVE_LIBGL) && (!defined __WIN32__)

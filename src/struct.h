@@ -53,19 +53,26 @@ struct dynarray {
 	void *arr;
 	int size;
 	int capacity;
-	int sparse;
-	int *used_members;
 };
 
-#define SPARSE_DYNARRAY { .sparse = 1 }
+struct sparse_dynarray {
+	// The first attributes *have* to be the attributes of struct dynarray
+	// to be able to use some dynarray functions by casting a sparse_dynarray
+	// to a dynarray. This avoid to duplicate the code of those functions.
+	void *arr;
+	int size;
+	int capacity;
+	// sparse_dynarray specific attributes
+	int *used_members;
+};
 
 typedef struct dynarray item_dynarray;
 typedef struct dynarray string_dynarray;
 typedef struct dynarray upgrade_socket_dynarray;
-typedef struct dynarray bullet_sparsedynarray;
-typedef struct dynarray melee_shot_sparsedynarray;
-typedef struct dynarray blast_sparsedynarray;
-typedef struct dynarray spell_sparsedynarray;
+typedef struct sparse_dynarray bullet_sparse_dynarray;
+typedef struct sparse_dynarray melee_shot_sparse_dynarray;
+typedef struct sparse_dynarray blast_sparse_dynarray;
+typedef struct sparse_dynarray spell_sparse_dynarray;
 
 struct font {
 	int height;
@@ -197,15 +204,10 @@ typedef struct point {
 	int y;
 } point;
 
-typedef struct moderately_finepoint {
+typedef struct pointf {
 	float x;
 	float y;
-} moderately_finepoint;
-
-typedef struct finepoint {
-	double x;
-	double y;
-} finepoint;
+} pointf;
 
 typedef struct gps {
 	float x;
@@ -471,7 +473,7 @@ typedef struct enemy {
 	// 2nd set ('global state')
 	//
 	int faction;
-	uint8_t will_respawn;		// will this robot be revived by respawn_level()?
+	uint8_t will_respawn;           // will this robot be revived by respawn_level()?
 	uint8_t will_rush_tux;          // will this robot approach the Tux on sight and open communication?
 	int combat_state;               // current state of the bot
 	float state_timeout;            // time spent in this state (used by "timeout" states such as STOP_AND_EYE_TARGET only)
@@ -487,7 +489,7 @@ typedef struct enemy {
 	//--------------------
 	// 3rd set ('transient state')
 	//
-	finepoint speed;                   // current speed
+	pointf speed;                      // current speed
 	float energy;                      // current energy of this droid
 	float animation_phase;             // the current animation frame for this enemy (starting at 0 of course...)
 	short int animation_type;          // walk-animation, attack-animation, gethit animation, death animation
@@ -508,7 +510,7 @@ typedef struct enemy {
 	float last_combat_step;            // when did this robot last make a step to move in closer or farther away from Tux in combat?
 	float TextVisibleTime;
 	s_char *TextToBeDisplayed;         // WARNING!!! Only use static texts
-	moderately_finepoint PrivatePathway[5];
+	pointf PrivatePathway[5];
 	uint8_t bot_stuck_in_wall_at_previous_check;
 	float time_since_previous_stuck_in_wall_check;
 
@@ -545,10 +547,10 @@ typedef struct tux {
 	float dexterity_bonus_end_date;
 	float light_bonus_end_date;
 
-	finepoint speed;	// the current speed of the droid
-	gps pos;		// current position in the whole ship
-	gps teleport_anchor;	// where from have you last teleported home
-	gps mouse_move_target;	// where the tux is going automatically by virtue of mouse move
+	pointf speed;               // the current speed of the droid
+	gps pos;                    // current position in the whole ship
+	gps teleport_anchor;        // where from have you last teleported home
+	gps mouse_move_target;      // where the tux is going automatically by virtue of mouse move
 
 	short int current_enemy_target_n;	//which enemy has been targeted
 	uint8_t god_mode;
@@ -642,7 +644,7 @@ typedef struct tux {
 	// THE FOLLOWING ARE INFORMATION, THAT ARE HUGE AND THAT ALSO DO NOT NEED
 	// TO BE COMMUNICATED FROM THE CLIENT TO THE SERVER OR VICE VERSA
 	//
-	moderately_finepoint next_intermediate_point[MAX_INTERMEDIATE_WAYPOINTS_FOR_TUX];	// waypoints for the tux, when target not directly reachable
+	pointf next_intermediate_point[MAX_INTERMEDIATE_WAYPOINTS_FOR_TUX];	// waypoints for the tux, when target not directly reachable
 	automap_data_t Automap[MAX_LEVELS];
 	int current_zero_ring_index;
 	gps Position_History_Ring_Buffer[MAX_INFLU_POSITION_HISTORY];
@@ -685,7 +687,7 @@ typedef struct bullet {
 	uint8_t mine;
 	gps pos;
 	int height;
-	moderately_finepoint speed;
+	pointf speed;
 	short int damage;	// damage done by this particular bullet
 	float time_in_seconds;	// how long does the bullet exist in seconds
 	float bullet_lifetime;	// how long can this bullet exist at most
@@ -738,7 +740,7 @@ typedef struct spell {
 	int poison_dmg;
 	int freeze_duration;
 	int paralyze_duration;
-	moderately_finepoint spell_center;
+	pointf spell_center;
 	float spell_radius;
 	float spell_age;
 	uint8_t active_directions[RADIAL_SPELL_DIRECTIONS];
@@ -789,7 +791,7 @@ typedef struct volatile_obstacle {
 typedef struct map_tile {
 	Uint16 floor_values[MAX_FLOOR_LAYERS];
 	struct dynarray glued_obstacles;
-	list_head_t volatile_obstacles;
+	list_head_t *volatile_obstacles;
 	int timestamp;
 } map_tile;
 

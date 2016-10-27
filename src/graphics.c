@@ -474,30 +474,6 @@ SDL_Surface *sdl_create_colored_surface(SDL_Surface *surf, float r, float g, flo
 	return colored_surf;
 }
 
-/**
- *
- *
- */
-static void get_standard_iso_floor_tile_size(void)
-{
-	// iso_miscellaneous_floor_0000 dimensions
-#define TILE_WIDTH 136
-#define TILE_HEIGHT 69
-
-	if (TILE_WIDTH % 2)
-		iso_floor_tile_width = TILE_WIDTH - 3;
-	else
-		iso_floor_tile_width = TILE_WIDTH - 2;
-
-	if (TILE_HEIGHT % 2)
-		iso_floor_tile_height = TILE_HEIGHT	- 3;
-	else
-		iso_floor_tile_height = TILE_HEIGHT - 2;
-
-	iso_floor_tile_width_over_two = iso_floor_tile_width / 2;
-	iso_floor_tile_height_over_two = iso_floor_tile_height / 2;
-}
-
 /* -----------------------------------------------------------------
  * This function does all the bitmap initialisation, so that you
  * later have the bitmaps in perfect form in memory, ready for blitting
@@ -505,11 +481,6 @@ static void get_standard_iso_floor_tile_size(void)
  * ----------------------------------------------------------------- */
 void InitPictures(void)
 {
-	// First thing to do is get the size of a typical isometric
-	// floor tile, i.e. height and width of the corresponding graphics
-	// bitmap
-	//
-	get_standard_iso_floor_tile_size();
 
 	// Loading all these pictures might take a while...
 	// and we do not want do deal with huge frametimes, which
@@ -741,7 +712,7 @@ static void set_video_mode_for_open_gl(void)
 
 	show_open_gl_driver_info();
 
-	safely_initialize_our_default_open_gl_parameters();
+	init_open_gl();
 
 	// Maybe resize the window to standard size?
 	//
@@ -871,6 +842,8 @@ void init_video(void)
  */
 void sdl_draw_rectangle(SDL_Rect *rect, int r, int g, int b, int a)
 {
+	// boxRGBA from SDL_gfx will do the same in a single call, alas, it's slower due to
+	// being more generic.
 	SDL_PixelFormat *fmt = Screen->format;
 	SDL_Surface *surface;
 
@@ -905,17 +878,28 @@ void sdl_draw_rectangle(SDL_Rect *rect, int r, int g, int b, int a)
 	(*rect) = old_rect;
 }
 
+/**
+ * Draw a rectangle on screen, axes aligned to the screen (unlike draw_quad).
+ */
 void draw_rectangle(SDL_Rect *rect, int r, int g, int b, int a)
 {
 	if (use_open_gl) {
-		gl_draw_rectangle(rect, r, g, b, a);
+		struct point vertices[] = {
+				{ rect->x,           rect->y           },
+				{ rect->x,           rect->y + rect->h },
+				{ rect->x + rect->w, rect->y + rect->h },
+				{ rect->x + rect->w, rect->y           }
+		};
+		gl_draw_quad(vertices, r, g, b, a);
 	} else {
 		sdl_draw_rectangle(rect, r, g, b, a);
 	}
 }
 
-static void sdl_draw_quad(const int16_t vx[4], const int16_t vy[4], int r, int g, int b, int a)
+static void sdl_draw_quad(const struct point vertices[4], int r, int g, int b, int a)
 {
+	Sint16 vx[] = { vertices[0].x, vertices[1].x, vertices[2].x, vertices[3].x };
+	Sint16 vy[] = { vertices[0].y, vertices[1].y, vertices[2].y, vertices[3].y };
 	filledPolygonRGBA(Screen, vx, vy, 4, r, g, b, a);
 }
 
@@ -924,30 +908,13 @@ static void sdl_draw_quad(const int16_t vx[4], const int16_t vy[4], int r, int g
  * are inside a start_image_batch()/end_image_batch() operation but at the moment,
  * we do not have the choice.
  */
-static void gl_draw_quad(const int16_t vx[4], const int16_t vy[4], int r, int g, int b, int a)
-{
-#ifdef HAVE_LIBGL
-	glDisable(GL_TEXTURE_2D);
-	glColor4ub(r, g, b, a);
 
-	glBegin(GL_QUADS);
-	glVertex2i(vx[0], vy[0]);
-	glVertex2i(vx[1], vy[1]);
-	glVertex2i(vx[2], vy[2]);
-	glVertex2i(vx[3], vy[3]);
-	glEnd();
-
-	glColor4ub(255, 255, 255, 255);
-	glEnable(GL_TEXTURE_2D);
-#endif
-}
-
-void draw_quad(const int16_t vx[4], const int16_t vy[4], int r, int g, int b, int a)
+void draw_quad(const struct point vertices[4], int r, int g, int b, int a)
 {
 	if (use_open_gl) {
-		gl_draw_quad(vx, vy, r, g, b, a);
+		gl_draw_quad(vertices, r, g, b, a);
 	} else {
-		sdl_draw_quad(vx, vy, r, g, b, a);
+		sdl_draw_quad(vertices, r, g, b, a);
 	}
 }
 
@@ -1052,17 +1019,15 @@ static void draw_line_sdl(int x1, int y1, int x2, int y2, uint8_t r, uint8_t g, 
 static void draw_line_opengl(int x1, int y1, int x2, int y2, uint8_t r, uint8_t g, uint8_t b, int width)
 {
 #ifdef HAVE_LIBGL
+	use_shader(NO_SHADER);
+
 	glLineWidth(width);
 	glColor3ub(r, g, b);
-
-	glDisable(GL_TEXTURE_2D);
 
 	glBegin(GL_LINES);
 	glVertex2i(x1, y1);
 	glVertex2i(x2, y2);
 	glEnd();
-
-	glEnable(GL_TEXTURE_2D);
 
 	glColor3ub(255, 255, 255);
 #endif

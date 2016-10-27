@@ -105,7 +105,7 @@ void lua_end_skill_init(void);
 
 // influ.c 
 float calc_distance(float pos1_x, float pos1_y, float pos2_x, float pos2_y);
-float vect_len(moderately_finepoint our_vector);
+float vect_len(pointf our_vector);
 enemy *GetLivingDroidBelowMouseCursor(void);
 void tux_wants_to_attack_now(int use_mouse_cursor_for_targeting);
 int perform_tux_attack(int);
@@ -116,7 +116,7 @@ float GetInfluPositionHistoryX(int Index);
 float GetInfluPositionHistoryY(int Index);
 float GetInfluPositionHistoryZ(int Index);
 void bullet_init(bullet *, int, short int);
-void perform_tux_ranged_attack(short int, bullet *, moderately_finepoint);
+void perform_tux_ranged_attack(short int, bullet *, pointf);
 void move_tux(void);
 void hit_tux(float);
 void animate_tux(void);
@@ -137,12 +137,12 @@ int check_for_items_to_pickup(level *item_lvl, int item_index);
 action_fptr get_action_by_name(const char *action_name);
 
 // pathfinder.c
-int set_up_intermediate_course_between_positions(gps * curpos, moderately_finepoint * move_target, moderately_finepoint * waypoints,
+int set_up_intermediate_course_between_positions(gps * curpos, pointf * move_target, pointf * waypoints,
 						 int maxwp, pathfinder_context * ctx);
-void clear_out_intermediate_points(gps *, moderately_finepoint *, int);
+void clear_out_intermediate_points(gps *, pointf *, int);
 
 // bullet.c 
-void RotateVectorByAngle(moderately_finepoint * vector, float rot_angle);
+void RotateVectorByAngle(pointf * vector, float rot_angle);
 void move_bullets(void);
 void do_melee_damage(void);
 void delete_bullet(int);
@@ -277,13 +277,13 @@ void blit_light_radius(void);
 int our_SDL_flip_wrapper(void);
 void our_SDL_update_rect_wrapper(SDL_Surface * screen, Sint32 x, Sint32 y, Sint32 w, Sint32 h);
 void drawIsoEnergyBar(int x, int y, int z, int w, int d, int length, float fill, myColor * c1, myColor * c2);
+void gl_draw_quad(const struct point[4], int, int, int, int);
 
 SDL_Surface *our_IMG_load_wrapper(const char *file);
 void flip_image_vertically(SDL_Surface * tmp1);
 void make_texture_out_of_surface(struct image *our_image);
 void blit_open_gl_stretched_texture_light_radius(int decay_x, int decay_y);
-void gl_draw_rectangle(SDL_Rect *, int, int, int, int);
-int safely_initialize_our_default_open_gl_parameters(void);
+int init_open_gl(void);
 void blit_background(const char *background);
 struct background *get_background(const char *);
 void set_gl_clip_rect(const SDL_Rect *clip);
@@ -292,6 +292,11 @@ void unset_gl_clip_rect(void);
 // open_gl_debug.c
 int init_opengl_debug();
 void open_gl_check_error_status(const char *name_of_calling_function);
+void gl_debug_marker(const char *str);
+
+// open_gl_shaders.c
+void use_shader(enum shader shader);
+void init_shaders(void);
 
 // blocks.c 
 void iso_load_bullet_surfaces(void);
@@ -331,7 +336,7 @@ void draw_line_on_map(float x1, float y1, float x2, float y2, uint8_t r, uint8_t
 void sdl_draw_rectangle(SDL_Rect *rect, int r, int g, int b, int a);
 SDL_Surface *sdl_create_colored_surface(SDL_Surface *surf, float r, float g, float b, float a, int highlight);
 void draw_rectangle(SDL_Rect *rect, int r, int g, int b, int a);
-void draw_quad(const int16_t vx[4], const int16_t vy[4], int r, int g, int b, int a);
+void draw_quad(const struct point[4], int, int, int, int);
 uint32_t sdl_get_pixel(SDL_Surface *surf, int x, int y);
 void sdl_put_pixel(SDL_Surface *surf, int x, int y, uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha);
 void save_screenshot(const char *filename, int width);
@@ -366,7 +371,7 @@ void init_map_tile(struct map_tile*);
 void respawn_level(int level_num);
 gps get_map_label_center(const char *);
 int smash_obstacle(float, float, int);
-Uint16 get_map_brick(level *, float, float, int);
+uint16_t *get_map_brick(level *, float, float);
 void CountNumberOfDroidsOnShip(void);
 void free_current_ship();
 void free_ship_level(level*);
@@ -374,14 +379,14 @@ int LoadShip(char *filename, int);
 int SaveShip(const char *filename, int reset_random_levels, int);
 int save_special_forces(const char *filename);
 int GetCrew(char *shipname);
-moderately_finepoint translate_point_to_map_location(float axis_x, float axis_y, int zoom_is_on);
+pointf translate_point_to_map_location(float axis_x, float axis_y, int zoom_is_on);
 
 int IsVisible(gps *objpos);
 #define translate_map_point_to_screen_pixel translate_map_point_to_screen_pixel_func
-#define translate_map_point_to_screen_pixel_x(X,Y)  ( UserCenter_x + ceilf((X)*iso_floor_tile_width_over_two) - ceilf((Y)*iso_floor_tile_width_over_two) \
-		                                                           + ceilf(Me.pos.y*iso_floor_tile_width_over_two) - ceilf(Me.pos.x*iso_floor_tile_width_over_two) )
-#define translate_map_point_to_screen_pixel_y(X,Y)  ( UserCenter_y + ceilf((X)*iso_floor_tile_height_over_two) + ceilf((Y)*iso_floor_tile_height_over_two) \
-		                                                           - ceilf(Me.pos.x*iso_floor_tile_height_over_two) - ceilf(Me.pos.y*iso_floor_tile_height_over_two) )
+#define translate_map_point_to_screen_pixel_x(X,Y)  ( UserCenter_x + ceilf((X)*FLOOR_TILE_WIDTH*0.5) - ceilf((Y)*FLOOR_TILE_WIDTH*0.5) \
+                                                    + ceilf(Me.pos.y*FLOOR_TILE_WIDTH*0.5) - ceilf(Me.pos.x*FLOOR_TILE_WIDTH*0.5) )
+#define translate_map_point_to_screen_pixel_y(X,Y)  ( UserCenter_y + ceilf((X)*FLOOR_TILE_HEIGHT*0.5) + ceilf((Y)*FLOOR_TILE_HEIGHT*0.5) \
+                                                    - ceilf(Me.pos.x*FLOOR_TILE_HEIGHT*0.5) - ceilf(Me.pos.y*FLOOR_TILE_HEIGHT*0.5) )
 void translate_map_point_to_screen_pixel_func(float x_map_pos, float y_map_pos, int *x_res, int *y_res);
 float translate_pixel_to_map_location(float axis_x, float axis_y, int give_x);
 float translate_pixel_to_zoomed_map_location(float axis_x, float axis_y, int give_x);
@@ -796,16 +801,19 @@ int autostr_vappend(struct auto_string *str, const char *fmt, va_list args);
 int autostr_append(struct auto_string *, const char *, ...) PRINTF_FMT_ATTRIBUTE(2,3);
 
 // dynarray.c
-struct dynarray *dynarray_alloc(int, size_t);
-struct dynarray *sparse_dynarray_alloc(int, size_t);
 void dynarray_init(struct dynarray *, int, size_t);
-void sparse_dynarray_init(struct dynarray *, int, size_t);
-void dynarray_resize(struct dynarray *, int, size_t);
+struct dynarray *dynarray_alloc(int, size_t);
 void dynarray_free(struct dynarray *);
 void dynarray_add(struct dynarray *, void *, size_t);
 void dynarray_del(struct dynarray *, int, size_t);
 void *dynarray_member(struct dynarray *, int, size_t);
-int sparse_dynarray_member_used(struct dynarray *, int);
+void sparse_dynarray_init(struct sparse_dynarray *, int, size_t);
+struct sparse_dynarray *sparse_dynarray_alloc(int, size_t);
+void sparse_dynarray_free(struct sparse_dynarray *);
+void sparse_dynarray_add(struct sparse_dynarray *, void *, size_t);
+void sparse_dynarray_del(struct sparse_dynarray *, int, size_t);
+void *sparse_dynarray_member(struct sparse_dynarray *, int, size_t);
+int sparse_dynarray_member_used(struct sparse_dynarray *, int);
 
 // animate.c
 void dirty_animated_obstacle_list(int lvl_num);
@@ -869,7 +877,7 @@ void move_waypoint(level *, waypoint *, int, int);
 
 // image.c
 void start_image_batch(void);
-void end_image_batch(void);
+void end_image_batch(const char *reason);
 void display_image_on_screen(struct image *img, int x, int y, struct image_transformation t);
 void display_image_on_map(struct image *img, float X, float Y, struct image_transformation t);
 void create_subimage(struct image *source, struct image *new_img, SDL_Rect *rect);
@@ -879,6 +887,7 @@ void free_image_surface(struct image *img);
 void delete_image(struct image *img);
 int image_loaded(struct image *);
 struct image_transformation set_image_transformation(float scale_x, float scale_y, float r, float g, float b, float a, int highlight);
+void init_image_shaders(void);
 
 // obstacle.c
 struct obstacle *add_obstacle(struct level *, float , float, int);
@@ -894,6 +903,7 @@ struct obstacle_group *find_obstacle_group(int type);
 int change_obstacle_type(const char *obslabel, int type);
 int get_obstacle_type_by_name(char *name);
 struct volatile_obstacle *add_volatile_obstacle(struct level *, float, float, int, float);
+void remove_volatile_obstacles_from_tile(struct map_tile *);
 void remove_volatile_obstacles(int);
 void clear_volatile_obstacles(void);
 

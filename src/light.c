@@ -544,7 +544,7 @@ void update_light_list()
 		if (!sparse_dynarray_member_used(&all_blasts, blast_idx))
 			continue;
 
-		struct blast *current_blast = (struct blast *)dynarray_member(&all_blasts, blast_idx, sizeof(struct blast));
+		struct blast *current_blast = (struct blast *)sparse_dynarray_member(&all_blasts, blast_idx, sizeof(struct blast));
 
 		if (current_blast->type != DROIDBLAST)
 			continue;
@@ -849,11 +849,11 @@ void set_up_light_strength_buffer(int *decay_x, int *decay_y)
 	// (note: the bottom-right corner is also always outside of the screen, due
 	// to the large enough value of scale_factor (see: LightRadiusInit())
 	//
-	*decay_x = - (ceilf(Me.pos.x * iso_floor_tile_width*0.5) - ceilf(Me.pos.y * iso_floor_tile_width*0.5));
+	*decay_x = - (ceilf(Me.pos.x * FLOOR_TILE_WIDTH*0.5) - ceilf(Me.pos.y * FLOOR_TILE_WIDTH*0.5));
 	*decay_x = *decay_x % (int)LightRadiusConfig.scale_factor;
 	if (*decay_x > 0) *decay_x -= (int)LightRadiusConfig.scale_factor;
 
-	*decay_y = - (ceilf(Me.pos.x * iso_floor_tile_height*0.5) + ceilf(Me.pos.y * iso_floor_tile_height*0.5));
+	*decay_y = - (ceilf(Me.pos.x * FLOOR_TILE_HEIGHT*0.5) + ceilf(Me.pos.y * FLOOR_TILE_HEIGHT*0.5));
 	*decay_y = *decay_y % (int)LightRadiusConfig.scale_factor;
 	if (*decay_y > 0) *decay_y -= (int)LightRadiusConfig.scale_factor;
 
@@ -920,7 +920,7 @@ int get_light_strength_screen(int x, int y)
 		return (NUMBER_OF_SHADOW_IMAGES - 1);
 	}
 
-}				// int get_light_screen_strength ( moderately_finepoint target_pos )
+}				// int get_light_screen_strength ( pointf target_pos )
 
 /**
  * This function should blit the shadows on the floor, that are used to

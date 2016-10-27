@@ -140,7 +140,7 @@ void put_miscellaneous_spell_effects(void)
 		if (!sparse_dynarray_member_used(&all_spells, i))
 			continue;
 
-		struct spell *current_spell = (struct spell *)dynarray_member(&all_spells, i, sizeof(struct spell));
+		struct spell *current_spell = (struct spell *)sparse_dynarray_member(&all_spells, i, sizeof(struct spell));
 
 		put_radial_blue_sparks(current_spell->spell_center.x, current_spell->spell_center.y,
 							current_spell->spell_radius, current_spell->img_type,
@@ -160,11 +160,11 @@ void get_floor_boundaries(int mask, int *LineStart, int *LineEnd, int *ColStart,
 		*LineStart = floor(translate_pixel_to_map_location(UserCenter_x, -UserCenter_y, FALSE));
 		*LineEnd =
 		    floor(translate_pixel_to_map_location
-			  (-UserCenter_x - iso_floor_tile_width + 1, UserCenter_y + iso_floor_tile_height - 1, FALSE));
+			  (-UserCenter_x - FLOOR_TILE_WIDTH + 1, UserCenter_y + FLOOR_TILE_HEIGHT - 1, FALSE));
 		*ColStart = floor(translate_pixel_to_map_location(-UserCenter_x, -UserCenter_y, TRUE));
 		*ColEnd =
 		    floor(translate_pixel_to_map_location
-			  (UserCenter_x + iso_floor_tile_width - 1, UserCenter_y + iso_floor_tile_height - 1, TRUE));
+			  (UserCenter_x + FLOOR_TILE_WIDTH - 1, UserCenter_y + FLOOR_TILE_HEIGHT - 1, TRUE));
 	}
 }
 
@@ -186,7 +186,8 @@ void object_vtx_color(void *data, float *r, float *g, float *b)
  */
 static void show_floor(int mask)
 {
-	int LineStart, LineEnd, ColStart, ColEnd, line, col, MapBrick;
+       int LineStart, LineEnd, ColStart, ColEnd, line, col;
+       uint16_t *map_brick;
 	int layer_start, layer_end, layer;
 	float r, g, b;
 	float zf = ((mask & ZOOM_OUT) ? lvledit_zoomfact_inv() : 1.0);
@@ -208,10 +209,14 @@ static void show_floor(int mask)
 
 	for (line = LineStart; line < LineEnd; line++) {
 		for (col = ColStart; col < ColEnd; col++) {
+			// Retrieve floor tiles
+			map_brick = get_map_brick(lvl, col, line);
+			if (!map_brick) {
+				continue;
+			}
+
 			for (layer = layer_start; layer < layer_end; layer++) {
-				// Retrieve floor tile
-				MapBrick = get_map_brick(lvl, col, line, layer);
-				if (MapBrick == ISO_FLOOR_EMPTY)
+				if (map_brick[layer] == ISO_FLOOR_EMPTY)
 					continue;
 
 				// Compute colorization (in case the floor tile is currently selected in the leveleditor)
@@ -221,20 +226,20 @@ static void show_floor(int mask)
 					r = g = b = 1.0;
 				}
 
-				struct image *img = get_floor_tile_image(MapBrick);
+				struct image *img = get_floor_tile_image(map_brick[layer]);
 				display_image_on_map(img, (float)col + 0.5, (float)line + 0.5, IMAGE_SCALE_RGB_TRANSFO(zf, r, g, b));
 			}
 		}
 	}
 
-	end_image_batch();
+	end_image_batch(__FUNCTION__);
 }
 
 void blit_leveleditor_point(int x, int y)
 {
 	if (use_open_gl) {
 #ifdef HAVE_LIBGL
-		glDisable(GL_TEXTURE_2D);
+		use_shader(NO_SHADER);
 		glEnable(GL_POINT_SMOOTH);
 		glPointSize(5.0);
 		glBegin(GL_POINTS);
@@ -243,7 +248,6 @@ void blit_leveleditor_point(int x, int y)
 		glColor3f(1.0, 1.0, 1.0);
 		glEnd();
 		glDisable(GL_POINT_SMOOTH);
-		glEnable(GL_TEXTURE_2D);
 		glPointSize(1.0);
 #endif
 	} else {
@@ -283,12 +287,11 @@ void blit_obstacle_collision_rectangle(obstacle * our_obstacle)
 	translate_map_point_to_screen_pixel(x2, y2, &r3, &c3);
 	translate_map_point_to_screen_pixel(x2, y1, &r4, &c4);
 
-	short x[4] = { r1, r2, r3, r4 };
-	short y[4] = { c1, c2, c3, c4 };
+	struct point vertices[] = { {r1, c1}, {r2, c2}, {r3, c3}, {r4, c4} };
 
 	// Now we draw the collision rectangle.  We use the same parameters
 	// of the obstacle spec, that are also used for the collision checks.
-	draw_quad(x, y, 15, 238, 170, 255);
+	draw_quad(vertices, 15, 238, 170, 255);
 }
 
 void blit_one_obstacle(obstacle *o, int highlight, int zoom, int opacity)
@@ -430,7 +433,7 @@ void insert_obstacles_into_blitting_list(int mask)
 			}
 
 			struct volatile_obstacle *volatile_obs, *next;
-			list_for_each_entry_safe(volatile_obs, next, &obstacle_level->map[py][px].volatile_obstacles, volatile_list) {
+			list_for_each_entry_safe(volatile_obs, next, obstacle_level->map[py][px].volatile_obstacles, volatile_list) {
 				if (volatile_obs->obstacle.timestamp == tstamp)
 					continue;
 				int opacity = 255;
@@ -1113,7 +1116,7 @@ static void insert_bullets_into_blitting_list(int mask)
 		if (!sparse_dynarray_member_used(&all_bullets, i))
 			continue;
 
-		struct bullet *b = (struct bullet *)dynarray_member(&all_bullets, i, sizeof(struct bullet));
+		struct bullet *b = (struct bullet *)sparse_dynarray_member(&all_bullets, i, sizeof(struct bullet));
 
 		gps vpos;
 		update_virtual_position(&vpos, &b->pos, Me.pos.z);
@@ -1143,7 +1146,7 @@ static void insert_blasts_into_blitting_list(int mask)
 		if (!sparse_dynarray_member_used(&all_blasts, i))
 			continue;
 
-		struct blast *current_blast = (struct blast *)dynarray_member(&all_blasts, i, sizeof(struct blast));
+		struct blast *current_blast = (struct blast *)sparse_dynarray_member(&all_blasts, i, sizeof(struct blast));
 		
 		gps vpos;
 		update_virtual_position(&vpos, &current_blast->pos, Me.pos.z);
@@ -1368,7 +1371,7 @@ void blit_preput_objects_according_to_blitting_list(int mask)
 		}
 	}
 
-	end_image_batch();
+	end_image_batch(__FUNCTION__);
 
 }				// void blit_preput_objects_according_to_blitting_list ( ... )
 
@@ -1459,7 +1462,7 @@ void blit_nonpreput_objects_according_to_blitting_list(int mask)
 			break;
 		}
 	}
-	end_image_batch();
+	end_image_batch(__FUNCTION__);
 }
 
 static void show_obstacle_labels(int mask)
@@ -1877,7 +1880,7 @@ void AssembleCombatPicture(int mask)
 
 #if 0
 	/* This code displays the player tracks with red dots. */
-	glDisable(GL_TEXTURE_2D);
+	use_shader(NO_SHADER);
 	glPointSize(2.0);
 	glBegin(GL_POINTS);
 	int i = 0;
@@ -1889,12 +1892,11 @@ void AssembleCombatPicture(int mask)
 	}
 
 	glEnd();
-	glEnable(GL_TEXTURE_2D);
 #endif
 
 #if 0
 	/* This code displays tux "waypoints" */
-	glDisable(GL_TEXTURE_2D);
+	use_shader(NO_SHADER);
 	glLineWidth(2.0);
 	glBegin(GL_LINE_STRIP);
 	i = 0;
@@ -1910,7 +1912,6 @@ void AssembleCombatPicture(int mask)
 	}
 
 	glEnd();
-	glEnable(GL_TEXTURE_2D);
 #endif
 
 	// At this point we are done with the drawing procedure
@@ -2495,7 +2496,7 @@ int set_rotation_index_for_this_robot(enemy * ThisRobot)
 void PutIndividuallyShapedDroidBody(enemy * ThisRobot, SDL_Rect TargetRectangle, int mask, int highlight)
 {
 	int RotationIndex;
-	moderately_finepoint bot_pos;
+	pointf bot_pos;
 	float zf = 1.0;
 	if (mask & ZOOM_OUT)
 		zf = lvledit_zoomfact_inv();
@@ -2624,7 +2625,7 @@ There was a droid type on this level, that does not really exist.", PLEASE_INFOR
 #if 0
 	/* This code displays the pathway of the bots as well as their next waypoint */
 	if (e->energy > 0) {
-		glDisable(GL_TEXTURE_2D);
+		use_shader(NO_SHADER);
 		glLineWidth(2.0);
 		int a, b;
 		glBegin(GL_LINE_STRIP);
@@ -2645,7 +2646,6 @@ There was a droid type on this level, that does not really exist.", PLEASE_INFOR
 			glVertex2i(a, b);
 		}
 		glEnd();
-		glEnable(GL_TEXTURE_2D);
 	}
 #endif
 
@@ -2757,7 +2757,7 @@ void put_radial_blue_sparks(float posX, float posY, float radius, int spark_type
 	static struct image prerotated_spark_surfaces[NUMBER_OF_SPARK_TYPES][FIXED_NUMBER_OF_PROTOTYPES][FIXED_NUMBER_OF_SPARK_ANGLES];
 	int number_of_pictures_to_use;
 	float angle;
-	struct moderately_finepoint displacement;
+	struct pointf displacement;
 
 	// We do some sanity check against too small a radius
 	// given as parameter.  This can be loosened later.

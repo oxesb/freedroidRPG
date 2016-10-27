@@ -70,10 +70,10 @@ int run_from_term = FALSE;
  */
 void clear_out_arrays_for_fresh_game(void)
 {
-	dynarray_free(&all_melee_shots);
-	dynarray_free(&all_bullets);
-	dynarray_free(&all_blasts);
-	dynarray_free(&all_spells);
+	sparse_dynarray_free(&all_melee_shots);
+	sparse_dynarray_free(&all_bullets);
+	sparse_dynarray_free(&all_blasts);
+	sparse_dynarray_free(&all_spells);
 
 	clear_enemies();
 	clear_volatile_obstacles();
@@ -185,6 +185,14 @@ void play_title_file(int subdir_handle, char *filename)
 	if (find_localized_file(fpath, subdir_handle, filename, PLEASE_INFORM)) {
 		set_lua_ctor_upvalue(LUA_CONFIG, "title_screen", &screen);
 		run_lua_file(LUA_CONFIG, fpath);
+
+		// Remove voice acting if sound is disabled
+#ifndef WITH_SOUND
+		screen.voice_acting = FALSE;
+#endif
+		if (!sound_on) {
+			screen.voice_acting = FALSE;
+		}
 
 #ifdef ENABLE_NLS
 		// The title_screen's text in the Lua file is UTF-8 encoded.
@@ -507,6 +515,9 @@ void parse_command_line(int argc, char *const argv[])
 				exit(1);
 			}
 
+			if (do_benchmark) {
+				free(do_benchmark);
+			}
 			do_benchmark = strdup(optarg);
 			break;
 		case 'f':
@@ -795,7 +806,7 @@ void prepare_execution(int argc, char *argv[])
 	if ((our_homedir = getenv("HOME")) == NULL) {
 		our_homedir = ".";
 	}
-	sprintf(data_dirs[CONFIG_DIR].path, "%s/.freedroid_rpg", our_homedir);
+	snprintf(data_dirs[CONFIG_DIR].path, sizeof(data_dirs[CONFIG_DIR].path), "%s/.freedroid_rpg", our_homedir);
 
 #endif
 
@@ -909,9 +920,10 @@ void InitFreedroid(int argc, char **argv)
 
 	LightRadiusInit();
 
-	init_timer();
-
+	// SDL video subsystem and OpenGL have to be initialized
+	// before any other SDL subsystem (see description of commit be022c5f29)
 	init_video();
+	init_timer();
 
 	// Adapt button positions for the current screen resolution. Note: At this
 	// point the video mode was already initialized, therefore we know if OpenGL
