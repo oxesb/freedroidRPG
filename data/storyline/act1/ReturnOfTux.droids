@@ -525,7 +525,7 @@ Level=61
 ** Beginning of new Level **
 Level=62
 
-T=751: PosX=71 PosY=30 Faction="neutral" UseDialog="Act2GateKeeper" ShortLabel=_"Landing Zone Control Droid" Marker=0 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=4
+T=GUA: PosX=71 PosY=30 Faction="neutral" UseDialog="Act2GateKeeper" ShortLabel=_"Novice Pilot" Marker=0 RushTux=0 Fixed=0 DropItemId="none" MaxDistanceToHome=4
 ** End of this levels Special Forces data **
 ---------------------------------------------------------
 ** Beginning of new Level **
