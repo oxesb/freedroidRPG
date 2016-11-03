@@ -677,10 +677,12 @@ return {
 		code = function()
 			Npc:says(_"You've faced countless dangers so far. Are you sure you're willing to face more?")
 			Tux:says(_"Bring it on!")
+			-- You need to talk to Iris or some storyline could be broken. Maybe we should cover more NPCs and not just her.
+			-- Maybe later we could tell who (or how many) NPCs tux still needs to talk to. Specially on Easy difficulty level.
 			if (not Act2_knows_the_noise) then
 				Npc:says(_"But you should take some credit. Talk with the townspeople first.", "NO_WAIT")
-				--; TRANSLATORS: dorms = dormitory (plural)
-				Npc:says(_"One of my man reported that a certain girl wanted to talk to you, on the dorms south of the town. It seemed important, you might want to talk with her first.")
+				Npc:says(_"Do not forget to talk to people south of town, but be warned that some shady people are living there, do not believe everything they say. Better safe than sorry, right?")
+				-- “I believe there are at least %d persons who could give you helpful information before your departure.”
 				next("node99")
 			else
 				Npc:says(_"That's exactly what I wanted to hear.")
