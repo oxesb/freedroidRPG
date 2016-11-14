@@ -6,7 +6,8 @@ GenericName=Freedroid RPG
 Comment=A futuristic immersive RPG about fighting bots
 TryExec=freedroidRPG
 Exec=freedroidRPG
-Icon=freedroidrpg.png
-Actions=Game;RolePlaying;
-Categories=Game
-URL=http://www.freedroid.org
+Icon=freedroidrpg
+Categories=Game;RolePlaying;
+# TRANSLATORS: Search terms to find this application. Do NOT translate or
+# localize the semicolons! The list MUST also end with a semicolon!
+Keywords=game;role playing;RPG;logic;isometric;futuristic;
