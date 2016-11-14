@@ -94,6 +94,7 @@ return {
 			show("node29")
 		end
 
+		hide("node67") -- Should always be hidden when starting a dialog with Spencer.
 		show("node99")
 	end,
 
@@ -610,6 +611,7 @@ return {
 			Npc:says(_"This is the source of all our suffering.")
 			Npc:says(_"You are truly a living legend, Linarian. I don't know how you did it. I don't know how we can thank you.")
 			Npc:says(_"You've given us life, and hope.")
+			change_obstacle_state("ServerRoomDoor", "opened")
 			hide("node61") show("node62", "node63", "node64")
 		end,
 	},
@@ -675,47 +677,39 @@ return {
 		id = "node66",
 		text = _"I'm ready. Just tell me what to do.",
 		code = function()
-			Npc:says(_"You've faced countless dangers so far. Are you sure you're willing to face more?")
-			Tux:says(_"Bring it on!")
-			-- You need to talk to Iris or some storyline could be broken. Maybe we should cover more NPCs and not just her.
-			-- Maybe later we could tell who (or how many) NPCs tux still needs to talk to. Specially on Easy difficulty level.
 			if (not Act2_knows_the_noise) then
-				Npc:says(_"But you should take some credit. Talk with the townspeople first.", "NO_WAIT")
-				Npc:says(_"Do not forget to talk to people south of town, but be warned that some shady people are living there, do not believe everything they say. Better safe than sorry, right?")
-				-- “I believe there are at least %d persons who could give you helpful information before your departure.”
-				next("node99")
+				Npc:says(_"Hm. However, I think you should rest a little, the next assignment will be big, you'll want all rest you can take. Besides, you should give us more time. Who knows, we might find something useful for you while you're out.")
+				Npc:says(_"Why don't you take a walk, or visit the town? You're the hero, after all. Some people might want to congratulate you, and it might make you feel better.")
+				show("node67") -- Allows player to skip.
 			else
-				Npc:says(_"That's exactly what I wanted to hear.")
-				Npc:says(_"Now listen carefully, this is the plan...")
-				Tux:end_quest("Propagating a faulty firmware update", _"The town is saved, but there's still a lot to do. I agreed to continue fighting the robot armies with the Red Guard.") -- This was left between the two talk statements because next one is an interference followed by a delay.
-
-				-- Let's prepare whatever necessary to reflect the changes which Spencer did.
-				add_obstacle(62, 64.0, 37.0, 501) -- Creates Spencer's stratopod
-				hide("node65", "node66")
-				next("node67") -- This can only be shown AFTER the delays.
+				next("node67")
 			end
-
 		end,
 	},
 	{
 		id = "node67",
-		text = _"...Please continue, I'm listening.",
+		text = _"Please send me in a mission before I die out of boredom.",
 		code = function()
-			Tux:says(_"So, you were telling me a plan...?")
-			Npc:says(_"Ah, right, of course. Listen carefully, this is the plan...")
-			Npc:says(_"One of my intelligence team just found out a certain Resort which apparently the great and powerful from MS used to dispose certain kinds of people...")
-			Npc:says(_"They would freeze the person which knew too much with certain pretexts, or so I was told. It's very far but we can use the Hell Fortress Landing Zone just west from here. However beware, once you leave, you may not be able to get back.")
-			Tux:says(_"So I should go to this so-called resort and get some intel from cryonized former MS staff. How can I report it back to you?")
-			Npc:says(_"Do not worry, I'll arrange to Richard, the computer guy around here, to contact you.")
-            Npc:says(_"Also, you should prepare yourself for the trip. I'm not sure how long you'll walk and how many bots you'll come across until you find survivors.")
-			Tux:says(_"I understand. In this case I'll be going now.")
+			Npc:says(_"You've faced countless dangers so far. Are you sure you're willing to face more?")
+			Tux:says(_"Bring it on!")
+			Npc:says(_"That's exactly what I wanted to hear.")
+			Npc:says(_"Now listen carefully, this is the plan...")
+			Npc:says(_"While you were away, we found an interesting fact. There's a cryonic facility which MS used to dispose... undesirable individuals. Well, it's very far away, but we also found a treasure which makes this unimportant.")
+			Npc:says(_"We found a stratopod, it's supposed to travel short intra-planetary distances. Probably someone came here on business and I guess that things didn't turned out so well for him.")
+			Tux:says(_"So I should take this \"stratopod\" and travel to this cryonic facility to see if I can get more intel about the Great Assault?")
+			Npc:says(_"Hm. Do you know how to pilot?")
+			Tux:says(_"Erm...")
+	        Npc:says(_"Thought so. A collegue from us will pilot, so you don't need to worry, he told me he got an ace on flying exams.")
+			Npc:says(_"Well, he didn't had any certificate but maybe I should just limit my worrying. I'm pretty sure he is capable of docking it successfully.")
+			Tux:end_quest("Propagating a faulty firmware update", _"The town is saved, but there's still a lot to do. I agreed to continue fighting the robot armies with the Red Guard.")
+
+			-- Let's create the ship and open the gates.
+			add_obstacle(62, 64.0, 37.0, 501)
 			Act2_opengate=true
-			-- Open the gates
 			change_obstacle_state("Act2FreighterAccess01", "opened")
 			change_obstacle_state("Act2FreighterAccess02", "opened")
-			change_obstacle_state("ServerRoomDoor", "opened")
 
-			hide("node67")
+			hide("node65", "node66", "node67")
 			end_dialog()
 		end,
 	},
