@@ -688,22 +688,19 @@ return {
 				Npc:says(_"That's exactly what I wanted to hear.")
 				Npc:says(_"Now listen carefully, this is the plan...")
 				Tux:end_quest("Propagating a faulty firmware update", _"The town is saved, but there's still a lot to do. I agreed to continue fighting the robot armies with the Red Guard.") -- This was left between the two talk statements because next one is an interference followed by a delay.
-				Npc:says(_"*Bzzt*")
+
+				-- Let's prepare whatever necessary to reflect the changes which Spencer did.
+				add_obstacle(62, 64.0, 37.0, 501) -- Creates Spencer's stratopod
 				hide("node65", "node66")
-				delay_game(0.5) -- We need this because EndAct is here. You cannot move while in delay.
-				endact_I() -- TODO: This has to be moved to Act2GateKeeper later, when properly splitting files. C functions handled here.
-				show("node67") -- This can only be shown AFTER the delays.
+				next("node67") -- This can only be shown AFTER the delays.
 			end
 
 		end,
 	},
 	{
 		id = "node67",
-		text = _"...Sorry, I missed the plan, some *annoying* entity which calls itself 'Dvorak' appeared, gave me a message, and left. Can you repeat, please?",
+		text = _"...Please continue, I'm listening.",
 		code = function()
-			Npc:says(_"Dvorak?") -- Please notice Spencer doesn't really cares with it at first.
-			Tux:says(_"Yes, do you what him (or it) is?", "NO_WAIT")
-			Npc:says(_"Nope, never heard of.")
 			Tux:says(_"So, you were telling me a plan...?")
 			Npc:says(_"Ah, right, of course. Listen carefully, this is the plan...")
 			Npc:says(_"One of my intelligence team just found out a certain Resort which apparently the great and powerful from MS used to dispose certain kinds of people...")
