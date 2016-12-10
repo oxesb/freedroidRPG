@@ -69,7 +69,8 @@ return {
 		text = _"Yes. To the next act!",
 		code = function()
 			Npc:says(_"Good. I pilot.") -- TODO: This part is to be reworked.
-			delay_game(0.5) -- We need this because EndAct is here. You cannot move while in delay.
+			display_big_message(_"End of Act 1.")
+			delay_game(1.5) -- We need this because EndAct is here. You cannot move while in delay.
 			endact_I() -- This terminates Act 1.
 			Tux:teleport("Act2StartGameSquare") -- TODO: This must be done on endact_1() C function
 			revive_faction("ms") -- fixme: This is to be removed/redo.

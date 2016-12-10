@@ -1116,7 +1116,7 @@ void EndOfAct(void)
 	// Display that the act finished
 	DebugPrintf(1, "\n%s(): Real function call confirmed.", __FUNCTION__);
 	append_new_game_message(_("End of Act 1.\n"));
-	SetNewBigScreenMessage(_("End of Act 1.\n"));
+	// SetNewBigScreenMessage(_("End of Act 1.\n"));
 
 	// Make next act enemies a little stronger. It increments bot HP in 67% and EXP reward in 25%.
 	// It also makes the bot react a little faster after being hit. It also affects friends, so

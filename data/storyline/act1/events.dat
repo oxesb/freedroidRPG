@@ -6747,6 +6747,20 @@ end
 ## Level 77 ##
 ##############
 
+* New event trigger *
+Name="Act2Transition"
+Trigger at label="Act2StartGameSquare"
+Silent=1
+<LuaCode>
+if (not act2_introbegin) then
+	act2_introbegin = true
+	play_sound("effects/Blast_Sound_0.ogg")
+	display_big_message(_"Your head spins. What happened?!")
+	display_big_message(_"BOOM BOOOOOOM BOOOM")
+end
+</LuaCode>
+* End of trigger *
+
 ##############
 ## Level 78 ##
 ##############
