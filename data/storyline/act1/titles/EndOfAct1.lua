@@ -23,6 +23,9 @@
 title_screen{
 background = "credits.jpg",
 song = "HellFortressTwo.ogg",
+voice_acting = "EndOfAct1.ogg",
+preroll_text = 2,
+postroll_text = 5,
 text = [[
     Having fun?
   I'm not.
@@ -40,7 +43,7 @@ I'll keep you posted.
 
 Oh, and by the way...
 I'm still waiting for you.
-I haven't left this place since you woke up.
+I haven't moved an inch since you woke up.
 Now that the beloved town of yours is safe...
 ...Wouldn't it be a good time to save me as well?
 
