@@ -6771,8 +6771,8 @@ Trigger at label="RRFSecretArea"
 Silent=0
 <LuaCode>
 	if (cmp_obstacle_state("RRF1AccessTrapdoor", "opened")) then
-    	display_big_message("STOP CHEATING!!") -- Shouldn't happen.
-    	hurt_tux(100)
+		display_big_message("STOP CHEATING!!") -- Shouldn't happen.
+		kill_tux()
 	end
 </LuaCode>
 * End of trigger *
