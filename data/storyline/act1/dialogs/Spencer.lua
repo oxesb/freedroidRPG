@@ -702,12 +702,14 @@ return {
 	        Npc:says(_"Thought so. A colleague from us will pilot, so you don't need to worry, he told me he is an ace at flying.")
 			Npc:says(_"Well, he didn't had any certificate but maybe I should just limit my worrying. I'm pretty sure with him piloting it'll be a successful flight.")
 			Tux:end_quest("Propagating a faulty firmware update", _"The town is saved, but there's still a lot to do. I agreed to continue fighting the robot armies with the Red Guard.")
+	        Npc:says(_"I'll drop you on the Landing Zone. Talk with the pilot when you're ready... Oh no wait. You're already ready.")
 
 			-- Let's create the ship and open the gates.
 			add_obstacle(62, 64.0, 37.0, 501)
 			Act2_opengate=true
 			change_obstacle_state("Act2FreighterAccess01", "opened")
 			change_obstacle_state("Act2FreighterAccess02", "opened")
+			Tux:teleport("HF-LandingZone")
 
 			hide("node65", "node66", "node67")
 			end_dialog()
