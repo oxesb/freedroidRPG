@@ -699,8 +699,8 @@ return {
 			Tux:says(_"So I should take this \"stratopod\" and travel to this cryonic facility to see if I can get more intel about the Great Assault?")
 			Npc:says(_"Hm. Do you know how to pilot?")
 			Tux:says(_"Erm...")
-	        Npc:says(_"Thought so. A colleague from us will pilot, so you don't need to worry, he told me he got an ace on flying exams.")
-			Npc:says(_"Well, he didn't had any certificate but maybe I should just limit my worrying. I'm pretty sure he is capable of docking it successfully.")
+	        Npc:says(_"Thought so. A colleague from us will pilot, so you don't need to worry, he told me he is an ace at flying.")
+			Npc:says(_"Well, he didn't had any certificate but maybe I should just limit my worrying. I'm pretty sure with him piloting it'll be a successful flight.")
 			Tux:end_quest("Propagating a faulty firmware update", _"The town is saved, but there's still a lot to do. I agreed to continue fighting the robot armies with the Red Guard.")
 
 			-- Let's create the ship and open the gates.
