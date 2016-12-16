@@ -2956,7 +2956,7 @@ item_list{
 	base_price = 0,
 	inventory = {x = 1, y = 1, image = "script/inv_image.png" },
 	drop = {sound = "Item_Drop_Sound_4.ogg"},
-	description =_[[A Compact Disk saying 'Arcane Lore'. Supposed to hack RR1979 anti-hacking terminals.]],
+	description =_[[A Compact Disk saying 'Arcane Lore'. Supposed to hack a very specific kind of secure terminal. And maybe something more...]],
 	rotation_series = "script",
 },
 ----------------------------------------------------------------------

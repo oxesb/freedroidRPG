@@ -45,8 +45,8 @@ return {
 		else
 			Npc:says(_"[b]No instructions to load this terminal.[/b]")
 			Tux:says(_"help", "NO_WAIT")
-			Npc:says(_"This terminal needs instructions to be loaded. Instructions can be requested at last floor of factory north from town.")
-			Npc:says(_"[b]WARNING:[/b] Not everyone comes back alive. Specially if a battle is necessary. You also need to have special authorization from big boss to go to final floor.") 
+			Npc:says(_"This terminal needs instructions to be loaded. Instructions can be requested at the final floors of factory north from town.")
+			Npc:says(_"[b]WARNING:[/b] People capable of issuing authorization are all dead, killed by at weakest Battle droids.") 
 			-- Not everyone survives: Look for dead bodies. Battle necessary: Battle Droids. Authorization -- You won't get it at last floor.
 			end_dialog()
 		end
