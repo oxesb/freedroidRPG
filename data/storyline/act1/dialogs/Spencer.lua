@@ -703,6 +703,7 @@ return {
 			Npc:says(_"Well, he didn't had any certificate but maybe I should just limit my worrying. I'm pretty sure with him piloting it'll be a successful flight.")
 			Tux:end_quest("Propagating a faulty firmware update", _"The town is saved, but there's still a lot to do. I agreed to continue fighting the robot armies with the Red Guard.")
 	        Npc:says(_"I'll drop you on the Landing Zone. Talk with the pilot when you're ready... Oh no wait. You're already ready.")
+			Tux:add_quest("A New Mission From Spencer", _"In order to save the world, I need to speak with the pilot on the HF Landing Zone. He'll bring me to next area which needs me.") -- TODO: This must *NOT* happen in Act 1.
 
 			-- Let's create the ship and open the gates.
 			add_obstacle(62, 64.0, 37.0, 501)

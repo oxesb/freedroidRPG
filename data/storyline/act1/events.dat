@@ -6753,10 +6753,12 @@ Trigger at label="Act2StartGameSquare"
 Silent=1
 <LuaCode>
 if (not act2_introbegin) then
-	act2_introbegin = true
 	play_sound("effects/Blast_Sound_0.ogg")
 	display_big_message(_"Your head spins. What happened?!")
 	display_big_message(_"BOOM BOOOOOOM BOOOM")
+	add_diary_entry("A New Mission From Spencer", _" The pilot wasn't so experienced as he told. He only played FlightGear a couple of times. By the look of things, I must have crashed. I should explore these lands now.")
+	display_console_message(_"Quest log updated.")
+	act2_introbegin = true
 end
 </LuaCode>
 * End of trigger *

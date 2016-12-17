@@ -298,25 +298,13 @@ Completion LuaCode={
 
 ** Start of this mission target subsection **
 +++
-+++ Bring one dilithium crystal to Bob for his 614.
++++ Act 2 Main Story Quest
 +++
-Mission Name=_"Ticket's price - crystal"
+Mission Name=_"A New Mission From Spencer"
 Completion LuaCode={
-	change_obstacle_state("ToTheWorld2PortalGate", "opened")
-	add_xp(750)
+	add_xp(2000)
 }
 ** End of this mission target subsection **
-
-** Start of this mission target subsection **
-+++
-+++ Bring 999 Cerebrum some add-ons for his needs.
-+++
-Mission Name=_"Bot in need"
-Completion LuaCode={
-	add_xp(250)
-}
-** End of this mission target subsection **
-
 
 *** END OF QUEST LIST *** LEAVE THIS TERMINATOR IN HERE ***
 

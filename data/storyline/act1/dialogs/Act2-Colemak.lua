@@ -137,6 +137,7 @@ return {
 			Npc:says(_"[b]Important: Colemak locked the Power Grid gates to prevent enemies from coming from the Factory.[/b]")
 			Npc:says("", "NO_WAIT") -- White division line
 			Npc:says(_"[b]Notice: Area south of RR Resorts is now available.[/b]")
+			Tux:update_quest("A New Mission From Spencer", _"I ended up waking Colemak, which seems to be an old friend from the enigmatic entity which entitles itself as \"Dvorak\". Apparently this entity can help me recover my memories. I should talk to Colemak again soon.")
 			-- Normalizes music
 			switch_background_music("town.ogg") 
 			Act2_TalkedToColemak=true
@@ -160,9 +161,10 @@ return {
 			Npc:says(_"I'll now unlock the [b]download[/b] command. Download the plans for me, pretty please.", "NO_WAIT")
 			Npc:says(_"It's encrypted and requires a key, but I'm sure you'll find it. Inform me about what Dvorak left there!")
 			Act2_DvorakPlanDownload=true
+			Tux:update_quest("A New Mission From Spencer", _"Dvorak has foreseen my arrival and left some data at the terminal which I used to uncryonize Colemak. I must download these files no matter what it takes!")
 
 			-- This was a fix for credits not being played (thanks wlan2)
-			-- Cursor state is not reset on win_game() so you had to interact with terminal.
+			-- Cursor state was not reset on win_game() so you had to interact with terminal.
 			end_dialog()
 		end,
 	},

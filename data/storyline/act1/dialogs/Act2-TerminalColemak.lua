@@ -138,6 +138,7 @@ return {
 				Npc:says(_"[b]DVORAK_PLANS.lua[/b]", "NO_WAIT") -- Thanks for playing FreedroidRPG!
 				--; TRANSLATORS: %s = Tux:get_player_name()
 				Npc:says(_"Using PGP key \"%s\", decrypted successfully.", Tux:get_player_name(), "NO_WAIT")
+				Tux:end_quest("A New Mission From Spencer", _"I've downloaded the message. Let's find Dvorak!")
 				Npc:says("")
 				Npc:says(_"--- Begin Text Message (from Dvorak) ---", "NO_WAIT")
 				--; TRANSLATORS: %s = Tux:get_player_name()
