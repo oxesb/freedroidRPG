@@ -25,7 +25,11 @@ return {
 		play_sound("effects/Menu_Item_Deselected_Sound_0.ogg")
 		Npc:says(_"[b]Loading terminal...[/b]")
 		if (Tux:has_item("PC LOAD LETTER")) then
-			cli_says(_"Access Denied.")
+			Npc:says_random(_"[b]Access Denied.[/b]",
+							_"[b]Connection Refused.[/b]",
+							_"[b]Forbidden.[/b]",
+							_"[b]Terminal Corrupted.[/b]",
+							_"[b]ERROR: Declined.[/b]")
 		else
 			Npc:says(_"[b]No instructions to load this terminal.[/b]")
 			Tux:says(_"help", "NO_WAIT")
