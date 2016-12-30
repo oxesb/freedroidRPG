@@ -1,0 +1,4 @@
+** End of Mission Event Section **
+*** End of Mission File ***
+(leave the above termination text in the file or we might get a segfault/corrupt file termination)
+*** END OF EVENT ACTION AND EVENT TRIGGER FILE *** LEAVE THIS TERMINATOR IN HERE ***
