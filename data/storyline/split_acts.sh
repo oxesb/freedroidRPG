@@ -91,9 +91,11 @@ generate_all()
 	while [[ -s tmp/$act/dialogs.tmp ]] ; do
 		[[ -f tmp/$act/dialogs.tmp2 ]] && rm tmp/$act/dialogs.tmp2
 		for F in $(< tmp/$act/dialogs.tmp) ; do
-			grep "trade_with" act1/dialogs/$F.lua | awk '{ split($0, tokens, "\""); print tokens[2]; }' >> tmp/$act/dialogs.tmp2
-			grep "create_droid" act1/dialogs/$F.lua | awk '{ split($0, tokens, "\""); print tokens[8]; }' >> tmp/$act/dialogs.tmp2
-			grep "sell_item" act1/dialogs/$F.lua | awk '{ split($0, tokens, "\""); print tokens[4]; }' >> tmp/$act/dialogs.tmp2
+			if [[ ! -f ../base/dialogs/$F.lua ]] ; then
+				grep "trade_with" act1/dialogs/$F.lua | awk '{ split($0, tokens, "\""); print tokens[2]; }' >> tmp/$act/dialogs.tmp2
+				grep "create_droid" act1/dialogs/$F.lua | awk '{ split($0, tokens, "\""); print tokens[8]; }' >> tmp/$act/dialogs.tmp2
+				grep "sell_item" act1/dialogs/$F.lua | awk '{ split($0, tokens, "\""); print tokens[4]; }' >> tmp/$act/dialogs.tmp2
+			fi
 		done
 		rm -f tmp/$act/dialogs.tmp
 		if [[ -s tmp/$act/dialogs.tmp2 ]] ; then
@@ -110,8 +112,10 @@ generate_all()
 	
 	echo "Copy "$act" droids dialogs"
 	for F in `cat tmp/$act/dialogs.lst` ; do
-		cp act1/dialogs/$F.lua tmp/$act/dialogs
-		#TODO: adapt levelnum in scripts, if needed
+		if [[ ! -f ../base/dialogs/$F.lua ]] ; then
+			cp act1/dialogs/$F.lua tmp/$act/dialogs
+			#TODO: adapt levelnum in scripts, if needed
+		fi
 	done
 
 	echo "Extract "$act" quest names"
