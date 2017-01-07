@@ -262,7 +262,7 @@ static int map_graph()
 		return 1;
 	
 	// Load ship
-	char fp[2048];
+	char fp[PATH_MAX];
 	find_file(fp, MAP_DIR, "levels.dat", NULL, NO_REPORT);
 	LoadShip(fp, 0);
 
