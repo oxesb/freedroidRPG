@@ -35,6 +35,10 @@ local function start_arena(level)
 	arena_current_level = level
 	arena_next_wave = 1
 
+	-- Prepare the arena
+	change_obstacle_state("Arena-ChangingRoomDoor", "opened")
+	change_obstacle_state("Arena-RingEntrance", "opened")
+
 	next("arena_start")
 end
 
@@ -69,11 +73,14 @@ return {
 					end
 					show("arena_ready")
 				elseif (arena_withdraw) then
-					Npc:says(_"You have withdrawn the arena.")
+					Npc:says(_"Information: You have withdrawn the arena.")
+					Npc:says(_"Note: You can restart it another time.")
+					--; TRANSLATORS: This sentence use the english adage 'Better safe than sorry'. Use the equivalent adage of the language you translate.
+					Npc:says(_"Advice: It is better to be safe than sorry.")
 					show("arena_ready")
 				else
-					Npc:says(_"The arena is already started.")
-					hide("arena_ready")
+					Npc:says(_"Information: The arena is already started.")
+					show("arena_info_rules", "arena_info_where") hide("arena_ready")
 				end
 			else
 				Npc:says_random(_"Hello.", _"Hi.")
@@ -154,37 +161,38 @@ return {
 	{
 		id = "arena_novice",
 		topic = "arena",
-		text = _"Let's go at 'Novice'.",
+		text = _"Let's go at 'Novice' rank.",
 		code = function()
-			Npc:says(_"Start Novice Arena")
+			Npc:says(_"Accepted: You have chosen the 'Novice' rank.")
 			start_arena("novice")
 		end,
 	},
 	{
 		id = "arena_elite",
 		topic = "arena",
-		text = _"Let's go at 'Elite'.",
+		text = _"Let's go at 'Elite' rank.",
 		code = function()
-			Npc:says(_"Start Elite Arena")
+			Npc:says(_"Accepted: You have chosen 'Elite' rank.")
 			start_arena("elite")
 		end,
 	},
 	{
 		id = "arena_champion",
 		topic = "arena",
-		text = _"Let's go at 'Champion'.",
+		text = _"Let's go at 'Champion' rank.",
 		code = function()
-			Npc:says(_"Start Champion Arena")
+			Npc:says(_"Accepted: You have chosen 'Champion' rank.")
 			start_arena("champion")
 		end,
 	},
 	{
 		id = "arena_none",
 		topic = "arena",
-		text = _"None at this moment.",
+		text = _"None for now.",
 		code = function()
-			-- TODO: Provide 'Protip' to Tux.
-			Npc:says(_"Stop")
+			Npc:says(_"Accepted: You will fight later.")
+			--; TRANSLATORS: This sentence misrepresent the english adage 'Fortune favors the brave'. Use the equivalent adage of the language you translate.
+			Npc:says(_"Advice: Fortune favors the cautious.")
 			hide("arena_novice", "arena_elite", "arena_champion")
 			pop_topic("arena")
 		end,
@@ -193,16 +201,89 @@ return {
 		id = "arena_start",
 		topic = "arena",
 		code = function()
+			arena_starting = true
 
-			-- TODO: Display information about arena wave.
-			-- TODO: Provide 'Protip' to Tux.
+			if (not arena_info_rules) then
+				next("arena_info_rules")
+				arena_info_rules = true
+			else
+				next("arena_start2")
+			end
 
-			change_obstacle_state("Arena-ChangingRoomDoor", "opened")
-			change_obstacle_state("Arena-RingEntrance", "opened")
+		end,
+	},
+	{
+		id = "arena_start2",
+		topic = "arena",
+		code = function()
+			-- TODO: Provide information about the current wave
 
+			-- TODO: Clean the arena of bot from previous fight.
+
+			Npc:says(_"Preparation: Patience, it will take a litte moment.")
+			Npc:says(_"[b]...Accessing the matrix.[/b]")
+			Npc:says(_"[b]...Initializing the environment.[/b]")
+			Npc:says(_"[b]...Reprogramming the Arena.[/b]")
+			Npc:says(_"Excellent: The Arena is ready.")
+
+			if (not arena_info_where) then
+				next("arena_info_where")
+				arena_info_where = true
+			else
+				-- TODO: Provide 'Protip' to Tux.
+				next("arena_start3")
+			end
+		end
+	},
+	{
+		id = "arena_start3",
+		topic = "arena",
+		code = function()
+			arena_starting = false
+			
 			pop_topic("arena")
 			hide("arena_ready", "arena_novice", "arena_elite", "arena_champion")
 			end_dialog()
+		end,
+	},
+	{
+		id = "arena_info_rules",
+		text = _"Can you explain again?",
+		echo_text = false,
+		code = function()
+			if (not arena_starting) then
+				Tux:says(_"Can you explain again?", "NO_WAIT")
+			end
+
+			Npc:says(_"Instruction: You will fight multiple waves of bots.")
+			Npc:says(_"Second: The wave will end when all bots are dead.")
+			Npc:says(_"Third: Wave will be only started when you stay on the multicolor floor lamp.")
+			Npc:says(_"Fourth: You can only withdraw between waves with the terminal at the entry.")
+			Npc:says(_"Warning: Few waves have B.O.S.S.", "NO_WAIT")
+			Npc:says(_"Bot Of Special Shock.")
+			Npc:says(_"Important: B.O.S.S. are more powerful. You will be signaled to take care.")
+
+			if (arena_starting) then
+				next("arena_start2")
+			end
+		end,
+	},
+	{
+		id = "arena_info_where",
+		text = _"Where I need to go?",
+		echo_text = false,
+		code = function()
+			if (not arena_starting) then
+				Tux:says(_"Where I need to go?", "NO_WAIT")
+			end
+
+			Npc:says(_"Information: The arena is on your west in the corridor.")
+			Npc:says(_"Direction: Continue straight ahead after the locker room.")
+			Npc:says(_"Advice: If you see a large area surrounded by barrier, you are here.")
+
+			if (arena_starting) then
+				next("arena_start3")
+			end
 		end,
 	},
 	{
