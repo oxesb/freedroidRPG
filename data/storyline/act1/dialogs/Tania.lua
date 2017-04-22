@@ -88,6 +88,16 @@ return {
 				show("end_desert")
 			elseif (Tania_position == "bunker") then --in the Western Desert
 				show("end_desert") --TODO: Tania talks about the bunker and Koan
+			elseif (Tania_position == "town_gate") and npc_dead("Pendragon") and (not Tania_met_Pendragon) then
+				Tux:says(_"We hit town. Welcome to your new home!")
+				Npc:says(_"Thank you so much! I have dreamed to leave this underground hell.")
+				Tux:says(_"You are free to go where you like.")
+				change_obstacle_state("DesertGate-Inner", "opened")
+				Tania:teleport("W-enter-2") --Ensure that Tania is on Level 0!
+				Tania:set_state("patrol")
+				Npc:set_destination("BarPatron-Enter")
+				next("tania_enter_town")
+				-- TODO: Spencer can learn than Tux let Tania enter freely and react to it.
 			elseif (Tania_position == "town_gate") and (not Spencer_Tania_decision) then --at the Town Entrance, waiting for Spencer's OK
 				hide("node45", "node46", "node47", "node49", "node50", "node51", "node52", "node53", "node56", "node57", "node58", "node59", "end_desert")
 				if (not Tania_met_Pendragon) then
@@ -108,16 +118,7 @@ return {
 					Tux:says(_"He said you are free to go where you like.")
 					Npc:set_destination("BarPatron-Enter")
 				end
-				Tania_position = "town"
-				Tux:end_quest("Tania's Escape", _"I successfully brought Tania safely to the town. I hope she likes it here.")
-				if (difficulty("hard")) and
-				   (not Tania_mapper_given == true) then
-					Npc:says(_"I'm so glad that I am finally here, take this.")
-					Tux:add_item("Source Book of Network Mapper")
-					Tania_mapper_given = true
-				end
-				start_chat("Pendragon")
-				end_dialog()
+				next("tania_enter_town")
 			elseif (Tania_position == "town") then --"Tania's Escape" was a success!
 				if (Spencer_Tania_decision == "doc_moore") then --send to Bar
 					Spencer_Tania_decision = "doc_moore_free"
@@ -553,6 +554,23 @@ return {
 			Tux:del_item_backpack("Doc-in-a-can")
 			Npc:heal()
 			hide("node56", "node57", "node58", "node59")
+		end,
+	},
+	{
+		id = "tania_enter_town",
+		code = function()
+			Tania_position = "town"
+			Tux:end_quest("Tania's Escape", _"I successfully brought Tania safely to the town. I hope she likes it here.")
+			if (difficulty("hard")) and
+			   (not Tania_mapper_given == true) then
+				Npc:says(_"I'm so glad that I am finally here, take this.")
+				Tux:add_item("Source Book of Network Mapper")
+				Tania_mapper_given = true
+			end
+			if (not npc_dead("Pendragon")) then
+				start_chat("Pendragon")
+			end
+			end_dialog()
 		end,
 	},
 	{

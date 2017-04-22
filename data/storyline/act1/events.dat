@@ -302,7 +302,11 @@ Silent=1
 <LuaCode>
 	if (Tania_position == "desert") then
 		Tania_position = "town_gate"
-		start_chat("Pendragon")
+		if (not npc_dead("Pendragon")) then
+			start_chat("Pendragon")
+		else
+			start_chat("Tania")
+		end
 	end
 </LuaCode>
 * End of trigger *
@@ -314,7 +318,11 @@ Silent=1
 <LuaCode>
 	if (Tania_position == "desert") then
 		Tania_position = "town_gate"
-		start_chat("Pendragon")
+		if (not npc_dead("Pendragon")) then
+			start_chat("Pendragon")
+		else
+			start_chat("Tania")
+		end
 	end
 </LuaCode>
 * End of trigger *
@@ -326,7 +334,11 @@ Silent=1
 <LuaCode>
 	if (Tania_position == "desert") then
 		Tania_position = "town_gate"
-		start_chat("Pendragon")
+		if (not npc_dead("Pendragon")) then
+			start_chat("Pendragon")
+		else
+			start_chat("Tania")
+		end
 	end
 </LuaCode>
 * End of trigger *
@@ -689,8 +701,7 @@ Trigger on enemy death
 Enemy level=0
 Enemy dialog name="Pendragon"
 <LuaCode>
-	display_big_message(_"You should still be able to finish the game but some storylines might be broken.")-- reverse order because the new message is put on top of the prev message
-	display_big_message(_"Ooops, you killed Pendragon.")
+	change_obstacle_state("DesertGate", "opened")
 </LuaCode>
 * End of trigger *
 
