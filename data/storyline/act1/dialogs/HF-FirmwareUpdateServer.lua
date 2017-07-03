@@ -120,17 +120,14 @@ return {
 			play_sound("effects/Menu_Item_Selected_Sound_1.ogg")
 			end_dialog()
 			if (HF_FirmwareUpdateServer_Spencer) and (not HF_Spencer_teleported) then
-				local guard = FDrpg.get_npc("Town-TuxGuard")
 				change_obstacle_type("59-Teleporter", 19) --Prime the teleporter!
 				add_obstacle(59, 57.6, 29.5, 16)
 				play_sound("effects/new_teleporter_sound.ogg")
-				-- We would like the teleportation to be a little delayed for effect, but that's NYI, so...
+				-- We would like the teleportation to be a little delayed for effect.
 				Spencer:teleport("59-Teleporter-1")
 				Spencer:set_destination("59-Teleporter-1")
-				Bender:teleport("59-Teleporter-2")
-				Bender:set_destination("59-Teleporter-2", "Bender")
-				guard:teleport("59-Teleporter-3", "Town-TuxGuard")
-				guard:set_destination("59-Teleporter-3")
+				dispatch_event("59 Bender Teleport", 2)
+				dispatch_event("59 Guard Teleport", 4)
 				HF_Spencer_teleported = true
 			end
 		end,

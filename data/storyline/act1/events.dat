@@ -7008,6 +7008,24 @@ Silent=1
 </LuaCode>
 * End of trigger *
 
+* New event trigger *
+Name="59 Bender Teleport"
+Silent=0
+<LuaCode>
+	teleport_npc("59-Teleporter-1", "Bender")
+	set_bot_destination("59-Teleporter-1", "Bender")
+</LuaCode>
+* End of trigger *
+
+* New event trigger *
+Name="59 Guard Teleport"
+Silent=0
+<LuaCode>
+	teleport_npc("59-Teleporter-1", "Town-TuxGuard")
+	set_bot_destination("59-Teleporter-1", "Town-TuxGuard")
+</LuaCode>
+* End of trigger *
+
 
 ##############
 ## Level 60 ##
