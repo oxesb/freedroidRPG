@@ -82,6 +82,7 @@ return {
 		Tux:downgrade_program("Hacking")
 		Tux:downgrade_program("Repair equipment")
 		Tux:downgrade_program("Emergency shutdown")
+		tut_hack_time=0
 		-- done initializing
 		Npc:set_name("Tutorial Tom")
 		display_console_message(string.format(_"Met [b]%s[/b]!", Npc:get_translated_name()))
@@ -953,10 +954,32 @@ return {
 				TutorialTom_hacking_bots = true
 				Tux:update_quest("Tutorial Hacking", _"Tutorial Tom wants me to hack those bots. The only thing I need to worry about is overheating. But if I get too hot I can always try the Emergency shutdown program.")
 				change_obstacle_state("TutorialTakeoverCage", "opened")
+				show("hacking_extratime")
 			end
 			hide("node55")
 			end_dialog()
-			-- TODO Also explain improving program revisions
+		end,
+	},
+	{
+		id = "hacking_extratime",
+		text = _"I'm having troubles in taking over a bot within allocated time.",
+		code = function()
+			tut_hack_time=tut_hack_time+2
+			Npc:says(_"In real life you have to finish within the allocated time, and time limit is often more important than charges.")
+			Npc:says(_"As it's your first time hacking, I'll teach you a skill so you get a whooping extra second to take over the bot.")
+			Npc:says(_"Be warned though, that very few people know how to improve this skill. It's called [b]Animal Magnetism[/b].")
+			Npc:says(_"This may be a good time to mention that every program have a revision. It's like a skill level. Higher revision usually means higher effects.") -- TODO This whole part about program revisions should be on node55. "Eating" books should also be explained.
+			Npc:says(_"Naturally, this include heat cost as well. Improving a revision is usually the same process from learning a new program.")
+			Npc:says(_"Well, I guess that's all. Come back to me when all bots are dead.")
+			Tux:improve_program("Animal Magnetism")
+			Tux:improve_program("Animal Magnetism")
+			if (tut_hack_time > 2) then
+				hide("hacking_extratime")
+			else
+				Npc:says(_"Ah, linarian! If you need, I can grant you even another second, but I don't recommend.", "NO_WAIT")
+				Npc:says(_"Come see me if you need it.")
+				end_dialog()
+			end
 		end,
 	},
 	{
@@ -1176,9 +1199,13 @@ return {
 			end
 			Tux:add_item(".22 Automatic", 1)
 			Tux:add_item(".22 LR Ammunition", 10)
+			while (tut_hack_time > 0) do
+				Tux:downgrade_program("Animal Magnetism") -- Remove extra hacking time
+				tut_hack_time=tut_hack_time-1
+			end
 			TutorialTom_has_gun = true
 			TutorialTom_hide_71 = true
-			hide("node42", "node50", "node51", "node52", "node53", "node57", "node71")
+			hide("node42", "node50", "node51", "node52", "node53", "node57", "node71", "hacking_extratime")
 			end_dialog()
 		end,
 	},
