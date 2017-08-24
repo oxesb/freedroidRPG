@@ -2014,7 +2014,7 @@ Silent=1
 		(cmp_obstacle_state("HF-Gate-outer", "opened")) and
 		(has_quest("Open Sesame")) and
 		(not done_quest("Open Sesame"))) then
-			end_quest("Open Sesame", "I found the gates. The firmware server should lay beyond them.")
+			end_quest("Open Sesame", _"I found the gates. The firmware server should lay beyond them.")
 	end
 
 </LuaCode>
@@ -2029,7 +2029,7 @@ Silent=1
 		(cmp_obstacle_state("HF-Gate-outer", "opened")) and
 		(has_quest("Open Sesame")) and
 		(not done_quest("Open Sesame"))) then
-			end_quest("Open Sesame", "I found the gates. The firmware server should lay beyond them.")
+			end_quest("Open Sesame", _"I found the gates. The firmware server should lay beyond them.")
 	end
 </LuaCode>
 
@@ -7076,7 +7076,7 @@ Trigger at label="TuxEndAct1"
 Enable this trigger by default=0
 Silent=0
 <LuaCode>
-	end_quest("A New Mission From Spencer", "All aboard, we're leaving now!")
+	end_quest("A New Mission From Spencer", _"All aboard, we're leaving now!")
 	win_game()
 </LuaCode>
 * End of trigger *
