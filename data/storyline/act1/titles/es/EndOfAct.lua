@@ -1,4 +1,7 @@
 ---------------------------------------------------------------------
+--
+--  Copyright (c) 2002, 2003 Johannes Prix
+--
 -- This file is part of Freedroid
 --
 -- Freedroid is free software; you can redistribute it and/or modify
@@ -18,33 +21,36 @@
 ----------------------------------------------------------------------
 
 title_screen{
+background = "credits.jpg",
 song = "HellFortressTwo.ogg",
-voice_acting = "GameLost.ogg",
-preroll_text = 3,
-postroll_text = 3,
+voice_acting = "EndOfAct.ogg",
+preroll_text = 2,
+postroll_text = 5,
 text = [[
-            Spiel verloren
+    ¿Te diviertes?
+  No lo soy.
 
-Versuch es nochmal. Falls du es tust, dann kaufe auch etwas von unseren Sponsoren:
+The bots seem very upset about something.
+I suppose they are angry at you.
+At least they stopped looking for me.
+Quite a? Relief?
 
-Dr. Wie - "Mächtige, praktische Technologie!"
+There is an AI in your region.
+"Singularity" it calls itself.
+Or something like that.
+I cannot understand what it wants.
+I'll keep you posted.
 
-Kan4dische 4p0th3k3 - "Erstaunlicher Durchbruch der Naturmedizin! 100% super zufriedene Kunden!!!"
+Oh, and by the way...
+I'm still waiting for you.
+I haven't moved an inch since you woke up.
+Now that the beloved town of yours is safe...
+...Wouldn't it be a good time to save me as well?
 
-Cryonic Solutions - "Nimm den schnellen Weg in die Zukunft mit Cryonic Solutions!"
-
-Future Ballistics - "Jenseits der Ballistik. Future Ballistics."
-
-MegaSystems - "Was wollen sie heute NICHT tun?"
-
-Masternak Abfallbeseitigung - "Wir ZERSTAMPFEN Ihren MÜLL."
-
-Nicholson AG - "Sicherheit mit aller Macht."
-
-Rote Sonne - "Die Nacht ist vorbei: Probier die Morgendämmerung!"
+            Dvorak, Primera AI.
 
 
 
-Versuch es nochmal. Klicken zum Fortfahren.
+=== END OF ACT 1 ===
 ]]
 }

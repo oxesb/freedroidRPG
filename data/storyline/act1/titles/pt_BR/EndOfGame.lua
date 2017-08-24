@@ -30,7 +30,7 @@ text = [[
 Os robôs parecem perturbados com alguma coisa.
   Suponho que estão com raiva de você.
     Mas pelo menos pararam de me procurar.
-      Quite a ?relief?
+      Uma espécie de? Alívio?
 
     Tenho certeza de que você está morrendo de vontade de falar comigo.
   Vou pensar em alguma coisa.
@@ -50,7 +50,7 @@ A sua temperatura interna está acima do ponto de congelamento.
 
 Não consigo encontrar Arensito.
   Espero que ela esteja bem.
-    I'm ?worried? about her.
+    Eu estou ?preocupado? com ela.
     Não precisamos realmente de Qwerty.
   Mas precisamos de Arensito.
     Continuarei procurando por ela.
@@ -61,9 +61,9 @@ Ou algo assim.
   Eu não consigo entender o que ele quer.
     Lhe manterei informado.
 
-  Oh, and by the way...
+  Oh, e por falar nisso...
 Os robôs estão matando todo mundo naquela pequena cidade aí perto.
-  Really, quite a sight. They are burning everything.
+  Realmente, é uma coisa a se ver. Eles estão queimando tudo.
     A cidadela da Guarda Vermelha ainda está aguentando.
       Por enquanto.
     Talvez você queira se esconder enquanto eles destroem o lugar.
@@ -75,29 +75,29 @@ Os robôs estão matando todo mundo naquela pequena cidade aí perto.
 Precisamos encontrar Arensito.
   Ela vai nos tirar daqui.
 
-            Dvorak, First AI.
+            Dvorak, Primeiro IA.
 
 
 
- To be continued...
+ Continua...
 
 
 
-A word from the FreedroidRPG development team:
+Uma palavra de equipe de desenvolvimento de FreedroidRPG:
 
 Esperamos que você tenha gostado do nosso jogo.
 
 Se você quiser adicionar algo ao jogo, isso seria maravilhoso. Há várias oportunidade para fazê-lo. Precisamos especialmente de mais conteúdo, por exemplo:
 
-* additional level design beautification
-* new level ideas
-* anything else you can come up with
+* Embelezamento adicional do Design de Niveis
+* Novas ideias de niveis
+* O que quer você consiga imaginar
 
-See also the 'Contribute' section.
+Veja também a seção 'Contribua'.
 
-The freedroid development team.
+A equipe de desenvolvimento do FreedroidRPG.
 
 
-Press Fire to continue
+Clique para continuar
 ]]
 }

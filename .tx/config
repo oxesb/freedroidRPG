@@ -571,3 +571,63 @@ source_file = po/tx/all_in_one.pot
 source_lang = en
 type = PO
 
+[freedroid-rpg.title-EndOfAct]
+file_filter = po/l10n-others/tx/title-EndOfAct-<lang>.txt
+source_file = po/l10n-others/tx/title-EndOfAct.txt
+source_lang = en
+type = TXT
+
+[freedroid-rpg.dialog-614_portal]
+file_filter = po/po-dialogs/tx/614_portal-<lang>.po
+source_file = po/po-dialogs/tx/614_portal.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-ArenaTerminal]
+file_filter = po/po-dialogs/tx/ArenaTerminal-<lang>.po
+source_file = po/po-dialogs/tx/ArenaTerminal.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-Bob]
+file_filter = po/po-dialogs/tx/Bob-<lang>.po
+source_file = po/po-dialogs/tx/Bob.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-CerebrumPortalGuardian]
+file_filter = po/po-dialogs/tx/CerebrumPortalGuardian-<lang>.po
+source_file = po/po-dialogs/tx/CerebrumPortalGuardian.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-Erin]
+file_filter = po/po-dialogs/tx/Erin-<lang>.po
+source_file = po/po-dialogs/tx/Erin.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-Jim]
+file_filter = po/po-dialogs/tx/Jim-<lang>.po
+source_file = po/po-dialogs/tx/Jim.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-Samson]
+file_filter = po/po-dialogs/tx/Samson-<lang>.po
+source_file = po/po-dialogs/tx/Samson.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.data-AfterTakeover]
+file_filter = po/po-data/tx/AfterTakeover-<lang>.po
+source_file = po/po-data/tx/AfterTakeover.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.data-Terminal]
+file_filter = po/po-data/tx/Terminal-<lang>.po
+source_file = po/po-data/tx/Terminal.pot
+source_lang = en
+type = PO
+

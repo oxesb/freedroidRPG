@@ -20,36 +20,36 @@
 title_screen{
 song = "Bleostrada.ogg",
 text = [[
-            LIVELLO EDITOR DI FREEDROIDRPG
+            EDITOR LIVELLI DI FREEDROIDRPG
 
 === INTRODUZIONE ===
 
-FreedroidRPG è fornito di un editor di livello. Questo editor ti permette di controllare qualunque aspetto di una normale mappa di FreedroidRPG e salvarla.
+FreedroidRPG è fornito di un editor di livelli. Questo editor ti permette di controllare qualunque aspetto di una normale mappa di FreedroidRPG e salvarla.
 
-Puoi accedere dal menu principale (clicca "Level Editor") o eseguendo 'freedroidRPG -e'.
+Puoi accedere dal menu principale (clicca "Level Editor") oppure eseguendo 'freedroidRPG -e'.
 
     --- Suggerimenti ---
 Per attivare/disattivare le descrizioni dell'interfaccia mentre il mouse si muove, clicca l'icona con la bolla bianca posizionata vicino al bordo destro della finestra (bottoni fila inferiore).
 
-    --- Riepilogo Dettagli ---
-Il riepilogo dei dettagli riguardo ostacoli e articoli apparirà cliccando con il tasto destro del mouse sopra gli stessi nel selettore oggetti superiore.
+    --- Riepilogo dettagli ---
+Il riepilogo dei dettagli su ostacoli ed oggetti apparirà cliccando con il tasto destro del mouse sopra gli stessi nel selettore oggetti superiore.
 
     --- Navigazione ---
-Per cambiare il livello corrente, clicca il numero del livello nella minimappa sotto nell'angolo a destra, oppure seleziona il livello desiderato dal menu dell'editor (descritto dopo).
+Per cambiare il livello corrente, clicca il numero del livello nella minimappa nell'angolo a destra, oppure selezionando il livello desiderato dal menu dell'editor (descritto dopo).
 
-    --- Editing della Mappa ---
-Ci sono quattro modalità di editing: editing Ostacoli, editing Pavimenti, editing Articoli ed editing Riferimenti.
+    --- Modifica della mappa ---
+Ci sono quattro modalità di modifica: modifica degli ostacoli, modifica dei pavimenti, modifica degli oggetti e modifica dei riferimenti.
 
 Il bottone selezionato nella parte inferiore sinistra indica l'oggetto che puoi selezionare o posizionare.
-When a button is selected, and you are in placement mode, the object you will place is indicated by the ribbon at the top of the screen. The selection in the ribbon is divided by tabs immediately underneath.
+Quando un pulsante è stato selezionato, e sei in modalità di posizionamento, l'oggetto che andrai a posizionare è indicato dal fiocco in cima allo schermo. La selezione del fiocco è divisa nelle schede immediatamente sottostanti lo stesso fiocco.
 
-You can select the obstacle type you want to be placed on the map at the upper object selector. Just click it to select it. Obstacles are divided into groups to provide better overview.
+È possibile selezionare il tipo di ostacolo che si desidera collegare sulla mappa in corrispondenza dell'oggetto superiore. Basta cliccarlo per selezionarlo. Gli ostacoli sono divisi in gruppi per fornire una migliore visione.
 
 Pressing space, you will enter the selection mode being indicated by the cursor changing. You can only select group of objects represented by the current activated object mode.
 Important note: You will only be able to select things that are included in the currently selected mode. If you are in obstacle mode, you won't be able to select items or floor tiles.
 
 
-        Obstacle edit mode:
+        Modalità di modifica ostacolo:
 
 In order to select this mode, click on button that says 'Obstacle' of the category selector on the left lower area.
 Having selected an obstacle, just click somewhere on the map to place it at the cursor's position.
@@ -61,27 +61,27 @@ While holding the left mouse button down and placing walls, a click with the rig
 There are some special objects. Glass walls and cracked brick walls, but also barrels and crates can be destroyed with a few strikes, while the latter two may also release items. Chests can be opened and may contain items, too.
 The symbol with the crossed out footsteps is not really an object but pure and invisible blocking area ('collision rectangle'). Collision rectangles are the very core of each object since they prevent you from just walking through them as it possible for waypoints or floor tiles.
 
-            Selecting obstacles
+            Selezionare gli ostacoli
 
 Holding down the left mouse button you can select a rectangle of obstacles. After releasing the mouse button, selected obstacles will turn a different color indicating that they are selected. To select obstacles that are not in the range of such a selection rectangle, hold down 'Ctrl' and click the obstacle or select another rectangle of them.
 You may have automatically selected several obstacles with one click. You can switch between the obstacles clicking the icon with the chair and the shelf on it, or pressing 'n'.
-The icon with the trash can delete the selected obstacle.
+L'icona col cestino cancella gli ostacoli selezionati.
 You can also cut (Ctrl+x, can also be used to delete obstacles by just not pasting them again ;) ), copy (Ctrl+c) and paste (Ctrl+v) cut or copied obstacles.
 You can move selected obstacles holding down the left shift key while dragging the obstacle around. However, this may be quite imprecise.
 
-            Posizionamento di oggetti in Cassapanche
+            Posizionamento di oggetti nelle casse
 
-Basta selezionare la cassa desiderata e fare clic sul pulsante più a sinistro nella riga superiore.
+Basta selezionare la cassa desiderata e fare clic sul pulsante più a sinistra nella riga superiore.
 Sarai reindirizzato ad una schermata che appare come nella schermata del negozio.
 There will be a knife displayed (which is actually not placed in the chest by the way) select it and click on the 'sell' button.
-Select the items you want to be dropped when the player opens the chest.
-These items will be displayed in the upper shop bar.
+Seleziona gli oggetti che desideri eliminare quando il giocatore apre la cassa.
+Questi elementi vengono visualizzati nella barra superiore del negozio.
 In order to remove one of these items, simply select it and click on 'buy'.
 La croce rossa ti fa fuori dallo schermo.
 
             Aggiungere un testo a un segno
 
-Select the sign and add an obstacle label with the sign text. Save the map and exit.
+Seleziona il segno e aggiungi un'etichetta ostacolo con il segno di testo. Salva la mappa e esci.
 Open the level file (map/levels.dat) and find the new obstacle label. Change the line above the text from 'type=30' to 'type=32' and save.
 Now when you click on the sign in the game your short message will appear.
 
@@ -91,7 +91,7 @@ Select the terminal and add an obstacle label with the dialog name you wish to u
 Open the level file (map/levels.dat) and find the new obstacle label.
 Change the line above the text from 'type=30' to 'type=32' and save. Now when you click on the terminal in the game it will start the dialog you selected.
 
-        Floor edit mode:
+        Modalità di modifica pavimento:
 
 The floor edit mode works quite similar to the obstacle edit mode. You can select different types of floors at the object selector.
 To fill a region with a single floor tile, first select the tile to use, then click and drag the left mouse button until it covers the desired region. The floor tiles are placed on the current floor layer.
@@ -100,7 +100,7 @@ There are no floors that are special in any way, they are pure decoration.
 The visibility of floor layers can be controlled by a button with the layer icon. The button is only displayed for levels with multilayer floors.
 Left click on the button switches between a single floor layer displayed and all floor layers displayed. Right click on the button changes the current floor layer.
 
-            Selecting floor types
+            Seleziona il tipo di pavimento
 
 Selecting is as easy as in the the obstacle mode. Floor tiles can be moved to with the method described above.
 For levels with multilayer floors only visible floor layers are selected. When a single floor layer is visible, only the tiles in the current floor layer are selected.
@@ -109,7 +109,7 @@ In order to have a look at the floor only, click the lamp icon to have no obstac
 The icon with the turquoise rectangle displays collision rectangles. These rectangles indicate the blocking-area of an obstacle. Tux can't walk on such an area.
 If you turn it on and playtest (explained later) your map, the rectangles are still displayed if activated which is quite useful for testing whether the player can pass a gap or not.
 
-        Item edit mode:
+        Modalità di modifica item
 
 You can place items to be used by the player on the map, too.
 Items are objects that the player can pick up. They can be they can be carried, some even be used or equipped.
@@ -120,7 +120,7 @@ Press 'g' to have a better overview of what items are available (can also be use
 You can also click the icon with the crossed-out boots to perform this.
 
 
-        Waypoint edit mode:
+        modalità di modifica WayPoint:
 
 Currently, droids (meaning all non-player characters) move around on levels using predefined waypoints.
 To plant a waypoint, press the 'w' key. This will toggle the waypoint on the rectangle under the crosshair.
@@ -155,7 +155,7 @@ You can switch the displaying of droids/NPCs on or off pressing the button with 
             Planting obstacle labels
 
 Obstacle labels are important so that some obstacles can be marked for events to happen (for example during a quest). If e.g. an event is supposed to remove a special wall obstacle, then this obstacle must be given a name or ID first, so it can be referred to later in the definition of the event.
-You can also use them to add dialogs to obstacles, so you can talk to them as they were NPCs.
+Puoi usarli per aggiungere dialoghi agli ostacoli, così puoi parlare agli ostacoli come se fossero NPC.
 To plant a label on an obstacle, you must first mark this obstacle (see obstacle mode explanation above).
 Clicking the icon with the sign and the O on it you will be prompted for the new label to attach to this obstacle.
 

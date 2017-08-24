@@ -19,6 +19,9 @@
 
 title_screen{
 song = "Bleostrada.ogg",
+voice_acting = "StartOfGame.ogg",
+preroll_text = 3,
+postroll_text = 3,
 text = [[
 Was für ein großartiger Tag.
 Ja, ich bin mal wieder sarkastisch.

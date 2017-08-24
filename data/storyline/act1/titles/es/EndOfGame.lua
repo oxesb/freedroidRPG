@@ -75,7 +75,7 @@ The bots are killing everyone in that small town nearby.
 We need to find Arensito.
   She will get us out from here.
 
-            Dvorak, First AI.
+            Dvorak, Primera AI.
 
 
 

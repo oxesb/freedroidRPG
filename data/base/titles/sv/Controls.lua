@@ -51,7 +51,7 @@ Standardtangenter (de flesta kan ändras via tangentlistan i spelet - F1)
   C ... Panelen Karaktär (Character)
   S ... Panelen Förmågor/Program (Skills)
   Mellanslag ... Stäng alla paneler
-  Q ... Uppdragslogg (Quest-)
+  Q ... Uppdragslogg
   0-9 ... Använd föremålen i snabbförrådet (0-9)
 
   P ... Pausa

@@ -1,4 +1,4 @@
-    FreedroidRPG: PŘEČTIMĚ
+    FreedroidRPG: PŘEČTI MĚ
    ----------------------
 
 0. Seznam
@@ -30,7 +30,7 @@
  inovativní systém programů, které lze spustit za účelem převzetí
  kontroly nad nepřátelskými roboty, ovlivnění jejich chování nebo
  zlepšení svých vlastností. Ve hře lze použít více jak 150
- různých předmětů a bojovat s bezpočtem nepřátel na cestě ke
+ různých předmětů a bojovat s nespočtem nepřátel na cestě ke
  svému osudu. Pokročilý systém dialogů odhaluje pozadí příběhu a
  působivé herní situace.
 
@@ -67,7 +67,7 @@
 
  Útok
 
-  Klikání levým tlačítkem myši na nepřítele způsobí, že se Tux přiblíží k botovi a začne útočit s
+  Klikání levým tlačítkem myši na nepřítele způsobí, že se Tux přiblíží k robotovi a začne útočit s
   aktuální zbraní. Pokud je aktuální zbraní pistole, pak bude Tux stát na místě a střílet na robota.
 
  Speciální funkce
@@ -162,7 +162,7 @@
  a jsou proto obecně považována za chybná a nejsou podporována. Mohou však být stále užitečná pro mnohé,
  zejména širokoúhlé LCD displeje v režimu celé obrazovky.
 
- Pro získání seznamu všch dostupných  rozlišení spusťte příkaz "freedroidRPG -r99".
+ Pro získání seznamu všech dostupných rozlišení spusťte příkaz "freedroidRPG -r99".
 
  Některé známé problémy s nepodporovaným rozlišením:
 	- Obrázek portrétu v dialozích přetéká své hranice
@@ -221,14 +221,14 @@ Různé často se opakující dotazy:
 	   pro spuštění hry s vypnutým OpenGL výstupem. Grafika přejde na
 	   SDL režim.
 	Otázka: Mám Linux s výstupem na několik monitorů v módu TwinView (Xinerama), nicméně
-	   režím celé obrazovky je vycentrován na přechodu mezi oběma monitory. Preferoval
+	   režim celé obrazovky je vycentrován na přechodu mezi oběma monitory. Preferoval
 	   bych vycentrování jen na jednom z nich.
 	Odpověď: Pro zobrazení hry jen na jednom monitoru v režimu celé obrazovky, udělejte:
 	   1) Přesvědčte se, že používáte SDL verzi >=1.2.14.
 	   2) Nastavte environmentální proměnnou  "SDL_VIDEO_FULLSCREEN_DISPLAY" na číslo odpovídající
 			monitoru, který chcete použít: 0 je váš první displej, 1 je druhý, atd.
 
-	   Pokud to nepomůže, budete muset přidat metamody pro jeden monitor do vašeho souboru xorg.conf.
+	   Pokud to nepomůže, budete muset přidat metamódy pro jeden monitor do vašeho souboru xorg.conf.
 	   Modifikace souboru xorg.conf vyžaduje restart X serveru, aby se efekt projevil.
 
 Časté dotazy ohledně zvuku:
@@ -262,7 +262,7 @@ Různé často se opakující dotazy:
 
 		    Pokud jste kompilovali ze zdroje, musíte zkompilovat znovu, protože
 		    předchozí kompilace nezahrnovala zvukový modul hry FreedroidRPG.
-		    Pokud je SDL_mixer naistalován řádně, měl by fungovat po opětovné
+		    Pokud je SDL_mixer nainstalován řádně, měl by fungovat po opětovné
 		    kompilaci.
 
 	Otázka: Můj zvuk zaostává za obrazem. Každý zvuk se zdá být mírně opožděn.
@@ -293,7 +293,7 @@ Různé často se opakující dotazy:
 	Otázka: Jak mohu získat nejnovější vývojovou verzi hry?
 	Odpověď: Na Linuxu je to velmi jednoduché:
 	      git clone https://gitlab.com/freedroid/freedroid-src.git
-	   Pokud používáte Windows, doporučujeme použití nástoje jako 
+	   Pokud používáte Windows, doporučujeme použití nástroje jako 
 	      http://www.collab.net/downloads/giteye?CID=tigris
 	   Pokud se i přesto dostanete do problémů, je opět nejlepší se obrátit na lidi na
 	   mailové konferenci freedroid-discussion nebo se poptat na IRC kanálu.
@@ -312,7 +312,6 @@ Různé často se opakující dotazy:
 7. Kontakt
 ===========
  Webová stránka ......... http://www.freedroid.org
- Wiki   ....................... http://wiki.freedroid.org (or http://www.freedroid.org/wiki/pmwiki.php/)
  Stránka se zdrojový kódem .... https://gitlab.com/groups/freedroid
  IRC kanál .................. #freedroid na irc.freenode.net nebo
 								http://webchat.freenode.net/?channels=freedroid (vyžaduje Javascript)

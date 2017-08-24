@@ -49,7 +49,7 @@ CONTENU DU JEU :
         Matthias Krüger
         Miles McCammon
 
-GRAPHIQUE :
+GRAPHISMES :
 
         Infrared
         Bastian Salmela

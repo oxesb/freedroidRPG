@@ -32,7 +32,7 @@ Hra se ovládá pomocí myši. Klikněte levým tlačítkem na místa, do nichž
 
 ÚTOK:
 
-Klikání levým tlačítkem myši na nepřítele způsobí, že se Tux přiblíží k botovi a začne útočit s aktuální zbraní. Pokud je aktuální zbraňí pistole, pak bude Tux stát na místě a střílet na robota.
+Klikání levým tlačítkem myši na nepřítele způsobí, že se Tux přiblíží k robotovi a začne útočit s aktuální zbraní. Pokud je aktuální zbraní pistole, pak bude Tux stát na místě a střílet na robota.
 
 SPECIÁLNÍ FUNKCE:
 
@@ -69,7 +69,7 @@ Výchozí klávesy (většina kláves může být přeřazena pomocí přehledu 
 
 PŘEVZETÍ/CHAT
 
-Chcete-li konverzovat s přátelským droidem, stačí, abyste na něj klikli. Pro převzetí vlády nad nepřátelským botem vyberte dovednost převzetí/chat z panelu dovedností, pak klepněte pravým tlačítkem myši pro zahájení převzetí.
+Chcete-li konverzovat s přátelským droidem, stačí, abyste na něj klikli. Pro převzetí vlády nad nepřátelským robotem vyberte dovednost převzetí/chat z panelu dovedností, pak klepněte pravým tlačítkem myši pro zahájení převzetí.
 
 V průběhu hry převzetí lze použít kolečko myši nebo kurzorová tlačítka.
 

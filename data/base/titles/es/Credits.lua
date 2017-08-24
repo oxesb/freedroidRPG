@@ -23,7 +23,7 @@ song = "HellFortressTwo.ogg",
 text = [[
             FreedroidRPG  0.16
 
-PROGRAMMING:
+PROGRAMACIÓN:
 
         Bob
         Samuel Degrande
@@ -40,7 +40,7 @@ PROGRAMMING:
         v4hn
         Xenux
 
-GAME CONTENT:
+CONTENIDO DEL JUEGO:
 
         Amy de Buitléir
         Infrared
@@ -49,16 +49,16 @@ GAME CONTENT:
         Matthias Krüger
         Miles McCammon
 
-GRAPHICS:
+GRÁFICOS:
 
         Infrared
         Bastian Salmela
 
-MUSIC:
+MÚSICA:
 
         Nick Hagman
 
-TRANSLATIONS:
+TRADUCCIONES:
 
         cs:
           Jan Tojnar
@@ -86,7 +86,7 @@ TRANSLATIONS:
         sv_SV:
           Alexander Forsberg
 
-MISC:
+MISCELÁNEA:
 
         Eino Keskitalo
         Duong Khang Nguyen
@@ -95,7 +95,7 @@ MISC:
 
             ALSO, IN PREVIOUS VERSIONS
 
-PROGRAMMING:
+PROGRAMACIÓN:
 
         Maria Grazia Alastra
         Pedro Arana
@@ -116,7 +116,7 @@ PROGRAMMING:
         Alexander Solovets
         Philippe Tetar
 
-GAME CONTENT:
+CONTENIDO DEL JUEGO:
 
         Stefan Huszics
         James
@@ -129,7 +129,7 @@ GAME CONTENT:
         Thor
         JK Wood
 
-MUSIC:
+MÚSICA:
 
         Nick "Nario" Hagman
         Arvid Picciani
@@ -140,7 +140,7 @@ MUSIC:
         "Bleostrada"
             by stud
 
-MISC:
+MISCELÁNEA:
 
         Mbrola - text-to-speech
         eSpeak - text-to-speech

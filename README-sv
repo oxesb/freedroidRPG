@@ -87,7 +87,7 @@
   C ... Panelen Karaktär (Character)
   S ... Panelen Förmågor/Program (Skills)
   Mellanslag ... Stäng alla paneler
-  Q ... Uppdragslogg (Quest-)
+  Q ... Uppdragslogg
   0-9 ... Använd föremålen i snabbförrådet (0-9)
 
   P ... Pausa
@@ -172,7 +172,7 @@
 
 6. Vanliga frågor
 ============
-Blandade Frågor & Svar:
+Blandade Frågor & svar:
 
 	F: Behöver jag Linux för att testa FreedroidRPG?
 	S: Trots att Linux starkt rekommenderas för systemadministratörens egen hälsa
@@ -312,7 +312,6 @@ Kartredigerare & Frågor och svar för utvecklare
 7. Kontakt
 ===========
  Hemsida  .................... http://www.freedroid.org
- Wiki   ....................... http://wiki.freedroid.org (or http://www.freedroid.org/wiki/pmwiki.php/)
  Källkod   .................... https://gitlab.com/groups/freedroid
  IRC-kanal  .................. #freedroid på irc.freenode.net eller
 								http://webchat.freenode.net/?channels=freedroid (kräver Javascript)

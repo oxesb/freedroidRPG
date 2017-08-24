@@ -19,8 +19,11 @@
 
 title_screen{
 song = "HellFortressTwo.ogg",
+voice_acting = "GameLost.ogg",
+preroll_text = 3,
+postroll_text = 3,
 text = [[
-            Partie Perdu
+            Partie Perdue
 
 Réessaie encore, et en le faisant, n'oublie pas de passer commande auprès de nos sponsors :
 
@@ -28,7 +31,7 @@ Dr. How - "Puissante technologie pratique"
 
 Ph4rm4cie Can4dienne - "Extraordinaires r3mèdes phytothérapiqu3s innov4nts ! Satisfaction 100% g4ranti3 !!!"  
 
-Solution Cryonic - "Prenez un allez simple et rapide pour le futur avec Solutions Cryonic !"  
+Solution Cryonic - "Prenez un aller simple et rapide pour le futur avec Solutions Cryonic !"  
 
 Future Ballistics - "Bien mieux que Ballictics. Future Ballistics, la nouvelle génération." 
 

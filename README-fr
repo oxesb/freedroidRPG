@@ -4,7 +4,7 @@
 0. Sommaire
 =========
   1. Introduction
-  2. Installer & Jouer
+  2. Installer et jouer
   3. Contrôles de base
   4. Problèmes connus
   5. Résolution d'écran
@@ -29,7 +29,7 @@
  distantes et de corps-à-corps, assez semblable au jeu propriétaire Diablo. Il propose un
  système innovant de programmes pouvant être utilisés pour prendre
  le contrôle des robots ennemis, modifier leur comportement, ou améliorer les
- caractéristiques personnelles. Tu peux utiliser plus de 150 objets divers, et
+ caractéristiques personnelles. Tu peux utiliser plus de 150 objets différents et
  combattre d'innombrables ennemis sur le chemin vers ta destinée. Un système 
  avancé de dialogues sert de base à l'histoire et à une réelle immersion dans ce
  jeu de rôle.
@@ -41,7 +41,7 @@
  projet très actif dans lequel exprimer leur créativité.
 
 
-2. Installer & Jouer
+2. Installer et jouer
 ==================
  La dernière version stable et les binaires pré-compilés pour Windows/MacOsx sont accessibles sur ftp://ftp.osuosl.org/pub/freedroid/
  Pour une aide plus générale avec l'installation, se référer au fichier INSTALL situé dans le même dossier que celui-ci.
@@ -55,14 +55,14 @@
 
  Si vous ne voulez pas installer le jeu, ne faites pas "make install", rendez-vous simplement dans le sous-répertoire src/, et lancez
     ./freedroidRPG
- Pour les options avancées, exécuter "freedroidRPG --help" (dans un terminal) pour récupérer une liste des options disponibles en ligne de commande.
+ Pour les options avancées, exécutez "freedroidRPG --help" (dans un terminal) pour récupérer une liste des options disponibles en ligne de commande.
 
 
 3. Contrôles de base
 ============
  Mouvement
  
-  Le jeu est contrôlé en utilisant la souris. Click gauche vers l'endroit où tu veux bouger. Maintiens
+  Le jeu se contrôle en utilisant la souris. Clic gauche vers l'endroit où tu veux bouger. Maintiens
   le bouton appuyé pour continuer à bouger dans cette direction. Maintenir la touche CTRL te permet de courir.
 
  Attaque 
@@ -233,18 +233,18 @@ FAQ Graphismes :
 
 FAQ Sons :
 
-	Q : Mon son ne fonctionne pas avec FreedroidRPG. Je n'étends rien.
+	Q : Le son ne fonctionne pas avec FreedroidRPG. Je n’entends rien.
 	R : 1.) Assurez-vous que votre son fonctionne avec les autres applications. Si vous
 		    n’entendez rien quand vous essayez de jouer des fichiers mp3 ou ogg,
 		    alors le système son de votre machine n'est pas correctement configuré et ce
 		    n'est pas un problème relatif à FreedroidRPG. Dans ce cas, vous devrez d'abord installer
 		    correctement votre carte audio.
-	   2.) Regardez si la librairie SDL_mixer est installée. Vous pouvez
+	   2.) Regardez si la bibliothèque SDL_mixer est installée. Vous pouvez
 		    utiliser la commande "locate SDL_mixer" et regarder si vous obtenez des résultats.
-		    Si non, alors l'absence de la librairie SDL_mixer est le problème.
+		    Si non, alors l'absence de la bibliothèque SDL_mixer est le problème.
 		    Vérifiez également si libogg et libvorbis sont installées.
 	   3.) Si vous compilez depuis les sources, assurez-vous que le script ./configure a
-		    correctement détecté la librairie SDL_mixer. Regardez juste la sortie de ./configure.
+		    correctement détecté la bibliothèque SDL_mixer. Regardez juste la sortie de ./configure.
 		    Il devrait y avoir une ligne du genre :
 
 		      checking for Mix_ChannelFinished in -lSDL_mixer... yes
@@ -262,7 +262,7 @@ FAQ Sons :
 
 		    Si vous avez compilé le jeu depuis les sources, vous devez le recompiler maintenant, parce que
 		    la compilation précédente n'incluait pas le module son de FreedroidRPG. Si
-		    la librairie SDL_mixer est correctement installée, le son devrait fonctionner après
+		    la bibliothèque SDL_mixer est correctement installée, le son devrait fonctionner après
 		    la recompilation.
 
 	Q : Le son est joué en retard. Chaque son semble être désynchronisé.
@@ -312,7 +312,6 @@ FAQ Éditeur de Niveau & Développeur :
 7. Contact
 ===========
  Site web ................ http://www.freedroid.org
- Wiki ....................... http://wiki.freedroid.org (ou http://www.freedroid.org/wiki/pmwiki.php/)
  Page des sources  ........ https://gitlab.com/groups/freedroid
  Canal IRC ................ #freedroid sur irc.freenode.net ou
 								http://webchat.freenode.net/?channels=freedroid (nécessite Javascript)

@@ -25,35 +25,35 @@
  escolher que caminho você quer seguir, e liberdade de escolha está
  em todo lugar no jogo.
 
- FreedroidRPG features a real time combat system with melee and ranged
- weapons, fairly similar to the proprietary game Diablo. There is an
- innovative system of programs that can be run in order to take
- control of enemy robots, alter their behavior, or improve one's
- characteristics. You can use over 150 different kinds of items and
- fight countless enemies on your way to your destiny. An advanced
- dialog system provides story background and immersive role playing
- situations.
+ FreedroidRPG possui um sistema de combate em tempo real com armas para
+ luta corpo-a-corpo e à longa distância, no estilo do Diablo. Há um sistema  
+ inovador de programas que podem ser executados para que
+ se controle os robôs inimigos, altere seu comportamento, ou
+ melhore suas características. Você pode usar 150 tipos de itens e
+ lutar contra incontáveis inimigos no caminho de seu destino. Um
+ sistema de diálogo avançado fornece uma história de fundo e situações
+ de interpretação de papeis (que é o RPG!)
 
- The game is complete, fully playable, and can provide about 10 hours
- of fun. It is still being actively developed, and help is welcome in
- many areas. People having - or trying to acquire - programming, map
- editing, or writing skills will find FreedroidRPG to be an exciting,
- fast-moving project in which they can fully express their creativity.
+ O jogo está completo, completamente jogável, e pode fornecer cerca
+ de 10 horas de diversão. Ainda está sendo desenvolvido, e ajuda
+ é muito bem-vindo em muitas áreas. Programadores, mapeadores,
+ editores e escritores certamente acharão o FreedroidRPG um
+ projeto excitante e rápido, no qual pode-se expressar sua criatividade. 
 
 
 2. Instalar & Jogar
 ==================
- Last stable realase and prebuild Windows/MacOsx are at ftp://ftp.osuosl.org/pub/freedroid/
+ Último lançamento estável e pré-compilado para Windows/MacOsx em ftp://ftp.osuosl.org/pub/freedroid/
  Para ajuda com a instalação, refira-se ao arquivo INSTALL localizado na mesma pasta que este arquivo.
- For more information, please see also INSTALL.freedroidRPG
- Packages needed to build depends of your distribution. They are listed in INSTALL.freedroidRPG
- Basically, you then just have to
+ Para mais informação, veja também INSTALL.freedroidRPG
+ Pacotes necessários para compilar depende da sua distribuição. Eles estão listados em INSTALL.freedroidRPG
+ Então, basicamente, você precisa executar
 
     ./configure
     make
     make install
 
- If you don't want to install the game, do not issue "make install", simply go to the src/ subdirectory, and run
+ Se você não deseja instalar o jogo, não chame "make install", bsatando apenas ir para o subdiretório src/ e executar
     ./freedroidRPG
  Para opções avançadas execute "freedroidRPG --help" (em um terminal) para obter uma lista dos comandos via texto.
 
@@ -74,7 +74,7 @@
 
   Use o botão direito do mouse para ativar a habilidade/programa atualmente selecionado.
 
- Default keys (most keys can be reassigned with the in-game key chart - F1)
+ Teclas padrões (a maioria das teclas podem ser reconfiguradas com F1 no jogo)
 
   Escape ... Mostra o menu principal
   F1 ... Mostra a lista de atalhos
@@ -91,20 +91,20 @@
   0-9 ... Utilizar os itens do inventário rápido 0-9
 
   P ... Pausar
-  Hold A     ... Attack while staying at the same position
-  Hold Shift ... Keep current target selected when moving
+  Segura A   ... Atacar enquanto parado na mesma posição
+  Segura Shift . Manter o alvo selecionado enquanto se move
   Tab ... Habilitar o automapa (se disponível)
 
   R ... Recarregar arma
   Manter Ctrl ... Correr
   U ... Correr sempre
 
-  Hold X     ... Show labels for items on the ground
-  Z          ... Toggle show labels for items on the ground
-  T          ... Toggle walls becoming transparent when Tux approaches
+  Segura X   ... Mostrar rótulos de itens no chão
+  Z          ... Mostrar rórulos dos itens no chão 
+  T          ... Paredes ficam transparentes quando Tux se aproxima
   Ctrl + Q ... Sai do jogo
-  Ctrl + G   ... Toggle grab input (prevent cursor from escaping the game window)
-  Print      ... Take screenshot (saved into ./.freedroid_rpg/ folder of your home directory)
+  Ctrl + G   ... Captura entrada (evita do cursor escapar da janela do jogo)
+  Print      ... Captura de tela (salva na pasta ./.freedroid_rpg/ de seu diretório pessoal)
 
   Teclas direcionais ... Mover
      Cima ... Norte
@@ -116,27 +116,27 @@
 4. Problemas Conhecidos
 ================
  Geral
-   * Some melee and ranged weapons still have placeholder laserswords/rifles for their Tux holding
-	 and attack animations. If you are skilled with 3D modeling, please help us out to fix this.
-   * When you start the game in OpenGL mode and something overlays the FreedroidRPG window while starting
-	 up, the background images looks very strange. If you click on one of the menu items, it should return to
-	 looking as intended.
-   * Alt tab in/out of the game in OpenGL while a static popup is displayed makes the screen completely black.
-	 Clicking or pressing the required key to close the popup will redraw/bring back the screen.
+   * Algumas armas de corpo-a-corpo e de longa distância ainda possuem lugar para rifles e sabres de luz
+	 para segurar e animação de ataques do tux. Você mexe com modelagem 3D, nos ajude.
+   * Quando você inicia o jogo no modo OpenGL e alguma coisa aparece por cima da janela do FreedroidRPG ao iniciar,
+	 as imagens de fundo parecem um pouco estranhas. Se você clicar em um dos itens de menu, deveria voltar
+	 a aparecer como intencionado.
+   * Alt tab para dentro/fora do jogo em OpenGL quando um popup é exibido faz com que a tela escureca totalmente.
+	 Clicar ou pressionar na tecla necessária para fechar o popup vai redesenha/voltar a tela.
 
  Mac
-   * Open Files: OSX max number of open files defaults to 256 (as of 10.6). This can lead to errors when
-	 loading images: "In Function: get_iso_image_from_file_and_path. Could not load image
+   * Abrir arquivos: número máximo de arquivos abertos no OSX é 256, por padrão (no 10.6). Pode resultar em
+	 erros ao carregar imagens: "In Function: get_iso_image_from_file_and_path. Could not load image
 	 /usr/local/share/freedroidrpg/graphics/obstacles/<filename>.png"
 	 Solução:
-		1) Check value of open files limit with $ ulimit -n
-		2) Set new value for open files limit with $ ulimit -n 2048
-	(issue #2913487)
-   * Font rendering: If you get no fonts in the main menu with SDL or if in openGL mode, the game dies
-	with the error message "In Function: PutCharFont. Surface for character 46 was NULL pointer!",
-	check your display configuration and set the color profile to sRGB.
-	(issues #2913485 and #2913484)
-   * SDL installed via MacPorts: SDL installed via MacPorts will give freedroidRPG wrong information
+		1) Verifique valores de limites em em arquivos abertos com $ ulimit -n
+		2) Defina novo valor para limite de arquivos abertos com $ ulimit -n 2048
+	(problema #2913487)
+   * Renderização de fonte: Não aparecendo nenhuma fonte no menu com SDL ou em OpenGL, o jogo fecha
+	com mensagem de erro: "In Function: PutCharFont. Surface for character 46 was NULL pointer!",
+	verifique sua configuração de exibição e defina o perfil de cores para sRGB.
+	(problemas #2913485 e #2913484)
+   * SDL instalado via MacPorts: SDL instalado via MacPorts vai fornecer info errada ao freedroidRPG
 	about the byteorder if you have a big-endian (PowerPC) CPU, so the colors may be wrong and you
 	probably couldn't start a new game because FreedroidRPG crashes.
 	To fix it, with root privileges edit the /opt/include/SDL/SDL_config.h file so the line
@@ -172,7 +172,7 @@
 
 6. FAQs
 ============
-Miscellaneous FAQ:
+FAQ miscelâneos:
 
 	Q: Do I need to have Linux to try out FreedroidRPG?
 	R: Enquanto utilizar Linux é altamente recomendável para a sanidade do administrador
@@ -312,7 +312,6 @@ Level Editor & Developer FAQ:
 7. Contato
 ===========
  Site ................ http://www.freedroid.org
- Wiki   ....................... http://wiki.freedroid.org (or http://www.freedroid.org/wiki/pmwiki.php/)
  Source project page   ........ https://gitlab.com/groups/freedroid
  Canal IRC ................ #freedroid em irc.freenode.net ou
 								http://webchat.freenode.net/?channels=freedroid (requer Javascript)

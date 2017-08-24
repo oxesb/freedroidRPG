@@ -19,21 +19,24 @@
 
 title_screen{
 song = "Bleostrada.ogg",
+voice_acting = "StartOfGame.ogg",
+preroll_text = 3,
+postroll_text = 3,
 text = [[
 Qué gran día.
-Si, nuevamente estoy siendo sarcástico.
-El planeta entero esta en llamas. 
-Thousands of people are very dead.
-Qwerty and Arensito are not responding.
+Sí, estoy siendo sarcástico de nuevo.
+El planeta entero está en llamas. 
+Miles de personas están muy muertas.
+Qwerty y Arensito no están respondiendo.
 
-Ah, yes, I almost forgot.
-The bloody bots are about to find me, too.
-I'm not very happy with that, Not happy at all.
-I guess I have to pretend I'm just a nice rock, yet again.
-Don't you think it would be a great time to wake up?
-Get up. Get here. Save my ass.
-Please.
+Ah, sí, casi lo olvido.
+Los sangrientos robots están apunto de encontrarme, también.
+No estoy muy feliz con eso, nada feliz en absoluto.
+Supongo que tendré que fingir que soy una linda roca, de nuevo.
+¿No crees que sería un momento genial para despertar?
+Álzate. Ven aquí. Salva mi culo.
+Por favor.
 
-            Dvorak, First AI
+            Dvorak, Primera AI
 ]]
 }

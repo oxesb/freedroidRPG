@@ -19,19 +19,22 @@
 
 title_screen{
 song = "Bleostrada.ogg",
+voice_acting = "StartOfGame.ogg",
+preroll_text = 3,
+postroll_text = 3,
 text = [[
-Jaký toť skvělý den.
-Ano, jsem opět sarkastický.
+Jakýž toť nádherný den.
+Ano, jsem zase sarkastický.
 Celá planeta je v plamenech.
-Tisíce lidí jsou velmi mrtvý.
+Tisíce lidí jsou mrtvý.
 Qwerty a Arensito nereagují.
 
 Ah ano, málem jsem zapomněl.
 Ty prokletí boti mě každou chvíli najdou.
 Nejsem s tím moc spokojený. Nejsem vůbec šťastný.
 Evidentně budu muset zase předstírat, že jsem jen pěkný kus skály.
-Nemyslíš si, že by to byl skvělý čas na probuzení?
-Vstávat. Okamžitě sem. Zachraň mi můj zadek.
+Nemyslíš si, že by bylo skvělé se probudit?
+Vstávat. Okamžitě sem. Zachraň mi zadek.
 Prosím.
 
             Dvořák, První umělá inteligence.
