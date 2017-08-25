@@ -189,8 +189,8 @@ return {
 			elseif (Tux:get_skill("melee") == 2) then -- Apprentice -> Professional (Sword)
 				Npc:says(_"Look who is back asking for more training. I'm amused.", "NO_WAIT")
 				Npc:says(_"It seems like you've been doing your homework, uhm?")
-				Tux:says(_"Of course I've improved. I have an excellent person teaching me, after all.")
-				Npc:says(_"You...! Okay, maybe I took to easy previously! I will train you so hard this time, that you'll sweat blood!")
+				Tux:says(_"Of course I've improved. I have an excellent teacher, after all.")
+				Npc:says(_"You...! Okay, maybe I took too easy previously! I will train you so hard this time, that you'll sweat blood!")
 				Npc:says(_"Are you up for the challenge?!")
 				hide("training_main")
 				if Erin_payment_method == "money" then
