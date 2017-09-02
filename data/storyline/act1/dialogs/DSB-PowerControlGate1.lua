@@ -23,8 +23,9 @@ local Tux = FDrpg.get_tux()
 return {
 	EveryTime = function()
 		play_sound("effects/Menu_Item_Deselected_Sound_0.ogg")
+		local day, hour, minute = game_date()
 		DSB_PowerControlGate1_year = os.date("%Y") + 45 -- current year + 45
-		DSB_PowerControlGate1_date_1 = os.date("%a %b %d %H:%M:%S") -- emulate os.date() but without the year
+		DSB_PowerControlGate1_date_1 = string.format(_"Day %d, %02d:%02d", day, hour, minute)
 		DSB_PowerControlGate1_prompt = "guest@gate1.pc.dsb.ms: ~ #"
 
 		cli_says(_"Login : ", "NO_WAIT")

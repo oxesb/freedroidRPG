@@ -26,8 +26,9 @@ return {
 	end,
 
 	EveryTime = function()
+		local day, hour, minute = game_date()
 		SACD_year = os.date("%Y") + 45 -- current year + 45
-		SACD_date_1 = os.date("%a %b %d %H:%M:%S") -- emulate os.date() but without the year
+		SACD_date_1 = string.format(_"Day %d, %02d:%02d", day, hour, minute)
 		if (not SACD_login) then
 			Tux:update_quest("Tania's Escape", _"I have found the Secret Area Control Datacenter.")
 			Tux:add_xp(1000)

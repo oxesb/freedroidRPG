@@ -23,8 +23,9 @@ local Tux = FDrpg.get_tux()
 return {
 	EveryTime = function()
 		play_sound("effects/Menu_Item_Deselected_Sound_0.ogg")
+		local day, hour, minute = game_date()
 		TutorialTerminal_year = os.date("%Y") + 45 -- current year + 45
-		TutorialTerminal_date_1 = os.date("%a %b %d %H:%M:%S") -- emulate os.date() but without the year --  can we translate this?
+		TutorialTerminal_date_1 = string.format(_"Day %d, %02d:%02d", day, hour, minute)
 		TutorialTerminal_prompt = "guest@example.com: ~ #"
 
 		cli_says(_"Login : ", "NO_WAIT")

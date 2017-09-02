@@ -23,8 +23,9 @@ local Tux = FDrpg.get_tux()
 return {
 	FirstTime = function()
 		play_sound("effects/Menu_Item_Deselected_Sound_0.ogg")
+		local day, hour, minute = game_date()
 		DSB_PC_year = os.date("%Y") + 45 -- current year + 45
-		DSB_PC_date = os.date("%a %b %d %H:%M:%S") -- emulate os.date() but without the year
+		DSB_PC_date = string.format(_"Day %d, %02d:%02d", day, hour, minute)
 		cli_says(_"Login : ", "NO_WAIT")
 		Tux:says(_"admin", "NO_WAIT")
 		cli_says(_" Password : ", "NO_WAIT")

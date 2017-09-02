@@ -27,10 +27,12 @@ return {
 		Tux:says(_"admin", "NO_WAIT")
 		cli_says(_"Password : ", "NO_WAIT")
 		Tux:says(_"*******", "NO_WAIT")
+		local day, hour, minute = game_date()
 		DSB_MDC_year = os.date("%Y") + 45 -- current year + 45
-		DSB_MDC_date = os.date("%a %b %d %H:%M:%S") -- emulate os.date() but without the year
+		DSB_MDC_date = string.format(_"Day %d, %02d:%02d", day, hour, minute)
 		--; TRANSLATORS: %s = a date ,  %d = a year number
 		cli_says(_"First login from /dev/ttySO on %s %d", DSB_MDC_date, DSB_MDC_year, "NO_WAIT")
+        Npc:says("", "NO_WAIT")
 	end,
 
 	EveryTime = function()

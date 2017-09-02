@@ -28,8 +28,11 @@ return {
 
 	EveryTime = function()
 		play_sound("effects/Menu_Item_Deselected_Sound_0.ogg")
+		local day, hour, minute = game_date()
 		AfterTakeover_year = os.date("%Y") + 45 -- current year + 45
-		AfterTakeover_date_1 = os.date("%a %b %d %H:%M:%S") -- emulate os.date() but without the year
+		--; TRANSLATORS: It shows the ingame date in format: Day day, hour:minute
+		AfterTakeover_date_1 = string.format(_"Day %d, %02d:%02d", day, hour, minute) -- TODO: It saves last login on ANY bot...
+		-- AfterTakeover_date probably shouldn't exist, we cannot determine last login on an individual bot!
 		AfterTakeover_repair_time = 0
 		AfterTakeover_repair_circuits = 0
 		AfterTakeover_repair_heat = 0
