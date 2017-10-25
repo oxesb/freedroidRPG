@@ -192,6 +192,7 @@ return {
 				Npc:says(_"I wish I could once use such a gun.")
 				Npc:says(_"You are a Guard member, right?")
 				if (Tux:has_item("Barrett M82 Sniper Rifle") or
+					Tux:has_item("The Super Exterminator!!!") or
 					Tux:has_item("Exterminator")) then
 					Tux:says(_"Yes, I am a Guard member. No, it is not allowed to give guns to people who are high.")
 					Npc:says(_"Pleeeeaaaase.")

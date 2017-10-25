@@ -66,6 +66,11 @@ return {
 			Npc:says(_"The bots and disruptor shield will take care of that for me.")
 			Npc:says(_"Just remember to give me your valuables before you commit suicide.")
 			Npc:says(_"You won't need any money once you're dead, and I could use it, eh?")
+			if (Tux:has_item_equipped("The Super Exterminator!!!") or
+				Tux:has_item_equipped("Exterminator")) then
+				Npc:says(_"Also, I would not rely on your Exterminator this time.")
+				Npc:says(_"You'll be dead before you manage to reload this gun.")
+			end
 			hide("node2") show("node3")
 		end,
 	},
@@ -85,7 +90,7 @@ return {
 							_"Don't come back.",
 							_"It is dangerous here.",
 							_"Leave and stay away.")
-			show("node1")
+			hide("node2", "node3") show("node1")
 			end_dialog()
 		end,
 	},

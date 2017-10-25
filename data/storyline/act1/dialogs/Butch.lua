@@ -158,6 +158,10 @@ return {
 				Npc:says(_"You might try taking the novice arena first. Then I can grant you access to the master field.")
 			else
 				Npc:says(_"Newbie, I have a second arena.")
+		    if (Tux:has_item_equipped("The Super Exterminator!!!") or
+				    Tux:has_item_equipped("Exterminator")) then
+    				Npc:says(_"It is no place to test your cool Exterminator.", "NO_WAIT")
+            end
 				Npc:says(_"You will die if you go there.")
 				Npc:says(_"I pity you, silly bird. Don't go there.")
 				Npc:says(_"But if you really want to, the door is now open.")

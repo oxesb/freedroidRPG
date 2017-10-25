@@ -81,15 +81,21 @@ return {
 		text = _"I'd like to buy an exterminator.",
 		code = function()
 			Npc:says(_"Haha, good one.")
-			Npc:says(_"Sorry, they are not for sale.")
-			Tux:says(_"I'll get one for free?")
-			if (not HF_FirmwareUpdateServer_uploaded_faulty_firmware_update) then
-				Npc:says(_"You are the funniest Linarian I've ever seen.")
-				Npc:says(_"If the only one.")
-				Npc:says(_"Now go, kill some bots.")
+			if (Tux:has_item_equipped("The Super Exterminator!!!") or
+				Tux:has_item_equipped("Exterminator")) then
+				Npc:says(_"You are already using one. It is on your hands!")
+				Npc:says(_"Stop trying to make a fool of me.")
 			else
-				Npc:says(_"Why would you need one, anyway? The bots are all dead.")
-				Npc:says(_"While I agree you deserve one, only Spencer can authorize that. Sorry.")
+				Npc:says(_"Sorry, they are not for sale.")
+				Tux:says(_"I'll get one for free?")
+				if (not HF_FirmwareUpdateServer_uploaded_faulty_firmware_update) then
+					Npc:says(_"You are the funniest Linarian I've ever seen.")
+					Npc:says(_"If the only one.")
+					Npc:says(_"Now go, kill some bots.")
+				else
+					Npc:says(_"Why would you need one, anyway? The bots are all dead.")
+					Npc:says(_"While I agree you deserve one, only Spencer can authorize that. Sorry.")
+				end
 			end
 			hide("node4")
 		end,
