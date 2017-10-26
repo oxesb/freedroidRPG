@@ -71,7 +71,7 @@ return {
 			hide("node7")
 		elseif ((Tux:has_item_equipped("The Super Exterminator!!!") or
 				Tux:has_item_equipped("Exterminator")) and (not HF_FirmwareUpdateServer_uploaded_faulty_firmware_update)) then
-				Npc:says(_"A Red Guard Member only points Exterminators to rebels and bots.", "NO_WAIT")
+				Npc:says(_"Even a Red Guard Member only points Exterminators to rebels and bots.", "NO_WAIT")
 				Npc:says(_"Unless I am a bot and do not realize it, I must request that you unequip it.")
 				end_dialog()
 		elseif (tux_has_joined_guard) then
