@@ -24,7 +24,7 @@ return {
 		if (not arena_current_level) then
 			end_dialog()
 		elseif (arena_won) then
-			Npc:says(_"[b]Terminated[/b]")
+			Npc:says(_"[b]Arena Terminated[/b]")
 			end_dialog()
 		elseif (not arena_remaining_bots) then
 			Npc:says(_"[b]Click on the button to stop the arena[/b]")
