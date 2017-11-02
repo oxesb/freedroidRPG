@@ -63,7 +63,7 @@ return {
 					if (not done_quest("Novice Arena")) then
 						--change_obstacle_state("NoviceArenaExitDoor", "opened")
 						display_console_message(_"Novice arena cleared!")
-						display_big_message(_"Level cleared!")
+						display_big_message(_"Novice arena cleared!")
 						Tux:end_quest("Novice Arena", _"I won the fight in the novice arena.")
 					end
 					if (arena_ranking == "novice") then
