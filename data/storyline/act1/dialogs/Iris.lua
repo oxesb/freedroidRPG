@@ -18,9 +18,10 @@
 ----------------------------------------------------------------------
 --[[WIKI
 PERSONALITY = { "Independent", "Free Spirit", "Reclusive" },
-MARKERS = { ITEMID1 = "Desk Lamp" },
-BACKSTORY = "$$NAME$$ is a treasure hunter living in the town. $$NAME$$ complains about the amount of light in her quarters
-	 and will trade with Tux for a $$ITEMID1$$."
+MARKERS = { ITEMID1 = "Desk Lamp", NPCID1 = "Erin" },
+PURPOSE = "$$NAME$$ is a treasure hunter living in the town. $$NAME$$ complains about the amount of light in her quarters
+	 and will trade with Tux for a $$ITEMID1$$.",
+BACKSTORY = "$$NAME$$ may be Francis' daughter, and a spy of the Rebel Faction, but this information remains to be checked. She may also have some backstory with $$NPCID1$$ but this also remains to be checked."
 WIKI]]--
 
 local Npc = FDrpg.get_npc()
@@ -42,7 +43,7 @@ return {
 					Npc:says(_"I'll trade you a book, for that lamp and 100 credits.")
 					show("node7")
 				else
-					show("node5")
+					hide("node6") show("node5")
 				end
 			else
 				Npc:says_random(_"Sure is dark around here.",
@@ -175,7 +176,11 @@ return {
 		id = "node7",
 		text = _"Sure, sounds like a fair trade.",
 		code = function()
-			if (Tux:del_gold(100)) then
+			if (not Tux:has_item_backpack("Desk Lamp")) then
+				Npc:says(_"Uhm, sorry, but where is the Desk Lamp?")
+				Tux:says(_"Erm, ah, good question, where could it be?")
+				Npc:says(_"Well, eff off until you have the lamp!")
+			elseif (Tux:del_gold(100)) then
 				Tux:says(_"Take these 100 valuable circuits.")
 				Npc:says(_"Ok, here it is. Take this book.")
 				Npc:says(_"It's quite old and some pages are missing, but the main message is still clear.")
