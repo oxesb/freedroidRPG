@@ -27,6 +27,9 @@ local Tux = FDrpg.get_tux()
 
 return {
 	FirstTime = function()
+		Npc:says(_"Welcome to this Bar! First time here, eh? Here, take this Mug for FREE!")
+        Npc:says(_"You are required to bring it any time you want something to drink! Don't lose it, or you'll need to buy a new one!")
+		Tux:add_item("Mug", 1)
 		show("node0", "node3")
 	end,
 
@@ -224,9 +227,14 @@ return {
 		id = "node14",
 		text = _"Hey, I could use a refreshing drink!",
 		code = function()
-			Npc:says(_"Here, have a Watery Mary.")
-			Tux:heat(-1000)
-			hide("node14")
+			if (not Tux:has_item_backpack("Mug")) and
+			   (not Tux:has_item_backpack("Cup")) then
+				Npc:says(_"You'll need a mug or a cup for me to put it in.")
+			else
+			    Npc:says(_"Here, have a Watery Mary.")
+			    Tux:heat(-1000)
+			    hide("node14")
+            end
 		end,
 	},
 	{
