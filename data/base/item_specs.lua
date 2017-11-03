@@ -1190,7 +1190,7 @@ item_list{
 	base_price = 250,
 	inventory = {x = 1, y = 1,stackable = true, image = "grenades/vmx/inv_image.png" },
 	drop = {sound = "Item_Drop_Sound_4.ogg"},
-	description =_[[The gas does not look terrifying. It even smells somewhat nice. And then you die. You die a most horrible death, never knowing what killed you.]],
+	description =_[[The gas does not look terrifying. It even smells somewhat nice. And then you die. You die a most horrible death, never knowing what killed you. (Note: This does not work on bots)]],
 	rotation_series = "grenades/vmx",
 },
 ----------------------------------------------------------------------
@@ -2429,7 +2429,7 @@ item_list{
 	base_price = 100,
 	inventory = {x = 1, y = 1, image = "addons/silencer/inv_image.png" },
 	drop = {sound = "Item_Drop_Sound_4.ogg"},
-	description =_[[Allowing you to catch your enemies by surprise, this silencer helps you to do more damage in ranged combat.]],
+	description =_[[This new generation silencer will not only allow you to catch your enemies by surprise, but will also help you to do more damage in ranged combat.]],
 	-- NOTE silencers slow bullets to subsonic to make them quieter when they emerge from the barrel.
 	rotation_series = "addons/silencer",
 },
