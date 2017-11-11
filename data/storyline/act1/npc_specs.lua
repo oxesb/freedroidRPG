@@ -25,6 +25,7 @@ npc_list{
 	"Singularity",
 	--	"Serge",
 	"Scavenger",             --[[ _"Scavenger Bot" ]]--
+	"Saul",                  --[[ _"Saul", _"Saul, leader of the Resistance" ]]--
 	"Samson",                --[[ _"Coder", _"Samson, the Coder" ]]--
 	"SADD",                  --[[ _"SADD - Exterminate Mode", _"SADD - Secret Area Defense Droid" ]]--
 	"SACD",                  --[[TRM]]--

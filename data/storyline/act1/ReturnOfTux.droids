@@ -436,6 +436,7 @@ Level=45
 ** Beginning of new Level **
 Level=46
 
+T=WOR: PosX=49 PosY=30 Faction="resistance" UseDialog="Saul" ShortLabel=_"Saul" Marker=0 RushTux=1 Fixed=0 DropItemId="none" MaxDistanceToHome=0
 ** End of this levels Special Forces data **
 ---------------------------------------------------------
 ** Beginning of new Level **
