@@ -71,6 +71,13 @@ bullet_list {
 	sound = "Plasma_Pistol.ogg",
 },
 
+-- this is the electro laser shoot of the Electro Laser Rifle
+{
+	name = "electro_laser",
+	sound = "Exterminator.ogg",
+	blast_type = "iso_blast_droid",
+},
+
 -- this is the 12-gauge shotgun bullet, showing nice spread
 {
 	name = "shotgun",

@@ -1168,7 +1168,7 @@ item_list{
 		reloading_time = 3.500000,
 		reloading_sound = "effects/item_sounds/Item_Range_Weapon_Put_Sound_0.ogg",
 		melee = false,
-		bullet = {type = "exterminator", speed = 70.000000, lifetime = -1.000000},
+		bullet = {type = "electro_laser", speed = 70.000000, lifetime = -1.000000},
 		ammunition = {id = "Laser power pack", clip = 8},
 		two_hand = true,
 		motion_class = "2hranged",
