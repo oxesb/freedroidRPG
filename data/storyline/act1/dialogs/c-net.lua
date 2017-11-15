@@ -106,10 +106,11 @@ return {
 		code = function()
 			Tux:says("lily", "NO_WAIT")
 			cli_says(_"Password : ", "NO_WAIT")
-			Tux:says("******")
 			if (not know_lily_password) then
+				Tux:says("******")
 				next("node9")
 			else
+				Tux:says("****")
 				c_net_username = "lily"
 				c_net_prompt = c_net_username .. "@c-net:~$"
 				Npc:says(_"Last login from /dev/tty3 on unknown" , "NO_WAIT")

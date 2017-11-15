@@ -108,7 +108,7 @@ return {
 					Npc:says(_"Congratulations on getting into the Red Guard!", "NO_WAIT")
 					Npc:says(_"I voted for you and that was what got you in!", "NO_WAIT")
 					if (not HF_Spencer_teleported) then
-						Npc:says(_"I said we'd be buddies, didn't I? Want to stand guard at the gate with me? It gets boring with just that 614 to talk to.")
+						Npc:says(_"I said we'd be buddies, didn't I? Want to stand guard with me? It gets boring after a while.")
 						Npc:says(_"I could tell you all the secrets of the Red Guard.")
 						show("node30") -- @TODO add another way to get this node post-firmware update
 					else
