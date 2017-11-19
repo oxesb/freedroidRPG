@@ -1002,6 +1002,8 @@ return {
 			Npc:says(_"After this, you have to make a socket in your equipment so you can plug in the add-on.")
 			Npc:says(_"That's the theory. Simple, isn't it?")
 			Npc:says(_"I'll give you some materials now and let you craft an add-on.")
+			Npc:says(_"Usually you'll do this in some sort of mini-factory.", "NO_WAIT")
+            Npc:says(_"But I'll do this for you without one or my name is not Tom. Tutorial Tom.")
 			Npc:says(_"Pay attention to the type of socket the add-on needs.")
 			Tux:update_quest("Tutorial Upgrading Items", _"Before crafting an add-on I have to get some materials. The best way is to extract them from the bots, using Extract Bot Parts skill. Each add-on requires a socket in the item. When the add-on is ready, I have to create a socket in the item and plug the add-on. Only technicians can craft add-ons or plug them.")
 			-- TODO decide on what type of upgrade should player make?
