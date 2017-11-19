@@ -133,7 +133,7 @@ return {
 				Npc:says(_"Too bad. I have never felt so sick.", "NO_WAIT")
 				Npc:says(_"Let me die, man!")
 
-				if (refused_to_help_bender) then
+				if (refused_to_help_Bender) then
 					show("node8")
 				end
 			else
