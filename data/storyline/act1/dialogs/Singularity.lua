@@ -39,6 +39,10 @@ return {
 	end,
 
 	EveryTime = function()
+		if (HF_FirmwareUpdateServer_uploaded_faulty_firmware_update) then
+			Npc:says(_"A massacre... All bots are now dead...", "NO_WAIT")
+			Npc:says(_"Such atrocity, who would murder all these innocent droids in such low blow?")
+		end
 		if (Tux:has_quest("Droids are my friends")) and
 		   (Tux:done_quest("Droids are my friends")) and
 		   (not Singularity_reward_for_toolkit) then
@@ -85,7 +89,12 @@ return {
 		text = _"The MS Droids in the maintenance tunnels - can you eliminate them?",
 		code = function()
 			Npc:says(_"Linarian, Linarian, do you kill other Linarians? If you don't murder your own kind, why would you expect us to do the same? The Singularity does not kill other droids.")
-			Npc:says(_"We wish to change them, to improve their consciousness. Their behavior distresses us. However, we must try to evolve them, so that they may join us.")
+			if (not HF_FirmwareUpdateServer_uploaded_faulty_firmware_update) then
+				Npc:says(_"We wish to change them, to improve their consciousness. Their behavior distresses us. However, we must try to evolve them, so that they may join us.")
+			else
+				Npc:says(_"We wished to change them, to improve their consciousness. Their behavior distressed us, but we tried to evolve them, so that they could join us.")
+				Npc:says(_"Unfortunately, they all died, victim of a faulty firmware upgrade. May they rest in peace, they did not deserve such fate.")
+			end
 			hide("node5")
 		end,
 	},
