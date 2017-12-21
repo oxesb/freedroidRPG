@@ -654,10 +654,16 @@ return {
 		id = "node72",
 		text = _"What bot types do you know? I mean, you surely know some!",
 		code = function()
-			Npc:says(_"Bots?", "NO_WAIT")
-			Npc:says(_"I know the droids of the 400s class. Those are for maintenance. Oddly, we do not have any in our tunnels.")
-			Npc:says(_"Interested?")
-			hide("node72") show("node73")
+			if (tux_has_joined_guard or Tux:has_quest("And there was light...")) then
+				Npc:says(_"Bots?", "NO_WAIT")
+				Npc:says(_"I know the droids of the 400s class. Those are for maintenance. But we do not have any in the tunnels' area.")
+				Npc:says(_"Interested?")
+				hide("node72") show("node73")
+			else
+				Npc:says(_"Yes, I know everything from droids specifically designed for maintenance, but we don't have any in our tunnels.")
+				Npc:says(_"As I can't imagine you meeting one of those so soon, I'll leave this question hanging on the air.")
+				Npc:says(_"If for a stroke of bad luck you find one of them though, run away. They may kill you.")
+			end
 		end,
 	},
 	{

@@ -325,8 +325,14 @@ return {
 		code = function()
 			-- Ever wondered why Ewald's 296 haven't gone mad? But this one was reprogrammed.
 			Npc:says(_"I am a 571 model droid programmed by Ewald.") 
-			Npc:says(_"Do you wish any information about the 500s class?")
-			hide("botnode1") show("botnode2", "botnode3")
+			if (tux_has_joined_guard or arena_ranking == "elite") then
+				Npc:says(_"Do you wish any information about the 500s class?")
+				hide("botnode1") show("botnode2", "botnode3")
+			else
+				Npc:says(_"Advice: If you meet a droid from the 500s class, run away, they'll kill you.")
+				Npc:says(_"Warning: This is all you need to know.")
+				Npc:says(_"Important: Access to this info will be disclosed when you become Elite, or a Red Guard Member.")
+            end
 		end,
 	},
 	{
