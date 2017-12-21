@@ -247,7 +247,7 @@ return {
 	},
 	{
 		id = "tm_training",
-		text = _"I promise I'll make you proud by being the best disciple one could wish for.",
+		text = _"I'll train hard everyday, and make you proud by being the best disciple one could wish for.",
 		code = function()
 			Erin_payment_method="training"
 			Tux:says(_"You will be able to brag about my deeds to all your friends.")
@@ -258,7 +258,7 @@ return {
 	},
 	{
 		id = "tm_weapons",
-		text = _"Your weapon needs update. I can provide you that.",
+		text = _"I could arrange to expand your weapon arsenal.",
 		code = function()
 			Erin_payment_method="weapons"
 			Npc:says(_"Hmm, that can do.")
