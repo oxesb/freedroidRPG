@@ -28,6 +28,7 @@ local Tux = FDrpg.get_tux()
 return {
 	FirstTime = function()
 		show("node0")
+		Benjamin_objective="None"
 	end,
 
 	EveryTime = function()
@@ -70,6 +71,7 @@ return {
 		text = _"Did you think about somehow gathering the excess heat and using it to make the beam stronger?",
 		code = function()
 			Npc:says(_"Hmm... There might be something in that idea. I will think about it.")
+			Benjamin_objective = "damage"
 			hide("node3", "node4", "node5")
 		end,
 	},
@@ -78,6 +80,7 @@ return {
 		text = _"If I were you, I would focus my work on the firing rate.",
 		code = function()
 			Npc:says(_"Hmm... I will think about it. Hmm...")
+			Benjamin_objective = "firing"
 			hide("node3", "node4", "node5")
 		end,
 	},
@@ -86,6 +89,7 @@ return {
 		text = _"You know, laser pistols are not a very promising weapon. I think you should work on something different.",
 		code = function()
 			Npc:says(_"Yeah, maybe you are right. I will think about it.")
+			Benjamin_objective = "plasma"
 			hide("node3", "node4", "node5")
 		end,
 	},

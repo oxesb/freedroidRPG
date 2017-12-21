@@ -603,16 +603,18 @@ item_list{
 	name =_"Energy Whip",
 	slot = "weapon",
 	weapon = {
-		damage = "40:40",
-		attack_time = 0.500000,
-		reloading_time = 0.000000,
+		damage = "18:25",
+		attack_time = 0.600000,
+		reloading_time = 2.500000,
 		melee = true,
+		ammunition = {id = "Laser power pack", clip = 15},
 		motion_class = "1hmelee",
 	},
-	base_price = 0,
+	requirements = {strength = 25, dexterity = 25},
+	base_price = 2500,
 	inventory = {x = 2, y = 2, image = "weapons/energy_whip/inv_image.png" },
 	drop = {sound = "drop_sword_sound.ogg"},
-	description =_[[FIXME and all values]],
+	description =_[[An energy whip commonly found at managment from MegaSys facilities. What purpose they serve for is still unknown. Because the real whip is pure energy, it will never break, but it does not stays on the strong side.]],
 	rotation_series = "weapons/energy_whip",
 	tux_part = "iso_energy_whip",
 },
@@ -1038,6 +1040,32 @@ item_list{
 ----------------------------------------------------------------------
 
 {
+	id = "Electro Laser Rifle",
+	name =_"Electro Laser Rifle",
+	slot = "weapon",
+	weapon = {
+		damage = "30:75",
+		attack_time = 1.500000,
+		reloading_time = 3.500000,
+		reloading_sound = "effects/item_sounds/Item_Range_Weapon_Put_Sound_0.ogg",
+		melee = false,
+		bullet = {type = "electro_laser", speed = 70.000000, lifetime = -1.000000},
+		ammunition = {id = "Laser power pack", clip = 6},
+		two_hand = true,
+		motion_class = "2hranged",
+	},
+	requirements = {strength = 25},
+	durability = "30:40",
+	base_price = 4500,
+	inventory = {x = 2, y = 5, image = "weapons/electro_laser_rifle/inv_image.png" },
+	drop = {class = "8:9", sound = "Item_Range_Weapon_Put_Sound_0.ogg"},
+	description =_[[A specialized beam of laser momentarily ionizes the air between the target and the gun, turning it into highly conductive plasma. Milliseconds later, a powerful electric shock is delivered through the air and hits the target. This weapon is effective against people as it is against bots, and indeed few are the droid classes that can withstand more than a few hits from it before going down. The ammo is cheap, and it is one of the few man-made weapons which actually produces a blast, being able to harm more than one bot at once. However, it is still no match against Exterminators.]],
+	rotation_series = "weapons/electro_laser_rifle",
+	tux_part = "iso_electro_laser_rifle",
+},
+----------------------------------------------------------------------
+
+{
 	id = "Plasma energy container",
 	name =_"Plasma Energy Container",
 	base_price = 4,
@@ -1098,6 +1126,32 @@ item_list{
 ----------------------------------------------------------------------
 
 {
+	id = "Plasma Cannon",
+	name =_"Plasma Cannon",
+	slot = "weapon",
+	weapon = {
+		damage = "40:100",
+		attack_time = 1.000000,
+		reloading_time = 3.500000,
+		reloading_sound = "effects/item_sounds/Item_Range_Weapon_Put_Sound_0.ogg",
+		melee = false,
+		bullet = {type = "plasma_white", speed = 15.000000, lifetime = -1.000000},
+		ammunition = {id = "Plasma energy container", clip = 10},
+		two_hand = true,
+		motion_class = "2hranged",
+	},
+	requirements = {strength = 25},
+	durability = "140:160",
+	base_price = 2500,
+	inventory = {x = 2, y = 3, image = "weapons/plasma_gun/inv_image2.png" },
+	drop = {class = "8:9", sound = "Item_Range_Weapon_Put_Sound_0.ogg"},
+	description =_[[The plasma cannon is one of the slowest weapon mankind even produced. Based on the Barrett M86 Sniper Rifle, it takes a long time to heat before shooting. Being a plasma bullet, a newbie will most likely miss the target. However, for the skilled marksman, it is a good alternative to a pulse laser cannon, because once it hit, molten metal is usually all that remains where the bot used to be.]],
+	rotation_series = "weapons/plasma_gun",
+	tux_part = "iso_gun1",
+},
+----------------------------------------------------------------------
+
+{
 	id = "2 mm Exterminator Ammunition",
 	name =_"2mm Exterminator Ammunition",
 	base_price = 5,
@@ -1138,8 +1192,8 @@ item_list{
 	name =_"The Super Exterminator!!!",
 	slot = "weapon",
 	weapon = {
-		damage = "90:140",
-		attack_time = 0.500000,
+		damage = "80:120",
+		attack_time = 0.600000,
 		reloading_time = 4.500000,
 		reloading_sound = "effects/item_sounds/Item_Range_Weapon_Put_Sound_0.ogg",
 		melee = false,
@@ -1155,31 +1209,6 @@ item_list{
 	description =_[[This bad boy is known to blow away most enemies with a single blast. A dangerous weapon that you don't want to be on the receiving end of.]],
 	rotation_series = "weapons/exterminator_simple",
 	tux_part = "iso_exterminator",
-},
-----------------------------------------------------------------------
-
-{
-	id = "Electro Laser Rifle",
-	name =_"Electro Laser Rifle",
-	slot = "weapon",
-	weapon = {
-		damage = "80:110",
-		attack_time = 1.500000,
-		reloading_time = 3.500000,
-		reloading_sound = "effects/item_sounds/Item_Range_Weapon_Put_Sound_0.ogg",
-		melee = false,
-		bullet = {type = "electro_laser", speed = 70.000000, lifetime = -1.000000},
-		ammunition = {id = "Laser power pack", clip = 8},
-		two_hand = true,
-		motion_class = "2hranged",
-	},
-	durability = "30:40",
-	base_price = 4500,
-	inventory = {x = 2, y = 5, image = "weapons/electro_laser_rifle/inv_image.png" },
-	drop = {class = "9", sound = "Item_Range_Weapon_Put_Sound_0.ogg"},
-	description =_[[A specialized beam of laser momentarily ionizes the air between the target and the gun, turning it into highly conductive plasma. Milliseconds later, a powerful electric shock is delivered through the air and hits the target. This weapon is effective against people as it is against bots, and indeed few are the droid classes that can withstand more than a few hits from it before going down. The one downside is the high cost involved in crafting this weapon, which makes it very rare. Other than that, even the Exterminators have difficulty matching this weapon, the pride of human race.]],
-	rotation_series = "weapons/electro_laser_rifle",
-	tux_part = "iso_electro_laser_rifle",
 },
 ----------------------------------------------------------------------
 

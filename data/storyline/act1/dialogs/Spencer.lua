@@ -487,7 +487,26 @@ return {
 			Npc:says(_"Good luck.")
 			Tux:add_quest("Propagating a faulty firmware update", _"I can now enter Hell Fortress and find the upgrade server terminal. The fortress gates are in the Crystal Fields. Spencer told the guards to open the doors for me. He said he'd probably contact me when I found the server.")
 			Npc:says(_"Wait. I have a weapon here. It is not an Exterminator, but should save your life in the Hell Fortress.")
-			Tux:add_item("Laser Pulse Cannon", 1)
+            if (not has_met("Benjamin") or Benjamin_objective == "None") then
+				Npc:says(_"I originally planned to give you a gun, but our gunsmith, Benjamin, did not finished any prototype.")
+				Npc:says(_"We found this whip at the Hell Fortress. I'm not really sure what it was used for, but it should be a good weapon.")
+    			Tux:add_item("Energy whip")
+            elseif (Benjamin_objective == "damage") then
+				Npc:says(_"Benjamin started trying to make laser pistols stronger by absorbing the heat, and he ended up creating plasma.")
+				Npc:says(_"It deals much more damage than it claims to, because it blasts. A nice gun, but not a pistol, unfortunately.")
+    			Tux:add_item("Electro Laser Rifle")
+            elseif (Benjamin_objective == "firing") then
+				Npc:says(_"Benjamin kept trying to make the laser pistol shoot faster, even if that compromised the damage each hit causes.")
+				Npc:says(_"What he developed shoot so fast, that he could not make it stop. A nice gun, but not a pistol, unfortunately.")
+    			Tux:add_item("Laser Pulse Cannon")
+            elseif (Benjamin_objective == "plasma") then
+				Npc:says(_"Benjamin gave up on laser pistols and started enhancing plasma pistols instead.")
+				Npc:says(_"He could not make the bullet faster, but the damage went sky high. A nice gun, but not a pistol, unfortunately.")
+    			Tux:add_item("Plasma Cannon")
+			else
+				Npc:says("ERROR, Spencer NODE 44, Benjamin_objective not handled")
+    			Tux:add_item("Exterminator") -- as if.
+			end
 
 			if (difficulty_level() > 2) then -- difficulty neither easy, nor normal, nor hard
 				Npc:says("ERROR, Spencer NODE 44, game difficulty not handled")
