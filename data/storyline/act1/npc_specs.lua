@@ -19,6 +19,7 @@ npc_list{
 	"Tamara",                --[[ _"Tamara - Librarian" ]]--
 	"Stone",                 --[[ _"Stone - Shop owner", _"Lily Stone - Shop owner" ]]--
 	"Spencer",
+	"Speechless",
 	"Sorenson",              --[[ _"Sorenson - Mystery coder" ]]--
 	"Skippy",                --[[ _"Skippy - Map-Maker Maker" ]]--
 	"Singularity-Drone",
