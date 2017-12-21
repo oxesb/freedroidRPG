@@ -384,11 +384,11 @@ return {
 
 	{
 		id = "professional_money",
-		text = _"Teach me how to smash concrete with my bare hands! (costs 1500 circuits)",
+		text = _"Teach me how to smash concrete with my bare hands! (costs 3000 circuits)",
 		echo_text = false,
 		code = function()
-			if (Tux:can_train(1500, 0)) then
-							Tux:del_gold(1500)
+			if (Tux:can_train(3000, 0)) then
+							Tux:del_gold(3000)
 							hide("professional_money")
 							next("professional")
 			else
@@ -428,11 +428,11 @@ return {
 
 	{
 		id = "expert_money",
-		text = _"What do you want, Erin? I am ready to become an expert at melee! (costs 2000 circuits)",
+		text = _"What do you want, Erin? I am ready to become an expert at melee! (costs 6500 circuits)",
 		echo_text = false,
 		code = function()
-			if (Tux:can_train(2000, 0)) then
-							Tux:del_gold(2000)
+			if (Tux:can_train(6500, 0)) then
+							Tux:del_gold(6500)
 							hide("expert_money")
 							next("expert")
 			else

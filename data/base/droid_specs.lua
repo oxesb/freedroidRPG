@@ -1793,7 +1793,7 @@ droid_list {
 		xp_reward = 200,
 	},
 	equip = {
-		weapon = "Energy whip",
+		weapon = "Laser staff",
 	},
 	drop_draw = {
 		class = 9,
