@@ -31,7 +31,7 @@ return {
 
 	EveryTime = function()
 		if (HF_FirmwareUpdateServer_uploaded_faulty_firmware_update) then
-			Npc:says(_"Hey, what are you doing?! Go back to work! All bots died and I can't make they work again. We'll be all in trouble if boss decide to pay us visit!")
+			Npc:says(_"Hey, what are you doing?! Go back to work! All bots died and I can't make them work again. We'll be all in trouble if boss decides to pay us visit!")
 			end_dialog()
 		end
 
