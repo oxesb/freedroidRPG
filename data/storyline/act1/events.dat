@@ -65,7 +65,7 @@ Silent=0
 * End of trigger *
 
 * New event trigger *
-Name=_"To Novice Arena"
+Name=_"To Regular Arena"
 Trigger at label="0to29"
 Silent=0
 <LuaCode>
@@ -1837,7 +1837,7 @@ Silent=1
 ## Level 29 ##
 ##############
 * New event trigger *
-Name=_"Exit Novice Arena"
+Name=_"Exit Arena"
 Trigger at label="29to0"
 Silent=0
 <LuaCode> teleport("0from29") </LuaCode>
