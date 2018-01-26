@@ -99,7 +99,7 @@ return {
 
 		show("tasks", "end")
 		hide("sandwich", "sandwich_sudo")
-m	end,
+	end,
 	{
 		id = "arena_enroll",
 		text = _"I want to fight.",
