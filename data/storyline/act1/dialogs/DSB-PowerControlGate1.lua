@@ -33,7 +33,9 @@ return {
 		cli_says(_"Password : ", "NO_WAIT")
 		Tux:says(_"*******", "NO_WAIT")
 		cli_says(_"Login failed. Entering as Guest")
-		Npc:says(_" ", "NO_WAIT")
+		Npc:says(" ", "NO_WAIT")
+		Npc:says(_"Welcome to [b]Power Control Gate 1 Terminal[/b]!", "NO_WAIT")
+		Npc:says(" ", "NO_WAIT")
 		if (DSB_PowerControlGate1_date == nil) then
 		--; TRANSLATORS: %s = a date ,  %d = a year number
 			Npc:says(_"First login from /dev/ttySO on %s %d", DSB_PowerControlGate1_date_1, DSB_PowerControlGate1_year, "NO_WAIT")
