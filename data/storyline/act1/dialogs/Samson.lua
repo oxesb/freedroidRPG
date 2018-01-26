@@ -58,7 +58,7 @@ return {
 		code = function()
 			Npc:says(_"Well, it was fun. I got to test a lot of new ideas. There was a man who always came up with crazy ideas, I can't recall his name. Making them reality was my task. It was fun, but time-consuming.")
 			Npc:says(_"About three months before the Great Assault happened, that man vanished. There were no signs of where he could have gone.")
-			Npc:says(_"We were doing a \"sensor\" system. He said that MegaSys command droids used those gadgets to detect invisible things, and if we could duplicate, our security droids would be almost invincible.")
+			Npc:says(_"We were doing a \"sensor\" system. He said that MegaSys command droids used those gadgets to detect invisible things, and if we could replicate, our security droids would be almost invincible.")
 			Npc:says(_"Because of his disappearance, we never finished that. I was thinking though, maybe if someone got me his work, I could finish it, and add those so-called \"sensors\" on the droids you hack...")
 			Npc:says(_"...sorry, I'm just rambling. Please forget everything I've said.") -- Quest is NYI as well as changing sensors via Lua.
 			hide("node1")

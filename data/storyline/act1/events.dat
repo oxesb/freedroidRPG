@@ -453,7 +453,7 @@ Silent=1
 		if (not (get_obstacle_type("59-Teleporter") == 21)) then
 			teleport_home()
 		else
-			teleport("59-Teleporter-3")
+			teleport("59-Teleporter-2")
 		end
 		change_obstacle_state("Town-Teleporter", "purple")
 	end

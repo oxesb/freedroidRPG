@@ -660,7 +660,7 @@ return {
 				Npc:says(_"Interested?")
 				hide("node72") show("node73")
 			else
-				Npc:says(_"Yes, I know everything from droids specifically designed for maintenance, but we don't have any in our tunnels.")
+				Npc:says(_"Yes, I know everything about droids specifically designed for maintenance, but we don't have any in our tunnels.")
 				Npc:says(_"As I can't imagine you meeting one of those so soon, I'll leave this question hanging on the air.")
 				Npc:says(_"If for a stroke of bad luck you find one of them though, run away. They may kill you.")
 			end

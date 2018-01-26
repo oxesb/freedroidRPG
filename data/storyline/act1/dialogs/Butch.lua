@@ -192,7 +192,7 @@ return {
 				Npc:says(_"You wanted a fight, and you got one.")
 				Npc:says(_"I offered a fight, and you wanted that.")
 			else
-				Npc:says(_"You wanted a fight, and you will got one.")
+				Npc:says(_"You wanted a fight, and you will get one.")
 				Npc:says(_"I offered a fight, then do it.")
 			end
 			Npc:says(_"There is nothing more to say, newbie.")

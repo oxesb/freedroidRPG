@@ -639,6 +639,7 @@ return {
 			Npc:says(_"This is the source of all our suffering.")
 			Npc:says(_"You are truly a living legend, Linarian. I don't know how you did it. I don't know how we can thank you.")
 			Npc:says(_"You've given us life, and hope.")
+			change_obstacle_state("ServerRoomDoor", "opened")
 			hide("node61") show("node62", "node63", "node64")
 		end,
 	},
@@ -724,7 +725,6 @@ return {
 			enable_event_trigger("All aboard!")
 			change_obstacle_state("HF-RoboFreighter-Gate01", "opened")
 			change_obstacle_state("HF-RoboFreighter-Gate02", "opened")
-			change_obstacle_state("ServerRoomDoor", "opened")
 			Tux:teleport("HF-LandingZone")
 
 			hide("node65", "node66")
