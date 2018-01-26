@@ -69,6 +69,10 @@ return {
 			next("node60")
 		elseif (HF_Spencer_teleported) then
 			hide("node7")
+			if (Spencer_node66) then
+				Spencer_node66=false
+				show("node66")
+			end
 		elseif ((Tux:has_item_equipped("The Super Exterminator!!!") or
 				Tux:has_item_equipped("Exterminator")) and (not HF_FirmwareUpdateServer_uploaded_faulty_firmware_update)) then
 				Npc:says(_"Even a Red Guard Member only points Exterminators to rebels and bots.", "NO_WAIT")
@@ -669,7 +673,10 @@ return {
 			Npc:says(_"But the work isn't done... Not even close. The entire galaxy is still at war.")
 			Npc:says(_"You saved our little town, and you've proven that we can win this thing.")
 			Npc:says(_"We can't rest now. It's going to be hard and dangerous, but the alternative is death for humanity.")
-			hide("node63", "node64") show("node66")
+			Npc:says(_"As for you, please rest a little at our Town, and then come straight to me, so we can carry on.")
+			Tux:update_quest("Propagating a faulty firmware update", _"*yawn* It wasn't easy, but the town is now safe. I still have a galaxy to save, though! I will only restock quickly at the town, and report again to Spencer.")
+			Spencer_node66=true
+			hide("node63", "node64")
 		end,
 	},
 	{
@@ -682,8 +689,10 @@ return {
 			Npc:says(_"And, whether or not you intended to, you've proven that we have a chance against the bots. Something worth fighting for. Worth living for.")
 			Npc:says(_"You'll probably be happy to know that the entire galaxy is pretty much your playground now, Linarian. You'll have all the bots in the world to play with, and lots of opportunities to be a hero.")
 			Tux:says(_"Awesome!")
-			Tux:update_quest("Propagating a faulty firmware update", _"I'm so cool. I saved a bunch of people and bashed a bunch of bots. And there's much more where both of those came from! I'm done here, it's time to go help the next dump.")
-			hide("node63", "node64") show("node66")
+			Npc:says(_"Please, rest a little at our Town, and then come straight to me, so we can carry on.")
+			Tux:update_quest("Propagating a faulty firmware update", _"I'm so cool. I saved a bunch of people and bashed a bunch of bots. And there's much more where both of those came from! I'm done here, I will quickly restock at town, and then it's time to go help the next dump. All I need to is ask Spencer where I should go next.")
+			Spencer_node66=true
+			hide("node63", "node64")
 		end,
 	},
 	{

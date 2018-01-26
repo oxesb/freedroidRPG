@@ -238,11 +238,15 @@ items = {
 npc_shop{
 name = "Karol",
 items = {
+	 {"Source Book of Repair equipment"},
+	 {"Barf's Energy Drink"},
+	 {"Anti-grav Pod for Droids"},
 	 {"Chainsaw"},
 	 {"Iron pipe"},
 	 {"Big wrench"},
 	 {"Power hammer"},
 	 {"Crowbar"},
+	 {"Pot Helmet"},
 	 {"Reinforced Jacket"},
 	 {"Protective Jacket"},
 	 {"Worker Shoes"}

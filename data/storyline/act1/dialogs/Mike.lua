@@ -99,7 +99,7 @@ return {
 
 		show("tasks", "end")
 		hide("sandwich", "sandwich_sudo")
-	end,
+m	end,
 	{
 		id = "arena_enroll",
 		text = _"I want to fight.",
@@ -323,9 +323,8 @@ return {
 		id = "botnode1",
 		text = _"You're not like the droids above.",
 		code = function()
-			-- Ever wondered why Ewald's 296 haven't gone mad? But this one was reprogrammed.
-			Npc:says(_"I am a 571 model droid programmed by Ewald.") 
-			if (tux_has_joined_guard or arena_ranking == "elite") then
+			Npc:says(_"I am a 571 model droid, designed for crew managment.")
+			if (tux_has_joined_guard or arena_ranking == "champion") then
 				Npc:says(_"Do you wish any information about the 500s class?")
 				hide("botnode1") show("botnode2", "botnode3")
 			else
@@ -350,15 +349,13 @@ return {
 	},
 	{
 		id = "botnode3",
-		text = _"Ewald programmed you???",
+		text = _"Shouldn't you be hostile?",
 		code = function()
-			Npc:says(_"According to my memory databanks, Ewald bought me a few years ago to manage arenas fights for his enjoyment.", "NO_WAIT")
-			Npc:says(_"However the Red Guard confiscated from him and made Richard reprogram me right after the Great Assault happened.")
-			if Tux:has_met("Richard") then
-				Tux:says(_"It makes sense. An arena robot sure would be handy for the Red Guard.")
-			else
-				Tux:says(_"Richard? Can't wait to know him. But surely an arena robot would be handy for the Red Guard.")
-			end
+            --; TRANSLATORS: “Mike's” does not reefer to this bot in specific, but all Arena Management bots.
+			Npc:says(_"Mike's currently does not uses MegaSys default firmware.", "NO_WAIT")
+			Npc:says(_"I am running under [b]botnet-for-workgroups-3.11d[/b] Kernel.")
+            Npc:says(_"So do not worry, I won't suddenly start attacking you.")
+            --Tux:says(_"Yes, after all, you could just send arena bots after me, couldn't you?")
 			hide("botnode3")
 		end,
 	},

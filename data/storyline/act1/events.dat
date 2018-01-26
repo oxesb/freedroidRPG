@@ -2177,34 +2177,6 @@ Silent=1
 <LuaCode> teleport("69from31") </LuaCode>
 * End of trigger *
 
-* New event trigger *
-Name="HF-gate-check1"
-Trigger at label="HF-gate-check1"
-Silent=1
-<LuaCode>
-	if ((cmp_obstacle_state("HF-Gate-inner", "opened")) and
-		(cmp_obstacle_state("HF-Gate-outer", "opened")) and
-		(has_quest("Open Sesame")) and
-		(not done_quest("Open Sesame"))) then
-			end_quest("Open Sesame", _"I found the gates. The firmware server should lay beyond them.")
-	end
-
-</LuaCode>
-* End of trigger *
-
-* New event trigger *
-Name="HF-gate-check2"
-Trigger at label="HF-gate-check2"
-Silent=1
-<LuaCode>
-	if ((cmp_obstacle_state("HF-Gate-inner", "opened")) and
-		(cmp_obstacle_state("HF-Gate-outer", "opened")) and
-		(has_quest("Open Sesame")) and
-		(not done_quest("Open Sesame"))) then
-			end_quest("Open Sesame", _"I found the gates. The firmware server should lay beyond them.")
-	end
-</LuaCode>
-
 Name="MSO-BreakingGlassWallTrap"
 Trigger at label="MSO-BreakingGlassWallTrapTrigger"
 Silent=1

@@ -26,21 +26,22 @@ local Tux = FDrpg.get_tux()
 
 return {
 	EveryTime = function()
-		if ((cmp_obstacle_state("HF-Gate-inner", "opened")) and
-			(cmp_obstacle_state("HF-Gate-outer", "opened")) and
-			(Tux:has_quest("Open Sesame")) and
-			(not Tux:done_quest("Open Sesame"))) then
-				Tux:end_quest("Open Sesame", _"I found the gates. The firmware server should lay beyond them.")
-		end
-
 		Npc:says(_"Welcome to the MegaSys Factory complex.")
 		if (HF_FirmwareUpdateServer_uploaded_faulty_firmware_update) then
 			Tux:says(_"Still alive? Don't you know that you should update your firmware often?")
 		end
 		Npc:says(_"Access is restricted to authorized personnel.")
 		Npc:says(_"Proof of authorization is required.")
+		if (not HF_EntranceBot_MSStockCertificateOpensGate) then
+			if (Tux:has_met("WillGapes")) then
+				Tux:update_quest("Open Sesame", "I managed to find the main gates, but an annoying droid locked the innermost gate. I need to proof that I am authorized to visit the Factory. Maybe Will Gapes can help?")
+			else
+				Tux:update_quest("Open Sesame", "I managed to find the main gates, but an annoying droid locked the innermost gate. I need to proof that I am authorized to visit the Factory. Maybe I missed something?")
+			end
+			HF_EntranceBot_MSStockCertificateOpensGate = true
+		end
 
-		if (HF_EntranceBot_MSStockCertificateOpensGate) then
+		if (Tux:done_quest("Open Sesame")) then
 			Tux:says(_"How many times do I have to show you my certificate, tin can?")
 			if (Tux:has_item("MS Stock Certificate")) then
 				Npc:says(_"[b]Validating certificate...[/b]")
@@ -83,8 +84,11 @@ return {
 				Npc:says(_"[b]Validation complete.[/b]", "NO_WAIT")
 				Npc:says(_"[b]Certificate valid.[/b]", "NO_WAIT")
 				Npc:says(_"You may enter.")
+				if ((Tux:has_quest("Open Sesame")) and
+					(not Tux:done_quest("Open Sesame"))) then
+						Tux:end_quest("Open Sesame", _"The gates are open. The firmware server should lay beyond them.")
+				end
 				change_obstacle_state("HF-EntranceInnerGate", "opened")
-				HF_EntranceBot_MSStockCertificateOpensGate = true
 			else
 				end_dialog()
 			end

@@ -555,11 +555,14 @@ return {
 				freezetime_seconds = _"second"
 			end
 
-			Npc:says(_"Draining this %s unit will get you %d HP but kill it and take %d %s.",
-				Npc:get_type(),
-				math.ceil(((Npc:get_max_health() - Npc:get_damage())/(difficulty_level()+1))),
-				math.ceil(Aftertakeover_freezetime),
-				freezetime_seconds)
+			if (not (Aftertakeover_drain_attempt == "never")) then
+				--; TRANSLATORS: Example: Draining this 123 unit will get you 5 HP but kill it and take 3 seconds.
+				Npc:says(_"Draining this %s unit will get you %d HP but kill it and take %d %s.",
+					Npc:get_type(),
+					math.ceil(((Npc:get_max_health() - Npc:get_damage())/(difficulty_level()+1))),
+					math.ceil(Aftertakeover_freezetime),
+					freezetime_seconds)
+			end
 
 			if (Aftertakeover_drain_attempt == "ask") then
 				Npc:says(_"Are you sure you want to drain this %s unit?", Npc:get_type())

@@ -18,6 +18,7 @@
 ----------------------------------------------------------------------
 --[[WIKI
 PURPOSE = "Another shop keeper."
+BACKSTORY = "$$NAME$$ probably breaks current storyline, and its fate is undecided."
 WIKI]]--
 
 local Npc = FDrpg.get_npc()
@@ -46,7 +47,7 @@ return {
 			Npc:says(_"Hi, yes, you can buy stuff from me.")
 			Npc:says(_"My name is Karol. I sell mostly tools which are needed to manufacture bots.")
 			Npc:set_name("Karol - Shop owner")
-			hide("node0") show("node1")
+			hide("node0") show("node1", "node2")
 		end,
 	},
 	{
@@ -55,6 +56,17 @@ return {
 		code = function()
 			Npc:says(_"Take a look.")
 			trade_with("Karol")
+		end,
+	},
+	{
+		id = "node2",
+		text = _"Can I buy droid parts? Like Entropy Inverters?",
+		code = function()
+			Npc:says(_"Sorry, these are all sold out.")
+			Npc:says(_"But I think a shipment will come by the next month.")
+            Tux:says(_"I can't wait that long.")
+            Npc:says(_"There is nothing I can do about it. Try exchanging with another worker, maybe?")
+			hide("node2")
 		end,
 	},
 	{

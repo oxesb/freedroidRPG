@@ -1854,11 +1854,11 @@ item_list{
 {
 	id = "Manual of the Extract Bot Parts",
 	name =_"Manual of the Extract Bot Parts",
-	right_use = {tooltip = _"USE FOR CHEATING ONLY. If you see this online, please report the bug.", add_skill = "Extract bot parts"},
+	right_use = {tooltip = _"USE FOR CHEATING ONLY. If you see this ingame, please report the bug.", add_skill = "Extract bot parts"},
 	base_price = 0,
 	inventory = {x = 2, y = 2, image = "repairbook/inv_image.png" },
 	drop = {sound = "drop_book_sound.ogg"},
-	description =_[[USE FOR CHEATING ONLY. If you see this online, please report the bug.]],
+	description =_[[USE FOR CHEATING ONLY. If you see this ingame, please report the bug.]],
 	rotation_series = "repairbook",
 },
 ----------------------------------------------------------------------
