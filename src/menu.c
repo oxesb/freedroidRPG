@@ -621,7 +621,7 @@ void Cheatmenu(void)
 		//
 		our_SDL_flip_wrapper();
 
-		switch (getchar_raw(NULL)) {
+		switch (getchar_ascii()) {
 		case 'f':
 			GameConfig.xray_vision_for_tux = !GameConfig.xray_vision_for_tux;
 			break;
@@ -658,7 +658,7 @@ void Cheatmenu(void)
 						if (l && !(l % ((GameConfig.screen_height == 768) ? 25 : 16))) {
 							printf_SDL(Screen, -1, -1, " --- MORE --- \n");
 							our_SDL_flip_wrapper();
-							if (getchar_raw(NULL) == 'q')
+							if (getchar_ascii() == 'q')
 								break;
 						}
 						if (!(l % ((GameConfig.screen_height == 768) ? 25 : 16))) {
@@ -729,7 +729,7 @@ void Cheatmenu(void)
 
 				printf_SDL(Screen, -1, -1, "All robots on this deck killed!\n");
 				our_SDL_flip_wrapper();
-				getchar_raw(NULL);
+				getchar_ascii();
 			}
 			break;
 

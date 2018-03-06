@@ -592,7 +592,7 @@ char *get_string(int max_len, const char *background_name, const char *text_for_
 		put_string(get_current_font(), x0, y0, input);
 		our_SDL_flip_wrapper();
 
-		int key = getchar_raw(NULL); // last 'character' entered
+		int key = getchar_ascii(); // last 'character' entered
 
 		if (key == SDLK_RETURN) {
 			// Display the image again so both buffers are in sync
@@ -609,12 +609,6 @@ char *get_string(int max_len, const char *background_name, const char *text_for_
 			finished = TRUE;
 		} else if ((key < SDLK_DELETE) && isprint(key) && (curpos < max_len)) {
 			/* printable characters are entered in string */
-			input[curpos] = (char)key;
-			curpos++;
-		} else if ((key <= SDLK_KP9) && (key >= SDLK_KP0) && (curpos < max_len)) {
-			key -= SDLK_KP0;
-			key += '0';
-
 			input[curpos] = (char)key;
 			curpos++;
 		} else if (key == SDLK_BACKSPACE) {
@@ -695,7 +689,7 @@ char *get_editable_string_in_popup_window(int max_len, const char *popup_window_
 
 		our_SDL_flip_wrapper();
 
-		int key = getchar_raw(NULL); // last 'character' entered
+		int key = getchar_ascii(); // last 'character' entered
 
 		if (key == SDLK_RETURN || key == SDLK_KP_ENTER) {
 			// input[curpos] = 0;

@@ -37,7 +37,7 @@
 
 #define KEY_PRESS    ( 1.) /**< Key is pressed. */
 #define KEY_RELEASE  (-1.) /**< Key is released. */
-#define ISKEYPAD(k) (k >= SDLK_KP0 && k <= SDLK_KP_EQUALS)
+#define ISKEYPAD(k) ((k) >= SDLK_KP0 && (k) <= SDLK_KP_EQUALS)
 
 static int input_keyboard_locked; // Block the execution of the keybindings.
 
@@ -162,25 +162,6 @@ const keybind_t default_keybinds[] = {
 
 	{ NULL }
 };
-
-/*
- * On some keyboards (AZERTY is an example), the shift modifier is needed to
- * access the numeric keys, which are at the top of the alphanumeric keyboard.
- * In this case, the standard 'toupper()' method used to get the actual value of
- * the pressed key does not work.
- * To circumvent the problem, we use the unicode value of the key, and transform
- * it into a keypad sym value.
- *
- * TRUE is returned if the pressed key is a numkey.
- */
-static int get_numkey(SDL_keysym *keysym, int *numkey)
-{
-	if (!ISKEYPAD((int)keysym->sym) && keysym->unicode >= '0' && keysym->unicode <= '9') {
-		*numkey = SDLK_0 + (keysym->unicode - '0');
-		return TRUE;
-	}
-	return FALSE;
-}
 
 /**
  * @fn void input_keyboard_init (void)
@@ -426,23 +407,25 @@ void keychart()
 						startpos++;
 				}
 				if (event.key.keysym.sym == SDLK_RETURN) {
-					int newmod;
+					SDLKey newkey;
+					SDLMod newmod;
 					int oldkey, oldmod;
 					int i;
 					display_keychart(startpos, cursor, TRUE);
 					oldkey = GameConfig.input_keybinds[cursor].key;
 					oldmod = GameConfig.input_keybinds[cursor].mod;
 
-					GameConfig.input_keybinds[cursor].key = getchar_raw(&newmod);
+					newkey = getchar_raw(&newmod);
 					newmod &= ~(KMOD_CAPS | KMOD_NUM | KMOD_MODE);	/* We want to ignore "global" modifiers. */
-					GameConfig.input_keybinds[cursor].mod = newmod;
+					GameConfig.input_keybinds[cursor].key = (int)newkey;
+					GameConfig.input_keybinds[cursor].mod = (int)newmod;
 
 					for (i = 0; GameConfig.input_keybinds[i].name != NULL; i++) {
 						if (i == cursor)
 							continue;
 
-						if (GameConfig.input_keybinds[i].key == GameConfig.input_keybinds[cursor].key
-						    && GameConfig.input_keybinds[i].mod == newmod) {
+						if (GameConfig.input_keybinds[i].key == (int)newkey &&
+						    GameConfig.input_keybinds[i].mod == (int)newmod) {
 							/* If the key we have just assigned was already assigned to another command... */
 							GameConfig.input_keybinds[i].key = oldkey;
 							GameConfig.input_keybinds[i].mod = oldmod;
@@ -809,16 +792,57 @@ static int input_key_event(SDLKey key, SDLMod mod, int value)
 	return noteaten;
 }
 
+/*
+ * Fix some raw keysym values, such as 'shifted numerical key' or non
+ * printable keys from the numpad.
+ */
+static void fix_keysym(SDL_keysym *keysym)
+{
+	// First case: on some keyboards (such as AZERTY), the Shift modifier has
+	// to be pressed to input a numeral from the 'main' keyboard.
+	// We want to return the actual numeric value instead of 'shift+<some_key>'.
+	// If the user uses the numpad to enter a numeral, we however keep its keysym
+	// (to be able to make a difference between the two pads).
+	//
+	// Note that the transformation does not fully work when Ctrl is pressed.
+	// For instance, on an AZERTY keyboard, 'shift+(' is correctly transformed
+	// into '5', but 'ctrl+shift+(' is not transformed (we would like to have
+	// 'ctrl+5'). This is due to the special behavior of the Ctrl key, which is
+	// not only a modifier but also modifies to value of some keys (for instance,
+	// ctrl+c == 03 == ETX).
+	//
+	// Remark: we use an 'optimized' test to minimize its cost
+
+	if ( (keysym->mod & KMOD_SHIFT) && (keysym->sym < SDLK_KP0) &&
+	     ('0' <= keysym->unicode) && (keysym->unicode <= '9')  ) {
+		keysym->sym = (SDLKey)keysym->unicode;
+		keysym->mod = keysym->mod & ~KMOD_SHIFT;
+
+		return;
+	}
+
+	// Second case: transform the non numerals of the numpad into their
+	// printable equivalents.
+
+	if (ISKEYPAD(keysym->sym)) {
+		switch (keysym->sym) {
+			case SDLK_KP_PERIOD:   keysym->sym = SDLK_PERIOD; break;
+			case SDLK_KP_DIVIDE:   keysym->sym = SDLK_SLASH; break;
+			case SDLK_KP_MULTIPLY: keysym->sym = SDLK_ASTERISK; break;
+			case SDLK_KP_MINUS:    keysym->sym = SDLK_MINUS; break;
+			case SDLK_KP_PLUS:     keysym->sym = SDLK_PLUS; break;
+			case SDLK_KP_ENTER:    keysym->sym = SDLK_RETURN; break;
+			case SDLK_KP_EQUALS:   keysym->sym = SDLK_EQUALS; break;
+			default: break;
+		}
+	}
+}
+
 int input_key_press(SDL_Event *event)
 {
+	fix_keysym(&(event->key.keysym));
 	SDLKey sym = event->key.keysym.sym;
 	SDLMod mod = event->key.keysym.mod;
-
-	int numkey;
-	if (get_numkey(&event->key.keysym, &numkey)) {
-		sym = numkey;
-		mod = 0;
-	}
 
 	input_key_event(sym, mod, KEY_PRESS);
 
@@ -826,31 +850,19 @@ int input_key_press(SDL_Event *event)
 }
 
 /**
- * @fn int kptoprint (int)
+ * Read a character from the keyboard and return its ASCII code.
  *
- * @brief Returns printable keycodes when given a printable keypad code.
+ * This function is to be used only to fill an editable string widget.
+ * It only returns if the value of the pressed key is in the ASCII map, or
+ * if the key can be used to 'interact' with the widget (arrows, home/end...)
+ *
+ * @return ASCII code of the pressed key, or SDL virtual keysym for 'interaction' keys
  */
-static int kptoprint(int key) {
-	switch (key) {
-		case SDLK_KP_PERIOD: key = SDLK_PERIOD; break;
-		case SDLK_KP_DIVIDE: key = SDLK_SLASH; break;
-		case SDLK_KP_MULTIPLY: key = SDLK_ASTERISK; break;
-		case SDLK_KP_MINUS: key = SDLK_MINUS; break;
-		case SDLK_KP_PLUS: key = SDLK_PLUS; break;
-		case SDLK_KP_EQUALS: key = SDLK_EQUALS; break;
-		default: break;	
-	}	
-	return key;
-}
 
-/**
- * This function reads a character from the keyboard
- * and returns the SDLKey that was pressed.
- */
-int getchar_raw(int *mod)
+int getchar_ascii()
 {
 	SDL_Event event;
-	int Returnkey = 0;
+	int return_key = 0;
 
 	while (1) {
 		SDL_WaitEvent(&event);	/* wait for next event */
@@ -860,34 +872,15 @@ int getchar_raw(int *mod)
 		}
 
 		if (event.type == SDL_KEYDOWN) {
-			if (get_numkey(&event.key.keysym, &Returnkey)) {
-				if (mod)
-					*mod = 0;
-				break;
-			}
 
-			Returnkey = (int)event.key.keysym.sym;
-			if (!mod && (event.key.keysym.mod & KMOD_SHIFT))
-				Returnkey = toupper((int)event.key.keysym.sym);
-
-			if (mod) {
-				/* If we have a modifier, we assign it */
-				*mod = event.key.keysym.mod;
-
-				/* And we also discard the keypress if the sym is e.g. CTRL because we explicitly
-				 * asked to get a modifier, which makes sense only if we ignore CTRL as a key.
-				 */
-				if (event.key.keysym.sym >= SDLK_NUMLOCK && event.key.keysym.sym <= SDLK_COMPOSE) {
-					continue;
-				}
-			}
-			/*
-			 * here we use the fact that, I cite from SDL_keyboard.h:
-			 * "The keyboard syms have been cleverly chosen to map to ASCII"
-			 * ... I hope that this design feature is portable, and durable ;)
-			 */
-			if (ISKEYPAD(Returnkey)) {
-				Returnkey = kptoprint(Returnkey);
+			// First check for 'arrow' keys
+			if (SDLK_UP <= event.key.keysym.sym && event.key.keysym.sym <= SDLK_PAGEDOWN) {
+				return_key = (int)event.key.keysym.sym;
+			} else if ((event.key.keysym.unicode & 0xFF00) != 0) {
+				// This is a non ASCII character, we do not handle it
+				continue;
+			} else {
+				return_key = (int)(event.key.keysym.unicode & 0x00FF);
 			}
 
 			// A key was pressed, stop the loop
@@ -895,5 +888,46 @@ int getchar_raw(int *mod)
 		}
 	}
 
-	return (Returnkey);
+	return return_key;
+}
+
+/**
+ * Read a character from the keyboard and return its SDL virtual keysym
+ * as well as the pressed modifier keys.
+ *
+ * The function returns when an 'actual' key is pressed (that is, not a modifier key)
+ *
+ * @param mod Pointer to an integer that will contain the state of the modifier keys
+ *
+ * @return SDL virtual keysym of the pressed key
+ */
+
+SDLKey getchar_raw(SDLMod *mod)
+{
+	SDL_Event event;
+	int return_key = 0;
+
+	while (1) {
+		SDL_WaitEvent(&event);  /* wait for next event */
+
+		if (event.type == SDL_QUIT) {
+			Terminate(EXIT_SUCCESS);
+		}
+
+		if (event.type == SDL_KEYDOWN) {
+
+			// If a modifier key was just pressed, wait for the next keypress
+			if (SDLK_NUMLOCK <= event.key.keysym.sym && event.key.keysym.sym <= SDLK_COMPOSE) {
+				continue;
+			}
+
+			fix_keysym(&event.key.keysym);
+			return_key = event.key.keysym.sym;
+			*mod = event.key.keysym.mod;
+
+			break;
+		}
+	}
+
+	return return_key;
 }
