@@ -424,7 +424,7 @@ void UpdateCountersForThisFrame()
 			//
 			if (Me.time_since_last_visit_or_respawn[i] > 600 && !(curShip.AllLevels[i]->flags & NO_RESPAWN)) {
 
-				DebugPrintf(-10, "\nNow respawning all bots on level : %d. ", i);
+				DebugPrintf(-10, "\nNow respawning all bots on level : %d (%s). ", i, curShip.AllLevels[i]->Levelname);
 				Me.time_since_last_visit_or_respawn[i] = 0;
 
 				respawn_level(i);
