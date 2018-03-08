@@ -623,7 +623,6 @@ static struct background backgrounds[] = {
 		{"item_browser_shop.png", EMPTY_IMAGE, 0, 0,TRUE },
 		{"startup1.jpg", EMPTY_IMAGE, 0, 0,  TRUE },
 		{"conversation.png", EMPTY_IMAGE, 0, 0,  TRUE },
-		{"transfer.jpg", EMPTY_IMAGE, 0, 0,  TRUE },
 		{"number_selector.png", EMPTY_IMAGE, 0, 0,  TRUE },
 		{"item_upgrade.png", EMPTY_IMAGE, ITEM_UPGRADE_RECT_X, ITEM_UPGRADE_RECT_Y,  FALSE },
 		{"item_upgrade_crafting.png", EMPTY_IMAGE, ADDON_CRAFTING_RECT_X, ADDON_CRAFTING_RECT_Y, FALSE },
