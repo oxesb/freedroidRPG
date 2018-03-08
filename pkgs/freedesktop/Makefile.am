@@ -2,7 +2,7 @@
 
 # For Freedesktop compliance
 
-appstreamdir = $(datadir)/appdata
+appstreamdir = $(datadir)/metainfo
 appstream_in_files = freedroidrpg.appdata.xml
 dist_appstream_DATA = $(appstream_in_files)
 

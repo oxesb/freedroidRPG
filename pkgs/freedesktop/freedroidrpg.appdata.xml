@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2016 freedroidRPG Team -->
-<application>
-  <id type="desktop">freedroidrpg.desktop</id>
+<!-- Copyright 2016,2018 freedroidRPG Team -->
+<component type="desktop-application">
+  <id>org.freedroidrpg.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
   <name>freedroidRPG</name>
@@ -39,17 +39,28 @@
     </p>
   </description>
   <categories>
-    <category>Role Playing</category>
-    <category>Games</category>
+    <category>Game</category>
+    <category>RolePlaying</category>
   </categories>
   <keywords>
     <keyword>RPG</keyword>
+    <keyword>role playing</keyword>
+    <keyword>isometric</keyword>
+    <keyword>futuristic</keyword>
+    <keyword>game</keyword>
   </keywords>
   <screenshots>
-    <screenshot type="default">https://gitlab.com/freedroid/freedroid-src/raw/master/pkgs/freedesktop/images/screenshot.png</screenshot>
+    <screenshot type="default">
+      <image>https://gitlab.com/freedroid/freedroid-src/raw/master/pkgs/freedesktop/images/screenshot.png</image>
+      <caption>A view from the Town's bar</caption>
+    </screenshot>
   </screenshots>
   <url type="homepage">http://www.freedroid.org/</url>
-  <updatecontact>contact_at_freedroid.org</updatecontact>
+  <url type="bugtracker">http://bugs.freedroid.org</url>
+  <url type="help">http://www.freedroid.org/player-section</url>
+  <url type="translate">https://www.transifex.com/arctic-games/freedroid-rpg/</url>
+  <developer_name>The FreedroidRPG Team</developer_name>
+  <update_contact>contact_at_freedroid.org</update_contact>
   <content_rating type="oars-1.0">
     <content_attribute id="violence-cartoon">moderate</content_attribute>
     <content_attribute id="violence-fantasy">none</content_attribute>
@@ -72,4 +83,12 @@
     <content_attribute id="money-purchasing">none</content_attribute>
     <content_attribute id="money-gambling">moderate</content_attribute>
   </content_rating>
-</application>
+  <launchable type="desktop-id">freedroidrpg.desktop</launchable>
+  <provides>
+    <binary>freedroidRPG</binary>
+  </provides>
+  <releases>
+    <release version="0.16.1" date="2016-04-02"/>
+    <release version="0.16" date="2015-12-24"/>
+  </releases>
+</component>
