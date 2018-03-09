@@ -104,6 +104,7 @@ return {
 				change_obstacle_state(Town_NorthGateGuard_doors1[var], "closed")
 			end
 			set_faction_state("redguard", "hostile")
+			Tux:kill()
 			end_dialog()
 			hide("node1", "node2", "node3") show("node99")
 		end,
@@ -221,6 +222,7 @@ return {
 			Npc:says(_"Nobody says things about my mother. Forget you, Linarian!")
 			Npc:says(_"Open fire!")
 			set_faction_state("redguard", "hostile")
+			Tux:kill()
 			hide("node20", "node21", "node22", "node23", "node30")
 			end_dialog()
 		end,

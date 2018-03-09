@@ -262,6 +262,8 @@ return {
 			Npc:says(_"Wha --")
 			Npc:drop_dead()
 			set_faction_state("redguard", "hostile")
+			display_big_message(_"Better reload your last save and try again.") -- reverse order
+			display_big_message(_"Ooops, the Red Guard hates you now.")
 			hide("newbie4", "newbie_end")
 			end_dialog()
 		end,

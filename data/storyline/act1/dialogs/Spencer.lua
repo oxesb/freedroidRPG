@@ -598,6 +598,7 @@ return {
 				Npc:says(_"The punishment is death.")
 				Tux:update_quest("Tania's Escape", _"When I asked about Tania entering the town, Spencer confronted me about Doc Moore's death. He found me guilty of murder, and sentenced me to death.")
 				set_faction_state("redguard", "hostile")
+				Tux:kill()
 				end_dialog()
 			end
 			hide("node52", "node53", "node54")
@@ -611,6 +612,7 @@ return {
 			Npc:says(_"We must stop you before you kill again.")
 			Tux:update_quest("Tania's Escape", _"When I asked about Tania entering the town, Spencer confronted me about Doc Moore's death. He found me too dangerous to live.")
 			set_faction_state("redguard", "hostile")
+			Tux:kill()
 			hide("node52", "node53", "node54")
 			end_dialog()
 		end,
