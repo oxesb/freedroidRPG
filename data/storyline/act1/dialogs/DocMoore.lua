@@ -253,11 +253,10 @@ return {
 			Tux:add_item("Diet supplement",15)
 			Tux:add_item("Doc-in-a-can",10)
 			Tux:add_item("Antibiotic",10)
-			Tux:add_item("Brain Enlargement Pills Antidote",5)
 			Tux:add_item("Laser Scalpel",1)
 			Tux:add_item("Doc-in-a-can",10)
 			Tux:add_item("Antibiotic",10)
-			Tux:add_item("Brain Enlargement Pills Antidote",5)
+			Tux:add_item("Brain Enlargement Pills Antidote",1)
 			hide("node22", "node10", "node11", "node50", "node51", "node52", "node55", "node56", "node57")
 		end,
 	},
