@@ -75,8 +75,8 @@ The art of rapidly moving away from danger is very useful. Even when used in rev
 	name =_"Invisibility",
 	icon = "Invisibility.png",
 	form = "self",
-	effect = {type = "invisibility", duration = {base = 5, per_level = 2}},
-	cost = {base = 45, per_level = 5},
+	effect = {type = "invisibility", duration = {base = 5, per_level = 1}},
+	cost = {base = 45, per_level = 10},
 	description =_[[I am not the Linarian you are looking for.]],
 },
 --------------------------------------------------------------------------------
