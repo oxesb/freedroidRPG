@@ -372,21 +372,19 @@ a bug in the currently used map system of FreedroidRPG.", PLEASE_INFORM | IS_FAT
  */
 void tux_get_move_target_and_attack(gps * movetgt)
 {
-	pointf RemainingWay;
-	float RemainingWayLength;
+	// If there is a mouse move target, we are not going to move towards the enemy
 
-	// if there is a mouse move target, we are not going to move towards the enemy
-	if (Me.mouse_move_target.x != (-1)) {
+	if (Me.mouse_move_target.x != -1) {
 		// If a combo action is pending, the mouse_move_target was defined relatively
 		// to the item's level. We need here to define the position relatively to Tux's level.
 		update_virtual_position(movetgt, &Me.mouse_move_target, Me.pos.z);
 		return;
 	}
 
-	enemy *t = enemy_resolve_address(Me.current_enemy_target_n, &Me.current_enemy_target_addr);
+	// Get the targeted enemy and check if he is still alive, else remove it
 
-	if (!t || (t->energy <= 0))	//No enemy or dead enemy, remove enemy
-	{
+	enemy *t = enemy_resolve_address(Me.current_enemy_target_n, &Me.current_enemy_target_addr);
+	if (!t || (t->energy <= 0))	{
 		enemy_set_reference(&Me.current_enemy_target_n, &Me.current_enemy_target_addr, NULL);
 		movetgt->x = -1;
 		movetgt->y = -1;
@@ -394,44 +392,59 @@ void tux_get_move_target_and_attack(gps * movetgt)
 		return;
 	}
 
-	update_virtual_position(&t->virt_pos, &t->pos, Me.pos.z);
+	// A right-click, meant to execute a program, cancels a repeated
+	// automatic attack, if that program can be activated
 
-	// If we have a ranged weapon in hand, there is no need to approach the
-	// enemy in question.  We just try to fire a shot, and return.
-	//
-	if (Me.weapon_item.type != (-1)) {
-		if (!ItemMap[Me.weapon_item.type].weapon_is_melee) {	//ranged weapon
-			if (!is_friendly(t->faction, FACTION_SELF))
-				tux_wants_to_attack_now(FALSE);
+	if (MouseRightClicked() && MouseCursorIsInUserRect(GetMousePos_x(), GetMousePos_y())) {
+		if (Me.skill_level[Me.readied_skill] > 0 &&
+		    Me.max_temperature - Me.temperature > calculate_program_heat_cost(Me.readied_skill)) {
+			enemy_set_reference(&Me.current_enemy_target_n, &Me.current_enemy_target_addr, NULL);
 			movetgt->x = -1;
 			movetgt->y = -1;
 			movetgt->z = -1;
 			return;
 		}
 	}
-	// Move to melee distance
-	//
-	RemainingWay.x = t->virt_pos.x - Me.pos.x;
-	RemainingWay.y = t->virt_pos.y - Me.pos.y;
 
-	RemainingWayLength = sqrt(RemainingWay.x * RemainingWay.x + RemainingWay.y * RemainingWay.y);
+	// If we have a ranged weapon in hand, there is no need to approach the
+	// enemy in question.  We just try to fire a shot, and return.
 
-	if (RemainingWayLength > 0.05) {
-		RemainingWay.x = (RemainingWay.x / RemainingWayLength) * (RemainingWayLength - (BEST_MELEE_DISTANCE - 0.1));
-		RemainingWay.y = (RemainingWay.y / RemainingWayLength) * (RemainingWayLength - (BEST_MELEE_DISTANCE - 0.1));
+	if (Me.weapon_item.type != -1 && !ItemMap[Me.weapon_item.type].weapon_is_melee) {
+		if (!is_friendly(t->faction, FACTION_SELF))
+			tux_wants_to_attack_now(FALSE);
+		movetgt->x = -1;
+		movetgt->y = -1;
+		movetgt->z = -1;
+		return;
 	}
 
-	if ((RemainingWayLength <= BEST_MELEE_DISTANCE * sqrt(2) + 0.01) && (!is_friendly(t->faction, FACTION_SELF))) {
+	// Move to melee distance
+
+	update_virtual_position(&t->virt_pos, &t->pos, Me.pos.z);
+
+	pointf remaining_way = { t->virt_pos.x - Me.pos.x, t->virt_pos.y - Me.pos.y };
+	float remaining_way_length = sqrt(remaining_way.x * remaining_way.x + remaining_way.y * remaining_way.y);
+
+	if (remaining_way_length > 0.05) {
+		// Will move Tux at the 'melee distance' to the enemy
+		// Comment: x' = vX * (l - d) [with vX = unit vec along X, d = melee distance)
+		//       => x' = x/l * (l - d) = x - x*d/l
+		remaining_way.x -= remaining_way.x * (BEST_MELEE_DISTANCE - 0.1) / remaining_way_length;
+		remaining_way.y -= remaining_way.y * (BEST_MELEE_DISTANCE - 0.1) / remaining_way_length;
+	}
+
+	if ((!is_friendly(t->faction, FACTION_SELF)) && (remaining_way_length <= (BEST_MELEE_DISTANCE * sqrt(2) + 0.01))) {
 		tux_wants_to_attack_now(FALSE);
 	}
-	// New move target.
-	movetgt->x = Me.pos.x + RemainingWay.x;
-	movetgt->y = Me.pos.y + RemainingWay.y;
+
+	// Set the new move target
+
+	movetgt->x = Me.pos.x + remaining_way.x;
+	movetgt->y = Me.pos.y + remaining_way.y;
 	movetgt->z = Me.pos.z;
 
 	return;
-}				// void tux_get_move_target_and_attack( )
-
+}
 /**
  * Actually move Tux towards the target.
  */
