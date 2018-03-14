@@ -487,6 +487,7 @@ void widget_set_tooltip(struct tooltip *, SDL_Rect *);
 
 struct image *widget_load_image_resource(char *, int);
 void widget_free_image_resources();
+void reset_ui();
 
 // end gui2d_misc submodule
 ///@}

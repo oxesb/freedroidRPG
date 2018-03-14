@@ -1490,10 +1490,7 @@ static void free_memory_before_exit(void)
 	free_graphics();
 
 	// free the widgets
-	free_game_ui();
-	free_lvledit_ui();
-	free_chat_widgets();
-	widget_free_image_resources();
+	reset_ui();
 
 	// other stuff
 	transient_text_free();

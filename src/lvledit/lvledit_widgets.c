@@ -697,10 +697,12 @@ void free_lvledit_ui()
 		struct widget *w = WIDGET(level_editor_widget_group);
 		w->free(w);
 		free(level_editor_widget_group);
+		level_editor_widget_group = NULL;
 	}
 
 	if (all_obstacles_list) {
 		free(all_obstacles_list);
+		all_obstacles_list = NULL;
 	}
 }
 

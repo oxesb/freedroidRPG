@@ -35,8 +35,6 @@
 #include "proto.h"
 #include "widgets/widgets.h"
 
-static struct widget_group *quest_browser = NULL;
-
 static SDL_Rect mission_description_rect = { 134, 86, 280, 320 };
 
 static struct auto_string *quest_browser_text;
@@ -576,14 +574,11 @@ static void _activate_if_can_scroll_down(struct widget *w)
 }
 
 /**
- * This function returns the quest log top level widget and creates it if necessary.
+ * This function creates and returns the quest log top level widget.
  */
 struct widget_group *create_quest_browser()
 {
-	if (quest_browser)
-		return quest_browser;
-
-	quest_browser = widget_group_create();
+	struct widget_group *quest_browser = widget_group_create();
 	widget_set_rect(WIDGET(quest_browser), 0, 0, GameConfig.screen_width, GameConfig.screen_height);
 	WIDGET(quest_browser)->handle_event = quest_browser_handle_event;
 

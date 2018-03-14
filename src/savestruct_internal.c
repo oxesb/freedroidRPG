@@ -442,6 +442,7 @@ void read_keybind_t_array(lua_State *L, int index, keybind_t *data, int size)
 		read_keybind_t(L, -1, &keybind);
 		input_set_keybind(keybind.name, keybind.key, keybind.mod);
 		free(keybind.name);
+		keybind.name = NULL;
 		lua_pop(L, 1);
 	}
 }
@@ -638,7 +639,7 @@ static int tux_ctor(lua_State *L)
 	// Player's character_name is possibly already set, so
 	// free it before to call read_tux(), and avoid a memory leak.
 	free(Me.character_name);
-
+	Me.character_name = NULL;
 	read_tux_t(L, 1, &Me);
 	return 0;
 }
@@ -647,6 +648,7 @@ static int alive_enemy_ctor(lua_State *L)
 {
 	enemy *newen = enemy_new(0);
 	free(newen->short_description_text);
+	newen->short_description_text = NULL;
 	read_enemy(L, 1, newen);
 	enemy_insert_into_lists(newen, TRUE);
 
@@ -657,6 +659,7 @@ static int dead_enemy_ctor(lua_State *L)
 {
 	enemy *newen = enemy_new(0);
 	free(newen->short_description_text);
+	newen->short_description_text = NULL;
 	read_enemy(L, 1, newen);
 	enemy_insert_into_lists(newen, FALSE);
 

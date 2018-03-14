@@ -721,6 +721,7 @@ struct widget_group *get_game_ui()
 	// Create the quest browser.
 	struct widget_group *quest_browser = create_quest_browser();
 	WIDGET(quest_browser)->update = _enable_if_quest_browser_open;
+	WIDGET(quest_browser)->update(WIDGET(quest_browser));
 	widget_group_add(game_widget_group, WIDGET(quest_browser));
 
 	// Create the chat dialog.
@@ -737,5 +738,11 @@ void free_game_ui()
 		struct widget *w = WIDGET(game_widget_group);
 		w->free(w);
 		free(game_widget_group);
+		game_widget_group = NULL;
+
+		// message_log is a global pointer to game_widget_group->hud_bar->message_log
+		message_log = NULL;
+		// game_map is a global pointer to game_widget_group->game_map
+		game_map = NULL;
 	}
 }

@@ -37,6 +37,9 @@
 #include "proto.h"
 #include "widgets/widgets.h"
 
+// Currently active GUI. Can be the game gui or the lvleditor gui.
+static struct widget *active_ui = NULL;
+
 ////////////////////////////////////////////////////////////////////:
 // Misc functions used internally by the widgets
 ////////////////////////////////////////////////////////////////////:
@@ -104,6 +107,17 @@ void widget_free_image_resources()
 	INIT_LIST_HEAD(&image_resource_list);
 }
 
+void reset_ui()
+{
+	free_chat_widgets();
+	free_game_ui();
+	free_lvledit_ui();
+	widget_free_image_resources();
+
+	// now that all UI's are deleted, there is no active gui
+	active_ui = NULL;
+}
+
 ////////////////////////////////////////////////////////////////////:
 // Tooltips handling
 ////////////////////////////////////////////////////////////////////:
@@ -153,38 +167,32 @@ void widget_set_tooltip(struct tooltip *new_tooltip, SDL_Rect *widget_rect)
  */
 static struct widget *get_active_ui()
 {
-	static int old_game_status = -1;
-	static struct widget *old_active_ui = NULL;
-	static struct widget *new_active_ui = NULL;
+	struct widget *old_ui = active_ui;
 
+	// Get the active GUI
 	switch (game_status) {
 		case INSIDE_LVLEDITOR:
-			new_active_ui = WIDGET(get_lvledit_ui());
+			active_ui = WIDGET(get_lvledit_ui());
 			break;
 
 		case INSIDE_GAME:
-			new_active_ui = WIDGET(get_game_ui());
+			active_ui = WIDGET(get_game_ui());
 			break;
 
 		default:
 			return NULL;
 	}
 
-	// If the current active interface has changed, send a
-	// mouse leave event to the previous interface.
-	if (old_game_status != game_status) {
+	// If the interface is to be changed, send a mouse leave event to
+	// the current interface
+	if (old_ui && (old_ui != active_ui)) {
 		SDL_Event event;
 		event.type = SDL_USEREVENT;
 		event.user.code = EVENT_MOUSE_LEAVE;
-
-		if (old_active_ui)
-			old_active_ui->handle_event(old_active_ui, &event);
+		old_ui->handle_event(old_ui, &event);
 	}
 
-	old_active_ui = new_active_ui;
-	old_game_status = game_status;
-
-	return new_active_ui;
+	return active_ui;
 }
 
 /**
@@ -338,6 +346,7 @@ void widget_free(struct widget *w)
 {
 	if (w->ext) {
 		free(w->ext);
+		w->ext = NULL;
 	}
 }
 

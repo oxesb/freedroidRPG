@@ -948,6 +948,12 @@ void free_chat_widgets()
 		struct widget *w = WIDGET(chat_menu);
 		w->free(w);
 		free(chat_menu);
+		chat_menu = NULL;
+
+		// pointers copied in chat_menu and now invalid
+		chat_log = NULL;
+		chat_selector = NULL;
+		chat_wait = NULL;
 	}
 }
 
