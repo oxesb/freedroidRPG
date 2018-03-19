@@ -1406,7 +1406,7 @@ int perform_tux_attack(int use_mouse_cursor_for_targeting)
 		// or something that can be smashed up, cause in this case, we
 		// must open Pandora's box now.
 
-		if (smash_obstacle(impact_point.x, impact_point.y, Me.pos.z))
+		if (smash_obstacles_near_pos(impact_point.x, impact_point.y, Me.pos.z))
 			hit_something = TRUE;
 
 		// Finally we add a new wait-counter, so that swings cannot be started

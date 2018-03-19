@@ -950,7 +950,46 @@ static char *decode_waypoints(level *loadlevel, char *data)
 }
 
 /**
- * The smash_obstacle function uses this function as a subfunction to 
+ * Blast a specific obstacle.
+ *
+ * First remove the obstacle from the map, and then start a blast.
+ */
+void blast_obstacle(level *lvl, obstacle *target_obstacle)
+{
+	struct pointf blast_start_pos = { .x = target_obstacle->pos.x, .y = target_obstacle->pos.y };
+
+	struct obstacle_spec *spec = get_obstacle_spec(target_obstacle->type);
+	int obstacle_drops_treasure = spec->flags & DROPS_RANDOM_TREASURE;
+
+	// Let the automap know that we've updated things
+	update_obstacle_automap(target_obstacle->pos.z, target_obstacle);
+
+	// Now we really smash the obstacle, i.e. we can set it's type to
+	// the debris that has been configured for this obstacle type.
+	// If there is nothing configured (i.e. -1 set) then we'll just
+	// delete the obstacle in question entirely. For this we got a
+	// standard function to safely do it and not make some errors into
+	// the glue structure or obstacles lists...
+	if (spec->result_type_after_smashing_once == -1) {
+		del_obstacle(target_obstacle);
+	} else {
+		target_obstacle->type = spec->result_type_after_smashing_once;
+	}
+
+	// Drop items after destroying the obstacle, in order to avoid collisions
+	if (obstacle_drops_treasure)
+		drop_random_item(target_obstacle->pos.z, target_obstacle->pos.x, target_obstacle->pos.y, lvl->drop_class, FALSE);
+
+	// Now that the obstacle is removed AND ONLY NOW that the obstacle is
+	// removed, we may start a blast at this position.  Otherwise we would
+	// run into trouble, because the blast could in turn destroy this not yet
+	// removed obstacle -> infinite loop danger here !!!
+	start_blast(blast_start_pos.x, blast_start_pos.y, target_obstacle->pos.z,
+		spec->blast_type, 0.0, FACTION_SELF, spec->smashed_sound);
+}
+
+/**
+ * The smash_obstacle_near_pos function uses this function as a subfunction to
  * check for exploding obstacles glued to one specific map square.  Of
  * course also the player number (or -1 in case of no check/bullet hit)
  * must be supplied so as to be able to suppress hits through walls or
@@ -963,7 +1002,6 @@ static int smash_obstacles_only_on_tile(float x, float y, int lvl, int map_x, in
 	int target_idx;
 	struct obstacle *target_obstacle;
 	int smashed_something = FALSE;
-	struct pointf blast_start_pos;
 
 	// First some security checks against touching the outsides of the map...
 
@@ -1005,72 +1043,40 @@ static int smash_obstacles_only_on_tile(float x, float y, int lvl, int map_x, in
 
 		smashed_something = TRUE;
 
-		// Since the obstacle is destroyed, we start a blast at it's position.
-		// But here a WARNING WARNING WARNING! is due!  We must not start the
-		// blast before the obstacle is removed, because the blast will again
-		// cause this very obstacle removal function, so we need to be careful
-		// so as not to incite endless recursion.  We memorize the position for
-		// later, then delete the obstacle, then we start the blast.
+		event_obstacle_action(target_obstacle);
 
-		blast_start_pos.x = target_obstacle->pos.x;
-		blast_start_pos.y = target_obstacle->pos.y;
-
-		int obstacle_drops_treasure = obstacle_spec->flags & DROPS_RANDOM_TREASURE;
-
-		// Let the automap know that we've updated things
-		update_obstacle_automap(lvl, target_obstacle);
-
-		// Now we really smash the obstacle, i.e. we can set it's type to the debris that has
-		// been configured for this obstacle type.  In if there is nothing configured (i.e. -1 set)
-		// then we'll just delete the obstacle in question entirely.  For this we got a standard function to
-		// safely do it and not make some errors into the glue structure or obstacles lists...
-
-		if (obstacle_spec->result_type_after_smashing_once == (-1)) {
-			del_obstacle(target_obstacle);
-		} else {
-			target_obstacle->type = obstacle_spec->result_type_after_smashing_once;
-		}
-
-		// Drop items after destroying the obstacle, in order to avoid collisions
-		if (obstacle_drops_treasure)
-			drop_random_item(lvl, target_obstacle->pos.x, target_obstacle->pos.y, box_level->drop_class, FALSE);
-
-		// Now that the obstacle is removed AND ONLY NOW that the obstacle is
-		// removed, we may start a blast at this position.  Otherwise we would
-		// run into trouble, see the warning further above.
-		start_blast(blast_start_pos.x, blast_start_pos.y,
-				lvl, obstacle_spec->blast_type, 0.0, FACTION_SELF, obstacle_spec->smashed_sound);
+		blast_obstacle(box_level, target_obstacle);
 	}
 
 	return smashed_something;
 }
 
+
+
 /**
  * When a destructible type of obstacle gets hit, e.g. by a blast 
  * exploding on the tile or a melee hit on the same floor tile, then some
- * of the obstacles (like barrel or crates) might explode, sometimes
+ * of the obstacles around it (like barrels or crates) might explode, sometimes
  * leaving some treasure behind.
  *
  */
-int smash_obstacle(float x, float y, int lvl)
+int smash_obstacles_near_pos(float x, float y, int lvl)
 {
-	int map_x, map_y;
-	int smash_x, smash_y;
 	int smashed_something = FALSE;
+	int map_x = (int)rintf(x);
+	int map_y = (int)rintf(y);
 
-	map_x = (int)rintf(x);
-	map_y = (int)rintf(y);
-
-	for (smash_y = map_y - 1; smash_y < map_y + 2; smash_y++) {
-		for (smash_x = map_x - 1; smash_x < map_x + 2; smash_x++) {
+	// Try, on a 3x3 area around the obstacle, to smash things (if
+	// they are near enough)
+	for (int smash_y = map_y - 1; smash_y < map_y + 2; smash_y++) {
+		for (int smash_x = map_x - 1; smash_x < map_x + 2; smash_x++) {
 			if (smash_obstacles_only_on_tile(x, y, lvl, smash_x, smash_y))
 				smashed_something = TRUE;
 		}
 	}
 
-	return (smashed_something);
-
-}				// int smash_obstacle ( float x , float y );
+	return smashed_something;
+}
 
 /**
  * This function returns the map brick code of the tiles that occupies the

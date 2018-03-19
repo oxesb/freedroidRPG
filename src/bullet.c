@@ -245,7 +245,7 @@ void start_blast(float x, float y, int lvl, int type, int dmg, int faction, char
 	// Maybe there is a box under the blast.  In this case, the box will
 	// get smashed and perhaps an item will drop.
 
-	smash_obstacle(blast_pos.x, blast_pos.y, blast_pos.z);
+	smash_obstacles_near_pos(blast_pos.x, blast_pos.y, blast_pos.z);
 
 	// create a new blast at the specified x/y coordinates
 	struct blast new_blast;

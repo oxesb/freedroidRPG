@@ -521,7 +521,7 @@ static void act_chest(level *l, obstacle *o)
 
 static void act_barrel(level *l, obstacle *o)
 {
-	smash_obstacle(o->pos.x, o->pos.y, o->pos.z);
+	blast_obstacle(l, o);
 
 	// Do an attack motion with bare hands
 	int store_weapon_type = Me.weapon_item.type;
