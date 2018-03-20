@@ -578,45 +578,35 @@ void prepare_start_of_new_game(char *start_label, int new_tux)
 
 	Activate_Conservative_Frame_Computation();
 
-	// Load the maps
+	// We make sure we don't have garbage in our arrays from a 
+	// previous game or failed load-game attempt...
+	clear_active_bullets();
+	clear_out_arrays_for_fresh_game();
+	reset_visible_levels();
+	if (new_tux)
+		init_tux();
 
+	// Load the maps
 	char fp[PATH_MAX];
 	find_file(fp, MAP_DIR, "levels.dat", NULL, PLEASE_INFORM | IS_FATAL);
 	LoadShip(fp, 0);
 
-	// We make sure we don't have garbage in our arrays from a 
-	// previous game or failed load-game attempt...
-	clear_out_arrays_for_fresh_game();
-	if (new_tux)
-		init_tux();
-
-	// We do the same as above for lua state
+	// Reset the lua VMs and load the config stuff
 	reset_lua_state();
 
 	GetEventTriggers("events.dat");
-
 	init_npcs();
 	init_factions();
-
 	GetCrew("ReturnOfTux.droids");
+	get_quest_list("quests.lua");
 
+	// Everything is set up, Tux can enter the game
 	start_pos = get_map_label_center(start_label);
 	
-	reset_visible_levels();
 	if (game_root_mode == ROOT_IS_LVLEDIT && level_exists(GameConfig.last_edited_level))
 		teleport_to_level_center(GameConfig.last_edited_level);
 	else
 		Teleport(start_pos.z, start_pos.x, start_pos.y, FALSE, TRUE);
-	clear_active_bullets();
-
-	// At this point the position history can be initialized
-	//
-	InitInfluPositionHistory();
-
-	// Now we read in the mission targets for this mission
-	// Several different targets may be specified simultaneously
-	//
-	get_quest_list("quests.lua");
 
 	switch_background_music(curShip.AllLevels[Me.pos.z]->Background_Song_Name);
 
@@ -624,14 +614,13 @@ void prepare_start_of_new_game(char *start_label, int new_tux)
 	// to 'change clothes' i.e. a lot of tux images need to be updated which can
 	// take a little time.  Therefore we print some message so the user will not
 	// panic and push the reset button :)
-	//
 	our_SDL_flip_wrapper();
 
 	widget_text_init(message_log, _("--- Message Log ---"));
 	if (strcmp(start_label, "TutorialTuxStart") == 0)
 		append_new_game_message(_("Starting tutorial."));
 	else
-		append_new_game_message(_("Starting new game."));
+		append_new_game_message(_("Starting new game act."));
 }
 
 void prepare_level_editor(struct game_act *on_act)
