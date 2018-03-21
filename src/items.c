@@ -188,9 +188,10 @@ static void self_repair_item(item *it)
 		wear = 1 + MyRandom(10 - my_skill_level);
 		//never decrease more than current missing durability
 		it->max_durability -= min(wear, used);
-		if (it->max_durability < 1) {
-			it->max_durability = 1;
-		}
+	}
+	// Never get max_durability <= 0
+	if (it->max_durability < 1) {
+		it->max_durability = 1;
 	}
 	//when you wear off all extra durability, the item become normal again
 	if (it->quality == GOOD_QUALITY && it->max_durability < ItemMap[it->type].base_item_durability) {
