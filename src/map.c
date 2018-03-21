@@ -550,6 +550,7 @@ static void ReadInOneItem(char *ItemPointer, char *ItemsSectionEnd, item *Target
 	ReadValueFromString(ItemPointer, ITEM_CUR_DURABILITY_STRING, "%f", &(TargetItem->current_durability), ItemsSectionEnd);
 	ReadValueFromString(ItemPointer, ITEM_AMMO_CLIP_STRING, "%d", &(TargetItem->ammo_clip), ItemsSectionEnd);
 	ReadValueFromString(ItemPointer, ITEM_MULTIPLICITY_STRING, "%d", &(TargetItem->multiplicity), ItemsSectionEnd);
+	ReadValueFromStringWithDefault(ItemPointer, ITEM_QUALITY_STRING, "%d", "0", &(TargetItem->quality), ItemsSectionEnd);
 
 	// Read the socket data of the item and calculate bonuses using it.
 	int i;
@@ -1423,11 +1424,12 @@ static void WriteOutOneItem(struct auto_string *shipstr, item *ItemToWriteOut)
 		autostr_append(shipstr, "%s%d ", ITEM_ARMOR_CLASS_BASE_STRING, ItemToWriteOut->armor_class);
 	}
 
-	autostr_append(shipstr, "%s%d %s%f %s%d %s%d",
+	autostr_append(shipstr, "%s%d %s%f %s%d %s%d %s%d",
 			ITEM_MAX_DURABILITY_STRING, ItemToWriteOut->max_durability,
 			ITEM_CUR_DURABILITY_STRING, ItemToWriteOut->current_durability,
 			ITEM_AMMO_CLIP_STRING, ItemToWriteOut->ammo_clip,
-			ITEM_MULTIPLICITY_STRING, ItemToWriteOut->multiplicity);
+			ITEM_MULTIPLICITY_STRING, ItemToWriteOut->multiplicity,
+			ITEM_QUALITY_STRING, ItemToWriteOut->quality);
 
 	// Write the sockets of the item. The bonuses can be reconstructed from
 	// these easily so we don't need to write them at all.

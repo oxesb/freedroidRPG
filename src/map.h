@@ -50,6 +50,7 @@
 #define ITEM_CUR_DURABILITY_STRING " CDur="
 #define ITEM_AMMO_CLIP_STRING " AClip="
 #define ITEM_MULTIPLICITY_STRING " Multi="
+#define ITEM_QUALITY_STRING " Qual="
 #define ITEM_SOCKETS_SIZE_STRING " Sockets="
 #define ITEM_SOCKET_TYPE_STRING "SocketType"
 #define ITEM_SOCKET_ADDON_STRING "SocketAddon"
