@@ -19,6 +19,7 @@
 
 local Npc = FDrpg.get_npc()
 local Tux = FDrpg.get_tux()
+local hacking_level = get_program("Hacking")
 
 return {
 	EveryTime = function()
@@ -49,6 +50,9 @@ return {
 				Npc:says("GAME BUG. PLEASE REPORT, RRGATE_TERMINAL EveryTime LuaCode")
 			end
 			cli_says(Act2BotFactory_prompt, "NO_WAIT")
+			if (hacking_level < 9) then
+				show("node20") hide("node21")
+			end
 			show("node99")
 		end
 	end,
@@ -115,6 +119,63 @@ return {
 			change_obstacle_state("Act2BotFactory", "closed")
 			cli_says(Act2BotFactory_prompt, "NO_WAIT")
 			hide("node10") show("node0")
+		end,
+	},
+	{
+		id = "node20",
+		--; TRANSLATORS: command, use lowercase here
+		text = _"download hacking tools",
+		echo_text = false,
+		code = function()
+			Tux:says(_"download hacking tools", "NO_WAIT")
+			local hacking_level = get_program("Hacking")
+			if (hacking_level > 8) then
+				Npc:says(_"The max available software revision is 9.")
+				Npc:says(_"Your hacking skill already has or exceeds this level.")
+			else
+				Npc:says(_"This is commercial software, payment required (3000 circuits).")
+				Npc:says(_"You will also need %d training points.", get_program("Hacking") * 2)
+				Npc:says(_"Proceed?")
+				show("node21")
+			end
+			hide("node20")
+		end,
+	},
+	{
+		id = "node21",
+		text = _"sudo apt-get install hacking-tools",
+		code = function()
+			-- this is output of apt-get on debian/ubuntu
+			Npc:says(_"Reading package lists... Done", "NO_WAIT")
+			Npc:says(_"Building dependency tree", "NO_WAIT")
+			Npc:says(_"Reading state information... Done", "NO_WAIT")
+			-- orig "The following NEW packages will be installed:"
+			Npc:says(_"The following skill will be installed:")
+			Npc:says(_"'Hacking' program revision %d.", get_program("Hacking") + 1)
+			Npc:says("", "NO_WAIT")
+
+			if (Tux:train_program(3000, get_program("Hacking") * 2, "Hacking")) then
+				Npc:says(_"Feature set of the hacking program has been improved successfully.")
+			else
+				if (Tux:get_gold() < 3000) then
+					next("node25")
+				else
+					next("node26")
+				end
+			end
+			hide("node21") show("node20")
+		end,
+	},
+	{
+		id = "node25",
+		code = function()
+			Npc:says_random(_"Payment bounced. Insufficient credits.")
+		end,
+	},
+	{
+		id = "node26",
+		code = function()
+			Npc:says_random(_"Out of Memory. More Experience is needed to run this program.")
 		end,
 	},
 	{
