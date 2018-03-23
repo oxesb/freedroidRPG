@@ -1255,6 +1255,53 @@ droid_list {
 	},
 },
 {
+	name = "C64",
+	desc = _"The Glitch",
+	notes = _"I have not failed. I've just found 10,000 ways how to NOT make a bot.",
+	is_human = 1,
+	class = 9,
+	abilities = {
+		speed_max = 6,
+		energy_max = 3000,
+		healing_rate = 10,
+		hit_draw = 70,
+		aggression_distance = 16.116,
+		time_eyeing = 0.20,
+		recover_time = 0.25,
+		xp_reward = 20000,
+	},
+	equip = {
+		weapon = "Electro Laser Rifle",
+		sensor = "radar",
+	},
+	drop_draw = {
+		class = 8,
+		plasma_transistors = 0,
+		superconductors = 0,
+		antimatter_converters = 0,
+		entropy_inverters = 0,
+		tachyon_condensators = 100,
+	},
+	gfx = {
+		prefix = "droids/prologue",
+		animation = {
+			walk   = { speed_factor = 5 },
+			attack = { speed_factor = 5 },
+			gethit = { speed_factor = 5 },
+			death  = { speed_factor = 5 },
+			stand  = { speed_factor = 5 },
+		},
+	},
+	sound = {
+		voice_samples = {
+			path = sfx_sounds.voice_samples.path,
+			first = sfx_sounds.voice_samples.first,
+			last = sfx_sounds.voice_samples.last,
+			probability = sfx_sounds.voice_samples.probability,
+		},
+	},
+},
+{
 	name = "PRO",
 	desc = _"Older Man",
 	notes = _"This is a typical professor/sage character of some older age.  They are not armed as powerfully as e.g. the red guards.",

@@ -7221,7 +7221,7 @@ Enable this trigger by default=0
 Silent=0
 <LuaCode>
 	end_quest("A New Mission From Spencer", _"All aboard, we're leaving now!")
-	win_game()
+	jump_to_game_act("act2")
 </LuaCode>
 * End of trigger *
 

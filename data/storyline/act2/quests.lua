@@ -23,4 +23,8 @@
 -- something cool, please send your file in to the Freedroid project.
 
 mission_list {
+{ -- For some reason this mission won't load (however, act1 missions will)
+	mission_name = _"Where Am I?",
+	mission_description = "Locate yourself in these bland lands, after a crash.",
+},
 }
