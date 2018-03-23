@@ -135,7 +135,7 @@ return {
 				Npc:says(_"You could always use the terminal to open them, but it requires a load letter. As a general rule, most terminals won't load without it.")
 				Npc:says(_"Most terminals will warn you if you forget to bring it. As a precaution, it misleads people to try climbing down to the last floor from RR Factory Offices.")
 				Tux:says(_"Interesting. However, if these load letters aren't on the last floor, were would they be?")
-				Npc:says(_"Not so far from there. I believe the signmans had one, and dispatch personal too, but eh. I could be wrong.")
+				Npc:says(_"Not so far from there. I believe the [b]signman[/b] had one, and dispatch personal too, but eh. I could be wrong.")
 				Npc:says(_"...Also, do not attempt to take or use it without master's permission. Was I clear?")
 				Tux:says(_"Clear as snow.", "NO_WAIT")
 				hide("node21")
