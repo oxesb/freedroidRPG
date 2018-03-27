@@ -714,7 +714,7 @@ int deflate_to_stream(unsigned char *, int, FILE *);
 
 // hud.c 
 void append_item_description(struct auto_string *str, item *);
-void show_texts_and_banner(void);
+void show_texts_and_banner(int);
 int get_days_of_game_duration(float current_game_date);
 int get_hours_of_game_duration(float current_game_date);
 int get_minutes_of_game_duration(float current_game_date);

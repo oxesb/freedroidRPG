@@ -668,18 +668,23 @@ static void show_top_right_text(void)
 
 /**
  * Show all texts and banners that should be blitted right inside the combat
- * window.
+ * window. Some texts are only rendered if game is not over.
  */
-void show_texts_and_banner(void) {
+void show_texts_and_banner(int game_over)
+{
 	SDL_SetClipRect(Screen, NULL);
-	show_current_text_banner();
-	show_top_left_text();
-	show_top_right_text();
-	if (GameConfig.effect_countdowns_visible) {
-		display_effect_countdowns();
+	if (!game_over) {
+		show_current_text_banner();
+		show_top_left_text();
+		show_top_right_text();
+		if (GameConfig.effect_countdowns_visible) {
+			display_effect_countdowns();
+		}
 	}
 	DisplayBigScreenMessage();
-	transient_text_show();
+	if (!game_over) {
+		transient_text_show();
+	}
 }
 
 /**
