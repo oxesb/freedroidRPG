@@ -136,7 +136,7 @@ return {
 				Npc:says(_"[b]Dvorak_Plans.lua[/b]", "NO_WAIT") -- Thanks for playing FreedroidRPG!
 				--; TRANSLATORS: %s = Tux:get_player_name()
 				Npc:says(_"Using PGP key \"%s\", decrypted successfully.", Tux:get_player_name(), "NO_WAIT")
-				--Tux:end_quest("A New Mission From Spencer", _"I've downloaded the message. Let's find Dvorak!") -- (TODO)
+    			Tux:end_quest("Message From An Old Friend", _"I managed to download Dvorak message!")
 				Npc:says("")
 				Npc:says(_"--- Begin Text Message (from Dvorak) ---", "NO_WAIT")
 				--; TRANSLATORS: %s = Tux:get_player_name()
@@ -167,7 +167,6 @@ return {
 				--; TRANSLATORS: %s = Game Version
 				Npc:says(_"[b]Thanks for playing FreedroidRPG %s![/b]", get_game_version())
 
-				-- TODO: These messages will never be shown because c-func ThouHastWon does not render this kind of messages
 				display_big_message(_"Thanks for playing FreedroidRPG!")
 				display_big_message(_"--- Continues ---")
 				win_game()

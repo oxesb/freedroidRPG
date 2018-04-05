@@ -142,9 +142,10 @@ return {
 				-- "subdialogs" can not be run solely
 				--"sub.lua",
 				-- dialog of terminals can not be run, currently, because they have no associated 'bot'
-				"CryonicsBlock-Terminal.lua", "FactoryTerminal.lua", "IcePass-Terminal.lua",
-				"RRGateTerminal.lua", "TerminalColemak.lua", "RRF-ManagmentTerminal.lua",
-				"Terminal.lua", "TerminalDenied.lua", "Act2-Vending-Machine.lua",
+				"ArenaTerminal", "Act2-Vending-Machine.lua", "CryonicsBlock-Terminal.lua",
+				"FactoryTerminal.lua", "IcePass-Terminal.lua",
+				"RRF-ManagmentTerminal.lua", "RRGateTerminal.lua", "TerminalColemak.lua",
+				"Terminal.lua", "TerminalDenied.lua",
 				 }
 
 			local dircontent = FDutils.system.scandir(FDdialog.dialogs_dirs, ".*%.lua", exclude)

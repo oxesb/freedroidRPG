@@ -234,5 +234,6 @@ mission_list {
 		add_xp(500)
 	]=],
 },
+
 }
 

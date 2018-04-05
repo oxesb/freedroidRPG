@@ -23,8 +23,17 @@
 -- something cool, please send your file in to the Freedroid project.
 
 mission_list {
-{ -- For some reason this mission won't load (however, act1 missions will)
+{
 	mission_name = _"Where Am I?",
 	mission_description = "Locate yourself in these bland lands, after a crash.",
 },
+{
+	mission_name = _"Message From An Old Friend",
+	mission_description = "Retrieve Dvorak's message.",
+},
+{
+	mission_name = _"The Reapers Of MegaSys I",
+	mission_description = "Find and defeat The Glitch.",
+},
+
 }

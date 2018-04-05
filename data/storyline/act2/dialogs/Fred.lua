@@ -36,6 +36,14 @@ return {
 		if (Tux:has_item_equipped("Barrett M82 Sniper Rifle") and
 			not Fred_Barrett) then
 			show("barrett_help")
+        --[[ This could be useful if people complain about not finishing Reapers I quest.
+        elseif (not Fred_Barret) then
+			Npc:says_random(_"Sniper Rifles are cool.",
+							_"Defeating robots is easy with Sniper Rifles.",
+							_"Bah-bah-bah rifler.", -- From Doctor Who “bah-bah-bah-biker”
+							_"What's better than grenades? Sniper rifles.",
+							_"Where could I increase my Sniper Rifles collection?")
+        ]]--
 		end
 
 	end,
@@ -107,6 +115,7 @@ return {
 			Tux:says(_"...I do not think I'll ever meet such droid, but thanks for the warning.")
 			Tux:add_item(".50 BMG (12.7x99mm) Ammunition", 5)
 			Npc:says(_"Here is some spare ammo. Use it wisely.")
+			Tux:end_quest("The Reapers Of MegaSys I", _"Glitch was defeated, and I obtained one of the most powerful weapon in sheer damage terms. Man, either I am THAT good, or I cheat.")
 			Fred_Barrett = true
 			hide("barrett_help")
 		end,

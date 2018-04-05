@@ -63,6 +63,7 @@ return {
 			Tux:says(_"Undesired... people? Is that even ethical?")
 			Npc:says(_"I do not know what \"ethical\" means.")
 			Tux:says(_"Ah, okay. Do not worry with such big details.")
+			Tux:update_quest("Where Am I?", _"I found RR Resorts, where \"undesired individuals\" are kept frozen. I probably should seek a way to unfreeze them.")
 			hide("node21")
 		end,
 	},

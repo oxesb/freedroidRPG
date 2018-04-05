@@ -18,7 +18,7 @@
 ----------------------------------------------------------------------
 --[[WIKI13
 PERSONALITY = { "Wise", "Arrogant" },
-PURPOSE = "$$NAME$$ is a strange monk who follows the path of light. Options become available as you talk to him. Gives quest to slay evil glitches. Give quests for Source Book of Light, Light Saber and Light Staff. Is a pacifist with a weak resolve. May summon droids to help Tux in certain quests, or to kill tux if he appears to be walking on an evil path, be it because bad karma, or because strange items on his possession.",
+PURPOSE = "$$NAME$$ is a strange monk who follows the path of light. Options become available as you talk to him. Gives quest to slay evil glitches. Give quests for Source Book of Light, Light Saber and Light Staff. Is a pacifist with a weak resolve. May summon droids to help Tux in certain quests, or to kill tux if he appears to be walking on an evil path, be it because bad karma, or because strange items on his  possession.",
 BACKSTORY = "Please refer to key-characters section on website."
 WIKI]]--
 
@@ -52,7 +52,7 @@ return {
 			show("evil")
 		end
 
-		if (Tux:done_quest("Where Am I?") and not Yadda_PGP) then -- TODO: Consistency (order of events). Must use has_quest('Dvorak') instead.
+		if (Tux:has_quest("Message From An Old Friend") and not Yadda_PGP) then
 			Yadda_PGP=true
 			show("pgpkey")
 		end
@@ -60,6 +60,7 @@ return {
 		Yadda_times=Yadda_times + 1
 		if (Yadda_times==1) then
 			Npc:says(_"Come and seek my lightly advises every now and then, and you'll find out truth and light.")
+			Tux:assign_quest("The Reapers Of MegaSys I", _"Master Yadda seems to be a very wise man, and I should talk to him a lot more.")
 		elseif (Yadda_times==3) then
 			Npc:says(_"The only skill worth acquiring in the world: Light.")
 			show("book")
@@ -69,6 +70,7 @@ return {
 			-- Note for self: thirteen thirty-seven = 1337
 			Npc:says(_"I have secrets, but you are not ready for them.")
 			Npc:says(_"If you talk to me thirty seven times, as in thirteen thirty-seven, I'll teach them.")
+			Tux:update_quest("The Reapers Of MegaSys I", _"Sorry, Master Yadda is ANNOYING! But he promised to tell me a secret if I keep talking to him.")
 		elseif (Yadda_times==37) then
 			Npc:says(_"This is the 37th time you ask me for enlightenment, as in thirteen thirty-seven. I'll teach you a secret. There is a super-strong bot on this area. Might be worth checking out.")
 			show("C64gate")
@@ -129,6 +131,7 @@ return {
 			Npc:says(_"If you defeat it, the fictional survivors which aren't here because the Great Assault would be very grateful. You will also gain a nice amount of experience, and who knows what it will drop?", "NO_WAIT")
 			Tux:says(_"Seems interesting. Where can I find it?")
 			Npc:says(_"Just follow the water, young apprentice of Yaddawan. Only the ones with enough faith can walk over water and save the world!")
+			Tux:update_quest("The Reapers Of MegaSys I", _"The first Reaper of Megasys, The Glitch, can be found by walking over the water on Icy Summer Island. I better stay away, as searching for it is a death wish.")
 			del_obstacle("Act2-ArtificialPassage-1")
 			del_obstacle("Act2-ArtificialPassage-2")
 			hide("C64gate")

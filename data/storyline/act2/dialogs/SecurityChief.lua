@@ -138,6 +138,7 @@ return {
 				Npc:says(_"Not so far from there. I believe the [b]signman[/b] had one, and dispatch personal too, but eh. I could be wrong.")
 				Npc:says(_"...Also, do not attempt to take or use it without master's permission. Was I clear?")
 				Tux:says(_"Clear as snow.", "NO_WAIT")
+				Tux:update_quest("Where Am I?", _"The security chief told me the Signman had the PC Load Letter, which can be used to wake up people being confined on Resorts. That should be before the last floor from RR Factory.")
 				hide("node21")
 		end,
 	},

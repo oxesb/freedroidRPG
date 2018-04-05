@@ -176,7 +176,7 @@ return {
 			Npc:says(_"I'll now unlock the [b]download[/b] command. Download the plans for me, pretty please.", "NO_WAIT")
 			Npc:says(_"It's encrypted and requires a key, but I'm sure you'll find it. Inform me about what Dvorak left there!")
 			Act2_DvorakPlanDownload=true
-			Tux:update_quest("Where Am I?", _"Dvorak has foreseen my arrival and left some data at the terminal which I used to uncryonize Colemak. I must download these files no matter what it takes!")
+			Tux:assign_quest("Message From An Old Friend", _"Dvorak has foreseen my arrival and left some data at the terminal which I used to uncryonize Colemak. I must download these files no matter what it takes!")
 
 			-- Game used to end here. This was a fix for credits not being played (thanks wlan2)
 			-- Cursor state was not reset on win_game() so you had to interact with terminal. (This bug is not present anymore)
