@@ -1855,8 +1855,8 @@ void AssembleCombatPicture(int mask)
 	// view...
 	if (!(mask & ONLY_SHOW_MAP_AND_TEXT)) {
 		display_widgets();
-		if (!GameOver && !world_frozen())
-			show_texts_and_banner();
+		if (!world_frozen())
+			show_texts_and_banner(GameOver);
 	}
 
 	if (GameConfig.Inventory_Visible || GameConfig.skill_explanation_screen_visible || addon_crafting_ui_visible()) {

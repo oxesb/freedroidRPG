@@ -865,18 +865,34 @@ static int lua_kill_faction(lua_State *L)
 {
 	const char *fact = luaL_checkstring(L, 1);
 	const char *respawn = luaL_optstring(L, 2, "");
-	enemy *erot, *nerot;
 	if (strcmp(respawn, "no_respawn") && (strcmp(respawn, "")))
 		error_message(__FUNCTION__, "\
 				Received optional second argument \"%s\". Accepted value is \"no_respawn\".\n\
 				Faction \"%s\" will now be killed and will respawn as usual.", PLEASE_INFORM, respawn, fact);
+
+	int faction_id = get_faction_id(fact);
+	int no_respawn = !strcmp(respawn, "no_respawn");
+	enemy *erot, *nerot;
+
+	// Kill alive bots of that faction and set their respawn attribute
 	BROWSE_ALIVE_BOTS_SAFE(erot, nerot) {
-		if (erot->faction != get_faction_id(fact))
+		if (erot->faction != faction_id)
 			continue;
 		hit_enemy(erot, erot->energy + 1, 0, -2, 0);
-		if (!strcmp(respawn, "no_respawn"))
+		if (no_respawn)
 			erot->will_respawn = FALSE;
 	}
+
+	// Perhaps there are also some dead bots in the faction that we
+	// do not want to be respawned
+	if (no_respawn) {
+		BROWSE_DEAD_BOTS(erot) {
+			if (erot->faction != faction_id)
+				continue;
+			erot->will_respawn = FALSE;
+		}
+	}
+
 	return 0;
 }
 

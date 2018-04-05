@@ -238,7 +238,7 @@ static void edit_special_force_info(enemy *en)
 	}
 
 	// TRANSLATORS: the max. distance the bot can move away from its spawn position
-	autostr_append(displayed_text, _("%s\n Max distance from home: "), en->CompletelyFixed ? _("yes") : _("no"));
+	autostr_append(displayed_text, _("%s\n Max distance from home: "), en->CompletelyFixed ? _("no") : _("yes"));
 	sprintf(suggested_val, "%d", en->max_distance_to_home);
 	free(user_input);
 
