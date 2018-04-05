@@ -79,9 +79,11 @@ return {
 			else
 				Npc:says(_"Not yet, but I'm working on it. I'll teach you something important.")
 			end
-			-- This is a debug fix
-			SecurityChief:drop_dead()
-			ProgrammingChief:drop_dead()
+			-- This was a debug fix. On easy mode the work is cut for you.
+			if (difficulty("easy")) then
+				SecurityChief:drop_dead()
+				ProgrammingChief:drop_dead()
+			end
 			Npc:says(_"There are no humans awake on RR Resorts.", "NO_WAIT") -- What about Fred and Yadda?
 			Npc:says(_"What you think that was a human, was also a bot. It just have a different skin.")
 			Npc:says(_"If it could merge on the human society, the chaos would be even bigger.")
