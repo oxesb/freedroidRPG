@@ -18,17 +18,13 @@
 ----------------------------------------------------------------------
 --[[WIKI
 PERSONALITY = { "Weird", "Mysterious", "Riddles", "Omniscient?", "Crypt" },
-PURPOSE = "$$NAME$$ warns Tux in advance about some events which are about to happen - if Tux can understand his weird analogies, anyway. Otherwise, he's just an useless character which spawn between Acts and player will wonder why he does that and what he's talking about.",
+PURPOSE = "$$NAME$$ is just an useless character which may spawn between Acts and player will wonder why he does that and what he's talking about.",
 BACKSTORY = "$$NAME$$ is an anomaly. No one knows where he comes from, why he is here, or even if he should be in FreedroidRPG to begin with. He was not added by FreedroidRPG staff, and seems pretty happy in playing mind games with Tux. But, who is this man, who all he does all day is staring the sky? He might be holding a big secret, but you'll never know. All you can do for now is fry your brain, trying to understand why he just stares the sky, without doing anything, as if everything is going as it should be going... including you."
 WIKI]]--
 
 local Npc = FDrpg.get_npc()
 local Tux = FDrpg.get_tux()
 
--- Before we begin my script, I want to apologize. You mortals will never understand the joy of winning my mental games, so, please, try harder.
--- As we're at that, please do not read the comments from now on, they explain how my riddles work, and bring the answers. They're consistent.
--- I talk using sky-related things. I start with a hello in three different forms (my dear, hi there and oh a linarian) and the past, then I explain the current situation, and I finally excuse myself in the same way, with a warning about the future.
--- Please keep this logical sequence, and HAVE FUN! Signed, Mr. Saves, the Watcher Of Stories.
 return {
 	FirstTime = function()
 		Saves_times=0
@@ -66,60 +62,9 @@ return {
 			Npc:says(_"Now get going. You have more important things to do.")
 			end_dialog()
 		else
-			next("act2a")
+			Npc:says(_"The sky is in a pretty blue azure today...") -- He could give different colors to sky based on player progress.
 		end
 	end,
-	-- The "actXY" or "actX" nodes are the "not-understandable mental games" from Mr. Saves. Please do not read the comments!
-	{
-		id = "act1",
-		text = _"Exit",
-		echo_text = false,
-		code = function()
-			-- Mr. Saves is not talking about stars falling - he is talking about Linarians going against the LHC to help humanity - namely, Tux
-			Npc:says_random(_"Hello, my dear. I've just saw a falling star the other day.",
-							_"Hi there. Do you like star shower? But, so far, only one has fallen...",
-							_"Oh, if it isn't a linarian! The sky is silent, only one star has fallen thus far.")
-			-- Mr. Saves is saying that when Tux awoke (or rather, went against MS) he impacted the humans (clouds).
-			-- He hopes they rise in revolt (rain) soon.
-			Npc:says(_"During it's fall, it pierced the clouds. I hope it may rain soon.")
-			-- He is saying to be aware of Linarians (stars) in Earth, which did not felt.
-			Npc:says(_"Sorry, I would love to talk more, however, it's not only the stars in sky I must watch. There are stars in Earth too, did you knew that?")
-			next('node99')
-		end,
-	},
-	{
-		id = "act2a",
-		text = _"Exit",
-		echo_text = false,
-		code = function()
-			-- Mr. Saves is not talking about weather and rain, but about the great assault (weather) and humans rising in revolt (rain)
-			Npc:says_random(_"Hello, my dear. Did you noticed any rain during your travels?",
-							_"Hi there. Do you think it'll rain today? It haven't rained well lately.",
-							_"Oh, if it isn't a linarian! The weather is almost perfect, except it almost never rains.")
-			-- During the start of the Great Assault there was heavy human resistance, but now they're getting used to it.
-			-- Mr. Saves is currently checking for surviving humans which could rise in revolt (clouds).
-			Npc:says(_"It rained a lot during the first days, but now it's very dry. Actually, I'm just staring at the clouds.")
-			-- Umbrella can block the rain. They're MegaSys contigencies being prepared against a revolt, and Tux is now warned about that.
-			Npc:says(_"Sorry, I would love to talk more, however, I can feel umbrellas being open. Be prepared, Linarian.")
-			next('node99')
-		end,
-	},
-	{
-		id = "act2b",
-		text = _"Exit",
-		echo_text = false,
-		code = function()
-			-- Mr. Saves is not talking about the sun, he is talking about Dvorak and the High Council.
-			Npc:says_random(_"Hello, my dear. The sun is brighting more every day, to burn the humans.",
-							_"Hi there. If you're soaking, it's because the sun is more intense, to burn us all.",
-							_"Oh, if it isn't a linarian! The sun is pretty bright, does it want to burn humans?")
-			-- If nothing is done about the Linarian High Council, all humans will die before they can revolt (so, bots are not your only worry)
-			Npc:says(_"If things are left unchecked, the clouds will vanish before it rain.")
-			-- He is saying that he saw Dvorak, who could block the High Council influence (sunlight). He also leaves out that Dvorak actually needs Tux, thus, it 'orbited' around the star which felt the other day (Tux).
-			Npc:says(_"Sorry, I would love to talk more, however, I think I've seen a crypt planet, which could block the sunlight. Did this planet orbited around the star which felt on the other day?")
-			next('node99')
-		end,
-	},
 	-- The first time you talk to Mr. Saves, you are presented the opportunity to do questions (most IRC-quotes based)
 	{
 		id = "alive",
