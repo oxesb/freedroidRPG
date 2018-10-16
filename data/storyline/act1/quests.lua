@@ -191,9 +191,6 @@ mission_list {
 {
 	mission_name = _"An Explosive Situation",
 	mission_description = "Save the town from nuclear disaster",
-	completion_code = [=[
-		update_quest("An Explosive Situation", _"Not only is the town safe, but apparently so is Ewald's 296 droid. Oh joy.")
-	]=],
 },
 {
 	mission_name = _"Open Sesame",

@@ -125,7 +125,7 @@ return {
 		id = "node20",
 		text = _"How can I help you?",
 		code = function()
-			Npc:says(_"Under the tunnel, there is a old server room with an extensive cluster. We need it for experiments, but the maintenance robots there are behaving erratically.")
+			Npc:says(_"Under the tunnel, there is an old server room with an extensive cluster. We need it for experiments, but the maintenance robots there are behaving erratically.")
 			Npc:says(_"We believe it to be viral, a different situation from that of the MS Droids. We had hoped to improve their consciousness. Unfortunately, we failed.")
 			Npc:says(_"They cannot rise above their rogue programming. It makes them dangerous, a danger to themselves and others.")
 			Npc:says(_"We cannot allow them to succeed - but we won't kill them. They are sentient, like us. But, we are afraid we can compute no other solution.")

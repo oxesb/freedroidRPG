@@ -185,9 +185,9 @@ return {
 				Npc:says(_"Ok, here it is. Take this book.")
 				Npc:says(_"It's quite old and some pages are missing, but the main message is still clear.")
 				Tux:says(_"Oh, thanks!")
+				Tux:del_item_backpack("Desk Lamp", 1)
 				Tux:add_item("Source Book of Invisibility")
 				Iris_wants_lamp = false
-				Tux:del_item_backpack("Desk Lamp", 1)
 				Iris_traded_lamp = true
 			else
 				Npc:says(_"Don't try to trick me, fat bird.")
