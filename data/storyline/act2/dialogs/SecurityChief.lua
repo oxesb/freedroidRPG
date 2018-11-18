@@ -35,6 +35,9 @@ return {
 	end,
 
 	EveryTime = function()
+		if (RRR_introduced == nil) then
+			Npc:says(_"Are you friend or foe, intruder?")
+		end
 		show("node99")
 
 	end,
@@ -45,6 +48,7 @@ return {
 		code = function()
 			Npc:says(_"Good. Now die.")
 			Tux:kill() -- Maybe we should make more clear he is with MS?
+			RRR_introduced = true
 			hide("node0", "node1")
 			end_dialog()
 		end,
@@ -56,6 +60,7 @@ return {
 			Npc:says(_"Ah, then you must be with my masters.")
 			Npc:says(_"You can look, but don't touch anything, unless you have explicit authorization to do so.")
 			Tux:says(_"...So much for sarcasm...", "NO_WAIT")
+			RRR_introduced = true
 			hide("node0", "node1") show("node10")
 		end,
 	},
