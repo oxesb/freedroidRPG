@@ -32,6 +32,7 @@ return {
 		Tux:says(_"*******", "NO_WAIT")
 		--; TRANSLATORS: %s = a date , %y = a year
 		Npc:says(_"First login from /dev/ttySO on %s %d", DSB_PC_date, DSB_PC_year, "NO_WAIT")
+		show("node1")
 	end,
 
 	EveryTime = function()
