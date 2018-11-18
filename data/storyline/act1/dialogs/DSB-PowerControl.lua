@@ -41,6 +41,15 @@ return {
 	end,
 
 	{
+		id = "node1",
+		text = _"powercontrol --halt",
+		code = function()
+			Npc:says(_"[b]ERROR:[/b] Impossible to shutdown. Please contact Machine Deck.")
+			cli_says(_"admin@main.pc.dsb.ms: ~ #", "NO_WAIT")
+			hide("node1")
+		end,
+	},
+	{
 		id = "node99",
 		text = _"logout",
 		code = function()
