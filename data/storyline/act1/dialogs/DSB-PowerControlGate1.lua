@@ -32,7 +32,7 @@ return {
 		Tux:says(_"admin", "NO_WAIT")
 		cli_says(_"Password : ", "NO_WAIT")
 		Tux:says(_"*******", "NO_WAIT")
-		cli_says(_"Login failed. Entering as Guest")
+		Npc:says(_"[b]Login failed. Entering as Guest[/b]")
 		Npc:says(" ", "NO_WAIT")
 		Npc:says(_"Welcome to [b]Power Control Gate 1 Terminal[/b]!", "NO_WAIT")
 		Npc:says(" ", "NO_WAIT")

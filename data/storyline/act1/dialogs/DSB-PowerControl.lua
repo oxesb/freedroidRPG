@@ -32,6 +32,7 @@ return {
 		Tux:says(_"*******", "NO_WAIT")
 		--; TRANSLATORS: %s = a date , %y = a year
 		Npc:says(_"First login from /dev/ttySO on %s %d", DSB_PC_date, DSB_PC_year, "NO_WAIT")
+		show("node1")
 	end,
 
 	EveryTime = function()
@@ -40,6 +41,15 @@ return {
 		show("node99")
 	end,
 
+	{
+		id = "node1",
+		text = _"powercontrol --halt",
+		code = function()
+			Npc:says(_"[b]ERROR:[/b] Impossible to shutdown. Please contact Machine Deck.")
+			cli_says(_"admin@main.pc.dsb.ms: ~ #", "NO_WAIT")
+			hide("node1")
+		end,
+	},
 	{
 		id = "node99",
 		text = _"logout",
