@@ -112,7 +112,7 @@ return {
 
 			-- Check for C: and for lab-015
 			Npc:says(_"[b]SYSTEM ERROR[/b] Hard disk may be corrupted or permanently damaged.")
-			Npc:says(_"[b]WARNING[/b]Secret Laboratory gates are unresponsive. Dangerous bots may be out, beware!")
+			Npc:says(_"[b]WARNING[/b] Secret Laboratory gates are unresponsive. Dangerous bots may be out, beware!")
 
 			-- Overall analysis
 			--Tux:says(_"There are still too many errors. I'll need to fix a few things more before trying to identify myself again.")

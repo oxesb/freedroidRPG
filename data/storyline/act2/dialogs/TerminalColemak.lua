@@ -101,13 +101,13 @@ return {
 				-- FIX: Check if they are alive. If not, respawn them to prevent unexpected errors.
 				-- Please note current implementation allows them to shoot at you longer!
 				if (SecurityChief:is_dead()) then
-					create_droid('75-KillTuxPos01','GUB','neutral','SecurityChief')
+					create_droid('75-KillTuxPos01','GUB','ms','SecurityChief')
 				end
 				if (ProgrammingChief:is_dead()) then
-					create_droid('75-KillTuxPos02','999','neutral','ProgrammingChief')
+					create_droid('75-KillTuxPos02','999','ms','ProgrammingChief')
 				end
 
-				-- make the cryo keepers hostile
+				-- make the cryo keepers hostile if they aren't already
 				SecurityChief:set_faction("ms")
 				ProgrammingChief:set_faction("ms")
 
