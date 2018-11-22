@@ -7167,8 +7167,10 @@ Silent=1
 Name="59 Bender Teleport"
 Silent=0
 <LuaCode>
-	teleport_npc("59-Teleporter-1", "Bender")
-	set_bot_destination("59-Teleporter-1", "Bender")
+	if (not npc_dead("Bender")) then
+		teleport_npc("59-Teleporter-1", "Bender")
+		set_bot_destination("59-Teleporter-1", "Bender")
+	end
 </LuaCode>
 * End of trigger *
 
@@ -7176,8 +7178,10 @@ Silent=0
 Name="59 Guard Teleport"
 Silent=0
 <LuaCode>
-	teleport_npc("59-Teleporter-1", "Town-TuxGuard")
-	set_bot_destination("59-Teleporter-1", "Town-TuxGuard")
+	if (not npc_dead("Town-TuxGuard")) then
+		teleport_npc("59-Teleporter-1", "Town-TuxGuard")
+		set_bot_destination("59-Teleporter-1", "Town-TuxGuard")
+	end
 </LuaCode>
 * End of trigger *
 

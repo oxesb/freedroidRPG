@@ -111,7 +111,7 @@ name = "Heatsink",
 upgrade_cost = 50,
 require_socket = "mechanical",
 require_item = "armor",
-bonuses = { cooling = 10 },
+bonuses = { cooling = 7 },
 materials = { ["Entropy Inverter"] = 10 }
 }
 
