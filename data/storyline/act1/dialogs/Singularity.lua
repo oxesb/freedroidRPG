@@ -49,6 +49,9 @@ return {
 			show("node22")
 			Singularity_reward_for_toolkit = true
 		end
+		if (Singularity_deal) then
+			show("node40")
+		end
 	end,
 
 	{
@@ -152,12 +155,42 @@ return {
 			Npc:says(_"Thank you, Linarian. We will not forget it - your help has been invaluable. Please feel free to take the toolbox.")
 			change_obstacle_state("Maintenance-escape1", "opened")
 			change_obstacle_state("Maintenance-escape2", "opened")
+			Npc:teleport("Singularity-ServerSpawn")
+			Npc:set_destination("Singularity-ServerSpawn")
+			create_droid("Singularity-mkdroid", 139, "singularity", "Singularity-Drone", "radar")
+			create_droid("Singularity-Spawn01", 302, "singularity", "Singularity-Drone", "radar")
+			create_droid("Singularity-Spawn02", 247, "singularity", "Singularity-Drone", "radar")
+			create_droid("Singularity-Spawn03", 249, "singularity", "Singularity-Drone", "radar")
 			Tux:update_quest("The yellow toolkit", _"The Singularity gave me the toolkit in exchange for my help.")
 			Tux:add_item("Dixon's Toolbox", 1)
 			Npc:set_death_item("NONE")
 			Singularity_deal = true
 			hide("node22")
 			end_dialog()
+		end,
+	},
+	{
+		id = "node40",
+		text = _"How is it going?",
+		code = function()
+			if (Tux:has_quest("Propagating a faulty firmware update")) then
+				Npc:says(_"We are done with the research. We did our first droid using a Primode brain model.")
+				Tux:says(_"Primode brain?")
+				Npc:says(_"A highly sophisticated kind of hardware for a brain. Increases computation speed in 3000%%.")
+				Tux:says(_"Wow!")
+			elseif (Tux:has_quest("Opening access to MS Office")) then
+				Npc:says(_"We already hit the full potential of neutronic brains. It'll take some time until we're done.")
+				Tux:says(_"Brains? ...OK, I'll do some... things while you research.")
+			elseif (Tux:has_quest("And there was light...")) then
+				Npc:says(_"Our research is going pretty well. We're now going to start researches with Neutronics.")
+				Tux:says(_"Uhm, good luck with that!")
+			elseif ((tux_has_joined_guard or tux_has_joined_rebels)) then
+				Npc:says(_"We have begun our research. We are currently checking all data available about processors.")
+				Tux:says(_"Sounds interesting. I have to go now, but I'll come back later!")
+			else
+				Npc:says(_"We are still mounting up the server room for our researches. Come back later.")
+			end
+			hide("node40")
 		end,
 	},
 	{
