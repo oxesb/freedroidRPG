@@ -133,6 +133,11 @@ return {
 			Npc:says(_"They cannot rise above their rogue programming. It makes them dangerous, a danger to themselves and others.")
 			Npc:says(_"We cannot allow them to succeed - but we won't kill them. They are sentient, like us. But, we are afraid we can compute no other solution.")
 			Npc:says(_"Linarian, disable them for us.")
+			Tux:says(_"You mean to... kill them?")
+			Npc:says(_"Preferably not. It would be better if you could re-purpose them instead. Maybe not all of them, but the more you can, the better.")
+			Tux:says(_"...","NO_WAIT")
+			Tux:says(_"You mean to hack them instead, right?")
+			Npc:says(_"Yes, that.")
 			hide("node20") show("node21")
 		end,
 	},
