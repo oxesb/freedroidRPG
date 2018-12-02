@@ -2347,6 +2347,18 @@ item_list{
 	description =_[[A can filled with elbow grease. Hard to make it if you are not a strong man.]],
 	rotation_series = "pills_potions/blue_energy_drink",
 },
+
+ ----------------------------------------------------------------------
+
+{
+	id = "MS EPROM Programming Interface",
+	name =_"MS EPROM Programming Interface",
+	base_price = 0,
+	inventory = {x = 2, y = 2, image = "eprom/inv_image.png" },
+	drop = {sound = "Item_Drop_Sound_4.ogg"},
+	description =_[[Used by developers at MegaSys to load firmware onto newly assembled droids.]],
+	rotation_series = "eprom",
+},
 ----------------------------------------------------------------------
 
 ----------------------------------------------------------------------
