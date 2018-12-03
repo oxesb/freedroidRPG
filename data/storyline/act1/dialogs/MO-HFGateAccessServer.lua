@@ -115,7 +115,7 @@ return {
 			Npc:says(_"Permission denied")
 			Tux:hurt(5)
 			Tux:heat(10)
-			Tux:update_quest("Open Sesame", "The server is secured, looks like I have to hack it.")
+			display_console_message("The server is secured, looks like I have to hack it.")
 			hide("node2") show("node3")
 			play_sound("effects/Menu_Item_Selected_Sound_1.ogg")
 			end_dialog()
