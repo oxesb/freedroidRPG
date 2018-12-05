@@ -776,8 +776,10 @@ void prepare_execution(int argc, char *argv[])
 #if defined HAVE_UNISTD_H && defined HAVE_DIRNAME
 	// Change working directory to the executable's directory,
 	// all data dirs being searched relatively to that directory.
-	if (chdir(dirname(argv[0])))
+	char *argvzero = strdup(argv[0]);
+	if (chdir(dirname(argvzero)))
 		fprintf(stderr, "Couldn't change working directory to %s.\n", dirname(argv[0]));
+	free(argvzero);
 #endif
 
 	// Get color capability of current output stream.
