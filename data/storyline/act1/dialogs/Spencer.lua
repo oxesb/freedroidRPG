@@ -729,7 +729,7 @@ return {
 			Npc:says(_"He didn't have any certificate but maybe I should just limit my worrying. I'm pretty sure with him piloting it'll be a successful flight.")
 			Tux:end_quest("Propagating a faulty firmware update", _"The town is saved, but there's still a lot to do. I agreed to continue fighting the robot armies with the Red Guard.")
 	        Npc:says(_"I'll drop you on the Landing Zone. Just move close to the ship, on the stairs, to board. It'll depart immediately.")
-			Tux:add_quest("A New Mission From Spencer", _"In order to interrogate the former MegaSys president, I need to go to the HF Landing Zone and climb the stairs from the Stratopod there. The pilot is already inside, and he'll bring me to next area which needs me.\n\n I am not sure what expects me there, so I should bring along a secondary weapon, unique items, lots of ammo, recovery items, and money. Ah, mastering some skills like repair is also interesting.")
+			Tux:add_quest("A New Mission From Spencer", _"In order to interrogate the former MegaSys president, I need to go to the HF Landing Zone and climb the stairs from the Stratopod there. The pilot is already inside, and he'll bring me to next area which needs me.")
 
 			-- Let's create the ship and open the gates - in case player want to explore further
 			add_obstacle(62, 64.0, 37.0, 501)

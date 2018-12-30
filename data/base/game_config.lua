@@ -30,7 +30,7 @@ game_acts{
 	{ id = "act1", name = "Return Of Tux",
 	  intro = "-= Start of Act 1 =-",
 	  subdir = "act1", is_starting_act = true  },
-	{ id = "act2", name = "Dvorak, First AI",
+	{ id = "act2", name = "Dvorak Begins",
 	  intro = "-= Start of Act 2 =-",
 	  subdir = "act2", is_starting_act = false },
 }

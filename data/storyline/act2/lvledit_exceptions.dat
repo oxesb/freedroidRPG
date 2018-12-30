@@ -79,12 +79,4 @@ Rule=8 [Type="WD"] WP1 X1=25.500000:Y1=49.500000:L1=37 <-> WP2 X2=25.500000:Y2=4
 
 *** Beginning of LevelValidator Exceptions List ***
 
-
-# Level 76 and 77, Act 2 Initial Land
-# Some obstacles going past level borders
-
-Rule=100 [Type="OE"] X=89.500000:Y=70.500000:L=1 T=36 -> east border=90.250000 (warning)
-Rule=101 [Type="OE"] X=89.500000:Y=75.000000:L=1 T=36 -> east border=90.250000 (warning)
-Rule=200 [Type="OW"] X=0.500000:Y=70.500000:L=2 T=36 -> west border=-0.250000 (warning)
-
 *** End of LevelValidator Exceptions List ***
