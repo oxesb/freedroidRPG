@@ -35,7 +35,7 @@ Finally, remember that no contribution is too small to be interesting. :)
 Find us at :
 
 * `Website       ................ http://www.freedroid.org/`
-* `IRC channel   ................ #freedroid on irc.freenode.net or                             http://webchat.freenode.net/?channels=freedroid`
+* `IRC channel   ................ #freedroid on irc.freenode.net or http://webchat.freenode.net/?channels=freedroid`
 * `Mailing list  ................ freedroid-discussion@lists.sourceforge.net`
 * `Gitlab project page   ........ https://gitlab.com/freedroid/freedroid-src`
 * `Translation   ................ https://www.transifex.com/arctic-games/freedroid-rpg/`
