@@ -351,7 +351,7 @@ void show_addon_crafting_ui()
 		if (ui.materials_for_selected[i].available < ui.materials_for_selected[i].required) {
 			sprintf( text ,"%s%02d", font_switchto_red, ui.materials_for_selected[i].available);
 		} else {
-			if (ui.materials_for_selected[i].available > 100)
+			if (ui.materials_for_selected[i].available < 0 || ui.materials_for_selected[i].available > 100)
 				sprintf( text ,"%s--", font_switchto_neon);
 			else
 				sprintf( text ,"%s%02d", font_switchto_neon, ui.materials_for_selected[i].available);

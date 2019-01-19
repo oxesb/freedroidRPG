@@ -455,11 +455,12 @@ static void add_rem_level(void)
 static void level_options(void)
 {
 	char *menu_texts[100];
-	char options[20][1000];
+#	define OPTLEN 1000
+	char options[20][OPTLEN];
 	char class[16];
 	int l = 0;
 
-	class[15] = 0; // null-character to null terminated strncpy
+	class[15] = '\0'; // null-character to null terminated strncpy
 
 	enum {
 		CHANGE_LEVEL_POSITION = 1,

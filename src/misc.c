@@ -643,9 +643,11 @@ void init_data_dirs_path()
 		FILE *f = fopen(file_path, "r");
 		if (f != NULL) {
 			// File found, so now fill the data dir paths
-			strncpy(data_dirs[DATA_ROOT].path, top_data_dir[i], PATH_MAX);
+			strncpy(data_dirs[DATA_ROOT].path, top_data_dir[i], PATH_MAX-1);
+			data_dirs[DATA_ROOT].path[PATH_MAX-1] = '\0';
 #ifdef ENABLE_NLS
-			strncpy(data_dirs[LOCALE_ROOT].path, top_locale_dir[i], PATH_MAX);
+			strncpy(data_dirs[LOCALE_ROOT].path, top_locale_dir[i], PATH_MAX-1);
+			data_dirs[LOCALE_ROOT].path[PATH_MAX-1] = '\0';
 #endif
 			fclose(f);
 			goto TOP_DIR_FOUND;

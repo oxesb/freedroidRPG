@@ -3064,8 +3064,8 @@ void show_inventory_screen(void)
 			set_current_font(Messagevar_Font);
 			// Only 3 characters fit in one inventory square.
 			char amount[4];
-			if (Me.Inventory[SlotNum].multiplicity < 999)
-				sprintf(amount, "%d", Me.Inventory[SlotNum].multiplicity);
+			if (Me.Inventory[SlotNum].multiplicity >= 0 && Me.Inventory[SlotNum].multiplicity <= 999)
+				sprintf(amount, "%03d", Me.Inventory[SlotNum].multiplicity);
 			else
 				strcpy(amount, "+++");
 			TargetRect.w = INV_SUBSQUARE_WIDTH * ItemMap[Me.Inventory[SlotNum].type].inv_size.x;
