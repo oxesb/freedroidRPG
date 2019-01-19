@@ -29,7 +29,7 @@ SUBDIRS = $(MAYBE_EMBEDDED_LUA) $(WIN32_PREBUILD) src tools doc $(MAYBE_BUILD_PO
 
 man_MANS = freedroidRPG.6
 README_l10n = $(basename $(notdir $(wildcard $(top_srcdir)/README-*)))
-dist_doc_DATA = README $(README_l10n) HELP_WANTED NEWS
+dist_doc_DATA = README $(README_l10n) CONTRIBUTING.md NEWS
 
 freedroid_data = data lua_modules
 
