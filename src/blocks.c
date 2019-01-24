@@ -709,7 +709,7 @@ static struct image *get_storage_for_tux_image(const char *filename)
 void load_tux_graphics(int motion_class, int tux_part_group, const char *part_string)
 {
 	char atlas_filename[4096];
-	char atlas_directory[4096-10]; // '-10' == sizeof("/atlas.txt")
+	char atlas_directory[4096-9]; // '-9' == sizeof("atlas.txt")
 	static char *part_group_strings[ALL_PART_GROUPS] = {
 		"head/",
 		"shield/",
@@ -720,9 +720,9 @@ void load_tux_graphics(int motion_class, int tux_part_group, const char *part_st
 	};
 
 	snprintf(atlas_directory, sizeof(atlas_directory),
-	         "tux_motion_parts/%s/%s%s",
+	         "tux_motion_parts/%s/%s%s/",
 	         get_motion_class_name_by_id(motion_class), part_group_strings[tux_part_group], part_string);
-	snprintf(atlas_filename, sizeof(atlas_filename), "%s/atlas.txt", atlas_directory);
+	snprintf(atlas_filename, sizeof(atlas_filename), "%satlas.txt", atlas_directory);
 
 	current_tux_motion_class = motion_class;
 	current_tux_part_group = tux_part_group;
