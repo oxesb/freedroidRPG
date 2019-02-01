@@ -52,7 +52,7 @@ static struct {
 		{ &Messagestat_Font, "small_blue.png",   { 0,  0, NULL } },
 		{ &Red_Font,         "font05_red.png",   { 0, -2, NULL } },
 		{ &Blue_Font,        "font05_white.png", { 0, -2, NULL } },
-		{ &FPS_Display_Font, "font05.png",       { 0, -2, NULL } },
+		{ &FPS_Display_Font, "font05_blue.png",  { 0, -2, NULL } },
 		{ &Messagered_Font,  "small_red.png",    { 0,  0, NULL } }
 };
 
