@@ -4,6 +4,19 @@ EXTRA_DIST = xgettext-wrapper
 # disables -j , hack to fix some race condition
 .NOTPARALLEL:
 
+# Special constructs to enable recursive call of
+# update-po and update-gmo :
+#   1/ A prefix is added to each dir in SUBDIRS (see L10NSTATSDIRS, for
+#      instance)
+#   2/ This new list is used as a target, to call a rule in loop on each
+#      prefixed dir
+#   3/ In this rule, the prefix is removed to extract the subdir name
+#      (see the rule of the $(L10NSTATSDIRS) target)
+#
+# Should be replaced by AM_EXTRA_RECURSIVE_TARGETS in
+# top configure.ac, but this needs automake 1.13
+# Inspired by http://lackof.org/taggart/hacking/make-example/
+
 L10NSTATSDIRS = $(SUBDIRS:%=l10nstats-%)
 
 l10n-stats: l10n-stats-@USE_NLS@

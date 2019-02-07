@@ -3,7 +3,13 @@
 
 SUBDIRS = manual tools
 
-# Special construct to enable recursive call of doc.
+# Special construct to enable recursive call of doc ;
+#   1/ A suffix is added to each dir in SUBDIRS (see DOCSUBDIRS)
+#   2/ This new list is used as a target, to call a rule in loop on each
+#      suffixed dir
+#   3/ In this rule, the suffix is removed to extract the subdir name
+#      (see the rule of the $(DOCSUBDIRS) target)
+#
 # Should be replaced by AM_EXTRA_RECURSIVE_TARGETS in top
 # configure.ac, but this needs automake 1.13
 # Inspired by http://lackof.org/taggart/hacking/make-example/
