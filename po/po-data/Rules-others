@@ -157,6 +157,13 @@ tx-push:
 	      echo "You do not have a Transifex account"; \
 	      exit 1; \
 	    }; \
+	test -e tx-push-granted \
+	|| { \
+	     echo "tx-pusk is a risky command."; \
+	     echo "Create a 'tx-push-granted' file if you really want to execute it."; \
+	     exit 1; \
+	   }; \
+	rm -f tx-push-granted; \
 	$(mkdir_p) tx; \
 	catalogs='$(CATALOGS)'; \
 	files='$(TXFILES)'; \

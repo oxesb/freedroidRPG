@@ -100,6 +100,7 @@ po/*/remove-potcdate.sed
 po/*/POTFILES
 
 # Result of translation build
+po/*/tx-push-granted
 po/*/*.po~
 po/*/*.gmo
 po/*/stamp-*

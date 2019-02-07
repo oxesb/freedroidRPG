@@ -17,6 +17,9 @@ EXTRA_DIST = xgettext-wrapper
 # top configure.ac, but this needs automake 1.13
 # Inspired by http://lackof.org/taggart/hacking/make-example/
 
+#
+# Ouput the stats for each language
+#
 L10NSTATSDIRS = $(SUBDIRS:%=l10nstats-%)
 
 l10n-stats: l10n-stats-@USE_NLS@
@@ -30,12 +33,10 @@ $(L10NSTATSDIRS):
 
 .PHONY: l10n-stats-no l10n-stats-yes $(L10NSTATSDIRS)
 
-# Special constructs to enable recursive call of
-# update-po and update-gmo.
-# Should be replaced by AM_EXTRA_RECURSIVE_TARGETS in
-# top configure.ac, but this needs automake 1.13
-# Inspired by http://lackof.org/taggart/hacking/make-example/
-
+#
+# Update the .pot files and their translations (.po files)
+# to include the lastest changes made to the sources.
+#
 UPDATEPODIRS = $(SUBDIRS:%=updatepo-%)
 
 update-po: update-po-@USE_NLS@
@@ -48,7 +49,12 @@ $(UPDATEPODIRS):
 
 .PHONY: update-po-no update-po-yes $(UPDATEPODIRS)
 
-
+#
+# Compile the translations (.po files) into catalogs (.gmo files).
+# The update-gmo target in the subdirs also copy the translations
+# locally (in $top_srcdir/locale) to be used by the game without
+# installing it (see Rules-others in subdirs).
+#
 UPDATEGMODIRS = $(SUBDIRS:%=updategmo-%)
 
 update-gmo: update-gmo-@USE_NLS@
@@ -62,7 +68,21 @@ $(UPDATEGMODIRS):
 .PHONY: update-gmo-no update-gmo-yes $(UPDATEGMODIRS)
 
 # TX synchronization rules
-# We call subdirs in sequence, to avoid to flood the Transifex server
+# The same rule is used for 3 targets (TXTARGETS):
+# - tx-update: it updates the transifex individual ressources, with the
+#   latest changes of the sources (using the current .pot files)
+#   Note: update-po should be called before tx-update
+# - tx-pull: gets the translated individual ressources, and combine them
+#   into .po files
+#   Note: tx-update should be called before tx-pull
+# - tx-pull: overload transifex translations with the content of our
+#   translations
+#   Note: TO BE USED WITH EXTREME CARE. The translations not already pulled
+#         from transifex will be lost ! Given the risk of this command,
+#         it has to be granted by the presence of a 'tx-push-granted' file in
+#         the subdir.
+#
+# Note that we call subdirs in sequence, to avoid to flood the Transifex server
 # too much
 
 TXTARGETS = tx-update tx-pull tx-push
