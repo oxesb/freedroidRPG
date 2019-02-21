@@ -3,6 +3,10 @@
 # Usually the message domain is the same as the package name.
 DOMAIN = freedroidrpg
 
+# Files to add in POTFILES
+POTINCLUDES = src lua_modules
+POTEXCLUDES =
+
 # These two variables depend on the location of this directory.
 subdir = po/po-src
 top_builddir = ../..

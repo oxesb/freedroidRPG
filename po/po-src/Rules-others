@@ -16,10 +16,12 @@ l10n-stats:
 #== Regenerate POTFILES.in if the list of source files changed
 #== (executed before the main update-po rule)
 
+POTSRCS = $(foreach act, $(POTINCLUDES), -i $(act) $(foreach excl, $(POTEXCLUDES), -x $(act)/$(excl)))
+
 update-po: update-pot
 update-pot:
 	@if [ -x $(top_srcdir)/po/update-potfiles ] ; then \
-	   $(top_srcdir)/po/update-potfiles -i src -i lua_modules > POTFILES.inT ; \
+	   $(top_srcdir)/po/update-potfiles $(POTSRCS) > POTFILES.inT ; \
 	   if ! cmp -s POTFILES.inT POTFILES.in ; then \
 	     rm POTFILES.in && mv POTFILES.inT POTFILES.in; \
 	     echo "POTFILES.in updated"; \

@@ -3,6 +3,10 @@
 # Usually the message domain is the same as the package name.
 DOMAIN = freedroidrpg-dialogs
 
+# Files to add in POTFILES
+POTINCLUDES = data/base/dialogs data/storyline/act1/dialogs data/storyline/act2/dialogs
+POTEXCLUDES =
+
 # These two variables depend on the location of this directory.
 subdir = po/po-dialogs
 top_builddir = ../..

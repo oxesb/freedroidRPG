@@ -3,6 +3,16 @@
 .NOTPARALLEL:
 DISTFILES.extra2 = Rules-others
 
+#-- Compute the rsrc name of a source file, prefix with the act name
+#   if the source is in a storyline subdir
+# $(1) = source file
+
+define rsrc_name =
+	rsrc=`basename $(1) | sed -e 's/\..*$$//'`; \
+	actname=`dirname $(1) | grep -o -E "storyline/.*" | sed -E "s,storyline/([^/]*).*,\1-,"`; \
+	rsrc=$$actname$$rsrc
+endef
+
 #== Output statistics
 
 l10n-stats:
@@ -16,10 +26,12 @@ l10n-stats:
 #== Regenerate POTFILES.in if the list of source files changed
 #== (executed before the main update-po rule)
 
+POTSRCS = $(foreach act, $(POTINCLUDES), -i $(act) $(foreach excl, $(POTEXCLUDES), -x $(act)/$(excl)))
+
 update-po: update-pot
 update-pot:
 	@if [ -x $(top_srcdir)/po/update-potfiles ] ; then \
-	   $(top_srcdir)/po/update-potfiles -i data/storyline/act1 -x data/storyline/act1/dialogs -x data/storyline/act1/titles -i data/base -x data/base/titles > POTFILES.inT ; \
+	   $(top_srcdir)/po/update-potfiles $(POTSRCS) > POTFILES.inT ; \
 	   if ! cmp -s POTFILES.inT POTFILES.in ; then \
 	     rm POTFILES.in && mv POTFILES.inT POTFILES.in; \
 	     echo "POTFILES.in updated"; \
@@ -85,8 +97,7 @@ tx-update: $(DOMAIN).pot
 	$(mkdir_p) tx; \
 	files='$(TXFILES)'; \
 	for file in $$files; do \
-	  base=`basename $$file`; \
-	  rsrc=`echo $$base | sed -e 's/\..*$$//'`; \
+	  $(call rsrc_name,$$file); \
 	  msggrep $(MSGCAT_OPTIONS) --location=$$file -o tx/$$rsrc.pot $(DOMAIN).pot; \
 	  if test -r tx/$$rsrc.pot; then \
 	    if ! tx -q status -r $(TXPROJ).$(TXPREFIX)-$$rsrc 2&>/dev/null; then \
@@ -96,7 +107,7 @@ tx-update: $(DOMAIN).pot
 	        curl_output=`curl -s -L $(TXCRED) -X PUT -d $(TXPROPS) -H "Content-Type: application/json" https://www.transifex.com/api/2/project/$(TXPROJ)/resource/$(TXPREFIX)-$$rsrc;` \
 	        rtn=$$?; \
 	        if test $$rtn -ne 0 -o " $$curl_output" != " OK"; then echo "Warning. Failed to set properties: $$curl_output (error code $$rtn)"; fi; \
-	      fi; \
+	     fi; \
 	    else \
 	      echo "Updating $(TXPREFIX)-$$rsrc"; \
 	      tx -q push -r $(TXPROJ).$(TXPREFIX)-$$rsrc -s; \
@@ -128,8 +139,7 @@ tx-pull:
 	  cat=`basename $$cat`; \
 	  lang=`echo $$cat | sed -e 's/\.gmo$$//'`; \
 	  for file in $$files; do \
-	    base=`basename $$file`; \
-	    rsrc=`echo $$base | sed -e 's/\..*$$//'`; \
+	    $(call rsrc_name,$$file); \
 	    echo "Pulling $$rsrc-$$lang.po from transifex"; \
 	    if tx -q pull -r $(TXPROJ).$(TXPREFIX)-$$rsrc -l $$lang; then \
 	      if test -r tx/$$rsrc-$$lang.po; then \
@@ -171,8 +181,7 @@ tx-push:
 	  cat=`basename $$cat`; \
 	  lang=`echo $$cat | sed -e 's/\.gmo$$//'`; \
 	  for file in $$files; do \
-	    base=`basename $$file`; \
-	    rsrc=`echo $$base | sed -e 's/\..*$$//'`; \
+	    $(call rsrc_name,$$file); \
 	    msggrep $(MSGCAT_OPTIONS) --location=$$file -o tx/$$rsrc-$$lang.po $$lang.po; \
 	    echo "Pushing $$rsrc-$$lang.po to transifex"; \
 	    tx -q push -r $(TXPROJ).$(TXPREFIX)-$$rsrc -l $$lang -t; \
