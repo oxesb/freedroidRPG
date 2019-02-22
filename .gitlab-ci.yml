@@ -5,7 +5,15 @@ stages:
 variables:
   GIT_STRATEGY: none
   
-buildbot/build_unbutu:
+buildbot/build_debian:
+  stage:
+    externalbuild
+  only:
+    - external
+  script:
+    - /bin/true
+
+buildbot/build_fedora:
   stage:
     externalbuild
   only:
