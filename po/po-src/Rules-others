@@ -147,7 +147,7 @@ tx-push:
 	    }; \
 	test -e tx-push-granted \
 	|| { \
-	     echo "tx-pusk is a risky command."; \
+	     echo "tx-push is a risky command."; \
 	     echo "Create a 'tx-push-granted' file if you really want to execute it."; \
 	     exit 1; \
 	   }; \
