@@ -20,36 +20,36 @@
 title_screen{
 song = "Bleostrada.ogg",
 text = [[
-            L’ÉDITEUR DE NIVEAU DE FREEDROIDRPG
+            Редактор уровней FREEDROIDRPG
 
-=== INTRODUCTION ===
+=== ВВЕДЕНИЕ ===
 
-FreedroidRPG s'accompagne d'un éditeur de niveau intégré. Cette éditeur de niveau permet de contrôler tous les aspects d'une carte de FreedroidRPG et de la sauvegarder.
+FreedroidRPG поставляется со встроенным редактором уровней. Редактор позволяет вам управлять любой частью обычной карты и сохранять карты.
 
-Vous pouvez y accéder depuis le menu principale (choisissez "Editeur de Niveau") ou en executant la commande "freedroidRPG -e".
+Вы можете получить к нему доступ из главного меню, нажав «Редактор уровней», или выполнить «freedroidRPG -e».
 
-    --- Tooltips ---
-Pour activer/désactiver les descriptions de l'interface pendant le survol de la souris, cliquez sur l'icône de bulle de discours blanc situé près du bord de la fenêtre de droite (rangée inférieure de bouton).
+    --- Подсказки ---
+Для включения-выключения всплывающих при наведении мыши подсказок интерфейса, щёлкните значок с белым пузырьком речи, расположенный возле правого края окна в нижнем ряду кнопок.
 
-    --- Summary Details ---
-Un détail sommaire sur les obstacles et les objets sera affichés si vous cliquez droit sur eux dans le sélecteur d'objet supérieur.
+    --- Краткая информация ---
+Краткая информация о препятствиях и предметах будет появляться, если щёлкнуть по ним правой кнопкой мыши в верхней панели выбора объектов.
 
-    --- Navigation ---
-Pour modifier le niveau actuel, cliquez sur le numéro de niveau à proximité de la minicarte dans le coin inférieur droit, ou sélectionner le niveau désiré dans le menu de l'éditeur (décrit plus loin).
+    --- Навигация ---
+Чтобы изменить текущий уровень щёлкните номер соседнего уровня на миникарте в правом нижнем углу или выберите нужный уровень в меню редактора (см. ниже).
 
-    --- Modifier une carte ---
-Il y a quatre modes de modification : Modification des obstacles, Modification du sol, modification des objets, et modification des trajectoires.
+    --- Редактирование карты ---
+Всего четыре режима редактирования: редактирование препятствий, редактирование пола, редактирование предметов, правка путей.
 
-Le bouton sélectionné en bas à gauche indique les objets que vous pouvez sélectionner ou placer.
-Lorsqu'un bouton est sélectionné, et vous êtes en mode placement, l'objet que vous placerez est indiqué par le ruban en haut de l'écran. La sélection dans le ruban est divisée par onglets immédiatement dessous.
+The button selected at the lower left indicates the objects you can select or place.
+When a button is selected, and you are in placement mode, the object you will place is indicated by the ribbon at the top of the screen. The selection in the ribbon is divided by tabs immediately underneath.
 
-Vous pouvez sélectionner le type d'obstacle que vous souhaitez placer sur la carte dans le sélecteur d'objet supérieur. Il suffit de cliquer dessus pour le sélectionner. Les Obstacles sont divisés en groupes pour fournir la meilleure vue d'ensemble.
+You can select the obstacle type you want to be placed on the map at the upper object selector. Just click it to select it. Obstacles are divided into groups to provide better overview.
 
-En appuyant sur espace, vous entrerez dans le mode de sélection étant indiqué par le curseur changeant. Vous ne pouvez sélectionner que des groupes d'objets représentés par le mode activé.
-Remarque importante : vous ne pourrez sélectionner les choses qui sont inclus dans le mode actuel. Si vous êtes en mode de l'obstacle, vous ne serez pas en mesure de sélectionner des éléments ou des carreaux de sol.
+Pressing space, you will enter the selection mode being indicated by the cursor changing. You can only select group of objects represented by the current activated object mode.
+Important note: You will only be able to select things that are included in the currently selected mode. If you are in obstacle mode, you won't be able to select items or floor tiles.
 
 
-        Obstacle edit mode:
+        Режим редактирования препятствий:
 
 In order to select this mode, click on button that says 'Obstacle' of the category selector on the left lower area.
 Having selected an obstacle, just click somewhere on the map to place it at the cursor's position.
@@ -79,9 +79,9 @@ These items will be displayed in the upper shop bar.
 In order to remove one of these items, simply select it and click on 'buy'.
 The red cross gets you out of the screen.
 
-            Ajouter du Texte à un panneau
+            Adding Text to a Sign
 
-Sélectionnez le panneau et ajoutez une indication d'obstacle avec panneau.  enregistrez la carte et sortez.
+Select the sign and add an obstacle label with the sign text. Save the map and exit.
 Open the level file (map/levels.dat) and find the new obstacle label. Change the line above the text from 'type=30' to 'type=32' and save.
 Now when you click on the sign in the game your short message will appear.
 
@@ -91,7 +91,7 @@ Select the terminal and add an obstacle label with the dialog name you wish to u
 Open the level file (map/levels.dat) and find the new obstacle label.
 Change the line above the text from 'type=30' to 'type=32' and save. Now when you click on the terminal in the game it will start the dialog you selected.
 
-        Floor edit mode:
+        Режим редактирования пола:
 
 The floor edit mode works quite similar to the obstacle edit mode. You can select different types of floors at the object selector.
 To fill a region with a single floor tile, first select the tile to use, then click and drag the left mouse button until it covers the desired region. The floor tiles are placed on the current floor layer.
@@ -109,7 +109,7 @@ In order to have a look at the floor only, click the lamp icon to have no obstac
 The icon with the turquoise rectangle displays collision rectangles. These rectangles indicate the blocking-area of an obstacle. Tux can't walk on such an area.
 If you turn it on and playtest (explained later) your map, the rectangles are still displayed if activated which is quite useful for testing whether the player can pass a gap or not.
 
-        Item edit mode:
+        Режим редактирования предметов:
 
 You can place items to be used by the player on the map, too.
 Items are objects that the player can pick up. They can be they can be carried, some even be used or equipped.
@@ -120,7 +120,7 @@ Press 'g' to have a better overview of what items are available (can also be use
 You can also click the icon with the crossed-out boots to perform this.
 
 
-        Waypoint edit mode:
+        Режим правки путей:
 
 Currently, droids (meaning all non-player characters) move around on levels using predefined waypoints.
 To plant a waypoint, press the 'w' key. This will toggle the waypoint on the rectangle under the crosshair.
@@ -138,21 +138,21 @@ Please make sure that paths between waypoints are not blocked by an obstacle in 
 To automatically check a entire map for this, you can use the map level validator which is explained later.
 
 
-        Planting Labels:
+        Установка меток:
 
 There are two kinds of tables: map labels and obstacle labels.
 Please make sure that each label ID is unique.
 Giving an empty string will delete the respective label.
 
 
-            Planting map labels
+            Установка меток карты
 
 Map labels are used to define starting locations of NPCs (see ReturnOfTux.droids), events that occur when Tux moves over them (see events.dat), or locations used for movement of NPCs through the lua script files (events, quests, and the dialogs).
 To define a new map label, press the 'm' key on the keyboard or click the button with the M on the sign on it. You will be prompted for the map label. Note that there will be a colorful circle appearing on any map tile that has been fitted with a map label.
 The map label will be automatically planted on the tile in the middle of the screen.
 You can switch the displaying of droids/NPCs on or off pressing the button with the 302 bot on it.
 
-            Planting obstacle labels
+            Установка меток препятствий
 
 Obstacle labels are important so that some obstacles can be marked for events to happen (for example during a quest). If e.g. an event is supposed to remove a special wall obstacle, then this obstacle must be given a name or ID first, so it can be referred to later in the definition of the event.
 You can also use them to add dialogs to obstacles, so you can talk to them as they were NPCs.
@@ -208,25 +208,25 @@ This should ALWAYS be run before calling a map finished.
 "freedroidRPG -b leveltest" does also run this check.
 
 		Playtest mapfile
-Vous permet de tester vos modifications facilement.
+Allows you to playtest your modifications easily.
 If you leave this mode, obstacle changes that were made while playing, destroying crates for example, will be reverted to the time where you started playtesting.
 
 
 
 
-Touches :
-espace					inverse le mode pose/selection
-w						plant waypoint
+Горячие клавиши:
+пробел					переключение режима установки/выбора
+w						установить метку пути
 shift+w					toggle mode for waypoints to 'random bot' or 'NPC'
-échap					accède au menu
+escape					access menu
 numberpad digits 1-9	used to plant obstacles at the respective positions of the grid
 n						cycle through selected obstacles (next)
-z						annule la dernière action
-y						répète la dernière action annulé
+z						undo last action
+y						redo last undid action
 c						set paths between waypoints
 ctrl+x or backspace		cut selected object(s), can be used to delete objects by not pasting afterwards
-ctrl+c					copie les objets selectionnés
-ctrl+v					colle les objets coupés/copiés
+ctrl+c					copy selected object(s)
+ctrl+v					paste cut/copied object(s)
 alt+shift				drag/move selected object using the mouse
 arrow keys				scroll around the map
 ctrl+arrow keys			scroll around in bigger steps
@@ -242,7 +242,7 @@ f						switch to the next object tab
 shift+f					switch to the previous object tab
 
 
-Si vous rencontrez des problèmes avec l'éditeur de nivaux, merci de nous contacter.
-De même, n'hésitez pas a nous envoyer des cartes si vous en faites quelques unes, on ne mords pas. ;-)
+If you encounter problems with the editor, please contact us.
+Also, don't be afraid to send us maps if you made something cool, we don't bite. :)
 ]]
 }

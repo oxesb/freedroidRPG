@@ -20,38 +20,38 @@
 title_screen{
 song = "TheBeginning.ogg",
 text = [[
-Tu essaye de hacker quelqu'un, hein ?
-Tu ne te rappelle pas comment le faire ?
+Tu essaies de hacker quelqu'un, hein ?
+Tu ne te rappelles pas comment le faire ?
 Idiot. Ne fait pas surchauffer ton cerveau avant d'essayer de hacker.
 Voilà un cours rapide pour te rafraîchir la mémoire.
 
-Premièrement, n'essaye pas de hacker si tu es en train de mourir.
+Premièrement, n'essaie pas de hacker si tu es en train de mourir.
 Si tu perds, tu vas recevoir un gentil électro-choc.
 Il ne te tuera pas à moins d'être presque mort, mais il fera mal.
 Beaucoup.
 
 Il y a deux étapes dans un hack.
-Premièrement, choisit la carte de circuit que tu considères être la meilleure.
+Premièrement, choisis la carte de circuit que tu considères être la meilleure.
 Une est jaune et l'autre est violette.
 Appuie juste sur gauche ou droite sur ton clavier pour choisir.
 Tu as environ 10 secondes avant que le robot ne te remarque.
-Prend le circuit dont tu penses qu'il te donnera un avantage.
+Prends le circuit que tu trouves le plus avantageux.
 
 La deuxième étape est de créer des connexions dans les processeurs.
 Dans le cas où tu te poses la question, ce sont les choses au centre.
 
-Parce les robots sont bogués, quelques processeurs sont de ton côté.
-Tu n'as qu'un nombre limité d'attaque, fais qu'elles comptent.
+Parce que les robots sont bogués, quelques processeurs sont de ton côté.
+Tu n'as qu'un nombre limité d'attaques, fais qu'elles comptent.
 Choisis le câble que tu veux utiliser pour attaquer les processeurs.
 Appuie haut et bas sur ton clavier.
 Tu peux aussi utiliser la molette si tu en as une.
 Quant tu t'es décidé, appuie sur la touche espace.
 Tout ce qui est au bout des connexions va t'appartenir.
 Bien évidement, le robot ne vas pas rester là sans rien faire.
-Il vas essayer de regagner le contrôle et créer des connexions lui aussi.
+Il va essayer de regagner le contrôle et créer des connexions lui aussi.
 
 Après un court temps, tout est fini.
-Si tu contrôles les plus de processeurs à ce moment, le robot t'appartient.
+Si tu contrôles le plus de processeurs à ce moment, le robot t'appartient.
 Sinon, tu reçois une électrocution gratuite, style MegaSys.
 
 Les connexions à l'intérieur des robots sont parfois un peu étranges.

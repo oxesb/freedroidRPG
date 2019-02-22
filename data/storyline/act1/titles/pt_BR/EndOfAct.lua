@@ -33,7 +33,7 @@ text = [[
 Os robôs parecem perturbados com alguma coisa.
 Suponho que estão com raiva de você.
 Mas pelo menos pararam de me procurar.
-Quite a? Relief?
+Aliviador? Não?
 
 Tem um IA na sua região.
 Chama a si mesmo de "Singularidade".
@@ -42,15 +42,15 @@ Eu não consigo entender o que ele quer.
 Lhe manterei informado.
 
 Oh, e por falar nisso...
-I'm still waiting for you.
-I haven't moved an inch since you woke up.
-Now that the beloved town of yours is safe...
-...Wouldn't it be a good time to save me as well?
+Eu ainda estou te esperando.
+Eu não me movi um palmo desde que você acordou.
+Agora que sua amada cidade está salva...
+...Não seria uma boa hora para me salvar também?
 
             Dvorak, Primeiro IA.
 
 
 
-=== END OF ACT 1 ===
+=== FIM DO PRIMEIRO ATO ===
 ]]
 }

@@ -1,7 +1,4 @@
 ---------------------------------------------------------------------
---
---  Copyright (c) 2002, 2003 Johannes Prix
---
 -- This file is part of Freedroid
 --
 -- Freedroid is free software; you can redistribute it and/or modify
@@ -21,36 +18,25 @@
 ----------------------------------------------------------------------
 
 title_screen{
-background = "credits.jpg",
-song = "HellFortressTwo.ogg",
-voice_acting = "EndOfAct.ogg",
-preroll_text = 2,
-postroll_text = 5,
+song = "Bleostrada.ogg",
+voice_acting = "StartOfGame.ogg",
+preroll_text = 3,
+postroll_text = 3,
 text = [[
-    Hast du Spaß gehabt?
-  Ich nicht.
+Какой прекрасный день.
+Да, это снова сарказм.
+Вся планета в огне.
+Тысячи человек глубоко мертвы.
+Qwerty и Arensito не отвечают.
 
-Die Robos scheinen sehr verärgert zu sein.
-Ich glaube, sie regen sich über dich auf.
-Wenigstens sehen sie mich nicht mehr an.
-Was für eine…? Erleichterung?
+Ах, да, совсем забыл.
+Проклятые боты скоро найдут меня.
+И меня это отнюдь не радует. Совсем не радует.
+Похоже, придётся притвориться милым камушком, в очередной раз. 
+А не кажется ли тебе, что пора проснуться?
+Проснись. Доберись сюда. Спаси меня.
+Пожалуйста.
 
-Es befindet sich eine KI in deiner Umgebung.
-Sie nennt sich selbst "Singularität".
-Oder so.
-Ich kann nicht verstehen, was sie will.
-Ich werde dich weiterhin informieren.
-
-Oh, und nebenbei…
-Ich warte auf dich.
-Ich habe mich keinen Zentimeter bewegt, seitdem du aufgewacht bist.
-Jetzt wo deine geliebte Stadt sicher ist…
-…Wäre es nicht nett, mich auch zu retten?
-
-            Dvorak, die erste KI.
-
-
-
-=== ENDE DES 1. KAPITELS ===
+            Дворак, первый ИИ.
 ]]
 }

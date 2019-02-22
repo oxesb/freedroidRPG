@@ -631,3 +631,15 @@ source_file = po/po-data/tx/Terminal.pot
 source_lang = en
 type = PO
 
+[freedroid-rpg.dialog-Saul]
+file_filter = po/po-dialogs/tx/Saul-<lang>.po
+source_file = po/po-dialogs/tx/Saul.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.data-Speechless]
+file_filter = po/po-data/tx/Speechless-<lang>.po
+source_file = po/po-data/tx/Speechless.pot
+source_lang = en
+type = PO
+

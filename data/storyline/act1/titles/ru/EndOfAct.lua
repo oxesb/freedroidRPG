@@ -27,30 +27,30 @@ voice_acting = "EndOfAct.ogg",
 preroll_text = 2,
 postroll_text = 5,
 text = [[
-    Hast du Spaß gehabt?
-  Ich nicht.
+    Веселишься?
+  А я нет.
 
-Die Robos scheinen sehr verärgert zu sein.
-Ich glaube, sie regen sich über dich auf.
-Wenigstens sehen sie mich nicht mehr an.
-Was für eine…? Erleichterung?
+Боты выглядят чем-то расстроенными.
+Думаю, они на тебя злятся.
+Они хотя бы перестали искать меня.
+Какое «облегчение».
 
-Es befindet sich eine KI in deiner Umgebung.
-Sie nennt sich selbst "Singularität".
-Oder so.
-Ich kann nicht verstehen, was sie will.
-Ich werde dich weiterhin informieren.
+В твоём регионе есть ИИ.
+Он сам себя называет «Сингулярностью».
+Или что-то вроде того.
+Я не понимаю, чего он хочет.
+Буду держать тебя в курсе.
 
-Oh, und nebenbei…
-Ich warte auf dich.
-Ich habe mich keinen Zentimeter bewegt, seitdem du aufgewacht bist.
-Jetzt wo deine geliebte Stadt sicher ist…
-…Wäre es nicht nett, mich auch zu retten?
+О, и кстати...
+Я всё ещё жду тебя.
+Я не сдвинулся ни на дюйм со времени твоего пробуждения.
+Теперь, когда твой любимый город в безопасности...
+...Не пора ли также спасти и меня?
 
-            Dvorak, die erste KI.
+            Дворак, первый ИИ.
 
 
 
-=== ENDE DES 1. KAPITELS ===
+=== КОНЕЦ ПЕРВОГО ДЕЙСТВИЯ ===
 ]]
 }

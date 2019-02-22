@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2017-08-24 15:30+0200\n"
-"PO-Revision-Date: 2017-08-24 13:50+0000\n"
+"POT-Creation-Date: 2019-02-21 18:25+0100\n"
+"PO-Revision-Date: 2019-01-19 20:21+0000\n"
 "Last-Translator: fluzz <fluzz@gmx.com>\n"
 "Language-Team: French (http://www.transifex.com/arctic-games/freedroid-rpg/language/fr/)\n"
 "Language: fr\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: data/base/droid_specs.lua:98 data/storyline/act1/ReturnOfTux.droids:271
+#: data/base/droid_specs.lua:98 data/storyline/act1/ReturnOfTux.droids:270
 msgid "123 Acolyte"
 msgstr "123 Disciple"
 
@@ -32,7 +32,7 @@ msgstr "123 Disciple"
 msgid "A simple rubbish disposal robot. Common device in most factories to maintain a clean yard."
 msgstr "Un simple robot de ramassage d'ordures. Appareil courant dans la plupart des usines pour garder une cour propre."
 
-#: data/base/droid_specs.lua:140 data/storyline/act1/ReturnOfTux.droids:272
+#: data/base/droid_specs.lua:140 data/storyline/act1/ReturnOfTux.droids:271
 msgid "139 Templar"
 msgstr "139 Templier"
 
@@ -40,7 +40,7 @@ msgstr "139 Templier"
 msgid "Created by Dr. Masternak to clean up large heaps of rubbish. Its large scoop is used to collect rubbish. It is then crushed internally."
 msgstr "Créé par le Docteur Masternak pour éliminer de grandes quantités d'ordures. Sa large écope est utilisée pour collecter les ordures. Elles sont ensuite éliminées à l'intérieur."
 
-#: data/base/droid_specs.lua:183 data/storyline/act1/ReturnOfTux.droids:273
+#: data/base/droid_specs.lua:183 data/storyline/act1/ReturnOfTux.droids:272
 msgid "247 Banshee"
 msgstr "247 Banshee"
 
@@ -48,8 +48,8 @@ msgstr "247 Banshee"
 msgid "A light duty servant robot. One of the first to use the anti-grav system."
 msgstr "Un robot serviteur léger. Un des premiers à utiliser le système anti-gravité."
 
-#: data/base/droid_specs.lua:230 data/storyline/act1/ReturnOfTux.droids:113
-#: data/storyline/act1/ReturnOfTux.droids:274
+#: data/base/droid_specs.lua:230 data/storyline/act1/ReturnOfTux.droids:112
+#: data/storyline/act1/ReturnOfTux.droids:273
 msgid "249 Chicago"
 msgstr "249 Chicago"
 
@@ -57,18 +57,18 @@ msgstr "249 Chicago"
 msgid "Cheaper version of the anti-grav servant robot. This one is armed with rapid fire weaponry."
 msgstr "Version bon marché du robot anti-gravité. Celui-ci est équipé d'un armement à tir rapide."
 
-#: data/base/droid_specs.lua:276 data/storyline/act1/ReturnOfTux.droids:275
+#: data/base/droid_specs.lua:276 data/storyline/act1/ReturnOfTux.droids:274
 msgid "296 Sawmill"
 msgstr "296 Scierie"
 
 #: data/base/droid_specs.lua:277
 msgid "Originally designed by Orchard and Marsden Enterprises, this robot was used as a servant droid in drinking establishments. A tray is mounted on the head for carrying drinks and a wide wheel base provided droid stability to prevent spillage. WARNING: You will lose something if you try to steal a drink!"
-msgstr "A l'origine conçu par les Entreprises Orchard et Marsden, ce droïde était utilisé comme robot serveur dans les établissements de boisson. Un plateau est monté sur la tête pour transporter les boissons et une large base roulante assure la stabilité pour éviter les renversements. ATTENTION: Il t'en coûtera si tu tentes de lui voler une boisson !"
+msgstr "A l'origine conçu par les Entreprises Orchard et Marsden, ce droïde était utilisé comme robot serveur dans les établissements de boisson. Un plateau est monté sur la tête pour transporter les boissons et une large base roulante assure la stabilité pour éviter les renversements. ATTENTION : Il t'en coûtera si tu tentes de lui voler une boisson !"
 
-#: data/base/droid_specs.lua:321 data/storyline/act1/ReturnOfTux.droids:104
-#: data/storyline/act1/ReturnOfTux.droids:105
-#: data/storyline/act1/ReturnOfTux.droids:112
-#: data/storyline/act1/ReturnOfTux.droids:276
+#: data/base/droid_specs.lua:321 data/storyline/act1/ReturnOfTux.droids:103
+#: data/storyline/act1/ReturnOfTux.droids:104
+#: data/storyline/act1/ReturnOfTux.droids:111
+#: data/storyline/act1/ReturnOfTux.droids:275
 #: data/storyline/act1/ReturnOfTux.droids:359
 msgid "302 Nemesis"
 msgstr "302 Nemesis"
@@ -77,9 +77,9 @@ msgstr "302 Nemesis"
 msgid "Common device for moving small packages. Clamp is mounted on the lower body."
 msgstr "Appareil standard pour le transport de petits paquets. La fixation se trouve sur le bas du corps."
 
-#: data/base/droid_specs.lua:369 data/storyline/act1/ReturnOfTux.droids:111
-#: data/storyline/act1/ReturnOfTux.droids:277
-#: data/storyline/act1/ReturnOfTux.droids:588
+#: data/base/droid_specs.lua:369 data/storyline/act1/ReturnOfTux.droids:110
+#: data/storyline/act1/ReturnOfTux.droids:276
+#: data/storyline/act1/ReturnOfTux.droids:589
 msgid "329 Sparkie"
 msgstr "329 Sparkie"
 
@@ -87,7 +87,7 @@ msgstr "329 Sparkie"
 msgid "Early type messenger robot. Large wheels impede motion on small craft."
 msgstr "Un des premiers robots de type messager. Ses larges roues gênent le déplacement dans les petits vaisseaux."
 
-#: data/base/droid_specs.lua:416 data/storyline/act1/ReturnOfTux.droids:278
+#: data/base/droid_specs.lua:416 data/storyline/act1/ReturnOfTux.droids:277
 msgid "420 Surgeon"
 msgstr "420 Chirurgien"
 
@@ -95,8 +95,8 @@ msgstr "420 Chirurgien"
 msgid "A slow maintenance robot. Confined to drive maintenance during flight."
 msgstr "Un robot de maintenance pas très rapide. Il est exclusivement destiné à la maintenance pendant le vol."
 
-#: data/base/droid_specs.lua:462 data/storyline/act1/ReturnOfTux.droids:279
-#: data/storyline/act1/ReturnOfTux.droids:600
+#: data/base/droid_specs.lua:462 data/storyline/act1/ReturnOfTux.droids:278
+#: data/storyline/act1/ReturnOfTux.droids:601
 msgid "476 Coward"
 msgstr "476 Lâche"
 
@@ -104,7 +104,7 @@ msgstr "476 Lâche"
 msgid "Ship maintenance robot. Fitted with multiple arms to carry out repairs to the ship efficiently. All craft built after the Jupiter-incident are supplied with a team of these."
 msgstr "Robot de maintenance du vaisseau. Il possède de nombreux bras pour réparer le vaisseau efficacement. Tous les bâtiments construits après l'incident Jupiter sont fournis avec une équipe de tels robots."
 
-#: data/base/droid_specs.lua:509 data/storyline/act1/ReturnOfTux.droids:280
+#: data/base/droid_specs.lua:509 data/storyline/act1/ReturnOfTux.droids:279
 msgid "493 Spinster"
 msgstr "493 Vielle Fille"
 
@@ -112,7 +112,7 @@ msgstr "493 Vielle Fille"
 msgid "Slave maintenance droid. Standard version will carry its own toolbox."
 msgstr "Droïde esclave de maintenance. La version standard transporte sa propre boîte à outils."
 
-#: data/base/droid_specs.lua:556 data/storyline/act1/ReturnOfTux.droids:281
+#: data/base/droid_specs.lua:556 data/storyline/act1/ReturnOfTux.droids:280
 msgid "516 Ghoul"
 msgstr "516 Vampire"
 
@@ -120,7 +120,7 @@ msgstr "516 Vampire"
 msgid "Early crew droid. Able to carry out simple flight checks only. No longer supplied."
 msgstr "Ancien droïde d'équipage. Capable d'exécuter de simples vérifications de vol. N'est plus fabriqué."
 
-#: data/base/droid_specs.lua:603 data/storyline/act1/ReturnOfTux.droids:282
+#: data/base/droid_specs.lua:603 data/storyline/act1/ReturnOfTux.droids:281
 msgid "543 Forest Harvester"
 msgstr "543 Moissonneur Forestier"
 
@@ -128,7 +128,7 @@ msgstr "543 Moissonneur Forestier"
 msgid "This bot was designed for logging, but instead of harvesting trees, it's now harvesting people!!! Run away! This bot will kill you!"
 msgstr "Ce robot a été conçu pour l'abattage, mais au lieu de moissonner les arbres, maintenant il récolte les gens !!! Fuyez ! Ce robot est un tueur !"
 
-#: data/base/droid_specs.lua:648 data/storyline/act1/ReturnOfTux.droids:283
+#: data/base/droid_specs.lua:648 data/storyline/act1/ReturnOfTux.droids:282
 msgid "571 Apollo"
 msgstr "571 Apollo"
 
@@ -136,7 +136,7 @@ msgstr "571 Apollo"
 msgid "A standard crew droid. Supplied with the ship."
 msgstr "Un droïde standard d'équipage. Fourni avec le vaisseau."
 
-#: data/base/droid_specs.lua:696 data/storyline/act1/ReturnOfTux.droids:284
+#: data/base/droid_specs.lua:696 data/storyline/act1/ReturnOfTux.droids:283
 msgid "598 Minister"
 msgstr "598 Ministre"
 
@@ -144,11 +144,11 @@ msgstr "598 Ministre"
 msgid "A highly sophisticated device. Able to control the Robo-Freighter on its own."
 msgstr "Un appareil hautement sophistiqué. Capable de contrôler le robot-cargo à lui tout seul."
 
-#: data/base/droid_specs.lua:742 data/storyline/act1/ReturnOfTux.droids:518
-#: data/storyline/act1/ReturnOfTux.droids:519
+#: data/base/droid_specs.lua:742 data/storyline/act1/ReturnOfTux.droids:519
 #: data/storyline/act1/ReturnOfTux.droids:520
 #: data/storyline/act1/ReturnOfTux.droids:521
 #: data/storyline/act1/ReturnOfTux.droids:522
+#: data/storyline/act1/ReturnOfTux.droids:523
 msgid "603 Lawnmower"
 msgstr "603 Tondeuse"
 
@@ -156,7 +156,7 @@ msgstr "603 Tondeuse"
 msgid "The 603 MowDown is a state-of-the-art lawnmower manufactured by the Nicholson company, and combines the functions of a regular lawnmower, a pet and a vicious guard dog in a single device."
 msgstr "Le faucheur 603 est une tondeuse haut de gamme fabriqué par la Compagnie Nicholson, et combine en un seul appareil les fonctions de tondeuse standard, d'animal de compagnie et de chien de garde."
 
-#: data/base/droid_specs.lua:791 data/storyline/act1/ReturnOfTux.droids:285
+#: data/base/droid_specs.lua:791 data/storyline/act1/ReturnOfTux.droids:284
 msgid "614 Security Bot"
 msgstr "614 Droïde de sécurité"
 
@@ -164,7 +164,7 @@ msgstr "614 Droïde de sécurité"
 msgid "A low security sentinel droid. Used to protect areas of the ship from intruders. A slow but sure device."
 msgstr "Un droïde sentinelle de sécurité faible. Utilisé pour protéger des zones du vaisseau des intrus. Un appareil lent mais fiable."
 
-#: data/base/droid_specs.lua:838 data/storyline/act1/ReturnOfTux.droids:286
+#: data/base/droid_specs.lua:838 data/storyline/act1/ReturnOfTux.droids:285
 msgid "615 Firedevil"
 msgstr "615 Tornade de Feu"
 
@@ -172,8 +172,8 @@ msgstr "615 Tornade de Feu"
 msgid "Sophisticated sentinel droid. Only 2000 built by the Nicholson Company. These are now very rare."
 msgstr "Droïde sentinelle sophistiqué. Seulement 2000 ont été construits par la Compagnie Nicholson. Ils sont maintenant très rares."
 
-#: data/base/droid_specs.lua:885 data/storyline/act1/ReturnOfTux.droids:287
-#: data/storyline/act1/ReturnOfTux.droids:601
+#: data/base/droid_specs.lua:885 data/storyline/act1/ReturnOfTux.droids:286
+#: data/storyline/act1/ReturnOfTux.droids:602
 msgid "629 Spitfire"
 msgstr "629 Coléreux"
 
@@ -181,8 +181,8 @@ msgstr "629 Coléreux"
 msgid "A low sentinel droid. Lasers are built into the turret. These are mounted on a small tank body. May be fitted with an auto-cannon on-the Grillen version."
 msgstr "Un droïde sentinelle de petite taille. Des lasers sont installés dans la tourelle. Ils sont montés sur une petite base de tank. Il peut être assemblé avec un auto-canon dans la version Grillen."
 
-#: data/base/droid_specs.lua:929 data/storyline/act1/ReturnOfTux.droids:151
-#: data/storyline/act1/ReturnOfTux.droids:288
+#: data/base/droid_specs.lua:929 data/storyline/act1/ReturnOfTux.droids:150
+#: data/storyline/act1/ReturnOfTux.droids:287
 msgid "711 Grillmeister"
 msgstr "711 Chef Grill"
 
@@ -190,8 +190,8 @@ msgstr "711 Chef Grill"
 msgid "A heavy duty battle droid. Disruptor is built into the head. One of the first in service with the Military."
 msgstr "A droïde lourd de bataille. Un disrupteur est installé dans la tête. Un des premiers robots en service dans l'Armée."
 
-#: data/base/droid_specs.lua:976 data/storyline/act1/ReturnOfTux.droids:150
-#: data/storyline/act1/ReturnOfTux.droids:289
+#: data/base/droid_specs.lua:976 data/storyline/act1/ReturnOfTux.droids:149
+#: data/storyline/act1/ReturnOfTux.droids:288
 msgid "742 Zeus"
 msgstr "742 Zeus"
 
@@ -199,8 +199,8 @@ msgstr "742 Zeus"
 msgid "This version is the one mainly used by the military."
 msgstr "Cette version est celle principalement utilisée par l'armée."
 
-#: data/base/droid_specs.lua:1023 data/storyline/act1/ReturnOfTux.droids:225
-#: data/storyline/act1/ReturnOfTux.droids:290
+#: data/base/droid_specs.lua:1023 data/storyline/act1/ReturnOfTux.droids:224
+#: data/storyline/act1/ReturnOfTux.droids:289
 msgid "751 Soviet"
 msgstr "751 Soviet"
 
@@ -208,8 +208,8 @@ msgstr "751 Soviet"
 msgid "A very heavy duty battle droid. Only a few have so far entered service. These are the most powerful battle units ever built."
 msgstr "A droïde très lourd de bataille. Seul un petit nombre est pour l'instant entré en service. Ce sont les unités de bataille les plus puissantes jamais conçues."
 
-#: data/base/droid_specs.lua:1069 data/storyline/act1/ReturnOfTux.droids:149
-#: data/storyline/act1/ReturnOfTux.droids:291
+#: data/base/droid_specs.lua:1069 data/storyline/act1/ReturnOfTux.droids:148
+#: data/storyline/act1/ReturnOfTux.droids:290
 msgid "821 Ufo"
 msgstr "821 Ovni"
 
@@ -217,8 +217,8 @@ msgstr "821 Ovni"
 msgid "A very reliable anti-grav unit is fitted into this droid. It will patrol the ship and eliminate intruders as soon as detected by powerful sensors."
 msgstr "Une unité anti-gravité très fiable est intégrée dans ce droïde. Il patrouillera le vaisseau et éliminera les intrus aussitôt qu'ils seront décelés par ses puissants capteurs."
 
-#: data/base/droid_specs.lua:1116 data/storyline/act1/ReturnOfTux.droids:148
-#: data/storyline/act1/ReturnOfTux.droids:292
+#: data/base/droid_specs.lua:1116 data/storyline/act1/ReturnOfTux.droids:147
+#: data/storyline/act1/ReturnOfTux.droids:291
 msgid "834 Wisp"
 msgstr "834 Feu Follet"
 
@@ -226,7 +226,7 @@ msgstr "834 Feu Follet"
 msgid "Early type anti-grav security droid. Fitted with an over-driven anti-grav unit. This droid is very fast but is not reliable."
 msgstr "Un des premiers modèles de droïde anti-gravité de sécurité. Équipé d'une unité anti-gravité suralimentée. Ce droïde est très rapide mais pas très fiable."
 
-#: data/base/droid_specs.lua:1163 data/storyline/act1/ReturnOfTux.droids:293
+#: data/base/droid_specs.lua:1163 data/storyline/act1/ReturnOfTux.droids:292
 msgid "883 Dalex"
 msgstr "883 Dalex"
 
@@ -234,9 +234,9 @@ msgstr "883 Dalex"
 msgid "This droid was designed from archive data. For some unknown reason it instils great fear in Human adversaries."
 msgstr "Ce droïde a été conçu à partir de données d'archive. Pour une raison inconnue, il inspire une grande peur à ses adversaires humains."
 
-#: data/base/droid_specs.lua:1211 data/storyline/act1/npc_specs.lua:75
-#: data/storyline/act1/ReturnOfTux.droids:294
-#: data/storyline/act1/ReturnOfTux.droids:599
+#: data/base/droid_specs.lua:1211 data/storyline/act1/npc_specs.lua:77
+#: data/storyline/act1/ReturnOfTux.droids:293
+#: data/storyline/act1/ReturnOfTux.droids:600
 msgid "999 Cerebrum"
 msgstr "999 Cerebrum"
 
@@ -276,8 +276,8 @@ msgstr "Matrone"
 msgid "This is the hot_mama shopkeeper character model."
 msgstr "C'est le modèle de personnage hot_mama, tenancière de magasin."
 
-#: data/base/droid_specs.lua:1461 data/storyline/act1/ReturnOfTux.droids:215
-#: data/storyline/act1/ReturnOfTux.droids:465
+#: data/base/droid_specs.lua:1461 data/storyline/act1/ReturnOfTux.droids:214
+#: data/storyline/act1/ReturnOfTux.droids:466
 msgid "Female Scientist"
 msgstr "Femme Scientifique"
 
@@ -285,7 +285,7 @@ msgstr "Femme Scientifique"
 msgid "This is the female scientist character model.  They are not armed as powerfully as e.g. the red guards."
 msgstr "C'est le modèle de personnage scientifique femme. Elles ne sont pas aussi bien armées que, par exemple, les gardes rouges."
 
-#: data/base/droid_specs.lua:1500 data/storyline/act1/ReturnOfTux.droids:12
+#: data/base/droid_specs.lua:1500 data/storyline/act1/ReturnOfTux.droids:11
 msgid "Mine Worker"
 msgstr "Mineur"
 
@@ -301,7 +301,7 @@ msgstr "Frère Bleu"
 msgid "This is a useless comment. Thanks for your attention."
 msgstr "Ceci est un commentaire inutile. Merci de votre attention."
 
-#: data/base/droid_specs.lua:1581 data/storyline/act1/ReturnOfTux.droids:16
+#: data/base/droid_specs.lua:1581 data/storyline/act1/ReturnOfTux.droids:15
 msgid "Cook"
 msgstr "Cuisinier"
 
@@ -367,19 +367,16 @@ msgid "Carefully designed by Future Ballistics(R), this autogun will shred you i
 msgstr "Conçue avec minutie par Future Ballistics(R), cette tourelle automatique va te mettre en pièce si tu tentes de l'approcher."
 
 #: data/base/droid_specs.lua:1883
-#, fuzzy
 msgid "598 Minister (Boss)"
-msgstr "598 Ministre"
+msgstr "598 Ministre (Boss)"
 
 #: data/base/droid_specs.lua:1930
-#, fuzzy
 msgid "883 Dalex (Boss)"
-msgstr "883 Dalex"
+msgstr "883 Dalex (Boss)"
 
 #: data/base/droid_specs.lua:1979
-#, fuzzy
 msgid "999 Cerebrum (Boss)"
-msgstr "999 Cerebrum"
+msgstr "999 Cerebrum (Boss)"
 
 #: data/base/droid_specs.lua:2027
 msgid "Authority Figure"
@@ -483,7 +480,7 @@ msgstr "Grosse clé anglaise"
 
 #: data/base/item_specs.lua:351
 msgid "A big heavy wrench can be surprisingly efficient at turning a bot into second hand parts, in a hands-on and brutal way, if needed."
-msgstr ""
+msgstr "Une bonne grosse clé anglaise peut être étonnamment efficace pour transformer un droïde en un tas de pièces de rechange, en étant bien brutal si nécessaire."
 
 #: data/base/item_specs.lua:359
 msgid "Crowbar"
@@ -569,7 +566,7 @@ msgstr "J'ai tué la seule personne à mille kilomètres à la ronde qui pouvait
 msgid "Shock Knife"
 msgstr "Couteau de guerre"
 
-#: data/base/item_specs.lua:595 data/base/item_specs.lua:615
+#: data/base/item_specs.lua:595
 msgid "FIXME and all values"
 msgstr "A TERMINER et valeurs à définir"
 
@@ -577,1247 +574,1269 @@ msgstr "A TERMINER et valeurs à définir"
 msgid "Energy Whip"
 msgstr "Fouet énergétique"
 
-#: data/base/item_specs.lua:627
+#: data/base/item_specs.lua:617
+msgid "An energy whip commonly found at managment from MegaSys facilities. What purpose they serve for is still unknown. Because the real whip is pure energy, it will never break, but it does not stays on the strong side."
+msgstr ""
+
+#: data/base/item_specs.lua:629
 msgid ".22 LR Ammunition"
 msgstr "Balles .22 LR"
 
-#: data/base/item_specs.lua:631
+#: data/base/item_specs.lua:633
 msgid ".22 Long Rifle ammunition used to be a very common ammo for target practice, mainly because it was cheap and gave little recoil. It's just too weak to penetrate any real droid armor though."
 msgstr "Les .22 \"Long Rifle\" ont été les munitions les plus communes pour l'entraînement au tir sur cible, principalement parce qu'elles sont peu coûteuses, et ont un faible recul. Elles sont cependant trop faibles pour pénétrer l'armure d'un vrai droïde."
 
-#: data/base/item_specs.lua:638
+#: data/base/item_specs.lua:640
 msgid ".22 Automatic"
 msgstr "Automatique .22"
 
-#: data/base/item_specs.lua:654
+#: data/base/item_specs.lua:656
 msgid "With .22 ammo, it's mostly dumb luck if you actually damage a bot with this pistol. On the bright side, you will get a LOT of target practice out of each bot before a bullet or two manages to find a weak enough spot to take the bot out."
 msgstr "Chargé de munitions .22, tu auras beaucoup de chance si tu arrives à endommager un robot avec ce pistolet. Le bon côté des choses, c'est qu'il te permettra d'obtenir BEAUCOUP d'expérience au tir avant qu'une balle ou deux réussissent à trouver un point faible permettant d'éliminer ton adversaire robotisé."
 
-#: data/base/item_specs.lua:662
+#: data/base/item_specs.lua:664
 msgid ".22 Hunting Rifle"
 msgstr "Fusil de chasse .22"
 
-#: data/base/item_specs.lua:679
+#: data/base/item_specs.lua:681
 msgid "A .22 hunting rifle was mainly used for sports shooting and for cheap training. As a hunting weapon its main use was to kill small vermin such as rats and squirrels. It was also highly effective against rabbits. Unfortunately, you won't be hunting 'wabbits'..."
 msgstr "Le fusil de chasse .22 a été principalement utilisé pour le tir sportif et comme outil bon marché d'entraînement. Comme fusil de chasse, son utilisation principale était de tuer de la petite vermine comme les rats et les écureuils. Il était aussi pas mal efficace contre les lapins. Malheureusement, ce n'est pas ce genre de bétail que tu vas rencontrer..."
 
-#: data/base/item_specs.lua:687
+#: data/base/item_specs.lua:689
 msgid "Shotgun Shells"
 msgstr "Cartouches de fusil"
 
-#: data/base/item_specs.lua:691
+#: data/base/item_specs.lua:693
 msgid ""
 "Shotgun shells come in a range of gauges, but mixing and matching shotgun ammo sizes can cause your gun to explode and take your hand along with it. Luckily for you, all of your ammo is the same size and fits your shotgun(s) perfectly. An additional bonus is that it all seems to be buckshot.\n"
 "\tUndoubtedly these were the most popular type of shotgun ammunition when hunting for food became unfeasible due to the extinction of most wildlife."
 msgstr ""
+"Les douilles de fusil à pompe ont différentes jauges, mais mélanger différentes tailles de munitions peut causer l'explosion du fusil et emporter ta main avec. Heureusement, les munitions font toutes la même taille et entrent parfaitement dans les fusils à pompe. En bonus il semblerait que toutes soient de la chevrotine.\n"
+"Il ne fait aucun doute que celles ci étaient très prisées pour chasser le gibier, depuis tout cela n'est plus possible due majoritairement à l'extinction de toute vie sauvage."
 
-#: data/base/item_specs.lua:699
+#: data/base/item_specs.lua:701
 msgid "Two Barrel Sawn Off Shotgun"
 msgstr "Fusil à double canon scié"
 
-#: data/base/item_specs.lua:715
+#: data/base/item_specs.lua:717
 msgid "Often wielded in the past by thugs or convenience store owners, this little baby is less powerful than the two-handed model, but makes up for it by letting you use a shield in conjunction with it."
 msgstr "Souvent utilisé dans le passé par les malfrats aussi bien que par les propriétaires de supérettes, ce petit engin est moins puissant que le modèle à deux mains, mais a l'avantage de permettre l'utilisation conjointe d'un bouclier."
 
-#: data/base/item_specs.lua:723
+#: data/base/item_specs.lua:725
 msgid "Two Barrel Shotgun"
 msgstr "Fusil à double canon"
 
-#: data/base/item_specs.lua:740
+#: data/base/item_specs.lua:742
 msgid "An old standby of farmers and bird hunters. While capable of causing a fair amount of damage to droid armor, the limited rounds capacity and fairly slow reloading time make this weapon preferable to melee weapons, but only just. Requires two hands to wield."
 msgstr "Une vieille pétoire pour fermiers et chasseurs d'oiseaux. Bien que capable de causer pas mal de dommages à une armure de droïde, la portée limitée et un temps de rechargement très lent en font tout juste une arme préférable aux armes de mêlée. Elle nécessite d'être utilisée à deux mains."
 
-#: data/base/item_specs.lua:748
+#: data/base/item_specs.lua:750
 msgid "Pump Action Shotgun"
 msgstr "Fusil à pompe"
 
-#: data/base/item_specs.lua:765
+#: data/base/item_specs.lua:767
 msgid "The pump action shotgun isn't quite as powerful as the double barrel equivalent, but it does hold more ammo per clip. Requires two hands to wield."
 msgstr "Le fusil à pompe n'est pas aussi puissant que le double canon, mais il dispose de plus de balles par chargeur. C'est une arme à deux mains."
 
-#: data/base/item_specs.lua:773
+#: data/base/item_specs.lua:775
 msgid "9x19mm Ammunition"
 msgstr "Balles 9x19mm"
 
-#: data/base/item_specs.lua:777
+#: data/base/item_specs.lua:779
 msgid "You know a little about these. A metal jacket holds a bullet tightly at one end and is filled with an explosive chemical which acts as a propellant. At the other end is a primer cap filled with another explosive, which when struck will ignite the propellant. The bullet then becomes a projectile and is usually launched out through the barrel of a gun or similar device. Or, something like that."
-msgstr ""
+msgstr "Tu en sais un peut peu à ce sujet. Une enveloppe métallique maintient fermement la balle à une extrémité, celle ci est remplie d'un produit chimique explosif qui fait office de propulseur. A l'autre bout se trouve l'amorce elle aussi remplie avec un autre explosif, quand celle ci est frappée elle enflamme le propulseur. La balle devient un projectile et habituellement est propulsée à travers le canon d'un pistolet ou autre. Quelque chose comme ça."
 
-#: data/base/item_specs.lua:784
+#: data/base/item_specs.lua:786
 msgid "9mm Automatic"
 msgstr "Automatique 9mm"
 
-#: data/base/item_specs.lua:800
+#: data/base/item_specs.lua:802
 msgid "Nine millimeter ammo is a common caliber. While not very powerful, it allows for more rounds per clip than bigger ammunition."
 msgstr "Les munitions 9 mm sont un calibre courant. Bien que n'étant pas très puissant, cette arme permet plus de tirs par chargeur que celles utilisant des calibres plus importants."
 
-#: data/base/item_specs.lua:808
+#: data/base/item_specs.lua:810
 msgid "9mm Sub Machine Gun"
 msgstr "Mitraillette 9mm"
 
-#: data/base/item_specs.lua:825
+#: data/base/item_specs.lua:827
 msgid "These are commonly referred to as bullet hoses."
 msgstr "Elle est communément appelée \"tuyau à munitions\"."
 
-#: data/base/item_specs.lua:833
+#: data/base/item_specs.lua:835
 msgid "7.62x39mm Ammunition"
 msgstr "Balles 7,62x39mm"
 
-#: data/base/item_specs.lua:837
+#: data/base/item_specs.lua:839
 msgid "7.62mm ammo. Commonly used in assault rifles from old."
 msgstr "Munitions de 7.62mm. Utilisés fréquemment dans les anciens fusils d’assaut."
 
-#: data/base/item_specs.lua:844
+#: data/base/item_specs.lua:846
 msgid "7.62mm Hunting Rifle"
 msgstr "Fusil de chasse 7,62mm"
 
-#: data/base/item_specs.lua:861
+#: data/base/item_specs.lua:863
 msgid "7.62 millimeter ammo is commonly used in assault rifles. This is a more civilian take on that concept."
 msgstr "Les munitions 7,62 mm sont habituellement utilisées dans les fusils d'assaut. Cette arme est une version plus civile."
 
-#: data/base/item_specs.lua:869
+#: data/base/item_specs.lua:871
 msgid "7.62mm AK-47"
 msgstr "AK-47 7.62mm"
 
-#: data/base/item_specs.lua:886
+#: data/base/item_specs.lua:888
 msgid "The favorite weapon of third-world countries everywhere, this is a mass-produced, fairly reliable automatic weapon."
 msgstr "L'arme favorite de tous les pays du tiers-monde, c'est un produit de masse et une arme automatique relativement fiable."
 
-#: data/base/item_specs.lua:894
+#: data/base/item_specs.lua:896
 msgid ".50 BMG (12.7x99mm) Ammunition"
 msgstr "Balles .50 BMG (12.7x99mm)"
 
-#: data/base/item_specs.lua:898
+#: data/base/item_specs.lua:900
 msgid "Browning Machine Gun ammo. Commonly used against small fortress and also to stop vehicles. You probably won't find a weapon to use this ammo, though."
 msgstr "Munitions pour mitrailleuse Browning. Fréquemment utilisé contre de petites forteresses ou pour arrêter des véhicules. Cependant, vous n'allez certainement pas trouver une arme pour ces munitions."
 
-#: data/base/item_specs.lua:905
+#: data/base/item_specs.lua:907
 msgid "Barrett M82 Sniper Rifle"
 msgstr "Fusil de précision Barrett M82"
 
-#: data/base/item_specs.lua:923
+#: data/base/item_specs.lua:925
 msgid "Powerful enough to stop a truck, literally, the likelihood of even a battle droid surviving more than 2 hits by this weapon is quite slim. It doesn't even matter if the pesky droid is cowering behind a wall, the bullets will break right through and make the bot ready for the scrap heap in no time."
 msgstr "Suffisamment puissant pour arrêter un camion, réellement. La probabilité qu'un droïde de combat survive à plus de deux tirs de cette arme est quasiment nulle. Peu importe même que le fichu droïde se tapisse derrière un mur, les balles passeront au travers et enverront le robot à la casse en un rien de temps."
 
-#: data/base/item_specs.lua:931
+#: data/base/item_specs.lua:933
 msgid "Laser Power Pack"
 msgstr "Pack d'énergie laser"
 
-#: data/base/item_specs.lua:935
+#: data/base/item_specs.lua:937
 msgid "Energy crystal load for laser weapons and other power tools. Each round fired consumes a load within the crystal."
 msgstr "Cristal de charge d'énergie pour les armes lasers et autres outils à énergie. Chaque tir consomme une charge interne du cristal."
 
-#: data/base/item_specs.lua:942
+#: data/base/item_specs.lua:944
 msgid "Laser Pistol"
 msgstr "Pistolet laser"
 
-#: data/base/item_specs.lua:958
+#: data/base/item_specs.lua:960
 msgid "A basic laser, but it has good uses in certain situations. No warranty of any kind, though."
 msgstr "Un laser de base, mais bien utile dans certaines situations. Aucune garantie de succès, néanmoins."
 
-#: data/base/item_specs.lua:966
+#: data/base/item_specs.lua:968
 msgid "Laser Rifle"
 msgstr "Fusil laser"
 
-#: data/base/item_specs.lua:983
+#: data/base/item_specs.lua:985
 msgid "This rifle is a high-end laser weapon. There is only one problem with it: Shooting it is too much fun. People often end up with no ammunition in the middle of a battle."
 msgstr "Ce fusil est une arme laser de haut de gamme. Il y a un seul un problème avec elle : tirer est trop amusant. Les gens finissent souvent sans munitions au milieu de la bataille."
 
-#: data/base/item_specs.lua:991
+#: data/base/item_specs.lua:993
 msgid "Laser Pulse Rifle"
 msgstr "Fusil laser à impulsions"
 
-#: data/base/item_specs.lua:1008
+#: data/base/item_specs.lua:1010
 msgid "The pulse laser technology, allowing for many repeated short bursts without the weapon overheating, makes this quite a useful weapon. The damage from each shot is noticeably less than from a Laser rifle, but the firing rate more than makes up for it."
 msgstr "La technologie laser à impulsions, permettant de nombreux tirs en rafale sans surchauffe, rend cette arme très utile. Les dommages causés par chaque tir sont moindres que ceux d'un fusil laser, mais la rapidité de tir compense très largement cet inconvénient."
 
-#: data/base/item_specs.lua:1016
+#: data/base/item_specs.lua:1018
 msgid "Laser Pulse Cannon"
 msgstr "Canon laser à impulsions"
 
-#: data/base/item_specs.lua:1034
+#: data/base/item_specs.lua:1036
 msgid "The pulse laser technology, allowing for many repeated short bursts without the weapon overheating, combined with a military design makes this weapon the preferred choice for most soldiers. Its quick no-recoil firing, large magazine, and awesome killing power makes it the ideal weapon for cleansing large droid infestations in mere minutes."
 msgstr "La technologie du laser à impulsions, permettant de nombreux coups répétés sans problème de surchauffe, combinée avec une conception militaire,en fait l'arme de choix pour la plupart des soldats. Sans recul, grande capacité en munition et avec une incroyable puissance de feu, nous avons l'arme idéal pour nettoyer les infestations droïdes en quelques minutes."
 
-#: data/base/item_specs.lua:1042
-msgid "Plasma Energy Container"
-msgstr "Récipient d'Energie Plasma"
-
-#: data/base/item_specs.lua:1046
-msgid "A container filled with all materials and energy required to make plasma weapons work in one handy and relatively safe package. This is the most common way of loading a plasma weapon."
-msgstr "Un récipient contenant les matériaux et l'énergie nécessaires à l'utilisation des armes à plasma. Tout l'équipement est ainsi contenu dans un sac pratique et sécurisé. C'est la manière habituelle pour alimenter les armes à plasma."
-
-#: data/base/item_specs.lua:1053
-msgid "Plasma Pistol"
-msgstr "Pistolet Plasma"
-
-#: data/base/item_specs.lua:1069
-msgid "The basic plasma weapon in a conveniently small package."
-msgstr "Le fusil à plasma de base dans un petit format pratique."
-
-#: data/base/item_specs.lua:1077
-msgid "Plasma Gun"
-msgstr "Canon Plasma"
-
-#: data/base/item_specs.lua:1094
-msgid "A somewhat slow weapon, but once you do hit plenty a bot will just down on the spot. A good alternative to a pulse laser for the skilled marksman."
-msgstr "Une arme lente, mais un impact détruit le robot instantanément. Une bonne alternative au laser pulsé si vous avez les compétences adéquates."
-
-#: data/base/item_specs.lua:1102
-msgid "2mm Exterminator Ammunition"
-msgstr "Munitions de l'exterminateur 2mm"
-
-#: data/base/item_specs.lua:1106
-msgid "Exterminators need this kind of ammunition. It can cause skin irritations due to leaking extermination radiation when carried close to the body for long time."
-msgstr "Les exterminateurs ont besoin de ce type de munition. Elles peuvent causer des irritations de la peau à cause des fuites radiatives, si elles sont portées proches du corps pendant longtemps."
-
-#: data/base/item_specs.lua:1113
-msgid "Exterminator"
-msgstr "Exterminateur"
-
-#: data/base/item_specs.lua:1130
-msgid "While this weapon is capable of firing really powerful shots, beware of the exceptionally long reloading times. (Don't get swarmed by enemies with this weapon unless you have powerful armor!)"
-msgstr "Comme ce fusil est doué d'une importante puissance pour chaque tir, restez conscient du temps de chargement exceptionnellement long. (Ne vous laissez pas déborder par l'ennemi avec ce fusil, sauf si vous avez une armure puissante."
-
-#: data/base/item_specs.lua:1138
-msgid "The Super Exterminator!!!"
-msgstr "Le Super Exterminateur !!!"
-
-#: data/base/item_specs.lua:1155
-msgid "This bad boy is known to blow away most enemies with a single blast. A dangerous weapon that you don't want to be on the receiving end of."
-msgstr "Ce « mauvais garçon » est connu pour détruire l'ennemi d'un seul tir. Une arme dangereuse, vous ne voulez pas être du mauvais côté du canon."
-
-#: data/base/item_specs.lua:1163
+#: data/base/item_specs.lua:1044
 msgid "Electro Laser Rifle"
 msgstr "Fusil Electro-laser"
 
-#: data/base/item_specs.lua:1180
-msgid "A specialized beam of laser momentarily ionizes the air between the target and the gun, turning it into highly conductive plasma. Milliseconds later, a powerful electric shock is delivered through the air and hits the target. This weapon is effective against people as it is against bots, and indeed few are the droid classes that can withstand more than a few hits from it before going down. The one downside is the high cost involved in crafting this weapon, which makes it very rare. Other than that, even the Exterminators have difficulty matching this weapon, the pride of human race."
+#: data/base/item_specs.lua:1062
+msgid "A specialized beam of laser momentarily ionizes the air between the target and the gun, turning it into highly conductive plasma. Milliseconds later, a powerful electric shock is delivered through the air and hits the target. This weapon is effective against people as it is against bots, and indeed few are the droid classes that can withstand more than a few hits from it before going down. The ammo is cheap, and it is one of the few man-made weapons which actually produces a blast, being able to harm more than one bot at once. However, it is still no match against Exterminators."
 msgstr ""
 
-#: data/base/item_specs.lua:1188
+#: data/base/item_specs.lua:1070
+msgid "Plasma Energy Container"
+msgstr "Récipient d'Energie Plasma"
+
+#: data/base/item_specs.lua:1074
+msgid "A container filled with all materials and energy required to make plasma weapons work in one handy and relatively safe package. This is the most common way of loading a plasma weapon."
+msgstr "Un récipient contenant les matériaux et l'énergie nécessaires à l'utilisation des armes à plasma. Tout l'équipement est ainsi contenu dans un sac pratique et sécurisé. C'est la manière habituelle pour alimenter les armes à plasma."
+
+#: data/base/item_specs.lua:1081
+msgid "Plasma Pistol"
+msgstr "Pistolet Plasma"
+
+#: data/base/item_specs.lua:1097
+msgid "The basic plasma weapon in a conveniently small package."
+msgstr "Le fusil à plasma de base dans un petit format pratique."
+
+#: data/base/item_specs.lua:1105
+msgid "Plasma Gun"
+msgstr "Canon Plasma"
+
+#: data/base/item_specs.lua:1122
+msgid "A somewhat slow weapon, but once you do hit plenty a bot will just down on the spot. A good alternative to a pulse laser for the skilled marksman."
+msgstr "Une arme lente, mais un impact détruit le robot instantanément. Une bonne alternative au laser pulsé si vous avez les compétences adéquates."
+
+#: data/base/item_specs.lua:1130
+msgid "Plasma Cannon"
+msgstr ""
+
+#: data/base/item_specs.lua:1148
+msgid "The plasma cannon is one of the slowest weapon mankind even produced. Based on the Barrett M86 Sniper Rifle, it takes a long time to heat before shooting. Being a plasma bullet, a newbie will most likely miss the target. However, for the skilled marksman, it is a good alternative to a pulse laser cannon, because once it hit, molten metal is usually all that remains where the bot used to be."
+msgstr ""
+
+#: data/base/item_specs.lua:1156
+msgid "2mm Exterminator Ammunition"
+msgstr "Munitions de l'exterminateur 2mm"
+
+#: data/base/item_specs.lua:1160
+msgid "Exterminators need this kind of ammunition. It can cause skin irritations due to leaking extermination radiation when carried close to the body for long time."
+msgstr "Les exterminateurs ont besoin de ce type de munition. Elles peuvent causer des irritations de la peau à cause des fuites radiatives, si elles sont portées proches du corps pendant longtemps."
+
+#: data/base/item_specs.lua:1167
+msgid "Exterminator"
+msgstr "Exterminateur"
+
+#: data/base/item_specs.lua:1184
+msgid "While this weapon is capable of firing really powerful shots, beware of the exceptionally long reloading times. (Don't get swarmed by enemies with this weapon unless you have powerful armor!)"
+msgstr "Comme ce fusil est doué d'une importante puissance pour chaque tir, restez conscient du temps de chargement exceptionnellement long. (Ne vous laissez pas déborder par l'ennemi avec ce fusil, sauf si vous avez une armure puissante."
+
+#: data/base/item_specs.lua:1192
+msgid "The Super Exterminator!!!"
+msgstr "Le Super Exterminateur !!!"
+
+#: data/base/item_specs.lua:1209
+msgid "This bad boy is known to blow away most enemies with a single blast. A dangerous weapon that you don't want to be on the receiving end of."
+msgstr "Ce « mauvais garçon » est connu pour détruire l'ennemi d'un seul tir. Une arme dangereuse, vous ne voulez pas être du mauvais côté du canon."
+
+#: data/base/item_specs.lua:1217
 msgid "VMX Gas Grenade"
 msgstr "Grenade à gaz VMX"
 
-#: data/base/item_specs.lua:1189
+#: data/base/item_specs.lua:1218
 msgid "Gas attack"
 msgstr "Attaque au gaz"
 
-#: data/base/item_specs.lua:1193
-msgid "The gas does not look terrifying. It even smells somewhat nice. And then you die. You die a most horrible death, never knowing what killed you."
-msgstr "Le gaz n'a pas l'air très méchant, il sent même plutôt bon ! Et puis vous mourrez. Vous mourrez une mort horrible, sans savoir ce qui vous a tué..."
+#: data/base/item_specs.lua:1222
+msgid "The gas does not look terrifying. It even smells somewhat nice. And then you die. You die a most horrible death, never knowing what killed you. (Note: This does not work on bots)"
+msgstr ""
 
-#: data/base/item_specs.lua:1200
+#: data/base/item_specs.lua:1229
 msgid "Small EMP Shockwave Generator"
 msgstr "Petit Générateur d'Onde de choc IEM"
 
-#: data/base/item_specs.lua:1201
+#: data/base/item_specs.lua:1230
 msgid "Small Electromagnetic pulse"
 msgstr "Petit Impulsion Electro-Magnétique"
 
-#: data/base/item_specs.lua:1205
+#: data/base/item_specs.lua:1234
 msgid "This sphere contains a few strange bits of technology invented by Nikola Tesla in the early 20th century. The magnetic pulse that it generates can damage most electronic devices in just one blast."
 msgstr "Cette sphère contient quelques étranges bouts de la technologie inventée par Nikola Tesla au début du 20ème siècle. L'impulsion magnétique qu'elle génère peut détruire la plupart des appareils électroniques en une seule fois."
 
-#: data/base/item_specs.lua:1212
+#: data/base/item_specs.lua:1241
 msgid "EMP Shockwave Generator"
 msgstr "Générateur de décharges IEM"
 
-#: data/base/item_specs.lua:1213
+#: data/base/item_specs.lua:1242
 msgid "Electromagnetic pulse"
 msgstr "Impulsion électromagnétique"
 
-#: data/base/item_specs.lua:1217
+#: data/base/item_specs.lua:1246
 msgid "This sphere contains a few strange bits of technology invented by Nikola Tesla in the early 20th century. The magnetic pulse that it generates can destroy most electronic devices in just one blast."
 msgstr "Cette sphère contient quelques étranges caractéristiques de la technologie inventée par Nikola Tesla au début du 20ème siècle. L'impulsion magnétique qu'elle génère peut détruire la plupart des appareils électroniques en une seule fois."
 
-#: data/base/item_specs.lua:1224
+#: data/base/item_specs.lua:1253
 msgid "Electronic Noise Generator"
 msgstr "Générateur de Bruit Electronique"
 
-#: data/base/item_specs.lua:1225
+#: data/base/item_specs.lua:1254
 msgid "Disable Electronics"
 msgstr "Désactive les appareils électroniques"
 
-#: data/base/item_specs.lua:1229
+#: data/base/item_specs.lua:1258
 msgid "This sphere creates a short blast of electronic noise that temporarily disables most electronics."
 msgstr "Cette sphère crée une courte explosion de bruit électronique qui désactive temporairement la plupart des dispositifs électroniques."
 
-#: data/base/item_specs.lua:1236
+#: data/base/item_specs.lua:1265
 msgid "Small Plasma Shockwave Emitter"
 msgstr "Petit Émetteur de décharges à plasma"
 
-#: data/base/item_specs.lua:1237
+#: data/base/item_specs.lua:1266
 msgid "Explosion"
 msgstr "Explosion"
 
-#: data/base/item_specs.lua:1241
+#: data/base/item_specs.lua:1270
 msgid "Said to be an upscaled version of a traditional high temperature explosive."
 msgstr "Connu pour être une version améliorée des explosifs thermiques traditionnels."
 
-#: data/base/item_specs.lua:1248
+#: data/base/item_specs.lua:1277
 msgid "Plasma Shockwave Emitter"
 msgstr "Emetteur de décharges à plasma"
 
-#: data/base/item_specs.lua:1249
+#: data/base/item_specs.lua:1278
 msgid "Huge explosion"
 msgstr "Explosion géante"
 
-#: data/base/item_specs.lua:1253
+#: data/base/item_specs.lua:1282
 msgid "Said to be the downscaled version of the original Pandora's Sphere, this device extinguishes life with superheated plasma."
 msgstr "Version miniature de la sphère de Pandore , cet appareil élimine la vie avec un plasma ultra-chaud."
 
-#: data/base/item_specs.lua:1266
+#: data/base/item_specs.lua:1295
 msgid "Normal Jacket"
 msgstr "Veste de base"
 
-#: data/base/item_specs.lua:1273
+#: data/base/item_specs.lua:1302
 msgid "This piece of clothing made out of Synthex(TM) does a decent job of protection. I guess. Maybe. I'm not sure."
 msgstr "Cette pièce d'habillement fabriqué à partir de Synthex(TM) protège de manière correct. Sûrement. Peut-être. Ce n'est pas sûr."
 
-#: data/base/item_specs.lua:1281
+#: data/base/item_specs.lua:1310
 msgid "Reinforced Jacket"
 msgstr "Veste renforcée"
 
-#: data/base/item_specs.lua:1289
+#: data/base/item_specs.lua:1318
 msgid "One step up from a normal jacket."
 msgstr "Un peu mieux qu'une veste de base..."
 
-#: data/base/item_specs.lua:1297
+#: data/base/item_specs.lua:1326
 msgid "Protective Jacket"
 msgstr "Veste de protection"
 
-#: data/base/item_specs.lua:1305
+#: data/base/item_specs.lua:1334
 msgid "Very strong for its size, this jacket made out of Shootex(TM) does a good job of absorbing basic blows. It is suitable for all kinds of extreme sports, such as climbing, rafting, bungee-jumping, fencing and even racing."
 msgstr "Très résistante pour sa taille, cette veste réalisée en Shootex(TM) est bien efficace pour absorber des chocs de base. Elle convient à tous les genres de sports extrêmes, comme l'escalade, le rafting, le saut à l'élastique, l'escrime et même la course."
 
-#: data/base/item_specs.lua:1313
+#: data/base/item_specs.lua:1342
 msgid "Red Guard's Light Robe"
 msgstr "La Robe de la Garde Rouge"
 
-#: data/base/item_specs.lua:1321
+#: data/base/item_specs.lua:1350
 msgid "The universal riot gear of the Red Guard. Tough as nails and able to withstand most blows."
 msgstr "Tenue anti-émeute universelle de la Garde Rouge. Dure comme le roc, et capable d'encaisser la plupart des explosions."
 
-#: data/base/item_specs.lua:1329
+#: data/base/item_specs.lua:1358
 msgid "Red Guard's Heavy Robe"
 msgstr "Uniforme lourd de la Garde Rouge"
 
-#: data/base/item_specs.lua:1337
+#: data/base/item_specs.lua:1366
 msgid "Defense is acquired at a high level with this durable piece of armor."
 msgstr "Une défense à haut niveau est obtenue avec cette pièce d'armure à longue durée de vie."
 
-#: data/base/item_specs.lua:1350
+#: data/base/item_specs.lua:1379
 msgid "Improvised Buckler"
 msgstr "Lanière improvisée"
 
-#: data/base/item_specs.lua:1357
+#: data/base/item_specs.lua:1386
 msgid "This shield is a compilation of various objects which happened to be around. It has tubes, bolts and parts of metal, all slapped together to provide a small bit of protection from enemies. It's very simple and rough, but some sensors and lights have been added to let the wielder know when the item is getting hit, and how long it will remain operational and other cool stuff like that."
 msgstr "Ce bouclier est fait de plusieurs objets hétéroclites, tous trouvés aux alentours. Il possède des tubes, des boulons et des morceaux de métaux, tous forgés ensemble pour fournir un minimum de protection face aux attaques ennemies. Il est très sommaire et un peu disgracieux et dissymétrique, mais quelques capteurs et voyants lui ont été ajoutés pour renseigner son utilisateur si l'objet reçoit un coup, et combien de temps il restera opérationnel, ainsi que d'autres choses intéressantes comme ça."
 
-#: data/base/item_specs.lua:1365
+#: data/base/item_specs.lua:1394
 msgid "Bot Carapace"
 msgstr "Carapace de robot"
 
-#: data/base/item_specs.lua:1372
+#: data/base/item_specs.lua:1401
 msgid "A small, lightweight and pretty straightforward shield. Provides decent protection."
 msgstr "Un bouclier petit, léger, et robuste. Il fournit une protection décente."
 
-#: data/base/item_specs.lua:1380
+#: data/base/item_specs.lua:1409
 msgid "Standard Shield"
 msgstr "Bouclier"
 
-#: data/base/item_specs.lua:1387
+#: data/base/item_specs.lua:1416
 msgid "Better than a buckler, and a lot more effective."
 msgstr "Mieux qu'un bouclier, et beaucoup plus efficace."
 
-#: data/base/item_specs.lua:1395
+#: data/base/item_specs.lua:1424
 msgid "Heavy Shield"
 msgstr "Bouclier lourd"
 
-#: data/base/item_specs.lua:1403
+#: data/base/item_specs.lua:1432
 msgid "A medium sized, reinforced shield. Heavier than a standard shield, but should last longer. Provides decent protection."
 msgstr "Un bouclier de taille moyenne, renforcé. Plus lourd que le bouclier standard, mais à durée de vie étendue. Apporte une protection convenable."
 
-#: data/base/item_specs.lua:1411
+#: data/base/item_specs.lua:1440
 msgid "Riot Shield"
 msgstr "Bouclier anti-émeute"
 
-#: data/base/item_specs.lua:1419
+#: data/base/item_specs.lua:1448
 msgid "A powerful shield, as useful to protect from bots as it is to control big crowds of angry protesters."
 msgstr "Un puissant bouclier, aussi utile pour se protéger des robots que pour contrôler des foules de manifestants en colère."
 
-#: data/base/item_specs.lua:1431
+#: data/base/item_specs.lua:1460
 msgid "Pot Helmet"
 msgstr "Casque de cavalerie"
 
-#: data/base/item_specs.lua:1438
+#: data/base/item_specs.lua:1467
 msgid "Top of the line headgear, for bots. But rip it off their metal necks and take out the circuits it also manages to protect living beings decently against a myriad of close range and long range attacks."
 msgstr "Couvre-chef haut de gamme, pour les robots. Une fois arraché de leur cou métallique, et nettoyé de ses circuits internes, il permet aussi de protéger assez convenablement les êtres humains contre tout un ensemble d'attaques à courtes ou longues portées."
 
-#: data/base/item_specs.lua:1446
+#: data/base/item_specs.lua:1475
 msgid "Worker Helmet"
 msgstr "Casque de chantier"
 
-#: data/base/item_specs.lua:1453
+#: data/base/item_specs.lua:1482
 msgid "A simple cover to protect your head. Don't expect to be incognito, your flippers and penguin like body are hard to miss."
 msgstr "Une simple protection pour la tête. N'espère pas passer incognito, tes ailes et ton corps de manchot sont faciles à reconnaître."
 
-#: data/base/item_specs.lua:1461
+#: data/base/item_specs.lua:1490
 msgid "Miner Helmet"
 msgstr "Casque de mineur"
 
-#: data/base/item_specs.lua:1468
+#: data/base/item_specs.lua:1497
 msgid "It might look a bit silly, but it will save your life many times."
 msgstr "Ça peut sembler un peu bête, mais ça vous sauvera plusieurs fois la vie."
 
-#: data/base/item_specs.lua:1476
+#: data/base/item_specs.lua:1505
 msgid "Light Battle Helmet"
 msgstr "Petit casque de bataille"
 
-#: data/base/item_specs.lua:1484
+#: data/base/item_specs.lua:1513
 msgid "A rather useful helmet, has a few defense issues here and there but mainly is worth the wear."
 msgstr "Un casque plutôt utile. Malgré quelques petits défauts défensifs ici et là, il vaut la peine d'être porté."
 
-#: data/base/item_specs.lua:1492
+#: data/base/item_specs.lua:1521
 msgid "Battle Helmet"
 msgstr "Casque de bataille"
 
-#: data/base/item_specs.lua:1500
+#: data/base/item_specs.lua:1529
 msgid "Now this is head protection. Feel safe with sturdy Resosteel(TM) protecting your head. Not as comfortable as other hats but the precious content stays safe."
 msgstr "Voilà réellement ce qu'on peut considérer comme une protection de tête. Fabriqué avec du robuste Resométal(TM) pour assurer une protection optimale. Moins confortable que d'autres chapeaux, mais son précieux contenu restera en sécurité."
 
-#: data/base/item_specs.lua:1508
+#: data/base/item_specs.lua:1537
 msgid "Dixon's Helmet"
 msgstr "Casque de Dixon"
 
-#: data/base/item_specs.lua:1515
+#: data/base/item_specs.lua:1544
 msgid "A gift from Dixon. It looks like it is about to turn into dust."
 msgstr "Un cadeau de Dixon. Il semble qu'il va se transformer en poussière."
 
-#: data/base/item_specs.lua:1528
+#: data/base/item_specs.lua:1557
 msgid "Shoes"
 msgstr "Chaussures"
 
-#: data/base/item_specs.lua:1535
+#: data/base/item_specs.lua:1564
 msgid "These simple boots are designed for comfort of the wearer more than to give actual protection."
 msgstr "Ces chaussures simples sont plus conçues pour le confort de celui qui les porte que pour fournir une réelle protection."
 
-#: data/base/item_specs.lua:1543
+#: data/base/item_specs.lua:1572
 msgid "Worker Shoes"
 msgstr "Chaussures de chantier"
 
-#: data/base/item_specs.lua:1550
+#: data/base/item_specs.lua:1579
 msgid "These footwears are steel tipped, and generally quite sturdy, giving a bit extra protection."
 msgstr "Ces chaussures sont renforcées par une extrémité en acier, et sont habituellement plutôt solides, apportant un peu de protection supplémentaire."
 
-#: data/base/item_specs.lua:1558
+#: data/base/item_specs.lua:1587
 msgid "Battle Shoes"
 msgstr "Chaussures de combat"
 
-#: data/base/item_specs.lua:1565
+#: data/base/item_specs.lua:1594
 msgid "These boots are similar to the simple shoes, but the material they are made of is hardened for extra protection."
 msgstr "Ces bottes sont similaires à de simples chaussures, mais le matériau dont elles sont faites est renforcé pour une meilleure protection."
 
-#: data/base/item_specs.lua:1577
+#: data/base/item_specs.lua:1606
 msgid "Source Book of Emergency Shutdown"
 msgstr "Listing Source d'Arrêt d'Urgence"
 
-#: data/base/item_specs.lua:1578 data/base/item_specs.lua:1590
-#: data/base/item_specs.lua:1602 data/base/item_specs.lua:1614
-#: data/base/item_specs.lua:1626 data/base/item_specs.lua:1638
-#: data/base/item_specs.lua:1650 data/base/item_specs.lua:1662
-#: data/base/item_specs.lua:1674 data/base/item_specs.lua:1686
-#: data/base/item_specs.lua:1698 data/base/item_specs.lua:1710
-#: data/base/item_specs.lua:1734 data/base/item_specs.lua:1746
-#: data/base/item_specs.lua:1758 data/base/item_specs.lua:1770
-#: data/base/item_specs.lua:1782 data/base/item_specs.lua:1794
+#: data/base/item_specs.lua:1607 data/base/item_specs.lua:1619
+#: data/base/item_specs.lua:1631 data/base/item_specs.lua:1643
+#: data/base/item_specs.lua:1655 data/base/item_specs.lua:1667
+#: data/base/item_specs.lua:1679 data/base/item_specs.lua:1691
+#: data/base/item_specs.lua:1703 data/base/item_specs.lua:1715
+#: data/base/item_specs.lua:1727 data/base/item_specs.lua:1739
+#: data/base/item_specs.lua:1763 data/base/item_specs.lua:1775
+#: data/base/item_specs.lua:1787 data/base/item_specs.lua:1799
+#: data/base/item_specs.lua:1811 data/base/item_specs.lua:1823
 msgid "Permanently acquire/enhance this program"
 msgstr "Obtenir/améliorer ce programme de façon permanante"
 
-#: data/base/item_specs.lua:1582
+#: data/base/item_specs.lua:1611
 msgid "Everyone needs to blow off some steam every now and then."
 msgstr "Tout le monde a besoin de relâcher la pression de temps en temps."
 
-#: data/base/item_specs.lua:1589
+#: data/base/item_specs.lua:1618
 msgid "Source Book of Check System Integrity"
 msgstr "Listing Source de Vérification d'Intégrité Système"
 
-#: data/base/item_specs.lua:1594
+#: data/base/item_specs.lua:1623
 msgid "An incredible healing program, probably the only one you will ever need."
 msgstr "Un incroyable code de guérison, probablement le seul dont vous aurez jamais besoin."
 
-#: data/base/item_specs.lua:1601
+#: data/base/item_specs.lua:1630
 msgid "Source Book of Sanctuary"
 msgstr "Listing Source du Sanctuaire"
 
-#: data/base/item_specs.lua:1606
+#: data/base/item_specs.lua:1635
 msgid "The art of rapidly moving away from danger is very useful. Even when used in reverse, it has its uses."
 msgstr "C'est une façon de fuir face au danger très rapidement. C'est très utile. Ça peut aussi être utilisé en sens inverse."
 
-#: data/base/item_specs.lua:1613
+#: data/base/item_specs.lua:1642
 msgid "Source Book of Malformed Packet"
 msgstr "Listing Source de Paquet Malformé"
 
-#: data/base/item_specs.lua:1618 data/base/skill_specs.lua:91
+#: data/base/item_specs.lua:1647 data/base/skill_specs.lua:91
 msgid "When computers are presented with the unexpected, they can damage themselves."
 msgstr "Un ordinateur dans une situation non prévue peut s'auto-endommager."
 
-#: data/base/item_specs.lua:1625
+#: data/base/item_specs.lua:1654
 msgid "Source Book of Calculate Pi"
 msgstr "Listing Source du Calcul de Pi"
 
-#: data/base/item_specs.lua:1630 data/base/skill_specs.lua:102
+#: data/base/item_specs.lua:1659 data/base/skill_specs.lua:102
 msgid "It is not a big problem to make a badly designed system to go hunting for the impossible, causing a performance impact."
 msgstr "Ce n'est souvent pas un problème de coder un système mal conçu, à la recherche d'une solution impossible, causant un problème de performance."
 
-#: data/base/item_specs.lua:1637
+#: data/base/item_specs.lua:1666
 msgid "Source Book of Blue Screen"
 msgstr "Listing Source de l'Ecran Bleu"
 
-#: data/base/item_specs.lua:1642 data/base/item_specs.lua:1654
+#: data/base/item_specs.lua:1671 data/base/item_specs.lua:1683
 msgid "With a little touch a war machine comes crashing to a halt. For a while."
 msgstr "Avec la bonne précision, un contact bien placé peut arrêter une machine de guerre. Pendant quelques temps."
 
-#: data/base/item_specs.lua:1649
+#: data/base/item_specs.lua:1678
 msgid "Source Book of Broadcast Blue Screen"
 msgstr "Listing Source de diffusion d'Ecran Bleu"
 
-#: data/base/item_specs.lua:1661
+#: data/base/item_specs.lua:1690
 msgid "Source Book of Invisibility"
 msgstr "Listing Source d'Invisibilité"
 
-#: data/base/item_specs.lua:1666 data/base/skill_specs.lua:80
+#: data/base/item_specs.lua:1695 data/base/skill_specs.lua:80
 msgid "I am not the Linarian you are looking for."
 msgstr "Je ne suis pas le Linarien que tu recherches."
 
-#: data/base/item_specs.lua:1673
+#: data/base/item_specs.lua:1702
 msgid "Source Book of Virus"
 msgstr "Listing Source des Virus"
 
-#: data/base/item_specs.lua:1678 data/base/skill_specs.lua:137
+#: data/base/item_specs.lua:1707 data/base/skill_specs.lua:137
 msgid "This is not just a firmware upgrade, my dear bot. You are about to find out what exactly I want to give you."
 msgstr "Ce n'est pas seulement un mise à jour de microcode, mon cher robot. Tu es en train d'apprendre exactement ce que je veux que tu apprennes."
 
-#: data/base/item_specs.lua:1685
+#: data/base/item_specs.lua:1714
 msgid "Source Book of Broadcast Virus"
 msgstr "Listing Source de Diffusion de Virus"
 
-#: data/base/item_specs.lua:1690
+#: data/base/item_specs.lua:1719
 msgid "The network is wide and dangerous. Many traps await the weak and unprepared."
 msgstr "Le réseau est vaste et dangereux. Beaucoup de pièges attendent les êtres faibles et non préparés."
 
-#: data/base/item_specs.lua:1697
+#: data/base/item_specs.lua:1726
 msgid "Source Book of Dispel Smoke"
 msgstr "Listing Source de la Dissipation de Fumée"
 
-#: data/base/item_specs.lua:1702
+#: data/base/item_specs.lua:1731
 msgid "By heating up the chips with a malformed program, you can cause them to release the magic smoke which keeps the bot running."
 msgstr "En surchauffant les puces avec un programme mal-formé, on peut leur faire relâcher le fumigène qui maintient les robots en état de marche."
 
-#: data/base/item_specs.lua:1709
+#: data/base/item_specs.lua:1738
 msgid "Source Book of Killer Poke"
 msgstr "Listing Source de la Manipulation Mémoire"
 
-#: data/base/item_specs.lua:1714
+#: data/base/item_specs.lua:1743
 msgid "Messing around with the bot's memory can cause it to damage itself, but the damage is greatly variable."
 msgstr "Mettre la pagaille dans la mémoire d'un robot peut le faire s'auto-endommager, mais l'importance des dommages est grandement variable."
 
-#: data/base/item_specs.lua:1721
+#: data/base/item_specs.lua:1750
 msgid "Source Book of Repair Equipment"
 msgstr "Listing Source de la Réparation d'Équipement"
 
-#: data/base/item_specs.lua:1722
+#: data/base/item_specs.lua:1751
 msgid "Learn about repairing items"
 msgstr "Apprends comment réparer des objets"
 
-#: data/base/item_specs.lua:1726
+#: data/base/item_specs.lua:1755
 msgid "This manual will help you fix a broken dishwasher, a car, or a gun. The covers does not mention anything about breaking robots however."
 msgstr "Ce manuel vous apprendra à réparer une machine à laver, une voiture ou une arme. La couverture ne mentionne par contre rien au sujet du démontage des robots."
 
-#: data/base/item_specs.lua:1733
+#: data/base/item_specs.lua:1762
 msgid "Source Book of Plasma Discharge"
 msgstr "Listing Source de Décharge de plasma"
 
-#: data/base/item_specs.lua:1738 data/base/skill_specs.lua:184
+#: data/base/item_specs.lua:1767 data/base/skill_specs.lua:184
 msgid "The overload setting exists for emergencies. Plasma does not discriminate between bots and humans. Everything is the same to it."
 msgstr "La configuration de surcharge est utilisée pour les urgences. Le plasma ne fait pas de différence entre les robots et les humains. Ils sont tous égaux devant lui."
 
-#: data/base/item_specs.lua:1745
+#: data/base/item_specs.lua:1774
 msgid "Source Book of Nethack"
 msgstr "Listing Source de Nethack"
 
-#: data/base/item_specs.lua:1750
+#: data/base/item_specs.lua:1779
 msgid "The open source game called Nethack is one of the world's greatest wasters of time. Machines don't care about it, but humans can get sucked in quite deeply."
 msgstr "Le jeu open source appelé Nethack est un des plus grands gaspilleurs de temps du monde. Les machines ne font pas attention à lui, mais les êtres humains peuvent se faire vraiment entuber profondément."
 
-#: data/base/item_specs.lua:1757
+#: data/base/item_specs.lua:1786
 msgid "Source Book of Ricer CFLAGS"
 msgstr "Listing Source du Jacky-Tuning des CFLAGS"
 
-#: data/base/item_specs.lua:1762
+#: data/base/item_specs.lua:1791
 msgid "Optimization is the root of all evil. You can gain some temporary improvements to your system, but in the end you are only likely to cause permanent damage."
 msgstr "L'optimisation est la racine du mal. Tu peux obtenir quelques gains de performances dans ton système pendant un temps, mais à la fin, il est plus probable que cela cause des dommages permanents."
 
-#: data/base/item_specs.lua:1769
+#: data/base/item_specs.lua:1798
 msgid "Source Book of Reverse-engineer"
 msgstr "Listing Source de la Rétroingénierie"
 
-#: data/base/item_specs.lua:1774
+#: data/base/item_specs.lua:1803
 msgid "There is some dark magic in the art of turning bots inside-out to learn all their secrets."
 msgstr "Il y a comme de la magie noire dans l'art d'ouvrir et d'examiner l'intérieur des robots pour apprendre leurs secrets."
 
-#: data/base/item_specs.lua:1781
+#: data/base/item_specs.lua:1810
 msgid "Source Book of Light"
 msgstr "Listing Source de la Lumière"
 
-#: data/base/item_specs.lua:1786 data/base/skill_specs.lua:205
+#: data/base/item_specs.lua:1815 data/base/skill_specs.lua:205
 msgid "Let there be light..."
 msgstr "Que la lumière soit..."
 
-#: data/base/item_specs.lua:1793
+#: data/base/item_specs.lua:1822
 msgid "Source Book of Network Mapper"
 msgstr "Listing Source de la Cartographie des Réseaux"
 
-#: data/base/item_specs.lua:1798 data/base/skill_specs.lua:195
+#: data/base/item_specs.lua:1827 data/base/skill_specs.lua:195
 msgid "Knowing what your enemies are up to is easy with a little signal intelligence. Displays enemy locations on your automap."
 msgstr "Savoir où se situent tes ennemis est facile un peu de traitement de signal. Affiche la position des ennemis sur ton auto-carte."
 
-#: data/base/item_specs.lua:1805
+#: data/base/item_specs.lua:1834
 msgid "Subatomic and Nuclear Science for Dummies, Volume IV"
 msgstr "Sciences Nucléaires et Subatomiques pour les Nuls, Volume IV"
 
-#: data/base/item_specs.lua:1809
+#: data/base/item_specs.lua:1838
 msgid "From the back of the cover: 'Subatomic and Nuclear Science for Dummies, Volume IV is the most popular handbook series for learning nuclear science: Learn to generate enough power to keep you town lit up for a decade! Discover how to really scare neighboring countries! Find out how to make your very own mutant pet!' This obviously important tome of knowledge from before the great assault comes with no warranty whatsoever."
 msgstr "Extrait du quatrième de couverture : 'Sciences Nucléaires et Subatomiques pour les Nuls, Volume IV, fait partie de la très populaire série de manuels sur l'apprentissage de la science nucléaire : Apprendre à générer suffisamment de puissance pour éclairer votre ville pendant une décennie ! Découvrir comment réellement effrayer les pays voisins ! Savoir comment créer son propre animal de compagnie mutant !\". Ce grimoire d'un savoir basé sur les connaissances d'avant le Grand Assaut est fourni sans aucune garantie d'aucune sorte."
 
-#: data/base/item_specs.lua:1816
+#: data/base/item_specs.lua:1845
 msgid "Manual of the Automated Factory"
 msgstr "Manuel de l'Usine Automatisée"
 
-#: data/base/item_specs.lua:1820
+#: data/base/item_specs.lua:1849
 msgid "This book describes the operation and repair of automated factories. Included are common error codes and how to fix them. However, most repairs simply call for liberal application of 'Elbow Grease'."
 msgstr "Ce livre décrit le mode de fonctionnement et les opérations de réparation des usines automatisées. On y trouve les principaux codes d'erreurs et leur résolution. Cependant la plupart des opérations de réparations se résume à l'application d'une bonne couche de \"Huile de Coude\"."
 
-#: data/base/item_specs.lua:1827
+#: data/base/item_specs.lua:1856
 msgid "Manual of the Extract Bot Parts"
 msgstr "Manuel des pièces détachées de robots"
 
-#: data/base/item_specs.lua:1828 data/base/item_specs.lua:1832
-msgid "USE FOR CHEATING ONLY. If you see this online, please report the bug."
-msgstr "UTILISER POUR TRICHER UNIQUEMENT. Si vous le trouvez dans le jeu, reportez-le comme un bug."
+#: data/base/item_specs.lua:1857 data/base/item_specs.lua:1861
+msgid "USE FOR CHEATING ONLY. If you see this ingame, please report the bug."
+msgstr ""
 
-#: data/base/item_specs.lua:1843
+#: data/base/item_specs.lua:1872
 msgid "Strength Pill"
 msgstr "Gélule de force"
 
-#: data/base/item_specs.lua:1844
+#: data/base/item_specs.lua:1873
 msgid "Permanently gain +1 strength"
 msgstr "Gagne de manière permanent +1 en Force"
 
-#: data/base/item_specs.lua:1848
+#: data/base/item_specs.lua:1877
 msgid "These pills permanently raise strength within a person. They work on a nano-technological basis. Consult your physician, the receipt or pharmacy experts for details on intended effects, possible interactions and side effects of this drug."
 msgstr "Ces pilules augment la force de manière permanente. Elles fonctionnent avec les nano-technologies. Consulte ton docteur ou un expert en pharmacie pour les détails sur les effets souhaités et les effets secondaires."
 
-#: data/base/item_specs.lua:1855
+#: data/base/item_specs.lua:1884
 msgid "Dexterity Pill"
 msgstr "Gélule de dextérité"
 
-#: data/base/item_specs.lua:1856
+#: data/base/item_specs.lua:1885
 msgid "Permanently gain +1 dexterity"
 msgstr "Gagne de manière permanent +1 en Dextérité"
 
-#: data/base/item_specs.lua:1860
+#: data/base/item_specs.lua:1889
 msgid "These pills permanently raise dexterity within a person. They work on a nano-technological basis. Consult your physician, the receipt or pharmacy experts for details on intended effects, possible interactions and side effects of this drug."
 msgstr "Ces pilules augmentent la dextérité de manière permanente. Elles fonctionnent avec des nano-technologies. Consulte ton médecin ou un pharmacien pour le détail des effets désirés, et des effets secondaires de ce médicament."
 
-#: data/base/item_specs.lua:1867
+#: data/base/item_specs.lua:1896
 msgid "Code Pill"
 msgstr "Gélule de code"
 
-#: data/base/item_specs.lua:1868
+#: data/base/item_specs.lua:1897
 msgid "Permanently gain +1 cooling"
 msgstr "Gagne de manière permanente +1 en Refroidissement"
 
-#: data/base/item_specs.lua:1872
+#: data/base/item_specs.lua:1901
 msgid "Dude! This fab food will totally bump up your code skills, man! A real blast. Scarf these down to *see* the code."
 msgstr "Mec ! Cette nourriture exceptionnelle va faire exploser tes compétences en programmation, gars ! Un vrai coup de pouce."
 
-#: data/base/item_specs.lua:1879
+#: data/base/item_specs.lua:1908
 msgid "Brain Enlargement Pills Antidote"
 msgstr "Antidote des pilules d'augmentation du volume cérébral"
 
-#: data/base/item_specs.lua:1883
+#: data/base/item_specs.lua:1912
 msgid "These pills can reverse the harmful effects of the 'brain enlargement pills' that are publicly sold via the Internet. The planet-wide guild of medics has recommended not to respond to these adverts at all, while attempts to entirely ban the distribution of those pills were never completely successful."
-msgstr ""
+msgstr "Ces pilules peuvent contrecarrer les effets douloureux des  « pilules d'augmentation cérébrales » , vendues au public sur internet. La guilde mondiale pharmaceutique a recommandé de ne pas réagir à ces publicités, en attendant que les tentatives pour éradiquer la distribution de ces pilules aient abouti à un total succès."
 
-#: data/base/item_specs.lua:1890
+#: data/base/item_specs.lua:1919
 msgid "Brain Enlargement Pill"
 msgstr "Pilule d'augmentation du volume cérébral"
 
-#: data/base/item_specs.lua:1891
+#: data/base/item_specs.lua:1920
 msgid "Gain fast acting cancer"
 msgstr "Gagne un cancer à effet rapide"
 
-#: data/base/item_specs.lua:1895
+#: data/base/item_specs.lua:1924
 #, c-format
 msgid "Doctors all over the planet have tried to suppress the amazing breakthrough which has brought increased alertness and concentration that comes with a larger brain. They are synthesized using cutting edge technology and 100% natural herbal ingredients from a secret five thousand-year-old traditional holistic recipe. Get yours direct from our online Canadian ph4rm4cy!!! 100% satisfaction guaranteed!!!"
 msgstr "Les médecins de toute la planète ont tenté de faire disparaître l'incroyable découverte de l'élargissement cérébral qui apporte une nette amélioration de la vigilance et de la concentration. Ces pilules sont synthétisées par une technologie de pointe à partir d'ingrédients végétaux 100% naturels, sur la base d'une recette traditionnelle vieille de cinq mille ans. Achetez les vôtres en direct sur notre ph4rm4ci3 canadienne en ligne !!! 100% satisfait ou remboursé !!!"
 
-#: data/base/item_specs.lua:1902
+#: data/base/item_specs.lua:1931
 msgid "Diet Supplement"
 msgstr "Supplément diététique"
 
-#: data/base/item_specs.lua:1903 data/base/item_specs.lua:1915
-#: data/base/item_specs.lua:1927
+#: data/base/item_specs.lua:1932 data/base/item_specs.lua:1944
+#: data/base/item_specs.lua:1956
 msgid "Recover Health"
 msgstr "Retrouver la santé"
 
-#: data/base/item_specs.lua:1907
+#: data/base/item_specs.lua:1936
 msgid "Only proper vitamin and mineral intake can keep you healthy during the apocalypse. This can cure a cold."
 msgstr "Seuls des vitamines et des compléments minéraux peuvent vous tenir en bonne santé pendant l'apocalypse. Cela peut soigner un rhume."
 
-#: data/base/item_specs.lua:1914
+#: data/base/item_specs.lua:1943
 msgid "Antibiotic"
 msgstr "Antibiotique"
 
-#: data/base/item_specs.lua:1919
+#: data/base/item_specs.lua:1948
 msgid "Truly wonderful things can be extracted from molds. This can cure lethal food poisoning. Wish you had that in your last Nethack game, eh?"
 msgstr "Des choses vraiments merveilleuses peuvent être extraites des moisissures. Elles peuvent guérir l'empoisonnement léthal d'une nourriture. Ce que vous aviez dans votre dernier jeu Nethack, hein ?"
 
-#: data/base/item_specs.lua:1926
+#: data/base/item_specs.lua:1955
 msgid "Doc-in-a-can"
 msgstr "Doc-en-boîte"
 
-#: data/base/item_specs.lua:1931
+#: data/base/item_specs.lua:1960
 msgid "This is a drink filled with nanobots designed to heal any damage that they notice inside you. It can cure decapitation. Most of the time."
 msgstr "Ceci est une boisson contenant des nanorobots conçus pour soigner tout dégât interne. Ils peuvent soigner une décapitation, la plupart du temps."
 
-#: data/base/item_specs.lua:1938
+#: data/base/item_specs.lua:1967
 msgid "Bottled Ice"
-msgstr "Glace en Bouteille"
+msgstr "Glace en bouteille"
 
-#: data/base/item_specs.lua:1939 data/base/item_specs.lua:1951
-#: data/base/item_specs.lua:3011
+#: data/base/item_specs.lua:1968 data/base/item_specs.lua:1980
+#: data/base/item_specs.lua:3052
 msgid "Cooling aid"
 msgstr "Assistance au refroidissement"
 
-#: data/base/item_specs.lua:1943
+#: data/base/item_specs.lua:1972
 msgid "This bottle is filled with ice. It can keep you cool during a warm summer day."
 msgstr "Cette bouteille est remplie de glace. Elle peut vous rafraîchir pendant un chaud jour d'été."
 
-#: data/base/item_specs.lua:1950
+#: data/base/item_specs.lua:1979
 msgid "Industrial Coolant"
 msgstr "Refroidissant industriel"
 
-#: data/base/item_specs.lua:1955
+#: data/base/item_specs.lua:1984
 msgid "Bartenders around the world add this to drinks to get them cold very fast. Plus, the coolant is much cheaper. It can keep you cool inside a nuclear reactor."
 msgstr "Les barmans du monde entier en ajoutent à leur cocktails pour les refroidir plus vite. En plus, le refroidisseur est beaucoup moins cher. Il peut vous garder au frais à l'intérieur d'un réacteur nucléaire."
 
-#: data/base/item_specs.lua:1962
+#: data/base/item_specs.lua:1991
 msgid "Liquid Nitrogen"
 msgstr "Nitrogène Liquide"
 
-#: data/base/item_specs.lua:1963
+#: data/base/item_specs.lua:1992
 msgid "Extreme Cooling aid"
 msgstr "Assistance au refroidissement intense"
 
-#: data/base/item_specs.lua:1967
+#: data/base/item_specs.lua:1996
 msgid "When you want something frozen solid, this is what you need. It can keep you cool even inside a class M star."
 msgstr "Quand vous voulez quelque chose de froid solide, c'est ce qu'il vous faut. Il peut vous garder au froid même dans une étoile de classe M."
 
-#: data/base/item_specs.lua:1974
+#: data/base/item_specs.lua:2003
 msgid "Barf's Energy Drink"
 msgstr "Boisson Energétique NCBA"
 
-#: data/base/item_specs.lua:1975
+#: data/base/item_specs.lua:2004
 msgid "Cool down, cure minor wounds."
 msgstr "Refroidit et soigne les blessures bénignes."
 
-#: data/base/item_specs.lua:1979
+#: data/base/item_specs.lua:2008
 msgid "Warning! These energy drinks contain high doses of caffeine! The average person drops dead after consuming 12 grams of caffeine. One of these bottles contains over double that amount."
 msgstr "Attention ! Ces boissons énergétiques contiennent une grande quantité de caféine ! La plupart des gens tombent raides morts après ingestion de 12 grammes de caféine. Une de ces bouteilles en contient plus du double."
 
-#: data/base/item_specs.lua:1986
+#: data/base/item_specs.lua:2015
 msgid "Running Power Capsule"
 msgstr "Capsule d'Endurance"
 
-#: data/base/item_specs.lua:1987
+#: data/base/item_specs.lua:2016
 msgid "Recover Running Power"
 msgstr "Récupère l'Endurance"
 
-#: data/base/item_specs.lua:1991
+#: data/base/item_specs.lua:2020
 msgid "These small containers hold purified running strength. Each capsule can be used only once, but many of them can be grouped together like one item in your inventory."
 msgstr "Ces petits conteneurs sont pleins d'énergie pour courir. Chaque capsule a une seule utilisation, mais elles peuvent être groupées en un seul objet dans l'inventaire."
 
-#: data/base/item_specs.lua:1998
+#: data/base/item_specs.lua:2027
 msgid "Strength Capsule"
 msgstr "Capsule de Force"
 
-#: data/base/item_specs.lua:1999
+#: data/base/item_specs.lua:2028
 msgid "Temporary Boost to Strength"
 msgstr "Augmente temporairement la Force"
 
-#: data/base/item_specs.lua:2003
+#: data/base/item_specs.lua:2032
 msgid "These small containers hold purified strength. This item will give a temporary boost to strength. Each capsule can be used only once, but many of them can be grouped together like one item in your inventory."
 msgstr "Ces petits conteneurs contiennent de la force pure. Cet objet augmente la force temporairement. Chaque capsule ne peut être utilisée qu'une fois, mais peuvent être groupé en un seul objet dans l'inventaire."
 
-#: data/base/item_specs.lua:2010
+#: data/base/item_specs.lua:2039
 msgid "Dexterity Capsule"
 msgstr "Capsule de Dextérité"
 
-#: data/base/item_specs.lua:2011
+#: data/base/item_specs.lua:2040
 msgid "Temporary Boost to Dexterity"
 msgstr "Augmente temporairement la Dextérité"
 
-#: data/base/item_specs.lua:2015
+#: data/base/item_specs.lua:2044
 msgid "These small containers hold purified dexterity. This item will give a temporary bonus to dexterity. Each capsule can be used only once, but many of them can be grouped together like one item in your inventory."
 msgstr "Ce sont des conteneurs pour dextérité pure. Cet objet vous donnera un bonus de dextérité temporaire. Chaque capsule ne peut être utilisée qu'une fois. Ils peuvent être groupés dans l'inventaire."
 
-#: data/base/item_specs.lua:2026
+#: data/base/item_specs.lua:2055
 msgid "Valuable Circuits"
 msgstr "Circuits de valeur."
 
-#: data/base/item_specs.lua:2030
+#: data/base/item_specs.lua:2059
 msgid "The new monetary standard of the world. With the collapse of the banking system, the precious metals in bot circuitry are now de facto hard cash. A bit difficult to get, though, as the bots are not likely to just hand it over..."
-msgstr ""
+msgstr "Le nouveau standard monétaire mondial. Depuis la chute du système bancaire, le métal précieux des circuits robotiques sert de facto d'argent liquide. Un peu difficile à obtenir, cependant, les robots n'étant pas très désireux de s'en séparer."
 
-#: data/base/item_specs.lua:2037
+#: data/base/item_specs.lua:2066
 msgid "Anti-grav Pod for Droids"
 msgstr "Nacelle Anti-gravité pour les Droïdes"
 
-#: data/base/item_specs.lua:2041
+#: data/base/item_specs.lua:2070
 msgid "The bots use this to hover around."
 msgstr "Les robots l'utilisent pour survoler les environs."
 
-#: data/base/item_specs.lua:2048
+#: data/base/item_specs.lua:2077
 msgid "Dixon's Toolbox"
 msgstr "Boîte à outils de Dixon"
 
-#: data/base/item_specs.lua:2052
+#: data/base/item_specs.lua:2081
 msgid "This is a teleporter service toolbox. It's complete and orderly, though a few dents on the outside give proof of frequent use. 'C. Dixon' is carved into the outside with fine print."
 msgstr "C'est une boîte à outil pour téléporteur. Elle est complète et en ordre, malgré quelques accrocs sur l'extérieur, témoins d'une utilisation fréquente. Le nom « C. Dixon » est gravé à l'extérieur en lettres fines."
 
-#: data/base/item_specs.lua:2059
+#: data/base/item_specs.lua:2088
 msgid "Toolbox"
 msgstr "Boîte à outils"
 
-#: data/base/item_specs.lua:2063
+#: data/base/item_specs.lua:2092
 msgid "This is a regular toolbox. It's complete and orderly, though a few dents on the outside give proof of frequent use."
 msgstr "C'est une boîte à outils modèle standard. Elle est complète et bien organisée, bien que quelques bosselures extérieures démontrent un usage fréquent."
 
-#: data/base/item_specs.lua:2070
+#: data/base/item_specs.lua:2099
 msgid "Entropy Inverter"
 msgstr "Inverseur d'Entropie"
 
-#: data/base/item_specs.lua:2074 data/base/item_specs.lua:2085
-#: data/base/item_specs.lua:2096 data/base/item_specs.lua:2107
-#: data/base/item_specs.lua:2118
+#: data/base/item_specs.lua:2103 data/base/item_specs.lua:2114
+#: data/base/item_specs.lua:2125 data/base/item_specs.lua:2136
+#: data/base/item_specs.lua:2147
 msgid "This is an standard part within many robot types."
 msgstr "C'est une pièce standard pour un grand nombre de modèles de robots."
 
-#: data/base/item_specs.lua:2081
+#: data/base/item_specs.lua:2110
 msgid "Plasma Transistor"
 msgstr "Transistor à plasma"
 
-#: data/base/item_specs.lua:2092
+#: data/base/item_specs.lua:2121
 msgid "Superconducting Relay Unit"
 msgstr "Unité Relai à Superconduction"
 
-#: data/base/item_specs.lua:2103
+#: data/base/item_specs.lua:2132
 msgid "Antimatter-Matter Converter"
 msgstr "Convertisseur Antimatière-Matière"
 
-#: data/base/item_specs.lua:2114
+#: data/base/item_specs.lua:2143
 msgid "Tachyon Condensator"
 msgstr "Condensateur à Tachyons"
 
-#: data/base/item_specs.lua:2125
+#: data/base/item_specs.lua:2154
 msgid "Desk Lamp"
 msgstr "Lampe de bureau"
 
-#: data/base/item_specs.lua:2129
+#: data/base/item_specs.lua:2158
 msgid "What would modern science be without this important item?"
 msgstr "Que serait la science moderne sans ce merveilleux outil ?"
 
-#: data/base/item_specs.lua:2136
+#: data/base/item_specs.lua:2165
 msgid "Red Dilithium Crystal"
 msgstr "Cristal de dilithium rouge"
 
-#: data/base/item_specs.lua:2140
+#: data/base/item_specs.lua:2169
 msgid "These dilithium crystals are used as an energy source in many modern electricity or heat based devices. Energy is extracted from the crystal by making use of the ordering of the crystal molecules. This principle has allowed us to build devices that consume a lot of energy, but do not need to be connected to a power line."
 msgstr "Ces cristaux de dilithium sont utilisés comme source d'énergie dans nombre.d'appareils électriques. L'énergie est extraite du cristal par le biais vient la de l'ordonnancement des atomes. Nous pouvons ainsi construire des appareils coûteux en énergie sans être connectés à un réseau d'alimentation."
 
-#: data/base/item_specs.lua:2147
+#: data/base/item_specs.lua:2176
 msgid "Map Maker"
 msgstr "Générateur de carte"
 
-#: data/base/item_specs.lua:2148
+#: data/base/item_specs.lua:2177
 msgid "To implant the automap device"
 msgstr "Pour l'implantation du générateur d'auto-carte"
 
-#: data/base/item_specs.lua:2152
+#: data/base/item_specs.lua:2181
 msgid "This small device automatically collects data about the area within a range of 7 times 7 meters and draws a small-scale plan of the immediate surroundings. Because of its very tiny display, it needs to be held closely to the eye, and the image will then be projected directly into the eyeball of the user. Still, the collected map data will be split up by the device into several sectors for convenient viewing."
 msgstr "Cet appareil collecte automatiquement les données de proximité dans une zone de 7 x 7 mètres et dessine un plan à échelle réduite des environs immédiats. Comme l'affichage est réduit, il doit être placé proche de l'œil, et l'image est alors projetée directement sur la rétine de l'utilisateur. Les données cartographiques collectées seront divisées en secteurs pour une visualisation plus appropriée."
 
-#: data/base/item_specs.lua:2159
+#: data/base/item_specs.lua:2188
 msgid "Light Enhancer? to be included in the future..."
 msgstr "Amplificateur de Lumière ? à ajouter dans le futur..."
 
-#: data/base/item_specs.lua:2160 data/base/item_specs.lua:2164
+#: data/base/item_specs.lua:2189 data/base/item_specs.lua:2193
 msgid "See better in the dark."
 msgstr "Pour mieux voir dans le noir."
 
-#: data/base/item_specs.lua:2171
+#: data/base/item_specs.lua:2200
 msgid "Fork"
 msgstr "Fourchette"
 
-#: data/base/item_specs.lua:2184 data/base/item_specs.lua:2196
-#: data/base/item_specs.lua:2207 data/base/item_specs.lua:2218
+#: data/base/item_specs.lua:2213 data/base/item_specs.lua:2225
+#: data/base/item_specs.lua:2236 data/base/item_specs.lua:2247
 msgid "This item is part of the 'Self Cleaning Kitchen' (SCK) project from before the Great Assault. All of the items in the SCK project have an inner mechanism that will clean the object automatically if left alone for a given time. It comes with its own power supply, and has a supposed duration of 200 years."
 msgstr "Une partie du projet de « Cuisine Auto-Nettoyante » (CAN) de l'époque antérieure au Grand Assaut. Tous les objets de CAN ont un mécanisme interne autonettoyant lorsque laissés l'abandon pendant un temps donné. Il est fourni avec une alimentation interne dont la durée prévue de fonctionnement est de 200 ans."
 
-#: data/base/item_specs.lua:2192
+#: data/base/item_specs.lua:2221
 msgid "Plate"
 msgstr "Assiette"
 
-#: data/base/item_specs.lua:2203
+#: data/base/item_specs.lua:2232
 msgid "Mug"
 msgstr "Tasse"
 
-#: data/base/item_specs.lua:2214
+#: data/base/item_specs.lua:2243
 msgid "Cup"
 msgstr "Tasse"
 
-#: data/base/item_specs.lua:2225
+#: data/base/item_specs.lua:2254
 msgid "Teleporter Homing Beacon"
 msgstr "Balise de Téléportation Autoguidée"
 
-#: data/base/item_specs.lua:2226
+#: data/base/item_specs.lua:2255
 msgid "Teleports you elsewhere"
 msgstr "Téléporte toi autre part"
 
-#: data/base/item_specs.lua:2230
+#: data/base/item_specs.lua:2259
 msgid "This device sends a signal to a nearby teleporter requesting a transport, and then helps with locking on and boosting the signal to ensure the teleportation attempt is successful. The battery inside is sufficient for one use *only* and the device becomes useless afterwards. At least, most people don't try to use them twice... and those few who do usually end up with parts of their body missing or attached in the wrong place. Note: Multiple of these may be grouped together in the inventory."
 msgstr "Cet appareil émet un signal vers le télé-porteur le plus proche, pour demander un transport, puis effectue le blocage et l'amplification du signal pour garantir le succès de la téléportation. La batterie interne permet un seul usage unique, après quoi l'appareil devient inutilisable. Tout du moins, la plupart des gens ne tente pas de l'utiliser une seconde fois... et le peu de ceux qui essayent finissent généralement avec des parties de corps manquantes ou attachées à la mauvaise place. Note : ces appareils peuvent être groupés dans l'inventaire."
 
-#: data/base/item_specs.lua:2237
+#: data/base/item_specs.lua:2266
 msgid "Data Cube"
 msgstr "Cube de données"
 
-#: data/base/item_specs.lua:2241
+#: data/base/item_specs.lua:2270
 msgid "This was the most common form of portable information storage used on Earth until the Great Assault, its three-dimensional memory capable of storing up to 2 terabytes and compatible with most of the hardware on the planet."
 msgstr "Ce fût la forme la plus commune de stockage portable d'information sur Terre jusqu'au Grand Assaut. Sa mémoire à trois dimensions permet de stocker jusqu'à 2 tera-octets et le cube est compatible avec la plupart du matériel de la planète."
 
-#: data/base/item_specs.lua:2248
+#: data/base/item_specs.lua:2277
 msgid "Kevin's Data Cube"
 msgstr "Cube holographique de Kévin"
 
-#: data/base/item_specs.lua:2252
+#: data/base/item_specs.lua:2281
 msgid "This data cube contains confidential government data on the installations around the town. Kevin hopes that when the data is evaluated properly, a way out of the current crisis might be found. However, the amount of data is so vast, it can only be evaluated properly using a large cluster of computers. The Red Guard base is said to store an infrastructure suitable to this purpose."
 msgstr "Ce cube contient des données gouvernementales confidentielle à propos des installations à l'extérieur de la ville. Kevin espère que nous pourrons trouver une solution à la crise actuelle lorsque les données seront analysées. Cependant, la quantité de données est tellement important qu'elle ne peut être évaluée correctement que par un grand cluster d'ordinateurs. Il paraît que la base de la Garde Rouge contient une infrastructure appropriée pour cet usage."
 
-#: data/base/item_specs.lua:2259
+#: data/base/item_specs.lua:2288
 msgid "Pandora's Cube"
 msgstr "Boîte de Pandore"
 
-#: data/base/item_specs.lua:2263
+#: data/base/item_specs.lua:2292
 msgid "This is heavy. Cannot the end of the world come in a smaller package? It would be a great time for Duncan to explain a few things..."
 msgstr "C'est lourd. La fin du monde ne peut pas être fournie dans un paquet plus petit ? Il est grand temps pour Duncan de donner quelques explications."
 
-#: data/base/item_specs.lua:2270
+#: data/base/item_specs.lua:2299
 msgid "Rubber Duck"
 msgstr "Canard en plastique"
 
-#: data/base/item_specs.lua:2274
+#: data/base/item_specs.lua:2303
 msgid "It appears that humans enjoy bathing with squeaky little pieces of plastic shaped like waterfowl. As a penguinoid, you should probably be disturbed, but you have to admit this thing is actually quite adorable."
 msgstr "Il semble que les humains aiment à se baigner avec de petits morceaux de plastiques grinçant en forme d'oiseau aquatique. En tant que pingouinoïde, tu dois trouver cette pratique inquiétante, mais tu peux quand même avouer que cette chose est vraiment adorable."
 
-#: data/base/item_specs.lua:2281
+#: data/base/item_specs.lua:2310
 msgid "Empty Picnic Basket"
 msgstr "Panier Pique-nique Vide"
 
-#: data/base/item_specs.lua:2285
+#: data/base/item_specs.lua:2314
 msgid "This is the latest in 'Dr. How?'-brand picnic basket technology! With patented food-preserving time-dilation, space-bending miniaturization, and anti-gravity, your food stays fresh and your drinks stay cold in a small light-as-a-feather package! Now you can picnic the old fashioned way! Batteries sold separately."
 msgstr "Voici le tout dernier panier pique-nique de la marque 'Dr. How ?' ! Avec la technologie brevetée de préservation de la nourriture par dilatation du temps, miniaturisation de la courbure spatiale et anti-gravité, votre nourriture reste fraîche et vos boissons froides dans un récipient léger comme une plume ! Enfin vous pouvez pique-niquer comme à l'ancienne mode ! Batteries non fournies."
 
-#: data/base/item_specs.lua:2292
+#: data/base/item_specs.lua:2321
 msgid "Lunch in a Picnic Basket"
 msgstr "Panier Pique-nique contenant un repas"
 
-#: data/base/item_specs.lua:2296
+#: data/base/item_specs.lua:2325
 msgid "This is a 'Dr. How?'-brand picnic basket stuffed full of enough food and drinks to feed a dozen people. With 'Dr. How?'-time dilation, the food keeps oven-fresh, and the drinks stay ice-cold."
 msgstr "Un panier pique-nique de la marque 'Dr. How ?' rempli de suffisamment de nourriture et de boisson pour une douzaine de personnes. Avec la technologie de dilatation temporelle du 'Dr. How ?', la nourriture reste fraîche et les boissons glacées."
 
-#: data/base/item_specs.lua:2303
+#: data/base/item_specs.lua:2332
 msgid "MS Stock Certificate"
 msgstr "Certificat d'action MS"
 
-#: data/base/item_specs.lua:2307
+#: data/base/item_specs.lua:2336
 msgid "This is a Stock Certificate for transfer of ownership of five hundred sixty-seven million shares of MegaSystems from William Gapes to bearer."
 msgstr "C'est un certificat d'action permettant le transfert de propriété au porteur de cinq cent soixante sept millions de parts de MegaSystem appartenant à William Gapes."
 
-#: data/base/item_specs.lua:2314
+#: data/base/item_specs.lua:2343
 msgid "Elbow Grease Can"
 msgstr "Bidon d'Huile de Coude"
 
-#: data/base/item_specs.lua:2318
+#: data/base/item_specs.lua:2347
 msgid "A can filled with elbow grease. Hard to make it if you are not a strong man."
 msgstr "Un bidon remplit avec de l'huile de coude. Difficile d'en produire si vous n'êtes pas un homme fort."
 
-#: data/base/item_specs.lua:2329
+#: data/base/item_specs.lua:2355
+msgid "MS EPROM Programming Interface"
+msgstr ""
+
+#: data/base/item_specs.lua:2359
+msgid "Used by developers at MegaSys to load firmware onto newly assembled droids."
+msgstr ""
+
+#: data/base/item_specs.lua:2370
 msgid "Linarian Power Crank"
 msgstr "Manivelle de Puissance Linarienne"
 
-#: data/base/item_specs.lua:2333
+#: data/base/item_specs.lua:2374
 msgid "This mechanical crank, product of the highly advanced and sophisticated technological genius of the Linarian race, performs elaborate operations on energy and directs it towards a biochemical structure. For short, it buffs up your muscles. That's good."
 msgstr "Cette manivelle mécanique, issue du génie technologique hautement sophistiqué et avancé de la race Linarienne, accomplit de complexes opérations sur l'énergie et la redirige vers une structure biomécanique. En deux mots, ça donne un coup de punch à vos muscles. C'est pas mal."
 
-#: data/base/item_specs.lua:2340
+#: data/base/item_specs.lua:2381
 msgid "Tungsten Spikes"
 msgstr "Pointes de Tungsten"
 
-#: data/base/item_specs.lua:2344
+#: data/base/item_specs.lua:2385
 msgid "This polycarbonate surface is lined with hard tungsten spikes, and can be installed into a mechanical socket on most melee weapons, offering a simple and affordable solution to increasing damage dealt. Handle only with gloves. Do not attempt to use as footwear. Do not attempt to eat."
 msgstr "Cette surface de polycarbonate est truffée de dures pointes de tungstène, et peut être montée dans un connecteur mécanique de la plupart des armes, solution simple et abordable pour augmenter les dégâts causés. À ne manipuler qu'avec des gants. Ne pas tenter de les chausser aux pieds. Ne pas tenter de l'ingérer."
 
-#: data/base/item_specs.lua:2351
+#: data/base/item_specs.lua:2392
 msgid "Tinfoil Patch"
 msgstr "Morceau de feuille d'aluminium"
 
-#: data/base/item_specs.lua:2355
+#: data/base/item_specs.lua:2396
 msgid "When attached to your armor, this patch of tinfoil allows you to stay cooler by reducing the amount of electromagnetic radiation that your body absorbs."
 msgstr "Attachée à votre armure, ce morceau de feuille d'aluminium permet de vous garder au frais en réduisant la quantité de radiation électromagnétique que votre corps absorbe."
 
-#: data/base/item_specs.lua:2362
+#: data/base/item_specs.lua:2403
 msgid "Laser Sight"
 msgstr "Visée Laser"
 
-#: data/base/item_specs.lua:2366
+#: data/base/item_specs.lua:2407
 msgid "A miniaturized laser powered by a nuclear battery. When attached parallel to the barrel of a gun, it makes a little red dot on the target and helps with aiming."
 msgstr "Un laser miniature alimenté par batterie atomique. Attaché en parallèle sur le canon d'un fusil, il produit une petite tâche rouge sur la cible pour aider à viser."
 
-#: data/base/item_specs.lua:2373
+#: data/base/item_specs.lua:2414
 msgid "Exoskeletal Joint"
 msgstr "Articulation d'exosquelette"
 
-#: data/base/item_specs.lua:2377
+#: data/base/item_specs.lua:2418
 msgid "This electromechanical joint helps you to perform physically demanding tasks more easily by amplifying the movements of your body."
 msgstr "Cette articulation électromagnétique aide à la réalisation de tâches physiquement pénibles, en amplifiant les mouvements du corps."
 
-#: data/base/item_specs.lua:2384
+#: data/base/item_specs.lua:2425
 msgid "Heatsink"
 msgstr "Radiateur de refroidissement"
 
-#: data/base/item_specs.lua:2388
+#: data/base/item_specs.lua:2429
 msgid "A simple heatsink add-on that keeps you cooler by dissipating heat from your armor."
 msgstr "Un accessoire simple qui vous garde plus au frais en dissipant la chaleur par l'intermédiaire de votre armure."
 
-#: data/base/item_specs.lua:2395
+#: data/base/item_specs.lua:2436
 msgid "Peltier Element"
 msgstr "Élément Peltier"
 
-#: data/base/item_specs.lua:2399
+#: data/base/item_specs.lua:2440
 msgid "A thermoelectric device that increases your cooling rate."
 msgstr "Un appareil thermo-électrique qui augmente votre capacité de refroidissement."
 
-#: data/base/item_specs.lua:2406
+#: data/base/item_specs.lua:2447
 msgid "Steel Mesh"
 msgstr "Filet d'Acier"
 
-#: data/base/item_specs.lua:2410
+#: data/base/item_specs.lua:2451
 msgid "A sturdy metal mesh that provides an extra protective layer to your armor."
 msgstr "Un robuste filet métallique procurant une couche de protection supplémentaire à votre armure."
 
-#: data/base/item_specs.lua:2417
+#: data/base/item_specs.lua:2458
 msgid "Shock Discharger"
 msgstr "Déchargeur de Choc"
 
-#: data/base/item_specs.lua:2421
+#: data/base/item_specs.lua:2462
 msgid "When installed to a melee weapon, this nifty device gives a small electric shock to enemies you hit."
 msgstr "Installé sur une arme de mêlée, ce génial dispositif envoie un petit choc électrique aux ennemies que vous touchez."
 
-#: data/base/item_specs.lua:2428
+#: data/base/item_specs.lua:2469
 msgid "Silencer"
 msgstr "Silencieux"
 
-#: data/base/item_specs.lua:2432
-msgid "Allowing you to catch your enemies by surprise, this silencer helps you to do more damage in ranged combat."
+#: data/base/item_specs.lua:2473
+msgid "This new generation silencer will not only allow you to catch your enemies by surprise, but will also help you to do more damage in ranged combat."
 msgstr ""
 
-#: data/base/item_specs.lua:2440
+#: data/base/item_specs.lua:2481
 msgid "Coprocessor"
 msgstr "Coprocesseur"
 
-#: data/base/item_specs.lua:2444
+#: data/base/item_specs.lua:2485
 msgid "By speeding up your computations, this chip helps you to excel in many activities."
 msgstr "En accélerant vos calculs, cette puce vous aide à exceller dans de nombreuses activités."
 
-#: data/base/item_specs.lua:2451
+#: data/base/item_specs.lua:2492
 msgid "Pedometer"
 msgstr "Podomètre"
 
-#: data/base/item_specs.lua:2455
+#: data/base/item_specs.lua:2496
 msgid "A device that helps you to move dexterously by giving feedback on your foot movement."
 msgstr "Un appareil améliorant votre dextérité de déplacement en ajoutant une rétroaction aux mouvements de vos pieds."
 
-#: data/base/item_specs.lua:2462
+#: data/base/item_specs.lua:2503
 msgid "Foot Warmers"
 msgstr "Chaufferette de pieds"
 
-#: data/base/item_specs.lua:2466
+#: data/base/item_specs.lua:2507
 msgid "This pair of electric fuzzy foot warmers would make even a penguin warm and comfortable in any shoes, and help maintain a healthy body temperature, thus preventing colds and making you look cool. At least, that's what the advertisement says. And ads don't lie, do they?"
 msgstr "Cette paire de chaufferettes de pieds électriques permet même à un pingouin de se sentir confortablement au chaud dans n'importe quelles chaussures, et maintient le corps à une bonne température, empêchant ainsi les rhumes tout en vous donnant un air cool. En tout cas, c'est ce que dit la publicité. Et la pub ne ment pas, n'est-ce pas ?"
 
-#: data/base/item_specs.lua:2473
+#: data/base/item_specs.lua:2514
 msgid "Circuit Jammer"
 msgstr "Brouilleur de Circuits"
 
-#: data/base/item_specs.lua:2477
+#: data/base/item_specs.lua:2518
 msgid "This item improves your melee weapon by blasting the enemies you hit with an electromagnetic pulse. The pulse is powerful enough to temporarily shut down the circuits of the attacked bot."
 msgstr "Cet objet améliore votre arme de mêlée en envoyant des rafales électromagnétiques aux ennemis que vous attaquez. L'onde est assez puissante pour désactiver temporairement les circuits du robot attaqué."
 
-#: data/base/item_specs.lua:2484
+#: data/base/item_specs.lua:2525
 msgid "Sensor Disruptor"
 msgstr "Disrupteur de Senseurs"
 
-#: data/base/item_specs.lua:2488
+#: data/base/item_specs.lua:2529
 msgid "When attached to a melee weapon, this item induces errors to the sensors of the bots you attack, causing them to slow down momentarily."
 msgstr "Attaché à une arme de mêlée, ce dispositif induit des erreurs dans les senseurs des robots que vous attaquez, les ralentissant momentanément."
 
-#: data/base/item_specs.lua:2495
+#: data/base/item_specs.lua:2536
 msgid "Headlamp"
 msgstr "Lampe Frontale"
 
-#: data/base/item_specs.lua:2499
+#: data/base/item_specs.lua:2540
 msgid "When fastened to your helmet, this lamp allows you to see better in dark environments."
 msgstr "Attachée à votre casque, cette lampe vous permet de mieux voir dans les endroits sombres."
 
-#: data/base/item_specs.lua:2506
+#: data/base/item_specs.lua:2547
 msgid "Brain Stimulator"
 msgstr "Stimulateur cérébrale"
 
-#: data/base/item_specs.lua:2510
+#: data/base/item_specs.lua:2551
 msgid "A chip that allows faster learning by connecting directly to the brain via a neural interface (colloquially referred to as a 'weird swim cap with little thingies on it') and providing additional feedback on various actions."
 msgstr "Une puce qui vous permet d'apprendre plus vite n se connectant directement au cerveau via une interface neurale (trivialement appelé \"machin flottant avec des petits bitonios dessus)  et qui apporte plus de retours sur des actions diverses."
 
-#: data/base/item_specs.lua:2521
+#: data/base/item_specs.lua:2562
 msgid "NPC Hand to Hand Weapon"
 msgstr "Arme à main pour PNJ"
 
-#: data/base/item_specs.lua:2534
+#: data/base/item_specs.lua:2575
 msgid "Bot use only"
 msgstr "Usage robotique seulement."
 
-#: data/base/item_specs.lua:2542
+#: data/base/item_specs.lua:2583
 msgid "Droid 123 Weak Robotic Arm"
 msgstr "Armement droïde - 123 : Faible bras robotique"
 
-#: data/base/item_specs.lua:2555 data/base/item_specs.lua:2579
-#: data/base/item_specs.lua:2600 data/base/item_specs.lua:2624
-#: data/base/item_specs.lua:2645 data/base/item_specs.lua:2666
-#: data/base/item_specs.lua:2687 data/base/item_specs.lua:2708
-#: data/base/item_specs.lua:2732 data/base/item_specs.lua:2753
-#: data/base/item_specs.lua:2774 data/base/item_specs.lua:2795
-#: data/base/item_specs.lua:2816 data/base/item_specs.lua:2837
-#: data/base/item_specs.lua:2861 data/base/item_specs.lua:2886
-#: data/base/item_specs.lua:2911
+#: data/base/item_specs.lua:2596 data/base/item_specs.lua:2620
+#: data/base/item_specs.lua:2641 data/base/item_specs.lua:2665
+#: data/base/item_specs.lua:2686 data/base/item_specs.lua:2707
+#: data/base/item_specs.lua:2728 data/base/item_specs.lua:2749
+#: data/base/item_specs.lua:2773 data/base/item_specs.lua:2794
+#: data/base/item_specs.lua:2815 data/base/item_specs.lua:2836
+#: data/base/item_specs.lua:2857 data/base/item_specs.lua:2878
+#: data/base/item_specs.lua:2902 data/base/item_specs.lua:2927
+#: data/base/item_specs.lua:2952
 msgid "Droid weaponry"
 msgstr "Armement droïde."
 
-#: data/base/item_specs.lua:2563
+#: data/base/item_specs.lua:2604
 msgid "Droid 139 Plasma Trash Vaporiser"
 msgstr "Armement droide - 139 Vaporiseur d'ordures à Plasma"
 
-#: data/base/item_specs.lua:2587
+#: data/base/item_specs.lua:2628
 msgid "Droid 247 Robotic Arm"
 msgstr "Armement droïde - 247 : Bras robotique"
 
-#: data/base/item_specs.lua:2608
+#: data/base/item_specs.lua:2649
 msgid "Droid 249 Pulse Laser Welder"
 msgstr "Armement droïde - 249 (Soudeur laser à impulsion)"
 
-#: data/base/item_specs.lua:2632
+#: data/base/item_specs.lua:2673
 msgid "Droid 296 Plasmabeam Cutter"
 msgstr "Armement droïde - 296 : Faisceau de découpe au plasma"
 
-#: data/base/item_specs.lua:2653
+#: data/base/item_specs.lua:2694
 msgid "Droid 302 Overcharged Barcode Reader"
 msgstr "Armement droïde - 302 Lecteur de code-barre surchargé"
 
-#: data/base/item_specs.lua:2674
+#: data/base/item_specs.lua:2715
 msgid "Droid 329 Dual Overcharged Barcode Reader"
 msgstr "Armement droïde - 329 Double lecteur de code-barre surchargé"
 
-#: data/base/item_specs.lua:2695
+#: data/base/item_specs.lua:2736
 msgid "Droid 420 Laser Scalpel"
 msgstr "Armement droïde - 420 : Scalpel laser"
 
-#: data/base/item_specs.lua:2716
+#: data/base/item_specs.lua:2757
 msgid "Droid 476 Small Laser"
 msgstr "Armement droïde - 476 Petit Laser"
 
-#: data/base/item_specs.lua:2740
+#: data/base/item_specs.lua:2781
 msgid "Droid 493 Power Hammer"
 msgstr "Droïde 493 Marteau puissant"
 
-#: data/base/item_specs.lua:2761
+#: data/base/item_specs.lua:2802
 msgid "Droid 516 Robotic Fist"
 msgstr "Armement droïde 516 - Poing robotique"
 
-#: data/base/item_specs.lua:2782
+#: data/base/item_specs.lua:2823
 msgid "Droid 543 Tree Harvester"
 msgstr "Droïde 543 Moissonneur Forestier"
 
-#: data/base/item_specs.lua:2803
+#: data/base/item_specs.lua:2844
 msgid "Droid 571 Robotic Fist"
 msgstr "Armement droïde 571 - Poing robotique"
 
-#: data/base/item_specs.lua:2824
+#: data/base/item_specs.lua:2865
 msgid "Droid 598 Robotic Fist"
 msgstr "Armement droïde 598 - Poing robotique"
 
-#: data/base/item_specs.lua:2845
+#: data/base/item_specs.lua:2886
 msgid "Droid 7xx Tux Seeking Missiles"
 msgstr "Droides 7xx Missiles chercheurs de Tux"
 
-#: data/base/item_specs.lua:2869
+#: data/base/item_specs.lua:2910
 msgid "Droid Advanced Twin Laser"
 msgstr "Armement droïde avancé - Double Laser"
 
-#: data/base/item_specs.lua:2894
+#: data/base/item_specs.lua:2935
 msgid "Droid 883 Exterminator"
 msgstr "Armement droïde - 883 Exterminateur"
 
-#: data/base/item_specs.lua:2919
+#: data/base/item_specs.lua:2960
 msgid "Autogun Laser Pistol"
 msgstr "Pistolet Laser de Tourelle Automatique"
 
-#: data/base/item_specs.lua:2935
+#: data/base/item_specs.lua:2976
 msgid "This is the laser weapon of the autogun. If you see this item whilst normal gameplay, please make a bugreport."
 msgstr "Arme laser de la tourelle automatique. Si tu trouves cet item durant une partie, merci de nous envoyer un rapport de bug."
 
-#: data/base/item_specs.lua:2947
+#: data/base/item_specs.lua:2988
 msgid "PC LOAD LETTER"
 msgstr "PC LOAD LETTER"
 
-#: data/base/item_specs.lua:2951
+#: data/base/item_specs.lua:2992
 msgid "An envelop saying 'PC LOAD LETTERS'. I have no idea what that means..."
 msgstr "Une enveloppe disant 'PC LOAD LETTERS'. Je n'ai aucune idée de ce que cela signifie..."
 
-#: data/base/item_specs.lua:2958
+#: data/base/item_specs.lua:2999
 msgid "Cheat Gun"
 msgstr "Arme truquée"
 
-#: data/base/item_specs.lua:2973
+#: data/base/item_specs.lua:3014
 msgid "This item is used by testers. If you find it ingame without using a cheat, please report it as a bug."
 msgstr "Cet objet est utilisé par les testeurs. Si tu le trouves durant une partie, merci de nous signaler ce bug."
 
-#: data/base/item_specs.lua:2987
+#: data/base/item_specs.lua:3028
 msgid "Small Tutorial Axe"
-msgstr "Petit Hache du Tutoriel"
+msgstr "Petit hache du tutoriel"
 
-#: data/base/item_specs.lua:3001
+#: data/base/item_specs.lua:3042
 msgid ""
 "While this axe was made for splitting wood, with some luck it can damage vital parts of a droid as well.\n"
 "Sell me!\n"
@@ -1827,11 +1846,11 @@ msgstr ""
 "Vends-moi !\n"
 "Clique sur le bouton rouge où est dessiné une croix quand tu es prêt."
 
-#: data/base/item_specs.lua:3010
+#: data/base/item_specs.lua:3051
 msgid "Bottled Tutorial Ice"
-msgstr "Glace en Bouteille du Tutorial"
+msgstr "Glace en bouteille du tutoriel"
 
-#: data/base/item_specs.lua:3015
+#: data/base/item_specs.lua:3056
 msgid ""
 "This bottle is filled with ice. It can keep you cool during a warm summer day.\n"
 "Buy me!\n"
@@ -2101,771 +2120,772 @@ msgstr "Grenade IEM"
 msgid "Electronic Noise"
 msgstr "Bruit Électronique"
 
-#: data/base/dialogs/AfterTakeover.lua:36
+#. TRANSLATORS: It shows the ingame date in format: Day day, hour:minute
+#: data/base/dialogs/AfterTakeover.lua:34
 #, c-format
-msgid "%s@hacked_%s: ~ # "
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:37
-msgid "Login : "
-msgstr ""
+msgid "Day %d, %02d:%02d"
+msgstr "Jour %d, %02d:%02d"
 
 #: data/base/dialogs/AfterTakeover.lua:39
-msgid "Password : "
-msgstr ""
-
-#. TRANSLATORS: %s = a date ,  %d = a year number
-#: data/base/dialogs/AfterTakeover.lua:44
 #, c-format
-msgid "First login from /dev/ttySO on %s %d"
-msgstr ""
+msgid "%s@hacked_%s: ~ # "
+msgstr "%s@hacké_%s: ~ # "
+
+#: data/base/dialogs/AfterTakeover.lua:40
+msgid "Login : "
+msgstr "Identifiant :"
+
+#: data/base/dialogs/AfterTakeover.lua:42
+msgid "Password : "
+msgstr "Mot de passe :"
 
 #. TRANSLATORS: %s = a date ,  %d = a year number
 #: data/base/dialogs/AfterTakeover.lua:47
 #, c-format
+msgid "First login from /dev/ttySO on %s %d"
+msgstr "Première connexion sur /dev/ttySO sur %s %d"
+
+#. TRANSLATORS: %s = a date ,  %d = a year number
+#: data/base/dialogs/AfterTakeover.lua:50
+#, c-format
 msgid "Last login from /dev/ttyS0 on %s %d"
-msgstr ""
+msgstr "Dernière connexion sur /dev/ttyS0 sur %s %d"
 
 #. TRANSLATORS: %s = bot name
-#: data/base/dialogs/AfterTakeover.lua:51
+#: data/base/dialogs/AfterTakeover.lua:54
 #, c-format
 msgid "Welcome to [b]%s[/b]!"
-msgstr ""
+msgstr "Bienvenue à [b]%s[/b] !"
 
-#: data/base/dialogs/AfterTakeover.lua:53
+#: data/base/dialogs/AfterTakeover.lua:56
 msgid "Hardware Check : BOT DAMAGED"
-msgstr ""
+msgstr "Vérification matérielle : ROBOT ENDOMMAGÉ"
 
 #. TRANSLATORS: %s = bot type
-#: data/base/dialogs/AfterTakeover.lua:55
+#: data/base/dialogs/AfterTakeover.lua:58
 #, c-format
 msgid "This %s unit could stand to be repaired."
-msgstr ""
+msgstr "Cette unité %s pourrait nécessiter quelques réparations."
 
-#: data/base/dialogs/AfterTakeover.lua:59
+#: data/base/dialogs/AfterTakeover.lua:62
 msgid "BOTNET: UNIT TOO DAMAGED TO BROADCAST COMMANDS."
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:60
-#: data/base/dialogs/AfterTakeover.lua:344
-msgid "Entering \"single node\" mode..."
-msgstr ""
+msgstr "BOTNET : UNITÉ TROP ENDOMMAGÉE POUR DIFFUSER DES COMMANDES."
 
 #: data/base/dialogs/AfterTakeover.lua:63
-msgid "BOTNET: Most commands will be broadcast."
-msgstr ""
+#: data/base/dialogs/AfterTakeover.lua:347
+msgid "Entering \"single node\" mode..."
+msgstr "Entrée en mode « nœud unique » ..."
 
 #: data/base/dialogs/AfterTakeover.lua:66
-msgid "SINGLE NODE: Commands will not be broadcast."
-msgstr ""
+msgid "BOTNET: Most commands will be broadcast."
+msgstr "BOTNET : La plupart des commandes seront diffusées"
 
-#: data/base/dialogs/AfterTakeover.lua:75 data/base/dialogs/AfterTakeover.lua:78
+#: data/base/dialogs/AfterTakeover.lua:69
+msgid "SINGLE NODE: Commands will not be broadcast."
+msgstr "NŒUD UNIQUE : Les commandes ne seront pas diffusées."
+
+#: data/base/dialogs/AfterTakeover.lua:78 data/base/dialogs/AfterTakeover.lua:81
 msgid "cd repair&settings/"
-msgstr ""
+msgstr "cd reparation&réglages/"
 
 #. TRANSLATORS: first %s = Tux:get_player_name() ; second %s : Npc:get_type()
-#: data/base/dialogs/AfterTakeover.lua:88
+#: data/base/dialogs/AfterTakeover.lua:91
 #, c-format
 msgid "%s@hacked_%s/repair&settings: ~ # "
-msgstr ""
+msgstr "%s@hacké_%s/reparation&réglages : ~ # "
 
-#: data/base/dialogs/AfterTakeover.lua:98
+#: data/base/dialogs/AfterTakeover.lua:101
 msgid "cd .."
-msgstr ""
+msgstr "cd .."
 
-#: data/base/dialogs/AfterTakeover.lua:105
 #: data/base/dialogs/AfterTakeover.lua:108
-msgid "./hold_position.sh"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:109
-msgid "Holding position."
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:110
-msgid "script V 1.0.2 (c) gnu.org, 2054"
-msgstr ""
-
 #: data/base/dialogs/AfterTakeover.lua:111
-#: data/base/dialogs/AfterTakeover.lua:152
-msgid "Checking requirements..."
-msgstr ""
+msgid "./hold_position.sh"
+msgstr "./tenir_position.sh"
 
 #: data/base/dialogs/AfterTakeover.lua:112
-msgid "Movement unit: Power-down... [Done]."
-msgstr ""
+msgid "Holding position."
+msgstr "Maintient de la position."
 
 #: data/base/dialogs/AfterTakeover.lua:113
+msgid "script V 1.0.2 (c) gnu.org, 2054"
+msgstr "script V 1.0.2 (c) gnu.org, 2054"
+
+#: data/base/dialogs/AfterTakeover.lua:114
+#: data/base/dialogs/AfterTakeover.lua:155
+msgid "Checking requirements..."
+msgstr "Vérification des dépendances…"
+
+#: data/base/dialogs/AfterTakeover.lua:115
+msgid "Movement unit: Power-down... [Done]."
+msgstr "Unité de mouvement : arrêt... [Fait]."
+
+#: data/base/dialogs/AfterTakeover.lua:116
 msgid "Status: All movement suppressed."
-msgstr ""
+msgstr "Statut : tous les mouvements sont désactivés"
 
-#: data/base/dialogs/AfterTakeover.lua:125
 #: data/base/dialogs/AfterTakeover.lua:128
+#: data/base/dialogs/AfterTakeover.lua:131
 msgid "./follow_me.sh"
-msgstr ""
+msgstr "./suis_moi.sh"
 
-#: data/base/dialogs/AfterTakeover.lua:129
+#: data/base/dialogs/AfterTakeover.lua:132
 msgid "Initiating tracking sequence."
-msgstr ""
+msgstr "Début de la séquence de poursuite."
 
-#: data/base/dialogs/AfterTakeover.lua:130
+#: data/base/dialogs/AfterTakeover.lua:133
 msgid "Movement unit: Enabled."
-msgstr ""
+msgstr "Unité de mouvement : Activée."
 
 #. TRANSLATORS: first %s = Tux:get_player_name() ; second %s : Npc:get_type()
-#: data/base/dialogs/AfterTakeover.lua:132
+#: data/base/dialogs/AfterTakeover.lua:135
 #, c-format
 msgid "Acquiring lock on position of %s."
-msgstr ""
+msgstr "Acquisition de la position de verrouillage de %s."
 
 #. TRANSLATORS: %s =  Tux:get_player_name()
-#: data/base/dialogs/AfterTakeover.lua:134
+#: data/base/dialogs/AfterTakeover.lua:137
 #, c-format
 msgid "Status: Following %s."
-msgstr ""
+msgstr "Statut : en train de suivre  %s."
 
-#: data/base/dialogs/AfterTakeover.lua:146
 #: data/base/dialogs/AfterTakeover.lua:149
+#: data/base/dialogs/AfterTakeover.lua:152
 msgid "./move_freely.sh"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:150
-#, fuzzy
-msgid "Enable movement."
-msgstr "Tutoriel de déplacement"
-
-#: data/base/dialogs/AfterTakeover.lua:151
-msgid "script V 1.0.5 (c) gnu.org, 2054"
-msgstr ""
+msgstr "./bouge_librement.sh"
 
 #: data/base/dialogs/AfterTakeover.lua:153
-msgid "Movement unit: Power-up... [Done]."
-msgstr ""
+msgid "Enable movement."
+msgstr "Activation du mouvement."
 
 #: data/base/dialogs/AfterTakeover.lua:154
+msgid "script V 1.0.5 (c) gnu.org, 2054"
+msgstr "script V 1.0.5 (c) gnu.org, 2054"
+
+#: data/base/dialogs/AfterTakeover.lua:156
+msgid "Movement unit: Power-up... [Done]."
+msgstr "Unité de mouvement : Activation… [Fait]."
+
+#: data/base/dialogs/AfterTakeover.lua:157
 msgid "Resuming normal patrol operations... [Done]"
-msgstr ""
+msgstr "Retour aux opérations de patrouille habituelles… [Fait]"
 
-#: data/base/dialogs/AfterTakeover.lua:155
+#: data/base/dialogs/AfterTakeover.lua:158
 msgid "Status: Patrolling."
-msgstr ""
+msgstr "Statut : en patrouille"
 
-#: data/base/dialogs/AfterTakeover.lua:167
-#: data/base/dialogs/AfterTakeover.lua:180
+#: data/base/dialogs/AfterTakeover.lua:170
+#: data/base/dialogs/AfterTakeover.lua:183
 msgid "./repair.plx"
-msgstr ""
+msgstr "./reparer.plx"
 
 #. TRANSLATORS: %d = amount of valuable circuits
-#: data/base/dialogs/AfterTakeover.lua:184
+#: data/base/dialogs/AfterTakeover.lua:187
 #, c-format
 msgid "Available amount of valuable circuits for repair: %d."
-msgstr ""
+msgstr "Liquidité disponible pour réparer : %d Circuits."
 
-#: data/base/dialogs/AfterTakeover.lua:194
-#: data/base/dialogs/AfterTakeover.lua:550
+#: data/base/dialogs/AfterTakeover.lua:197
+#: data/base/dialogs/AfterTakeover.lua:553
 msgid "seconds"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:196
-#: data/base/dialogs/AfterTakeover.lua:552
-msgid "second"
-msgstr ""
+msgstr "secondes"
 
 #: data/base/dialogs/AfterTakeover.lua:199
+#: data/base/dialogs/AfterTakeover.lua:555
+msgid "second"
+msgstr "seconde"
+
+#: data/base/dialogs/AfterTakeover.lua:202
 msgid "circuits"
-msgstr ""
+msgstr "circuits"
 
-#: data/base/dialogs/AfterTakeover.lua:201
+#: data/base/dialogs/AfterTakeover.lua:204
 msgid "circuit"
-msgstr ""
+msgstr "circuit"
 
-#: data/base/dialogs/AfterTakeover.lua:205
+#: data/base/dialogs/AfterTakeover.lua:208
 #, c-format
 msgid "Repairs on %s will take less than %d %s, %d valuable %s, and %d heat."
-msgstr ""
+msgstr "Les réparations de %s vont prendre moins de %d %s, %d précieux %s, et %d chaleur."
 
-#: data/base/dialogs/AfterTakeover.lua:214
+#: data/base/dialogs/AfterTakeover.lua:217
 #, c-format
 msgid "You do not have enough valuable circuits to ensure repair of this %s unit."
-msgstr ""
+msgstr "Vous ne possédez pas suffisamment de circuits pour pouvoir réparer cette unité %s."
 
-#: data/base/dialogs/AfterTakeover.lua:216
+#: data/base/dialogs/AfterTakeover.lua:219
 #, c-format
 msgid "You cannot dissipate enough heat to ensure repair of this %s unit."
-msgstr ""
+msgstr "Vous ne pouvez pas vous refroidir suffisamment pour être capable de réparer cette unité %s."
 
-#: data/base/dialogs/AfterTakeover.lua:218
+#: data/base/dialogs/AfterTakeover.lua:221
 #, c-format
 msgid "Do you want to start repair of this %s unit?"
-msgstr ""
+msgstr "Voulez-vous entreprendre la réparation de cette unité %s ?"
 
-#: data/base/dialogs/AfterTakeover.lua:227
+#: data/base/dialogs/AfterTakeover.lua:230
 #, c-format
 msgid "%s is currently undamaged."
-msgstr ""
+msgstr "%s n'est pas endommagé."
 
 #. TRANSLATORS: Y for yes
-#: data/base/dialogs/AfterTakeover.lua:236
-#: data/base/dialogs/AfterTakeover.lua:241
-#: data/base/dialogs/AfterTakeover.lua:392
-#: data/base/dialogs/AfterTakeover.lua:481
+#: data/base/dialogs/AfterTakeover.lua:239
+#: data/base/dialogs/AfterTakeover.lua:244
+#: data/base/dialogs/AfterTakeover.lua:395
+#: data/base/dialogs/AfterTakeover.lua:484
 msgid "Y"
-msgstr ""
+msgstr "Y"
 
-#: data/base/dialogs/AfterTakeover.lua:242
+#: data/base/dialogs/AfterTakeover.lua:245
 msgid "Repair in progress."
-msgstr ""
+msgstr "Réparation en cours."
 
-#: data/base/dialogs/AfterTakeover.lua:243
+#: data/base/dialogs/AfterTakeover.lua:246
 msgid "Logout to complete repair process."
-msgstr ""
+msgstr "Déconnectez pour terminer le processus de réparation."
 
 #. TRANSLATORS: N for no
-#: data/base/dialogs/AfterTakeover.lua:252
-#: data/base/dialogs/AfterTakeover.lua:257
-#: data/base/dialogs/AfterTakeover.lua:457
-#: data/base/dialogs/AfterTakeover.lua:497
+#: data/base/dialogs/AfterTakeover.lua:255
+#: data/base/dialogs/AfterTakeover.lua:260
+#: data/base/dialogs/AfterTakeover.lua:460
+#: data/base/dialogs/AfterTakeover.lua:500
 msgid "N"
-msgstr ""
+msgstr "N"
 
-#: data/base/dialogs/AfterTakeover.lua:258
+#: data/base/dialogs/AfterTakeover.lua:261
 msgid "Repair aborted."
-msgstr ""
+msgstr "Réparation avortée."
 
-#: data/base/dialogs/AfterTakeover.lua:266
-#: data/base/dialogs/AfterTakeover.lua:354
+#: data/base/dialogs/AfterTakeover.lua:269
+#: data/base/dialogs/AfterTakeover.lua:357
 msgid "./settings.plx"
-msgstr ""
+msgstr "./parametres.plx"
 
-#: data/base/dialogs/AfterTakeover.lua:276
+#: data/base/dialogs/AfterTakeover.lua:279
 msgid "confirmation of hcf.py"
-msgstr ""
+msgstr "confirmation de hcf.py"
 
-#: data/base/dialogs/AfterTakeover.lua:280
+#: data/base/dialogs/AfterTakeover.lua:283
 msgid "Always ask for confirmation before execution of hcf.py? [Y/N]"
-msgstr ""
+msgstr "Toujours demander confirmation avant l'exécution de hcf.py ? [O/N]"
 
 #. TRANSLATORS: Y for yes
-#: data/base/dialogs/AfterTakeover.lua:288
+#: data/base/dialogs/AfterTakeover.lua:291
 msgid "Y (always ask)"
-msgstr ""
+msgstr "O (toujours demander)"
 
-#: data/base/dialogs/AfterTakeover.lua:292
+#: data/base/dialogs/AfterTakeover.lua:295
 msgid "Confirmation will now be asked before execution of hcf.py."
-msgstr ""
+msgstr "Une confirmation sera désormais demandée avant l'exécution de hcf.py."
 
 #. TRANSLATORS: N for no
-#: data/base/dialogs/AfterTakeover.lua:301
+#: data/base/dialogs/AfterTakeover.lua:304
 msgid "N (don't ask)"
-msgstr ""
+msgstr "N (ne pas demander)"
 
-#: data/base/dialogs/AfterTakeover.lua:305
+#: data/base/dialogs/AfterTakeover.lua:308
 msgid "hcf.py will be executed without asking for confirmation."
-msgstr ""
+msgstr "hcf.py sera exécuté sans demander de confirmation."
 
-#: data/base/dialogs/AfterTakeover.lua:313
-#, fuzzy
+#: data/base/dialogs/AfterTakeover.lua:316
 msgid "broadcast commands"
-msgstr "Diffusion de virus."
+msgstr "diffuser commandes"
 
-#: data/base/dialogs/AfterTakeover.lua:317
+#: data/base/dialogs/AfterTakeover.lua:320
 msgid "Broadcast commands to all units on level? [Y/N]"
-msgstr ""
+msgstr "Diffuser les commandes à tous les robots de ce niveau [O/N]"
 
 #. TRANSLATORS: Y for yes
-#: data/base/dialogs/AfterTakeover.lua:325
+#: data/base/dialogs/AfterTakeover.lua:328
 msgid "Y (enable broadcast)"
-msgstr ""
+msgstr "Y (activer la diffusion)"
 
-#: data/base/dialogs/AfterTakeover.lua:329
+#: data/base/dialogs/AfterTakeover.lua:332
 msgid "Commands will be broadcast and executed by all bots on this level under your control."
-msgstr ""
+msgstr "Les commands seront diffusées et executées par tous les robots sous  votre contrôle à ce niveau."
 
-#: data/base/dialogs/AfterTakeover.lua:330
+#: data/base/dialogs/AfterTakeover.lua:333
 msgid "Entering \"botnet\" mode..."
-msgstr ""
+msgstr "Entrée en mode « botnet »"
 
 #. TRANSLATORS: N for no
-#: data/base/dialogs/AfterTakeover.lua:339
+#: data/base/dialogs/AfterTakeover.lua:342
 msgid "N (disable broadcast)"
-msgstr ""
+msgstr "N (désactiver la diffusion)"
 
-#: data/base/dialogs/AfterTakeover.lua:343
+#: data/base/dialogs/AfterTakeover.lua:346
 msgid "Commands will only be executed by this bot."
-msgstr ""
+msgstr "Les commands ne seront exécutées que par ce robot."
 
-#: data/base/dialogs/AfterTakeover.lua:355
-msgid "Welcome to the settings menu."
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:356
-msgid "Version: 1.82c"
-msgstr ""
-
-#. TRANSLATORS: %s = sensor name
 #: data/base/dialogs/AfterTakeover.lua:358
-#, c-format
-msgid "Installed sensor: %s"
-msgstr ""
+msgid "Welcome to the settings menu."
+msgstr "Bienvenue au menu de configuration"
 
 #: data/base/dialogs/AfterTakeover.lua:359
-msgid "No upgrades found."
-msgstr ""
+msgid "Version: 1.82c"
+msgstr "Version: 1.82c"
 
+#. TRANSLATORS: %s = sensor name
 #: data/base/dialogs/AfterTakeover.lua:361
+#, c-format
+msgid "Installed sensor: %s"
+msgstr "Détécteur installé: %s "
+
+#: data/base/dialogs/AfterTakeover.lua:362
+msgid "No upgrades found."
+msgstr "Pas de mises à niveau trouvées."
+
+#: data/base/dialogs/AfterTakeover.lua:364
 msgid "UNIT TOO DAMAGED TO BROADCAST COMMANDS."
-msgstr ""
+msgstr "UNITÉ TROP ENDOMMAGÉE POUR DIFFUSER DES COMMANDES."
 
-#: data/base/dialogs/AfterTakeover.lua:365
+#: data/base/dialogs/AfterTakeover.lua:368
 msgid "Which setting should be changed?"
-msgstr ""
+msgstr "Quels réglages doivent être changé ?"
 
-#: data/base/dialogs/AfterTakeover.lua:371
-#: data/base/dialogs/AfterTakeover.lua:375
-msgid "./hostname"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:376
-msgid "Welcome to the hostname menu."
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:377
-#, c-format
-msgid "Version: %s"
-msgstr ""
-
+#: data/base/dialogs/AfterTakeover.lua:374
 #: data/base/dialogs/AfterTakeover.lua:378
-#, c-format
-msgid "Current botname: [b]%s[/b]"
-msgstr ""
+msgid "./hostname"
+msgstr "./hostname"
 
 #: data/base/dialogs/AfterTakeover.lua:379
-msgid "Select new name? [Y/N]"
-msgstr ""
+msgid "Welcome to the hostname menu."
+msgstr "Bienvenue au menu hostname."
 
-#: data/base/dialogs/AfterTakeover.lua:387
-#: data/base/dialogs/AfterTakeover.lua:476
-#: data/base/dialogs/AfterTakeover.lua:520
-#: data/base/dialogs/AfterTakeover.lua:577
-#: data/base/dialogs/AfterTakeover.lua:582
-#: data/base/dialogs/AfterTakeover.lua:715
-msgid "Yes"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:393
-msgid "New Name: "
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:395
+#: data/base/dialogs/AfterTakeover.lua:380
 #, c-format
-msgid "Type a new name for this %s unit."
-msgstr ""
+msgid "Version: %s"
+msgstr "Version : %s"
+
+#: data/base/dialogs/AfterTakeover.lua:381
+#, c-format
+msgid "Current botname: [b]%s[/b]"
+msgstr "Nom actuel du robot: [b]%s[/b]"
+
+#: data/base/dialogs/AfterTakeover.lua:382
+msgid "Select new name? [Y/N]"
+msgstr "Sélectionner nouveau nom? [O/N]"
+
+#: data/base/dialogs/AfterTakeover.lua:390
+#: data/base/dialogs/AfterTakeover.lua:479
+#: data/base/dialogs/AfterTakeover.lua:523
+#: data/base/dialogs/AfterTakeover.lua:583
+#: data/base/dialogs/AfterTakeover.lua:588
+#: data/base/dialogs/AfterTakeover.lua:721
+msgid "Yes"
+msgstr "Oui"
+
+#: data/base/dialogs/AfterTakeover.lua:396
+msgid "New Name: "
+msgstr "Nouveau nom :"
 
 #: data/base/dialogs/AfterTakeover.lua:398
-msgid "Bald"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:399
-msgid "Brusque"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:400
-msgid "Chic"
-msgstr ""
+#, c-format
+msgid "Type a new name for this %s unit."
+msgstr "Tapez un nouveau nom pour cette unité %s."
 
 #: data/base/dialogs/AfterTakeover.lua:401
-msgid "Cuddly"
-msgstr ""
+msgid "Bald"
+msgstr "Chauve"
 
 #: data/base/dialogs/AfterTakeover.lua:402
-#, fuzzy
-msgid "Cute"
-msgstr "Mignonette"
+msgid "Brusque"
+msgstr "Brusque"
 
 #: data/base/dialogs/AfterTakeover.lua:403
-msgid "Fickle"
-msgstr ""
+msgid "Chic"
+msgstr "Chic"
 
 #: data/base/dialogs/AfterTakeover.lua:404
-msgid "Fluffy"
-msgstr ""
+msgid "Cuddly"
+msgstr "Peluches"
 
 #: data/base/dialogs/AfterTakeover.lua:405
-msgid "Fuzzy"
-msgstr ""
+msgid "Cute"
+msgstr "Mignon"
 
 #: data/base/dialogs/AfterTakeover.lua:406
-msgid "Happy"
-msgstr ""
+msgid "Fickle"
+msgstr "Versatile"
 
 #: data/base/dialogs/AfterTakeover.lua:407
-msgid "Hyper"
-msgstr ""
+msgid "Fluffy"
+msgstr "Duveteux"
 
 #: data/base/dialogs/AfterTakeover.lua:408
-msgid "Laughing"
-msgstr ""
+msgid "Fuzzy"
+msgstr "Flou"
 
 #: data/base/dialogs/AfterTakeover.lua:409
-msgid "Machavellian"
-msgstr ""
+msgid "Happy"
+msgstr "Joyeux"
 
 #: data/base/dialogs/AfterTakeover.lua:410
-msgid "Mad"
-msgstr ""
+msgid "Hyper"
+msgstr "Hyper"
 
 #: data/base/dialogs/AfterTakeover.lua:411
-msgid "Obscene"
-msgstr ""
+msgid "Laughing"
+msgstr "Rieur"
 
 #: data/base/dialogs/AfterTakeover.lua:412
-msgid "Ornery"
-msgstr ""
+msgid "Machavellian"
+msgstr "Machavelique"
 
 #: data/base/dialogs/AfterTakeover.lua:413
-msgid "Pompous"
-msgstr ""
+msgid "Mad"
+msgstr "Fou"
 
 #: data/base/dialogs/AfterTakeover.lua:414
-msgid "Shrewd"
-msgstr ""
+msgid "Obscene"
+msgstr "Onbscène"
+
+#: data/base/dialogs/AfterTakeover.lua:415
+msgid "Ornery"
+msgstr "Méchant"
 
 #: data/base/dialogs/AfterTakeover.lua:416
-msgid "Aardvark"
-msgstr ""
+msgid "Pompous"
+msgstr "Solennel"
 
 #: data/base/dialogs/AfterTakeover.lua:417
-msgid "Armadillo"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:418
-msgid "Barracuda"
-msgstr ""
+msgid "Shrewd"
+msgstr "Habile"
 
 #: data/base/dialogs/AfterTakeover.lua:419
-msgid "Bat"
-msgstr ""
+msgid "Aardvark"
+msgstr "Oryctérope"
 
 #: data/base/dialogs/AfterTakeover.lua:420
-msgid "Beetle"
-msgstr ""
+msgid "Armadillo"
+msgstr "Tatou"
 
 #: data/base/dialogs/AfterTakeover.lua:421
-msgid "Bunny"
-msgstr ""
+msgid "Barracuda"
+msgstr "Barracuda"
 
 #: data/base/dialogs/AfterTakeover.lua:422
-msgid "Dodo"
-msgstr ""
+msgid "Bat"
+msgstr "Chauve-souris"
 
 #: data/base/dialogs/AfterTakeover.lua:423
-msgid "Duck"
-msgstr ""
+msgid "Beetle"
+msgstr "Scarabée"
 
 #: data/base/dialogs/AfterTakeover.lua:424
-msgid "Fox"
-msgstr ""
+msgid "Bunny"
+msgstr "Lapinou"
 
 #: data/base/dialogs/AfterTakeover.lua:425
-msgid "Frog"
-msgstr ""
+msgid "Dodo"
+msgstr "Dodo"
 
 #: data/base/dialogs/AfterTakeover.lua:426
-msgid "Gerbil"
-msgstr ""
+msgid "Duck"
+msgstr "Canard"
 
 #: data/base/dialogs/AfterTakeover.lua:427
-#, fuzzy
-msgid "Gnu"
-msgstr "Gars"
+msgid "Fox"
+msgstr "Renard"
 
 #: data/base/dialogs/AfterTakeover.lua:428
-msgid "Halibut"
-msgstr ""
+msgid "Frog"
+msgstr "Grenouille"
 
 #: data/base/dialogs/AfterTakeover.lua:429
-msgid "Hedgehog"
-msgstr ""
+msgid "Gerbil"
+msgstr "Gerbille"
 
 #: data/base/dialogs/AfterTakeover.lua:430
-msgid "Herring"
-msgstr ""
+msgid "Gnu"
+msgstr "Gnou"
 
 #: data/base/dialogs/AfterTakeover.lua:431
-msgid "Kitten"
-msgstr ""
+msgid "Halibut"
+msgstr "Flétan"
 
 #: data/base/dialogs/AfterTakeover.lua:432
-msgid "Koala"
-msgstr ""
+msgid "Hedgehog"
+msgstr "Hérisson"
 
 #: data/base/dialogs/AfterTakeover.lua:433
-msgid "Lemur"
-msgstr ""
+msgid "Herring"
+msgstr "Harrang"
 
 #: data/base/dialogs/AfterTakeover.lua:434
-msgid "Mackerel"
-msgstr ""
+msgid "Kitten"
+msgstr "Minou"
 
 #: data/base/dialogs/AfterTakeover.lua:435
-msgid "Otter"
-msgstr ""
+msgid "Koala"
+msgstr "Koala"
 
 #: data/base/dialogs/AfterTakeover.lua:436
-msgid "Panda"
-msgstr ""
+msgid "Lemur"
+msgstr "Lemur"
 
 #: data/base/dialogs/AfterTakeover.lua:437
-#, fuzzy
-msgid "Platypus"
-msgstr "Assiette"
+msgid "Mackerel"
+msgstr "Macraux"
 
 #: data/base/dialogs/AfterTakeover.lua:438
-msgid "Puffin"
-msgstr ""
+msgid "Otter"
+msgstr "Loutre"
 
 #: data/base/dialogs/AfterTakeover.lua:439
-msgid "Scarab"
-msgstr ""
+msgid "Panda"
+msgstr "Panda"
 
 #: data/base/dialogs/AfterTakeover.lua:440
-msgid "Shrew"
-msgstr ""
+msgid "Platypus"
+msgstr "Ornithorynque"
 
 #: data/base/dialogs/AfterTakeover.lua:441
-msgid "Tapir"
-msgstr ""
+msgid "Puffin"
+msgstr "Macareux"
 
 #: data/base/dialogs/AfterTakeover.lua:442
-msgid "Trout"
-msgstr ""
+msgid "Scarab"
+msgstr "Scarabée"
 
 #: data/base/dialogs/AfterTakeover.lua:443
-msgid "Tuna"
-msgstr ""
+msgid "Shrew"
+msgstr "Soricidé"
 
 #: data/base/dialogs/AfterTakeover.lua:444
+msgid "Tapir"
+msgstr "Tapir"
+
+#: data/base/dialogs/AfterTakeover.lua:445
+msgid "Trout"
+msgstr "Truite"
+
+#: data/base/dialogs/AfterTakeover.lua:446
+msgid "Tuna"
+msgstr "Thon"
+
+#: data/base/dialogs/AfterTakeover.lua:447
 msgid "Walrus"
-msgstr ""
+msgstr "Morse"
 
-#: data/base/dialogs/AfterTakeover.lua:452
-#: data/base/dialogs/AfterTakeover.lua:492
-#: data/base/dialogs/AfterTakeover.lua:531
-#: data/base/dialogs/AfterTakeover.lua:591
-#: data/base/dialogs/AfterTakeover.lua:727
+#: data/base/dialogs/AfterTakeover.lua:455
+#: data/base/dialogs/AfterTakeover.lua:495
+#: data/base/dialogs/AfterTakeover.lua:534
+#: data/base/dialogs/AfterTakeover.lua:597
+#: data/base/dialogs/AfterTakeover.lua:733
 msgid "No"
-msgstr ""
+msgstr "Non"
 
-#: data/base/dialogs/AfterTakeover.lua:468
+#: data/base/dialogs/AfterTakeover.lua:471
 #, c-format
 msgid "Confirm renaming from [b]%s[/b] to [b]%s[/b]? [Y/N]"
-msgstr ""
+msgstr "Confirmation du renommage de [b]%s[/b] en [b]%s[/b]? [O/N]"
 
-#: data/base/dialogs/AfterTakeover.lua:482
+#: data/base/dialogs/AfterTakeover.lua:485
 #, c-format
 msgid "Renamed [b]%s[/b] to [b]%s[/b]."
-msgstr ""
+msgstr "[b]%s[/b] Renommé [b]%s[/b]."
 
-#: data/base/dialogs/AfterTakeover.lua:484
+#: data/base/dialogs/AfterTakeover.lua:487
 #, c-format
 msgid "This %s unit is now designated: [b]%s[/b]"
-msgstr ""
+msgstr "Cette unité %s est désormais désignée: [b]%s[/b]"
 
-#: data/base/dialogs/AfterTakeover.lua:505
 #: data/base/dialogs/AfterTakeover.lua:508
+#: data/base/dialogs/AfterTakeover.lua:511
 msgid "./hcf.py"
-msgstr ""
+msgstr "./hcf.py"
 
-#: data/base/dialogs/AfterTakeover.lua:510
+#: data/base/dialogs/AfterTakeover.lua:513
 #, c-format
 msgid "Are you really sure you want to destroy %s? Y/N"
-msgstr ""
+msgstr "Êtes-vous sûr de vouloir détruire %s O/N"
 
-#: data/base/dialogs/AfterTakeover.lua:524
+#: data/base/dialogs/AfterTakeover.lua:527
 msgid "Destruction confirmed."
-msgstr ""
+msgstr "Destruction confirmée."
 
-#: data/base/dialogs/AfterTakeover.lua:535
+#: data/base/dialogs/AfterTakeover.lua:538
 msgid "Destruction averted."
-msgstr ""
+msgstr "Destruction avérée."
 
-#: data/base/dialogs/AfterTakeover.lua:555
+#. TRANSLATORS: Example: Draining this 123 unit will get you 5 HP but kill it and take 3 seconds.
+#: data/base/dialogs/AfterTakeover.lua:560
 #, c-format
 msgid "Draining this %s unit will get you %d HP but kill it and take %d %s."
-msgstr ""
+msgstr "Le drainage de cette unité %s vous rapporterait %d de santé, mais provoquerait sa destruction et prendrait %d %s."
 
-#: data/base/dialogs/AfterTakeover.lua:562
+#: data/base/dialogs/AfterTakeover.lua:568
 #, c-format
 msgid "Are you sure you want to drain this %s unit?"
-msgstr ""
+msgstr "Êtes-vous sur de vouloir drainer cette unité %s ?"
 
-#: data/base/dialogs/AfterTakeover.lua:594
-#, fuzzy
+#: data/base/dialogs/AfterTakeover.lua:600
 msgid "Bot not drained."
-msgstr "Robot dans le besoin"
+msgstr "Le robot n'a pas été drainé. "
 
-#: data/base/dialogs/AfterTakeover.lua:595
+#: data/base/dialogs/AfterTakeover.lua:601
 msgid "Running hcf.py..."
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:606
-msgid "Executing: Halt and Catch Fire."
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:608
-msgid "Warning! Cooling subsystems disabled."
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:609
-msgid "Warning! Spontaneous oxidization witH emis$ion of light aND heAt detecteddd in THE#main| procesIng unit."
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:610
-#, c-format
-msgid "WArn|n*! SsTeM=#faiPure%%^#n 3 S 1()$++"
-msgstr ""
+msgstr "Exécussion de hcf.py…"
 
 #: data/base/dialogs/AfterTakeover.lua:612
-#, fuzzy
+msgid "Executing: Halt and Catch Fire."
+msgstr "Exécution : Arrêt et autodestruction"
+
+#: data/base/dialogs/AfterTakeover.lua:614
+msgid "Warning! Cooling subsystems disabled."
+msgstr "Attention ! Sous-systèmes de refroidissement désactivés."
+
+#: data/base/dialogs/AfterTakeover.lua:615
+msgid "Warning! Spontaneous oxidization witH emis$ion of light aND heAt detecteddd in THE#main| procesIng unit."
+msgstr "Attention ! Oxydation spontanée avec émis$ion de lumière et de chaleur détectéeee dans #l'unité| princlpale."
+
+#: data/base/dialogs/AfterTakeover.lua:616
+#, c-format
+msgid "WArn|n*! SsTeM=#faiPure%%^#n 3 S 1()$++"
+msgstr "Attent|on ! Éche= #ystèm3 S 1()$++"
+
+#: data/base/dialogs/AfterTakeover.lua:618
 msgid "Warning: something seems wrong."
-msgstr "Avertissement : La vapeur chaude est chaude !"
+msgstr "Attention : Il se passe quelque chose d'anormal."
 
-#: data/base/dialogs/AfterTakeover.lua:613
+#: data/base/dialogs/AfterTakeover.lua:619
 msgid "Error report:"
-msgstr ""
+msgstr "Rapport d'erreur :"
 
-#: data/base/dialogs/AfterTakeover.lua:625
+#: data/base/dialogs/AfterTakeover.lua:631
 #, c-format
 msgid "()%%#@(%% THE BLADE IS YOURS. )##%%*&%%*!"
-msgstr ""
+msgstr "()%%#@(%% CETTE ÉPÉE EST VOTRE. )##%%*&%%*!"
 
-#: data/base/dialogs/AfterTakeover.lua:632
-#, fuzzy
+#: data/base/dialogs/AfterTakeover.lua:638
 msgid "Bot drained."
-msgstr "Robot dans le besoin"
+msgstr "Robot drainé. "
 
-#: data/base/dialogs/AfterTakeover.lua:636
+#: data/base/dialogs/AfterTakeover.lua:642
 msgid "Failed to drain bot."
-msgstr ""
+msgstr "Échec de la procédure de drainage. "
 
-#: data/base/dialogs/AfterTakeover.lua:637
+#: data/base/dialogs/AfterTakeover.lua:643
 msgid "I am free!"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:648
-msgid "drain_bot_auto.setup"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:651
-msgid "How do you want draining of bots to be handled?"
-msgstr ""
+msgstr "Je suis libre !"
 
 #: data/base/dialogs/AfterTakeover.lua:654
+msgid "drain_bot_auto.setup"
+msgstr "drainage_robot_auto.setup"
+
+#: data/base/dialogs/AfterTakeover.lua:657
+msgid "How do you want draining of bots to be handled?"
+msgstr "Comment voulez-vous procéder au drainage des robots ? "
+
+#: data/base/dialogs/AfterTakeover.lua:660
 msgid "Currently draining of bots is tried automatically."
-msgstr ""
+msgstr "Actuellement, le drainage des robots est tenté automatiquement. "
 
-#: data/base/dialogs/AfterTakeover.lua:656
+#: data/base/dialogs/AfterTakeover.lua:662
 msgid "Currently draining of bots is never tried."
-msgstr ""
+msgstr "Actuellement, le drainage des robots n'est jamais tenté. "
 
-#: data/base/dialogs/AfterTakeover.lua:658
+#: data/base/dialogs/AfterTakeover.lua:664
 msgid "Currently it is asked if draining a bot is to be tried."
-msgstr ""
+msgstr "Actuellement, le drainage des robots est tenté sur demande. "
 
-#: data/base/dialogs/AfterTakeover.lua:669
+#: data/base/dialogs/AfterTakeover.lua:675
 msgid "Always try draining bots."
-msgstr ""
+msgstr "Toujours essayer de drainer les robots."
 
-#: data/base/dialogs/AfterTakeover.lua:679
+#: data/base/dialogs/AfterTakeover.lua:685
 msgid "Never try to drain a bot"
-msgstr ""
+msgstr "Ne jamais essayer de drainer un robot"
 
-#: data/base/dialogs/AfterTakeover.lua:689
+#: data/base/dialogs/AfterTakeover.lua:695
 msgid "Always ask if attempt to drain bot shall be ran."
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:699
-msgid "Reprogramm_bots_after_takeover.sh"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:703
-#: data/base/dialogs/AfterTakeover.lua:718
-msgid "Bots will be reprogrammed after takeover: [b]true[/b]"
-msgstr ""
+msgstr "Toujours demander si il faut essayer de drainer les robots"
 
 #: data/base/dialogs/AfterTakeover.lua:705
-#: data/base/dialogs/AfterTakeover.lua:730
+msgid "Reprogramm_bots_after_takeover.sh"
+msgstr "Reprogrammer_robots_après_piratage.sh"
+
+#: data/base/dialogs/AfterTakeover.lua:709
+#: data/base/dialogs/AfterTakeover.lua:724
+msgid "Bots will be reprogrammed after takeover: [b]true[/b]"
+msgstr "Les robots sont reprogrammés après leur piratage : [b]Vrai[/b]"
+
+#: data/base/dialogs/AfterTakeover.lua:711
+#: data/base/dialogs/AfterTakeover.lua:736
 msgid "Bots will be reprogrammed after takeover: [b]false[/b]"
-msgstr ""
+msgstr "Les robots sont reprogrammés après leur piratage : [b]Faux[/b]"
 
-#: data/base/dialogs/AfterTakeover.lua:739
+#: data/base/dialogs/AfterTakeover.lua:745
 msgid "leave settings.plx"
-msgstr ""
+msgstr "quitter parametrage.plx"
 
-#: data/base/dialogs/AfterTakeover.lua:743
+#: data/base/dialogs/AfterTakeover.lua:749
 msgid "Settings saved"
-msgstr ""
+msgstr "Réglages sauvegardés"
 
-#: data/base/dialogs/AfterTakeover.lua:744
+#: data/base/dialogs/AfterTakeover.lua:750
 msgid "Leaving settings.plx"
-msgstr ""
+msgstr "Quitte parametres.plx"
 
 #. TRANSLATORS: 'logout' should be a command
 #. TRANSLATORS: command, user lowercase here
-#: data/base/dialogs/AfterTakeover.lua:756 data/base/dialogs/Terminal.lua:51
+#: data/base/dialogs/AfterTakeover.lua:762 data/base/dialogs/Terminal.lua:51
 msgid "logout"
-msgstr ""
+msgstr "Déconnexion"
 
-#: data/base/dialogs/AfterTakeover.lua:757
-#, fuzzy
+#: data/base/dialogs/AfterTakeover.lua:763
 msgid "Closing remote connection..."
-msgstr "Vers l'autre continent ..."
+msgstr "Fermeture de la connexion..."
+
+#: data/base/dialogs/Speechless.lua:33
+msgid "..."
+msgstr "..."
 
 #: data/base/dialogs/Terminal.lua:29
-#, fuzzy
 msgid "Welcome to this terminal."
-msgstr "Terminal sécurisé"
+msgstr "Bienvenue sur ce terminal."
 
 #: data/base/dialogs/Terminal.lua:31
 msgid "Hello."
-msgstr ""
+msgstr "Salut."
 
 #: data/base/dialogs/Terminal.lua:32
 msgid "Hi there."
-msgstr ""
+msgstr "Salut toi."
 
 #: data/base/dialogs/Terminal.lua:33
 msgid "Well, hello again."
-msgstr ""
+msgstr "Eh bien, bonjour à nouveau."
 
 #: data/base/dialogs/Terminal.lua:34
 msgid "Hello hello."
-msgstr ""
+msgstr "Sali-Salut"
 
 #: data/base/dialogs/Terminal.lua:35
 msgid "Welcome back."
-msgstr ""
+msgstr "Re Bienvenu."
 
 #. TRANSLATORS: command, user lowercase here
 #: data/base/dialogs/Terminal.lua:43
 msgid "help"
-msgstr ""
+msgstr "aide"
 
 #: data/base/dialogs/Terminal.lua:45
 msgid "Available commands: help, logout"
-msgstr ""
+msgstr "Commandes disponibles: aide, déconnexion"
 
 #: data/base/dialogs/Terminal.lua:53
 msgid "Goodbye"
-msgstr ""
+msgstr "Au revoir"
 
 #: data/storyline/act1/events.dat:57
 msgid "To Maintenance Tunnels"
 msgstr "Vers les tunnels de maintenance"
 
 #: data/storyline/act1/events.dat:68
-msgid "To Novice Arena"
-msgstr "Vers l'arène novice"
+msgid "To Regular Arena"
+msgstr "Vers l'Arène des Habitués"
 
 #: data/storyline/act1/events.dat:79
 msgid "To Master Arena"
@@ -2876,7 +2896,7 @@ msgid ""
 "You have found the Town's secret exit door.\n"
 "Use it only in case of emergency."
 msgstr ""
-"Tu as trouvé la porte de la sortie secrète de la ville.\n"
+"Tu as trouvé la porte de la sortie secrète de La Ville.\n"
 "À n'utiliser qu'en cas d'urgence."
 
 #: data/storyline/act1/events.dat:689
@@ -2988,8 +3008,8 @@ msgid "Hatch with broken ladder"
 msgstr "Ecoutille avec une échelle cassée"
 
 #: data/storyline/act1/events.dat:1840
-msgid "Exit Novice Arena"
-msgstr "Quitter l'arène novice"
+msgid "Exit Arena"
+msgstr "Quitter l'Arène"
 
 #: data/storyline/act1/events.dat:1847
 msgid "Start New Wave"
@@ -3015,87 +3035,91 @@ msgstr "Tous les robots sont détruits ! Tu as gagné."
 msgid "Exit Master Arena"
 msgstr "Quitter l'Arène des Confirmés"
 
-#: data/storyline/act1/events.dat:2158
+#: data/storyline/act1/events.dat:2302
 msgid "Exit Crystal Caves"
 msgstr "Quitter les Cavernes de Cristal"
 
-#: data/storyline/act1/events.dat:2168 data/storyline/act1/events.dat:2200
+#: data/storyline/act1/events.dat:2312 data/storyline/act1/events.dat:2344
 msgid "Back to the Desert"
 msgstr "Retour au Désert"
 
-#: data/storyline/act1/events.dat:2208
+#: data/storyline/act1/events.dat:2352
 msgid "Tania has made it to the surface for the first time in a very long time."
 msgstr "Tania est à l'air libre pour la première fois depuis un très long moment."
 
-#: data/storyline/act1/events.dat:2215 data/storyline/act1/events.dat:2222
+#: data/storyline/act1/events.dat:2359 data/storyline/act1/events.dat:2366
 msgid "To the Secret Area Service Tunnels"
 msgstr "Vers les tunnels de service de la Zone Secrète"
 
-#: data/storyline/act1/events.dat:2232 data/storyline/act1/events.dat:2239
+#: data/storyline/act1/events.dat:2376 data/storyline/act1/events.dat:2383
 msgid "Back to the Secret Area"
 msgstr "Retour vers la Zone Secrète"
 
-#: data/storyline/act1/events.dat:2257
+#: data/storyline/act1/events.dat:2401
 msgid "Good, now move to the black grating to the East."
 msgstr "Bien, maintenant il faut aller vers la grille noire à l'est."
 
-#: data/storyline/act1/events.dat:2270
+#: data/storyline/act1/events.dat:2414
 msgid "Good, now talk to Tutorial Tom again."
 msgstr "Bien, maintenant parle avec Tom Tutoriel encore une fois."
 
-#: data/storyline/act1/events.dat:2459
+#: data/storyline/act1/events.dat:2603
 msgid "To a Forgotten Bunker"
 msgstr "Vers un Bunker Oublié"
 
-#: data/storyline/act1/events.dat:2479
+#: data/storyline/act1/events.dat:2623
 msgid "Unknown place"
 msgstr "Endroit inconnu"
 
-#: data/storyline/act1/events.dat:2493
+#: data/storyline/act1/events.dat:2637
 msgid "To the other continent..."
 msgstr "Vers l'autre continent ..."
 
-#: data/storyline/act1/events.dat:2503
+#: data/storyline/act1/events.dat:2647
 msgid "Hidden way out"
 msgstr "Passage secret vers la sortie"
 
-#: data/storyline/act1/events.dat:2543
+#: data/storyline/act1/events.dat:2687
 msgid "Security failure at Hell's Fortress reception desk."
 msgstr "Incident de sécurité à la réception de la Forteresse Infernale."
 
-#: data/storyline/act1/events.dat:2569
+#: data/storyline/act1/events.dat:2713
 msgid "Back to Disruptor Shield Control"
 msgstr "Retour au Contrôle du Bouclier du Disrupteur"
 
-#: data/storyline/act1/events.dat:2576
+#: data/storyline/act1/events.dat:2720
 msgid "To Machine Deck Lower Catacombs"
 msgstr "Vers les Catacombes Basses du Pont des Machines"
 
-#: data/storyline/act1/events.dat:2586
+#: data/storyline/act1/events.dat:2730
 msgid "Back to Machine Deck Upper Catacombs"
 msgstr "Retour vers les Catacombes Hautes du Pont des Machines"
 
-#: data/storyline/act1/events.dat:2593
+#: data/storyline/act1/events.dat:2737
 msgid "To Disruptor Machine Deck"
 msgstr "Vers le Pont des Machines du Disrupteur"
 
-#: data/storyline/act1/events.dat:2607
+#: data/storyline/act1/events.dat:2751
 msgid "Back To Maintenance Tunnel"
 msgstr "Retour vers le tunnel de maintenance"
 
-#: data/storyline/act1/events.dat:2614
+#: data/storyline/act1/events.dat:2758
 msgid "We need to go deeper..."
 msgstr "Nous devons nous enfoncer plus profondément..."
 
-#: data/storyline/act1/events.dat:7074
+#: data/storyline/act1/events.dat:7222
 msgid "All aboard!"
-msgstr ""
+msgstr "Tout le monde à bord !"
 
-#: data/storyline/act1/events.dat:7142
+#: data/storyline/act1/events.dat:7227
+msgid "All aboard, we're leaving now!"
+msgstr "Tout le monde est à bord, nous partons maintenant !"
+
+#: data/storyline/act1/events.dat:7290
 msgid "Back to mainland"
 msgstr "Vers le Continent"
 
-#: data/storyline/act1/events.dat:7156
+#: data/storyline/act1/events.dat:7304
 msgid "Let us return!"
 msgstr "Retournons-y!"
 
@@ -3163,8 +3187,8 @@ msgstr "Ce signe bloque le chemin pour empêcher de sortir de la Matrice. Si tu 
 msgid "Crystal Fields"
 msgstr "Champs de cristaux"
 
-#: data/storyline/act1/levels.dat:12654 data/storyline/act1/levels.dat:39102
-#: data/storyline/act1/levels.dat:39456 data/storyline/act1/levels.dat:39856
+#: data/storyline/act1/levels.dat:12654 data/storyline/act1/levels.dat:39423
+#: data/storyline/act1/levels.dat:39777 data/storyline/act1/levels.dat:40177
 msgid "Desert Valley"
 msgstr "Vallée Déserte"
 
@@ -3176,402 +3200,402 @@ msgstr "Montagne des Taillandiers"
 msgid "Cryo Stasis Lab"
 msgstr "Laboratoire de Cryo-stase"
 
-#: data/storyline/act1/levels.dat:16714
+#: data/storyline/act1/levels.dat:16713
 msgid "Three Fermis Land"
 msgstr "Tetracastin"
 
-#: data/storyline/act1/levels.dat:17324
+#: data/storyline/act1/levels.dat:17323
 msgid "In case of panic: run!"
 msgstr "En cas d'Urgence :  Fuyez"
 
-#: data/storyline/act1/levels.dat:17449
+#: data/storyline/act1/levels.dat:17448
 msgid "Scientists quarters and Telemetry"
 msgstr "Quartiers des scientifiques et télémétrie"
 
-#: data/storyline/act1/levels.dat:18931
+#: data/storyline/act1/levels.dat:18930
 msgid "Disruptor Base Access Tunnel"
 msgstr "Tunnel d' Accès à la Base de Disruption"
 
-#: data/storyline/act1/levels.dat:20023
+#: data/storyline/act1/levels.dat:20022
 msgid "Terminal Shore"
 msgstr "presqu'île"
 
-#: data/storyline/act1/levels.dat:20910
+#: data/storyline/act1/levels.dat:20909
 msgid "Ethereal Meadows"
 msgstr "Champs éthérés"
 
-#: data/storyline/act1/levels.dat:22127
+#: data/storyline/act1/levels.dat:22126
 msgid "Kevins Main Energy Source"
 msgstr "Source d'énergie principale de Kévin"
 
-#: data/storyline/act1/levels.dat:22380 data/storyline/act1/levels.dat:22900
+#: data/storyline/act1/levels.dat:22379 data/storyline/act1/levels.dat:22899
 msgid "Northern Shoreline"
 msgstr "Berge Nord"
 
-#: data/storyline/act1/levels.dat:23524 data/storyline/act1/levels.dat:23649
-#: data/storyline/act1/levels.dat:23774 data/storyline/act1/levels.dat:40321
-#: data/storyline/act1/levels.dat:67634
+#: data/storyline/act1/levels.dat:23523 data/storyline/act1/levels.dat:23648
+#: data/storyline/act1/levels.dat:23773 data/storyline/act1/levels.dat:40642
+#: data/storyline/act1/levels.dat:67972
 msgid "World Edge Sea"
 msgstr "Mer du Bout du Monde"
 
-#: data/storyline/act1/levels.dat:23899
+#: data/storyline/act1/levels.dat:23898
 msgid "DEBUG LEVEL 24 -- This level was created to make testing of FreedroidRPG a little easier and is NOT meant to be accessible without cheating."
 msgstr "DEBUG LEVEL 24 -- Ce niveau a été créé pour rendre les tests de FreedroidRPG un peu plus facile et n'est PAS censé être accessible sans tricher."
 
-#: data/storyline/act1/levels.dat:24280
+#: data/storyline/act1/levels.dat:24279
 msgid "Guy signmessage A"
 msgstr "Pancarte du mec A"
 
-#: data/storyline/act1/levels.dat:24480
+#: data/storyline/act1/levels.dat:24479
 msgid "Broken Glass Path"
 msgstr "Le chemin de la vitre brisée"
 
-#: data/storyline/act1/levels.dat:25571
+#: data/storyline/act1/levels.dat:25570
 msgid "Swamp"
 msgstr "Marais"
 
-#: data/storyline/act1/levels.dat:26950
+#: data/storyline/act1/levels.dat:26949
 msgid "Mushroom Forest"
 msgstr "Forêt de champignons"
 
-#: data/storyline/act1/levels.dat:28433
+#: data/storyline/act1/levels.dat:28432
 msgid "Some sanctuary"
 msgstr "Divers Sanctuaires"
 
-#: data/storyline/act1/levels.dat:29307
+#: data/storyline/act1/levels.dat:29306
 msgid "Storage room"
 msgstr "Débaras"
 
-#: data/storyline/act1/levels.dat:29310
+#: data/storyline/act1/levels.dat:29309
 msgid "Warning: Hot steam is hot!"
 msgstr "Avertissement : La vapeur chaude est chaude !"
 
-#: data/storyline/act1/levels.dat:29313
+#: data/storyline/act1/levels.dat:29312
 msgid "Danger: High voltage!"
 msgstr "Danger ! Haut voltage !"
 
-#: data/storyline/act1/levels.dat:29463
+#: data/storyline/act1/levels.dat:29462
 msgid "Arena"
 msgstr "Arène"
 
-#: data/storyline/act1/levels.dat:30099
+#: data/storyline/act1/levels.dat:30106
 msgid "Master Arena"
 msgstr "Arène des experts"
 
-#: data/storyline/act1/levels.dat:30317
+#: data/storyline/act1/levels.dat:30640
 msgid "Hell Fortress Entrance"
 msgstr "Entrée de la Forteresse de l'Enfer"
 
-#: data/storyline/act1/levels.dat:33253
+#: data/storyline/act1/levels.dat:33574
 msgid "Upgrade distribution server room. Access restricted to authorized personnel - trespassers will be fired."
 msgstr "Salle serveur de diffusion des mises à jour. Accès restreint au personnel autorisé - toute intrusion sera punie."
 
-#: data/storyline/act1/levels.dat:33256
+#: data/storyline/act1/levels.dat:33577
 msgid "Please close the door behind you."
 msgstr "Merci de fermer la porte derrière vous."
 
-#: data/storyline/act1/levels.dat:33259
+#: data/storyline/act1/levels.dat:33580
 msgid "Beware of hydroxyl acid!"
 msgstr "Attention à l'acide hydroxyle !"
 
-#: data/storyline/act1/levels.dat:33262
+#: data/storyline/act1/levels.dat:33583
 msgid "Beware of the guns."
 msgstr "Attention aux armes."
 
-#: data/storyline/act1/levels.dat:33265 data/storyline/act1/levels.dat:33325
-#: data/storyline/act1/levels.dat:33331
+#: data/storyline/act1/levels.dat:33586 data/storyline/act1/levels.dat:33646
+#: data/storyline/act1/levels.dat:33652
 msgid "Please read the other sign first."
 msgstr "Veuillez d'abord lire l'autre panneau."
 
-#: data/storyline/act1/levels.dat:33268
+#: data/storyline/act1/levels.dat:33589
 msgid "To main office."
 msgstr "Vers le bureau principal."
 
-#: data/storyline/act1/levels.dat:33271
+#: data/storyline/act1/levels.dat:33592
 msgid "Workers office."
 msgstr "Bureau des ouvriers."
 
-#: data/storyline/act1/levels.dat:33274
+#: data/storyline/act1/levels.dat:33595
 msgid "First MS operating system - printed version"
 msgstr "Premier système d'exploitation MS - version papier"
 
-#: data/storyline/act1/levels.dat:33277
+#: data/storyline/act1/levels.dat:33598
 msgid "Beatings will continue until morale improves."
 msgstr "Les raclées vont continuer jusqu'à ce que la morale s'améliore."
 
-#: data/storyline/act1/levels.dat:33280 data/storyline/act1/levels.dat:67029
+#: data/storyline/act1/levels.dat:33601 data/storyline/act1/levels.dat:67367
 msgid "!"
 msgstr "!"
 
-#: data/storyline/act1/levels.dat:33283
+#: data/storyline/act1/levels.dat:33604
 msgid "Don't waste your time reading signs. Work!"
 msgstr "Ne perdez pas votre temps à lire des panneaux. Au travail !"
 
-#: data/storyline/act1/levels.dat:33286
+#: data/storyline/act1/levels.dat:33607
 msgid "Server room"
 msgstr "Salle Serveur"
 
-#: data/storyline/act1/levels.dat:33289
+#: data/storyline/act1/levels.dat:33610
 msgid "Offices - this way"
 msgstr "Bureaux - Par là"
 
-#: data/storyline/act1/levels.dat:33292
+#: data/storyline/act1/levels.dat:33613
 msgid "Slalom"
 msgstr "Slalom"
 
-#: data/storyline/act1/levels.dat:33295
+#: data/storyline/act1/levels.dat:33616
 msgid "Outdoor track"
 msgstr "Piste extérieure"
 
-#: data/storyline/act1/levels.dat:33298
+#: data/storyline/act1/levels.dat:33619
 msgid "Accessing computers"
 msgstr "Accès aux ordinateurs"
 
-#: data/storyline/act1/levels.dat:33301
+#: data/storyline/act1/levels.dat:33622
 msgid "Passing doors I"
 msgstr "Passage des portes I"
 
-#: data/storyline/act1/levels.dat:33304
+#: data/storyline/act1/levels.dat:33625
 msgid "Passing doors II"
 msgstr "Passage des portes II"
 
-#: data/storyline/act1/levels.dat:33307
+#: data/storyline/act1/levels.dat:33628
 msgid "To MegaSys office"
 msgstr "Vers le bureau de MegaSys"
 
-#: data/storyline/act1/levels.dat:33310
+#: data/storyline/act1/levels.dat:33631
 msgid "For service: wait"
 msgstr "Pour le service : en attente"
 
-#: data/storyline/act1/levels.dat:33313
+#: data/storyline/act1/levels.dat:33634
 msgid "Today's special: Foobar"
 msgstr "Offre du jour : Foobar"
 
-#: data/storyline/act1/levels.dat:33316
+#: data/storyline/act1/levels.dat:33637
 msgid "We recommend: Quxbaz"
 msgstr "Notre recommandation : Quxbaz"
 
-#: data/storyline/act1/levels.dat:33319 data/storyline/act1/levels.dat:33322
+#: data/storyline/act1/levels.dat:33640 data/storyline/act1/levels.dat:33643
 msgid "In case of boredom turn gun on."
 msgstr "En cas d'ennui, utiliser votre arme."
 
-#: data/storyline/act1/levels.dat:33328
+#: data/storyline/act1/levels.dat:33649
 msgid "Authorized personnel only!"
 msgstr "Personnel autorisé uniquement !"
 
-#: data/storyline/act1/levels.dat:33346
+#: data/storyline/act1/levels.dat:33667
 msgid "If the gate is closed, please ask the office for access."
 msgstr "Si la porte est fermée, demander l'accès au bureau."
 
-#: data/storyline/act1/levels.dat:33608
+#: data/storyline/act1/levels.dat:33929
 msgid "Johns Riddle"
 msgstr "Johns Riddle"
 
-#: data/storyline/act1/levels.dat:33748
+#: data/storyline/act1/levels.dat:34069
 msgid "Looking from above, hostiles may appear as salvation."
 msgstr "Vue d'assez loin, l'hostilité peut ressembler au salut."
 
-#: data/storyline/act1/levels.dat:33790
+#: data/storyline/act1/levels.dat:34111
 msgid "Crystal Caves"
 msgstr "Cavernes de Cristal"
 
-#: data/storyline/act1/levels.dat:36244
+#: data/storyline/act1/levels.dat:36565
 msgid "Forgotten bunker"
 msgstr "Bunker oublié"
 
-#: data/storyline/act1/levels.dat:36445
+#: data/storyline/act1/levels.dat:36766
 msgid "Secret research center"
 msgstr "Centre de recherche secret"
 
-#: data/storyline/act1/levels.dat:37711
+#: data/storyline/act1/levels.dat:38032
 msgid "Stop!"
 msgstr "Stop !"
 
-#: data/storyline/act1/levels.dat:37714
+#: data/storyline/act1/levels.dat:38035
 msgid "I warned you... You should consider turning back and running away screaming."
 msgstr "Je t'aurai prévenu... Tu ferais mieux de faire demi-tour et de t'enfuir en hurlant."
 
-#: data/storyline/act1/levels.dat:37816
+#: data/storyline/act1/levels.dat:38137
 msgid "Secret area service tunnels"
 msgstr "Tunnels de service de la zone secrète."
 
-#: data/storyline/act1/levels.dat:38056
+#: data/storyline/act1/levels.dat:38377
 msgid "Tutorial"
 msgstr "Tutoriel"
 
-#: data/storyline/act1/levels.dat:38976
+#: data/storyline/act1/levels.dat:39297
 msgid "Welcome to FreedroidRPG!"
 msgstr "Bienvenue à FreedroidRPG !"
 
-#: data/storyline/act1/levels.dat:40446
+#: data/storyline/act1/levels.dat:40767
 msgid "Forgotten Portal"
 msgstr "Le portail oublié"
 
-#: data/storyline/act1/levels.dat:41019
+#: data/storyline/act1/levels.dat:41342
 msgid "Old abandoned complex"
 msgstr "Vieux complexe à l'abandon"
 
-#: data/storyline/act1/levels.dat:41133 data/storyline/act1/levels.dat:41287
-#: data/storyline/act1/levels.dat:56705 data/storyline/act1/levels.dat:63569
-#: data/storyline/act1/levels.dat:64226 data/storyline/act1/levels.dat:64441
-#: data/storyline/act1/levels.dat:64566 data/storyline/act1/levels.dat:65127
-#: data/storyline/act1/levels.dat:65477 data/storyline/act1/levels.dat:65805
+#: data/storyline/act1/levels.dat:41456 data/storyline/act1/levels.dat:41610
+#: data/storyline/act1/levels.dat:57032 data/storyline/act1/levels.dat:63906
+#: data/storyline/act1/levels.dat:64563 data/storyline/act1/levels.dat:64778
+#: data/storyline/act1/levels.dat:64903 data/storyline/act1/levels.dat:65464
+#: data/storyline/act1/levels.dat:65814 data/storyline/act1/levels.dat:66142
 msgid "World Edge"
 msgstr "Rebord du monde"
 
-#: data/storyline/act1/levels.dat:41532
+#: data/storyline/act1/levels.dat:41855
 msgid "Worker Mines Entrance"
 msgstr "Entrée des mineurs"
 
-#: data/storyline/act1/levels.dat:42268 data/storyline/act1/levels.dat:42623
+#: data/storyline/act1/levels.dat:42595 data/storyline/act1/levels.dat:42950
 msgid "Southern Shoreline"
 msgstr "Berge Sud"
 
-#: data/storyline/act1/levels.dat:43219
+#: data/storyline/act1/levels.dat:43546
 msgid "HF North Perimeter Defense Structure"
 msgstr "Structure de Défense du Périmètre Nord de la FI"
 
-#: data/storyline/act1/levels.dat:43979
+#: data/storyline/act1/levels.dat:44306
 msgid "Factory Entrance"
 msgstr "Entrée de l'Usine"
 
-#: data/storyline/act1/levels.dat:47100
+#: data/storyline/act1/levels.dat:47427
 msgid "Power Station and Worker District"
 msgstr "Groupe électrogène et Cité Ouvrière"
 
-#: data/storyline/act1/levels.dat:49474 data/storyline/act1/levels.dat:49477
+#: data/storyline/act1/levels.dat:49801 data/storyline/act1/levels.dat:49804
 msgid "Power generator, don't change settings!"
 msgstr "Générateur de puissance, ne pas changer les réglages !"
 
-#: data/storyline/act1/levels.dat:49480
+#: data/storyline/act1/levels.dat:49807
 msgid "Insert coin!!!!"
 msgstr "Insérer une pièce !!!!"
 
-#: data/storyline/act1/levels.dat:49483
+#: data/storyline/act1/levels.dat:49810
 msgid "You always loose? Play again, I am sure you'll win next time!"
 msgstr "Tu perds tout le temps ? Essaye encore, je suis sûr que tu gagneras la prochaine fois !"
 
-#: data/storyline/act1/levels.dat:49486
+#: data/storyline/act1/levels.dat:49813
 msgid "This is only decoration for good atmosphere. Don't cut plastic lawn!"
 msgstr "C'est de la décoration pour donner une ambiance agréable. Ne pas tondre la pelouse en plastique !"
 
-#: data/storyline/act1/levels.dat:49489
+#: data/storyline/act1/levels.dat:49816
 msgid "Plastic leaves, do not eat!"
 msgstr "Feuilles plastiques, ne pas manger !"
 
-#: data/storyline/act1/levels.dat:49492
+#: data/storyline/act1/levels.dat:49819
 msgid "Caution: nothing. - There is absolutely nothing dangerous in the area!"
 msgstr "Avertissement : aucun - Il n'y a absolument rien de dangereux dans cette zone !"
 
-#: data/storyline/act1/levels.dat:49495
+#: data/storyline/act1/levels.dat:49822
 msgid "Stepping on this pad will affect absolutely nothing. LOL!"
 msgstr "Marcher sur ce bloc ne produira absolument aucun effet. MDR !"
 
-#: data/storyline/act1/levels.dat:49781
+#: data/storyline/act1/levels.dat:50108
 msgid "Factory Core"
 msgstr "Cœur de l'Usine"
 
-#: data/storyline/act1/levels.dat:53223
+#: data/storyline/act1/levels.dat:53550
 msgid "Research Centre"
 msgstr "Centre de Recherche"
 
-#: data/storyline/act1/levels.dat:56406
+#: data/storyline/act1/levels.dat:56733
 msgid "Worker 1"
 msgstr "Ouvrier 1"
 
-#: data/storyline/act1/levels.dat:56409
+#: data/storyline/act1/levels.dat:56736
 msgid "Worker 2"
 msgstr "Ouvrier 2"
 
-#: data/storyline/act1/levels.dat:56412
+#: data/storyline/act1/levels.dat:56739
 msgid "Worker 3"
 msgstr "Ouvrier 3"
 
-#: data/storyline/act1/levels.dat:56415
+#: data/storyline/act1/levels.dat:56742
 msgid "Worker 4"
 msgstr "Ouvrier 4"
 
-#: data/storyline/act1/levels.dat:56418
+#: data/storyline/act1/levels.dat:56745
 msgid "Please don't talk, sing, take any drugs or write on walls in there!"
 msgstr "Merci de ne pas parler, chanter, prendre des drogues ou écrire sur les murs dans cet endroit !"
 
-#: data/storyline/act1/levels.dat:56421
+#: data/storyline/act1/levels.dat:56748
 msgid "Don't touch the fence, there are more efficient ways to waste energy here."
 msgstr "Ne pas toucher la clôture, il y a par ici des moyens plus efficaces pour perdre de l'énergie."
 
-#: data/storyline/act1/levels.dat:56424
+#: data/storyline/act1/levels.dat:56751
 msgid "I have no idea what this red thing is, but it looks pretty cool."
 msgstr "Je n'ai aucune idée de ce que cette chose rouge peut être, mais elle est plutôt charmante."
 
-#: data/storyline/act1/levels.dat:56860
+#: data/storyline/act1/levels.dat:57187
 msgid "Machine Deck Upper Catacombs"
 msgstr "Catacombes Hautes du Pont des Machines"
 
-#: data/storyline/act1/levels.dat:56974
+#: data/storyline/act1/levels.dat:57301
 msgid "Machine Deck Lower Catacombs"
 msgstr "Catacombes Basses du Pont des Machines"
 
-#: data/storyline/act1/levels.dat:57088
+#: data/storyline/act1/levels.dat:57415
 msgid "Freight Station"
 msgstr "Gare de Fret"
 
-#: data/storyline/act1/levels.dat:58576
+#: data/storyline/act1/levels.dat:58903
 msgid "Old Server Room"
 msgstr "Ancienne salle des serveurs"
 
-#: data/storyline/act1/levels.dat:59492
+#: data/storyline/act1/levels.dat:59825
 msgid "Factory Office"
 msgstr "Bureau de l'Usine"
 
-#: data/storyline/act1/levels.dat:63278
+#: data/storyline/act1/levels.dat:63615
 msgid "Strange Dungeon"
 msgstr "Drôle de Dongeon"
 
-#: data/storyline/act1/levels.dat:63902
+#: data/storyline/act1/levels.dat:64239
 msgid "Landing Zone"
 msgstr "Piste d'Atterrissage"
 
-#: data/storyline/act1/levels.dat:65998
+#: data/storyline/act1/levels.dat:66335
 msgid "Shelter"
 msgstr "Abri"
 
-#: data/storyline/act1/levels.dat:66115
+#: data/storyline/act1/levels.dat:66452
 msgid "DEBUG LEVEL 70 -- This level was created to make testing of FreedroidRPG a little easier and is NOT meant to be accessible without cheating."
 msgstr "DEBUG LEVEL 70 -- Ce niveau a été crée pour rendre les tests de FreedroidRPG un peu plus facile et n'est PAS censé être accessible sans tricher."
 
-#: data/storyline/act1/levels.dat:67026
+#: data/storyline/act1/levels.dat:67364
 msgid "?"
 msgstr "?"
 
-#: data/storyline/act1/levels.dat:67032
+#: data/storyline/act1/levels.dat:67370
 msgid "<"
 msgstr "<"
 
-#: data/storyline/act1/levels.dat:67035
+#: data/storyline/act1/levels.dat:67373
 msgid "? (flashing)"
 msgstr "? (clignotant)"
 
-#: data/storyline/act1/levels.dat:67038
+#: data/storyline/act1/levels.dat:67376
 msgid "! (flashing)"
 msgstr "! (clignotant)"
 
-#: data/storyline/act1/levels.dat:67041
+#: data/storyline/act1/levels.dat:67379
 msgid "< (flashing)"
 msgstr "< (clignotant)"
 
-#: data/storyline/act1/levels.dat:67067
+#: data/storyline/act1/levels.dat:67405
 msgid "Empty Sea"
 msgstr "Mer asséchée"
 
-#: data/storyline/act1/levels.dat:67229
+#: data/storyline/act1/levels.dat:67567
 msgid "Omega Island"
 msgstr "Îles Omega"
 
-#: data/storyline/act1/levels.dat:67759
+#: data/storyline/act1/levels.dat:68097
 msgid "Beginning of new continent"
 msgstr "Début du nouveau continent"
 
-#: data/storyline/act1/levels.dat:68162
+#: data/storyline/act1/levels.dat:68500
 msgid "Continent Separator"
 msgstr "Séparation de continent"
 
@@ -3585,7 +3609,7 @@ msgstr "Tybalt – Garde de la citadelle"
 
 #: data/storyline/act1/npc_specs.lua:9
 msgid "Tutorial Tom"
-msgstr "Tutorial Tom"
+msgstr "Tom Tutoriel"
 
 #: data/storyline/act1/npc_specs.lua:11
 msgid "Red Guard Escort"
@@ -3607,177 +3631,186 @@ msgstr "Stone – Propriétaire du magasin"
 msgid "Lily Stone - Shop owner"
 msgstr "Lily Stone – Propriétaire du magasin"
 
-#: data/storyline/act1/npc_specs.lua:22
+#: data/storyline/act1/npc_specs.lua:23
 msgid "Sorenson - Mystery coder"
 msgstr "Sorenson - Mystérieuse programmeuse"
 
-#: data/storyline/act1/npc_specs.lua:23
+#: data/storyline/act1/npc_specs.lua:24
 msgid "Skippy - Map-Maker Maker"
 msgstr "Skippy - Fabricant de générateur de carte"
 
-#: data/storyline/act1/npc_specs.lua:27
+#: data/storyline/act1/npc_specs.lua:28
 msgid "Scavenger Bot"
 msgstr "Robot charognard"
 
-#: data/storyline/act1/npc_specs.lua:28
-#: data/storyline/act1/ReturnOfTux.droids:36
-msgid "Coder"
-msgstr "Codeur"
-
-#: data/storyline/act1/npc_specs.lua:28
-msgid "Samson, the Coder"
+#: data/storyline/act1/npc_specs.lua:29
+#: data/storyline/act1/ReturnOfTux.droids:439
+msgid "Saul"
 msgstr ""
 
 #: data/storyline/act1/npc_specs.lua:29
+msgid "Saul, leader of the Resistance"
+msgstr ""
+
+#: data/storyline/act1/npc_specs.lua:30
+#: data/storyline/act1/ReturnOfTux.droids:35
+msgid "Coder"
+msgstr "Codeur"
+
+#: data/storyline/act1/npc_specs.lua:30
+msgid "Samson, the Coder"
+msgstr "Samson, le codeur"
+
+#: data/storyline/act1/npc_specs.lua:31
 msgid "SADD - Exterminate Mode"
 msgstr "DDAS – Mode extermination"
 
-#: data/storyline/act1/npc_specs.lua:29
+#: data/storyline/act1/npc_specs.lua:31
 msgid "SADD - Secret Area Defense Droid"
 msgstr "DDAS - Droïde de Défense de  l'Aire Secrète"
 
-#: data/storyline/act1/npc_specs.lua:31
+#: data/storyline/act1/npc_specs.lua:33
 msgid "Richard - Programmer"
 msgstr "Richard - Programmeur"
 
-#: data/storyline/act1/npc_specs.lua:33
+#: data/storyline/act1/npc_specs.lua:35
 msgid "Fighter"
 msgstr "Combattant"
 
-#: data/storyline/act1/npc_specs.lua:33
+#: data/storyline/act1/npc_specs.lua:35
 msgid "Pendragon - Fighter"
 msgstr "Pendragon - Combattant"
 
-#: data/storyline/act1/npc_specs.lua:40
+#: data/storyline/act1/npc_specs.lua:42
 msgid "Michelangelo - Chef"
 msgstr "Michelangelo - Chef cuistot"
 
-#: data/storyline/act1/npc_specs.lua:44
+#: data/storyline/act1/npc_specs.lua:46
 #: data/storyline/act1/ReturnOfTux.droids:339
 msgid "Koan"
 msgstr "Koan"
 
-#: data/storyline/act1/npc_specs.lua:46
+#: data/storyline/act1/npc_specs.lua:48
 msgid "614 - Kevin's Guard"
 msgstr "614 - Vigile de Kevin"
 
-#: data/storyline/act1/npc_specs.lua:47
+#: data/storyline/act1/npc_specs.lua:49
 msgid "Kevin - Hacker"
 msgstr "Kevin - Hackeur"
 
-#: data/storyline/act1/npc_specs.lua:48
+#: data/storyline/act1/npc_specs.lua:50
 msgid "Karol - Shop owner"
 msgstr "Carole - Comercente"
 
-#: data/storyline/act1/npc_specs.lua:50
+#: data/storyline/act1/npc_specs.lua:52
 msgid "Jim"
 msgstr "Jim"
 
-#: data/storyline/act1/npc_specs.lua:50
+#: data/storyline/act1/npc_specs.lua:52
 msgid "Jim - Portal Guardian"
 msgstr "Jim - Gardien des portails"
 
-#: data/storyline/act1/npc_specs.lua:52
+#: data/storyline/act1/npc_specs.lua:54
 msgid "Jasmine"
 msgstr "Jasmine"
 
-#: data/storyline/act1/npc_specs.lua:52
+#: data/storyline/act1/npc_specs.lua:54
 msgid "Jasmine - Girlfriend of a true Hacker"
 msgstr "Jasmine – La copine d'un vrai Hacker"
 
-#: data/storyline/act1/npc_specs.lua:53
+#: data/storyline/act1/npc_specs.lua:55
 msgid "Iris"
 msgstr "Iris"
 
-#: data/storyline/act1/npc_specs.lua:53
+#: data/storyline/act1/npc_specs.lua:55
 msgid "Iris - treasure hunter"
-msgstr ""
+msgstr "Iris - chasseuse de trésors"
 
-#: data/storyline/act1/npc_specs.lua:57
+#: data/storyline/act1/npc_specs.lua:59
 msgid "Geist - Hunter"
 msgstr "Geist - Chasseur"
 
-#: data/storyline/act1/npc_specs.lua:58
+#: data/storyline/act1/npc_specs.lua:60
 msgid "Dr. Francis - Cryonicist"
 msgstr "Dr. Francis - Cryogéniste"
 
-#: data/storyline/act1/npc_specs.lua:61
+#: data/storyline/act1/npc_specs.lua:63
 msgid "Ewald - Barkeeper"
 msgstr "Ewald – Tenancier"
 
-#: data/storyline/act1/npc_specs.lua:62
+#: data/storyline/act1/npc_specs.lua:64
 msgid "Erin - bot hunter"
-msgstr ""
+msgstr "Erin - chasseuse de robots"
 
-#: data/storyline/act1/npc_specs.lua:62
+#: data/storyline/act1/npc_specs.lua:64
 msgid "Bot hunter"
-msgstr ""
+msgstr "Chasseur de robots"
 
-#: data/storyline/act1/npc_specs.lua:63
+#: data/storyline/act1/npc_specs.lua:65
 msgid "Engel - Hunter"
 msgstr "Engel - Chasseur"
 
-#: data/storyline/act1/npc_specs.lua:64
+#: data/storyline/act1/npc_specs.lua:66
 msgid "Duncan - Bombmaker"
 msgstr "Duncan – Artificier"
 
-#: data/storyline/act1/npc_specs.lua:69
+#: data/storyline/act1/npc_specs.lua:71
 msgid "Doc Moore - Medic"
 msgstr "Doc Moore – Médecin"
 
-#: data/storyline/act1/npc_specs.lua:70
+#: data/storyline/act1/npc_specs.lua:72
 msgid "Dixon - Mechanic"
 msgstr "Dixon – Mécanicien"
 
-#: data/storyline/act1/npc_specs.lua:72
-#: data/storyline/act1/ReturnOfTux.droids:584
+#: data/storyline/act1/npc_specs.lua:74
 #: data/storyline/act1/ReturnOfTux.droids:585
 #: data/storyline/act1/ReturnOfTux.droids:586
 #: data/storyline/act1/ReturnOfTux.droids:587
+#: data/storyline/act1/ReturnOfTux.droids:588
 msgid "Cult Member"
 msgstr "Member de secte"
 
-#: data/storyline/act1/npc_specs.lua:75
+#: data/storyline/act1/npc_specs.lua:77
 msgid "Cerebrum - Portal Guardian"
 msgstr "Cerebrum - Gardien du portail"
 
-#: data/storyline/act1/npc_specs.lua:77
+#: data/storyline/act1/npc_specs.lua:79
 msgid "Butch - Arena Master"
 msgstr "Butch — Maître de l'arène."
 
-#: data/storyline/act1/npc_specs.lua:78
+#: data/storyline/act1/npc_specs.lua:80
 msgid "Bruce - Mine Worker"
 msgstr "Bruce – Mineur"
 
-#: data/storyline/act1/npc_specs.lua:80
+#: data/storyline/act1/npc_specs.lua:82
 msgid "Bob"
 msgstr "Bob"
 
-#: data/storyline/act1/npc_specs.lua:80
+#: data/storyline/act1/npc_specs.lua:82
 msgid "Bob - Gate Guardian"
 msgstr "Bob - Gardien des portails"
 
-#: data/storyline/act1/npc_specs.lua:81
+#: data/storyline/act1/npc_specs.lua:83
 msgid "Benjamin - Gunsmith"
 msgstr "Benjamin – Armurier"
 
-#: data/storyline/act1/npc_specs.lua:82
+#: data/storyline/act1/npc_specs.lua:84
 msgid "Bender"
 msgstr "Bender"
 
-#: data/storyline/act1/npc_specs.lua:82
+#: data/storyline/act1/npc_specs.lua:84
 msgid "Bender - The strongest one"
 msgstr "Bender - l'homme le plus fort du monde."
 
-#: data/storyline/act1/npc_specs.lua:83
+#: data/storyline/act1/npc_specs.lua:85
 msgid "Arthur"
 msgstr "Arthur"
 
-#: data/storyline/act1/npc_specs.lua:83
+#: data/storyline/act1/npc_specs.lua:85
 msgid "Arthur - Game developer"
 msgstr "Arthur - Concepteur de jeux"
 
-#: data/storyline/act1/npc_specs.lua:87
+#: data/storyline/act1/npc_specs.lua:89
 msgid "614 - Cryo Lab Guard Bot"
 msgstr "614 - Robot gardien du labo de cryogennie"
 
@@ -3847,7 +3880,7 @@ msgstr "Propagation d'une mise-à-jour malveillante du firmware"
 
 #: data/storyline/act1/quests.lua:94
 msgid "A New Mission From Spencer"
-msgstr ""
+msgstr "Une nouvelle mission de Baptiste"
 
 #: data/storyline/act1/quests.lua:98
 msgid "SADD's power supply"
@@ -3895,7 +3928,7 @@ msgstr "Tutoriel de déplacement"
 
 #: data/storyline/act1/quests.lua:141
 msgid "Tutorial Melee"
-msgstr "Un cours sur le combat de mêlée."
+msgstr "Un cours sur le combat de mêlée"
 
 #: data/storyline/act1/quests.lua:145
 msgid "Melee droids destroyed!"
@@ -3949,35 +3982,31 @@ msgstr "L'ancienne salle de serveur est maintenant sécurisée."
 msgid "An Explosive Situation"
 msgstr "Une solution explosive"
 
-#: data/storyline/act1/quests.lua:195
-msgid "Not only is the town safe, but apparently so is Ewald's 296 droid. Oh joy."
-msgstr "Non seulement la ville est sauve, mais apparemment le droid 296 d' Ewald aussi. Oh joie."
-
-#: data/storyline/act1/quests.lua:199
+#: data/storyline/act1/quests.lua:196
 msgid "Open Sesame"
 msgstr "Sésame ouvres-toi"
 
-#: data/storyline/act1/quests.lua:203
+#: data/storyline/act1/quests.lua:200
 msgid "Jennifer's Toolbox"
 msgstr "La boîte à outils de Jennifer"
 
-#: data/storyline/act1/quests.lua:207
+#: data/storyline/act1/quests.lua:204
 msgid "24_label_test_quest"
 msgstr "24_label_test_quest"
 
-#: data/storyline/act1/quests.lua:211
+#: data/storyline/act1/quests.lua:208
 msgid "24_dude_test_quest"
 msgstr "24_dude_test_quest"
 
-#: data/storyline/act1/quests.lua:215
+#: data/storyline/act1/quests.lua:212
 msgid "24_guy_death_quest"
 msgstr "24_guy_death_quest"
 
-#: data/storyline/act1/quests.lua:223
+#: data/storyline/act1/quests.lua:220
 msgid "Ticket's price - crystal"
-msgstr ""
+msgstr "Prix des tickets - cristal"
 
-#: data/storyline/act1/quests.lua:231
+#: data/storyline/act1/quests.lua:228
 msgid "Bot in need"
 msgstr "Robot dans le besoin"
 
@@ -3998,12 +4027,12 @@ msgid "Barkeeper"
 msgstr "Tenancier de bar"
 
 #: data/storyline/act1/ReturnOfTux.droids:8
-#: data/storyline/act1/ReturnOfTux.droids:11
-#: data/storyline/act1/ReturnOfTux.droids:13
+#: data/storyline/act1/ReturnOfTux.droids:12
+#: data/storyline/act1/ReturnOfTux.droids:16
 #: data/storyline/act1/ReturnOfTux.droids:17
-#: data/storyline/act1/ReturnOfTux.droids:18
-#: data/storyline/act1/ReturnOfTux.droids:30
-#: data/storyline/act1/ReturnOfTux.droids:32
+#: data/storyline/act1/ReturnOfTux.droids:29
+#: data/storyline/act1/ReturnOfTux.droids:31
+#: data/storyline/act1/ReturnOfTux.droids:299
 #: data/storyline/act1/ReturnOfTux.droids:417
 #: data/storyline/act1/ReturnOfTux.droids:418
 msgid "Red Guard Member"
@@ -4017,82 +4046,83 @@ msgstr "Lucas - Responsable de l'armurerie"
 msgid "Spencer - Leader of the Red Guard"
 msgstr "Baptiste - Chef de la Garde Rouge"
 
-#: data/storyline/act1/ReturnOfTux.droids:14
+#: data/storyline/act1/ReturnOfTux.droids:13
 msgid "Sketchy Guy"
 msgstr "Mec banal"
 
-#: data/storyline/act1/ReturnOfTux.droids:15
+#: data/storyline/act1/ReturnOfTux.droids:14
 msgid "Guy with Hat"
 msgstr "Gars au chapeau"
 
-#: data/storyline/act1/ReturnOfTux.droids:19
+#: data/storyline/act1/ReturnOfTux.droids:18
 msgid "*nix Admin"
 msgstr "Adminisrtateur *nix"
 
+#: data/storyline/act1/ReturnOfTux.droids:19
 #: data/storyline/act1/ReturnOfTux.droids:20
-#: data/storyline/act1/ReturnOfTux.droids:21
 msgid "614 - Patrolling Guard Bot"
 msgstr "614 - Robot gardien patrouilleur"
 
-#: data/storyline/act1/ReturnOfTux.droids:22
+#: data/storyline/act1/ReturnOfTux.droids:21
 msgid "614 - East Gate Guard Bot"
 msgstr "614 - Robot gardien de la porte est"
 
+#: data/storyline/act1/ReturnOfTux.droids:22
 #: data/storyline/act1/ReturnOfTux.droids:23
-#: data/storyline/act1/ReturnOfTux.droids:24
 msgid "614 - South Gate Guard Bot"
 msgstr "614 - Robot gardien de la porte sud"
 
-#: data/storyline/act1/ReturnOfTux.droids:25
+#: data/storyline/act1/ReturnOfTux.droids:24
 msgid "614 - North Gate Guard Bot"
 msgstr "614 - Robot gardien de la porte nord"
 
-#: data/storyline/act1/ReturnOfTux.droids:26
+#: data/storyline/act1/ReturnOfTux.droids:25
 msgid "COBOL Programmer"
 msgstr "Programmeur COBOL "
 
-#: data/storyline/act1/ReturnOfTux.droids:27
-#: data/storyline/act1/ReturnOfTux.droids:471
+#: data/storyline/act1/ReturnOfTux.droids:26
+#: data/storyline/act1/ReturnOfTux.droids:472
 msgid "Shopowner"
 msgstr "Propriétaire de magasin"
 
-#: data/storyline/act1/ReturnOfTux.droids:28
+#: data/storyline/act1/ReturnOfTux.droids:27
 msgid "Medic"
 msgstr "Toubib"
 
-#: data/storyline/act1/ReturnOfTux.droids:29
+#: data/storyline/act1/ReturnOfTux.droids:28
 msgid "Chandra - Town Sage"
 msgstr "Chandra - Sage de la ville"
 
-#: data/storyline/act1/ReturnOfTux.droids:31
+#: data/storyline/act1/ReturnOfTux.droids:30
 msgid "Town Teleporter Guard"
 msgstr "Garde du téléporteur de la ville"
 
-#: data/storyline/act1/ReturnOfTux.droids:33
+#: data/storyline/act1/ReturnOfTux.droids:32
 msgid "Gate Guardhouse Guard"
 msgstr "Garde de la porte de l'entrepôt"
 
-#: data/storyline/act1/ReturnOfTux.droids:34
+#: data/storyline/act1/ReturnOfTux.droids:33
 msgid "North Gate Guard"
 msgstr "Garde de la porte nord"
 
-#: data/storyline/act1/ReturnOfTux.droids:35
+#: data/storyline/act1/ReturnOfTux.droids:34
 #: data/storyline/act1/ReturnOfTux.droids:390
 msgid "???"
 msgstr "???"
 
-#: data/storyline/act1/ReturnOfTux.droids:47
+#: data/storyline/act1/ReturnOfTux.droids:46
 msgid "Dark Apprentice of MegaSys"
 msgstr "Apprenti ténébreux de MegaSys"
 
-#: data/storyline/act1/ReturnOfTux.droids:58
+#: data/storyline/act1/ReturnOfTux.droids:57
 msgid "DSB Control Terminal Guard"
 msgstr "Garde du Terminal de Contrôle de la BBD"
 
-#: data/storyline/act1/ReturnOfTux.droids:69
+#: data/storyline/act1/ReturnOfTux.droids:68
 msgid "MS Emissary"
 msgstr "Ambassadeur de MS"
 
+#: data/storyline/act1/ReturnOfTux.droids:69
 #: data/storyline/act1/ReturnOfTux.droids:70
 #: data/storyline/act1/ReturnOfTux.droids:71
 #: data/storyline/act1/ReturnOfTux.droids:72
@@ -4113,231 +4143,230 @@ msgstr "Ambassadeur de MS"
 #: data/storyline/act1/ReturnOfTux.droids:87
 #: data/storyline/act1/ReturnOfTux.droids:88
 #: data/storyline/act1/ReturnOfTux.droids:89
-#: data/storyline/act1/ReturnOfTux.droids:90
 msgid "Singularity Drone"
 msgstr "Drone de Singularité"
 
-#: data/storyline/act1/ReturnOfTux.droids:91
+#: data/storyline/act1/ReturnOfTux.droids:90
 msgid "The Singularity"
 msgstr "La singularité"
 
+#: data/storyline/act1/ReturnOfTux.droids:101
 #: data/storyline/act1/ReturnOfTux.droids:102
-#: data/storyline/act1/ReturnOfTux.droids:103
 msgid "Blue Guy"
 msgstr "Mec déprimé"
 
-#: data/storyline/act1/ReturnOfTux.droids:129
+#: data/storyline/act1/ReturnOfTux.droids:128
 msgid "Invading Robot"
 msgstr "Robot envahisseur"
 
-#: data/storyline/act1/ReturnOfTux.droids:130
+#: data/storyline/act1/ReturnOfTux.droids:129
 msgid "614 - Friendly Robot"
 msgstr "614 -- Robot amical"
 
-#: data/storyline/act1/ReturnOfTux.droids:131
+#: data/storyline/act1/ReturnOfTux.droids:130
 msgid "Old Guy"
 msgstr "Vieux mec"
 
-#: data/storyline/act1/ReturnOfTux.droids:137
+#: data/storyline/act1/ReturnOfTux.droids:136
 msgid "Friendly 296"
 msgstr "296 Amical"
 
+#: data/storyline/act1/ReturnOfTux.droids:161
 #: data/storyline/act1/ReturnOfTux.droids:162
 #: data/storyline/act1/ReturnOfTux.droids:163
 #: data/storyline/act1/ReturnOfTux.droids:164
-#: data/storyline/act1/ReturnOfTux.droids:165
 msgid "Prisoner"
 msgstr "Prisonier"
 
-#: data/storyline/act1/ReturnOfTux.droids:166
+#: data/storyline/act1/ReturnOfTux.droids:165
 msgid "Lawn Mower"
 msgstr "Tondeuse"
 
-#: data/storyline/act1/ReturnOfTux.droids:167
+#: data/storyline/act1/ReturnOfTux.droids:166
 msgid "Cute Girl"
 msgstr "Mignonette"
 
-#: data/storyline/act1/ReturnOfTux.droids:168
+#: data/storyline/act1/ReturnOfTux.droids:167
 msgid "Kevin"
 msgstr "Kevin"
 
-#: data/storyline/act1/ReturnOfTux.droids:169
+#: data/storyline/act1/ReturnOfTux.droids:168
 msgid "Stolen 614"
 msgstr "614 Volé"
 
-#: data/storyline/act1/ReturnOfTux.droids:205
+#: data/storyline/act1/ReturnOfTux.droids:204
 msgid "GUN"
 msgstr "GUN"
 
-#: data/storyline/act1/ReturnOfTux.droids:206
+#: data/storyline/act1/ReturnOfTux.droids:205
 msgid "FEM"
 msgstr "FEM"
 
-#: data/storyline/act1/ReturnOfTux.droids:207
+#: data/storyline/act1/ReturnOfTux.droids:206
 msgid "543"
 msgstr "543"
 
-#: data/storyline/act1/ReturnOfTux.droids:208
+#: data/storyline/act1/ReturnOfTux.droids:207
 msgid "BAR"
 msgstr "BAR"
 
-#: data/storyline/act1/ReturnOfTux.droids:209
+#: data/storyline/act1/ReturnOfTux.droids:208
 msgid "TAN"
 msgstr "TAN"
 
-#: data/storyline/act1/ReturnOfTux.droids:210
+#: data/storyline/act1/ReturnOfTux.droids:209
 msgid "JAS"
 msgstr "JAS"
 
-#: data/storyline/act1/ReturnOfTux.droids:211
+#: data/storyline/act1/ReturnOfTux.droids:210
 msgid "KEV"
 msgstr "KEV"
 
-#: data/storyline/act1/ReturnOfTux.droids:212
+#: data/storyline/act1/ReturnOfTux.droids:211
 msgid "COO"
 msgstr "COO"
 
-#: data/storyline/act1/ReturnOfTux.droids:213
+#: data/storyline/act1/ReturnOfTux.droids:212
 msgid "GUB"
 msgstr "GUB"
 
-#: data/storyline/act1/ReturnOfTux.droids:214
+#: data/storyline/act1/ReturnOfTux.droids:213
 msgid "WOR"
 msgstr "WOR"
 
-#: data/storyline/act1/ReturnOfTux.droids:216
+#: data/storyline/act1/ReturnOfTux.droids:215
 msgid "MUM"
 msgstr "MUM"
 
-#: data/storyline/act1/ReturnOfTux.droids:217
+#: data/storyline/act1/ReturnOfTux.droids:216
 msgid "DIX"
 msgstr "DIX"
 
-#: data/storyline/act1/ReturnOfTux.droids:218
+#: data/storyline/act1/ReturnOfTux.droids:217
 msgid "GUA"
 msgstr "GUA"
 
-#: data/storyline/act1/ReturnOfTux.droids:219
+#: data/storyline/act1/ReturnOfTux.droids:218
 msgid "DOC"
 msgstr "DOC"
 
-#: data/storyline/act1/ReturnOfTux.droids:220
+#: data/storyline/act1/ReturnOfTux.droids:219
 msgid "PRO"
 msgstr "PRO"
 
-#: data/storyline/act1/ReturnOfTux.droids:221
+#: data/storyline/act1/ReturnOfTux.droids:220
 msgid "999"
 msgstr "999"
 
-#: data/storyline/act1/ReturnOfTux.droids:222
+#: data/storyline/act1/ReturnOfTux.droids:221
 msgid "883"
 msgstr "883"
 
-#: data/storyline/act1/ReturnOfTux.droids:223
+#: data/storyline/act1/ReturnOfTux.droids:222
 msgid "834"
 msgstr "834"
 
-#: data/storyline/act1/ReturnOfTux.droids:224
+#: data/storyline/act1/ReturnOfTux.droids:223
 msgid "821"
 msgstr "821"
 
-#: data/storyline/act1/ReturnOfTux.droids:226
+#: data/storyline/act1/ReturnOfTux.droids:225
 msgid "742"
 msgstr "742"
 
-#: data/storyline/act1/ReturnOfTux.droids:227
+#: data/storyline/act1/ReturnOfTux.droids:226
 msgid "711"
 msgstr "711"
 
-#: data/storyline/act1/ReturnOfTux.droids:228
+#: data/storyline/act1/ReturnOfTux.droids:227
 msgid "629"
 msgstr "629"
 
-#: data/storyline/act1/ReturnOfTux.droids:229
+#: data/storyline/act1/ReturnOfTux.droids:228
 msgid "615"
 msgstr "615"
 
-#: data/storyline/act1/ReturnOfTux.droids:230
+#: data/storyline/act1/ReturnOfTux.droids:229
 msgid "614"
 msgstr "614"
 
-#: data/storyline/act1/ReturnOfTux.droids:231
+#: data/storyline/act1/ReturnOfTux.droids:230
 msgid "603"
 msgstr "603"
 
-#: data/storyline/act1/ReturnOfTux.droids:232
+#: data/storyline/act1/ReturnOfTux.droids:231
 msgid "598"
 msgstr "598"
 
-#: data/storyline/act1/ReturnOfTux.droids:233
+#: data/storyline/act1/ReturnOfTux.droids:232
 msgid "571"
 msgstr "571"
 
-#: data/storyline/act1/ReturnOfTux.droids:234
+#: data/storyline/act1/ReturnOfTux.droids:233
 msgid "516"
 msgstr "516"
 
-#: data/storyline/act1/ReturnOfTux.droids:235
+#: data/storyline/act1/ReturnOfTux.droids:234
 msgid "493"
 msgstr "493"
 
-#: data/storyline/act1/ReturnOfTux.droids:236
+#: data/storyline/act1/ReturnOfTux.droids:235
 msgid "476"
 msgstr "476"
 
-#: data/storyline/act1/ReturnOfTux.droids:237
+#: data/storyline/act1/ReturnOfTux.droids:236
 msgid "420"
 msgstr "420"
 
-#: data/storyline/act1/ReturnOfTux.droids:238
+#: data/storyline/act1/ReturnOfTux.droids:237
 msgid "329"
 msgstr "329"
 
-#: data/storyline/act1/ReturnOfTux.droids:239
+#: data/storyline/act1/ReturnOfTux.droids:238
 msgid "302"
 msgstr "302"
 
-#: data/storyline/act1/ReturnOfTux.droids:240
+#: data/storyline/act1/ReturnOfTux.droids:239
 msgid "296"
 msgstr "296"
 
-#: data/storyline/act1/ReturnOfTux.droids:241
+#: data/storyline/act1/ReturnOfTux.droids:240
 msgid "249"
 msgstr "249"
 
-#: data/storyline/act1/ReturnOfTux.droids:242
+#: data/storyline/act1/ReturnOfTux.droids:241
 msgid "247"
 msgstr "247"
 
-#: data/storyline/act1/ReturnOfTux.droids:243
+#: data/storyline/act1/ReturnOfTux.droids:242
 msgid "139"
 msgstr "139"
 
-#: data/storyline/act1/ReturnOfTux.droids:244
+#: data/storyline/act1/ReturnOfTux.droids:243
 msgid "123"
 msgstr "123"
 
-#: data/storyline/act1/ReturnOfTux.droids:245
+#: data/storyline/act1/ReturnOfTux.droids:244
 msgid "Dude"
 msgstr "Mec"
 
-#: data/storyline/act1/ReturnOfTux.droids:246
+#: data/storyline/act1/ReturnOfTux.droids:245
 msgid "Guy"
 msgstr "Gars"
 
-#: data/storyline/act1/ReturnOfTux.droids:247
+#: data/storyline/act1/ReturnOfTux.droids:246
 msgid "Controllable Bot"
 msgstr "Robot controllable"
 
-#: data/storyline/act1/ReturnOfTux.droids:248
+#: data/storyline/act1/ReturnOfTux.droids:247
 msgid "DeadGuy"
 msgstr "GarsMort"
 
-#: data/storyline/act1/ReturnOfTux.droids:249
+#: data/storyline/act1/ReturnOfTux.droids:248
 msgid "FactionDeadBot"
 msgstr "Droïde de faction mort"
 
-#: data/storyline/act1/ReturnOfTux.droids:270
+#: data/storyline/act1/ReturnOfTux.droids:269
 msgid "John"
 msgstr "Jean"
 
@@ -4374,7 +4403,7 @@ msgid "TD"
 msgstr "TD"
 
 #: data/storyline/act1/ReturnOfTux.droids:321
-#: data/storyline/act1/ReturnOfTux.droids:512
+#: data/storyline/act1/ReturnOfTux.droids:513
 msgid "Update Server Guard"
 msgstr "Garde du serveur de mise à jour"
 
@@ -4455,30 +4484,36 @@ msgstr "Tues-moi"
 msgid "614 - Gate Guard Bot"
 msgstr "614 - Robot de Faction au Portail"
 
-#: data/storyline/act1/ReturnOfTux.droids:449
+#: data/storyline/act1/ReturnOfTux.droids:450
 msgid "Bot Hunter"
 msgstr "Chasseur de robots"
 
-#: data/storyline/act1/ReturnOfTux.droids:455
+#: data/storyline/act1/ReturnOfTux.droids:456
 msgid "Bot Factory Gate Guard Leader"
 msgstr "Chef des gardiens de la porte de l'usine de robots"
 
-#: data/storyline/act1/ReturnOfTux.droids:456
+#: data/storyline/act1/ReturnOfTux.droids:457
 msgid "Bot Factory Gate Guard"
 msgstr "Gardien de la porte de l'usine de robots"
 
-#: data/storyline/act1/ReturnOfTux.droids:462
+#: data/storyline/act1/ReturnOfTux.droids:463
 msgid "Reception Droid"
 msgstr "Droid d'Accueil"
 
-#: data/storyline/act1/ReturnOfTux.droids:463
 #: data/storyline/act1/ReturnOfTux.droids:464
+#: data/storyline/act1/ReturnOfTux.droids:465
 msgid "Worker"
 msgstr "Ouvrier"
 
-#: data/storyline/act1/ReturnOfTux.droids:568
+#: data/storyline/act1/ReturnOfTux.droids:569
 msgid "Corporate Guy"
 msgstr "Personnel d'entreprise"
+
+#~ msgid "To Novice Arena"
+#~ msgstr "Vers l'arène novice"
+
+#~ msgid "Not only is the town safe, but apparently so is Ewald's 296 droid. Oh joy."
+#~ msgstr "Non seulement la ville est sauve, mais apparemment le droid 296 d' Ewald aussi. Oh joie."
 
 #~ msgid "Plasma crystal load. This is the most common way of loading a plasma weapon."
 #~ msgstr "Charge de plasma-cristal. C'est le plus utilisé pour charger une arme à plasma."

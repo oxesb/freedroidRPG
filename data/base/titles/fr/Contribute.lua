@@ -24,14 +24,14 @@ text = [[
             COMMENT CONTRIBUER
 
 FreedroidRPG est entièrement libre, le logiciel et les illustrations.
-Il est exclusivement développé par des bénévoles sur leur temps de loisir.
+Il est exclusivement développé par des bénévoles sur leur temps libre.
 
 L'amélioration de FreedroidRPG dépend de ces contributions.
 Si vous désirez contribuer, mais n'êtes pas certain de savoir comment, voici une liste de choses à faire :
 
 TEST ET RAPPORT DE BUG :
 
-Nous avons besoin de personnes pour tester le jeu et rapporter tout ce qui ne fonctionne pas correctement ou qui semble instable. Cela inclus des choses mineures telles que des erreurs d'orthographe ou autre. Cette tâche augmente avec la taille de FreedroidRPG. Nous avons besoin de votre aide. 
+Nous avons besoin de personnes pour tester le jeu et rapporter tout ce qui ne fonctionne pas correctement ou qui semble instable. Cela inclut des choses mineures telles que des erreurs d'orthographe ou autre. Cette tâche augmente avec la taille de FreedroidRPG. Nous avons besoin de votre aide. 
 N'hésitez pas à envoyer des patchs.
 
 CRÉATION DE CARTES :

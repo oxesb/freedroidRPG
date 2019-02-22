@@ -1,0 +1,325 @@
+    FreedroidRPG: README
+   ----------------------
+
+0. Содержание
+=========
+  1. Введение
+  2. Установка и игра.
+  3. Основные элементы управления
+  4. Известные проблемы
+  5. Разрешение экрана
+  6. ЧЗВ
+     - Разное
+     - Графика
+     - Звук
+     - Редактор уровней и разработка
+  7. Контактные данные
+  8. Лицензия
+
+
+1. Введение
+================
+ Игра поведает историю о мире, разрушенном в результате конфликта
+ роботов и их хозяев людей. Играйте за Такса, получившего задание
+ спасти мир от кровавого восстания ботов, не знающих пощады.
+ Вы можете выбирать, каким путём следовать: на свободе выбора
+ построено в игре всё.
+
+ FreedroidRPG включает систему боя в реальном времени с ближним и 
+ дальним оружием, чем-то похожую на несвободную игру Diablo.
+ Есть новейшая система программ, которые можно запустить, чтобы
+ управлять роботами-врагами, меняя их поведение, либо улучшить 
+ свои характеристики. Вы можете использовать около 150 различных 
+ предметов, сражаться с бесчисленными врагами на пути к своей судьбе.
+ Продвинутая система диалогов обеспечивает фон истории и погружение
+ в отыгрывание ситуаций.
+
+ Игра завершена, полностью играбельна и обеспечивает около 10 часов
+ веселья. Она всё ещё активно разрабатывается, помощь приветствуется
+ во многих областях. Люди имеющие или пытающиеся получить навыки
+ программирования, создания карт или письма найдут FreedroidRPG
+ захватывающим, быстро развивающимся проектом для полного самовыражения. 
+
+
+2. Установка и игра.
+==================
+ Последний стабильный выпуск и сборки для Windows / Mac OS X: ftp://ftp.osuosl.org/pub/freedroid/
+ Для общих инструкций по установке, пожалуйста, смотрите файл INSTALL, расположенный в той же папке, что и этот файл.
+ Для дополнительной информации, пожалуйста, посмотрите также INSTALL.freedroidRPG
+ Необходимые для сборки пакеты зависят от вашего дистрибутива. Они перечислены в INSTALL.freedroidRPG
+ В основном, вам нужно просто выполнить
+
+    ./configure
+    make
+    make install
+
+ Если не хотите устанавливать игру, не запускайте «make install», а просто перейдите в подкаталог src/ и выполните
+    ./freedroidRPG
+ Для дополнительных опций выполните "freedroidRPG --help" (в терминале) для получения списка опций командной строки.
+
+
+3. Управление
+============
+ Движение
+ 
+  Управление в игре осуществляется мышью. Щёлкайте левой кнопкой по месту, куда хотите перейти.
+  Удерживайте кнопку, чтобы двигаться в том направлении. Зажатая клавиша CTRL позволит бежать.
+
+ Атака
+
+  Щелчок левой кнопкой по врагу приведёт к тому, что Такс приблизится к дроиду и атакует его
+  текущим оружием. Если экипирована пушка, то Такс начнёт стрелять в дроида с места.
+
+ Особые функции
+
+  Щелчок правой кнопкой мыши применяет выбранное умение или программу.
+
+ Клавиши по умолчанию (большинство можно переназначить во внутриигровой раскладке — F1)
+
+  Escape     ... Главное меню
+  F1         ... Горячие клавиши
+  F2         ... Полноэкранный режим (только в Linux)
+  F3         ... Быстрое сохранение
+  F4         ... Загрузка быстрого сохранения
+  F5-F12     ... Быстрый выбор из восьми программ
+
+  I          ... Инвентарь
+  C          ... Панель характеристик
+  S          ... Панель умений/программ
+  Пробел      ... Закрыть все открытые панели
+  Q          ... Журнал заданий
+  0—9        ... Слоты 0—9 для быстрого вызова из инвентаря
+
+  P ... Пауза
+  (Удерживая) A     ... Атаковать, оставаясь на той же позиции
+  (Удерживая) Shift ... Сохранять выбранную цель при движении
+  Tab ... Включить автокарту (если доступна)
+
+  R ... Перезарядить оружие
+  (Удерживая) Ctrl ... Бег
+  U ... Переключить режим постоянного бега.
+
+  (Удерживая) X ... Показать имена предметов на земле
+  Z ... Переключить режим показа имён предметов на земле
+  T ... Переключение прозрачности стен при приближении Такса
+  Ctrl+ Q ... Выйти из игры
+  Ctrl + G ... Переключение захвата ввода (предотвращает выход курсора за окно игры)
+  Print ... Сделать снимок экрана (сохраняется в папку ./.freedroid_rpg/ в домашнем каталоге)
+
+  Стрелки ... Движение
+     Вверх ... Север
+     Вниз ... Юг
+     Вправо ... Восток
+     Влево ... Запад
+
+
+4. Известные проблемы
+================
+ Основное
+   * Часть оружия ближнего и дальнего боя, взятого Таксом, пока использует анимацию лазерных мечей и винтовок,
+	 в том числе при атаке. Если вы подкованы в 3D-моделировании, пожалуйста, помогите нам это исправить.
+   * Когда во время запуска в режиме OpenGL что-нибудь перекрывает окно FreedroidRPG,
+	 фоновые изображения выглядят очень странно. Если вы щёлкните один из пунктов меню, всё вернётся
+	 к задуманному виду.
+   * Alt tab in/out of the game in OpenGL while a static popup is displayed makes the screen completely black.
+	 Clicking or pressing the required key to close the popup will redraw/bring back the screen.
+
+ Mac
+   *Открытие файлов: по умолчанию в OS X (в. 10.6) макс. количество открытых файлов — 256. Это может вызвать ошибки
+	 при загрузке картинок: «Функция: get_iso_image_from_file_and_path. Не удалось загрузить изображение
+	 /usr/local/share/freedroidrpg/graphics/obstacles/<filename>.png»
+	 Решение:
+		1) Проверьте лимит открытых файлов: $ ulimit -n
+		2) Введите новый лимит открытых файлов: $ ulimit -n 2048
+	(проблема #2913487)
+   * Font rendering: If you get no fonts in the main menu with SDL or if in openGL mode, the game dies
+	with the error message "In Function: PutCharFont. Surface for character 46 was NULL pointer!",
+	check your display configuration and set the color profile to sRGB.
+	(проблемы #2913485 и #2913484)
+   * SDL installed via MacPorts: SDL installed via MacPorts will give freedroidRPG wrong information
+	about the byteorder if you have a big-endian (PowerPC) CPU, so the colors may be wrong and you
+	probably couldn't start a new game because FreedroidRPG crashes.
+	To fix it, with root privileges edit the /opt/include/SDL/SDL_config.h file so the line
+		#define SDL_BYTEORDER=1234
+	says
+		#define SDL_BYTEORDER=4321
+	After editing and saving the file recompile freedroidRPG and it should work correctly.
+	Using SDL compiled from source instead of from MacPorts will work as well.
+
+ Linux
+   * Pulseaudio: Using SDL-pulseaudio you are currently likely not to get sound. This has nothing to do
+	 with FreedroidRPG but with Pulseaudio and its plugins still in general being immature. We recommend using
+	 e.g. SDL-esd or SDL-alsa until these problems has been fixed upstream.
+   * Видеокарты Intel 915/945/IDG (EEE PC, нетбуки и т. д.): в Mesa 7.9-devel есть проблема, которая заставляет игру
+   	 тормозить и потреблять много памяти. Это исправляется установкой и запуском «driconf», где нужно в строке 
+	 «Включить тайлинг текстур» выбрать «Нет».   
+   * Опция «Гамма-коррекция» может не работать из-за аппаратных и программных драйверов.
+
+
+5. Разрешение экрана
+=====================
+ Некоторые настройки высокого разрешения скрыты и доступны только из командной строки. Они плохо протестированы,
+ поэтому обычно считаются глючными и не поддерживаются. Однако они всё же могут быть многим полезны,
+ особенно для широкоэкранных LCD в полноэкранном режиме
+
+ Чтобы получить актуальный список разрешений выполните «freedroidRPG -r99».
+
+ Некоторые известные проблемы неподдерживаемых разрешений:
+	- портрет в диалогах выходит за границы;
+	- световой радиус не отцентрирован;
+	- неправильная прокрутка текста при разговоре с НИП.
+
+
+6. ЧЗВ
+============
+Разные ЧЗВ:
+
+	В.: Нужен ли мне Linux, чтобы поиграть во FreedroidRPG?
+	A: While using Linux is greatly recommended for the sanity of the system
+	   administrator, FreedroidRPG has MS-Windows executables available.
+	   Note that since the FreedroidRPG development team doesn't use 
+	   MS-Windows, it gets much less testing. Help with testing and feedback 
+	   from Windows users thus is greatly appreciated.
+
+	В.: Как подписаться или отписаться от почтовой рассылки?
+	A: FreedroidRPG has two mailing lists. One is for discussing stuff related to
+	   FreedroidRPG, the other one is a list with auto-generated change logs from our 
+	   developer server and therefore usually only interesting for developers themselves.
+	   In any case, you can subscribe, unsubscribe or change your membership options
+			from the following web page:
+	   http://sourceforge.net/mail/?group_id=54521
+
+
+ЧЗВ о графике:
+
+	В.: Игра *ужасно* тормозит в моей системе с Windows при использовании режима OpenGL.
+	A: It might be that you're using the OpenGL drivers that came with your
+	   operating system from Microsoft. These drivers don't use hardware acceleration
+	   and are therefore extremely slow. You'll have to download and install a real
+	   OpenGL capable driver for you graphics card. Usually these can be downloaded 
+	   from the home page of the graphics chip manufacturer, typically Nvidia, AMD/ATI,
+	   etc. Note, that if you do absolutely cannot get OpenGL working reliably on your
+	   system, you can still run the game in pure SDL output mode. For this, you
+	   must either use a 'MS-DOS command line prompt' and type
+
+	   freedroidRPG -n 
+
+	   inside this command line, or you can also make a link to freedroidRPG.exe
+	   and then edit the link properties and add the -n after freedroidRPG.exe in
+	   the link properties dialog box.
+
+	В.: Игра *ужасно* тормозит на моём ПК с Linux при включённом OpenGL.
+	A: The reason for this might be that you're not using hardware accelerated OpenGL.
+	   Software OpenGL should be avoided.  If you don't have hardware-accelerated
+	   OpenGL on your system (because e.g. your graphics card manufacturer doesn't
+	   make suitable Linux drivers), you might be much better off when disabling
+	   OpenGL support altogether.  For this, you can use command line switch -n,
+	   i.e type
+
+	   freedroidRPG -n
+
+	   to start the game with OpenGL output disabled.  Graphics will revert to
+	   pure SDL mode.
+	Q: I run Linux with multiple monitors in TwinView (Xinerama) mode, however fullscreen
+	   mode is centered over the break between the two monitors. I would rather it be
+	   centered on one of the screens.
+	A: To have the game use only one monitor for fullscreen mode, do the following:
+	   1)  Make certain you use SDL version >=1.2.14.
+	   2)  Set the environmental variable "SDL_VIDEO_FULLSCREEN_DISPLAY" to the number corresponding to
+			the monitor you wish to use: 0 is your first display, 1 is your second, etc.
+
+	   If that does not work you may have to add single-monitor metamodes to your xorg.conf file.
+	   Изменения xorg.conf требуют перезапуска X-сервера, прежде чем они вступят в силу.
+
+ЧЗВ о звуке:
+
+	В: Звук не работает в игре. Я ничего не слышу.
+	О: 1.) Убедитесь, что звук есть в других приложениях. Если вы
+		    ничего не слышите, когда пытаетесь воспроизвести mp3 или ogg аудиофайл,
+		    значит, звук на вашем компьютере не настроен и эта
+		    проблема не зависит от freedroidRPG. В таком случае, вы должны установить
+		    звуковую карту сначала
+	   2.)  See if you have the SDL_mixer libraries installed. You might want
+		    to use "locate SDL_mixer" and see if you get a lot of results.  If
+		    not, then the missing SDL_mixer library is the problem.
+		    Also check if you have libogg and libvorbis installed.
+	   3.)  If you're compiling from source, make sure the ./configure script has
+		    properly detected the SDL_mixer library. Just look at the ./configure
+		    output. There should be a line like:
+
+		      checking for Mix_ChannelFinished in -lSDL_mixer... yes
+
+		    If you get instead something like
+
+		      checking for Mix_ChannelFinished in -lSDL_mixer... no
+
+		    then the ./configure script didn't detect your SDL_mixer
+		    installation. You might want to make sure you've got SDL_mixer and
+		    SDL_mixer_devel packages installed or install SDL_mixer from source.
+		    Вы можете скачать всё отсюда:
+
+		      http://www.libsdl.org/projects/SDL_mixer/
+
+		    If you compiled from source, you'll have to recompile now, because the
+		    previous compile didn't include the sound module of FreedroidRPG. If
+		    the SDL_mixer stuff is installed properly, it should work after the
+		    recompile.
+
+	В.: У меня запаздывает звук. Кажется, что всё несколько рассинхронизировано. 
+	A: There might be a sound daemon running on your system.  Many window managers
+	   like e.g. KDE start a sound daemon by default upon start up. To get rid of
+	   the most common sound daemons, you can try (best as root)
+
+	   killall -9 artsd
+	   killall -9 esd
+	   killall -9 yiff
+	   killall -9 pulseaudio
+
+	   После этого вы можете заново запустить FreedroidRPG. Задержка звука
+	   должна исчезнуть.
+
+Редактор уровней и ЧЗВ разработчика:
+
+	В.: Есть ли в игре редактор уровней?
+	О.: Да, у нас есть редактор уровней интегрированный во FreedroidRPG. Он доступен
+       из главного меню или при выполнении команды
+
+		  freedroidRPG -e
+
+       It has tooltips on every button to help you find your
+       way. Play around with it a bit by yourself and don't hesitate to ask for
+       assistance on IRC or the mailing list.
+
+	В.: Как мне получить последнюю разрабатываемую версию игры?
+	О.: Это очень просто, когда используется Linux:
+	      git clone https://gitlab.com/freedroid/freedroid-src.git
+	   Если же вы используете Windows, мы рекомендуем, например 
+	      http://www.collab.net/downloads/giteye?CID=tigris
+	   If you still run into problems, best again discuss it with the people on
+	   the freedroid-discussion mailing list or ask for it on IRC channel as well.
+
+	В.: Хочу помочь с разработкой FreedroidRPG. Что мне сделать в первую очередь?
+	О.: Во-первых, рекомендуем прочесть http://www.freedroid.org/developer-area/contribute/
+	   Во-вторых, свяжитесь с нами. Это возможно через IRC (см. «Контакты» ниже)
+	   или при помощи списка рассылки freedroid-discussion.
+	   Then the next thing to do is to get the latest development version of the game
+	   from git, then to either make a small patch right away or to discuss anything
+	   bigger you have in mind with the people on the discussion mailing list or IRC, so
+	   it can be assured that all the developers are pulling in the same direction and
+	   know what's going on and who is working on what.
+
+
+7. Контакты
+===========
+ Веб-сайт      ................ http://www.freedroid.org
+ Страница с исходниками   ..... https://gitlab.com/groups/freedroid
+ IRC-канал     ................ #freedroid на irc.freenode.net или
+								http://webchat.freenode.net/?channels=freedroid (требует Javascript)
+ Список рассылки .............. freedroid-discussion@lists.sourceforge.net
+ Багтрекер     ................ http://bugs.freedroid.org/
+
+
+8. Лицензия
+===========
+ Сама игра лицензирована под GPL. Некоторые другие инструменты используют более либеральную лицензию, 
+ пожалуйста, посмотрите файл FILES, расположенный в той же папке, что и данный файл.

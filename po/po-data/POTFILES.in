@@ -5,6 +5,7 @@ data/base/item_specs.lua
 data/base/obstacle_specs.lua
 data/base/skill_specs.lua
 data/base/dialogs/AfterTakeover.lua
+data/base/dialogs/Speechless.lua
 data/base/dialogs/Terminal.lua
 data/storyline/act1/events.dat
 data/storyline/act1/levels.dat

@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the freedroidrpg package.
 #
 # Translators:
+# Alexander Forsberg <alex@datafluss.se>, 2018
 # Alexander Forsberg <alex@datafluss.se>, 2014,2017
 # Jonatan Nyberg, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2017-08-24 15:30+0200\n"
-"PO-Revision-Date: 2017-08-24 13:39+0000\n"
+"POT-Creation-Date: 2019-02-21 18:25+0100\n"
+"PO-Revision-Date: 2019-01-19 20:21+0000\n"
 "Last-Translator: fluzz <fluzz@gmx.com>\n"
 "Language-Team: Swedish (http://www.transifex.com/arctic-games/freedroid-rpg/language/sv/)\n"
 "Language: sv\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: data/base/droid_specs.lua:98 data/storyline/act1/ReturnOfTux.droids:271
+#: data/base/droid_specs.lua:98 data/storyline/act1/ReturnOfTux.droids:270
 msgid "123 Acolyte"
 msgstr "123 Följeslagare"
 
@@ -27,7 +28,7 @@ msgstr "123 Följeslagare"
 msgid "A simple rubbish disposal robot. Common device in most factories to maintain a clean yard."
 msgstr "En enkel skräpplockar-robot. Vanlig på de flesta fabriker för att hålla gården ren."
 
-#: data/base/droid_specs.lua:140 data/storyline/act1/ReturnOfTux.droids:272
+#: data/base/droid_specs.lua:140 data/storyline/act1/ReturnOfTux.droids:271
 msgid "139 Templar"
 msgstr "139 Tempelriddare"
 
@@ -35,7 +36,7 @@ msgstr "139 Tempelriddare"
 msgid "Created by Dr. Masternak to clean up large heaps of rubbish. Its large scoop is used to collect rubbish. It is then crushed internally."
 msgstr "Skapad av Dr. Masternak för att städa upp stora skräphögar. Den stora skopan används för att samla upp skräp som sedan krossas inuti."
 
-#: data/base/droid_specs.lua:183 data/storyline/act1/ReturnOfTux.droids:273
+#: data/base/droid_specs.lua:183 data/storyline/act1/ReturnOfTux.droids:272
 msgid "247 Banshee"
 msgstr "247 Skogsrå"
 
@@ -43,8 +44,8 @@ msgstr "247 Skogsrå"
 msgid "A light duty servant robot. One of the first to use the anti-grav system."
 msgstr "En betjänt-robot för enklare uppdrag. En av de första med anti-grav-system."
 
-#: data/base/droid_specs.lua:230 data/storyline/act1/ReturnOfTux.droids:113
-#: data/storyline/act1/ReturnOfTux.droids:274
+#: data/base/droid_specs.lua:230 data/storyline/act1/ReturnOfTux.droids:112
+#: data/storyline/act1/ReturnOfTux.droids:273
 msgid "249 Chicago"
 msgstr "249 Chicago"
 
@@ -52,7 +53,7 @@ msgstr "249 Chicago"
 msgid "Cheaper version of the anti-grav servant robot. This one is armed with rapid fire weaponry."
 msgstr "Billigare version av den svävande betjänt-roboten. Den här är utrustad med ett snabbt skjutvapen."
 
-#: data/base/droid_specs.lua:276 data/storyline/act1/ReturnOfTux.droids:275
+#: data/base/droid_specs.lua:276 data/storyline/act1/ReturnOfTux.droids:274
 msgid "296 Sawmill"
 msgstr "296 Sågverk"
 
@@ -60,10 +61,10 @@ msgstr "296 Sågverk"
 msgid "Originally designed by Orchard and Marsden Enterprises, this robot was used as a servant droid in drinking establishments. A tray is mounted on the head for carrying drinks and a wide wheel base provided droid stability to prevent spillage. WARNING: You will lose something if you try to steal a drink!"
 msgstr "Den här roboten - ursprungligen skapad av Orchard and Marsden Enterprices - användes som en droidkypare i barer. På huvudet har den en bricka för att bära drinkar, och det breda hjulavståndet gör den stabil så inget spills ut. VARNING: Om du försöker stjäla en drink kommer du förlora något!"
 
-#: data/base/droid_specs.lua:321 data/storyline/act1/ReturnOfTux.droids:104
-#: data/storyline/act1/ReturnOfTux.droids:105
-#: data/storyline/act1/ReturnOfTux.droids:112
-#: data/storyline/act1/ReturnOfTux.droids:276
+#: data/base/droid_specs.lua:321 data/storyline/act1/ReturnOfTux.droids:103
+#: data/storyline/act1/ReturnOfTux.droids:104
+#: data/storyline/act1/ReturnOfTux.droids:111
+#: data/storyline/act1/ReturnOfTux.droids:275
 #: data/storyline/act1/ReturnOfTux.droids:359
 msgid "302 Nemesis"
 msgstr "302 Nemesis"
@@ -72,9 +73,9 @@ msgstr "302 Nemesis"
 msgid "Common device for moving small packages. Clamp is mounted on the lower body."
 msgstr "En vanlig enhet för att transportera små paket. En klämma sitter på underkroppen."
 
-#: data/base/droid_specs.lua:369 data/storyline/act1/ReturnOfTux.droids:111
-#: data/storyline/act1/ReturnOfTux.droids:277
-#: data/storyline/act1/ReturnOfTux.droids:588
+#: data/base/droid_specs.lua:369 data/storyline/act1/ReturnOfTux.droids:110
+#: data/storyline/act1/ReturnOfTux.droids:276
+#: data/storyline/act1/ReturnOfTux.droids:589
 msgid "329 Sparkie"
 msgstr "329 Gnistan"
 
@@ -82,7 +83,7 @@ msgstr "329 Gnistan"
 msgid "Early type messenger robot. Large wheels impede motion on small craft."
 msgstr "Gammal typ av bud-robot. De stora hjulen hindrar rörelse på små skepp."
 
-#: data/base/droid_specs.lua:416 data/storyline/act1/ReturnOfTux.droids:278
+#: data/base/droid_specs.lua:416 data/storyline/act1/ReturnOfTux.droids:277
 msgid "420 Surgeon"
 msgstr "420 Kirurg"
 
@@ -90,8 +91,8 @@ msgstr "420 Kirurg"
 msgid "A slow maintenance robot. Confined to drive maintenance during flight."
 msgstr "En långsam underhållsrobot. Begränsad till att reparera under flygning."
 
-#: data/base/droid_specs.lua:462 data/storyline/act1/ReturnOfTux.droids:279
-#: data/storyline/act1/ReturnOfTux.droids:600
+#: data/base/droid_specs.lua:462 data/storyline/act1/ReturnOfTux.droids:278
+#: data/storyline/act1/ReturnOfTux.droids:601
 msgid "476 Coward"
 msgstr "476 Ynkrygg"
 
@@ -99,7 +100,7 @@ msgstr "476 Ynkrygg"
 msgid "Ship maintenance robot. Fitted with multiple arms to carry out repairs to the ship efficiently. All craft built after the Jupiter-incident are supplied with a team of these."
 msgstr "Underhållsrobot för skepp. Fler armar gör skeppsreparationerna effektivare. I alla farkoster tillverkade efter Jupiter-olyckan ingår det ett gäng sådana här."
 
-#: data/base/droid_specs.lua:509 data/storyline/act1/ReturnOfTux.droids:280
+#: data/base/droid_specs.lua:509 data/storyline/act1/ReturnOfTux.droids:279
 msgid "493 Spinster"
 msgstr "493 Fröken"
 
@@ -107,7 +108,7 @@ msgstr "493 Fröken"
 msgid "Slave maintenance droid. Standard version will carry its own toolbox."
 msgstr "Slavunderhållsrobot. Standardversionen har en egen verktygslåda."
 
-#: data/base/droid_specs.lua:556 data/storyline/act1/ReturnOfTux.droids:281
+#: data/base/droid_specs.lua:556 data/storyline/act1/ReturnOfTux.droids:280
 msgid "516 Ghoul"
 msgstr "516 Gast"
 
@@ -115,7 +116,7 @@ msgstr "516 Gast"
 msgid "Early crew droid. Able to carry out simple flight checks only. No longer supplied."
 msgstr "Äldre besättningsdroid. Kan endast utföra enklare flygkontroller. Säljs inte längre."
 
-#: data/base/droid_specs.lua:603 data/storyline/act1/ReturnOfTux.droids:282
+#: data/base/droid_specs.lua:603 data/storyline/act1/ReturnOfTux.droids:281
 msgid "543 Forest Harvester"
 msgstr "543 Skogsskördare"
 
@@ -123,7 +124,7 @@ msgstr "543 Skogsskördare"
 msgid "This bot was designed for logging, but instead of harvesting trees, it's now harvesting people!!! Run away! This bot will kill you!"
 msgstr "Den här botten designades för att skogsavverkning men istället för att hugga ner skog hugger den ner människor. Spring! Den här botten kommer döda dig!"
 
-#: data/base/droid_specs.lua:648 data/storyline/act1/ReturnOfTux.droids:283
+#: data/base/droid_specs.lua:648 data/storyline/act1/ReturnOfTux.droids:282
 msgid "571 Apollo"
 msgstr "571 Apollo"
 
@@ -131,7 +132,7 @@ msgstr "571 Apollo"
 msgid "A standard crew droid. Supplied with the ship."
 msgstr "En vanlig besättningsdroid. Följer med skeppet."
 
-#: data/base/droid_specs.lua:696 data/storyline/act1/ReturnOfTux.droids:284
+#: data/base/droid_specs.lua:696 data/storyline/act1/ReturnOfTux.droids:283
 msgid "598 Minister"
 msgstr "598 Pastor"
 
@@ -139,11 +140,11 @@ msgstr "598 Pastor"
 msgid "A highly sophisticated device. Able to control the Robo-Freighter on its own."
 msgstr "En mycket sofistikerad enhet. Kan styra Robo-fraktaren på egen hand."
 
-#: data/base/droid_specs.lua:742 data/storyline/act1/ReturnOfTux.droids:518
-#: data/storyline/act1/ReturnOfTux.droids:519
+#: data/base/droid_specs.lua:742 data/storyline/act1/ReturnOfTux.droids:519
 #: data/storyline/act1/ReturnOfTux.droids:520
 #: data/storyline/act1/ReturnOfTux.droids:521
 #: data/storyline/act1/ReturnOfTux.droids:522
+#: data/storyline/act1/ReturnOfTux.droids:523
 msgid "603 Lawnmower"
 msgstr "603 Gräsklippare"
 
@@ -151,7 +152,7 @@ msgstr "603 Gräsklippare"
 msgid "The 603 MowDown is a state-of-the-art lawnmower manufactured by the Nicholson company, and combines the functions of a regular lawnmower, a pet and a vicious guard dog in a single device."
 msgstr "603 KlippNer är den allra senaste gräsklipparen tillverkad av företaget Nicholson och fungerar både som en vanlig gräsklippare, ett husdjur och en ilsken vakthund."
 
-#: data/base/droid_specs.lua:791 data/storyline/act1/ReturnOfTux.droids:285
+#: data/base/droid_specs.lua:791 data/storyline/act1/ReturnOfTux.droids:284
 msgid "614 Security Bot"
 msgstr "614 Säkerhetsbot"
 
@@ -159,7 +160,7 @@ msgstr "614 Säkerhetsbot"
 msgid "A low security sentinel droid. Used to protect areas of the ship from intruders. A slow but sure device."
 msgstr "En vaktdroid, låg säkerhet. Används för att skydda delar av skeppet från inkräktare. En långsam men pålitlig enhet."
 
-#: data/base/droid_specs.lua:838 data/storyline/act1/ReturnOfTux.droids:286
+#: data/base/droid_specs.lua:838 data/storyline/act1/ReturnOfTux.droids:285
 msgid "615 Firedevil"
 msgstr "615 Elddemon"
 
@@ -167,8 +168,8 @@ msgstr "615 Elddemon"
 msgid "Sophisticated sentinel droid. Only 2000 built by the Nicholson Company. These are now very rare."
 msgstr "Sofistikerad vaktdroid. Endast 2000 tillverkades av företaget Nicholson. De är nu mycket sällsynta."
 
-#: data/base/droid_specs.lua:885 data/storyline/act1/ReturnOfTux.droids:287
-#: data/storyline/act1/ReturnOfTux.droids:601
+#: data/base/droid_specs.lua:885 data/storyline/act1/ReturnOfTux.droids:286
+#: data/storyline/act1/ReturnOfTux.droids:602
 msgid "629 Spitfire"
 msgstr "629 Eldspruta"
 
@@ -176,8 +177,8 @@ msgstr "629 Eldspruta"
 msgid "A low sentinel droid. Lasers are built into the turret. These are mounted on a small tank body. May be fitted with an auto-cannon on-the Grillen version."
 msgstr "En liten vaktdroid. Kanontornet har inbyggda lasrar. Dessa sitter på en liten pansarvagnskropp. Grillen-versionen kan utrustas med autokanon."
 
-#: data/base/droid_specs.lua:929 data/storyline/act1/ReturnOfTux.droids:151
-#: data/storyline/act1/ReturnOfTux.droids:288
+#: data/base/droid_specs.lua:929 data/storyline/act1/ReturnOfTux.droids:150
+#: data/storyline/act1/ReturnOfTux.droids:287
 msgid "711 Grillmeister"
 msgstr "711 Grillmeister"
 
@@ -185,8 +186,8 @@ msgstr "711 Grillmeister"
 msgid "A heavy duty battle droid. Disruptor is built into the head. One of the first in service with the Military."
 msgstr "En slitstark krigsdroid. Huvudet har inbyggd \"disruptor\". En av de tidigaste att samarbeta med militären."
 
-#: data/base/droid_specs.lua:976 data/storyline/act1/ReturnOfTux.droids:150
-#: data/storyline/act1/ReturnOfTux.droids:289
+#: data/base/droid_specs.lua:976 data/storyline/act1/ReturnOfTux.droids:149
+#: data/storyline/act1/ReturnOfTux.droids:288
 msgid "742 Zeus"
 msgstr "742 Zeus"
 
@@ -194,8 +195,8 @@ msgstr "742 Zeus"
 msgid "This version is the one mainly used by the military."
 msgstr "Den här versionen är den som militären huvudsakligen använder."
 
-#: data/base/droid_specs.lua:1023 data/storyline/act1/ReturnOfTux.droids:225
-#: data/storyline/act1/ReturnOfTux.droids:290
+#: data/base/droid_specs.lua:1023 data/storyline/act1/ReturnOfTux.droids:224
+#: data/storyline/act1/ReturnOfTux.droids:289
 msgid "751 Soviet"
 msgstr "751 Sovjet"
 
@@ -203,8 +204,8 @@ msgstr "751 Sovjet"
 msgid "A very heavy duty battle droid. Only a few have so far entered service. These are the most powerful battle units ever built."
 msgstr "Mycket robust krigsdroid. Bara ett fåtal har använts. De här är de kraftfullaste krigsmaskiner som någonsin byggts."
 
-#: data/base/droid_specs.lua:1069 data/storyline/act1/ReturnOfTux.droids:149
-#: data/storyline/act1/ReturnOfTux.droids:291
+#: data/base/droid_specs.lua:1069 data/storyline/act1/ReturnOfTux.droids:148
+#: data/storyline/act1/ReturnOfTux.droids:290
 msgid "821 Ufo"
 msgstr "821 Ufo"
 
@@ -212,8 +213,8 @@ msgstr "821 Ufo"
 msgid "A very reliable anti-grav unit is fitted into this droid. It will patrol the ship and eliminate intruders as soon as detected by powerful sensors."
 msgstr "Den här droiden har ett mycket pålitligt anti-grav-aggregat. Den patrullerar skeppet och eliminerar inkräktare så fort de upptäcks av de kraftfulla sensorerna. "
 
-#: data/base/droid_specs.lua:1116 data/storyline/act1/ReturnOfTux.droids:148
-#: data/storyline/act1/ReturnOfTux.droids:292
+#: data/base/droid_specs.lua:1116 data/storyline/act1/ReturnOfTux.droids:147
+#: data/storyline/act1/ReturnOfTux.droids:291
 msgid "834 Wisp"
 msgstr "834 Tuss"
 
@@ -221,7 +222,7 @@ msgstr "834 Tuss"
 msgid "Early type anti-grav security droid. Fitted with an over-driven anti-grav unit. This droid is very fast but is not reliable."
 msgstr "Äldre säkerhetsdroid med anti-grav. Det överbelastade anti-grav-aggregatet gör den mycket snabb men inte så driftsäker."
 
-#: data/base/droid_specs.lua:1163 data/storyline/act1/ReturnOfTux.droids:293
+#: data/base/droid_specs.lua:1163 data/storyline/act1/ReturnOfTux.droids:292
 msgid "883 Dalex"
 msgstr "883 Dalex"
 
@@ -229,9 +230,9 @@ msgstr "883 Dalex"
 msgid "This droid was designed from archive data. For some unknown reason it instils great fear in Human adversaries."
 msgstr "Den här droiden designades efter arkiverade data. Av någon okänd anledning gör den mänskliga motståndare skräckslagna."
 
-#: data/base/droid_specs.lua:1211 data/storyline/act1/npc_specs.lua:75
-#: data/storyline/act1/ReturnOfTux.droids:294
-#: data/storyline/act1/ReturnOfTux.droids:599
+#: data/base/droid_specs.lua:1211 data/storyline/act1/npc_specs.lua:77
+#: data/storyline/act1/ReturnOfTux.droids:293
+#: data/storyline/act1/ReturnOfTux.droids:600
 msgid "999 Cerebrum"
 msgstr "999 Cerebrum"
 
@@ -271,8 +272,8 @@ msgstr "Matron"
 msgid "This is the hot_mama shopkeeper character model."
 msgstr "Det här är affärsägaren hot_mama's karaktär."
 
-#: data/base/droid_specs.lua:1461 data/storyline/act1/ReturnOfTux.droids:215
-#: data/storyline/act1/ReturnOfTux.droids:465
+#: data/base/droid_specs.lua:1461 data/storyline/act1/ReturnOfTux.droids:214
+#: data/storyline/act1/ReturnOfTux.droids:466
 msgid "Female Scientist"
 msgstr "Kvinnlig forskare"
 
@@ -280,7 +281,7 @@ msgstr "Kvinnlig forskare"
 msgid "This is the female scientist character model.  They are not armed as powerfully as e.g. the red guards."
 msgstr "Det här är den kvinnliga forskarens karaktär. De är inte lika kraftfullt beväpnade som t.ex Röda Väktarna."
 
-#: data/base/droid_specs.lua:1500 data/storyline/act1/ReturnOfTux.droids:12
+#: data/base/droid_specs.lua:1500 data/storyline/act1/ReturnOfTux.droids:11
 msgid "Mine Worker"
 msgstr "Gruvarbetare"
 
@@ -296,7 +297,7 @@ msgstr "Blå bror"
 msgid "This is a useless comment. Thanks for your attention."
 msgstr "Det här är en meningslös kommentar. Tack för din uppmärksamhet."
 
-#: data/base/droid_specs.lua:1581 data/storyline/act1/ReturnOfTux.droids:16
+#: data/base/droid_specs.lua:1581 data/storyline/act1/ReturnOfTux.droids:15
 msgid "Cook"
 msgstr "Kock"
 
@@ -362,19 +363,16 @@ msgid "Carefully designed by Future Ballistics(R), this autogun will shred you i
 msgstr "Det här autogeväret, varsamt designat av Framtida Sprängmedel(R), kommer slita dig i stycken om du försöker komma förbi."
 
 #: data/base/droid_specs.lua:1883
-#, fuzzy
 msgid "598 Minister (Boss)"
-msgstr "598 Pastor"
+msgstr "598 Minister (Boss)"
 
 #: data/base/droid_specs.lua:1930
-#, fuzzy
 msgid "883 Dalex (Boss)"
-msgstr "883 Dalex"
+msgstr "883 Dalex (Boss)"
 
 #: data/base/droid_specs.lua:1979
-#, fuzzy
 msgid "999 Cerebrum (Boss)"
-msgstr "999 Cerebrum"
+msgstr "999 Cerebrum (Boss)"
 
 #: data/base/droid_specs.lua:2027
 msgid "Authority Figure"
@@ -478,7 +476,7 @@ msgstr "Stor Skiftnyckel"
 
 #: data/base/item_specs.lua:351
 msgid "A big heavy wrench can be surprisingly efficient at turning a bot into second hand parts, in a hands-on and brutal way, if needed."
-msgstr ""
+msgstr "En stor, tung skiftnyckel kan förvandla bottar till reservdelar på ett förvånansvärt effektivt sätt - och brutalt, om så behövs."
 
 #: data/base/item_specs.lua:359
 msgid "Crowbar"
@@ -564,7 +562,7 @@ msgstr "Jag mördade den enda personen på tusentals kilometer som kan läka mig
 msgid "Shock Knife"
 msgstr "Elpistol"
 
-#: data/base/item_specs.lua:595 data/base/item_specs.lua:615
+#: data/base/item_specs.lua:595
 msgid "FIXME and all values"
 msgstr "FIXAMIG och alla värden"
 
@@ -572,1247 +570,1269 @@ msgstr "FIXAMIG och alla värden"
 msgid "Energy Whip"
 msgstr "Energipiska"
 
-#: data/base/item_specs.lua:627
+#: data/base/item_specs.lua:617
+msgid "An energy whip commonly found at managment from MegaSys facilities. What purpose they serve for is still unknown. Because the real whip is pure energy, it will never break, but it does not stays on the strong side."
+msgstr ""
+
+#: data/base/item_specs.lua:629
 msgid ".22 LR Ammunition"
 msgstr "Ammunition Till .22LR"
 
-#: data/base/item_specs.lua:631
+#: data/base/item_specs.lua:633
 msgid ".22 Long Rifle ammunition used to be a very common ammo for target practice, mainly because it was cheap and gave little recoil. It's just too weak to penetrate any real droid armor though."
 msgstr "Ammunition för .22 Long Rifle var tidigare mycket vanlig inom träningsskytte, mestadels för att den var billig och gav svag rekyl. Den är helt enkelt för svag för att penetrera en riktig droidsköld."
 
-#: data/base/item_specs.lua:638
+#: data/base/item_specs.lua:640
 msgid ".22 Automatic"
 msgstr ".22 Automat"
 
-#: data/base/item_specs.lua:654
+#: data/base/item_specs.lua:656
 msgid "With .22 ammo, it's mostly dumb luck if you actually damage a bot with this pistol. On the bright side, you will get a LOT of target practice out of each bot before a bullet or two manages to find a weak enough spot to take the bot out."
 msgstr "Med en sådan här pistol i kaliber .22 har du bara tur om du lyckas skada en bott. Å andra sidan kommer du få MYCKET skjutövning innan en och en annan kula lyckas träffa precis rätt för att ta ihjäl botten."
 
-#: data/base/item_specs.lua:662
+#: data/base/item_specs.lua:664
 msgid ".22 Hunting Rifle"
 msgstr ".22 Jaktgevär"
 
-#: data/base/item_specs.lua:679
+#: data/base/item_specs.lua:681
 msgid "A .22 hunting rifle was mainly used for sports shooting and for cheap training. As a hunting weapon its main use was to kill small vermin such as rats and squirrels. It was also highly effective against rabbits. Unfortunately, you won't be hunting 'wabbits'..."
 msgstr "Ett .22 jaktgevär var vanligt för sportskytte och billig träning. Som jaktvapen används den mest till jakt på t.ex. råttor och ekorrar. Den går också bra att jaga harar med. Synd för dig att du inte får jaga efter \"påskägg\"..."
 
-#: data/base/item_specs.lua:687
+#: data/base/item_specs.lua:689
 msgid "Shotgun Shells"
 msgstr "Hagelpatroner"
 
-#: data/base/item_specs.lua:691
+#: data/base/item_specs.lua:693
 msgid ""
 "Shotgun shells come in a range of gauges, but mixing and matching shotgun ammo sizes can cause your gun to explode and take your hand along with it. Luckily for you, all of your ammo is the same size and fits your shotgun(s) perfectly. An additional bonus is that it all seems to be buckshot.\n"
 "\tUndoubtedly these were the most popular type of shotgun ammunition when hunting for food became unfeasible due to the extinction of most wildlife."
 msgstr ""
+"Hagelpatroner finns i många olika kalibrar. Att försöka testa sig fram kan sluta med att geväret exploderar och tar din hand med sig. Men denna ammunition är en och samma storlek och passar ditt/dina hagelgevär utmärkt, som tur är. Och till råga på allt är det grovhagel.\n"
+"\tDet här var utan tvekan den vanligaste ammunitionen tills det inte längre gick jaga efter mat, eftersom nästan alla djur hade utrotats."
 
-#: data/base/item_specs.lua:699
+#: data/base/item_specs.lua:701
 msgid "Two Barrel Sawn Off Shotgun"
 msgstr "Avsågad Hagelbössa"
 
-#: data/base/item_specs.lua:715
+#: data/base/item_specs.lua:717
 msgid "Often wielded in the past by thugs or convenience store owners, this little baby is less powerful than the two-handed model, but makes up for it by letting you use a shield in conjunction with it."
 msgstr "Den här lilla älsklingen - tidigare populär bland skurkar eller närbutiksägare - är inte lika kraftfull som tvåhands-modellen, men att du kan ha sköld i den andra handen väger upp det hela."
 
-#: data/base/item_specs.lua:723
+#: data/base/item_specs.lua:725
 msgid "Two Barrel Shotgun"
 msgstr "Hagelbössa"
 
-#: data/base/item_specs.lua:740
+#: data/base/item_specs.lua:742
 msgid "An old standby of farmers and bird hunters. While capable of causing a fair amount of damage to droid armor, the limited rounds capacity and fairly slow reloading time make this weapon preferable to melee weapons, but only just. Requires two hands to wield."
 msgstr "Användes som reserv av bönder och fågeljägare. Den kan göra ganska stor skada på en droidsköld men det lilla magasinet och den långsamma omladdningen gör det här vapnet marginellt bättre än ett handvapen. Måste hållas i båda händerna."
 
-#: data/base/item_specs.lua:748
+#: data/base/item_specs.lua:750
 msgid "Pump Action Shotgun"
 msgstr "Pumphagel"
 
-#: data/base/item_specs.lua:765
+#: data/base/item_specs.lua:767
 msgid "The pump action shotgun isn't quite as powerful as the double barrel equivalent, but it does hold more ammo per clip. Requires two hands to wield."
 msgstr "Det här hagelgeväret är inte lika kraftfullt som hagelbössan men det har ett större magasin. Måste hållas i båda händerna."
 
-#: data/base/item_specs.lua:773
+#: data/base/item_specs.lua:775
 msgid "9x19mm Ammunition"
 msgstr "9x19mm Ammunition"
 
-#: data/base/item_specs.lua:777
+#: data/base/item_specs.lua:779
 msgid "You know a little about these. A metal jacket holds a bullet tightly at one end and is filled with an explosive chemical which acts as a propellant. At the other end is a primer cap filled with another explosive, which when struck will ignite the propellant. The bullet then becomes a projectile and is usually launched out through the barrel of a gun or similar device. Or, something like that."
 msgstr "Du kan lite grann om dessa. En metallmantel har en kula hårt fastsatt i ena änden, och är fylld med ett explosivt ämne som fungerar som drivmedel. I den andra änden sitter en tändhatt fylld med ett annat explosivt ämne, som antänder drivmedlet när den slås till. Kulan blir till en projektil och avfyras sedan vanligtvis genom en gevärspipa. Eller nått sånt."
 
-#: data/base/item_specs.lua:784
+#: data/base/item_specs.lua:786
 msgid "9mm Automatic"
 msgstr "9mm Automat"
 
-#: data/base/item_specs.lua:800
+#: data/base/item_specs.lua:802
 msgid "Nine millimeter ammo is a common caliber. While not very powerful, it allows for more rounds per clip than bigger ammunition."
 msgstr "Nio millimeter är en vanlig kaliber. Den är inte så kraftfull men det går fler skott per laddning jämfört med grövre ammunition."
 
-#: data/base/item_specs.lua:808
+#: data/base/item_specs.lua:810
 msgid "9mm Sub Machine Gun"
 msgstr "9mm K-pist"
 
-#: data/base/item_specs.lua:825
+#: data/base/item_specs.lua:827
 msgid "These are commonly referred to as bullet hoses."
 msgstr "De här brukar kallas kulsprutor."
 
-#: data/base/item_specs.lua:833
+#: data/base/item_specs.lua:835
 msgid "7.62x39mm Ammunition"
 msgstr "7.62x39mm Ammunition"
 
-#: data/base/item_specs.lua:837
+#: data/base/item_specs.lua:839
 msgid "7.62mm ammo. Commonly used in assault rifles from old."
 msgstr "7.62mm ammunition. Används vanligtvis i gamla automatkarbiner."
 
-#: data/base/item_specs.lua:844
+#: data/base/item_specs.lua:846
 msgid "7.62mm Hunting Rifle"
 msgstr "7.62mm Jaktgevär"
 
-#: data/base/item_specs.lua:861
+#: data/base/item_specs.lua:863
 msgid "7.62 millimeter ammo is commonly used in assault rifles. This is a more civilian take on that concept."
 msgstr "7.62 millimeters ammunition används vanligtvis i automatkarbiner. Det här är privatpersonernas version."
 
-#: data/base/item_specs.lua:869
+#: data/base/item_specs.lua:871
 msgid "7.62mm AK-47"
 msgstr "7.62mm AK-47"
 
-#: data/base/item_specs.lua:886
+#: data/base/item_specs.lua:888
 msgid "The favorite weapon of third-world countries everywhere, this is a mass-produced, fairly reliable automatic weapon."
 msgstr "Tredje världens favoritvapen. Det här är ett massproducerat, beprövat automatvapen."
 
-#: data/base/item_specs.lua:894
+#: data/base/item_specs.lua:896
 msgid ".50 BMG (12.7x99mm) Ammunition"
 msgstr ".50 BMG (12.7x99mm) Ammunition"
 
-#: data/base/item_specs.lua:898
+#: data/base/item_specs.lua:900
 msgid "Browning Machine Gun ammo. Commonly used against small fortress and also to stop vehicles. You probably won't find a weapon to use this ammo, though."
 msgstr "Ammo till Browningkulspruta. Används vanligen i små befästningar och för att stoppa fordon. Du hittar förmodligen inte ett vapen som passar denna ammunition."
 
-#: data/base/item_specs.lua:905
+#: data/base/item_specs.lua:907
 msgid "Barrett M82 Sniper Rifle"
 msgstr "Barrett M82 Krypskyttegevär"
 
-#: data/base/item_specs.lua:923
+#: data/base/item_specs.lua:925
 msgid "Powerful enough to stop a truck, literally, the likelihood of even a battle droid surviving more than 2 hits by this weapon is quite slim. It doesn't even matter if the pesky droid is cowering behind a wall, the bullets will break right through and make the bot ready for the scrap heap in no time."
 msgstr "Kraftfull nog att stoppa en lastbil, bokstavligen talat. Chansen att ens en stridsdroid skulle överleva mer än 2 träffar av det här vapnet är liten. Det spelar ingen roll om den förargliga droiden gömmer sig bakom en vägg, kulorna kommer gå rakt igenom och göra i ordning botten för skrothögen på nolltid."
 
-#: data/base/item_specs.lua:931
+#: data/base/item_specs.lua:933
 msgid "Laser Power Pack"
 msgstr "Energikristall - Laser"
 
-#: data/base/item_specs.lua:935
+#: data/base/item_specs.lua:937
 msgid "Energy crystal load for laser weapons and other power tools. Each round fired consumes a load within the crystal."
 msgstr "Energikristall för vapen och andra motordrivna verktyg. Varje laddning skott motsvarar en kristall."
 
-#: data/base/item_specs.lua:942
+#: data/base/item_specs.lua:944
 msgid "Laser Pistol"
 msgstr "Laserpistol"
 
-#: data/base/item_specs.lua:958
+#: data/base/item_specs.lua:960
 msgid "A basic laser, but it has good uses in certain situations. No warranty of any kind, though."
 msgstr "En enkel laser, men den kan vara bra att ha i vissa situationer. Ingen garanti dock."
 
-#: data/base/item_specs.lua:966
+#: data/base/item_specs.lua:968
 msgid "Laser Rifle"
 msgstr "Lasergevär"
 
-#: data/base/item_specs.lua:983
+#: data/base/item_specs.lua:985
 msgid "This rifle is a high-end laser weapon. There is only one problem with it: Shooting it is too much fun. People often end up with no ammunition in the middle of a battle."
 msgstr "Det här geväret är ett förädlat laservapen. Det är bara ett problem med det: Att skjuta med det är för kul. Det brukar leda till att ammunitionen tar slut mitt i striden."
 
-#: data/base/item_specs.lua:991
+#: data/base/item_specs.lua:993
 msgid "Laser Pulse Rifle"
 msgstr "Pulslasergevär"
 
-#: data/base/item_specs.lua:1008
+#: data/base/item_specs.lua:1010
 msgid "The pulse laser technology, allowing for many repeated short bursts without the weapon overheating, makes this quite a useful weapon. The damage from each shot is noticeably less than from a Laser rifle, but the firing rate more than makes up for it."
 msgstr "Pulslasertekniken tillåter upprepade korta blixtar utan att vapnet överhettas, vilket gör det till ett ganska användbart vapen. Skotten gör mindre skada än från ett lasergevär men hastigheten tar igen det."
 
-#: data/base/item_specs.lua:1016
+#: data/base/item_specs.lua:1018
 msgid "Laser Pulse Cannon"
 msgstr "Pulslaserkanon"
 
-#: data/base/item_specs.lua:1034
+#: data/base/item_specs.lua:1036
 msgid "The pulse laser technology, allowing for many repeated short bursts without the weapon overheating, combined with a military design makes this weapon the preferred choice for most soldiers. Its quick no-recoil firing, large magazine, and awesome killing power makes it the ideal weapon for cleansing large droid infestations in mere minutes."
 msgstr "Pulslasertekniken tillåter upprepade korta blixtar utan att vapnet överhettas. Kombinera det med militär design och du får det vapen som de flesta soldater föredrar. Det är snabbt, rekylfritt, har stort magasin och är fantastiskt dödligt - det perfekta vapnet för att städa upp ett droidangrepp på bara några minuter."
 
-#: data/base/item_specs.lua:1042
-msgid "Plasma Energy Container"
-msgstr "Energikristall - Plasma"
-
-#: data/base/item_specs.lua:1046
-msgid "A container filled with all materials and energy required to make plasma weapons work in one handy and relatively safe package. This is the most common way of loading a plasma weapon."
-msgstr "Ett behändigt och relativt litet paket fyllt med allt material och all energi som krävs för att ett plasmavapen ska fungera. Det här är det vanligaste sättet att ladda ett plasmavapen."
-
-#: data/base/item_specs.lua:1053
-msgid "Plasma Pistol"
-msgstr "Plasmapistol"
-
-#: data/base/item_specs.lua:1069
-msgid "The basic plasma weapon in a conveniently small package."
-msgstr "Ett grundläggande plasmavapen i en behändig litet förpackning."
-
-#: data/base/item_specs.lua:1077
-msgid "Plasma Gun"
-msgstr "Plasmagevär"
-
-#: data/base/item_specs.lua:1094
-msgid "A somewhat slow weapon, but once you do hit plenty a bot will just down on the spot. A good alternative to a pulse laser for the skilled marksman."
-msgstr "Ett aningen långsamt vapen, men den skjuter ner botten på stället, när du väl träffar. Ett bra alternativ till pulslaser, för den vane prickskytten."
-
-#: data/base/item_specs.lua:1102
-msgid "2mm Exterminator Ammunition"
-msgstr "2mm Ammunition Till Utrotare"
-
-#: data/base/item_specs.lua:1106
-msgid "Exterminators need this kind of ammunition. It can cause skin irritations due to leaking extermination radiation when carried close to the body for long time."
-msgstr "Utrotare kräver denna ammunition. När den bärs nära kroppen en lägre tid kan den orsaka hudirritationer på grund av läckande utrotningsstrålning."
-
-#: data/base/item_specs.lua:1113
-msgid "Exterminator"
-msgstr "Utrotare"
-
-#: data/base/item_specs.lua:1130
-msgid "While this weapon is capable of firing really powerful shots, beware of the exceptionally long reloading times. (Don't get swarmed by enemies with this weapon unless you have powerful armor!)"
-msgstr "Det här vapnet kan skjuta riktigt kraftfulla skott, men var uppmärksam på den ovanligt långa omladdingstiden. (Bli inte överfallen av ett gäng fiender såvida du inte har ett massivt pansar!)"
-
-#: data/base/item_specs.lua:1138
-msgid "The Super Exterminator!!!"
-msgstr "Superutrotaren!!!"
-
-#: data/base/item_specs.lua:1155
-msgid "This bad boy is known to blow away most enemies with a single blast. A dangerous weapon that you don't want to be on the receiving end of."
-msgstr "Den här styggingen kan spränga bort nästan varenda fiende i ett skott. Ett farligt vapen som du inte vill vara på fel ände om."
-
-#: data/base/item_specs.lua:1163
+#: data/base/item_specs.lua:1044
 msgid "Electro Laser Rifle"
 msgstr "Elektro-lasergevär"
 
-#: data/base/item_specs.lua:1180
-msgid "A specialized beam of laser momentarily ionizes the air between the target and the gun, turning it into highly conductive plasma. Milliseconds later, a powerful electric shock is delivered through the air and hits the target. This weapon is effective against people as it is against bots, and indeed few are the droid classes that can withstand more than a few hits from it before going down. The one downside is the high cost involved in crafting this weapon, which makes it very rare. Other than that, even the Exterminators have difficulty matching this weapon, the pride of human race."
-msgstr "En specialiserad laserstråle joniserar luften mellan målet och pistolen, vilket förvandlar den till elektriskt ledande plasma. Några millisekunder senare skickas en kraftig elchock genom luften och träffar målet. Det här vapnet är lika verkningsfullt på människor som på bottar, och det är faktiskt inte många droidklasser som kan klara av mer än några få träffar. Den enda nackdelen är den höga tillverkningskostnaden, vilket gör dessa mycket sällsynta. För övrigt har till och med Utrotaren svårt att mäta sig med detta vapen - mänskligheten stolthet."
+#: data/base/item_specs.lua:1062
+msgid "A specialized beam of laser momentarily ionizes the air between the target and the gun, turning it into highly conductive plasma. Milliseconds later, a powerful electric shock is delivered through the air and hits the target. This weapon is effective against people as it is against bots, and indeed few are the droid classes that can withstand more than a few hits from it before going down. The ammo is cheap, and it is one of the few man-made weapons which actually produces a blast, being able to harm more than one bot at once. However, it is still no match against Exterminators."
+msgstr ""
 
-#: data/base/item_specs.lua:1188
+#: data/base/item_specs.lua:1070
+msgid "Plasma Energy Container"
+msgstr "Energikristall - Plasma"
+
+#: data/base/item_specs.lua:1074
+msgid "A container filled with all materials and energy required to make plasma weapons work in one handy and relatively safe package. This is the most common way of loading a plasma weapon."
+msgstr "Ett behändigt och relativt litet paket fyllt med allt material och all energi som krävs för att ett plasmavapen ska fungera. Det här är det vanligaste sättet att ladda ett plasmavapen."
+
+#: data/base/item_specs.lua:1081
+msgid "Plasma Pistol"
+msgstr "Plasmapistol"
+
+#: data/base/item_specs.lua:1097
+msgid "The basic plasma weapon in a conveniently small package."
+msgstr "Ett grundläggande plasmavapen i en behändig litet förpackning."
+
+#: data/base/item_specs.lua:1105
+msgid "Plasma Gun"
+msgstr "Plasmagevär"
+
+#: data/base/item_specs.lua:1122
+msgid "A somewhat slow weapon, but once you do hit plenty a bot will just down on the spot. A good alternative to a pulse laser for the skilled marksman."
+msgstr "Ett aningen långsamt vapen, men den skjuter ner botten på stället, när du väl träffar. Ett bra alternativ till pulslaser, för den vane prickskytten."
+
+#: data/base/item_specs.lua:1130
+msgid "Plasma Cannon"
+msgstr ""
+
+#: data/base/item_specs.lua:1148
+msgid "The plasma cannon is one of the slowest weapon mankind even produced. Based on the Barrett M86 Sniper Rifle, it takes a long time to heat before shooting. Being a plasma bullet, a newbie will most likely miss the target. However, for the skilled marksman, it is a good alternative to a pulse laser cannon, because once it hit, molten metal is usually all that remains where the bot used to be."
+msgstr ""
+
+#: data/base/item_specs.lua:1156
+msgid "2mm Exterminator Ammunition"
+msgstr "2mm Ammunition Till Utrotare"
+
+#: data/base/item_specs.lua:1160
+msgid "Exterminators need this kind of ammunition. It can cause skin irritations due to leaking extermination radiation when carried close to the body for long time."
+msgstr "Utrotare kräver denna ammunition. När den bärs nära kroppen en lägre tid kan den orsaka hudirritationer på grund av läckande utrotningsstrålning."
+
+#: data/base/item_specs.lua:1167
+msgid "Exterminator"
+msgstr "Utrotare"
+
+#: data/base/item_specs.lua:1184
+msgid "While this weapon is capable of firing really powerful shots, beware of the exceptionally long reloading times. (Don't get swarmed by enemies with this weapon unless you have powerful armor!)"
+msgstr "Det här vapnet kan skjuta riktigt kraftfulla skott, men var uppmärksam på den ovanligt långa omladdingstiden. (Bli inte överfallen av ett gäng fiender såvida du inte har ett massivt pansar!)"
+
+#: data/base/item_specs.lua:1192
+msgid "The Super Exterminator!!!"
+msgstr "Superutrotaren!!!"
+
+#: data/base/item_specs.lua:1209
+msgid "This bad boy is known to blow away most enemies with a single blast. A dangerous weapon that you don't want to be on the receiving end of."
+msgstr "Den här styggingen kan spränga bort nästan varenda fiende i ett skott. Ett farligt vapen som du inte vill vara på fel ände om."
+
+#: data/base/item_specs.lua:1217
 msgid "VMX Gas Grenade"
 msgstr "VMX Gasgranat"
 
-#: data/base/item_specs.lua:1189
+#: data/base/item_specs.lua:1218
 msgid "Gas attack"
 msgstr "Gasattack"
 
-#: data/base/item_specs.lua:1193
-msgid "The gas does not look terrifying. It even smells somewhat nice. And then you die. You die a most horrible death, never knowing what killed you."
-msgstr "Gasen ser inte så hemsk ut. Den luktar till och med lite gott. Och sedan dör du. Du dör en mycket fruktansvärd död, ovetandes om vad som dödat dig."
+#: data/base/item_specs.lua:1222
+msgid "The gas does not look terrifying. It even smells somewhat nice. And then you die. You die a most horrible death, never knowing what killed you. (Note: This does not work on bots)"
+msgstr ""
 
-#: data/base/item_specs.lua:1200
+#: data/base/item_specs.lua:1229
 msgid "Small EMP Shockwave Generator"
 msgstr "Liten EMP-chockvågsgenerator"
 
-#: data/base/item_specs.lua:1201
+#: data/base/item_specs.lua:1230
 msgid "Small Electromagnetic pulse"
 msgstr "Liten elektromagnetisk puls"
 
-#: data/base/item_specs.lua:1205
+#: data/base/item_specs.lua:1234
 msgid "This sphere contains a few strange bits of technology invented by Nikola Tesla in the early 20th century. The magnetic pulse that it generates can damage most electronic devices in just one blast."
 msgstr "Det här klotet innehåller egendomlig gammal teknik som uppfanns av Nikola Tesla tidigt på 1900-talet. Den magnetiska pulsen som skapas kan skada de flesta elektroniska apparater i bara en smäll."
 
-#: data/base/item_specs.lua:1212
+#: data/base/item_specs.lua:1241
 msgid "EMP Shockwave Generator"
 msgstr "EMP-chockvågsgenerator"
 
-#: data/base/item_specs.lua:1213
+#: data/base/item_specs.lua:1242
 msgid "Electromagnetic pulse"
 msgstr "Elektromagnetisk puls"
 
-#: data/base/item_specs.lua:1217
+#: data/base/item_specs.lua:1246
 msgid "This sphere contains a few strange bits of technology invented by Nikola Tesla in the early 20th century. The magnetic pulse that it generates can destroy most electronic devices in just one blast."
 msgstr "Det här klotet innehåller egendomlig gammal teknik som uppfanns av Nikola Tesla tidigt på 1900-talet. Den magnetiska pulsen som skapas kan skada de flesta elektroniska apparater i bara en smäll."
 
-#: data/base/item_specs.lua:1224
+#: data/base/item_specs.lua:1253
 msgid "Electronic Noise Generator"
 msgstr "Elektronisk Störningsgenerator"
 
-#: data/base/item_specs.lua:1225
+#: data/base/item_specs.lua:1254
 msgid "Disable Electronics"
 msgstr "Slå ut elektronik"
 
-#: data/base/item_specs.lua:1229
+#: data/base/item_specs.lua:1258
 msgid "This sphere creates a short blast of electronic noise that temporarily disables most electronics."
 msgstr "Det här klotet skapar en kort explosion av elektroniska störningar som slår nästan all elektronik, tillfälligt."
 
-#: data/base/item_specs.lua:1236
+#: data/base/item_specs.lua:1265
 msgid "Small Plasma Shockwave Emitter"
 msgstr "Liten Utsändare Av Plasmastötvåg"
 
-#: data/base/item_specs.lua:1237
+#: data/base/item_specs.lua:1266
 msgid "Explosion"
 msgstr "Explosion"
 
-#: data/base/item_specs.lua:1241
+#: data/base/item_specs.lua:1270
 msgid "Said to be an upscaled version of a traditional high temperature explosive."
 msgstr "Sägs vara en lyxversion av ett traditionellt sprängämne."
 
-#: data/base/item_specs.lua:1248
+#: data/base/item_specs.lua:1277
 msgid "Plasma Shockwave Emitter"
 msgstr "Utsändare Av Plasmastötvåg"
 
-#: data/base/item_specs.lua:1249
+#: data/base/item_specs.lua:1278
 msgid "Huge explosion"
 msgstr "Enorm explosion"
 
-#: data/base/item_specs.lua:1253
+#: data/base/item_specs.lua:1282
 msgid "Said to be the downscaled version of the original Pandora's Sphere, this device extinguishes life with superheated plasma."
 msgstr "Sägs vara en mindre version av Pandoras Sfär. Den här lilla prylen utrotar liv med superhet plasma."
 
-#: data/base/item_specs.lua:1266
+#: data/base/item_specs.lua:1295
 msgid "Normal Jacket"
 msgstr "Vanlig Jacka"
 
-#: data/base/item_specs.lua:1273
+#: data/base/item_specs.lua:1302
 msgid "This piece of clothing made out of Synthex(TM) does a decent job of protection. I guess. Maybe. I'm not sure."
 msgstr "Det här klädesplagget, gjort i Syntex(TM) ger ett hyfsat skydd. Tror jag. Kanske. Inte helt säkert."
 
-#: data/base/item_specs.lua:1281
+#: data/base/item_specs.lua:1310
 msgid "Reinforced Jacket"
 msgstr "Förstärkt Jacka"
 
-#: data/base/item_specs.lua:1289
+#: data/base/item_specs.lua:1318
 msgid "One step up from a normal jacket."
 msgstr "En aning bättre än en vanlig jacka."
 
-#: data/base/item_specs.lua:1297
+#: data/base/item_specs.lua:1326
 msgid "Protective Jacket"
 msgstr "Skyddande Jacka"
 
-#: data/base/item_specs.lua:1305
+#: data/base/item_specs.lua:1334
 msgid "Very strong for its size, this jacket made out of Shootex(TM) does a good job of absorbing basic blows. It is suitable for all kinds of extreme sports, such as climbing, rafting, bungee-jumping, fencing and even racing."
 msgstr "Väldigt stark för sin storlek. Den här jackan, gjord av Skjutex(TM), är bra på att ta emot små smällar. Den passar för alla extremsporter så som klättring, flottning, bungeejump, fäktning och till och med racing."
 
-#: data/base/item_specs.lua:1313
+#: data/base/item_specs.lua:1342
 msgid "Red Guard's Light Robe"
 msgstr "Röda Väktarnas Lätta Skyddsdräkt"
 
-#: data/base/item_specs.lua:1321
+#: data/base/item_specs.lua:1350
 msgid "The universal riot gear of the Red Guard. Tough as nails and able to withstand most blows."
 msgstr "Röda Väktarnas universella kravall-utrustning. Hård som sten kan den ta emot de flesta smällar."
 
-#: data/base/item_specs.lua:1329
+#: data/base/item_specs.lua:1358
 msgid "Red Guard's Heavy Robe"
 msgstr "Röda Väktarnas Tunga Skyddsdräkt"
 
-#: data/base/item_specs.lua:1337
+#: data/base/item_specs.lua:1366
 msgid "Defense is acquired at a high level with this durable piece of armor."
 msgstr "Den här hållbara pansardräkten ger ett förstaklassigt skydd."
 
-#: data/base/item_specs.lua:1350
+#: data/base/item_specs.lua:1379
 msgid "Improvised Buckler"
 msgstr "Improviserad Sköld"
 
-#: data/base/item_specs.lua:1357
+#: data/base/item_specs.lua:1386
 msgid "This shield is a compilation of various objects which happened to be around. It has tubes, bolts and parts of metal, all slapped together to provide a small bit of protection from enemies. It's very simple and rough, but some sensors and lights have been added to let the wielder know when the item is getting hit, and how long it will remain operational and other cool stuff like that."
 msgstr "Den här skölden är tillverkad av lite olika saker som låg i närheten. Rör, bultar och metallbitar är hopklumpade, allt för att ge lite skydd mot fiender. Den är enkel och oslipad, men den har några sensorer och lampor som visar när den träffas, hur länge den kommer hålla och lite andra häftiga saker."
 
-#: data/base/item_specs.lua:1365
+#: data/base/item_specs.lua:1394
 msgid "Bot Carapace"
 msgstr "Bottskal"
 
-#: data/base/item_specs.lua:1372
+#: data/base/item_specs.lua:1401
 msgid "A small, lightweight and pretty straightforward shield. Provides decent protection."
 msgstr "En liten, lätt och enkel sköld. Ger ett hyfsat skydd."
 
-#: data/base/item_specs.lua:1380
+#: data/base/item_specs.lua:1409
 msgid "Standard Shield"
 msgstr "Vanlig Sköld"
 
-#: data/base/item_specs.lua:1387
+#: data/base/item_specs.lua:1416
 msgid "Better than a buckler, and a lot more effective."
 msgstr "Bättre än de små runda sköldarna, och mycket effektivare."
 
-#: data/base/item_specs.lua:1395
+#: data/base/item_specs.lua:1424
 msgid "Heavy Shield"
 msgstr "Tung Sköld"
 
-#: data/base/item_specs.lua:1403
+#: data/base/item_specs.lua:1432
 msgid "A medium sized, reinforced shield. Heavier than a standard shield, but should last longer. Provides decent protection."
 msgstr "En mellanstor, förstärkt sköld. Tyngre än en vanlig sköld, men den håller längre. Ger ett hyfsat skydd."
 
-#: data/base/item_specs.lua:1411
+#: data/base/item_specs.lua:1440
 msgid "Riot Shield"
 msgstr "Kravallsköld"
 
-#: data/base/item_specs.lua:1419
+#: data/base/item_specs.lua:1448
 msgid "A powerful shield, as useful to protect from bots as it is to control big crowds of angry protesters."
 msgstr "En stark sköld, lika effektiv mot attackerande bottar som mot en stor mobb av arga, protesterande människor."
 
-#: data/base/item_specs.lua:1431
+#: data/base/item_specs.lua:1460
 msgid "Pot Helmet"
 msgstr "Burkhjälm"
 
-#: data/base/item_specs.lua:1438
+#: data/base/item_specs.lua:1467
 msgid "Top of the line headgear, for bots. But rip it off their metal necks and take out the circuits it also manages to protect living beings decently against a myriad of close range and long range attacks."
 msgstr "Första klassens huvudbonad för bottar. Men om du sliter bort deras metallhals och tar bort kretskorten skyddar den även levande varelser mot en mängd attacker, både på avstånd och nära."
 
-#: data/base/item_specs.lua:1446
+#: data/base/item_specs.lua:1475
 msgid "Worker Helmet"
 msgstr "Arbetarhjälm"
 
-#: data/base/item_specs.lua:1453
+#: data/base/item_specs.lua:1482
 msgid "A simple cover to protect your head. Don't expect to be incognito, your flippers and penguin like body are hard to miss."
 msgstr "Ett enkelt skydd för ditt huvud. Tro inte att du kan vara anonym - dina simfötter och din pingvinlika kropp går inte ta miste på."
 
-#: data/base/item_specs.lua:1461
+#: data/base/item_specs.lua:1490
 msgid "Miner Helmet"
 msgstr "Gruvarbetarhjälm"
 
-#: data/base/item_specs.lua:1468
+#: data/base/item_specs.lua:1497
 msgid "It might look a bit silly, but it will save your life many times."
 msgstr "Den kanske ser löjlig ut men kan många gånger rädda ditt liv."
 
-#: data/base/item_specs.lua:1476
+#: data/base/item_specs.lua:1505
 msgid "Light Battle Helmet"
 msgstr "Lätt Stridshjälm"
 
-#: data/base/item_specs.lua:1484
+#: data/base/item_specs.lua:1513
 msgid "A rather useful helmet, has a few defense issues here and there but mainly is worth the wear."
 msgstr "En ganska användbar hjälm. Den skyddar inte helt bra överallt men är ändå värd att använda."
 
-#: data/base/item_specs.lua:1492
+#: data/base/item_specs.lua:1521
 msgid "Battle Helmet"
 msgstr "Stridshjälm"
 
-#: data/base/item_specs.lua:1500
+#: data/base/item_specs.lua:1529
 msgid "Now this is head protection. Feel safe with sturdy Resosteel(TM) protecting your head. Not as comfortable as other hats but the precious content stays safe."
 msgstr "Det här är vad jag kallar huvudskydd. Känn dig trygg och lugn när Resostål(TM) skyddar ditt huvud. Inte lika bekväm som andra hattar men det värdefulla innehållet är i tryggt förvar."
 
-#: data/base/item_specs.lua:1508
+#: data/base/item_specs.lua:1537
 msgid "Dixon's Helmet"
 msgstr "Dixons Hjälm"
 
-#: data/base/item_specs.lua:1515
+#: data/base/item_specs.lua:1544
 msgid "A gift from Dixon. It looks like it is about to turn into dust."
 msgstr "En gåva från Dixon. Det ser ut som om den snart bara är damm."
 
-#: data/base/item_specs.lua:1528
+#: data/base/item_specs.lua:1557
 msgid "Shoes"
 msgstr "Skor"
 
-#: data/base/item_specs.lua:1535
+#: data/base/item_specs.lua:1564
 msgid "These simple boots are designed for comfort of the wearer more than to give actual protection."
 msgstr "De här enkla kängorna är mer gjorda för att vara bekväma än för att ge faktiskt skydd."
 
-#: data/base/item_specs.lua:1543
+#: data/base/item_specs.lua:1572
 msgid "Worker Shoes"
 msgstr "Arbetsskor"
 
-#: data/base/item_specs.lua:1550
+#: data/base/item_specs.lua:1579
 msgid "These footwears are steel tipped, and generally quite sturdy, giving a bit extra protection."
 msgstr "De här skorna har stålhätta och är ganska stadiga, vilket ger lite extra skydd."
 
-#: data/base/item_specs.lua:1558
+#: data/base/item_specs.lua:1587
 msgid "Battle Shoes"
 msgstr "Stridsskor"
 
-#: data/base/item_specs.lua:1565
+#: data/base/item_specs.lua:1594
 msgid "These boots are similar to the simple shoes, but the material they are made of is hardened for extra protection."
 msgstr "De här kängorna liknar vanliga skor, men materialet är härdat för att ge extra skydd."
 
-#: data/base/item_specs.lua:1577
+#: data/base/item_specs.lua:1606
 msgid "Source Book of Emergency Shutdown"
 msgstr "Boken om \"Nödavstägning\""
 
-#: data/base/item_specs.lua:1578 data/base/item_specs.lua:1590
-#: data/base/item_specs.lua:1602 data/base/item_specs.lua:1614
-#: data/base/item_specs.lua:1626 data/base/item_specs.lua:1638
-#: data/base/item_specs.lua:1650 data/base/item_specs.lua:1662
-#: data/base/item_specs.lua:1674 data/base/item_specs.lua:1686
-#: data/base/item_specs.lua:1698 data/base/item_specs.lua:1710
-#: data/base/item_specs.lua:1734 data/base/item_specs.lua:1746
-#: data/base/item_specs.lua:1758 data/base/item_specs.lua:1770
-#: data/base/item_specs.lua:1782 data/base/item_specs.lua:1794
+#: data/base/item_specs.lua:1607 data/base/item_specs.lua:1619
+#: data/base/item_specs.lua:1631 data/base/item_specs.lua:1643
+#: data/base/item_specs.lua:1655 data/base/item_specs.lua:1667
+#: data/base/item_specs.lua:1679 data/base/item_specs.lua:1691
+#: data/base/item_specs.lua:1703 data/base/item_specs.lua:1715
+#: data/base/item_specs.lua:1727 data/base/item_specs.lua:1739
+#: data/base/item_specs.lua:1763 data/base/item_specs.lua:1775
+#: data/base/item_specs.lua:1787 data/base/item_specs.lua:1799
+#: data/base/item_specs.lua:1811 data/base/item_specs.lua:1823
 msgid "Permanently acquire/enhance this program"
 msgstr "Få/förbättra den här förmågan permanent."
 
-#: data/base/item_specs.lua:1582
+#: data/base/item_specs.lua:1611
 msgid "Everyone needs to blow off some steam every now and then."
 msgstr "Alla behöver coola ner lite då och då."
 
-#: data/base/item_specs.lua:1589
+#: data/base/item_specs.lua:1618
 msgid "Source Book of Check System Integrity"
 msgstr "Boken om \"Verifiera Systemintegritet\""
 
-#: data/base/item_specs.lua:1594
+#: data/base/item_specs.lua:1623
 msgid "An incredible healing program, probably the only one you will ever need."
 msgstr "Ett fantastiskt program för läkning, troligtvis det enda du kommer behöva."
 
-#: data/base/item_specs.lua:1601
+#: data/base/item_specs.lua:1630
 msgid "Source Book of Sanctuary"
 msgstr "Boken om \"Fristad\""
 
-#: data/base/item_specs.lua:1606
+#: data/base/item_specs.lua:1635
 msgid "The art of rapidly moving away from danger is very useful. Even when used in reverse, it has its uses."
 msgstr "Konsten att snabbt ta sig ur fara är bra att kunna. Till och med i andra riktningen kan den vara praktisk."
 
-#: data/base/item_specs.lua:1613
+#: data/base/item_specs.lua:1642
 msgid "Source Book of Malformed Packet"
 msgstr "Boken om \"Felformaterat Paket\""
 
-#: data/base/item_specs.lua:1618 data/base/skill_specs.lua:91
+#: data/base/item_specs.lua:1647 data/base/skill_specs.lua:91
 msgid "When computers are presented with the unexpected, they can damage themselves."
 msgstr "När datorer är presenterade oväntade saker kan de skada sig själva."
 
-#: data/base/item_specs.lua:1625
+#: data/base/item_specs.lua:1654
 msgid "Source Book of Calculate Pi"
 msgstr "Boken om \"Räkna ut Pi\""
 
-#: data/base/item_specs.lua:1630 data/base/skill_specs.lua:102
+#: data/base/item_specs.lua:1659 data/base/skill_specs.lua:102
 msgid "It is not a big problem to make a badly designed system to go hunting for the impossible, causing a performance impact."
 msgstr "Det är inget problem att få ett dåligt designat system att gå på jakt efter det omöjliga, vilket sänker prestandan."
 
-#: data/base/item_specs.lua:1637
+#: data/base/item_specs.lua:1666
 msgid "Source Book of Blue Screen"
 msgstr "Boken om \"Blåskärm\""
 
-#: data/base/item_specs.lua:1642 data/base/item_specs.lua:1654
+#: data/base/item_specs.lua:1671 data/base/item_specs.lua:1683
 msgid "With a little touch a war machine comes crashing to a halt. For a while."
 msgstr "Med en liten touch kan en krigsmaskin krascha ihop och stanna. En stund."
 
-#: data/base/item_specs.lua:1649
+#: data/base/item_specs.lua:1678
 msgid "Source Book of Broadcast Blue Screen"
 msgstr "Boken om \"Sänd ut Blåskärm\""
 
-#: data/base/item_specs.lua:1661
+#: data/base/item_specs.lua:1690
 msgid "Source Book of Invisibility"
 msgstr "Boken om \"Osynlighet\""
 
-#: data/base/item_specs.lua:1666 data/base/skill_specs.lua:80
+#: data/base/item_specs.lua:1695 data/base/skill_specs.lua:80
 msgid "I am not the Linarian you are looking for."
 msgstr "Jag är inte Linärianen du letar efter."
 
-#: data/base/item_specs.lua:1673
+#: data/base/item_specs.lua:1702
 msgid "Source Book of Virus"
 msgstr "Boken om \"Virus\""
 
-#: data/base/item_specs.lua:1678 data/base/skill_specs.lua:137
+#: data/base/item_specs.lua:1707 data/base/skill_specs.lua:137
 msgid "This is not just a firmware upgrade, my dear bot. You are about to find out what exactly I want to give you."
 msgstr "Det här är inte bara en mjukvaru-uppdatering, min käre bott. Snart får du reda på vad jag verkligen vill ge dig."
 
-#: data/base/item_specs.lua:1685
+#: data/base/item_specs.lua:1714
 msgid "Source Book of Broadcast Virus"
 msgstr "Boken om \"Sänd ut Virus\""
 
-#: data/base/item_specs.lua:1690
+#: data/base/item_specs.lua:1719
 msgid "The network is wide and dangerous. Many traps await the weak and unprepared."
 msgstr "Nätverket är stort och farligt. Många fällor väntar den som är svag och oföreberedd."
 
-#: data/base/item_specs.lua:1697
+#: data/base/item_specs.lua:1726
 msgid "Source Book of Dispel Smoke"
 msgstr "Boken om \"Frigör Rök\""
 
-#: data/base/item_specs.lua:1702
+#: data/base/item_specs.lua:1731
 msgid "By heating up the chips with a malformed program, you can cause them to release the magic smoke which keeps the bot running."
 msgstr "Genom att hetta upp chippen med ett trasigt program, kan du släppa ut den magiska röken som håller igång bottarna."
 
-#: data/base/item_specs.lua:1709
+#: data/base/item_specs.lua:1738
 msgid "Source Book of Killer Poke"
 msgstr "Boken om \"Skada Minneskretsar\""
 
-#: data/base/item_specs.lua:1714
+#: data/base/item_specs.lua:1743
 msgid "Messing around with the bot's memory can cause it to damage itself, but the damage is greatly variable."
 msgstr "Att röra om i bottens minne kan få den att skada sig själv, men skadan kan variera mycket."
 
-#: data/base/item_specs.lua:1721
+#: data/base/item_specs.lua:1750
 msgid "Source Book of Repair Equipment"
 msgstr "Boken om \"Reparera Utrustning\""
 
-#: data/base/item_specs.lua:1722
+#: data/base/item_specs.lua:1751
 msgid "Learn about repairing items"
 msgstr "Lär dig reparera föremål"
 
-#: data/base/item_specs.lua:1726
+#: data/base/item_specs.lua:1755
 msgid "This manual will help you fix a broken dishwasher, a car, or a gun. The covers does not mention anything about breaking robots however."
 msgstr "Den här manualen hjälper dig laga en trasig diskmaskin, bil eller pistol. Omslaget nämner dock inget om robotar."
 
-#: data/base/item_specs.lua:1733
+#: data/base/item_specs.lua:1762
 msgid "Source Book of Plasma Discharge"
 msgstr "Boken om \"Plasmaurladdning\""
 
-#: data/base/item_specs.lua:1738 data/base/skill_specs.lua:184
+#: data/base/item_specs.lua:1767 data/base/skill_specs.lua:184
 msgid "The overload setting exists for emergencies. Plasma does not discriminate between bots and humans. Everything is the same to it."
 msgstr "Inställningen för överbelastning är till för nödfall. Plasma gör ingen skillnad på bottar och människor, allt är det samma."
 
-#: data/base/item_specs.lua:1745
+#: data/base/item_specs.lua:1774
 msgid "Source Book of Nethack"
 msgstr "Boken om \"Nethack\""
 
-#: data/base/item_specs.lua:1750
+#: data/base/item_specs.lua:1779
 msgid "The open source game called Nethack is one of the world's greatest wasters of time. Machines don't care about it, but humans can get sucked in quite deeply."
 msgstr "Open-source-spelet Nethack är ett av världens största slöseri med tid. Maskiner bryr sig inte om det, men människor kan fastna ganska djupt i det."
 
-#: data/base/item_specs.lua:1757
+#: data/base/item_specs.lua:1786
 msgid "Source Book of Ricer CFLAGS"
 msgstr "Boken om \"Ricer CFLAGS\""
 
-#: data/base/item_specs.lua:1762
+#: data/base/item_specs.lua:1791
 msgid "Optimization is the root of all evil. You can gain some temporary improvements to your system, but in the end you are only likely to cause permanent damage."
 msgstr "Optimering är roten till all ondska. Du kan tillfälligt förbättra ditt system, men i slutändan kommer det troligtvis att det orsakar permanenta skador."
 
-#: data/base/item_specs.lua:1769
+#: data/base/item_specs.lua:1798
 msgid "Source Book of Reverse-engineer"
 msgstr "Boken om \"Reverse-engineer\""
 
-#: data/base/item_specs.lua:1774
+#: data/base/item_specs.lua:1803
 msgid "There is some dark magic in the art of turning bots inside-out to learn all their secrets."
 msgstr "Det ligger mörk magi i konsten att vända robotar ut och in för att lära sig alla deras hemligheter."
 
-#: data/base/item_specs.lua:1781
+#: data/base/item_specs.lua:1810
 msgid "Source Book of Light"
 msgstr "Boken om \"Ljus\""
 
-#: data/base/item_specs.lua:1786 data/base/skill_specs.lua:205
+#: data/base/item_specs.lua:1815 data/base/skill_specs.lua:205
 msgid "Let there be light..."
 msgstr "Varde ljus..."
 
-#: data/base/item_specs.lua:1793
+#: data/base/item_specs.lua:1822
 msgid "Source Book of Network Mapper"
 msgstr "Boken om \"Nätverksmappning\""
 
-#: data/base/item_specs.lua:1798 data/base/skill_specs.lua:195
+#: data/base/item_specs.lua:1827 data/base/skill_specs.lua:195
 msgid "Knowing what your enemies are up to is easy with a little signal intelligence. Displays enemy locations on your automap."
 msgstr "Att veta vad dina fiender håller på med är enkelt med hjälp av lite \"signal-intelligens\". Visar fiendernas position på autokartan."
 
-#: data/base/item_specs.lua:1805
+#: data/base/item_specs.lua:1834
 msgid "Subatomic and Nuclear Science for Dummies, Volume IV"
 msgstr "Subatomär fysik och kärnfysik för Dumskallar, Volym IV"
 
-#: data/base/item_specs.lua:1809
+#: data/base/item_specs.lua:1838
 msgid "From the back of the cover: 'Subatomic and Nuclear Science for Dummies, Volume IV is the most popular handbook series for learning nuclear science: Learn to generate enough power to keep you town lit up for a decade! Discover how to really scare neighboring countries! Find out how to make your very own mutant pet!' This obviously important tome of knowledge from before the great assault comes with no warranty whatsoever."
 msgstr "Från omslaget: \"Subatomär fysik och kärnfysik för Dumskallar, Volym IV är den populäraste serien handböcker om kärnfysik: Lär dig att generera tillräckligt med ström för att lysa upp din stad i ett helt decennium! Upptäck hur man verkligen skrämmer sina grannländer! Ta reda på hur du gör ditt eget mutant-husdjur!\" Den här boken - som skrevs innan det Stora Angreppet - innehåller uppenbart viktig information, men ger ingen som helst garanti."
 
-#: data/base/item_specs.lua:1816
+#: data/base/item_specs.lua:1845
 msgid "Manual of the Automated Factory"
 msgstr "Manual till den Automatiserade Fabriken"
 
-#: data/base/item_specs.lua:1820
+#: data/base/item_specs.lua:1849
 msgid "This book describes the operation and repair of automated factories. Included are common error codes and how to fix them. However, most repairs simply call for liberal application of 'Elbow Grease'."
 msgstr "Den här boken beskriver skötsel och reparation av automatiserade fabriker. Även hur man åtgärdar vanliga felkoder. Det verkar dock som de flesta fel kan lagas med riklig mängd \"Smörj\"."
 
-#: data/base/item_specs.lua:1827
+#: data/base/item_specs.lua:1856
 msgid "Manual of the Extract Bot Parts"
 msgstr "Manual om att Extrahera Bottdelar"
 
-#: data/base/item_specs.lua:1828 data/base/item_specs.lua:1832
-msgid "USE FOR CHEATING ONLY. If you see this online, please report the bug."
-msgstr "ENDAST TILL FÖR FUSK. Om du ser det här online, var vänlig rapportera buggen."
+#: data/base/item_specs.lua:1857 data/base/item_specs.lua:1861
+msgid "USE FOR CHEATING ONLY. If you see this ingame, please report the bug."
+msgstr ""
 
-#: data/base/item_specs.lua:1843
+#: data/base/item_specs.lua:1872
 msgid "Strength Pill"
 msgstr "Styrkepiller"
 
-#: data/base/item_specs.lua:1844
+#: data/base/item_specs.lua:1873
 msgid "Permanently gain +1 strength"
 msgstr "Ökar styrkan med +1, permanent"
 
-#: data/base/item_specs.lua:1848
+#: data/base/item_specs.lua:1877
 msgid "These pills permanently raise strength within a person. They work on a nano-technological basis. Consult your physician, the receipt or pharmacy experts for details on intended effects, possible interactions and side effects of this drug."
 msgstr "De här pillren gör en person permanent starkare. De arbetar på ett nanotekniskt plan. Rådfråga din läkare, receptet eller en läkemedelsexpert för att få mer detaljer kring läkemedlets effekter och eventuella biverkningar."
 
-#: data/base/item_specs.lua:1855
+#: data/base/item_specs.lua:1884
 msgid "Dexterity Pill"
 msgstr "Smidighetspiller"
 
-#: data/base/item_specs.lua:1856
+#: data/base/item_specs.lua:1885
 msgid "Permanently gain +1 dexterity"
 msgstr "Ökar smidigheten med +1, permanent"
 
-#: data/base/item_specs.lua:1860
+#: data/base/item_specs.lua:1889
 msgid "These pills permanently raise dexterity within a person. They work on a nano-technological basis. Consult your physician, the receipt or pharmacy experts for details on intended effects, possible interactions and side effects of this drug."
 msgstr "De här pillren gör en person permanent smidigare. De arbetar på ett nanotekniskt plan. Rådfråga din läkare, receptet eller en läkemedelsexpert för att få mer detaljer kring läkemedlets effekter och eventuella biverkningar."
 
-#: data/base/item_specs.lua:1867
+#: data/base/item_specs.lua:1896
 msgid "Code Pill"
 msgstr "Kodarpiller"
 
-#: data/base/item_specs.lua:1868
+#: data/base/item_specs.lua:1897
 msgid "Permanently gain +1 cooling"
 msgstr "Ökar kylningen med +1, permanent"
 
-#: data/base/item_specs.lua:1872
+#: data/base/item_specs.lua:1901
 msgid "Dude! This fab food will totally bump up your code skills, man! A real blast. Scarf these down to *see* the code."
 msgstr "Asså, den här maten är sjukt najs och kommer typ göra dina kodarskills asbra. Tryck i dig nå'ra så *ser* du koden liksom."
 
-#: data/base/item_specs.lua:1879
+#: data/base/item_specs.lua:1908
 msgid "Brain Enlargement Pills Antidote"
 msgstr "Motgift Mot Hjärnförstoringspiller"
 
-#: data/base/item_specs.lua:1883
+#: data/base/item_specs.lua:1912
 msgid "These pills can reverse the harmful effects of the 'brain enlargement pills' that are publicly sold via the Internet. The planet-wide guild of medics has recommended not to respond to these adverts at all, while attempts to entirely ban the distribution of those pills were never completely successful."
-msgstr ""
+msgstr "De här pillren kan läka skador man fått av \"hjärnförstorningspiller\" som säljs öppet på internet. Det världsvida läkemedelsförbundet har rekommenderat att man struntar i sådana annonser. Samtidigt har man aldrig lyckats förbjuda all handel med pillren."
 
-#: data/base/item_specs.lua:1890
+#: data/base/item_specs.lua:1919
 msgid "Brain Enlargement Pill"
 msgstr "Hjärnförstoringspiller"
 
-#: data/base/item_specs.lua:1891
+#: data/base/item_specs.lua:1920
 msgid "Gain fast acting cancer"
 msgstr "Få snabbväxande cancer"
 
-#: data/base/item_specs.lua:1895
+#: data/base/item_specs.lua:1924
 #, c-format
 msgid "Doctors all over the planet have tried to suppress the amazing breakthrough which has brought increased alertness and concentration that comes with a larger brain. They are synthesized using cutting edge technology and 100% natural herbal ingredients from a secret five thousand-year-old traditional holistic recipe. Get yours direct from our online Canadian ph4rm4cy!!! 100% satisfaction guaranteed!!!"
 msgstr "Doktorer över hela världen har försökt förhindra det fantastiska genombrott som gjort människor piggare och gett dem en större koncentrationsförmåga, tack vare en större hjärna hjärna. Dessa piller är tillverkade med hjälp av den senaste teknologin och 100% naturliga ingredienser enligt ett femtusen år gammalt folkrecept. Beställ dina direkt från vårt kanadensiska online-4p0t3k!!! Vi garanterar att du blir 100% supernöjd!!!"
 
-#: data/base/item_specs.lua:1902
+#: data/base/item_specs.lua:1931
 msgid "Diet Supplement"
 msgstr "Kosttillskott"
 
-#: data/base/item_specs.lua:1903 data/base/item_specs.lua:1915
-#: data/base/item_specs.lua:1927
+#: data/base/item_specs.lua:1932 data/base/item_specs.lua:1944
+#: data/base/item_specs.lua:1956
 msgid "Recover Health"
 msgstr "Förbättra Hälsan"
 
-#: data/base/item_specs.lua:1907
+#: data/base/item_specs.lua:1936
 msgid "Only proper vitamin and mineral intake can keep you healthy during the apocalypse. This can cure a cold."
 msgstr "Endast ett rikligt vitamin- och mineralintag kan hålla dig frisk under apokalypsen. Det här kan bota en förkylning."
 
-#: data/base/item_specs.lua:1914
+#: data/base/item_specs.lua:1943
 msgid "Antibiotic"
 msgstr "Antibiotika"
 
-#: data/base/item_specs.lua:1919
+#: data/base/item_specs.lua:1948
 msgid "Truly wonderful things can be extracted from molds. This can cure lethal food poisoning. Wish you had that in your last Nethack game, eh?"
 msgstr "Helt underbara sker utvinnas från mögel. Det här kan bota dödlig matförgiftning. Du önskar att du haft det här i den senaste omgången Nethack va?"
 
-#: data/base/item_specs.lua:1926
+#: data/base/item_specs.lua:1955
 msgid "Doc-in-a-can"
 msgstr "Doktor-på-burk"
 
-#: data/base/item_specs.lua:1931
+#: data/base/item_specs.lua:1960
 msgid "This is a drink filled with nanobots designed to heal any damage that they notice inside you. It can cure decapitation. Most of the time."
 msgstr "Den här drycken är fylld med nanobottar gjorda för att läka alla skador de upptäcker i dig. Den kan bota en halshuggning. Oftast."
 
-#: data/base/item_specs.lua:1938
+#: data/base/item_specs.lua:1967
 msgid "Bottled Ice"
 msgstr "Is På Flaska"
 
-#: data/base/item_specs.lua:1939 data/base/item_specs.lua:1951
-#: data/base/item_specs.lua:3011
+#: data/base/item_specs.lua:1968 data/base/item_specs.lua:1980
+#: data/base/item_specs.lua:3052
 msgid "Cooling aid"
 msgstr "Kylande"
 
-#: data/base/item_specs.lua:1943
+#: data/base/item_specs.lua:1972
 msgid "This bottle is filled with ice. It can keep you cool during a warm summer day."
 msgstr "Den här flaskan är fylld med is. Den kan svalka dig en varm sommardag."
 
-#: data/base/item_specs.lua:1950
+#: data/base/item_specs.lua:1979
 msgid "Industrial Coolant"
 msgstr "Industriellt Kylmedel"
 
-#: data/base/item_specs.lua:1955
+#: data/base/item_specs.lua:1984
 msgid "Bartenders around the world add this to drinks to get them cold very fast. Plus, the coolant is much cheaper. It can keep you cool inside a nuclear reactor."
 msgstr "Bartenders i hela världen blandar i det här i drinkarna för att kyla ned dem väldigt snabbt. Dessutom är det billigt. Det här kan hålla dig kall inne i en kärnreaktor."
 
-#: data/base/item_specs.lua:1962
+#: data/base/item_specs.lua:1991
 msgid "Liquid Nitrogen"
 msgstr "Flytande Kväve"
 
-#: data/base/item_specs.lua:1963
+#: data/base/item_specs.lua:1992
 msgid "Extreme Cooling aid"
 msgstr "Extremt kylande"
 
-#: data/base/item_specs.lua:1967
+#: data/base/item_specs.lua:1996
 msgid "When you want something frozen solid, this is what you need. It can keep you cool even inside a class M star."
 msgstr "När du vill att något ska bli genomfruset, är det här vad du behöver. Det kan hålla dig kall i en klass M-stjärna."
 
-#: data/base/item_specs.lua:1974
+#: data/base/item_specs.lua:2003
 msgid "Barf's Energy Drink"
 msgstr "Barf's Energidryck"
 
-#: data/base/item_specs.lua:1975
+#: data/base/item_specs.lua:2004
 msgid "Cool down, cure minor wounds."
 msgstr "Svalka dig och läk skråmor."
 
-#: data/base/item_specs.lua:1979
+#: data/base/item_specs.lua:2008
 msgid "Warning! These energy drinks contain high doses of caffeine! The average person drops dead after consuming 12 grams of caffeine. One of these bottles contains over double that amount."
 msgstr "Varning! De här energidryckerna innehåller höga doser av koffein! En normal person avlider efter att ha konsumerat 12 gram koffein. En av de här flaskorna innehåller mer än dubbelt så mycket."
 
-#: data/base/item_specs.lua:1986
+#: data/base/item_specs.lua:2015
 msgid "Running Power Capsule"
 msgstr "Spurtkapsel"
 
-#: data/base/item_specs.lua:1987
+#: data/base/item_specs.lua:2016
 msgid "Recover Running Power"
 msgstr "Kraft att springa"
 
-#: data/base/item_specs.lua:1991
+#: data/base/item_specs.lua:2020
 msgid "These small containers hold purified running strength. Each capsule can be used only once, but many of them can be grouped together like one item in your inventory."
 msgstr "De här små behållarna innehåller ren löpstyrka. Varje kapsel kan bara användas en gång, men flera stycken kan samlas ihop som ett föremål i ditt förråd."
 
-#: data/base/item_specs.lua:1998
+#: data/base/item_specs.lua:2027
 msgid "Strength Capsule"
 msgstr "Styrkekapsel"
 
-#: data/base/item_specs.lua:1999
+#: data/base/item_specs.lua:2028
 msgid "Temporary Boost to Strength"
 msgstr "Tillfälligt ökad styrka"
 
-#: data/base/item_specs.lua:2003
+#: data/base/item_specs.lua:2032
 msgid "These small containers hold purified strength. This item will give a temporary boost to strength. Each capsule can be used only once, but many of them can be grouped together like one item in your inventory."
 msgstr "De här små behållarna innehåller ren styrka. Det här föremålet gör dig tillfälligt starkare. Varje kapsel kan bara användas en gång, men flera stycken kan samlas ihop som ett föremål i ditt förråd."
 
-#: data/base/item_specs.lua:2010
+#: data/base/item_specs.lua:2039
 msgid "Dexterity Capsule"
 msgstr "Smidighetskapsel"
 
-#: data/base/item_specs.lua:2011
+#: data/base/item_specs.lua:2040
 msgid "Temporary Boost to Dexterity"
 msgstr "Tillfälligt ökad smidighet"
 
-#: data/base/item_specs.lua:2015
+#: data/base/item_specs.lua:2044
 msgid "These small containers hold purified dexterity. This item will give a temporary bonus to dexterity. Each capsule can be used only once, but many of them can be grouped together like one item in your inventory."
 msgstr "De här små behållarna innehåller ren styrka. Det här föremålet gör dig tillfälligt smidigare. Varje kapsel kan bara användas en gång, men flera stycken kan grupperas ihop till ett föremål i ditt förråd."
 
-#: data/base/item_specs.lua:2026
+#: data/base/item_specs.lua:2055
 msgid "Valuable Circuits"
 msgstr "Värdefulla Kretsar"
 
-#: data/base/item_specs.lua:2030
+#: data/base/item_specs.lua:2059
 msgid "The new monetary standard of the world. With the collapse of the banking system, the precious metals in bot circuitry are now de facto hard cash. A bit difficult to get, though, as the bots are not likely to just hand it over..."
-msgstr ""
+msgstr "Den nya världsvalutan. Banksystemets kollaps har gjort bottarnas kretskort, med deras värdefulla metaller, till riktig hårdvaluta. Dock är de lite svåra att få tag i eftersom bottarna knappast ger bort dem frivilligt..."
 
-#: data/base/item_specs.lua:2037
+#: data/base/item_specs.lua:2066
 msgid "Anti-grav Pod for Droids"
 msgstr "Anti-grav-kapsel För Droider"
 
-#: data/base/item_specs.lua:2041
+#: data/base/item_specs.lua:2070
 msgid "The bots use this to hover around."
 msgstr "Bottar använder den här för att sväva runt."
 
-#: data/base/item_specs.lua:2048
+#: data/base/item_specs.lua:2077
 msgid "Dixon's Toolbox"
 msgstr "Dixons Verktygslåda"
 
-#: data/base/item_specs.lua:2052
+#: data/base/item_specs.lua:2081
 msgid "This is a teleporter service toolbox. It's complete and orderly, though a few dents on the outside give proof of frequent use. 'C. Dixon' is carved into the outside with fine print."
 msgstr "Det här är en verktygslåda för teleport-service. Den är komplett och välordnad, men har några bucklor på utsidan vilket tyder på att den används ofta. Ett finstilt \"C. Dixon\" är ristat på utsidan."
 
-#: data/base/item_specs.lua:2059
+#: data/base/item_specs.lua:2088
 msgid "Toolbox"
 msgstr "Verktygslåda"
 
-#: data/base/item_specs.lua:2063
+#: data/base/item_specs.lua:2092
 msgid "This is a regular toolbox. It's complete and orderly, though a few dents on the outside give proof of frequent use."
 msgstr "Det här är en vanlig verktygslåda. Den är komplett och välordnad, men har några bucklor på utsidan vilket tyder på att den använts ofta."
 
-#: data/base/item_specs.lua:2070
+#: data/base/item_specs.lua:2099
 msgid "Entropy Inverter"
 msgstr "Entropi-inverterare"
 
-#: data/base/item_specs.lua:2074 data/base/item_specs.lua:2085
-#: data/base/item_specs.lua:2096 data/base/item_specs.lua:2107
-#: data/base/item_specs.lua:2118
+#: data/base/item_specs.lua:2103 data/base/item_specs.lua:2114
+#: data/base/item_specs.lua:2125 data/base/item_specs.lua:2136
+#: data/base/item_specs.lua:2147
 msgid "This is an standard part within many robot types."
 msgstr "Det här är en vanlig del i många robotar."
 
-#: data/base/item_specs.lua:2081
+#: data/base/item_specs.lua:2110
 msgid "Plasma Transistor"
 msgstr "Plasmatransistor"
 
-#: data/base/item_specs.lua:2092
+#: data/base/item_specs.lua:2121
 msgid "Superconducting Relay Unit"
 msgstr "Superledande Relä"
 
-#: data/base/item_specs.lua:2103
+#: data/base/item_specs.lua:2132
 msgid "Antimatter-Matter Converter"
 msgstr "Antimateria-omvandlare"
 
-#: data/base/item_specs.lua:2114
+#: data/base/item_specs.lua:2143
 msgid "Tachyon Condensator"
 msgstr "Takyon-kondensator"
 
-#: data/base/item_specs.lua:2125
+#: data/base/item_specs.lua:2154
 msgid "Desk Lamp"
 msgstr "Bordslampa"
 
-#: data/base/item_specs.lua:2129
+#: data/base/item_specs.lua:2158
 msgid "What would modern science be without this important item?"
 msgstr "Vad skulle modern forskning vara utan detta viktiga föremål?"
 
-#: data/base/item_specs.lua:2136
+#: data/base/item_specs.lua:2165
 msgid "Red Dilithium Crystal"
 msgstr "Röda Dilitiumkristaller"
 
-#: data/base/item_specs.lua:2140
+#: data/base/item_specs.lua:2169
 msgid "These dilithium crystals are used as an energy source in many modern electricity or heat based devices. Energy is extracted from the crystal by making use of the ordering of the crystal molecules. This principle has allowed us to build devices that consume a lot of energy, but do not need to be connected to a power line."
 msgstr "De här dilitiumkristallerna används som energikällor i många moderna el- och värmedrivna apparater. Energin kan utvinnas tack vare de ordnade molekylerna. Det här gör att man kan bygga apparater som kräver mycket energi men som inte behöver kopplas till elnätet."
 
-#: data/base/item_specs.lua:2147
+#: data/base/item_specs.lua:2176
 msgid "Map Maker"
 msgstr "Kartskapare"
 
-#: data/base/item_specs.lua:2148
+#: data/base/item_specs.lua:2177
 msgid "To implant the automap device"
 msgstr "Implanterar enheten för autokarta"
 
-#: data/base/item_specs.lua:2152
+#: data/base/item_specs.lua:2181
 msgid "This small device automatically collects data about the area within a range of 7 times 7 meters and draws a small-scale plan of the immediate surroundings. Because of its very tiny display, it needs to be held closely to the eye, and the image will then be projected directly into the eyeball of the user. Still, the collected map data will be split up by the device into several sectors for convenient viewing."
 msgstr "Den här lilla enheten samlar automatiskt in data från en omkrets på 7 meter och ritar en liten karta över omgivningen. Eftersom den är mycket liten behöver den hållas nära ögat, och då projekterar den en bild direkt in i användarens öga. Kartan delas upp i flera områden för bekvämlighetens skull."
 
-#: data/base/item_specs.lua:2159
+#: data/base/item_specs.lua:2188
 msgid "Light Enhancer? to be included in the future..."
 msgstr "Ljusförstärkare? kommer läggas in i framtiden..."
 
-#: data/base/item_specs.lua:2160 data/base/item_specs.lua:2164
+#: data/base/item_specs.lua:2189 data/base/item_specs.lua:2193
 msgid "See better in the dark."
 msgstr "Se bättre i mörker."
 
-#: data/base/item_specs.lua:2171
+#: data/base/item_specs.lua:2200
 msgid "Fork"
 msgstr "Gaffel"
 
-#: data/base/item_specs.lua:2184 data/base/item_specs.lua:2196
-#: data/base/item_specs.lua:2207 data/base/item_specs.lua:2218
+#: data/base/item_specs.lua:2213 data/base/item_specs.lua:2225
+#: data/base/item_specs.lua:2236 data/base/item_specs.lua:2247
 msgid "This item is part of the 'Self Cleaning Kitchen' (SCK) project from before the Great Assault. All of the items in the SCK project have an inner mechanism that will clean the object automatically if left alone for a given time. It comes with its own power supply, and has a supposed duration of 200 years."
 msgstr "Det här föremålet var en del av projektet \"Självrengörande Köket\" (SrK) innan det Stora Angreppet. Den har en inbyggd rengöringsmekanism som startas automatiskt om den lämnas i en viss tid. Den har även sin egen kraftförsörjning som ska räcka i 200 år."
 
-#: data/base/item_specs.lua:2192
+#: data/base/item_specs.lua:2221
 msgid "Plate"
 msgstr "Tallrik"
 
-#: data/base/item_specs.lua:2203
+#: data/base/item_specs.lua:2232
 msgid "Mug"
 msgstr "Mugg"
 
-#: data/base/item_specs.lua:2214
+#: data/base/item_specs.lua:2243
 msgid "Cup"
 msgstr "Kopp"
 
-#: data/base/item_specs.lua:2225
+#: data/base/item_specs.lua:2254
 msgid "Teleporter Homing Beacon"
 msgstr "Teleporter-spårare"
 
-#: data/base/item_specs.lua:2226
+#: data/base/item_specs.lua:2255
 msgid "Teleports you elsewhere"
 msgstr "Teleporterar dig någonstans"
 
-#: data/base/item_specs.lua:2230
+#: data/base/item_specs.lua:2259
 msgid "This device sends a signal to a nearby teleporter requesting a transport, and then helps with locking on and boosting the signal to ensure the teleportation attempt is successful. The battery inside is sufficient for one use *only* and the device becomes useless afterwards. At least, most people don't try to use them twice... and those few who do usually end up with parts of their body missing or attached in the wrong place. Note: Multiple of these may be grouped together in the inventory."
 msgstr "Den här enheten sänder en signal till närmaste teleporter och ber om transport. Den hjälper sedan till att säkra och förstärka signalen så teleporteringen går smärtfritt. Batteriet i den räcker bara *en* gång och sedan är den värdelös. De flesta försöker inte använden den två gånger... och de som gör det förlorar ofta olika kroppsdelar, eller får tillbaks dem på fel ställen. OBS: Flera sådana här kan grupperas ihop som ett föremål i förrådet."
 
-#: data/base/item_specs.lua:2237
+#: data/base/item_specs.lua:2266
 msgid "Data Cube"
 msgstr "Datakub"
 
-#: data/base/item_specs.lua:2241
+#: data/base/item_specs.lua:2270
 msgid "This was the most common form of portable information storage used on Earth until the Great Assault, its three-dimensional memory capable of storing up to 2 terabytes and compatible with most of the hardware on the planet."
 msgstr "Det här var den vanligaste formen av portabel datalagring på jorden fram tills det Stora Angreppet. Det tredimensionella minnet kan lagra upp till 2 terabyte och är kompatibelt med nästan all hårdvara."
 
-#: data/base/item_specs.lua:2248
+#: data/base/item_specs.lua:2277
 msgid "Kevin's Data Cube"
 msgstr "Kevins Datakub"
 
-#: data/base/item_specs.lua:2252
+#: data/base/item_specs.lua:2281
 msgid "This data cube contains confidential government data on the installations around the town. Kevin hopes that when the data is evaluated properly, a way out of the current crisis might be found. However, the amount of data is so vast, it can only be evaluated properly using a large cluster of computers. The Red Guard base is said to store an infrastructure suitable to this purpose."
 msgstr "Den här datakuben innehåller hemligstämplad information från ledningen om datorinstallationerna i stan. Kevin hoppas hitta ett sätt att lösa den nuvarande krisen genom att utvärdera den på rätt sätt. Men mängden data är så enorm att den bara kan utvärderas rätt med hjälp av ett stort kluster av datorer. Röda Väktarna sägs ha de resurser som krävs i sin bas."
 
-#: data/base/item_specs.lua:2259
+#: data/base/item_specs.lua:2288
 msgid "Pandora's Cube"
 msgstr "Pandoras Kub"
 
-#: data/base/item_specs.lua:2263
+#: data/base/item_specs.lua:2292
 msgid "This is heavy. Cannot the end of the world come in a smaller package? It would be a great time for Duncan to explain a few things..."
 msgstr "Det här är tungt. Kan inte världens undergång komma i ett mindre paket? Det börjar vara dags för Duncan att förklara några saker..."
 
-#: data/base/item_specs.lua:2270
+#: data/base/item_specs.lua:2299
 msgid "Rubber Duck"
 msgstr "Gummianka"
 
-#: data/base/item_specs.lua:2274
+#: data/base/item_specs.lua:2303
 msgid "It appears that humans enjoy bathing with squeaky little pieces of plastic shaped like waterfowl. As a penguinoid, you should probably be disturbed, but you have to admit this thing is actually quite adorable."
 msgstr "Vet verkar som människor tycker om att bada med små plastsaker formade som sjöfåglar. Det här borde störa dig som pingvinoid, men du måste faktiskt erkänna att den är rätt så gullig."
 
-#: data/base/item_specs.lua:2281
+#: data/base/item_specs.lua:2310
 msgid "Empty Picnic Basket"
 msgstr "Tom Picknickkorg"
 
-#: data/base/item_specs.lua:2285
+#: data/base/item_specs.lua:2314
 msgid "This is the latest in 'Dr. How?'-brand picnic basket technology! With patented food-preserving time-dilation, space-bending miniaturization, and anti-gravity, your food stays fresh and your drinks stay cold in a small light-as-a-feather package! Now you can picnic the old fashioned way! Batteries sold separately."
 msgstr "Det här är den senaste picknickkorgs-tekniken från \"Dr. Hur?\"! Med patenterad mat-bevarande tidsutvidgning, miniatyriserad rymd-böjning och anti-gravitation håller sig din man fräsch och dina drycker kalla i ett litet, fjäderlätt paket! Nu kan du äntligen ha picknick på det gamla goda viset! Batterier medföljer ej."
 
-#: data/base/item_specs.lua:2292
+#: data/base/item_specs.lua:2321
 msgid "Lunch in a Picnic Basket"
 msgstr "Lunch I En Picknickkorg"
 
-#: data/base/item_specs.lua:2296
+#: data/base/item_specs.lua:2325
 msgid "This is a 'Dr. How?'-brand picnic basket stuffed full of enough food and drinks to feed a dozen people. With 'Dr. How?'-time dilation, the food keeps oven-fresh, and the drinks stay ice-cold."
 msgstr "Det här är en picknickkorg av märket \"Dr. Hur?\" med tillräckligt mat och dryck för ett dussin personer. Med \"Dr. Hur?\"-tidsutvidgning håller sig maten ungsfärsk och drycken iskall."
 
-#: data/base/item_specs.lua:2303
+#: data/base/item_specs.lua:2332
 msgid "MS Stock Certificate"
 msgstr "MS Aktiebrev"
 
-#: data/base/item_specs.lua:2307
+#: data/base/item_specs.lua:2336
 msgid "This is a Stock Certificate for transfer of ownership of five hundred sixty-seven million shares of MegaSystems from William Gapes to bearer."
 msgstr "Det här är ett aktiebrev som överför äganderätten till femhundrasextiosju miljoner andelar i MegaSystems från William Gapes till innehavaren."
 
-#: data/base/item_specs.lua:2314
+#: data/base/item_specs.lua:2343
 msgid "Elbow Grease Can"
 msgstr "Smörj"
 
-#: data/base/item_specs.lua:2318
+#: data/base/item_specs.lua:2347
 msgid "A can filled with elbow grease. Hard to make it if you are not a strong man."
 msgstr "En flaska fylld med smörj. Den är svår att använda på ett varsamt sätt."
 
-#: data/base/item_specs.lua:2329
+#: data/base/item_specs.lua:2355
+msgid "MS EPROM Programming Interface"
+msgstr ""
+
+#: data/base/item_specs.lua:2359
+msgid "Used by developers at MegaSys to load firmware onto newly assembled droids."
+msgstr ""
+
+#: data/base/item_specs.lua:2370
 msgid "Linarian Power Crank"
 msgstr "Vevparti För Linärianer"
 
-#: data/base/item_specs.lua:2333
+#: data/base/item_specs.lua:2374
 msgid "This mechanical crank, product of the highly advanced and sophisticated technological genius of the Linarian race, performs elaborate operations on energy and directs it towards a biochemical structure. For short, it buffs up your muscles. That's good."
 msgstr "Den här mekaniska veven, en produkt av det mycket avancerade, sofistikerade, genialiska och tekniska sinnet hos Linärianerna, använder en detaljerad procedur för att skicka energi till en biokemisk struktur. Den biffar upp dina muskler, helt enkelt. Det är ju bra."
 
-#: data/base/item_specs.lua:2340
+#: data/base/item_specs.lua:2381
 msgid "Tungsten Spikes"
 msgstr "Volframtaggar"
 
-#: data/base/item_specs.lua:2344
+#: data/base/item_specs.lua:2385
 msgid "This polycarbonate surface is lined with hard tungsten spikes, and can be installed into a mechanical socket on most melee weapons, offering a simple and affordable solution to increasing damage dealt. Handle only with gloves. Do not attempt to use as footwear. Do not attempt to eat."
 msgstr "Den här skivan av polykarbonat är täckt med taggar av volfram och kan installeras i ett mekanisk sockel på de flesta handvapen - ett enkelt och billigt sätt att göra vapnet farligare. Måste hanteras med skyddshandskar. Får ej användas som skor. Får ej ätas."
 
-#: data/base/item_specs.lua:2351
+#: data/base/item_specs.lua:2392
 msgid "Tinfoil Patch"
 msgstr "Aluminiumfolie"
 
-#: data/base/item_specs.lua:2355
+#: data/base/item_specs.lua:2396
 msgid "When attached to your armor, this patch of tinfoil allows you to stay cooler by reducing the amount of electromagnetic radiation that your body absorbs."
 msgstr "När den sitter på din sköld hjälper den dig att hålla dig kall genom att minska mängden elektromagnetisk strålning som absorberas av din kropp."
 
-#: data/base/item_specs.lua:2362
+#: data/base/item_specs.lua:2403
 msgid "Laser Sight"
 msgstr "Lasersikte"
 
-#: data/base/item_specs.lua:2366
+#: data/base/item_specs.lua:2407
 msgid "A miniaturized laser powered by a nuclear battery. When attached parallel to the barrel of a gun, it makes a little red dot on the target and helps with aiming."
 msgstr "En förminskad laser, driven av ett kärnkraftbatteri. När den fästs på gevärspipan skapar den en liten röd prick på målet, vilket hjälper en att sikta."
 
-#: data/base/item_specs.lua:2373
+#: data/base/item_specs.lua:2414
 msgid "Exoskeletal Joint"
 msgstr "Exoskelett-led"
 
-#: data/base/item_specs.lua:2377
+#: data/base/item_specs.lua:2418
 msgid "This electromechanical joint helps you to perform physically demanding tasks more easily by amplifying the movements of your body."
 msgstr "Den här elektromekaniska leden hjälper dig att utföra fysiskt krävande arbeten genom att förstärka dina kroppsrörelser."
 
-#: data/base/item_specs.lua:2384
+#: data/base/item_specs.lua:2425
 msgid "Heatsink"
 msgstr "Kylfläns"
 
-#: data/base/item_specs.lua:2388
+#: data/base/item_specs.lua:2429
 msgid "A simple heatsink add-on that keeps you cooler by dissipating heat from your armor."
 msgstr "En enkel kylfläns som håller dig kall genom att leda bort värmen från din sköld."
 
-#: data/base/item_specs.lua:2395
+#: data/base/item_specs.lua:2436
 msgid "Peltier Element"
 msgstr "Peliter-element"
 
-#: data/base/item_specs.lua:2399
+#: data/base/item_specs.lua:2440
 msgid "A thermoelectric device that increases your cooling rate."
 msgstr "En termoelektrisk manick som höjer avkylningshastigheten."
 
-#: data/base/item_specs.lua:2406
+#: data/base/item_specs.lua:2447
 msgid "Steel Mesh"
 msgstr "Stålnät"
 
-#: data/base/item_specs.lua:2410
+#: data/base/item_specs.lua:2451
 msgid "A sturdy metal mesh that provides an extra protective layer to your armor."
 msgstr "Ett stadigt metallnät som ger din sköld ett extra skyddslager."
 
-#: data/base/item_specs.lua:2417
+#: data/base/item_specs.lua:2458
 msgid "Shock Discharger"
 msgstr "Chockurladdare"
 
-#: data/base/item_specs.lua:2421
+#: data/base/item_specs.lua:2462
 msgid "When installed to a melee weapon, this nifty device gives a small electric shock to enemies you hit."
 msgstr "När den installeras på ett handvapen ger den dina fiender en elektrisk chock varje gång de träffas."
 
-#: data/base/item_specs.lua:2428
+#: data/base/item_specs.lua:2469
 msgid "Silencer"
 msgstr "Ljuddämpare"
 
-#: data/base/item_specs.lua:2432
-msgid "Allowing you to catch your enemies by surprise, this silencer helps you to do more damage in ranged combat."
+#: data/base/item_specs.lua:2473
+msgid "This new generation silencer will not only allow you to catch your enemies by surprise, but will also help you to do more damage in ranged combat."
 msgstr ""
 
-#: data/base/item_specs.lua:2440
+#: data/base/item_specs.lua:2481
 msgid "Coprocessor"
 msgstr "Biprocessor"
 
-#: data/base/item_specs.lua:2444
+#: data/base/item_specs.lua:2485
 msgid "By speeding up your computations, this chip helps you to excel in many activities."
 msgstr "Genom att snabba upp beräkningarna gör det här chippet dig bättre på många områden."
 
-#: data/base/item_specs.lua:2451
+#: data/base/item_specs.lua:2492
 msgid "Pedometer"
 msgstr "Stegräknare"
 
-#: data/base/item_specs.lua:2455
+#: data/base/item_specs.lua:2496
 msgid "A device that helps you to move dexterously by giving feedback on your foot movement."
 msgstr "En pryl som gör att du kan röra dig smidigare genom att analysera ditt fotarbete och ge dig respons."
 
-#: data/base/item_specs.lua:2462
+#: data/base/item_specs.lua:2503
 msgid "Foot Warmers"
 msgstr "Fotvärmare"
 
-#: data/base/item_specs.lua:2466
+#: data/base/item_specs.lua:2507
 msgid "This pair of electric fuzzy foot warmers would make even a penguin warm and comfortable in any shoes, and help maintain a healthy body temperature, thus preventing colds and making you look cool. At least, that's what the advertisement says. And ads don't lie, do they?"
 msgstr "Det här elektriska, fluffiga fotvärmarna kan få, till och med en pingvins, fötter varma och sköna i vilka skor som helst, och de hjälper dig även hålla en hälsosam kroppstemeratur, vilket förhindrar förkylningar. Och dessutom ser du häftig ut. Åtminstone enligt annonsen. Och annonser ljuger aldirg, eller?"
 
-#: data/base/item_specs.lua:2473
+#: data/base/item_specs.lua:2514
 msgid "Circuit Jammer"
 msgstr "Krets-kraschare"
 
-#: data/base/item_specs.lua:2477
+#: data/base/item_specs.lua:2518
 msgid "This item improves your melee weapon by blasting the enemies you hit with an electromagnetic pulse. The pulse is powerful enough to temporarily shut down the circuits of the attacked bot."
 msgstr "Det här gör dina handvapen bättre genom att ge fienden en elektromagnetisk puls varje gång du träffar. Pulsen är kraftfull nog att tillfälligt slå ut kretsarna i en bott."
 
-#: data/base/item_specs.lua:2484
+#: data/base/item_specs.lua:2525
 msgid "Sensor Disruptor"
 msgstr "Störningssändare"
 
-#: data/base/item_specs.lua:2488
+#: data/base/item_specs.lua:2529
 msgid "When attached to a melee weapon, this item induces errors to the sensors of the bots you attack, causing them to slow down momentarily."
 msgstr "När den sitter på ett handvapen skapar den fel i sensorerna hos de bottar du anfaller, vilket får dem att sakta ner."
 
-#: data/base/item_specs.lua:2495
+#: data/base/item_specs.lua:2536
 msgid "Headlamp"
 msgstr "Pannlampa"
 
-#: data/base/item_specs.lua:2499
+#: data/base/item_specs.lua:2540
 msgid "When fastened to your helmet, this lamp allows you to see better in dark environments."
 msgstr "När den här lampan sitter på din hjälm hjälper den dig att se bättre i mörker."
 
-#: data/base/item_specs.lua:2506
+#: data/base/item_specs.lua:2547
 msgid "Brain Stimulator"
 msgstr "Hjärnsimulator"
 
-#: data/base/item_specs.lua:2510
+#: data/base/item_specs.lua:2551
 msgid "A chip that allows faster learning by connecting directly to the brain via a neural interface (colloquially referred to as a 'weird swim cap with little thingies on it') and providing additional feedback on various actions."
 msgstr "Ett chipp som gör det möjligt att lära sig snabbare, genom att det ansluts direkt till hjärnan via ett nervgränssnitt (till vardags kallat \"den där badmössan med konstiga små mojänger i) och ger extra respons vid olika rörelser."
 
-#: data/base/item_specs.lua:2521
+#: data/base/item_specs.lua:2562
 msgid "NPC Hand to Hand Weapon"
 msgstr "NPC Handvapen"
 
-#: data/base/item_specs.lua:2534
+#: data/base/item_specs.lua:2575
 msgid "Bot use only"
 msgstr "Endast för bottar"
 
-#: data/base/item_specs.lua:2542
+#: data/base/item_specs.lua:2583
 msgid "Droid 123 Weak Robotic Arm"
 msgstr "Droid 123 Svag Robotarm"
 
-#: data/base/item_specs.lua:2555 data/base/item_specs.lua:2579
-#: data/base/item_specs.lua:2600 data/base/item_specs.lua:2624
-#: data/base/item_specs.lua:2645 data/base/item_specs.lua:2666
-#: data/base/item_specs.lua:2687 data/base/item_specs.lua:2708
-#: data/base/item_specs.lua:2732 data/base/item_specs.lua:2753
-#: data/base/item_specs.lua:2774 data/base/item_specs.lua:2795
-#: data/base/item_specs.lua:2816 data/base/item_specs.lua:2837
-#: data/base/item_specs.lua:2861 data/base/item_specs.lua:2886
-#: data/base/item_specs.lua:2911
+#: data/base/item_specs.lua:2596 data/base/item_specs.lua:2620
+#: data/base/item_specs.lua:2641 data/base/item_specs.lua:2665
+#: data/base/item_specs.lua:2686 data/base/item_specs.lua:2707
+#: data/base/item_specs.lua:2728 data/base/item_specs.lua:2749
+#: data/base/item_specs.lua:2773 data/base/item_specs.lua:2794
+#: data/base/item_specs.lua:2815 data/base/item_specs.lua:2836
+#: data/base/item_specs.lua:2857 data/base/item_specs.lua:2878
+#: data/base/item_specs.lua:2902 data/base/item_specs.lua:2927
+#: data/base/item_specs.lua:2952
 msgid "Droid weaponry"
 msgstr "Droidvapen"
 
-#: data/base/item_specs.lua:2563
+#: data/base/item_specs.lua:2604
 msgid "Droid 139 Plasma Trash Vaporiser"
 msgstr "Droid 139 Plasmaavfallsbrännare"
 
-#: data/base/item_specs.lua:2587
+#: data/base/item_specs.lua:2628
 msgid "Droid 247 Robotic Arm"
 msgstr "Droid 247 Robotarm"
 
-#: data/base/item_specs.lua:2608
+#: data/base/item_specs.lua:2649
 msgid "Droid 249 Pulse Laser Welder"
 msgstr "Droid 249 Pulslasersvets"
 
-#: data/base/item_specs.lua:2632
+#: data/base/item_specs.lua:2673
 msgid "Droid 296 Plasmabeam Cutter"
 msgstr "Droid 296 Plasmaskärare"
 
-#: data/base/item_specs.lua:2653
+#: data/base/item_specs.lua:2694
 msgid "Droid 302 Overcharged Barcode Reader"
 msgstr "Droid 302 Överbelastad Streckkodsläsare"
 
-#: data/base/item_specs.lua:2674
+#: data/base/item_specs.lua:2715
 msgid "Droid 329 Dual Overcharged Barcode Reader"
 msgstr "Droid 329 Överbelastad Dubbel Streckkodsläsare"
 
-#: data/base/item_specs.lua:2695
+#: data/base/item_specs.lua:2736
 msgid "Droid 420 Laser Scalpel"
 msgstr "Droid 420 Laserskalpell"
 
-#: data/base/item_specs.lua:2716
+#: data/base/item_specs.lua:2757
 msgid "Droid 476 Small Laser"
 msgstr "Droid 476 Liten Laser"
 
-#: data/base/item_specs.lua:2740
+#: data/base/item_specs.lua:2781
 msgid "Droid 493 Power Hammer"
 msgstr "Droid 493 Maskinhammare"
 
-#: data/base/item_specs.lua:2761
+#: data/base/item_specs.lua:2802
 msgid "Droid 516 Robotic Fist"
 msgstr "Droid 516 Robotnäve"
 
-#: data/base/item_specs.lua:2782
+#: data/base/item_specs.lua:2823
 msgid "Droid 543 Tree Harvester"
 msgstr "Droid 543 Trädskördare"
 
-#: data/base/item_specs.lua:2803
+#: data/base/item_specs.lua:2844
 msgid "Droid 571 Robotic Fist"
 msgstr "Droid 571 Robotnäve"
 
-#: data/base/item_specs.lua:2824
+#: data/base/item_specs.lua:2865
 msgid "Droid 598 Robotic Fist"
 msgstr "Droid 598 Robotnäve"
 
-#: data/base/item_specs.lua:2845
+#: data/base/item_specs.lua:2886
 msgid "Droid 7xx Tux Seeking Missiles"
 msgstr "Droid 7xx Tuxsökande Missiler"
 
-#: data/base/item_specs.lua:2869
+#: data/base/item_specs.lua:2910
 msgid "Droid Advanced Twin Laser"
 msgstr "Avancerad Dubbellaser Från Droid"
 
-#: data/base/item_specs.lua:2894
+#: data/base/item_specs.lua:2935
 msgid "Droid 883 Exterminator"
 msgstr "Droid 883 Utrotare"
 
-#: data/base/item_specs.lua:2919
+#: data/base/item_specs.lua:2960
 msgid "Autogun Laser Pistol"
 msgstr "Laserpistol Från Autogevär"
 
-#: data/base/item_specs.lua:2935
+#: data/base/item_specs.lua:2976
 msgid "This is the laser weapon of the autogun. If you see this item whilst normal gameplay, please make a bugreport."
 msgstr "Det här är lasern från ett autogevär. Om du ser det här i spelet, var snäll och rapportera det som en bugg."
 
-#: data/base/item_specs.lua:2947
+#: data/base/item_specs.lua:2988
 msgid "PC LOAD LETTER"
 msgstr "PC LADDNINGSBOKSTAV"
 
-#: data/base/item_specs.lua:2951
+#: data/base/item_specs.lua:2992
 msgid "An envelop saying 'PC LOAD LETTERS'. I have no idea what that means..."
 msgstr "Ett omslag med texten \"PC LADDNINGSBOKSTÄVER\". Jag har ingen aning vad det ska betyda..."
 
-#: data/base/item_specs.lua:2958
+#: data/base/item_specs.lua:2999
 msgid "Cheat Gun"
 msgstr "Fuskgevär"
 
-#: data/base/item_specs.lua:2973
+#: data/base/item_specs.lua:3014
 msgid "This item is used by testers. If you find it ingame without using a cheat, please report it as a bug."
 msgstr "Det här används av testare. Om du hittar det i spelet utan fusk, var snäll och rappoertera det som en bugg."
 
-#: data/base/item_specs.lua:2987
+#: data/base/item_specs.lua:3028
 msgid "Small Tutorial Axe"
 msgstr "Handledning - Liten Yxa"
 
-#: data/base/item_specs.lua:3001
+#: data/base/item_specs.lua:3042
 msgid ""
 "While this axe was made for splitting wood, with some luck it can damage vital parts of a droid as well.\n"
 "Sell me!\n"
@@ -1822,11 +1842,11 @@ msgstr ""
 "Sälj mig!\n"
 "Klicka på den röda knappen med ett kryss när du är färdig."
 
-#: data/base/item_specs.lua:3010
+#: data/base/item_specs.lua:3051
 msgid "Bottled Tutorial Ice"
 msgstr "Handlednings - Is På Flaska"
 
-#: data/base/item_specs.lua:3015
+#: data/base/item_specs.lua:3056
 msgid ""
 "This bottle is filled with ice. It can keep you cool during a warm summer day.\n"
 "Buy me!\n"
@@ -2096,771 +2116,772 @@ msgstr "EMP-Granat"
 msgid "Electronic Noise"
 msgstr "Elektronisk Störning"
 
-#: data/base/dialogs/AfterTakeover.lua:36
+#. TRANSLATORS: It shows the ingame date in format: Day day, hour:minute
+#: data/base/dialogs/AfterTakeover.lua:34
 #, c-format
-msgid "%s@hacked_%s: ~ # "
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:37
-msgid "Login : "
-msgstr ""
+msgid "Day %d, %02d:%02d"
+msgstr "Dag %d, %02d:%02d"
 
 #: data/base/dialogs/AfterTakeover.lua:39
-msgid "Password : "
-msgstr ""
-
-#. TRANSLATORS: %s = a date ,  %d = a year number
-#: data/base/dialogs/AfterTakeover.lua:44
 #, c-format
-msgid "First login from /dev/ttySO on %s %d"
-msgstr ""
+msgid "%s@hacked_%s: ~ # "
+msgstr "%s@hackad_%s: ~ # "
+
+#: data/base/dialogs/AfterTakeover.lua:40
+msgid "Login : "
+msgstr "Inloggning : "
+
+#: data/base/dialogs/AfterTakeover.lua:42
+msgid "Password : "
+msgstr "Lösenord :"
 
 #. TRANSLATORS: %s = a date ,  %d = a year number
 #: data/base/dialogs/AfterTakeover.lua:47
 #, c-format
+msgid "First login from /dev/ttySO on %s %d"
+msgstr "Första inloggningen från /dev/ttySO %s %d"
+
+#. TRANSLATORS: %s = a date ,  %d = a year number
+#: data/base/dialogs/AfterTakeover.lua:50
+#, c-format
 msgid "Last login from /dev/ttyS0 on %s %d"
-msgstr ""
+msgstr "Sist inloggad från /dev/ttyS0 %s %d"
 
 #. TRANSLATORS: %s = bot name
-#: data/base/dialogs/AfterTakeover.lua:51
+#: data/base/dialogs/AfterTakeover.lua:54
 #, c-format
 msgid "Welcome to [b]%s[/b]!"
-msgstr ""
+msgstr "Välkommen till [b]%s[/b]!"
 
-#: data/base/dialogs/AfterTakeover.lua:53
+#: data/base/dialogs/AfterTakeover.lua:56
 msgid "Hardware Check : BOT DAMAGED"
-msgstr ""
+msgstr "Hårdvarukontroll: BOTT SKADAD"
 
 #. TRANSLATORS: %s = bot type
-#: data/base/dialogs/AfterTakeover.lua:55
+#: data/base/dialogs/AfterTakeover.lua:58
 #, c-format
 msgid "This %s unit could stand to be repaired."
-msgstr ""
+msgstr "Denna enhet %s kan repareras."
 
-#: data/base/dialogs/AfterTakeover.lua:59
+#: data/base/dialogs/AfterTakeover.lua:62
 msgid "BOTNET: UNIT TOO DAMAGED TO BROADCAST COMMANDS."
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:60
-#: data/base/dialogs/AfterTakeover.lua:344
-msgid "Entering \"single node\" mode..."
-msgstr ""
+msgstr "BOTNÄT: ENHETEN FÖR SKADAD FÖR ATT SÄNDA KOMMANDON."
 
 #: data/base/dialogs/AfterTakeover.lua:63
-msgid "BOTNET: Most commands will be broadcast."
-msgstr ""
+#: data/base/dialogs/AfterTakeover.lua:347
+msgid "Entering \"single node\" mode..."
+msgstr "Startar \"enkel nod\"-läge..."
 
 #: data/base/dialogs/AfterTakeover.lua:66
-msgid "SINGLE NODE: Commands will not be broadcast."
-msgstr ""
+msgid "BOTNET: Most commands will be broadcast."
+msgstr "BOTNÄT: De flesta kommandon sänds vidare."
 
-#: data/base/dialogs/AfterTakeover.lua:75 data/base/dialogs/AfterTakeover.lua:78
+#: data/base/dialogs/AfterTakeover.lua:69
+msgid "SINGLE NODE: Commands will not be broadcast."
+msgstr "ENKEL NOD: Kommandon sänds inte vidare."
+
+#: data/base/dialogs/AfterTakeover.lua:78 data/base/dialogs/AfterTakeover.lua:81
 msgid "cd repair&settings/"
-msgstr ""
+msgstr "cd reparation&konfiguration/"
 
 #. TRANSLATORS: first %s = Tux:get_player_name() ; second %s : Npc:get_type()
-#: data/base/dialogs/AfterTakeover.lua:88
+#: data/base/dialogs/AfterTakeover.lua:91
 #, c-format
 msgid "%s@hacked_%s/repair&settings: ~ # "
-msgstr ""
+msgstr "%s@hackad_%s/reparation&konfiguration: ~ # "
 
-#: data/base/dialogs/AfterTakeover.lua:98
+#: data/base/dialogs/AfterTakeover.lua:101
 msgid "cd .."
-msgstr ""
+msgstr "cd .."
 
-#: data/base/dialogs/AfterTakeover.lua:105
 #: data/base/dialogs/AfterTakeover.lua:108
-msgid "./hold_position.sh"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:109
-msgid "Holding position."
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:110
-msgid "script V 1.0.2 (c) gnu.org, 2054"
-msgstr ""
-
 #: data/base/dialogs/AfterTakeover.lua:111
-#: data/base/dialogs/AfterTakeover.lua:152
-msgid "Checking requirements..."
-msgstr ""
+msgid "./hold_position.sh"
+msgstr "./stå_still.sh"
 
 #: data/base/dialogs/AfterTakeover.lua:112
-msgid "Movement unit: Power-down... [Done]."
-msgstr ""
+msgid "Holding position."
+msgstr "Står stilla."
 
 #: data/base/dialogs/AfterTakeover.lua:113
+msgid "script V 1.0.2 (c) gnu.org, 2054"
+msgstr "skript V 1.0.2 (c) gnu.org, 2054"
+
+#: data/base/dialogs/AfterTakeover.lua:114
+#: data/base/dialogs/AfterTakeover.lua:155
+msgid "Checking requirements..."
+msgstr "Kontrollerar krav..."
+
+#: data/base/dialogs/AfterTakeover.lua:115
+msgid "Movement unit: Power-down... [Done]."
+msgstr "Rörelseenhet: Stänger av... [Klar]."
+
+#: data/base/dialogs/AfterTakeover.lua:116
 msgid "Status: All movement suppressed."
-msgstr ""
+msgstr "Status: All rörelse inaktiverad."
 
-#: data/base/dialogs/AfterTakeover.lua:125
 #: data/base/dialogs/AfterTakeover.lua:128
+#: data/base/dialogs/AfterTakeover.lua:131
 msgid "./follow_me.sh"
-msgstr ""
+msgstr "./följ_mig.sh"
 
-#: data/base/dialogs/AfterTakeover.lua:129
+#: data/base/dialogs/AfterTakeover.lua:132
 msgid "Initiating tracking sequence."
-msgstr ""
+msgstr "Initierar spårning."
 
-#: data/base/dialogs/AfterTakeover.lua:130
+#: data/base/dialogs/AfterTakeover.lua:133
 msgid "Movement unit: Enabled."
-msgstr ""
+msgstr "Rörelseenhet: Aktiverad."
 
 #. TRANSLATORS: first %s = Tux:get_player_name() ; second %s : Npc:get_type()
-#: data/base/dialogs/AfterTakeover.lua:132
+#: data/base/dialogs/AfterTakeover.lua:135
 #, c-format
 msgid "Acquiring lock on position of %s."
-msgstr ""
+msgstr "Låser till samma position som %s."
 
 #. TRANSLATORS: %s =  Tux:get_player_name()
-#: data/base/dialogs/AfterTakeover.lua:134
+#: data/base/dialogs/AfterTakeover.lua:137
 #, c-format
 msgid "Status: Following %s."
-msgstr ""
+msgstr "Status: Följer %s."
 
-#: data/base/dialogs/AfterTakeover.lua:146
 #: data/base/dialogs/AfterTakeover.lua:149
+#: data/base/dialogs/AfterTakeover.lua:152
 msgid "./move_freely.sh"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:150
-#, fuzzy
-msgid "Enable movement."
-msgstr "Handledning: Rörelse"
-
-#: data/base/dialogs/AfterTakeover.lua:151
-msgid "script V 1.0.5 (c) gnu.org, 2054"
-msgstr ""
+msgstr "./ströva_fritt.sh"
 
 #: data/base/dialogs/AfterTakeover.lua:153
-msgid "Movement unit: Power-up... [Done]."
-msgstr ""
+msgid "Enable movement."
+msgstr "Aktivera rörlighet."
 
 #: data/base/dialogs/AfterTakeover.lua:154
+msgid "script V 1.0.5 (c) gnu.org, 2054"
+msgstr "skript V 1.0.5 (c) gnu.org, 2054"
+
+#: data/base/dialogs/AfterTakeover.lua:156
+msgid "Movement unit: Power-up... [Done]."
+msgstr "Rörelseenhet: Startar upp... [Klar]."
+
+#: data/base/dialogs/AfterTakeover.lua:157
 msgid "Resuming normal patrol operations... [Done]"
-msgstr ""
+msgstr "Återställer normala patrullfunktioner... [Klar]."
 
-#: data/base/dialogs/AfterTakeover.lua:155
+#: data/base/dialogs/AfterTakeover.lua:158
 msgid "Status: Patrolling."
-msgstr ""
+msgstr "Status: Patrullerar."
 
-#: data/base/dialogs/AfterTakeover.lua:167
-#: data/base/dialogs/AfterTakeover.lua:180
+#: data/base/dialogs/AfterTakeover.lua:170
+#: data/base/dialogs/AfterTakeover.lua:183
 msgid "./repair.plx"
-msgstr ""
+msgstr "./reparera.plx"
 
 #. TRANSLATORS: %d = amount of valuable circuits
-#: data/base/dialogs/AfterTakeover.lua:184
+#: data/base/dialogs/AfterTakeover.lua:187
 #, c-format
 msgid "Available amount of valuable circuits for repair: %d."
-msgstr ""
+msgstr "Värdefulla kretsar tillgängliga för reparation: %d"
 
-#: data/base/dialogs/AfterTakeover.lua:194
-#: data/base/dialogs/AfterTakeover.lua:550
+#: data/base/dialogs/AfterTakeover.lua:197
+#: data/base/dialogs/AfterTakeover.lua:553
 msgid "seconds"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:196
-#: data/base/dialogs/AfterTakeover.lua:552
-msgid "second"
-msgstr ""
+msgstr "sekunder"
 
 #: data/base/dialogs/AfterTakeover.lua:199
+#: data/base/dialogs/AfterTakeover.lua:555
+msgid "second"
+msgstr "sekund"
+
+#: data/base/dialogs/AfterTakeover.lua:202
 msgid "circuits"
-msgstr ""
+msgstr "värdefulla kretsar"
 
-#: data/base/dialogs/AfterTakeover.lua:201
+#: data/base/dialogs/AfterTakeover.lua:204
 msgid "circuit"
-msgstr ""
+msgstr "värdefull krets"
 
-#: data/base/dialogs/AfterTakeover.lua:205
+#: data/base/dialogs/AfterTakeover.lua:208
 #, c-format
 msgid "Repairs on %s will take less than %d %s, %d valuable %s, and %d heat."
-msgstr ""
+msgstr "Reparationen av %s kommer kräva mindre än %d %s, %d %s och %d grader värme."
 
-#: data/base/dialogs/AfterTakeover.lua:214
+#: data/base/dialogs/AfterTakeover.lua:217
 #, c-format
 msgid "You do not have enough valuable circuits to ensure repair of this %s unit."
-msgstr ""
+msgstr "Du har inte tillräckligt många värdefulla kretsar för att reparera denna enhet %s."
 
-#: data/base/dialogs/AfterTakeover.lua:216
+#: data/base/dialogs/AfterTakeover.lua:219
 #, c-format
 msgid "You cannot dissipate enough heat to ensure repair of this %s unit."
-msgstr ""
+msgstr "Du kan inte leda bort tillräckligt mycket värme för att reparera denna enhet %s."
 
-#: data/base/dialogs/AfterTakeover.lua:218
+#: data/base/dialogs/AfterTakeover.lua:221
 #, c-format
 msgid "Do you want to start repair of this %s unit?"
-msgstr ""
+msgstr "Vill du påbörja reparation av denna enhet %s?"
 
-#: data/base/dialogs/AfterTakeover.lua:227
+#: data/base/dialogs/AfterTakeover.lua:230
 #, c-format
 msgid "%s is currently undamaged."
-msgstr ""
+msgstr "%s är för närvarande oskadad."
 
 #. TRANSLATORS: Y for yes
-#: data/base/dialogs/AfterTakeover.lua:236
-#: data/base/dialogs/AfterTakeover.lua:241
-#: data/base/dialogs/AfterTakeover.lua:392
-#: data/base/dialogs/AfterTakeover.lua:481
+#: data/base/dialogs/AfterTakeover.lua:239
+#: data/base/dialogs/AfterTakeover.lua:244
+#: data/base/dialogs/AfterTakeover.lua:395
+#: data/base/dialogs/AfterTakeover.lua:484
 msgid "Y"
-msgstr ""
+msgstr "J"
 
-#: data/base/dialogs/AfterTakeover.lua:242
+#: data/base/dialogs/AfterTakeover.lua:245
 msgid "Repair in progress."
-msgstr ""
+msgstr "Reparation pågår."
 
-#: data/base/dialogs/AfterTakeover.lua:243
+#: data/base/dialogs/AfterTakeover.lua:246
 msgid "Logout to complete repair process."
-msgstr ""
+msgstr "Logga ut för att slutföra reparationen."
 
 #. TRANSLATORS: N for no
-#: data/base/dialogs/AfterTakeover.lua:252
-#: data/base/dialogs/AfterTakeover.lua:257
-#: data/base/dialogs/AfterTakeover.lua:457
-#: data/base/dialogs/AfterTakeover.lua:497
+#: data/base/dialogs/AfterTakeover.lua:255
+#: data/base/dialogs/AfterTakeover.lua:260
+#: data/base/dialogs/AfterTakeover.lua:460
+#: data/base/dialogs/AfterTakeover.lua:500
 msgid "N"
-msgstr ""
+msgstr "N"
 
-#: data/base/dialogs/AfterTakeover.lua:258
+#: data/base/dialogs/AfterTakeover.lua:261
 msgid "Repair aborted."
-msgstr ""
+msgstr "Reparation avbruten."
 
-#: data/base/dialogs/AfterTakeover.lua:266
-#: data/base/dialogs/AfterTakeover.lua:354
+#: data/base/dialogs/AfterTakeover.lua:269
+#: data/base/dialogs/AfterTakeover.lua:357
 msgid "./settings.plx"
-msgstr ""
+msgstr "./inställningar.plx"
 
-#: data/base/dialogs/AfterTakeover.lua:276
+#: data/base/dialogs/AfterTakeover.lua:279
 msgid "confirmation of hcf.py"
-msgstr ""
+msgstr "bekräfta ste.py"
 
-#: data/base/dialogs/AfterTakeover.lua:280
+#: data/base/dialogs/AfterTakeover.lua:283
 msgid "Always ask for confirmation before execution of hcf.py? [Y/N]"
-msgstr ""
+msgstr "Fråga alltid om bekräftelse innan ste.py körs? [J/N]"
 
 #. TRANSLATORS: Y for yes
-#: data/base/dialogs/AfterTakeover.lua:288
+#: data/base/dialogs/AfterTakeover.lua:291
 msgid "Y (always ask)"
-msgstr ""
+msgstr "J (fråga alltid)"
 
-#: data/base/dialogs/AfterTakeover.lua:292
+#: data/base/dialogs/AfterTakeover.lua:295
 msgid "Confirmation will now be asked before execution of hcf.py."
-msgstr ""
+msgstr "Bekräftelse krävs nu innan körning av ste.py."
 
 #. TRANSLATORS: N for no
-#: data/base/dialogs/AfterTakeover.lua:301
+#: data/base/dialogs/AfterTakeover.lua:304
 msgid "N (don't ask)"
-msgstr ""
+msgstr "N (fråga inte)"
 
-#: data/base/dialogs/AfterTakeover.lua:305
+#: data/base/dialogs/AfterTakeover.lua:308
 msgid "hcf.py will be executed without asking for confirmation."
-msgstr ""
+msgstr "ste.py kommer köras utan att fråga efter bekräftelse."
 
-#: data/base/dialogs/AfterTakeover.lua:313
-#, fuzzy
+#: data/base/dialogs/AfterTakeover.lua:316
 msgid "broadcast commands"
-msgstr "Sänd ut Virus"
+msgstr "sänd kommandon"
 
-#: data/base/dialogs/AfterTakeover.lua:317
+#: data/base/dialogs/AfterTakeover.lua:320
 msgid "Broadcast commands to all units on level? [Y/N]"
-msgstr ""
+msgstr "Sänd kommandon till alla bottar i området? [J/N]"
 
 #. TRANSLATORS: Y for yes
-#: data/base/dialogs/AfterTakeover.lua:325
+#: data/base/dialogs/AfterTakeover.lua:328
 msgid "Y (enable broadcast)"
-msgstr ""
+msgstr "J (aktivera sändning)"
 
-#: data/base/dialogs/AfterTakeover.lua:329
+#: data/base/dialogs/AfterTakeover.lua:332
 msgid "Commands will be broadcast and executed by all bots on this level under your control."
-msgstr ""
+msgstr "Kommandon kommer sändas till och köras av alla bottar du kontrollerar."
 
-#: data/base/dialogs/AfterTakeover.lua:330
+#: data/base/dialogs/AfterTakeover.lua:333
 msgid "Entering \"botnet\" mode..."
-msgstr ""
+msgstr "Startar \"botnät\"-läge..."
 
 #. TRANSLATORS: N for no
-#: data/base/dialogs/AfterTakeover.lua:339
+#: data/base/dialogs/AfterTakeover.lua:342
 msgid "N (disable broadcast)"
-msgstr ""
+msgstr "N (inaktivera sändning)"
 
-#: data/base/dialogs/AfterTakeover.lua:343
+#: data/base/dialogs/AfterTakeover.lua:346
 msgid "Commands will only be executed by this bot."
-msgstr ""
+msgstr "Kommandon kommer endast köras på denna bott."
 
-#: data/base/dialogs/AfterTakeover.lua:355
-msgid "Welcome to the settings menu."
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:356
-msgid "Version: 1.82c"
-msgstr ""
-
-#. TRANSLATORS: %s = sensor name
 #: data/base/dialogs/AfterTakeover.lua:358
-#, c-format
-msgid "Installed sensor: %s"
-msgstr ""
+msgid "Welcome to the settings menu."
+msgstr "Välkommen till inställningsmenyn."
 
 #: data/base/dialogs/AfterTakeover.lua:359
-msgid "No upgrades found."
-msgstr ""
+msgid "Version: 1.82c"
+msgstr "Version: 1.82c"
 
+#. TRANSLATORS: %s = sensor name
 #: data/base/dialogs/AfterTakeover.lua:361
+#, c-format
+msgid "Installed sensor: %s"
+msgstr "Installerad sensor: %s"
+
+#: data/base/dialogs/AfterTakeover.lua:362
+msgid "No upgrades found."
+msgstr "Inga uppgraderingar hittades."
+
+#: data/base/dialogs/AfterTakeover.lua:364
 msgid "UNIT TOO DAMAGED TO BROADCAST COMMANDS."
-msgstr ""
+msgstr "ENHETEN ÄR FÖR SKADAD FÖR ATT SÄNDA KOMMANDON."
 
-#: data/base/dialogs/AfterTakeover.lua:365
+#: data/base/dialogs/AfterTakeover.lua:368
 msgid "Which setting should be changed?"
-msgstr ""
+msgstr "Vilken inställning ska ändras?"
 
-#: data/base/dialogs/AfterTakeover.lua:371
-#: data/base/dialogs/AfterTakeover.lua:375
-msgid "./hostname"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:376
-msgid "Welcome to the hostname menu."
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:377
-#, c-format
-msgid "Version: %s"
-msgstr ""
-
+#: data/base/dialogs/AfterTakeover.lua:374
 #: data/base/dialogs/AfterTakeover.lua:378
-#, c-format
-msgid "Current botname: [b]%s[/b]"
-msgstr ""
+msgid "./hostname"
+msgstr "./värdnamn"
 
 #: data/base/dialogs/AfterTakeover.lua:379
-msgid "Select new name? [Y/N]"
-msgstr ""
+msgid "Welcome to the hostname menu."
+msgstr "Välkommen till värdnamnsmenyn."
 
-#: data/base/dialogs/AfterTakeover.lua:387
-#: data/base/dialogs/AfterTakeover.lua:476
-#: data/base/dialogs/AfterTakeover.lua:520
-#: data/base/dialogs/AfterTakeover.lua:577
-#: data/base/dialogs/AfterTakeover.lua:582
-#: data/base/dialogs/AfterTakeover.lua:715
-msgid "Yes"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:393
-msgid "New Name: "
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:395
+#: data/base/dialogs/AfterTakeover.lua:380
 #, c-format
-msgid "Type a new name for this %s unit."
-msgstr ""
+msgid "Version: %s"
+msgstr "Version: %s"
+
+#: data/base/dialogs/AfterTakeover.lua:381
+#, c-format
+msgid "Current botname: [b]%s[/b]"
+msgstr "Nuvarande bottnamn: [b]%s[/b]"
+
+#: data/base/dialogs/AfterTakeover.lua:382
+msgid "Select new name? [Y/N]"
+msgstr "Ange nytt namn? [J/N]"
+
+#: data/base/dialogs/AfterTakeover.lua:390
+#: data/base/dialogs/AfterTakeover.lua:479
+#: data/base/dialogs/AfterTakeover.lua:523
+#: data/base/dialogs/AfterTakeover.lua:583
+#: data/base/dialogs/AfterTakeover.lua:588
+#: data/base/dialogs/AfterTakeover.lua:721
+msgid "Yes"
+msgstr "Ja"
+
+#: data/base/dialogs/AfterTakeover.lua:396
+msgid "New Name: "
+msgstr "Nytt namn:"
 
 #: data/base/dialogs/AfterTakeover.lua:398
-msgid "Bald"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:399
-msgid "Brusque"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:400
-msgid "Chic"
-msgstr ""
+#, c-format
+msgid "Type a new name for this %s unit."
+msgstr "Skriv in ett nytt namn för denna %s."
 
 #: data/base/dialogs/AfterTakeover.lua:401
-msgid "Cuddly"
-msgstr ""
+msgid "Bald"
+msgstr "Skallig"
 
 #: data/base/dialogs/AfterTakeover.lua:402
-#, fuzzy
-msgid "Cute"
-msgstr "Söt Tjej"
+msgid "Brusque"
+msgstr "Brysk"
 
 #: data/base/dialogs/AfterTakeover.lua:403
-msgid "Fickle"
-msgstr ""
+msgid "Chic"
+msgstr "Elegant"
 
 #: data/base/dialogs/AfterTakeover.lua:404
-msgid "Fluffy"
-msgstr ""
+msgid "Cuddly"
+msgstr "Gosig"
 
 #: data/base/dialogs/AfterTakeover.lua:405
-msgid "Fuzzy"
-msgstr ""
+msgid "Cute"
+msgstr "Gullig"
 
 #: data/base/dialogs/AfterTakeover.lua:406
-msgid "Happy"
-msgstr ""
+msgid "Fickle"
+msgstr "Nyckfull"
 
 #: data/base/dialogs/AfterTakeover.lua:407
-msgid "Hyper"
-msgstr ""
+msgid "Fluffy"
+msgstr "Fluffig"
 
 #: data/base/dialogs/AfterTakeover.lua:408
-msgid "Laughing"
-msgstr ""
+msgid "Fuzzy"
+msgstr "Lurvig"
 
 #: data/base/dialogs/AfterTakeover.lua:409
-msgid "Machavellian"
-msgstr ""
+msgid "Happy"
+msgstr "Glad"
 
 #: data/base/dialogs/AfterTakeover.lua:410
-msgid "Mad"
-msgstr ""
+msgid "Hyper"
+msgstr "Hyper"
 
 #: data/base/dialogs/AfterTakeover.lua:411
-msgid "Obscene"
-msgstr ""
+msgid "Laughing"
+msgstr "Skrattande"
 
 #: data/base/dialogs/AfterTakeover.lua:412
-msgid "Ornery"
-msgstr ""
+msgid "Machavellian"
+msgstr "Samvetslös"
 
 #: data/base/dialogs/AfterTakeover.lua:413
-msgid "Pompous"
-msgstr ""
+msgid "Mad"
+msgstr "Galen"
 
 #: data/base/dialogs/AfterTakeover.lua:414
-msgid "Shrewd"
-msgstr ""
+msgid "Obscene"
+msgstr "Oanständig"
+
+#: data/base/dialogs/AfterTakeover.lua:415
+msgid "Ornery"
+msgstr "Grinig"
 
 #: data/base/dialogs/AfterTakeover.lua:416
-msgid "Aardvark"
-msgstr ""
+msgid "Pompous"
+msgstr "Pompös"
 
 #: data/base/dialogs/AfterTakeover.lua:417
-msgid "Armadillo"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:418
-msgid "Barracuda"
-msgstr ""
+msgid "Shrewd"
+msgstr "Finurlig"
 
 #: data/base/dialogs/AfterTakeover.lua:419
-msgid "Bat"
-msgstr ""
+msgid "Aardvark"
+msgstr "Myrslok"
 
 #: data/base/dialogs/AfterTakeover.lua:420
-msgid "Beetle"
-msgstr ""
+msgid "Armadillo"
+msgstr "Bälta"
 
 #: data/base/dialogs/AfterTakeover.lua:421
-msgid "Bunny"
-msgstr ""
+msgid "Barracuda"
+msgstr "Barracuda"
 
 #: data/base/dialogs/AfterTakeover.lua:422
-msgid "Dodo"
-msgstr ""
+msgid "Bat"
+msgstr "Fladdermus"
 
 #: data/base/dialogs/AfterTakeover.lua:423
-msgid "Duck"
-msgstr ""
+msgid "Beetle"
+msgstr "Skalbagge"
 
 #: data/base/dialogs/AfterTakeover.lua:424
-msgid "Fox"
-msgstr ""
+msgid "Bunny"
+msgstr "Kanin"
 
 #: data/base/dialogs/AfterTakeover.lua:425
-msgid "Frog"
-msgstr ""
+msgid "Dodo"
+msgstr "Dront"
 
 #: data/base/dialogs/AfterTakeover.lua:426
-msgid "Gerbil"
-msgstr ""
+msgid "Duck"
+msgstr "Anka"
 
 #: data/base/dialogs/AfterTakeover.lua:427
-#, fuzzy
-msgid "Gnu"
-msgstr "Kille"
+msgid "Fox"
+msgstr "Räv"
 
 #: data/base/dialogs/AfterTakeover.lua:428
-msgid "Halibut"
-msgstr ""
+msgid "Frog"
+msgstr "Groda"
 
 #: data/base/dialogs/AfterTakeover.lua:429
-msgid "Hedgehog"
-msgstr ""
+msgid "Gerbil"
+msgstr "Ökenråtta"
 
 #: data/base/dialogs/AfterTakeover.lua:430
-msgid "Herring"
-msgstr ""
+msgid "Gnu"
+msgstr "Gnu"
 
 #: data/base/dialogs/AfterTakeover.lua:431
-msgid "Kitten"
-msgstr ""
+msgid "Halibut"
+msgstr "Hälleflundra"
 
 #: data/base/dialogs/AfterTakeover.lua:432
-msgid "Koala"
-msgstr ""
+msgid "Hedgehog"
+msgstr "Igelkott"
 
 #: data/base/dialogs/AfterTakeover.lua:433
-msgid "Lemur"
-msgstr ""
+msgid "Herring"
+msgstr "Sill"
 
 #: data/base/dialogs/AfterTakeover.lua:434
-msgid "Mackerel"
-msgstr ""
+msgid "Kitten"
+msgstr "Kattunge"
 
 #: data/base/dialogs/AfterTakeover.lua:435
-msgid "Otter"
-msgstr ""
+msgid "Koala"
+msgstr "Koala"
 
 #: data/base/dialogs/AfterTakeover.lua:436
-msgid "Panda"
-msgstr ""
+msgid "Lemur"
+msgstr "Lemur"
 
 #: data/base/dialogs/AfterTakeover.lua:437
-#, fuzzy
-msgid "Platypus"
-msgstr "Tallrik"
+msgid "Mackerel"
+msgstr "Makrill"
 
 #: data/base/dialogs/AfterTakeover.lua:438
-msgid "Puffin"
-msgstr ""
+msgid "Otter"
+msgstr "Utter"
 
 #: data/base/dialogs/AfterTakeover.lua:439
-msgid "Scarab"
-msgstr ""
+msgid "Panda"
+msgstr "Panda"
 
 #: data/base/dialogs/AfterTakeover.lua:440
-msgid "Shrew"
-msgstr ""
+msgid "Platypus"
+msgstr "Näbbdjur"
 
 #: data/base/dialogs/AfterTakeover.lua:441
-msgid "Tapir"
-msgstr ""
+msgid "Puffin"
+msgstr "Lunnefågel"
 
 #: data/base/dialogs/AfterTakeover.lua:442
-msgid "Trout"
-msgstr ""
+msgid "Scarab"
+msgstr "Bladhorning"
 
 #: data/base/dialogs/AfterTakeover.lua:443
-msgid "Tuna"
-msgstr ""
+msgid "Shrew"
+msgstr "Näbbmus"
 
 #: data/base/dialogs/AfterTakeover.lua:444
+msgid "Tapir"
+msgstr "Tapir"
+
+#: data/base/dialogs/AfterTakeover.lua:445
+msgid "Trout"
+msgstr "Öring"
+
+#: data/base/dialogs/AfterTakeover.lua:446
+msgid "Tuna"
+msgstr "Tonfisk"
+
+#: data/base/dialogs/AfterTakeover.lua:447
 msgid "Walrus"
-msgstr ""
+msgstr "Valross"
 
-#: data/base/dialogs/AfterTakeover.lua:452
-#: data/base/dialogs/AfterTakeover.lua:492
-#: data/base/dialogs/AfterTakeover.lua:531
-#: data/base/dialogs/AfterTakeover.lua:591
-#: data/base/dialogs/AfterTakeover.lua:727
+#: data/base/dialogs/AfterTakeover.lua:455
+#: data/base/dialogs/AfterTakeover.lua:495
+#: data/base/dialogs/AfterTakeover.lua:534
+#: data/base/dialogs/AfterTakeover.lua:597
+#: data/base/dialogs/AfterTakeover.lua:733
 msgid "No"
-msgstr ""
+msgstr "Nej"
 
-#: data/base/dialogs/AfterTakeover.lua:468
+#: data/base/dialogs/AfterTakeover.lua:471
 #, c-format
 msgid "Confirm renaming from [b]%s[/b] to [b]%s[/b]? [Y/N]"
-msgstr ""
+msgstr "Bekräfta namnändring från [b]%s[/b] till [b]%s[/b]? [J/N]"
 
-#: data/base/dialogs/AfterTakeover.lua:482
+#: data/base/dialogs/AfterTakeover.lua:485
 #, c-format
 msgid "Renamed [b]%s[/b] to [b]%s[/b]."
-msgstr ""
+msgstr "Bytt namn från [b]%s[/b] till [b]%s[/b]."
 
-#: data/base/dialogs/AfterTakeover.lua:484
+#: data/base/dialogs/AfterTakeover.lua:487
 #, c-format
 msgid "This %s unit is now designated: [b]%s[/b]"
-msgstr ""
+msgstr "Denna enhet %s kallas nu: [b]%s[/b]"
 
-#: data/base/dialogs/AfterTakeover.lua:505
 #: data/base/dialogs/AfterTakeover.lua:508
+#: data/base/dialogs/AfterTakeover.lua:511
 msgid "./hcf.py"
-msgstr ""
+msgstr "./ste.py"
 
-#: data/base/dialogs/AfterTakeover.lua:510
+#: data/base/dialogs/AfterTakeover.lua:513
 #, c-format
 msgid "Are you really sure you want to destroy %s? Y/N"
-msgstr ""
+msgstr "Är du säker att du vill förstöra %s? [J/N]"
 
-#: data/base/dialogs/AfterTakeover.lua:524
+#: data/base/dialogs/AfterTakeover.lua:527
 msgid "Destruction confirmed."
-msgstr ""
+msgstr "Förstöring  bekräftad."
 
-#: data/base/dialogs/AfterTakeover.lua:535
+#: data/base/dialogs/AfterTakeover.lua:538
 msgid "Destruction averted."
-msgstr ""
+msgstr "Förstöring nekad."
 
-#: data/base/dialogs/AfterTakeover.lua:555
+#. TRANSLATORS: Example: Draining this 123 unit will get you 5 HP but kill it and take 3 seconds.
+#: data/base/dialogs/AfterTakeover.lua:560
 #, c-format
 msgid "Draining this %s unit will get you %d HP but kill it and take %d %s."
-msgstr ""
+msgstr "Att tömma denna %s ger dig %d i hälsa, men kommer döda den och ta %d %s."
 
-#: data/base/dialogs/AfterTakeover.lua:562
+#: data/base/dialogs/AfterTakeover.lua:568
 #, c-format
 msgid "Are you sure you want to drain this %s unit?"
-msgstr ""
+msgstr "Är du säker att du vill tömma denna enhet %s?"
 
-#: data/base/dialogs/AfterTakeover.lua:594
-#, fuzzy
+#: data/base/dialogs/AfterTakeover.lua:600
 msgid "Bot not drained."
-msgstr "Bot i nöd"
+msgstr "Bott tömdes inte."
 
-#: data/base/dialogs/AfterTakeover.lua:595
+#: data/base/dialogs/AfterTakeover.lua:601
 msgid "Running hcf.py..."
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:606
-msgid "Executing: Halt and Catch Fire."
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:608
-msgid "Warning! Cooling subsystems disabled."
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:609
-msgid "Warning! Spontaneous oxidization witH emis$ion of light aND heAt detecteddd in THE#main| procesIng unit."
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:610
-#, c-format
-msgid "WArn|n*! SsTeM=#faiPure%%^#n 3 S 1()$++"
-msgstr ""
+msgstr "Kör ste.py"
 
 #: data/base/dialogs/AfterTakeover.lua:612
-#, fuzzy
+msgid "Executing: Halt and Catch Fire."
+msgstr "Kör: Stanna och Ta Eld."
+
+#: data/base/dialogs/AfterTakeover.lua:614
+msgid "Warning! Cooling subsystems disabled."
+msgstr "Varning! Kylningen avslagen."
+
+#: data/base/dialogs/AfterTakeover.lua:615
+msgid "Warning! Spontaneous oxidization witH emis$ion of light aND heAt detecteddd in THE#main| procesIng unit."
+msgstr "Varning! Plötslig oxidation meD ljusut$trålning oCH vÄrmE upptäktess | HUVUD#processorn.||"
+
+#: data/base/dialogs/AfterTakeover.lua:616
+#, c-format
+msgid "WArn|n*! SsTeM=#faiPure%%^#n 3 S 1()$++"
+msgstr "VArn|n*! SsTeM=#feElL%%^#n 3 S 1()$++"
+
+#: data/base/dialogs/AfterTakeover.lua:618
 msgid "Warning: something seems wrong."
-msgstr "Varning: Het ånga är het!"
+msgstr "Varning: något gick fel."
 
-#: data/base/dialogs/AfterTakeover.lua:613
+#: data/base/dialogs/AfterTakeover.lua:619
 msgid "Error report:"
-msgstr ""
+msgstr "Felrapport:"
 
-#: data/base/dialogs/AfterTakeover.lua:625
+#: data/base/dialogs/AfterTakeover.lua:631
 #, c-format
 msgid "()%%#@(%% THE BLADE IS YOURS. )##%%*&%%*!"
-msgstr ""
+msgstr "()%%#@(%% BLADET ÄR DITT. )##%%*&%%*!"
 
-#: data/base/dialogs/AfterTakeover.lua:632
-#, fuzzy
+#: data/base/dialogs/AfterTakeover.lua:638
 msgid "Bot drained."
-msgstr "Bot i nöd"
+msgstr "Bott tömd."
 
-#: data/base/dialogs/AfterTakeover.lua:636
+#: data/base/dialogs/AfterTakeover.lua:642
 msgid "Failed to drain bot."
-msgstr ""
+msgstr "Misslyckades att tömma bott."
 
-#: data/base/dialogs/AfterTakeover.lua:637
+#: data/base/dialogs/AfterTakeover.lua:643
 msgid "I am free!"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:648
-msgid "drain_bot_auto.setup"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:651
-msgid "How do you want draining of bots to be handled?"
-msgstr ""
+msgstr "Jag är fri!"
 
 #: data/base/dialogs/AfterTakeover.lua:654
+msgid "drain_bot_auto.setup"
+msgstr "töm_bott_auto.setup"
+
+#: data/base/dialogs/AfterTakeover.lua:657
+msgid "How do you want draining of bots to be handled?"
+msgstr "Hur vill du att tömmande av bottar ska gå till?"
+
+#: data/base/dialogs/AfterTakeover.lua:660
 msgid "Currently draining of bots is tried automatically."
-msgstr ""
+msgstr "För närvarande testas det automatiskt."
 
-#: data/base/dialogs/AfterTakeover.lua:656
+#: data/base/dialogs/AfterTakeover.lua:662
 msgid "Currently draining of bots is never tried."
-msgstr ""
+msgstr "För närvarande testas det aldrig."
 
-#: data/base/dialogs/AfterTakeover.lua:658
+#: data/base/dialogs/AfterTakeover.lua:664
 msgid "Currently it is asked if draining a bot is to be tried."
-msgstr ""
+msgstr "För närvarande ställs en fråga om det ska testas."
 
-#: data/base/dialogs/AfterTakeover.lua:669
+#: data/base/dialogs/AfterTakeover.lua:675
 msgid "Always try draining bots."
-msgstr ""
+msgstr "Testa alltid att tömma alltid bottar."
 
-#: data/base/dialogs/AfterTakeover.lua:679
+#: data/base/dialogs/AfterTakeover.lua:685
 msgid "Never try to drain a bot"
-msgstr ""
+msgstr "Testa aldrig att tömma bottar."
 
-#: data/base/dialogs/AfterTakeover.lua:689
+#: data/base/dialogs/AfterTakeover.lua:695
 msgid "Always ask if attempt to drain bot shall be ran."
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:699
-msgid "Reprogramm_bots_after_takeover.sh"
-msgstr ""
-
-#: data/base/dialogs/AfterTakeover.lua:703
-#: data/base/dialogs/AfterTakeover.lua:718
-msgid "Bots will be reprogrammed after takeover: [b]true[/b]"
-msgstr ""
+msgstr "Fråga alltid om tömning ska testas eller inte."
 
 #: data/base/dialogs/AfterTakeover.lua:705
-#: data/base/dialogs/AfterTakeover.lua:730
+msgid "Reprogramm_bots_after_takeover.sh"
+msgstr "omprogrammera_bott_efter_övertagning.sh"
+
+#: data/base/dialogs/AfterTakeover.lua:709
+#: data/base/dialogs/AfterTakeover.lua:724
+msgid "Bots will be reprogrammed after takeover: [b]true[/b]"
+msgstr "Bottar omprogrammeras efter övertagning: [b]sant[/b]"
+
+#: data/base/dialogs/AfterTakeover.lua:711
+#: data/base/dialogs/AfterTakeover.lua:736
 msgid "Bots will be reprogrammed after takeover: [b]false[/b]"
-msgstr ""
+msgstr "Bottar omprogrammeras efter övertagning: [b]falskt[/b]"
 
-#: data/base/dialogs/AfterTakeover.lua:739
+#: data/base/dialogs/AfterTakeover.lua:745
 msgid "leave settings.plx"
-msgstr ""
+msgstr "lämna inställningar.plx"
 
-#: data/base/dialogs/AfterTakeover.lua:743
+#: data/base/dialogs/AfterTakeover.lua:749
 msgid "Settings saved"
-msgstr ""
+msgstr "Inställningar sparade"
 
-#: data/base/dialogs/AfterTakeover.lua:744
+#: data/base/dialogs/AfterTakeover.lua:750
 msgid "Leaving settings.plx"
-msgstr ""
+msgstr "Lämnar inställningar.plx"
 
 #. TRANSLATORS: 'logout' should be a command
 #. TRANSLATORS: command, user lowercase here
-#: data/base/dialogs/AfterTakeover.lua:756 data/base/dialogs/Terminal.lua:51
+#: data/base/dialogs/AfterTakeover.lua:762 data/base/dialogs/Terminal.lua:51
 msgid "logout"
-msgstr ""
+msgstr "logga-ut"
 
-#: data/base/dialogs/AfterTakeover.lua:757
-#, fuzzy
+#: data/base/dialogs/AfterTakeover.lua:763
 msgid "Closing remote connection..."
-msgstr "Till den andra kontinenten..."
+msgstr "Stänger fjärranslutning..."
+
+#: data/base/dialogs/Speechless.lua:33
+msgid "..."
+msgstr "..."
 
 #: data/base/dialogs/Terminal.lua:29
-#, fuzzy
 msgid "Welcome to this terminal."
-msgstr "Säker terminal"
+msgstr "Välkommen till denna terminal."
 
 #: data/base/dialogs/Terminal.lua:31
 msgid "Hello."
-msgstr ""
+msgstr "Hej."
 
 #: data/base/dialogs/Terminal.lua:32
 msgid "Hi there."
-msgstr ""
+msgstr "Hej där."
 
 #: data/base/dialogs/Terminal.lua:33
 msgid "Well, hello again."
-msgstr ""
+msgstr "Hej igen."
 
 #: data/base/dialogs/Terminal.lua:34
 msgid "Hello hello."
-msgstr ""
+msgstr "Hej hej."
 
 #: data/base/dialogs/Terminal.lua:35
 msgid "Welcome back."
-msgstr ""
+msgstr "Välkommen tillbaka."
 
 #. TRANSLATORS: command, user lowercase here
 #: data/base/dialogs/Terminal.lua:43
 msgid "help"
-msgstr ""
+msgstr "hjälp"
 
 #: data/base/dialogs/Terminal.lua:45
 msgid "Available commands: help, logout"
-msgstr ""
+msgstr "Tillgängliga kommandon: hjälp, logga-ut"
 
 #: data/base/dialogs/Terminal.lua:53
 msgid "Goodbye"
-msgstr ""
+msgstr "Hejdå"
 
 #: data/storyline/act1/events.dat:57
 msgid "To Maintenance Tunnels"
 msgstr "Till Underhållstunnlarna"
 
 #: data/storyline/act1/events.dat:68
-msgid "To Novice Arena"
-msgstr "Till Nybörjararenan"
+msgid "To Regular Arena"
+msgstr ""
 
 #: data/storyline/act1/events.dat:79
 msgid "To Master Arena"
@@ -2983,8 +3004,8 @@ msgid "Hatch with broken ladder"
 msgstr "Lucka med trasig stege"
 
 #: data/storyline/act1/events.dat:1840
-msgid "Exit Novice Arena"
-msgstr "Ut ur Nybörjararenan"
+msgid "Exit Arena"
+msgstr ""
 
 #: data/storyline/act1/events.dat:1847
 msgid "Start New Wave"
@@ -3010,87 +3031,91 @@ msgstr "Alla bottar är döda! Du vann."
 msgid "Exit Master Arena"
 msgstr "Ut ur Mästararenan"
 
-#: data/storyline/act1/events.dat:2158
+#: data/storyline/act1/events.dat:2302
 msgid "Exit Crystal Caves"
 msgstr "Ut ur Kristallgrottorna"
 
-#: data/storyline/act1/events.dat:2168 data/storyline/act1/events.dat:2200
+#: data/storyline/act1/events.dat:2312 data/storyline/act1/events.dat:2344
 msgid "Back to the Desert"
 msgstr "Tillbaka till öknen"
 
-#: data/storyline/act1/events.dat:2208
+#: data/storyline/act1/events.dat:2352
 msgid "Tania has made it to the surface for the first time in a very long time."
 msgstr "Tania har tagit sig upp till ytan för första gången på väldigt länge."
 
-#: data/storyline/act1/events.dat:2215 data/storyline/act1/events.dat:2222
+#: data/storyline/act1/events.dat:2359 data/storyline/act1/events.dat:2366
 msgid "To the Secret Area Service Tunnels"
 msgstr "Till det Hemliga Områdets Underhållstunnlar"
 
-#: data/storyline/act1/events.dat:2232 data/storyline/act1/events.dat:2239
+#: data/storyline/act1/events.dat:2376 data/storyline/act1/events.dat:2383
 msgid "Back to the Secret Area"
 msgstr "Tillbaka till det Hemliga Området"
 
-#: data/storyline/act1/events.dat:2257
+#: data/storyline/act1/events.dat:2401
 msgid "Good, now move to the black grating to the East."
 msgstr "Bra, gå nu till det svarta gallret till öster."
 
-#: data/storyline/act1/events.dat:2270
+#: data/storyline/act1/events.dat:2414
 msgid "Good, now talk to Tutorial Tom again."
 msgstr "Bra, prata nu med Handledar-Hans igen."
 
-#: data/storyline/act1/events.dat:2459
+#: data/storyline/act1/events.dat:2603
 msgid "To a Forgotten Bunker"
 msgstr "Till en Bortglömd Bunker"
 
-#: data/storyline/act1/events.dat:2479
+#: data/storyline/act1/events.dat:2623
 msgid "Unknown place"
 msgstr "Okänd plats"
 
-#: data/storyline/act1/events.dat:2493
+#: data/storyline/act1/events.dat:2637
 msgid "To the other continent..."
 msgstr "Till den andra kontinenten..."
 
-#: data/storyline/act1/events.dat:2503
+#: data/storyline/act1/events.dat:2647
 msgid "Hidden way out"
 msgstr "Gömd utväg"
 
-#: data/storyline/act1/events.dat:2543
+#: data/storyline/act1/events.dat:2687
 msgid "Security failure at Hell's Fortress reception desk."
 msgstr "Säkerhetsfel vid Helvetesfortets reception."
 
-#: data/storyline/act1/events.dat:2569
+#: data/storyline/act1/events.dat:2713
 msgid "Back to Disruptor Shield Control"
 msgstr "Tillbaka till Disruptor-sköldens Kontrollrum"
 
-#: data/storyline/act1/events.dat:2576
+#: data/storyline/act1/events.dat:2720
 msgid "To Machine Deck Lower Catacombs"
 msgstr "Till Maskindäckets Undre Katakomber"
 
-#: data/storyline/act1/events.dat:2586
+#: data/storyline/act1/events.dat:2730
 msgid "Back to Machine Deck Upper Catacombs"
 msgstr "Tillbaka till Maskindäckets Övre Katakomber"
 
-#: data/storyline/act1/events.dat:2593
+#: data/storyline/act1/events.dat:2737
 msgid "To Disruptor Machine Deck"
 msgstr "Till Disruptorns Maskindäck"
 
-#: data/storyline/act1/events.dat:2607
+#: data/storyline/act1/events.dat:2751
 msgid "Back To Maintenance Tunnel"
 msgstr "Tillbaka till Underhållstunnlarna"
 
-#: data/storyline/act1/events.dat:2614
+#: data/storyline/act1/events.dat:2758
 msgid "We need to go deeper..."
 msgstr "Vi måste gå djupare..."
 
-#: data/storyline/act1/events.dat:7074
+#: data/storyline/act1/events.dat:7222
 msgid "All aboard!"
+msgstr "Stig ombord!"
+
+#: data/storyline/act1/events.dat:7227
+msgid "All aboard, we're leaving now!"
 msgstr ""
 
-#: data/storyline/act1/events.dat:7142
+#: data/storyline/act1/events.dat:7290
 msgid "Back to mainland"
 msgstr "Tillbaka till fastlandet"
 
-#: data/storyline/act1/events.dat:7156
+#: data/storyline/act1/events.dat:7304
 msgid "Let us return!"
 msgstr "Låt oss återvända!"
 
@@ -3158,8 +3183,8 @@ msgstr "Den här skylten blockerar vägen så du inte kan gå utanför Matrix. O
 msgid "Crystal Fields"
 msgstr "Kristallfälten"
 
-#: data/storyline/act1/levels.dat:12654 data/storyline/act1/levels.dat:39102
-#: data/storyline/act1/levels.dat:39456 data/storyline/act1/levels.dat:39856
+#: data/storyline/act1/levels.dat:12654 data/storyline/act1/levels.dat:39423
+#: data/storyline/act1/levels.dat:39777 data/storyline/act1/levels.dat:40177
 msgid "Desert Valley"
 msgstr "Ökendalen"
 
@@ -3171,402 +3196,402 @@ msgstr "Huggarbergen"
 msgid "Cryo Stasis Lab"
 msgstr "Kryostat-laboratoriet "
 
-#: data/storyline/act1/levels.dat:16714
+#: data/storyline/act1/levels.dat:16713
 msgid "Three Fermis Land"
 msgstr "Tre fermis land"
 
-#: data/storyline/act1/levels.dat:17324
+#: data/storyline/act1/levels.dat:17323
 msgid "In case of panic: run!"
 msgstr "I händelse av panik: spring!"
 
-#: data/storyline/act1/levels.dat:17449
+#: data/storyline/act1/levels.dat:17448
 msgid "Scientists quarters and Telemetry"
 msgstr "Forskarkvarter och telemetri"
 
-#: data/storyline/act1/levels.dat:18931
+#: data/storyline/act1/levels.dat:18930
 msgid "Disruptor Base Access Tunnel"
 msgstr "Tunnel till disruptor-basen"
 
-#: data/storyline/act1/levels.dat:20023
+#: data/storyline/act1/levels.dat:20022
 msgid "Terminal Shore"
 msgstr "Sista kusten"
 
-#: data/storyline/act1/levels.dat:20910
+#: data/storyline/act1/levels.dat:20909
 msgid "Ethereal Meadows"
 msgstr "De flyktiga ängarna"
 
-#: data/storyline/act1/levels.dat:22127
+#: data/storyline/act1/levels.dat:22126
 msgid "Kevins Main Energy Source"
 msgstr "Kevins huvudenergikälla"
 
-#: data/storyline/act1/levels.dat:22380 data/storyline/act1/levels.dat:22900
+#: data/storyline/act1/levels.dat:22379 data/storyline/act1/levels.dat:22899
 msgid "Northern Shoreline"
 msgstr "Norra strandlinjen"
 
-#: data/storyline/act1/levels.dat:23524 data/storyline/act1/levels.dat:23649
-#: data/storyline/act1/levels.dat:23774 data/storyline/act1/levels.dat:40321
-#: data/storyline/act1/levels.dat:67634
+#: data/storyline/act1/levels.dat:23523 data/storyline/act1/levels.dat:23648
+#: data/storyline/act1/levels.dat:23773 data/storyline/act1/levels.dat:40642
+#: data/storyline/act1/levels.dat:67972
 msgid "World Edge Sea"
 msgstr "Havet vid världens utkant"
 
-#: data/storyline/act1/levels.dat:23899
+#: data/storyline/act1/levels.dat:23898
 msgid "DEBUG LEVEL 24 -- This level was created to make testing of FreedroidRPG a little easier and is NOT meant to be accessible without cheating."
 msgstr "DEBUG-BANA 24 -- Den här banan skapades för att göra testande av FreedroidRPG lite enklare och ska INTE vara åtkomlig utan fusk."
 
-#: data/storyline/act1/levels.dat:24280
+#: data/storyline/act1/levels.dat:24279
 msgid "Guy signmessage A"
 msgstr "Guy signmessage A"
 
-#: data/storyline/act1/levels.dat:24480
+#: data/storyline/act1/levels.dat:24479
 msgid "Broken Glass Path"
 msgstr "Glassplitterstigen"
 
-#: data/storyline/act1/levels.dat:25571
+#: data/storyline/act1/levels.dat:25570
 msgid "Swamp"
 msgstr "Träsk"
 
-#: data/storyline/act1/levels.dat:26950
+#: data/storyline/act1/levels.dat:26949
 msgid "Mushroom Forest"
 msgstr "Svampskogen"
 
-#: data/storyline/act1/levels.dat:28433
+#: data/storyline/act1/levels.dat:28432
 msgid "Some sanctuary"
 msgstr "En fristad"
 
-#: data/storyline/act1/levels.dat:29307
+#: data/storyline/act1/levels.dat:29306
 msgid "Storage room"
 msgstr "Lagerlokal"
 
-#: data/storyline/act1/levels.dat:29310
+#: data/storyline/act1/levels.dat:29309
 msgid "Warning: Hot steam is hot!"
 msgstr "Varning: Het ånga är het!"
 
-#: data/storyline/act1/levels.dat:29313
+#: data/storyline/act1/levels.dat:29312
 msgid "Danger: High voltage!"
 msgstr "Fara: Högspänning!"
 
-#: data/storyline/act1/levels.dat:29463
+#: data/storyline/act1/levels.dat:29462
 msgid "Arena"
 msgstr "Arena"
 
-#: data/storyline/act1/levels.dat:30099
+#: data/storyline/act1/levels.dat:30106
 msgid "Master Arena"
 msgstr "Mästararena"
 
-#: data/storyline/act1/levels.dat:30317
+#: data/storyline/act1/levels.dat:30640
 msgid "Hell Fortress Entrance"
 msgstr "Ingång till Helvetesfortet"
 
-#: data/storyline/act1/levels.dat:33253
+#: data/storyline/act1/levels.dat:33574
 msgid "Upgrade distribution server room. Access restricted to authorized personnel - trespassers will be fired."
 msgstr "Serverrum för uppdateringsutskick. Endast för behörig personal - alla inkräktare kommer avskedas."
 
-#: data/storyline/act1/levels.dat:33256
+#: data/storyline/act1/levels.dat:33577
 msgid "Please close the door behind you."
 msgstr "Var snäll och stäng dörren efter dig."
 
-#: data/storyline/act1/levels.dat:33259
+#: data/storyline/act1/levels.dat:33580
 msgid "Beware of hydroxyl acid!"
 msgstr "Varning för diväteoxid!"
 
-#: data/storyline/act1/levels.dat:33262
+#: data/storyline/act1/levels.dat:33583
 msgid "Beware of the guns."
 msgstr "Akta dig för gevären."
 
-#: data/storyline/act1/levels.dat:33265 data/storyline/act1/levels.dat:33325
-#: data/storyline/act1/levels.dat:33331
+#: data/storyline/act1/levels.dat:33586 data/storyline/act1/levels.dat:33646
+#: data/storyline/act1/levels.dat:33652
 msgid "Please read the other sign first."
 msgstr "Var vänlig läs den andra skylten först."
 
-#: data/storyline/act1/levels.dat:33268
+#: data/storyline/act1/levels.dat:33589
 msgid "To main office."
 msgstr "Till huvudkontoret."
 
-#: data/storyline/act1/levels.dat:33271
+#: data/storyline/act1/levels.dat:33592
 msgid "Workers office."
 msgstr "Arbetarkontoret."
 
-#: data/storyline/act1/levels.dat:33274
+#: data/storyline/act1/levels.dat:33595
 msgid "First MS operating system - printed version"
 msgstr "Första MS-operativsystemet - i tryckt format"
 
-#: data/storyline/act1/levels.dat:33277
+#: data/storyline/act1/levels.dat:33598
 msgid "Beatings will continue until morale improves."
 msgstr "Smisk kommer fortsätta ges tills moralen blir bättre."
 
-#: data/storyline/act1/levels.dat:33280 data/storyline/act1/levels.dat:67029
+#: data/storyline/act1/levels.dat:33601 data/storyline/act1/levels.dat:67367
 msgid "!"
 msgstr "!"
 
-#: data/storyline/act1/levels.dat:33283
+#: data/storyline/act1/levels.dat:33604
 msgid "Don't waste your time reading signs. Work!"
 msgstr "Slösa inte tid på att läsa skyltar. Arbeta!"
 
-#: data/storyline/act1/levels.dat:33286
+#: data/storyline/act1/levels.dat:33607
 msgid "Server room"
 msgstr "Serverrum"
 
-#: data/storyline/act1/levels.dat:33289
+#: data/storyline/act1/levels.dat:33610
 msgid "Offices - this way"
 msgstr "Kontor - ditåt"
 
-#: data/storyline/act1/levels.dat:33292
+#: data/storyline/act1/levels.dat:33613
 msgid "Slalom"
 msgstr "Slalom"
 
-#: data/storyline/act1/levels.dat:33295
+#: data/storyline/act1/levels.dat:33616
 msgid "Outdoor track"
 msgstr "Utomhusbana"
 
-#: data/storyline/act1/levels.dat:33298
+#: data/storyline/act1/levels.dat:33619
 msgid "Accessing computers"
 msgstr "Hämtar information från datorer"
 
-#: data/storyline/act1/levels.dat:33301
+#: data/storyline/act1/levels.dat:33622
 msgid "Passing doors I"
 msgstr "Passerar dörrar I"
 
-#: data/storyline/act1/levels.dat:33304
+#: data/storyline/act1/levels.dat:33625
 msgid "Passing doors II"
 msgstr "Passerar dörrar II"
 
-#: data/storyline/act1/levels.dat:33307
+#: data/storyline/act1/levels.dat:33628
 msgid "To MegaSys office"
 msgstr "Till MegaSys-kontoret"
 
-#: data/storyline/act1/levels.dat:33310
+#: data/storyline/act1/levels.dat:33631
 msgid "For service: wait"
 msgstr "För betjäning: vänta"
 
-#: data/storyline/act1/levels.dat:33313
+#: data/storyline/act1/levels.dat:33634
 msgid "Today's special: Foobar"
 msgstr "Dagens special: Foobar"
 
-#: data/storyline/act1/levels.dat:33316
+#: data/storyline/act1/levels.dat:33637
 msgid "We recommend: Quxbaz"
 msgstr "Vi rekommenderar Quxbaz"
 
-#: data/storyline/act1/levels.dat:33319 data/storyline/act1/levels.dat:33322
+#: data/storyline/act1/levels.dat:33640 data/storyline/act1/levels.dat:33643
 msgid "In case of boredom turn gun on."
 msgstr "Om du är uttråkad, slå igång geväret."
 
-#: data/storyline/act1/levels.dat:33328
+#: data/storyline/act1/levels.dat:33649
 msgid "Authorized personnel only!"
 msgstr "Endast behörig personal!"
 
-#: data/storyline/act1/levels.dat:33346
+#: data/storyline/act1/levels.dat:33667
 msgid "If the gate is closed, please ask the office for access."
 msgstr "Om porten är stängd, fråga kontoret om tillstånd att passera."
 
-#: data/storyline/act1/levels.dat:33608
+#: data/storyline/act1/levels.dat:33929
 msgid "Johns Riddle"
 msgstr "Johns gåta"
 
-#: data/storyline/act1/levels.dat:33748
+#: data/storyline/act1/levels.dat:34069
 msgid "Looking from above, hostiles may appear as salvation."
 msgstr "Sett från ovan kan fienderna bli räddningen."
 
-#: data/storyline/act1/levels.dat:33790
+#: data/storyline/act1/levels.dat:34111
 msgid "Crystal Caves"
 msgstr "Kristallgrottorna"
 
-#: data/storyline/act1/levels.dat:36244
+#: data/storyline/act1/levels.dat:36565
 msgid "Forgotten bunker"
 msgstr "Bortglömd bunker"
 
-#: data/storyline/act1/levels.dat:36445
+#: data/storyline/act1/levels.dat:36766
 msgid "Secret research center"
 msgstr "Hemlig forskningsanläggning"
 
-#: data/storyline/act1/levels.dat:37711
+#: data/storyline/act1/levels.dat:38032
 msgid "Stop!"
 msgstr "Stopp!"
 
-#: data/storyline/act1/levels.dat:37714
+#: data/storyline/act1/levels.dat:38035
 msgid "I warned you... You should consider turning back and running away screaming."
 msgstr "Jag varnade dig... Du borde vända om och springa iväg skrikande."
 
-#: data/storyline/act1/levels.dat:37816
+#: data/storyline/act1/levels.dat:38137
 msgid "Secret area service tunnels"
 msgstr "Det hemliga områdets underhållstunnlar"
 
-#: data/storyline/act1/levels.dat:38056
+#: data/storyline/act1/levels.dat:38377
 msgid "Tutorial"
 msgstr "Handledning"
 
-#: data/storyline/act1/levels.dat:38976
+#: data/storyline/act1/levels.dat:39297
 msgid "Welcome to FreedroidRPG!"
 msgstr "Välkommen till FreedroidRPG!"
 
-#: data/storyline/act1/levels.dat:40446
+#: data/storyline/act1/levels.dat:40767
 msgid "Forgotten Portal"
 msgstr "Bortglömd Portal"
 
-#: data/storyline/act1/levels.dat:41019
+#: data/storyline/act1/levels.dat:41342
 msgid "Old abandoned complex"
 msgstr "Gammal övergiven anläggning"
 
-#: data/storyline/act1/levels.dat:41133 data/storyline/act1/levels.dat:41287
-#: data/storyline/act1/levels.dat:56705 data/storyline/act1/levels.dat:63569
-#: data/storyline/act1/levels.dat:64226 data/storyline/act1/levels.dat:64441
-#: data/storyline/act1/levels.dat:64566 data/storyline/act1/levels.dat:65127
-#: data/storyline/act1/levels.dat:65477 data/storyline/act1/levels.dat:65805
+#: data/storyline/act1/levels.dat:41456 data/storyline/act1/levels.dat:41610
+#: data/storyline/act1/levels.dat:57032 data/storyline/act1/levels.dat:63906
+#: data/storyline/act1/levels.dat:64563 data/storyline/act1/levels.dat:64778
+#: data/storyline/act1/levels.dat:64903 data/storyline/act1/levels.dat:65464
+#: data/storyline/act1/levels.dat:65814 data/storyline/act1/levels.dat:66142
 msgid "World Edge"
 msgstr "Världens ände"
 
-#: data/storyline/act1/levels.dat:41532
+#: data/storyline/act1/levels.dat:41855
 msgid "Worker Mines Entrance"
 msgstr "Ingång till gruvorna"
 
-#: data/storyline/act1/levels.dat:42268 data/storyline/act1/levels.dat:42623
+#: data/storyline/act1/levels.dat:42595 data/storyline/act1/levels.dat:42950
 msgid "Southern Shoreline"
 msgstr "Södra strandlinjen"
 
-#: data/storyline/act1/levels.dat:43219
+#: data/storyline/act1/levels.dat:43546
 msgid "HF North Perimeter Defense Structure"
 msgstr "Norra försvarsbyggnaden intill HF"
 
-#: data/storyline/act1/levels.dat:43979
+#: data/storyline/act1/levels.dat:44306
 msgid "Factory Entrance"
 msgstr "Ingång till fabriken"
 
-#: data/storyline/act1/levels.dat:47100
+#: data/storyline/act1/levels.dat:47427
 msgid "Power Station and Worker District"
 msgstr "Kraftverks- och arbetarområde"
 
-#: data/storyline/act1/levels.dat:49474 data/storyline/act1/levels.dat:49477
+#: data/storyline/act1/levels.dat:49801 data/storyline/act1/levels.dat:49804
 msgid "Power generator, don't change settings!"
 msgstr "Generator, ändra inte på inställningarna!"
 
-#: data/storyline/act1/levels.dat:49480
+#: data/storyline/act1/levels.dat:49807
 msgid "Insert coin!!!!"
 msgstr "Lägg i mynt!!!"
 
-#: data/storyline/act1/levels.dat:49483
+#: data/storyline/act1/levels.dat:49810
 msgid "You always loose? Play again, I am sure you'll win next time!"
 msgstr "Förlorar du alltid? Kör igen, du kommer säkert vinna näst gång!"
 
-#: data/storyline/act1/levels.dat:49486
+#: data/storyline/act1/levels.dat:49813
 msgid "This is only decoration for good atmosphere. Don't cut plastic lawn!"
 msgstr "Detta är endast dekoration för trevlig miljö. Klipp inte konstgräs!"
 
-#: data/storyline/act1/levels.dat:49489
+#: data/storyline/act1/levels.dat:49816
 msgid "Plastic leaves, do not eat!"
 msgstr "Plastlöv, ät inte!"
 
-#: data/storyline/act1/levels.dat:49492
+#: data/storyline/act1/levels.dat:49819
 msgid "Caution: nothing. - There is absolutely nothing dangerous in the area!"
 msgstr "Varning: ingenting - det är absolut ingenting farligt här i området!"
 
-#: data/storyline/act1/levels.dat:49495
+#: data/storyline/act1/levels.dat:49822
 msgid "Stepping on this pad will affect absolutely nothing. LOL!"
 msgstr "Att kliva på den här plattan kommer inte resultera i något alls. LOL!"
 
-#: data/storyline/act1/levels.dat:49781
+#: data/storyline/act1/levels.dat:50108
 msgid "Factory Core"
 msgstr "Fabrikens innersta del"
 
-#: data/storyline/act1/levels.dat:53223
+#: data/storyline/act1/levels.dat:53550
 msgid "Research Centre"
 msgstr "Forskningscenter"
 
-#: data/storyline/act1/levels.dat:56406
+#: data/storyline/act1/levels.dat:56733
 msgid "Worker 1"
 msgstr "Arbetare 1"
 
-#: data/storyline/act1/levels.dat:56409
+#: data/storyline/act1/levels.dat:56736
 msgid "Worker 2"
 msgstr "Arbetare 2"
 
-#: data/storyline/act1/levels.dat:56412
+#: data/storyline/act1/levels.dat:56739
 msgid "Worker 3"
 msgstr "Arbetare 3"
 
-#: data/storyline/act1/levels.dat:56415
+#: data/storyline/act1/levels.dat:56742
 msgid "Worker 4"
 msgstr "Arbetare 4"
 
-#: data/storyline/act1/levels.dat:56418
+#: data/storyline/act1/levels.dat:56745
 msgid "Please don't talk, sing, take any drugs or write on walls in there!"
 msgstr "Var vänlig varken dansa, sjunga, prata, ta droger eller skriva på väggarna där inne!"
 
-#: data/storyline/act1/levels.dat:56421
+#: data/storyline/act1/levels.dat:56748
 msgid "Don't touch the fence, there are more efficient ways to waste energy here."
 msgstr "Ta inte i stängslet, det finns bättre sätt att slösa sin energi på här."
 
-#: data/storyline/act1/levels.dat:56424
+#: data/storyline/act1/levels.dat:56751
 msgid "I have no idea what this red thing is, but it looks pretty cool."
 msgstr "Jag har ingen aning vad den här röda saken är men den ser rätt frän ut."
 
-#: data/storyline/act1/levels.dat:56860
+#: data/storyline/act1/levels.dat:57187
 msgid "Machine Deck Upper Catacombs"
 msgstr "Maskindäckets övre katakomber"
 
-#: data/storyline/act1/levels.dat:56974
+#: data/storyline/act1/levels.dat:57301
 msgid "Machine Deck Lower Catacombs"
 msgstr "Maskindäckets under katakomber"
 
-#: data/storyline/act1/levels.dat:57088
+#: data/storyline/act1/levels.dat:57415
 msgid "Freight Station"
 msgstr "Fraktstation"
 
-#: data/storyline/act1/levels.dat:58576
+#: data/storyline/act1/levels.dat:58903
 msgid "Old Server Room"
 msgstr "Gammalt severrum"
 
-#: data/storyline/act1/levels.dat:59492
+#: data/storyline/act1/levels.dat:59825
 msgid "Factory Office"
 msgstr "Fabrikens kontor"
 
-#: data/storyline/act1/levels.dat:63278
+#: data/storyline/act1/levels.dat:63615
 msgid "Strange Dungeon"
 msgstr "Konstig fängelsehåla"
 
-#: data/storyline/act1/levels.dat:63902
+#: data/storyline/act1/levels.dat:64239
 msgid "Landing Zone"
 msgstr "Landningsplats"
 
-#: data/storyline/act1/levels.dat:65998
+#: data/storyline/act1/levels.dat:66335
 msgid "Shelter"
 msgstr "Skyddsrum"
 
-#: data/storyline/act1/levels.dat:66115
+#: data/storyline/act1/levels.dat:66452
 msgid "DEBUG LEVEL 70 -- This level was created to make testing of FreedroidRPG a little easier and is NOT meant to be accessible without cheating."
 msgstr "DEBUG-BANA 70 -- Den här banan skapades för att göra testande av FreedroidRPG lite enklare och ska INTE vara åtkomlig utan fusk."
 
-#: data/storyline/act1/levels.dat:67026
+#: data/storyline/act1/levels.dat:67364
 msgid "?"
 msgstr "?"
 
-#: data/storyline/act1/levels.dat:67032
+#: data/storyline/act1/levels.dat:67370
 msgid "<"
 msgstr "<"
 
-#: data/storyline/act1/levels.dat:67035
+#: data/storyline/act1/levels.dat:67373
 msgid "? (flashing)"
 msgstr "? (blinkande)"
 
-#: data/storyline/act1/levels.dat:67038
+#: data/storyline/act1/levels.dat:67376
 msgid "! (flashing)"
 msgstr "! (blinkande)"
 
-#: data/storyline/act1/levels.dat:67041
+#: data/storyline/act1/levels.dat:67379
 msgid "< (flashing)"
 msgstr "< (blinkande)"
 
-#: data/storyline/act1/levels.dat:67067
+#: data/storyline/act1/levels.dat:67405
 msgid "Empty Sea"
 msgstr "Tomt hav"
 
-#: data/storyline/act1/levels.dat:67229
+#: data/storyline/act1/levels.dat:67567
 msgid "Omega Island"
 msgstr "Omega-ön"
 
-#: data/storyline/act1/levels.dat:67759
+#: data/storyline/act1/levels.dat:68097
 msgid "Beginning of new continent"
 msgstr "Början av en ny kontinent"
 
-#: data/storyline/act1/levels.dat:68162
+#: data/storyline/act1/levels.dat:68500
 msgid "Continent Separator"
 msgstr "Kontinentseparator"
 
@@ -3602,177 +3627,186 @@ msgstr "Stone - Butiksägare"
 msgid "Lily Stone - Shop owner"
 msgstr "Lily Stone - Butiksägare"
 
-#: data/storyline/act1/npc_specs.lua:22
+#: data/storyline/act1/npc_specs.lua:23
 msgid "Sorenson - Mystery coder"
 msgstr "Sorenson - Mysterisk kodare"
 
-#: data/storyline/act1/npc_specs.lua:23
+#: data/storyline/act1/npc_specs.lua:24
 msgid "Skippy - Map-Maker Maker"
 msgstr "Skippy - Kartskapar-skapare"
 
-#: data/storyline/act1/npc_specs.lua:27
+#: data/storyline/act1/npc_specs.lua:28
 msgid "Scavenger Bot"
 msgstr "Kringströvande bott"
 
-#: data/storyline/act1/npc_specs.lua:28
-#: data/storyline/act1/ReturnOfTux.droids:36
-msgid "Coder"
-msgstr ""
-
-#: data/storyline/act1/npc_specs.lua:28
-msgid "Samson, the Coder"
+#: data/storyline/act1/npc_specs.lua:29
+#: data/storyline/act1/ReturnOfTux.droids:439
+msgid "Saul"
 msgstr ""
 
 #: data/storyline/act1/npc_specs.lua:29
+msgid "Saul, leader of the Resistance"
+msgstr ""
+
+#: data/storyline/act1/npc_specs.lua:30
+#: data/storyline/act1/ReturnOfTux.droids:35
+msgid "Coder"
+msgstr "Kodare"
+
+#: data/storyline/act1/npc_specs.lua:30
+msgid "Samson, the Coder"
+msgstr "Samson - Kodaren"
+
+#: data/storyline/act1/npc_specs.lua:31
 msgid "SADD - Exterminate Mode"
 msgstr "HOBB - Utrotningsläge"
 
-#: data/storyline/act1/npc_specs.lua:29
+#: data/storyline/act1/npc_specs.lua:31
 msgid "SADD - Secret Area Defense Droid"
 msgstr "HOBB - Hemlig Områdets Beskydds-Bott"
 
-#: data/storyline/act1/npc_specs.lua:31
+#: data/storyline/act1/npc_specs.lua:33
 msgid "Richard - Programmer"
 msgstr "Richard - Programmerare"
 
-#: data/storyline/act1/npc_specs.lua:33
+#: data/storyline/act1/npc_specs.lua:35
 msgid "Fighter"
 msgstr "Slagskämpe"
 
-#: data/storyline/act1/npc_specs.lua:33
+#: data/storyline/act1/npc_specs.lua:35
 msgid "Pendragon - Fighter"
 msgstr "Pendragon - Slagskämpe"
 
-#: data/storyline/act1/npc_specs.lua:40
+#: data/storyline/act1/npc_specs.lua:42
 msgid "Michelangelo - Chef"
 msgstr "Michelangelo - Kock"
 
-#: data/storyline/act1/npc_specs.lua:44
+#: data/storyline/act1/npc_specs.lua:46
 #: data/storyline/act1/ReturnOfTux.droids:339
 msgid "Koan"
 msgstr "Koan"
 
-#: data/storyline/act1/npc_specs.lua:46
+#: data/storyline/act1/npc_specs.lua:48
 msgid "614 - Kevin's Guard"
 msgstr "614 - Kevins vakt"
 
-#: data/storyline/act1/npc_specs.lua:47
+#: data/storyline/act1/npc_specs.lua:49
 msgid "Kevin - Hacker"
 msgstr "Kevin - Hackare"
 
-#: data/storyline/act1/npc_specs.lua:48
+#: data/storyline/act1/npc_specs.lua:50
 msgid "Karol - Shop owner"
 msgstr "Karol - Butiksägare"
 
-#: data/storyline/act1/npc_specs.lua:50
+#: data/storyline/act1/npc_specs.lua:52
 msgid "Jim"
 msgstr "Jim"
 
-#: data/storyline/act1/npc_specs.lua:50
+#: data/storyline/act1/npc_specs.lua:52
 msgid "Jim - Portal Guardian"
 msgstr "Jim - Portalvakt"
 
-#: data/storyline/act1/npc_specs.lua:52
+#: data/storyline/act1/npc_specs.lua:54
 msgid "Jasmine"
 msgstr "Jasmine"
 
-#: data/storyline/act1/npc_specs.lua:52
+#: data/storyline/act1/npc_specs.lua:54
 msgid "Jasmine - Girlfriend of a true Hacker"
 msgstr "Jasmine - En sann Hackares flickvän"
 
-#: data/storyline/act1/npc_specs.lua:53
+#: data/storyline/act1/npc_specs.lua:55
 msgid "Iris"
 msgstr "Iris"
 
-#: data/storyline/act1/npc_specs.lua:53
+#: data/storyline/act1/npc_specs.lua:55
 msgid "Iris - treasure hunter"
-msgstr ""
+msgstr "Iris - Skattjägare"
 
-#: data/storyline/act1/npc_specs.lua:57
+#: data/storyline/act1/npc_specs.lua:59
 msgid "Geist - Hunter"
 msgstr "Geist - Jägare"
 
-#: data/storyline/act1/npc_specs.lua:58
+#: data/storyline/act1/npc_specs.lua:60
 msgid "Dr. Francis - Cryonicist"
 msgstr "Dr. Francis - Kryonisist"
 
-#: data/storyline/act1/npc_specs.lua:61
+#: data/storyline/act1/npc_specs.lua:63
 msgid "Ewald - Barkeeper"
 msgstr "Ewald - Barägare"
 
-#: data/storyline/act1/npc_specs.lua:62
+#: data/storyline/act1/npc_specs.lua:64
 msgid "Erin - bot hunter"
-msgstr ""
+msgstr "Erin - Bottjägare"
 
-#: data/storyline/act1/npc_specs.lua:62
+#: data/storyline/act1/npc_specs.lua:64
 msgid "Bot hunter"
-msgstr ""
+msgstr "Bottjägare"
 
-#: data/storyline/act1/npc_specs.lua:63
+#: data/storyline/act1/npc_specs.lua:65
 msgid "Engel - Hunter"
 msgstr "Engel - Jägare"
 
-#: data/storyline/act1/npc_specs.lua:64
+#: data/storyline/act1/npc_specs.lua:66
 msgid "Duncan - Bombmaker"
 msgstr "Duncan - Bombtillverkare"
 
-#: data/storyline/act1/npc_specs.lua:69
+#: data/storyline/act1/npc_specs.lua:71
 msgid "Doc Moore - Medic"
 msgstr "Dr. Moore - Läkare"
 
-#: data/storyline/act1/npc_specs.lua:70
+#: data/storyline/act1/npc_specs.lua:72
 msgid "Dixon - Mechanic"
 msgstr "Dixon - Mekaniker"
 
-#: data/storyline/act1/npc_specs.lua:72
-#: data/storyline/act1/ReturnOfTux.droids:584
+#: data/storyline/act1/npc_specs.lua:74
 #: data/storyline/act1/ReturnOfTux.droids:585
 #: data/storyline/act1/ReturnOfTux.droids:586
 #: data/storyline/act1/ReturnOfTux.droids:587
+#: data/storyline/act1/ReturnOfTux.droids:588
 msgid "Cult Member"
 msgstr "Kultmedlem"
 
-#: data/storyline/act1/npc_specs.lua:75
+#: data/storyline/act1/npc_specs.lua:77
 msgid "Cerebrum - Portal Guardian"
 msgstr "Cerebrum - Portalvakt"
 
-#: data/storyline/act1/npc_specs.lua:77
+#: data/storyline/act1/npc_specs.lua:79
 msgid "Butch - Arena Master"
 msgstr "Butch - Arenans mästare"
 
-#: data/storyline/act1/npc_specs.lua:78
+#: data/storyline/act1/npc_specs.lua:80
 msgid "Bruce - Mine Worker"
 msgstr "Bruce - Gruvarbetare"
 
-#: data/storyline/act1/npc_specs.lua:80
+#: data/storyline/act1/npc_specs.lua:82
 msgid "Bob"
 msgstr "Bob"
 
-#: data/storyline/act1/npc_specs.lua:80
+#: data/storyline/act1/npc_specs.lua:82
 msgid "Bob - Gate Guardian"
 msgstr "Bob - Portens Vakt"
 
-#: data/storyline/act1/npc_specs.lua:81
+#: data/storyline/act1/npc_specs.lua:83
 msgid "Benjamin - Gunsmith"
 msgstr "Benjamin - Vapensmed"
 
-#: data/storyline/act1/npc_specs.lua:82
+#: data/storyline/act1/npc_specs.lua:84
 msgid "Bender"
 msgstr "Bender"
 
-#: data/storyline/act1/npc_specs.lua:82
+#: data/storyline/act1/npc_specs.lua:84
 msgid "Bender - The strongest one"
 msgstr "Bender - Den starkaste"
 
-#: data/storyline/act1/npc_specs.lua:83
+#: data/storyline/act1/npc_specs.lua:85
 msgid "Arthur"
 msgstr "Arthur"
 
-#: data/storyline/act1/npc_specs.lua:83
+#: data/storyline/act1/npc_specs.lua:85
 msgid "Arthur - Game developer"
 msgstr "Arthur - Spelutvecklare"
 
-#: data/storyline/act1/npc_specs.lua:87
+#: data/storyline/act1/npc_specs.lua:89
 msgid "614 - Cryo Lab Guard Bot"
 msgstr "614 - Kryo-labbets vaktbott"
 
@@ -3842,7 +3876,7 @@ msgstr "Skicka ut en defekt mjukvaruuppdatering"
 
 #: data/storyline/act1/quests.lua:94
 msgid "A New Mission From Spencer"
-msgstr ""
+msgstr "Ett nytt uppdrag från Spencer"
 
 #: data/storyline/act1/quests.lua:98
 msgid "SADD's power supply"
@@ -3944,35 +3978,31 @@ msgstr "Det gamla serverrummet är säkrat."
 msgid "An Explosive Situation"
 msgstr "En explosiv situation"
 
-#: data/storyline/act1/quests.lua:195
-msgid "Not only is the town safe, but apparently so is Ewald's 296 droid. Oh joy."
-msgstr "Inte bara stan är säker, men även Edwalds 296:a. Så underbart."
-
-#: data/storyline/act1/quests.lua:199
+#: data/storyline/act1/quests.lua:196
 msgid "Open Sesame"
 msgstr "Sesam öppna dig"
 
-#: data/storyline/act1/quests.lua:203
+#: data/storyline/act1/quests.lua:200
 msgid "Jennifer's Toolbox"
 msgstr "Jennifers verktygslåda"
 
-#: data/storyline/act1/quests.lua:207
+#: data/storyline/act1/quests.lua:204
 msgid "24_label_test_quest"
 msgstr "24_label_test_quest"
 
-#: data/storyline/act1/quests.lua:211
+#: data/storyline/act1/quests.lua:208
 msgid "24_dude_test_quest"
 msgstr "24_dude_test_quest"
 
-#: data/storyline/act1/quests.lua:215
+#: data/storyline/act1/quests.lua:212
 msgid "24_guy_death_quest"
 msgstr "24_guy_death_quest"
 
-#: data/storyline/act1/quests.lua:223
+#: data/storyline/act1/quests.lua:220
 msgid "Ticket's price - crystal"
 msgstr "Biljettpriset - kristall"
 
-#: data/storyline/act1/quests.lua:231
+#: data/storyline/act1/quests.lua:228
 msgid "Bot in need"
 msgstr "Bot i nöd"
 
@@ -3993,12 +4023,12 @@ msgid "Barkeeper"
 msgstr "Barägare"
 
 #: data/storyline/act1/ReturnOfTux.droids:8
-#: data/storyline/act1/ReturnOfTux.droids:11
-#: data/storyline/act1/ReturnOfTux.droids:13
+#: data/storyline/act1/ReturnOfTux.droids:12
+#: data/storyline/act1/ReturnOfTux.droids:16
 #: data/storyline/act1/ReturnOfTux.droids:17
-#: data/storyline/act1/ReturnOfTux.droids:18
-#: data/storyline/act1/ReturnOfTux.droids:30
-#: data/storyline/act1/ReturnOfTux.droids:32
+#: data/storyline/act1/ReturnOfTux.droids:29
+#: data/storyline/act1/ReturnOfTux.droids:31
+#: data/storyline/act1/ReturnOfTux.droids:299
 #: data/storyline/act1/ReturnOfTux.droids:417
 #: data/storyline/act1/ReturnOfTux.droids:418
 msgid "Red Guard Member"
@@ -4012,82 +4042,83 @@ msgstr "Lukas - Chef över Vapenförrådet"
 msgid "Spencer - Leader of the Red Guard"
 msgstr "Spencer - Röda Väktarnas Ledare"
 
-#: data/storyline/act1/ReturnOfTux.droids:14
+#: data/storyline/act1/ReturnOfTux.droids:13
 msgid "Sketchy Guy"
 msgstr "Ytlig Person"
 
-#: data/storyline/act1/ReturnOfTux.droids:15
+#: data/storyline/act1/ReturnOfTux.droids:14
 msgid "Guy with Hat"
 msgstr "Snubbe med Hatt"
 
-#: data/storyline/act1/ReturnOfTux.droids:19
+#: data/storyline/act1/ReturnOfTux.droids:18
 msgid "*nix Admin"
 msgstr "*nix Administratör"
 
+#: data/storyline/act1/ReturnOfTux.droids:19
 #: data/storyline/act1/ReturnOfTux.droids:20
-#: data/storyline/act1/ReturnOfTux.droids:21
 msgid "614 - Patrolling Guard Bot"
 msgstr "614 - Patrullerande Vaktbott"
 
-#: data/storyline/act1/ReturnOfTux.droids:22
+#: data/storyline/act1/ReturnOfTux.droids:21
 msgid "614 - East Gate Guard Bot"
 msgstr "614 - Östra Portens Vaktbott"
 
+#: data/storyline/act1/ReturnOfTux.droids:22
 #: data/storyline/act1/ReturnOfTux.droids:23
-#: data/storyline/act1/ReturnOfTux.droids:24
 msgid "614 - South Gate Guard Bot"
 msgstr "614 - Södra Portens Vaktbott"
 
-#: data/storyline/act1/ReturnOfTux.droids:25
+#: data/storyline/act1/ReturnOfTux.droids:24
 msgid "614 - North Gate Guard Bot"
 msgstr "614 - Norra Portens Vaktbott"
 
-#: data/storyline/act1/ReturnOfTux.droids:26
+#: data/storyline/act1/ReturnOfTux.droids:25
 msgid "COBOL Programmer"
 msgstr "COBOL-programmerare"
 
-#: data/storyline/act1/ReturnOfTux.droids:27
-#: data/storyline/act1/ReturnOfTux.droids:471
+#: data/storyline/act1/ReturnOfTux.droids:26
+#: data/storyline/act1/ReturnOfTux.droids:472
 msgid "Shopowner"
 msgstr "Affärsägare"
 
-#: data/storyline/act1/ReturnOfTux.droids:28
+#: data/storyline/act1/ReturnOfTux.droids:27
 msgid "Medic"
 msgstr "Läkare"
 
-#: data/storyline/act1/ReturnOfTux.droids:29
+#: data/storyline/act1/ReturnOfTux.droids:28
 msgid "Chandra - Town Sage"
 msgstr "Chandra - Stadens Vise Man"
 
-#: data/storyline/act1/ReturnOfTux.droids:31
+#: data/storyline/act1/ReturnOfTux.droids:30
 msgid "Town Teleporter Guard"
 msgstr "Stadens Teleporters Vakt"
 
-#: data/storyline/act1/ReturnOfTux.droids:33
+#: data/storyline/act1/ReturnOfTux.droids:32
 msgid "Gate Guardhouse Guard"
 msgstr "Arrestens Vakt"
 
-#: data/storyline/act1/ReturnOfTux.droids:34
+#: data/storyline/act1/ReturnOfTux.droids:33
 msgid "North Gate Guard"
 msgstr "Norra Portens Vakt"
 
-#: data/storyline/act1/ReturnOfTux.droids:35
+#: data/storyline/act1/ReturnOfTux.droids:34
 #: data/storyline/act1/ReturnOfTux.droids:390
 msgid "???"
 msgstr "???"
 
-#: data/storyline/act1/ReturnOfTux.droids:47
+#: data/storyline/act1/ReturnOfTux.droids:46
 msgid "Dark Apprentice of MegaSys"
 msgstr "Ond MegaSys-lärling"
 
-#: data/storyline/act1/ReturnOfTux.droids:58
+#: data/storyline/act1/ReturnOfTux.droids:57
 msgid "DSB Control Terminal Guard"
 msgstr "Vakt över DSB Kontrollterminal"
 
-#: data/storyline/act1/ReturnOfTux.droids:69
+#: data/storyline/act1/ReturnOfTux.droids:68
 msgid "MS Emissary"
 msgstr "MS Agent"
 
+#: data/storyline/act1/ReturnOfTux.droids:69
 #: data/storyline/act1/ReturnOfTux.droids:70
 #: data/storyline/act1/ReturnOfTux.droids:71
 #: data/storyline/act1/ReturnOfTux.droids:72
@@ -4108,231 +4139,230 @@ msgstr "MS Agent"
 #: data/storyline/act1/ReturnOfTux.droids:87
 #: data/storyline/act1/ReturnOfTux.droids:88
 #: data/storyline/act1/ReturnOfTux.droids:89
-#: data/storyline/act1/ReturnOfTux.droids:90
 msgid "Singularity Drone"
 msgstr "Singularitetens Drönare"
 
-#: data/storyline/act1/ReturnOfTux.droids:91
+#: data/storyline/act1/ReturnOfTux.droids:90
 msgid "The Singularity"
 msgstr "Singulariteten"
 
+#: data/storyline/act1/ReturnOfTux.droids:101
 #: data/storyline/act1/ReturnOfTux.droids:102
-#: data/storyline/act1/ReturnOfTux.droids:103
 msgid "Blue Guy"
 msgstr "Blå Snubbe"
 
-#: data/storyline/act1/ReturnOfTux.droids:129
+#: data/storyline/act1/ReturnOfTux.droids:128
 msgid "Invading Robot"
 msgstr "Inkräktande Robot"
 
-#: data/storyline/act1/ReturnOfTux.droids:130
+#: data/storyline/act1/ReturnOfTux.droids:129
 msgid "614 - Friendly Robot"
 msgstr "614 - Vänlig Robot"
 
-#: data/storyline/act1/ReturnOfTux.droids:131
+#: data/storyline/act1/ReturnOfTux.droids:130
 msgid "Old Guy"
 msgstr "Gammal Man"
 
-#: data/storyline/act1/ReturnOfTux.droids:137
+#: data/storyline/act1/ReturnOfTux.droids:136
 msgid "Friendly 296"
 msgstr "Vänlig 296:a"
 
+#: data/storyline/act1/ReturnOfTux.droids:161
 #: data/storyline/act1/ReturnOfTux.droids:162
 #: data/storyline/act1/ReturnOfTux.droids:163
 #: data/storyline/act1/ReturnOfTux.droids:164
-#: data/storyline/act1/ReturnOfTux.droids:165
 msgid "Prisoner"
 msgstr "Fånge"
 
-#: data/storyline/act1/ReturnOfTux.droids:166
+#: data/storyline/act1/ReturnOfTux.droids:165
 msgid "Lawn Mower"
 msgstr "Gräsklippare"
 
-#: data/storyline/act1/ReturnOfTux.droids:167
+#: data/storyline/act1/ReturnOfTux.droids:166
 msgid "Cute Girl"
 msgstr "Söt Tjej"
 
-#: data/storyline/act1/ReturnOfTux.droids:168
+#: data/storyline/act1/ReturnOfTux.droids:167
 msgid "Kevin"
 msgstr "Kevin"
 
-#: data/storyline/act1/ReturnOfTux.droids:169
+#: data/storyline/act1/ReturnOfTux.droids:168
 msgid "Stolen 614"
 msgstr "Stulen 614"
 
-#: data/storyline/act1/ReturnOfTux.droids:205
+#: data/storyline/act1/ReturnOfTux.droids:204
 msgid "GUN"
 msgstr "GUN"
 
-#: data/storyline/act1/ReturnOfTux.droids:206
+#: data/storyline/act1/ReturnOfTux.droids:205
 msgid "FEM"
 msgstr "FEM"
 
-#: data/storyline/act1/ReturnOfTux.droids:207
+#: data/storyline/act1/ReturnOfTux.droids:206
 msgid "543"
 msgstr "543"
 
-#: data/storyline/act1/ReturnOfTux.droids:208
+#: data/storyline/act1/ReturnOfTux.droids:207
 msgid "BAR"
 msgstr "BAR"
 
-#: data/storyline/act1/ReturnOfTux.droids:209
+#: data/storyline/act1/ReturnOfTux.droids:208
 msgid "TAN"
 msgstr "TAN"
 
-#: data/storyline/act1/ReturnOfTux.droids:210
+#: data/storyline/act1/ReturnOfTux.droids:209
 msgid "JAS"
 msgstr "JAS"
 
-#: data/storyline/act1/ReturnOfTux.droids:211
+#: data/storyline/act1/ReturnOfTux.droids:210
 msgid "KEV"
 msgstr "KEV"
 
-#: data/storyline/act1/ReturnOfTux.droids:212
+#: data/storyline/act1/ReturnOfTux.droids:211
 msgid "COO"
 msgstr "COO"
 
-#: data/storyline/act1/ReturnOfTux.droids:213
+#: data/storyline/act1/ReturnOfTux.droids:212
 msgid "GUB"
 msgstr "GUB"
 
-#: data/storyline/act1/ReturnOfTux.droids:214
+#: data/storyline/act1/ReturnOfTux.droids:213
 msgid "WOR"
 msgstr "WOR"
 
-#: data/storyline/act1/ReturnOfTux.droids:216
+#: data/storyline/act1/ReturnOfTux.droids:215
 msgid "MUM"
 msgstr "MUM"
 
-#: data/storyline/act1/ReturnOfTux.droids:217
+#: data/storyline/act1/ReturnOfTux.droids:216
 msgid "DIX"
 msgstr "DIX"
 
-#: data/storyline/act1/ReturnOfTux.droids:218
+#: data/storyline/act1/ReturnOfTux.droids:217
 msgid "GUA"
 msgstr "GUA"
 
-#: data/storyline/act1/ReturnOfTux.droids:219
+#: data/storyline/act1/ReturnOfTux.droids:218
 msgid "DOC"
 msgstr "DOC"
 
-#: data/storyline/act1/ReturnOfTux.droids:220
+#: data/storyline/act1/ReturnOfTux.droids:219
 msgid "PRO"
 msgstr "PRO"
 
-#: data/storyline/act1/ReturnOfTux.droids:221
+#: data/storyline/act1/ReturnOfTux.droids:220
 msgid "999"
 msgstr "999"
 
-#: data/storyline/act1/ReturnOfTux.droids:222
+#: data/storyline/act1/ReturnOfTux.droids:221
 msgid "883"
 msgstr "883"
 
-#: data/storyline/act1/ReturnOfTux.droids:223
+#: data/storyline/act1/ReturnOfTux.droids:222
 msgid "834"
 msgstr "834"
 
-#: data/storyline/act1/ReturnOfTux.droids:224
+#: data/storyline/act1/ReturnOfTux.droids:223
 msgid "821"
 msgstr "821"
 
-#: data/storyline/act1/ReturnOfTux.droids:226
+#: data/storyline/act1/ReturnOfTux.droids:225
 msgid "742"
 msgstr "742"
 
-#: data/storyline/act1/ReturnOfTux.droids:227
+#: data/storyline/act1/ReturnOfTux.droids:226
 msgid "711"
 msgstr "711"
 
-#: data/storyline/act1/ReturnOfTux.droids:228
+#: data/storyline/act1/ReturnOfTux.droids:227
 msgid "629"
 msgstr "629"
 
-#: data/storyline/act1/ReturnOfTux.droids:229
+#: data/storyline/act1/ReturnOfTux.droids:228
 msgid "615"
 msgstr "615"
 
-#: data/storyline/act1/ReturnOfTux.droids:230
+#: data/storyline/act1/ReturnOfTux.droids:229
 msgid "614"
 msgstr "614"
 
-#: data/storyline/act1/ReturnOfTux.droids:231
+#: data/storyline/act1/ReturnOfTux.droids:230
 msgid "603"
 msgstr "603"
 
-#: data/storyline/act1/ReturnOfTux.droids:232
+#: data/storyline/act1/ReturnOfTux.droids:231
 msgid "598"
 msgstr "598"
 
-#: data/storyline/act1/ReturnOfTux.droids:233
+#: data/storyline/act1/ReturnOfTux.droids:232
 msgid "571"
 msgstr "571"
 
-#: data/storyline/act1/ReturnOfTux.droids:234
+#: data/storyline/act1/ReturnOfTux.droids:233
 msgid "516"
 msgstr "516"
 
-#: data/storyline/act1/ReturnOfTux.droids:235
+#: data/storyline/act1/ReturnOfTux.droids:234
 msgid "493"
 msgstr "493"
 
-#: data/storyline/act1/ReturnOfTux.droids:236
+#: data/storyline/act1/ReturnOfTux.droids:235
 msgid "476"
 msgstr "476"
 
-#: data/storyline/act1/ReturnOfTux.droids:237
+#: data/storyline/act1/ReturnOfTux.droids:236
 msgid "420"
 msgstr "420"
 
-#: data/storyline/act1/ReturnOfTux.droids:238
+#: data/storyline/act1/ReturnOfTux.droids:237
 msgid "329"
 msgstr "329"
 
-#: data/storyline/act1/ReturnOfTux.droids:239
+#: data/storyline/act1/ReturnOfTux.droids:238
 msgid "302"
 msgstr "302"
 
-#: data/storyline/act1/ReturnOfTux.droids:240
+#: data/storyline/act1/ReturnOfTux.droids:239
 msgid "296"
 msgstr "296"
 
-#: data/storyline/act1/ReturnOfTux.droids:241
+#: data/storyline/act1/ReturnOfTux.droids:240
 msgid "249"
 msgstr "249"
 
-#: data/storyline/act1/ReturnOfTux.droids:242
+#: data/storyline/act1/ReturnOfTux.droids:241
 msgid "247"
 msgstr "247"
 
-#: data/storyline/act1/ReturnOfTux.droids:243
+#: data/storyline/act1/ReturnOfTux.droids:242
 msgid "139"
 msgstr "139"
 
-#: data/storyline/act1/ReturnOfTux.droids:244
+#: data/storyline/act1/ReturnOfTux.droids:243
 msgid "123"
 msgstr "123"
 
-#: data/storyline/act1/ReturnOfTux.droids:245
+#: data/storyline/act1/ReturnOfTux.droids:244
 msgid "Dude"
 msgstr "Snubbe"
 
-#: data/storyline/act1/ReturnOfTux.droids:246
+#: data/storyline/act1/ReturnOfTux.droids:245
 msgid "Guy"
 msgstr "Kille"
 
-#: data/storyline/act1/ReturnOfTux.droids:247
+#: data/storyline/act1/ReturnOfTux.droids:246
 msgid "Controllable Bot"
 msgstr "Kontrollerbar Bott"
 
-#: data/storyline/act1/ReturnOfTux.droids:248
+#: data/storyline/act1/ReturnOfTux.droids:247
 msgid "DeadGuy"
 msgstr "DödKille"
 
-#: data/storyline/act1/ReturnOfTux.droids:249
+#: data/storyline/act1/ReturnOfTux.droids:248
 msgid "FactionDeadBot"
 msgstr "DödRobot"
 
-#: data/storyline/act1/ReturnOfTux.droids:270
+#: data/storyline/act1/ReturnOfTux.droids:269
 msgid "John"
 msgstr "John"
 
@@ -4369,7 +4399,7 @@ msgid "TD"
 msgstr "TD"
 
 #: data/storyline/act1/ReturnOfTux.droids:321
-#: data/storyline/act1/ReturnOfTux.droids:512
+#: data/storyline/act1/ReturnOfTux.droids:513
 msgid "Update Server Guard"
 msgstr "Uppdateringsserverns Vakt"
 
@@ -4450,30 +4480,39 @@ msgstr "Döda Mig"
 msgid "614 - Gate Guard Bot"
 msgstr "614 - Portvaktsbott"
 
-#: data/storyline/act1/ReturnOfTux.droids:449
+#: data/storyline/act1/ReturnOfTux.droids:450
 msgid "Bot Hunter"
-msgstr ""
+msgstr "Bottjägare"
 
-#: data/storyline/act1/ReturnOfTux.droids:455
+#: data/storyline/act1/ReturnOfTux.droids:456
 msgid "Bot Factory Gate Guard Leader"
 msgstr "Vaktledare Över Bottfabriksporten"
 
-#: data/storyline/act1/ReturnOfTux.droids:456
+#: data/storyline/act1/ReturnOfTux.droids:457
 msgid "Bot Factory Gate Guard"
 msgstr "Vakt Över Bottfabriksporten"
 
-#: data/storyline/act1/ReturnOfTux.droids:462
+#: data/storyline/act1/ReturnOfTux.droids:463
 msgid "Reception Droid"
 msgstr "Receptionsdroid"
 
-#: data/storyline/act1/ReturnOfTux.droids:463
 #: data/storyline/act1/ReturnOfTux.droids:464
+#: data/storyline/act1/ReturnOfTux.droids:465
 msgid "Worker"
 msgstr "Arbetare"
 
-#: data/storyline/act1/ReturnOfTux.droids:568
+#: data/storyline/act1/ReturnOfTux.droids:569
 msgid "Corporate Guy"
 msgstr "Företagssnubbe"
+
+#~ msgid "A specialized beam of laser momentarily ionizes the air between the target and the gun, turning it into highly conductive plasma. Milliseconds later, a powerful electric shock is delivered through the air and hits the target. This weapon is effective against people as it is against bots, and indeed few are the droid classes that can withstand more than a few hits from it before going down. The one downside is the high cost involved in crafting this weapon, which makes it very rare. Other than that, even the Exterminators have difficulty matching this weapon, the pride of human race."
+#~ msgstr "En specialiserad laserstråle joniserar luften mellan målet och pistolen, vilket förvandlar den till elektriskt ledande plasma. Några millisekunder senare skickas en kraftig elchock genom luften och träffar målet. Det här vapnet är lika verkningsfullt på människor som på bottar, och det är faktiskt inte många droidklasser som kan klara av mer än några få träffar. Den enda nackdelen är den höga tillverkningskostnaden, vilket gör dessa mycket sällsynta. För övrigt har till och med Utrotaren svårt att mäta sig med detta vapen - mänskligheten stolthet."
+
+#~ msgid "To Novice Arena"
+#~ msgstr "Till Nybörjararenan"
+
+#~ msgid "Not only is the town safe, but apparently so is Ewald's 296 droid. Oh joy."
+#~ msgstr "Inte bara stan är säker, men även Edwalds 296:a. Så underbart."
 
 #~ msgid "Plasma crystal load. This is the most common way of loading a plasma weapon."
 #~ msgstr "Plasma-energi-behållare. Det här är det vanligaste sättet att ladda ett plasmavapen."
@@ -4483,9 +4522,6 @@ msgstr "Företagssnubbe"
 
 #~ msgid "Browning Machine Gun ammo."
 #~ msgstr "Ammunition till Browning-maskingevär."
-
-#~ msgid "A specialized beam of laser momentarily ionizes the air between the target and the gun, turning it into highly conductive plasma. Milliseconds later, a powerful electric shock is delivered through the air and hits the target. This weapon is effective against people as it is against bots, and indeed few are the droid classes that can withstand more than a few hits from it before going down. The one downside is the enormous power consumption that makes this weapon expensive to maintain."
-#~ msgstr "En specialiserad laserstråle joniserar luften mellan målet och pistolen, vilket förvandlar den till elektriskt ledande plasma. Några millisekunder senare skickas en kraftig elchock genom luften och träffar målet. Det här vapnet är lika verkningsfullt på människor som på bottar, och det är faktiskt inte många droidklasser som kan klara av mer än några få träffar. Den enda nackdelen är den enorma energiåtgången som gör vapnet dyrt att använda."
 
 #~ msgid "Ooops, you killed Pendragon."
 #~ msgstr "Hoppsan, du dödade Pendragon."

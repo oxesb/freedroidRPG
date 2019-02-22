@@ -30,27 +30,27 @@ text = [[
     Bavíš se?
   Já ne.
 
-Roboti se zdají být kvůli něčemu velmi naštvaný.
-Předpokládám, že jsou rozhněvaný na tebe.
-Alespoň mě přestaly hledat.
-Quite a? Relief?
+Roboti se zdají být kvůli něčemu velmi naštvaní.
+Předpokládám, že jsou rozhněvaní na tebe.
+Alespoň mě přestali hledat.
+Docela? ...úleva?
 
 V tvé oblasti je umělá inteligence.
 Říká si "Singularita".
 Nebo tak nějak.
-Nechápu, co to chce.
+Nechápu, co chce.
 Budu tě informovat.
 
 Oh a mimochodem...
-I'm still waiting for you.
-I haven't moved an inch since you woke up.
-Now that the beloved town of yours is safe...
-...Wouldn't it be a good time to save me as well?
+Pořád tu na tebe čekám.
+Od chvíle, kdy ses probudil, jsem se nehnul ani o píď.
+Teď, kdy je tvé milované město v bezpečí...
+...Nebylo by už na čase zachránit i mě?
 
             Dvořák, První umělá inteligence.
 
 
 
-=== END OF ACT 1 ===
+=== KONEC 1. AKTU ===
 ]]
 }
