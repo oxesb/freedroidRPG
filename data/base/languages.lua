@@ -34,6 +34,7 @@ languages{
 	{ name = "Italiano",     locale = "it_IT" },
 	{ name = "Spanish",      locale = "es_ES" },
 	{ name = "Svenska",      locale = "sv_SV" },
+	{ name = "Russian",      locale = "ru_RU" },
 }
 
 codesets{
@@ -51,4 +52,5 @@ codesets{
 	{ language = "it", encoding = "ISO-8859-15" },
 	{ language = "pt", encoding = "ISO-8859-15" },
 	{ language = "sv", encoding = "ISO-8859-15" },
+	{ language = "ru", encoding = "ISO-8859-5"  },
 }
