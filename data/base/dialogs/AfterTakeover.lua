@@ -628,6 +628,7 @@ return {
 				   (Bruce_hurt) and
 				   (Tux:has_quest("Opening access to MS Office")) and
 				   (not tux_has_edge) then
+					--; xgettext:no-c-format
 					Npc:says(_"()%%#@(%% THE BLADE IS YOURS. )##%%*&%%*!")
 					tux_has_edge = true
 					Tux:add_item("Nobody's edge",1)

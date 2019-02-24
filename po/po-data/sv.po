@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-02-21 18:25+0100\n"
+"POT-Creation-Date: 2019-02-24 15:12+0100\n"
 "PO-Revision-Date: 2019-01-19 20:21+0000\n"
 "Last-Translator: fluzz <fluzz@gmx.com>\n"
 "Language-Team: Swedish (http://www.transifex.com/arctic-games/freedroid-rpg/language/sv/)\n"
@@ -1266,573 +1266,573 @@ msgstr "Hjärnförstoringspiller"
 msgid "Gain fast acting cancer"
 msgstr "Få snabbväxande cancer"
 
-#: data/base/item_specs.lua:1924
-#, c-format
+#: data/base/item_specs.lua:1925
+#, no-c-format
 msgid "Doctors all over the planet have tried to suppress the amazing breakthrough which has brought increased alertness and concentration that comes with a larger brain. They are synthesized using cutting edge technology and 100% natural herbal ingredients from a secret five thousand-year-old traditional holistic recipe. Get yours direct from our online Canadian ph4rm4cy!!! 100% satisfaction guaranteed!!!"
 msgstr "Doktorer över hela världen har försökt förhindra det fantastiska genombrott som gjort människor piggare och gett dem en större koncentrationsförmåga, tack vare en större hjärna hjärna. Dessa piller är tillverkade med hjälp av den senaste teknologin och 100% naturliga ingredienser enligt ett femtusen år gammalt folkrecept. Beställ dina direkt från vårt kanadensiska online-4p0t3k!!! Vi garanterar att du blir 100% supernöjd!!!"
 
-#: data/base/item_specs.lua:1931
+#: data/base/item_specs.lua:1932
 msgid "Diet Supplement"
 msgstr "Kosttillskott"
 
-#: data/base/item_specs.lua:1932 data/base/item_specs.lua:1944
-#: data/base/item_specs.lua:1956
+#: data/base/item_specs.lua:1933 data/base/item_specs.lua:1945
+#: data/base/item_specs.lua:1957
 msgid "Recover Health"
 msgstr "Förbättra Hälsan"
 
-#: data/base/item_specs.lua:1936
+#: data/base/item_specs.lua:1937
 msgid "Only proper vitamin and mineral intake can keep you healthy during the apocalypse. This can cure a cold."
 msgstr "Endast ett rikligt vitamin- och mineralintag kan hålla dig frisk under apokalypsen. Det här kan bota en förkylning."
 
-#: data/base/item_specs.lua:1943
+#: data/base/item_specs.lua:1944
 msgid "Antibiotic"
 msgstr "Antibiotika"
 
-#: data/base/item_specs.lua:1948
+#: data/base/item_specs.lua:1949
 msgid "Truly wonderful things can be extracted from molds. This can cure lethal food poisoning. Wish you had that in your last Nethack game, eh?"
 msgstr "Helt underbara sker utvinnas från mögel. Det här kan bota dödlig matförgiftning. Du önskar att du haft det här i den senaste omgången Nethack va?"
 
-#: data/base/item_specs.lua:1955
+#: data/base/item_specs.lua:1956
 msgid "Doc-in-a-can"
 msgstr "Doktor-på-burk"
 
-#: data/base/item_specs.lua:1960
+#: data/base/item_specs.lua:1961
 msgid "This is a drink filled with nanobots designed to heal any damage that they notice inside you. It can cure decapitation. Most of the time."
 msgstr "Den här drycken är fylld med nanobottar gjorda för att läka alla skador de upptäcker i dig. Den kan bota en halshuggning. Oftast."
 
-#: data/base/item_specs.lua:1967
+#: data/base/item_specs.lua:1968
 msgid "Bottled Ice"
 msgstr "Is På Flaska"
 
-#: data/base/item_specs.lua:1968 data/base/item_specs.lua:1980
-#: data/base/item_specs.lua:3052
+#: data/base/item_specs.lua:1969 data/base/item_specs.lua:1981
+#: data/base/item_specs.lua:3053
 msgid "Cooling aid"
 msgstr "Kylande"
 
-#: data/base/item_specs.lua:1972
+#: data/base/item_specs.lua:1973
 msgid "This bottle is filled with ice. It can keep you cool during a warm summer day."
 msgstr "Den här flaskan är fylld med is. Den kan svalka dig en varm sommardag."
 
-#: data/base/item_specs.lua:1979
+#: data/base/item_specs.lua:1980
 msgid "Industrial Coolant"
 msgstr "Industriellt Kylmedel"
 
-#: data/base/item_specs.lua:1984
+#: data/base/item_specs.lua:1985
 msgid "Bartenders around the world add this to drinks to get them cold very fast. Plus, the coolant is much cheaper. It can keep you cool inside a nuclear reactor."
 msgstr "Bartenders i hela världen blandar i det här i drinkarna för att kyla ned dem väldigt snabbt. Dessutom är det billigt. Det här kan hålla dig kall inne i en kärnreaktor."
 
-#: data/base/item_specs.lua:1991
+#: data/base/item_specs.lua:1992
 msgid "Liquid Nitrogen"
 msgstr "Flytande Kväve"
 
-#: data/base/item_specs.lua:1992
+#: data/base/item_specs.lua:1993
 msgid "Extreme Cooling aid"
 msgstr "Extremt kylande"
 
-#: data/base/item_specs.lua:1996
+#: data/base/item_specs.lua:1997
 msgid "When you want something frozen solid, this is what you need. It can keep you cool even inside a class M star."
 msgstr "När du vill att något ska bli genomfruset, är det här vad du behöver. Det kan hålla dig kall i en klass M-stjärna."
 
-#: data/base/item_specs.lua:2003
+#: data/base/item_specs.lua:2004
 msgid "Barf's Energy Drink"
 msgstr "Barf's Energidryck"
 
-#: data/base/item_specs.lua:2004
+#: data/base/item_specs.lua:2005
 msgid "Cool down, cure minor wounds."
 msgstr "Svalka dig och läk skråmor."
 
-#: data/base/item_specs.lua:2008
+#: data/base/item_specs.lua:2009
 msgid "Warning! These energy drinks contain high doses of caffeine! The average person drops dead after consuming 12 grams of caffeine. One of these bottles contains over double that amount."
 msgstr "Varning! De här energidryckerna innehåller höga doser av koffein! En normal person avlider efter att ha konsumerat 12 gram koffein. En av de här flaskorna innehåller mer än dubbelt så mycket."
 
-#: data/base/item_specs.lua:2015
+#: data/base/item_specs.lua:2016
 msgid "Running Power Capsule"
 msgstr "Spurtkapsel"
 
-#: data/base/item_specs.lua:2016
+#: data/base/item_specs.lua:2017
 msgid "Recover Running Power"
 msgstr "Kraft att springa"
 
-#: data/base/item_specs.lua:2020
+#: data/base/item_specs.lua:2021
 msgid "These small containers hold purified running strength. Each capsule can be used only once, but many of them can be grouped together like one item in your inventory."
 msgstr "De här små behållarna innehåller ren löpstyrka. Varje kapsel kan bara användas en gång, men flera stycken kan samlas ihop som ett föremål i ditt förråd."
 
-#: data/base/item_specs.lua:2027
+#: data/base/item_specs.lua:2028
 msgid "Strength Capsule"
 msgstr "Styrkekapsel"
 
-#: data/base/item_specs.lua:2028
+#: data/base/item_specs.lua:2029
 msgid "Temporary Boost to Strength"
 msgstr "Tillfälligt ökad styrka"
 
-#: data/base/item_specs.lua:2032
+#: data/base/item_specs.lua:2033
 msgid "These small containers hold purified strength. This item will give a temporary boost to strength. Each capsule can be used only once, but many of them can be grouped together like one item in your inventory."
 msgstr "De här små behållarna innehåller ren styrka. Det här föremålet gör dig tillfälligt starkare. Varje kapsel kan bara användas en gång, men flera stycken kan samlas ihop som ett föremål i ditt förråd."
 
-#: data/base/item_specs.lua:2039
+#: data/base/item_specs.lua:2040
 msgid "Dexterity Capsule"
 msgstr "Smidighetskapsel"
 
-#: data/base/item_specs.lua:2040
+#: data/base/item_specs.lua:2041
 msgid "Temporary Boost to Dexterity"
 msgstr "Tillfälligt ökad smidighet"
 
-#: data/base/item_specs.lua:2044
+#: data/base/item_specs.lua:2045
 msgid "These small containers hold purified dexterity. This item will give a temporary bonus to dexterity. Each capsule can be used only once, but many of them can be grouped together like one item in your inventory."
 msgstr "De här små behållarna innehåller ren styrka. Det här föremålet gör dig tillfälligt smidigare. Varje kapsel kan bara användas en gång, men flera stycken kan grupperas ihop till ett föremål i ditt förråd."
 
-#: data/base/item_specs.lua:2055
+#: data/base/item_specs.lua:2056
 msgid "Valuable Circuits"
 msgstr "Värdefulla Kretsar"
 
-#: data/base/item_specs.lua:2059
+#: data/base/item_specs.lua:2060
 msgid "The new monetary standard of the world. With the collapse of the banking system, the precious metals in bot circuitry are now de facto hard cash. A bit difficult to get, though, as the bots are not likely to just hand it over..."
 msgstr "Den nya världsvalutan. Banksystemets kollaps har gjort bottarnas kretskort, med deras värdefulla metaller, till riktig hårdvaluta. Dock är de lite svåra att få tag i eftersom bottarna knappast ger bort dem frivilligt..."
 
-#: data/base/item_specs.lua:2066
+#: data/base/item_specs.lua:2067
 msgid "Anti-grav Pod for Droids"
 msgstr "Anti-grav-kapsel För Droider"
 
-#: data/base/item_specs.lua:2070
+#: data/base/item_specs.lua:2071
 msgid "The bots use this to hover around."
 msgstr "Bottar använder den här för att sväva runt."
 
-#: data/base/item_specs.lua:2077
+#: data/base/item_specs.lua:2078
 msgid "Dixon's Toolbox"
 msgstr "Dixons Verktygslåda"
 
-#: data/base/item_specs.lua:2081
+#: data/base/item_specs.lua:2082
 msgid "This is a teleporter service toolbox. It's complete and orderly, though a few dents on the outside give proof of frequent use. 'C. Dixon' is carved into the outside with fine print."
 msgstr "Det här är en verktygslåda för teleport-service. Den är komplett och välordnad, men har några bucklor på utsidan vilket tyder på att den används ofta. Ett finstilt \"C. Dixon\" är ristat på utsidan."
 
-#: data/base/item_specs.lua:2088
+#: data/base/item_specs.lua:2089
 msgid "Toolbox"
 msgstr "Verktygslåda"
 
-#: data/base/item_specs.lua:2092
+#: data/base/item_specs.lua:2093
 msgid "This is a regular toolbox. It's complete and orderly, though a few dents on the outside give proof of frequent use."
 msgstr "Det här är en vanlig verktygslåda. Den är komplett och välordnad, men har några bucklor på utsidan vilket tyder på att den använts ofta."
 
-#: data/base/item_specs.lua:2099
+#: data/base/item_specs.lua:2100
 msgid "Entropy Inverter"
 msgstr "Entropi-inverterare"
 
-#: data/base/item_specs.lua:2103 data/base/item_specs.lua:2114
-#: data/base/item_specs.lua:2125 data/base/item_specs.lua:2136
-#: data/base/item_specs.lua:2147
+#: data/base/item_specs.lua:2104 data/base/item_specs.lua:2115
+#: data/base/item_specs.lua:2126 data/base/item_specs.lua:2137
+#: data/base/item_specs.lua:2148
 msgid "This is an standard part within many robot types."
 msgstr "Det här är en vanlig del i många robotar."
 
-#: data/base/item_specs.lua:2110
+#: data/base/item_specs.lua:2111
 msgid "Plasma Transistor"
 msgstr "Plasmatransistor"
 
-#: data/base/item_specs.lua:2121
+#: data/base/item_specs.lua:2122
 msgid "Superconducting Relay Unit"
 msgstr "Superledande Relä"
 
-#: data/base/item_specs.lua:2132
+#: data/base/item_specs.lua:2133
 msgid "Antimatter-Matter Converter"
 msgstr "Antimateria-omvandlare"
 
-#: data/base/item_specs.lua:2143
+#: data/base/item_specs.lua:2144
 msgid "Tachyon Condensator"
 msgstr "Takyon-kondensator"
 
-#: data/base/item_specs.lua:2154
+#: data/base/item_specs.lua:2155
 msgid "Desk Lamp"
 msgstr "Bordslampa"
 
-#: data/base/item_specs.lua:2158
+#: data/base/item_specs.lua:2159
 msgid "What would modern science be without this important item?"
 msgstr "Vad skulle modern forskning vara utan detta viktiga föremål?"
 
-#: data/base/item_specs.lua:2165
+#: data/base/item_specs.lua:2166
 msgid "Red Dilithium Crystal"
 msgstr "Röda Dilitiumkristaller"
 
-#: data/base/item_specs.lua:2169
+#: data/base/item_specs.lua:2170
 msgid "These dilithium crystals are used as an energy source in many modern electricity or heat based devices. Energy is extracted from the crystal by making use of the ordering of the crystal molecules. This principle has allowed us to build devices that consume a lot of energy, but do not need to be connected to a power line."
 msgstr "De här dilitiumkristallerna används som energikällor i många moderna el- och värmedrivna apparater. Energin kan utvinnas tack vare de ordnade molekylerna. Det här gör att man kan bygga apparater som kräver mycket energi men som inte behöver kopplas till elnätet."
 
-#: data/base/item_specs.lua:2176
+#: data/base/item_specs.lua:2177
 msgid "Map Maker"
 msgstr "Kartskapare"
 
-#: data/base/item_specs.lua:2177
+#: data/base/item_specs.lua:2178
 msgid "To implant the automap device"
 msgstr "Implanterar enheten för autokarta"
 
-#: data/base/item_specs.lua:2181
+#: data/base/item_specs.lua:2182
 msgid "This small device automatically collects data about the area within a range of 7 times 7 meters and draws a small-scale plan of the immediate surroundings. Because of its very tiny display, it needs to be held closely to the eye, and the image will then be projected directly into the eyeball of the user. Still, the collected map data will be split up by the device into several sectors for convenient viewing."
 msgstr "Den här lilla enheten samlar automatiskt in data från en omkrets på 7 meter och ritar en liten karta över omgivningen. Eftersom den är mycket liten behöver den hållas nära ögat, och då projekterar den en bild direkt in i användarens öga. Kartan delas upp i flera områden för bekvämlighetens skull."
 
-#: data/base/item_specs.lua:2188
+#: data/base/item_specs.lua:2189
 msgid "Light Enhancer? to be included in the future..."
 msgstr "Ljusförstärkare? kommer läggas in i framtiden..."
 
-#: data/base/item_specs.lua:2189 data/base/item_specs.lua:2193
+#: data/base/item_specs.lua:2190 data/base/item_specs.lua:2194
 msgid "See better in the dark."
 msgstr "Se bättre i mörker."
 
-#: data/base/item_specs.lua:2200
+#: data/base/item_specs.lua:2201
 msgid "Fork"
 msgstr "Gaffel"
 
-#: data/base/item_specs.lua:2213 data/base/item_specs.lua:2225
-#: data/base/item_specs.lua:2236 data/base/item_specs.lua:2247
+#: data/base/item_specs.lua:2214 data/base/item_specs.lua:2226
+#: data/base/item_specs.lua:2237 data/base/item_specs.lua:2248
 msgid "This item is part of the 'Self Cleaning Kitchen' (SCK) project from before the Great Assault. All of the items in the SCK project have an inner mechanism that will clean the object automatically if left alone for a given time. It comes with its own power supply, and has a supposed duration of 200 years."
 msgstr "Det här föremålet var en del av projektet \"Självrengörande Köket\" (SrK) innan det Stora Angreppet. Den har en inbyggd rengöringsmekanism som startas automatiskt om den lämnas i en viss tid. Den har även sin egen kraftförsörjning som ska räcka i 200 år."
 
-#: data/base/item_specs.lua:2221
+#: data/base/item_specs.lua:2222
 msgid "Plate"
 msgstr "Tallrik"
 
-#: data/base/item_specs.lua:2232
+#: data/base/item_specs.lua:2233
 msgid "Mug"
 msgstr "Mugg"
 
-#: data/base/item_specs.lua:2243
+#: data/base/item_specs.lua:2244
 msgid "Cup"
 msgstr "Kopp"
 
-#: data/base/item_specs.lua:2254
+#: data/base/item_specs.lua:2255
 msgid "Teleporter Homing Beacon"
 msgstr "Teleporter-spårare"
 
-#: data/base/item_specs.lua:2255
+#: data/base/item_specs.lua:2256
 msgid "Teleports you elsewhere"
 msgstr "Teleporterar dig någonstans"
 
-#: data/base/item_specs.lua:2259
+#: data/base/item_specs.lua:2260
 msgid "This device sends a signal to a nearby teleporter requesting a transport, and then helps with locking on and boosting the signal to ensure the teleportation attempt is successful. The battery inside is sufficient for one use *only* and the device becomes useless afterwards. At least, most people don't try to use them twice... and those few who do usually end up with parts of their body missing or attached in the wrong place. Note: Multiple of these may be grouped together in the inventory."
 msgstr "Den här enheten sänder en signal till närmaste teleporter och ber om transport. Den hjälper sedan till att säkra och förstärka signalen så teleporteringen går smärtfritt. Batteriet i den räcker bara *en* gång och sedan är den värdelös. De flesta försöker inte använden den två gånger... och de som gör det förlorar ofta olika kroppsdelar, eller får tillbaks dem på fel ställen. OBS: Flera sådana här kan grupperas ihop som ett föremål i förrådet."
 
-#: data/base/item_specs.lua:2266
+#: data/base/item_specs.lua:2267
 msgid "Data Cube"
 msgstr "Datakub"
 
-#: data/base/item_specs.lua:2270
+#: data/base/item_specs.lua:2271
 msgid "This was the most common form of portable information storage used on Earth until the Great Assault, its three-dimensional memory capable of storing up to 2 terabytes and compatible with most of the hardware on the planet."
 msgstr "Det här var den vanligaste formen av portabel datalagring på jorden fram tills det Stora Angreppet. Det tredimensionella minnet kan lagra upp till 2 terabyte och är kompatibelt med nästan all hårdvara."
 
-#: data/base/item_specs.lua:2277
+#: data/base/item_specs.lua:2278
 msgid "Kevin's Data Cube"
 msgstr "Kevins Datakub"
 
-#: data/base/item_specs.lua:2281
+#: data/base/item_specs.lua:2282
 msgid "This data cube contains confidential government data on the installations around the town. Kevin hopes that when the data is evaluated properly, a way out of the current crisis might be found. However, the amount of data is so vast, it can only be evaluated properly using a large cluster of computers. The Red Guard base is said to store an infrastructure suitable to this purpose."
 msgstr "Den här datakuben innehåller hemligstämplad information från ledningen om datorinstallationerna i stan. Kevin hoppas hitta ett sätt att lösa den nuvarande krisen genom att utvärdera den på rätt sätt. Men mängden data är så enorm att den bara kan utvärderas rätt med hjälp av ett stort kluster av datorer. Röda Väktarna sägs ha de resurser som krävs i sin bas."
 
-#: data/base/item_specs.lua:2288
+#: data/base/item_specs.lua:2289
 msgid "Pandora's Cube"
 msgstr "Pandoras Kub"
 
-#: data/base/item_specs.lua:2292
+#: data/base/item_specs.lua:2293
 msgid "This is heavy. Cannot the end of the world come in a smaller package? It would be a great time for Duncan to explain a few things..."
 msgstr "Det här är tungt. Kan inte världens undergång komma i ett mindre paket? Det börjar vara dags för Duncan att förklara några saker..."
 
-#: data/base/item_specs.lua:2299
+#: data/base/item_specs.lua:2300
 msgid "Rubber Duck"
 msgstr "Gummianka"
 
-#: data/base/item_specs.lua:2303
+#: data/base/item_specs.lua:2304
 msgid "It appears that humans enjoy bathing with squeaky little pieces of plastic shaped like waterfowl. As a penguinoid, you should probably be disturbed, but you have to admit this thing is actually quite adorable."
 msgstr "Vet verkar som människor tycker om att bada med små plastsaker formade som sjöfåglar. Det här borde störa dig som pingvinoid, men du måste faktiskt erkänna att den är rätt så gullig."
 
-#: data/base/item_specs.lua:2310
+#: data/base/item_specs.lua:2311
 msgid "Empty Picnic Basket"
 msgstr "Tom Picknickkorg"
 
-#: data/base/item_specs.lua:2314
+#: data/base/item_specs.lua:2315
 msgid "This is the latest in 'Dr. How?'-brand picnic basket technology! With patented food-preserving time-dilation, space-bending miniaturization, and anti-gravity, your food stays fresh and your drinks stay cold in a small light-as-a-feather package! Now you can picnic the old fashioned way! Batteries sold separately."
 msgstr "Det här är den senaste picknickkorgs-tekniken från \"Dr. Hur?\"! Med patenterad mat-bevarande tidsutvidgning, miniatyriserad rymd-böjning och anti-gravitation håller sig din man fräsch och dina drycker kalla i ett litet, fjäderlätt paket! Nu kan du äntligen ha picknick på det gamla goda viset! Batterier medföljer ej."
 
-#: data/base/item_specs.lua:2321
+#: data/base/item_specs.lua:2322
 msgid "Lunch in a Picnic Basket"
 msgstr "Lunch I En Picknickkorg"
 
-#: data/base/item_specs.lua:2325
+#: data/base/item_specs.lua:2326
 msgid "This is a 'Dr. How?'-brand picnic basket stuffed full of enough food and drinks to feed a dozen people. With 'Dr. How?'-time dilation, the food keeps oven-fresh, and the drinks stay ice-cold."
 msgstr "Det här är en picknickkorg av märket \"Dr. Hur?\" med tillräckligt mat och dryck för ett dussin personer. Med \"Dr. Hur?\"-tidsutvidgning håller sig maten ungsfärsk och drycken iskall."
 
-#: data/base/item_specs.lua:2332
+#: data/base/item_specs.lua:2333
 msgid "MS Stock Certificate"
 msgstr "MS Aktiebrev"
 
-#: data/base/item_specs.lua:2336
+#: data/base/item_specs.lua:2337
 msgid "This is a Stock Certificate for transfer of ownership of five hundred sixty-seven million shares of MegaSystems from William Gapes to bearer."
 msgstr "Det här är ett aktiebrev som överför äganderätten till femhundrasextiosju miljoner andelar i MegaSystems från William Gapes till innehavaren."
 
-#: data/base/item_specs.lua:2343
+#: data/base/item_specs.lua:2344
 msgid "Elbow Grease Can"
 msgstr "Smörj"
 
-#: data/base/item_specs.lua:2347
+#: data/base/item_specs.lua:2348
 msgid "A can filled with elbow grease. Hard to make it if you are not a strong man."
 msgstr "En flaska fylld med smörj. Den är svår att använda på ett varsamt sätt."
 
-#: data/base/item_specs.lua:2355
+#: data/base/item_specs.lua:2356
 msgid "MS EPROM Programming Interface"
 msgstr ""
 
-#: data/base/item_specs.lua:2359
+#: data/base/item_specs.lua:2360
 msgid "Used by developers at MegaSys to load firmware onto newly assembled droids."
 msgstr ""
 
-#: data/base/item_specs.lua:2370
+#: data/base/item_specs.lua:2371
 msgid "Linarian Power Crank"
 msgstr "Vevparti För Linärianer"
 
-#: data/base/item_specs.lua:2374
+#: data/base/item_specs.lua:2375
 msgid "This mechanical crank, product of the highly advanced and sophisticated technological genius of the Linarian race, performs elaborate operations on energy and directs it towards a biochemical structure. For short, it buffs up your muscles. That's good."
 msgstr "Den här mekaniska veven, en produkt av det mycket avancerade, sofistikerade, genialiska och tekniska sinnet hos Linärianerna, använder en detaljerad procedur för att skicka energi till en biokemisk struktur. Den biffar upp dina muskler, helt enkelt. Det är ju bra."
 
-#: data/base/item_specs.lua:2381
+#: data/base/item_specs.lua:2382
 msgid "Tungsten Spikes"
 msgstr "Volframtaggar"
 
-#: data/base/item_specs.lua:2385
+#: data/base/item_specs.lua:2386
 msgid "This polycarbonate surface is lined with hard tungsten spikes, and can be installed into a mechanical socket on most melee weapons, offering a simple and affordable solution to increasing damage dealt. Handle only with gloves. Do not attempt to use as footwear. Do not attempt to eat."
 msgstr "Den här skivan av polykarbonat är täckt med taggar av volfram och kan installeras i ett mekanisk sockel på de flesta handvapen - ett enkelt och billigt sätt att göra vapnet farligare. Måste hanteras med skyddshandskar. Får ej användas som skor. Får ej ätas."
 
-#: data/base/item_specs.lua:2392
+#: data/base/item_specs.lua:2393
 msgid "Tinfoil Patch"
 msgstr "Aluminiumfolie"
 
-#: data/base/item_specs.lua:2396
+#: data/base/item_specs.lua:2397
 msgid "When attached to your armor, this patch of tinfoil allows you to stay cooler by reducing the amount of electromagnetic radiation that your body absorbs."
 msgstr "När den sitter på din sköld hjälper den dig att hålla dig kall genom att minska mängden elektromagnetisk strålning som absorberas av din kropp."
 
-#: data/base/item_specs.lua:2403
+#: data/base/item_specs.lua:2404
 msgid "Laser Sight"
 msgstr "Lasersikte"
 
-#: data/base/item_specs.lua:2407
+#: data/base/item_specs.lua:2408
 msgid "A miniaturized laser powered by a nuclear battery. When attached parallel to the barrel of a gun, it makes a little red dot on the target and helps with aiming."
 msgstr "En förminskad laser, driven av ett kärnkraftbatteri. När den fästs på gevärspipan skapar den en liten röd prick på målet, vilket hjälper en att sikta."
 
-#: data/base/item_specs.lua:2414
+#: data/base/item_specs.lua:2415
 msgid "Exoskeletal Joint"
 msgstr "Exoskelett-led"
 
-#: data/base/item_specs.lua:2418
+#: data/base/item_specs.lua:2419
 msgid "This electromechanical joint helps you to perform physically demanding tasks more easily by amplifying the movements of your body."
 msgstr "Den här elektromekaniska leden hjälper dig att utföra fysiskt krävande arbeten genom att förstärka dina kroppsrörelser."
 
-#: data/base/item_specs.lua:2425
+#: data/base/item_specs.lua:2426
 msgid "Heatsink"
 msgstr "Kylfläns"
 
-#: data/base/item_specs.lua:2429
+#: data/base/item_specs.lua:2430
 msgid "A simple heatsink add-on that keeps you cooler by dissipating heat from your armor."
 msgstr "En enkel kylfläns som håller dig kall genom att leda bort värmen från din sköld."
 
-#: data/base/item_specs.lua:2436
+#: data/base/item_specs.lua:2437
 msgid "Peltier Element"
 msgstr "Peliter-element"
 
-#: data/base/item_specs.lua:2440
+#: data/base/item_specs.lua:2441
 msgid "A thermoelectric device that increases your cooling rate."
 msgstr "En termoelektrisk manick som höjer avkylningshastigheten."
 
-#: data/base/item_specs.lua:2447
+#: data/base/item_specs.lua:2448
 msgid "Steel Mesh"
 msgstr "Stålnät"
 
-#: data/base/item_specs.lua:2451
+#: data/base/item_specs.lua:2452
 msgid "A sturdy metal mesh that provides an extra protective layer to your armor."
 msgstr "Ett stadigt metallnät som ger din sköld ett extra skyddslager."
 
-#: data/base/item_specs.lua:2458
+#: data/base/item_specs.lua:2459
 msgid "Shock Discharger"
 msgstr "Chockurladdare"
 
-#: data/base/item_specs.lua:2462
+#: data/base/item_specs.lua:2463
 msgid "When installed to a melee weapon, this nifty device gives a small electric shock to enemies you hit."
 msgstr "När den installeras på ett handvapen ger den dina fiender en elektrisk chock varje gång de träffas."
 
-#: data/base/item_specs.lua:2469
+#: data/base/item_specs.lua:2470
 msgid "Silencer"
 msgstr "Ljuddämpare"
 
-#: data/base/item_specs.lua:2473
+#: data/base/item_specs.lua:2474
 msgid "This new generation silencer will not only allow you to catch your enemies by surprise, but will also help you to do more damage in ranged combat."
 msgstr ""
 
-#: data/base/item_specs.lua:2481
+#: data/base/item_specs.lua:2482
 msgid "Coprocessor"
 msgstr "Biprocessor"
 
-#: data/base/item_specs.lua:2485
+#: data/base/item_specs.lua:2486
 msgid "By speeding up your computations, this chip helps you to excel in many activities."
 msgstr "Genom att snabba upp beräkningarna gör det här chippet dig bättre på många områden."
 
-#: data/base/item_specs.lua:2492
+#: data/base/item_specs.lua:2493
 msgid "Pedometer"
 msgstr "Stegräknare"
 
-#: data/base/item_specs.lua:2496
+#: data/base/item_specs.lua:2497
 msgid "A device that helps you to move dexterously by giving feedback on your foot movement."
 msgstr "En pryl som gör att du kan röra dig smidigare genom att analysera ditt fotarbete och ge dig respons."
 
-#: data/base/item_specs.lua:2503
+#: data/base/item_specs.lua:2504
 msgid "Foot Warmers"
 msgstr "Fotvärmare"
 
-#: data/base/item_specs.lua:2507
+#: data/base/item_specs.lua:2508
 msgid "This pair of electric fuzzy foot warmers would make even a penguin warm and comfortable in any shoes, and help maintain a healthy body temperature, thus preventing colds and making you look cool. At least, that's what the advertisement says. And ads don't lie, do they?"
 msgstr "Det här elektriska, fluffiga fotvärmarna kan få, till och med en pingvins, fötter varma och sköna i vilka skor som helst, och de hjälper dig även hålla en hälsosam kroppstemeratur, vilket förhindrar förkylningar. Och dessutom ser du häftig ut. Åtminstone enligt annonsen. Och annonser ljuger aldirg, eller?"
 
-#: data/base/item_specs.lua:2514
+#: data/base/item_specs.lua:2515
 msgid "Circuit Jammer"
 msgstr "Krets-kraschare"
 
-#: data/base/item_specs.lua:2518
+#: data/base/item_specs.lua:2519
 msgid "This item improves your melee weapon by blasting the enemies you hit with an electromagnetic pulse. The pulse is powerful enough to temporarily shut down the circuits of the attacked bot."
 msgstr "Det här gör dina handvapen bättre genom att ge fienden en elektromagnetisk puls varje gång du träffar. Pulsen är kraftfull nog att tillfälligt slå ut kretsarna i en bott."
 
-#: data/base/item_specs.lua:2525
+#: data/base/item_specs.lua:2526
 msgid "Sensor Disruptor"
 msgstr "Störningssändare"
 
-#: data/base/item_specs.lua:2529
+#: data/base/item_specs.lua:2530
 msgid "When attached to a melee weapon, this item induces errors to the sensors of the bots you attack, causing them to slow down momentarily."
 msgstr "När den sitter på ett handvapen skapar den fel i sensorerna hos de bottar du anfaller, vilket får dem att sakta ner."
 
-#: data/base/item_specs.lua:2536
+#: data/base/item_specs.lua:2537
 msgid "Headlamp"
 msgstr "Pannlampa"
 
-#: data/base/item_specs.lua:2540
+#: data/base/item_specs.lua:2541
 msgid "When fastened to your helmet, this lamp allows you to see better in dark environments."
 msgstr "När den här lampan sitter på din hjälm hjälper den dig att se bättre i mörker."
 
-#: data/base/item_specs.lua:2547
+#: data/base/item_specs.lua:2548
 msgid "Brain Stimulator"
 msgstr "Hjärnsimulator"
 
-#: data/base/item_specs.lua:2551
+#: data/base/item_specs.lua:2552
 msgid "A chip that allows faster learning by connecting directly to the brain via a neural interface (colloquially referred to as a 'weird swim cap with little thingies on it') and providing additional feedback on various actions."
 msgstr "Ett chipp som gör det möjligt att lära sig snabbare, genom att det ansluts direkt till hjärnan via ett nervgränssnitt (till vardags kallat \"den där badmössan med konstiga små mojänger i) och ger extra respons vid olika rörelser."
 
-#: data/base/item_specs.lua:2562
+#: data/base/item_specs.lua:2563
 msgid "NPC Hand to Hand Weapon"
 msgstr "NPC Handvapen"
 
-#: data/base/item_specs.lua:2575
+#: data/base/item_specs.lua:2576
 msgid "Bot use only"
 msgstr "Endast för bottar"
 
-#: data/base/item_specs.lua:2583
+#: data/base/item_specs.lua:2584
 msgid "Droid 123 Weak Robotic Arm"
 msgstr "Droid 123 Svag Robotarm"
 
-#: data/base/item_specs.lua:2596 data/base/item_specs.lua:2620
-#: data/base/item_specs.lua:2641 data/base/item_specs.lua:2665
-#: data/base/item_specs.lua:2686 data/base/item_specs.lua:2707
-#: data/base/item_specs.lua:2728 data/base/item_specs.lua:2749
-#: data/base/item_specs.lua:2773 data/base/item_specs.lua:2794
-#: data/base/item_specs.lua:2815 data/base/item_specs.lua:2836
-#: data/base/item_specs.lua:2857 data/base/item_specs.lua:2878
-#: data/base/item_specs.lua:2902 data/base/item_specs.lua:2927
-#: data/base/item_specs.lua:2952
+#: data/base/item_specs.lua:2597 data/base/item_specs.lua:2621
+#: data/base/item_specs.lua:2642 data/base/item_specs.lua:2666
+#: data/base/item_specs.lua:2687 data/base/item_specs.lua:2708
+#: data/base/item_specs.lua:2729 data/base/item_specs.lua:2750
+#: data/base/item_specs.lua:2774 data/base/item_specs.lua:2795
+#: data/base/item_specs.lua:2816 data/base/item_specs.lua:2837
+#: data/base/item_specs.lua:2858 data/base/item_specs.lua:2879
+#: data/base/item_specs.lua:2903 data/base/item_specs.lua:2928
+#: data/base/item_specs.lua:2953
 msgid "Droid weaponry"
 msgstr "Droidvapen"
 
-#: data/base/item_specs.lua:2604
+#: data/base/item_specs.lua:2605
 msgid "Droid 139 Plasma Trash Vaporiser"
 msgstr "Droid 139 Plasmaavfallsbrännare"
 
-#: data/base/item_specs.lua:2628
+#: data/base/item_specs.lua:2629
 msgid "Droid 247 Robotic Arm"
 msgstr "Droid 247 Robotarm"
 
-#: data/base/item_specs.lua:2649
+#: data/base/item_specs.lua:2650
 msgid "Droid 249 Pulse Laser Welder"
 msgstr "Droid 249 Pulslasersvets"
 
-#: data/base/item_specs.lua:2673
+#: data/base/item_specs.lua:2674
 msgid "Droid 296 Plasmabeam Cutter"
 msgstr "Droid 296 Plasmaskärare"
 
-#: data/base/item_specs.lua:2694
+#: data/base/item_specs.lua:2695
 msgid "Droid 302 Overcharged Barcode Reader"
 msgstr "Droid 302 Överbelastad Streckkodsläsare"
 
-#: data/base/item_specs.lua:2715
+#: data/base/item_specs.lua:2716
 msgid "Droid 329 Dual Overcharged Barcode Reader"
 msgstr "Droid 329 Överbelastad Dubbel Streckkodsläsare"
 
-#: data/base/item_specs.lua:2736
+#: data/base/item_specs.lua:2737
 msgid "Droid 420 Laser Scalpel"
 msgstr "Droid 420 Laserskalpell"
 
-#: data/base/item_specs.lua:2757
+#: data/base/item_specs.lua:2758
 msgid "Droid 476 Small Laser"
 msgstr "Droid 476 Liten Laser"
 
-#: data/base/item_specs.lua:2781
+#: data/base/item_specs.lua:2782
 msgid "Droid 493 Power Hammer"
 msgstr "Droid 493 Maskinhammare"
 
-#: data/base/item_specs.lua:2802
+#: data/base/item_specs.lua:2803
 msgid "Droid 516 Robotic Fist"
 msgstr "Droid 516 Robotnäve"
 
-#: data/base/item_specs.lua:2823
+#: data/base/item_specs.lua:2824
 msgid "Droid 543 Tree Harvester"
 msgstr "Droid 543 Trädskördare"
 
-#: data/base/item_specs.lua:2844
+#: data/base/item_specs.lua:2845
 msgid "Droid 571 Robotic Fist"
 msgstr "Droid 571 Robotnäve"
 
-#: data/base/item_specs.lua:2865
+#: data/base/item_specs.lua:2866
 msgid "Droid 598 Robotic Fist"
 msgstr "Droid 598 Robotnäve"
 
-#: data/base/item_specs.lua:2886
+#: data/base/item_specs.lua:2887
 msgid "Droid 7xx Tux Seeking Missiles"
 msgstr "Droid 7xx Tuxsökande Missiler"
 
-#: data/base/item_specs.lua:2910
+#: data/base/item_specs.lua:2911
 msgid "Droid Advanced Twin Laser"
 msgstr "Avancerad Dubbellaser Från Droid"
 
-#: data/base/item_specs.lua:2935
+#: data/base/item_specs.lua:2936
 msgid "Droid 883 Exterminator"
 msgstr "Droid 883 Utrotare"
 
-#: data/base/item_specs.lua:2960
+#: data/base/item_specs.lua:2961
 msgid "Autogun Laser Pistol"
 msgstr "Laserpistol Från Autogevär"
 
-#: data/base/item_specs.lua:2976
+#: data/base/item_specs.lua:2977
 msgid "This is the laser weapon of the autogun. If you see this item whilst normal gameplay, please make a bugreport."
 msgstr "Det här är lasern från ett autogevär. Om du ser det här i spelet, var snäll och rapportera det som en bugg."
 
-#: data/base/item_specs.lua:2988
+#: data/base/item_specs.lua:2989
 msgid "PC LOAD LETTER"
 msgstr "PC LADDNINGSBOKSTAV"
 
-#: data/base/item_specs.lua:2992
+#: data/base/item_specs.lua:2993
 msgid "An envelop saying 'PC LOAD LETTERS'. I have no idea what that means..."
 msgstr "Ett omslag med texten \"PC LADDNINGSBOKSTÄVER\". Jag har ingen aning vad det ska betyda..."
 
-#: data/base/item_specs.lua:2999
+#: data/base/item_specs.lua:3000
 msgid "Cheat Gun"
 msgstr "Fuskgevär"
 
-#: data/base/item_specs.lua:3014
+#: data/base/item_specs.lua:3015
 msgid "This item is used by testers. If you find it ingame without using a cheat, please report it as a bug."
 msgstr "Det här används av testare. Om du hittar det i spelet utan fusk, var snäll och rappoertera det som en bugg."
 
-#: data/base/item_specs.lua:3028
+#: data/base/item_specs.lua:3029
 msgid "Small Tutorial Axe"
 msgstr "Handledning - Liten Yxa"
 
-#: data/base/item_specs.lua:3042
+#: data/base/item_specs.lua:3043
 msgid ""
 "While this axe was made for splitting wood, with some luck it can damage vital parts of a droid as well.\n"
 "Sell me!\n"
@@ -1842,11 +1842,11 @@ msgstr ""
 "Sälj mig!\n"
 "Klicka på den röda knappen med ett kryss när du är färdig."
 
-#: data/base/item_specs.lua:3051
+#: data/base/item_specs.lua:3052
 msgid "Bottled Tutorial Ice"
 msgstr "Handlednings - Is På Flaska"
 
-#: data/base/item_specs.lua:3056
+#: data/base/item_specs.lua:3057
 msgid ""
 "This bottle is filled with ice. It can keep you cool during a warm summer day.\n"
 "Buy me!\n"
@@ -2467,7 +2467,7 @@ msgstr "Ange nytt namn? [J/N]"
 #: data/base/dialogs/AfterTakeover.lua:523
 #: data/base/dialogs/AfterTakeover.lua:583
 #: data/base/dialogs/AfterTakeover.lua:588
-#: data/base/dialogs/AfterTakeover.lua:721
+#: data/base/dialogs/AfterTakeover.lua:722
 msgid "Yes"
 msgstr "Ja"
 
@@ -2668,7 +2668,7 @@ msgstr "Valross"
 #: data/base/dialogs/AfterTakeover.lua:495
 #: data/base/dialogs/AfterTakeover.lua:534
 #: data/base/dialogs/AfterTakeover.lua:597
-#: data/base/dialogs/AfterTakeover.lua:733
+#: data/base/dialogs/AfterTakeover.lua:734
 msgid "No"
 msgstr "Nej"
 
@@ -2749,88 +2749,88 @@ msgstr "Varning: något gick fel."
 msgid "Error report:"
 msgstr "Felrapport:"
 
-#: data/base/dialogs/AfterTakeover.lua:631
-#, c-format
+#: data/base/dialogs/AfterTakeover.lua:632
+#, no-c-format
 msgid "()%%#@(%% THE BLADE IS YOURS. )##%%*&%%*!"
 msgstr "()%%#@(%% BLADET ÄR DITT. )##%%*&%%*!"
 
-#: data/base/dialogs/AfterTakeover.lua:638
+#: data/base/dialogs/AfterTakeover.lua:639
 msgid "Bot drained."
 msgstr "Bott tömd."
 
-#: data/base/dialogs/AfterTakeover.lua:642
+#: data/base/dialogs/AfterTakeover.lua:643
 msgid "Failed to drain bot."
 msgstr "Misslyckades att tömma bott."
 
-#: data/base/dialogs/AfterTakeover.lua:643
+#: data/base/dialogs/AfterTakeover.lua:644
 msgid "I am free!"
 msgstr "Jag är fri!"
 
-#: data/base/dialogs/AfterTakeover.lua:654
+#: data/base/dialogs/AfterTakeover.lua:655
 msgid "drain_bot_auto.setup"
 msgstr "töm_bott_auto.setup"
 
-#: data/base/dialogs/AfterTakeover.lua:657
+#: data/base/dialogs/AfterTakeover.lua:658
 msgid "How do you want draining of bots to be handled?"
 msgstr "Hur vill du att tömmande av bottar ska gå till?"
 
-#: data/base/dialogs/AfterTakeover.lua:660
+#: data/base/dialogs/AfterTakeover.lua:661
 msgid "Currently draining of bots is tried automatically."
 msgstr "För närvarande testas det automatiskt."
 
-#: data/base/dialogs/AfterTakeover.lua:662
+#: data/base/dialogs/AfterTakeover.lua:663
 msgid "Currently draining of bots is never tried."
 msgstr "För närvarande testas det aldrig."
 
-#: data/base/dialogs/AfterTakeover.lua:664
+#: data/base/dialogs/AfterTakeover.lua:665
 msgid "Currently it is asked if draining a bot is to be tried."
 msgstr "För närvarande ställs en fråga om det ska testas."
 
-#: data/base/dialogs/AfterTakeover.lua:675
+#: data/base/dialogs/AfterTakeover.lua:676
 msgid "Always try draining bots."
 msgstr "Testa alltid att tömma alltid bottar."
 
-#: data/base/dialogs/AfterTakeover.lua:685
+#: data/base/dialogs/AfterTakeover.lua:686
 msgid "Never try to drain a bot"
 msgstr "Testa aldrig att tömma bottar."
 
-#: data/base/dialogs/AfterTakeover.lua:695
+#: data/base/dialogs/AfterTakeover.lua:696
 msgid "Always ask if attempt to drain bot shall be ran."
 msgstr "Fråga alltid om tömning ska testas eller inte."
 
-#: data/base/dialogs/AfterTakeover.lua:705
+#: data/base/dialogs/AfterTakeover.lua:706
 msgid "Reprogramm_bots_after_takeover.sh"
 msgstr "omprogrammera_bott_efter_övertagning.sh"
 
-#: data/base/dialogs/AfterTakeover.lua:709
-#: data/base/dialogs/AfterTakeover.lua:724
+#: data/base/dialogs/AfterTakeover.lua:710
+#: data/base/dialogs/AfterTakeover.lua:725
 msgid "Bots will be reprogrammed after takeover: [b]true[/b]"
 msgstr "Bottar omprogrammeras efter övertagning: [b]sant[/b]"
 
-#: data/base/dialogs/AfterTakeover.lua:711
-#: data/base/dialogs/AfterTakeover.lua:736
+#: data/base/dialogs/AfterTakeover.lua:712
+#: data/base/dialogs/AfterTakeover.lua:737
 msgid "Bots will be reprogrammed after takeover: [b]false[/b]"
 msgstr "Bottar omprogrammeras efter övertagning: [b]falskt[/b]"
 
-#: data/base/dialogs/AfterTakeover.lua:745
+#: data/base/dialogs/AfterTakeover.lua:746
 msgid "leave settings.plx"
 msgstr "lämna inställningar.plx"
 
-#: data/base/dialogs/AfterTakeover.lua:749
+#: data/base/dialogs/AfterTakeover.lua:750
 msgid "Settings saved"
 msgstr "Inställningar sparade"
 
-#: data/base/dialogs/AfterTakeover.lua:750
+#: data/base/dialogs/AfterTakeover.lua:751
 msgid "Leaving settings.plx"
 msgstr "Lämnar inställningar.plx"
 
 #. TRANSLATORS: 'logout' should be a command
 #. TRANSLATORS: command, user lowercase here
-#: data/base/dialogs/AfterTakeover.lua:762 data/base/dialogs/Terminal.lua:51
+#: data/base/dialogs/AfterTakeover.lua:763 data/base/dialogs/Terminal.lua:51
 msgid "logout"
 msgstr "logga-ut"
 
-#: data/base/dialogs/AfterTakeover.lua:763
+#: data/base/dialogs/AfterTakeover.lua:764
 msgid "Closing remote connection..."
 msgstr "Stänger fjärranslutning..."
 

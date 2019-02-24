@@ -1921,6 +1921,7 @@ item_list{
 	base_price = 0,
 	inventory = {x = 1, y = 1,stackable = true, image = "pills_potions/brain_enlargement_antidode/inv_image.png" },
 	drop = {sound = "Item_Drop_Sound_4.ogg"},
+	--; xgettext:no-c-format
 	description =_[[Doctors all over the planet have tried to suppress the amazing breakthrough which has brought increased alertness and concentration that comes with a larger brain. They are synthesized using cutting edge technology and 100% natural herbal ingredients from a secret five thousand-year-old traditional holistic recipe. Get yours direct from our online Canadian ph4rm4cy!!! 100% satisfaction guaranteed!!!]],
 	rotation_series = "pills_potions/brain_enlargement_antidode",
 },

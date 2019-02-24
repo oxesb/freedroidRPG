@@ -446,6 +446,7 @@ return {
 			Npc:says(_"Dude, it's not so hard to understand.")
 			Npc:says(_"Hey, you know, I saw an ad for brain enlargement pills that might do you good.")
 			Tux:says(_"No, I... I just need to cool off a bit...")
+			--; xgettext:no-c-format
 			Npc:says(_"Oh, sure, ok. But I can fix you up with some if you change your mind. It's 100%% satisfaction guaranteed, cheap, AND free.")
 			hide("node62", "node61")
 		end,

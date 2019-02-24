@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-02-21 18:25+0100\n"
+"POT-Creation-Date: 2019-02-24 15:13+0100\n"
 "PO-Revision-Date: 2019-01-03 01:30+0000\n"
 "Last-Translator: syl_\n"
 "Language-Team: French (http://www.transifex.com/arctic-games/freedroid-rpg/language/fr/)\n"
@@ -92,7 +92,7 @@ msgstr "Objectif secondaire : Protéger les équipements en verrouillant les po
 #: data/storyline/act1/dialogs/614_cryo.lua:95
 #: data/storyline/act1/dialogs/614_portal.lua:93
 #: data/storyline/act1/dialogs/Arthur.lua:90
-#: data/storyline/act1/dialogs/Bender.lua:467
+#: data/storyline/act1/dialogs/Bender.lua:468
 #: data/storyline/act1/dialogs/Bob.lua:165
 #: data/storyline/act1/dialogs/Bob.lua:168
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:242
@@ -1027,48 +1027,48 @@ msgstr "Hé, tu sais, j'ai vu une pub pour les pilules d'élargissement cérébr
 msgid "No, I... I just need to cool off a bit..."
 msgstr "Non, je... j'ai juste besoin de me refroidir un peu la tête..."
 
-#: data/storyline/act1/dialogs/Bender.lua:449
-#, c-format
+#: data/storyline/act1/dialogs/Bender.lua:450
+#, no-c-format
 msgid "Oh, sure, ok. But I can fix you up with some if you change your mind. It's 100%% satisfaction guaranteed, cheap, AND free."
 msgstr "Oh, sûr, ok. Mais je peux t'arranger le coup si tu changes d'avis. C'est satisfaction garantie à 100%%, bon marché, ET libre de droit."
 
-#: data/storyline/act1/dialogs/Bender.lua:455
+#: data/storyline/act1/dialogs/Bender.lua:456
 msgid "That was a nice entrance you made there."
 msgstr "C'est un agréable hall d'entrée que tu as fait ici."
 
-#: data/storyline/act1/dialogs/Bender.lua:457
+#: data/storyline/act1/dialogs/Bender.lua:458
 msgid "Hey, thanks, dude. I'm still not so sure what happened."
 msgstr "Hé, merci, gars. Je ne suis toujours pas très sûr de ce qui est arrivé."
 
-#: data/storyline/act1/dialogs/Bender.lua:458
+#: data/storyline/act1/dialogs/Bender.lua:459
 msgid "It all went really fast, Spencer just pulled me out of the pool and said to dry up and meet him at the teleporter."
 msgstr "Tout a été très vite, Baptiste m'a juste sorti de la piscine, m'a demandé de me sécher et de le rejoindre au téléporteur."
 
-#: data/storyline/act1/dialogs/Bender.lua:459
+#: data/storyline/act1/dialogs/Bender.lua:460
 msgid "Then he just rushed off. He was really excited, he didn't even tell me off for cannonballing."
 msgstr "Après il a filé. Il était réellement excité, il ne m'a même pas réprimandé d'avoir fait la bombe dans l'eau."
 
-#: data/storyline/act1/dialogs/Bender.lua:460
+#: data/storyline/act1/dialogs/Bender.lua:461
 msgid "So I guess that means you teleported in here."
 msgstr "Alors je suppose que ça veut dire que tu t'es téléporté ici."
 
-#: data/storyline/act1/dialogs/Bender.lua:461
+#: data/storyline/act1/dialogs/Bender.lua:462
 msgid "I guess we did! Wow, this was my first teleport! This makes it so much more awesome!"
 msgstr "Je pense que oui ! Ouah, c'était ma première téléportation ! Ça l'a rendue encore plus impressionnante !"
 
-#: data/storyline/act1/dialogs/Bender.lua:470
+#: data/storyline/act1/dialogs/Bender.lua:471
 msgid "Later, man!"
 msgstr "À plus, mec !"
 
-#: data/storyline/act1/dialogs/Bender.lua:471
+#: data/storyline/act1/dialogs/Bender.lua:472
 msgid "Stay cool dude."
 msgstr "Soit cool gars."
 
-#: data/storyline/act1/dialogs/Bender.lua:473
+#: data/storyline/act1/dialogs/Bender.lua:474
 msgid "Oh, ok, go beat up some more bots! Swish! Woosh! Ka-POW!"
 msgstr "Oh, ok, va passer à tabac quelques robots de plus ! Swish ! Woosh ! Ka-POW !"
 
-#: data/storyline/act1/dialogs/Bender.lua:474
+#: data/storyline/act1/dialogs/Bender.lua:475
 msgid "See you, and thanks for the story!"
 msgstr "À plus tard, et merci pour l'histoire !"
 
