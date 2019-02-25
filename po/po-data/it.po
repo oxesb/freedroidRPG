@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-02-24 15:12+0100\n"
+"POT-Creation-Date: 2019-02-25 09:54+0100\n"
 "PO-Revision-Date: 2019-01-19 20:21+0000\n"
 "Last-Translator: fluzz <fluzz@gmx.com>\n"
 "Language-Team: Italian (http://www.transifex.com/arctic-games/freedroid-rpg/language/it/)\n"
@@ -19,6 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: data/base/droid_specs.lua:98 data/storyline/act1/ReturnOfTux.droids:270
+#: data/storyline/act2/ReturnOfTux.droids:4
 msgid "123 Acolyte"
 msgstr "123 Accolito"
 
@@ -383,6 +384,14 @@ msgstr "Da tempo è stato conosciuto che lo sviluppo del gioco è il lavoro più
 #: data/base/droid_specs.lua:2073
 msgid "This is a secure terminal."
 msgstr "Si tratta di un terminale sicuro."
+
+#: data/base/game_config.lua:31
+msgid "-= Start of Act 1 =-"
+msgstr ""
+
+#: data/base/game_config.lua:34
+msgid "-= Start of Act 2 =-"
+msgstr ""
 
 #: data/base/item_specs.lua:121
 msgid "The first item is VERY buggy ingame, so don't use it."
@@ -2112,765 +2121,6 @@ msgstr "Granata EMP"
 msgid "Electronic Noise"
 msgstr "Rumore Elettronico"
 
-#. TRANSLATORS: It shows the ingame date in format: Day day, hour:minute
-#: data/base/dialogs/AfterTakeover.lua:34
-#, c-format
-msgid "Day %d, %02d:%02d"
-msgstr "Giorno %d, %02d:%02d"
-
-#: data/base/dialogs/AfterTakeover.lua:39
-#, c-format
-msgid "%s@hacked_%s: ~ # "
-msgstr "%s@hacked_%s: ~ #"
-
-#: data/base/dialogs/AfterTakeover.lua:40
-msgid "Login : "
-msgstr "Login : "
-
-#: data/base/dialogs/AfterTakeover.lua:42
-msgid "Password : "
-msgstr "Password : "
-
-#. TRANSLATORS: %s = a date ,  %d = a year number
-#: data/base/dialogs/AfterTakeover.lua:47
-#, c-format
-msgid "First login from /dev/ttySO on %s %d"
-msgstr "Primo login da /dev/ttySO il %s %d"
-
-#. TRANSLATORS: %s = a date ,  %d = a year number
-#: data/base/dialogs/AfterTakeover.lua:50
-#, c-format
-msgid "Last login from /dev/ttyS0 on %s %d"
-msgstr "Ultimo login da /dev/ttyS0 il %s %d"
-
-#. TRANSLATORS: %s = bot name
-#: data/base/dialogs/AfterTakeover.lua:54
-#, c-format
-msgid "Welcome to [b]%s[/b]!"
-msgstr "Benvenuto a [b]%s[/b]!"
-
-#: data/base/dialogs/AfterTakeover.lua:56
-msgid "Hardware Check : BOT DAMAGED"
-msgstr "Controllo hardware : ROBOT DANNEGGIATO"
-
-#. TRANSLATORS: %s = bot type
-#: data/base/dialogs/AfterTakeover.lua:58
-#, c-format
-msgid "This %s unit could stand to be repaired."
-msgstr "Questa %s unità potrebbe fermarsi per essere riparata."
-
-#: data/base/dialogs/AfterTakeover.lua:62
-msgid "BOTNET: UNIT TOO DAMAGED TO BROADCAST COMMANDS."
-msgstr "BOTNET: UNITA' TROPPO DANNEGGIATA PER TRASMETTERE I COMANDI."
-
-#: data/base/dialogs/AfterTakeover.lua:63
-#: data/base/dialogs/AfterTakeover.lua:347
-msgid "Entering \"single node\" mode..."
-msgstr "Accesso alla modalità \"nodo singolo\"..."
-
-#: data/base/dialogs/AfterTakeover.lua:66
-msgid "BOTNET: Most commands will be broadcast."
-msgstr "BOTNET: La maggior parte dei comandi sarà trasmessa."
-
-#: data/base/dialogs/AfterTakeover.lua:69
-msgid "SINGLE NODE: Commands will not be broadcast."
-msgstr "NODO SINGOLO: I comandi non saranno trasmessi."
-
-#: data/base/dialogs/AfterTakeover.lua:78 data/base/dialogs/AfterTakeover.lua:81
-msgid "cd repair&settings/"
-msgstr "cd riparazione&impostazioni/"
-
-#. TRANSLATORS: first %s = Tux:get_player_name() ; second %s : Npc:get_type()
-#: data/base/dialogs/AfterTakeover.lua:91
-#, c-format
-msgid "%s@hacked_%s/repair&settings: ~ # "
-msgstr "%s@hacked_%s/riparazione&impostazioni: ~ # "
-
-#: data/base/dialogs/AfterTakeover.lua:101
-msgid "cd .."
-msgstr "cd .."
-
-#: data/base/dialogs/AfterTakeover.lua:108
-#: data/base/dialogs/AfterTakeover.lua:111
-msgid "./hold_position.sh"
-msgstr "./mantieni_posizione.sh"
-
-#: data/base/dialogs/AfterTakeover.lua:112
-msgid "Holding position."
-msgstr "Mantengo la posizione."
-
-#: data/base/dialogs/AfterTakeover.lua:113
-msgid "script V 1.0.2 (c) gnu.org, 2054"
-msgstr "script V 1.0.2 (c) gnu.org, 2054"
-
-#: data/base/dialogs/AfterTakeover.lua:114
-#: data/base/dialogs/AfterTakeover.lua:155
-msgid "Checking requirements..."
-msgstr "Controllo dei requisiti..."
-
-#: data/base/dialogs/AfterTakeover.lua:115
-msgid "Movement unit: Power-down... [Done]."
-msgstr "Unità di movimento: Disattivazione... [Fatto]"
-
-#: data/base/dialogs/AfterTakeover.lua:116
-msgid "Status: All movement suppressed."
-msgstr "Stato: tutti i movimenti sono cessati."
-
-#: data/base/dialogs/AfterTakeover.lua:128
-#: data/base/dialogs/AfterTakeover.lua:131
-msgid "./follow_me.sh"
-msgstr "./seguimi.sh"
-
-#: data/base/dialogs/AfterTakeover.lua:132
-msgid "Initiating tracking sequence."
-msgstr "Inizializzazione sequenza di tracking."
-
-#: data/base/dialogs/AfterTakeover.lua:133
-msgid "Movement unit: Enabled."
-msgstr "Unità di movimento: Abilitata."
-
-#. TRANSLATORS: first %s = Tux:get_player_name() ; second %s : Npc:get_type()
-#: data/base/dialogs/AfterTakeover.lua:135
-#, c-format
-msgid "Acquiring lock on position of %s."
-msgstr "Acquisizione lock sulla posizione di %s."
-
-#. TRANSLATORS: %s =  Tux:get_player_name()
-#: data/base/dialogs/AfterTakeover.lua:137
-#, c-format
-msgid "Status: Following %s."
-msgstr "Stato: Seguendo %s."
-
-#: data/base/dialogs/AfterTakeover.lua:149
-#: data/base/dialogs/AfterTakeover.lua:152
-msgid "./move_freely.sh"
-msgstr "./muoviti_liberamente.sh"
-
-#: data/base/dialogs/AfterTakeover.lua:153
-msgid "Enable movement."
-msgstr "Abilita movimento."
-
-#: data/base/dialogs/AfterTakeover.lua:154
-msgid "script V 1.0.5 (c) gnu.org, 2054"
-msgstr "script V 1.0.5 (c) gnu.org, 2054"
-
-#: data/base/dialogs/AfterTakeover.lua:156
-msgid "Movement unit: Power-up... [Done]."
-msgstr "Unità di movimento: Potenziamento... [Fatto]."
-
-#: data/base/dialogs/AfterTakeover.lua:157
-msgid "Resuming normal patrol operations... [Done]"
-msgstr "Riprendendo le normali operazioni di pattuglia... [Fatto]"
-
-#: data/base/dialogs/AfterTakeover.lua:158
-msgid "Status: Patrolling."
-msgstr "Stato: Pattugliamento."
-
-#: data/base/dialogs/AfterTakeover.lua:170
-#: data/base/dialogs/AfterTakeover.lua:183
-msgid "./repair.plx"
-msgstr "./ripara.plx"
-
-#. TRANSLATORS: %d = amount of valuable circuits
-#: data/base/dialogs/AfterTakeover.lua:187
-#, c-format
-msgid "Available amount of valuable circuits for repair: %d."
-msgstr "Numero di circuiti disponibili per la riparazione: %d."
-
-#: data/base/dialogs/AfterTakeover.lua:197
-#: data/base/dialogs/AfterTakeover.lua:553
-msgid "seconds"
-msgstr "secondi"
-
-#: data/base/dialogs/AfterTakeover.lua:199
-#: data/base/dialogs/AfterTakeover.lua:555
-msgid "second"
-msgstr "secondo"
-
-#: data/base/dialogs/AfterTakeover.lua:202
-msgid "circuits"
-msgstr "circuiti"
-
-#: data/base/dialogs/AfterTakeover.lua:204
-msgid "circuit"
-msgstr "circuito"
-
-#: data/base/dialogs/AfterTakeover.lua:208
-#, c-format
-msgid "Repairs on %s will take less than %d %s, %d valuable %s, and %d heat."
-msgstr "Le riparazioni di %s necessiteranno meno di %d %s, %d risorse %s, e %d calore."
-
-#: data/base/dialogs/AfterTakeover.lua:217
-#, c-format
-msgid "You do not have enough valuable circuits to ensure repair of this %s unit."
-msgstr "Non possiedi abbastanza circuiti per assicurare la riparazione di questa unità %s."
-
-#: data/base/dialogs/AfterTakeover.lua:219
-#, c-format
-msgid "You cannot dissipate enough heat to ensure repair of this %s unit."
-msgstr "Non puoi dissipare abbastanza calore per assicurare la riparazione dell'unità %s."
-
-#: data/base/dialogs/AfterTakeover.lua:221
-#, c-format
-msgid "Do you want to start repair of this %s unit?"
-msgstr "Vuoi iniziare la riparazione dell'unità %s?"
-
-#: data/base/dialogs/AfterTakeover.lua:230
-#, c-format
-msgid "%s is currently undamaged."
-msgstr "%s non è attualmente danneggiata."
-
-#. TRANSLATORS: Y for yes
-#: data/base/dialogs/AfterTakeover.lua:239
-#: data/base/dialogs/AfterTakeover.lua:244
-#: data/base/dialogs/AfterTakeover.lua:395
-#: data/base/dialogs/AfterTakeover.lua:484
-msgid "Y"
-msgstr "S"
-
-#: data/base/dialogs/AfterTakeover.lua:245
-msgid "Repair in progress."
-msgstr "Riparazione in corso."
-
-#: data/base/dialogs/AfterTakeover.lua:246
-msgid "Logout to complete repair process."
-msgstr "Effettua il logout per completare il processo di riparazione."
-
-#. TRANSLATORS: N for no
-#: data/base/dialogs/AfterTakeover.lua:255
-#: data/base/dialogs/AfterTakeover.lua:260
-#: data/base/dialogs/AfterTakeover.lua:460
-#: data/base/dialogs/AfterTakeover.lua:500
-msgid "N"
-msgstr "N"
-
-#: data/base/dialogs/AfterTakeover.lua:261
-msgid "Repair aborted."
-msgstr "Riparazione cancellata."
-
-#: data/base/dialogs/AfterTakeover.lua:269
-#: data/base/dialogs/AfterTakeover.lua:357
-msgid "./settings.plx"
-msgstr "./impostazioni.plx"
-
-#: data/base/dialogs/AfterTakeover.lua:279
-msgid "confirmation of hcf.py"
-msgstr "conferma di hcf.py"
-
-#: data/base/dialogs/AfterTakeover.lua:283
-msgid "Always ask for confirmation before execution of hcf.py? [Y/N]"
-msgstr "Chiedere sempre conferma prima di eseguire hcf.py? [S/N]"
-
-#. TRANSLATORS: Y for yes
-#: data/base/dialogs/AfterTakeover.lua:291
-msgid "Y (always ask)"
-msgstr "S (chiedi sempre)"
-
-#: data/base/dialogs/AfterTakeover.lua:295
-msgid "Confirmation will now be asked before execution of hcf.py."
-msgstr "Da ora verrà chiesta conferma prima di eseguire hcf.py."
-
-#. TRANSLATORS: N for no
-#: data/base/dialogs/AfterTakeover.lua:304
-msgid "N (don't ask)"
-msgstr "N (non chiedere)"
-
-#: data/base/dialogs/AfterTakeover.lua:308
-msgid "hcf.py will be executed without asking for confirmation."
-msgstr "hcf.py verrà eseguito senza chiedere conferma."
-
-#: data/base/dialogs/AfterTakeover.lua:316
-msgid "broadcast commands"
-msgstr "trasmissione comandi"
-
-#: data/base/dialogs/AfterTakeover.lua:320
-msgid "Broadcast commands to all units on level? [Y/N]"
-msgstr "Trasmettere i comandi a tutte le unità sul livello? [S/N]"
-
-#. TRANSLATORS: Y for yes
-#: data/base/dialogs/AfterTakeover.lua:328
-msgid "Y (enable broadcast)"
-msgstr "S (abilita trasmissione)"
-
-#: data/base/dialogs/AfterTakeover.lua:332
-msgid "Commands will be broadcast and executed by all bots on this level under your control."
-msgstr "I comandi verranno trasmessi ed eseguiti da tutti i robot su questo livello sotto il tuo controllo."
-
-#: data/base/dialogs/AfterTakeover.lua:333
-msgid "Entering \"botnet\" mode..."
-msgstr "Accesso alla modalità \"botnet\"..."
-
-#. TRANSLATORS: N for no
-#: data/base/dialogs/AfterTakeover.lua:342
-msgid "N (disable broadcast)"
-msgstr "N (disabilita trasmissione)"
-
-#: data/base/dialogs/AfterTakeover.lua:346
-msgid "Commands will only be executed by this bot."
-msgstr "I comandi saranno eseguiti solo da questo robot."
-
-#: data/base/dialogs/AfterTakeover.lua:358
-msgid "Welcome to the settings menu."
-msgstr "Benvenuto nel menù delle impostazioni."
-
-#: data/base/dialogs/AfterTakeover.lua:359
-msgid "Version: 1.82c"
-msgstr "Versione: 1.82c"
-
-#. TRANSLATORS: %s = sensor name
-#: data/base/dialogs/AfterTakeover.lua:361
-#, c-format
-msgid "Installed sensor: %s"
-msgstr "Sensore installato: %s"
-
-#: data/base/dialogs/AfterTakeover.lua:362
-msgid "No upgrades found."
-msgstr "Nessun aggiornamento trovato."
-
-#: data/base/dialogs/AfterTakeover.lua:364
-msgid "UNIT TOO DAMAGED TO BROADCAST COMMANDS."
-msgstr "UNITA' TROPPO DANNEGGIATA PER TRASMETTERE I COMANDI."
-
-#: data/base/dialogs/AfterTakeover.lua:368
-msgid "Which setting should be changed?"
-msgstr "Quale impostazione deve essere modificata?"
-
-#: data/base/dialogs/AfterTakeover.lua:374
-#: data/base/dialogs/AfterTakeover.lua:378
-msgid "./hostname"
-msgstr "./hostname"
-
-#: data/base/dialogs/AfterTakeover.lua:379
-msgid "Welcome to the hostname menu."
-msgstr "Benvenuto nel menù di hostname."
-
-#: data/base/dialogs/AfterTakeover.lua:380
-#, c-format
-msgid "Version: %s"
-msgstr "Versione: %s"
-
-#: data/base/dialogs/AfterTakeover.lua:381
-#, c-format
-msgid "Current botname: [b]%s[/b]"
-msgstr "Nome del robot attuale: [b]%s[/b]"
-
-#: data/base/dialogs/AfterTakeover.lua:382
-msgid "Select new name? [Y/N]"
-msgstr "Selezioni un nuovo nome? [S/N]"
-
-#: data/base/dialogs/AfterTakeover.lua:390
-#: data/base/dialogs/AfterTakeover.lua:479
-#: data/base/dialogs/AfterTakeover.lua:523
-#: data/base/dialogs/AfterTakeover.lua:583
-#: data/base/dialogs/AfterTakeover.lua:588
-#: data/base/dialogs/AfterTakeover.lua:722
-msgid "Yes"
-msgstr "Si"
-
-#: data/base/dialogs/AfterTakeover.lua:396
-msgid "New Name: "
-msgstr "Nuovo nome: "
-
-#: data/base/dialogs/AfterTakeover.lua:398
-#, c-format
-msgid "Type a new name for this %s unit."
-msgstr "Digita un nuovo nome per questa unità %s."
-
-#: data/base/dialogs/AfterTakeover.lua:401
-msgid "Bald"
-msgstr "Calvo"
-
-#: data/base/dialogs/AfterTakeover.lua:402
-msgid "Brusque"
-msgstr "Rude"
-
-#: data/base/dialogs/AfterTakeover.lua:403
-msgid "Chic"
-msgstr "Elegante"
-
-#: data/base/dialogs/AfterTakeover.lua:404
-msgid "Cuddly"
-msgstr "Coccolone"
-
-#: data/base/dialogs/AfterTakeover.lua:405
-msgid "Cute"
-msgstr "Carino"
-
-#: data/base/dialogs/AfterTakeover.lua:406
-msgid "Fickle"
-msgstr "Volubile"
-
-#: data/base/dialogs/AfterTakeover.lua:407
-msgid "Fluffy"
-msgstr "Lanuginoso"
-
-#: data/base/dialogs/AfterTakeover.lua:408
-msgid "Fuzzy"
-msgstr "Sfocato"
-
-#: data/base/dialogs/AfterTakeover.lua:409
-msgid "Happy"
-msgstr "Felice"
-
-#: data/base/dialogs/AfterTakeover.lua:410
-msgid "Hyper"
-msgstr "Iper"
-
-#: data/base/dialogs/AfterTakeover.lua:411
-msgid "Laughing"
-msgstr "Sorridente"
-
-#: data/base/dialogs/AfterTakeover.lua:412
-msgid "Machavellian"
-msgstr "Machiavellico"
-
-#: data/base/dialogs/AfterTakeover.lua:413
-msgid "Mad"
-msgstr "Arrabbiato"
-
-#: data/base/dialogs/AfterTakeover.lua:414
-msgid "Obscene"
-msgstr "Osceno"
-
-#: data/base/dialogs/AfterTakeover.lua:415
-msgid "Ornery"
-msgstr "Irascibile"
-
-#: data/base/dialogs/AfterTakeover.lua:416
-msgid "Pompous"
-msgstr "Pomposo"
-
-#: data/base/dialogs/AfterTakeover.lua:417
-msgid "Shrewd"
-msgstr "Scaltro"
-
-#: data/base/dialogs/AfterTakeover.lua:419
-msgid "Aardvark"
-msgstr "Aardvark"
-
-#: data/base/dialogs/AfterTakeover.lua:420
-msgid "Armadillo"
-msgstr "Armadillo"
-
-#: data/base/dialogs/AfterTakeover.lua:421
-msgid "Barracuda"
-msgstr "Barracuda"
-
-#: data/base/dialogs/AfterTakeover.lua:422
-msgid "Bat"
-msgstr "Pipistrello"
-
-#: data/base/dialogs/AfterTakeover.lua:423
-msgid "Beetle"
-msgstr "Scarafaggio"
-
-#: data/base/dialogs/AfterTakeover.lua:424
-msgid "Bunny"
-msgstr "Coniglio"
-
-#: data/base/dialogs/AfterTakeover.lua:425
-msgid "Dodo"
-msgstr "Dodo"
-
-#: data/base/dialogs/AfterTakeover.lua:426
-msgid "Duck"
-msgstr "Papera"
-
-#: data/base/dialogs/AfterTakeover.lua:427
-msgid "Fox"
-msgstr "Volpe"
-
-#: data/base/dialogs/AfterTakeover.lua:428
-msgid "Frog"
-msgstr "Rana"
-
-#: data/base/dialogs/AfterTakeover.lua:429
-msgid "Gerbil"
-msgstr "Gerbillo"
-
-#: data/base/dialogs/AfterTakeover.lua:430
-msgid "Gnu"
-msgstr "Gnu"
-
-#: data/base/dialogs/AfterTakeover.lua:431
-msgid "Halibut"
-msgstr "Halibut"
-
-#: data/base/dialogs/AfterTakeover.lua:432
-msgid "Hedgehog"
-msgstr "Porcospino"
-
-#: data/base/dialogs/AfterTakeover.lua:433
-msgid "Herring"
-msgstr "Aringa"
-
-#: data/base/dialogs/AfterTakeover.lua:434
-msgid "Kitten"
-msgstr "Gattino"
-
-#: data/base/dialogs/AfterTakeover.lua:435
-msgid "Koala"
-msgstr "Koala"
-
-#: data/base/dialogs/AfterTakeover.lua:436
-msgid "Lemur"
-msgstr "Lemure"
-
-#: data/base/dialogs/AfterTakeover.lua:437
-msgid "Mackerel"
-msgstr "Sgombro"
-
-#: data/base/dialogs/AfterTakeover.lua:438
-msgid "Otter"
-msgstr "Lontra"
-
-#: data/base/dialogs/AfterTakeover.lua:439
-msgid "Panda"
-msgstr "Panda"
-
-#: data/base/dialogs/AfterTakeover.lua:440
-msgid "Platypus"
-msgstr "Ornitorinco"
-
-#: data/base/dialogs/AfterTakeover.lua:441
-msgid "Puffin"
-msgstr "Puffin"
-
-#: data/base/dialogs/AfterTakeover.lua:442
-msgid "Scarab"
-msgstr "Scarabeo"
-
-#: data/base/dialogs/AfterTakeover.lua:443
-msgid "Shrew"
-msgstr "Toporagno"
-
-#: data/base/dialogs/AfterTakeover.lua:444
-msgid "Tapir"
-msgstr "Tapiro"
-
-#: data/base/dialogs/AfterTakeover.lua:445
-msgid "Trout"
-msgstr "Trota"
-
-#: data/base/dialogs/AfterTakeover.lua:446
-msgid "Tuna"
-msgstr "Tonno"
-
-#: data/base/dialogs/AfterTakeover.lua:447
-msgid "Walrus"
-msgstr "Trichecho"
-
-#: data/base/dialogs/AfterTakeover.lua:455
-#: data/base/dialogs/AfterTakeover.lua:495
-#: data/base/dialogs/AfterTakeover.lua:534
-#: data/base/dialogs/AfterTakeover.lua:597
-#: data/base/dialogs/AfterTakeover.lua:734
-msgid "No"
-msgstr "No"
-
-#: data/base/dialogs/AfterTakeover.lua:471
-#, c-format
-msgid "Confirm renaming from [b]%s[/b] to [b]%s[/b]? [Y/N]"
-msgstr "Confirmi il cambio di nome da [b]%s[/b] a [b]%s[/b]? [S/N]"
-
-#: data/base/dialogs/AfterTakeover.lua:485
-#, c-format
-msgid "Renamed [b]%s[/b] to [b]%s[/b]."
-msgstr "Rinominato da [b]%s[/b] a [b]%s[/b]."
-
-#: data/base/dialogs/AfterTakeover.lua:487
-#, c-format
-msgid "This %s unit is now designated: [b]%s[/b]"
-msgstr "Questa unità %s è ora designata: [b]%s[/ b]"
-
-#: data/base/dialogs/AfterTakeover.lua:508
-#: data/base/dialogs/AfterTakeover.lua:511
-msgid "./hcf.py"
-msgstr "./hcf.py"
-
-#: data/base/dialogs/AfterTakeover.lua:513
-#, c-format
-msgid "Are you really sure you want to destroy %s? Y/N"
-msgstr "Sei sicuro che vuoi distruggere %s? S/N"
-
-#: data/base/dialogs/AfterTakeover.lua:527
-msgid "Destruction confirmed."
-msgstr "Distruzione confermata."
-
-#: data/base/dialogs/AfterTakeover.lua:538
-msgid "Destruction averted."
-msgstr "Distruzione confermata."
-
-#. TRANSLATORS: Example: Draining this 123 unit will get you 5 HP but kill it and take 3 seconds.
-#: data/base/dialogs/AfterTakeover.lua:560
-#, c-format
-msgid "Draining this %s unit will get you %d HP but kill it and take %d %s."
-msgstr "Assorbimento di questa unità %s ti porterà %d HP ma se lo uccidi prenderai %d %s."
-
-#: data/base/dialogs/AfterTakeover.lua:568
-#, c-format
-msgid "Are you sure you want to drain this %s unit?"
-msgstr "Sei sicuro di voler assorbire l'unità %s?"
-
-#: data/base/dialogs/AfterTakeover.lua:600
-msgid "Bot not drained."
-msgstr "Robot non assorbito."
-
-#: data/base/dialogs/AfterTakeover.lua:601
-msgid "Running hcf.py..."
-msgstr "Esecuzione di hcf.py..."
-
-#: data/base/dialogs/AfterTakeover.lua:612
-msgid "Executing: Halt and Catch Fire."
-msgstr "Eseguendo: Fermo e prendi colpi."
-
-#: data/base/dialogs/AfterTakeover.lua:614
-msgid "Warning! Cooling subsystems disabled."
-msgstr "Attenzione! Sottosistema di raffreddamento disabilitato."
-
-#: data/base/dialogs/AfterTakeover.lua:615
-msgid "Warning! Spontaneous oxidization witH emis$ion of light aND heAt detecteddd in THE#main| procesIng unit."
-msgstr "Attenzione! Ossidazione spontanea coN emis$ioni di luce E caLore individdduata nell'unità DI#calcolo| principale."
-
-#: data/base/dialogs/AfterTakeover.lua:616
-#, c-format
-msgid "WArn|n*! SsTeM=#faiPure%%^#n 3 S 1()$++"
-msgstr "ATtenz|on*! ErRore=di#SsTeM%%^#n 3 S 1()$++"
-
-#: data/base/dialogs/AfterTakeover.lua:618
-msgid "Warning: something seems wrong."
-msgstr "Attenzione: c'è qualcosa che non va."
-
-#: data/base/dialogs/AfterTakeover.lua:619
-msgid "Error report:"
-msgstr "Report dell'errore:"
-
-#: data/base/dialogs/AfterTakeover.lua:632
-#, no-c-format
-msgid "()%%#@(%% THE BLADE IS YOURS. )##%%*&%%*!"
-msgstr "()%%#@(%% LA LAMA E' LA TUA. )##%%*&%%*!"
-
-#: data/base/dialogs/AfterTakeover.lua:639
-msgid "Bot drained."
-msgstr "Robot assorbito."
-
-#: data/base/dialogs/AfterTakeover.lua:643
-msgid "Failed to drain bot."
-msgstr "Assorbimento robot fallito."
-
-#: data/base/dialogs/AfterTakeover.lua:644
-msgid "I am free!"
-msgstr "Sono libero!"
-
-#: data/base/dialogs/AfterTakeover.lua:655
-msgid "drain_bot_auto.setup"
-msgstr "drain_bot_auto.setup"
-
-#: data/base/dialogs/AfterTakeover.lua:658
-msgid "How do you want draining of bots to be handled?"
-msgstr "Come vuoi che venga gestito l'assorbimento dei robot?"
-
-#: data/base/dialogs/AfterTakeover.lua:661
-msgid "Currently draining of bots is tried automatically."
-msgstr "Attualmente l'assorbimento dei robot è stato provato automaticamente."
-
-#: data/base/dialogs/AfterTakeover.lua:663
-msgid "Currently draining of bots is never tried."
-msgstr "Attualmente l'assorbimento dei robot non è stato provato."
-
-#: data/base/dialogs/AfterTakeover.lua:665
-msgid "Currently it is asked if draining a bot is to be tried."
-msgstr "Attualmente viene richiesto se l'assorbimento di un bot deve essere tentato."
-
-#: data/base/dialogs/AfterTakeover.lua:676
-msgid "Always try draining bots."
-msgstr "Prova sempre ad assorbire bot."
-
-#: data/base/dialogs/AfterTakeover.lua:686
-msgid "Never try to drain a bot"
-msgstr "Non provare mai ad assorbire un bot."
-
-#: data/base/dialogs/AfterTakeover.lua:696
-msgid "Always ask if attempt to drain bot shall be ran."
-msgstr "Chiedi sempre se l'assorbimento di un bot deve essere eseguito."
-
-#: data/base/dialogs/AfterTakeover.lua:706
-msgid "Reprogramm_bots_after_takeover.sh"
-msgstr "Reprogramm_bots_after_takeover.sh"
-
-#: data/base/dialogs/AfterTakeover.lua:710
-#: data/base/dialogs/AfterTakeover.lua:725
-msgid "Bots will be reprogrammed after takeover: [b]true[/b]"
-msgstr "I robot verranno riprogrammati dopo l'acquisizione: [b]si[/b]"
-
-#: data/base/dialogs/AfterTakeover.lua:712
-#: data/base/dialogs/AfterTakeover.lua:737
-msgid "Bots will be reprogrammed after takeover: [b]false[/b]"
-msgstr "I robot verranno riprogrammati dopo l'acquisizione: [b]no[/b]"
-
-#: data/base/dialogs/AfterTakeover.lua:746
-msgid "leave settings.plx"
-msgstr "Lascia settings.plx"
-
-#: data/base/dialogs/AfterTakeover.lua:750
-msgid "Settings saved"
-msgstr "Impostazioni salvate"
-
-#: data/base/dialogs/AfterTakeover.lua:751
-msgid "Leaving settings.plx"
-msgstr "Uscita da settings.plx"
-
-#. TRANSLATORS: 'logout' should be a command
-#. TRANSLATORS: command, user lowercase here
-#: data/base/dialogs/AfterTakeover.lua:763 data/base/dialogs/Terminal.lua:51
-msgid "logout"
-msgstr "logout"
-
-#: data/base/dialogs/AfterTakeover.lua:764
-msgid "Closing remote connection..."
-msgstr "Chiusura della connessione remota..."
-
-#: data/base/dialogs/Speechless.lua:33
-msgid "..."
-msgstr "..."
-
-#: data/base/dialogs/Terminal.lua:29
-msgid "Welcome to this terminal."
-msgstr "Benvenuto in questo terminale."
-
-#: data/base/dialogs/Terminal.lua:31
-msgid "Hello."
-msgstr "Ciao."
-
-#: data/base/dialogs/Terminal.lua:32
-msgid "Hi there."
-msgstr "Ciao."
-
-#: data/base/dialogs/Terminal.lua:33
-msgid "Well, hello again."
-msgstr "Beh, ancora ciao."
-
-#: data/base/dialogs/Terminal.lua:34
-msgid "Hello hello."
-msgstr "Ciao!"
-
-#: data/base/dialogs/Terminal.lua:35
-msgid "Welcome back."
-msgstr "Ben tornato."
-
-#. TRANSLATORS: command, user lowercase here
-#: data/base/dialogs/Terminal.lua:43
-msgid "help"
-msgstr "help"
-
-#: data/base/dialogs/Terminal.lua:45
-msgid "Available commands: help, logout"
-msgstr "Comandi disponibili: help, logout"
-
-#: data/base/dialogs/Terminal.lua:53
-msgid "Goodbye"
-msgstr "Arrivederci"
-
 #: data/storyline/act1/events.dat:57
 msgid "To Maintenance Tunnels"
 msgstr "Gallerie di servizio"
@@ -4500,6 +3750,524 @@ msgstr "Operaio"
 #: data/storyline/act1/ReturnOfTux.droids:569
 msgid "Corporate Guy"
 msgstr "Personale aziendale"
+
+#: data/storyline/act2/levels.dat:20
+#, fuzzy
+msgid "Empty Map"
+msgstr "Mare Vuoto"
+
+#~ msgid "Day %d, %02d:%02d"
+#~ msgstr "Giorno %d, %02d:%02d"
+
+#~ msgid "%s@hacked_%s: ~ # "
+#~ msgstr "%s@hacked_%s: ~ #"
+
+#~ msgid "Login : "
+#~ msgstr "Login : "
+
+#~ msgid "Password : "
+#~ msgstr "Password : "
+
+#~ msgid "First login from /dev/ttySO on %s %d"
+#~ msgstr "Primo login da /dev/ttySO il %s %d"
+
+#~ msgid "Last login from /dev/ttyS0 on %s %d"
+#~ msgstr "Ultimo login da /dev/ttyS0 il %s %d"
+
+#~ msgid "Welcome to [b]%s[/b]!"
+#~ msgstr "Benvenuto a [b]%s[/b]!"
+
+#~ msgid "Hardware Check : BOT DAMAGED"
+#~ msgstr "Controllo hardware : ROBOT DANNEGGIATO"
+
+#~ msgid "This %s unit could stand to be repaired."
+#~ msgstr "Questa %s unità potrebbe fermarsi per essere riparata."
+
+#~ msgid "BOTNET: UNIT TOO DAMAGED TO BROADCAST COMMANDS."
+#~ msgstr "BOTNET: UNITA' TROPPO DANNEGGIATA PER TRASMETTERE I COMANDI."
+
+#~ msgid "Entering \"single node\" mode..."
+#~ msgstr "Accesso alla modalità \"nodo singolo\"..."
+
+#~ msgid "BOTNET: Most commands will be broadcast."
+#~ msgstr "BOTNET: La maggior parte dei comandi sarà trasmessa."
+
+#~ msgid "SINGLE NODE: Commands will not be broadcast."
+#~ msgstr "NODO SINGOLO: I comandi non saranno trasmessi."
+
+#~ msgid "cd repair&settings/"
+#~ msgstr "cd riparazione&impostazioni/"
+
+#~ msgid "%s@hacked_%s/repair&settings: ~ # "
+#~ msgstr "%s@hacked_%s/riparazione&impostazioni: ~ # "
+
+#~ msgid "cd .."
+#~ msgstr "cd .."
+
+#~ msgid "./hold_position.sh"
+#~ msgstr "./mantieni_posizione.sh"
+
+#~ msgid "Holding position."
+#~ msgstr "Mantengo la posizione."
+
+#~ msgid "script V 1.0.2 (c) gnu.org, 2054"
+#~ msgstr "script V 1.0.2 (c) gnu.org, 2054"
+
+#~ msgid "Checking requirements..."
+#~ msgstr "Controllo dei requisiti..."
+
+#~ msgid "Movement unit: Power-down... [Done]."
+#~ msgstr "Unità di movimento: Disattivazione... [Fatto]"
+
+#~ msgid "Status: All movement suppressed."
+#~ msgstr "Stato: tutti i movimenti sono cessati."
+
+#~ msgid "./follow_me.sh"
+#~ msgstr "./seguimi.sh"
+
+#~ msgid "Initiating tracking sequence."
+#~ msgstr "Inizializzazione sequenza di tracking."
+
+#~ msgid "Movement unit: Enabled."
+#~ msgstr "Unità di movimento: Abilitata."
+
+#~ msgid "Acquiring lock on position of %s."
+#~ msgstr "Acquisizione lock sulla posizione di %s."
+
+#~ msgid "Status: Following %s."
+#~ msgstr "Stato: Seguendo %s."
+
+#~ msgid "./move_freely.sh"
+#~ msgstr "./muoviti_liberamente.sh"
+
+#~ msgid "Enable movement."
+#~ msgstr "Abilita movimento."
+
+#~ msgid "script V 1.0.5 (c) gnu.org, 2054"
+#~ msgstr "script V 1.0.5 (c) gnu.org, 2054"
+
+#~ msgid "Movement unit: Power-up... [Done]."
+#~ msgstr "Unità di movimento: Potenziamento... [Fatto]."
+
+#~ msgid "Resuming normal patrol operations... [Done]"
+#~ msgstr "Riprendendo le normali operazioni di pattuglia... [Fatto]"
+
+#~ msgid "Status: Patrolling."
+#~ msgstr "Stato: Pattugliamento."
+
+#~ msgid "./repair.plx"
+#~ msgstr "./ripara.plx"
+
+#~ msgid "Available amount of valuable circuits for repair: %d."
+#~ msgstr "Numero di circuiti disponibili per la riparazione: %d."
+
+#~ msgid "seconds"
+#~ msgstr "secondi"
+
+#~ msgid "second"
+#~ msgstr "secondo"
+
+#~ msgid "circuits"
+#~ msgstr "circuiti"
+
+#~ msgid "circuit"
+#~ msgstr "circuito"
+
+#~ msgid "Repairs on %s will take less than %d %s, %d valuable %s, and %d heat."
+#~ msgstr "Le riparazioni di %s necessiteranno meno di %d %s, %d risorse %s, e %d calore."
+
+#~ msgid "You do not have enough valuable circuits to ensure repair of this %s unit."
+#~ msgstr "Non possiedi abbastanza circuiti per assicurare la riparazione di questa unità %s."
+
+#~ msgid "You cannot dissipate enough heat to ensure repair of this %s unit."
+#~ msgstr "Non puoi dissipare abbastanza calore per assicurare la riparazione dell'unità %s."
+
+#~ msgid "Do you want to start repair of this %s unit?"
+#~ msgstr "Vuoi iniziare la riparazione dell'unità %s?"
+
+#~ msgid "%s is currently undamaged."
+#~ msgstr "%s non è attualmente danneggiata."
+
+#~ msgid "Y"
+#~ msgstr "S"
+
+#~ msgid "Repair in progress."
+#~ msgstr "Riparazione in corso."
+
+#~ msgid "Logout to complete repair process."
+#~ msgstr "Effettua il logout per completare il processo di riparazione."
+
+#~ msgid "N"
+#~ msgstr "N"
+
+#~ msgid "Repair aborted."
+#~ msgstr "Riparazione cancellata."
+
+#~ msgid "./settings.plx"
+#~ msgstr "./impostazioni.plx"
+
+#~ msgid "confirmation of hcf.py"
+#~ msgstr "conferma di hcf.py"
+
+#~ msgid "Always ask for confirmation before execution of hcf.py? [Y/N]"
+#~ msgstr "Chiedere sempre conferma prima di eseguire hcf.py? [S/N]"
+
+#~ msgid "Y (always ask)"
+#~ msgstr "S (chiedi sempre)"
+
+#~ msgid "Confirmation will now be asked before execution of hcf.py."
+#~ msgstr "Da ora verrà chiesta conferma prima di eseguire hcf.py."
+
+#~ msgid "N (don't ask)"
+#~ msgstr "N (non chiedere)"
+
+#~ msgid "hcf.py will be executed without asking for confirmation."
+#~ msgstr "hcf.py verrà eseguito senza chiedere conferma."
+
+#~ msgid "broadcast commands"
+#~ msgstr "trasmissione comandi"
+
+#~ msgid "Broadcast commands to all units on level? [Y/N]"
+#~ msgstr "Trasmettere i comandi a tutte le unità sul livello? [S/N]"
+
+#~ msgid "Y (enable broadcast)"
+#~ msgstr "S (abilita trasmissione)"
+
+#~ msgid "Commands will be broadcast and executed by all bots on this level under your control."
+#~ msgstr "I comandi verranno trasmessi ed eseguiti da tutti i robot su questo livello sotto il tuo controllo."
+
+#~ msgid "Entering \"botnet\" mode..."
+#~ msgstr "Accesso alla modalità \"botnet\"..."
+
+#~ msgid "N (disable broadcast)"
+#~ msgstr "N (disabilita trasmissione)"
+
+#~ msgid "Commands will only be executed by this bot."
+#~ msgstr "I comandi saranno eseguiti solo da questo robot."
+
+#~ msgid "Welcome to the settings menu."
+#~ msgstr "Benvenuto nel menù delle impostazioni."
+
+#~ msgid "Version: 1.82c"
+#~ msgstr "Versione: 1.82c"
+
+#~ msgid "Installed sensor: %s"
+#~ msgstr "Sensore installato: %s"
+
+#~ msgid "No upgrades found."
+#~ msgstr "Nessun aggiornamento trovato."
+
+#~ msgid "UNIT TOO DAMAGED TO BROADCAST COMMANDS."
+#~ msgstr "UNITA' TROPPO DANNEGGIATA PER TRASMETTERE I COMANDI."
+
+#~ msgid "Which setting should be changed?"
+#~ msgstr "Quale impostazione deve essere modificata?"
+
+#~ msgid "./hostname"
+#~ msgstr "./hostname"
+
+#~ msgid "Welcome to the hostname menu."
+#~ msgstr "Benvenuto nel menù di hostname."
+
+#~ msgid "Version: %s"
+#~ msgstr "Versione: %s"
+
+#~ msgid "Current botname: [b]%s[/b]"
+#~ msgstr "Nome del robot attuale: [b]%s[/b]"
+
+#~ msgid "Select new name? [Y/N]"
+#~ msgstr "Selezioni un nuovo nome? [S/N]"
+
+#~ msgid "Yes"
+#~ msgstr "Si"
+
+#~ msgid "New Name: "
+#~ msgstr "Nuovo nome: "
+
+#~ msgid "Type a new name for this %s unit."
+#~ msgstr "Digita un nuovo nome per questa unità %s."
+
+#~ msgid "Bald"
+#~ msgstr "Calvo"
+
+#~ msgid "Brusque"
+#~ msgstr "Rude"
+
+#~ msgid "Chic"
+#~ msgstr "Elegante"
+
+#~ msgid "Cuddly"
+#~ msgstr "Coccolone"
+
+#~ msgid "Cute"
+#~ msgstr "Carino"
+
+#~ msgid "Fickle"
+#~ msgstr "Volubile"
+
+#~ msgid "Fluffy"
+#~ msgstr "Lanuginoso"
+
+#~ msgid "Fuzzy"
+#~ msgstr "Sfocato"
+
+#~ msgid "Happy"
+#~ msgstr "Felice"
+
+#~ msgid "Hyper"
+#~ msgstr "Iper"
+
+#~ msgid "Laughing"
+#~ msgstr "Sorridente"
+
+#~ msgid "Machavellian"
+#~ msgstr "Machiavellico"
+
+#~ msgid "Mad"
+#~ msgstr "Arrabbiato"
+
+#~ msgid "Obscene"
+#~ msgstr "Osceno"
+
+#~ msgid "Ornery"
+#~ msgstr "Irascibile"
+
+#~ msgid "Pompous"
+#~ msgstr "Pomposo"
+
+#~ msgid "Shrewd"
+#~ msgstr "Scaltro"
+
+#~ msgid "Aardvark"
+#~ msgstr "Aardvark"
+
+#~ msgid "Armadillo"
+#~ msgstr "Armadillo"
+
+#~ msgid "Barracuda"
+#~ msgstr "Barracuda"
+
+#~ msgid "Bat"
+#~ msgstr "Pipistrello"
+
+#~ msgid "Beetle"
+#~ msgstr "Scarafaggio"
+
+#~ msgid "Bunny"
+#~ msgstr "Coniglio"
+
+#~ msgid "Dodo"
+#~ msgstr "Dodo"
+
+#~ msgid "Duck"
+#~ msgstr "Papera"
+
+#~ msgid "Fox"
+#~ msgstr "Volpe"
+
+#~ msgid "Frog"
+#~ msgstr "Rana"
+
+#~ msgid "Gerbil"
+#~ msgstr "Gerbillo"
+
+#~ msgid "Gnu"
+#~ msgstr "Gnu"
+
+#~ msgid "Halibut"
+#~ msgstr "Halibut"
+
+#~ msgid "Hedgehog"
+#~ msgstr "Porcospino"
+
+#~ msgid "Herring"
+#~ msgstr "Aringa"
+
+#~ msgid "Kitten"
+#~ msgstr "Gattino"
+
+#~ msgid "Koala"
+#~ msgstr "Koala"
+
+#~ msgid "Lemur"
+#~ msgstr "Lemure"
+
+#~ msgid "Mackerel"
+#~ msgstr "Sgombro"
+
+#~ msgid "Otter"
+#~ msgstr "Lontra"
+
+#~ msgid "Panda"
+#~ msgstr "Panda"
+
+#~ msgid "Platypus"
+#~ msgstr "Ornitorinco"
+
+#~ msgid "Puffin"
+#~ msgstr "Puffin"
+
+#~ msgid "Scarab"
+#~ msgstr "Scarabeo"
+
+#~ msgid "Shrew"
+#~ msgstr "Toporagno"
+
+#~ msgid "Tapir"
+#~ msgstr "Tapiro"
+
+#~ msgid "Trout"
+#~ msgstr "Trota"
+
+#~ msgid "Tuna"
+#~ msgstr "Tonno"
+
+#~ msgid "Walrus"
+#~ msgstr "Trichecho"
+
+#~ msgid "No"
+#~ msgstr "No"
+
+#~ msgid "Confirm renaming from [b]%s[/b] to [b]%s[/b]? [Y/N]"
+#~ msgstr "Confirmi il cambio di nome da [b]%s[/b] a [b]%s[/b]? [S/N]"
+
+#~ msgid "Renamed [b]%s[/b] to [b]%s[/b]."
+#~ msgstr "Rinominato da [b]%s[/b] a [b]%s[/b]."
+
+#~ msgid "This %s unit is now designated: [b]%s[/b]"
+#~ msgstr "Questa unità %s è ora designata: [b]%s[/ b]"
+
+#~ msgid "./hcf.py"
+#~ msgstr "./hcf.py"
+
+#~ msgid "Are you really sure you want to destroy %s? Y/N"
+#~ msgstr "Sei sicuro che vuoi distruggere %s? S/N"
+
+#~ msgid "Destruction confirmed."
+#~ msgstr "Distruzione confermata."
+
+#~ msgid "Destruction averted."
+#~ msgstr "Distruzione confermata."
+
+#~ msgid "Draining this %s unit will get you %d HP but kill it and take %d %s."
+#~ msgstr "Assorbimento di questa unità %s ti porterà %d HP ma se lo uccidi prenderai %d %s."
+
+#~ msgid "Are you sure you want to drain this %s unit?"
+#~ msgstr "Sei sicuro di voler assorbire l'unità %s?"
+
+#~ msgid "Bot not drained."
+#~ msgstr "Robot non assorbito."
+
+#~ msgid "Running hcf.py..."
+#~ msgstr "Esecuzione di hcf.py..."
+
+#~ msgid "Executing: Halt and Catch Fire."
+#~ msgstr "Eseguendo: Fermo e prendi colpi."
+
+#~ msgid "Warning! Cooling subsystems disabled."
+#~ msgstr "Attenzione! Sottosistema di raffreddamento disabilitato."
+
+#~ msgid "Warning! Spontaneous oxidization witH emis$ion of light aND heAt detecteddd in THE#main| procesIng unit."
+#~ msgstr "Attenzione! Ossidazione spontanea coN emis$ioni di luce E caLore individdduata nell'unità DI#calcolo| principale."
+
+#~ msgid "WArn|n*! SsTeM=#faiPure%%^#n 3 S 1()$++"
+#~ msgstr "ATtenz|on*! ErRore=di#SsTeM%%^#n 3 S 1()$++"
+
+#~ msgid "Warning: something seems wrong."
+#~ msgstr "Attenzione: c'è qualcosa che non va."
+
+#~ msgid "Error report:"
+#~ msgstr "Report dell'errore:"
+
+#~ msgid "()%%#@(%% THE BLADE IS YOURS. )##%%*&%%*!"
+#~ msgstr "()%%#@(%% LA LAMA E' LA TUA. )##%%*&%%*!"
+
+#~ msgid "Bot drained."
+#~ msgstr "Robot assorbito."
+
+#~ msgid "Failed to drain bot."
+#~ msgstr "Assorbimento robot fallito."
+
+#~ msgid "I am free!"
+#~ msgstr "Sono libero!"
+
+#~ msgid "drain_bot_auto.setup"
+#~ msgstr "drain_bot_auto.setup"
+
+#~ msgid "How do you want draining of bots to be handled?"
+#~ msgstr "Come vuoi che venga gestito l'assorbimento dei robot?"
+
+#~ msgid "Currently draining of bots is tried automatically."
+#~ msgstr "Attualmente l'assorbimento dei robot è stato provato automaticamente."
+
+#~ msgid "Currently draining of bots is never tried."
+#~ msgstr "Attualmente l'assorbimento dei robot non è stato provato."
+
+#~ msgid "Currently it is asked if draining a bot is to be tried."
+#~ msgstr "Attualmente viene richiesto se l'assorbimento di un bot deve essere tentato."
+
+#~ msgid "Always try draining bots."
+#~ msgstr "Prova sempre ad assorbire bot."
+
+#~ msgid "Never try to drain a bot"
+#~ msgstr "Non provare mai ad assorbire un bot."
+
+#~ msgid "Always ask if attempt to drain bot shall be ran."
+#~ msgstr "Chiedi sempre se l'assorbimento di un bot deve essere eseguito."
+
+#~ msgid "Reprogramm_bots_after_takeover.sh"
+#~ msgstr "Reprogramm_bots_after_takeover.sh"
+
+#~ msgid "Bots will be reprogrammed after takeover: [b]true[/b]"
+#~ msgstr "I robot verranno riprogrammati dopo l'acquisizione: [b]si[/b]"
+
+#~ msgid "Bots will be reprogrammed after takeover: [b]false[/b]"
+#~ msgstr "I robot verranno riprogrammati dopo l'acquisizione: [b]no[/b]"
+
+#~ msgid "leave settings.plx"
+#~ msgstr "Lascia settings.plx"
+
+#~ msgid "Settings saved"
+#~ msgstr "Impostazioni salvate"
+
+#~ msgid "Leaving settings.plx"
+#~ msgstr "Uscita da settings.plx"
+
+#~ msgid "logout"
+#~ msgstr "logout"
+
+#~ msgid "Closing remote connection..."
+#~ msgstr "Chiusura della connessione remota..."
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Welcome to this terminal."
+#~ msgstr "Benvenuto in questo terminale."
+
+#~ msgid "Hello."
+#~ msgstr "Ciao."
+
+#~ msgid "Hi there."
+#~ msgstr "Ciao."
+
+#~ msgid "Well, hello again."
+#~ msgstr "Beh, ancora ciao."
+
+#~ msgid "Hello hello."
+#~ msgstr "Ciao!"
+
+#~ msgid "Welcome back."
+#~ msgstr "Ben tornato."
+
+#~ msgid "help"
+#~ msgstr "help"
+
+#~ msgid "Available commands: help, logout"
+#~ msgstr "Comandi disponibili: help, logout"
+
+#~ msgid "Goodbye"
+#~ msgstr "Arrivederci"
 
 #~ msgid "To Novice Arena"
 #~ msgstr "Verso Arena Novizio "

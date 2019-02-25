@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-02-24 15:13+0100\n"
+"POT-Creation-Date: 2019-02-24 17:38+0100\n"
 "PO-Revision-Date: 2019-02-09 11:36+0000\n"
 "Last-Translator: r0di0n <rodikr2005@yandex.ru>\n"
 "Language-Team: Russian (http://www.transifex.com/arctic-games/freedroid-rpg/language/ru/)\n"
@@ -17,6 +17,896 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#. TRANSLATORS: It shows the ingame date in format: Day day, hour:minute
+#: data/base/dialogs/AfterTakeover.lua:34
+#: data/storyline/act1/dialogs/c-net.lua:182
+#: data/storyline/act1/dialogs/DSB-MachineDeckControl.lua:32
+#: data/storyline/act1/dialogs/DSB-PowerControl.lua:28
+#: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:28
+#: data/storyline/act1/dialogs/Maintenance-Terminal.lua:28
+#: data/storyline/act1/dialogs/SACD.lua:31
+#: data/storyline/act1/dialogs/TutorialTerminal.lua:28
+#, c-format
+msgid "Day %d, %02d:%02d"
+msgstr "День %d, %02d:%02d"
+
+#: data/base/dialogs/AfterTakeover.lua:39
+#, c-format
+msgid "%s@hacked_%s: ~ # "
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:40
+#: data/storyline/act1/dialogs/c-net.lua:32
+#: data/storyline/act1/dialogs/DSB-MachineDeckControl.lua:26
+#: data/storyline/act1/dialogs/DSB-PowerControl.lua:29
+#: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:31
+#: data/storyline/act1/dialogs/Maintenance-Terminal.lua:31
+#: data/storyline/act1/dialogs/MiniFactory-Terminal.lua:28
+#: data/storyline/act1/dialogs/MS-Factory-Addon-Terminal.lua:28
+#: data/storyline/act1/dialogs/SACD.lua:37
+#: data/storyline/act1/dialogs/TutorialTerminal.lua:31
+msgid "Login : "
+msgstr "Логин : "
+
+#: data/base/dialogs/AfterTakeover.lua:42
+#: data/storyline/act1/dialogs/c-net.lua:70
+#: data/storyline/act1/dialogs/c-net.lua:75
+#: data/storyline/act1/dialogs/c-net.lua:89
+#: data/storyline/act1/dialogs/c-net.lua:108
+#: data/storyline/act1/dialogs/DSB-MachineDeckControl.lua:28
+#: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:33
+#: data/storyline/act1/dialogs/Maintenance-Terminal.lua:33
+#: data/storyline/act1/dialogs/MiniFactory-Terminal.lua:31
+#: data/storyline/act1/dialogs/MS-Factory-Addon-Terminal.lua:31
+#: data/storyline/act1/dialogs/MS-Factory-Addon-Terminal.lua:36
+#: data/storyline/act1/dialogs/MS-Factory-Addon-Terminal.lua:39
+msgid "Password : "
+msgstr "Пароль : "
+
+#. TRANSLATORS: %s = a date ,  %d = a year number
+#. TRANSLATORS: %s = a date , %y = a year
+#. TRANSLATORS: %s = a date ,  %d = a year number
+#. TRANSLATORS: %s = a date %d = a year
+#. TRANSLATORS: %s = a date ,  %d = a year number
+#: data/base/dialogs/AfterTakeover.lua:47
+#: data/storyline/act1/dialogs/DSB-MachineDeckControl.lua:34
+#: data/storyline/act1/dialogs/DSB-PowerControl.lua:34
+#: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:41
+#: data/storyline/act1/dialogs/Maintenance-Terminal.lua:38
+#: data/storyline/act1/dialogs/SACD.lua:43
+#: data/storyline/act1/dialogs/TutorialTerminal.lua:38
+#, c-format
+msgid "First login from /dev/ttySO on %s %d"
+msgstr "Первый вход из /dev/ttySO совершен %s %d"
+
+#. TRANSLATORS: %s = a date ,  %d = a year number
+#. TRANSLATORS: %s = a date %d = a year
+#. TRANSLATORS: %s = a date ,  %d = a year number
+#: data/base/dialogs/AfterTakeover.lua:50
+#: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:44
+#: data/storyline/act1/dialogs/Maintenance-Terminal.lua:41
+#: data/storyline/act1/dialogs/SACD.lua:46
+#: data/storyline/act1/dialogs/TutorialTerminal.lua:41
+#, c-format
+msgid "Last login from /dev/ttyS0 on %s %d"
+msgstr "Последний вход из /dev/ttyS0 совершен %s %d"
+
+#. TRANSLATORS: %s = bot name
+#: data/base/dialogs/AfterTakeover.lua:54
+#, fuzzy, c-format
+msgid "Welcome to [b]%s[/b]!"
+msgstr "Встретился [b]%s[/b]!"
+
+#: data/base/dialogs/AfterTakeover.lua:56
+msgid "Hardware Check : BOT DAMAGED"
+msgstr ""
+
+#. TRANSLATORS: %s = bot type
+#: data/base/dialogs/AfterTakeover.lua:58
+#, c-format
+msgid "This %s unit could stand to be repaired."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:62
+msgid "BOTNET: UNIT TOO DAMAGED TO BROADCAST COMMANDS."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:63
+#: data/base/dialogs/AfterTakeover.lua:347
+#, fuzzy
+msgid "Entering \"single node\" mode..."
+msgstr "Вход в режим пользователя..."
+
+#: data/base/dialogs/AfterTakeover.lua:66
+msgid "BOTNET: Most commands will be broadcast."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:69
+msgid "SINGLE NODE: Commands will not be broadcast."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:78 data/base/dialogs/AfterTakeover.lua:81
+msgid "cd repair&settings/"
+msgstr ""
+
+#. TRANSLATORS: first %s = Tux:get_player_name() ; second %s : Npc:get_type()
+#: data/base/dialogs/AfterTakeover.lua:91
+#, c-format
+msgid "%s@hacked_%s/repair&settings: ~ # "
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:101
+msgid "cd .."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:108
+#: data/base/dialogs/AfterTakeover.lua:111
+msgid "./hold_position.sh"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:112
+msgid "Holding position."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:113
+msgid "script V 1.0.2 (c) gnu.org, 2054"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:114
+#: data/base/dialogs/AfterTakeover.lua:155
+msgid "Checking requirements..."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:115
+msgid "Movement unit: Power-down... [Done]."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:116
+#, fuzzy
+msgid "Status: All movement suppressed."
+msgstr "Любое движение запрещено..."
+
+#: data/base/dialogs/AfterTakeover.lua:128
+#: data/base/dialogs/AfterTakeover.lua:131
+msgid "./follow_me.sh"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:132
+msgid "Initiating tracking sequence."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:133
+msgid "Movement unit: Enabled."
+msgstr ""
+
+#. TRANSLATORS: first %s = Tux:get_player_name() ; second %s : Npc:get_type()
+#: data/base/dialogs/AfterTakeover.lua:135
+#, c-format
+msgid "Acquiring lock on position of %s."
+msgstr ""
+
+#. TRANSLATORS: %s =  Tux:get_player_name()
+#: data/base/dialogs/AfterTakeover.lua:137
+#, c-format
+msgid "Status: Following %s."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:149
+#: data/base/dialogs/AfterTakeover.lua:152
+msgid "./move_freely.sh"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:153
+msgid "Enable movement."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:154
+msgid "script V 1.0.5 (c) gnu.org, 2054"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:156
+msgid "Movement unit: Power-up... [Done]."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:157
+msgid "Resuming normal patrol operations... [Done]"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:158
+msgid "Status: Patrolling."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:170
+#: data/base/dialogs/AfterTakeover.lua:183
+msgid "./repair.plx"
+msgstr ""
+
+#. TRANSLATORS: %d = amount of valuable circuits
+#: data/base/dialogs/AfterTakeover.lua:187
+#, c-format
+msgid "Available amount of valuable circuits for repair: %d."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:197
+#: data/base/dialogs/AfterTakeover.lua:553
+msgid "seconds"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:199
+#: data/base/dialogs/AfterTakeover.lua:555
+msgid "second"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:202
+#, fuzzy
+msgid "circuits"
+msgstr "20 схем? Ладно."
+
+#: data/base/dialogs/AfterTakeover.lua:204
+#, fuzzy
+msgid "circuit"
+msgstr "20 схем? Ладно."
+
+#: data/base/dialogs/AfterTakeover.lua:208
+#, c-format
+msgid "Repairs on %s will take less than %d %s, %d valuable %s, and %d heat."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:217
+#, fuzzy, c-format
+msgid "You do not have enough valuable circuits to ensure repair of this %s unit."
+msgstr "У тебя не хватает ценных схем! Возвращайся, когда будут деньги."
+
+#: data/base/dialogs/AfterTakeover.lua:219
+#, c-format
+msgid "You cannot dissipate enough heat to ensure repair of this %s unit."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:221
+#, fuzzy, c-format
+msgid "Do you want to start repair of this %s unit?"
+msgstr "Хочешь решить одну?"
+
+#: data/base/dialogs/AfterTakeover.lua:230
+#, c-format
+msgid "%s is currently undamaged."
+msgstr ""
+
+#. TRANSLATORS: Y for yes
+#: data/base/dialogs/AfterTakeover.lua:239
+#: data/base/dialogs/AfterTakeover.lua:244
+#: data/base/dialogs/AfterTakeover.lua:395
+#: data/base/dialogs/AfterTakeover.lua:484
+msgid "Y"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:245
+msgid "Repair in progress."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:246
+msgid "Logout to complete repair process."
+msgstr ""
+
+#. TRANSLATORS: N for no
+#: data/base/dialogs/AfterTakeover.lua:255
+#: data/base/dialogs/AfterTakeover.lua:260
+#: data/base/dialogs/AfterTakeover.lua:460
+#: data/base/dialogs/AfterTakeover.lua:500
+msgid "N"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:261
+msgid "Repair aborted."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:269
+#: data/base/dialogs/AfterTakeover.lua:357
+msgid "./settings.plx"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:279
+msgid "confirmation of hcf.py"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:283
+msgid "Always ask for confirmation before execution of hcf.py? [Y/N]"
+msgstr ""
+
+#. TRANSLATORS: Y for yes
+#: data/base/dialogs/AfterTakeover.lua:291
+msgid "Y (always ask)"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:295
+msgid "Confirmation will now be asked before execution of hcf.py."
+msgstr ""
+
+#. TRANSLATORS: N for no
+#: data/base/dialogs/AfterTakeover.lua:304
+#, fuzzy
+msgid "N (don't ask)"
+msgstr "Даже не спрашивай."
+
+#: data/base/dialogs/AfterTakeover.lua:308
+msgid "hcf.py will be executed without asking for confirmation."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:316
+msgid "broadcast commands"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:320
+msgid "Broadcast commands to all units on level? [Y/N]"
+msgstr ""
+
+#. TRANSLATORS: Y for yes
+#: data/base/dialogs/AfterTakeover.lua:328
+msgid "Y (enable broadcast)"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:332
+msgid "Commands will be broadcast and executed by all bots on this level under your control."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:333
+#, fuzzy
+msgid "Entering \"botnet\" mode..."
+msgstr "Вход в режим пользователя..."
+
+#. TRANSLATORS: N for no
+#: data/base/dialogs/AfterTakeover.lua:342
+msgid "N (disable broadcast)"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:346
+msgid "Commands will only be executed by this bot."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:358
+#, fuzzy
+msgid "Welcome to the settings menu."
+msgstr "Вас приветствует газонокосилка Кевина."
+
+#: data/base/dialogs/AfterTakeover.lua:359
+msgid "Version: 1.82c"
+msgstr ""
+
+#. TRANSLATORS: %s = sensor name
+#: data/base/dialogs/AfterTakeover.lua:361
+#, c-format
+msgid "Installed sensor: %s"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:362
+#, fuzzy
+msgid "No upgrades found."
+msgstr "диск не найден"
+
+#: data/base/dialogs/AfterTakeover.lua:364
+msgid "UNIT TOO DAMAGED TO BROADCAST COMMANDS."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:368
+msgid "Which setting should be changed?"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:374
+#: data/base/dialogs/AfterTakeover.lua:378
+msgid "./hostname"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:379
+#, fuzzy
+msgid "Welcome to the hostname menu."
+msgstr "Добро пожаловать в сеть сообщества."
+
+#: data/base/dialogs/AfterTakeover.lua:380
+#, fuzzy, c-format
+msgid "Version: %s"
+msgstr "версия"
+
+#: data/base/dialogs/AfterTakeover.lua:381
+#, fuzzy, c-format
+msgid "Current botname: [b]%s[/b]"
+msgstr "Ты на уровне [b]%s[/b]:"
+
+#: data/base/dialogs/AfterTakeover.lua:382
+msgid "Select new name? [Y/N]"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:390
+#: data/base/dialogs/AfterTakeover.lua:479
+#: data/base/dialogs/AfterTakeover.lua:523
+#: data/base/dialogs/AfterTakeover.lua:583
+#: data/base/dialogs/AfterTakeover.lua:588
+#: data/base/dialogs/AfterTakeover.lua:722
+#, fuzzy
+msgid "Yes"
+msgstr "Да?"
+
+#: data/base/dialogs/AfterTakeover.lua:396
+#, fuzzy
+msgid "New Name: "
+msgstr "Новая игра"
+
+#: data/base/dialogs/AfterTakeover.lua:398
+#, c-format
+msgid "Type a new name for this %s unit."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:401
+msgid "Bald"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:402
+msgid "Brusque"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:403
+msgid "Chic"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:404
+msgid "Cuddly"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:405
+msgid "Cute"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:406
+msgid "Fickle"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:407
+msgid "Fluffy"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:408
+msgid "Fuzzy"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:409
+msgid "Happy"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:410
+msgid "Hyper"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:411
+msgid "Laughing"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:412
+msgid "Machavellian"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:413
+msgid "Mad"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:414
+msgid "Obscene"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:415
+msgid "Ornery"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:416
+msgid "Pompous"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:417
+msgid "Shrewd"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:419
+msgid "Aardvark"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:420
+msgid "Armadillo"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:421
+msgid "Barracuda"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:422
+msgid "Bat"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:423
+msgid "Beetle"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:424
+msgid "Bunny"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:425
+msgid "Dodo"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:426
+msgid "Duck"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:427
+msgid "Fox"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:428
+msgid "Frog"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:429
+msgid "Gerbil"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:430
+msgid "Gnu"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:431
+msgid "Halibut"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:432
+msgid "Hedgehog"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:433
+msgid "Herring"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:434
+msgid "Kitten"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:435
+msgid "Koala"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:436
+msgid "Lemur"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:437
+msgid "Mackerel"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:438
+msgid "Otter"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:439
+msgid "Panda"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:440
+#, fuzzy
+msgid "Platypus"
+msgstr "утконос"
+
+#: data/base/dialogs/AfterTakeover.lua:441
+#, fuzzy
+msgid "Puffin"
+msgstr "тупик"
+
+#: data/base/dialogs/AfterTakeover.lua:442
+msgid "Scarab"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:443
+msgid "Shrew"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:444
+msgid "Tapir"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:445
+msgid "Trout"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:446
+msgid "Tuna"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:447
+msgid "Walrus"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:455
+#: data/base/dialogs/AfterTakeover.lua:495
+#: data/base/dialogs/AfterTakeover.lua:534
+#: data/base/dialogs/AfterTakeover.lua:597
+#: data/base/dialogs/AfterTakeover.lua:734
+#, fuzzy
+msgid "No"
+msgstr "Нет."
+
+#: data/base/dialogs/AfterTakeover.lua:471
+#, c-format
+msgid "Confirm renaming from [b]%s[/b] to [b]%s[/b]? [Y/N]"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:485
+#, c-format
+msgid "Renamed [b]%s[/b] to [b]%s[/b]."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:487
+#, c-format
+msgid "This %s unit is now designated: [b]%s[/b]"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:508
+#: data/base/dialogs/AfterTakeover.lua:511
+msgid "./hcf.py"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:513
+#, fuzzy, c-format
+msgid "Are you really sure you want to destroy %s? Y/N"
+msgstr "...Ты действительно хочешь сделать это?"
+
+#: data/base/dialogs/AfterTakeover.lua:527
+msgid "Destruction confirmed."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:538
+msgid "Destruction averted."
+msgstr ""
+
+#. TRANSLATORS: Example: Draining this 123 unit will get you 5 HP but kill it and take 3 seconds.
+#: data/base/dialogs/AfterTakeover.lua:560
+#, c-format
+msgid "Draining this %s unit will get you %d HP but kill it and take %d %s."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:568
+#, fuzzy, c-format
+msgid "Are you sure you want to drain this %s unit?"
+msgstr "...Ты действительно хочешь сделать это?"
+
+#: data/base/dialogs/AfterTakeover.lua:600
+#, fuzzy
+msgid "Bot not drained."
+msgstr "Но ничего."
+
+#: data/base/dialogs/AfterTakeover.lua:601
+msgid "Running hcf.py..."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:612
+msgid "Executing: Halt and Catch Fire."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:614
+msgid "Warning! Cooling subsystems disabled."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:615
+msgid "Warning! Spontaneous oxidization witH emis$ion of light aND heAt detecteddd in THE#main| procesIng unit."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:616
+#, c-format
+msgid "WArn|n*! SsTeM=#faiPure%%^#n 3 S 1()$++"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:618
+#, fuzzy
+msgid "Warning: something seems wrong."
+msgstr "Чего-нибудь выпьешь?"
+
+#: data/base/dialogs/AfterTakeover.lua:619
+msgid "Error report:"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:632
+#, no-c-format
+msgid "()%%#@(%% THE BLADE IS YOURS. )##%%*&%%*!"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:639
+msgid "Bot drained."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:643
+msgid "Failed to drain bot."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:644
+#, fuzzy
+msgid "I am free!"
+msgstr "Да! Я свободна!"
+
+#: data/base/dialogs/AfterTakeover.lua:655
+msgid "drain_bot_auto.setup"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:658
+msgid "How do you want draining of bots to be handled?"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:661
+msgid "Currently draining of bots is tried automatically."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:663
+msgid "Currently draining of bots is never tried."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:665
+msgid "Currently it is asked if draining a bot is to be tried."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:676
+msgid "Always try draining bots."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:686
+msgid "Never try to drain a bot"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:696
+msgid "Always ask if attempt to drain bot shall be ran."
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:706
+msgid "Reprogramm_bots_after_takeover.sh"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:710
+#: data/base/dialogs/AfterTakeover.lua:725
+msgid "Bots will be reprogrammed after takeover: [b]true[/b]"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:712
+#: data/base/dialogs/AfterTakeover.lua:737
+msgid "Bots will be reprogrammed after takeover: [b]false[/b]"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:746
+msgid "leave settings.plx"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:750
+msgid "Settings saved"
+msgstr ""
+
+#: data/base/dialogs/AfterTakeover.lua:751
+msgid "Leaving settings.plx"
+msgstr ""
+
+#. TRANSLATORS: 'logout' should be a command
+#. TRANSLATORS: command, user lowercase here
+#. TRANSLATORS: command,  use lowercase here
+#: data/base/dialogs/AfterTakeover.lua:763 data/base/dialogs/Terminal.lua:51
+#: data/storyline/act1/dialogs/DSB-MachineDeckControl.lua:79
+#: data/storyline/act1/dialogs/DSB-PowerControl.lua:55
+#: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:91
+#: data/storyline/act1/dialogs/Maintenance-Terminal.lua:229
+#: data/storyline/act1/dialogs/MiniFactory-Terminal.lua:111
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:234
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:237
+#: data/storyline/act1/dialogs/MS-Factory-Addon-Terminal.lua:71
+#: data/storyline/act1/dialogs/SACD.lua:110
+#: data/storyline/act1/dialogs/TestDroid.lua:47
+#: data/storyline/act1/dialogs/TutorialTerminal.lua:91
+#: data/storyline/act1/dialogs/TutorialTerminal.lua:95
+msgid "logout"
+msgstr "выход"
+
+#: data/base/dialogs/AfterTakeover.lua:764
+#, fuzzy
+msgid "Closing remote connection..."
+msgstr "Жду соединений...."
+
+#: data/base/dialogs/Speechless.lua:33
+#: data/storyline/act1/dialogs/614_portal.lua:70
+#: data/storyline/act1/dialogs/614_portal.lua:71
+#: data/storyline/act1/dialogs/614_portal.lua:73
+#: data/storyline/act1/dialogs/Butch.lua:273
+#: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:30
+#: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:31
+#: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:115
+#: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:116
+#: data/storyline/act1/dialogs/DeadGuy.lua:33
+#: data/storyline/act1/dialogs/Erin.lua:115
+#: data/storyline/act1/dialogs/Ewalds_296.lua:324
+#: data/storyline/act1/dialogs/FactionDeadBot.lua:33
+#: data/storyline/act1/dialogs/Francis.lua:98
+#: data/storyline/act1/dialogs/Francis.lua:107
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:88
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:89
+#: data/storyline/act1/dialogs/Jasmine.lua:115
+#: data/storyline/act1/dialogs/Jennifer.lua:80
+#: data/storyline/act1/dialogs/Jim.lua:40 data/storyline/act1/dialogs/Jim.lua:48
+#: data/storyline/act1/dialogs/Kevin.lua:454
+#: data/storyline/act1/dialogs/Maintenance-Terminal.lua:59
+#: data/storyline/act1/dialogs/Michelangelo.lua:156
+#: data/storyline/act1/dialogs/Mike.lua:364
+#: data/storyline/act1/dialogs/Singularity-Drone.lua:34
+#: data/storyline/act1/dialogs/Singularity.lua:138
+#: data/storyline/act1/dialogs/Singularity.lua:203
+#: data/storyline/act1/dialogs/Town-TuxGuard.lua:121
+#: data/storyline/act1/dialogs/TutorialTom.lua:377
+#: data/storyline/act1/dialogs/WillGapes.lua:157
+msgid "..."
+msgstr "..."
+
+#: data/base/dialogs/Terminal.lua:29
+#, fuzzy
+msgid "Welcome to this terminal."
+msgstr "Вас приветствует личная газонокосилка Кевина."
+
+#: data/base/dialogs/Terminal.lua:31 data/storyline/act1/dialogs/Benjamin.lua:36
+#: data/storyline/act1/dialogs/Bob.lua:29 data/storyline/act1/dialogs/Bob.lua:55
+#: data/storyline/act1/dialogs/Cult-Member.lua:34
+#: data/storyline/act1/dialogs/Iris.lua:71
+#: data/storyline/act1/dialogs/Iris.lua:73
+#: data/storyline/act1/dialogs/Iris.lua:263
+#: data/storyline/act1/dialogs/John.lua:139
+#: data/storyline/act1/dialogs/John.lua:141
+#: data/storyline/act1/dialogs/Kevin.lua:60
+#: data/storyline/act1/dialogs/Kevin.lua:66
+#: data/storyline/act1/dialogs/Mike.lua:86
+#: data/storyline/act1/dialogs/Peter.lua:34
+#: data/storyline/act1/dialogs/Scavenger.lua:34
+msgid "Hello."
+msgstr "Здравствуй."
+
+#: data/base/dialogs/Terminal.lua:32 data/storyline/act1/dialogs/Kevin.lua:61
+#: data/storyline/act1/dialogs/Peter.lua:35
+msgid "Hi there."
+msgstr "Привет."
+
+#: data/base/dialogs/Terminal.lua:33 data/storyline/act1/dialogs/Benjamin.lua:38
+#: data/storyline/act1/dialogs/Kevin.lua:68
+#: data/storyline/act1/dialogs/Peter.lua:36
+msgid "Well, hello again."
+msgstr "Ну, ещё раз привет."
+
+#: data/base/dialogs/Terminal.lua:34 data/storyline/act1/dialogs/Benjamin.lua:39
+#: data/storyline/act1/dialogs/Kevin.lua:63
+#: data/storyline/act1/dialogs/Kevin.lua:69
+#: data/storyline/act1/dialogs/Peter.lua:37
+msgid "Hello hello."
+msgstr "Привет-привет."
+
+#: data/base/dialogs/Terminal.lua:35 data/storyline/act1/dialogs/Benjamin.lua:40
+#: data/storyline/act1/dialogs/Bob.lua:59
+#: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:58
+#: data/storyline/act1/dialogs/Jennifer.lua:40
+#: data/storyline/act1/dialogs/Kevin.lua:70
+#: data/storyline/act1/dialogs/Peter.lua:38
+msgid "Welcome back."
+msgstr "С возвращением."
+
+#. TRANSLATORS: command, user lowercase here
+#: data/base/dialogs/Terminal.lua:43
+#: data/storyline/act1/dialogs/Kevin-Lawnmower.lua:121
+#: data/storyline/act1/dialogs/Kevin-Lawnmower.lua:124
+msgid "help"
+msgstr "помощь"
+
+#: data/base/dialogs/Terminal.lua:45
+#, fuzzy
+msgid "Available commands: help, logout"
+msgstr "Доступные команды:"
+
+#: data/base/dialogs/Terminal.lua:53
+#, fuzzy
+msgid "Goodbye"
+msgstr "Пока."
 
 #: data/storyline/act1/dialogs/614_cryo.lua:45
 #: data/storyline/act1/dialogs/614_portal.lua:50
@@ -126,38 +1016,6 @@ msgstr "Возобновление охранной программы."
 #: data/storyline/act1/dialogs/614_portal.lua:69
 msgid "ERROR: unknown command. Searching for similiar commands..."
 msgstr "ОШИБКА: неизвестная команда. Поиск похожих команд..."
-
-#: data/storyline/act1/dialogs/614_portal.lua:70
-#: data/storyline/act1/dialogs/614_portal.lua:71
-#: data/storyline/act1/dialogs/614_portal.lua:73
-#: data/storyline/act1/dialogs/Butch.lua:273
-#: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:30
-#: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:31
-#: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:115
-#: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:116
-#: data/storyline/act1/dialogs/DeadGuy.lua:33
-#: data/storyline/act1/dialogs/Erin.lua:115
-#: data/storyline/act1/dialogs/Ewalds_296.lua:324
-#: data/storyline/act1/dialogs/FactionDeadBot.lua:33
-#: data/storyline/act1/dialogs/Francis.lua:98
-#: data/storyline/act1/dialogs/Francis.lua:107
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:88
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:89
-#: data/storyline/act1/dialogs/Jasmine.lua:115
-#: data/storyline/act1/dialogs/Jennifer.lua:80
-#: data/storyline/act1/dialogs/Jim.lua:40 data/storyline/act1/dialogs/Jim.lua:48
-#: data/storyline/act1/dialogs/Kevin.lua:454
-#: data/storyline/act1/dialogs/Maintenance-Terminal.lua:59
-#: data/storyline/act1/dialogs/Michelangelo.lua:156
-#: data/storyline/act1/dialogs/Mike.lua:364
-#: data/storyline/act1/dialogs/Singularity-Drone.lua:34
-#: data/storyline/act1/dialogs/Singularity.lua:138
-#: data/storyline/act1/dialogs/Singularity.lua:203
-#: data/storyline/act1/dialogs/Town-TuxGuard.lua:121
-#: data/storyline/act1/dialogs/TutorialTom.lua:377
-#: data/storyline/act1/dialogs/WillGapes.lua:157
-msgid "..."
-msgstr "..."
 
 #: data/storyline/act1/dialogs/614_portal.lua:72
 msgid "ERROR! Similiar command not found! Using advanced search..."
@@ -1069,47 +1927,9 @@ msgstr ""
 msgid "See you, and thanks for the story!"
 msgstr "Увидимся, и спасибо за историю!"
 
-#: data/storyline/act1/dialogs/Benjamin.lua:36
-#: data/storyline/act1/dialogs/Bob.lua:29 data/storyline/act1/dialogs/Bob.lua:55
-#: data/storyline/act1/dialogs/Cult-Member.lua:34
-#: data/storyline/act1/dialogs/Iris.lua:71
-#: data/storyline/act1/dialogs/Iris.lua:73
-#: data/storyline/act1/dialogs/Iris.lua:263
-#: data/storyline/act1/dialogs/John.lua:139
-#: data/storyline/act1/dialogs/John.lua:141
-#: data/storyline/act1/dialogs/Kevin.lua:60
-#: data/storyline/act1/dialogs/Kevin.lua:66
-#: data/storyline/act1/dialogs/Mike.lua:86
-#: data/storyline/act1/dialogs/Peter.lua:34
-#: data/storyline/act1/dialogs/Scavenger.lua:34
-msgid "Hello."
-msgstr "Здравствуй."
-
 #: data/storyline/act1/dialogs/Benjamin.lua:37
 msgid "Greetings Master Benjamin."
 msgstr "Приветствую, мастер Бенджамин."
-
-#: data/storyline/act1/dialogs/Benjamin.lua:38
-#: data/storyline/act1/dialogs/Kevin.lua:68
-#: data/storyline/act1/dialogs/Peter.lua:36
-msgid "Well, hello again."
-msgstr "Ну, ещё раз привет."
-
-#: data/storyline/act1/dialogs/Benjamin.lua:39
-#: data/storyline/act1/dialogs/Kevin.lua:63
-#: data/storyline/act1/dialogs/Kevin.lua:69
-#: data/storyline/act1/dialogs/Peter.lua:37
-msgid "Hello hello."
-msgstr "Привет-привет."
-
-#: data/storyline/act1/dialogs/Benjamin.lua:40
-#: data/storyline/act1/dialogs/Bob.lua:59
-#: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:58
-#: data/storyline/act1/dialogs/Jennifer.lua:40
-#: data/storyline/act1/dialogs/Kevin.lua:70
-#: data/storyline/act1/dialogs/Peter.lua:38
-msgid "Welcome back."
-msgstr "С возвращением."
 
 #: data/storyline/act1/dialogs/Benjamin.lua:43
 msgid "You are using a fine weapon. I wonder were you found it?"
@@ -4239,18 +5059,6 @@ msgstr "Конец игры"
 msgid "Welcome to the Community Network."
 msgstr "Добро пожаловать в сеть сообщества."
 
-#: data/storyline/act1/dialogs/c-net.lua:32
-#: data/storyline/act1/dialogs/DSB-MachineDeckControl.lua:26
-#: data/storyline/act1/dialogs/DSB-PowerControl.lua:29
-#: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:31
-#: data/storyline/act1/dialogs/Maintenance-Terminal.lua:31
-#: data/storyline/act1/dialogs/MiniFactory-Terminal.lua:28
-#: data/storyline/act1/dialogs/MS-Factory-Addon-Terminal.lua:28
-#: data/storyline/act1/dialogs/SACD.lua:37
-#: data/storyline/act1/dialogs/TutorialTerminal.lua:31
-msgid "Login : "
-msgstr "Логин : "
-
 #. TRANSLATORS: use lowercase for translation
 #. TRANSLATORS: username, maybe this should stay in lowercase letters?
 #: data/storyline/act1/dialogs/c-net.lua:54
@@ -4282,20 +5090,6 @@ msgstr "Пожалуйста, задайте пароль для вашего п
 msgid "Use at least one lower case letter, one upper case letter, one number, and one symbol."
 msgstr "Используйте по крайней мере одну строчную и одну заглавную буквы, одну цифру и один символ."
 
-#: data/storyline/act1/dialogs/c-net.lua:70
-#: data/storyline/act1/dialogs/c-net.lua:75
-#: data/storyline/act1/dialogs/c-net.lua:89
-#: data/storyline/act1/dialogs/c-net.lua:108
-#: data/storyline/act1/dialogs/DSB-MachineDeckControl.lua:28
-#: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:33
-#: data/storyline/act1/dialogs/Maintenance-Terminal.lua:33
-#: data/storyline/act1/dialogs/MiniFactory-Terminal.lua:31
-#: data/storyline/act1/dialogs/MS-Factory-Addon-Terminal.lua:31
-#: data/storyline/act1/dialogs/MS-Factory-Addon-Terminal.lua:36
-#: data/storyline/act1/dialogs/MS-Factory-Addon-Terminal.lua:39
-msgid "Password : "
-msgstr "Пароль : "
-
 #: data/storyline/act1/dialogs/c-net.lua:71
 #: data/storyline/act1/dialogs/c-net.lua:76
 msgid "******"
@@ -4319,18 +5113,6 @@ msgstr "Неверный логин или пароль."
 #: data/storyline/act1/dialogs/c-net.lua:146
 msgid "Connection to c-net terminated."
 msgstr "Соединение с c-net завершено."
-
-#. TRANSLATORS: It shows the ingame date in format: Day day, hour:minute
-#: data/storyline/act1/dialogs/c-net.lua:182
-#: data/storyline/act1/dialogs/DSB-MachineDeckControl.lua:32
-#: data/storyline/act1/dialogs/DSB-PowerControl.lua:28
-#: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:28
-#: data/storyline/act1/dialogs/Maintenance-Terminal.lua:28
-#: data/storyline/act1/dialogs/SACD.lua:31
-#: data/storyline/act1/dialogs/TutorialTerminal.lua:28
-#, c-format
-msgid "Day %d, %02d:%02d"
-msgstr "День %d, %02d:%02d"
 
 #. TRANSLATORS: this reperesents the head of a table
 #: data/storyline/act1/dialogs/c-net.lua:194
@@ -7425,21 +8207,6 @@ msgstr "админ"
 msgid "*******"
 msgstr "*******"
 
-#. TRANSLATORS: %s = a date ,  %d = a year number
-#. TRANSLATORS: %s = a date , %y = a year
-#. TRANSLATORS: %s = a date ,  %d = a year number
-#. TRANSLATORS: %s = a date %d = a year
-#. TRANSLATORS: %s = a date ,  %d = a year number
-#: data/storyline/act1/dialogs/DSB-MachineDeckControl.lua:34
-#: data/storyline/act1/dialogs/DSB-PowerControl.lua:34
-#: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:41
-#: data/storyline/act1/dialogs/Maintenance-Terminal.lua:38
-#: data/storyline/act1/dialogs/SACD.lua:43
-#: data/storyline/act1/dialogs/TutorialTerminal.lua:38
-#, c-format
-msgid "First login from /dev/ttySO on %s %d"
-msgstr "Первый вход из /dev/ttySO совершен %s %d"
-
 #: data/storyline/act1/dialogs/DSB-MachineDeckControl.lua:49
 msgid "passwd"
 msgstr "passwd"
@@ -7480,23 +8247,6 @@ msgstr "ВНИМАНИЕ: Другой пользователь использу
 msgid "Disruptor shield is active."
 msgstr "Дезинтегрирующий щит включён."
 
-#. TRANSLATORS: command, user lowercase here
-#. TRANSLATORS: command,  use lowercase here
-#: data/storyline/act1/dialogs/DSB-MachineDeckControl.lua:79
-#: data/storyline/act1/dialogs/DSB-PowerControl.lua:55
-#: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:91
-#: data/storyline/act1/dialogs/Maintenance-Terminal.lua:229
-#: data/storyline/act1/dialogs/MiniFactory-Terminal.lua:111
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:234
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:237
-#: data/storyline/act1/dialogs/MS-Factory-Addon-Terminal.lua:71
-#: data/storyline/act1/dialogs/SACD.lua:110
-#: data/storyline/act1/dialogs/TestDroid.lua:47
-#: data/storyline/act1/dialogs/TutorialTerminal.lua:91
-#: data/storyline/act1/dialogs/TutorialTerminal.lua:95
-msgid "logout"
-msgstr "выход"
-
 #: data/storyline/act1/dialogs/DSB-MachineDeckControl.lua:81
 #: data/storyline/act1/dialogs/DSB-PowerControl.lua:57
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:110
@@ -7530,17 +8280,6 @@ msgstr "[b]Ошибка входа. Гостевой сеанс[/b]"
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:37
 msgid "Welcome to [b]Power Control Gate 1 Terminal[/b]!"
 msgstr "Приветствуем в [b]терминале управления воротами 1[/b]!"
-
-#. TRANSLATORS: %s = a date ,  %d = a year number
-#. TRANSLATORS: %s = a date %d = a year
-#. TRANSLATORS: %s = a date ,  %d = a year number
-#: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:44
-#: data/storyline/act1/dialogs/Maintenance-Terminal.lua:41
-#: data/storyline/act1/dialogs/SACD.lua:46
-#: data/storyline/act1/dialogs/TutorialTerminal.lua:41
-#, c-format
-msgid "Last login from /dev/ttyS0 on %s %d"
-msgstr "Последний вход из /dev/ttyS0 совершен %s %d"
 
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:54
 msgid "GAME BUG. PLEASE REPORT."
@@ -12299,11 +13038,6 @@ msgstr "2 СЕКУНДЫ!"
 msgid "IN 1 SECOND!"
 msgstr "1 СЕКУНДУ!"
 
-#: data/storyline/act1/dialogs/Kevin-Lawnmower.lua:121
-#: data/storyline/act1/dialogs/Kevin-Lawnmower.lua:124
-msgid "help"
-msgstr "помощь"
-
 #: data/storyline/act1/dialogs/Kevin-Lawnmower.lua:123
 msgid "Available commands:"
 msgstr "Доступные команды:"
@@ -12446,11 +13180,6 @@ msgstr ""
 #: data/storyline/act1/dialogs/Kevin.lua:56
 msgid "But this isn't the case here, so explain yourself."
 msgstr ""
-
-#: data/storyline/act1/dialogs/Kevin.lua:61
-#: data/storyline/act1/dialogs/Peter.lua:35
-msgid "Hi there."
-msgstr "Привет."
 
 #: data/storyline/act1/dialogs/Kevin.lua:62
 msgid "Well, hello."
