@@ -32,9 +32,10 @@ languages{
 	{ name = "English (US)", locale = "en_US" },
 	{ name = "Francais",     locale = "fr_FR" },
 	{ name = "Italiano",     locale = "it_IT" },
+	{ name = "Magyar nyelv", locale = "hu_HU" },
+	{ name = "Russian",      locale = "ru_RU" },
 	{ name = "Spanish",      locale = "es_ES" },
 	{ name = "Svenska",      locale = "sv_SV" },
-	{ name = "Russian",      locale = "ru_RU" },
 }
 
 codesets{
@@ -49,8 +50,9 @@ codesets{
 	{ language = "en", encoding = "ISO-8859-15" },
 	{ language = "es", encoding = "ISO-8859-15" },
 	{ language = "fr", encoding = "ISO-8859-15" },
+	{ language = "hu", encoding = "ISO-8859-2"  },
 	{ language = "it", encoding = "ISO-8859-15" },
 	{ language = "pt", encoding = "ISO-8859-15" },
-	{ language = "sv", encoding = "ISO-8859-15" },
 	{ language = "ru", encoding = "ISO-8859-5"  },
+	{ language = "sv", encoding = "ISO-8859-15" },
 }

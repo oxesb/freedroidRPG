@@ -42,7 +42,7 @@ text = [[
 
 НАПОЛНЕНИЕ ИГРЫ:
 
-        Amy de Buitléir
+        Эми Батлер
         Infrared
         Рэймонд Дженнингс
         Jonatas L. Nogueira
@@ -71,11 +71,11 @@ text = [[
 
         французский:
           Sebastian Adam
-          Alérion
+          Алерион
           Сэмюэль Дегранд
-          Nicolas Fargier
-          Benjamin Leduc
-          Duong Khang Nguyen
+          Николя Фаржье
+          Бенжамен Ледюк
+          Дыон Кханг Нгуен
           Xenux
 
         бразильский португальский:
@@ -89,7 +89,7 @@ text = [[
 РАЗНОЕ:
 
         Эйно Кескитало
-        Duong Khang Nguyen
+        Дыон Кханг Нгуен
 
 
 
@@ -153,7 +153,7 @@ text = [[
         Клинт Херрон
         Hike Danakian
         Иэн Гриффитс
-        David Kremer
+        Дэвид Кремер
         Armin Winterer
 ]]
 }

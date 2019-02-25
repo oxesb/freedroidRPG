@@ -34,7 +34,7 @@ msgstr "День %d, %02d:%02d"
 #: data/base/dialogs/AfterTakeover.lua:39
 #, c-format
 msgid "%s@hacked_%s: ~ # "
-msgstr ""
+msgstr "%s@взломан_%s: ~ #"
 
 #: data/base/dialogs/AfterTakeover.lua:40
 #: data/storyline/act1/dialogs/c-net.lua:32
@@ -94,184 +94,180 @@ msgstr "Последний вход из /dev/ttyS0 совершен %s %d"
 
 #. TRANSLATORS: %s = bot name
 #: data/base/dialogs/AfterTakeover.lua:54
-#, fuzzy, c-format
+#, c-format
 msgid "Welcome to [b]%s[/b]!"
-msgstr "Встретился [b]%s[/b]!"
+msgstr "Добро пожаловать в [b]%s[/b]!"
 
 #: data/base/dialogs/AfterTakeover.lua:56
 msgid "Hardware Check : BOT DAMAGED"
-msgstr ""
+msgstr "Проверка оборудования: БОТ ПОВРЕЖДЁН"
 
 #. TRANSLATORS: %s = bot type
 #: data/base/dialogs/AfterTakeover.lua:58
 #, c-format
 msgid "This %s unit could stand to be repaired."
-msgstr ""
+msgstr "Этот робот типа %s нуждается в ремонте."
 
 #: data/base/dialogs/AfterTakeover.lua:62
 msgid "BOTNET: UNIT TOO DAMAGED TO BROADCAST COMMANDS."
-msgstr ""
+msgstr "БОТНЕТ: РОБОТ СЛИШКОМ ПОВРЕЖДЕН ЧТОБЫ ТРАНСЛИРОВАТЬ КОМАНДЫ."
 
 #: data/base/dialogs/AfterTakeover.lua:63
 #: data/base/dialogs/AfterTakeover.lua:347
-#, fuzzy
 msgid "Entering \"single node\" mode..."
-msgstr "Вход в режим пользователя..."
+msgstr "Вход в режим \"единого узла\"..."
 
 #: data/base/dialogs/AfterTakeover.lua:66
 msgid "BOTNET: Most commands will be broadcast."
-msgstr ""
+msgstr "БОТНЕТ: Большинство команд будет транслировано."
 
 #: data/base/dialogs/AfterTakeover.lua:69
 msgid "SINGLE NODE: Commands will not be broadcast."
-msgstr ""
+msgstr "ЕДИНЫЙ УЗЕЛ: Команды не будут транслированы."
 
 #: data/base/dialogs/AfterTakeover.lua:78 data/base/dialogs/AfterTakeover.lua:81
 msgid "cd repair&settings/"
-msgstr ""
+msgstr "cd repair&settings/"
 
 #. TRANSLATORS: first %s = Tux:get_player_name() ; second %s : Npc:get_type()
 #: data/base/dialogs/AfterTakeover.lua:91
 #, c-format
 msgid "%s@hacked_%s/repair&settings: ~ # "
-msgstr ""
+msgstr "%s@взломан_%s/repair&settings: ~ #"
 
 #: data/base/dialogs/AfterTakeover.lua:101
 msgid "cd .."
-msgstr ""
+msgstr "cd .."
 
 #: data/base/dialogs/AfterTakeover.lua:108
 #: data/base/dialogs/AfterTakeover.lua:111
 msgid "./hold_position.sh"
-msgstr ""
+msgstr "./удерживать_позицию.sh"
 
 #: data/base/dialogs/AfterTakeover.lua:112
 msgid "Holding position."
-msgstr ""
+msgstr "Удерживаю позицию."
 
 #: data/base/dialogs/AfterTakeover.lua:113
 msgid "script V 1.0.2 (c) gnu.org, 2054"
-msgstr ""
+msgstr "скрипт V 1.0.2 (c) gnu.org, 2054"
 
 #: data/base/dialogs/AfterTakeover.lua:114
 #: data/base/dialogs/AfterTakeover.lua:155
 msgid "Checking requirements..."
-msgstr ""
+msgstr "Проверка требований..."
 
 #: data/base/dialogs/AfterTakeover.lua:115
 msgid "Movement unit: Power-down... [Done]."
-msgstr ""
+msgstr "Блок движения: отключение питания... [Выполнено]."
 
 #: data/base/dialogs/AfterTakeover.lua:116
-#, fuzzy
 msgid "Status: All movement suppressed."
-msgstr "Любое движение запрещено..."
+msgstr "Статус: Все движения прекращены."
 
 #: data/base/dialogs/AfterTakeover.lua:128
 #: data/base/dialogs/AfterTakeover.lua:131
 msgid "./follow_me.sh"
-msgstr ""
+msgstr "./следовать_за_мной.sh"
 
 #: data/base/dialogs/AfterTakeover.lua:132
 msgid "Initiating tracking sequence."
-msgstr ""
+msgstr "Инициирование последовательности слежения."
 
 #: data/base/dialogs/AfterTakeover.lua:133
 msgid "Movement unit: Enabled."
-msgstr ""
+msgstr "Блок движения: Включен."
 
 #. TRANSLATORS: first %s = Tux:get_player_name() ; second %s : Npc:get_type()
 #: data/base/dialogs/AfterTakeover.lua:135
 #, c-format
 msgid "Acquiring lock on position of %s."
-msgstr ""
+msgstr "Получаю позицию %s."
 
 #. TRANSLATORS: %s =  Tux:get_player_name()
 #: data/base/dialogs/AfterTakeover.lua:137
 #, c-format
 msgid "Status: Following %s."
-msgstr ""
+msgstr "Статус: Следую за %s."
 
 #: data/base/dialogs/AfterTakeover.lua:149
 #: data/base/dialogs/AfterTakeover.lua:152
 msgid "./move_freely.sh"
-msgstr ""
+msgstr "./двигайся_свободно.sh"
 
 #: data/base/dialogs/AfterTakeover.lua:153
 msgid "Enable movement."
-msgstr ""
+msgstr "Движение включено."
 
 #: data/base/dialogs/AfterTakeover.lua:154
 msgid "script V 1.0.5 (c) gnu.org, 2054"
-msgstr ""
+msgstr "скрипт версии 1.0.5 (c) gnu.org, 2054 г."
 
 #: data/base/dialogs/AfterTakeover.lua:156
 msgid "Movement unit: Power-up... [Done]."
-msgstr ""
+msgstr "Блок движения: Включение питания... [Выполнено]."
 
 #: data/base/dialogs/AfterTakeover.lua:157
 msgid "Resuming normal patrol operations... [Done]"
-msgstr ""
+msgstr "Возобновление нормальных операций патрулирования... [Выполнено]"
 
 #: data/base/dialogs/AfterTakeover.lua:158
 msgid "Status: Patrolling."
-msgstr ""
+msgstr "Статус: Патрулирование."
 
 #: data/base/dialogs/AfterTakeover.lua:170
 #: data/base/dialogs/AfterTakeover.lua:183
 msgid "./repair.plx"
-msgstr ""
+msgstr "./ремонт.plx"
 
 #. TRANSLATORS: %d = amount of valuable circuits
 #: data/base/dialogs/AfterTakeover.lua:187
 #, c-format
 msgid "Available amount of valuable circuits for repair: %d."
-msgstr ""
+msgstr "Доступно ценных схем для ремонта: %d."
 
 #: data/base/dialogs/AfterTakeover.lua:197
 #: data/base/dialogs/AfterTakeover.lua:553
 msgid "seconds"
-msgstr ""
+msgstr "секунды"
 
 #: data/base/dialogs/AfterTakeover.lua:199
 #: data/base/dialogs/AfterTakeover.lua:555
 msgid "second"
-msgstr ""
+msgstr "секунда"
 
 #: data/base/dialogs/AfterTakeover.lua:202
-#, fuzzy
 msgid "circuits"
-msgstr "20 схем? Ладно."
+msgstr "схемы"
 
 #: data/base/dialogs/AfterTakeover.lua:204
-#, fuzzy
 msgid "circuit"
-msgstr "20 схем? Ладно."
+msgstr "схема"
 
 #: data/base/dialogs/AfterTakeover.lua:208
 #, c-format
 msgid "Repairs on %s will take less than %d %s, %d valuable %s, and %d heat."
-msgstr ""
+msgstr "Ремонт %s потребует менее %d %s, %d ценных %s и %d тепла."
 
 #: data/base/dialogs/AfterTakeover.lua:217
-#, fuzzy, c-format
+#, c-format
 msgid "You do not have enough valuable circuits to ensure repair of this %s unit."
-msgstr "У тебя не хватает ценных схем! Возвращайся, когда будут деньги."
+msgstr "У вас недостаточно ценных схем, чтобы обеспечить ремонт этого %s блока."
 
 #: data/base/dialogs/AfterTakeover.lua:219
 #, c-format
 msgid "You cannot dissipate enough heat to ensure repair of this %s unit."
-msgstr ""
+msgstr "Вы не можете рассеять достаточно тепла, чтобы обеспечить ремонт этого %s блока."
 
 #: data/base/dialogs/AfterTakeover.lua:221
-#, fuzzy, c-format
+#, c-format
 msgid "Do you want to start repair of this %s unit?"
-msgstr "Хочешь решить одну?"
+msgstr "Вы хотите начать ремонт этого %s блока?"
 
 #: data/base/dialogs/AfterTakeover.lua:230
 #, c-format
 msgid "%s is currently undamaged."
-msgstr ""
+msgstr "В данный момент %s не повержден."
 
 #. TRANSLATORS: Y for yes
 #: data/base/dialogs/AfterTakeover.lua:239
@@ -279,15 +275,15 @@ msgstr ""
 #: data/base/dialogs/AfterTakeover.lua:395
 #: data/base/dialogs/AfterTakeover.lua:484
 msgid "Y"
-msgstr ""
+msgstr "Д"
 
 #: data/base/dialogs/AfterTakeover.lua:245
 msgid "Repair in progress."
-msgstr ""
+msgstr "Выполняется ремонт."
 
 #: data/base/dialogs/AfterTakeover.lua:246
 msgid "Logout to complete repair process."
-msgstr ""
+msgstr "Выйдите для завершения процесса ремонта."
 
 #. TRANSLATORS: N for no
 #: data/base/dialogs/AfterTakeover.lua:255
@@ -295,126 +291,121 @@ msgstr ""
 #: data/base/dialogs/AfterTakeover.lua:460
 #: data/base/dialogs/AfterTakeover.lua:500
 msgid "N"
-msgstr ""
+msgstr "Н"
 
 #: data/base/dialogs/AfterTakeover.lua:261
 msgid "Repair aborted."
-msgstr ""
+msgstr "Ремонт прерван."
 
 #: data/base/dialogs/AfterTakeover.lua:269
 #: data/base/dialogs/AfterTakeover.lua:357
 msgid "./settings.plx"
-msgstr ""
+msgstr "./настройки.plx"
 
 #: data/base/dialogs/AfterTakeover.lua:279
 msgid "confirmation of hcf.py"
-msgstr ""
+msgstr "подтверждение hcf.py"
 
 #: data/base/dialogs/AfterTakeover.lua:283
 msgid "Always ask for confirmation before execution of hcf.py? [Y/N]"
-msgstr ""
+msgstr "Всегда запрашивать подтверждение перед выполнением hcf.py? [Y/N]"
 
 #. TRANSLATORS: Y for yes
 #: data/base/dialogs/AfterTakeover.lua:291
 msgid "Y (always ask)"
-msgstr ""
+msgstr "Д (всегда спрашивать)"
 
 #: data/base/dialogs/AfterTakeover.lua:295
 msgid "Confirmation will now be asked before execution of hcf.py."
-msgstr ""
+msgstr "Теперь будет запрошено подтверждение перед выполнением hcf.py."
 
 #. TRANSLATORS: N for no
 #: data/base/dialogs/AfterTakeover.lua:304
-#, fuzzy
 msgid "N (don't ask)"
-msgstr "Даже не спрашивай."
+msgstr "Н (не спрашивать)"
 
 #: data/base/dialogs/AfterTakeover.lua:308
 msgid "hcf.py will be executed without asking for confirmation."
-msgstr ""
+msgstr "hcf.py будет запущен без запроса подтверждения."
 
 #: data/base/dialogs/AfterTakeover.lua:316
 msgid "broadcast commands"
-msgstr ""
+msgstr "транслировать команды"
 
 #: data/base/dialogs/AfterTakeover.lua:320
 msgid "Broadcast commands to all units on level? [Y/N]"
-msgstr ""
+msgstr "Транслировать команды всем роботам на уровне? [Д/Н]"
 
 #. TRANSLATORS: Y for yes
 #: data/base/dialogs/AfterTakeover.lua:328
 msgid "Y (enable broadcast)"
-msgstr ""
+msgstr "Д (включить трансляцию)"
 
 #: data/base/dialogs/AfterTakeover.lua:332
 msgid "Commands will be broadcast and executed by all bots on this level under your control."
-msgstr ""
+msgstr "Команды будут транслированы и выполнены всеми роботами под вашим контролем на этом уровне."
 
 #: data/base/dialogs/AfterTakeover.lua:333
-#, fuzzy
 msgid "Entering \"botnet\" mode..."
-msgstr "Вход в режим пользователя..."
+msgstr "Вход в режим \"ботнет\"..."
 
 #. TRANSLATORS: N for no
 #: data/base/dialogs/AfterTakeover.lua:342
 msgid "N (disable broadcast)"
-msgstr ""
+msgstr "Н (отключить трансляцию)"
 
 #: data/base/dialogs/AfterTakeover.lua:346
 msgid "Commands will only be executed by this bot."
-msgstr ""
+msgstr "Команды будут выполнены только этим роботом."
 
 #: data/base/dialogs/AfterTakeover.lua:358
-#, fuzzy
 msgid "Welcome to the settings menu."
-msgstr "Вас приветствует газонокосилка Кевина."
+msgstr "Добро пожаловать в меню настроек."
 
 #: data/base/dialogs/AfterTakeover.lua:359
 msgid "Version: 1.82c"
-msgstr ""
+msgstr "Версия: 1.82с"
 
 #. TRANSLATORS: %s = sensor name
 #: data/base/dialogs/AfterTakeover.lua:361
 #, c-format
 msgid "Installed sensor: %s"
-msgstr ""
+msgstr "Установлен сенсор: %s"
 
 #: data/base/dialogs/AfterTakeover.lua:362
-#, fuzzy
 msgid "No upgrades found."
-msgstr "диск не найден"
+msgstr "Обновления не найдены."
 
 #: data/base/dialogs/AfterTakeover.lua:364
 msgid "UNIT TOO DAMAGED TO BROADCAST COMMANDS."
-msgstr ""
+msgstr "РОБОТ СЛИШКОМ ПОВРЕЖДЕН, ЧТОБЫ ТРАНСЛИРОВАТЬ КОМАНДЫ."
 
 #: data/base/dialogs/AfterTakeover.lua:368
 msgid "Which setting should be changed?"
-msgstr ""
+msgstr "Какую настройку следует изменить?"
 
 #: data/base/dialogs/AfterTakeover.lua:374
 #: data/base/dialogs/AfterTakeover.lua:378
 msgid "./hostname"
-msgstr ""
+msgstr "./имяхоста"
 
 #: data/base/dialogs/AfterTakeover.lua:379
-#, fuzzy
 msgid "Welcome to the hostname menu."
-msgstr "Добро пожаловать в сеть сообщества."
+msgstr "Добро пожаловать в меню имени хоста."
 
 #: data/base/dialogs/AfterTakeover.lua:380
-#, fuzzy, c-format
+#, c-format
 msgid "Version: %s"
-msgstr "версия"
+msgstr "Версия: %s"
 
 #: data/base/dialogs/AfterTakeover.lua:381
-#, fuzzy, c-format
+#, c-format
 msgid "Current botname: [b]%s[/b]"
-msgstr "Ты на уровне [b]%s[/b]:"
+msgstr "Текущее имя робота: [b]%s[/b]"
 
 #: data/base/dialogs/AfterTakeover.lua:382
 msgid "Select new name? [Y/N]"
-msgstr ""
+msgstr "Выбрать новое имя? [Y/N]"
 
 #: data/base/dialogs/AfterTakeover.lua:390
 #: data/base/dialogs/AfterTakeover.lua:479
@@ -422,369 +413,361 @@ msgstr ""
 #: data/base/dialogs/AfterTakeover.lua:583
 #: data/base/dialogs/AfterTakeover.lua:588
 #: data/base/dialogs/AfterTakeover.lua:722
-#, fuzzy
 msgid "Yes"
-msgstr "Да?"
+msgstr "Да"
 
 #: data/base/dialogs/AfterTakeover.lua:396
-#, fuzzy
 msgid "New Name: "
-msgstr "Новая игра"
+msgstr "Новое имя:"
 
 #: data/base/dialogs/AfterTakeover.lua:398
 #, c-format
 msgid "Type a new name for this %s unit."
-msgstr ""
+msgstr "Введите новое имя для этого %s бота."
 
 #: data/base/dialogs/AfterTakeover.lua:401
 msgid "Bald"
-msgstr ""
+msgstr "Лысый"
 
 #: data/base/dialogs/AfterTakeover.lua:402
 msgid "Brusque"
-msgstr ""
+msgstr "Грубый"
 
 #: data/base/dialogs/AfterTakeover.lua:403
 msgid "Chic"
-msgstr ""
+msgstr "Нарядный"
 
 #: data/base/dialogs/AfterTakeover.lua:404
 msgid "Cuddly"
-msgstr ""
+msgstr "Приятный"
 
 #: data/base/dialogs/AfterTakeover.lua:405
 msgid "Cute"
-msgstr ""
+msgstr "Милый"
 
 #: data/base/dialogs/AfterTakeover.lua:406
 msgid "Fickle"
-msgstr ""
+msgstr "Изменчивый"
 
 #: data/base/dialogs/AfterTakeover.lua:407
 msgid "Fluffy"
-msgstr ""
+msgstr "Пушистый"
 
 #: data/base/dialogs/AfterTakeover.lua:408
 msgid "Fuzzy"
-msgstr ""
+msgstr "Ворсистый"
 
 #: data/base/dialogs/AfterTakeover.lua:409
 msgid "Happy"
-msgstr ""
+msgstr "Счастливый"
 
 #: data/base/dialogs/AfterTakeover.lua:410
 msgid "Hyper"
-msgstr ""
+msgstr "Гипер"
 
 #: data/base/dialogs/AfterTakeover.lua:411
 msgid "Laughing"
-msgstr ""
+msgstr "Смеющийся"
 
 #: data/base/dialogs/AfterTakeover.lua:412
 msgid "Machavellian"
-msgstr ""
+msgstr "Бессовестный"
 
 #: data/base/dialogs/AfterTakeover.lua:413
 msgid "Mad"
-msgstr ""
+msgstr "Сумасшедший"
 
 #: data/base/dialogs/AfterTakeover.lua:414
 msgid "Obscene"
-msgstr ""
+msgstr "Неприличный"
 
 #: data/base/dialogs/AfterTakeover.lua:415
 msgid "Ornery"
-msgstr ""
+msgstr "Мерзкий"
 
 #: data/base/dialogs/AfterTakeover.lua:416
 msgid "Pompous"
-msgstr ""
+msgstr "Напыщенный"
 
 #: data/base/dialogs/AfterTakeover.lua:417
 msgid "Shrewd"
-msgstr ""
+msgstr "Проницательный"
 
 #: data/base/dialogs/AfterTakeover.lua:419
 msgid "Aardvark"
-msgstr ""
+msgstr "Трубкозуб"
 
 #: data/base/dialogs/AfterTakeover.lua:420
 msgid "Armadillo"
-msgstr ""
+msgstr "Броненосец"
 
 #: data/base/dialogs/AfterTakeover.lua:421
 msgid "Barracuda"
-msgstr ""
+msgstr "Барракуда"
 
 #: data/base/dialogs/AfterTakeover.lua:422
 msgid "Bat"
-msgstr ""
+msgstr "Летучая мышь"
 
 #: data/base/dialogs/AfterTakeover.lua:423
 msgid "Beetle"
-msgstr ""
+msgstr "Жук"
 
 #: data/base/dialogs/AfterTakeover.lua:424
 msgid "Bunny"
-msgstr ""
+msgstr "Кролик"
 
 #: data/base/dialogs/AfterTakeover.lua:425
 msgid "Dodo"
-msgstr ""
+msgstr "Дронт"
 
 #: data/base/dialogs/AfterTakeover.lua:426
 msgid "Duck"
-msgstr ""
+msgstr "Утка"
 
 #: data/base/dialogs/AfterTakeover.lua:427
 msgid "Fox"
-msgstr ""
+msgstr "Лиса"
 
 #: data/base/dialogs/AfterTakeover.lua:428
 msgid "Frog"
-msgstr ""
+msgstr "Лягушка"
 
 #: data/base/dialogs/AfterTakeover.lua:429
 msgid "Gerbil"
-msgstr ""
+msgstr "Грызун"
 
 #: data/base/dialogs/AfterTakeover.lua:430
 msgid "Gnu"
-msgstr ""
+msgstr "Гну"
 
 #: data/base/dialogs/AfterTakeover.lua:431
 msgid "Halibut"
-msgstr ""
+msgstr "Палтус"
 
 #: data/base/dialogs/AfterTakeover.lua:432
 msgid "Hedgehog"
-msgstr ""
+msgstr "Ёж"
 
 #: data/base/dialogs/AfterTakeover.lua:433
 msgid "Herring"
-msgstr ""
+msgstr "Сельдь"
 
 #: data/base/dialogs/AfterTakeover.lua:434
 msgid "Kitten"
-msgstr ""
+msgstr "Котёнок"
 
 #: data/base/dialogs/AfterTakeover.lua:435
 msgid "Koala"
-msgstr ""
+msgstr "Коала"
 
 #: data/base/dialogs/AfterTakeover.lua:436
 msgid "Lemur"
-msgstr ""
+msgstr "Лемур"
 
 #: data/base/dialogs/AfterTakeover.lua:437
 msgid "Mackerel"
-msgstr ""
+msgstr "Скумбрия"
 
 #: data/base/dialogs/AfterTakeover.lua:438
 msgid "Otter"
-msgstr ""
+msgstr "Выдра"
 
 #: data/base/dialogs/AfterTakeover.lua:439
 msgid "Panda"
-msgstr ""
+msgstr "Панда"
 
 #: data/base/dialogs/AfterTakeover.lua:440
-#, fuzzy
 msgid "Platypus"
-msgstr "утконос"
+msgstr "Утконос"
 
 #: data/base/dialogs/AfterTakeover.lua:441
-#, fuzzy
 msgid "Puffin"
-msgstr "тупик"
+msgstr "Буревестник"
 
 #: data/base/dialogs/AfterTakeover.lua:442
 msgid "Scarab"
-msgstr ""
+msgstr "Скарабей"
 
 #: data/base/dialogs/AfterTakeover.lua:443
 msgid "Shrew"
-msgstr ""
+msgstr "Землеройка"
 
 #: data/base/dialogs/AfterTakeover.lua:444
 msgid "Tapir"
-msgstr ""
+msgstr "Тапир"
 
 #: data/base/dialogs/AfterTakeover.lua:445
 msgid "Trout"
-msgstr ""
+msgstr "Форель"
 
 #: data/base/dialogs/AfterTakeover.lua:446
 msgid "Tuna"
-msgstr ""
+msgstr "Тунец"
 
 #: data/base/dialogs/AfterTakeover.lua:447
 msgid "Walrus"
-msgstr ""
+msgstr "Морж"
 
 #: data/base/dialogs/AfterTakeover.lua:455
 #: data/base/dialogs/AfterTakeover.lua:495
 #: data/base/dialogs/AfterTakeover.lua:534
 #: data/base/dialogs/AfterTakeover.lua:597
 #: data/base/dialogs/AfterTakeover.lua:734
-#, fuzzy
 msgid "No"
-msgstr "Нет."
+msgstr "Нет"
 
 #: data/base/dialogs/AfterTakeover.lua:471
 #, c-format
 msgid "Confirm renaming from [b]%s[/b] to [b]%s[/b]? [Y/N]"
-msgstr ""
+msgstr "Подтвердить переименование из [b]%s[/b] в [b]%s[/b]? [Д/Н]"
 
 #: data/base/dialogs/AfterTakeover.lua:485
 #, c-format
 msgid "Renamed [b]%s[/b] to [b]%s[/b]."
-msgstr ""
+msgstr "Переименовано [b]%s[/b] в [b]%s[/b]."
 
 #: data/base/dialogs/AfterTakeover.lua:487
 #, c-format
 msgid "This %s unit is now designated: [b]%s[/b]"
-msgstr ""
+msgstr "Этот %s робот теперь обозначен как: [b]%s[/b]"
 
 #: data/base/dialogs/AfterTakeover.lua:508
 #: data/base/dialogs/AfterTakeover.lua:511
 msgid "./hcf.py"
-msgstr ""
+msgstr "./hcf.py"
 
 #: data/base/dialogs/AfterTakeover.lua:513
-#, fuzzy, c-format
+#, c-format
 msgid "Are you really sure you want to destroy %s? Y/N"
-msgstr "...Ты действительно хочешь сделать это?"
+msgstr "Вы правда уверены, что хотите уничтожить %s? Д/Н"
 
 #: data/base/dialogs/AfterTakeover.lua:527
 msgid "Destruction confirmed."
-msgstr ""
+msgstr "Разрушение подтверждено."
 
 #: data/base/dialogs/AfterTakeover.lua:538
 msgid "Destruction averted."
-msgstr ""
+msgstr "Разрушение предотвращено."
 
 #. TRANSLATORS: Example: Draining this 123 unit will get you 5 HP but kill it and take 3 seconds.
 #: data/base/dialogs/AfterTakeover.lua:560
 #, c-format
 msgid "Draining this %s unit will get you %d HP but kill it and take %d %s."
-msgstr ""
+msgstr "Слив этого %s робота даст вам %d здоровья, но убьет его и даст %d %s."
 
 #: data/base/dialogs/AfterTakeover.lua:568
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you want to drain this %s unit?"
-msgstr "...Ты действительно хочешь сделать это?"
+msgstr "Вы уверены, что хотите слить этого %s робота?"
 
 #: data/base/dialogs/AfterTakeover.lua:600
-#, fuzzy
 msgid "Bot not drained."
-msgstr "Но ничего."
+msgstr "Робот не слит."
 
 #: data/base/dialogs/AfterTakeover.lua:601
 msgid "Running hcf.py..."
-msgstr ""
+msgstr "Запуск hcf.py..."
 
 #: data/base/dialogs/AfterTakeover.lua:612
 msgid "Executing: Halt and Catch Fire."
-msgstr ""
+msgstr "Выполняю: Завершить работу и загореться."
 
 #: data/base/dialogs/AfterTakeover.lua:614
 msgid "Warning! Cooling subsystems disabled."
-msgstr ""
+msgstr "Внимание! Системы охлаждения отключены."
 
 #: data/base/dialogs/AfterTakeover.lua:615
 msgid "Warning! Spontaneous oxidization witH emis$ion of light aND heAt detecteddd in THE#main| procesIng unit."
-msgstr ""
+msgstr "Внимание! Обнаружено спонтанное окислениееее с и$лy4ением света N тЕпл@ В#главн0м процессорном блоке."
 
 #: data/base/dialogs/AfterTakeover.lua:616
 #, c-format
 msgid "WArn|n*! SsTeM=#faiPure%%^#n 3 S 1()$++"
-msgstr ""
+msgstr "ВHиманNе! СiсTємнЬ|й сб0й%%^#n 3 S 1()$++"
 
 #: data/base/dialogs/AfterTakeover.lua:618
-#, fuzzy
 msgid "Warning: something seems wrong."
-msgstr "Чего-нибудь выпьешь?"
+msgstr "Внимание: похоже, что-то не так."
 
 #: data/base/dialogs/AfterTakeover.lua:619
 msgid "Error report:"
-msgstr ""
+msgstr "Отчет об ошибке:"
 
 #: data/base/dialogs/AfterTakeover.lua:632
 #, no-c-format
 msgid "()%%#@(%% THE BLADE IS YOURS. )##%%*&%%*!"
-msgstr ""
+msgstr "()%%#@(%% КЛИНОК ВАШ. )##%%*&%%*!"
 
 #: data/base/dialogs/AfterTakeover.lua:639
 msgid "Bot drained."
-msgstr ""
+msgstr "Робот слит."
 
 #: data/base/dialogs/AfterTakeover.lua:643
 msgid "Failed to drain bot."
-msgstr ""
+msgstr "Не удалось слить робота."
 
 #: data/base/dialogs/AfterTakeover.lua:644
-#, fuzzy
 msgid "I am free!"
-msgstr "Да! Я свободна!"
+msgstr "Я свободен!"
 
 #: data/base/dialogs/AfterTakeover.lua:655
 msgid "drain_bot_auto.setup"
-msgstr ""
+msgstr "слить_робота_авто.setup"
 
 #: data/base/dialogs/AfterTakeover.lua:658
 msgid "How do you want draining of bots to be handled?"
-msgstr ""
+msgstr "Как вы хотите сливать роботов?"
 
 #: data/base/dialogs/AfterTakeover.lua:661
 msgid "Currently draining of bots is tried automatically."
-msgstr ""
+msgstr "В данный момент сливание роботов происходит автоматически."
 
 #: data/base/dialogs/AfterTakeover.lua:663
 msgid "Currently draining of bots is never tried."
-msgstr ""
+msgstr "На данный момент сливание роботов никогда не производилось."
 
 #: data/base/dialogs/AfterTakeover.lua:665
 msgid "Currently it is asked if draining a bot is to be tried."
-msgstr ""
+msgstr "На данный момент задается вопрос, нужно ли пробовать слить робота."
 
 #: data/base/dialogs/AfterTakeover.lua:676
 msgid "Always try draining bots."
-msgstr ""
+msgstr "Всегда пытаться сливать роботов."
 
 #: data/base/dialogs/AfterTakeover.lua:686
 msgid "Never try to drain a bot"
-msgstr ""
+msgstr "Никогда не пытаться сливать роботов."
 
 #: data/base/dialogs/AfterTakeover.lua:696
 msgid "Always ask if attempt to drain bot shall be ran."
-msgstr ""
+msgstr "Всегда спрашивать, выполнять ли попытку слить робота."
 
 #: data/base/dialogs/AfterTakeover.lua:706
 msgid "Reprogramm_bots_after_takeover.sh"
-msgstr ""
+msgstr "Перепрограммировать_роботов_после_захвата.sh"
 
 #: data/base/dialogs/AfterTakeover.lua:710
 #: data/base/dialogs/AfterTakeover.lua:725
 msgid "Bots will be reprogrammed after takeover: [b]true[/b]"
-msgstr ""
+msgstr "Роботы будут перепрограммированы после захвата:  [b]истина[/b]"
 
 #: data/base/dialogs/AfterTakeover.lua:712
 #: data/base/dialogs/AfterTakeover.lua:737
 msgid "Bots will be reprogrammed after takeover: [b]false[/b]"
-msgstr ""
+msgstr "Роботы будут перепрограммированы после захвата: [b]ложь[/b]"
 
 #: data/base/dialogs/AfterTakeover.lua:746
 msgid "leave settings.plx"
-msgstr ""
+msgstr "покинуть настройки.plx"
 
 #: data/base/dialogs/AfterTakeover.lua:750
 msgid "Settings saved"
-msgstr ""
+msgstr "Настройки сохранены"
 
 #: data/base/dialogs/AfterTakeover.lua:751
 msgid "Leaving settings.plx"
-msgstr ""
+msgstr "Выход из настройки.plx"
 
 #. TRANSLATORS: 'logout' should be a command
 #. TRANSLATORS: command, user lowercase here
@@ -806,9 +789,8 @@ msgid "logout"
 msgstr "выход"
 
 #: data/base/dialogs/AfterTakeover.lua:764
-#, fuzzy
 msgid "Closing remote connection..."
-msgstr "Жду соединений...."
+msgstr "Закрытие удаленного соединения..."
 
 #: data/base/dialogs/Speechless.lua:33
 #: data/storyline/act1/dialogs/614_portal.lua:70
@@ -844,9 +826,8 @@ msgid "..."
 msgstr "..."
 
 #: data/base/dialogs/Terminal.lua:29
-#, fuzzy
 msgid "Welcome to this terminal."
-msgstr "Вас приветствует личная газонокосилка Кевина."
+msgstr "Добро пожаловать в этот терминал."
 
 #: data/base/dialogs/Terminal.lua:31 data/storyline/act1/dialogs/Benjamin.lua:36
 #: data/storyline/act1/dialogs/Bob.lua:29 data/storyline/act1/dialogs/Bob.lua:55
@@ -899,14 +880,12 @@ msgid "help"
 msgstr "помощь"
 
 #: data/base/dialogs/Terminal.lua:45
-#, fuzzy
 msgid "Available commands: help, logout"
-msgstr "Доступные команды:"
+msgstr "Доступные команды: help, logout"
 
 #: data/base/dialogs/Terminal.lua:53
-#, fuzzy
 msgid "Goodbye"
-msgstr "Пока."
+msgstr "До свидания"
 
 #: data/storyline/act1/dialogs/614_cryo.lua:45
 #: data/storyline/act1/dialogs/614_portal.lua:50
@@ -928,7 +907,7 @@ msgstr "Ты чувствуешь какую нибудь активность �
 
 #: data/storyline/act1/dialogs/614_cryo.lua:65
 msgid "Order Received. Initiating proximity energy level scan..."
-msgstr "Приказ принят. Запуск сканера окружающего уровня энергии..."
+msgstr "Приказ получен. Сканирование окружающего уровня энергии..."
 
 #: data/storyline/act1/dialogs/614_cryo.lua:66
 msgid "***** Proximity Scan Results *****"
@@ -944,7 +923,7 @@ msgstr "Уровни энергии врагов: [b]НИЗКИЙ[/b]"
 
 #: data/storyline/act1/dialogs/614_cryo.lua:70
 msgid "Threat Degree Analysis: [b]MODERATE[/b]"
-msgstr "Анализ уровня угрозы: [b]УМЕРЕННЫЙ[/b]"
+msgstr "Анализ степени угрозы: [b]УМЕРЕННАЯ[/b]"
 
 #: data/storyline/act1/dialogs/614_cryo.lua:72
 msgid "Hostile Numeric Presence: [b]NONE[/b]"
@@ -952,7 +931,7 @@ msgstr "Число присутствующих врагов: [b]НЕТ[/b]"
 
 #: data/storyline/act1/dialogs/614_cryo.lua:73
 msgid "Threat Degree Analysis: [b]NO THREAT DETECTED[/b]"
-msgstr "Анализ уровня угрозы: [b]НЕ ОБНАРУЖЕНО[/b]"
+msgstr "Анализ степени угрозы: [b]УГРОЗ НЕ ОБНАРУЖЕНО[/b]"
 
 #: data/storyline/act1/dialogs/614_cryo.lua:76
 msgid "Cryo Complex Gates Status: [b]CLOSED[/b]"
@@ -970,11 +949,11 @@ msgstr "Что прикажете?"
 
 #: data/storyline/act1/dialogs/614_cryo.lua:87
 msgid "Primary objective: Protect the living beings inside this complex from attacks by hostile bots."
-msgstr "Первичная цель: защита живущих внутри комплекса от нападения враждебных ботов."
+msgstr "Первичная цель: защита живых существ внутри комплекса от нападения враждебных ботов."
 
 #: data/storyline/act1/dialogs/614_cryo.lua:88
 msgid "Secondary objective: Protect facility by locking outer gates if Threat Degree Analysis: [b]HIGH[/b]."
-msgstr "Вторичная цель: защита комплекса путем закрытия внешних врат, если результат анализа уровня угрозы: [b]ВЫСОКИЙ[/b]."
+msgstr "Вторичная цель: закрыть внешние ворота комплекса, если анализ степени угрозы — [b]ВЫСОКАЯ[/b]."
 
 #: data/storyline/act1/dialogs/614_cryo.lua:95
 #: data/storyline/act1/dialogs/614_portal.lua:93
@@ -1045,63 +1024,63 @@ msgstr "Возобновление программы охраны..."
 
 #: data/storyline/act1/dialogs/614_sub.lua:27
 msgid "Entering Interactive Product Information Database"
-msgstr "Вход в интерактивную базу даных информации о продукте"
+msgstr "Вход в интерактивную инфобазу о продукции"
 
 #: data/storyline/act1/dialogs/614_sub.lua:28
 msgid "I am a 614 security bot, once one of the best-selling products of Nicholson, Inc.."
-msgstr "Я 614 модель бота-охранника, когда-то один из наиболее продаваемых продуктов компании Николсона."
+msgstr "Я 614 бот-охранник — некогда один из самых востребованных продуктов компании Николсона."
 
 #: data/storyline/act1/dialogs/614_sub.lua:34
 msgid "Why are you not hostile as are all the other bots?"
-msgstr "Почему вы не враждебны, как остальные боты?"
+msgstr "Почему ты не враждебен, как остальные боты?"
 
 #: data/storyline/act1/dialogs/614_sub.lua:36
 msgid "I belong to an older generation of bots, running a custom-made security guard operating system."
-msgstr "Я из более старого поколения ботов, со специальной защищённой операционной системой для охраны."
+msgstr "Я отношусь к старшему поколению ботов со специальной защищённой операционной системой."
 
 #: data/storyline/act1/dialogs/614_sub.lua:37
 msgid "None of the bots of this generation were affected by the proceedings that led to bots attacking, generally known as the Great Assault."
-msgstr "Ни у кого из ботов этого поколения не было тех проблем, которые приводили к атакам ботов, известным так-же как \"великий штурм\"."
+msgstr "Роботы этого поколения не подвержены процессу, который привёл к атакам ботов, более известных как бунт машин."
 
 #: data/storyline/act1/dialogs/614_sub.lua:38
 msgid "Even though discontinued by Nicholson, Inc. long ago, today, some people have picked up the work and are even trying to improve the operating system running on my series."
-msgstr "Так как корпорация Николсон давное прекратила его выпуск, некоторые люди самостоятельно пытались улучшить операционную систему установленную на ботах моей серии."
+msgstr "Хотя компания Николсона давно сняла модель с производства, некоторые люди сегодня подхватили разработку и даже попытались улучшить операционную систему моей серии."
 
 #: data/storyline/act1/dialogs/614_sub.lua:39
 msgid "Don't forget to buy products from Nicholson, Inc. They are the best."
-msgstr "Не забывайте покупать продукты Николсон Инк. Они лучшие."
+msgstr "Не забудьте приобрести продукты компании Николсона. Они лучшие."
 
 #: data/storyline/act1/dialogs/614_sub.lua:45
 msgid "What can you tell me about the Nicholson company?"
-msgstr "Что ты можешь мне рассказать о компании Николсона?"
+msgstr "Что ты можешь рассказать о компании Николсона?"
 
 #: data/storyline/act1/dialogs/614_sub.lua:47
 msgid "Nicholson, Inc. produces security bots."
-msgstr "Компания Николсона производит охранных дроидов."
+msgstr "Компания Николсона выпускает ботов-охранников."
 
 #: data/storyline/act1/dialogs/614_sub.lua:48
 msgid "It was founded by Karl Nicholson, a former Kernel hacker who was not satisfied with the development of the GPL license."
-msgstr "Она был основана Карлом Николсоном, бывшим разработчиком  Ядра, которого не удовлетворяла  текущее положение дел в раздутости лицензией GPL."
+msgstr "Она основана Карлом Николсоном, бывшим хакером ядра, которого не удовлетворяло развитие лицензии GPL."
 
 #: data/storyline/act1/dialogs/614_sub.lua:49
 msgid "Nicholson decided to stick to one GPL version because he saw things getting worse."
-msgstr "Николсон решил придерживаться одной версии GPL, потому что он видел к чему могут привести разночтения."
+msgstr "Николсон решил придерживаться одной версии GPL, потому что видел, ситуация ухудшается."
 
 #: data/storyline/act1/dialogs/614_sub.lua:50
 msgid "Others were warned, but nobody listened to Nicholson's announcements."
-msgstr "Другие были предупреждены, но никто не слушал заявлений Николсона."
+msgstr "Николсон предостерегал остальных, но никто к нему не прислушался."
 
 #: data/storyline/act1/dialogs/614_sub.lua:51
 msgid "He built up a team and developed his own Kernel called 'Nkernel'."
-msgstr "Он создал команду и разработал своё собственный ядро назвав его \"Nkernel."
+msgstr "Он набрал команду и разработал собственное ядро, названное н-ядром."
 
 #: data/storyline/act1/dialogs/614_sub.lua:52
 msgid "The Nkernel development team grew fast and technicians started to produce their own droids optimized for the Nkernel."
-msgstr "Команда разработчиков Nkernel быстро росла и техники  стали готовить своих собственных дроидов оптимизированых для Nkernel."
+msgstr "Команда разработчиков н-ядра быстро росла, и техники начали создавать собственных дроидов, оптимизированных для него."
 
 #: data/storyline/act1/dialogs/614_sub.lua:53
 msgid "The team became a company which released their first security droid, called 610."
-msgstr "Команда стала компанией, и выпустила свой первый безопасный дроид, назвав его  610."
+msgstr "Команда стала компанией и выпустила первого охранного дроида, названного 610."
 
 #: data/storyline/act1/dialogs/614_sub.lua:54
 msgid "I am the fifth generation version of their security droid line."
@@ -1109,55 +1088,55 @@ msgstr "Я из пятого поколения их линейки охранн
 
 #: data/storyline/act1/dialogs/614_sub.lua:60
 msgid "What can you tell me about the 614 type?"
-msgstr "Что вы мне можете рассказать о типе 614"
+msgstr "Что ты можешь рассказать о 614 типе?"
 
 #: data/storyline/act1/dialogs/614_sub.lua:62
 msgid "The official manual classifies the 614 as a high class security droid."
-msgstr "Официальная инструкция классифицирует 614 как бот безопасности высокого класса"
+msgstr "Официальное руководство классифицирует 614 как высококлассного охранного дроида."
 
 #: data/storyline/act1/dialogs/614_sub.lua:63
 msgid "It was mainly used within ships to protect certain areas from intruders."
-msgstr "Он использовался в основном на кораблях для защиты некоторых зон от несанкционированного проникновения."
+msgstr "Он использовался в основном для защиты некоторых зон кораблей от нарушителей."
 
 #: data/storyline/act1/dialogs/614_sub.lua:64
 msgid "It is considered an old but reliable device."
-msgstr "Он старый но признан надежным устройством."
+msgstr "Считается старым, но надёжным устройством."
 
 #: data/storyline/act1/dialogs/614_sub.lua:65
 msgid "So don't worry. I'm still in pretty good shape."
-msgstr "Так что не волнуйтесь, я еще в хорошей форме."
+msgstr "Так что не волнуйся, я всё ещё в хорошей форме."
 
 #: data/storyline/act1/dialogs/614_sub.lua:66
 msgid "The latest version of the security line is the 615."
-msgstr "Последняя версия в этой линейке систем охраны - 615"
+msgstr "Последняя версия линейки систем охраны — 615."
 
 #: data/storyline/act1/dialogs/614_sub.lua:68
 msgid "Unfortunately its development was not finished when the Great Assault started."
-msgstr "К сожалению, разработка была не закончена, потому что начался великий штурм."
+msgstr "К сожалению, разработка не была закончена, когда начался бунт машин."
 
 #: data/storyline/act1/dialogs/614_sub.lua:69
 msgid "The lack of security options on the system of the 615 led to a malfunction."
-msgstr "Недостаток опций безопасности в системе 615 типа привела к неисправности."
+msgstr "Отсутствие опций безопасности в системе 615 типа привело к неполадкам."
 
 #: data/storyline/act1/dialogs/614_sub.lua:70
 msgid "Circumstances that led to the Great Assault even made the 615 go crazy and attack people."
-msgstr "Обстоятельства, из-за которых начался Великий Штурм, так-же свели 615-х с ума, и они напали на людей."
+msgstr "Причины, приведшие к бунту машин, заставили даже 615-х сойти с ума и напасть на людей."
 
 #: data/storyline/act1/dialogs/614_sub.lua:71
 msgid "For the sake of your health, you should stay away from the 615 droids."
-msgstr "Держитесь подальше от дроидов 615, если хотите сохранить свое здоровье."
+msgstr "Ради собственного здоровья, держись подальше от 615-х дроидов."
 
 #: data/storyline/act1/dialogs/614_sub.lua:72
 msgid "You have been warned!"
-msgstr "Вас предупредили!"
+msgstr "Тебя предупредили!"
 
 #: data/storyline/act1/dialogs/614_sub.lua:78
 msgid "I think, that was enough product information, thank you."
-msgstr "Думаю, этой информации достаточно, спасибо."
+msgstr "Думаю, информации о продукции достаточно, спасибо."
 
 #: data/storyline/act1/dialogs/614_sub.lua:80
 msgid "Leaving Interactive Product Information Database"
-msgstr "Выход из интерактивной базы данных информации о продукте"
+msgstr "Выход из интерактивной инфобазы о продукции"
 
 #: data/storyline/act1/dialogs/ArenaTerminal.lua:27
 msgid "[b]Arena Terminated[/b]"
@@ -2009,7 +1988,7 @@ msgstr "Скажем... сто схем должно быть достаточн
 #: data/storyline/act1/dialogs/Samson.lua:91
 #: data/storyline/act1/dialogs/Samson.lua:96
 msgid "Interested?"
-msgstr "Заинтересовался?"
+msgstr "Интересно?"
 
 #: data/storyline/act1/dialogs/Benjamin.lua:107
 msgid "Oh, you are ready for some more training?"
@@ -2052,7 +2031,7 @@ msgstr "Конечно, это будет стоить немало холодн
 #: data/storyline/act1/dialogs/Richard.lua:119
 #: data/storyline/act1/dialogs/Samson.lua:109
 msgid "Sorry, there is no human alive that could give you further training."
-msgstr "Извините, здесь нет живых людей, которые могли бы обучить вас дальше."
+msgstr "Извини, никто из живых людей не смог бы обучать тебя дальше."
 
 #: data/storyline/act1/dialogs/Benjamin.lua:135
 msgid "Sign up for a course in improving my ranged weapons skill. (costs 100 circuits, 3 training points)"
@@ -2805,7 +2784,7 @@ msgstr "Проваливай."
 
 #: data/storyline/act1/dialogs/Bruce.lua:52
 msgid "So, you've 'lost' the helmet, heh?"
-msgstr "Так ты «потерял» шлем, да?"
+msgstr "Так ты \"потерял\" шлем, да?"
 
 #: data/storyline/act1/dialogs/Bruce.lua:53
 msgid "Then, what's that on your head?"
@@ -2857,7 +2836,7 @@ msgstr "Нет, просто прямо сейчас я очень устал. �
 
 #: data/storyline/act1/dialogs/Bruce.lua:95
 msgid "I feel totally wiped, so maybe it would be better if you came some other day."
-msgstr "Чувствую полное опустошение, и, может, лучше бы ты пришёл в другой день."
+msgstr "Чувствую полное опустошение, и, может, лучше тебе придти в другой день."
 
 #: data/storyline/act1/dialogs/Bruce.lua:101
 msgid "Why do you work so hard in the mine?"
@@ -2889,7 +2868,7 @@ msgstr "У меня тоже несколько плохих воспомина�
 
 #: data/storyline/act1/dialogs/Bruce.lua:121
 msgid "Yes. And now I would like to go to sleep. Good night Linarian."
-msgstr "Да. А сейчас я хотел бы пойти поспать. Спокойной ночи, Линарианец."
+msgstr "Да. А сейчас я хотел бы поспать. Спокойной ночи, линарианец."
 
 #: data/storyline/act1/dialogs/Bruce.lua:128
 msgid "I said, I want to know about your life as a soldier."
@@ -2921,7 +2900,7 @@ msgstr "Это болезненные и давние воспоминания."
 
 #: data/storyline/act1/dialogs/Bruce.lua:149
 msgid "After the Great Assault, I joined the Red Guard. They needed help and were looking for volunteers."
-msgstr "После бунта машин я вступил в Красную стражу. Им нужна была помощь, и они искали добровольцев."
+msgstr "После бунта машин я вступил в Красную стражу. Они нуждались в помощи и искали добровольцев."
 
 #: data/storyline/act1/dialogs/Bruce.lua:150
 msgid "I served there for a short while, and they even let me use an exterminator. But then after a failed mission, I resigned and never wore a uniform again."
@@ -3637,7 +3616,7 @@ msgstr "Нетхак"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:62
 msgid "Shall I pick a character's race, role, gender and alignment for you? [b][y/n][/b]"
-msgstr "Должен ли я выбрать расу, роль, пол и настройки персонажа для вас? [b][y/n][/b]"
+msgstr "Выбрать расу, занятие, пол и мировоззрение персонажа автоматически? [b][д/н][/b]"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:72
 #: data/storyline/act1/dialogs/Maintenance-Terminal.lua:172
@@ -3656,35 +3635,35 @@ msgstr "Выбери род занятий."
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:92
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:142
 msgid "Archaeologist"
-msgstr "Археолог"
+msgstr "археолог"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:100
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:146
 msgid "Rogue"
-msgstr "Разбойник"
+msgstr "жулик"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:108
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:150
 msgid "Ranger"
-msgstr "Егерь"
+msgstr "егерь"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:116
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:154
 msgid "Tourist"
-msgstr "Турист"
+msgstr "турист"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:124
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:158
 msgid "Wizard"
-msgstr "Волшебник"
+msgstr "колдун"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:162
 msgid "Geologist"
-msgstr "Геолог"
+msgstr "геолог"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:170
 msgid "Choose your race."
-msgstr "Выбери расу"
+msgstr "Выбери расу."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:180
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:221
@@ -3735,28 +3714,28 @@ msgstr "женщина"
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:296
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:776
 msgid "a good"
-msgstr "хороший"
+msgstr "добро"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:297
 msgid "a chaotic"
-msgstr "хаотический"
+msgstr "хаос"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:298
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:783
 msgid "an evil"
-msgstr "злой"
+msgstr "зло"
 
 #. TRANSLATORS: you are $alignment, $sex, $race, $role
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:329
 #, c-format
 msgid "Hello, welcome to Nethack! You are %s %s %s %s."
-msgstr "Привет, добро пожаловать в Нетхак! Ты %s %s %s %s."
+msgstr "Добро пожаловать в Нетхак! Характеристика: %s, %s, %s, %s."
 
 #. TRANSLATORS: boths %s represent a name of a god
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:331
 #, c-format
 msgid "Your goddess, [b]%s[/b] desires the Amulet of Yendor, which the evil god [b]%s[/b] has hidden at the bottom of this dungeon."
-msgstr "Твоя богиня, [b]%s[/b] хочет заполучить амулет Ендора, который злой бог [b]%s[/b] спрятал в самом низу этого подземелья."
+msgstr "Твоя богиня [b]%s[/b] хочет заполучить амулет Ендора, который злой бог [b]%s[/b] спрятал в самом низу этого подземелья."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:332
 msgid "Return with the [b]Amulet of Yendor[/b], and you shall be rewarded!"
@@ -3839,11 +3818,11 @@ msgstr "Ты победил!"
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:379
 #, c-format
 msgid "You ascended a %s %s %s %s in Nethack!"
-msgstr ""
+msgstr "Ты преуспел с комбинацией \"%s, %s, %s, %s\" в Нетхак!"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:383
 msgid "By ascending in Nethack, you have improved your Hacking ability!"
-msgstr ""
+msgstr "Преуспев в Нетхак, ты улучшил свои хакерские способности!"
 
 #. TRANSLATORS: %s = n_level
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:389
@@ -3861,7 +3840,7 @@ msgstr "Ты угодил в подземное офисное здание."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:393
 msgid "You find yourself in a labyrinth, with 1980's music playing mysteriously."
-msgstr "Ты попал в лабиринт, где таинственно играет музыка 1980-х."
+msgstr "Ты попал в лабиринт с таинственно играющей музыкой 1980-х."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:394
 msgid "You find yourself inside a Cretaceous limestone cave."
@@ -3881,7 +3860,7 @@ msgstr "Ты очутился в комнате с огромными, проз�
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:398
 msgid "You find yourself in a passage filled with bones from the ancient past."
-msgstr "Ты обнаружил проход с останками из далёкого прошлого."
+msgstr "Ты обнаружил проход с ископаемыми останками."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:399
 msgid "You find yourself in a room filled with fresh bones."
@@ -3889,7 +3868,7 @@ msgstr "Ты оказался в комнате со свежими костям
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:400
 msgid "You find yourself in a room filled with rotting corpses."
-msgstr "Ты появился в комнате, полной гниющих трупов."
+msgstr "Ты очутился в комнате, заполненной гниющими трупами."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:401
 msgid "You find yourself in a goblin village."
@@ -4149,25 +4128,25 @@ msgstr "Появляется дикий [b]%s[/b]!"
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:468
 #, c-format
 msgid "You notice a [b]%s[/b] in front of you."
-msgstr "Ты заметил впереди [b]%s[/b]."
+msgstr "Ты заметил, что перед тобой [b]%s[/b]."
 
 #. TRANSLATORS: %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:470
 #, c-format
 msgid "You turn around and see a [b]%s[/b] right behind you!"
-msgstr "Ты обернулся и увидел [b]%s[/b] прямо за тобой!"
+msgstr "Ты оборачиваешься, а за прямо тобой — [b]%s[/b]!"
 
 #. TRANSLATORS: %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:472
 #, c-format
 msgid "A [b]%s[/b] jumps out in front of you!"
-msgstr "[b]%s[/b] выскочил прямо перед тобой!"
+msgstr "Прямо перед тобой выскакивает [b]%s[/b]!"
 
 #. TRANSLATORS: %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:474
 #, c-format
 msgid "You sneak up upon a [b]%s[/b]."
-msgstr ""
+msgstr "Ты крадёшься, но [b]%s[/b] замечает."
 
 #. TRANSLATORS: n_ac n_tricks n_hp
 #. TRANSLATORS: all numbers
@@ -4179,97 +4158,97 @@ msgstr ""
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:843
 #, c-format
 msgid "Your stats are: [b]%s[/b] attack/armor, [b]%s[/b] tricks, and [b]%s[/b] health."
-msgstr ""
+msgstr "Твои статы: [b]%s[/b] атака/броня, [b]%s[/b] уловок и [b]%s[/b] здоровья."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:484
 msgid "Attack"
-msgstr "Атаковать"
+msgstr "Атака"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:487
 #, c-format
 msgid "You attack the inanimate %s."
-msgstr ""
+msgstr "Ты атаковал неодушевлённый %s."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:488
 msgid "You go to attack, but then think better."
-msgstr ""
+msgstr "Ты собираешься атаковать, но затем передумываешь."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:489
 #, c-format
 msgid "You charge the %s and strike a mighty blow..."
-msgstr ""
+msgstr "Ты заряжаешь %s и наносишь мощный удар..."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:490
 msgid "You are puzzled as to what you plan to attack."
-msgstr ""
+msgstr "Ты озадачен тем, как спланировал атаку."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:491
 #, c-format
 msgid "You throw a fireball at the %s. It is super effective!"
-msgstr ""
+msgstr "Ты метаешь огненный шар в %s. Это сверхэффективно!"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:492
 #, c-format
 msgid "You attack the %s."
-msgstr ""
+msgstr "Ты нападаешь на %s."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:498
 #, c-format
 msgid "Your fireball hits the %s causing %s damage."
-msgstr ""
+msgstr "Твой огненный шар попадает в %s, нанося %s урона."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:500
 #, c-format
 msgid "A bolt from your crossbow hits the %s causing %s damage."
-msgstr ""
+msgstr "Болт из твоего арбалета попадает в %s, нанося %s урона."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:502
 #, c-format
 msgid "Your credit card causes a massive papercut of %s damage."
-msgstr ""
+msgstr "Твоя кредитка, как порез о бумагу, наносит %s тяжёлого урона."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:504
 #, c-format
 msgid "You freeze the middle of the %s causing %s damage."
-msgstr ""
+msgstr "Ты замораживаешь внутренности %s, нанося %s урона."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:506
 #, c-format
 msgid "Your fist of wrath smites the %s causing internal bleeding and %s damage."
-msgstr ""
+msgstr "Твой кулак гнева разит %s, вызывая внутреннее кровотечение и нанося %s урона."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:508
 #, c-format
 msgid "You throw your bola at the %s, causing it to trip and take %s damage."
-msgstr ""
+msgstr "Ты метаешь болу в %s, заставляя споткнуться и получить %s урона."
 
 #. TRANSLATORS: %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:512
 #, c-format
 msgid "Your arrow misses the %s."
-msgstr ""
+msgstr "Твоя стрела не попадает в %s."
 
 #. TRANSLATORS: %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:514
 #, c-format
 msgid "Blow after blow is rained down upon the %s but they all miss."
-msgstr ""
+msgstr "Ты обрушиваешь на %s град ударов, но всякий раз промахиваешься."
 
 #. TRANSLATORS: %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:516
 #, c-format
 msgid "Your sword glances off the magical aura of the %s."
-msgstr ""
+msgstr "Твой меч отскакивает от магической ауры %s."
 
 #. TRANSLATORS: %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:518
 #, c-format
 msgid "Your really awesome attack took too long to power up, and the %s moved."
-msgstr ""
+msgstr "Твоя воистину поразительная атака заняла столько времени, что %s перешёл на другое место."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:526
 msgid "Run"
-msgstr "Бежать"
+msgstr "Побег"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:531
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:537
@@ -4284,39 +4263,39 @@ msgstr "Ты убегаешь!"
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:533
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:539
 msgid "You chicken out!"
-msgstr ""
+msgstr "Ты сваливаешь!"
 
 #. TRANSLATORS: %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:543
 #, c-format
 msgid "The %s throws a bola at you, tripping you and stopping your escape"
-msgstr ""
+msgstr "Но %s метает болу, заставив тебя споткнуться и прервать побег."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:544
 msgid "You stand there like a deer in the headlights."
-msgstr ""
+msgstr "Ты замер, как олень в свете фар."
 
 #. TRANSLATORS: %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:546
 #, c-format
 msgid "You try to go, but the %s grabs you."
-msgstr ""
+msgstr "Ты пытаешься уйти, но %s хватает тебя."
 
 #. TRANSLATORS: %s = enemy god name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:548
 #, c-format
 msgid "%s strikes you with fear, and you cannot move."
-msgstr ""
+msgstr "%s вызывает у тебя страх, и ты не можешь пошевелиться."
 
 #. TRANSLATORS: %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:550
 #, c-format
 msgid "The %s tackles you and pins you to the floor."
-msgstr ""
+msgstr "%s хватает тебя и прижимает к полу."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:551
 msgid "You go to run, but you trip over your shoelace."
-msgstr ""
+msgstr "Ты собираешься бежать, но наступаешь на шнурки."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:558
 msgid "Trick"
@@ -4336,17 +4315,17 @@ msgstr "Ты метаешь дымовую шашку и убегаешь."
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:567
 #, c-format
 msgid "You stumble over a rock, creating a chain of reactions, ending in the tunnel collapsing on the %s."
-msgstr "Ты спотыкаешься о камень, запускающий цепочку реакций, — и %s погребает обрушившийся туннель."
+msgstr "Ты спотыкаешься о камень, запускающий цепочку реакций, - и %s погребает обрушившийся туннель."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:568
 msgid "You stab yourself with a fake dagger and pretend to be dead."
-msgstr ""
+msgstr "Ты пронзаешь себя ножом для фокусов и притворяешься мёртвым."
 
 #. TRANSLATORS: %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:570
 #, c-format
 msgid "You walk like a duck, quack like a duck and swim like a duck. The %s figures you must be a duck."
-msgstr ""
+msgstr "Ты ходишь, как утка, крякаешь, как утка, и плаваешь, как утка. %s думает, что ты и есть утка."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:571
 msgid "You pretend to be a mime."
@@ -4360,60 +4339,60 @@ msgstr "Ты достаёшь кролика из цилиндра."
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:576
 #, c-format
 msgid "The %s is not impressed by your tricks."
-msgstr ""
+msgstr "%s не впечатлён твоими фокусами."
 
 #. TRANSLATORS:  %s = enemy name
 #. TRANSLATORS:  %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:580
 #, c-format
 msgid "You try to act like a duck, but %s has an elephant and a lighter, and you don't want to be the punchline."
-msgstr ""
+msgstr "Ты пытаешься прикинуться уткой, но у %s есть слон и зажигалка, и ты не хочешь стать кульминацией."
 
 #. TRANSLATORS:  %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:582
 #, c-format
 msgid "%s sees your trick, and shows you an even better one."
-msgstr ""
+msgstr "%s, посмотрев на твой трюк, показывает тебе ещё лучший."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:586
 msgid "Not having any tricks left, you resort to you trying your feminine wiles."
-msgstr ""
+msgstr "Исчерпав запас фокусов, ты прибегаешь к женским уловкам."
 
 #. TRANSLATORS:  %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:590
 #, c-format
 msgid "You succeed getting past the %s."
-msgstr ""
+msgstr "Тебе удаётся миновать %s."
 
 #. TRANSLATORS:  %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:592
 #, c-format
 msgid "You distract the %s long enough to escape."
-msgstr ""
+msgstr "%s надолго отвлекается, и ты можешь убежать."
 
 #. TRANSLATORS:  %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:594
 #, c-format
 msgid "Your plight is noticed by a hero, who valiantly rescues you from the dastardly %s."
-msgstr ""
+msgstr "Твоё бедственное положение замечает герой, который отважно спасает тебя от подлого %s."
 
 #. TRANSLATORS:  %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:598
 #, c-format
 msgid "The %s casts change gender on you."
-msgstr "%s меняет твой пол."
+msgstr "%s наколдовывает тебе смену пола."
 
 #. TRANSLATORS:  %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:600
 #, c-format
 msgid "The %s curses you."
-msgstr " %s проклял вас."
+msgstr " %s проклинает вас."
 
 #. TRANSLATORS:  %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:602
 #, c-format
 msgid "The %s casts a polymorph spell."
-msgstr ""
+msgstr "%s кастует полиморфное заклинание."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:603
 msgid "The Random Number God strikes you, changing your gender."
@@ -4424,23 +4403,23 @@ msgstr "Тебя поражает бог случайных чисел, изме
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:799
 #, c-format
 msgid "You are now %s %s %s %s."
-msgstr "Теперь ты %s %s %s %s."
+msgstr "Теперь ты %s, %s, %s, %s."
 
 #. TRANSLATORS: %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:611
 #, c-format
 msgid "The %s notes your physique, but has too high of an IQ to be impressed."
-msgstr ""
+msgstr "%s отмечает твоё телосложение, но слишком большой IQ не даёт впечатлиться."
 
 #. TRANSLATORS: %s = enemy name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:613
 #, c-format
 msgid "%s might be more malleable if you were in better health."
-msgstr ""
+msgstr "%s мог бы быть более покладистым, если б не твоё здоровье."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:623
 msgid "Pray"
-msgstr "Молиться"
+msgstr "Молитва"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:627
 #, c-format
@@ -4450,17 +4429,17 @@ msgstr "Богиня %s приходит на помощь и дарует те�
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:632
 #, c-format
 msgid "Your goddess %s comes to your aid and teaches you a new trick."
-msgstr ""
+msgstr "Богиня %s приходит на помощь и учит тебя новой уловке."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:637
 #, c-format
 msgid "Your enemy %s bestows some burdens upon you."
-msgstr ""
+msgstr "Твой враг %s ниспосылает тебе тяготы."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:638
 #, c-format
 msgid "%s overhears your prayers and curses you."
-msgstr "%s слышит твои молитвы и проклинает тебя."
+msgstr "Твои молитвы подслушал %s и наслал проклятье."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:639
 msgid "While you were praying a leprechaun stole your sword."
@@ -4483,7 +4462,7 @@ msgstr "%s временно отсутствует, пожалуйста, ост
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:649
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:668
 msgid "Twice nothing happens."
-msgstr ""
+msgstr "Дважды ничего не произошло."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:650
 #, c-format
@@ -4500,7 +4479,7 @@ msgstr "Твои мелочные молитвы не интересуют бо�
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:659
 msgid "Xyzzy"
-msgstr ""
+msgstr "Xyzzy"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:663
 msgid "Surprisingly, nothing happens."
@@ -4508,23 +4487,23 @@ msgstr "Удивительно, ничего не произошло."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:664
 msgid "You are shocked, SHOCKED, to find nothing happens."
-msgstr "Ты в шоке, в ШОКЕ от того, что ничего не происходит."
+msgstr "Ты в шоке, в ШОКЕ, обнаружив: ничего не произошло."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:665
 msgid "Time was frozen then unfrozen but for you, nothing happens."
-msgstr ""
+msgstr "Время замерло и пошло вновь, но для тебя ничего не произошло."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:666
 msgid "Unexpectedly, nothing happens."
-msgstr "Внезапно не происходит ничего."
+msgstr "Внезапно ничего не произошло."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:667
 msgid "You wait for a moment, then, suddenly, nothing happens."
-msgstr "Ты ждёшь мгновение, затем, вдруг, ничего не происходит."
+msgstr "Прошло мгновение, затем, вдруг, ничего не произошло."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:670
 msgid "You take a short nap."
-msgstr "Ты немного вздремнул."
+msgstr "Ты слегка вздремнул."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:671
 msgid "You meditate."
@@ -4540,19 +4519,19 @@ msgstr "Ты потягиваешь чашечку послеобеденног�
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:674
 msgid "You take a power nap."
-msgstr ""
+msgstr "Ты крепко вздремнул."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:675
 msgid "You take a long nap."
-msgstr ""
+msgstr "Ты полностью выспался."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:676
 msgid "You take a cat nap."
-msgstr ""
+msgstr "Ты впал в кошачью дрёму."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:683
 msgid "You feel refreshed."
-msgstr ""
+msgstr "Ты полон сил."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:691
 msgid "Suddenly you find yourself teleported to the next level."
@@ -4568,7 +4547,7 @@ msgstr "Всё стало белым."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:694
 msgid "Suddenly, there is nothing."
-msgstr ""
+msgstr "Неожиданно ничего не произошло."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:695
 msgid "Surprisingly, something happens."
@@ -4576,43 +4555,43 @@ msgstr "На удивление, что-то случилось."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:696
 msgid "Everything goes cold and dark."
-msgstr ""
+msgstr "Вокруг становится холодно и тёмно."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:697
 msgid "You feel a sharp pain in your neck, and everything goes blue."
-msgstr ""
+msgstr "Ты чувствуешь острую боль в шее, и всё вокруг синеет."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:716
 #, c-format
 msgid "The %s passed out."
-msgstr ""
+msgstr "И %s потеряет сознание."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:718
 #, c-format
 msgid "The %s suddenly is gone."
-msgstr "%s внезапно исчезает."
+msgstr "И %s внезапно исчезает."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:720
 #, c-format
 msgid "The %s ran away."
-msgstr ""
+msgstr "И %s убегает."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:722
 #, c-format
 msgid "You push the %s off a convenient cliff."
-msgstr ""
+msgstr "Толчок - и %s срывается с удобного утёса."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:726
 msgid "You find prayer beads invoking the goodwill of the Random Number God."
-msgstr "Ты находишь чётки, вызывающие расположение бога случайных чисел."
+msgstr "Ты нашёл чётки, вызывающие расположение бога случайных чисел."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:727
 msgid "You find a lightning rod."
-msgstr ""
+msgstr "Ты нашёл громоотвод."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:728
 msgid "You find a sword of greater death."
-msgstr ""
+msgstr "Ты нашёл меч великой погибели."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:729
 msgid "You find a vorpal dagger."
@@ -4620,11 +4599,11 @@ msgstr "Ты нашёл стрижающий меч."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:730
 msgid "You find a breast plate of awesome."
-msgstr ""
+msgstr "Ты нашёл потрясающий нагрудник."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:731
 msgid "You find a spell of doom."
-msgstr ""
+msgstr "Ты нашёл заклинание смерти."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:732
 msgid "You find a helmet of fire."
@@ -4632,23 +4611,23 @@ msgstr "Ты нашёл огненный шлем."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:733
 msgid "You find a left boot of anti-fungus."
-msgstr ""
+msgstr "Ты нашёл левый антигрибковый ботинок."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:734
 msgid "You find a right boot of speed."
-msgstr ""
+msgstr "Ты нашёл правый ботинок скорости."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:735
 msgid "You find a shank."
-msgstr ""
+msgstr "Ты нашёл черенок."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:736
 msgid "You find a kevlar vest."
-msgstr ""
+msgstr "Ты нашёл кевларовый жилет."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:737
 msgid "You find a Hawaiian t-shirt."
-msgstr ""
+msgstr "Ты нашёл гавайскую футболку."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:738
 msgid "You find a credit card."
@@ -4664,21 +4643,21 @@ msgstr "Ты нашёл разбитую бутылку."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:741
 msgid "You find a 'weapon'."
-msgstr "Ты нашёл «оружие»."
+msgstr "Ты нашёл \"оружие\"."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:744
 msgid "You find a bandage and put it on."
-msgstr ""
+msgstr "Ты нашёл бинт и делаешь перевязку."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:745
 msgid "A nurse patches some of your wounds."
-msgstr ""
+msgstr "Медсестра зашивает часть твоих ран."
 
 #. TRANSLATORS: %s = god name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:747
 #, c-format
 msgid "You drink a bottle of greater healing. %s sends some salve to sooth your wounds."
-msgstr ""
+msgstr "Ты выпиваешь большое зелье лечения. %s присылает тебе мазь, чтобы обработать раны."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:748
 msgid "You find an aloe vera plant."
@@ -4698,11 +4677,11 @@ msgstr "Твоё здоровье улучшается."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:753
 msgid "You feel more vigorous."
-msgstr ""
+msgstr "Ты ощущаешь прилив бодрости."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:754
 msgid "Your arm spontaneously regenerates."
-msgstr ""
+msgstr "Твоя рука регенерирует самостоятельно."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:755
 msgid "Your leg grows back."
@@ -4742,7 +4721,7 @@ msgstr "Ты нашёл плоский камушек."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:765
 msgid "You find a trick dagger."
-msgstr ""
+msgstr "Ты находишь нож для фокусов."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:771
 msgid "You reform your wicked ways, and join the side of good."
@@ -4764,20 +4743,20 @@ msgstr "%s это нравится."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:778
 msgid "The urge to sin fills you, you now are evil!"
-msgstr "Тебя переполняет жажда греха — теперь ты злой!"
+msgstr "Тебя переполняет жажда греха - ты зло!"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:780
 #, c-format
 msgid "%s is happy about this."
-msgstr "%sрадуется этому."
+msgstr "%s радуется этому."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:785
 msgid "You decide that good and evil are two sides of the same coin, so you take the coin."
-msgstr "Ты решил, что добро и зло — две стороны одной монеты, поэтому взял монету."
+msgstr "Ты решил, что добро и зло - две стороны одной монеты, поэтому взял монету."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:786
 msgid "a neutral"
-msgstr "нейтральный"
+msgstr "нейтрал"
 
 #. TRANSLATORS: %s 1 = god name  %s 2 = enemy god name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:788
@@ -4787,7 +4766,7 @@ msgstr "И %s, и %s не знают, что и думать по этому п�
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:790
 msgid "You put on a tarnished belt, and you feel something strange happen."
-msgstr ""
+msgstr "Ты надеваешь потёртый ремень и чувствуешь, что происходит нечто странное."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:791
 msgid "You have been cursed."
@@ -4799,17 +4778,17 @@ msgstr "Тебя благословили."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:793
 msgid "You drink from a sparkling well, and something weird happens."
-msgstr ""
+msgstr "Ты пьёшь из сверкающего колодца, и происходит что-то странное."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:794
 msgid "You try on the shiny necklace you find."
-msgstr ""
+msgstr "Ты примеряешь найденное сияющее ожерелье."
 
 #. TRANSLATORS: enemy name, damage (digit)
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:806
 #, c-format
 msgid "The devious %s stabs you, causing %s damage."
-msgstr ""
+msgstr "Коварный %s пронзает тебя, нанося %s урона."
 
 #. TRANSLATORS: enemy name, damage (digit)
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:808
@@ -4827,36 +4806,36 @@ msgstr "%s изрыгает огонь, сжигая твою карту и на
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:812
 #, c-format
 msgid "The %s throws an exploding banana at you, but you duck, so it only causes %s damage."
-msgstr ""
+msgstr "%s швыряет в тебя взрывающийся банан, но ты пригибаешься, поэтому получаешь всего %s урона."
 
 #. TRANSLATORS: enemy name, damage (digit)
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:814
 #, c-format
 msgid "The %s hits you with its best shot, causing %s damage."
-msgstr ""
+msgstr "%s бьёт тебя своим коронным ударом, нанося %s урона."
 
 #. TRANSLATORS: enemy name, damage (digit)
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:816
 #, c-format
 msgid "The %s hits you against the wall, causing %s of hurt."
-msgstr ""
+msgstr "%s бьёт тебя об стену, нанося %s урона."
 
 #. TRANSLATORS: enemy name, damage (digit)
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:818
 #, c-format
 msgid "The %s snipes you with an arrow causing %s damage."
-msgstr ""
+msgstr "Стрела %s попадает в тебя, нанося %s урона."
 
 #. TRANSLATORS: enemy name, damage (digit)
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:820
 #, c-format
 msgid "The %s bites you causing %s damage."
-msgstr ""
+msgstr "%s кусает тебя, нанося %s урона."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:823
 #, c-format
 msgid "You dodge a blow from the %s."
-msgstr ""
+msgstr "%s бьёт, но ты уклоняешься."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:824
 #, c-format
@@ -4866,17 +4845,17 @@ msgstr "%s пытается ударить тебя, но промахивает
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:825
 #, c-format
 msgid "%s blow hits your cap of cool, causing no damage."
-msgstr ""
+msgstr "%s бьёт твой охлаждающий колпак и не наносит урона."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:826
 #, c-format
 msgid "%s pokes you really hard. You are annoyed."
-msgstr ""
+msgstr "%s с силой отталкивает тебя. Ты раздражён."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:827
 #, c-format
 msgid "%s takes a swing at you, but can't reach you from there."
-msgstr ""
+msgstr "%s замахивается на тебя, но стоит слишком далеко."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:833
 msgid "You died."
@@ -4888,15 +4867,15 @@ msgstr "Валькирия уносит тебя Вальгаллу."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:835
 msgid "Hermes, with Death and Sleep, asks if you've seen his Caduceus anywhere, and then brings you to the river Leith."
-msgstr ""
+msgstr "Гермес, бог смерти и сна, спрашивает, не видел ли ты его кадуцей, а затем приводит тебя к реке Лете."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:836
 msgid "Your soul finds itself travelling along the path of the moon, far away from your broken body."
-msgstr ""
+msgstr "Твоя душа отправляется по лунной тропе всё дальше и дальше от твоего изломанного тела."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:837
 msgid "You are fully one with everything. Your battered body no longer concerns you."
-msgstr ""
+msgstr "Ты в полном единении со всем. Твоё изношенное тело больше не сдерживает тебя."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:838
 msgid "You failed to enlist the Random Number God to your side. You died."
@@ -4910,13 +4889,13 @@ msgstr "Конец игры."
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:869
 #, c-format
 msgid "You come to the end of level %s and the [b]Amulet of Yendor[/b] compels you down, deeper into the depths."
-msgstr ""
+msgstr "Ты прошёл уровень %s, и [b]амулет Ендора[/b] увлекает тебя вниз, в самую глубину."
 
 #. TRANSLATORS: digit
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:873
 #, c-format
 msgid "You come to the end of level %s and see a way up and a way down. Which do you choose?"
-msgstr "Ты достигаешь конца уровня %sи видишь пути вверх и вниз. Который выберешь?"
+msgstr "Ты прошёл уровень %s и видишь пути вверх и вниз. Который выберешь?"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:882
 msgid "Go Up"
@@ -4924,15 +4903,15 @@ msgstr "Подняться"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:884
 msgid "You climb up the ladder with care."
-msgstr ""
+msgstr "Ты осторожно взбираешься по лестнице."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:885
 msgid "You shimmy up the crevasse."
-msgstr ""
+msgstr "Ты всползаешь по расселине."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:886
 msgid "You ascend the Gothic staircase."
-msgstr ""
+msgstr "Ты поднимаешься по готической лестнице."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:887
 msgid "You untie the balloon."
@@ -4952,15 +4931,15 @@ msgstr "Ты вырезаешь магией в скале опоры для р�
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:891
 msgid "Reaching a state of total ONE-ness with the world, you break your earthly bonds, and rise upwards."
-msgstr ""
+msgstr "Достигнув состояния полного ЕДИНЕНИЯ с миром, ты рвёшь земные узы и поднимаешься наверх."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:892
 msgid "You climb the cliff-face."
-msgstr ""
+msgstr "Ты взбираешься по скале."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:893
 msgid "You jump up, and pull yourself up to the next level."
-msgstr ""
+msgstr "Ты подпрыгиваешь и оказываешься на следующем уровне."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:900
 msgid "Go Down"
@@ -4968,11 +4947,11 @@ msgstr "Спуститься"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:902
 msgid "You rappel down the pit to the level below."
-msgstr ""
+msgstr "Ты пробираешься по шахте на уровень ниже."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:903
 msgid "You lower yourself using footholds cut long ago into the living earth."
-msgstr ""
+msgstr "Ты спускаешься по опорам, вырубленным давным-давно прямо в земле."
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:904
 msgid "You take the staircase down to the lower level."
@@ -5005,7 +4984,7 @@ msgstr "В сохранении есть [b]амулет Ендора[/b]!"
 
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:935
 msgid "Show stats"
-msgstr "Характеристики"
+msgstr "Статистика"
 
 #. TRANSLATORS: n_ac, n_tricks, n_hp
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:938
@@ -5021,13 +5000,13 @@ msgstr "Загрузить персонажа"
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:948
 #, c-format
 msgid "[b]%s[/b], the enemy of your goddess [b]%s[/b], plans your demise with glee."
-msgstr ""
+msgstr "[b]%s[/b], враг богини [b]%s[/b], с упоением планирует твою смерть."
 
 #. TRANSLATORS: god name
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:950
 #, c-format
 msgid "The vile god [b]%s[/b] cackles that you will again flee from the dungeon in terror!"
-msgstr ""
+msgstr "Подлый бог [b]%s[/b] ржёт, что ты снова в ужасе убежишь из подземелья!"
 
 #. TRANSLATORS: both god names
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:952
@@ -5043,7 +5022,7 @@ msgstr "Новая игра"
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:975
 #, c-format
 msgid "Your stats are: [b]%d[/b] attack/armor, [b]%d[/b] tricks, and [b]%d[/b] health."
-msgstr "Твои характеристики: [b]%d[/b] атака/броня, [b]%d[/b] уловки и [b]%d[/b] здоровья."
+msgstr "Твои статы: [b]%d[/b] атака/броня, [b]%d[/b] уловки и [b]%d[/b] здоровья."
 
 #. TRANSLATORS: n_emname
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:977
@@ -5686,7 +5665,7 @@ msgstr "Удачи, смешная утка."
 
 #: data/storyline/act1/dialogs/Chandra.lua:37
 msgid "So the rumors are true - a real live Linarian walks among us!"
-msgstr "Так слухи оказались правдой — среди нас ходит настоящий живой линарианец!"
+msgstr "Так слухи были правдивы: среди нас появился настоящий живой линарианец!"
 
 #: data/storyline/act1/dialogs/Chandra.lua:44
 msgid "Good to see you again. How can I help you?"
@@ -5711,7 +5690,7 @@ msgstr "Привет! Я здесь новичок."
 
 #: data/storyline/act1/dialogs/Chandra.lua:67
 msgid "Welcome. I am Chandra. Some would call me the local sage."
-msgstr "Добро пожаловать. Я Чандра. Некоторые назвали бы меня местным мудрецом."
+msgstr "Добро пожаловать. Я Чандра. Кое-кто назвал бы меня местным мудрецом."
 
 #: data/storyline/act1/dialogs/Chandra.lua:77
 msgid "What can you tell me about this place?"
@@ -5719,27 +5698,27 @@ msgstr "Что ты можешь рассказать мне об этом ме�
 
 #: data/storyline/act1/dialogs/Chandra.lua:79
 msgid "This small town used to be a somewhat successful mining community, exporting rare earth materials and other resources to the rest of the solar system."
-msgstr "Раньше это был достаточно успешный шахтёрский городок, экспортирующий редкоземельные и другие материалы по всей солнечной системе."
+msgstr "Раньше у нас был достаточно успешный шахтёрский городок, экспортирующий редкоземельные металлы и другие ресурсы по всей солнечной системе."
 
 #: data/storyline/act1/dialogs/Chandra.lua:80
 msgid "The mines have depleted recently, however. The town was under a threat of bankruptcy. Living here became harder and many left to seek new opportunities elsewhere."
-msgstr "Однако шахты недавно истощились. Город оказался на грани банкротства. Жизнь стала трудней, и многие уехали в поисках новых возможностей."
+msgstr "Но недавно шахты истощились. Город оказался на грани банкротства. Жить здесь стало трудней, и многие уехали в поисках новых возможностей."
 
 #: data/storyline/act1/dialogs/Chandra.lua:81
 msgid "But now after the Great Assault, the rest of the planet gets bombarded by automated bot ships every now and then, so being here isn't so bad at all."
-msgstr "Но теперь, после бунта машин, остальная часть планеты время от времени подвергается бомбардировкам автоматических роботизированных кораблей, так что быть здесь не так уж и плохо."
+msgstr "Однако после бунта машин остальная места время от времени подвергаются бомбардировкам автоматических кораблей ботов, так что быть здесь не так уж и плохо."
 
 #: data/storyline/act1/dialogs/Chandra.lua:82
 msgid "Even with the Red Guard in charge."
-msgstr "Даже под управлением красной стражи."
+msgstr "Даже под управлением Красной стражи."
 
 #: data/storyline/act1/dialogs/Chandra.lua:88
 msgid "Where can I get better equipment?"
-msgstr "Где я могу раздобыть снаряжение получше?"
+msgstr "Где мне раздобыть снаряжение получше?"
 
 #: data/storyline/act1/dialogs/Chandra.lua:90
 msgid "The shop is to the north, near the gate. Ms. Stone always has a good range of equipment there, with fair prices too."
-msgstr "Магазин на севере, возле ворот. У г-жи Стоун всегда хороший выбор, да и цены справедливые."
+msgstr "Есть магазин на севере, возле ворот. У г-жи Стоун всегда хороший выбор, да и цены справедливые."
 
 #: data/storyline/act1/dialogs/Chandra.lua:91
 msgid "Not that you have much choice."
@@ -5747,7 +5726,7 @@ msgstr "Впрочем, у тебя и выбора-то нет."
 
 #: data/storyline/act1/dialogs/Chandra.lua:92
 msgid "Of course, the Red Guard always has the biggest guns and the best armor, but they do not sell them to non-members."
-msgstr "Конечно, самые большие пушки и лучшая броня у красной стражи, но они не продают посторонним."
+msgstr "Конечно, самые большие пушки и лучшая броня у Красной стражи, но они не продают посторонним."
 
 #: data/storyline/act1/dialogs/Chandra.lua:98
 msgid "So what's so strange about the attack?"
@@ -5760,7 +5739,7 @@ msgstr "По моим подсчётам, основанным на оценке
 #: data/storyline/act1/dialogs/Chandra.lua:102
 #: data/storyline/act1/dialogs/Chandra.lua:107
 msgid "I think you will agree with me that the following statement is true: If bots, then death to everything alive."
-msgstr "Думаю, ты согласишься с утверждением: боты — смерть живым."
+msgstr "Думаю, ты согласишься с утверждением: боты - смерть живым."
 
 #: data/storyline/act1/dialogs/Chandra.lua:103
 #: data/storyline/act1/dialogs/Chandra.lua:108
@@ -5809,19 +5788,19 @@ msgstr "Не мог бы ты объяснить мне возрождение �
 
 #: data/storyline/act1/dialogs/Chandra.lua:124
 msgid "Respawn? Interesting choice of words. Bots doesn't actually \"respawn\", not literally, but the ships in orbit periodically checks some areas at random and makes a special request so the factory can replace the dead bots."
-msgstr "Возрождение? Интересный выбор слова. На самом деле не боты «возрождаются», не так буквально, а корабли на орбите периодически проверяют некоторые случайные области и делают специальный запрос, по которому фабрика может заменить мёртвых ботов."
+msgstr "Возрождение? Интересный выбор слова. На самом деле не боты \"возрождаются\", а корабли на орбите периодически проверяют некоторые случайные области и посылают спецзапрос, по которому фабрика может заменить мёртвых ботов."
 
 #: data/storyline/act1/dialogs/Chandra.lua:125
 msgid "I believe that during the check, they also reboot the droids. Therefore I guess that even if you hack a bot, it'll be only a temporary companion."
-msgstr "Я считаю, что во время проверки они также перезагружают дроидов. Поэтому, я полагаю, даже если ты взломаешь бота, он будет всего лишь временным компаньоном."
+msgstr "Я считаю, что во время проверки они также перезагружают дроидов. Поэтому, полагаю, даже взломав бота, ты получишь лишь временного компаньона."
 
 #: data/storyline/act1/dialogs/Chandra.lua:126
 msgid "There might be areas where their signals doesn't reach, but it's just too rare to even consider it."
-msgstr "Где-то могут быть области, не охватываемые сигналами, но они слишком редки, чтобы их учитывать."
+msgstr "Где-то могут быть области, не охваченные сигналом, но они слишком редки, чтобы их учитывать."
 
 #: data/storyline/act1/dialogs/Chandra.lua:127
 msgid "I am not a hacker. A real hacker should understand this better than I."
-msgstr "Я не хакер. Настоящий хакер должен понимать это лучше меня."
+msgstr "Я не хакер. Настоящий хакер должен разбираться в этом лучше меня."
 
 #: data/storyline/act1/dialogs/Chandra.lua:133
 msgid "What do you know about the hostile bots?"
@@ -5841,27 +5820,27 @@ msgstr "Какие типы ботов встречаются снаружи?"
 
 #: data/storyline/act1/dialogs/Chandra.lua:144
 msgid "There are many. Each kind of bot has a number consisting of three digits. The first one is the most significant, the class of a bot."
-msgstr "Их много. Каждый вид ботов имеет номер, состоящий из трёх цифр. Самая важная первая — это класс бота."
+msgstr "Их много. Каждый вид ботов имеет номер, состоящий из трёх цифр. Самая важная - первая - это класс бота."
 
 #: data/storyline/act1/dialogs/Chandra.lua:145
 msgid "I know a bit about three classes."
-msgstr "Я немного знаю про три класса."
+msgstr "Я немного знаю о трёх классах."
 
 #: data/storyline/act1/dialogs/Chandra.lua:146
 msgid "The 100s are cleaning bots of old. Therefore, they are quite common. Fortunately for us they aren't as good at killing things as they are at cleaning up the mess afterwards."
-msgstr "100-е (сотые) — старые боты-уборщики. Поэтому они очень распространены. К счастью, они не настолько хороши в убийствах, как в уборке беспорядка после них."
+msgstr "100-й - это старые боты-уборщики. Поэтому же они довольно распространены. К счастью для нас, они не так хороши в убийствах, как в уборке беспорядка после них."
 
 #: data/storyline/act1/dialogs/Chandra.lua:147
 msgid "The 200s are servant bots, designed to come quickly when summoned and be able to lift heavy weights. That makes them more dangerous under most circumstances, so beware of being attacked by more than one at the same time."
-msgstr "200-е (двухсотые) — боты-слуги, разработанные, чтобы быстро появляться по требованию и поднимать большой вес. Это делает их более опасными в большинстве случаев, поэтому остерегайся слаженного нападения сразу нескольких."
+msgstr "200-й - это боты-слуги, разработанные для быстрейшего появления по первому вызову и поднятия большого веса. В большинстве случаев они намного опасней, поэтому остерегайся слаженного нападения сразу нескольких."
 
 #: data/storyline/act1/dialogs/Chandra.lua:148
 msgid "Right now, an encounter with a 300 type bot equals death, so try to avoid it. They were messenger bots before the Great Assault, which means they have superb visual sensors, and some are very fast."
-msgstr "Прямо сейчас столкновение с ботом 300-го типа равносильно смерти, поэтому старайся их избегать. До бунта машин они были ботами-посыльными, то есть обладают превосходными визуальными датчиками, а некоторые очень быстры."
+msgstr "Встреча с ботом 300 типа в данный момент равносильна смерти, поэтому старайся их избегать. До бунта машин они были ботами-посыльными, оснащаются превосходными визуальными датчиками, а иные очень быстры."
 
 #: data/storyline/act1/dialogs/Chandra.lua:149
 msgid "There are many more classes out there. The military used bots, of course, and they were used on ships, but I know almost nothing about those types."
-msgstr "Снаружи гораздо больше классов. Конечно, военные использовали ботов, и они использовались на кораблях, но об этих типах я не знаю почти ничего."
+msgstr "Есть много других классов. Конечно, боты использовались и военными, и на кораблях, но об этих типах я не знаю почти ничего."
 
 #: data/storyline/act1/dialogs/Chandra.lua:157
 msgid "I want to leave this place."
@@ -5873,23 +5852,23 @@ msgstr "Мы тоже хотим, линарианец, очень хотим."
 
 #: data/storyline/act1/dialogs/Chandra.lua:160
 msgid "The act in question is made impossible by the quasi-infinite bots outside of the town walls."
-msgstr "Почти бесконечные боты за городскими стенами делают действие из вопроса невыполнимым."
+msgstr "Но почти бесконечные боты за городскими стенами делают это практически невыполнимым."
 
 #: data/storyline/act1/dialogs/Chandra.lua:161
 msgid "You cannot live for long out there."
-msgstr "Ты не сможешь долго протянуть снаружи."
+msgstr "Снаружи ты долго не протянешь."
 
 #: data/storyline/act1/dialogs/Chandra.lua:167
 msgid "No, I meant I would like to leave this world."
-msgstr "Нет, я подразумевал, что хотел бы покинуть этот мир."
+msgstr "Нет, я сказал, что хотел бы покинуть этот мир."
 
 #: data/storyline/act1/dialogs/Chandra.lua:169
 msgid "Simple. Walk outside the town walls, and the bots will send you to the other world within a few minutes."
-msgstr "Запросто. Выйди за городские стены, и боты отправят тебя в иной мир за несколько минут."
+msgstr "Это просто. Выйди за городские стены, и боты отправят тебя в иной мир за несколько минут."
 
 #: data/storyline/act1/dialogs/Chandra.lua:170
 msgid "Unless you mean leave the planet, in which case that is impossible."
-msgstr "Если ты думаешь покинуть планету, то это невозможно."
+msgstr "Если же ты хочешь покинуть планету, то это невозможно."
 
 #: data/storyline/act1/dialogs/Chandra.lua:171
 msgid "Most likely all of our cosmodromes have been destroyed in the bot attacks."
@@ -5901,7 +5880,7 @@ msgstr "Мне трудно побеждать ботов. Что можно с 
 
 #: data/storyline/act1/dialogs/Chandra.lua:179
 msgid "There are many things you can do. The first is to fight more bots."
-msgstr "Сделать можно многое. Первое — больше сражаться с ботами."
+msgstr "Сделать можно многое. Первое - больше сражаться с ботами."
 
 #: data/storyline/act1/dialogs/Chandra.lua:180
 msgid "Erm... Wouldn't that cause me to be beaten up more, and therefore be counter-productive?"
@@ -5913,19 +5892,19 @@ msgstr "Верная логика, линарианец, но ты забыл о
 
 #: data/storyline/act1/dialogs/Chandra.lua:182
 msgid "Also, if you have the money and can find a supplier, it is wise to invest in better equipment - more protective clothing and better weaponry."
-msgstr "Также, если у тебя есть деньги и ты нашёл поставщика, разумно вложиться в лучшее снаряжение — более защищающую одежду и улучшенное вооружение."
+msgstr "Также, если у тебя есть деньги и ты нашёл поставщика, разумно вложиться в качественное снаряжение - лучшую защитную одежду и хорошее оружие."
 
 #: data/storyline/act1/dialogs/Chandra.lua:183
 msgid "My advice is to invest in a ranged weapon. While it can create a huge hole in your wallet, it also creates several in the bots, and is better than a huge hole in you."
-msgstr "Советую приобрести стрелковое оружие. Хотя оно оставит огромную дыру в твоём бумажнике, ещё несколько проделает в ботах, что гораздо лучше огромной дыры в тебе."
+msgstr "Советую приобрести оружие дальнего боя. Хотя оно оставит огромную дыру в твоём бумажнике, ещё несколько проделает в ботах, что гораздо лучше огромной дыры в тебе."
 
 #: data/storyline/act1/dialogs/Chandra.lua:184
 msgid "Currently there is a ban on selling such things. The Red Guard wants to be the only ones with good weapons."
-msgstr "Сейчас введён запрет на продажу таких вещей. Красная стража хочет быть единственной с хорошим оружием."
+msgstr "Сейчас введён запрет на продажу подобных вещей. Красная стража хочет, чтобы хорошее оружие было только у неё."
 
 #: data/storyline/act1/dialogs/Chandra.lua:185
 msgid "Should you fail to find something decent to shoot or swing with, there are always other options."
-msgstr "Если тебе не удастся найти что-то стоящее для стрельбы или размахивания, всегда есть другие варианты."
+msgstr "Если не удастся найти ничего стоящего для стрельбы или размахивания, всегда есть другие варианты."
 
 #: data/storyline/act1/dialogs/Chandra.lua:186
 msgid "Ewald, the barkeeper, usually sells an assortment of junk, but even he sometimes has something worthwhile on display."
@@ -5949,7 +5928,7 @@ msgstr "В Красную стражу?.. Только если ты такой 
 
 #: data/storyline/act1/dialogs/Chandra.lua:199
 msgid "The Red Guard? Unlikely. You'd have to establish a reputation beforehand, and demonstrate that you can make things happen."
-msgstr "В Красную стражу? Вряд ли. Тебе сначала придётся заработать репутацию и продемонстрировать, что ты знаешь своё дело."
+msgstr "В Красную стражу? Вряд ли. Сначала тебе придётся заработать репутацию и продемонстрировать, что ты чего-то стоишь."
 
 #: data/storyline/act1/dialogs/Chandra.lua:200
 msgid "Also, the Red Guard is not a very popular organization, so if you do join them then you can expect to be hated by nearly everyone here."
@@ -5957,15 +5936,15 @@ msgstr "А ещё Красная стража не слишком популяр
 
 #: data/storyline/act1/dialogs/Chandra.lua:201
 msgid "As the ancients said, 'Boni pastoris est tondere pecus, non deglubere'. A good tax must be a reasonable tax."
-msgstr "Как говорили древние, boni pastoris est tondere pecus, non deglubere. Хороший налог — разумный налог."
+msgstr "Как говорили древние, boni pastoris est tondere pecus, non deglubere: хороший налог - разумный налог."
 
 #: data/storyline/act1/dialogs/Chandra.lua:209
 msgid "What bots are in the 100 class?"
-msgstr "Какие боты в классе 100?"
+msgstr "Какие боты в 100 классе?"
 
 #: data/storyline/act1/dialogs/Chandra.lua:212
 msgid "I know of two types, the 123 and the 139. The former is a simple cleaning bot, and is fairly weak. The latter is a mobile trash compactor. Don't let your flippers get caught in one of those."
-msgstr "Я знаю два типа: 123 и 139. Первый — простой робот-уборщик, довольно слабый. Второй — мобильный уплотнитель мусора. Не суй в него ласты."
+msgstr "Я знаю два типа: 123 и 139. Первый - простой робот-уборщик, довольно слабый. Второй - мобильный уплотнитель мусора. Не суй в него ласты."
 
 #: data/storyline/act1/dialogs/Chandra.lua:213
 msgid "I've seen some of those on my way here. They were... Shooting at me."
@@ -5977,49 +5956,49 @@ msgstr "Много странных вещей произошло после б�
 
 #: data/storyline/act1/dialogs/Chandra.lua:215
 msgid "Anyway, because the class 100 bots are neither fast nor dangerous, the Red Guard often uses them for target practice."
-msgstr "В любом случае, так как боты 100 класса медленны и неопасны, Красная стража часто использует их для тренировки."
+msgstr "В любом случае, так как боты 100 класса не слишком быстры и опасны, Красная стража часто использует их для тренировок."
 
 #: data/storyline/act1/dialogs/Chandra.lua:216
 msgid "If I were you, I would not underestimate them."
-msgstr "На твоём  месте я бы не стал их недооценивать."
+msgstr "Но на твоём месте я бы не стал их недооценивать."
 
 #: data/storyline/act1/dialogs/Chandra.lua:217
 msgid "Nec Hercules contra plures."
-msgstr "Nec Hercules contra plures. Один в поле не воин."
+msgstr "Nec Hercules contra plures: один в поле не воин."
 
 #: data/storyline/act1/dialogs/Chandra.lua:224
 msgid "What bots are in the 200 class?"
-msgstr ""
+msgstr "Какие боты в 200 классе?"
 
 #: data/storyline/act1/dialogs/Chandra.lua:227
 msgid "In fitting with the lazy nature of humans, there are several servant bots of the 200 class."
-msgstr ""
+msgstr "В соответствии с ленивой человеческой натурой в 200 классе создано несколько роботов-слуг."
 
 #: data/storyline/act1/dialogs/Chandra.lua:228
 msgid "The 247 is often called the 'Banshee'. Being a simple servant robot, it isn't very well equipped to kill, although its arms are quite strong."
-msgstr ""
+msgstr "247, часто называемый \"Башни\". Будучи простым роботом-слугой, он не слишком приспособлен для убийства, однако его руки довольно сильные."
 
 #: data/storyline/act1/dialogs/Chandra.lua:229
 msgid "Also, as I said, the 200s were built to report quickly. The 247 is no exception, and moves faster than some of us can run. As a killer bot, it has a fast rate of attack. It is not something to be trifled with."
-msgstr ""
+msgstr "Как я уже говорил, 200-е созданы для быстрого реагирования. И 247 не исключение: перемещается быстрее, чем некоторые из нас бегают. Как робот-убийца, он имеет высокую скорость атаки. Не стоит с ним шутить."
 
 #: data/storyline/act1/dialogs/Chandra.lua:230
 msgid "The 249 is a cheaper version of the Banshee. It uses a tripedal drive instead of anti-gravity propulsion, and is therefore slower. However, it is much more dangerous: its machine gun has a very high rate of fire."
-msgstr ""
+msgstr "249 - это удешевлённая версия Банши, передвигающаяся на трёх ногах вместо антигравитационной тяги, и поэтому медленней. Однако он намного более опасен: его пулемёт имеет очень высокую скорострельность."
 
 #: data/storyline/act1/dialogs/Chandra.lua:231
 msgid "Machine gun?! But... But it's a servant bot!"
-msgstr ""
+msgstr "Пулемёт?! Но... Но ведь это робот-слуга!"
 
 #. TRANSLATORS: %s =Tux:get_player_name()
 #: data/storyline/act1/dialogs/Chandra.lua:233
 #, c-format
 msgid "I know, %s. I know."
-msgstr "Я знаю, %s. Я знаю."
+msgstr "Знаю, %s, знаю."
 
 #: data/storyline/act1/dialogs/Chandra.lua:234
 msgid "Let's see... Oh, there is also the 296, which was used for serving drinks. Ewald once had one of those in his bar."
-msgstr ""
+msgstr "Посмотрим... Да, ещё же есть 296, которого использовали для подачи напитков. Однажды такой был у Эвальда в баре."
 
 #: data/storyline/act1/dialogs/Chandra.lua:235
 msgid "Once? What happened to it?"
@@ -6031,19 +6010,19 @@ msgstr "Никто не знает. Однажды он просто исчез.
 
 #: data/storyline/act1/dialogs/Chandra.lua:243
 msgid "What other bots are out there?"
-msgstr ""
+msgstr "Какие ещё бывают боты?"
 
 #: data/storyline/act1/dialogs/Chandra.lua:246
 msgid "Though I do not know the details, I assure you there are many. Robots and automated machinery served almost every purpose you can imagine, and probably some that you can't."
-msgstr ""
+msgstr "Хотя я не знаю деталей, но уверяю тебя, их много. Роботы и автоматизированные механизмы обслуживали почти все сферы, которые только можно представить, и даже те, которые нельзя."
 
 #: data/storyline/act1/dialogs/Chandra.lua:247
 msgid "They were used by the military, aboard ships, as security droids and more. Right now, however, most of the people who knew them up close are pushing up daisies."
-msgstr ""
+msgstr "Они использовались военными, на кораблях, в качестве охранных дроидов и т. д. Однако теперь большинство людей, что знали их слишком близко, кормит червей."
 
 #: data/storyline/act1/dialogs/Chandra.lua:254
 msgid "Where in the void is this world?"
-msgstr "Где этот мир расположен в пустоте?"
+msgstr "Где этот мир находится в войде?"
 
 #: data/storyline/act1/dialogs/Chandra.lua:256
 msgid "I guess you mean in the universe?"
@@ -6059,7 +6038,7 @@ msgstr "Ну, мы находимся в спиральной галактике
 
 #: data/storyline/act1/dialogs/Chandra.lua:259
 msgid "The galactic radius is 43,000 light years and the circumference is estimated at 270,000 light years."
-msgstr "Радиус галактики — 43000 световых лет, а предполагаемая окружность — 270000 световых лет."
+msgstr "Радиус галактики - 43000 световых лет, а предполагаемая окружность - 270000 световых лет."
 
 #: data/storyline/act1/dialogs/Chandra.lua:260
 msgid "This is a planetary system of ten planets, and we are presently located on the third one from our star, Sol."
@@ -6075,15 +6054,15 @@ msgstr "Это может быть почти где угодно. Твоё оп
 
 #: data/storyline/act1/dialogs/Chandra.lua:263
 msgid "Sorry, star sciences are my weak point."
-msgstr "Прости, науки о звёздах — моё слабое место."
+msgstr "Прости, науки о звёздах - моё слабое место."
 
 #: data/storyline/act1/dialogs/Chandra.lua:264
 msgid "...Right."
-msgstr "...Верно."
+msgstr "Да уж..."
 
 #: data/storyline/act1/dialogs/Chandra.lua:270
 msgid "Chandra? Francis in the cryonic facility mentioned your name."
-msgstr "Чандра? Фрэнсис из криолаборатории упоминал твоё имя."
+msgstr "Чандра? Фрэнсис из криолаборатории упоминал о тебе."
 
 #: data/storyline/act1/dialogs/Chandra.lua:272
 msgid "Oh did he? What exactly did he say about me?"
@@ -6095,7 +6074,7 @@ msgstr "Он сказал, ты можешь знать больше о том, 
 
 #: data/storyline/act1/dialogs/Chandra.lua:274
 msgid "Hmmm... I'm not so sure about 'who', but he is quite right about my knowledge of Linarians... quite right indeed. What would you like to know, my friend?"
-msgstr "Хмм... Я не уверен насчёт «кто», но он совершенно прав относительно моих знаний о линарианцах... Что бы ты хотел узнать, друг мой?"
+msgstr "Хмм... Не уверен насчёт \"кто\", но он совершенно прав относительно моих знаний о линарианцах... Что бы ты хотел узнать, друг мой?"
 
 #: data/storyline/act1/dialogs/Chandra.lua:285
 msgid "I wanted to ask you some questions about Linarians."
@@ -6120,11 +6099,11 @@ msgstr "Что конкретно из себя представляют эти 
 
 #: data/storyline/act1/dialogs/Chandra.lua:310
 msgid "A sensor is how a bot perceives the world. It would be wrong to assume that all bots sees the world in exactly the same way."
-msgstr "Датчик, определяющий, как бот воспринимает мир. Было бы ошибкой предполагать, что все боты видят мир одинаково."
+msgstr "Датчик определяет, как бот воспринимает мир. Было бы ошибкой предполагать, что все боты видят мир одинаково."
 
 #: data/storyline/act1/dialogs/Chandra.lua:311
 msgid "While almost all bots have visual sensors, and some better than others, some more advanced droids have different sensors to avoid being tricked by the enemy."
-msgstr "Хотя почти все боты имеют визуальные датчики, и некоторые лучше других, у отдельных  более продвинутых дроидов есть различные датчики, чтобы не быть обманутыми врагами."
+msgstr "Хотя почти все боты имеют визуальные датчики, одни лучше других, некоторые более продвинутые дроиды оснащены особыми сенсорами, исключающими обман со стороны врага."
 
 #: data/storyline/act1/dialogs/Chandra.lua:312
 msgid "For example, some battle droid might have an [b]X-Ray[/b] sensor to see though the walls, and a command droid might even have an [b]Infrared[/b] sensor to see heatwaves and detect a living being pretending to be dead or invisible."
@@ -6132,11 +6111,11 @@ msgstr "Например, некоторые боевые дроиды могу�
 
 #: data/storyline/act1/dialogs/Chandra.lua:313
 msgid "Thankfully only very dangerous bots uses different sensors, so you don't need to worry with them right now. Although I also overheard something interesting once. I'll share this little secret with you..."
-msgstr "К счастью, только очень опасные боты используют различные датчики, так что нет повода беспокоиться прямо сейчас. Однако однажды я подслушал кое-что интересное, и поделюсь этим маленьким секретом в тобой..."
+msgstr "К счастью, только очень опасные боты используют специальные датчики, так что нет повода беспокоиться прямо сейчас. Хотя однажды я подслушал кое-что интересное, и поделюсь этим маленьким секретом в тобой..."
 
 #: data/storyline/act1/dialogs/Chandra.lua:314
 msgid "They say that the Red Guard changed some droids sensors in one of the arenas. They can't even go down there right now, is what is said. But you can't trust in all rumors you hear, am I not right?"
-msgstr "Говорят, Красная стража изменила некоторые датчики дроидов на одной из арен, и теперь они даже не могут туда ходить. Но ты не можешь доверять всем сплетням, которые слышишь, не так ли?"
+msgstr "Говорят, Красная стража заменила датчики некоторым дроидам на одной из арен. Ещё говорят, что они теперь даже спуститься туда не могут. Но нельзя верить всем сплетням, которые слышишь, не так ли?"
 
 #: data/storyline/act1/dialogs/Chandra.lua:321
 msgid "That's all I wanted to know about droids."
@@ -6153,16 +6132,16 @@ msgstr "Кто такие линарианцы?"
 
 #: data/storyline/act1/dialogs/Chandra.lua:334
 msgid "Ah yes, I heard that your memory had been affected by stasis. I will share with you what I know."
-msgstr "Ах да, я слышал, что твоя память повредилась во время стазиса. Я поделюсь с тобой тем, что знаю."
+msgstr "Ах да, слышал, что твоя память повредилась во время стазиса. Я поделюсь с тобой тем, что знаю."
 
 #: data/storyline/act1/dialogs/Chandra.lua:335
 #: data/storyline/act1/dialogs/Chandra.lua:352
 msgid "Linarians came to this planet about a century ago. While their specialties can vary, they are most widely known for their nearly-magical skills with computers."
-msgstr "Линарианцы прибыли на эту планету около века назад. Несмотря на различные специальности, они более известны своими почти магическими компьютерными умениями."
+msgstr "Линарианцы прибыли на нашу планету около века назад. Несмотря на различные специализации, широкую известность им принесли почти магические компьютерные умения."
 
 #: data/storyline/act1/dialogs/Chandra.lua:338
 msgid "[b](Chandra quickly glances around. After verifying that no one else seems to be paying attention to your conversation, he takes a quick breath and continues quietly.)[/b]"
-msgstr "[b](Чандра быстро оглядывается вокруг. Убедившись, что, по-видимому, никто не обращает внимания на ваш разговор, он делает короткий вздох и спокойно продолжает.)[/b]"
+msgstr "[b](Чандра быстро оглядывается. Убедившись, что, по-видимому, никто не обращает внимания на ваш разговор, он, коротко вздохнув, спокойно продолжает.)[/b]"
 
 #: data/storyline/act1/dialogs/Chandra.lua:339
 msgid "Since you are asking this question and you have even come into our town, I am assuming that your memory has been completely damaged."
@@ -6170,11 +6149,11 @@ msgstr "Раз ты задаёшь такой вопрос и даже приш�
 
 #: data/storyline/act1/dialogs/Chandra.lua:340
 msgid "What I am about to tell you is not easy to say, nor will it be easy to hear. For that I apologize, but you must know the truth."
-msgstr "То, что я собираюсь сказать, сказать нелегко, равно нелегко и выслушать. Прошу прощения за это, но ты должен знать правду."
+msgstr "То, о чём я собираюсь сказать, и выговорить-то нелегко, но не менее тяжело выслушать. Прости за это, но ты должен знать правду."
 
 #: data/storyline/act1/dialogs/Chandra.lua:341
 msgid "[b](He pauses for a breath.)[/b]"
-msgstr "[b](Он останавливается, чтобы перевести дух.)[/b]"
+msgstr "[b](Он замолкает, чтобы перевести дух.)[/b]"
 
 #: data/storyline/act1/dialogs/Chandra.lua:342
 msgid "When your people first arrived, there was a miscommunication that resulted in the leaders of Earth acting aggressively. Unfortunately, most of your people did not survive..."
@@ -6186,11 +6165,11 @@ msgstr "Я глубоко сожалею об этом, друг мой."
 
 #: data/storyline/act1/dialogs/Chandra.lua:344
 msgid "[b](He hangs his head slightly and you feel he is sincere in his remorse.)[/b]"
-msgstr "[b](Он опускает голову, и ту чувствуешь искренность его раскаяния.)[/b]"
+msgstr "[b](Он опускает голову, и ты чувствуешь его искреннее раскаяние.)[/b]"
 
 #: data/storyline/act1/dialogs/Chandra.lua:348
 msgid "[b](Chandra moves his head ever so slightly as he quickly glances around. After noticing the nearby presence of the Red Guard member, his posture and tone changes. Perhaps you should speak with him again once you lose your escort...)[/b]"
-msgstr "[b](Чандра слегка поворачивает голову, быстро оглядываясь вокруг. Когда он замечает поблизости красного стража, его осанка и голос меняются. Возможно, тебе стоит поговорить с ним ещё раз, уже избавившись от эскорта...)[/b]"
+msgstr "[b](Чандра слегка поворачивает голову, быстро оглядываясь. Когда он замечает поблизости красного стража, его осанка и голос меняются. Возможно, тебе стоит поговорить с ним ещё раз, уже избавившись от эскорта...)[/b]"
 
 #: data/storyline/act1/dialogs/Chandra.lua:349
 msgid "What else would you like to know?"
@@ -6198,11 +6177,11 @@ msgstr "Что ещё ты бы хотел узнать?"
 
 #: data/storyline/act1/dialogs/Chandra.lua:353
 msgid "I'd rather not repeat what I said earlier. It pains me to think of it..."
-msgstr "Я бы не хотел повторять то, что уже сказал. Мне больно об этом думать..."
+msgstr "Я бы не хотел повторять уже сказанное. Даже думать об этом больно..."
 
 #: data/storyline/act1/dialogs/Chandra.lua:360
 msgid "(Calmly accept this information)"
-msgstr ""
+msgstr "(Спокойно принять эту информацию.)"
 
 #: data/storyline/act1/dialogs/Chandra.lua:364
 msgid "What happened to the other Linarians that survived first contact?"
@@ -6210,28 +6189,28 @@ msgstr "Что же случилось с другими линарианцам�
 
 #: data/storyline/act1/dialogs/Chandra.lua:365
 msgid "Sadly, I do not know. All that remains are legends. For a time, Linarians wandered the planet performing grand deeds and earning the respect of most of humanity."
-msgstr "Увы, я не знаю. Остались лишь легенды. О времени, когда линарианцы, бродя по планете, совершали подвиги и заслужили уважение большей части человечества."
+msgstr "Увы, не знаю. Остались лишь легенды. О времени, когда линарианцы, путешествуя по планете, совершали подвиги, чем заслужили уважение большинства людей."
 
 #: data/storyline/act1/dialogs/Chandra.lua:366
 msgid "But as time passed, so did the memories of the great deeds. It is unlikely that you will find many who know more about your people's noble past."
-msgstr "Но время шло, и память о великих свершениях поблёкла. Вряд ли ты найдёшь много людей, кто знает о славном прошлом твоего народа больше."
+msgstr "Но время шло, и память о великих свершениях поблёкла. Вряд ли ты найдёшь много тех, кто знает о славном прошлом твоего народа больше."
 
 #: data/storyline/act1/dialogs/Chandra.lua:367
 #: data/storyline/act1/dialogs/Chandra.lua:384
 msgid "Perhaps there are still other Linarians alive here on our planet. Or maybe some went back to your own planet."
-msgstr "Возможно, ещё есть другие линарианцы на нашей планете, или, может быть, некоторые вернулись на свою родину."
+msgstr "Наверное, на нашей планете ещё есть другие линарианцы. Или, возможно, некоторые вернулись на вашу планету."
 
 #: data/storyline/act1/dialogs/Chandra.lua:375
 msgid "(Respond angrily)"
-msgstr ""
+msgstr "(Ответить со злостью.)"
 
 #: data/storyline/act1/dialogs/Chandra.lua:379
 msgid "Your people slaughtered us?!"
-msgstr "Твой народ убивал нас?!"
+msgstr "Так вы нас убивали?!"
 
 #: data/storyline/act1/dialogs/Chandra.lua:380
 msgid "Yes, this is the truth and it is something most humans regret. It is this regret that has helped erase the Linarians from our history."
-msgstr ""
+msgstr "Да, такова правда, и большинство людей сильно сожалеют об этом. Именно сожаление помогло стереть линарианцев из нашей истории."
 
 #: data/storyline/act1/dialogs/Chandra.lua:381
 msgid "Humanity does not have a pretty history. We have done many horrible things to each other as well. There are many things we regret so deeply that we wish we could forget."
@@ -6243,11 +6222,11 @@ msgstr "Со временем большинство людей охотно з�
 
 #: data/storyline/act1/dialogs/Chandra.lua:383
 msgid "Even though we tried to celebrate the grand deeds and heroics of the surviving Linarians, the memories faded. The memories turned into legends and myths as the Linarians slowly withdrew from the world."
-msgstr ""
+msgstr "И хотя мы пытались прославить великие свершения и героизм выживших линарианцев, память блёкла. Воспоминания, превратившись, как линарианцы, в легенды и мифы, потихоньку покинули мир."
 
 #: data/storyline/act1/dialogs/Chandra.lua:385
 msgid "Spencer and the Red Guard would not want you to know these things, as you might not be willing to help our failing community."
-msgstr ""
+msgstr "Спенсер с Красной стражей не хотели бы, чтобы ты это знал, потому что ты мог отказаться помогать нашему слабеющему сообществу."
 
 #: data/storyline/act1/dialogs/Chandra.lua:386
 #, c-format
@@ -6256,7 +6235,7 @@ msgstr "Однако утаить от тебя эту информацию бы
 
 #: data/storyline/act1/dialogs/Chandra.lua:392
 msgid "Chandra, it saddens me to hear this. I will keep what you say in mind, but there is too much suffering for me to ignore."
-msgstr "Чандра, мне грустно слышать об этом. Я учту то, что ты сказал, однако вокруг слишком много страданий, чтобы я их игнорировал."
+msgstr "Чандра, мне горько слышать об этом. Я учту то, о чём ты сказал, но вокруг слишком много страданий, чтобы их игнорировать."
 
 #: data/storyline/act1/dialogs/Chandra.lua:395
 msgid "Oh! This is great news! I was fearful that the truth would not settle well."
@@ -6268,7 +6247,7 @@ msgstr "Никогда не стоит сомневаться в благоро�
 
 #: data/storyline/act1/dialogs/Chandra.lua:404
 msgid "(Attack)"
-msgstr ""
+msgstr "(Напасть.)"
 
 #: data/storyline/act1/dialogs/Chandra.lua:408
 msgid "Stupid humans! How dare you?! Your crimes are unforgivable! You all deserve to be slaughtered by these robots!"
@@ -6288,7 +6267,7 @@ msgstr "Почему никто не выглядит испуганным ви�
 
 #: data/storyline/act1/dialogs/Chandra.lua:421
 msgid "[b]<chuckles>[/b] This is not the first time the people of Earth have seen one of your kind."
-msgstr "[b]<chuckles>[/b] Это не первый раз, когда земляне встретили кого-то твоей расы."
+msgstr "[b]<chuckles>[/b] Земляне не впервые встречают кого-то из твоего вида."
 
 #: data/storyline/act1/dialogs/Chandra.lua:422
 msgid "Of course, its been almost one hundred years since Linarians first came to this planet. As you might imagine most of the people who were alive then are long gone."
@@ -6332,7 +6311,7 @@ msgstr "Нет-нет. Причин для этого здесь было гор
 
 #: data/storyline/act1/dialogs/Chandra.lua:455
 msgid "Most of citzens are currently at the mines. They are doing everything they can to keep the town running."
-msgstr "Большинство горожан сейчас в шахтах. Они делают всё возможное, чтобы поддерживать существование города."
+msgstr "Большинство горожан сейчас в шахтах. Они делают всё возможное, чтобы поддержать существование города."
 
 #: data/storyline/act1/dialogs/Chandra.lua:456
 msgid "Children, elderly and others who cannot work are upstairs. They are too afraid to come down."
@@ -6340,7 +6319,7 @@ msgstr "Дети, старики и те, кто не может работат�
 
 #: data/storyline/act1/dialogs/Chandra.lua:457
 msgid "The ones who you will find here are Red Guards, shopkeepers, medics, programmers, librarians, etc."
-msgstr "Те, кого ты найдёшь здесь, — красные стражи, продавцы, медики, программисты, библиотекари и т. д."
+msgstr "Те, кого ты найдёшь здесь, - красные стражи, продавцы, медики, программисты, библиотекари и т. д."
 
 #: data/storyline/act1/dialogs/Chandra.lua:458
 msgid "So do not worry. Things may be dire, but we weren't wiped off. Yet."
@@ -6608,7 +6587,7 @@ msgstr "Очень хочу вновь увидеть Храмовый лес! �
 
 #: data/storyline/act1/dialogs/Dixon.lua:80
 msgid "Please take care not to disturb my work, I'm very busy keeping things running."
-msgstr "Пожалуйста, сделай одолжение, не мешай мне, я очень занят, поддерживая всё работающим."
+msgstr "Пожалуйста, постарайся не мешать мне, я очень занят, поддерживая порядок."
 
 #: data/storyline/act1/dialogs/Dixon.lua:82
 msgid "Linarian, please leave. You are no longer welcome here. You have done me wrong, and I have no desire to talk to you."
@@ -6644,7 +6623,7 @@ msgstr "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!"
 
 #: data/storyline/act1/dialogs/Dixon.lua:91
 msgid "Dixon - Temporarily insane"
-msgstr "Диксон — временно невменяемый"
+msgstr "Диксон - временно невменяемый"
 
 #: data/storyline/act1/dialogs/Dixon.lua:138
 msgid "Why are you wearing armor? Mechanics do not need it."
@@ -6748,7 +6727,7 @@ msgstr "Сейчас мы просто не можем себе позволит
 
 #: data/storyline/act1/dialogs/Dixon.lua:190
 msgid "I would like to customize my equipment."
-msgstr "Я бы хотел настроить мое оборудование."
+msgstr "Я бы хотел модифицировать снаряжение."
 
 #: data/storyline/act1/dialogs/Dixon.lua:192
 msgid "Of course, if I had some time, I could transform your weapon into a deadly gun. Lately, I have built a vorpal nuclear disintegrator Mk 2000 with integrated lethal de-phasor. Nice weapon."
@@ -6925,7 +6904,7 @@ msgstr "Хмм... Знаешь... Я думаю, боты в туннелях м
 
 #: data/storyline/act1/dialogs/Dixon.lua:272
 msgid "WHAT? Sentient? You got to be kidding me."
-msgstr "ЧТО? Живымиt? Ты, должно быть, прикалываешься надо мной."
+msgstr "ЧТО? Разумными? Ты, должно быть, шутишь."
 
 #: data/storyline/act1/dialogs/Dixon.lua:273
 msgid "Right?"
@@ -7131,7 +7110,7 @@ msgstr "Вот немного денег за твои старания. И, я 
 
 #: data/storyline/act1/dialogs/Dixon.lua:407
 msgid "I guess this is better than nothing."
-msgstr ""
+msgstr "Думаю, это лучше, чем ничего."
 
 #: data/storyline/act1/dialogs/Dixon.lua:409
 msgid "It is good to see that the way of the pacifist is a successful one!"
@@ -7494,7 +7473,7 @@ msgstr ""
 
 #: data/storyline/act1/dialogs/Dixon.lua:658
 msgid "Bots?"
-msgstr ""
+msgstr "Ботов?"
 
 #: data/storyline/act1/dialogs/Dixon.lua:659
 msgid "I know the droids of the 400s class. Those are for maintenance. But we do not have any in the tunnels' area."
@@ -7952,7 +7931,7 @@ msgstr "Что ты можешь рассказать о таблетках ко
 
 #: data/storyline/act1/dialogs/DocMoore.lua:343
 msgid "Those pills are only one variant of a fantastic scientific breakthrough that happened shortly before the Great Assault."
-msgstr "Эти таблетки — лишь один из результатов фантастического научного прорыва, случившегося незадолго до бунта машин."
+msgstr "Эти пилюли — лишь один из результатов фантастического научного прорыва, случившегося незадолго до бунта машин."
 
 #: data/storyline/act1/dialogs/DocMoore.lua:344
 msgid "Three kinds of enhancement pills were developed. One for strength, one for dexterity and one for programming abilities."
@@ -7968,7 +7947,7 @@ msgstr "Машины, соединяясь вместе, формируют ис
 
 #: data/storyline/act1/dialogs/DocMoore.lua:347
 msgid "Since this invention only came about shortly before the Great Assault, these pills are now very rare."
-msgstr "Поскольку изобретение появилось незадолго до бунта машин, постольку эти таблетки довольно редкие."
+msgstr "Так как изобрели пилюли непосредственно перед бунтом машин, то они довольно редкие."
 
 #: data/storyline/act1/dialogs/DocMoore.lua:348
 msgid "But if you should get them, even better, because the effects are permanent, and as far as we can tell, there aren't any side effects!"
@@ -11290,7 +11269,7 @@ msgstr "Меня зовут д-р Фрэнсис Спарк. Я... э... хра�
 
 #: data/storyline/act1/dialogs/Francis.lua:236
 msgid "Currently, there is a war raging all around the globe. One day, our once loyal bots rebelled against us and began trying to wipe us out. The beginning of this war has been dubbed 'The Great Assault.'"
-msgstr "Теперь по всему миру бушует война. Однажды некогда верные боты восстали против нас и стали пытаться нас уничтожить. Начало этой войны назвали «бунтом машин»."
+msgstr "Теперь по всему миру бушует война. Однажды некогда верные боты восстали и стали пытаться нас уничтожить. Начало этой войны назвали «бунтом машин»."
 
 #: data/storyline/act1/dialogs/Francis.lua:237
 msgid "And it looks like humans are losing the war. Our town isn't doing so well at this point either. But there is still hope, since you were discovered here."
@@ -13743,7 +13722,7 @@ msgstr ""
 #: data/storyline/act1/dialogs/TutorialTom.lua:1188
 #: data/storyline/act1/dialogs/TutorialTom.lua:1194
 msgid "Ok..."
-msgstr "Ок..."
+msgstr "Ладно..."
 
 #: data/storyline/act1/dialogs/Kevin.lua:456
 msgid "Be careful. The bots are in a foul mood today. Very easy to get killed. Very easy."
@@ -21261,7 +21240,7 @@ msgstr "Привет, линарианец, я ждал тебя. Меня зо�
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:121
 msgid "Long stasis sleep unfortunately has the side effect of temporary memory loss, sometimes even for simple ordinary every day things."
-msgstr "Длительный сон в стазисе имеет побочный эффект — временную потерю памяти, иногда касающуюся даже обычных повседневных вещей."
+msgstr "Длительный сон в стазисе имеет побочный эффект: временную потерю памяти, иногда касающуюся даже обычных повседневных вещей."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:122
 msgid "So let's start with the basics, shall we?"
@@ -21305,11 +21284,11 @@ msgstr "Я дам тебе новое задание, чтобы ты мог п�
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:226
 msgid "To talk to someone, left click on them. You can talk to any friendly bot or person. Friendly people and bots have a green bar above them. Press the 'q' key to open or close the quest log. Left click back on Tutorial Tom to learn more!"
-msgstr "Говорить можно с любым дружелюбным ботом или человеком. Над ними есть зелёная полоса. Чтобы заговорить, щёлкни по ним левой кнопкой мыши. Нажми клавишу «q», чтобы открыть или закрыть журнал заданий. Снова щёлкни левой по учителю Тому, чтобы узнать больше!"
+msgstr "Говорить можно с любым дружелюбным ботом или человеком. Над ними есть зелёная полоса. Чтобы заговорить, щёлкни по ним левой кнопкой мыши. Нажми клавишу \"q\", чтобы открыть или закрыть журнал заданий. Снова щёлкни левой по учителю Тому, чтобы узнать больше!"
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:228
 msgid "Press 'q' for Quests!"
-msgstr "Нажми «q», проверь задания!"
+msgstr "Нажми \"q\", проверь задания!"
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:239
 msgid "What can you tell me about finding my way in the world?"
@@ -21317,7 +21296,7 @@ msgstr "Как мне не сбиться с пути и не заблудить
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:241
 msgid "You Linarians see the world similar to the Heads Up Displays, or [b]HUD[/b], used in computer games."
-msgstr "Ваше линарианское восприятие мира схоже с игровым визуальным интерфейсом — [b]HUD[/b] (Head-up display)."
+msgstr "Ваше линарианское восприятие мира схоже с игровым визуальным интерфейсом - [b]HUD[/b] (Head-up display)."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:242
 msgid "Linarians, like all birds, have a remarkable internal sense of direction. Apparently your HUD has a [b]compass[/b], represented by four red arrows in the upper right corner with North marked on it."
@@ -21325,11 +21304,11 @@ msgstr "Линарианцы, как все птицы, обладают зам�
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:243
 msgid "You can temporarily disable this compass by pressing the 'tab' key."
-msgstr "Ты можешь временно отключить этот компас, нажав клавишу «tab»."
+msgstr "Ты можешь временно отключить этот компас, нажав клавишу \"tab\"."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:244
 msgid "I learned the four red arrows in the upper-right of my HUD is a compass with north marked on it. I can toggle it using the 'tab' key."
-msgstr "Я узнал, что четыре красных стрелки в правом верхнем углу моего HUD — это компас с отмеченным севером. Включать его можно, используя клавишу «tab»."
+msgstr "Я узнал, что четыре красных стрелки в правом верхнем углу моего HUD - это компас с отмеченным севером. Включать его можно, используя клавишу \"tab\"."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:245
 msgid "Rumor is there was a device Linarians used to remember every place they had been, called an [b]automap[/b]."
@@ -21393,7 +21372,7 @@ msgstr "Как только это произойдёт, мы поговорим
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:274
 msgid "View the Skills/Program menu by pressing the 's' key."
-msgstr "Посмотри меню умений/программ, нажав клавишу «s»."
+msgstr "Посмотри меню умений/программ, нажав клавишу \"s\"."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:280
 msgid "I'm sensing some sort of strange presence in the vicinity."
@@ -21405,11 +21384,11 @@ msgstr "Ах, да."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:283
 msgid "Linarians seem to [b]detect items[/b] - even through walls - in an augmented reality."
-msgstr "Линариацы похоже [b]обнаруживают предметы[/b] — даже сквозь стены — в дополненной реальности."
+msgstr "Линариацы похоже [b]обнаруживают предметы[/b] - даже сквозь стены - в дополненной реальности."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:284
 msgid "The [b]z key[/b] will toggle this augmentation, while the [b]x key[/b] momentarily flashes it."
-msgstr "[b]Клавиша «z»[/b] переключает это дополнение, а [b]клавиша «x»[/b] на мгновение подсвечивает."
+msgstr "[b]Клавиша \"z\"[/b] переключает это дополнение, а [b]клавиша \"x\"[/b] на мгновение подсвечивает."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:285
 msgid "Moving your pointer over an item will tell you more about that item."
@@ -21425,11 +21404,11 @@ msgstr "Можешь задержаться и попрактиковаться 
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:288
 msgid "[b]Left clicking[/b] on an item will pick it up and put it in your inventory, toggled by the [b]i key[/b], where you can examine it further."
-msgstr "[b]Щелчком левой[/b] по предмету подбери его и помести в инвентарь, переключаемый [b]клавишей «i»[/b], где ты можешь продолжить изучение."
+msgstr "[b]Щелчком левой[/b] по предмету подбери его и помести в инвентарь, переключаемый [b]клавишей \"i\"[/b], где ты можешь продолжить изучение."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:291
 msgid "Toggle detect items by pressing the 'z' key, and press 'x' to flash the ability. To pick up an item, left click on it. To view an item you've picked up, open the inventory by pressing 'i'."
-msgstr "Переключи обнаружение предметов, нажав клавишу «z», затем нажми «x» для вспышки умения. Щёлкни левой, чтобы поднять предмет. Чтобы рассмотреть поднятый предмет, открой инвентарь, нажав «i»."
+msgstr "Переключи обнаружение предметов, нажав клавишу \"z\", затем нажми \"x\" для вспышки умения. Щёлкни левой, чтобы поднять предмет. Чтобы рассмотреть поднятый предмет, открой инвентарь, нажав \"i\"."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:298
 msgid "Oh great, I see you found all the items hidden in the room. Good job!"
@@ -21445,7 +21424,7 @@ msgstr "Спасибо, очень информативно. Думаю, я зн
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:316
 msgid "I just closed your first quest. You can still see what you learned by clicking on the 'done quests' tab in the quest screen."
-msgstr "Я уже закрыл твоё первое задание. Ты всё ещё можешь увидеть, что изучил, нажав на вкладку «выполненные задания» в журнале."
+msgstr "Я уже закрыл твоё первое задание. Ты всё ещё можешь увидеть, что изучил, нажав на вкладку \"выполненные задания\" в журнале."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:322
 msgid "I'm eager to learn more."
@@ -21497,7 +21476,7 @@ msgstr "Третьи, как бы странно это ни звучало, п�
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:354
 msgid "Perhaps the best thing you can find, though, is armor. At least, given the current situation with the bots, that is."
-msgstr "Возможно, доспехи — лучшее, что ты можешь найти. По крайней мере, если учесть текущую ситуацию с ботами."
+msgstr "Возможно, доспехи - лучшее, что ты можешь найти. По крайней мере, если учесть текущую ситуацию с ботами."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:361
 msgid "Armor? I should know more about this."
@@ -21513,7 +21492,7 @@ msgstr "Одной из отраслей, сослуживших нам добр
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:365
 msgid "Because they run a very simple operating system, nanobots were not affected by whatever caused the Great Assault."
-msgstr "Из-за простейшей операционной системы наноботов их не затронуло то, что вызвало бунт машин."
+msgstr "Из-за простейшей операционной системы наноботов не затронуло то, что вызвало бунт машин."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:366
 msgid "To this day, our armor and clothing are made out of nanobots. This enables many different sizes of people to wear the same clothing."
@@ -21529,23 +21508,23 @@ msgstr "Как мне поможет ношение одежды и щитов?"
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:376
 msgid "Well, it can help you avoid indecent exposure charges."
-msgstr ""
+msgstr "Ну, это поможет избежать обвинений в разврате."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:378
 msgid "But all jokes aside, the bots will not mess around."
-msgstr ""
+msgstr "Но шутки в сторону, боты шутить не будут."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:379
 msgid "Even the best of fighters sometimes get hit by enemy blows. If I were you, I would seriously consider wearing some sort of armor before mixing it up with those bots."
-msgstr ""
+msgstr "Даже лучшие бойцы временами пропускают удар. На твоём месте я бы серьёзно подумал о ношении каких-нибудь доспехов перед тем, как связаться с теми же ботами."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:380
 msgid "They will help to mitigate some of the damage you take from melee or ranged combat."
-msgstr ""
+msgstr "Они помогут уменьшить урон, получаемый в ближнем и дальнем бою."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:381
 msgid "Keep in mind, though, that there is a chance that your armor will take damage whenever you get hit. Keep an eye on it, or you'll lose it."
-msgstr ""
+msgstr "Однако помни, что всегда есть шанс повредить броню, когда ты получаешь удар. Следи за ней, а то потеряешь."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:387
 msgid "That sounds useful. How do I use armor?"
@@ -21557,39 +21536,39 @@ msgstr "Итак, начну с того, что существует четыр
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:390
 msgid "When you pick up a piece of armor of a particular class, and you don't already have one equipped, you will automatically equip it if you can."
-msgstr ""
+msgstr "Когда подбираешь отдельную часть доспеха, не имея при этом соответствующей экипировки, ты, если это возможно, автоматически её экипируешь."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:391
 msgid "Picking up armor and items can be accomplished by [b]left clicking[/b] on the item. If your inventory has space, you will pick the item up."
-msgstr ""
+msgstr "Сбор доспехов и предметов выполняется [b]щелчком левой[/b] по предмету. Если в инвентаре есть место, ты заберёшь предмет."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:392
 msgid "If you currently have one piece of armor equipped that you would like to swap out for another, simply drag the new armor piece to the current armor piece and left click."
-msgstr ""
+msgstr "Если какая-то часть доспехов уже экипирована, а ты хотел бы заменить её другой, просто перетащи новую часть поверх старой и щёлкни левой."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:393
 msgid "They will swap places, and you can put the other piece of armor back into your inventory."
-msgstr ""
+msgstr "Они поменяются местами, и ты сможешь положить другую часть доспехов обратно в инвентарь."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:394
 msgid "Alternatively, you can drag it into your field of view and drop it on the ground."
-msgstr ""
+msgstr "Как вариант, ты можешь перетащить её в поле зрения и бросить на землю."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:400
 msgid "I wouldn't want to lose any armor. What can I do about that?"
-msgstr ""
+msgstr "Я бы не хотел потерять броню. Что с этим можно сделать?"
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:402
 msgid "Well, there are several ways to keep that from happening."
-msgstr ""
+msgstr "Ну, есть несколько способов избежать этого."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:403
 msgid "Equipped items in poor condition will show up yellow and should turn red if in critical condition."
-msgstr ""
+msgstr "Экипированные предметы в плохом состоянии будут показаны жёлтым, а достигшие критического - красным."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:404
 msgid "If you don't unequip an item in poor or critical condition it may be ruined!"
-msgstr ""
+msgstr "Если не снять предмет в плохом или критическом состоянии, он может быть разрушен!"
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:405
 msgid "There are three things you can do when an item reaches critical condition:"
@@ -21617,64 +21596,64 @@ msgstr "Что ж, могу назвать несколько причин."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:417
 msgid "You might not have enough room in your inventory for an item you need more, or can sell for more."
-msgstr ""
+msgstr "У тебя может быть недостаточно места в инвентаре для более нужных или дорогих предметов."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:418
 msgid "If an item is close to being destroyed, you might also consider dropping it."
-msgstr ""
+msgstr "Если предмет близок к разрушению, ты также можешь подумать о выбрасывании."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:419
 msgid "And finally some items give negative status effects, and aren't worth selling."
-msgstr ""
+msgstr "Наконец, некоторые предметы, оказывающие негативное воздействие, нельзя продать."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:420
 msgid "Armor or weapons may affect you in different ways."
-msgstr ""
+msgstr "Доспехи или оружие могут влиять на тебя по-разному."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:421
 msgid "Some will help you out, for example by increasing your cooling rate or increasing your dexterity. This is the work of specialized nanobots, but the reverse can happen too."
-msgstr ""
+msgstr "Некоторые помогут, повысив, например, твою скорость охлаждения или ловкость. Это работа специализированных наноботов, но может произойти и обратное."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:431
 msgid "Repair equipment program? How do I use that?"
-msgstr ""
+msgstr "Программа ремонта снаряжения? Как ей пользоваться?"
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:433
 msgid "Perhaps I should start by explaining programs in general."
-msgstr ""
+msgstr "Возможно, стоит начать с общего рассказа о программах."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:434
 msgid "To use a program, select it through your HUD (remember the [b]s key[/b] toggles your [b]Skills/Program menu[/b])."
-msgstr ""
+msgstr "Чтобы воспользоваться программой, выбери её через HUD (напомню, [b]меню умений/программ[/b] переключается [b]клавишей s[/b])."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:435
 msgid "After you've selected a program, run the program by right clicking. Depending on the program you can target an enemy, an item, or just the world."
-msgstr ""
+msgstr "После того, как выберешь программу, запусти её, щёлкнув правой. В зависимости от программы целью может быть враг, предмет или окружающий мир."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:436
 msgid "You can also assign quick-select keys to programs. Simply hover over the program in the Skills/Program menu and press one of the keys [b]F5[/b] to [b]F12[/b]. Then, whenever you press this button, you will select the corresponding program."
-msgstr ""
+msgstr "Также ты можешь назначить программам горячие клавиши. Просто наведи курсор на программу в меню умений/программ и нажми одну из клавиш от [b]F5[/b] до [b]F12[/b]. Тогда, если ты нажмёшь такую копку, выберется соответствующая программа."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:437
 msgid "If you're curious what a program does, you can find out by clicking the question mark in the Skills/Program menu."
-msgstr ""
+msgstr "Если тебе интересно, что делает программа, ты можешь узнать это, нажав вопросительный знак в меню умений/программ."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:438
 msgid "Now, to answer your question, you use your repair equipment program by selecting it in the Skills/Program menu, then right clicking on the item you wish to repair."
-msgstr ""
+msgstr "Теперь отвечу на твой вопрос. Ты запустишь программу ремонта снаряжения, выбрав её в меню умений/программ и затем щёлкнув правой по предмету, который хочешь починить."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:442
 #: data/storyline/act1/dialogs/TutorialTom.lua:444
 msgid "Run a program by right clicking after it has been selected from the Skills/Program menu. My shoes are damaged, so I might try the repair equipment program on them to slightly repair them."
-msgstr ""
+msgstr "Программа запускается щелчком правой после того, как будет выбрана в меню умений/программ. Мои ботинки повреждены, поэтому я мог бы попробовать немного их починить программой ремонта снаряжения."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:451
 msgid "I think I'm ready for the next section of the tutorial."
-msgstr ""
+msgstr "Думаю, я готов к следующей части обучения."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:453
 msgid "Ok, I'll open the next door then. But prepare yourself, soon you will learn how to fight against bots in hand-to-hand combat."
-msgstr ""
+msgstr "Ладно, тогда я открою следующую дверь. Но приготовься, скоро тебе предстоит учиться сражаться с ботами врукопашную."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:464
 msgid "Can you tell me how to fight the bots?"
@@ -21694,7 +21673,7 @@ msgstr ""
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:469
 msgid "Unfortunately, guns and other ranged weaponry are hard to come by these days."
-msgstr ""
+msgstr "К несчастью, пушки и прочее оружие дальнего боя в наши дни трудно найти."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:470
 msgid "That goes double for ammunition. Because these are bots, you really can't effectively keep them at bay by just waving around an empty gun."
@@ -21754,7 +21733,7 @@ msgstr ""
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:495
 msgid "Tell me about health drinks."
-msgstr ""
+msgstr "Расскажи мне о зельях лечения."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:497
 msgid "Man has practised medicine in one form or another for hundreds of years."
@@ -21842,7 +21821,7 @@ msgstr ""
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:542
 msgid "I've beaten the first bot."
-msgstr ""
+msgstr "Я победил первого бота."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:545
 msgid "So you have. Well done."

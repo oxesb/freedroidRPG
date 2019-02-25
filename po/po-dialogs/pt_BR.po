@@ -432,7 +432,7 @@ msgstr "Careca"
 
 #: data/base/dialogs/AfterTakeover.lua:402
 msgid "Brusque"
-msgstr ""
+msgstr "Brusco"
 
 #: data/base/dialogs/AfterTakeover.lua:403
 msgid "Chic"
@@ -443,9 +443,8 @@ msgid "Cuddly"
 msgstr "Fofo"
 
 #: data/base/dialogs/AfterTakeover.lua:405
-#, fuzzy
 msgid "Cute"
-msgstr "Garota Fofa"
+msgstr "fofo"
 
 #: data/base/dialogs/AfterTakeover.lua:406
 msgid "Fickle"
@@ -477,11 +476,11 @@ msgstr "Maquiavélico"
 
 #: data/base/dialogs/AfterTakeover.lua:413
 msgid "Mad"
-msgstr ""
+msgstr "Furioso"
 
 #: data/base/dialogs/AfterTakeover.lua:414
 msgid "Obscene"
-msgstr ""
+msgstr "Obsceno"
 
 #: data/base/dialogs/AfterTakeover.lua:415
 msgid "Ornery"
@@ -489,12 +488,11 @@ msgstr "Irritado"
 
 #: data/base/dialogs/AfterTakeover.lua:416
 msgid "Pompous"
-msgstr ""
+msgstr "Pomposo"
 
 #: data/base/dialogs/AfterTakeover.lua:417
-#, fuzzy
 msgid "Shrewd"
-msgstr "Mussaranho"
+msgstr "Astuto"
 
 #: data/base/dialogs/AfterTakeover.lua:419
 msgid "Aardvark"
@@ -514,7 +512,7 @@ msgstr "Morcego"
 
 #: data/base/dialogs/AfterTakeover.lua:423
 msgid "Beetle"
-msgstr ""
+msgstr "Besouro"
 
 #: data/base/dialogs/AfterTakeover.lua:424
 msgid "Bunny"
@@ -522,7 +520,7 @@ msgstr "Coelho"
 
 #: data/base/dialogs/AfterTakeover.lua:425
 msgid "Dodo"
-msgstr ""
+msgstr "Dodô"
 
 #: data/base/dialogs/AfterTakeover.lua:426
 msgid "Duck"
@@ -534,11 +532,11 @@ msgstr "Raposa"
 
 #: data/base/dialogs/AfterTakeover.lua:428
 msgid "Frog"
-msgstr ""
+msgstr "Sapo"
 
 #: data/base/dialogs/AfterTakeover.lua:429
 msgid "Gerbil"
-msgstr ""
+msgstr "Camundongo"
 
 #: data/base/dialogs/AfterTakeover.lua:430
 msgid "Gnu"
@@ -590,7 +588,7 @@ msgstr "Papagaio"
 
 #: data/base/dialogs/AfterTakeover.lua:442
 msgid "Scarab"
-msgstr ""
+msgstr "Escaravelho"
 
 #: data/base/dialogs/AfterTakeover.lua:443
 msgid "Shrew"
@@ -598,7 +596,7 @@ msgstr "Mussaranho"
 
 #: data/base/dialogs/AfterTakeover.lua:444
 msgid "Tapir"
-msgstr ""
+msgstr "Anta"
 
 #: data/base/dialogs/AfterTakeover.lua:445
 msgid "Trout"
@@ -610,7 +608,7 @@ msgstr "Atum"
 
 #: data/base/dialogs/AfterTakeover.lua:447
 msgid "Walrus"
-msgstr ""
+msgstr "Morsa"
 
 #: data/base/dialogs/AfterTakeover.lua:455
 #: data/base/dialogs/AfterTakeover.lua:495

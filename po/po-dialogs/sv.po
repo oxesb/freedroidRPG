@@ -431,7 +431,7 @@ msgstr "Skallig"
 
 #: data/base/dialogs/AfterTakeover.lua:402
 msgid "Brusque"
-msgstr ""
+msgstr "Brysk"
 
 #: data/base/dialogs/AfterTakeover.lua:403
 msgid "Chic"
@@ -443,7 +443,7 @@ msgstr "Gosig"
 
 #: data/base/dialogs/AfterTakeover.lua:405
 msgid "Cute"
-msgstr ""
+msgstr "Gullig"
 
 #: data/base/dialogs/AfterTakeover.lua:406
 msgid "Fickle"
@@ -475,11 +475,11 @@ msgstr "Samvetslös"
 
 #: data/base/dialogs/AfterTakeover.lua:413
 msgid "Mad"
-msgstr ""
+msgstr "Galen"
 
 #: data/base/dialogs/AfterTakeover.lua:414
 msgid "Obscene"
-msgstr ""
+msgstr "Oanständig"
 
 #: data/base/dialogs/AfterTakeover.lua:415
 msgid "Ornery"
@@ -487,12 +487,11 @@ msgstr "Grinig"
 
 #: data/base/dialogs/AfterTakeover.lua:416
 msgid "Pompous"
-msgstr ""
+msgstr "Pompös"
 
 #: data/base/dialogs/AfterTakeover.lua:417
-#, fuzzy
 msgid "Shrewd"
-msgstr "Näbbmus"
+msgstr "Finurlig"
 
 #: data/base/dialogs/AfterTakeover.lua:419
 msgid "Aardvark"
@@ -512,7 +511,7 @@ msgstr "Fladdermus"
 
 #: data/base/dialogs/AfterTakeover.lua:423
 msgid "Beetle"
-msgstr ""
+msgstr "Skalbagge"
 
 #: data/base/dialogs/AfterTakeover.lua:424
 msgid "Bunny"
@@ -520,7 +519,7 @@ msgstr "Kanin"
 
 #: data/base/dialogs/AfterTakeover.lua:425
 msgid "Dodo"
-msgstr ""
+msgstr "Dront"
 
 #: data/base/dialogs/AfterTakeover.lua:426
 msgid "Duck"
@@ -532,11 +531,11 @@ msgstr "Räv"
 
 #: data/base/dialogs/AfterTakeover.lua:428
 msgid "Frog"
-msgstr ""
+msgstr "Groda"
 
 #: data/base/dialogs/AfterTakeover.lua:429
 msgid "Gerbil"
-msgstr ""
+msgstr "Ökenråtta"
 
 #: data/base/dialogs/AfterTakeover.lua:430
 msgid "Gnu"
@@ -588,7 +587,7 @@ msgstr "Lunnefågel"
 
 #: data/base/dialogs/AfterTakeover.lua:442
 msgid "Scarab"
-msgstr ""
+msgstr "Bladhorning"
 
 #: data/base/dialogs/AfterTakeover.lua:443
 msgid "Shrew"
@@ -596,7 +595,7 @@ msgstr "Näbbmus"
 
 #: data/base/dialogs/AfterTakeover.lua:444
 msgid "Tapir"
-msgstr ""
+msgstr "Tapir"
 
 #: data/base/dialogs/AfterTakeover.lua:445
 msgid "Trout"
@@ -608,7 +607,7 @@ msgstr "Tonfisk"
 
 #: data/base/dialogs/AfterTakeover.lua:447
 msgid "Walrus"
-msgstr ""
+msgstr "Valross"
 
 #: data/base/dialogs/AfterTakeover.lua:455
 #: data/base/dialogs/AfterTakeover.lua:495

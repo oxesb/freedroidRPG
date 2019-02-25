@@ -1,20 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR FreedroidRPG Project
 # This file is distributed under the same license as the freedroidrpg package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Carlos Daniel Landin Montaperto <linkin_yh@hotmail.com>, 2015
-# Lua Marchante Tello <lua8@riseup.net>, 2017-2018
-# Matthew-Daniel White <kristoff1331@gmail.com>, 2017
-# Pedro Arana <pedro.arana.matus@gmail.com>, 2015
+# Pedro Arana <pedro.arana.matus@gmail.com>, 2019
+#
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: FreedroidRPG\n"
+"Project-Id-Version: freedroidrpg 0.16+git\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
 "POT-Creation-Date: 2019-02-25 09:54+0100\n"
-"PO-Revision-Date: 2019-01-19 20:21+0000\n"
-"Last-Translator: fluzz <fluzz@gmx.com>\n"
-"Language-Team: Spanish (http://www.transifex.com/arctic-games/freedroid-rpg/language/es/)\n"
+"PO-Revision-Date: 2019-02-24 22:37+0000\n"
+"Last-Translator: Pedro Arana <pedro.arana.matus@gmail.com>, 2019\n"
+"Language-Team: Spanish (https://www.transifex.com/arctic-games/teams/9511/es/)\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

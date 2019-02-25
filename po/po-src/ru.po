@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
 "POT-Creation-Date: 2019-02-21 18:25+0100\n"
-"PO-Revision-Date: 2019-01-24 01:48+0000\n"
+"PO-Revision-Date: 2019-02-25 09:11+0000\n"
 "Last-Translator: r0di0n <rodikr2005@yandex.ru>\n"
 "Language-Team: Russian (http://www.transifex.com/arctic-games/freedroid-rpg/language/ru/)\n"
 "Language: ru\n"
@@ -92,7 +92,7 @@ msgstr "Опыт"
 
 #: src/character.c:456
 msgid "Next level"
-msgstr "След. уровень"
+msgstr "Сл. уровень"
 
 #: src/character.c:462
 msgid "Circuits"
@@ -108,11 +108,11 @@ msgstr "Ловкость"
 
 #: src/character.c:484
 msgid "Physique"
-msgstr "Телосложение"
+msgstr "Телослож."
 
 #: src/character.c:492
 msgid "Cooling"
-msgstr "Охлаждение"
+msgstr "Охлажд."
 
 #: src/character.c:501
 msgid "Training points"
@@ -144,7 +144,7 @@ msgstr "Броня"
 
 #: src/chat.c:547
 msgid "Click anywhere to continue..."
-msgstr "Щёлкните в любом месте, чтобы продолжить..."
+msgstr "Для продолжения щёлкни в любом месте..."
 
 #: src/chat.c:704 src/chat.c:714
 msgid "[n]--- Start of Dialog ---\n"
@@ -212,7 +212,7 @@ msgstr "Опыт"
 #: src/graphics.c:233
 #, c-format
 msgid "%d price\n"
-msgstr "%d цена\n"
+msgstr "Цена: %d\n"
 
 #. TRANSLATORS: On item description: range
 #: src/hud.c:135
@@ -1708,7 +1708,7 @@ msgstr ""
 #: src/shop.c:305
 #, c-format
 msgid "%s Price: %s%d%s\n"
-msgstr "%s Цена: %s%d%s\n"
+msgstr "%s: %s%d%s\n"
 
 #: src/shop.c:317
 #, c-format
@@ -1909,7 +1909,7 @@ msgstr "Прогресс-%d.%d"
 
 #: src/takeover.c:562
 msgid "For more information, click the help button."
-msgstr "Для получения подробной информации, нажмите кнопку справки."
+msgstr "Больше информации — кнопка HELP."
 
 #: src/takeover.c:602
 #, c-format
@@ -2426,16 +2426,18 @@ msgid ""
 "Choose a game act\n"
 "[r]Warning: Unsaved changes will be lost[n]"
 msgstr ""
+"Выберите действие игры\n"
+"[r]Внимание: Несохранённые изменения будут утеряны[n]"
 
 #: src/lvledit/lvledit_menu.c:945
 #, c-format
 msgid "Game act (untranslated): %s"
-msgstr ""
+msgstr "Действие игры (непереведённое): %s"
 
 #: src/lvledit/lvledit_menu.c:948
 #, c-format
 msgid "Level name (untranslated): %d - %s"
-msgstr "Название уровня (не переведенное): %d - %s"
+msgstr "Название уровня (непереведённое): %d - %s"
 
 #: src/lvledit/lvledit_menu.c:951
 msgid "Level Options"
@@ -2607,15 +2609,15 @@ msgstr "песок"
 
 #: src/lvledit/lvledit_widgets.c:74
 msgid "melee"
-msgstr "ближнего боя"
+msgstr "ближний"
 
 #: src/lvledit/lvledit_widgets.c:75
 msgid "gun"
-msgstr "дальнего боя"
+msgstr "пушки"
 
 #: src/lvledit/lvledit_widgets.c:76
 msgid "defensive"
-msgstr "защитное"
+msgstr "защита"
 
 #: src/lvledit/lvledit_widgets.c:77
 msgid "usable"
@@ -2803,7 +2805,7 @@ msgstr "Препятствие"
 
 #: src/lvledit/lvledit_widgets.c:578
 msgid "Floor"
-msgstr "Этаж"
+msgstr "Настил"
 
 #: src/lvledit/lvledit_widgets.c:585
 msgid "Item"
@@ -2816,7 +2818,7 @@ msgstr "Враг"
 #. TRANSLATORS: Waypoint
 #: src/lvledit/lvledit_widgets.c:600
 msgid "Wayp."
-msgstr "Точка пути"
+msgstr "Пути"
 
 #: src/lvledit/lvledit_widgets.c:607
 msgid "Label"

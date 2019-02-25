@@ -255,7 +255,7 @@ msgstr "Les réparations de %s vont prendre moins de %d %s, %d précieux %s, et 
 #: data/base/dialogs/AfterTakeover.lua:217
 #, c-format
 msgid "You do not have enough valuable circuits to ensure repair of this %s unit."
-msgstr "Vous ne possedez pas suffisamment de circuits pour pouvoir réparer cette unité %s."
+msgstr "Vous ne possédez pas suffisamment de circuits pour pouvoir réparer cette unité %s."
 
 #: data/base/dialogs/AfterTakeover.lua:219
 #, c-format
@@ -278,7 +278,7 @@ msgstr "%s n'est pas endommagé."
 #: data/base/dialogs/AfterTakeover.lua:395
 #: data/base/dialogs/AfterTakeover.lua:484
 msgid "Y"
-msgstr "O"
+msgstr "Y"
 
 #: data/base/dialogs/AfterTakeover.lua:245
 msgid "Repair in progress."
@@ -434,7 +434,7 @@ msgstr "Chauve"
 
 #: data/base/dialogs/AfterTakeover.lua:402
 msgid "Brusque"
-msgstr ""
+msgstr "Brusque"
 
 #: data/base/dialogs/AfterTakeover.lua:403
 msgid "Chic"
@@ -446,7 +446,7 @@ msgstr "Peluches"
 
 #: data/base/dialogs/AfterTakeover.lua:405
 msgid "Cute"
-msgstr ""
+msgstr "Mignon"
 
 #: data/base/dialogs/AfterTakeover.lua:406
 msgid "Fickle"
@@ -478,11 +478,11 @@ msgstr "Machavelique"
 
 #: data/base/dialogs/AfterTakeover.lua:413
 msgid "Mad"
-msgstr ""
+msgstr "Fou"
 
 #: data/base/dialogs/AfterTakeover.lua:414
 msgid "Obscene"
-msgstr ""
+msgstr "Onbscène"
 
 #: data/base/dialogs/AfterTakeover.lua:415
 msgid "Ornery"
@@ -490,12 +490,11 @@ msgstr "Méchant"
 
 #: data/base/dialogs/AfterTakeover.lua:416
 msgid "Pompous"
-msgstr ""
+msgstr "Solennel"
 
 #: data/base/dialogs/AfterTakeover.lua:417
-#, fuzzy
 msgid "Shrewd"
-msgstr "Soricidé"
+msgstr "Habile"
 
 #: data/base/dialogs/AfterTakeover.lua:419
 msgid "Aardvark"
@@ -515,7 +514,7 @@ msgstr "Chauve-souris"
 
 #: data/base/dialogs/AfterTakeover.lua:423
 msgid "Beetle"
-msgstr ""
+msgstr "Scarabée"
 
 #: data/base/dialogs/AfterTakeover.lua:424
 msgid "Bunny"
@@ -523,7 +522,7 @@ msgstr "Lapinou"
 
 #: data/base/dialogs/AfterTakeover.lua:425
 msgid "Dodo"
-msgstr ""
+msgstr "Dodo"
 
 #: data/base/dialogs/AfterTakeover.lua:426
 msgid "Duck"
@@ -535,11 +534,11 @@ msgstr "Renard"
 
 #: data/base/dialogs/AfterTakeover.lua:428
 msgid "Frog"
-msgstr ""
+msgstr "Grenouille"
 
 #: data/base/dialogs/AfterTakeover.lua:429
 msgid "Gerbil"
-msgstr ""
+msgstr "Gerbille"
 
 #: data/base/dialogs/AfterTakeover.lua:430
 msgid "Gnu"
@@ -591,7 +590,7 @@ msgstr "Macareux"
 
 #: data/base/dialogs/AfterTakeover.lua:442
 msgid "Scarab"
-msgstr ""
+msgstr "Scarabée"
 
 #: data/base/dialogs/AfterTakeover.lua:443
 msgid "Shrew"
@@ -599,7 +598,7 @@ msgstr "Soricidé"
 
 #: data/base/dialogs/AfterTakeover.lua:444
 msgid "Tapir"
-msgstr ""
+msgstr "Tapir"
 
 #: data/base/dialogs/AfterTakeover.lua:445
 msgid "Trout"
@@ -611,7 +610,7 @@ msgstr "Thon"
 
 #: data/base/dialogs/AfterTakeover.lua:447
 msgid "Walrus"
-msgstr ""
+msgstr "Morse"
 
 #: data/base/dialogs/AfterTakeover.lua:455
 #: data/base/dialogs/AfterTakeover.lua:495
@@ -667,7 +666,7 @@ msgstr "Êtes-vous sur de vouloir drainer cette unité %s ?"
 
 #: data/base/dialogs/AfterTakeover.lua:600
 msgid "Bot not drained."
-msgstr "Le robot n'a pas été drainé."
+msgstr "Le robot n'a pas été drainé. "
 
 #: data/base/dialogs/AfterTakeover.lua:601
 msgid "Running hcf.py..."
@@ -705,11 +704,11 @@ msgstr "()%%#@(%% CETTE ÉPÉE EST VOTRE. )##%%*&%%*!"
 
 #: data/base/dialogs/AfterTakeover.lua:639
 msgid "Bot drained."
-msgstr "Robot drainé."
+msgstr "Robot drainé. "
 
 #: data/base/dialogs/AfterTakeover.lua:643
 msgid "Failed to drain bot."
-msgstr "Échec de la procédure de drainage."
+msgstr "Échec de la procédure de drainage. "
 
 #: data/base/dialogs/AfterTakeover.lua:644
 msgid "I am free!"
@@ -721,19 +720,19 @@ msgstr "drainage_robot_auto.setup"
 
 #: data/base/dialogs/AfterTakeover.lua:658
 msgid "How do you want draining of bots to be handled?"
-msgstr "Comment voulez-vous procéder au drainage des robots ?"
+msgstr "Comment voulez-vous procéder au drainage des robots ? "
 
 #: data/base/dialogs/AfterTakeover.lua:661
 msgid "Currently draining of bots is tried automatically."
-msgstr "Actuellement, le drainage des robots est tenté automatiquement."
+msgstr "Actuellement, le drainage des robots est tenté automatiquement. "
 
 #: data/base/dialogs/AfterTakeover.lua:663
 msgid "Currently draining of bots is never tried."
-msgstr "Actuellement, le drainage des robots n'est jamais tenté."
+msgstr "Actuellement, le drainage des robots n'est jamais tenté. "
 
 #: data/base/dialogs/AfterTakeover.lua:665
 msgid "Currently it is asked if draining a bot is to be tried."
-msgstr "Actuellement, le drainage des robots est tenté sur demande."
+msgstr "Actuellement, le drainage des robots est tenté sur demande. "
 
 #: data/base/dialogs/AfterTakeover.lua:676
 msgid "Always try draining bots."
@@ -1144,7 +1143,7 @@ msgstr "Sortie de la Base de données interactive d'informations sur les produit
 
 #: data/storyline/act1/dialogs/ArenaTerminal.lua:27
 msgid "[b]Arena Terminated[/b]"
-msgstr ""
+msgstr "[b]Arrêt de l'arène[/b]"
 
 #: data/storyline/act1/dialogs/ArenaTerminal.lua:30
 msgid "[b]Click on the button to stop the arena[/b]"
@@ -1400,7 +1399,7 @@ msgstr "J'ai voté en ta faveur et c'est grâce à ça que tu as été admis !"
 
 #: data/storyline/act1/dialogs/Bender.lua:111
 msgid "I said we'd be buddies, didn't I? Want to stand guard with me? It gets boring after a while."
-msgstr ""
+msgstr "Je t'ai dit qu'on serait potes, non ? Tu veux monter la garde avec moi ? Ça devient ennuyant au bout d'un certain temps."
 
 #: data/storyline/act1/dialogs/Bender.lua:112
 msgid "I could tell you all the secrets of the Red Guard."
@@ -1916,7 +1915,7 @@ msgstr "Salutations, maître Benjamin."
 
 #: data/storyline/act1/dialogs/Benjamin.lua:43
 msgid "You are using a fine weapon. I wonder were you found it?"
-msgstr ""
+msgstr "Tu as une chouette arme. Je me demande où tu l'as trouvée."
 
 #: data/storyline/act1/dialogs/Benjamin.lua:54
 msgid "Ah, so you are the new member. Welcome. My name is Benjamin, and I take care of our ranged weaponry here in the citadel."
@@ -8218,7 +8217,7 @@ msgstr "Désactivation du bouclier disrupteur…"
 
 #: data/storyline/act1/dialogs/DSB-MachineDeckControl.lua:64
 msgid "Shield disabled."
-msgstr "bouclier désactivé."
+msgstr "Bouclier désactivé."
 
 #: data/storyline/act1/dialogs/DSB-MachineDeckControl.lua:66
 msgid "I've taken over the control terminal and disabled the disruptor shield. Now, I should go to the Hell Fortress and hack the MS firmware update system."
@@ -8252,19 +8251,19 @@ msgstr "admin@main.pc.dsb.ms: ~ #"
 
 #: data/storyline/act1/dialogs/DSB-PowerControl.lua:46
 msgid "powercontrol --halt"
-msgstr ""
+msgstr "powercontrol --halt"
 
 #: data/storyline/act1/dialogs/DSB-PowerControl.lua:48
 msgid "[b]ERROR:[/b] Impossible to shutdown. Please contact Machine Deck."
-msgstr ""
+msgstr "[b]ERREUR :[/b] Impossible d'éteindre. Merci de contacter le Pont des Machines."
 
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:35
 msgid "[b]Login failed. Entering as Guest[/b]"
-msgstr ""
+msgstr "[b]Identifiant erroné. Connexion en tant qu'Invité[/b]"
 
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:37
 msgid "Welcome to [b]Power Control Gate 1 Terminal[/b]!"
-msgstr ""
+msgstr "Bienvenu sur le [b]Terminal de contrôle de l'alimentation électrique de la Porte 1[/b]"
 
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:54
 msgid "GAME BUG. PLEASE REPORT."
@@ -8293,7 +8292,7 @@ msgstr "Accès à cette zone non accordé."
 
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:66
 msgid "Contact personnel in the Machine Deck Control Room if you believe this to be an error."
-msgstr "Contactez le personnel de la chambre de contrôle des machine si vous pensez que c'est une erreur."
+msgstr "Contactez le personnel de la chambre de contrôle du Pont des Machines machine si vous pensez que c'est une erreur."
 
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:69
 #: data/storyline/act1/dialogs/TutorialTerminal.lua:66
@@ -8336,7 +8335,7 @@ msgstr "Bonne journée"
 
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:96
 msgid "We hope your day will be most productive."
-msgstr "Nous espérons que ta journée sera la plus productive."
+msgstr "Nous espérons que votre journée sera des plus productives."
 
 #: data/storyline/act1/dialogs/Duncan.lua:77
 msgid "Hi... Erm... Who are you?"
@@ -11548,7 +11547,7 @@ msgstr "Bienvenu au Complexe industriel de MégaSys."
 
 #: data/storyline/act1/dialogs/HF-EntranceBot.lua:31
 msgid "Still alive? Don't you know that you should update your firmware often?"
-msgstr ""
+msgstr "Encore en vie ? Tu ne sais pas que tu devrais mettre à jour régulièrement ton microcode ?"
 
 #: data/storyline/act1/dialogs/HF-EntranceBot.lua:33
 msgid "Access is restricted to authorized personnel."
@@ -11629,7 +11628,7 @@ msgstr "Mais j'ai cette autorisation"
 
 #: data/storyline/act1/dialogs/HF-EntranceBot.lua:89
 msgid "The gates are open. The firmware server should lay beyond them."
-msgstr ""
+msgstr "Les portes sont ouvertes. Le serveur de microcode devrait se situer après elles."
 
 #: data/storyline/act1/dialogs/HF-EntranceBot.lua:100
 msgid "I have come to save the world, I don't need any proof."
@@ -12453,7 +12452,7 @@ msgstr "Core dumpé. Arrêt du système."
 
 #: data/storyline/act1/dialogs/Jennifer.lua:34
 msgid "Hey, what are you doing?! Go back to work! All bots died and I can't make them work again. We'll be all in trouble if boss decides to pay us visit!"
-msgstr ""
+msgstr "Hé, qu'est-ce que tu fais ?! Retourne au travail ! Tous les robots sont morts et je n'arrive pas à les refaire fonctionner. On va avoir des problèmes si le boss décide de nous faire une petite visite !"
 
 #: data/storyline/act1/dialogs/Jennifer.lua:39
 msgid "Hello"
@@ -16887,7 +16886,7 @@ msgstr "Trois mois avant le Grand Assaut, il a disparu. Personne n'a jamais su o
 
 #: data/storyline/act1/dialogs/Samson.lua:61
 msgid "We were doing a \"sensor\" system. He said that MegaSys command droids used those gadgets to detect invisible things, and if we could replicate, our security droids would be almost invincible."
-msgstr ""
+msgstr "On travaillait sur un système de \"senseur\". Il disait que les robots de commandes de MegaSys utilisaient ces gadgets pour détecter les choses invisibles, et, si on arrivait à les dupliquer, alors nos robots de sécurité seraient presque invincibles. "
 
 #: data/storyline/act1/dialogs/Samson.lua:62
 msgid "Because of his disappearance, we never finished that. I was thinking though, maybe if someone got me his work, I could finish it, and add those so-called \"sensors\" on the droids you hack..."
@@ -22690,11 +22689,11 @@ msgstr "Je vais te donner quelques matériaux et te laisser confectionner un acc
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:1005
 msgid "Usually you'll do this in some sort of mini-factory."
-msgstr ""
+msgstr "Habituellement, on fait ça dans une sorte de mini-usine."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:1006
 msgid "But I'll do this for you without one or my name is not Tom. Tutorial Tom."
-msgstr ""
+msgstr "Mais je vais te le faire sans avoir besoin de passer par une usine, ou alors mon nom n'est plus Tom, Tom Tutoriel."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:1007
 msgid "Pay attention to the type of socket the add-on needs."

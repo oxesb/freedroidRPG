@@ -6,7 +6,7 @@
 # Benjamin Bertrand <benjaminbertrand1988@gmail.com>, 2017
 # Benjamin Leduc <giby_the_kid@yahoo.fr>, 2014
 # fluzz <fluzz@gmx.com>, 2014
-# fluzz <fluzz@gmx.com>, 2014-2016
+# fluzz <fluzz@gmx.com>, 2014-2016,2019
 # sebastienadam <sebastien.adam.be@gmail.com>, 2014
 # sebastienadam <sebastien.adam.be@gmail.com>, 2014
 # Steven D. <splinter.hopkins@gmail.com>, 2016
@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
 "POT-Creation-Date: 2019-02-21 18:25+0100\n"
-"PO-Revision-Date: 2019-01-19 20:11+0000\n"
+"PO-Revision-Date: 2019-02-22 13:18+0000\n"
 "Last-Translator: fluzz <fluzz@gmx.com>\n"
 "Language-Team: French (http://www.transifex.com/arctic-games/freedroid-rpg/language/fr/)\n"
 "Language: fr\n"
@@ -353,11 +353,11 @@ msgstr "--- Historique des messages ---"
 
 #: src/init.c:621
 msgid "Starting tutorial."
-msgstr "Commencer le tutoriel."
+msgstr "Début du tutoriel."
 
 #: src/init.c:623
 msgid "Starting new game act."
-msgstr ""
+msgstr "Début d'un nouvel acte du jeu."
 
 #: src/init.c:972
 msgid ""

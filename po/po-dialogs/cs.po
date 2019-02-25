@@ -119,7 +119,7 @@ msgstr "Vstup do módu \"jednoho nódu\"..."
 
 #: data/base/dialogs/AfterTakeover.lua:66
 msgid "BOTNET: Most commands will be broadcast."
-msgstr "BOTNET: Většina příkazů se bude vysílána."
+msgstr "BOTNET: Většina příkazů bude vysílána."
 
 #: data/base/dialogs/AfterTakeover.lua:69
 msgid "SINGLE NODE: Commands will not be broadcast."
@@ -343,7 +343,7 @@ msgstr "A (umožnit vysílání)"
 
 #: data/base/dialogs/AfterTakeover.lua:332
 msgid "Commands will be broadcast and executed by all bots on this level under your control."
-msgstr "Příkazy budou vysílány a prováděny všemy roboty na této úrovni pod vaší kontrolou."
+msgstr "Příkazy budou vysílány a prováděny všemi roboty na této úrovni pod vaší kontrolou."
 
 #: data/base/dialogs/AfterTakeover.lua:333
 msgid "Entering \"botnet\" mode..."
@@ -360,7 +360,7 @@ msgstr "Příkazy budou provedeny pouze tímto robotem."
 
 #: data/base/dialogs/AfterTakeover.lua:358
 msgid "Welcome to the settings menu."
-msgstr "Vítáme vás na menu nastavení."
+msgstr "Vítáme vás v menu nastavení."
 
 #: data/base/dialogs/AfterTakeover.lua:359
 msgid "Version: 1.82c"
@@ -391,7 +391,7 @@ msgstr "./hostname"
 
 #: data/base/dialogs/AfterTakeover.lua:379
 msgid "Welcome to the hostname menu."
-msgstr "Vítáme Vás v menu hostname."
+msgstr "Vítáme Vás v menu jméno hosta."
 
 #: data/base/dialogs/AfterTakeover.lua:380
 #, c-format
@@ -431,7 +431,7 @@ msgstr "Plešoun"
 
 #: data/base/dialogs/AfterTakeover.lua:402
 msgid "Brusque"
-msgstr ""
+msgstr "Příkrý"
 
 #: data/base/dialogs/AfterTakeover.lua:403
 msgid "Chic"
@@ -443,7 +443,7 @@ msgstr "Mazlíček"
 
 #: data/base/dialogs/AfterTakeover.lua:405
 msgid "Cute"
-msgstr ""
+msgstr "Roztomilý"
 
 #: data/base/dialogs/AfterTakeover.lua:406
 msgid "Fickle"
@@ -475,11 +475,11 @@ msgstr "Machiavelista"
 
 #: data/base/dialogs/AfterTakeover.lua:413
 msgid "Mad"
-msgstr ""
+msgstr "Šílený"
 
 #: data/base/dialogs/AfterTakeover.lua:414
 msgid "Obscene"
-msgstr ""
+msgstr "Obscénní"
 
 #: data/base/dialogs/AfterTakeover.lua:415
 msgid "Ornery"
@@ -487,12 +487,11 @@ msgstr "Zloduch"
 
 #: data/base/dialogs/AfterTakeover.lua:416
 msgid "Pompous"
-msgstr ""
+msgstr "Pompézní"
 
 #: data/base/dialogs/AfterTakeover.lua:417
-#, fuzzy
 msgid "Shrewd"
-msgstr "Rejsek"
+msgstr "Mazaný"
 
 #: data/base/dialogs/AfterTakeover.lua:419
 msgid "Aardvark"
@@ -512,7 +511,7 @@ msgstr "Netopýr"
 
 #: data/base/dialogs/AfterTakeover.lua:423
 msgid "Beetle"
-msgstr ""
+msgstr "Brouk"
 
 #: data/base/dialogs/AfterTakeover.lua:424
 msgid "Bunny"
@@ -520,7 +519,7 @@ msgstr "Králíček"
 
 #: data/base/dialogs/AfterTakeover.lua:425
 msgid "Dodo"
-msgstr ""
+msgstr "Trdlo"
 
 #: data/base/dialogs/AfterTakeover.lua:426
 msgid "Duck"
@@ -532,11 +531,11 @@ msgstr "Liška"
 
 #: data/base/dialogs/AfterTakeover.lua:428
 msgid "Frog"
-msgstr ""
+msgstr "Žába"
 
 #: data/base/dialogs/AfterTakeover.lua:429
 msgid "Gerbil"
-msgstr ""
+msgstr "Pískomil"
 
 #: data/base/dialogs/AfterTakeover.lua:430
 msgid "Gnu"
@@ -588,7 +587,7 @@ msgstr "Papuchalk"
 
 #: data/base/dialogs/AfterTakeover.lua:442
 msgid "Scarab"
-msgstr ""
+msgstr "Skarabeus"
 
 #: data/base/dialogs/AfterTakeover.lua:443
 msgid "Shrew"
@@ -596,7 +595,7 @@ msgstr "Rejsek"
 
 #: data/base/dialogs/AfterTakeover.lua:444
 msgid "Tapir"
-msgstr ""
+msgstr "Tapír"
 
 #: data/base/dialogs/AfterTakeover.lua:445
 msgid "Trout"
@@ -608,7 +607,7 @@ msgstr "Tuňák"
 
 #: data/base/dialogs/AfterTakeover.lua:447
 msgid "Walrus"
-msgstr ""
+msgstr "Mrož"
 
 #: data/base/dialogs/AfterTakeover.lua:455
 #: data/base/dialogs/AfterTakeover.lua:495
@@ -680,7 +679,7 @@ msgstr "Varování! Chladicí subsystémy zakázány."
 
 #: data/base/dialogs/AfterTakeover.lua:615
 msgid "Warning! Spontaneous oxidization witH emis$ion of light aND heAt detecteddd in THE#main| procesIng unit."
-msgstr "Varování! Spontánní oxidace S emi$í světla A tePLa deTekokokováNA v #hlaVní| jednotce ZpracovánÍ."
+msgstr "Varování! Spontánní oxidace S emi$í světla A tePLa deTekokokováNA v #hlaVní| jednotce ZpraCoVánÍ."
 
 #: data/base/dialogs/AfterTakeover.lua:616
 #, c-format
@@ -746,17 +745,17 @@ msgstr "Vždy se zeptat, zda-li se má rozběhnout pokus o vyčerpání robota."
 
 #: data/base/dialogs/AfterTakeover.lua:706
 msgid "Reprogramm_bots_after_takeover.sh"
-msgstr "Přeprogramovat_roboty_po_ovládnutí.sh"
+msgstr "Přeprogramovat_roboty_po_převzetí_kontroly.sh"
 
 #: data/base/dialogs/AfterTakeover.lua:710
 #: data/base/dialogs/AfterTakeover.lua:725
 msgid "Bots will be reprogrammed after takeover: [b]true[/b]"
-msgstr "Roboti budou přeprogramováni po ovládnutí: [b]pravda[/b]"
+msgstr "Roboti budou přeprogramováni po převzetí kontroly: [b]pravda[/b]"
 
 #: data/base/dialogs/AfterTakeover.lua:712
 #: data/base/dialogs/AfterTakeover.lua:737
 msgid "Bots will be reprogrammed after takeover: [b]false[/b]"
-msgstr "Roboti budou přeprogramováni po ovládnutí: [b]nepravda[/b]"
+msgstr "Roboti budou přeprogramováni po převzetí kontroly: [b]nepravda[/b]"
 
 #: data/base/dialogs/AfterTakeover.lua:746
 msgid "leave settings.plx"

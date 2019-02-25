@@ -1,21 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR FreedroidRPG Project
 # This file is distributed under the same license as the freedroidrpg package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Helios Wann, 2017
-# algan011, 2014
-# Lgmrszd <m.v.bobrov@yandex.ru>, 2016
-# r0di0n <rodikr2005@yandex.ru>, 2019
-# Roman M. Yagodin <roman.yagodin@gmail.com>, 2015
+# algan011, 2019
+#
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: FreedroidRPG\n"
+"Project-Id-Version: freedroidrpg 0.16+git\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
 "POT-Creation-Date: 2019-02-25 09:54+0100\n"
-"PO-Revision-Date: 2019-01-27 12:03+0000\n"
-"Last-Translator: r0di0n <rodikr2005@yandex.ru>\n"
-"Language-Team: Russian (http://www.transifex.com/arctic-games/freedroid-rpg/language/ru/)\n"
+"PO-Revision-Date: 2019-02-24 22:37+0000\n"
+"Last-Translator: algan011, 2019\n"
+"Language-Team: Russian (https://www.transifex.com/arctic-games/teams/9511/ru/)\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -891,7 +890,7 @@ msgstr "Обычная куртка"
 
 #: data/base/item_specs.lua:1302
 msgid "This piece of clothing made out of Synthex(TM) does a decent job of protection. I guess. Maybe. I'm not sure."
-msgstr "Эта часть одежды из синтекса™ — вполне достойная защита. Я думаю. Возможно. Не уверен."
+msgstr "Эта часть одежды из синтекса (ТМ) - вполне достойная защита. Я думаю. Возможно. Не уверен."
 
 #: data/base/item_specs.lua:1310
 msgid "Reinforced Jacket"
@@ -907,7 +906,7 @@ msgstr "Защитная куртка"
 
 #: data/base/item_specs.lua:1334
 msgid "Very strong for its size, this jacket made out of Shootex(TM) does a good job of absorbing basic blows. It is suitable for all kinds of extreme sports, such as climbing, rafting, bungee-jumping, fencing and even racing."
-msgstr "Очень крепкая для своих размеров, эта курка из шутекса™ хорошо поглощает обычные удары. Подходит для экстремального спорта: скалолазания, рафтинга, банджи-джампинга, фехтования и даже гонок."
+msgstr "Очень крепкая для своих размеров, эта курка из шутекса (ТМ) хорошо поглощает обычные удары. Подходит для экстремального спорта: скалолазания, рафтинга, банджи-джампинга, фехтования и даже гонок."
 
 #: data/base/item_specs.lua:1342
 msgid "Red Guard's Light Robe"
@@ -915,11 +914,11 @@ msgstr "Лёгкая роба Красной стражи"
 
 #: data/base/item_specs.lua:1350
 msgid "The universal riot gear of the Red Guard. Tough as nails and able to withstand most blows."
-msgstr "Универсальное снаряжение красной стражи, жёсткое, как гвозди, и способное выдержать множество ударов."
+msgstr "Универсальное снаряжение Красной стражи, жёсткое, как гвозди, способно выдержать множество ударов."
 
 #: data/base/item_specs.lua:1358
 msgid "Red Guard's Heavy Robe"
-msgstr "Тяжёлая роба Красной Стражи"
+msgstr "Тяжёлая роба Красной стражи"
 
 #: data/base/item_specs.lua:1366
 msgid "Defense is acquired at a high level with this durable piece of armor."
@@ -931,7 +930,7 @@ msgstr "Самодельный щит"
 
 #: data/base/item_specs.lua:1386
 msgid "This shield is a compilation of various objects which happened to be around. It has tubes, bolts and parts of metal, all slapped together to provide a small bit of protection from enemies. It's very simple and rough, but some sensors and lights have been added to let the wielder know when the item is getting hit, and how long it will remain operational and other cool stuff like that."
-msgstr "Этот щит собран из нашедшихся вокруг разнообразных объектов. Трубки, болты и куски металла — всё сляпано вместе, чтобы получить хоть какую-то защиту от врагов. Очень простой и грубый, однако имеет несколько датчиков и индикаторов, показывающих владелецу, когда предмет получает удар, как долго он прослужит и другие крутые штуки вроде этих."
+msgstr "Этот щит собран из нашедшихся вокруг разнообразных объектов. Трубки, болты и куски металла - всё сляпано вместе, чтобы получить хоть какую-то защиту от врагов. Очень простой и грубый, однако имеет несколько датчиков и индикаторов, показывающих владельцу, когда предмет получает удар, как долго он прослужит и другие крутые штуки вроде этих."
 
 #: data/base/item_specs.lua:1394
 msgid "Bot Carapace"
@@ -971,7 +970,7 @@ msgstr "Котелок"
 
 #: data/base/item_specs.lua:1467
 msgid "Top of the line headgear, for bots. But rip it off their metal necks and take out the circuits it also manages to protect living beings decently against a myriad of close range and long range attacks."
-msgstr "Самый топ в линейке головных уборов, для ботов. Но сорвите его с их металлических шей, вытащите микросхемы — и он также сможет прилично защитить живых существ от множества ближних и дальних атак."
+msgstr "Самый топ в линейке головных уборов, для ботов. Но сорвите его с их металлических шей, вытащите микросхемы - и он также сможет прилично защитить живых существ от множества ближних и дальних атак."
 
 #: data/base/item_specs.lua:1475
 msgid "Worker Helmet"
@@ -1039,7 +1038,7 @@ msgstr "Эти ботинки похожи на самую простую обу
 
 #: data/base/item_specs.lua:1606
 msgid "Source Book of Emergency Shutdown"
-msgstr "Книга исходников «Аварийное отключение»"
+msgstr "Книга исходников \"Аварийное отключение\""
 
 #: data/base/item_specs.lua:1607 data/base/item_specs.lua:1619
 #: data/base/item_specs.lua:1631 data/base/item_specs.lua:1643
@@ -1059,7 +1058,7 @@ msgstr "Каждый время от времени должен выпусти�
 
 #: data/base/item_specs.lua:1618
 msgid "Source Book of Check System Integrity"
-msgstr "Книга исходников «Проверка целостности системы»"
+msgstr "Книга исходников \"Проверка целостности системы\""
 
 #: data/base/item_specs.lua:1623
 msgid "An incredible healing program, probably the only one you will ever need."
@@ -1067,15 +1066,15 @@ msgstr "Потрясающая программа лечения, возможн
 
 #: data/base/item_specs.lua:1630
 msgid "Source Book of Sanctuary"
-msgstr "Книга исходников «Убежище»"
+msgstr "Книга исходников \"Убежище\""
 
 #: data/base/item_specs.lua:1635
 msgid "The art of rapidly moving away from danger is very useful. Even when used in reverse, it has its uses."
-msgstr "Быстро сбежать от опасности — очень полезное искусство. Даже когда используется наоборот."
+msgstr "Быстро сбежать от опасности - очень полезное искусство. Даже когда используется наоборот."
 
 #: data/base/item_specs.lua:1642
 msgid "Source Book of Malformed Packet"
-msgstr "Книга исходников «Битые пакеты»"
+msgstr "Книга исходников \"Битые пакеты\""
 
 #: data/base/item_specs.lua:1647 data/base/skill_specs.lua:91
 msgid "When computers are presented with the unexpected, they can damage themselves."
@@ -1083,7 +1082,7 @@ msgstr "Когда компьютеры сталкиваются с чем-ли�
 
 #: data/base/item_specs.lua:1654
 msgid "Source Book of Calculate Pi"
-msgstr "Книга исходников «Вычисление пи»"
+msgstr "Книга исходников \"Вычисление пи\""
 
 #: data/base/item_specs.lua:1659 data/base/skill_specs.lua:102
 msgid "It is not a big problem to make a badly designed system to go hunting for the impossible, causing a performance impact."
@@ -1091,7 +1090,7 @@ msgstr "Несложно заставить плохо сконструиров�
 
 #: data/base/item_specs.lua:1666
 msgid "Source Book of Blue Screen"
-msgstr "Книга исходников «Синий экран»"
+msgstr "Книга исходников \"Синий экран\""
 
 #: data/base/item_specs.lua:1671 data/base/item_specs.lua:1683
 msgid "With a little touch a war machine comes crashing to a halt. For a while."
@@ -1099,11 +1098,11 @@ msgstr "От лёгкого прикосновения боевая машина
 
 #: data/base/item_specs.lua:1678
 msgid "Source Book of Broadcast Blue Screen"
-msgstr "Книга исходников «Трансляция синего экрана»"
+msgstr "Книга исходников \"Трансляция синего экрана\""
 
 #: data/base/item_specs.lua:1690
 msgid "Source Book of Invisibility"
-msgstr "Книга исходников «Невидимость»"
+msgstr "Книга исходников \"Невидимость\""
 
 #: data/base/item_specs.lua:1695 data/base/skill_specs.lua:80
 msgid "I am not the Linarian you are looking for."
@@ -1111,7 +1110,7 @@ msgstr "Я не линарианец, которого вы ищете."
 
 #: data/base/item_specs.lua:1702
 msgid "Source Book of Virus"
-msgstr "Книга исходников «Вирус»"
+msgstr "Книга исходников \"Вирус\""
 
 #: data/base/item_specs.lua:1707 data/base/skill_specs.lua:137
 msgid "This is not just a firmware upgrade, my dear bot. You are about to find out what exactly I want to give you."
@@ -1119,7 +1118,7 @@ msgstr "Это не только новая прошивка, мой дорог�
 
 #: data/base/item_specs.lua:1714
 msgid "Source Book of Broadcast Virus"
-msgstr "Книга исходников «Трансляция вируса»"
+msgstr "Книга исходников \"Трансляция вируса\""
 
 #: data/base/item_specs.lua:1719
 msgid "The network is wide and dangerous. Many traps await the weak and unprepared."
@@ -1127,7 +1126,7 @@ msgstr "Сеть дика и опасна. Множество ловушек п�
 
 #: data/base/item_specs.lua:1726
 msgid "Source Book of Dispel Smoke"
-msgstr "Книга исходников «Рассеянный дым»"
+msgstr "Книга исходников \"Рассеянный дым\""
 
 #: data/base/item_specs.lua:1731
 msgid "By heating up the chips with a malformed program, you can cause them to release the magic smoke which keeps the bot running."
@@ -1135,7 +1134,7 @@ msgstr "Перегревая чипы искажённой программой,
 
 #: data/base/item_specs.lua:1738
 msgid "Source Book of Killer Poke"
-msgstr "Книга исходников «Смертельный удар»"
+msgstr "Книга исходников \"Смертельный удар\""
 
 #: data/base/item_specs.lua:1743
 msgid "Messing around with the bot's memory can cause it to damage itself, but the damage is greatly variable."
@@ -1143,7 +1142,7 @@ msgstr "Ошибки в памяти бота могут заставить ег
 
 #: data/base/item_specs.lua:1750
 msgid "Source Book of Repair Equipment"
-msgstr "Книга исходников «Ремонт снаряжения»"
+msgstr "Книга исходников \"Ремонт снаряжения\""
 
 #: data/base/item_specs.lua:1751
 msgid "Learn about repairing items"
@@ -1155,7 +1154,7 @@ msgstr "Это руководство поможет тебе починить �
 
 #: data/base/item_specs.lua:1762
 msgid "Source Book of Plasma Discharge"
-msgstr "Книга исходников «Плазменный разряд»"
+msgstr "Книга исходников \"Разряд плазмы\""
 
 #: data/base/item_specs.lua:1767 data/base/skill_specs.lua:184
 msgid "The overload setting exists for emergencies. Plasma does not discriminate between bots and humans. Everything is the same to it."
@@ -1163,23 +1162,23 @@ msgstr "Настройка перегрузки существует для ав
 
 #: data/base/item_specs.lua:1774
 msgid "Source Book of Nethack"
-msgstr "Книга исходников «Nethack»"
+msgstr "Книга исходников \"Нетхак\""
 
 #: data/base/item_specs.lua:1779
 msgid "The open source game called Nethack is one of the world's greatest wasters of time. Machines don't care about it, but humans can get sucked in quite deeply."
-msgstr "Игра с открытым исходным кодом «Nethack» — один из всемирно известных пожирателей времени. Машинам не о чем беспокоиться, но люди могут подсесть всерьёз."
+msgstr "Игра с открытым исходным кодом \"Нетхак\" - один из всемирно известных пожирателей времени. Машинам не о чем беспокоиться, но люди могут подсесть всерьёз."
 
 #: data/base/item_specs.lua:1786
 msgid "Source Book of Ricer CFLAGS"
-msgstr "Книга исходников «Пресс-пюре CFLAGS»"
+msgstr "Книга исходников \"Пресс-пюре CFLAGS\""
 
 #: data/base/item_specs.lua:1791
 msgid "Optimization is the root of all evil. You can gain some temporary improvements to your system, but in the end you are only likely to cause permanent damage."
-msgstr "Оптимизация — это корень зла. Ты можешь получить кое-какие временные улучшения системы, но, скорей всего, в конце будет нанесён непоправимый урон!"
+msgstr "Оптимизация - это корень зла. Ты можешь получить кое-какие временные улучшения системы, но, скорей всего, в конце будет нанесён непоправимый урон!"
 
 #: data/base/item_specs.lua:1798
 msgid "Source Book of Reverse-engineer"
-msgstr "Книга исходников «Обратная разработка»"
+msgstr "Книга исходников \"Обратная разработка\""
 
 #: data/base/item_specs.lua:1803
 msgid "There is some dark magic in the art of turning bots inside-out to learn all their secrets."
@@ -1187,7 +1186,7 @@ msgstr "Есть некая тёмная магия в искусстве выв
 
 #: data/base/item_specs.lua:1810
 msgid "Source Book of Light"
-msgstr "Книга исходников «Свет»"
+msgstr "Книга исходников \"Свет\""
 
 #: data/base/item_specs.lua:1815 data/base/skill_specs.lua:205
 msgid "Let there be light..."
@@ -1195,7 +1194,7 @@ msgstr "Да будет свет..."
 
 #: data/base/item_specs.lua:1822
 msgid "Source Book of Network Mapper"
-msgstr "Книга исходников «Сетевой картограф»"
+msgstr "Книга исходников \"Сетевой картограф\""
 
 #: data/base/item_specs.lua:1827 data/base/skill_specs.lua:195
 msgid "Knowing what your enemies are up to is easy with a little signal intelligence. Displays enemy locations on your automap."
@@ -1207,11 +1206,11 @@ msgstr "Субатомная и ядерная наука для чайнико�
 
 #: data/base/item_specs.lua:1838
 msgid "From the back of the cover: 'Subatomic and Nuclear Science for Dummies, Volume IV is the most popular handbook series for learning nuclear science: Learn to generate enough power to keep you town lit up for a decade! Discover how to really scare neighboring countries! Find out how to make your very own mutant pet!' This obviously important tome of knowledge from before the great assault comes with no warranty whatsoever."
-msgstr "На обороте обложки: «Субатомная и ядерная наука для чайников, том IV — самая популярная серия справочников по изучению ядерной физики. Научись генерировать достаточно энергии, чтобы твой город светился десятилетиями! Узнай, как перепугать соседние страны! Открой секрет выращивания своего собственного питомца-мутанта!» Этот кладезь ценных знаний, уцелевших со времён до бунта машин, предоставляется без каких-либо гарантий."
+msgstr "На обороте обложки: \"Субатомная и ядерная наука для чайников, том IV - самая популярная серия справочников по изучению ядерной физики. Научись генерировать достаточно энергии, чтобы твой город светился десятилетиями! Узнай, как перепугать соседние страны! Открой секрет выращивания своего собственного питомца-мутанта!\" Этот кладезь ценных знаний, уцелевших со времён до бунта машин, предоставляется без каких-либо гарантий."
 
 #: data/base/item_specs.lua:1845
 msgid "Manual of the Automated Factory"
-msgstr "Руководство «Автоматизированная фабрика»"
+msgstr "Руководство \"Автоматизированная фабрика\""
 
 #: data/base/item_specs.lua:1849
 msgid "This book describes the operation and repair of automated factories. Included are common error codes and how to fix them. However, most repairs simply call for liberal application of 'Elbow Grease'."
@@ -1219,7 +1218,7 @@ msgstr "В этой книге описывается эксплуатация �
 
 #: data/base/item_specs.lua:1856
 msgid "Manual of the Extract Bot Parts"
-msgstr "Руководство «Извлечение деталей из ботов»"
+msgstr "Руководство \"Извлечение деталей из ботов\""
 
 #: data/base/item_specs.lua:1857 data/base/item_specs.lua:1861
 msgid "USE FOR CHEATING ONLY. If you see this ingame, please report the bug."
@@ -1267,7 +1266,7 @@ msgstr "Противоядие для пилюль увеличения мозг
 
 #: data/base/item_specs.lua:1912
 msgid "These pills can reverse the harmful effects of the 'brain enlargement pills' that are publicly sold via the Internet. The planet-wide guild of medics has recommended not to respond to these adverts at all, while attempts to entirely ban the distribution of those pills were never completely successful."
-msgstr "Это противоядие поможет обратить вредные эффекты «пилюль увеличения мозга», открыто продающихся через интернет. Всепланетная гильдия медиков не рекомендует поддаваться лживой рекламе, хотя все попытки полностью запретить производство таких пилюль никогда не увенчивались успехом."
+msgstr "Это противоядие поможет обратить вредные эффекты \"пилюль увеличения мозга\", открыто продающихся через интернет. Всепланетная гильдия медиков не рекомендует поддаваться лживой рекламе, хотя все попытки полностью запретить производство таких пилюль никогда не увенчивались успехом."
 
 #: data/base/item_specs.lua:1919
 msgid "Brain Enlargement Pill"
@@ -1278,9 +1277,9 @@ msgid "Gain fast acting cancer"
 msgstr "Получи быстрорастущую раковую опухоль"
 
 #: data/base/item_specs.lua:1925
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Doctors all over the planet have tried to suppress the amazing breakthrough which has brought increased alertness and concentration that comes with a larger brain. They are synthesized using cutting edge technology and 100% natural herbal ingredients from a secret five thousand-year-old traditional holistic recipe. Get yours direct from our online Canadian ph4rm4cy!!! 100% satisfaction guaranteed!!!"
-msgstr "Врачи всей планеты пытались замолчать потрясающий прорыв, который принёс повышение живости ума и концентрации как следствие увеличенного мозга. Пилюли синтезированы с использованием технологии режущей кромки и 100% натуральных ингредиентов из трав по традиционному комплексному рецепту пятитысячелетней давности. Приобретайте онлайн прямо в нашей «Канадской апт3к3»!!! 100% удовлетворение гарантировано!!!"
+msgstr "Врачи всей планеты пытались замолчать потрясающий прорыв, который принёс повышение живости ума и концентрации как следствие увеличенного мозга. Пилюли синтезированы с использованием технологии режущей кромки и 100 % натуральных ингредиентов из трав по традиционному комплексному рецепту пятитысячелетней давности. Приобретайте онлайн прямо в нашей \"Канадской апт3к3\"!!! 100 % удовлетворение гарантировано!!!"
 
 #: data/base/item_specs.lua:1932
 msgid "Diet Supplement"
@@ -1301,7 +1300,7 @@ msgstr "Антибиотик"
 
 #: data/base/item_specs.lua:1949
 msgid "Truly wonderful things can be extracted from molds. This can cure lethal food poisoning. Wish you had that in your last Nethack game, eh?"
-msgstr "Совершенно замечательные вещи можно извлечь из плесени. Это может вылечить вас от смертельного пищевого отравления. Жалеете, что у вас небыло этого во время последнего прохождения Nethack, а?"
+msgstr "Совершенно чудесные вещи можно получить из плесени. Эта вылечит смертельное пищевое отравление. Жаль, у вас не было такого при последней игре в Нетхак, да?"
 
 #: data/base/item_specs.lua:1956
 msgid "Doc-in-a-can"
@@ -1414,7 +1413,7 @@ msgstr "Инструменты Диксона"
 
 #: data/base/item_specs.lua:2082
 msgid "This is a teleporter service toolbox. It's complete and orderly, though a few dents on the outside give proof of frequent use. 'C. Dixon' is carved into the outside with fine print."
-msgstr "Инструменты для обслуживания телепорта. Набор укомплектован и упорядочен, снаружи несколько вмятин, свидетельствующих о частом использовании, и красиво выгравировано «С. Диксон»."
+msgstr "Инструменты для обслуживания телепорта. Набор укомплектован и упорядочен, снаружи несколько вмятин, свидетельствующих о частом использовании, и красиво выгравировано \"С. Диксон\"."
 
 #: data/base/item_specs.lua:2089
 msgid "Toolbox"
@@ -1493,7 +1492,7 @@ msgstr "Вилка"
 #: data/base/item_specs.lua:2214 data/base/item_specs.lua:2226
 #: data/base/item_specs.lua:2237 data/base/item_specs.lua:2248
 msgid "This item is part of the 'Self Cleaning Kitchen' (SCK) project from before the Great Assault. All of the items in the SCK project have an inner mechanism that will clean the object automatically if left alone for a given time. It comes with its own power supply, and has a supposed duration of 200 years."
-msgstr "Этот предмет — часть проекта «Самоочищающейся кухни» (СОК) из времён до бунта машин. Все предметы проекта СОК поставляются со встроенным механизмом, который автоматически очищает объект, если оставить его в покое и дать время. Собственный источник питания рассчитан предположительно на 200 лет работы."
+msgstr "Этот предмет - часть проекта \"Самоочищающейся кухни\" (СОК) из времён до бунта машин. Все предметы проекта СОК поставляются со встроенным механизмом, который автоматически очищает объект, если оставить его в покое и дать время. Собственный источник питания рассчитан предположительно на 200 лет работы."
 
 #: data/base/item_specs.lua:2222
 msgid "Plate"
@@ -1557,7 +1556,7 @@ msgstr "Пустая корзинка для пикника"
 
 #: data/base/item_specs.lua:2315
 msgid "This is the latest in 'Dr. How?'-brand picnic basket technology! With patented food-preserving time-dilation, space-bending miniaturization, and anti-gravity, your food stays fresh and your drinks stay cold in a small light-as-a-feather package! Now you can picnic the old fashioned way! Batteries sold separately."
-msgstr "Корзина для пикника бренда «Доктор Как?», изготовленная по новейшей технологии. В маленькой и лёгкой, как пёрышко, упаковке с запатентованной пищесохраняющей, времярасширительной и пространствосгибательной миниатюаризацией и антигравитацией ваша еда останется свежей, а напитки холодными! Теперь вы можете сходить на пикник по старинке! Батареи приобретаются отдельно."
+msgstr "Корзина для пикника бренда \"Доктор Как?\", изготовленная по новейшей технологии. В маленькой и лёгкой, как пёрышко, упаковке с запатентованной пищесохраняющей, времярасширительной и пространствосгибательной миниатюаризацией и антигравитацией ваша еда останется свежей, а напитки холодными! Теперь вы можете сходить на пикник по старинке! Батареи приобретаются отдельно."
 
 #: data/base/item_specs.lua:2322
 msgid "Lunch in a Picnic Basket"
@@ -1565,7 +1564,7 @@ msgstr "Обед в корзинке для пикника"
 
 #: data/base/item_specs.lua:2326
 msgid "This is a 'Dr. How?'-brand picnic basket stuffed full of enough food and drinks to feed a dozen people. With 'Dr. How?'-time dilation, the food keeps oven-fresh, and the drinks stay ice-cold."
-msgstr "Эта корзинка для пикника бренда «Доктор Как?» заполнена едой и напитками для дюжины человек. С расширителем времени «Доктор Как?» еда останется сверхсвежей, а напитки холодными, как лёд."
+msgstr "Эта корзинка для пикника бренда \"Доктор Как?\" заполнена едой и напитками для дюжины человек. С расширителем времени \"Доктор Как?\" еда останется сверхсвежей, а напитки холодными, как лёд."
 
 #: data/base/item_specs.lua:2333
 msgid "MS Stock Certificate"
@@ -1597,7 +1596,7 @@ msgstr "Линарианский силовой кривошип"
 
 #: data/base/item_specs.lua:2375
 msgid "This mechanical crank, product of the highly advanced and sophisticated technological genius of the Linarian race, performs elaborate operations on energy and directs it towards a biochemical structure. For short, it buffs up your muscles. That's good."
-msgstr "Этот механический кривошип — продукт высокоразвитого и изощрённого технологического гения линарианской расы — выполняет хитроумные операции с энергией и направляет её прямиком в биохимическую структуру. Короче, баффает мускулы. И это хорошо."
+msgstr "Этот механический кривошип - продукт высокоразвитого и изощрённого технологического гения линарианской расы - выполняет хитроумные операции с энергией и направляет её прямиком в биохимическую структуру. Короче, баффает мускулы. И это хорошо."
 
 #: data/base/item_specs.lua:2382
 msgid "Tungsten Spikes"
@@ -1725,7 +1724,7 @@ msgstr "Стимулятор мозга"
 
 #: data/base/item_specs.lua:2552
 msgid "A chip that allows faster learning by connecting directly to the brain via a neural interface (colloquially referred to as a 'weird swim cap with little thingies on it') and providing additional feedback on various actions."
-msgstr "Чип, который ускоряет обучение, подключаясь прямо к мозгу через нейроинтерфейс (в просторечии именуемый «странная плавательная шапочка с маленькими штуковинами») и обеспечивая продвинутую обратную связь от разнообразных действий."
+msgstr "Чип, который ускоряет обучение, подключаясь прямо к мозгу через нейроинтерфейс (в просторечии именуемый \"странная плавательная шапочка с маленькими штуковинами\") и обеспечивая продвинутую обратную связь от разнообразных действий."
 
 #: data/base/item_specs.lua:2563
 msgid "NPC Hand to Hand Weapon"
@@ -1737,7 +1736,7 @@ msgstr "Только для ботов"
 
 #: data/base/item_specs.lua:2584
 msgid "Droid 123 Weak Robotic Arm"
-msgstr "Дроид 123 — слабая роботизированная рука"
+msgstr "Дроид 123 - слабая роботизированная рука"
 
 #: data/base/item_specs.lua:2597 data/base/item_specs.lua:2621
 #: data/base/item_specs.lua:2642 data/base/item_specs.lua:2666
@@ -1753,59 +1752,59 @@ msgstr "Вооружение дроида"
 
 #: data/base/item_specs.lua:2605
 msgid "Droid 139 Plasma Trash Vaporiser"
-msgstr "Дроид 139 — плазменный испаритель мусора"
+msgstr "Дроид 139 - плазменный испаритель мусора"
 
 #: data/base/item_specs.lua:2629
 msgid "Droid 247 Robotic Arm"
-msgstr "Дроид 247 — роботизированная рука"
+msgstr "Дроид 247 - роботизированная рука"
 
 #: data/base/item_specs.lua:2650
 msgid "Droid 249 Pulse Laser Welder"
-msgstr "Дроид 249 — лазерно-импульсная сварка"
+msgstr "Дроид 249 - лазерно-импульсная сварка"
 
 #: data/base/item_specs.lua:2674
 msgid "Droid 296 Plasmabeam Cutter"
-msgstr "Дроид 296 — плазменно-лучевой резец"
+msgstr "Дроид 296 - плазменно-лучевой резец"
 
 #: data/base/item_specs.lua:2695
 msgid "Droid 302 Overcharged Barcode Reader"
-msgstr "Дроид 302 — перегруженный считыватель штрихкодов"
+msgstr "Дроид 302 - перегруженный считыватель штрихкодов"
 
 #: data/base/item_specs.lua:2716
 msgid "Droid 329 Dual Overcharged Barcode Reader"
-msgstr "Дроид 329 — спаренный перегруженный считыватель штрихкодов"
+msgstr "Дроид 329 - спаренный перегруженный считыватель штрихкодов"
 
 #: data/base/item_specs.lua:2737
 msgid "Droid 420 Laser Scalpel"
-msgstr "Дроид 420 — лазерный скальпель"
+msgstr "Дроид 420 - лазерный скальпель"
 
 #: data/base/item_specs.lua:2758
 msgid "Droid 476 Small Laser"
-msgstr "Дроид 476 — малый лазер"
+msgstr "Дроид 476 - малый лазер"
 
 #: data/base/item_specs.lua:2782
 msgid "Droid 493 Power Hammer"
-msgstr "Дроид 493 Силовой Молот"
+msgstr "Дроид 493 - силовой молот"
 
 #: data/base/item_specs.lua:2803
 msgid "Droid 516 Robotic Fist"
-msgstr "Дроид 516 — роботизированный кулак"
+msgstr "Дроид 516 - роботизированный кулак"
 
 #: data/base/item_specs.lua:2824
 msgid "Droid 543 Tree Harvester"
-msgstr "Дроид 543 — лесорубочный комбайн"
+msgstr "Дроид 543 - лесорубочный комбайн"
 
 #: data/base/item_specs.lua:2845
 msgid "Droid 571 Robotic Fist"
-msgstr "Дроид 571 — роботизированный кулак"
+msgstr "Дроид 571 - роботизированный кулак"
 
 #: data/base/item_specs.lua:2866
 msgid "Droid 598 Robotic Fist"
-msgstr "Дроид 598 — роботизированный кулак"
+msgstr "Дроид 598 - роботизированный кулак"
 
 #: data/base/item_specs.lua:2887
 msgid "Droid 7xx Tux Seeking Missiles"
-msgstr "Дроид 7хх — таксонаводящиеся ракеты"
+msgstr "Дроид 7хх - таксонаводящиеся ракеты"
 
 #: data/base/item_specs.lua:2911
 msgid "Droid Advanced Twin Laser"
@@ -1813,7 +1812,7 @@ msgstr "Усовершенствованный парный лазер дрои�
 
 #: data/base/item_specs.lua:2936
 msgid "Droid 883 Exterminator"
-msgstr "Дроид 883 — истребитель"
+msgstr "Дроид 883 - истребитель"
 
 #: data/base/item_specs.lua:2961
 msgid "Autogun Laser Pistol"
@@ -1829,7 +1828,7 @@ msgstr "ПИСЬМО О ЗАГРУЗКЕ ПК"
 
 #: data/base/item_specs.lua:2993
 msgid "An envelop saying 'PC LOAD LETTERS'. I have no idea what that means..."
-msgstr "Конверт с надписью «ПИСЬМА О ЗАГРУЗКЕ ПК». Совершенно не представляю, что бы это значило..."
+msgstr "Конверт с надписью \"ПИСЬМА О ЗАГРУЗКЕ ПК\". Совершенно не представляю, что бы это значило..."
 
 #: data/base/item_specs.lua:3000
 msgid "Cheat Gun"
@@ -1939,7 +1938,7 @@ msgstr "Линарианцы одарены способностью взлом�
 
 #: data/base/skill_specs.lua:21
 msgid "Repair equipment"
-msgstr "Починка снаряжения"
+msgstr "Ремонт снаряжения"
 
 #: data/base/skill_specs.lua:25
 msgid "Fully repair any item of your choice. To use this skill, select it, open the inventory screen and then right click on the item you wish to repair. While you can repair items without incurring any cost, the item will get reduced maximum durability."
@@ -1955,7 +1954,7 @@ msgstr "Это умение позволяет атаковать необычн
 
 #: data/base/skill_specs.lua:42
 msgid "Emergency shutdown"
-msgstr "Немедленное выключение"
+msgstr "Аварийное отключение"
 
 #: data/base/skill_specs.lua:47
 msgid "Everyone needs to turn off and cool down a bit now and then. Just be careful that you are not still offline when enemy bots close in..."
@@ -1963,7 +1962,7 @@ msgstr "Время от времени всем нужно отключитьс�
 
 #: data/base/skill_specs.lua:53
 msgid "Check system integrity"
-msgstr "Проверить целостность системы"
+msgstr "Проверка целостности системы"
 
 #: data/base/skill_specs.lua:59
 msgid "While repairing damage, you must remember that patience is a virtue."
@@ -1987,11 +1986,11 @@ msgstr "Невидимость"
 
 #: data/base/skill_specs.lua:85
 msgid "Malformed packet"
-msgstr "Неверный пакет"
+msgstr "Битые пакеты"
 
 #: data/base/skill_specs.lua:96
 msgid "Calculate Pi"
-msgstr "Вычисление Пи"
+msgstr "Вычисление пи"
 
 #: data/base/skill_specs.lua:107
 msgid "Blue Screen"
@@ -2015,7 +2014,7 @@ msgstr "Вирус"
 
 #: data/base/skill_specs.lua:142
 msgid "Broadcast virus"
-msgstr "Широковещательный вирус"
+msgstr "Трансляция вируса"
 
 #: data/base/skill_specs.lua:149
 msgid "The network is wide and dangerous. Many traps await for the weak and unprepared."
@@ -2023,7 +2022,7 @@ msgstr "Сеть велика и полна опасностей. Много л�
 
 #: data/base/skill_specs.lua:155
 msgid "Dispel smoke"
-msgstr "Рассеять дым"
+msgstr "Рассеянный дым"
 
 #: data/base/skill_specs.lua:161
 msgid "By heating up the chips with a malformed program you can cause them to release the magic smoke which keeps the bot running."
@@ -2043,15 +2042,15 @@ msgstr "Разряд плазмы"
 
 #: data/base/skill_specs.lua:190
 msgid "Network Mapper"
-msgstr "Построитель карты сети"
+msgstr "Сетевой картограф"
 
 #: data/base/skill_specs.lua:200
 msgid "Light"
-msgstr "Легкий"
+msgstr "Свет"
 
 #: data/base/skill_specs.lua:210
 msgid "Extract bot parts"
-msgstr "Извлечь части бота"
+msgstr "Извлечение деталей"
 
 #: data/base/skill_specs.lua:215
 msgid "With a little knowledge, you can extract some useful parts out of the robots you kill. With each bot there is some hope of a part falling out. This skill is always active even when not selected."
@@ -2083,7 +2082,7 @@ msgstr "ЕЩЕ НЕ РЕАЛИЗОВАНО. Игра с открытым код�
 
 #: data/base/skill_specs.lua:266
 msgid "Reverse-engineer"
-msgstr "Реверс-инжинер"
+msgstr "Обратная разработка"
 
 #: data/base/skill_specs.lua:270
 msgid "NOT IMPLEMENTED YET There is some dark magic in the art of turning devices or programs inside-out, picking them apart to learn all their secrets and putting them back again."
@@ -2091,7 +2090,7 @@ msgstr "ЕЩЕ НЕ РЕАЛИЗОВАНО. Есть немного темной
 
 #: data/base/skill_specs.lua:281
 msgid "Ricer CFLAGS"
-msgstr "Правка CFLAGS"
+msgstr "Пресс-пюре CFLAGS"
 
 #: data/base/skill_specs.lua:286
 msgid "NOT IMPLEMENTED YET Optimization is the root of all evil. You can gain some temporary speed improvements to your system, but in the end you will likely overheat and cause permanent damage if you are not careful."
@@ -2125,7 +2124,7 @@ msgstr "ЭМИ-граната"
 
 #: data/base/skill_specs.lua:356
 msgid "Electronic Noise"
-msgstr "Генератор электронного шума"
+msgstr "Электронный шум"
 
 #: data/storyline/act1/events.dat:57
 msgid "To Maintenance Tunnels"
@@ -2446,7 +2445,7 @@ msgstr "Горы ужасов"
 
 #: data/storyline/act1/levels.dat:14320
 msgid "Cryo Stasis Lab"
-msgstr "Лабаратория криостазиса"
+msgstr "Лаборатория криостазиса"
 
 #: data/storyline/act1/levels.dat:16713
 msgid "Three Fermis Land"
@@ -3264,7 +3263,7 @@ msgstr "Горячая девушка"
 
 #: data/storyline/act1/ReturnOfTux.droids:5
 msgid "Peter - Imprisoned Rebel"
-msgstr "Питер — заключённый повстанец"
+msgstr "Питер - заключённый повстанец"
 
 #: data/storyline/act1/ReturnOfTux.droids:6
 msgid "Librarian"
@@ -3288,11 +3287,11 @@ msgstr "Член Красной стражи"
 
 #: data/storyline/act1/ReturnOfTux.droids:9
 msgid "Lukas - Head of the Armory"
-msgstr "Лукас — заведующий арсеналом"
+msgstr "Лукас - заведующий арсеналом"
 
 #: data/storyline/act1/ReturnOfTux.droids:10
 msgid "Spencer - Leader of the Red Guard"
-msgstr "Спенсер — лидер Красной стражи"
+msgstr "Спенсер - лидер Красной стражи"
 
 #: data/storyline/act1/ReturnOfTux.droids:13
 msgid "Sketchy Guy"
@@ -3309,24 +3308,24 @@ msgstr "Админ *nix"
 #: data/storyline/act1/ReturnOfTux.droids:19
 #: data/storyline/act1/ReturnOfTux.droids:20
 msgid "614 - Patrolling Guard Bot"
-msgstr "614 — Патрулирующий бот-охранник"
+msgstr "614 - Патрулирующий бот-охранник"
 
 #: data/storyline/act1/ReturnOfTux.droids:21
 msgid "614 - East Gate Guard Bot"
-msgstr "614 — Бот-охранник восточных ворот"
+msgstr "614 - Бот-охранник восточных ворот"
 
 #: data/storyline/act1/ReturnOfTux.droids:22
 #: data/storyline/act1/ReturnOfTux.droids:23
 msgid "614 - South Gate Guard Bot"
-msgstr "614 — Бот-охранник южных ворот"
+msgstr "614 - Бот-охранник южных ворот"
 
 #: data/storyline/act1/ReturnOfTux.droids:24
 msgid "614 - North Gate Guard Bot"
-msgstr "614 — Бот-охранник северных ворот"
+msgstr "614 - Бот-охранник северных ворот"
 
 #: data/storyline/act1/ReturnOfTux.droids:25
 msgid "COBOL Programmer"
-msgstr "Программист на КОБОЛ"
+msgstr "Программист на КОБОЛе"
 
 #: data/storyline/act1/ReturnOfTux.droids:26
 #: data/storyline/act1/ReturnOfTux.droids:472
@@ -3339,7 +3338,7 @@ msgstr "Медик"
 
 #: data/storyline/act1/ReturnOfTux.droids:28
 msgid "Chandra - Town Sage"
-msgstr "Чандра — городской мудрец"
+msgstr "Чандра - городской мудрец"
 
 #: data/storyline/act1/ReturnOfTux.droids:30
 msgid "Town Teleporter Guard"
@@ -3347,7 +3346,7 @@ msgstr "Охранник городского телепорта"
 
 #: data/storyline/act1/ReturnOfTux.droids:32
 msgid "Gate Guardhouse Guard"
-msgstr "Охранник в караулке у ворот"
+msgstr "Охранник в караулке"
 
 #: data/storyline/act1/ReturnOfTux.droids:33
 msgid "North Gate Guard"
@@ -3364,7 +3363,7 @@ msgstr "Тёмный ученик MegaSys"
 
 #: data/storyline/act1/ReturnOfTux.droids:57
 msgid "DSB Control Terminal Guard"
-msgstr "Охранник терминала управления DSB"
+msgstr "Охранник терминала управления БДЩ"
 
 #: data/storyline/act1/ReturnOfTux.droids:68
 msgid "MS Emissary"
@@ -3484,7 +3483,7 @@ msgstr "ВОР"
 
 #: data/storyline/act1/ReturnOfTux.droids:215
 msgid "MUM"
-msgstr "МУМ"
+msgstr "МАМ"
 
 #: data/storyline/act1/ReturnOfTux.droids:216
 msgid "DIX"
@@ -3620,7 +3619,7 @@ msgstr "Джон"
 
 #: data/storyline/act1/ReturnOfTux.droids:300
 msgid "571 - Arena Manager"
-msgstr "571 - Управляющий на арене"
+msgstr "571 - Управляющий арены"
 
 #: data/storyline/act1/ReturnOfTux.droids:306
 msgid "Melissa.I"
@@ -3632,15 +3631,15 @@ msgstr "ЯЛЮБЛЮТЕБЯ"
 
 #: data/storyline/act1/ReturnOfTux.droids:308
 msgid "Fail-safe"
-msgstr "Защищенный от сбоев"
+msgstr "Отказоустойчивость"
 
 #: data/storyline/act1/ReturnOfTux.droids:309
 msgid "CIH.1103"
-msgstr "КИШ.1103"
+msgstr "Чернобыль"
 
 #: data/storyline/act1/ReturnOfTux.droids:315
 msgid "MSDD - MegaSys Defence Droid"
-msgstr "ЗДМС - Защитный дроид МегаСис"
+msgstr "ОДМС - Охранный дроид Мегасис"
 
 #: data/storyline/act1/ReturnOfTux.droids:316
 #: data/storyline/act1/ReturnOfTux.droids:317
@@ -3669,7 +3668,7 @@ msgstr "Туалетный дроид"
 
 #: data/storyline/act1/ReturnOfTux.droids:349
 msgid "Sanitary technician"
-msgstr "Санитарный техник"
+msgstr "Сантехник"
 
 #: data/storyline/act1/ReturnOfTux.droids:350
 msgid "Criocapsules maintainer"
@@ -3692,7 +3691,7 @@ msgstr "Мусорщик"
 
 #: data/storyline/act1/ReturnOfTux.droids:360
 msgid "SACD - Defender"
-msgstr "ЦУСЗ — Защитник"
+msgstr "ЦУСЗ - Защитник"
 
 #: data/storyline/act1/ReturnOfTux.droids:361
 msgid "Scientist"
@@ -3730,7 +3729,7 @@ msgstr "Убей Меня"
 
 #: data/storyline/act1/ReturnOfTux.droids:416
 msgid "614 - Gate Guard Bot"
-msgstr "614 — Бот — охранник ворот"
+msgstr "614 - Бот-привратник"
 
 #: data/storyline/act1/ReturnOfTux.droids:450
 msgid "Bot Hunter"
@@ -3746,7 +3745,7 @@ msgstr "Охранник ворот фабрики роботов"
 
 #: data/storyline/act1/ReturnOfTux.droids:463
 msgid "Reception Droid"
-msgstr "Дроид приёма"
+msgstr "Дроид-регистратор"
 
 #: data/storyline/act1/ReturnOfTux.droids:464
 #: data/storyline/act1/ReturnOfTux.droids:465
@@ -3758,9 +3757,8 @@ msgid "Corporate Guy"
 msgstr "Парень из корпорации"
 
 #: data/storyline/act2/levels.dat:20
-#, fuzzy
 msgid "Empty Map"
-msgstr "Пустое море"
+msgstr "Пустая карта"
 
 #~ msgid "Day %d, %02d:%02d"
 #~ msgstr "День %d, %02d:%02d"

@@ -1,20 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR FreedroidRPG Project
 # This file is distributed under the same license as the freedroidrpg package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Link_Mario <Link-Mario@gmx.de>, 2014-2017
-# Link_Mario <Link-Mario@gmx.de>, 2014
-# matthiaskrgr <matthias.krueger@famsik.de>, 2014
-# matthiaskrgr <matthias.krueger@famsik.de>, 2014
+# Benjamin Leduc <giby_the_kid@yahoo.fr>, 2019
+#
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: FreedroidRPG\n"
+"Project-Id-Version: freedroidrpg 0.16+git\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
 "POT-Creation-Date: 2019-02-25 09:54+0100\n"
-"PO-Revision-Date: 2019-01-26 09:54+0000\n"
-"Last-Translator: Link_Mario <Link-Mario@gmx.de>\n"
-"Language-Team: German (http://www.transifex.com/arctic-games/freedroid-rpg/language/de/)\n"
+"PO-Revision-Date: 2019-02-24 22:37+0000\n"
+"Last-Translator: Benjamin Leduc <giby_the_kid@yahoo.fr>, 2019\n"
+"Language-Team: German (https://www.transifex.com/arctic-games/teams/9511/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3767,9 +3767,8 @@ msgid "Corporate Guy"
 msgstr "Firmentyp"
 
 #: data/storyline/act2/levels.dat:20
-#, fuzzy
 msgid "Empty Map"
-msgstr "Leeres Meer"
+msgstr ""
 
 #~ msgid "Day %d, %02d:%02d"
 #~ msgstr "Tag %d, %02d:%02d"

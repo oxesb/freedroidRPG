@@ -643,3 +643,9 @@ source_file = po/po-data/tx/act2-ReturnOfTux.pot
 source_lang = en
 type = PO
 
+[freedroid-rpg.data-game_config]
+file_filter = po/po-data/tx/game_config-<lang>.po
+source_file = po/po-data/tx/game_config.pot
+source_lang = en
+type = PO
+

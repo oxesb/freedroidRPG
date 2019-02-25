@@ -431,7 +431,7 @@ msgstr "Calvo"
 
 #: data/base/dialogs/AfterTakeover.lua:402
 msgid "Brusque"
-msgstr ""
+msgstr "Brusco"
 
 #: data/base/dialogs/AfterTakeover.lua:403
 msgid "Chic"
@@ -443,7 +443,7 @@ msgstr "Mimoso"
 
 #: data/base/dialogs/AfterTakeover.lua:405
 msgid "Cute"
-msgstr ""
+msgstr "Lindo"
 
 #: data/base/dialogs/AfterTakeover.lua:406
 msgid "Fickle"
