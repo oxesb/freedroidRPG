@@ -100,14 +100,14 @@ tx-update: $(DOMAIN).pot
 	  $(call rsrc_name,$$file); \
 	  msggrep $(MSGCAT_OPTIONS) --location=$$file -o tx/$$rsrc.pot $(DOMAIN).pot; \
 	  if test -r tx/$$rsrc.pot; then \
-	    if ! tx -q status -r $(TXPROJ).$(TXPREFIX)-$$rsrc 2&>/dev/null; then \
+	    if ! tx -q status -r $(TXPROJ).$(TXPREFIX)-$$rsrc >/dev/null 2>/dev/null; then \
 	      echo "Creating $(TXPREFIX)-$$rsrc"; \
-	      tx -q set --auto-local -r $(TXPROJ).$(TXPREFIX)-$$rsrc "tx/$$rsrc-<lang>.po" -t PO --source-lang en --source-file tx/$$rsrc.pot --execute; \
+	      tx -q config mapping -r $(TXPROJ).$(TXPREFIX)-$$rsrc --source-lang en --type PO --source-file tx/$$rsrc.pot --expression "tx/$$rsrc-<lang>.po" --execute; \
 	      if tx -q push -r $(TXPROJ).$(TXPREFIX)-$$rsrc -s; then \
 	        curl_output=`curl -s -L $(TXCRED) -X PUT -d $(TXPROPS) -H "Content-Type: application/json" https://www.transifex.com/api/2/project/$(TXPROJ)/resource/$(TXPREFIX)-$$rsrc;` \
 	        rtn=$$?; \
 	        if test $$rtn -ne 0 -o " $$curl_output" != " OK"; then echo "Warning. Failed to set properties: $$curl_output (error code $$rtn)"; fi; \
-	     fi; \
+	      fi; \
 	    else \
 	      echo "Updating $(TXPREFIX)-$$rsrc"; \
 	      tx -q push -r $(TXPROJ).$(TXPREFIX)-$$rsrc -s; \

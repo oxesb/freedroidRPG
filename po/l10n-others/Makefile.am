@@ -33,9 +33,9 @@ LANGS = $(shell tail -n +2 $(srcdir)/LINGUAS)
 # $(2) = rsrc file
 
 define rsrc_update =
-	if ! $(TX) -q status -r $(TXPROJ).$(1) 2&>/dev/null; then \
+	if ! $(TX) -q status -r $(TXPROJ).$(1) >/dev/null 2>/dev/null; then \
 	  echo "Creating $(1)"; \
-	  $(TX) -q set --auto-local -r $(TXPROJ).$(1) "tx/$(1)-<lang>.txt" -t TXT --source-lang en --source-file $(2) --execute; \
+	  $(TX) -q config mapping -r $(TXPROJ).$(1) --source-lang en --type TXT --source-file $(2) --expression "tx/$(1)-<lang>.txt" --execute; \
 	  if $(TX) -q push -r $(TXPROJ).$(1) -s; then \
 	    curl_output=`curl -s -L $(TXCREDS) -X PUT -d $(TXPROPS) -H "Content-Type: application/json" https://www.transifex.com/api/2/project/$(TXPROJ)/resource/$(1);` \
 	    rtn=$$?; \

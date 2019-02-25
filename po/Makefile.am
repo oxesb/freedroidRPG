@@ -111,9 +111,9 @@ $(TXTARGETS):
 	     $(mkdir_p) tx; \
 	     msgcat --width=80 --no-wrap --sort-by-file --use-first -o tx/all_in_one.pot $(TXPOTS); \
 	     if test -r tx/all_in_one.pot; then \
-	       if ! tx -q status -r $(TXPROJ).all_in_one 2&>/dev/null; then \
+	       if ! tx -q status -r $(TXPROJ).all_in_one >/dev/null 2>/dev/null; then \
 	         echo "Creating all_in_one"; \
-	         tx -q set --auto-local -r $(TXPROJ).all_in_one "tx/all_in_one-<lang>.po" -t PO --source-lang en --source-file tx/all_in_one.pot --execute; \
+	         tx -q config mapping -r $(TXPROJ).all_in_one --source-lang en --type PO --source-file tx/all_in_one.pot --expression "tx/all_in_one-<lang>.po" --execute; \
 	         if tx -q push -r $(TXPROJ).all_in_one -s; then \
 	           curl_output=`curl -s -L $(TXCRED) -X PUT -d $(TXPROPS) -H "Content-Type: application/json" https://www.transifex.com/api/2/project/$(TXPROJ)/resource/all_in_one;` \
 	           rtn=$$?; \
