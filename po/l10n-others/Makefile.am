@@ -186,8 +186,8 @@ define update-gmo-readme =
 	 fi
 endef
 
-#$(foreach lang,$(LANGS),\
-#    $(eval $(call update-gmo-readme,$(lang))))
+$(foreach lang,$(LANGS),\
+    $(eval $(call update-gmo-readme,$(lang))))
 
 #-- update-po creates the new tx/README.txt files
 
