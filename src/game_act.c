@@ -240,6 +240,6 @@ void game_act_switch_to_next()
 	prepare_start_of_new_game("NewTuxStartGameSquare", FALSE);
 
 	if (game_act_intro) {
-		transient_text_set_centered_text(3.0, Menu_Font, game_act_intro);
+		transient_text_set_centered_text(3.0, Menu_Font, D_(game_act_intro));
 	}
 }

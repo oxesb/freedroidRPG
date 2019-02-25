@@ -1887,7 +1887,7 @@ int Single_Player_Menu(void)
 				free(Me.character_name);
 				Me.character_name = strdup(char_name);
 				if (game_act_get_starting()->intro) {
-					transient_text_set_centered_text(3.0, Menu_Font, game_act_get_starting()->intro);
+					transient_text_set_centered_text(3.0, Menu_Font, D_(game_act_get_starting()->intro));
 				}
 				can_continue = TRUE;
 			}
