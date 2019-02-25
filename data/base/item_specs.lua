@@ -2996,6 +2996,28 @@ item_list{
 ----------------------------------------------------------------------
 
 {
+	id = "Arcane Lore",
+	name =_"Arcane Lore",
+	base_price = 0,
+	inventory = {x = 1, y = 1, image = "script/inv_image.png" },
+	drop = {sound = "Item_Drop_Sound_4.ogg"},
+	description =_[[I've bought an anti-hack software, so I could try to hack it! ...But what, exactly, is the 'Arcane Lore'?]],
+	rotation_series = "script",
+},
+----------------------------------------------------------------------
+
+{
+	id = "PGP key",
+	name =_"PGP key",
+	base_price = 0,
+	inventory = {x = 2, y = 2, image = "hacker_wristband/inv_image.png" },
+	drop = {sound = "Item_Drop_Sound_0.ogg"},
+	description =_[[It won't open your house, but it can unlock important encrypted archives.]],
+	rotation_series = "hacker_wristband",-- TODO: Image is temporary
+},
+----------------------------------------------------------------------
+
+{
 	id = "Cheat Gun",
 	name =_"Cheat Gun",
 	slot = "weapon",
