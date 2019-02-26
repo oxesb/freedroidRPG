@@ -846,7 +846,7 @@ void prepare_execution(int argc, char *argv[])
 		}
 	}
 
-	// If not run from a terminal, stdout and stderr are redirect to a text file
+	// If not run from a terminal, stdout and stderr are redirected to a text file
 	// written in the config dir (fdrpg_out.txt).
 	// Note: On Windows, in SDL_WinMain(), stdout and stderr are redirected to
 	// files, before to call our main(). Those files are automatically created
@@ -854,7 +854,7 @@ void prepare_execution(int argc, char *argv[])
 	// ends, because they are empty.
 	if (!run_from_term) {
 		char filename[PATH_MAX];
-		find_file(filename, CONFIG_DIR, "fdrpg_out.txt", NULL, NO_REPORT);
+		find_file(filename, CONFIG_DIR, "fdrpg_out.txt", NULL, SILENT);
 		if (!freopen(filename, "w", stdout)) {
 			fprintf(stderr, "Was not able to redirect stdout to %s. Errno: %d", filename, errno);
 			run_from_term = TRUE; // Pretend it, to avoid Terminate() to try to open fdrpg_out.txt
