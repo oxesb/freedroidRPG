@@ -1078,7 +1078,7 @@ void ThouHastWon(void)
 
 	// Now it's time for the end game title file...
 	//
-	//PlayATitleFile("EndOfGame.title");
+	//play_title_file(BASE_TITLES_DIR, "EndOfGame.lua");
 	if (!skip_initial_menus)
 		play_title_file(BASE_TITLES_DIR, "Credits.lua");
 
