@@ -86,7 +86,7 @@ void end_image_batch(const char *reason)
 	gl_emit_quads();
 #endif
 
-	requested_color[0] = -1;
+//	requested_color[0] = -1;
 }
 
 #ifdef HAVE_LIBGL
@@ -337,7 +337,6 @@ static void gl_display_image(struct image *img, int x0, int y0, struct image_tra
 	if (!batch_draw) {
 		gl_debug_marker("Batch drawing not requested");
 		gl_emit_quads();
-		requested_color[0] = -1; //XXX remove that to avoid redundant flushes
 	}
 
 	if (t->mode & HIGHLIGHTED) {
