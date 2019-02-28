@@ -789,8 +789,18 @@ void prepare_execution(int argc, char *argv[])
 
 	run_from_term = FALSE;
 	term_has_color_cap = FALSE;
+
 #ifndef __WIN32__
-	run_from_term = isatty(STDOUT_FILENO);
+	if (isatty(STDOUT_FILENO)) {
+		run_from_term = TRUE;
+	} else {
+		// Check if stdout has been redirected to a file or a pipe.
+		// In such a case, we consider that we are actually running from
+		// a terminal
+		struct stat statbuf;
+		fstat(STDOUT_FILENO, &statbuf);
+		run_from_term = S_ISREG(statbuf.st_mode) || S_ISFIFO(statbuf.st_mode);
+	}
 	char *term = getenv("TERM");
 	if (run_from_term && term && !strncmp(term, "xterm", 5))
 		term_has_color_cap = TRUE;
