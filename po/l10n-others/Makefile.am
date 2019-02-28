@@ -36,7 +36,7 @@ define rsrc_update =
 	if ! $(TX) -q status -r $(TXPROJ).$(1) >/dev/null 2>/dev/null; then \
 	  echo "Creating $(1)"; \
 	  $(TX) -q config mapping -r $(TXPROJ).$(1) --source-lang en --type TXT --source-file $(2) --expression "tx/$(1)-<lang>.txt" --execute; \
-	  if $(TX) -q push -r $(TXPROJ).$(1) -s; then \
+	  if $(TX) -q push -r $(TXPROJ).$(1) -s >/dev/null 2>/dev/null; then \
 	    curl_output=`curl -s -L $(TXCREDS) -X PUT -d $(TXPROPS) -H "Content-Type: application/json" https://www.transifex.com/api/2/project/$(TXPROJ)/resource/$(1);` \
 	    rtn=$$?; \
 	    if test $$rtn -ne 0 -o " $$curl_output" != " OK"; then echo "Warning. Failed to set properties: $$curl_output (error code $$rtn)"; fi; \
