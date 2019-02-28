@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: freedroidrpg 0.16+git\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-02-25 09:54+0100\n"
+"POT-Creation-Date: 2019-02-27 18:12+0100\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
 "Last-Translator: Benjamin Leduc <giby_the_kid@yahoo.fr>, 2019\n"
 "Language-Team: German (https://www.transifex.com/arctic-games/teams/9511/de/)\n"
@@ -22,7 +22,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: data/base/droid_specs.lua:98 data/storyline/act1/ReturnOfTux.droids:270
-#: data/storyline/act2/ReturnOfTux.droids:4
 msgid "123 Acolyte"
 msgstr "123 Gefolgsmann"
 
@@ -138,7 +137,7 @@ msgstr "Ein Standard-Mannschafts-Androide. Wird mit neuen Raumschiffen ausgelief
 msgid "598 Minister"
 msgstr "598 Pfarrer"
 
-#: data/base/droid_specs.lua:697 data/base/droid_specs.lua:1884
+#: data/base/droid_specs.lua:697 data/base/droid_specs.lua:1931
 msgid "A highly sophisticated device. Able to control the Robo-Freighter on its own."
 msgstr "Eine hochentwickelte Einheit. In der Lage, einen Robotfrachter selbstständig zu fliegen."
 
@@ -228,163 +227,173 @@ msgstr "Veralteter Anti-Grav Sicherheitsbot. Mit einem überzüchteten Antigrav-
 msgid "883 Dalex"
 msgstr "883 Dalex"
 
-#: data/base/droid_specs.lua:1164 data/base/droid_specs.lua:1931
+#: data/base/droid_specs.lua:1164 data/base/droid_specs.lua:1978
 msgid "This droid was designed from archive data. For some unknown reason it instils great fear in Human adversaries."
 msgstr "Dieser Droide wurde für Datenarchivierung entworfen. Es ist unklar, warum er große Angst in menschlichen Kontrahenten erweckt."
 
 #: data/base/droid_specs.lua:1211 data/storyline/act1/npc_specs.lua:77
 #: data/storyline/act1/ReturnOfTux.droids:293
 #: data/storyline/act1/ReturnOfTux.droids:600
+#: data/storyline/act2/ReturnOfTux.droids:11
 msgid "999 Cerebrum"
 msgstr "999 Großhirn"
 
-#: data/base/droid_specs.lua:1212 data/base/droid_specs.lua:1980
+#: data/base/droid_specs.lua:1212 data/base/droid_specs.lua:2027
 msgid "Experimental command cyborg. Fitted with a new type of brain. Mounted on a security droid anti-grav unit for convenience."
 msgstr "Experimenteller Kommandocyborg. Ausgestattet mit einem neuen Gehirntyp. Für Komfort auf einer Antigraviationseinheit befestigt."
 
-#: data/base/droid_specs.lua:1259 data/base/droid_specs.lua:1299
+#: data/base/droid_specs.lua:1259 data/storyline/act2/ReturnOfTux.droids:129
+msgid "The Glitch"
+msgstr ""
+
+#: data/base/droid_specs.lua:1260
+msgid "I have not failed. I've just found 10,000 ways how to NOT make a bot."
+msgstr ""
+
+#: data/base/droid_specs.lua:1306 data/base/droid_specs.lua:1346
 msgid "Older Man"
 msgstr "Älterer Mann"
 
-#: data/base/droid_specs.lua:1260
+#: data/base/droid_specs.lua:1307
 msgid "This is a typical professor/sage character of some older age.  They are not armed as powerfully as e.g. the red guards."
 msgstr "Typischer Professor/Rats-Charakter fortgeschrittenen Alters. Nicht so schwer bewaffnet, wie z.B. die Rote Garde."
 
-#: data/base/droid_specs.lua:1300
+#: data/base/droid_specs.lua:1347
 msgid "Some people say that every doctor is addicted to drugs. You estimate that right now this one is high on at least four different narcotics. Doc Moore seems very happy indeed..."
 msgstr "Manche Leute sagen, dass Ärzte drogensüchtig sind. Wie man sich denken kann, ist dieser von mindestens 4 Narkotika abhängig. Dok Moore scheint sich darüber zu freuen…"
 
-#: data/base/droid_specs.lua:1340 data/base/droid_specs.lua:1381
+#: data/base/droid_specs.lua:1387 data/base/droid_specs.lua:1428
 msgid "Red Guard"
 msgstr "Rote Garde"
 
-#: data/base/droid_specs.lua:1341
+#: data/base/droid_specs.lua:1388
 msgid "This is a typical red (male) guard/fighter character.  They are equipped with powerful PowerExterminators."
 msgstr "Typische rote Wächter-/Kämpfer-Figur (männlich). Mit mächtigem Power-Exterminator ausgerüstet."
 
-#: data/base/droid_specs.lua:1382
+#: data/base/droid_specs.lua:1429
 msgid "This is Dixon, unlike a typical red (male) guard/fighter character, he has a knife weapon, and lowered aggression."
 msgstr "Dies ist Dixon. Anders, als die anderen (männlichen) Mitglieder der Roten Garde, hat er ein Messer und ist leichter reizbar."
 
-#: data/base/droid_specs.lua:1422
+#: data/base/droid_specs.lua:1469
 msgid "Matron"
 msgstr "Matrone"
 
-#: data/base/droid_specs.lua:1423
+#: data/base/droid_specs.lua:1470
 msgid "This is the hot_mama shopkeeper character model."
 msgstr "Das 'Heiße_Mama' Ladenbesitzer-Modell (weiblich)."
 
-#: data/base/droid_specs.lua:1461 data/storyline/act1/ReturnOfTux.droids:214
+#: data/base/droid_specs.lua:1508 data/storyline/act1/ReturnOfTux.droids:214
 #: data/storyline/act1/ReturnOfTux.droids:466
 msgid "Female Scientist"
 msgstr "Wissenschaftlerin"
 
-#: data/base/droid_specs.lua:1462
+#: data/base/droid_specs.lua:1509
 msgid "This is the female scientist character model.  They are not armed as powerfully as e.g. the red guards."
 msgstr "Typischer Wissenschaftler (weiblich). Nicht so gut bewaffnet, wie z.B. die Roten Garde."
 
-#: data/base/droid_specs.lua:1500 data/storyline/act1/ReturnOfTux.droids:11
+#: data/base/droid_specs.lua:1547 data/storyline/act1/ReturnOfTux.droids:11
 msgid "Mine Worker"
 msgstr "Minenarbeiter"
 
-#: data/base/droid_specs.lua:1501
+#: data/base/droid_specs.lua:1548
 msgid "This is the brown worker model.  They are not armed as powerfully as e.g. the red guards."
 msgstr "Die Figur 'brauner Arbeiter'. Nicht so stark bewaffnet, wie z.B. die Roten Garde."
 
-#: data/base/droid_specs.lua:1540
+#: data/base/droid_specs.lua:1587
 msgid "Blue Brother"
 msgstr "Blauer Bruder"
 
-#: data/base/droid_specs.lua:1541
+#: data/base/droid_specs.lua:1588
 msgid "This is a useless comment. Thanks for your attention."
 msgstr "Dies ist ein nutzloser Kommentar. Danke für Ihre Aufmerksamkeit."
 
-#: data/base/droid_specs.lua:1581 data/storyline/act1/ReturnOfTux.droids:15
+#: data/base/droid_specs.lua:1628 data/storyline/act1/ReturnOfTux.droids:15
 msgid "Cook"
 msgstr "Koch"
 
-#: data/base/droid_specs.lua:1582
+#: data/base/droid_specs.lua:1629
 msgid "This is the cook."
 msgstr "Das ist der Koch."
 
-#: data/base/droid_specs.lua:1622
+#: data/base/droid_specs.lua:1669
 msgid "Balding Man"
 msgstr "Glatzköpfiger Mann"
 
-#: data/base/droid_specs.lua:1623
+#: data/base/droid_specs.lua:1670
 msgid "This is a typical professor/sage character of some older age. They are not armed as powerfully as e.g. the red guards."
 msgstr "Ein typischer Professor-/Rats-Charakter fortgeschrittenen Alters. Nicht so schwer bewaffnet, wie z.B. die Roten Garde."
 
-#: data/base/droid_specs.lua:1662
+#: data/base/droid_specs.lua:1709
 msgid "Pretty Woman"
 msgstr "Hübsche Frau"
 
-#: data/base/droid_specs.lua:1663
+#: data/base/droid_specs.lua:1710
 msgid "This is a typical sex bomb.  This one is even armed."
 msgstr "Eine typische nymphomane Sexbombe. Diese hier ist sogar 'scharf'!"
 
-#: data/base/droid_specs.lua:1703
+#: data/base/droid_specs.lua:1750
 msgid "Woman"
 msgstr "Frau"
 
-#: data/base/droid_specs.lua:1704
+#: data/base/droid_specs.lua:1751
 msgid "This is Tania. She is human."
 msgstr "Das ist Tania. Sie ist ein Mensch."
 
-#: data/base/droid_specs.lua:1743
+#: data/base/droid_specs.lua:1790
 msgid "Bartender"
 msgstr "Bartender"
 
-#: data/base/droid_specs.lua:1744
+#: data/base/droid_specs.lua:1791
 msgid "This is the bartender. Care for a drink?"
 msgstr "Dies ist der Gastwirt. Ein Drink gefällig?"
 
-#: data/base/droid_specs.lua:1782
+#: data/base/droid_specs.lua:1829
 msgid "Female Hunter"
 msgstr "Weiblicher Jäger"
 
-#: data/base/droid_specs.lua:1783
+#: data/base/droid_specs.lua:1830
 msgid "This hunter has fought with many robots before, and will not be scared by a mere linarian."
 msgstr "Dieser Jäger hat gegen viele Roboter zuvor gekämpft und fürchtet sich daher nicht vor einem einfachen Linarianer."
 
-#: data/base/droid_specs.lua:1823 data/base/droid_specs.lua:2072
+#: data/base/droid_specs.lua:1870 data/base/droid_specs.lua:2119
 msgid "ERROR: THIS IS A TERMINAL"
 msgstr "FEHLER: DIES IST EIN TERMINAL"
 
-#: data/base/droid_specs.lua:1824
+#: data/base/droid_specs.lua:1871
 msgid "This is a terminal."
 msgstr "Dies ist ein Terminal."
 
-#: data/base/droid_specs.lua:1834 data/storyline/act1/ReturnOfTux.droids:322
+#: data/base/droid_specs.lua:1881 data/storyline/act1/ReturnOfTux.droids:322
 #: data/storyline/act1/ReturnOfTux.droids:323
+#: data/storyline/act2/ReturnOfTux.droids:19
 msgid "Autogun"
 msgstr "Autowaffe"
 
-#: data/base/droid_specs.lua:1835
+#: data/base/droid_specs.lua:1882
 msgid "Carefully designed by Future Ballistics(R), this autogun will shred you into pieces if you try pass across them."
 msgstr "Von der Firma \"Future Ballistics(R)\" sorgfältig kreiert, wird diese Waffe jeden in tausend Teile zerschreddern, der es wagt, daran vorbei laufen zu wollen."
 
-#: data/base/droid_specs.lua:1883
+#: data/base/droid_specs.lua:1930
 msgid "598 Minister (Boss)"
 msgstr "598 Pfarrer (Boss)"
 
-#: data/base/droid_specs.lua:1930
+#: data/base/droid_specs.lua:1977
 msgid "883 Dalex (Boss)"
 msgstr "883 Dalex (Boss)"
 
-#: data/base/droid_specs.lua:1979
+#: data/base/droid_specs.lua:2026
 msgid "999 Cerebrum (Boss)"
 msgstr "999 Großhirn (Boss)"
 
-#: data/base/droid_specs.lua:2027
+#: data/base/droid_specs.lua:2074
 msgid "Authority Figure"
 msgstr "Autoritäre Figur"
 
-#: data/base/droid_specs.lua:2028
+#: data/base/droid_specs.lua:2075
 msgid "It has long since been known that game development is the most important job in the world. Also, the coolest. We know that thanks to this guy."
 msgstr "Es ist seit langem bekannt, dass die Spieleentwicklung der wichtigste Job der Welt ist. Und der coolste. Das wissen wir, dank diesem Typ hier."
 
-#: data/base/droid_specs.lua:2073
+#: data/base/droid_specs.lua:2120
 msgid "This is a secure terminal."
 msgstr "Dies ist ein Sicherheitsterminal."
 
@@ -1315,7 +1324,7 @@ msgid "Bottled Ice"
 msgstr "Eis in der Flasche"
 
 #: data/base/item_specs.lua:1969 data/base/item_specs.lua:1981
-#: data/base/item_specs.lua:3053
+#: data/base/item_specs.lua:3075
 msgid "Cooling aid"
 msgstr "Zum Abkühlen"
 
@@ -1833,18 +1842,34 @@ msgid "An envelop saying 'PC LOAD LETTERS'. I have no idea what that means..."
 msgstr "Ein Kuvert mit der Aufschrift \"PC LOAD LETTERS\". Ich habe keine Ahnung, was das bedeutet…"
 
 #: data/base/item_specs.lua:3000
+msgid "Arcane Lore"
+msgstr ""
+
+#: data/base/item_specs.lua:3004
+msgid "I've bought an anti-hack software, so I could try to hack it! ...But what, exactly, is the 'Arcane Lore'?"
+msgstr ""
+
+#: data/base/item_specs.lua:3011
+msgid "PGP key"
+msgstr ""
+
+#: data/base/item_specs.lua:3015
+msgid "It won't open your house, but it can unlock important encrypted archives."
+msgstr ""
+
+#: data/base/item_specs.lua:3022
 msgid "Cheat Gun"
 msgstr "Mogelwaffe"
 
-#: data/base/item_specs.lua:3015
+#: data/base/item_specs.lua:3037
 msgid "This item is used by testers. If you find it ingame without using a cheat, please report it as a bug."
 msgstr "Dieser Gegenstand dient nur zu Testzwecken. Wer ihn im Spiel findet, ohne geschummelt zu haben, soll diesen Fehler melden."
 
-#: data/base/item_specs.lua:3029
+#: data/base/item_specs.lua:3051
 msgid "Small Tutorial Axe"
 msgstr "Kleine Tutorial-Axt"
 
-#: data/base/item_specs.lua:3043
+#: data/base/item_specs.lua:3065
 msgid ""
 "While this axe was made for splitting wood, with some luck it can damage vital parts of a droid as well.\n"
 "Sell me!\n"
@@ -1854,11 +1879,11 @@ msgstr ""
 "Verkauf mich!\n"
 "Klicke auf den roten Button mit dem Kreuz, wenn du fertig bist."
 
-#: data/base/item_specs.lua:3052
+#: data/base/item_specs.lua:3074
 msgid "Bottled Tutorial Ice"
 msgstr "Eis in der Flasche - Tutorialitem"
 
-#: data/base/item_specs.lua:3057
+#: data/base/item_specs.lua:3079
 msgid ""
 "This bottle is filled with ice. It can keep you cool during a warm summer day.\n"
 "Buy me!\n"
@@ -2262,27 +2287,29 @@ msgstr "Das ist eine Falle!"
 msgid "Hatch with broken ladder"
 msgstr "Luke mit zerbrochener Leiter"
 
-#: data/storyline/act1/events.dat:1840
+#: data/storyline/act1/events.dat:1840 data/storyline/act2/events.dat:423
 msgid "Exit Arena"
 msgstr "Arena verlassen"
 
-#: data/storyline/act1/events.dat:1847
+#: data/storyline/act1/events.dat:1847 data/storyline/act2/events.dat:430
 msgid "Start New Wave"
 msgstr "Welle starten"
 
-#: data/storyline/act1/events.dat:1910
+#: data/storyline/act1/events.dat:1910 data/storyline/act2/events.dat:489
 msgid "Wave "
 msgstr "Welle"
 
-#: data/storyline/act1/events.dat:1912
+#: data/storyline/act1/events.dat:1912 data/storyline/act2/events.dat:491
 msgid "Final Wave - Take care!"
 msgstr "Letzte Welle - Warnung!"
 
 #: data/storyline/act1/events.dat:1936 data/storyline/act1/events.dat:1968
+#: data/storyline/act2/events.dat:515 data/storyline/act2/events.dat:546
 msgid "All bots are killed! Go to center for next wave."
 msgstr "Alle Roboter vernichtet! Gehe zur Mitte für die nächste Welle."
 
 #: data/storyline/act1/events.dat:1939 data/storyline/act1/events.dat:1971
+#: data/storyline/act2/events.dat:518 data/storyline/act2/events.dat:549
 msgid "All bots are killed! You won."
 msgstr "Alle Roboter vernichtet! Du hast gewonnen."
 
@@ -2495,7 +2522,7 @@ msgstr "Nördliche Uferlinie"
 msgid "World Edge Sea"
 msgstr "Weltgrenzenmeer"
 
-#: data/storyline/act1/levels.dat:23898
+#: data/storyline/act1/levels.dat:23898 data/storyline/act2/levels.dat:30013
 msgid "DEBUG LEVEL 24 -- This level was created to make testing of FreedroidRPG a little easier and is NOT meant to be accessible without cheating."
 msgstr "DEBUG LEVEL 24 -- Diese Ebene wurde zum einfachen Testen von FreedroidRPG erstellt und ist daher NICHT dafür gedacht, betreten zu werden, ohne zu Schummeln."
 
@@ -2697,6 +2724,9 @@ msgstr "Alter aufgegebener Komplex"
 #: data/storyline/act1/levels.dat:64563 data/storyline/act1/levels.dat:64778
 #: data/storyline/act1/levels.dat:64903 data/storyline/act1/levels.dat:65464
 #: data/storyline/act1/levels.dat:65814 data/storyline/act1/levels.dat:66142
+#: data/storyline/act2/levels.dat:26494 data/storyline/act2/levels.dat:26656
+#: data/storyline/act2/levels.dat:26781 data/storyline/act2/levels.dat:26906
+#: data/storyline/act2/levels.dat:27031 data/storyline/act2/levels.dat:28441
 msgid "World Edge"
 msgstr "Weltgrenze"
 
@@ -3766,9 +3796,388 @@ msgstr "Arbeiter"
 msgid "Corporate Guy"
 msgstr "Firmentyp"
 
-#: data/storyline/act2/levels.dat:20
-msgid "Empty Map"
+#: data/storyline/act2/events.dat:60 data/storyline/act2/levels.dat:30140
+#, fuzzy
+msgid "Skyscrapper Arena"
+msgstr "Experten-Arena"
+
+#: data/storyline/act2/events.dat:108
+msgid "You are unable to return. The only way is foward."
 msgstr ""
+
+#: data/storyline/act2/events.dat:109
+msgid "RUMBLE! A earthquake happened!"
+msgstr ""
+
+#: data/storyline/act2/events.dat:173
+msgid "Your head spins. What happened?!"
+msgstr ""
+
+#: data/storyline/act2/events.dat:174
+msgid "BOOM BOOOOOOM BOOOM"
+msgstr ""
+
+#: data/storyline/act2/events.dat:186
+#, fuzzy
+msgid "To Underground F1"
+msgstr "Zur Untergrundstation"
+
+#: data/storyline/act2/events.dat:198 data/storyline/act2/events.dat:235
+#, fuzzy
+msgid "To Underground F2"
+msgstr "Zur Untergrundstation"
+
+#: data/storyline/act2/events.dat:213
+#, fuzzy
+msgid "To Ground Level"
+msgstr "Zum Lagerhaus Untergeschoss 2"
+
+#: data/storyline/act2/events.dat:222 data/storyline/act2/events.dat:266
+#: data/storyline/act2/events.dat:385
+#, fuzzy
+msgid "To Underground F3"
+msgstr "Zur Untergrundstation"
+
+#: data/storyline/act2/events.dat:244 data/storyline/act2/events.dat:288
+#, fuzzy
+msgid "To Underground F4"
+msgstr "Zur Untergrundstation"
+
+#: data/storyline/act2/events.dat:253
+msgid "To Factory via Shortcut"
+msgstr ""
+
+#: data/storyline/act2/events.dat:275 data/storyline/act2/events.dat:310
+#, fuzzy
+msgid "To Underground F5"
+msgstr "Zur Untergrundstation"
+
+#: data/storyline/act2/events.dat:297 data/storyline/act2/events.dat:332
+#, fuzzy
+msgid "To Underground F6"
+msgstr "Zur Untergrundstation"
+
+#: data/storyline/act2/events.dat:319 data/storyline/act2/events.dat:354
+#, fuzzy
+msgid "To Underground F7"
+msgstr "Zur Untergrundstation"
+
+#: data/storyline/act2/events.dat:341 data/storyline/act2/events.dat:376
+#, fuzzy
+msgid "To Underground F8"
+msgstr "Zur Untergrundstation"
+
+#: data/storyline/act2/events.dat:363
+#, fuzzy
+msgid "To Underground F9"
+msgstr "Zur Untergrundstation"
+
+#: data/storyline/act2/events.dat:398
+msgid "To Mainland via underground"
+msgstr ""
+
+#: data/storyline/act2/events.dat:411
+#, fuzzy
+msgid "To Icy Summer Island"
+msgstr "Zur Omega-Insel"
+
+#: data/storyline/act2/events.dat:591 data/storyline/act2/npc_specs.lua:29
+msgid "Colemak"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:20
+msgid "RR Resorts"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:1119
+msgid "Visitors: This Way"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:1143
+msgid "In case of emergency, take the Arcane Lore from the chest!"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:1235
+msgid "Central Area"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:1971 data/storyline/act2/levels.dat:2456
+msgid "To R&R Resorts"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:1974
+msgid "To The Ice Pass"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:1977
+msgid "To R&R Factory"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:1980
+msgid "To Guest Area and City Gate Control"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:1983
+msgid "Guest Room. Please wait patiently for one of our staff pick you up."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:2113
+#, fuzzy
+msgid "Welcome to Act 2"
+msgstr "Willkommen an diesem Terminal."
+
+#: data/storyline/act2/levels.dat:2484
+#, fuzzy
+msgid "R&R Factory"
+msgstr "Fabrikkern"
+
+#: data/storyline/act2/levels.dat:4627
+msgid "Droid Research & Development Offices"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:4678
+#, fuzzy
+msgid "RR Factory, Floor 2"
+msgstr "Fabrikkern"
+
+#: data/storyline/act2/levels.dat:6962
+msgid "Servant Development Office. South: Scout Development Office."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:7138
+#, fuzzy
+msgid "RR Factory, Floor 3"
+msgstr "Fabrikkern"
+
+#: data/storyline/act2/levels.dat:9508
+msgid "Scouts Development Office. Intruders will be shot without mercy."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:9511
+msgid "No Trespassing: Factory Core. (Shortcut to Floor 9)"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:9517
+msgid "Are you lost? Northeast to Maintenance Development Office."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:9695
+#, fuzzy
+msgid "RR Factory, Floor 4"
+msgstr "Fabrikkern"
+
+#: data/storyline/act2/levels.dat:12216
+msgid "Maintenance Development Office & Storage. "
+msgstr ""
+
+#: data/storyline/act2/levels.dat:12219
+msgid "Crew Development Office. We're sorry that you need to go to your office by stairs."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:12222
+msgid "Crew Development Offices at East, in central area."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:12225
+msgid "If the gate to the research area is locked, please do not open it. Insane people working."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:12409
+#, fuzzy
+msgid "RR Factory, Floor 5"
+msgstr "Fabrikkern"
+
+#: data/storyline/act2/levels.dat:14743
+msgid "Crew & Harvesting Development Office. North-east: Security Development Office."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:14932
+#, fuzzy
+msgid "RR Factory, Floor 6"
+msgstr "Fabrikkern"
+
+#: data/storyline/act2/levels.dat:17301
+msgid "Dispatchment & Signman Offices. Battle droids present. Authorized Access Only!"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:17304
+msgid "Security Development Office. Sign blinks to spare power. This way for more STAIRS."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:17499
+#, fuzzy
+msgid "RR Factory, Floor 7"
+msgstr "Fabrikkern"
+
+#: data/storyline/act2/levels.dat:19924
+msgid "Use this stair for Sentinel Dev. Office, Command Dev. Office, Factory Plant and Death."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:19927
+msgid "There is nothing on this sign."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:19930
+msgid "Sentinel and Command devs, we're sorry, but more stairs ahead."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:19933
+msgid "Signman Office. Hey, it's me! You totally should visit this office, or send us a LETTER!"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:20124
+#, fuzzy
+msgid "RR Factory, Floor 8"
+msgstr "Fabrikkern"
+
+#: data/storyline/act2/levels.dat:22890
+#, fuzzy
+msgid "RR Factory, Floor 9"
+msgstr "Fabrikkern"
+
+#: data/storyline/act2/levels.dat:25864
+msgid "Command Development Office & Factory. Complainers about stairs will be frozen without mercy. AZ."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:27156
+msgid "The Ice Pass - North"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:27281
+msgid "The Ice Pass"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:27413
+msgid "The Ice Pass - South"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:27538
+msgid "The Ice Pass - Dvorak"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:27676
+msgid "Icy Summer Artificial Island"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:28338
+#, fuzzy
+msgid "To mainland"
+msgstr "Zurück zum Festland"
+
+#: data/storyline/act2/levels.dat:28881
+#, fuzzy
+msgid "Search in the Darkness"
+msgstr "Um besser in der Dunkelheit sehen zu können."
+
+#: data/storyline/act2/levels.dat:29946
+msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Managment."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:29949
+msgid "Blue Marker for Storage Room. Red Marker for Mainland."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:29952
+msgid "DANGER! Due to the reckless exploration of Dilithium, the ceiling may fall anytime. DO NOT PROCEED."
+msgstr ""
+
+#: data/storyline/act2/npc_specs.lua:11
+#: data/storyline/act2/ReturnOfTux.droids:123
+#, fuzzy
+msgid "Master Yadda"
+msgstr "Experten-Arena"
+
+#: data/storyline/act2/npc_specs.lua:15
+#, fuzzy
+msgid "Mr. Stone - Shop owner"
+msgstr "Stone -- Ladenbesitzerin"
+
+#: data/storyline/act2/npc_specs.lua:17
+#, fuzzy
+msgid "RR Security Chief"
+msgstr "614 Sicherheitsroboter"
+
+#: data/storyline/act2/npc_specs.lua:21
+msgid "999 RR Manager"
+msgstr ""
+
+#: data/storyline/act2/npc_specs.lua:22
+msgid "Mr. Saves"
+msgstr ""
+
+#: data/storyline/act2/npc_specs.lua:22
+msgid "Mr. Saves, Watcher of Stories"
+msgstr ""
+
+#: data/storyline/act2/npc_specs.lua:22
+#: data/storyline/act2/ReturnOfTux.droids:31
+msgid "Weirdo"
+msgstr ""
+
+#: data/storyline/act2/npc_specs.lua:23
+#: data/storyline/act2/ReturnOfTux.droids:146
+msgid "Mike"
+msgstr ""
+
+#: data/storyline/act2/npc_specs.lua:26
+#: data/storyline/act2/ReturnOfTux.droids:122
+msgid "Fred"
+msgstr ""
+
+#: data/storyline/act2/npc_specs.lua:29
+msgid "Dvorak's acquittance - Colemak"
+msgstr ""
+
+#: data/storyline/act2/quests.lua:27
+msgid "Where Am I?"
+msgstr ""
+
+#: data/storyline/act2/quests.lua:31
+msgid "Message From An Old Friend"
+msgstr ""
+
+#: data/storyline/act2/quests.lua:35
+#, fuzzy
+msgid "The Reapers Of MegaSys I"
+msgstr "Will Gapes -- MegaSys CSA"
+
+#: data/storyline/act2/ReturnOfTux.droids:4
+#: data/storyline/act2/ReturnOfTux.droids:5
+#: data/storyline/act2/ReturnOfTux.droids:6
+#: data/storyline/act2/ReturnOfTux.droids:7
+#, fuzzy
+msgid "RR Guard"
+msgstr "Rote Garde"
+
+#: data/storyline/act2/ReturnOfTux.droids:8
+msgid "629 Assassin"
+msgstr ""
+
+#: data/storyline/act2/ReturnOfTux.droids:9
+msgid "Car Wrecker"
+msgstr ""
+
+#: data/storyline/act2/ReturnOfTux.droids:10
+msgid "Swift Assassin"
+msgstr ""
+
+#: data/storyline/act2/ReturnOfTux.droids:12
+msgid "MS Officer"
+msgstr ""
+
+#: data/storyline/act2/ReturnOfTux.droids:18
+msgid "Crossroad Autogun"
+msgstr ""
+
+#: data/storyline/act2/ReturnOfTux.droids:20
+#, fuzzy
+msgid "Power Guard"
+msgstr "Rote Garde"
+
+#: data/storyline/act2/ReturnOfTux.droids:140
+#, fuzzy
+msgid "Friendly Dude"
+msgstr "Freundlicher 296"
 
 #~ msgid "Day %d, %02d:%02d"
 #~ msgstr "Tag %d, %02d:%02d"
@@ -4255,9 +4664,6 @@ msgstr ""
 
 #~ msgid "..."
 #~ msgstr "…"
-
-#~ msgid "Welcome to this terminal."
-#~ msgstr "Willkommen an diesem Terminal."
 
 #~ msgid "Hello."
 #~ msgstr "Hallo."

@@ -511,9 +511,123 @@ source_file = po/po-dialogs/tx/act1-WillGapes.pot
 source_lang = en
 type = PO
 
+[freedroid-rpg.dialog-act2-Act2-Vending-Machine]
+file_filter = po/po-dialogs/tx/act2-Act2-Vending-Machine-<lang>.po
+source_file = po/po-dialogs/tx/act2-Act2-Vending-Machine.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-act2-ArenaTerminal]
+file_filter = po/po-dialogs/tx/act2-ArenaTerminal-<lang>.po
+source_file = po/po-dialogs/tx/act2-ArenaTerminal.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-act2-Colemak]
+file_filter = po/po-dialogs/tx/act2-Colemak-<lang>.po
+source_file = po/po-dialogs/tx/act2-Colemak.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-act2-CryonicsBlock-Terminal]
+file_filter = po/po-dialogs/tx/act2-CryonicsBlock-Terminal-<lang>.po
+source_file = po/po-dialogs/tx/act2-CryonicsBlock-Terminal.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-act2-FactoryTerminal]
+file_filter = po/po-dialogs/tx/act2-FactoryTerminal-<lang>.po
+source_file = po/po-dialogs/tx/act2-FactoryTerminal.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-act2-Fred]
+file_filter = po/po-dialogs/tx/act2-Fred-<lang>.po
+source_file = po/po-dialogs/tx/act2-Fred.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-act2-IcePass-Terminal]
+file_filter = po/po-dialogs/tx/act2-IcePass-Terminal-<lang>.po
+source_file = po/po-dialogs/tx/act2-IcePass-Terminal.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-act2-Mike]
+file_filter = po/po-dialogs/tx/act2-Mike-<lang>.po
+source_file = po/po-dialogs/tx/act2-Mike.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-act2-MrSaves]
+file_filter = po/po-dialogs/tx/act2-MrSaves-<lang>.po
+source_file = po/po-dialogs/tx/act2-MrSaves.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-act2-ProgrammingChief]
+file_filter = po/po-dialogs/tx/act2-ProgrammingChief-<lang>.po
+source_file = po/po-dialogs/tx/act2-ProgrammingChief.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-act2-Prologue]
+file_filter = po/po-dialogs/tx/act2-Prologue-<lang>.po
+source_file = po/po-dialogs/tx/act2-Prologue.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-act2-RRF-ManagmentTerminal]
+file_filter = po/po-dialogs/tx/act2-RRF-ManagmentTerminal-<lang>.po
+source_file = po/po-dialogs/tx/act2-RRF-ManagmentTerminal.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-act2-RRGateTerminal]
+file_filter = po/po-dialogs/tx/act2-RRGateTerminal-<lang>.po
+source_file = po/po-dialogs/tx/act2-RRGateTerminal.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-act2-SecurityChief]
+file_filter = po/po-dialogs/tx/act2-SecurityChief-<lang>.po
+source_file = po/po-dialogs/tx/act2-SecurityChief.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-act2-Stone]
+file_filter = po/po-dialogs/tx/act2-Stone-<lang>.po
+source_file = po/po-dialogs/tx/act2-Stone.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-act2-TerminalColemak]
+file_filter = po/po-dialogs/tx/act2-TerminalColemak-<lang>.po
+source_file = po/po-dialogs/tx/act2-TerminalColemak.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-act2-TerminalDenied]
+file_filter = po/po-dialogs/tx/act2-TerminalDenied-<lang>.po
+source_file = po/po-dialogs/tx/act2-TerminalDenied.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.dialog-act2-Yadda]
+file_filter = po/po-dialogs/tx/act2-Yadda-<lang>.po
+source_file = po/po-dialogs/tx/act2-Yadda.pot
+source_lang = en
+type = PO
+
 [freedroid-rpg.data-droid_specs]
 file_filter = po/po-data/tx/droid_specs-<lang>.po
 source_file = po/po-data/tx/droid_specs.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.data-game_config]
+file_filter = po/po-data/tx/game_config-<lang>.po
+source_file = po/po-data/tx/game_config.pot
 source_lang = en
 type = PO
 
@@ -565,6 +679,36 @@ source_file = po/po-data/tx/act1-ReturnOfTux.pot
 source_lang = en
 type = PO
 
+[freedroid-rpg.data-act2-events]
+file_filter = po/po-data/tx/act2-events-<lang>.po
+source_file = po/po-data/tx/act2-events.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.data-act2-levels]
+file_filter = po/po-data/tx/act2-levels-<lang>.po
+source_file = po/po-data/tx/act2-levels.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.data-act2-npc_specs]
+file_filter = po/po-data/tx/act2-npc_specs-<lang>.po
+source_file = po/po-data/tx/act2-npc_specs.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.data-act2-quests]
+file_filter = po/po-data/tx/act2-quests-<lang>.po
+source_file = po/po-data/tx/act2-quests.pot
+source_lang = en
+type = PO
+
+[freedroid-rpg.data-act2-ReturnOfTux]
+file_filter = po/po-data/tx/act2-ReturnOfTux-<lang>.po
+source_file = po/po-data/tx/act2-ReturnOfTux.pot
+source_lang = en
+type = PO
+
 [freedroid-rpg.title-StartOfGame]
 file_filter = po/l10n-others/tx/title-StartOfGame-<lang>.txt
 source_file = po/l10n-others/tx/title-StartOfGame.txt
@@ -601,6 +745,12 @@ source_file = po/l10n-others/tx/title-GameLost.txt
 source_lang = en
 type = TXT
 
+[freedroid-rpg.title-EndOfGame]
+file_filter = po/l10n-others/tx/title-EndOfGame-<lang>.txt
+source_file = po/l10n-others/tx/title-EndOfGame.txt
+source_lang = en
+type = TXT
+
 [freedroid-rpg.title-Credits]
 file_filter = po/l10n-others/tx/title-Credits-<lang>.txt
 source_file = po/l10n-others/tx/title-Credits.txt
@@ -628,24 +778,6 @@ type = TXT
 [freedroid-rpg.all_in_one]
 file_filter = po/tx/all_in_one-<lang>.po
 source_file = po/tx/all_in_one.pot
-source_lang = en
-type = PO
-
-[freedroid-rpg.data-act2-levels]
-file_filter = po/po-data/tx/act2-levels-<lang>.po
-source_file = po/po-data/tx/act2-levels.pot
-source_lang = en
-type = PO
-
-[freedroid-rpg.data-act2-ReturnOfTux]
-file_filter = po/po-data/tx/act2-ReturnOfTux-<lang>.po
-source_file = po/po-data/tx/act2-ReturnOfTux.pot
-source_lang = en
-type = PO
-
-[freedroid-rpg.data-game_config]
-file_filter = po/po-data/tx/game_config-<lang>.po
-source_file = po/po-data/tx/game_config.pot
 source_lang = en
 type = PO
 

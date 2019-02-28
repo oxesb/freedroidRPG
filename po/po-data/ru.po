@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: freedroidrpg 0.16+git\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-02-25 09:54+0100\n"
+"POT-Creation-Date: 2019-02-27 18:12+0100\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
 "Last-Translator: algan011, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/arctic-games/teams/9511/ru/)\n"
@@ -22,7 +22,6 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: data/base/droid_specs.lua:98 data/storyline/act1/ReturnOfTux.droids:270
-#: data/storyline/act2/ReturnOfTux.droids:4
 msgid "123 Acolyte"
 msgstr "123 Прислужник"
 
@@ -138,7 +137,7 @@ msgstr "Стандартный дроид экипажа. Поставляетс
 msgid "598 Minister"
 msgstr "598 Министр"
 
-#: data/base/droid_specs.lua:697 data/base/droid_specs.lua:1884
+#: data/base/droid_specs.lua:697 data/base/droid_specs.lua:1931
 msgid "A highly sophisticated device. Able to control the Robo-Freighter on its own."
 msgstr "Очень сложное устройство, способное управлять роботизированным судном самостоятельно."
 
@@ -228,163 +227,173 @@ msgstr "Ранний тип робота-охранника, оснащённы�
 msgid "883 Dalex"
 msgstr "883 Далекс"
 
-#: data/base/droid_specs.lua:1164 data/base/droid_specs.lua:1931
+#: data/base/droid_specs.lua:1164 data/base/droid_specs.lua:1978
 msgid "This droid was designed from archive data. For some unknown reason it instils great fear in Human adversaries."
 msgstr "Этот дроид разработан по архивным данным. По неизвестной причине вселяет ужас в человеческих противников."
 
 #: data/base/droid_specs.lua:1211 data/storyline/act1/npc_specs.lua:77
 #: data/storyline/act1/ReturnOfTux.droids:293
 #: data/storyline/act1/ReturnOfTux.droids:600
+#: data/storyline/act2/ReturnOfTux.droids:11
 msgid "999 Cerebrum"
 msgstr "999 Мозг"
 
-#: data/base/droid_specs.lua:1212 data/base/droid_specs.lua:1980
+#: data/base/droid_specs.lua:1212 data/base/droid_specs.lua:2027
 msgid "Experimental command cyborg. Fitted with a new type of brain. Mounted on a security droid anti-grav unit for convenience."
 msgstr "Экспериментальный киборг-командир, оснащённый мозгом нового типа. Для удобства смонтирован на антигравитационном охранном дроиде."
 
-#: data/base/droid_specs.lua:1259 data/base/droid_specs.lua:1299
+#: data/base/droid_specs.lua:1259 data/storyline/act2/ReturnOfTux.droids:129
+msgid "The Glitch"
+msgstr ""
+
+#: data/base/droid_specs.lua:1260
+msgid "I have not failed. I've just found 10,000 ways how to NOT make a bot."
+msgstr ""
+
+#: data/base/droid_specs.lua:1306 data/base/droid_specs.lua:1346
 msgid "Older Man"
 msgstr "Старик"
 
-#: data/base/droid_specs.lua:1260
+#: data/base/droid_specs.lua:1307
 msgid "This is a typical professor/sage character of some older age.  They are not armed as powerfully as e.g. the red guards."
 msgstr "Типичный профессор/мудрец преклонного возраста. Вооружён не столь мощно, как, например, красные стражи."
 
-#: data/base/droid_specs.lua:1300
+#: data/base/droid_specs.lua:1347
 msgid "Some people say that every doctor is addicted to drugs. You estimate that right now this one is high on at least four different narcotics. Doc Moore seems very happy indeed..."
 msgstr "Некоторые люди говорят, что каждый доктор — наркоман. Тебе кажется, что этот сейчас находится под действием, как минимум, четырёх препаратов. Док Мур действительно выглядит довольно счастливым..."
 
-#: data/base/droid_specs.lua:1340 data/base/droid_specs.lua:1381
+#: data/base/droid_specs.lua:1387 data/base/droid_specs.lua:1428
 msgid "Red Guard"
 msgstr "Красный страж"
 
-#: data/base/droid_specs.lua:1341
+#: data/base/droid_specs.lua:1388
 msgid "This is a typical red (male) guard/fighter character.  They are equipped with powerful PowerExterminators."
 msgstr "Типичный красный (муж.) страж/боец. Вооружен мощным СилоИстребителем."
 
-#: data/base/droid_specs.lua:1382
+#: data/base/droid_specs.lua:1429
 msgid "This is Dixon, unlike a typical red (male) guard/fighter character, he has a knife weapon, and lowered aggression."
 msgstr "Это Диксон. В отличие от обычного красного стража/бойца (мужчины) он вооружён ножами и менее агрессивен."
 
-#: data/base/droid_specs.lua:1422
+#: data/base/droid_specs.lua:1469
 msgid "Matron"
 msgstr "Матрона"
 
-#: data/base/droid_specs.lua:1423
+#: data/base/droid_specs.lua:1470
 msgid "This is the hot_mama shopkeeper character model."
 msgstr "Эта мамочка — модель персонажа-лавочника."
 
-#: data/base/droid_specs.lua:1461 data/storyline/act1/ReturnOfTux.droids:214
+#: data/base/droid_specs.lua:1508 data/storyline/act1/ReturnOfTux.droids:214
 #: data/storyline/act1/ReturnOfTux.droids:466
 msgid "Female Scientist"
 msgstr "Женщина-учёный"
 
-#: data/base/droid_specs.lua:1462
+#: data/base/droid_specs.lua:1509
 msgid "This is the female scientist character model.  They are not armed as powerfully as e.g. the red guards."
 msgstr "Модель персонажа женщины-учёного. Вооружена не столь мощно, как, например, красные стражи."
 
-#: data/base/droid_specs.lua:1500 data/storyline/act1/ReturnOfTux.droids:11
+#: data/base/droid_specs.lua:1547 data/storyline/act1/ReturnOfTux.droids:11
 msgid "Mine Worker"
 msgstr "Шахтёр"
 
-#: data/base/droid_specs.lua:1501
+#: data/base/droid_specs.lua:1548
 msgid "This is the brown worker model.  They are not armed as powerfully as e.g. the red guards."
 msgstr "Это модель смуглого рабочего. Они вооружены не столько мощно, как, например, красные стражи."
 
-#: data/base/droid_specs.lua:1540
+#: data/base/droid_specs.lua:1587
 msgid "Blue Brother"
 msgstr "Синий брат"
 
-#: data/base/droid_specs.lua:1541
+#: data/base/droid_specs.lua:1588
 msgid "This is a useless comment. Thanks for your attention."
 msgstr "Это бесполезный комментарий. Спасибо за внимание."
 
-#: data/base/droid_specs.lua:1581 data/storyline/act1/ReturnOfTux.droids:15
+#: data/base/droid_specs.lua:1628 data/storyline/act1/ReturnOfTux.droids:15
 msgid "Cook"
 msgstr "Повар"
 
-#: data/base/droid_specs.lua:1582
+#: data/base/droid_specs.lua:1629
 msgid "This is the cook."
 msgstr "Это повар."
 
-#: data/base/droid_specs.lua:1622
+#: data/base/droid_specs.lua:1669
 msgid "Balding Man"
 msgstr "Лысеющий мужик."
 
-#: data/base/droid_specs.lua:1623
+#: data/base/droid_specs.lua:1670
 msgid "This is a typical professor/sage character of some older age. They are not armed as powerfully as e.g. the red guards."
 msgstr "Типичный профессор/мудрец преклонного возраста. Вооружены не столь мощно, как, например, красные стражи."
 
-#: data/base/droid_specs.lua:1662
+#: data/base/droid_specs.lua:1709
 msgid "Pretty Woman"
 msgstr "Симпатичная женщина"
 
-#: data/base/droid_specs.lua:1663
+#: data/base/droid_specs.lua:1710
 msgid "This is a typical sex bomb.  This one is even armed."
 msgstr "Типичная секс-бомба. А эта ещё и вооружена."
 
-#: data/base/droid_specs.lua:1703
+#: data/base/droid_specs.lua:1750
 msgid "Woman"
 msgstr "Женщина"
 
-#: data/base/droid_specs.lua:1704
+#: data/base/droid_specs.lua:1751
 msgid "This is Tania. She is human."
 msgstr "Это Таня. Она человек."
 
-#: data/base/droid_specs.lua:1743
+#: data/base/droid_specs.lua:1790
 msgid "Bartender"
 msgstr "Бармен"
 
-#: data/base/droid_specs.lua:1744
+#: data/base/droid_specs.lua:1791
 msgid "This is the bartender. Care for a drink?"
 msgstr "Это бармен. Хочешь чего-нибудь выпить?"
 
-#: data/base/droid_specs.lua:1782
+#: data/base/droid_specs.lua:1829
 msgid "Female Hunter"
 msgstr "Охотница"
 
-#: data/base/droid_specs.lua:1783
+#: data/base/droid_specs.lua:1830
 msgid "This hunter has fought with many robots before, and will not be scared by a mere linarian."
 msgstr "Эта охотница ранее сражалась с толпами роботов и не испугается простого линарианца."
 
-#: data/base/droid_specs.lua:1823 data/base/droid_specs.lua:2072
+#: data/base/droid_specs.lua:1870 data/base/droid_specs.lua:2119
 msgid "ERROR: THIS IS A TERMINAL"
 msgstr "ОШИБКА: ЭТО ТЕРМИНАЛ"
 
-#: data/base/droid_specs.lua:1824
+#: data/base/droid_specs.lua:1871
 msgid "This is a terminal."
 msgstr "Это терминал."
 
-#: data/base/droid_specs.lua:1834 data/storyline/act1/ReturnOfTux.droids:322
+#: data/base/droid_specs.lua:1881 data/storyline/act1/ReturnOfTux.droids:322
 #: data/storyline/act1/ReturnOfTux.droids:323
+#: data/storyline/act2/ReturnOfTux.droids:19
 msgid "Autogun"
 msgstr "Автоматическая пушка"
 
-#: data/base/droid_specs.lua:1835
+#: data/base/droid_specs.lua:1882
 msgid "Carefully designed by Future Ballistics(R), this autogun will shred you into pieces if you try pass across them."
 msgstr "Тщательно разработанная Баллистикой будущего® автоматическая пушка разорвёт тебя на кусочки, если ты попытаешься пройти перед ней."
 
-#: data/base/droid_specs.lua:1883
+#: data/base/droid_specs.lua:1930
 msgid "598 Minister (Boss)"
 msgstr "598 Министер (Босс)"
 
-#: data/base/droid_specs.lua:1930
+#: data/base/droid_specs.lua:1977
 msgid "883 Dalex (Boss)"
 msgstr "883 Далекс (Босс)"
 
-#: data/base/droid_specs.lua:1979
+#: data/base/droid_specs.lua:2026
 msgid "999 Cerebrum (Boss)"
 msgstr "999 Мозг (Босс)"
 
-#: data/base/droid_specs.lua:2027
+#: data/base/droid_specs.lua:2074
 msgid "Authority Figure"
 msgstr "Авторитет"
 
-#: data/base/droid_specs.lua:2028
+#: data/base/droid_specs.lua:2075
 msgid "It has long since been known that game development is the most important job in the world. Also, the coolest. We know that thanks to this guy."
 msgstr "Давным-давно известно, что разработка игр — самая важная работа в мире. Как и самая крутая. Известно благодаря этому парню."
 
-#: data/base/droid_specs.lua:2073
+#: data/base/droid_specs.lua:2120
 msgid "This is a secure terminal."
 msgstr "Это закрытый терминал."
 
@@ -1315,7 +1324,7 @@ msgid "Bottled Ice"
 msgstr "Бутилированный лёд"
 
 #: data/base/item_specs.lua:1969 data/base/item_specs.lua:1981
-#: data/base/item_specs.lua:3053
+#: data/base/item_specs.lua:3075
 msgid "Cooling aid"
 msgstr "Охладитель"
 
@@ -1831,18 +1840,34 @@ msgid "An envelop saying 'PC LOAD LETTERS'. I have no idea what that means..."
 msgstr "Конверт с надписью \"ПИСЬМА О ЗАГРУЗКЕ ПК\". Совершенно не представляю, что бы это значило..."
 
 #: data/base/item_specs.lua:3000
+msgid "Arcane Lore"
+msgstr ""
+
+#: data/base/item_specs.lua:3004
+msgid "I've bought an anti-hack software, so I could try to hack it! ...But what, exactly, is the 'Arcane Lore'?"
+msgstr ""
+
+#: data/base/item_specs.lua:3011
+msgid "PGP key"
+msgstr ""
+
+#: data/base/item_specs.lua:3015
+msgid "It won't open your house, but it can unlock important encrypted archives."
+msgstr ""
+
+#: data/base/item_specs.lua:3022
 msgid "Cheat Gun"
 msgstr "Чит-пушка"
 
-#: data/base/item_specs.lua:3015
+#: data/base/item_specs.lua:3037
 msgid "This item is used by testers. If you find it ingame without using a cheat, please report it as a bug."
 msgstr "Этот предмет для тестеров. Если вы нашли его в игре без использования читов, пожалуйста, сообщите об ошибке."
 
-#: data/base/item_specs.lua:3029
+#: data/base/item_specs.lua:3051
 msgid "Small Tutorial Axe"
 msgstr "Малый учебный топор"
 
-#: data/base/item_specs.lua:3043
+#: data/base/item_specs.lua:3065
 msgid ""
 "While this axe was made for splitting wood, with some luck it can damage vital parts of a droid as well.\n"
 "Sell me!\n"
@@ -1852,11 +1877,11 @@ msgstr ""
 "Продай меня!\n"
 "Щёлкни по красной кнопке с крестиком, когда закончишь."
 
-#: data/base/item_specs.lua:3052
+#: data/base/item_specs.lua:3074
 msgid "Bottled Tutorial Ice"
 msgstr "Учебный бутилированный лёд"
 
-#: data/base/item_specs.lua:3057
+#: data/base/item_specs.lua:3079
 msgid ""
 "This bottle is filled with ice. It can keep you cool during a warm summer day.\n"
 "Buy me!\n"
@@ -2254,27 +2279,29 @@ msgstr "Это ловушка!"
 msgid "Hatch with broken ladder"
 msgstr "Люк со сломанной лестницей"
 
-#: data/storyline/act1/events.dat:1840
+#: data/storyline/act1/events.dat:1840 data/storyline/act2/events.dat:423
 msgid "Exit Arena"
 msgstr "Покинуть арену"
 
-#: data/storyline/act1/events.dat:1847
+#: data/storyline/act1/events.dat:1847 data/storyline/act2/events.dat:430
 msgid "Start New Wave"
 msgstr "Запустить новую волну"
 
-#: data/storyline/act1/events.dat:1910
+#: data/storyline/act1/events.dat:1910 data/storyline/act2/events.dat:489
 msgid "Wave "
 msgstr "Волна"
 
-#: data/storyline/act1/events.dat:1912
+#: data/storyline/act1/events.dat:1912 data/storyline/act2/events.dat:491
 msgid "Final Wave - Take care!"
 msgstr "Последняя волна — будьте осторожны!"
 
 #: data/storyline/act1/events.dat:1936 data/storyline/act1/events.dat:1968
+#: data/storyline/act2/events.dat:515 data/storyline/act2/events.dat:546
 msgid "All bots are killed! Go to center for next wave."
 msgstr "Все боты убиты! Встаньте в центр для следующей волны."
 
 #: data/storyline/act1/events.dat:1939 data/storyline/act1/events.dat:1971
+#: data/storyline/act2/events.dat:518 data/storyline/act2/events.dat:549
 msgid "All bots are killed! You won."
 msgstr "Все боты убиты! Вы победили."
 
@@ -2485,7 +2512,7 @@ msgstr "Северное побережье"
 msgid "World Edge Sea"
 msgstr "Краесветное море"
 
-#: data/storyline/act1/levels.dat:23898
+#: data/storyline/act1/levels.dat:23898 data/storyline/act2/levels.dat:30013
 msgid "DEBUG LEVEL 24 -- This level was created to make testing of FreedroidRPG a little easier and is NOT meant to be accessible without cheating."
 msgstr "ОТЛАДОЧНЫЙ УРОВЕНЬ 24 — Этот уровень был создан, чтобы сделать тестирование FreedroidRPG немного проще и НЕ доступен без читерства."
 
@@ -2687,6 +2714,9 @@ msgstr "Старый заброшенный комплекс"
 #: data/storyline/act1/levels.dat:64563 data/storyline/act1/levels.dat:64778
 #: data/storyline/act1/levels.dat:64903 data/storyline/act1/levels.dat:65464
 #: data/storyline/act1/levels.dat:65814 data/storyline/act1/levels.dat:66142
+#: data/storyline/act2/levels.dat:26494 data/storyline/act2/levels.dat:26656
+#: data/storyline/act2/levels.dat:26781 data/storyline/act2/levels.dat:26906
+#: data/storyline/act2/levels.dat:27031 data/storyline/act2/levels.dat:28441
 msgid "World Edge"
 msgstr "Край света"
 
@@ -3756,9 +3786,391 @@ msgstr "Рабочий"
 msgid "Corporate Guy"
 msgstr "Парень из корпорации"
 
+#: data/storyline/act2/events.dat:60 data/storyline/act2/levels.dat:30140
+#, fuzzy
+msgid "Skyscrapper Arena"
+msgstr "Арена мастеров"
+
+#: data/storyline/act2/events.dat:108
+msgid "You are unable to return. The only way is foward."
+msgstr ""
+
+#: data/storyline/act2/events.dat:109
+msgid "RUMBLE! A earthquake happened!"
+msgstr ""
+
+#: data/storyline/act2/events.dat:173
+msgid "Your head spins. What happened?!"
+msgstr ""
+
+#: data/storyline/act2/events.dat:174
+msgid "BOOM BOOOOOOM BOOOM"
+msgstr ""
+
+#: data/storyline/act2/events.dat:186
+#, fuzzy
+msgid "To Underground F1"
+msgstr "На подземную станцию"
+
+#: data/storyline/act2/events.dat:198 data/storyline/act2/events.dat:235
+#, fuzzy
+msgid "To Underground F2"
+msgstr "На подземную станцию"
+
+#: data/storyline/act2/events.dat:213
+#, fuzzy
+msgid "To Ground Level"
+msgstr "На 2 уровень склада"
+
+#: data/storyline/act2/events.dat:222 data/storyline/act2/events.dat:266
+#: data/storyline/act2/events.dat:385
+#, fuzzy
+msgid "To Underground F3"
+msgstr "На подземную станцию"
+
+#: data/storyline/act2/events.dat:244 data/storyline/act2/events.dat:288
+#, fuzzy
+msgid "To Underground F4"
+msgstr "На подземную станцию"
+
+#: data/storyline/act2/events.dat:253
+msgid "To Factory via Shortcut"
+msgstr ""
+
+#: data/storyline/act2/events.dat:275 data/storyline/act2/events.dat:310
+#, fuzzy
+msgid "To Underground F5"
+msgstr "На подземную станцию"
+
+#: data/storyline/act2/events.dat:297 data/storyline/act2/events.dat:332
+#, fuzzy
+msgid "To Underground F6"
+msgstr "На подземную станцию"
+
+#: data/storyline/act2/events.dat:319 data/storyline/act2/events.dat:354
+#, fuzzy
+msgid "To Underground F7"
+msgstr "На подземную станцию"
+
+#: data/storyline/act2/events.dat:341 data/storyline/act2/events.dat:376
+#, fuzzy
+msgid "To Underground F8"
+msgstr "На подземную станцию"
+
+#: data/storyline/act2/events.dat:363
+#, fuzzy
+msgid "To Underground F9"
+msgstr "На подземную станцию"
+
+#: data/storyline/act2/events.dat:398
+msgid "To Mainland via underground"
+msgstr ""
+
+#: data/storyline/act2/events.dat:411
+#, fuzzy
+msgid "To Icy Summer Island"
+msgstr "На остров Омега"
+
+#: data/storyline/act2/events.dat:591 data/storyline/act2/npc_specs.lua:29
+msgid "Colemak"
+msgstr ""
+
 #: data/storyline/act2/levels.dat:20
-msgid "Empty Map"
-msgstr "Пустая карта"
+msgid "RR Resorts"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:1119
+msgid "Visitors: This Way"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:1143
+msgid "In case of emergency, take the Arcane Lore from the chest!"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:1235
+msgid "Central Area"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:1971 data/storyline/act2/levels.dat:2456
+msgid "To R&R Resorts"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:1974
+msgid "To The Ice Pass"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:1977
+msgid "To R&R Factory"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:1980
+msgid "To Guest Area and City Gate Control"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:1983
+msgid "Guest Room. Please wait patiently for one of our staff pick you up."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:2113
+#, fuzzy
+msgid "Welcome to Act 2"
+msgstr "Добро пожаловать в этот терминал."
+
+#: data/storyline/act2/levels.dat:2484
+#, fuzzy
+msgid "R&R Factory"
+msgstr "Сердце фабрики"
+
+#: data/storyline/act2/levels.dat:4627
+msgid "Droid Research & Development Offices"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:4678
+#, fuzzy
+msgid "RR Factory, Floor 2"
+msgstr "Сердце фабрики"
+
+#: data/storyline/act2/levels.dat:6962
+msgid "Servant Development Office. South: Scout Development Office."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:7138
+#, fuzzy
+msgid "RR Factory, Floor 3"
+msgstr "Сердце фабрики"
+
+#: data/storyline/act2/levels.dat:9508
+msgid "Scouts Development Office. Intruders will be shot without mercy."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:9511
+msgid "No Trespassing: Factory Core. (Shortcut to Floor 9)"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:9517
+msgid "Are you lost? Northeast to Maintenance Development Office."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:9695
+#, fuzzy
+msgid "RR Factory, Floor 4"
+msgstr "Сердце фабрики"
+
+#: data/storyline/act2/levels.dat:12216
+msgid "Maintenance Development Office & Storage. "
+msgstr ""
+
+#: data/storyline/act2/levels.dat:12219
+msgid "Crew Development Office. We're sorry that you need to go to your office by stairs."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:12222
+msgid "Crew Development Offices at East, in central area."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:12225
+msgid "If the gate to the research area is locked, please do not open it. Insane people working."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:12409
+#, fuzzy
+msgid "RR Factory, Floor 5"
+msgstr "Сердце фабрики"
+
+#: data/storyline/act2/levels.dat:14743
+msgid "Crew & Harvesting Development Office. North-east: Security Development Office."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:14932
+#, fuzzy
+msgid "RR Factory, Floor 6"
+msgstr "Сердце фабрики"
+
+#: data/storyline/act2/levels.dat:17301
+msgid "Dispatchment & Signman Offices. Battle droids present. Authorized Access Only!"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:17304
+msgid "Security Development Office. Sign blinks to spare power. This way for more STAIRS."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:17499
+#, fuzzy
+msgid "RR Factory, Floor 7"
+msgstr "Сердце фабрики"
+
+#: data/storyline/act2/levels.dat:19924
+msgid "Use this stair for Sentinel Dev. Office, Command Dev. Office, Factory Plant and Death."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:19927
+msgid "There is nothing on this sign."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:19930
+msgid "Sentinel and Command devs, we're sorry, but more stairs ahead."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:19933
+msgid "Signman Office. Hey, it's me! You totally should visit this office, or send us a LETTER!"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:20124
+#, fuzzy
+msgid "RR Factory, Floor 8"
+msgstr "Сердце фабрики"
+
+#: data/storyline/act2/levels.dat:22890
+#, fuzzy
+msgid "RR Factory, Floor 9"
+msgstr "Сердце фабрики"
+
+#: data/storyline/act2/levels.dat:25864
+msgid "Command Development Office & Factory. Complainers about stairs will be frozen without mercy. AZ."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:27156
+msgid "The Ice Pass - North"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:27281
+msgid "The Ice Pass"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:27413
+msgid "The Ice Pass - South"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:27538
+msgid "The Ice Pass - Dvorak"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:27676
+msgid "Icy Summer Artificial Island"
+msgstr ""
+
+#: data/storyline/act2/levels.dat:28338
+#, fuzzy
+msgid "To mainland"
+msgstr "Вернуться на материк"
+
+#: data/storyline/act2/levels.dat:28881
+#, fuzzy
+msgid "Search in the Darkness"
+msgstr "Улучшает ночное зрение."
+
+#: data/storyline/act2/levels.dat:29946
+msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Managment."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:29949
+msgid "Blue Marker for Storage Room. Red Marker for Mainland."
+msgstr ""
+
+#: data/storyline/act2/levels.dat:29952
+msgid "DANGER! Due to the reckless exploration of Dilithium, the ceiling may fall anytime. DO NOT PROCEED."
+msgstr ""
+
+#: data/storyline/act2/npc_specs.lua:11
+#: data/storyline/act2/ReturnOfTux.droids:123
+#, fuzzy
+msgid "Master Yadda"
+msgstr "Арена мастеров"
+
+#: data/storyline/act2/npc_specs.lua:15
+#, fuzzy
+msgid "Mr. Stone - Shop owner"
+msgstr "Стоун — владелица магазина"
+
+#: data/storyline/act2/npc_specs.lua:17
+#, fuzzy
+msgid "RR Security Chief"
+msgstr "614 Бот-охранник"
+
+#: data/storyline/act2/npc_specs.lua:21
+msgid "999 RR Manager"
+msgstr ""
+
+#: data/storyline/act2/npc_specs.lua:22
+msgid "Mr. Saves"
+msgstr ""
+
+#: data/storyline/act2/npc_specs.lua:22
+msgid "Mr. Saves, Watcher of Stories"
+msgstr ""
+
+#: data/storyline/act2/npc_specs.lua:22
+#: data/storyline/act2/ReturnOfTux.droids:31
+msgid "Weirdo"
+msgstr ""
+
+#: data/storyline/act2/npc_specs.lua:23
+#: data/storyline/act2/ReturnOfTux.droids:146
+msgid "Mike"
+msgstr ""
+
+#: data/storyline/act2/npc_specs.lua:26
+#: data/storyline/act2/ReturnOfTux.droids:122
+msgid "Fred"
+msgstr ""
+
+#: data/storyline/act2/npc_specs.lua:29
+msgid "Dvorak's acquittance - Colemak"
+msgstr ""
+
+#: data/storyline/act2/quests.lua:27
+msgid "Where Am I?"
+msgstr ""
+
+#: data/storyline/act2/quests.lua:31
+msgid "Message From An Old Friend"
+msgstr ""
+
+#: data/storyline/act2/quests.lua:35
+#, fuzzy
+msgid "The Reapers Of MegaSys I"
+msgstr "Уилл Гейпс — главный архитектор ПО MegaSys"
+
+#: data/storyline/act2/ReturnOfTux.droids:4
+#: data/storyline/act2/ReturnOfTux.droids:5
+#: data/storyline/act2/ReturnOfTux.droids:6
+#: data/storyline/act2/ReturnOfTux.droids:7
+#, fuzzy
+msgid "RR Guard"
+msgstr "Красный страж"
+
+#: data/storyline/act2/ReturnOfTux.droids:8
+msgid "629 Assassin"
+msgstr ""
+
+#: data/storyline/act2/ReturnOfTux.droids:9
+msgid "Car Wrecker"
+msgstr ""
+
+#: data/storyline/act2/ReturnOfTux.droids:10
+msgid "Swift Assassin"
+msgstr ""
+
+#: data/storyline/act2/ReturnOfTux.droids:12
+msgid "MS Officer"
+msgstr ""
+
+#: data/storyline/act2/ReturnOfTux.droids:18
+msgid "Crossroad Autogun"
+msgstr ""
+
+#: data/storyline/act2/ReturnOfTux.droids:20
+#, fuzzy
+msgid "Power Guard"
+msgstr "Красный страж"
+
+#: data/storyline/act2/ReturnOfTux.droids:140
+#, fuzzy
+msgid "Friendly Dude"
+msgstr "Дружественный 296"
+
+#~ msgid "Empty Map"
+#~ msgstr "Пустая карта"
 
 #~ msgid "Day %d, %02d:%02d"
 #~ msgstr "День %d, %02d:%02d"
@@ -4245,9 +4657,6 @@ msgstr "Пустая карта"
 
 #~ msgid "..."
 #~ msgstr "..."
-
-#~ msgid "Welcome to this terminal."
-#~ msgstr "Добро пожаловать в этот терминал."
 
 #~ msgid "Hello."
 #~ msgstr "Здравствуй."

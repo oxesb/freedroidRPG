@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-02-21 18:25+0100\n"
+"POT-Creation-Date: 2019-02-27 18:11+0100\n"
 "PO-Revision-Date: 2019-02-22 13:18+0000\n"
 "Last-Translator: fluzz <fluzz@gmx.com>\n"
 "Language-Team: French (http://www.transifex.com/arctic-games/freedroid-rpg/language/fr/)\n"
@@ -359,7 +359,7 @@ msgstr "Début du tutoriel."
 msgid "Starting new game act."
 msgstr "Début d'un nouvel acte du jeu."
 
-#: src/init.c:972
+#: src/init.c:982
 msgid ""
 "You are playing a Release Candidate.\n"
 "Strange bugs may still be present in the game.\n"
@@ -375,11 +375,11 @@ msgstr ""
 "\n"
 "Bonne chance !\n"
 
-#: src/init.c:991 src/init.c:992
+#: src/init.c:1001 src/init.c:1002
 msgid "Game over.\n"
 msgstr "Fin de la partie.\n"
 
-#: src/init.c:1058 src/init.c:1059
+#: src/init.c:1068 src/init.c:1069
 msgid "Game won.\n"
 msgstr "Tu as gagné la partie.\n"
 
