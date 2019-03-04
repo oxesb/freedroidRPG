@@ -97,6 +97,7 @@ extern int filter_0_16_1_rename_spellactives_array(struct savegame_data *, struc
 extern int filter_0_16_1_add_game_config(struct savegame_data *, struct auto_string *);
 extern int filter_0_16_1_use_game_act_id(struct savegame_data *, struct auto_string *);
 extern int filter_0_16_1_change_allmissions(struct savegame_data *, struct auto_string *);
+extern int filter_0_16_1_convert_item_type(struct savegame_data *, struct auto_string *);
 static int _change_savegame_version(struct savegame_data *, struct auto_string *);
 
 // List of available converters
@@ -129,6 +130,9 @@ static struct converter converters[] = {
 		},
 		{ "adapt0_16_1_change_allmissions", 1601, 6, 1601, 7,
 		  { filter_0_16_1_change_allmissions, _change_savegame_version, NULL }
+		},
+		{ "adapt0_16_1_convert_item_type", 1601, 7, 1601, 8,
+		  { filter_0_16_1_convert_item_type, _change_savegame_version, NULL }
 		}
 };
 

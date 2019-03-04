@@ -111,7 +111,7 @@ static int rename_array(struct savegame_data *savegame, struct auto_string *repo
 	if (length_new <= length_old) {
 		// Avoid a huge mem copy, by filling with blanks
 		int i;
-		strncpy(array_start, new, length_new);
+		strncpy(array_start, new, length_new+1);
 		for (i = length_new; i < length_old; ++i) {
 			array_start[i] = ' ';
 		}
@@ -244,6 +244,97 @@ int filter_0_16_1_change_allmissions(struct savegame_data *savegame, struct auto
 	}
 
 	memcpy(ptr, "missions    = {", strlen("AllMissions"));
+
+	return FILTER_APPLIED;
+}
+
+// Convert item's type from index in ItemMap to itemspec's id
+
+int filter_0_16_1_convert_item_type(struct savegame_data *savegame, struct auto_string *report)
+{
+	// The item type to change are in the section starting with 'Inventory = {'
+	// and ending with 'HaveBeenToLevel = {'
+
+	char *start_section = strstr(savegame->sav_buffer, "Inventory = {");
+	if (!start_section) {
+		// the attribute wasn't found
+		autostr_append(report,
+		               _("Error during savegame filtering (%s:%s): Tux "
+		                 "'Inventory' attribute was not found.\n"
+		                 "The savegame seems to be corrupted."),
+		               savegame->running_converter->id, __FUNCTION__);
+		return FILTER_ABORT;
+	}
+
+	char *end_section = strstr(savegame->sav_buffer, "HaveBeenToLevel = {");
+	if (!end_section) {
+		// the attribute wasn't found
+		autostr_append(report,
+		               _("Error during savegame filtering (%s:%s): Tux "
+		                 "'HaveBeenToLevel' attribute was not found.\n"
+		                 "The savegame seems to be corrupted."),
+		               savegame->running_converter->id, __FUNCTION__);
+		return FILTER_ABORT;
+	}
+
+	// Allocate a new savegame buffer.
+	// 'MAX_ITEMS_IN_INVENTORY + 5' item types are to be rewritten.
+	// We suppose a max string id of 256 chars (far enough for the items existing
+	// at this point of git history)
+
+	char *new_savegame = (char*)MyMalloc(sizeof(char)*(savegame->sav_buffer_size + (MAX_ITEMS_IN_INVENTORY + 5)*256));
+	char *copy_from = savegame->sav_buffer;
+	char *copy_to = new_savegame;
+
+	// Loop on each ',\ntype ='
+
+	char *ptr = strstr(start_section, ",\ntype =");
+
+	while (ptr && (ptr < end_section)) {
+		// Copy up to the current ptr
+		ptrdiff_t copy_len = ptr - copy_from;
+		memcpy(copy_to, copy_from, copy_len);
+		copy_to += copy_len;
+
+		// Extract the item type index
+		ptr += strlen(",\ntype = ");
+		char *endptr;
+		int item_type = (int)strtol(ptr, &endptr, 0);
+
+		if (endptr == ptr) {
+			autostr_append(report,
+			               _("Error during savegame filtering (%s:%s): Malformed "
+			                 "item type string in Tux struct.\n"
+			                 "The savegame seems to be corrupted."),
+			               savegame->running_converter->id, __FUNCTION__);
+			free(new_savegame);
+			return FILTER_ABORT;
+		}
+
+		// Convert to an itemspec id and write it
+		struct auto_string *item_type_string = alloc_autostr(256);
+		if (item_type == -1) {
+			autostr_printf(item_type_string, ",\ntype = \"none\"");
+		} else {
+			autostr_printf(item_type_string, ",\ntype = [=[%s]=]", ItemMap[item_type].id);
+		}
+		memcpy(copy_to, item_type_string->value, item_type_string->length);
+		copy_to += item_type_string->length;
+		free_autostr(item_type_string);
+
+		// Prepare for next round
+		copy_from = endptr;
+		ptr = strstr(copy_from, ",\ntype =");
+	}
+
+	// Copy remaining part of the input buffer
+	ptrdiff_t copy_len = (savegame->sav_buffer + savegame->sav_buffer_size) - copy_from;
+	memcpy(copy_to, copy_from, copy_len);
+
+	// Replace the old buffer by the new one
+	free(savegame->sav_buffer);
+	savegame->sav_buffer = new_savegame;
+	savegame->sav_buffer_size = strlen(savegame->sav_buffer);
 
 	return FILTER_APPLIED;
 }

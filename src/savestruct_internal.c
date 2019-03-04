@@ -224,7 +224,7 @@ void read_string(lua_State *L, int index, string *data)
 	char *str = (char *)lua_tostring(L, index);
 	*data = NULL;
 	if (strlen(str)) {
-		*data = strdup(lua_tostring(L, index));
+		*data = strdup(str);
 	}
 }
 
@@ -238,6 +238,41 @@ void read_string(lua_State *L, int index, string *data)
 void write_string(struct auto_string *strout, string *data)
 {
 	autostr_append(strout, "[=[%s]=]", (*data) ? *data : "");
+}
+
+/**
+ * Read an item_type.
+ * \ingroup simplerw
+ *
+ * When writing an item, its 'type' (which is an index in the ItemMap) is saved
+ * using the itemspec's id. The inverse conversion is done on read.
+ * \param L     Current Lua State
+ * \param index Lua stack index of the data
+ * \param data  Pointer to the resulting data storage
+ */
+void read_item_type(lua_State *L, int index, item_type *data)
+{
+	lua_is_of_type_or_abort(L, index, LUA_TSTRING);
+	char *str = (char *)lua_tostring(L, index);
+	*data = -1;
+	if (strlen(str) && strncmp(str, "none", 4)) {
+		*data = get_item_type_by_id(lua_tostring(L, index));
+	}
+}
+
+/**
+ * Write an item_type.
+ * \ingroup simplerw
+ *
+ * An item_type is an index in the ItemMap. If an item is added in the middle of
+ * the item_specs file, the saved index is no more the right one.
+ * Therefore, on write, the item_type is converted into the itemspec's id.
+ * \param strout The auto_string to be filled
+ * \param data   Pointer to the data to write
+ */
+void write_item_type(struct auto_string *strout, item_type *data)
+{
+	autostr_append(strout, "[=[%s]=]", (*data != -1) ? ItemMap[*data].id : "none");
 }
 
 /**
