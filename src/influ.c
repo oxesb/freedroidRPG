@@ -797,13 +797,33 @@ void move_tux()
  */
 void hit_tux(float damage)
 {
+
+	// First, if shield is on but Tux is overheating, turn it off...
+	if ((Me.shield_duration > 0) && (Me.temperature > Me.max_temperature)) {
+		Me.shield_duration = 0;
+		append_new_game_message(_("Energy shield disabled due to overheat."));
+	}
+
 	if (Me.god_mode)
 		return;
 
 	if (Me.energy < 0)
 		return;
 
-	Me.energy -= damage;
+	if (Me.shield_duration > 0) {
+		// The shield is on, so damage is converted in heat, unless Tux will overheat.
+		float temptative_temperature = Me.temperature + damage * 3.0f;
+		if (temptative_temperature > Me.max_temperature) {
+			Me.shield_duration = 0;
+			append_new_game_message(_("Energy shield disabled due to a risk of overheat."));
+		} else {
+			Me.temperature = temptative_temperature;
+		}
+	}
+
+	if (Me.shield_duration <= 0) {
+		Me.energy -= damage; //The shield is off, normal damage.
+	}
 
 	if (damage > Me.energy / 10)
 		tux_scream_sound();
@@ -1782,6 +1802,7 @@ void init_tux()
 	Me.paralyze_duration = 0;
 	Me.invisible_duration = 0;
 	Me.nmap_duration = 0;
+	Me.shield_duration = 0;
 
 	Me.readied_skill = 0;
 

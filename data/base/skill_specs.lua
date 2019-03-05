@@ -207,6 +207,19 @@ The art of rapidly moving away from danger is very useful. Even when used in rev
 --------------------------------------------------------------------------------
 
 {
+	-- TODO: Energy Shield currently competes with invisibility because the later
+	-- does not have any vulnerability (except against boss). This is to be changed
+	-- later.
+	name =_"Energy Shield",
+	icon = "ExplosionCircleSpell.png",
+	form = "self",
+	effect = {type = "shield", duration = {base = 8, per_level = 3}},
+	cost = {base = 10, per_level = 2},
+	description =_[[Creating an energy shield to protect you can be a very useful skill. Every hit that you get will be converted into heat. Beware: This heats up excessively. Equipment can still be damaged by heat. When you overheat, shield will try to automatically turn off to prevent damage to itself. It may provoke extra-heat on this process, so be sure to not let it happen.]],
+},
+--------------------------------------------------------------------------------
+
+{
 	name =_"Extract bot parts",
 	icon = "ExtractBotParts.png",
 	form = "self",

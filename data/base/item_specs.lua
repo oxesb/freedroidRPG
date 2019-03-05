@@ -1830,6 +1830,18 @@ item_list{
 ----------------------------------------------------------------------
 
 {
+	id = "Source Book of Energy Shield",
+	name =_"Source Book of Energy Shield",
+	right_use = {tooltip =_"Permanently acquire/enhance this program", add_skill =_"Energy Shield"},
+	base_price = 500,
+	inventory = {x = 2, y = 2, image = "spellbook/inv_image_greenblue.png" },
+	drop = {sound = "drop_book_sound.ogg"},
+	description =_[[Creating an energy shield to protect you can be a very useful skill. Every hit that you get will be converted into heat. Beware: This heats up excessively. Equipment can still be damaged by heat. When you overheat, shield will try to automatically turn off to prevent damage to itself. It may provoke extra-heat on this process, so be sure to not let it happen.]],
+	rotation_series = "spellbook",
+},
+----------------------------------------------------------------------
+
+{
 	id = "Nuclear Science for Dummies IV",
 	name =_"Subatomic and Nuclear Science for Dummies, Volume IV",
 	base_price = 600,
@@ -3080,7 +3092,6 @@ Click the red button with the cross on it when you are done.]],
 Buy me!
 Click the red button with the cross on it when you are done.]],
 	rotation_series = "pills_potions/force_capsule",
-},
-
+}
 
 }

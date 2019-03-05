@@ -2022,6 +2022,8 @@ static void iso_put_tux_part(struct tux_part_render_data *render_data, int x, in
 
 	if (Me.invisible_duration) {	/* Invisible? Become transparent */
 		a = 0.5;
+	} else if (Me.shield_duration) {	/* Not invisible, but using a shield? Be only less opaque */
+		a = 0.65;
 	}
 
 	struct image *img = &tux_images[motion_class].part_images[tux_part_group][our_phase][rotation_index];

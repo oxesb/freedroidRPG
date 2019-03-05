@@ -294,7 +294,7 @@ return {
 				sell_item("Source Book of Sanctuary", 1, "Tamara")
 				sell_item("Source Book of Virus", 1, "Tamara")
 				sell_item("Source Book of Dispel smoke", 1, "Tamara")
-				sell_item("Source Book of Invisibility", 1, "Tamara")
+				sell_item("Source Book of Energy Shield", 1, "Tamara")
 
 				hide("node3", "node12")
 			else
@@ -464,6 +464,7 @@ return {
 			sell_item("Source Book of Broadcast Blue Screen", 1, "Tamara")
 			sell_item("Source Book of Broadcast virus", 1, "Tamara")
 			sell_item("Source Book of Killer poke", 1, "Tamara")
+			sell_item("Source Book of Invisibility", 1, "Tamara")
 			sell_item("Source Book of Plasma discharge", 1, "Tamara")
 
 			hide("node39", "node40")

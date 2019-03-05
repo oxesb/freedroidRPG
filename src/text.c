@@ -376,6 +376,12 @@ void display_effect_countdowns(void)
 		pixel_y -= get_font_height(FPS_Display_Font);
 	}
 
+	if (Me.shield_duration > 0.0) {
+		set_current_font(FPS_Display_Font);
+		display_countdown(pixel_x, pixel_y, _("shielded"), Me.shield_duration);
+		pixel_y -= get_font_height(FPS_Display_Font);
+	}
+
 	if (Me.nmap_duration > 0.0) {
 		set_current_font(FPS_Display_Font);
 		display_countdown(pixel_x, pixel_y, _("scanning"), Me.nmap_duration);

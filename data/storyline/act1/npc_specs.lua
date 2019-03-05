@@ -215,6 +215,7 @@ items = {
 	 {"Source Book of Malformed packet"},
 	 {"Source Book of Blue Screen"},
 	 {"Source Book of Calculate Pi"},
+	 {"Source Book of Energy Shield"},
 	 {"Source Book of Repair equipment"}
 	 --"Source Book of Reverse-engineer",
 	 --"Source Book of Nethack",
@@ -230,6 +231,7 @@ items = {
 	 {"Source Book of Blue Screen"},
 	 {"Source Book of Calculate Pi"},
 	 {"Source Book of Repair equipment"}
+	 -- "Source Book of Energy Shield",
 	 -- "Source Book of Reverse-engineer",
 	 -- "Source Book of Nethack",
 	}

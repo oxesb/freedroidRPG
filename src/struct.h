@@ -668,6 +668,7 @@ typedef struct tux {
 	float paralyze_duration;
 	float invisible_duration;
 	float nmap_duration;
+	float shield_duration;
 
 	int quest_browser_changed;
 

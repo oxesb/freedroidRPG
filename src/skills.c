@@ -388,6 +388,7 @@ int do_skill(int skill_index, int spell_cost)
 		Me.paralyze_duration += strcmp(SpellSkillMap[skill_index].effect, "paralyze") ? 0 : effdur;
 		Me.invisible_duration += strcmp(SpellSkillMap[skill_index].effect, "invisibility") ? 0 : effdur;
 		Me.nmap_duration += strcmp(SpellSkillMap[skill_index].effect, "nmap") ? 0 : effdur;
+		Me.shield_duration += strcmp(SpellSkillMap[skill_index].effect, "shield") ? 0 : effdur;
 		Me.light_bonus_end_date = Me.current_game_date + (strcmp(SpellSkillMap[skill_index].effect, "light") ? 0 : effdur);
 		return 1;
 
@@ -915,6 +916,8 @@ void show_skills_screen(void)
 				sprintf(char_text, _("Detect enemies"));
 			else if (!strcmp(SpellSkillMap[skill_of_this_slot].effect, "light"))
 				sprintf(char_text, _("Lighten area"));
+			else if (!strcmp(SpellSkillMap[skill_of_this_slot].effect, "shield"))
+				sprintf(char_text, _("Turn damage into heat"));
 			else if (!strcmp(SpellSkillMap[skill_of_this_slot].effect, "burnup"))
 				sprintf(char_text, " ");
 
