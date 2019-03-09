@@ -29,26 +29,61 @@ return {
 			number_one=math.random(2,7)
 			number_two=math.random(1,number_one-1)
 			captcha = number_one - number_two
-			if (captcha == 1) then
-				captcha = _"one"
-			elseif (captcha == 2) then
-				captcha = _"two"
-			elseif (captcha == 3) then
-				captcha = _"three"
-			elseif (captcha == 4) then
-				captcha = _"four"
-			elseif (captcha == 5) then
-				captcha = _"five"
-			elseif (captcha == 6) then
-				captcha = _"six"
+			-- Convert number_one and number_two to text
+			-- This could be optimized but that can be done after r17 RC 1
+			if (number_one == 1) then
+				number_one = _"one"
+			elseif (number_one == 2) then
+				number_one = _"two"
+			elseif (number_one == 3) then
+				number_one = _"three"
+			elseif (number_one == 4) then
+				number_one = _"four"
+			elseif (number_one == 5) then
+				number_one = _"five"
+			elseif (number_one == 6) then
+				number_one = _"six"
+			elseif (number_one == 7) then
+				number_one = _"seven"
 			end
-			response = user_input_string(string.format(_"CAPTCHA: Please write the lowercase word that answers the following: %d - %d = ?", number_one, number_two))
+
+			if (number_two == 1) then
+				number_two = _"one"
+			elseif (number_two == 2) then
+				number_two = _"two"
+			elseif (number_two == 3) then
+				number_two = _"three"
+			elseif (number_two == 4) then
+				number_two = _"four"
+			elseif (number_two == 5) then
+				number_two = _"five"
+			elseif (number_two == 6) then
+				number_two = _"six"
+			elseif (number_two == 7) then
+				number_two = _"seven"
+			end
+
+			-- Just to be sure there won't be str/int problems
+			if (captcha == 1) then
+				captcha = "1"
+			elseif (captcha == 2) then
+				captcha = "2"
+			elseif (captcha == 3) then
+				captcha = "3"
+			elseif (captcha == 4) then
+				captcha = "4"
+			elseif (captcha == 5) then
+				captcha = "5"
+			elseif (captcha == 6) then
+				captcha = "6"
+			end
+			response = user_input_string(string.format(_"CAPTCHA: Please write the number that answers the following: %s - %s = ?", number_one, number_two))
 		else
 			MO_HFGateAccessServer_skip_captcha = false
 		end
 		if (captcha ~= response) then
 			Npc:says(_"Non-human detected. Administering paralyzing shock.")
-			Npc:says(_"NOTE: If you are a human, try again, and make sure you enter a word and not digits.")
+			Npc:says(_"NOTE: If you are a human, try again, and make sure you enter digits and not a word.")
 			freeze_tux_npc(7)
 			Tux:hurt(20)
 			Tux:heat(20)

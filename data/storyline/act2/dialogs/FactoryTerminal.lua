@@ -66,32 +66,59 @@ return {
 			--; TRANSLATORS: command,  use lowercase here
 			Tux:says(_"open gate", "NO_WAIT")
 
-
-			-- The challenge to open the gate may provoke EXTREME DEATH
+			-- Note: This captcha is different from the previous ones
 			number_one=math.random(2,5)
 			number_two=math.random(1,number_one-1)
 			captcha = number_one + number_two
-			if (captcha == 3) then
-				captcha = _"three"
-			elseif (captcha == 4) then
-				captcha = _"four"
-			elseif (captcha == 5) then
-				captcha = _"five"
-			elseif (captcha == 6) then
-				captcha = _"six"
-			elseif (captcha == 7) then
-				captcha = _"seven"
-			elseif (captcha == 8) then
-				captcha = _"eight"
-			elseif (captcha == 9) then
-				captcha = _"nine"
+
+			-- Convert number_one and number_two to text
+			-- This could be optimized but that can be done after r17 RC 1
+			if (number_one == 1) then
+				number_one = _"one"
+			elseif (number_one == 2) then
+				number_one = _"two"
+			elseif (number_one == 3) then
+				number_one = _"three"
+			elseif (number_one == 4) then
+				number_one = _"four"
+			elseif (number_one == 5) then
+				number_one = _"five"
 			end
-			response = user_input_string(string.format(_"CAPTCHA: Please write the lowercase word that answers the following: %d + %d = ?", number_one, number_two))
+
+			if (number_two == 1) then
+				number_two = _"one"
+			elseif (number_two == 2) then
+				number_two = _"two"
+			elseif (number_two == 3) then
+				number_two = _"three"
+			elseif (number_two == 4) then
+				number_two = _"four"
+			elseif (number_two == 5) then
+				number_two = _"five"
+			end
+
+			-- Just to be sure there won't be str/int problems
+			if (captcha == 3) then
+				captcha = "3"
+			elseif (captcha == 4) then
+				captcha = "4"
+			elseif (captcha == 5) then
+				captcha = "5"
+			elseif (captcha == 6) then
+				captcha = "6"
+			elseif (captcha == 7) then
+				captcha = "7"
+			elseif (captcha == 8) then
+				captcha = "8"
+			elseif (captcha == 9) then
+				captcha = "9"
+			end
+			response = user_input_string(string.format(_"CAPTCHA: Please write the number that answers the following: %s + %s = ?", number_one, number_two))
 
 
 			if (captcha ~= response) then
 				Npc:says(_"Access Denied. Electrical discharge in progress.")
-				Npc:says(_"TIP OF THE DAY: make sure you enter a word and not digits.")
+				Npc:says(_"NOTE: If you are a human, try again, and make sure you enter digits and not a word.")
 				freeze_tux_npc(2)
 				Tux:hurt(30)
 				Tux:heat(60)
