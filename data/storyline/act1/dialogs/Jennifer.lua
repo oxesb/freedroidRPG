@@ -18,7 +18,7 @@
 ----------------------------------------------------------------------
 --[[WIKI
 PERSONALITY = { "Trapped", "Technical" },
-BACKSTORY = "$$NAME$$ is a machinist forced to work for the bots in the Mega Systems Factory."
+BACKSTORY = "$$NAME$$ is a machinist working for the bots in the Mega Systems Factory. It's subtly induced that $$NAME$$ is also a bot with experimental AI and interface. This will become more clear later, when player learns about MegaSys failed plan to infiltrate human society with bots behaving like perfect common citzens."
 WIKI]]--
 
 local Npc = FDrpg.get_npc()
@@ -90,10 +90,10 @@ return {
 			Npc:says(_"Well...")
 			Npc:says(_"The workers here get special chips implanted.", "NO_WAIT")
 			Tux:says(_"Ew.", "NO_WAIT")
-			Npc:says(_"So the bots can identify us as 'friendly' and won't rip us apart.")
+			Npc:says(_"So we can identify each other as 'friendly' and don't rip ourselves apart.")
 			Tux:says(_"Uh.")
 			Tux:says(_"Is there any way for me to get such a chip?")
-			Npc:says(_"I don't think you will be able to get one. You don't look very human-like.")
+			Npc:says(_"I don't think you will be able to get one. They're custom and the chip-makers aren't around anymore.")
 			Npc:says(_"How did you get in here anyway?")
 			hide("node4") show("node5", "node6", "node7")
 		end,
