@@ -665,6 +665,7 @@ void ResetGameConfigToDefaultValues(void)
 	GameConfig.enemy_energy_bars_visible = TRUE;
 	GameConfig.framerate_limit = 40;
 	GameConfig.skip_light_radius = FALSE;
+	GameConfig.effect_countdowns_visible = TRUE;
 	GameConfig.omit_obstacles_in_level_editor = FALSE;
 	GameConfig.omit_map_labels_in_level_editor = TRUE;
 	GameConfig.omit_enemies_in_level_editor = TRUE;
