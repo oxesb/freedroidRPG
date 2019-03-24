@@ -24,7 +24,7 @@ Text files containing descriptions:
 README                : Read it!
 FILES                 : This file.
 NEWS                  : An empty file that the autotools force upon us.
-ChangeLog             : What has changed recently, targetting developers.
+ChangeLog             : What has changed recently, targeting developers.
 INSTALL.freedroidRPG  : Instructions for building and installing from source.
 freedroidRPG.6        : Description of the game in man page style.
 

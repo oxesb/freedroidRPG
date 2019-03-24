@@ -1136,8 +1136,8 @@ void Activate_Conservative_Frame_Computation(void)
  */
 void update_frames_displayed(void)
 {
-	// The next couter counts the frames displayed by FreedroidRPG during this
-	// whole run!!  DO NOT RESET THIS COUNTER WHEN THE GAME RESTARTS!!
+	// The next counter counts the frames displayed by FreedroidRPG during
+	// this whole run!!  DO NOT RESET THIS COUNTER WHEN THE GAME RESTARTS!!
 	Overall_Frames_Displayed++;
 	Overall_Average = (Overall_Average * (Overall_Frames_Displayed - 1)
 			   + Frame_Time()) / Overall_Frames_Displayed;

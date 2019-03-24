@@ -20,7 +20,7 @@
 */
 /*
 	File:		fddnm_dot_data.h
-	Purpose:	defintion/implementation of dialog_dot_data struct
+	Purpose:	definition/implementation of dialog_dot_data struct
 	Author:		Scott Furry
 	Date:		2014 Dec 12
 	Update:		2015 Feb 25

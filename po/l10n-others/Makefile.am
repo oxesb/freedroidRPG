@@ -65,7 +65,7 @@ define rsrc_pull =
 	fi
 endef
 
-#-- Copy src file to dest file if src and dest are differents
+#-- Copy src file to dest file if src and dest are different
 #-- (this avoid to change dest file timestamp if src and dest are identicals) 
 # $(1) = src file
 # $(2) = dest file
@@ -110,7 +110,7 @@ $(foreach potsrc,$(TITLES_POTSRC),$(eval $(call update-po-title,$(potsrc))))
 
 #-- Merge a l10n version of a title's text with the title's header,
 #-- and copy the result to data/storyline/act1/titles
-#-- Note: $(wilcard) if used so that an empty prerequisite list is generated if
+#-- Note: $(wildcard) if used so that an empty prerequisite list is generated if
 #-- the translation file does not exist
 # $(1) = pot name
 # $(2) = lang

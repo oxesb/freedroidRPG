@@ -40,7 +40,7 @@ return {
 							_"Welcome back.")
 			if (Tux:has_item_equipped("The Super Exterminator!!!") or
 				Tux:has_item_equipped("Exterminator")) then
-				Npc:says(_"You are using a fine weapon. I wonder were you found it?")
+				Npc:says(_"You are using a fine weapon. I wonder where you found it?")
 				-- After all, if there is something I am sure of, is that Spencer would never give you one.
 			end
 		end

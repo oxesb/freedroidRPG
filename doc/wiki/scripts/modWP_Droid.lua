@@ -26,7 +26,7 @@ local modWP_Droid = {}
 modWP_Droid.modcommon = {}
 --	Variable will contained all parsed droid information after completion of ProcessDroidData()
 modWP_Droid.AllDroidData = {}
---	"struct" of droid infromation for each droid
+--	"struct" of droid information for each droid
 --	use deep copy to pass default values to new copy
 modWP_Droid.droidDataItem = {
 --	Each "droid" section starts with "** Start of new Robot: **"

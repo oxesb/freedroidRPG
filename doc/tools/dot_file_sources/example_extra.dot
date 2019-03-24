@@ -87,7 +87,7 @@ digraph interpretation {
 		>
 	];
 
-	//NODE-EDGE DEFINTIONS
+	//NODE-EDGE DEFINITIONS
 	edge[style=solid penwidth=0.65 minlen="1.5"];
 	a1 -> a1FirstTime
 	a1 -> a1EveryTime
@@ -114,7 +114,7 @@ digraph interpretation {
 	a1node2 -> a1node1
 	a1node3 -> a1node0
 
-	//SUBGRAPH DEFINTIONS
+	//SUBGRAPH DEFINITIONS
 	subgraph cluster_subtopic {
 		label =<<FONT><B>Dialog Subtopic</B></FONT>>;
 		a1node0;

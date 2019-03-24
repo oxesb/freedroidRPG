@@ -1003,7 +1003,7 @@ end
 --	convert level number and name to text format
 --	[in]	levelnumber	level to be converted
 --	[in]	label		text to be used for wiki presentation
---	[in]	withURL		false - return just formated anchor
+--	[in]	withURL		false - return just formatted anchor
 --						true - return full url#anchor to level information
 --	[ret]	string	"XX - level name"
 function modWP_Levels.WikiEntryLevelText( levelnumber, label, withURL )

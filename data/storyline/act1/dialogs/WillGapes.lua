@@ -56,7 +56,7 @@ return {
 				if (not Gapes_Uploaded_firmware) then
 					Tux:says(_"I killed all bots, you can go outside now.")
 					Npc:says(_"It's impossible. The bots are after me! I must stay here!")
-					Tux:says(_"...Okay, but when you fell hungry, do leave and visit the town. You can find food there.")
+					Tux:says(_"...Okay, but when you feel hungry, do leave and visit the town. You can find food there.")
 					Npc:says(_"*stomach growls*")
 					Npc:says(_"I'm not hungry! I swear!")
 					Gapes_Uploaded_firmware=true

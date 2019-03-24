@@ -1640,7 +1640,7 @@ enum shader {
 enum trigger_state {
 	TRIGGER_ENABLED = 1 << 0
 };
-// Defaul trigger state (OR-ed flags from enum trigger_state).
+// Default trigger state (OR-ed flags from enum trigger_state).
 // This default value has to be kept coherent with the defaults used
 // when loading events.dat in load_events().
 // To ensure that needed coherency, there must not be any hardcoded

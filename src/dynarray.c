@@ -224,7 +224,7 @@ void *dynarray_member(struct dynarray *array, int index, size_t membersize)
 /**
  * \brief Initializes a sparse dynamic array to a base capacity
  *
- * \param array       Pointer to the sparse dynarray to initiliaze.
+ * \param array       Pointer to the sparse dynarray to initialize.
  * \param membernum   Number of members to allocate.
  * \param membersize  Size of a member.
  */

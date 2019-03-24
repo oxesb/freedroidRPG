@@ -93,7 +93,7 @@ return {
 				switch_background_music("NewTutorialStage.ogg") -- Things are now weird, so we add weird music!
 				Act2_ColemakAwake=true
 				Npc:says(_"Current Memory Loss: 0.00%%") -- ???
-				Npc:says(_"Security Personel is on way. Estimated Time Arrival: 0 Second.")
+				Npc:says(_"Security Personnel is on way. Estimated Time Arrival: 0 Second.")
 
 				-- dispatch_event(eid, time) now we have an animation
 

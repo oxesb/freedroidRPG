@@ -213,7 +213,7 @@ static void show_droid_description(enemy *cur_enemy, gps *description_pos)
 {
 	int text_length;
 	int bar_width; //size of the energy bar
-	int barc_width; //size of the enery bar complement (black part)
+	int barc_width; //size of the energy bar complement (black part)
 	int bar_y;
 	int bar_x;
 	SDL_Rect rect;

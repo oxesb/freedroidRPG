@@ -1324,7 +1324,7 @@ static void DropHeldItemToSlot(item * SlotItem)
 {
 	item *DropItemPointer; // temporary storage
 
-	// Chech validity of held item
+	// Check validity of held item
 	if (item_held_in_hand == NULL) {
 		DebugPrintf(0, "\nvoid DropHeldItemToSlot ( void ) : No item in inventory seems to be currently held in hand...");
 		return;		

@@ -56,7 +56,7 @@ return {
 			if (HF_FirmwareUpdateServer_uploaded_faulty_firmware_update) then
 				Tux:says(_"Of course. I killed all bots.")
 				Npc:says(_"No, not that. Something tells me it's not over, at least, not yet. Call it instinct, I simply can't rest.")
-				Npc:says(_"I'll stay in guard for a while more, even if Spencer told me to rest. Fell free to walk outside, though. It's just a bad omen, nothing more.")
+				Npc:says(_"I'll stay in guard for a while more, even if Spencer told me to rest. Feel free to walk outside, though. It's just a bad omen, nothing more.")
 			end
 			hide("node1")
 		end,

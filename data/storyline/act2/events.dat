@@ -105,7 +105,7 @@ Name="76 Rock Slide 5"
 Silent=0
 <LuaCode>
     teleport("76-SafeSpot") -- Double safe
-	display_big_message(_"You are unable to return. The only way is foward.")
+	display_big_message(_"You are unable to return. The only way is forward.")
 	display_big_message(_"RUMBLE! A earthquake happened!")
 </LuaCode>
 * End of trigger *

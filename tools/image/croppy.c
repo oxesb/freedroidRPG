@@ -297,7 +297,7 @@ void parse_command_line(int argc, char *const argv[])
 } // ParseCommandLine 
 
 /* -----------------------------------------------------------------
- * This funciton initialises the video display and opens up a 
+ * This function initialises the video display and opens up a
  * window for graphics display.
  * -----------------------------------------------------------------*/
 void init_video (void)

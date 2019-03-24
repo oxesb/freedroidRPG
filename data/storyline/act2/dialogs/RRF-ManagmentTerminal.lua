@@ -23,7 +23,7 @@ local Tux = FDrpg.get_tux()
 return {
 	EveryTime = function()
 		play_sound("effects/Menu_Item_Deselected_Sound_0.ogg")
-		RRGateTerminal_prompt = "guest@managment.rrf: ~ #"
+		RRGateTerminal_prompt = "guest@management.rrf: ~ #"
 
 		cli_says(_"Login : ", "NO_WAIT")
 		--; TRANSLATORS: username, maybe this should stay in lowercase letters?

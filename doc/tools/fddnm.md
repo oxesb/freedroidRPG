@@ -12,7 +12,7 @@ RPG Dialog Node Mapper( FDDNM ) tool parses dialog files and can producing graph
 several formats, all to indicate inter-connectivity and viability of dialog file nodes.\n
 \n
 Freedroid Dialog Node Mapper is a standalone program that is **not** compiled along with Freedroid RPG.
-Users/Developers must compile this tool seperately.\n
+Users/Developers must compile this tool separately.\n
 \n
 **Note to Freedroid RPG developers/maintainers**\n
 Changes to dialog structure or variables will require that source for this tool be reviewed and if necessary updated.\n
@@ -152,8 +152,8 @@ and store these files in the default output directory.\n
 
 
 \n
-Ouput Interpretaton		{#output}
-===================
+Output Interpretation		{#output}
+=====================
 
 Current implementation uses the following colour scheme:\n
 ![Example - Dialog Conversion Output (no detail)](@ref example.png)
@@ -270,7 +270,7 @@ This can be verified by executing the following command:\n
 	otool -L /opt/local/lib/libboost_system-mt.dylib
 
 The command should report back libboost_system library linkage to either libc++ (clang) or libstdc++ (gcc).\n
-The solution is to either use the same compiler for FDDNM or rebuild boost libraries with prefered compiler.\n
+The solution is to either use the same compiler for FDDNM or rebuild boost libraries with preferred compiler.\n
 To build FDDNM with same compiler used to build boost library, use the following during configure:\n
 
 	./configure ... CXX="[ g++ | clang++ ]"

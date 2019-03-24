@@ -451,8 +451,8 @@ return {
 		id = "node30",
 		text = _"Where is everybody? Don't tell me only a dozen of people survived!",
 		code = function()
-			Npc:says(_"No, no. The causalities here were much smaller than everywhere else.")
-			Npc:says(_"Most of citzens are currently at the mines. They are doing everything they can to keep the town running.")
+			Npc:says(_"No, no. The causalties here were much smaller than everywhere else.")
+			Npc:says(_"Most of citizens are currently at the mines. They are doing everything they can to keep the town running.")
 			Npc:says(_"Children, elderly and others who cannot work are upstairs. They are too afraid to come down.")
 			Npc:says(_"The ones who you will find here are Red Guards, shopkeepers, medics, programmers, librarians, etc.")
 			Npc:says(_"So do not worry. Things may be dire, but we weren't wiped off. Yet.")

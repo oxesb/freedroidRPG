@@ -417,7 +417,7 @@ static void build_item_lists(void)
 	free(gun_items_list);    //GUNS
 	free(defense_items_list);//ARMOR, SHIELDS, & SHOES
 	free(spell_items_list);  //SPELL-LIKE: Grenades, Spell Books, Pills, & Potions
-	free(other_items_list);  //OTHER: Ammo, Circuts, Plot Items, etc.
+	free(other_items_list);  //OTHER: Ammo, Circuits, Plot Items, etc.
 	free(all_items_list);    //EVERYTHING
 
 	melee_items_list   = MyMalloc((Number_Of_Item_Types + 1) * sizeof(int));

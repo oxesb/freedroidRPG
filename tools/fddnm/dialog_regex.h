@@ -20,7 +20,7 @@
 */
 /*
 	File:		dialog_regex.h
-	Purpose:	defintions of regex strings used in parsing FDRPG dialogs
+	Purpose:	definitions of regex strings used in parsing FDRPG dialogs
 	Author:		Scott Furry
 	Date:		2014 Nov 29
 	Update:		2015 Mar 27

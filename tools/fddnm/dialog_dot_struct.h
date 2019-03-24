@@ -20,7 +20,7 @@
 */
 /*
 	File:		dialog_dot_struct.h
-	Purpose:	defintions supporting FDRPG dialog nodes parsing
+	Purpose:	definitions supporting FDRPG dialog nodes parsing
 	Author:		Scott Furry
 	Date:		2014 Dec 12
 	Update:		2015 Mar 27

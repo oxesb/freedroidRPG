@@ -52,7 +52,7 @@ struct line_reached_callback {
  * \relates widget_autoscroll_text
  *
  * \details The text is word-wrapped at the right border of the widget's
- * rectangle. The rendering start position of the text is offseted relatively
+ * rectangle. The rendering start position of the text is offsetted relatively
  * to the top the the widget. The offset is changed at each frame, depending
  * on the current scrolling speed.\n
  * Clipping is used to cut the rendering outside of widget's rectangle.

@@ -8,7 +8,7 @@ wiki header details can also be used to amplify game character details and aid f
 \n
 Located in the dialog file after the License statement and before the dialog Lua code,
 a dialog wiki header is in essence Lua code surrounded by special Lua block comment markers.
-It is itended to be parseable by wiki parsing code, but not to be processed by the game engine.
+It is intended to be parseable by wiki parsing code, but not to be processed by the game engine.
 \n
 \n
 The form of a wiki header is as follows:
@@ -54,7 +54,7 @@ Lua block comments are used to surround the wiki header data so that the FDRPG g
 \n
 \n
 `WIKI` is used to indicate where the wiki header begins and ends, distinguishing this section from other Lua block comments
-that may be present. All Lines between the markers, exlcusive of the markers proper, are extracted line-by-line for processing.
+that may be present. All Lines between the markers, exclusive of the markers proper, are extracted line-by-line for processing.
 After the text is extracted, it is placed into a Lua table and loaded into memory. Once in memory, the data in the wiki header
 is processed, along with other dialog information, contributing to the NPC wiki page content.
 \n
@@ -71,7 +71,7 @@ ____
 PERSONALITY = { "text","text" },
 ~~~~~~~~~~~
 PERSONALITY variable is a table of short, terse and descriptive statements that detail the character traits of the dialog file
-subject. These statements serve to enhance an understanding of how the character might responsed to situations in the game.
+subject. These statements serve to enhance an understanding of how the character might responded to situations in the game.
 \n
 \n
 It is suggested to organize these statements from most to least dominant trait. Statements consisting of sentences or references
@@ -105,7 +105,7 @@ _key_ is used to identify what game element _value_ represents. The text of _key
 
 	- `[0-9]` is a numerical identifier to distinguish this marker from others of the same type.
 
-All occurrences of the _key_ text in other header elements are surrounded by double dollar signs - `$$key$$`. When enountered
+All occurrences of the _key_ text in other header elements are surrounded by double dollar signs - `$$key$$`. When encountered
 in wiki parsing, `$$key$$` will be replaced with what value represents (see below). This is intended to simplify future updates
 of the header information as only one item needs to be updated in a dialog file. However, this does not guarantee accuracy with
 plurals \(\[text\]s\), possessives \(\[text\]'s\) or pronouns ( he | she | it | they).

@@ -33,7 +33,7 @@ modWP_ROTD.files = {
 	rotd=""
 }
 
---	"struct" of ReturnOfTux.droid infromation for each entry found
+--	"struct" of ReturnOfTux.droid information for each entry found
 --	use deep copy to pass default values to new copy
 modWP_ROTD.rotdDataItem = {
 	itemlevel = -1,

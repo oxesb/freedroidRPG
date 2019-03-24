@@ -1180,7 +1180,7 @@ static int lua_dir(lua_State *L)
 static int lua_set_mouse_move_target(lua_State *L)
 {
 	/* USE WITH CARE!
-	 * I made this function so we could automatizes some tests on level 24
+	 * I made this function so we could automatize some tests on level 24
 	 * This is not supposed to be used in the "real game"
 	 */
 	Me.mouse_move_target.x = luaL_checknumber(L, 1);
@@ -1510,7 +1510,7 @@ luaL_Reg lfuncs[] = {
 	{"freeze_npc", lua_event_freeze_npc}, // -> FDnpc:freeze
 	/* add_obstacle(lvl, x, y, obst_ID) add obstacles to maps at given position
 	 * add_obstacle(8, 41.4, 51.5, 100)
-	 * where 8 is the level number, x and y are the coorinates and 100
+	 * where 8 is the level number, x and y are the coordinates and 100
 	 * is the obstacle ID (see defs.h)
 	 */
 	{"add_obstacle", lua_add_obstacle},
@@ -1539,7 +1539,7 @@ luaL_Reg lfuncs[] = {
 
 	{"term_has_color_cap", lua_term_has_color_cap },
 	/* USE WITH CARE!
-	 * I made this function so we could automatizes some tests on level 24
+	 * I made this function so we could automatize some tests on level 24
 	 * This is not supposed to be used in the "real game"
 	 */
 	{"set_mouse_move_target", lua_set_mouse_move_target},
@@ -1649,7 +1649,7 @@ static int pop_results(lua_State *L, const char *sig, va_list *vl)
 					goto pop_and_return;
 				}
 				struct dynarray *array = va_arg(*vl, struct dynarray *);
-				dynarray_init(array, lua_rawlen(L, index), sizeof(char *)); // the dynarray was reseted by the caller
+				dynarray_init(array, lua_rawlen(L, index), sizeof(char *)); // the dynarray was reset by the caller
 				for (i=1; i<=lua_rawlen(L, index); i++) {
 					lua_rawgeti(L, index, i);
 					if (!lua_isstring(L, -1)) {
@@ -1907,7 +1907,7 @@ int resume_lua_coroutine(struct lua_coroutine *coroutine)
 	}
 
 	// On error:
-	// Use the lua debug API to get informations about the code of the current script
+	// Use the lua debug API to get information about the code of the current script
 	char *error_msg = strdup(lua_tostring(coroutine->thread, -1));
 
 	lua_Debug ar;

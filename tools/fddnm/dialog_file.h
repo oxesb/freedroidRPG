@@ -20,7 +20,7 @@
 */
 /*
 	File:		dialog_file.h
-	Purpose:	class defintion for parsing FDRPG dialogs
+	Purpose:	class definition for parsing FDRPG dialogs
 	Author:		Scott Furry
 	Date:		2014 Nov 13
 	Update:		2015 Feb 25

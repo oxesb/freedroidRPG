@@ -158,7 +158,7 @@ used to interact with the game:
    (not yet available...). To use them, a reference of an actual NPC is to be created (using
    the `FDrpg` Lua module), so that those functions will be _applied_ to that specific NPC.
    Such a reference is usually called an _instance_.\n
-   In the following exemple, we want to get the amount of gold of the user. A `get_gold()`
+   In the following example, we want to get the amount of gold of the user. A `get_gold()`
    function is available in the `FDtux` class. So, we first set the local var `Tux` as
    an instance of `FDtux`, and then call `get_gold()` on that instance:
    ~~~~~~~~~~~{.lua}

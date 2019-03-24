@@ -168,6 +168,6 @@ sub locateFramework {
 	    return "$lib/$fname";
 	}
     }
-    warn qq{$0: couldnt find $fname!!!!\n};
+    warn qq{$0: unable to find $fname!!!!\n};
     return undef;
 }

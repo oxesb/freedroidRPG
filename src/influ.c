@@ -1251,7 +1251,7 @@ void perform_tux_ranged_attack(short int weapon_type, bullet *bullet_parameters,
 	attack_vector.y /= attack_norm;
 
 	// The bullet starts from the muzzle's position.
-	// As said in the heading comment, we do not have enough informations to
+	// As said in the heading comment, we do not have enough information to
 	// compute it, so we just use a small offset in the attack direction.
 
 	pointf muzzle_position = { Me.pos.x + muzzle_offset_factor * attack_vector.x,

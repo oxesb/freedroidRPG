@@ -51,7 +51,7 @@ end
 --!
 --! \brief Return NPC's current damage ratio
 --!
---! Current damage ratio is: current dammage / max health
+--! Current damage ratio is: current damage / max health
 --!
 --! \param self [\p FDnpc] FDnpc instance
 --!

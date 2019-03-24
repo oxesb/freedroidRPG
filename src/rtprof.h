@@ -118,7 +118,7 @@ struct probe_array_stats {
 /// The maximum expected accumulated value is \a 1000.\n
 /// If, during one frame, the accumulated value exceeds \a 1000, an overflow is
 /// denoted on the report, and in the console.\n
-/// The accumulated value is reseted at each frame.
+/// The accumulated value is reset at each frame.
 ///
 /// Result:
 /// \image html rtprof_counter.png "Graph of a counter probe"

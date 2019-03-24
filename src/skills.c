@@ -742,7 +742,7 @@ static void load_skill_level_images_if_needed(void)
 /**
  * This function displays the SKILLS SCREEN.  This is NOT the same as the
  * CHARACTER SCREEN.  In the skills screen you can see what skills/spells
- * you currenlty have available and you can select a new readied skill by
+ * you currently have available and you can select a new readied skill by
  * clicking on it with the mouse.
  */
 void show_skills_screen(void)

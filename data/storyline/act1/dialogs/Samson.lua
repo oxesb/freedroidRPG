@@ -68,7 +68,7 @@ return {
 		id = "shop",
 		text = _"Yes, I would like to trade with you.",
 		code = function()
-			Npc:says_random(_"Yes, please fell free to.", 
+			Npc:says_random(_"Yes, please feel free to.",
 							_"I only have some consumables with me.",
 							_"That's all I can do for you now.")
 			trade_with("Samson")
@@ -256,9 +256,9 @@ return {
 				Npc:says(_"You must be an expert at the three areas of specialization to receive the reward. Sorry.")
 			else
 				Npc:says(_"Indeed, you're an expert at everything! Congratulations!")
-				Npc:says(_"Let me just upload on you the codes for the skill and you will be able to make sightly longer takeovers.")
+				Npc:says(_"Let me just upload on you the codes for the skill and you will be able to make slightly longer takeovers.")
 				Tux:improve_program("Animal Magnetism")
-				Tux:says(_"I fell... Great! Thanks, Sam! I can't wait to spend hours hacking the same bot!")
+				Tux:says(_"I feel... Great! Thanks, Sam! I can't wait to spend hours hacking the same bot!")
 				Npc:says(_"...I don't think that skill increases your take over for so much time...... Oh well. Have fun, linarian!")
 				hide("expertise_repeat", "expertise_ready", "expertise_intro")
 			end

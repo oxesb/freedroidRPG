@@ -295,7 +295,7 @@ static void place_doors()
 			} else {
 				// Place vertical wall
 
-				// Set signle vertical door if the wall is internal
+				// Set single vertical door if the wall is internal
 				if (mapgen_get_tile(x, y) == TILE_PARTITION) {
 					place_internal_door(x, y, LEFT);
 					continue;
@@ -408,7 +408,7 @@ static int make_corridor(int room)
 			ymax = max(doors[i].y + 2, ymax);
 		}
 	}
-	// If there is not enoguh information to calculate room dimensions
+	// If there is not enough information to calculate room dimensions
 	// we will suggest its position in the center
 	if (xmin > xmax) {
 		xmin = (x1 + x2) / 2 - 1;

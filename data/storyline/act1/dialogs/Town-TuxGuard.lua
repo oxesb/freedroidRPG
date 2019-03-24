@@ -107,7 +107,7 @@ return {
 			Npc:says(_"Spencer's pretty deeply impressed over there. He's been under a lot of stress since the Great Assault began, you know.")
 			Npc:says(_"He knows as well as anyone else that being a leader isn't about being popular, but it still takes its toll.")
 			Npc:says(_"He won't admit it, but the time between you heading out and all the bots dropping was a roller coaster for him. Absolutely nerve wracking.")
-			Npc:says(_"I've never seen him as desparate as when you were in here. And I've never seen him as happy as when he dragged us to the teleporter.")
+			Npc:says(_"I've never seen him as desperate as when you were in here. And I've never seen him as happy as when he dragged us to the teleporter.")
 			hide("node32")
 		end,
 	},

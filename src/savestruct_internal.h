@@ -113,7 +113,7 @@
 ///    same address when the savegame will be reloaded.\n
 ///    An other write strategy is to be used, usually meaning that a 'user type'
 ///    is to be defined, with its own RW functions (see for instance, the
-///    \e 'string' type mentionned in \b Special \b types).\n
+///    \e 'string' type mentioned in \b Special \b types).\n
 ///
 ///  \par Aggregate types
 ///    \n

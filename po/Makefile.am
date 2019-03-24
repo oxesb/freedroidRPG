@@ -18,7 +18,7 @@ EXTRA_DIST = xgettext-wrapper
 # Inspired by http://lackof.org/taggart/hacking/make-example/
 
 #
-# Ouput the stats for each language
+# Output the stats for each language
 #
 L10NSTATSDIRS = $(SUBDIRS:%=l10nstats-%)
 
@@ -69,10 +69,10 @@ $(UPDATEGMODIRS):
 
 # TX synchronization rules
 # The same rule is used for 3 targets (TXTARGETS):
-# - tx-update: it updates the transifex individual ressources, with the
+# - tx-update: it updates the transifex individual resources, with the
 #   latest changes of the sources (using the current .pot files)
 #   Note: update-po should be called before tx-update
-# - tx-pull: gets the translated individual ressources, and combine them
+# - tx-pull: gets the translated individual resources, and combine them
 #   into .po files
 #   Note: tx-update should be called before tx-pull
 # - tx-pull: overload transifex translations with the content of our

@@ -350,7 +350,7 @@ int event_trigger_get_state(const char *name, uint32_t *state)
 }
 
 /**
- * Write the sate of event triggers (called when saving a savegame).
+ * Write the state of event triggers (called when saving a savegame).
  * \ingroup overloadrw
  *
  * Only the triggers with a 'non default' state are written in the

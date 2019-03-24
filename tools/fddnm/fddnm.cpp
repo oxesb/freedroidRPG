@@ -261,7 +261,7 @@ void fddnm::setProgramOptions(int argc, char** argv)
 			std::cout << desc << std::endl;
 			return;
 		}
-		// defer bpo::notify until after verions/help options parsed as notify throws
+		// defer bpo::notify until after versions/help options parsed as notify throws
 		// exception over missing values regardless of help/ver [returning] options
 		bpo::notify(vm);
 		if (vm.count("-q"))				quiet_output		= true;
@@ -360,7 +360,7 @@ void fddnm::enumaerateDirectory()
 	for (auto& localpath: tempfiles)
 	{
 		// filter list of files in directory
-		// do not want directories or files without *.lua extentions
+		// do not want directories or files without *.lua extensions
 		if(bfs::is_directory(localpath)) continue;
 		if(EXT_LUA.compare(localpath.extension().string()) != 0) continue;
 		dlgsFound.push_back(localpath.string());

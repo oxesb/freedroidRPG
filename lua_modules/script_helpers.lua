@@ -1,5 +1,5 @@
 -- Auto-create instance of NPCs binding
--- (This avoid the need to explicitely it in the dialog scripts)
+-- (This avoid the need to explicitly it in the dialog scripts)
 -- The dialog's name of the NPC is used to create the Lua instance.
 -- It must univoquely identify one single NPC. Failing to respect
 -- that constraint can lead to some strange behaviors...

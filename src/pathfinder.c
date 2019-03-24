@@ -199,7 +199,7 @@ static int recursive_find_walkable_point(int levelnum, float x1, float y1, float
 			ordered_moves[1].y = -1.0;
 		}
 	} else {
-		// More prority on x move into the right direction, least
+		// More priority on x move into the right direction, least
 		// priority on x move into the wrong direction.
 		//
 		if (x1 <= x2) {

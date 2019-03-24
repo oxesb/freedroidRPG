@@ -166,13 +166,13 @@ return {
 			else
 				Tux:says("Skipping SKILL test 1 due to missing possibility to downgrade skills!")
 			end
----------------------------------------------------------- PROGRAMMS
+---------------------------------------------------------- PROGRAMS
 			Tux:improve_program("Ricer CFLAGS")
 			Tux:downgrade_program("Ricer CFLAGS")
 			if (Tux:get_program_revision("Ricer CFLAGS") == 0) then
-				Npc:says("PROGRAMM test 1 succeeded", "NO_WAIT")
+				Npc:says("PROGRAM test 1 succeeded", "NO_WAIT")
 			else
-				guy_fail("PROGRAMM 1")
+				guy_fail("PROGRAM 1")
 			end
 ---------------------------------------------------------- QUESTS
 			if (not Tux:has_met("Guy")) then

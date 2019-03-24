@@ -912,7 +912,7 @@ static char *decode_waypoints(level *loadlevel, char *data)
 		new_wp.y = y;
 		new_wp.suppress_random_spawn = wp_rnd;
 
-		// Initalize the connections of the new waypoint
+		// Initialize the connections of the new waypoint
 		dynarray_init(&new_wp.connections, 2, sizeof(int));
 
 		char *pos = strstr(this_line, CONNECTION_STRING);
@@ -1592,7 +1592,7 @@ static void TranslateToHumanReadable(struct auto_string *str, map_tile * MapInfo
 }
 
 /**
- * This function generates savable text out of the current level data
+ * This function generates saveable text out of the current level data
  *
  * If reset_random_levels is TRUE, then the random levels are saved
  * "un-generated" (typical usage: levels.dat).

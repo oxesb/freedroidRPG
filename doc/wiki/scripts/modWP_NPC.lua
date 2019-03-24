@@ -38,7 +38,7 @@ modWP_NPC.NPCFileData = {}
 modWP_NPC.files = {
 	npcspecs = "",
 }
---	"struct" of npc infromation for each character
+--	"struct" of npc information for each character
 --	use deep copy to pass default values to new copy
 modWP_NPC.npcDataItem = {
 	name = "",

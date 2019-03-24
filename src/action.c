@@ -52,7 +52,7 @@
  *
  * Note: a real random position is not used, in order to minimize the CPU cost
  */
-static void find_dropable_position_near_chest(float *item_x, float *item_y, int obst_index, level *obst_level)
+static void find_droppable_position_near_chest(float *item_x, float *item_y, int obst_index, level *obst_level)
 {
 	float obst_x = obst_level->obstacle_list[obst_index].pos.x;
 	float obst_y = obst_level->obstacle_list[obst_index].pos.y;
@@ -99,7 +99,7 @@ static void find_dropable_position_near_chest(float *item_x, float *item_y, int 
 
 	// Step 3 : randomly choose an available position around that start position
 	// Note: If we were only using the position computed on step 2, then we would
-	// limit the potential dropable positions.
+	// limit the potential droppable positions.
 	tries = 0;
 	float trimmer_x, trimmer_y;
 	do {
@@ -144,7 +144,7 @@ static void throw_out_all_chest_content(int obst_index)
 			if (it->type == -1)
 				continue;
 
-			find_dropable_position_near_chest(&item_x, &item_y, obst_index, lvl);
+			find_droppable_position_near_chest(&item_x, &item_y, obst_index, lvl);
 			drop_item(it, item_x, item_y, lvl->levelnum);
 		}
 
@@ -157,7 +157,7 @@ static void throw_out_all_chest_content(int obst_index)
 	
 	// If the chest was empty, maybe generate a random item to be dropped
 	if (!drop_count) {
-		find_dropable_position_near_chest(&item_x, &item_y, obst_index, lvl);
+		find_droppable_position_near_chest(&item_x, &item_y, obst_index, lvl);
 		drop_random_item(Me.pos.z, item_x, item_y, lvl->drop_class, FALSE);
 	}
 }

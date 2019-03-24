@@ -26,22 +26,22 @@ local modWPCommon = {}
 -- Wiki Parsing Common Variables
 ----------------------------------------
 --	Enable flag to use the output from wiki parsing in a pmwiki sandbox\n
---	This flag is meant to be used for debuging purposes
+--	This flag is meant to be used for debugging purposes
 modWPCommon.sandbox = false
 
 --	Enable flag to produce a listing of files that needed to be linked\n
---	This flag is meant to be used for debuging purposes\n
+--	This flag is meant to be used for debugging purposes\n
 --	Enabling this flag causes the file output_images.txt to be retained\n
 --	in the wiki parsing documents output directory.
 modWPCommon.filecopyoutput = false
 
 --	Enable flag to produce verbose output\n
---	This flag is meant to be used for debuging purposes\n
+--	This flag is meant to be used for debugging purposes\n
 --	Flag will result in printout of basic module parsing results.
 modWPCommon.verbose = false
 
 --	Enable flag to produce extra verbose output\n
---	This flag is meant to be used for debuging purposes\n
+--	This flag is meant to be used for debugging purposes\n
 --	Flag will result in printout of detailed module table contents as well as
 --	verbose output results.
 modWPCommon.doubleverbose = false
@@ -347,7 +347,7 @@ end
 --	Function will extract these values into a table.
 --
 --	NOTE: default is assumed to be text-only arguments.
---	Set nonstrings = true to return non-string arugments also.
+--	Set nonstrings = true to return non-string arguments also.
 --	[in]	input	text to be examined by function
 --	[in]	fnName	function call to find
 --	[in]	nonstrings	boolean - args may be non-strings
@@ -436,12 +436,12 @@ end
 --	[in] tablearray	table of strings to read and converted to text
 --	[in] itemsperline	number of data elements per line of text (default 10)
 --	[ret]	data from table as string with embedded carriage returns
-function modWPCommon.Extract.OneDTableToString( tablearray, itemsperline, seperator )
+function modWPCommon.Extract.OneDTableToString( tablearray, itemsperline, separator )
 	local str = ""
 	local limit = itemsperline or 10
 	local sep = " "
-	if ( seperator ~= nil ) then
-		sep = seperator
+	if ( separator ~= nil ) then
+		sep = separator
 	end
 
 	local itemcount = 0
@@ -658,7 +658,7 @@ end
 -- page setup
 ----------------------------------------
 --	template for wiki page content
---	name, time, and text data is populated in the calling modue\n
+--	name, time, and text data is populated in the calling module\n
 modWPCommon.Wiki.Header = {
 		version = "version=pmwiki-2.2.30 ordered=1 urlencoded=1",
 		charset = "\ncharset=ISO-8859-1",
@@ -677,7 +677,7 @@ function modWPCommon.Wiki.PageSummary( text )
 	return "(:Summary: " .. text .. ":)"
 end
 
---	process wiki formated data and create wiki page
+--	process wiki formatted data and create wiki page
 --	[in]	filename	filename of wiki page
 --	[in]	wikitext	contents of wiki page [each table entry is a line of text]
 --	[ret]	string	entire wiki page (header and content)
@@ -870,9 +870,9 @@ end
 --	text placeholder to separate adjacent, inline tables
 modWPCommon.Wiki.TableSeparator = "%lfloat%&nbsp;%%"
 
---	text entry formating
+--	text entry formatting
 ----------------------------------------
---	wiki formating of url data ( incl - anchors )
+--	wiki formatting of url data ( incl - anchors )
 --	[in]	urltext	destination url as string
 --	[in]	displaytext	text to display
 --	[ret]	arguments as wiki formatted url string
@@ -889,7 +889,7 @@ function modWPCommon.Wiki.LinkText( urltext, displaytext )
 	return rettext
 end
 
---	produce a string of supplied data embedded in wiki formating
+--	produce a string of supplied data embedded in wiki formatting
 --	[in]	displaytext	text to be embedded
 --	[in]	marker	displaytext is to embedded with this marker
 --	[ret]	string in wiki format
@@ -910,7 +910,7 @@ function modWPCommon.Wiki.TextEmbed( displaytext, marker )
 	return retText
 end
 
---	produce a string of supplied data embedded in wiki colour formating
+--	produce a string of supplied data embedded in wiki colour formatting
 --	NOTE: colour data should not contain wiki colour markup.
 --	== Pass colour data only to this function.
 --	[in]	displaytext	text to be embedded
@@ -951,7 +951,7 @@ end
 --	replace characters in a line of text destined for use in a pmwiki wiki page
 --	[in]	textstring	string to process
 --	[ret]	processed text
---	==	'\%' becomes '\%25' (NOTE: MUST DO FIRST - so as not to affect other char replacments)
+--	==	'\%' becomes '\%25' (NOTE: MUST DO FIRST - so as not to affect other char replacements)
 --	==	'<' becomes '\%3c'\n
 --	==	'\\n' becomes '\%0a'
 function modWPCommon.Wiki.WikifyText( textstring )
@@ -1042,9 +1042,9 @@ end
 --	Format is currently pmwiki-specific
 --	[in]	tablename	table to process
 --	[in]	label	label to use for display
---	[in]	seperator	string to display between label and data
+--	[in]	separator	string to display between label and data
 --	[in]	colour	colour to use to display text
-function modWPCommon.Wiki.TableToWiki( tablename, label, seperator, colour )
+function modWPCommon.Wiki.TableToWiki( tablename, label, separator, colour )
 	if ( tablename == nil ) or ( label == nil ) then
 --		io.stderr:write("TableToWiki: tablename or label is nil\n")
 		return nil
@@ -1062,21 +1062,21 @@ function modWPCommon.Wiki.TableToWiki( tablename, label, seperator, colour )
 				data = data .. "\n"
 			end
 		end
-		data = modWPCommon.Wiki.TextEntry( label, data, seperator, colour, false )
+		data = modWPCommon.Wiki.TextEntry( label, data, separator, colour, false )
 		return data
 	end
 end
 
---	consistent formating of wiki text
+--	consistent formatting of wiki text
 --	[in]	label	label text to display - emphasised on wiki page
 --	[in]	data	data associated with label - normal text
---	[in]	seperator	string to display between label and data
+--	[in]	separator	string to display between label and data
 --	[in]	colour	colour to use for text display
 --	[in]	addLineBreak	boolean - true - add WikiTextLineBreakEnd (default)
 --	[ret]	string of text in wiki format
-function modWPCommon.Wiki.TextEntry( label, data, seperator, colour, addLineBreak )
+function modWPCommon.Wiki.TextEntry( label, data, separator, colour, addLineBreak )
 	local returntext = nil
-	local sep = seperator or " "
+	local sep = separator or " "
 	local useLBE = true
 	if ( addLineBreak ~= nil) then
 		useLBE = addLineBreak

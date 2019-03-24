@@ -11,7 +11,7 @@ If you have the tools and ability to make sound effects, we'll be glad to hear f
 #### Content creators
 What's the point of having code and pretty graphics if you do not have content?
 Designing maps and really good dialogs and story lines takes good imagination and a lot of time.
-So even if you know nothing about programing or drawing, your contribution can be very useful indeed.
+So even if you know nothing about programming or drawing, your contribution can be very useful indeed.
 At the end of the day, it's the content that makes or breaks an RPG game.
 
 #### Translators and proofreaders

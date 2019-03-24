@@ -125,7 +125,7 @@ return {
 		code = function()
 			Npc:says(_"HAHAHA!")
 			Npc:says(_"I've fought with many bots before, and I'll not be scared by a mere linarian.")
-			Npc:says(_"Fell free to try, though. Anytime.")
+			Npc:says(_"Feel free to try, though. Anytime.")
 			hide("node30") show("node31")
 		end,
 	},

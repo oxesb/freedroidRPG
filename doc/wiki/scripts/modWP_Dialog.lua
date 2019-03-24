@@ -30,7 +30,7 @@ modWP_Dialog.AllDialogData = {}
 --	dialog file parsed line-by-line into table
 --	storage: each entry is a table w/ format: {dialog = dialogname, data = filedata}
 modWP_Dialog.DialogFileData = {}
---	"struct" of dialog infromation for each character
+--	"struct" of dialog information for each character
 --	use deep copy to pass default values to new copy
 modWP_Dialog.dataItem = {
 	alias = {},

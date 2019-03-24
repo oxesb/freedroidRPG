@@ -66,10 +66,10 @@ return
 		id = "node4",
 		text = _"Have you detected any hostile bot activity?",
 		code = function()
-			Npc:says(_"ERROR: unknown command. Searching for similiar commands...")
+			Npc:says(_"ERROR: unknown command. Searching for similar commands...")
 			Npc:says(_"...")
 			Npc:says(_"...")
-			Npc:says(_"ERROR! Similiar command not found! Using advanced search...")
+			Npc:says(_"ERROR! Similar command not found! Using advanced search...")
 			Npc:says(_"...")
 			Npc:says(_"Executable 'bin/hostile' found. Executing...")
 			Tux:says(_"OUCH!")

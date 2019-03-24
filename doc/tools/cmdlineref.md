@@ -11,7 +11,7 @@ Command line options and switches shown below will result in either\n
 	2) Freedroid RPG to start-up with a defined state.\n
 \n
 Unless stated otherwise, game setting changes are saved to user preferences and are persistent between game restarts.\n
-If switches are stated as being mutally exclusive, and more than one is used, only the last instanced is honoured at game start.\n
+If switches are stated as being mutually exclusive, and more than one is used, only the last instanced is honoured at game start.\n
 \n
 
 	freedroidRPG    [-h | --help]
@@ -66,7 +66,7 @@ Using *99* as a value for *Y* will cause Freedroid RPG to print all available su
 On first usage, the game will use default resolution 0.\n
 \n
 A specific resolution value can be used and must be of the form WxH (eg. 1400x900).
-The choosen custom resolution value will not appear in the options menu resolution screen.\n
+The chosen custom resolution value will not appear in the options menu resolution screen.\n
 \n
 Resolution value can be used for both full screen and windowed display.
 Some graphics (e.g. main screen) may appear stretched due to images being developed based on an assumed screen dimensions.
@@ -76,7 +76,7 @@ Resolution can be changed from the game options menu, but a restart is required 
  Display resolution is stored in the settings file and recalled on each game start.\n
 \n
 <strong>[-d *X* | --debug=<em>X</em>]</strong>\n
-Option will set verbosity of debug ouput the game will produce in the console during execution.
+Option will set verbosity of debug output the game will produce in the console during execution.
 *X* is an integer value ranging from 1(default value) to 5.
 Debug verbosity is not persistent between restarts as it is not stored in game settings file.\n
 \n

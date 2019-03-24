@@ -29943,7 +29943,7 @@ idx=76 type=31 data={
 	it: id="PGP key"  X=58.000000  Y=58.000000  MDur=-1  CDur=0.000000  AClip=0  Multi=1
 }
 idx=7 type=33 data={
-	_"Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Managment."
+	_"Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Management."
 }
 idx=721 type=33 data={
 	_"Blue Marker for Storage Room. Red Marker for Mainland."

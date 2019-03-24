@@ -20,7 +20,7 @@
 */
 /*
 	File:		dialog_dot.h
-	Purpose:	class defintion for producing dot diagram of FDRPG dialog nodes
+	Purpose:	class definition for producing dot diagram of FDRPG dialog nodes
 	Author:		Scott Furry
 	Date:		2014 Nov 26
 	Update:		2015 Mar 27

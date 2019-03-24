@@ -125,7 +125,7 @@ void reset_ui()
 /**
  * \brief Current tooltip
  *
- * \details Contains informations about the current tooltip to be displayed.
+ * \details Contains information about the current tooltip to be displayed.
  */
 static struct _tooltip_info {
 	struct tooltip *value;	/**< Pointer to the current widget's tooltip. */

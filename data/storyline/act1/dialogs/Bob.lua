@@ -95,7 +95,7 @@ return {
 		id = "node2",
 		text = _"What are these two trees?",
 		code = function()
-			Npc:says(_"The trees' fruit is our only source of food. The fruit is sightly bitter and leaves your mouth like an unripe persimmon, but we've noticed our wounds are healing much faster.")
+			Npc:says(_"The trees' fruit is our only source of food. The fruit is slightly bitter and leaves your mouth like an unripe persimmon, but we've noticed our wounds are healing much faster.")
 			Tux:says(_"Wow.")
 			Npc:says(_"Yeah. I can give you some. Just ask.")
 			Tux:says(_"Thanks.")

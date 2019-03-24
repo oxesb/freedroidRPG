@@ -987,7 +987,7 @@ void InitFreedroid(int argc, char **argv)
 	}
 }
 /**
- * This function displayes the last seconds of the game when the influencer
+ * This function displays the last seconds of the game when the influencer
  * has actually been killed.  It generates some explosions and waits for
  * some seconds, where the user can reload his latest game, or after that
  * returns to finally quit the inner game loop and the program will 

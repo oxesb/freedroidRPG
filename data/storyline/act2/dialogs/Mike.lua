@@ -95,7 +95,7 @@ return {
 		code = function()
 			arena_enroll = true,
 			Npc:says(_"Excellent: New challengers are greatly appreciated.")
-			Npc:says(_"Registration: Patience, it will take a litte moment.")
+			Npc:says(_"Registration: Patience, it will take a little moment.")
 			Npc:says(_"[b]...Analysis of the bio-signature.[/b]")
 			Npc:says(_"[b]...Processing the ranking value.[/b]")
 			Npc:says(_"[b]...Saving personal characteristics.[/b]")
@@ -209,7 +209,7 @@ return {
 
 			-- TODO: Clean the arena of bot from previous fight.
 
-			Npc:says(_"Preparation: Patience, it will take a litte moment.")
+			Npc:says(_"Preparation: Patience, it will take a little moment.")
 			Npc:says(_"[b]...Accessing the matrix.[/b]")
 			Npc:says(_"[b]...Initializing the environment.[/b]")
 			Npc:says(_"[b]...Reprogramming the Arena.[/b]")

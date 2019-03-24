@@ -79,7 +79,7 @@ static int text_handle_mouse_down(struct widget_text *wt, SDL_Event *event)
  * \relates widget_text
  *
  * \details The text is word-wrapped at the right border of the widget's
- * rectangle. The rendering start position is offseted to take the scrolling
+ * rectangle. The rendering start position is offsetted to take the scrolling
  * value into account, and clipping is used to cut the rendering outside of
  * widget's rectangle.\n
  * If needed, content_above_func() and content_below_func() functions are called,

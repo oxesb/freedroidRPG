@@ -131,7 +131,7 @@ return {
 			Npc:says(_"If you defeat it, the fictional survivors which aren't here because the Great Assault would be very grateful. You will also gain a nice amount of experience, and who knows what it will drop?", "NO_WAIT")
 			Tux:says(_"Seems interesting. Where can I find it?")
 			Npc:says(_"Just follow the water, young apprentice of Yaddawan. Only the ones with enough faith can walk over water and save the world!")
-			Tux:update_quest("The Reapers Of MegaSys I", _"The first Reaper of Megasys, The Glitch, can be found by walking over the water on Icy Summer Island. I better stay away, as searching for it is a death wish.")
+			Tux:update_quest("The Reapers Of MegaSys I", _"The first Reaper of MegaSys, The Glitch, can be found by walking over the water on Icy Summer Island. I better stay away, as searching for it is a death wish.")
 			del_obstacle("Act2-ArtificialPassage-1")
 			del_obstacle("Act2-ArtificialPassage-2")
 			hide("C64gate")
@@ -151,7 +151,7 @@ return {
 	},
 	{
 		id = "buybook",
-		text = _"I want to buy the Source Book of Light for the price you mentioned ealier.",
+		text = _"I want to buy the Source Book of Light for the price you mentioned earlier.",
 		code = function()
 
 			-- Check if player can buy the book

@@ -557,7 +557,7 @@ char *get_background_music()
 /**
  * \brief Play a voice sound (used with title screens)
  *
- * \details A sound cannot be played (and the funtion returns -1) when
+ * \details A sound cannot be played (and the function returns -1) when
  * no audio channel is available.
  *
  * \param fpath         Filename of the voice sound (full path)
@@ -625,7 +625,7 @@ void stop_voice(int channel)
 /**
  * \brief Play an SFX sound
  *
- * \details A sound cannot be played (and the funtion returns -1) when:
+ * \details A sound cannot be played (and the function returns -1) when:
  * no unused slot is found in the SFX cache, or no audio channel is available,
  * or the sound is already played too many times.
  *

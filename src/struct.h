@@ -458,10 +458,10 @@ typedef struct enemy {
 	//    They change very frequently during the game.
 	//
 	// 1st and 2nd sets are initialized to default values in enemy_new().
-	// The 3rd set is unconditionally reseted in enemy_reset().
+	// The 3rd set is unconditionally reset in enemy_reset().
 	// The 2nd set contains attributes whose values depend on the
 	// type of the droid. They are first positioned in GetThisLevelsDroids()
-	// and GetThisLevelsSpecialForces(), and are conditionally reseted in
+	// and GetThisLevelsSpecialForces(), and are conditionally reset in
 	// respawn_level().
 
 	//--------------------
@@ -1057,7 +1057,7 @@ struct tux_part_instances {
 };
 
 /**
- * Contains all the informations needed to render Tux
+ * Contains all the information needed to render Tux
  */
 struct tux_rendering {
 	struct dynarray motion_class_names;             // All motion classes

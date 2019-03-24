@@ -547,7 +547,7 @@ return {
 			Npc:says(_"Heh, never better!", "NO_WAIT")
 			Npc:says(_"All indicators are in the green, the power and water fill the pipes and even Spencer seems happier now that the town is thriving despite all odds.")
 			Npc:says(_"Thanks to the autotools we can start building instead of just trying to repair the damage.", "NO_WAIT")
-			Npc:says(_"Once this sick war is over, I will make sure you get the 'Key to the City' Linarian.")
+			Npc:says(_"Once this sick war is over, I will make sure you get the 'Key to the City', Linarian.")
 			hide("node51")
 		end,
 	},

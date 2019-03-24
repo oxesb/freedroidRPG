@@ -216,7 +216,7 @@ return {
 				selection = math.random(5)
 			end
 
-			--actual assingment --
+			--actual assignment --
 			if (selection == 1) then
 				n_race = _"human"
 				n_hp = n_hp + 100

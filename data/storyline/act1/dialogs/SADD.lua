@@ -17,7 +17,7 @@
 -- MA 02111-1307 USA
 ----------------------------------------------------------------------
 --[[WIKI
-PERSONALITY = { "Robotic", "Secretive", "Agressive" },
+PERSONALITY = { "Robotic", "Secretive", "Aggressive" },
 MARKERS = { NPCID1 = "Tania", QUESTID1 = "SADD\'s power supply" },
 PURPOSE = "If allowed out of the entrance, $$NAME$$ will attack $$NPCID1$$. Tux must rush to save her.
 	 $$NAME$$ will trick Tux as part of $$QUESTID1$$ quest.",

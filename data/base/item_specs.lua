@@ -614,7 +614,7 @@ item_list{
 	base_price = 2500,
 	inventory = {x = 2, y = 2, image = "weapons/energy_whip/inv_image.png" },
 	drop = {sound = "drop_sword_sound.ogg"},
-	description =_[[An energy whip commonly found at managment from MegaSys facilities. What purpose they serve for is still unknown. Because the real whip is pure energy, it will never break, but it does not stays on the strong side.]],
+	description =_[[An energy whip commonly found at management from MegaSys facilities. What purpose they serve for is still unknown. Because the real whip is pure energy, it will never break, but it does not stays on the strong side.]],
 	rotation_series = "weapons/energy_whip",
 	tux_part = "iso_energy_whip",
 },

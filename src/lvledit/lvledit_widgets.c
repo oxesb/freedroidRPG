@@ -734,7 +734,7 @@ void lvledit_select_type(enum lvledit_object_type type)
  		if (cs_widget->type != WIDGET_CATEGORY_SELECTOR)
  			continue;
 
-		// By default, desactivate all categories
+		// By default, deactivate all categories
 		cs_widget->enabled = 0;		
 		
 		struct widget_lvledit_categoryselect *cs = cs_widget->ext;

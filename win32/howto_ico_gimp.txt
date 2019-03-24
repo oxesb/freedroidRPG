@@ -24,8 +24,8 @@ Steps to follow...
 - navigate to image file (if SVG, enter 256px for image size)
 --> This becomes the "Very Large icon in Windows"
 - rename the layer - 256px
-- select Layer->Layer Boundry Size...
---> Set Layer BOundry Size dialog opens
+- select Layer->Layer Boundary Size...
+--> Set Layer Boundary Size dialog opens
 - In dialog, enter the pixel value you want (256px). Select "Center"
 button. Adjust "Offset" to suit (but square images makes this
 unnecessary). Select "Resize"

@@ -44,7 +44,7 @@
 #include <limits.h>
 #include <float.h>
 
-static LIST_HEAD(probe_list); // List of all registerd probe
+static LIST_HEAD(probe_list); // List of all registered probe
 static int probe_active = FALSE; // Active/Inactive global flag
 
 // Reports' components size

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #-*- encoding: utf-8 -*-
 #
-# Set the list of files to instal and uninstall in the win32 installer.
+# Set the list of files to install and uninstall in the win32 installer.
 #
 # Copyright (c) 2011 Samuel Degrande
 #

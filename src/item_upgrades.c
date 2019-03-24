@@ -142,7 +142,7 @@ static int addon_is_compatible_with_item(struct addon_spec *addonspec, item *it)
 
 /**
  * \brief Returns TRUE if the item is compatible with the socket.
- * \param dstitem Destionation item.
+ * \param dstitem Destination item.
  * \param addon Add-on item.
  * \param socketid Socket index.
  * \return TRUE if compatible, FALSE otherwise.

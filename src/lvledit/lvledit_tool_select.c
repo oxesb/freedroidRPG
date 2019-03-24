@@ -592,7 +592,7 @@ static void end_rect_select()
 	state.single_tile_mark_index = 0;
 	
 	// A drag&drop operation for the floor is finished when the floor tiles are 
-	// unselected.
+	// deselected.
 	// Do not allow to undo the previous actions for drag&drop
 	state.drag_drop_floor_undoable = 0;
 }
@@ -648,7 +648,7 @@ static void do_drag_drop_floor(pointf diff)
 		}
 		
 		// When moving the selection, new tiles will be selected, so, we must 
-		// unselect the previous selection because we must not change the original 
+		// deselect the previous selection because we must not change the original
 		// selection
 		clear_selection(-1);
 		
@@ -1077,7 +1077,7 @@ void level_editor_paste_selection()
 		return;
 	}
 	
-	// Before a paste operation we want to unselect the previous selection
+	// Before a paste operation we want to deselect the previous selection
 	clear_selection(-1);
 	
 	// Calculate the coordinates min/max of the selection

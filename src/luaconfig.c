@@ -963,7 +963,7 @@ static int lua_npc_list_ctor(lua_State *L)
 			}
 			lua_pop(L, 1);
 		}
-	} // Not default value because list have been intialized as empty
+	} // Not default value because list have been initialized as empty
 
 	return 0;
 }

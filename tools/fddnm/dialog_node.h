@@ -20,7 +20,7 @@
 */
 /*
 	File:		dialog_node.h
-	Purpose:	class defintion for parsing FDRPG dialog nodes
+	Purpose:	class definition for parsing FDRPG dialog nodes
 	Author:		Scott Furry
 	Date:		2014 Nov 13
 	Update:		2015 Feb 25

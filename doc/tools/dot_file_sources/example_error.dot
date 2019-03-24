@@ -70,7 +70,7 @@ digraph error {
 		>
 	];
 
-	//NODE-EDGE DEFINTIONS
+	//NODE-EDGE DEFINITIONS
 	edge[style=solid penwidth=0.65 minlen="1.5"];
 	a1 -> a1FirstTime
 	a1 -> a1EveryTime
