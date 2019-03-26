@@ -32,7 +32,7 @@ freedroidRPG_SOURCES = \
 	obstacle.c obstacle_extension.c open_gl.c open_gl_atlas.c open_gl_debug.c open_gl_shaders.c \
 	pathfinder.c pngfuncs.c \
 	quest_browser_ui.c \
-	rtprof.c \
+	rtprof.c rtprof.h \
 	saveloadgame.c savestruct_internal.c scandir.c shop.c skills.c sound.c sound_effects.c string.c \
 	takeover.c text.c text_public.c title.c \
 	view.c \

@@ -8,7 +8,7 @@
 update-pot:
 tx-push:
 
-EXTRA_DIST = LINGUAS
+EXTRA_DIST = LINGUAS Makevars
 
 .PHONY: update-pot update-po update-gmo
 .PHONY: l10n-stats

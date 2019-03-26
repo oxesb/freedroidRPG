@@ -1,7 +1,7 @@
 # Additional make targets
 
 .NOTPARALLEL:
-DISTFILES.extra2 = Rules-others
+DISTFILES.extra2 = Rules-others Makevars.in
 
 #-- Compute the rsrc name of a source file, prefix with the act name
 #   if the source is in a storyline subdir
