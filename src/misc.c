@@ -630,9 +630,9 @@ void init_data_dirs_path()
 	char file_path[PATH_MAX];
 
 	// Directories to look for the data dirs
-	char *top_data_dir[]   = { ".", "..", "../..", FD_DATADIR };
+	char *top_data_dir[]   = { ".", "..", TOP_DATADIR, FD_DATADIR };
 #ifdef ENABLE_NLS
-	char *top_locale_dir[] = { ".", "..", "../..", LOCALEDIR };
+	char *top_locale_dir[] = { ".", "..", TOP_DATADIR, LOCALEDIR };
 #endif
 	int slen = sizeof(top_data_dir)/sizeof(top_data_dir[0]);
 

@@ -429,6 +429,7 @@ AS_VAR_IF([want_backtrace], [yes], [AC_CHECK_FUNCS([backtrace])])
 dnl Set build flags accordingly to what was requested and found
 
 AS_VAR_APPEND([FD_CFLAGS], [" -pipe -Wall -Wno-format-zero-length"])
+AS_VAR_APPEND([FD_CPPFLAGS], [" -DTOP_DATADIR='\"\$(top_srcdir)\"'"])
 
 AS_VAR_IF([arch_native], [yes],
 	[AS_VAR_APPEND([FD_CFLAGS], [" -O3 -march=native -mtune=native"])]
