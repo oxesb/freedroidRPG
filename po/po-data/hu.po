@@ -5,13 +5,11 @@
 #
 # Translators:
 # Balázs Meskó <meskobalazs@gmail.com>, 2019
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: freedroidrpg 0.16+git\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-02-27 18:12+0100\n"
+"POT-Creation-Date: 2019-03-27 09:20+0100\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@gmail.com>, 2019\n"
 "Language-Team: Hungarian (https://www.transifex.com/arctic-games/teams/9511/hu/)\n"
@@ -590,7 +588,8 @@ msgid "Energy Whip"
 msgstr "Energiaostor"
 
 #: data/base/item_specs.lua:617
-msgid "An energy whip commonly found at managment from MegaSys facilities. What purpose they serve for is still unknown. Because the real whip is pure energy, it will never break, but it does not stays on the strong side."
+#, fuzzy
+msgid "An energy whip commonly found at management from MegaSys facilities. What purpose they serve for is still unknown. Because the real whip is pure energy, it will never break, but it does not stays on the strong side."
 msgstr "Egy energiaostor, amely gyakran megtalálható volt a menedzsmentnél a MegaSys létesítményeiben. A céljuk még mindig ismeretlen. Mivel az ostor tiszta energiából van, ezért sosem törik el."
 
 #: data/base/item_specs.lua:629
@@ -1058,6 +1057,7 @@ msgstr "Vészleállítás forráskódja"
 #: data/base/item_specs.lua:1763 data/base/item_specs.lua:1775
 #: data/base/item_specs.lua:1787 data/base/item_specs.lua:1799
 #: data/base/item_specs.lua:1811 data/base/item_specs.lua:1823
+#: data/base/item_specs.lua:1835
 msgid "Permanently acquire/enhance this program"
 msgstr "Ezen program végleges megszerzése/fejlesztése"
 
@@ -1210,664 +1210,678 @@ msgid "Knowing what your enemies are up to is easy with a little signal intellig
 msgstr "Tudni hogy az ellenségeid mire készül elég egyszerű, egy kis jelfigyelés segítségével. Megjeleníti az ellenség helyét az automatikus térképen."
 
 #: data/base/item_specs.lua:1834
+#, fuzzy
+msgid "Source Book of Energy Shield"
+msgstr "Vészleállítás forráskódja"
+
+#: data/base/item_specs.lua:1835 data/base/skill_specs.lua:213
+#, fuzzy
+msgid "Energy Shield"
+msgstr "Energiaostor"
+
+#: data/base/item_specs.lua:1839 data/base/skill_specs.lua:218
+msgid "Creating an energy shield to protect you can be a very useful skill. Every hit that you get will be converted into heat. Beware: This heats up excessively. Equipment can still be damaged by heat. When you overheat, shield will try to automatically turn off to prevent damage to itself. It may provoke extra-heat on this process, so be sure to not let it happen."
+msgstr ""
+
+#: data/base/item_specs.lua:1846
 msgid "Subatomic and Nuclear Science for Dummies, Volume IV"
 msgstr "Szubatomi és nukleáris tudomány butusoknak, IV. kötet"
 
-#: data/base/item_specs.lua:1838
+#: data/base/item_specs.lua:1850
 msgid "From the back of the cover: 'Subatomic and Nuclear Science for Dummies, Volume IV is the most popular handbook series for learning nuclear science: Learn to generate enough power to keep you town lit up for a decade! Discover how to really scare neighboring countries! Find out how to make your very own mutant pet!' This obviously important tome of knowledge from before the great assault comes with no warranty whatsoever."
 msgstr "A borító hátuljáról: „A Szubatomi és nukleáris tudomány butusoknak, IV. kötete a legnépszerűbb kézikönyv a nukleáris tudomány tanulásához: Tudd meg hogy állíts elő elég energiát, hogy egy várost egy évtizedig kivilágíts! Fedezd fel hogyan ijessz rá a szomszédos országokra! Tudd meg hogyan hozhatod létre a saját mutáns háziállatod!” Ez a tudás nyilvánvalóan fontos tekercse a nagy ostrom előttről származik, és semmilyen garancia nincs rá."
 
-#: data/base/item_specs.lua:1845
+#: data/base/item_specs.lua:1857
 msgid "Manual of the Automated Factory"
 msgstr "Automatizált gyár leírása"
 
-#: data/base/item_specs.lua:1849
+#: data/base/item_specs.lua:1861
 msgid "This book describes the operation and repair of automated factories. Included are common error codes and how to fix them. However, most repairs simply call for liberal application of 'Elbow Grease'."
 msgstr "Ez a könyv az automatizált gyár működtetését és javítását írja le. Megtalálhatóak benne a leggyakoribb hibakódok, és a javításuk. Viszont a legtöbb javítás egyszerűen a bő „könyökzsír” alkalmazását kéri."
 
-#: data/base/item_specs.lua:1856
+#: data/base/item_specs.lua:1868
 msgid "Manual of the Extract Bot Parts"
 msgstr "Bot alkatrészek kinyerésének leírása"
 
-#: data/base/item_specs.lua:1857 data/base/item_specs.lua:1861
+#: data/base/item_specs.lua:1869 data/base/item_specs.lua:1873
 msgid "USE FOR CHEATING ONLY. If you see this ingame, please report the bug."
 msgstr "CSAK CSALÁSHOZ. Ha ezt a játékban látod, akkor jelentsd hibaként."
 
-#: data/base/item_specs.lua:1872
+#: data/base/item_specs.lua:1884
 msgid "Strength Pill"
 msgstr "Erősítő tabletta"
 
-#: data/base/item_specs.lua:1873
+#: data/base/item_specs.lua:1885
 msgid "Permanently gain +1 strength"
 msgstr "+1 erőt kapsz véglegesen"
 
-#: data/base/item_specs.lua:1877
+#: data/base/item_specs.lua:1889
 msgid "These pills permanently raise strength within a person. They work on a nano-technological basis. Consult your physician, the receipt or pharmacy experts for details on intended effects, possible interactions and side effects of this drug."
 msgstr "Ez a tabletta növeli az erőt, és hatása sohasem ér véget. Nanotechnológiai elven működik. A mellékhatások tekintetében kérdezze meg kezelőorvosát, vagy gyógyszerészét."
 
-#: data/base/item_specs.lua:1884
+#: data/base/item_specs.lua:1896
 msgid "Dexterity Pill"
 msgstr "Ügyességnövelő kapszula"
 
-#: data/base/item_specs.lua:1885
+#: data/base/item_specs.lua:1897
 msgid "Permanently gain +1 dexterity"
 msgstr "+1 ügyességet kapsz véglegesen"
 
-#: data/base/item_specs.lua:1889
+#: data/base/item_specs.lua:1901
 msgid "These pills permanently raise dexterity within a person. They work on a nano-technological basis. Consult your physician, the receipt or pharmacy experts for details on intended effects, possible interactions and side effects of this drug."
 msgstr "Ez a tabletta növeli az ügyességet, és hatása sohasem ér véget.  Nanotechnológiai elven működik. A mellékhatások tekintetében kérdezze meg kezelőorvosát, vagy gyógyszerészét."
 
-#: data/base/item_specs.lua:1896
+#: data/base/item_specs.lua:1908
 msgid "Code Pill"
 msgstr "Kódoló tabletta"
 
-#: data/base/item_specs.lua:1897
+#: data/base/item_specs.lua:1909
 msgid "Permanently gain +1 cooling"
 msgstr "+1 hűtést kapsz véglegesen"
 
-#: data/base/item_specs.lua:1901
+#: data/base/item_specs.lua:1913
 msgid "Dude! This fab food will totally bump up your code skills, man! A real blast. Scarf these down to *see* the code."
 msgstr "Öcsém! Ez a cucc totálisan megemeli a programozói képességedet, vazzeg! Told le, hogy *lásd* a kódot."
 
-#: data/base/item_specs.lua:1908
+#: data/base/item_specs.lua:1920
 msgid "Brain Enlargement Pills Antidote"
 msgstr "Agynövelő tabletta Antiszérum."
 
-#: data/base/item_specs.lua:1912
+#: data/base/item_specs.lua:1924
 msgid "These pills can reverse the harmful effects of the 'brain enlargement pills' that are publicly sold via the Internet. The planet-wide guild of medics has recommended not to respond to these adverts at all, while attempts to entirely ban the distribution of those pills were never completely successful."
 msgstr "Ez a szérum képes az Interneten széles körben árusított agynövelő tabletta káros hatásait visszafordítani. Bár a kezelőorvosok és gyógyszerészek bolygó szerte ellenzik az agynövelők használatát, eddig sikertelenek voltak az ilyen gyógyszerek eltüntetésére tett erőfeszítések."
 
-#: data/base/item_specs.lua:1919
+#: data/base/item_specs.lua:1931
 msgid "Brain Enlargement Pill"
 msgstr "Agynövelő tabletta"
 
-#: data/base/item_specs.lua:1920
+#: data/base/item_specs.lua:1932
 msgid "Gain fast acting cancer"
 msgstr "Gyors lefolyású rákot kapsz"
 
-#: data/base/item_specs.lua:1925
+#: data/base/item_specs.lua:1937
 #, no-c-format
 msgid "Doctors all over the planet have tried to suppress the amazing breakthrough which has brought increased alertness and concentration that comes with a larger brain. They are synthesized using cutting edge technology and 100% natural herbal ingredients from a secret five thousand-year-old traditional holistic recipe. Get yours direct from our online Canadian ph4rm4cy!!! 100% satisfaction guaranteed!!!"
 msgstr "Orvosok a bolygó minden részén megpróbálták eltitkolni ezt a lenyűgöző áttörést, amely növelt figyelmet és koncentrációt biztosít, a nagyobb agynak köszönhetően. Ezek élvonalbeli technológia segítségével, és teljesen természetes gyógynövényekből kerülnek szintetizálásra, egy ötezer éves hagyományos holisztikus recept alapján. Kapja meg a sajátját az online kanadai gy0gysz3rt4runkból!!! Elégedettségi garancia, 100%!!!"
 
-#: data/base/item_specs.lua:1932
+#: data/base/item_specs.lua:1944
 msgid "Diet Supplement"
 msgstr "Táplálékkiegészítő"
 
-#: data/base/item_specs.lua:1933 data/base/item_specs.lua:1945
-#: data/base/item_specs.lua:1957
+#: data/base/item_specs.lua:1945 data/base/item_specs.lua:1957
+#: data/base/item_specs.lua:1969
 msgid "Recover Health"
 msgstr "Életerő visszanyerése"
 
-#: data/base/item_specs.lua:1937
+#: data/base/item_specs.lua:1949
 msgid "Only proper vitamin and mineral intake can keep you healthy during the apocalypse. This can cure a cold."
 msgstr "Csak a létfontosságú vitaminok és ásványi anyagok segítenek megőrizni az egészséged az apokalipszis közepette. Náthára is jó."
 
-#: data/base/item_specs.lua:1944
+#: data/base/item_specs.lua:1956
 msgid "Antibiotic"
 msgstr "Antibiotikum"
 
-#: data/base/item_specs.lua:1949
+#: data/base/item_specs.lua:1961
 msgid "Truly wonderful things can be extracted from molds. This can cure lethal food poisoning. Wish you had that in your last Nethack game, eh?"
 msgstr "Hihetetlen dolgok nyerhetők ki az egyszerű penészből. Képes gyógyítani a halálos ételmérgezést. Jó lett volna egy a legutóbbi Nethack játék alatt, mi?"
 
-#: data/base/item_specs.lua:1956
+#: data/base/item_specs.lua:1968
 msgid "Doc-in-a-can"
 msgstr "Doki-a-dobozban"
 
-#: data/base/item_specs.lua:1961
+#: data/base/item_specs.lua:1973
 msgid "This is a drink filled with nanobots designed to heal any damage that they notice inside you. It can cure decapitation. Most of the time."
 msgstr "Ez egy ital, ami a benned lévő bármilyen sérülés gyógyítására tervezett nanobotokat tartalmaz. Még a lefejezést is meggyógyítja. A legtöbb esetben."
 
-#: data/base/item_specs.lua:1968
+#: data/base/item_specs.lua:1980
 msgid "Bottled Ice"
 msgstr "Palackos jég"
 
-#: data/base/item_specs.lua:1969 data/base/item_specs.lua:1981
-#: data/base/item_specs.lua:3075
+#: data/base/item_specs.lua:1981 data/base/item_specs.lua:1993
+#: data/base/item_specs.lua:3087
 msgid "Cooling aid"
 msgstr "Hűsítő segítség"
 
-#: data/base/item_specs.lua:1973
+#: data/base/item_specs.lua:1985
 msgid "This bottle is filled with ice. It can keep you cool during a warm summer day."
 msgstr "Ez a palack jéggel van megtöltve. Hűvösen tart a forró nyári napokon."
 
-#: data/base/item_specs.lua:1980
+#: data/base/item_specs.lua:1992
 msgid "Industrial Coolant"
 msgstr "Ipari hűtőfolyadék"
 
-#: data/base/item_specs.lua:1985
+#: data/base/item_specs.lua:1997
 msgid "Bartenders around the world add this to drinks to get them cold very fast. Plus, the coolant is much cheaper. It can keep you cool inside a nuclear reactor."
 msgstr "A kocsmárosok világszerte adagolják a piához, hogy gyorsan lehűtsék. Továbbá elég olcsó. Még egy nukleáris reaktor belsejében is képes lehűteni."
 
-#: data/base/item_specs.lua:1992
+#: data/base/item_specs.lua:2004
 msgid "Liquid Nitrogen"
 msgstr "Folyékony nitrogén"
 
-#: data/base/item_specs.lua:1993
+#: data/base/item_specs.lua:2005
 msgid "Extreme Cooling aid"
 msgstr "Extrém hűsítő segítség"
 
-#: data/base/item_specs.lua:1997
+#: data/base/item_specs.lua:2009
 msgid "When you want something frozen solid, this is what you need. It can keep you cool even inside a class M star."
 msgstr "Ha valamit keményre akarsz fagyasztani, erre van szükséged. Még egy M tipusú bolygó magjában is képes lehűteni."
 
-#: data/base/item_specs.lua:2004
+#: data/base/item_specs.lua:2016
 msgid "Barf's Energy Drink"
 msgstr "Barf energiaitala"
 
-#: data/base/item_specs.lua:2005
+#: data/base/item_specs.lua:2017
 msgid "Cool down, cure minor wounds."
 msgstr "Hűsít, begyógyítja az apró sebeket."
 
-#: data/base/item_specs.lua:2009
+#: data/base/item_specs.lua:2021
 msgid "Warning! These energy drinks contain high doses of caffeine! The average person drops dead after consuming 12 grams of caffeine. One of these bottles contains over double that amount."
 msgstr "Vigyázat! Ez az energiaital nagy dózisban tartalmaz koffeint! Egy átlagember 12 gramm koffeintől beadja a kulcsot. Egy palack ebből, kétszer annyit tartalmaz."
 
-#: data/base/item_specs.lua:2016
+#: data/base/item_specs.lua:2028
 msgid "Running Power Capsule"
 msgstr "Kondi kapszula"
 
-#: data/base/item_specs.lua:2017
+#: data/base/item_specs.lua:2029
 msgid "Recover Running Power"
 msgstr "Visszatölti a futási kondíciót"
 
-#: data/base/item_specs.lua:2021
+#: data/base/item_specs.lua:2033
 msgid "These small containers hold purified running strength. Each capsule can be used only once, but many of them can be grouped together like one item in your inventory."
 msgstr "Ezek a kis kapszulák kondíció kivonatot tartalmaznak. Egy kapszula csak egyszer használható, de a felszereléseid között csoportba rendezhető, így csak egy darab helyét foglalja."
 
-#: data/base/item_specs.lua:2028
+#: data/base/item_specs.lua:2040
 msgid "Strength Capsule"
 msgstr "Erősítő kapszula"
 
-#: data/base/item_specs.lua:2029
+#: data/base/item_specs.lua:2041
 msgid "Temporary Boost to Strength"
 msgstr "Ideiglenes erőnövelés"
 
-#: data/base/item_specs.lua:2033
+#: data/base/item_specs.lua:2045
 msgid "These small containers hold purified strength. This item will give a temporary boost to strength. Each capsule can be used only once, but many of them can be grouped together like one item in your inventory."
 msgstr "Ezek a kis kapszulák erő-kivonatot tartalmaznak. Ideiglenek erőnövekedést képes biztosítani. Egy kapszula csak egyszer használható, de a felszereléseid között csoportba rendezhető, így csak egy darab helyét foglalja."
 
-#: data/base/item_specs.lua:2040
+#: data/base/item_specs.lua:2052
 msgid "Dexterity Capsule"
 msgstr "Ügyességnövelő kapszula"
 
-#: data/base/item_specs.lua:2041
+#: data/base/item_specs.lua:2053
 msgid "Temporary Boost to Dexterity"
 msgstr "Ideiglenes ügyességnövelés"
 
-#: data/base/item_specs.lua:2045
+#: data/base/item_specs.lua:2057
 msgid "These small containers hold purified dexterity. This item will give a temporary bonus to dexterity. Each capsule can be used only once, but many of them can be grouped together like one item in your inventory."
 msgstr "Ez a kis kapszula ügyesség kivonatot tartalmaz. Ideiglenesen emeli az ügyességedet. Egy kapszula csak egyszer használható, de a felszereléseid között csoportba rendezhető, így csak egy darab helyét foglalja."
 
-#: data/base/item_specs.lua:2056
+#: data/base/item_specs.lua:2068
 msgid "Valuable Circuits"
 msgstr "Értékes áramkör"
 
-#: data/base/item_specs.lua:2060
+#: data/base/item_specs.lua:2072
 msgid "The new monetary standard of the world. With the collapse of the banking system, the precious metals in bot circuitry are now de facto hard cash. A bit difficult to get, though, as the bots are not likely to just hand it over..."
 msgstr "A világ új monetáris szabványa. A bankrendszer összeomlásával, a botok áramköreiben található fémek szó szerint készpénzzé váltak. Ugyan kicsit nehezen beszerezhető, mert a botok nem nyújtják csak úgy át…"
 
-#: data/base/item_specs.lua:2067
+#: data/base/item_specs.lua:2079
 msgid "Anti-grav Pod for Droids"
 msgstr "Anti-gravitációs gondola droidoknak"
 
-#: data/base/item_specs.lua:2071
+#: data/base/item_specs.lua:2083
 msgid "The bots use this to hover around."
 msgstr "A botok használják közlekedési eszközként."
 
-#: data/base/item_specs.lua:2078
+#: data/base/item_specs.lua:2090
 msgid "Dixon's Toolbox"
 msgstr "Dixon szerszámosládája"
 
-#: data/base/item_specs.lua:2082
+#: data/base/item_specs.lua:2094
 msgid "This is a teleporter service toolbox. It's complete and orderly, though a few dents on the outside give proof of frequent use. 'C. Dixon' is carved into the outside with fine print."
 msgstr "Ez egy teleport berendezés szerszámkészlete. Hiánytalan, ám öregecske készlet, és a számos horpadás bizonyítja a gyakori használatát. A felületére a 'C. Dixon' felrat van gravírozva."
 
-#: data/base/item_specs.lua:2089
+#: data/base/item_specs.lua:2101
 msgid "Toolbox"
 msgstr "Szerszámosláda"
 
-#: data/base/item_specs.lua:2093
+#: data/base/item_specs.lua:2105
 msgid "This is a regular toolbox. It's complete and orderly, though a few dents on the outside give proof of frequent use."
 msgstr "Ez egy szabályos szerszámkészlet. Hiánytalan és rendezett, bár a számos horpadás bizonyítja a gyakori használatát."
 
-#: data/base/item_specs.lua:2100
+#: data/base/item_specs.lua:2112
 msgid "Entropy Inverter"
 msgstr "Entrópia inverter"
 
-#: data/base/item_specs.lua:2104 data/base/item_specs.lua:2115
-#: data/base/item_specs.lua:2126 data/base/item_specs.lua:2137
-#: data/base/item_specs.lua:2148
+#: data/base/item_specs.lua:2116 data/base/item_specs.lua:2127
+#: data/base/item_specs.lua:2138 data/base/item_specs.lua:2149
+#: data/base/item_specs.lua:2160
 msgid "This is an standard part within many robot types."
 msgstr "Ez számos robot szabványos alkatrésze."
 
-#: data/base/item_specs.lua:2111
+#: data/base/item_specs.lua:2123
 msgid "Plasma Transistor"
 msgstr "Plazma tranzisztor"
 
-#: data/base/item_specs.lua:2122
+#: data/base/item_specs.lua:2134
 msgid "Superconducting Relay Unit"
 msgstr "Szupravezető reléegység"
 
-#: data/base/item_specs.lua:2133
+#: data/base/item_specs.lua:2145
 msgid "Antimatter-Matter Converter"
 msgstr "Anyag-antianyag átalakító"
 
-#: data/base/item_specs.lua:2144
+#: data/base/item_specs.lua:2156
 msgid "Tachyon Condensator"
 msgstr "Tachion kondenzátor"
 
-#: data/base/item_specs.lua:2155
+#: data/base/item_specs.lua:2167
 msgid "Desk Lamp"
 msgstr "Asztali lámpa"
 
-#: data/base/item_specs.lua:2159
+#: data/base/item_specs.lua:2171
 msgid "What would modern science be without this important item?"
 msgstr "Hol lenne a modern tudomány e fontos eszköz nélkül?"
 
-#: data/base/item_specs.lua:2166
+#: data/base/item_specs.lua:2178
 msgid "Red Dilithium Crystal"
 msgstr "Vörös dilítium kristály"
 
-#: data/base/item_specs.lua:2170
+#: data/base/item_specs.lua:2182
 msgid "These dilithium crystals are used as an energy source in many modern electricity or heat based devices. Energy is extracted from the crystal by making use of the ordering of the crystal molecules. This principle has allowed us to build devices that consume a lot of energy, but do not need to be connected to a power line."
 msgstr "Ez a dilítium kristály a mai modern hő és energia működtetésű eszközök általános energiaforrása. Az energiakinyerés a kristály molekuláinak gerjesztésével biztosítható. Használatával olyan nagy energiaigényű eszközök építését teszi lehetővé, amelyeknek nincs szükségük hálózati tápellátásra."
 
-#: data/base/item_specs.lua:2177
+#: data/base/item_specs.lua:2189
 msgid "Map Maker"
 msgstr "Térképkészítő"
 
-#: data/base/item_specs.lua:2178
+#: data/base/item_specs.lua:2190
 msgid "To implant the automap device"
 msgstr "Az automatikus térképkészítő beültetéséhez"
 
-#: data/base/item_specs.lua:2182
+#: data/base/item_specs.lua:2194
 msgid "This small device automatically collects data about the area within a range of 7 times 7 meters and draws a small-scale plan of the immediate surroundings. Because of its very tiny display, it needs to be held closely to the eye, and the image will then be projected directly into the eyeball of the user. Still, the collected map data will be split up by the device into several sectors for convenient viewing."
 msgstr "Ez a kis egység 7-szer 7 méteres területről gyűjt automatikusan adatokat, és ezekből egy kis térképet rajzol. A picike méret miatt a szemhez nagyon közel kell viselni, és a képet közvetlenül a szemgolyóra vetíti. A könnyebb átláthatóság miatt az elkészített térképet az egység több, kisebb szektorra bontja."
 
-#: data/base/item_specs.lua:2189
+#: data/base/item_specs.lua:2201
 msgid "Light Enhancer? to be included in the future..."
 msgstr "Fényerő növelés? a jövőben ez is hozzá fog tartozni…"
 
-#: data/base/item_specs.lua:2190 data/base/item_specs.lua:2194
+#: data/base/item_specs.lua:2202 data/base/item_specs.lua:2206
 msgid "See better in the dark."
 msgstr "Láss jobban a sötétben."
 
-#: data/base/item_specs.lua:2201
+#: data/base/item_specs.lua:2213
 msgid "Fork"
 msgstr "Villa"
 
-#: data/base/item_specs.lua:2214 data/base/item_specs.lua:2226
-#: data/base/item_specs.lua:2237 data/base/item_specs.lua:2248
+#: data/base/item_specs.lua:2226 data/base/item_specs.lua:2238
+#: data/base/item_specs.lua:2249 data/base/item_specs.lua:2260
 msgid "This item is part of the 'Self Cleaning Kitchen' (SCK) project from before the Great Assault. All of the items in the SCK project have an inner mechanism that will clean the object automatically if left alone for a given time. It comes with its own power supply, and has a supposed duration of 200 years."
 msgstr "Ez az eszköz az „Öntisztító konyha” (ÖTK) projekt egy darabja, ami a Nagy Ostrom előtti időkből származik. Az ÖTK projekt mindegyik darabja egy beépített mechanizmusnak köszönhetően megtisztítja önmagát, ha egy ideig nem nyúlnak hozzá. Saját energiaforrással rendelkezik, melynek tervezett élettartama 200 év."
 
-#: data/base/item_specs.lua:2222
+#: data/base/item_specs.lua:2234
 msgid "Plate"
 msgstr "Tányér"
 
-#: data/base/item_specs.lua:2233
+#: data/base/item_specs.lua:2245
 msgid "Mug"
 msgstr "Bögre"
 
-#: data/base/item_specs.lua:2244
+#: data/base/item_specs.lua:2256
 msgid "Cup"
 msgstr "Csésze"
 
-#: data/base/item_specs.lua:2255
+#: data/base/item_specs.lua:2267
 msgid "Teleporter Homing Beacon"
 msgstr "Teleportáló irányadó"
 
-#: data/base/item_specs.lua:2256
+#: data/base/item_specs.lua:2268
 msgid "Teleports you elsewhere"
 msgstr "Máshová teleportál"
 
-#: data/base/item_specs.lua:2260
+#: data/base/item_specs.lua:2272
 msgid "This device sends a signal to a nearby teleporter requesting a transport, and then helps with locking on and boosting the signal to ensure the teleportation attempt is successful. The battery inside is sufficient for one use *only* and the device becomes useless afterwards. At least, most people don't try to use them twice... and those few who do usually end up with parts of their body missing or attached in the wrong place. Note: Multiple of these may be grouped together in the inventory."
 msgstr "Ez az eszköz egy közeli teleportnak küld jeleket, utána pedig biztosítja a célállomás rögzítését, a jeleket erősítve pedig segíti a teleportálás sikerét. Az akkumulátor csak egy használatot tesz lehetővé, azután az egység használhatatlanná válik. A legtöbb ember nem is használja kétszer, aki pedig igen, azok hiányzó végtagokkal érkeznek, vagy azok esetleg máshová kerülnek rajtuk, mint kéne. Figyelem: a tárhelyedben több is gyűjthető egy csoportba."
 
-#: data/base/item_specs.lua:2267
+#: data/base/item_specs.lua:2279
 msgid "Data Cube"
 msgstr "Adatkocka"
 
-#: data/base/item_specs.lua:2271
+#: data/base/item_specs.lua:2283
 msgid "This was the most common form of portable information storage used on Earth until the Great Assault, its three-dimensional memory capable of storing up to 2 terabytes and compatible with most of the hardware on the planet."
 msgstr "A Nagy ostromot megelőzően ez volt a hordozható adattárolók legelterjedtebb formája a Földön. Ez a háromdimenziós egység 2 terabájt adatot képes tárolni, és a bolygó legtöbb hardverével kompatibilis."
 
-#: data/base/item_specs.lua:2278
+#: data/base/item_specs.lua:2290
 msgid "Kevin's Data Cube"
 msgstr "Kevin adatkockája"
 
-#: data/base/item_specs.lua:2282
+#: data/base/item_specs.lua:2294
 msgid "This data cube contains confidential government data on the installations around the town. Kevin hopes that when the data is evaluated properly, a way out of the current crisis might be found. However, the amount of data is so vast, it can only be evaluated properly using a large cluster of computers. The Red Guard base is said to store an infrastructure suitable to this purpose."
 msgstr "Ez az adatkocka minősített kormányadatokat tartalmaz a várost körülvevő installációkról. Kevin reméli, hogy az adatok szakszerű felhasználásával kiút nyílik a jelenlegi krízishelyzetből. Ám az adatmennyiség olyan hatalmas, hogy csak egy nagyobb számítógéphálózattal dolgozható fel. Azt beszélik, hogy a Vörös Őrség által birtokolt infrastruktúra alkalmas lenne erre."
 
-#: data/base/item_specs.lua:2289
+#: data/base/item_specs.lua:2301
 msgid "Pandora's Cube"
 msgstr "Pandóra szelencéje"
 
-#: data/base/item_specs.lua:2293
+#: data/base/item_specs.lua:2305
 msgid "This is heavy. Cannot the end of the world come in a smaller package? It would be a great time for Duncan to explain a few things..."
 msgstr "Ez nehéz. Nem jöhetne a világvége ennél kisebb csomagolásban? Itt lenne az ideje, hogy Duncan elmagyarázzon néhány dolgot…"
 
-#: data/base/item_specs.lua:2300
+#: data/base/item_specs.lua:2312
 msgid "Rubber Duck"
 msgstr "Gumikacsa"
 
-#: data/base/item_specs.lua:2304
+#: data/base/item_specs.lua:2316
 msgid "It appears that humans enjoy bathing with squeaky little pieces of plastic shaped like waterfowl. As a penguinoid, you should probably be disturbed, but you have to admit this thing is actually quite adorable."
 msgstr "Úgy tűnik, hogy a humanoidok szeretnek kicsi, kacsára hasonlító műanyagdarabokkal fürdeni. Madárszerű felépítésed miatt talán kicsit zavarhat a dolog, de el kell ismerned, hogy ez a dolog egész imádni való."
 
-#: data/base/item_specs.lua:2311
+#: data/base/item_specs.lua:2323
 msgid "Empty Picnic Basket"
 msgstr "Üres piknikkosár"
 
-#: data/base/item_specs.lua:2315
+#: data/base/item_specs.lua:2327
 msgid "This is the latest in 'Dr. How?'-brand picnic basket technology! With patented food-preserving time-dilation, space-bending miniaturization, and anti-gravity, your food stays fresh and your drinks stay cold in a small light-as-a-feather package! Now you can picnic the old fashioned way! Batteries sold separately."
 msgstr "Ez a legújabb „Hogyan doki?” márkájú piknikkosár technológia! A szabadalmaztatott ételmegőrző idődilatációval, térhajlító miniatürizálással, és antigravitációval, az ételed friss marad, az italod pedig hideg marad, egyetlen pihekönnyű csomagban! Mostantól a régi módon piknikezhetsz! Az elemek külön kaphatóak."
 
-#: data/base/item_specs.lua:2322
+#: data/base/item_specs.lua:2334
 msgid "Lunch in a Picnic Basket"
 msgstr "Ebéd egy piknikkosárban"
 
-#: data/base/item_specs.lua:2326
+#: data/base/item_specs.lua:2338
 msgid "This is a 'Dr. How?'-brand picnic basket stuffed full of enough food and drinks to feed a dozen people. With 'Dr. How?'-time dilation, the food keeps oven-fresh, and the drinks stay ice-cold."
 msgstr "Ez a „Hogyan doki?” márkájú piknikkosár egy tucat embernek elég étellel és itallal van telezsúfolva. A „Hogyan doki?” idődilatációval, az étel  friss marad, az ital pedig jéghideg."
 
-#: data/base/item_specs.lua:2333
+#: data/base/item_specs.lua:2345
 msgid "MS Stock Certificate"
 msgstr "MS részvényjegy"
 
-#: data/base/item_specs.lua:2337
+#: data/base/item_specs.lua:2349
 msgid "This is a Stock Certificate for transfer of ownership of five hundred sixty-seven million shares of MegaSystems from William Gapes to bearer."
 msgstr "Ez egy részvényjegy William Gapes ötszázhatvanhétmillió MegaSystems részvényének, az új birtokosának történő átadásáról szól."
 
-#: data/base/item_specs.lua:2344
+#: data/base/item_specs.lua:2356
 msgid "Elbow Grease Can"
 msgstr "Könyökzsír bödön"
 
-#: data/base/item_specs.lua:2348
+#: data/base/item_specs.lua:2360
 msgid "A can filled with elbow grease. Hard to make it if you are not a strong man."
 msgstr "Egy könyökzsírral töltött bödön. Nehéz megcsinálni ha nem vagy egy erős ember."
 
-#: data/base/item_specs.lua:2356
+#: data/base/item_specs.lua:2368
 msgid "MS EPROM Programming Interface"
 msgstr "MS EPROM programozói csatoló"
 
-#: data/base/item_specs.lua:2360
+#: data/base/item_specs.lua:2372
 msgid "Used by developers at MegaSys to load firmware onto newly assembled droids."
 msgstr "A MegaSys fejlesztői használták a firmware feltöltésére a frissen összerakott droidoknál."
 
-#: data/base/item_specs.lua:2371
+#: data/base/item_specs.lua:2383
 msgid "Linarian Power Crank"
 msgstr "Lináriai erőkurbli"
 
-#: data/base/item_specs.lua:2375
+#: data/base/item_specs.lua:2387
 msgid "This mechanical crank, product of the highly advanced and sophisticated technological genius of the Linarian race, performs elaborate operations on energy and directs it towards a biochemical structure. For short, it buffs up your muscles. That's good."
 msgstr "Ez a mechanikus kurbli, a lináriai faj magasan fejlett és kifinomult technológiai géniuszának terméke, bonyolult műveletek végez az energiával, és biokémiai szerkezetbe továbbítja. Röviden felerősíti az izmaid. Ez jó."
 
-#: data/base/item_specs.lua:2382
+#: data/base/item_specs.lua:2394
 msgid "Tungsten Spikes"
 msgstr "Wolfram tüskék"
 
-#: data/base/item_specs.lua:2386
+#: data/base/item_specs.lua:2398
 msgid "This polycarbonate surface is lined with hard tungsten spikes, and can be installed into a mechanical socket on most melee weapons, offering a simple and affordable solution to increasing damage dealt. Handle only with gloves. Do not attempt to use as footwear. Do not attempt to eat."
 msgstr "Ez a polikarbonát felület kemény wolframtüskékkel szegélyezett, és a legtöbb közelharci fegyver mechanikus foglalatába illeszkedik, így egyszerű és megfizethető megoldást nyújtva az okozott sebzés növelésére. Csak kesztyűben kezelhető. Ne próbálja meg lábbeliként hordani. Meg ne próbálja megenni."
 
-#: data/base/item_specs.lua:2393
+#: data/base/item_specs.lua:2405
 msgid "Tinfoil Patch"
 msgstr "Alufólia tapasz"
 
-#: data/base/item_specs.lua:2397
+#: data/base/item_specs.lua:2409
 msgid "When attached to your armor, this patch of tinfoil allows you to stay cooler by reducing the amount of electromagnetic radiation that your body absorbs."
 msgstr "Mikor a páncélodra teszed, ez a darab fólia segít hidegen maradni, mert csökkenti a tested által kibocsátott elektromágneses mezőt."
 
-#: data/base/item_specs.lua:2404
+#: data/base/item_specs.lua:2416
 msgid "Laser Sight"
 msgstr "Lézer célkereszt"
 
-#: data/base/item_specs.lua:2408
+#: data/base/item_specs.lua:2420
 msgid "A miniaturized laser powered by a nuclear battery. When attached parallel to the barrel of a gun, it makes a little red dot on the target and helps with aiming."
 msgstr "Egy miniatürizált lézer, melyet nukleáris elem táplál. A fegyver csövére erősítve kicsi piros pöttyöt bocsát a célra, így segítve a pontosságot."
 
-#: data/base/item_specs.lua:2415
+#: data/base/item_specs.lua:2427
 msgid "Exoskeletal Joint"
 msgstr "Exoskeleton ízület"
 
-#: data/base/item_specs.lua:2419
+#: data/base/item_specs.lua:2431
 msgid "This electromechanical joint helps you to perform physically demanding tasks more easily by amplifying the movements of your body."
 msgstr "Ez az elektromechanikai eszköz segít a fizikailag megerőltető feladatok megoldásában, mert növeli a test erejét és mozgékonyságát."
 
-#: data/base/item_specs.lua:2426
+#: data/base/item_specs.lua:2438
 msgid "Heatsink"
 msgstr "Hűtőborda"
 
-#: data/base/item_specs.lua:2430
+#: data/base/item_specs.lua:2442
 msgid "A simple heatsink add-on that keeps you cooler by dissipating heat from your armor."
 msgstr "Egy egyszerű hűtőborda, mely a páncélod alatt felgyülemlő meleg elvezetésével tart hűvösebben."
 
-#: data/base/item_specs.lua:2437
+#: data/base/item_specs.lua:2449
 msgid "Peltier Element"
 msgstr "Peltier-elem"
 
-#: data/base/item_specs.lua:2441
+#: data/base/item_specs.lua:2453
 msgid "A thermoelectric device that increases your cooling rate."
 msgstr "Ez a termoelektromos egység javítja a hűtésedet."
 
-#: data/base/item_specs.lua:2448
+#: data/base/item_specs.lua:2460
 msgid "Steel Mesh"
 msgstr "Acélburkolat"
 
-#: data/base/item_specs.lua:2452
+#: data/base/item_specs.lua:2464
 msgid "A sturdy metal mesh that provides an extra protective layer to your armor."
 msgstr "Egy erős acélburkolat, amely egy extra védőrétegként funkcionál a páncélodon."
 
-#: data/base/item_specs.lua:2459
+#: data/base/item_specs.lua:2471
 msgid "Shock Discharger"
 msgstr "Sokkoló"
 
-#: data/base/item_specs.lua:2463
+#: data/base/item_specs.lua:2475
 msgid "When installed to a melee weapon, this nifty device gives a small electric shock to enemies you hit."
 msgstr "Mikor egy ütőfegyverre csatolod, az ütés pillanatában egy kis elektromos impulzus sokkolja a megütött ellenfelet."
 
-#: data/base/item_specs.lua:2470
+#: data/base/item_specs.lua:2482
 msgid "Silencer"
 msgstr "Hangtompító"
 
-#: data/base/item_specs.lua:2474
+#: data/base/item_specs.lua:2486
 msgid "This new generation silencer will not only allow you to catch your enemies by surprise, but will also help you to do more damage in ranged combat."
 msgstr "Ezzel az új generációs hangtompítóval nem csak meglepheted az ellenséget, de többet is sebzel a tűzharcban."
 
-#: data/base/item_specs.lua:2482
+#: data/base/item_specs.lua:2494
 msgid "Coprocessor"
 msgstr "Segédprocesszor"
 
-#: data/base/item_specs.lua:2486
+#: data/base/item_specs.lua:2498
 msgid "By speeding up your computations, this chip helps you to excel in many activities."
 msgstr "A számítási teljesítményed növelésével, ez a chip segít abban, hogy sok tevékenységben jeleskedj."
 
-#: data/base/item_specs.lua:2493
+#: data/base/item_specs.lua:2505
 msgid "Pedometer"
 msgstr "Lépésszámláló"
 
-#: data/base/item_specs.lua:2497
+#: data/base/item_specs.lua:2509
 msgid "A device that helps you to move dexterously by giving feedback on your foot movement."
 msgstr "Ezzel az egységgel hatékonyabb lesz a járásod, mivel visszajelzést ad a lábaid mozgásáról."
 
-#: data/base/item_specs.lua:2504
+#: data/base/item_specs.lua:2516
 msgid "Foot Warmers"
 msgstr "Lábmelegítő"
 
-#: data/base/item_specs.lua:2508
+#: data/base/item_specs.lua:2520
 msgid "This pair of electric fuzzy foot warmers would make even a penguin warm and comfortable in any shoes, and help maintain a healthy body temperature, thus preventing colds and making you look cool. At least, that's what the advertisement says. And ads don't lie, do they?"
 msgstr "Ez a pár elektromos lábmelegítő még egy pingvin számára is meleggé és kényelmessé tesz bármilyen cipőt, valamint segít fenntartani a testhőmérsékletét, így megelőzve a megfázásokat, miközben még jól is nézel ki. Legalábbis a reklám ezt mondja. És azok ugye nem hazudnak."
 
-#: data/base/item_specs.lua:2515
+#: data/base/item_specs.lua:2527
 msgid "Circuit Jammer"
 msgstr "Áramkörzavaró"
 
-#: data/base/item_specs.lua:2519
+#: data/base/item_specs.lua:2531
 msgid "This item improves your melee weapon by blasting the enemies you hit with an electromagnetic pulse. The pulse is powerful enough to temporarily shut down the circuits of the attacked bot."
 msgstr "Ez az eszköz segíti az ütőfegyvered sebzését, mert egy elektromágneses impulzussal is megcsapja a célpontot. Az impulzus elég erős ahhoz, hogy időlegesen leállítsa egy bot áramköreit."
 
-#: data/base/item_specs.lua:2526
+#: data/base/item_specs.lua:2538
 msgid "Sensor Disruptor"
 msgstr "Szenzor diszruptor"
 
-#: data/base/item_specs.lua:2530
+#: data/base/item_specs.lua:2542
 msgid "When attached to a melee weapon, this item induces errors to the sensors of the bots you attack, causing them to slow down momentarily."
 msgstr "Ütőfegyverre szerelve ez az egység hibákat okoz a támadott bot működésében, mert blokkolja az érzékelőit. Ettől egy pár pillanatra lelassulnak."
 
-#: data/base/item_specs.lua:2537
+#: data/base/item_specs.lua:2549
 msgid "Headlamp"
 msgstr "Fejlámpa"
 
-#: data/base/item_specs.lua:2541
+#: data/base/item_specs.lua:2553
 msgid "When fastened to your helmet, this lamp allows you to see better in dark environments."
 msgstr "A sisakodra csatolva jobban fogsz látni a sötét helyeken."
 
-#: data/base/item_specs.lua:2548
+#: data/base/item_specs.lua:2560
 msgid "Brain Stimulator"
 msgstr "Agystimulátor"
 
-#: data/base/item_specs.lua:2552
+#: data/base/item_specs.lua:2564
 msgid "A chip that allows faster learning by connecting directly to the brain via a neural interface (colloquially referred to as a 'weird swim cap with little thingies on it') and providing additional feedback on various actions."
 msgstr "Egy chip, amely gyorsabb tanulást tesz lehetővé úgy, hogy közvetlenül az agyhoz kapcsolódik egy idegcsatolóval (köznyelvben: „egy fura úszósapka apró kütyükkel”), és további visszajelzéseket ad különböző cselekedetekről."
 
-#: data/base/item_specs.lua:2563
+#: data/base/item_specs.lua:2575
 msgid "NPC Hand to Hand Weapon"
 msgstr "NPC Kézitusa fegyver"
 
-#: data/base/item_specs.lua:2576
+#: data/base/item_specs.lua:2588
 msgid "Bot use only"
 msgstr "Csak botok használhatják"
 
-#: data/base/item_specs.lua:2584
+#: data/base/item_specs.lua:2596
 msgid "Droid 123 Weak Robotic Arm"
 msgstr "Droid 123 Gyenge robotkar"
 
-#: data/base/item_specs.lua:2597 data/base/item_specs.lua:2621
-#: data/base/item_specs.lua:2642 data/base/item_specs.lua:2666
-#: data/base/item_specs.lua:2687 data/base/item_specs.lua:2708
-#: data/base/item_specs.lua:2729 data/base/item_specs.lua:2750
-#: data/base/item_specs.lua:2774 data/base/item_specs.lua:2795
-#: data/base/item_specs.lua:2816 data/base/item_specs.lua:2837
-#: data/base/item_specs.lua:2858 data/base/item_specs.lua:2879
-#: data/base/item_specs.lua:2903 data/base/item_specs.lua:2928
-#: data/base/item_specs.lua:2953
+#: data/base/item_specs.lua:2609 data/base/item_specs.lua:2633
+#: data/base/item_specs.lua:2654 data/base/item_specs.lua:2678
+#: data/base/item_specs.lua:2699 data/base/item_specs.lua:2720
+#: data/base/item_specs.lua:2741 data/base/item_specs.lua:2762
+#: data/base/item_specs.lua:2786 data/base/item_specs.lua:2807
+#: data/base/item_specs.lua:2828 data/base/item_specs.lua:2849
+#: data/base/item_specs.lua:2870 data/base/item_specs.lua:2891
+#: data/base/item_specs.lua:2915 data/base/item_specs.lua:2940
+#: data/base/item_specs.lua:2965
 msgid "Droid weaponry"
 msgstr "Droid fegyverzet"
 
-#: data/base/item_specs.lua:2605
+#: data/base/item_specs.lua:2617
 msgid "Droid 139 Plasma Trash Vaporiser"
 msgstr "Droid 139 Plazma szemétmegsemmisítő"
 
-#: data/base/item_specs.lua:2629
+#: data/base/item_specs.lua:2641
 msgid "Droid 247 Robotic Arm"
 msgstr "Droid 247 Robotkar"
 
-#: data/base/item_specs.lua:2650
+#: data/base/item_specs.lua:2662
 msgid "Droid 249 Pulse Laser Welder"
 msgstr "Droid 249 Impulzuslézer-hegesztő"
 
-#: data/base/item_specs.lua:2674
+#: data/base/item_specs.lua:2686
 msgid "Droid 296 Plasmabeam Cutter"
 msgstr "Droid 296 Plazmasugár-vágó"
 
-#: data/base/item_specs.lua:2695
+#: data/base/item_specs.lua:2707
 msgid "Droid 302 Overcharged Barcode Reader"
 msgstr "Droid 302 Túltöltött vonalkód-leolvasó"
 
-#: data/base/item_specs.lua:2716
+#: data/base/item_specs.lua:2728
 msgid "Droid 329 Dual Overcharged Barcode Reader"
 msgstr "Droid 329 Dupla túltöltött vonalkód-leolvasó"
 
-#: data/base/item_specs.lua:2737
+#: data/base/item_specs.lua:2749
 msgid "Droid 420 Laser Scalpel"
 msgstr "Droid 420 Lézerszike"
 
-#: data/base/item_specs.lua:2758
+#: data/base/item_specs.lua:2770
 msgid "Droid 476 Small Laser"
 msgstr "Droid 476 Kis lézer"
 
-#: data/base/item_specs.lua:2782
+#: data/base/item_specs.lua:2794
 msgid "Droid 493 Power Hammer"
 msgstr "Droid 493 Szögbelövő"
 
-#: data/base/item_specs.lua:2803
+#: data/base/item_specs.lua:2815
 msgid "Droid 516 Robotic Fist"
 msgstr "Droid 516 Robotököl"
 
-#: data/base/item_specs.lua:2824
+#: data/base/item_specs.lua:2836
 msgid "Droid 543 Tree Harvester"
 msgstr "Droid 543 Fa betakarító"
 
-#: data/base/item_specs.lua:2845
+#: data/base/item_specs.lua:2857
 msgid "Droid 571 Robotic Fist"
 msgstr "Droid 571 Robotököl"
 
-#: data/base/item_specs.lua:2866
+#: data/base/item_specs.lua:2878
 msgid "Droid 598 Robotic Fist"
 msgstr "Droid 598 Robotököl"
 
-#: data/base/item_specs.lua:2887
+#: data/base/item_specs.lua:2899
 msgid "Droid 7xx Tux Seeking Missiles"
 msgstr "Droid 7xx Tux-követő rakéta"
 
-#: data/base/item_specs.lua:2911
+#: data/base/item_specs.lua:2923
 msgid "Droid Advanced Twin Laser"
 msgstr "Droid fejlett ikerlézer"
 
-#: data/base/item_specs.lua:2936
+#: data/base/item_specs.lua:2948
 msgid "Droid 883 Exterminator"
 msgstr "Droid 883 Megsemmisítő"
 
-#: data/base/item_specs.lua:2961
+#: data/base/item_specs.lua:2973
 msgid "Autogun Laser Pistol"
 msgstr "Automata lézerpisztoly"
 
-#: data/base/item_specs.lua:2977
+#: data/base/item_specs.lua:2989
 msgid "This is the laser weapon of the autogun. If you see this item whilst normal gameplay, please make a bugreport."
 msgstr "Ez az automata fegyver lézerfegyvere. Ha ezt a tárgyat normál játék alatt látod, készíts hibajelentést."
 
-#: data/base/item_specs.lua:2989
+#: data/base/item_specs.lua:3001
 msgid "PC LOAD LETTER"
 msgstr "PC LOAD LETTER"
 
-#: data/base/item_specs.lua:2993
+#: data/base/item_specs.lua:3005
 msgid "An envelop saying 'PC LOAD LETTERS'. I have no idea what that means..."
 msgstr "Egy boríték, ami ezt mondja: „PC LOAD LETTERS”. Fogalmam sincs, hogy ez mit jelent…"
 
-#: data/base/item_specs.lua:3000
+#: data/base/item_specs.lua:3012
 msgid "Arcane Lore"
 msgstr ""
 
-#: data/base/item_specs.lua:3004
+#: data/base/item_specs.lua:3016
 msgid "I've bought an anti-hack software, so I could try to hack it! ...But what, exactly, is the 'Arcane Lore'?"
 msgstr ""
 
-#: data/base/item_specs.lua:3011
+#: data/base/item_specs.lua:3023
 msgid "PGP key"
 msgstr ""
 
-#: data/base/item_specs.lua:3015
+#: data/base/item_specs.lua:3027
 msgid "It won't open your house, but it can unlock important encrypted archives."
 msgstr ""
 
-#: data/base/item_specs.lua:3022
+#: data/base/item_specs.lua:3034
 msgid "Cheat Gun"
 msgstr "Csalás puska"
 
-#: data/base/item_specs.lua:3037
+#: data/base/item_specs.lua:3049
 msgid "This item is used by testers. If you find it ingame without using a cheat, please report it as a bug."
 msgstr "Ezt az elemet a tesztelők használja. Ha megtalálod a játékban csalás nélkül, akkor jelentsd hibaként."
 
-#: data/base/item_specs.lua:3051
+#: data/base/item_specs.lua:3063
 msgid "Small Tutorial Axe"
 msgstr "Kis tanuló fejsze"
 
-#: data/base/item_specs.lua:3065
+#: data/base/item_specs.lua:3077
 msgid ""
 "While this axe was made for splitting wood, with some luck it can damage vital parts of a droid as well.\n"
 "Sell me!\n"
@@ -1877,11 +1891,11 @@ msgstr ""
 "Adj el!\n"
 "Kattints a vörös gombra a kereszttel, ha kész vagy."
 
-#: data/base/item_specs.lua:3074
+#: data/base/item_specs.lua:3086
 msgid "Bottled Tutorial Ice"
 msgstr "Palackos tanuló jég"
 
-#: data/base/item_specs.lua:3079
+#: data/base/item_specs.lua:3091
 msgid ""
 "This bottle is filled with ice. It can keep you cool during a warm summer day.\n"
 "Buy me!\n"
@@ -2073,81 +2087,81 @@ msgstr "Hálózati felderítés"
 msgid "Light"
 msgstr "Fény"
 
-#: data/base/skill_specs.lua:210
+#: data/base/skill_specs.lua:223
 msgid "Extract bot parts"
 msgstr "Bot alkatrészek kiszerelése"
 
-#: data/base/skill_specs.lua:215
+#: data/base/skill_specs.lua:228
 msgid "With a little knowledge, you can extract some useful parts out of the robots you kill. With each bot there is some hope of a part falling out. This skill is always active even when not selected."
 msgstr "Egy kis hozzáértéssel ki tudsz szerelni pár értékes alkatrészt a botokból. Minden egyes botnál van egy kis esélyed, hogy kiesik belőle valami hasznosítható. Ez a képesség folyamatosan aktív, nincs szükség a kiválasztására."
 
-#: data/base/skill_specs.lua:220
+#: data/base/skill_specs.lua:233
 msgid "Treasure Hunting"
 msgstr "Kincsvadászat"
 
-#: data/base/skill_specs.lua:225
+#: data/base/skill_specs.lua:238
 msgid "Upgrading your search algorithms, you may find items more frequently when destroying bots. This skill is always active even when not selected."
 msgstr "A keresőalgoritmusaid frissítve gyakrabban találhatsz tárgyakat a botok elpusztításakor. Ez a képesség mindig aktív, még akkor is, ha nincs kiválasztva."
 
-#: data/base/skill_specs.lua:230
+#: data/base/skill_specs.lua:243
 msgid "Animal Magnetism"
 msgstr "Állati vonzerő"
 
-#: data/base/skill_specs.lua:235
+#: data/base/skill_specs.lua:248
 msgid "Get in tune with the magnetic fields around you! Grants you half-second extra time per skill level when hacking bots. This skill is always active even when not selected."
 msgstr "Hangolódj a rá a körülötted lévő mágneses mezőkre. Félmásodperces extra időt ad képességszintenként a botok feltörésére. Ez a képesség mindig aktív, akkor is ha nincs kiválasztva."
 
-#: data/base/skill_specs.lua:249
+#: data/base/skill_specs.lua:262
 msgid "Nethack"
 msgstr "Nethack"
 
-#: data/base/skill_specs.lua:255
+#: data/base/skill_specs.lua:268
 msgid "NOT IMPLEMENTED YET The open source game called Nethack is one of the world's greatest wasters of time. Machines don't care about it, but humans can get sucked in quite deeply."
 msgstr "EZ MÉG NEM BIZTOS A nyílt forráskódú Nethack játék az időpocsékolás legjobb módja. A gépek nem foglalkoznak vele, ám az emberek gyorsan képesek túl mélyen belebonyolódni."
 
-#: data/base/skill_specs.lua:266
+#: data/base/skill_specs.lua:279
 msgid "Reverse-engineer"
 msgstr "Visszatervezés"
 
-#: data/base/skill_specs.lua:270
+#: data/base/skill_specs.lua:283
 msgid "NOT IMPLEMENTED YET There is some dark magic in the art of turning devices or programs inside-out, picking them apart to learn all their secrets and putting them back again."
 msgstr "MÉG NINCS MEGVALÓSÍTVA Van valami mágikus abban, ha az eszközt vagy programot szétszedve megtanuljuk a titkait, és utána összerakjuk őket."
 
-#: data/base/skill_specs.lua:281
+#: data/base/skill_specs.lua:294
 msgid "Ricer CFLAGS"
 msgstr "Vérpistike CFLAG-ek"
 
-#: data/base/skill_specs.lua:286
+#: data/base/skill_specs.lua:299
 msgid "NOT IMPLEMENTED YET Optimization is the root of all evil. You can gain some temporary speed improvements to your system, but in the end you will likely overheat and cause permanent damage if you are not careful."
 msgstr "MÉG NINCS MEGVALÓSÍTVA Az optimalizálás minden gonosz forrása. Nyerhetsz némi ideiglenes rendszerteljesítményt, de vigyázz, mert könnyen túlmelegedéssel végződhet, és maradandó sérülést szenvedhetsz."
 
-#: data/base/skill_specs.lua:294
+#: data/base/skill_specs.lua:307
 msgid "Small Plasma grenade"
 msgstr "Kis plazmagránát"
 
-#: data/base/skill_specs.lua:301 data/base/skill_specs.lua:313
-#: data/base/skill_specs.lua:325 data/base/skill_specs.lua:338
-#: data/base/skill_specs.lua:350 data/base/skill_specs.lua:362
+#: data/base/skill_specs.lua:314 data/base/skill_specs.lua:326
+#: data/base/skill_specs.lua:338 data/base/skill_specs.lua:351
+#: data/base/skill_specs.lua:363 data/base/skill_specs.lua:375
 msgid "If you see this in game it is a bug. Please report this to the developers, unless you cheated, in which case you deserve to see this silly nonsense description."
 msgstr "Ha ezt látod, akkor ez hiba. Jelentsd a fejlesztőknek, hacsak nem csaltál, mert akkor is előjöhet ez a hülye leírás."
 
-#: data/base/skill_specs.lua:307
+#: data/base/skill_specs.lua:320
 msgid "Plasma grenade"
 msgstr "Plazmagránát"
 
-#: data/base/skill_specs.lua:319
+#: data/base/skill_specs.lua:332
 msgid "Gas grenade"
 msgstr "Gázgránát"
 
-#: data/base/skill_specs.lua:331
+#: data/base/skill_specs.lua:344
 msgid "Small EMP grenade"
 msgstr "Kis EMI gránát"
 
-#: data/base/skill_specs.lua:344
+#: data/base/skill_specs.lua:357
 msgid "EMP grenade"
 msgstr "EMI gránát"
 
-#: data/base/skill_specs.lua:356
+#: data/base/skill_specs.lua:369
 msgid "Electronic Noise"
 msgstr "Elektronikus zaj"
 
@@ -3792,7 +3806,7 @@ msgid "Skyscrapper Arena"
 msgstr "Mester aréna"
 
 #: data/storyline/act2/events.dat:108
-msgid "You are unable to return. The only way is foward."
+msgid "You are unable to return. The only way is forward."
 msgstr ""
 
 #: data/storyline/act2/events.dat:109
@@ -4059,7 +4073,7 @@ msgid "Search in the Darkness"
 msgstr "Láss jobban a sötétben."
 
 #: data/storyline/act2/levels.dat:29946
-msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Managment."
+msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Management."
 msgstr ""
 
 #: data/storyline/act2/levels.dat:29949

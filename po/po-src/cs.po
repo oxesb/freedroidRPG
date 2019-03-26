@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-02-27 18:11+0100\n"
+"POT-Creation-Date: 2019-03-24 17:21+0100\n"
 "PO-Revision-Date: 2019-01-19 20:11+0000\n"
 "Last-Translator: fluzz <fluzz@gmx.com>\n"
 "Language-Team: Czech (http://www.transifex.com/arctic-games/freedroid-rpg/language/cs/)\n"
@@ -311,29 +311,37 @@ msgstr "Dnů %d %02d:%02d"
 msgid "%s empty, reloading..."
 msgstr "%s je prázdná, nabíjím..."
 
-#: src/influ.c:1024 src/menu.c:1105
+#: src/influ.c:804
+msgid "Energy shield disabled due to overheat."
+msgstr ""
+
+#: src/influ.c:818
+msgid "Energy shield disabled due to a risk of overheat."
+msgstr ""
+
+#: src/influ.c:1044 src/menu.c:1105
 msgid "Load Latest"
 msgstr "Nahrát poslední"
 
-#: src/influ.c:1025 src/menu.c:1106
+#: src/influ.c:1045 src/menu.c:1106
 msgid "Load Backup"
 msgstr "Nahrát zálohu"
 
-#: src/influ.c:1027 src/menu.c:1108 src/lvledit/lvledit_menu.c:964
+#: src/influ.c:1047 src/menu.c:1108 src/lvledit/lvledit_menu.c:964
 msgid "Quit to Main Menu"
 msgstr "Odejít do hlavního menu"
 
-#: src/influ.c:1029
+#: src/influ.c:1049
 msgid "Return to Editor"
 msgstr "Návrat do editoru"
 
-#: src/influ.c:1031 src/menu.c:954 src/menu.c:1111
+#: src/influ.c:1051 src/menu.c:954 src/menu.c:1111
 #: src/lvledit/lvledit_menu.c:965
 msgid "Exit FreedroidRPG"
 msgstr "Ukončit FreedroidRPG"
 
 #. TRANSLATORS: Out of <ammo type>
-#: src/influ.c:1476
+#: src/influ.c:1496
 #, c-format
 msgid "Out of [s]%s[v]!"
 msgstr "Došly náboje [s]%s[v]!"
@@ -350,7 +358,7 @@ msgstr "Spouštění výuky."
 msgid "Starting new game act."
 msgstr ""
 
-#: src/init.c:982
+#: src/init.c:983
 msgid ""
 "You are playing a Release Candidate.\n"
 "Strange bugs may still be present in the game.\n"
@@ -366,11 +374,11 @@ msgstr ""
 "\n"
 "Hodně štěstí!\n"
 
-#: src/init.c:1001 src/init.c:1002
+#: src/init.c:1002 src/init.c:1003
 msgid "Game over.\n"
 msgstr "Konec hry.\n"
 
-#: src/init.c:1068 src/init.c:1069
+#: src/init.c:1069 src/init.c:1070
 msgid "Game won.\n"
 msgstr "Hra vyhrána.\n"
 
@@ -1770,92 +1778,97 @@ msgstr "Tento předmět si nemůžeš dovolit."
 msgid "You cannot teleport here!"
 msgstr "Zde se nelze teleportovat!"
 
-#: src/skills.c:856
+#: src/skills.c:857
 #, c-format
 msgid "Program revision: %c%d%c "
 msgstr "Revize programu: %c%d%c"
 
-#: src/skills.c:865
+#: src/skills.c:866
 #, c-format
 msgid "Heat produced: %c%d%c "
 msgstr "Vyprodukované teplo: %c%d%c"
 
-#: src/skills.c:867
+#: src/skills.c:868
 #, c-format
 msgid "Cooling: %c%d%c "
 msgstr "Chlazení: %c%d%c"
 
-#: src/skills.c:877
+#: src/skills.c:878
 #, c-format
 msgid "Damage: %c%d%c "
 msgstr "Poškození: %c%d%c"
 
-#: src/skills.c:879
+#: src/skills.c:880
 #, c-format
 msgid "Damage: %c%d-%d%c "
 msgstr "Poškození: %c%d-%d%c"
 
-#: src/skills.c:883
+#: src/skills.c:884
 #, c-format
 msgid "Healing: %c%d%c "
 msgstr "Léčení: %c%d%c"
 
-#: src/skills.c:885
+#: src/skills.c:886
 #, c-format
 msgid "Healing: %c%d-%d%c "
 msgstr "Léčení: %c%d-%d%c"
 
-#: src/skills.c:894
+#: src/skills.c:895
 #, c-format
 msgid "Paralyze"
 msgstr "Ochromení"
 
-#: src/skills.c:896
+#: src/skills.c:897
 #, c-format
 msgid "Slow down"
 msgstr "Zpomalení"
 
-#: src/skills.c:898
+#: src/skills.c:899
 #, c-format
 msgid "Invisible"
 msgstr "Neviditelný"
 
-#: src/skills.c:900
+#: src/skills.c:901
 #, c-format
 msgid "Poison"
 msgstr "Jed"
 
-#: src/skills.c:903
+#: src/skills.c:904
 #, c-format
 msgid "Takeover charges: %c%d%c "
 msgstr "Výboje převzetí kontroly: %c%d%c"
 
-#: src/skills.c:905
+#: src/skills.c:906
 #, c-format
 msgid "Escape"
 msgstr "Únik"
 
-#: src/skills.c:907
+#: src/skills.c:908
 #, c-format
 msgid "Passive"
 msgstr "Pasivní"
 
-#: src/skills.c:913
+#: src/skills.c:914
 #, c-format
 msgid "Repair items, degrading them a bit"
 msgstr "Oprava předmětů, degraduje je"
 
-#: src/skills.c:915
+#: src/skills.c:916
 #, c-format
 msgid "Detect enemies"
 msgstr "Detekovat nepřátele"
 
-#: src/skills.c:917
+#: src/skills.c:918
 #, c-format
 msgid "Lighten area"
 msgstr "Osvětlit oblast"
 
-#: src/skills.c:923
+#: src/skills.c:920
+#, c-format
+msgid "Turn damage into heat"
+msgstr ""
+
+#: src/skills.c:926
 #, c-format
 msgid " for %c%.1f%c seconds"
 msgstr " na %c%.1f%c sekund"
@@ -1956,6 +1969,10 @@ msgid "invisible"
 msgstr "neviditelný"
 
 #: src/text.c:381
+msgid "shielded"
+msgstr ""
+
+#: src/text.c:387
 msgid "scanning"
 msgstr "skenující"
 
@@ -2900,7 +2917,7 @@ msgstr "Nav. bod"
 msgid "Label"
 msgstr "Název"
 
-#: src/savegame/convert.c:180
+#: src/savegame/convert.c:184
 msgid ""
 "The SAVEGAME info can not be decoded.\n"
 "Your savegame is probably corrupted."
@@ -2908,7 +2925,7 @@ msgstr ""
 "Informace uložené hry nelze dekódovat.\n"
 "Uložená hra je pravděpodobně poškozená."
 
-#: src/savegame/convert.c:198
+#: src/savegame/convert.c:202
 msgid ""
 "Your savegame seems to be a pre-0.16.1 version, but the savegame_version_string can not be found.\n"
 "Your savegame is probably corrupted."
@@ -2916,7 +2933,7 @@ msgstr ""
 "Zdá se, že uložená hra je starší verze než 0.16.1, ale informaci o verzi uložené hry nelze najít.\n"
 "Uložená hra je pravděpodobně poškozená."
 
-#: src/savegame/convert.c:217
+#: src/savegame/convert.c:221
 msgid ""
 "Your savegame seems to be a pre-0.16.1 version, but the savegame_version_string can not be decoded.\n"
 "Your savegame is probably corrupted."
@@ -2924,7 +2941,7 @@ msgstr ""
 "Zdá se, že uložená hra je starší verze než 0.16.1, ale informaci o verzi uložené hry nelze dekódovat.\n"
 "Uložená hra je pravděpodobně poškozená."
 
-#: src/savegame/convert.c:321
+#: src/savegame/convert.c:325
 msgid ""
 "-=* Savegame loading *=-\n"
 "\n"
@@ -2938,7 +2955,7 @@ msgstr ""
 "Pokud používáte vývojovou verzi hry, pak je toto očekáváno.\n"
 "Nahrajeme ji tak, jak je, ale očekávejte možné chyby či dokonce pád hry."
 
-#: src/savegame/convert.c:328
+#: src/savegame/convert.c:332
 #, c-format
 msgid ""
 "-=* Savegame loading *=-\n"
@@ -2953,7 +2970,7 @@ msgstr ""
 "Nicméně nebyl nalezen žádný převaděč.\n"
 "Nahrajeme ji tak, jak je, ale očekávejte možné chyby či dokonce pád hry."
 
-#: src/savegame/convert.c:336
+#: src/savegame/convert.c:340
 #, c-format
 msgid ""
 "-=* Savegame loading *=-\n"
@@ -2968,7 +2985,7 @@ msgstr ""
 "Uvědomte si, že nemůžeme plně zaručit hratelnost uložené hry.\n"
 "Lze očekávat možné chyby či dokonce pád hry."
 
-#: src/savegame/convert.c:348
+#: src/savegame/convert.c:352
 #, c-format
 msgid ""
 "-=* Savegame loading *=-\n"
@@ -3035,6 +3052,33 @@ msgid ""
 "The savegame seems to be corrupted."
 msgstr ""
 "Chyba při filtrování uložené hry (%s:%s): Tuxův atribut 'AllMissions' nebyl nalezen.\n"
+"Zdá se, že je uložená hra poškozená."
+
+#: src/savegame/filters_0_16_1.c:262
+#, fuzzy, c-format
+msgid ""
+"Error during savegame filtering (%s:%s): Tux 'Inventory' attribute was not found.\n"
+"The savegame seems to be corrupted."
+msgstr ""
+"Chyba při filtrování uložené hry (%s:%s): Tuxův atribut 'AllMissions' nebyl nalezen.\n"
+"Zdá se, že je uložená hra poškozená."
+
+#: src/savegame/filters_0_16_1.c:273
+#, fuzzy, c-format
+msgid ""
+"Error during savegame filtering (%s:%s): Tux 'HaveBeenToLevel' attribute was not found.\n"
+"The savegame seems to be corrupted."
+msgstr ""
+"Chyba při filtrování uložené hry (%s:%s): Tuxův atribut 'AllMissions' nebyl nalezen.\n"
+"Zdá se, že je uložená hra poškozená."
+
+#: src/savegame/filters_0_16_1.c:306
+#, fuzzy, c-format
+msgid ""
+"Error during savegame filtering (%s:%s): Malformed item type string in Tux struct.\n"
+"The savegame seems to be corrupted."
+msgstr ""
+"Chyba při filtrování uložené hry (%s:%s): data 'mission_diary_texts' nebyla nalezena.\n"
 "Zdá se, že je uložená hra poškozená."
 
 #~ msgid "Multiplicity: %d\n"

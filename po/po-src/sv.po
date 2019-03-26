@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-02-27 18:11+0100\n"
+"POT-Creation-Date: 2019-03-24 17:21+0100\n"
 "PO-Revision-Date: 2019-01-19 20:11+0000\n"
 "Last-Translator: fluzz <fluzz@gmx.com>\n"
 "Language-Team: Swedish (http://www.transifex.com/arctic-games/freedroid-rpg/language/sv/)\n"
@@ -314,29 +314,37 @@ msgstr "Dag %d %02d:%02d"
 msgid "%s empty, reloading..."
 msgstr "%s tom, laddar om..."
 
-#: src/influ.c:1024 src/menu.c:1105
+#: src/influ.c:804
+msgid "Energy shield disabled due to overheat."
+msgstr ""
+
+#: src/influ.c:818
+msgid "Energy shield disabled due to a risk of overheat."
+msgstr ""
+
+#: src/influ.c:1044 src/menu.c:1105
 msgid "Load Latest"
 msgstr "Ladda Senaste"
 
-#: src/influ.c:1025 src/menu.c:1106
+#: src/influ.c:1045 src/menu.c:1106
 msgid "Load Backup"
 msgstr "Ladda Säkerhetskopia"
 
-#: src/influ.c:1027 src/menu.c:1108 src/lvledit/lvledit_menu.c:964
+#: src/influ.c:1047 src/menu.c:1108 src/lvledit/lvledit_menu.c:964
 msgid "Quit to Main Menu"
 msgstr "Avsluta till Huvudmenyn"
 
-#: src/influ.c:1029
+#: src/influ.c:1049
 msgid "Return to Editor"
 msgstr "Återgå till Redigeraren"
 
-#: src/influ.c:1031 src/menu.c:954 src/menu.c:1111
+#: src/influ.c:1051 src/menu.c:954 src/menu.c:1111
 #: src/lvledit/lvledit_menu.c:965
 msgid "Exit FreedroidRPG"
 msgstr "Avsluta FreedroidRPG"
 
 #. TRANSLATORS: Out of <ammo type>
-#: src/influ.c:1476
+#: src/influ.c:1496
 #, c-format
 msgid "Out of [s]%s[v]!"
 msgstr "Slut på [s]%s[v]!"
@@ -353,7 +361,7 @@ msgstr "Handledning inleds."
 msgid "Starting new game act."
 msgstr ""
 
-#: src/init.c:982
+#: src/init.c:983
 msgid ""
 "You are playing a Release Candidate.\n"
 "Strange bugs may still be present in the game.\n"
@@ -369,11 +377,11 @@ msgstr ""
 "\n"
 "Lycka till!\n"
 
-#: src/init.c:1001 src/init.c:1002
+#: src/init.c:1002 src/init.c:1003
 msgid "Game over.\n"
 msgstr "Game over.\n"
 
-#: src/init.c:1068 src/init.c:1069
+#: src/init.c:1069 src/init.c:1070
 msgid "Game won.\n"
 msgstr "Du har vunnit spelet.\n"
 
@@ -1777,92 +1785,97 @@ msgstr "Du har inte råd med det här föremålet."
 msgid "You cannot teleport here!"
 msgstr "Du kan inte teleportera dig här!"
 
-#: src/skills.c:856
+#: src/skills.c:857
 #, c-format
 msgid "Program revision: %c%d%c "
 msgstr "Programversion: %c%d%c"
 
-#: src/skills.c:865
+#: src/skills.c:866
 #, c-format
 msgid "Heat produced: %c%d%c "
 msgstr "Värmeutveckling: %c%d%c"
 
-#: src/skills.c:867
+#: src/skills.c:868
 #, c-format
 msgid "Cooling: %c%d%c "
 msgstr "Kylning: %c%d%c"
 
-#: src/skills.c:877
+#: src/skills.c:878
 #, c-format
 msgid "Damage: %c%d%c "
 msgstr "Skada: %c%d%c"
 
-#: src/skills.c:879
+#: src/skills.c:880
 #, c-format
 msgid "Damage: %c%d-%d%c "
 msgstr "Skada: %c%d-%d%c"
 
-#: src/skills.c:883
+#: src/skills.c:884
 #, c-format
 msgid "Healing: %c%d%c "
 msgstr "Läkning: %c%d%c"
 
-#: src/skills.c:885
+#: src/skills.c:886
 #, c-format
 msgid "Healing: %c%d-%d%c "
 msgstr "Läkning: %c%d-%d%c"
 
-#: src/skills.c:894
+#: src/skills.c:895
 #, c-format
 msgid "Paralyze"
 msgstr "Paralysera"
 
-#: src/skills.c:896
+#: src/skills.c:897
 #, c-format
 msgid "Slow down"
 msgstr "Sakta ner"
 
-#: src/skills.c:898
+#: src/skills.c:899
 #, c-format
 msgid "Invisible"
 msgstr "Osynlig"
 
-#: src/skills.c:900
+#: src/skills.c:901
 #, c-format
 msgid "Poison"
 msgstr "Brygd"
 
-#: src/skills.c:903
+#: src/skills.c:904
 #, c-format
 msgid "Takeover charges: %c%d%c "
 msgstr "Laddningar: %c%d%c"
 
-#: src/skills.c:905
+#: src/skills.c:906
 #, c-format
 msgid "Escape"
 msgstr "Fly"
 
-#: src/skills.c:907
+#: src/skills.c:908
 #, c-format
 msgid "Passive"
 msgstr "Passiv"
 
-#: src/skills.c:913
+#: src/skills.c:914
 #, c-format
 msgid "Repair items, degrading them a bit"
 msgstr "Reparera föremål, försämrar kvaliteten"
 
-#: src/skills.c:915
+#: src/skills.c:916
 #, c-format
 msgid "Detect enemies"
 msgstr "Upptäck fiender"
 
-#: src/skills.c:917
+#: src/skills.c:918
 #, c-format
 msgid "Lighten area"
 msgstr "Lys upp området"
 
-#: src/skills.c:923
+#: src/skills.c:920
+#, c-format
+msgid "Turn damage into heat"
+msgstr ""
+
+#: src/skills.c:926
 #, c-format
 msgid " for %c%.1f%c seconds"
 msgstr "i %c%.1f%c sekunder"
@@ -1963,6 +1976,10 @@ msgid "invisible"
 msgstr "osynlig"
 
 #: src/text.c:381
+msgid "shielded"
+msgstr ""
+
+#: src/text.c:387
 msgid "scanning"
 msgstr "skannar"
 
@@ -2900,7 +2917,7 @@ msgstr "Wayp."
 msgid "Label"
 msgstr "Etikett"
 
-#: src/savegame/convert.c:180
+#: src/savegame/convert.c:184
 msgid ""
 "The SAVEGAME info can not be decoded.\n"
 "Your savegame is probably corrupted."
@@ -2908,7 +2925,7 @@ msgstr ""
 "SAVEGAME-informationen kunde inte avkodas.\n"
 "Ditt sparade spel är förmodligen skadat."
 
-#: src/savegame/convert.c:198
+#: src/savegame/convert.c:202
 msgid ""
 "Your savegame seems to be a pre-0.16.1 version, but the savegame_version_string can not be found.\n"
 "Your savegame is probably corrupted."
@@ -2916,7 +2933,7 @@ msgstr ""
 "Ditt sparade spel verkar vara en tidigare version än 0.16.1, men savegame_version_string kan inte hittas.\n"
 "Ditt sparade spel är förmodligen skadat."
 
-#: src/savegame/convert.c:217
+#: src/savegame/convert.c:221
 msgid ""
 "Your savegame seems to be a pre-0.16.1 version, but the savegame_version_string can not be decoded.\n"
 "Your savegame is probably corrupted."
@@ -2924,7 +2941,7 @@ msgstr ""
 "Ditt sparade spel verkar vara en tidigare version än 0.16.1, men savegame_version_string kan inte avläsas.\n"
 "Ditt sparade spel är förmodligen skadat."
 
-#: src/savegame/convert.c:321
+#: src/savegame/convert.c:325
 msgid ""
 "-=* Savegame loading *=-\n"
 "\n"
@@ -2938,7 +2955,7 @@ msgstr ""
 "Om du använder en utvecklingsversion är detta normalt.\n"
 "Vi läser in det som det är, men förvänta dig fel eller till och med en krasch."
 
-#: src/savegame/convert.c:328
+#: src/savegame/convert.c:332
 #, c-format
 msgid ""
 "-=* Savegame loading *=-\n"
@@ -2953,7 +2970,7 @@ msgstr ""
 "Dock hittades ingen konverterare.\n"
 "Vi läser in det som det är, men förvänta dig fel eller till och med en krasch."
 
-#: src/savegame/convert.c:336
+#: src/savegame/convert.c:340
 #, c-format
 msgid ""
 "-=* Savegame loading *=-\n"
@@ -2968,7 +2985,7 @@ msgstr ""
 "Vi kan inte garantera att ditt sparade spel fungerar perfekt,\n"
 "Vissa fel, till och med en krasch, kan förekomma."
 
-#: src/savegame/convert.c:348
+#: src/savegame/convert.c:352
 #, c-format
 msgid ""
 "-=* Savegame loading *=-\n"
@@ -3035,6 +3052,33 @@ msgid ""
 "The savegame seems to be corrupted."
 msgstr ""
 "Fel vid filtrering av sparat spel (%s:%s): Attributet Tux 'AllMissions' hittades inte.\n"
+"Detta sparade spel verkar vara skadad."
+
+#: src/savegame/filters_0_16_1.c:262
+#, fuzzy, c-format
+msgid ""
+"Error during savegame filtering (%s:%s): Tux 'Inventory' attribute was not found.\n"
+"The savegame seems to be corrupted."
+msgstr ""
+"Fel vid filtrering av sparat spel (%s:%s): Attributet Tux 'AllMissions' hittades inte.\n"
+"Detta sparade spel verkar vara skadad."
+
+#: src/savegame/filters_0_16_1.c:273
+#, fuzzy, c-format
+msgid ""
+"Error during savegame filtering (%s:%s): Tux 'HaveBeenToLevel' attribute was not found.\n"
+"The savegame seems to be corrupted."
+msgstr ""
+"Fel vid filtrering av sparat spel (%s:%s): Attributet Tux 'AllMissions' hittades inte.\n"
+"Detta sparade spel verkar vara skadad."
+
+#: src/savegame/filters_0_16_1.c:306
+#, fuzzy, c-format
+msgid ""
+"Error during savegame filtering (%s:%s): Malformed item type string in Tux struct.\n"
+"The savegame seems to be corrupted."
+msgstr ""
+"Fel vid filtrering av sparat spel (%s:%s): 'mission_diary_texts' data hittades inte.\n"
 "Detta sparade spel verkar vara skadad."
 
 #~ msgid "Multiplicity: %d\n"

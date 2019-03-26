@@ -5,13 +5,11 @@
 #
 # Translators:
 # Pedro Arana <pedro.arana.matus@gmail.com>, 2019
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: freedroidrpg 0.16+git\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-02-27 18:12+0100\n"
+"POT-Creation-Date: 2019-03-27 09:20+0100\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
 "Last-Translator: Pedro Arana <pedro.arana.matus@gmail.com>, 2019\n"
 "Language-Team: Spanish (https://www.transifex.com/arctic-games/teams/9511/es/)\n"
@@ -590,7 +588,7 @@ msgid "Energy Whip"
 msgstr "Látigo de energía"
 
 #: data/base/item_specs.lua:617
-msgid "An energy whip commonly found at managment from MegaSys facilities. What purpose they serve for is still unknown. Because the real whip is pure energy, it will never break, but it does not stays on the strong side."
+msgid "An energy whip commonly found at management from MegaSys facilities. What purpose they serve for is still unknown. Because the real whip is pure energy, it will never break, but it does not stays on the strong side."
 msgstr ""
 
 #: data/base/item_specs.lua:629
@@ -1056,6 +1054,7 @@ msgstr "Manual de Apagado de Emergencia"
 #: data/base/item_specs.lua:1763 data/base/item_specs.lua:1775
 #: data/base/item_specs.lua:1787 data/base/item_specs.lua:1799
 #: data/base/item_specs.lua:1811 data/base/item_specs.lua:1823
+#: data/base/item_specs.lua:1835
 msgid "Permanently acquire/enhance this program"
 msgstr "Adquirir/Mejorar permanentemente este programa"
 
@@ -1208,666 +1207,680 @@ msgid "Knowing what your enemies are up to is easy with a little signal intellig
 msgstr "Saber que están planeando tus enemigos es fácil con un poco de análisis de señales.  Muestra la localización de tus enemigos en el mapa."
 
 #: data/base/item_specs.lua:1834
+#, fuzzy
+msgid "Source Book of Energy Shield"
+msgstr "Manual de Apagado de Emergencia"
+
+#: data/base/item_specs.lua:1835 data/base/skill_specs.lua:213
+#, fuzzy
+msgid "Energy Shield"
+msgstr "Látigo de energía"
+
+#: data/base/item_specs.lua:1839 data/base/skill_specs.lua:218
+msgid "Creating an energy shield to protect you can be a very useful skill. Every hit that you get will be converted into heat. Beware: This heats up excessively. Equipment can still be damaged by heat. When you overheat, shield will try to automatically turn off to prevent damage to itself. It may provoke extra-heat on this process, so be sure to not let it happen."
+msgstr ""
+
+#: data/base/item_specs.lua:1846
 msgid "Subatomic and Nuclear Science for Dummies, Volume IV"
 msgstr "Estudios Nucleares y Subatómicos para Inexpertos, Volumen IV"
 
-#: data/base/item_specs.lua:1838
+#: data/base/item_specs.lua:1850
 msgid "From the back of the cover: 'Subatomic and Nuclear Science for Dummies, Volume IV is the most popular handbook series for learning nuclear science: Learn to generate enough power to keep you town lit up for a decade! Discover how to really scare neighboring countries! Find out how to make your very own mutant pet!' This obviously important tome of knowledge from before the great assault comes with no warranty whatsoever."
 msgstr ""
 
-#: data/base/item_specs.lua:1845
+#: data/base/item_specs.lua:1857
 msgid "Manual of the Automated Factory"
 msgstr "Manual de la Fabrica Automatizada"
 
-#: data/base/item_specs.lua:1849
+#: data/base/item_specs.lua:1861
 msgid "This book describes the operation and repair of automated factories. Included are common error codes and how to fix them. However, most repairs simply call for liberal application of 'Elbow Grease'."
 msgstr "Este libro detalla la operación y mantenimiento de fabricas automatizadas. Incluye los códigos de error comunes y como repararlos. La mayoría de reparaciones son simplemente la aplicación de grasa de Elbow. "
 
-#: data/base/item_specs.lua:1856
+#: data/base/item_specs.lua:1868
 msgid "Manual of the Extract Bot Parts"
 msgstr "Manual de Reciclado de Bots"
 
-#: data/base/item_specs.lua:1857 data/base/item_specs.lua:1861
+#: data/base/item_specs.lua:1869 data/base/item_specs.lua:1873
 msgid "USE FOR CHEATING ONLY. If you see this ingame, please report the bug."
 msgstr ""
 
-#: data/base/item_specs.lua:1872
+#: data/base/item_specs.lua:1884
 msgid "Strength Pill"
 msgstr "Pildora de fuerza"
 
-#: data/base/item_specs.lua:1873
+#: data/base/item_specs.lua:1885
 msgid "Permanently gain +1 strength"
 msgstr "Gana permanentemente +1 a fuerza"
 
-#: data/base/item_specs.lua:1877
+#: data/base/item_specs.lua:1889
 msgid "These pills permanently raise strength within a person. They work on a nano-technological basis. Consult your physician, the receipt or pharmacy experts for details on intended effects, possible interactions and side effects of this drug."
 msgstr "Comprimido de Nano-tecnologia para incrementar el desempeño fisico. Su venta requiere receta medica. No se administre a menores. No se administre junto con otros medicamentos. Descontinué su uso en caso de presentarse alergias. Puede causar irritación del tracto digestivo. "
 
-#: data/base/item_specs.lua:1884
+#: data/base/item_specs.lua:1896
 msgid "Dexterity Pill"
 msgstr "Pildora de destreza"
 
-#: data/base/item_specs.lua:1885
+#: data/base/item_specs.lua:1897
 msgid "Permanently gain +1 dexterity"
 msgstr "Gana permanentemente +1 a destreza"
 
-#: data/base/item_specs.lua:1889
+#: data/base/item_specs.lua:1901
 msgid "These pills permanently raise dexterity within a person. They work on a nano-technological basis. Consult your physician, the receipt or pharmacy experts for details on intended effects, possible interactions and side effects of this drug."
 msgstr "Comprimido de Nano-tecnologia para incrementar la coordinacion.  Su venta requiere receta medica. No se administre a menores. No se administre junto con otros medicamentos. Descontinué su uso en caso de presentarse alergias. Puede causar irritación del tracto digestivo. "
 
-#: data/base/item_specs.lua:1896
+#: data/base/item_specs.lua:1908
 msgid "Code Pill"
 msgstr "Pildora de codigo"
 
-#: data/base/item_specs.lua:1897
+#: data/base/item_specs.lua:1909
 msgid "Permanently gain +1 cooling"
 msgstr "Gana permanentemente +1 enfriamiento"
 
-#: data/base/item_specs.lua:1901
+#: data/base/item_specs.lua:1913
 msgid "Dude! This fab food will totally bump up your code skills, man! A real blast. Scarf these down to *see* the code."
 msgstr "Píldora roja. Te mantendra en el pais de las maravillas y veras que tan profundo es la madriguera del conejo. Veras el codigo. Seras el elegido."
 
-#: data/base/item_specs.lua:1908
+#: data/base/item_specs.lua:1920
 msgid "Brain Enlargement Pills Antidote"
 msgstr "Antidoto contra \"Píldoras de crecimiento cerebral\""
 
-#: data/base/item_specs.lua:1912
+#: data/base/item_specs.lua:1924
 msgid "These pills can reverse the harmful effects of the 'brain enlargement pills' that are publicly sold via the Internet. The planet-wide guild of medics has recommended not to respond to these adverts at all, while attempts to entirely ban the distribution of those pills were never completely successful."
 msgstr ""
 
-#: data/base/item_specs.lua:1919
+#: data/base/item_specs.lua:1931
 msgid "Brain Enlargement Pill"
 msgstr "Píldora de crecimiento cerebral"
 
-#: data/base/item_specs.lua:1920
+#: data/base/item_specs.lua:1932
 msgid "Gain fast acting cancer"
 msgstr "Gana un cáncer maligno de distribución rápida."
 
-#: data/base/item_specs.lua:1925
+#: data/base/item_specs.lua:1937
 #, no-c-format
 msgid "Doctors all over the planet have tried to suppress the amazing breakthrough which has brought increased alertness and concentration that comes with a larger brain. They are synthesized using cutting edge technology and 100% natural herbal ingredients from a secret five thousand-year-old traditional holistic recipe. Get yours direct from our online Canadian ph4rm4cy!!! 100% satisfaction guaranteed!!!"
 msgstr ""
 
-#: data/base/item_specs.lua:1932
+#: data/base/item_specs.lua:1944
 msgid "Diet Supplement"
 msgstr "Suplemento dietético "
 
-#: data/base/item_specs.lua:1933 data/base/item_specs.lua:1945
-#: data/base/item_specs.lua:1957
+#: data/base/item_specs.lua:1945 data/base/item_specs.lua:1957
+#: data/base/item_specs.lua:1969
 msgid "Recover Health"
 msgstr "Recobra Salud"
 
-#: data/base/item_specs.lua:1937
+#: data/base/item_specs.lua:1949
 msgid "Only proper vitamin and mineral intake can keep you healthy during the apocalypse. This can cure a cold."
 msgstr "\"Provee el 50% de requerimientos de vitaminas y minerales\". Te mantendra sano durante el apocalipsis. Incluso puede que cure el resfriado."
 
-#: data/base/item_specs.lua:1944
+#: data/base/item_specs.lua:1956
 msgid "Antibiotic"
 msgstr "Antibiotico"
 
-#: data/base/item_specs.lua:1949
+#: data/base/item_specs.lua:1961
 msgid "Truly wonderful things can be extracted from molds. This can cure lethal food poisoning. Wish you had that in your last Nethack game, eh?"
 msgstr "Una de las maravillosas cosas que se pueden extraer del moho. Este puede curar el envenenamiento por comida."
 
-#: data/base/item_specs.lua:1956
+#: data/base/item_specs.lua:1968
 msgid "Doc-in-a-can"
 msgstr "Doctor enbotellado"
 
-#: data/base/item_specs.lua:1961
+#: data/base/item_specs.lua:1973
 msgid "This is a drink filled with nanobots designed to heal any damage that they notice inside you. It can cure decapitation. Most of the time."
 msgstr "No te dejes engañar por la ilustración de la botella. Esta bebida esta llena de nanobots diseñados para curar y reparar cualquier daño que noten dentro de ti. Pueden reparar incluso la decapitación."
 
-#: data/base/item_specs.lua:1968
+#: data/base/item_specs.lua:1980
 msgid "Bottled Ice"
 msgstr "Hielo embotellado"
 
-#: data/base/item_specs.lua:1969 data/base/item_specs.lua:1981
-#: data/base/item_specs.lua:3075
+#: data/base/item_specs.lua:1981 data/base/item_specs.lua:1993
+#: data/base/item_specs.lua:3087
 msgid "Cooling aid"
 msgstr "Enfriamiento Auxiliar "
 
-#: data/base/item_specs.lua:1973
+#: data/base/item_specs.lua:1985
 msgid "This bottle is filled with ice. It can keep you cool during a warm summer day."
 msgstr "Puede mantenerte fresco en un calido dia de verano."
 
-#: data/base/item_specs.lua:1980
+#: data/base/item_specs.lua:1992
 msgid "Industrial Coolant"
 msgstr "Refrigerante Industrial"
 
-#: data/base/item_specs.lua:1985
+#: data/base/item_specs.lua:1997
 msgid "Bartenders around the world add this to drinks to get them cold very fast. Plus, the coolant is much cheaper. It can keep you cool inside a nuclear reactor."
 msgstr "Los barman de todo el mundo añaden esto a las bebidas para enfriarlas rápidamente,  ademas de que es bastante barato. Podría mantenerte fresco dentro de un reactor nuclear."
 
-#: data/base/item_specs.lua:1992
+#: data/base/item_specs.lua:2004
 msgid "Liquid Nitrogen"
 msgstr "Nitrogeno liquido"
 
-#: data/base/item_specs.lua:1993
+#: data/base/item_specs.lua:2005
 msgid "Extreme Cooling aid"
 msgstr "Enfriamiento Experimental"
 
-#: data/base/item_specs.lua:1997
+#: data/base/item_specs.lua:2009
 msgid "When you want something frozen solid, this is what you need. It can keep you cool even inside a class M star."
 msgstr "Para cuando necesitas congelar completamente algo. Podria mantenerte fresco incluso dentro de una estrella."
 
-#: data/base/item_specs.lua:2004
+#: data/base/item_specs.lua:2016
 msgid "Barf's Energy Drink"
 msgstr "Bebida energetica"
 
-#: data/base/item_specs.lua:2005
+#: data/base/item_specs.lua:2017
 msgid "Cool down, cure minor wounds."
 msgstr "Disipa calor, Cura heridas leves"
 
-#: data/base/item_specs.lua:2009
+#: data/base/item_specs.lua:2021
 msgid "Warning! These energy drinks contain high doses of caffeine! The average person drops dead after consuming 12 grams of caffeine. One of these bottles contains over double that amount."
 msgstr ""
 "Una de estas te mantendra despierto y con energia. \n"
 "Advertencia: NO para consumo humano: 12 gramos de cafeina pueden causar la muerte por intoxicacion, esta bebida contiene mas del doble. "
 
-#: data/base/item_specs.lua:2016
+#: data/base/item_specs.lua:2028
 msgid "Running Power Capsule"
 msgstr "Capsula de marathon"
 
-#: data/base/item_specs.lua:2017
+#: data/base/item_specs.lua:2029
 msgid "Recover Running Power"
 msgstr "Recobra capacidad de correr"
 
-#: data/base/item_specs.lua:2021
+#: data/base/item_specs.lua:2033
 msgid "These small containers hold purified running strength. Each capsule can be used only once, but many of them can be grouped together like one item in your inventory."
 msgstr "Cada capsula te suficiente energía para mantener el paso de los mejores atletas del mundo. Ilegal en todas las competencias deportivas."
 
-#: data/base/item_specs.lua:2028
+#: data/base/item_specs.lua:2040
 msgid "Strength Capsule"
 msgstr "Capsula de fuerza"
 
-#: data/base/item_specs.lua:2029
+#: data/base/item_specs.lua:2041
 msgid "Temporary Boost to Strength"
 msgstr "Temporalmente incrementa la fuerza"
 
-#: data/base/item_specs.lua:2033
+#: data/base/item_specs.lua:2045
 msgid "These small containers hold purified strength. This item will give a temporary boost to strength. Each capsule can be used only once, but many of them can be grouped together like one item in your inventory."
 msgstr "Incrementa temporalmente la fuerza fisica de la persona. Ilegal en todas las competencias deportivas."
 
-#: data/base/item_specs.lua:2040
+#: data/base/item_specs.lua:2052
 msgid "Dexterity Capsule"
 msgstr "Capsula de destreza"
 
-#: data/base/item_specs.lua:2041
+#: data/base/item_specs.lua:2053
 msgid "Temporary Boost to Dexterity"
 msgstr "Temporalmente incrementa la destreza"
 
-#: data/base/item_specs.lua:2045
+#: data/base/item_specs.lua:2057
 msgid "These small containers hold purified dexterity. This item will give a temporary bonus to dexterity. Each capsule can be used only once, but many of them can be grouped together like one item in your inventory."
 msgstr "Incrementa temporalmente la coordinacion de la persona. Ilegal en todas las competencias deportivas."
 
-#: data/base/item_specs.lua:2056
+#: data/base/item_specs.lua:2068
 msgid "Valuable Circuits"
 msgstr "Circuitos valiosos"
 
-#: data/base/item_specs.lua:2060
+#: data/base/item_specs.lua:2072
 msgid "The new monetary standard of the world. With the collapse of the banking system, the precious metals in bot circuitry are now de facto hard cash. A bit difficult to get, though, as the bots are not likely to just hand it over..."
 msgstr ""
 
-#: data/base/item_specs.lua:2067
+#: data/base/item_specs.lua:2079
 msgid "Anti-grav Pod for Droids"
 msgstr "Dispositivo anti-gravedad para robots"
 
-#: data/base/item_specs.lua:2071
+#: data/base/item_specs.lua:2083
 msgid "The bots use this to hover around."
 msgstr "los robots usan esto para flotar."
 
-#: data/base/item_specs.lua:2078
+#: data/base/item_specs.lua:2090
 msgid "Dixon's Toolbox"
 msgstr "Caja de herramientas"
 
-#: data/base/item_specs.lua:2082
+#: data/base/item_specs.lua:2094
 msgid "This is a teleporter service toolbox. It's complete and orderly, though a few dents on the outside give proof of frequent use. 'C. Dixon' is carved into the outside with fine print."
 msgstr "Se trata de una caja de herramientas para reparar teletransportadores. Esta completa y bien ordenada, aunque algunas abolladuras revelan un uso frecuente. Tiene unas letras pequeñas grabadas en el exterior: 'C. Dixon'"
 
-#: data/base/item_specs.lua:2089
+#: data/base/item_specs.lua:2101
 msgid "Toolbox"
 msgstr "Caja de Herramientas"
 
-#: data/base/item_specs.lua:2093
+#: data/base/item_specs.lua:2105
 msgid "This is a regular toolbox. It's complete and orderly, though a few dents on the outside give proof of frequent use."
 msgstr "Es una caja de herramientas normal. Esta bien ordenada, vez algunos golpes en la caja, lo cual da fe de su uso frecuente."
 
-#: data/base/item_specs.lua:2100
+#: data/base/item_specs.lua:2112
 msgid "Entropy Inverter"
 msgstr "Inversor de entropia"
 
-#: data/base/item_specs.lua:2104 data/base/item_specs.lua:2115
-#: data/base/item_specs.lua:2126 data/base/item_specs.lua:2137
-#: data/base/item_specs.lua:2148
+#: data/base/item_specs.lua:2116 data/base/item_specs.lua:2127
+#: data/base/item_specs.lua:2138 data/base/item_specs.lua:2149
+#: data/base/item_specs.lua:2160
 msgid "This is an standard part within many robot types."
 msgstr "Parte comun de varios tipos de robots"
 
-#: data/base/item_specs.lua:2111
+#: data/base/item_specs.lua:2123
 msgid "Plasma Transistor"
 msgstr "Tansistor de plasma"
 
-#: data/base/item_specs.lua:2122
+#: data/base/item_specs.lua:2134
 msgid "Superconducting Relay Unit"
 msgstr "Switch relay de superconductores"
 
-#: data/base/item_specs.lua:2133
+#: data/base/item_specs.lua:2145
 msgid "Antimatter-Matter Converter"
 msgstr "Convertidor Antimateria-materia"
 
-#: data/base/item_specs.lua:2144
+#: data/base/item_specs.lua:2156
 msgid "Tachyon Condensator"
 msgstr "Condensador de tachiones"
 
-#: data/base/item_specs.lua:2155
+#: data/base/item_specs.lua:2167
 msgid "Desk Lamp"
 msgstr "Lampara de escritorio"
 
-#: data/base/item_specs.lua:2159
+#: data/base/item_specs.lua:2171
 msgid "What would modern science be without this important item?"
 msgstr "¿Que seria de la ciencia moderna sin este importante objeto?"
 
-#: data/base/item_specs.lua:2166
+#: data/base/item_specs.lua:2178
 msgid "Red Dilithium Crystal"
 msgstr "Cristal de Dilithium rojo"
 
-#: data/base/item_specs.lua:2170
+#: data/base/item_specs.lua:2182
 msgid "These dilithium crystals are used as an energy source in many modern electricity or heat based devices. Energy is extracted from the crystal by making use of the ordering of the crystal molecules. This principle has allowed us to build devices that consume a lot of energy, but do not need to be connected to a power line."
 msgstr "Estos cristales son usados como una fuente de energia en muchos dispositivos modernos. La energia es extraida del cristal haciendo uso de el ordenamiento natural de las moleculas del cristal. Este principio ha permitido crear dispositivos que consumen grandes cantidades de energia y que no necesitan estar conectados a la red electrica."
 
-#: data/base/item_specs.lua:2177
+#: data/base/item_specs.lua:2189
 msgid "Map Maker"
 msgstr "Generador de Mapas"
 
-#: data/base/item_specs.lua:2178
+#: data/base/item_specs.lua:2190
 msgid "To implant the automap device"
 msgstr "Para implantar el dispositivo de automapa"
 
-#: data/base/item_specs.lua:2182
+#: data/base/item_specs.lua:2194
 msgid "This small device automatically collects data about the area within a range of 7 times 7 meters and draws a small-scale plan of the immediate surroundings. Because of its very tiny display, it needs to be held closely to the eye, and the image will then be projected directly into the eyeball of the user. Still, the collected map data will be split up by the device into several sectors for convenient viewing."
 msgstr "Recoge datos en un rango de 7 por 7 metros y dibuja un pequeño mapa del area. Necesita ser usado directamente sobre el globo ocular del usuario. Divide el mapa en sectores para facilitar la comprensión "
 
-#: data/base/item_specs.lua:2189
+#: data/base/item_specs.lua:2201
 msgid "Light Enhancer? to be included in the future..."
 msgstr "Incrementador de luz? sera incluido en el futuro"
 
-#: data/base/item_specs.lua:2190 data/base/item_specs.lua:2194
+#: data/base/item_specs.lua:2202 data/base/item_specs.lua:2206
 msgid "See better in the dark."
 msgstr "Ver mejor en la oscuridad"
 
-#: data/base/item_specs.lua:2201
+#: data/base/item_specs.lua:2213
 msgid "Fork"
 msgstr "Tenedor"
 
-#: data/base/item_specs.lua:2214 data/base/item_specs.lua:2226
-#: data/base/item_specs.lua:2237 data/base/item_specs.lua:2248
+#: data/base/item_specs.lua:2226 data/base/item_specs.lua:2238
+#: data/base/item_specs.lua:2249 data/base/item_specs.lua:2260
 msgid "This item is part of the 'Self Cleaning Kitchen' (SCK) project from before the Great Assault. All of the items in the SCK project have an inner mechanism that will clean the object automatically if left alone for a given time. It comes with its own power supply, and has a supposed duration of 200 years."
 msgstr "Este artículo es parte del proyecto  \"Cocina de Limpieza Automatica\" (CLA)  de antes de la Gran Asalto. Todos los elementos del proyecto CLA tienen un mecanismo interno que limpia el objeto automáticamente si no se usa durante un tiempo determinado. Viene con su propia fuente de alimentación, y tiene una duración teorica de 200 años."
 
-#: data/base/item_specs.lua:2222
+#: data/base/item_specs.lua:2234
 msgid "Plate"
 msgstr "Plato"
 
-#: data/base/item_specs.lua:2233
+#: data/base/item_specs.lua:2245
 msgid "Mug"
 msgstr "Taza"
 
-#: data/base/item_specs.lua:2244
+#: data/base/item_specs.lua:2256
 msgid "Cup"
 msgstr "Taza"
 
-#: data/base/item_specs.lua:2255
+#: data/base/item_specs.lua:2267
 msgid "Teleporter Homing Beacon"
 msgstr "Control para teletransportación "
 
-#: data/base/item_specs.lua:2256
+#: data/base/item_specs.lua:2268
 msgid "Teleports you elsewhere"
 msgstr "Te teletransporta a otro lugar"
 
-#: data/base/item_specs.lua:2260
+#: data/base/item_specs.lua:2272
 msgid "This device sends a signal to a nearby teleporter requesting a transport, and then helps with locking on and boosting the signal to ensure the teleportation attempt is successful. The battery inside is sufficient for one use *only* and the device becomes useless afterwards. At least, most people don't try to use them twice... and those few who do usually end up with parts of their body missing or attached in the wrong place. Note: Multiple of these may be grouped together in the inventory."
 msgstr "Este dispositivo envía una señal a un teletransportador cercano para solicitar transporte de emergencia, ademas ayuda con la localización y fortalecimiento de la señal para garantizar el correcto intento de teletransporte. La batería interior es suficiente para un solo uso. No se use mas de una vez:existe el riesgo de que la teletransportacion sea solamente parcial, dividiendo el cuerpo en varias partes."
 
-#: data/base/item_specs.lua:2267
+#: data/base/item_specs.lua:2279
 msgid "Data Cube"
 msgstr "Cubo de datos"
 
-#: data/base/item_specs.lua:2271
+#: data/base/item_specs.lua:2283
 msgid "This was the most common form of portable information storage used on Earth until the Great Assault, its three-dimensional memory capable of storing up to 2 terabytes and compatible with most of the hardware on the planet."
 msgstr "Este es el formato mas comun de transporte y almacenamiento de datos antes del gran asalto. Su memoria tridimensional es capaz de almacenar hasta 2 terabytes y es compatible con la mayoria del hardware en el planeta."
 
-#: data/base/item_specs.lua:2278
+#: data/base/item_specs.lua:2290
 msgid "Kevin's Data Cube"
 msgstr "Cubo de datos"
 
-#: data/base/item_specs.lua:2282
+#: data/base/item_specs.lua:2294
 msgid "This data cube contains confidential government data on the installations around the town. Kevin hopes that when the data is evaluated properly, a way out of the current crisis might be found. However, the amount of data is so vast, it can only be evaluated properly using a large cluster of computers. The Red Guard base is said to store an infrastructure suitable to this purpose."
 msgstr "Kevin te dio este cubo de datos, contiene información confidencial acerca de las diferentes instalaciones gubernamentales en los alrededores de el pueblo. Esta encriptado y necesita un cluster de computadores para ser analizado. Al parecer la base de la guardia roja tiene la infraestructura necesaria para desencriptarlo."
 
-#: data/base/item_specs.lua:2289
+#: data/base/item_specs.lua:2301
 msgid "Pandora's Cube"
 msgstr "Cubo de pandora"
 
-#: data/base/item_specs.lua:2293
+#: data/base/item_specs.lua:2305
 msgid "This is heavy. Cannot the end of the world come in a smaller package? It would be a great time for Duncan to explain a few things..."
 msgstr "Es bastante pesado. ¿por que el fin del mundo como lo conocemos no puede venir en un paquete mas ligero? Es un gran momento para pedirle explicaciones a Duncan"
 
-#: data/base/item_specs.lua:2300
+#: data/base/item_specs.lua:2312
 msgid "Rubber Duck"
 msgstr "Patito de goma"
 
-#: data/base/item_specs.lua:2304
+#: data/base/item_specs.lua:2316
 msgid "It appears that humans enjoy bathing with squeaky little pieces of plastic shaped like waterfowl. As a penguinoid, you should probably be disturbed, but you have to admit this thing is actually quite adorable."
 msgstr "Tienes que admitir que es adorable, aunque como linarian te parece rara la constumbre humana de bañarse con pequeños objetos de plastico con forma de aves."
 
-#: data/base/item_specs.lua:2311
+#: data/base/item_specs.lua:2323
 msgid "Empty Picnic Basket"
 msgstr "Canasta de picnic vacía"
 
-#: data/base/item_specs.lua:2315
+#: data/base/item_specs.lua:2327
 msgid "This is the latest in 'Dr. How?'-brand picnic basket technology! With patented food-preserving time-dilation, space-bending miniaturization, and anti-gravity, your food stays fresh and your drinks stay cold in a small light-as-a-feather package! Now you can picnic the old fashioned way! Batteries sold separately."
 msgstr ""
 
-#: data/base/item_specs.lua:2322
+#: data/base/item_specs.lua:2334
 msgid "Lunch in a Picnic Basket"
 msgstr "Almuerzo en una canasta de picnic"
 
-#: data/base/item_specs.lua:2326
+#: data/base/item_specs.lua:2338
 msgid "This is a 'Dr. How?'-brand picnic basket stuffed full of enough food and drinks to feed a dozen people. With 'Dr. How?'-time dilation, the food keeps oven-fresh, and the drinks stay ice-cold."
 msgstr ""
 
-#: data/base/item_specs.lua:2333
+#: data/base/item_specs.lua:2345
 msgid "MS Stock Certificate"
 msgstr "Certificado accionario de MS"
 
-#: data/base/item_specs.lua:2337
+#: data/base/item_specs.lua:2349
 msgid "This is a Stock Certificate for transfer of ownership of five hundred sixty-seven million shares of MegaSystems from William Gapes to bearer."
 msgstr "Este certificado accionario representa la propiedad de quinientos sesenta y siete millones de acciones de MegaSystems de William Gapes al portador."
 
-#: data/base/item_specs.lua:2344
+#: data/base/item_specs.lua:2356
 msgid "Elbow Grease Can"
 msgstr "Lata de grasa Elbow"
 
-#: data/base/item_specs.lua:2348
+#: data/base/item_specs.lua:2360
 msgid "A can filled with elbow grease. Hard to make it if you are not a strong man."
 msgstr "Una lata de grasa Elbow. ¿Como matas un Elbow para sacarle la grasa?"
 
-#: data/base/item_specs.lua:2356
+#: data/base/item_specs.lua:2368
 msgid "MS EPROM Programming Interface"
 msgstr ""
 
-#: data/base/item_specs.lua:2360
+#: data/base/item_specs.lua:2372
 msgid "Used by developers at MegaSys to load firmware onto newly assembled droids."
 msgstr ""
 
-#: data/base/item_specs.lua:2371
+#: data/base/item_specs.lua:2383
 msgid "Linarian Power Crank"
 msgstr ""
 
-#: data/base/item_specs.lua:2375
+#: data/base/item_specs.lua:2387
 msgid "This mechanical crank, product of the highly advanced and sophisticated technological genius of the Linarian race, performs elaborate operations on energy and directs it towards a biochemical structure. For short, it buffs up your muscles. That's good."
 msgstr ""
 
-#: data/base/item_specs.lua:2382
+#: data/base/item_specs.lua:2394
 msgid "Tungsten Spikes"
 msgstr "Púas de Tungsteno"
 
-#: data/base/item_specs.lua:2386
+#: data/base/item_specs.lua:2398
 msgid "This polycarbonate surface is lined with hard tungsten spikes, and can be installed into a mechanical socket on most melee weapons, offering a simple and affordable solution to increasing damage dealt. Handle only with gloves. Do not attempt to use as footwear. Do not attempt to eat."
 msgstr ""
 
-#: data/base/item_specs.lua:2393
+#: data/base/item_specs.lua:2405
 msgid "Tinfoil Patch"
 msgstr "Parche de papel estaño"
 
-#: data/base/item_specs.lua:2397
+#: data/base/item_specs.lua:2409
 msgid "When attached to your armor, this patch of tinfoil allows you to stay cooler by reducing the amount of electromagnetic radiation that your body absorbs."
 msgstr "Cuando es añadida a tu armadura, este parche de aluminio te permite permanecer fresco, al reducir la cantidad de radiación electromagnética que tu cuerpo absorve "
 
-#: data/base/item_specs.lua:2404
+#: data/base/item_specs.lua:2416
 msgid "Laser Sight"
 msgstr "Mira láser"
 
-#: data/base/item_specs.lua:2408
+#: data/base/item_specs.lua:2420
 msgid "A miniaturized laser powered by a nuclear battery. When attached parallel to the barrel of a gun, it makes a little red dot on the target and helps with aiming."
 msgstr "Un láser miniaturizado con su propia batería nuclear. Al añadirlo a tu arma en paralelo con el cañón te permite proyectar un pequeño punto rojo para ayudarte a apuntar."
 
-#: data/base/item_specs.lua:2415
+#: data/base/item_specs.lua:2427
 msgid "Exoskeletal Joint"
 msgstr "Unión de exoesqueleto"
 
-#: data/base/item_specs.lua:2419
+#: data/base/item_specs.lua:2431
 msgid "This electromechanical joint helps you to perform physically demanding tasks more easily by amplifying the movements of your body."
 msgstr "Esta articulacion electromecanica te ayuda a realizar esfuerzos físicos al incrementar la fuerza de los movimientos de tu cuerpo"
 
-#: data/base/item_specs.lua:2426
+#: data/base/item_specs.lua:2438
 msgid "Heatsink"
 msgstr "Disipador de calor"
 
-#: data/base/item_specs.lua:2430
+#: data/base/item_specs.lua:2442
 msgid "A simple heatsink add-on that keeps you cooler by dissipating heat from your armor."
 msgstr "Un simple disipador que te ayuda a mantenerte fresco"
 
-#: data/base/item_specs.lua:2437
+#: data/base/item_specs.lua:2449
 msgid "Peltier Element"
 msgstr "Elemento Peltier"
 
-#: data/base/item_specs.lua:2441
+#: data/base/item_specs.lua:2453
 msgid "A thermoelectric device that increases your cooling rate."
 msgstr "Dispositivo thermoelectrico que incrementa tu tasa de enfriamiento"
 
-#: data/base/item_specs.lua:2448
+#: data/base/item_specs.lua:2460
 msgid "Steel Mesh"
 msgstr "Malla de acero "
 
-#: data/base/item_specs.lua:2452
+#: data/base/item_specs.lua:2464
 msgid "A sturdy metal mesh that provides an extra protective layer to your armor."
 msgstr "Malla que provee proteccion extra a tu armadura"
 
-#: data/base/item_specs.lua:2459
+#: data/base/item_specs.lua:2471
 msgid "Shock Discharger"
 msgstr "Disipador de Sobrecarga"
 
-#: data/base/item_specs.lua:2463
+#: data/base/item_specs.lua:2475
 msgid "When installed to a melee weapon, this nifty device gives a small electric shock to enemies you hit."
 msgstr "Cuando lo instalas en una arma cuerpo a cuerpo, este dispositivo da un pequeño choque electrico a los enemigos que golpeas"
 
-#: data/base/item_specs.lua:2470
+#: data/base/item_specs.lua:2482
 msgid "Silencer"
 msgstr "Silenciador"
 
-#: data/base/item_specs.lua:2474
+#: data/base/item_specs.lua:2486
 msgid "This new generation silencer will not only allow you to catch your enemies by surprise, but will also help you to do more damage in ranged combat."
 msgstr ""
 
-#: data/base/item_specs.lua:2482
+#: data/base/item_specs.lua:2494
 msgid "Coprocessor"
 msgstr "Coprocesador"
 
-#: data/base/item_specs.lua:2486
+#: data/base/item_specs.lua:2498
 msgid "By speeding up your computations, this chip helps you to excel in many activities."
 msgstr "Al aumentar la velocidad de tus calculos, este chip te ayuda a sobresalir en muchas actividades."
 
-#: data/base/item_specs.lua:2493
+#: data/base/item_specs.lua:2505
 msgid "Pedometer"
 msgstr "Pedometro"
 
-#: data/base/item_specs.lua:2497
+#: data/base/item_specs.lua:2509
 msgid "A device that helps you to move dexterously by giving feedback on your foot movement."
 msgstr "Un dispositivo que te ayuda a moverte agilmente al darte retroalimentacion acerca de el movimiento de tus pies"
 
-#: data/base/item_specs.lua:2504
+#: data/base/item_specs.lua:2516
 msgid "Foot Warmers"
 msgstr "Calentadores para pies"
 
-#: data/base/item_specs.lua:2508
+#: data/base/item_specs.lua:2520
 msgid "This pair of electric fuzzy foot warmers would make even a penguin warm and comfortable in any shoes, and help maintain a healthy body temperature, thus preventing colds and making you look cool. At least, that's what the advertisement says. And ads don't lie, do they?"
 msgstr ""
 
-#: data/base/item_specs.lua:2515
+#: data/base/item_specs.lua:2527
 msgid "Circuit Jammer"
 msgstr "Embotador de circuitos"
 
-#: data/base/item_specs.lua:2519
+#: data/base/item_specs.lua:2531
 msgid "This item improves your melee weapon by blasting the enemies you hit with an electromagnetic pulse. The pulse is powerful enough to temporarily shut down the circuits of the attacked bot."
 msgstr "Este item mejora tu arma de cuerpo a cuerpo al liberar un pulso electromagnetico lo suficientemente potente para deshabilitar temporalmente los circuitos en el droid"
 
-#: data/base/item_specs.lua:2526
+#: data/base/item_specs.lua:2538
 msgid "Sensor Disruptor"
 msgstr "Disruptor de sensores"
 
-#: data/base/item_specs.lua:2530
+#: data/base/item_specs.lua:2542
 msgid "When attached to a melee weapon, this item induces errors to the sensors of the bots you attack, causing them to slow down momentarily."
 msgstr "Hace que tu arma de cuerpo a cuerpo introduzca errores en los sensores de los droids golpeados, relantizandolos momentaneamente"
 
-#: data/base/item_specs.lua:2537
+#: data/base/item_specs.lua:2549
 msgid "Headlamp"
 msgstr "Lampara de casco"
 
-#: data/base/item_specs.lua:2541
+#: data/base/item_specs.lua:2553
 msgid "When fastened to your helmet, this lamp allows you to see better in dark environments."
 msgstr "Te permite ver mejor en entornos oscuros"
 
-#: data/base/item_specs.lua:2548
+#: data/base/item_specs.lua:2560
 msgid "Brain Stimulator"
 msgstr "Simulador de cerebro"
 
-#: data/base/item_specs.lua:2552
+#: data/base/item_specs.lua:2564
 msgid "A chip that allows faster learning by connecting directly to the brain via a neural interface (colloquially referred to as a 'weird swim cap with little thingies on it') and providing additional feedback on various actions."
 msgstr ""
 
-#: data/base/item_specs.lua:2563
+#: data/base/item_specs.lua:2575
 msgid "NPC Hand to Hand Weapon"
 msgstr "Arma de combate cuerpo a cuerpo de los PNJ"
 
-#: data/base/item_specs.lua:2576
+#: data/base/item_specs.lua:2588
 msgid "Bot use only"
 msgstr "Uso solamente para Bots"
 
-#: data/base/item_specs.lua:2584
+#: data/base/item_specs.lua:2596
 msgid "Droid 123 Weak Robotic Arm"
 msgstr "Droid 123 Brazo robótico simple"
 
-#: data/base/item_specs.lua:2597 data/base/item_specs.lua:2621
-#: data/base/item_specs.lua:2642 data/base/item_specs.lua:2666
-#: data/base/item_specs.lua:2687 data/base/item_specs.lua:2708
-#: data/base/item_specs.lua:2729 data/base/item_specs.lua:2750
-#: data/base/item_specs.lua:2774 data/base/item_specs.lua:2795
-#: data/base/item_specs.lua:2816 data/base/item_specs.lua:2837
-#: data/base/item_specs.lua:2858 data/base/item_specs.lua:2879
-#: data/base/item_specs.lua:2903 data/base/item_specs.lua:2928
-#: data/base/item_specs.lua:2953
+#: data/base/item_specs.lua:2609 data/base/item_specs.lua:2633
+#: data/base/item_specs.lua:2654 data/base/item_specs.lua:2678
+#: data/base/item_specs.lua:2699 data/base/item_specs.lua:2720
+#: data/base/item_specs.lua:2741 data/base/item_specs.lua:2762
+#: data/base/item_specs.lua:2786 data/base/item_specs.lua:2807
+#: data/base/item_specs.lua:2828 data/base/item_specs.lua:2849
+#: data/base/item_specs.lua:2870 data/base/item_specs.lua:2891
+#: data/base/item_specs.lua:2915 data/base/item_specs.lua:2940
+#: data/base/item_specs.lua:2965
 msgid "Droid weaponry"
 msgstr "Armas de droids"
 
-#: data/base/item_specs.lua:2605
+#: data/base/item_specs.lua:2617
 msgid "Droid 139 Plasma Trash Vaporiser"
 msgstr "Droid 139 Vaporizador de plasma para desechos"
 
-#: data/base/item_specs.lua:2629
+#: data/base/item_specs.lua:2641
 msgid "Droid 247 Robotic Arm"
 msgstr "Droid 247 Brazo robótico industrial"
 
-#: data/base/item_specs.lua:2650
+#: data/base/item_specs.lua:2662
 msgid "Droid 249 Pulse Laser Welder"
 msgstr "Droid 249 Soldador a pulsos laser"
 
-#: data/base/item_specs.lua:2674
+#: data/base/item_specs.lua:2686
 msgid "Droid 296 Plasmabeam Cutter"
 msgstr "Droid 296 Cortador por chorro de plasma"
 
-#: data/base/item_specs.lua:2695
+#: data/base/item_specs.lua:2707
 msgid "Droid 302 Overcharged Barcode Reader"
 msgstr "Droid 302 Lector de codigos de barra: Laser modificado"
 
-#: data/base/item_specs.lua:2716
+#: data/base/item_specs.lua:2728
 msgid "Droid 329 Dual Overcharged Barcode Reader"
 msgstr "Droid 329 Lector doble de codigos de barra:Laser modificado"
 
-#: data/base/item_specs.lua:2737
+#: data/base/item_specs.lua:2749
 msgid "Droid 420 Laser Scalpel"
 msgstr "Droid 420 Bisturi láser"
 
-#: data/base/item_specs.lua:2758
+#: data/base/item_specs.lua:2770
 msgid "Droid 476 Small Laser"
 msgstr "Droid 476 Láser pequeño"
 
-#: data/base/item_specs.lua:2782
+#: data/base/item_specs.lua:2794
 msgid "Droid 493 Power Hammer"
 msgstr "Droid 493 Martillo robótico"
 
-#: data/base/item_specs.lua:2803
+#: data/base/item_specs.lua:2815
 msgid "Droid 516 Robotic Fist"
 msgstr "Droid 516 Puño robótico"
 
-#: data/base/item_specs.lua:2824
+#: data/base/item_specs.lua:2836
 msgid "Droid 543 Tree Harvester"
 msgstr "Droid 543 Talador de arboles"
 
-#: data/base/item_specs.lua:2845
+#: data/base/item_specs.lua:2857
 msgid "Droid 571 Robotic Fist"
 msgstr "Droid 571 Puño Robotico"
 
-#: data/base/item_specs.lua:2866
+#: data/base/item_specs.lua:2878
 msgid "Droid 598 Robotic Fist"
 msgstr "Droid 598 Puño Robotico"
 
-#: data/base/item_specs.lua:2887
+#: data/base/item_specs.lua:2899
 msgid "Droid 7xx Tux Seeking Missiles"
 msgstr "Droid 7xx Misil rastreador de Tux"
 
-#: data/base/item_specs.lua:2911
+#: data/base/item_specs.lua:2923
 msgid "Droid Advanced Twin Laser"
 msgstr "Droid mejorado con doble láser"
 
-#: data/base/item_specs.lua:2936
+#: data/base/item_specs.lua:2948
 msgid "Droid 883 Exterminator"
 msgstr "Droid 883 Exterminador"
 
-#: data/base/item_specs.lua:2961
+#: data/base/item_specs.lua:2973
 msgid "Autogun Laser Pistol"
 msgstr "Pistola láser automática"
 
-#: data/base/item_specs.lua:2977
+#: data/base/item_specs.lua:2989
 msgid "This is the laser weapon of the autogun. If you see this item whilst normal gameplay, please make a bugreport."
 msgstr "Esta es la arma laser de las torretas defensivas. Si ves esta descripción durante juego normal, por favor llena un reporte de bug."
 
-#: data/base/item_specs.lua:2989
+#: data/base/item_specs.lua:3001
 msgid "PC LOAD LETTER"
 msgstr "PC LOAD LETTER"
 
-#: data/base/item_specs.lua:2993
+#: data/base/item_specs.lua:3005
 msgid "An envelop saying 'PC LOAD LETTERS'. I have no idea what that means..."
 msgstr "Un sobre que dice 'PC LOAD LETTERS'. Ni idea de que signifique ..."
 
-#: data/base/item_specs.lua:3000
+#: data/base/item_specs.lua:3012
 msgid "Arcane Lore"
 msgstr ""
 
-#: data/base/item_specs.lua:3004
+#: data/base/item_specs.lua:3016
 msgid "I've bought an anti-hack software, so I could try to hack it! ...But what, exactly, is the 'Arcane Lore'?"
 msgstr ""
 
-#: data/base/item_specs.lua:3011
+#: data/base/item_specs.lua:3023
 msgid "PGP key"
 msgstr ""
 
-#: data/base/item_specs.lua:3015
+#: data/base/item_specs.lua:3027
 msgid "It won't open your house, but it can unlock important encrypted archives."
 msgstr ""
 
-#: data/base/item_specs.lua:3022
+#: data/base/item_specs.lua:3034
 msgid "Cheat Gun"
 msgstr "Arma trucada"
 
-#: data/base/item_specs.lua:3037
+#: data/base/item_specs.lua:3049
 msgid "This item is used by testers. If you find it ingame without using a cheat, please report it as a bug."
 msgstr "Este objeto es usado por los beta testers del juego. Si lo encuentras sin usar un hack, por favor repórtalo como bug."
 
-#: data/base/item_specs.lua:3051
+#: data/base/item_specs.lua:3063
 msgid "Small Tutorial Axe"
 msgstr "Pequeña Hacha de Practica"
 
-#: data/base/item_specs.lua:3065
+#: data/base/item_specs.lua:3077
 msgid ""
 "While this axe was made for splitting wood, with some luck it can damage vital parts of a droid as well.\n"
 "Sell me!\n"
@@ -1877,11 +1890,11 @@ msgstr ""
 "¡Véndeme para obtener credito!\n"
 "Presiona el botón rojo con el tache cuando termines."
 
-#: data/base/item_specs.lua:3074
+#: data/base/item_specs.lua:3086
 msgid "Bottled Tutorial Ice"
 msgstr "Hielo embotellado de practica"
 
-#: data/base/item_specs.lua:3079
+#: data/base/item_specs.lua:3091
 msgid ""
 "This bottle is filled with ice. It can keep you cool during a warm summer day.\n"
 "Buy me!\n"
@@ -2068,81 +2081,81 @@ msgstr ""
 msgid "Light"
 msgstr "Luz"
 
-#: data/base/skill_specs.lua:210
+#: data/base/skill_specs.lua:223
 msgid "Extract bot parts"
 msgstr ""
 
-#: data/base/skill_specs.lua:215
+#: data/base/skill_specs.lua:228
 msgid "With a little knowledge, you can extract some useful parts out of the robots you kill. With each bot there is some hope of a part falling out. This skill is always active even when not selected."
 msgstr ""
 
-#: data/base/skill_specs.lua:220
+#: data/base/skill_specs.lua:233
 msgid "Treasure Hunting"
 msgstr ""
 
-#: data/base/skill_specs.lua:225
+#: data/base/skill_specs.lua:238
 msgid "Upgrading your search algorithms, you may find items more frequently when destroying bots. This skill is always active even when not selected."
 msgstr ""
 
-#: data/base/skill_specs.lua:230
+#: data/base/skill_specs.lua:243
 msgid "Animal Magnetism"
 msgstr ""
 
-#: data/base/skill_specs.lua:235
+#: data/base/skill_specs.lua:248
 msgid "Get in tune with the magnetic fields around you! Grants you half-second extra time per skill level when hacking bots. This skill is always active even when not selected."
 msgstr ""
 
-#: data/base/skill_specs.lua:249
+#: data/base/skill_specs.lua:262
 msgid "Nethack"
 msgstr ""
 
-#: data/base/skill_specs.lua:255
+#: data/base/skill_specs.lua:268
 msgid "NOT IMPLEMENTED YET The open source game called Nethack is one of the world's greatest wasters of time. Machines don't care about it, but humans can get sucked in quite deeply."
 msgstr ""
 
-#: data/base/skill_specs.lua:266
+#: data/base/skill_specs.lua:279
 msgid "Reverse-engineer"
 msgstr ""
 
-#: data/base/skill_specs.lua:270
+#: data/base/skill_specs.lua:283
 msgid "NOT IMPLEMENTED YET There is some dark magic in the art of turning devices or programs inside-out, picking them apart to learn all their secrets and putting them back again."
 msgstr ""
 
-#: data/base/skill_specs.lua:281
+#: data/base/skill_specs.lua:294
 msgid "Ricer CFLAGS"
 msgstr ""
 
-#: data/base/skill_specs.lua:286
+#: data/base/skill_specs.lua:299
 msgid "NOT IMPLEMENTED YET Optimization is the root of all evil. You can gain some temporary speed improvements to your system, but in the end you will likely overheat and cause permanent damage if you are not careful."
 msgstr ""
 
-#: data/base/skill_specs.lua:294
+#: data/base/skill_specs.lua:307
 msgid "Small Plasma grenade"
 msgstr ""
 
-#: data/base/skill_specs.lua:301 data/base/skill_specs.lua:313
-#: data/base/skill_specs.lua:325 data/base/skill_specs.lua:338
-#: data/base/skill_specs.lua:350 data/base/skill_specs.lua:362
+#: data/base/skill_specs.lua:314 data/base/skill_specs.lua:326
+#: data/base/skill_specs.lua:338 data/base/skill_specs.lua:351
+#: data/base/skill_specs.lua:363 data/base/skill_specs.lua:375
 msgid "If you see this in game it is a bug. Please report this to the developers, unless you cheated, in which case you deserve to see this silly nonsense description."
 msgstr ""
 
-#: data/base/skill_specs.lua:307
+#: data/base/skill_specs.lua:320
 msgid "Plasma grenade"
 msgstr ""
 
-#: data/base/skill_specs.lua:319
+#: data/base/skill_specs.lua:332
 msgid "Gas grenade"
 msgstr ""
 
-#: data/base/skill_specs.lua:331
+#: data/base/skill_specs.lua:344
 msgid "Small EMP grenade"
 msgstr ""
 
-#: data/base/skill_specs.lua:344
+#: data/base/skill_specs.lua:357
 msgid "EMP grenade"
 msgstr ""
 
-#: data/base/skill_specs.lua:356
+#: data/base/skill_specs.lua:369
 msgid "Electronic Noise"
 msgstr ""
 
@@ -3786,7 +3799,7 @@ msgid "Skyscrapper Arena"
 msgstr ""
 
 #: data/storyline/act2/events.dat:108
-msgid "You are unable to return. The only way is foward."
+msgid "You are unable to return. The only way is forward."
 msgstr ""
 
 #: data/storyline/act2/events.dat:109
@@ -4045,7 +4058,7 @@ msgid "Search in the Darkness"
 msgstr "Ver mejor en la oscuridad"
 
 #: data/storyline/act2/levels.dat:29946
-msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Managment."
+msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Management."
 msgstr ""
 
 #: data/storyline/act2/levels.dat:29949

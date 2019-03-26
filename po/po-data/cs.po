@@ -5,13 +5,11 @@
 #
 # Translators:
 # zdenek <chmelarz@gmail.com>, 2019
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: freedroidrpg 0.16+git\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-02-27 18:12+0100\n"
+"POT-Creation-Date: 2019-03-27 09:20+0100\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
 "Last-Translator: zdenek <chmelarz@gmail.com>, 2019\n"
 "Language-Team: Czech (https://www.transifex.com/arctic-games/teams/9511/cs/)\n"
@@ -590,7 +588,7 @@ msgid "Energy Whip"
 msgstr "Energetický bič"
 
 #: data/base/item_specs.lua:617
-msgid "An energy whip commonly found at managment from MegaSys facilities. What purpose they serve for is still unknown. Because the real whip is pure energy, it will never break, but it does not stays on the strong side."
+msgid "An energy whip commonly found at management from MegaSys facilities. What purpose they serve for is still unknown. Because the real whip is pure energy, it will never break, but it does not stays on the strong side."
 msgstr ""
 
 #: data/base/item_specs.lua:629
@@ -1058,6 +1056,7 @@ msgstr "Zdrojová kniha Nouzového vypnutí"
 #: data/base/item_specs.lua:1763 data/base/item_specs.lua:1775
 #: data/base/item_specs.lua:1787 data/base/item_specs.lua:1799
 #: data/base/item_specs.lua:1811 data/base/item_specs.lua:1823
+#: data/base/item_specs.lua:1835
 msgid "Permanently acquire/enhance this program"
 msgstr "Trvale získá/zvýší tento program"
 
@@ -1210,664 +1209,678 @@ msgid "Knowing what your enemies are up to is easy with a little signal intellig
 msgstr "Vědět, že jsou tví nepřátelé blízko, je s trochou toho signálového zpravodajství snadné. Zobraz pozice nepřátel na své automapě."
 
 #: data/base/item_specs.lua:1834
+#, fuzzy
+msgid "Source Book of Energy Shield"
+msgstr "Zdrojová kniha Nouzového vypnutí"
+
+#: data/base/item_specs.lua:1835 data/base/skill_specs.lua:213
+#, fuzzy
+msgid "Energy Shield"
+msgstr "Energetický bič"
+
+#: data/base/item_specs.lua:1839 data/base/skill_specs.lua:218
+msgid "Creating an energy shield to protect you can be a very useful skill. Every hit that you get will be converted into heat. Beware: This heats up excessively. Equipment can still be damaged by heat. When you overheat, shield will try to automatically turn off to prevent damage to itself. It may provoke extra-heat on this process, so be sure to not let it happen."
+msgstr ""
+
+#: data/base/item_specs.lua:1846
 msgid "Subatomic and Nuclear Science for Dummies, Volume IV"
 msgstr "Subatomární a jaderná věda pro blbečky, svazek IV"
 
-#: data/base/item_specs.lua:1838
+#: data/base/item_specs.lua:1850
 msgid "From the back of the cover: 'Subatomic and Nuclear Science for Dummies, Volume IV is the most popular handbook series for learning nuclear science: Learn to generate enough power to keep you town lit up for a decade! Discover how to really scare neighboring countries! Find out how to make your very own mutant pet!' This obviously important tome of knowledge from before the great assault comes with no warranty whatsoever."
 msgstr "Ze zadní stránky obalu: \"Subatomární a jaderná věda pro blbečky, svazek IV, je nejpopulárnější příručka pro výuku jaderných věd: Naučte se vygenerovat dostatek energie tak, aby vám město svítilo po dobu deseti let! Podívejte se, jak lze skutečně vyděsit sousední země! Zjistěte, jak vytvořit své vlastní zmutované zvířátko!\" Tato samozřejmě důležitá bichle znalostí z doby před Velkým útokem přichází bez žádné záruky."
 
-#: data/base/item_specs.lua:1845
+#: data/base/item_specs.lua:1857
 msgid "Manual of the Automated Factory"
 msgstr "Manuál automatizované továrny"
 
-#: data/base/item_specs.lua:1849
+#: data/base/item_specs.lua:1861
 msgid "This book describes the operation and repair of automated factories. Included are common error codes and how to fix them. However, most repairs simply call for liberal application of 'Elbow Grease'."
 msgstr "Tato kniha popisuje provoz a opravu automatických továren. Zahrnuty jsou běžné chybové kódy a jak je opravit. Nicméně, většina oprav jednoduše vyzývá k liberální aplikaci \"dřiny v kapsli\"."
 
-#: data/base/item_specs.lua:1856
+#: data/base/item_specs.lua:1868
 msgid "Manual of the Extract Bot Parts"
 msgstr "Manuál extrahování částí robotů"
 
-#: data/base/item_specs.lua:1857 data/base/item_specs.lua:1861
+#: data/base/item_specs.lua:1869 data/base/item_specs.lua:1873
 msgid "USE FOR CHEATING ONLY. If you see this ingame, please report the bug."
 msgstr ""
 
-#: data/base/item_specs.lua:1872
+#: data/base/item_specs.lua:1884
 msgid "Strength Pill"
 msgstr "Pilulka síly"
 
-#: data/base/item_specs.lua:1873
+#: data/base/item_specs.lua:1885
 msgid "Permanently gain +1 strength"
 msgstr "Trvale přidá +1 k síle"
 
-#: data/base/item_specs.lua:1877
+#: data/base/item_specs.lua:1889
 msgid "These pills permanently raise strength within a person. They work on a nano-technological basis. Consult your physician, the receipt or pharmacy experts for details on intended effects, possible interactions and side effects of this drug."
 msgstr "Tyto pilulky trvale zvýší sílu osoby, která je pozře. Pracují na principu nanotechnologie. Konzultuj se svým fyzikem, příbalový leták nebo lékárenským expertem ohledně podrobností o zamýšlených účincích, možných interakcích a nežádoucích účincích tohoto léku."
 
-#: data/base/item_specs.lua:1884
+#: data/base/item_specs.lua:1896
 msgid "Dexterity Pill"
 msgstr "Pilulka obratnosti"
 
-#: data/base/item_specs.lua:1885
+#: data/base/item_specs.lua:1897
 msgid "Permanently gain +1 dexterity"
 msgstr "Trvale přidá +1 k obratnosti"
 
-#: data/base/item_specs.lua:1889
+#: data/base/item_specs.lua:1901
 msgid "These pills permanently raise dexterity within a person. They work on a nano-technological basis. Consult your physician, the receipt or pharmacy experts for details on intended effects, possible interactions and side effects of this drug."
 msgstr "Tyto pilulky trvale zvýší obratnost osoby, která je pozře. Pracují na principu nanotechnologie. Konzultuj se svým fyzikem, příbalový leták nebo lékárenským expertem ohledně podrobností o zamýšlených účincích, možných interakcích a nežádoucích účincích tohoto léku."
 
-#: data/base/item_specs.lua:1896
+#: data/base/item_specs.lua:1908
 msgid "Code Pill"
 msgstr "Pilulka kódu"
 
-#: data/base/item_specs.lua:1897
+#: data/base/item_specs.lua:1909
 msgid "Permanently gain +1 cooling"
 msgstr "Trvale přidá +1 k chlazení"
 
-#: data/base/item_specs.lua:1901
+#: data/base/item_specs.lua:1913
 msgid "Dude! This fab food will totally bump up your code skills, man! A real blast. Scarf these down to *see* the code."
 msgstr "Kámo! Tohle báječný jídlo totálně vyžene tvé programovací schopnosti nahoru, člověče! Skutečný výbuch. Dej si ji, abys *spatřil* kód."
 
-#: data/base/item_specs.lua:1908
+#: data/base/item_specs.lua:1920
 msgid "Brain Enlargement Pills Antidote"
 msgstr "Protijed pilulky zvětšení mozku"
 
-#: data/base/item_specs.lua:1912
+#: data/base/item_specs.lua:1924
 msgid "These pills can reverse the harmful effects of the 'brain enlargement pills' that are publicly sold via the Internet. The planet-wide guild of medics has recommended not to respond to these adverts at all, while attempts to entirely ban the distribution of those pills were never completely successful."
 msgstr "Tyto pilulky umějí zvrátit škodlivé účinky \"pilulek zvětšení mozku\" volně dostupných přes internet. Nejrozšířenější zdravotnický spolek planety doporučil vůbec na tyto nabídky neodpovídat, zatímco snahy zcela zakázat distribuci těchto pilulek nebyly nikdy zcela úspěšné."
 
-#: data/base/item_specs.lua:1919
+#: data/base/item_specs.lua:1931
 msgid "Brain Enlargement Pill"
 msgstr "Pilulka zvětšení mozku"
 
-#: data/base/item_specs.lua:1920
+#: data/base/item_specs.lua:1932
 msgid "Gain fast acting cancer"
 msgstr "Získej rychle úřadující rakovinu"
 
-#: data/base/item_specs.lua:1925
+#: data/base/item_specs.lua:1937
 #, no-c-format
 msgid "Doctors all over the planet have tried to suppress the amazing breakthrough which has brought increased alertness and concentration that comes with a larger brain. They are synthesized using cutting edge technology and 100% natural herbal ingredients from a secret five thousand-year-old traditional holistic recipe. Get yours direct from our online Canadian ph4rm4cy!!! 100% satisfaction guaranteed!!!"
 msgstr "Lékaři na celém světě se snažili potlačit úžasný průlom, který přinesl zvýšenou pozornost a soustředění, jež přichází s větším mozkem. Jsou syntetizovány pomocí nejmodernějších technologií a 100% naturálních rostlinných ingrediencí z tajné pět tisíc let staré tradiční holistické receptury. Získej své pilulky přímo z naší kanadské on-line l3k4rny!!! 100% spokojenost zaručena!!!"
 
-#: data/base/item_specs.lua:1932
+#: data/base/item_specs.lua:1944
 msgid "Diet Supplement"
 msgstr "Doplněk stravy"
 
-#: data/base/item_specs.lua:1933 data/base/item_specs.lua:1945
-#: data/base/item_specs.lua:1957
+#: data/base/item_specs.lua:1945 data/base/item_specs.lua:1957
+#: data/base/item_specs.lua:1969
 msgid "Recover Health"
 msgstr "Obnovení zdraví"
 
-#: data/base/item_specs.lua:1937
+#: data/base/item_specs.lua:1949
 msgid "Only proper vitamin and mineral intake can keep you healthy during the apocalypse. This can cure a cold."
 msgstr "Jen správné vitamíny a příjem minerálů může udržet zdraví během apokalypsy. Může vyléčit nachlazení."
 
-#: data/base/item_specs.lua:1944
+#: data/base/item_specs.lua:1956
 msgid "Antibiotic"
 msgstr "Antibiotika"
 
-#: data/base/item_specs.lua:1949
+#: data/base/item_specs.lua:1961
 msgid "Truly wonderful things can be extracted from molds. This can cure lethal food poisoning. Wish you had that in your last Nethack game, eh?"
 msgstr "Z plísní lze opravdu získat úžasné věci. Tohle může vyléčit smrtelnou otravu jídlem. Kéž bys to měl ve své poslední hře Nethack, co?"
 
-#: data/base/item_specs.lua:1956
+#: data/base/item_specs.lua:1968
 msgid "Doc-in-a-can"
 msgstr "Doktor-v-plechovce"
 
-#: data/base/item_specs.lua:1961
+#: data/base/item_specs.lua:1973
 msgid "This is a drink filled with nanobots designed to heal any damage that they notice inside you. It can cure decapitation. Most of the time."
 msgstr "Jedná se o drink plný nanobotů navržených tak, aby léčily jakékoliv škody, kterých si uvnitř tebe všimnou. Může vyléčit useklou hlavu. Většinou."
 
-#: data/base/item_specs.lua:1968
+#: data/base/item_specs.lua:1980
 msgid "Bottled Ice"
 msgstr "Balený led"
 
-#: data/base/item_specs.lua:1969 data/base/item_specs.lua:1981
-#: data/base/item_specs.lua:3075
+#: data/base/item_specs.lua:1981 data/base/item_specs.lua:1993
+#: data/base/item_specs.lua:3087
 msgid "Cooling aid"
 msgstr "Chladící pomoc"
 
-#: data/base/item_specs.lua:1973
+#: data/base/item_specs.lua:1985
 msgid "This bottle is filled with ice. It can keep you cool during a warm summer day."
 msgstr "Tato láhev je plná ledu. Během teplého letního dne tě může ochlazovat."
 
-#: data/base/item_specs.lua:1980
+#: data/base/item_specs.lua:1992
 msgid "Industrial Coolant"
 msgstr "Průmyslová chladicí kapalina"
 
-#: data/base/item_specs.lua:1985
+#: data/base/item_specs.lua:1997
 msgid "Bartenders around the world add this to drinks to get them cold very fast. Plus, the coolant is much cheaper. It can keep you cool inside a nuclear reactor."
 msgstr "Barmani po celém světě ji přidávají na nápojů k jejich rychlému zchlazení. Navíc, chladicí kapalina je mnohem levnější. Dokáže tě udržet v chladu i uvnitř jaderného reaktoru."
 
-#: data/base/item_specs.lua:1992
+#: data/base/item_specs.lua:2004
 msgid "Liquid Nitrogen"
 msgstr "Tekutý dusík"
 
-#: data/base/item_specs.lua:1993
+#: data/base/item_specs.lua:2005
 msgid "Extreme Cooling aid"
 msgstr "Extrémní chladící pomoc"
 
-#: data/base/item_specs.lua:1997
+#: data/base/item_specs.lua:2009
 msgid "When you want something frozen solid, this is what you need. It can keep you cool even inside a class M star."
 msgstr "Pokud chceš něco pořádně zmrazit, našel jsi to, co jsi hledal. Tohle tě udrží chladným dokonce i uvnitř hvězdy třídy M."
 
-#: data/base/item_specs.lua:2004
+#: data/base/item_specs.lua:2016
 msgid "Barf's Energy Drink"
 msgstr "Barfův energetický nápoj"
 
-#: data/base/item_specs.lua:2005
+#: data/base/item_specs.lua:2017
 msgid "Cool down, cure minor wounds."
 msgstr "Zchlazuje, léčí drobné rány."
 
-#: data/base/item_specs.lua:2009
+#: data/base/item_specs.lua:2021
 msgid "Warning! These energy drinks contain high doses of caffeine! The average person drops dead after consuming 12 grams of caffeine. One of these bottles contains over double that amount."
 msgstr "Varování! Tyto energetické nápoje obsahují vysokou dávku kofeinu! Průměrný člověk padne mrtvý po konzumace 12g kofeinu. Jedna z těchto lahví obsahuje více než dvojnásobek uvedené hodnoty."
 
-#: data/base/item_specs.lua:2016
+#: data/base/item_specs.lua:2028
 msgid "Running Power Capsule"
 msgstr "Kapsle energie běhu"
 
-#: data/base/item_specs.lua:2017
+#: data/base/item_specs.lua:2029
 msgid "Recover Running Power"
 msgstr "Obnovuje energii běhu"
 
-#: data/base/item_specs.lua:2021
+#: data/base/item_specs.lua:2033
 msgid "These small containers hold purified running strength. Each capsule can be used only once, but many of them can be grouped together like one item in your inventory."
 msgstr "Tyto malé kontejnery udržují čistou sílu běhu. Každá kapsle může být použita jen jednou, ale mnoho jich může být ve tvém inventáři seskupeno dohromady jako jedna."
 
-#: data/base/item_specs.lua:2028
+#: data/base/item_specs.lua:2040
 msgid "Strength Capsule"
 msgstr "Kapsle síly"
 
-#: data/base/item_specs.lua:2029
+#: data/base/item_specs.lua:2041
 msgid "Temporary Boost to Strength"
 msgstr "Dočasné zvýšení síly"
 
-#: data/base/item_specs.lua:2033
+#: data/base/item_specs.lua:2045
 msgid "These small containers hold purified strength. This item will give a temporary boost to strength. Each capsule can be used only once, but many of them can be grouped together like one item in your inventory."
 msgstr "Tyto malé kontejnery udržují čistou sílu. Tento předmět dodá dočasný nárůst síly. Každá kapsle může být použita jen jednou, ale mnoho jich může být ve tvém inventáři seskupeno dohromady jako jedna."
 
-#: data/base/item_specs.lua:2040
+#: data/base/item_specs.lua:2052
 msgid "Dexterity Capsule"
 msgstr "Kapsle obratnosti"
 
-#: data/base/item_specs.lua:2041
+#: data/base/item_specs.lua:2053
 msgid "Temporary Boost to Dexterity"
 msgstr "Dočasné zvýšení obratnosti"
 
-#: data/base/item_specs.lua:2045
+#: data/base/item_specs.lua:2057
 msgid "These small containers hold purified dexterity. This item will give a temporary bonus to dexterity. Each capsule can be used only once, but many of them can be grouped together like one item in your inventory."
 msgstr "Tyto malé kontejnery udržují čistou obratnost. Tento předmět dodá dočasný bonus k obratnosti. Každá kapsle může být použita jen jednou, ale mnoho jich může být ve tvém inventáři seskupeno dohromady jako jedna."
 
-#: data/base/item_specs.lua:2056
+#: data/base/item_specs.lua:2068
 msgid "Valuable Circuits"
 msgstr "Cenné obvody"
 
-#: data/base/item_specs.lua:2060
+#: data/base/item_specs.lua:2072
 msgid "The new monetary standard of the world. With the collapse of the banking system, the precious metals in bot circuitry are now de facto hard cash. A bit difficult to get, though, as the bots are not likely to just hand it over..."
 msgstr "Nový měnový standard světa. Při zhroucení bankovního systému se staly drahé kovy v obvodech robotů de facto tvrdou měnou. Nicméně jsou tak trochu těžko k sehnání, neboť se nepředpokládá, že by je roboti jen tak dobrovolně odevzdali..."
 
-#: data/base/item_specs.lua:2067
+#: data/base/item_specs.lua:2079
 msgid "Anti-grav Pod for Droids"
 msgstr "Antigavitační pohon pro droidy"
 
-#: data/base/item_specs.lua:2071
+#: data/base/item_specs.lua:2083
 msgid "The bots use this to hover around."
 msgstr "Roboti ho používají k pohybu kolem."
 
-#: data/base/item_specs.lua:2078
+#: data/base/item_specs.lua:2090
 msgid "Dixon's Toolbox"
 msgstr "Dixonova sada nářadí"
 
-#: data/base/item_specs.lua:2082
+#: data/base/item_specs.lua:2094
 msgid "This is a teleporter service toolbox. It's complete and orderly, though a few dents on the outside give proof of frequent use. 'C. Dixon' is carved into the outside with fine print."
 msgstr "Jedná se o teleportační sadu nářadí. Je kompletní a uspořádaná, i když několik promáčknutí na vnější straně mnohé dokládá o jejím častém používání. Do vnější strany je vyřezáno drobným písmem 'C. Dixon'."
 
-#: data/base/item_specs.lua:2089
+#: data/base/item_specs.lua:2101
 msgid "Toolbox"
 msgstr "Sada nářadí"
 
-#: data/base/item_specs.lua:2093
+#: data/base/item_specs.lua:2105
 msgid "This is a regular toolbox. It's complete and orderly, though a few dents on the outside give proof of frequent use."
 msgstr "Jedná se o běžnou sadu nářadí. Je kompletní a uspořádaná, i když několik promáčknutí na vnější straně mnohé dokládá o jejím častém používání."
 
-#: data/base/item_specs.lua:2100
+#: data/base/item_specs.lua:2112
 msgid "Entropy Inverter"
 msgstr "Invertor entropie"
 
-#: data/base/item_specs.lua:2104 data/base/item_specs.lua:2115
-#: data/base/item_specs.lua:2126 data/base/item_specs.lua:2137
-#: data/base/item_specs.lua:2148
+#: data/base/item_specs.lua:2116 data/base/item_specs.lua:2127
+#: data/base/item_specs.lua:2138 data/base/item_specs.lua:2149
+#: data/base/item_specs.lua:2160
 msgid "This is an standard part within many robot types."
 msgstr "Je standardní součástí v mnoha typech robotů."
 
-#: data/base/item_specs.lua:2111
+#: data/base/item_specs.lua:2123
 msgid "Plasma Transistor"
 msgstr "Plazmový tranzistor"
 
-#: data/base/item_specs.lua:2122
+#: data/base/item_specs.lua:2134
 msgid "Superconducting Relay Unit"
 msgstr "Supravodivé relé"
 
-#: data/base/item_specs.lua:2133
+#: data/base/item_specs.lua:2145
 msgid "Antimatter-Matter Converter"
 msgstr "Převodník antihmoty a hmoty"
 
-#: data/base/item_specs.lua:2144
+#: data/base/item_specs.lua:2156
 msgid "Tachyon Condensator"
 msgstr "Tachyonový kondenzátor"
 
-#: data/base/item_specs.lua:2155
+#: data/base/item_specs.lua:2167
 msgid "Desk Lamp"
 msgstr "Stolní lampa"
 
-#: data/base/item_specs.lua:2159
+#: data/base/item_specs.lua:2171
 msgid "What would modern science be without this important item?"
 msgstr "Čím by moderní věda bez tohoto důležitého předmětu byla?"
 
-#: data/base/item_specs.lua:2166
+#: data/base/item_specs.lua:2178
 msgid "Red Dilithium Crystal"
 msgstr "Rudý dilithiový krystal"
 
-#: data/base/item_specs.lua:2170
+#: data/base/item_specs.lua:2182
 msgid "These dilithium crystals are used as an energy source in many modern electricity or heat based devices. Energy is extracted from the crystal by making use of the ordering of the crystal molecules. This principle has allowed us to build devices that consume a lot of energy, but do not need to be connected to a power line."
 msgstr "Tyto dilithiové krystaly se používají jako zdroje energie v mnoha zařízeních na bázi elektřiny nebo tepla. Energie je získána z krystalů využitím řazení molekul krystalů. Tento princip nám umožnil vybudovat zařízení, která spotřebovávají hodně energie, ale nemusí být připojena k elektrické síti."
 
-#: data/base/item_specs.lua:2177
+#: data/base/item_specs.lua:2189
 msgid "Map Maker"
 msgstr "Mapová navigace"
 
-#: data/base/item_specs.lua:2178
+#: data/base/item_specs.lua:2190
 msgid "To implant the automap device"
 msgstr "K implementaci automatického mapového zařízení"
 
-#: data/base/item_specs.lua:2182
+#: data/base/item_specs.lua:2194
 msgid "This small device automatically collects data about the area within a range of 7 times 7 meters and draws a small-scale plan of the immediate surroundings. Because of its very tiny display, it needs to be held closely to the eye, and the image will then be projected directly into the eyeball of the user. Still, the collected map data will be split up by the device into several sectors for convenient viewing."
 msgstr "Toto malé zařízení automaticky sbírá data z oblasti 7 krát 7 metrů a vykresluje plán bezprostřední okolí v malém měřítku. Z důvodu jeho velmi maličkého displaye je třeba ho držet blízko oka a obraz se tak promítá přímo do oční bulvy uživatele. Shromážděné mapové podklady jsou zařízením rozděleny pro pohodlné prohlížení do několika sektorů."
 
-#: data/base/item_specs.lua:2189
+#: data/base/item_specs.lua:2201
 msgid "Light Enhancer? to be included in the future..."
 msgstr "Světelné vylepšení? Bude zahrnuto v budoucnosti..."
 
-#: data/base/item_specs.lua:2190 data/base/item_specs.lua:2194
+#: data/base/item_specs.lua:2202 data/base/item_specs.lua:2206
 msgid "See better in the dark."
 msgstr "Vidět lépe ve tmě."
 
-#: data/base/item_specs.lua:2201
+#: data/base/item_specs.lua:2213
 msgid "Fork"
 msgstr "Vidlička"
 
-#: data/base/item_specs.lua:2214 data/base/item_specs.lua:2226
-#: data/base/item_specs.lua:2237 data/base/item_specs.lua:2248
+#: data/base/item_specs.lua:2226 data/base/item_specs.lua:2238
+#: data/base/item_specs.lua:2249 data/base/item_specs.lua:2260
 msgid "This item is part of the 'Self Cleaning Kitchen' (SCK) project from before the Great Assault. All of the items in the SCK project have an inner mechanism that will clean the object automatically if left alone for a given time. It comes with its own power supply, and has a supposed duration of 200 years."
 msgstr "Tento předmět je součástí projektu 'Samočisticí kuchyně' (SK) z doby před Velkým útokem. Všechny předměty projektu SK mají vnitřní mechanismus, který čistí předmět automaticky, ponecháš-li ho samotě po určitou dobu. Jsou dodávány s vlastním zdrojem napájení s předpokládanou dobou životnosti 200 let."
 
-#: data/base/item_specs.lua:2222
+#: data/base/item_specs.lua:2234
 msgid "Plate"
 msgstr "Talíř"
 
-#: data/base/item_specs.lua:2233
+#: data/base/item_specs.lua:2245
 msgid "Mug"
 msgstr "Hrnek"
 
-#: data/base/item_specs.lua:2244
+#: data/base/item_specs.lua:2256
 msgid "Cup"
 msgstr "Šálek"
 
-#: data/base/item_specs.lua:2255
+#: data/base/item_specs.lua:2267
 msgid "Teleporter Homing Beacon"
 msgstr "Naváděcí teleportační maják"
 
-#: data/base/item_specs.lua:2256
+#: data/base/item_specs.lua:2268
 msgid "Teleports you elsewhere"
 msgstr "Teleportuje tě kamkoli"
 
-#: data/base/item_specs.lua:2260
+#: data/base/item_specs.lua:2272
 msgid "This device sends a signal to a nearby teleporter requesting a transport, and then helps with locking on and boosting the signal to ensure the teleportation attempt is successful. The battery inside is sufficient for one use *only* and the device becomes useless afterwards. At least, most people don't try to use them twice... and those few who do usually end up with parts of their body missing or attached in the wrong place. Note: Multiple of these may be grouped together in the inventory."
 msgstr "Tento přístroj vyšle signál k nedalekému teleportu s žádostí o přepravu a pak pomáhá signál zamknout a zesílit k zajištění úspěšného pokusu o teleportaci. Vnitřní baterie vydrží *jen* jedno použití a pak je nepoužitelná. Tedy alespoň většina lidí se ho nesnaží použít víc jak dvakrát... a ti, co se o to pokusí, zpravidla končí s chybějící částí svého těla nebo jejím připojení ke špatné části těla. Poznámka: Více kusů lze v inventáři seskupit na jednu pozici."
 
-#: data/base/item_specs.lua:2267
+#: data/base/item_specs.lua:2279
 msgid "Data Cube"
 msgstr "Datová kostka"
 
-#: data/base/item_specs.lua:2271
+#: data/base/item_specs.lua:2283
 msgid "This was the most common form of portable information storage used on Earth until the Great Assault, its three-dimensional memory capable of storing up to 2 terabytes and compatible with most of the hardware on the planet."
 msgstr "Nejběžnější forma přenosného informačního úložiště používaného na Zemi až do Velkého útoku. Jeho tří-rozměrná paměť je schopna uložit až 2 terabyty dat a je kompatibilní s většinou hardware na planetě."
 
-#: data/base/item_specs.lua:2278
+#: data/base/item_specs.lua:2290
 msgid "Kevin's Data Cube"
 msgstr "Kevinova datová kostka"
 
-#: data/base/item_specs.lua:2282
+#: data/base/item_specs.lua:2294
 msgid "This data cube contains confidential government data on the installations around the town. Kevin hopes that when the data is evaluated properly, a way out of the current crisis might be found. However, the amount of data is so vast, it can only be evaluated properly using a large cluster of computers. The Red Guard base is said to store an infrastructure suitable to this purpose."
 msgstr "Tato datová kostka obsahuje utajené vládní informace ohledně softwarových instalací města. Kevin doufá, že při řádném ohodnocení dat lze najít cestu ven ze současné krize. Nicméně, množství dat je tak ohromné, že k jejich ohodnocení musí být použit velký cluster počítačů. Říká se, že základna Rudé stráže uchovává infrastrukturu vhodnou k tomuto účelu."
 
-#: data/base/item_specs.lua:2289
+#: data/base/item_specs.lua:2301
 msgid "Pandora's Cube"
 msgstr "Pandořina kostka"
 
-#: data/base/item_specs.lua:2293
+#: data/base/item_specs.lua:2305
 msgid "This is heavy. Cannot the end of the world come in a smaller package? It would be a great time for Duncan to explain a few things..."
 msgstr "Tak tohle je těžký. Nemohl konec světa přijít v menším balení? Byl by to skvělý čas pro Duncana vysvětlit pár věcí..."
 
-#: data/base/item_specs.lua:2300
+#: data/base/item_specs.lua:2312
 msgid "Rubber Duck"
 msgstr "Gumová kachnička"
 
-#: data/base/item_specs.lua:2304
+#: data/base/item_specs.lua:2316
 msgid "It appears that humans enjoy bathing with squeaky little pieces of plastic shaped like waterfowl. As a penguinoid, you should probably be disturbed, but you have to admit this thing is actually quite adorable."
 msgstr "Zdá se, že si lidé užívají koupání s malými kousky pískacího plastu ve tvaru vodních ptáků. Jako správný tučňákoid bys měl být pravděpodobně zneklidněný, ale musíš uznat, že je tato věc vlastně docela rozkošná."
 
-#: data/base/item_specs.lua:2311
+#: data/base/item_specs.lua:2323
 msgid "Empty Picnic Basket"
 msgstr "Prázdný piknikový koš"
 
-#: data/base/item_specs.lua:2315
+#: data/base/item_specs.lua:2327
 msgid "This is the latest in 'Dr. How?'-brand picnic basket technology! With patented food-preserving time-dilation, space-bending miniaturization, and anti-gravity, your food stays fresh and your drinks stay cold in a small light-as-a-feather package! Now you can picnic the old fashioned way! Batteries sold separately."
 msgstr "Jedná se o poslední technologii piknikového košíku značky 'Dr. Jak?'! S patentovaným zachováním potravin, dilatací času, miniaturizovaným ohýbáním prostoru a antigravitací, zůstává tvé jídlo čerstvé a tvé nápoje vychlazené v balíčku malém a lehkém jako pírko! A teď můžeš jít piknikovat jako za starých časů! Baterie jsou prodávány samostatně."
 
-#: data/base/item_specs.lua:2322
+#: data/base/item_specs.lua:2334
 msgid "Lunch in a Picnic Basket"
 msgstr "Oběd v piknikovém koši"
 
-#: data/base/item_specs.lua:2326
+#: data/base/item_specs.lua:2338
 msgid "This is a 'Dr. How?'-brand picnic basket stuffed full of enough food and drinks to feed a dozen people. With 'Dr. How?'-time dilation, the food keeps oven-fresh, and the drinks stay ice-cold."
 msgstr "Jedná se o piknikový koš značky 'Dr. Jak?' nacpaný dostatkem jídla a nápojů pro nakrmení desítek lidí. S patentovanou časovou dilatací 'Dr. Jak?' zůstává jídlo čerstvé, jako kdyby bylo právě vytažené z trouby, a nápoje ledově chladné."
 
-#: data/base/item_specs.lua:2333
+#: data/base/item_specs.lua:2345
 msgid "MS Stock Certificate"
 msgstr "Certifikát MS akcií"
 
-#: data/base/item_specs.lua:2337
+#: data/base/item_specs.lua:2349
 msgid "This is a Stock Certificate for transfer of ownership of five hundred sixty-seven million shares of MegaSystems from William Gapes to bearer."
 msgstr "Jde o certifikát MS akcií pro převod vlastnictví pěti set šedesáti sedmi miliónů akcií MegaSystému Williama Gapese na vlastníky."
 
-#: data/base/item_specs.lua:2344
+#: data/base/item_specs.lua:2356
 msgid "Elbow Grease Can"
 msgstr "Dřina v kapsli"
 
-#: data/base/item_specs.lua:2348
+#: data/base/item_specs.lua:2360
 msgid "A can filled with elbow grease. Hard to make it if you are not a strong man."
 msgstr "Plechovka naplněná těžkou dřinou. Pěkně těžký ji vyrobit, pokud nejsi silný muž."
 
-#: data/base/item_specs.lua:2356
+#: data/base/item_specs.lua:2368
 msgid "MS EPROM Programming Interface"
 msgstr ""
 
-#: data/base/item_specs.lua:2360
+#: data/base/item_specs.lua:2372
 msgid "Used by developers at MegaSys to load firmware onto newly assembled droids."
 msgstr ""
 
-#: data/base/item_specs.lua:2371
+#: data/base/item_specs.lua:2383
 msgid "Linarian Power Crank"
 msgstr "Linarianova hnací hřídel"
 
-#: data/base/item_specs.lua:2375
+#: data/base/item_specs.lua:2387
 msgid "This mechanical crank, product of the highly advanced and sophisticated technological genius of the Linarian race, performs elaborate operations on energy and directs it towards a biochemical structure. For short, it buffs up your muscles. That's good."
 msgstr "Tato mechanická hřídel, produkt vysoce pokročilého a technologicky sofistikovaného génia linarianské rasy, provádí komplikované operace s energií a směřuje ji k biochemické struktuře. Zkráceně to napumpuje tvé svaly. A to je dobře."
 
-#: data/base/item_specs.lua:2382
+#: data/base/item_specs.lua:2394
 msgid "Tungsten Spikes"
 msgstr "Wolframové hroty"
 
-#: data/base/item_specs.lua:2386
+#: data/base/item_specs.lua:2398
 msgid "This polycarbonate surface is lined with hard tungsten spikes, and can be installed into a mechanical socket on most melee weapons, offering a simple and affordable solution to increasing damage dealt. Handle only with gloves. Do not attempt to use as footwear. Do not attempt to eat."
 msgstr "Tento polykarbonátový povrch je lemován tvrdými wolframovými hroty a lze ho namontovat do mechanické zdířky na většinu zbraní pro boj z blízka. Nabízí jednoduché a cenově dostupné řešení zvyšující množství škody. Manipuluj s nimi jen v rukavicích. Nepokoušej se to použít jako obuv. Nezkoušej to sníst."
 
-#: data/base/item_specs.lua:2393
+#: data/base/item_specs.lua:2405
 msgid "Tinfoil Patch"
 msgstr "Staniolová záplata"
 
-#: data/base/item_specs.lua:2397
+#: data/base/item_specs.lua:2409
 msgid "When attached to your armor, this patch of tinfoil allows you to stay cooler by reducing the amount of electromagnetic radiation that your body absorbs."
 msgstr "Při napojení na brnění ti staniolová záplata dovoluje udržet nižší teplotu redukcí množství elektromagnetického záření, které tvé tělo absorbuje."
 
-#: data/base/item_specs.lua:2404
+#: data/base/item_specs.lua:2416
 msgid "Laser Sight"
 msgstr "Laserový zaměřovač"
 
-#: data/base/item_specs.lua:2408
+#: data/base/item_specs.lua:2420
 msgid "A miniaturized laser powered by a nuclear battery. When attached parallel to the barrel of a gun, it makes a little red dot on the target and helps with aiming."
 msgstr "Miniaturní laser poháněný jadernou baterkou. Při paralelním zapojení ke hlavni pistole zobrazuje na cíli červenou tečku a pomáhá mířit."
 
-#: data/base/item_specs.lua:2415
+#: data/base/item_specs.lua:2427
 msgid "Exoskeletal Joint"
 msgstr "Exoskeletární kloub"
 
-#: data/base/item_specs.lua:2419
+#: data/base/item_specs.lua:2431
 msgid "This electromechanical joint helps you to perform physically demanding tasks more easily by amplifying the movements of your body."
 msgstr "Elektromechanický kloub pomáhá snadněji vykonávat fyzicky náročné úkoly pomocí zesílení pohybů tvého těla."
 
-#: data/base/item_specs.lua:2426
+#: data/base/item_specs.lua:2438
 msgid "Heatsink"
 msgstr "Chladič"
 
-#: data/base/item_specs.lua:2430
+#: data/base/item_specs.lua:2442
 msgid "A simple heatsink add-on that keeps you cooler by dissipating heat from your armor."
 msgstr "Jednoduchý chladící doplněk, který tě udrží chladnějším díky odvádění tepla z tvého brnění."
 
-#: data/base/item_specs.lua:2437
+#: data/base/item_specs.lua:2449
 msgid "Peltier Element"
 msgstr "Peltierův článek"
 
-#: data/base/item_specs.lua:2441
+#: data/base/item_specs.lua:2453
 msgid "A thermoelectric device that increases your cooling rate."
 msgstr "Termoelektrický přístroj zvyšující tvou rychlost ochlazování."
 
-#: data/base/item_specs.lua:2448
+#: data/base/item_specs.lua:2460
 msgid "Steel Mesh"
 msgstr "Ocelová síťovina"
 
-#: data/base/item_specs.lua:2452
+#: data/base/item_specs.lua:2464
 msgid "A sturdy metal mesh that provides an extra protective layer to your armor."
 msgstr "Robustní ocelová síťovina, která poskytuje další ochrannou vrstvu na brnění."
 
-#: data/base/item_specs.lua:2459
+#: data/base/item_specs.lua:2471
 msgid "Shock Discharger"
 msgstr "Vybíječ šoku"
 
-#: data/base/item_specs.lua:2463
+#: data/base/item_specs.lua:2475
 msgid "When installed to a melee weapon, this nifty device gives a small electric shock to enemies you hit."
 msgstr "Při instalaci na zbraň pro boj z blízka dává tento šikovný přístroj zasaženým nepřátelům malý elektrický šok."
 
-#: data/base/item_specs.lua:2470
+#: data/base/item_specs.lua:2482
 msgid "Silencer"
 msgstr "Tlumič"
 
-#: data/base/item_specs.lua:2474
+#: data/base/item_specs.lua:2486
 msgid "This new generation silencer will not only allow you to catch your enemies by surprise, but will also help you to do more damage in ranged combat."
 msgstr ""
 
-#: data/base/item_specs.lua:2482
+#: data/base/item_specs.lua:2494
 msgid "Coprocessor"
 msgstr "Koprocesor"
 
-#: data/base/item_specs.lua:2486
+#: data/base/item_specs.lua:2498
 msgid "By speeding up your computations, this chip helps you to excel in many activities."
 msgstr "Zrychlením svých výpočetních schopností ti tento čip pomůže vyniknout v mnoha činnostech."
 
-#: data/base/item_specs.lua:2493
+#: data/base/item_specs.lua:2505
 msgid "Pedometer"
 msgstr "Krokoměr"
 
-#: data/base/item_specs.lua:2497
+#: data/base/item_specs.lua:2509
 msgid "A device that helps you to move dexterously by giving feedback on your foot movement."
 msgstr "Zařízení, které ti pomůže se obratně pohybovat díky poskytování zpětné vazby k pohybu nohy."
 
-#: data/base/item_specs.lua:2504
+#: data/base/item_specs.lua:2516
 msgid "Foot Warmers"
 msgstr "Ohřívače nohou"
 
-#: data/base/item_specs.lua:2508
+#: data/base/item_specs.lua:2520
 msgid "This pair of electric fuzzy foot warmers would make even a penguin warm and comfortable in any shoes, and help maintain a healthy body temperature, thus preventing colds and making you look cool. At least, that's what the advertisement says. And ads don't lie, do they?"
 msgstr "Tato dvojice elektrických chlupatých ohřívačů nohou by zahřála a uspokojila v libovolných botách dokonce i tučňáka. Pomáhají udržovat zdravou tělesnou teplotu, čímž se zabraňuje nachlazení a člověk v nich vypadá fakt hustě. Tedy alespoň toto tvrdí reklama. A reklamy nelžou, ne?"
 
-#: data/base/item_specs.lua:2515
+#: data/base/item_specs.lua:2527
 msgid "Circuit Jammer"
 msgstr "Rušička obvodu"
 
-#: data/base/item_specs.lua:2519
+#: data/base/item_specs.lua:2531
 msgid "This item improves your melee weapon by blasting the enemies you hit with an electromagnetic pulse. The pulse is powerful enough to temporarily shut down the circuits of the attacked bot."
 msgstr "Tento předmět vylepší zbraň pro boj na blízko tak, že zasažený nepřítel dostane ránu elektromagnetickým pulsem. Puls je dostatečně silný na to, aby dočasně vypnul obvody napadeného bota."
 
-#: data/base/item_specs.lua:2526
+#: data/base/item_specs.lua:2538
 msgid "Sensor Disruptor"
 msgstr "Senzor rušení"
 
-#: data/base/item_specs.lua:2530
+#: data/base/item_specs.lua:2542
 msgid "When attached to a melee weapon, this item induces errors to the sensors of the bots you attack, causing them to slow down momentarily."
 msgstr "Po připojení ke zbrani pro boj z blízka předmět vyvolává chyby v senzorech napadených robotů, což způsobí jejich dočasné zpomalení."
 
-#: data/base/item_specs.lua:2537
+#: data/base/item_specs.lua:2549
 msgid "Headlamp"
 msgstr "Přední světlomet"
 
-#: data/base/item_specs.lua:2541
+#: data/base/item_specs.lua:2553
 msgid "When fastened to your helmet, this lamp allows you to see better in dark environments."
 msgstr "Po připevnění k helmě lampa umožní lepší viditelnost v tmavém prostředí."
 
-#: data/base/item_specs.lua:2548
+#: data/base/item_specs.lua:2560
 msgid "Brain Stimulator"
 msgstr "Stimulátor mozku"
 
-#: data/base/item_specs.lua:2552
+#: data/base/item_specs.lua:2564
 msgid "A chip that allows faster learning by connecting directly to the brain via a neural interface (colloquially referred to as a 'weird swim cap with little thingies on it') and providing additional feedback on various actions."
 msgstr "Čip umožňující rychlejší učení připojením přímo do mozku přes nervové rozhraní (hovorově označován jako \"podivná koupací čepici s malými věcičkami na ní\") a poskytující další zpětné vazby na různé akce."
 
-#: data/base/item_specs.lua:2563
+#: data/base/item_specs.lua:2575
 msgid "NPC Hand to Hand Weapon"
 msgstr "Zbraň pro boj zblízka nehrající postavy"
 
-#: data/base/item_specs.lua:2576
+#: data/base/item_specs.lua:2588
 msgid "Bot use only"
 msgstr "Pouze pro roboty"
 
-#: data/base/item_specs.lua:2584
+#: data/base/item_specs.lua:2596
 msgid "Droid 123 Weak Robotic Arm"
 msgstr "Droid 123 - Slabá robotická paže"
 
-#: data/base/item_specs.lua:2597 data/base/item_specs.lua:2621
-#: data/base/item_specs.lua:2642 data/base/item_specs.lua:2666
-#: data/base/item_specs.lua:2687 data/base/item_specs.lua:2708
-#: data/base/item_specs.lua:2729 data/base/item_specs.lua:2750
-#: data/base/item_specs.lua:2774 data/base/item_specs.lua:2795
-#: data/base/item_specs.lua:2816 data/base/item_specs.lua:2837
-#: data/base/item_specs.lua:2858 data/base/item_specs.lua:2879
-#: data/base/item_specs.lua:2903 data/base/item_specs.lua:2928
-#: data/base/item_specs.lua:2953
+#: data/base/item_specs.lua:2609 data/base/item_specs.lua:2633
+#: data/base/item_specs.lua:2654 data/base/item_specs.lua:2678
+#: data/base/item_specs.lua:2699 data/base/item_specs.lua:2720
+#: data/base/item_specs.lua:2741 data/base/item_specs.lua:2762
+#: data/base/item_specs.lua:2786 data/base/item_specs.lua:2807
+#: data/base/item_specs.lua:2828 data/base/item_specs.lua:2849
+#: data/base/item_specs.lua:2870 data/base/item_specs.lua:2891
+#: data/base/item_specs.lua:2915 data/base/item_specs.lua:2940
+#: data/base/item_specs.lua:2965
 msgid "Droid weaponry"
 msgstr "Výzbroj droidů"
 
-#: data/base/item_specs.lua:2605
+#: data/base/item_specs.lua:2617
 msgid "Droid 139 Plasma Trash Vaporiser"
 msgstr "Droid 139 - Výparník plazmového odpadu"
 
-#: data/base/item_specs.lua:2629
+#: data/base/item_specs.lua:2641
 msgid "Droid 247 Robotic Arm"
 msgstr "Droid 247 - Robotická paže"
 
-#: data/base/item_specs.lua:2650
+#: data/base/item_specs.lua:2662
 msgid "Droid 249 Pulse Laser Welder"
 msgstr "Droid 249 - Pulzní laserová svářečka"
 
-#: data/base/item_specs.lua:2674
+#: data/base/item_specs.lua:2686
 msgid "Droid 296 Plasmabeam Cutter"
 msgstr "Droid 296 - Řezací plazmový paprsek"
 
-#: data/base/item_specs.lua:2695
+#: data/base/item_specs.lua:2707
 msgid "Droid 302 Overcharged Barcode Reader"
 msgstr "Droid 302 - Přetížená čtečka čárových kódů"
 
-#: data/base/item_specs.lua:2716
+#: data/base/item_specs.lua:2728
 msgid "Droid 329 Dual Overcharged Barcode Reader"
 msgstr "Droid 329 - Dvojitá přetížená čtečka čárových kódů"
 
-#: data/base/item_specs.lua:2737
+#: data/base/item_specs.lua:2749
 msgid "Droid 420 Laser Scalpel"
 msgstr "Droid 420 - Laserový skalpel"
 
-#: data/base/item_specs.lua:2758
+#: data/base/item_specs.lua:2770
 msgid "Droid 476 Small Laser"
 msgstr "Droid 476 - Malý laser"
 
-#: data/base/item_specs.lua:2782
+#: data/base/item_specs.lua:2794
 msgid "Droid 493 Power Hammer"
 msgstr "Droid 493 - Buchar"
 
-#: data/base/item_specs.lua:2803
+#: data/base/item_specs.lua:2815
 msgid "Droid 516 Robotic Fist"
 msgstr "Droid 516 - Robotická pěst"
 
-#: data/base/item_specs.lua:2824
+#: data/base/item_specs.lua:2836
 msgid "Droid 543 Tree Harvester"
 msgstr "Droid 543 - Kombajn na stromy"
 
-#: data/base/item_specs.lua:2845
+#: data/base/item_specs.lua:2857
 msgid "Droid 571 Robotic Fist"
 msgstr "Droid 571 - Robotická pěst"
 
-#: data/base/item_specs.lua:2866
+#: data/base/item_specs.lua:2878
 msgid "Droid 598 Robotic Fist"
 msgstr "Droid 598 - Robotická pěst"
 
-#: data/base/item_specs.lua:2887
+#: data/base/item_specs.lua:2899
 msgid "Droid 7xx Tux Seeking Missiles"
 msgstr "Droid 7xx - Naváděná raketa na Tuxe"
 
-#: data/base/item_specs.lua:2911
+#: data/base/item_specs.lua:2923
 msgid "Droid Advanced Twin Laser"
 msgstr "Droidí pokročilý dvojitý laser"
 
-#: data/base/item_specs.lua:2936
+#: data/base/item_specs.lua:2948
 msgid "Droid 883 Exterminator"
 msgstr "Droid 883 - Exterminátor"
 
-#: data/base/item_specs.lua:2961
+#: data/base/item_specs.lua:2973
 msgid "Autogun Laser Pistol"
 msgstr "Automatická laserová pistole"
 
-#: data/base/item_specs.lua:2977
+#: data/base/item_specs.lua:2989
 msgid "This is the laser weapon of the autogun. If you see this item whilst normal gameplay, please make a bugreport."
 msgstr "Jedná se o laserovou zbraň automatické pistole. Pokud tento předmět vidíte v průběhu hry, nahlaste report o chybě."
 
-#: data/base/item_specs.lua:2989
+#: data/base/item_specs.lua:3001
 msgid "PC LOAD LETTER"
 msgstr "DOPIS PC ZÁTĚŽE"
 
-#: data/base/item_specs.lua:2993
+#: data/base/item_specs.lua:3005
 msgid "An envelop saying 'PC LOAD LETTERS'. I have no idea what that means..."
 msgstr "Obálka říkající 'DOPISY PC ZÁTĚŽE'. Nemám sebemenší ponětí, co to znamená..."
 
-#: data/base/item_specs.lua:3000
+#: data/base/item_specs.lua:3012
 msgid "Arcane Lore"
 msgstr ""
 
-#: data/base/item_specs.lua:3004
+#: data/base/item_specs.lua:3016
 msgid "I've bought an anti-hack software, so I could try to hack it! ...But what, exactly, is the 'Arcane Lore'?"
 msgstr ""
 
-#: data/base/item_specs.lua:3011
+#: data/base/item_specs.lua:3023
 msgid "PGP key"
 msgstr ""
 
-#: data/base/item_specs.lua:3015
+#: data/base/item_specs.lua:3027
 msgid "It won't open your house, but it can unlock important encrypted archives."
 msgstr ""
 
-#: data/base/item_specs.lua:3022
+#: data/base/item_specs.lua:3034
 msgid "Cheat Gun"
 msgstr "Podvodná zbraň"
 
-#: data/base/item_specs.lua:3037
+#: data/base/item_specs.lua:3049
 msgid "This item is used by testers. If you find it ingame without using a cheat, please report it as a bug."
 msgstr "Tento předmět je používán testery. Pokud ho najdete ve hře bez použití cheatu, nahlaste prosím chybu."
 
-#: data/base/item_specs.lua:3051
+#: data/base/item_specs.lua:3063
 msgid "Small Tutorial Axe"
 msgstr "Malá výuková sekera"
 
-#: data/base/item_specs.lua:3065
+#: data/base/item_specs.lua:3077
 msgid ""
 "While this axe was made for splitting wood, with some luck it can damage vital parts of a droid as well.\n"
 "Sell me!\n"
@@ -1877,11 +1890,11 @@ msgstr ""
 "Prodej mě!\n"
 "Klikni na červené tlačítko s křížem, až budeš hotový."
 
-#: data/base/item_specs.lua:3074
+#: data/base/item_specs.lua:3086
 msgid "Bottled Tutorial Ice"
 msgstr "Balený výukový led"
 
-#: data/base/item_specs.lua:3079
+#: data/base/item_specs.lua:3091
 msgid ""
 "This bottle is filled with ice. It can keep you cool during a warm summer day.\n"
 "Buy me!\n"
@@ -2073,81 +2086,81 @@ msgstr "Síťový mapovač"
 msgid "Light"
 msgstr "Světlo"
 
-#: data/base/skill_specs.lua:210
+#: data/base/skill_specs.lua:223
 msgid "Extract bot parts"
 msgstr "Extrahuj části botů"
 
-#: data/base/skill_specs.lua:215
+#: data/base/skill_specs.lua:228
 msgid "With a little knowledge, you can extract some useful parts out of the robots you kill. With each bot there is some hope of a part falling out. This skill is always active even when not selected."
 msgstr "S malou znalostí můžeš ze zabitých robotů extrahovat některé užitečné části. S každým botem je nějaká naděje, že ta součástka vypadne. Tato dovednost je aktivní vždy, i když není vybrána."
 
-#: data/base/skill_specs.lua:220
+#: data/base/skill_specs.lua:233
 msgid "Treasure Hunting"
 msgstr "Honba za pokladem"
 
-#: data/base/skill_specs.lua:225
+#: data/base/skill_specs.lua:238
 msgid "Upgrading your search algorithms, you may find items more frequently when destroying bots. This skill is always active even when not selected."
 msgstr "Modernizací svého vyhledávacího algoritmu lze při ničení robotů zvýšit frekvenci nalézání předmětů. Tato dovednost je neustále aktivní, i když není vybrána."
 
-#: data/base/skill_specs.lua:230
+#: data/base/skill_specs.lua:243
 msgid "Animal Magnetism"
 msgstr "Zvířecí magnetismus"
 
-#: data/base/skill_specs.lua:235
+#: data/base/skill_specs.lua:248
 msgid "Get in tune with the magnetic fields around you! Grants you half-second extra time per skill level when hacking bots. This skill is always active even when not selected."
 msgstr "Slaď se s okolním magnetickým polem! Při hackování robotů poskytne na každou úroveň dovednosti půl sekundy navíc. Tato dovednost je aktivní vždy, i když není vybrána."
 
-#: data/base/skill_specs.lua:249
+#: data/base/skill_specs.lua:262
 msgid "Nethack"
 msgstr "Nethack"
 
-#: data/base/skill_specs.lua:255
+#: data/base/skill_specs.lua:268
 msgid "NOT IMPLEMENTED YET The open source game called Nethack is one of the world's greatest wasters of time. Machines don't care about it, but humans can get sucked in quite deeply."
 msgstr "ZATÍM NENÍ IMPLEMENTOVÁNO. Open source hra s názvem Nethack je jedním z největších světových zabijáků času. Stroje se o ni nestarají, ale lidé jí mohou být naprosto pohlceni."
 
-#: data/base/skill_specs.lua:266
+#: data/base/skill_specs.lua:279
 msgid "Reverse-engineer"
 msgstr "Zpětné inženýrství"
 
-#: data/base/skill_specs.lua:270
+#: data/base/skill_specs.lua:283
 msgid "NOT IMPLEMENTED YET There is some dark magic in the art of turning devices or programs inside-out, picking them apart to learn all their secrets and putting them back again."
 msgstr "ZATÍM NENÍ IMPLEMENTOVÁNO. Existuje černá magie v umění obrátit zařízení nebo programy naruby a jejich rozebráním na kusy pro pochopení všech jejich tajemství a jejich opětovným složením do původního stavu."
 
-#: data/base/skill_specs.lua:281
+#: data/base/skill_specs.lua:294
 msgid "Ricer CFLAGS"
 msgstr "Optimalizace CFLAGS"
 
-#: data/base/skill_specs.lua:286
+#: data/base/skill_specs.lua:299
 msgid "NOT IMPLEMENTED YET Optimization is the root of all evil. You can gain some temporary speed improvements to your system, but in the end you will likely overheat and cause permanent damage if you are not careful."
 msgstr "ZATÍM NENÍ IMPLEMENTOVÁNO. Optimalizace je kořenem všeho zla. Dočasně můžeš získat zvýšení rychlosti svého systému, ale nakonec se pravděpodobně přehřeješ a způsobíš si trvalé poškození, pokud nejsi opatrný."
 
-#: data/base/skill_specs.lua:294
+#: data/base/skill_specs.lua:307
 msgid "Small Plasma grenade"
 msgstr "Malý plazmový granát"
 
-#: data/base/skill_specs.lua:301 data/base/skill_specs.lua:313
-#: data/base/skill_specs.lua:325 data/base/skill_specs.lua:338
-#: data/base/skill_specs.lua:350 data/base/skill_specs.lua:362
+#: data/base/skill_specs.lua:314 data/base/skill_specs.lua:326
+#: data/base/skill_specs.lua:338 data/base/skill_specs.lua:351
+#: data/base/skill_specs.lua:363 data/base/skill_specs.lua:375
 msgid "If you see this in game it is a bug. Please report this to the developers, unless you cheated, in which case you deserve to see this silly nonsense description."
 msgstr "Vidíš-li toto ve hře, jedná se o chybu. Oznam to prosím vývojářům, ledaže bys podváděl. V tom případě si tento hloupý nesmyslný popis vidět zasloužíš."
 
-#: data/base/skill_specs.lua:307
+#: data/base/skill_specs.lua:320
 msgid "Plasma grenade"
 msgstr "Plazmový granát"
 
-#: data/base/skill_specs.lua:319
+#: data/base/skill_specs.lua:332
 msgid "Gas grenade"
 msgstr "Plynový granát"
 
-#: data/base/skill_specs.lua:331
+#: data/base/skill_specs.lua:344
 msgid "Small EMP grenade"
 msgstr "Malý EMP granát"
 
-#: data/base/skill_specs.lua:344
+#: data/base/skill_specs.lua:357
 msgid "EMP grenade"
 msgstr "EMP granát"
 
-#: data/base/skill_specs.lua:356
+#: data/base/skill_specs.lua:369
 msgid "Electronic Noise"
 msgstr "Elektronický šum"
 
@@ -3792,7 +3805,7 @@ msgid "Skyscrapper Arena"
 msgstr "Aréna mistrů"
 
 #: data/storyline/act2/events.dat:108
-msgid "You are unable to return. The only way is foward."
+msgid "You are unable to return. The only way is forward."
 msgstr ""
 
 #: data/storyline/act2/events.dat:109
@@ -4060,7 +4073,7 @@ msgid "Search in the Darkness"
 msgstr "Vidět lépe ve tmě."
 
 #: data/storyline/act2/levels.dat:29946
-msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Managment."
+msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Management."
 msgstr ""
 
 #: data/storyline/act2/levels.dat:29949

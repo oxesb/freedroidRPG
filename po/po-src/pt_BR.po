@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-02-27 18:11+0100\n"
+"POT-Creation-Date: 2019-03-24 17:21+0100\n"
 "PO-Revision-Date: 2019-01-19 20:11+0000\n"
 "Last-Translator: fluzz <fluzz@gmx.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/arctic-games/freedroid-rpg/language/pt_BR/)\n"
@@ -314,29 +314,37 @@ msgstr "Dia %d %02d:%02d"
 msgid "%s empty, reloading..."
 msgstr "%s está vazio, recarregando..."
 
-#: src/influ.c:1024 src/menu.c:1105
+#: src/influ.c:804
+msgid "Energy shield disabled due to overheat."
+msgstr ""
+
+#: src/influ.c:818
+msgid "Energy shield disabled due to a risk of overheat."
+msgstr ""
+
+#: src/influ.c:1044 src/menu.c:1105
 msgid "Load Latest"
 msgstr "Carregar Recente"
 
-#: src/influ.c:1025 src/menu.c:1106
+#: src/influ.c:1045 src/menu.c:1106
 msgid "Load Backup"
 msgstr "Carregar Backup"
 
-#: src/influ.c:1027 src/menu.c:1108 src/lvledit/lvledit_menu.c:964
+#: src/influ.c:1047 src/menu.c:1108 src/lvledit/lvledit_menu.c:964
 msgid "Quit to Main Menu"
 msgstr "Menu Principal"
 
-#: src/influ.c:1029
+#: src/influ.c:1049
 msgid "Return to Editor"
 msgstr "Retornar ao Editor"
 
-#: src/influ.c:1031 src/menu.c:954 src/menu.c:1111
+#: src/influ.c:1051 src/menu.c:954 src/menu.c:1111
 #: src/lvledit/lvledit_menu.c:965
 msgid "Exit FreedroidRPG"
 msgstr "Sair do Jogo"
 
 #. TRANSLATORS: Out of <ammo type>
-#: src/influ.c:1476
+#: src/influ.c:1496
 #, c-format
 msgid "Out of [s]%s[v]!"
 msgstr "Sem [s]%s[v]!"
@@ -353,7 +361,7 @@ msgstr "Iniciando o tutorial."
 msgid "Starting new game act."
 msgstr ""
 
-#: src/init.c:982
+#: src/init.c:983
 msgid ""
 "You are playing a Release Candidate.\n"
 "Strange bugs may still be present in the game.\n"
@@ -369,11 +377,11 @@ msgstr ""
 "\n"
 "Boa sorte!\n"
 
-#: src/init.c:1001 src/init.c:1002
+#: src/init.c:1002 src/init.c:1003
 msgid "Game over.\n"
 msgstr "Fim de jogo.\n"
 
-#: src/init.c:1068 src/init.c:1069
+#: src/init.c:1069 src/init.c:1070
 msgid "Game won.\n"
 msgstr "Vitória.\n"
 
@@ -1773,92 +1781,97 @@ msgstr "Você não pode comprar este item."
 msgid "You cannot teleport here!"
 msgstr "Você não pode teleportar-se aqui!"
 
-#: src/skills.c:856
+#: src/skills.c:857
 #, c-format
 msgid "Program revision: %c%d%c "
 msgstr "Revisão: %c%d%c"
 
-#: src/skills.c:865
+#: src/skills.c:866
 #, c-format
 msgid "Heat produced: %c%d%c "
 msgstr "Calor produzido: %c%d%c"
 
-#: src/skills.c:867
+#: src/skills.c:868
 #, c-format
 msgid "Cooling: %c%d%c "
 msgstr "Refrigeração: %c%d%c"
 
-#: src/skills.c:877
+#: src/skills.c:878
 #, c-format
 msgid "Damage: %c%d%c "
 msgstr "Dano: %c%d%c"
 
-#: src/skills.c:879
+#: src/skills.c:880
 #, c-format
 msgid "Damage: %c%d-%d%c "
 msgstr "Dano: %c%d-%d%c"
 
-#: src/skills.c:883
+#: src/skills.c:884
 #, c-format
 msgid "Healing: %c%d%c "
 msgstr "Cura: %c%d%c"
 
-#: src/skills.c:885
+#: src/skills.c:886
 #, c-format
 msgid "Healing: %c%d-%d%c "
 msgstr "Cura: %c%d-%d%c"
 
-#: src/skills.c:894
+#: src/skills.c:895
 #, c-format
 msgid "Paralyze"
 msgstr "Paralisar"
 
-#: src/skills.c:896
+#: src/skills.c:897
 #, c-format
 msgid "Slow down"
 msgstr "Desacelerar"
 
-#: src/skills.c:898
+#: src/skills.c:899
 #, c-format
 msgid "Invisible"
 msgstr "Invisível"
 
-#: src/skills.c:900
+#: src/skills.c:901
 #, c-format
 msgid "Poison"
 msgstr "Veneno"
 
-#: src/skills.c:903
+#: src/skills.c:904
 #, c-format
 msgid "Takeover charges: %c%d%c "
 msgstr "Cargas de \"Takeover\": %c%d%c"
 
-#: src/skills.c:905
+#: src/skills.c:906
 #, c-format
 msgid "Escape"
 msgstr "Escapar"
 
-#: src/skills.c:907
+#: src/skills.c:908
 #, c-format
 msgid "Passive"
 msgstr "Passivo"
 
-#: src/skills.c:913
+#: src/skills.c:914
 #, c-format
 msgid "Repair items, degrading them a bit"
 msgstr "Reparar itens, degradando-os um pouco"
 
-#: src/skills.c:915
+#: src/skills.c:916
 #, c-format
 msgid "Detect enemies"
 msgstr "Detectar inimigos"
 
-#: src/skills.c:917
+#: src/skills.c:918
 #, c-format
 msgid "Lighten area"
 msgstr "Iluminar área "
 
-#: src/skills.c:923
+#: src/skills.c:920
+#, c-format
+msgid "Turn damage into heat"
+msgstr ""
+
+#: src/skills.c:926
 #, c-format
 msgid " for %c%.1f%c seconds"
 msgstr "por %c%.1f%c segundos"
@@ -1959,6 +1972,10 @@ msgid "invisible"
 msgstr "invisível"
 
 #: src/text.c:381
+msgid "shielded"
+msgstr ""
+
+#: src/text.c:387
 msgid "scanning"
 msgstr "escaneando"
 
@@ -2901,7 +2918,7 @@ msgstr "Wayp."
 msgid "Label"
 msgstr "Etiqueta"
 
-#: src/savegame/convert.c:180
+#: src/savegame/convert.c:184
 msgid ""
 "The SAVEGAME info can not be decoded.\n"
 "Your savegame is probably corrupted."
@@ -2909,7 +2926,7 @@ msgstr ""
 "As informações do JOGO SALVO não puderam ser decodificadas.\n"
 "Seu salvamento provavelmente está corrompido."
 
-#: src/savegame/convert.c:198
+#: src/savegame/convert.c:202
 msgid ""
 "Your savegame seems to be a pre-0.16.1 version, but the savegame_version_string can not be found.\n"
 "Your savegame is probably corrupted."
@@ -2917,7 +2934,7 @@ msgstr ""
 "Seu jogo salvo parece ser de uma versão anterior a 0.16.1, porém savegame_version_string que possui essa informação não pode ser encontrado.\n"
 "Seu salvamento provavelmente está corrompido."
 
-#: src/savegame/convert.c:217
+#: src/savegame/convert.c:221
 msgid ""
 "Your savegame seems to be a pre-0.16.1 version, but the savegame_version_string can not be decoded.\n"
 "Your savegame is probably corrupted."
@@ -2925,7 +2942,7 @@ msgstr ""
 "Seu jogo salvo parece ser de uma versão anterior a 0.16.1, porém savegame_version_string que possui essa informação não pode ser decodificado.\n"
 "Seu salvamento provavelmente está corrompido."
 
-#: src/savegame/convert.c:321
+#: src/savegame/convert.c:325
 msgid ""
 "-=* Savegame loading *=-\n"
 "\n"
@@ -2939,7 +2956,7 @@ msgstr ""
 "Se você está usando uma versão de desenvolvimento do jogo, isso é esperado.\n"
 "Vamos carregar como está, porém espere erros ou até mesmo crashs do jogo."
 
-#: src/savegame/convert.c:328
+#: src/savegame/convert.c:332
 #, c-format
 msgid ""
 "-=* Savegame loading *=-\n"
@@ -2954,7 +2971,7 @@ msgstr ""
 "Porém nenhum conversor foi encontrado.\n"
 "Vamos carregar como está, porém espere erros ou até mesmo crashs do jogo."
 
-#: src/savegame/convert.c:336
+#: src/savegame/convert.c:340
 #, c-format
 msgid ""
 "-=* Savegame loading *=-\n"
@@ -2969,7 +2986,7 @@ msgstr ""
 "Note que não podemos garantir que o salvamento está totalmente funcional.\n"
 "Alguns erros podem ocorrer e o jogo pode até mesmo se fechar inesperadamente."
 
-#: src/savegame/convert.c:348
+#: src/savegame/convert.c:352
 #, c-format
 msgid ""
 "-=* Savegame loading *=-\n"
@@ -3036,6 +3053,33 @@ msgid ""
 "The savegame seems to be corrupted."
 msgstr ""
 "Erro filtrando (%s:%s) no jogo salvo: O atributo Tux 'AllMissions' (quests do jogador) não foi encontrado.\n"
+"O salvamento parece estar corrompido."
+
+#: src/savegame/filters_0_16_1.c:262
+#, fuzzy, c-format
+msgid ""
+"Error during savegame filtering (%s:%s): Tux 'Inventory' attribute was not found.\n"
+"The savegame seems to be corrupted."
+msgstr ""
+"Erro filtrando (%s:%s) no jogo salvo: O atributo Tux 'AllMissions' (quests do jogador) não foi encontrado.\n"
+"O salvamento parece estar corrompido."
+
+#: src/savegame/filters_0_16_1.c:273
+#, fuzzy, c-format
+msgid ""
+"Error during savegame filtering (%s:%s): Tux 'HaveBeenToLevel' attribute was not found.\n"
+"The savegame seems to be corrupted."
+msgstr ""
+"Erro filtrando (%s:%s) no jogo salvo: O atributo Tux 'AllMissions' (quests do jogador) não foi encontrado.\n"
+"O salvamento parece estar corrompido."
+
+#: src/savegame/filters_0_16_1.c:306
+#, fuzzy, c-format
+msgid ""
+"Error during savegame filtering (%s:%s): Malformed item type string in Tux struct.\n"
+"The savegame seems to be corrupted."
+msgstr ""
+"Erro filtrando (%s:%s) no jogo salvo: 'mission_diary_texts' (dados de quest) não foi encontrado.\n"
 "O salvamento parece estar corrompido."
 
 #~ msgid "Multiplicity: %d\n"
