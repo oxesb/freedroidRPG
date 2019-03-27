@@ -739,19 +739,34 @@ static void detect_available_resolutions(void)
 	SDL_Rect **modes;
 	int size = 0;
 
-	// Get available fullscreen/hardware modes (reported by SDL)
-	modes = SDL_ListModes(NULL, SDL_FULLSCREEN|SDL_HWSURFACE);
-	if (modes == (SDL_Rect**) -1) {
-		error_message(__FUNCTION__,
-			"SDL reports all resolutions are supported in fullscreen mode.\n"
-			"Please use -r WIDTHxHEIGHT to specify any one you like.\n"
-			"Defaulting to a sane one for now", NO_REPORT);
+	// Check that a video driver exists
+	char vid_driver[81];
+	if (SDL_VideoDriverName(vid_driver, 80)) {
+		DebugPrintf(-4, "\nVideo system type: %s.", vid_driver);
 	} else {
-		// Add resolutions to the screen_resolutions array
-		for (int i = 0; i < MAX_RESOLUTIONS && modes[i]; i++) {
-			if ((modes[i]->w >= MIN_SCREEN_WIDTH) && (modes[i]->h >= MIN_SCREEN_HEIGHT)) {
-				screen_resolutions[size] = (screen_resolution){modes[i]->w, modes[i]->h, "", TRUE};
-				size++;
+		fprintf(stderr, "Video driver seems not to exist or initialization failure!\nError code: %s\n", SDL_GetError());
+		Terminate(EXIT_FAILURE);
+	}
+
+	if (!strncmp(vid_driver, "dummy", 5)) {
+		// 'dummy' SDL driver ? It seems that we are running benchmarks
+		// without display - Use default resolution
+		;
+	} else {
+		// Get available fullscreen/hardware modes (reported by SDL)
+		modes = SDL_ListModes(NULL, SDL_FULLSCREEN|SDL_HWSURFACE);
+		if (modes == (SDL_Rect**) -1) {
+			error_message(__FUNCTION__,
+				"SDL reports all resolutions are supported in fullscreen mode.\n"
+				"Please use -r WIDTHxHEIGHT to specify any one you like.\n"
+				"Defaulting to a sane one for now", NO_REPORT);
+		} else {
+			// Add resolutions to the screen_resolutions array
+			for (int i = 0; i < MAX_RESOLUTIONS && modes[i]; i++) {
+				if ((modes[i]->w >= MIN_SCREEN_WIDTH) && (modes[i]->h >= MIN_SCREEN_HEIGHT)) {
+					screen_resolutions[size] = (screen_resolution){modes[i]->w, modes[i]->h, "", TRUE};
+					size++;
+				}
 			}
 		}
 	}

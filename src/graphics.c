@@ -741,19 +741,6 @@ void init_video(void)
 	// Tell SDL to center the window once we make it
 	putenv("SDL_VIDEO_CENTERED=1");
 
-	// Let's get some info about the whole system here.  Is this a windows or x11 or
-	// mac or whatever graphical environment?
-	//
-	// NOTE:  This has got NOTHING to do with OpenGL and OpenGL venour or the like yet...
-	//
-	char vid_driver[81];
-	if (SDL_VideoDriverName(vid_driver, 80)) {
-		DebugPrintf(-4, "\nVideo system type: %s.", vid_driver);
-	} else {
-		fprintf(stderr, "Video driver seems not to exist or initialization failure!\nError code: %s\n", SDL_GetError());
-		Terminate(EXIT_FAILURE);
-	}
-
 	// We check if the program has been compiled with OpenGL libraries present
 	// and take care of the case OpenGL output requested when compiled without
 	// those libs...
