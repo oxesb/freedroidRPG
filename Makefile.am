@@ -11,7 +11,7 @@ AM_CFLAGS       = @FD_CFLAGS@
 AM_CPPFLAGS     = @FD_CPPFLAGS@
 AM_LDFLAGS      = @FD_LDFLAGS@
 LIBS            = @FD_LIBS@ @LIBS@
-AM_DISTCHECK_CONFIGURE_FLAGS = --enable-dev-tools
+AM_DISTCHECK_CONFIGURE_FLAGS = --enable-dev-tools --enable-rtprof
 
 if WIN32
 WIN32_PREBUILD = win32

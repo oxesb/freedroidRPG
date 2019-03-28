@@ -11,7 +11,9 @@ POTEXCLUDES =
 subdir = po/po-dialogs
 top_builddir = ../..
 
-# Some scripts need to know gawk's path
+# Rules-others is not parsed by configure, so we have to transfer some
+# autoconf vars into shell vars
+## Some scripts need to know gawk's path
 export AWK=@AWK@
 
 # These options get passed to xgettext.

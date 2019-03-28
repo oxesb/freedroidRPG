@@ -131,6 +131,10 @@ $(TXTARGETS):
 .PHONY: $(TXTARGETS)
 
 clean-local:
-	rm -f ./po-data/*.gmo
-	rm -f ./po-dialogs/*.gmo
-	rm -f ./po-src/*.gmo
+	-rm -f ./po-data/*.gmo
+	-rm -f ./po-dialogs/*.gmo
+	-rm -f ./po-src/*.gmo
+
+distclean-local:
+	-rm -f ./*/stamp-li
+	-rm -f ./*/Makevars

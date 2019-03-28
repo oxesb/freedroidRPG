@@ -543,8 +543,8 @@ SILENT_ECHO(["
 	compile dev tools:               $summary_dev_tools
 	embed the real-time profiler:    $summary_rtprof
 	localization enabled:            $USE_NLS
-	create locales:                  $build_locales"
-])
+	create locales:                  $build_locales
+"])
 
 AS_VAR_IF([cross_compiling], [yes],
 	[SILENT_ECHO(["	cross-compiling detected, so will not build some subdirs"])]

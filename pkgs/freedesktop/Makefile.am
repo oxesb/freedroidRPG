@@ -20,4 +20,4 @@ install-data-local:
 
 uninstall-local:
 	@find $(DESTDIR)$(datadir)/ -name freedroidrpg.png -exec rm -f {} \;
-	@find $(DESTDIR)$(datadir)/ -name freedroidrpg.svg -exec rm -f {} \;
+	@find $(DESTDIR)$(datadir)/ -name freedroidRPG.svg -exec rm -f {} \;
