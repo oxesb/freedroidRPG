@@ -217,3 +217,4 @@ tx-pull:: $(README_TX)
 
 update-gmo:: $(README_L10N)
 
+all: update-gmo
