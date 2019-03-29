@@ -139,6 +139,12 @@ l10n-stats-no:
 l10n-stats-yes:
 	@cd po && $(MAKE) -s $(AM_MAKEFLAGS) l10n-stats
 
+l10n-clean: l10n-clean-@USE_NLS@
+l10n-clean-no:
+	@echo "NLS is disabled. Nothing to do."
+l10n-clean-yes:
+	@cd po && $(MAKE) -s $(AM_MAKEFLAGS) l10n-clean
+
 help:
 	@echo "Make targets:"
 	@echo " -----"

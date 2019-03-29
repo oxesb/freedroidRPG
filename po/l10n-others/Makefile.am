@@ -19,6 +19,11 @@ EXTRA_DIST = LINGUAS Makevars
 l10n-stats:
 	@echo "    Not yet implemented."
 
+#== Clean obsolete strings
+
+l10n-clean:
+	@echo "    Not yet implemented."
+
 #== Transifex synchronization - Shared functions definition
 
 TX       = tx

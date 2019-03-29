@@ -34,6 +34,22 @@ $(L10NSTATSDIRS):
 .PHONY: l10n-stats-no l10n-stats-yes $(L10NSTATSDIRS)
 
 #
+# Clean PO files (remove obsolete strings)
+#
+L10NCLEANDIRS = $(SUBDIRS:%=l10nclean-%)
+
+l10n-clean: l10n-clean-@USE_NLS@
+l10n-clean-no:
+	@echo "NLS is disabled. Nothing to do."
+l10n-clean-yes: $(L10NCLEANDIRS)
+
+$(L10NCLEANDIRS):
+	echo "$(@:l10nclean-%=%):"
+	$(MAKE) -C $(@:l10nclean-%=%) $(AM_MAKEFLAGS) l10n-clean
+
+.PHONY: l10n-clean-no l10n-clean-yes $(L10NCLEANDIRS)
+
+#
 # Update the .pot files and their translations (.po files)
 # to include the lastest changes made to the sources.
 #
