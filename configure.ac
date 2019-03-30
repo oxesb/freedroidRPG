@@ -503,7 +503,7 @@ if test "$USE_NLS" = "yes"; then
 			po/po-src/Makevars po/po-src/Makefile.in
 			po/po-dialogs/Makevars po/po-dialogs/Makefile.in
 			po/po-data/Makevars po/po-data/Makefile.in
-			po/l10n-others/Makefile
+			po/l10n-others/Makevars po/l10n-others/Makefile
 	])
 fi
 
