@@ -5,11 +5,13 @@
 #
 # Translators:
 # Alexander Forsberg <alex@datafluss.se>, 2019
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: freedroidrpg 0.16+git\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-27 09:20+0100\n"
+"POT-Creation-Date: 2019-03-30 22:43+0100\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
 "Last-Translator: Alexander Forsberg <alex@datafluss.se>, 2019\n"
 "Language-Team: Swedish (https://www.transifex.com/arctic-games/teams/9511/sv/)\n"
@@ -1209,14 +1211,12 @@ msgid "Knowing what your enemies are up to is easy with a little signal intellig
 msgstr "Att veta vad dina fiender håller på med är enkelt med hjälp av lite \"signal-intelligens\". Visar fiendernas position på autokartan."
 
 #: data/base/item_specs.lua:1834
-#, fuzzy
 msgid "Source Book of Energy Shield"
-msgstr "Boken om \"Nödavstägning\""
+msgstr ""
 
 #: data/base/item_specs.lua:1835 data/base/skill_specs.lua:213
-#, fuzzy
 msgid "Energy Shield"
-msgstr "Energipiska"
+msgstr ""
 
 #: data/base/item_specs.lua:1839 data/base/skill_specs.lua:218
 msgid "Creating an energy shield to protect you can be a very useful skill. Every hit that you get will be converted into heat. Beware: This heats up excessively. Equipment can still be damaged by heat. When you overheat, shield will try to automatically turn off to prevent damage to itself. It may provoke extra-heat on this process, so be sure to not let it happen."
@@ -3800,9 +3800,8 @@ msgid "Corporate Guy"
 msgstr "Företagssnubbe"
 
 #: data/storyline/act2/events.dat:60 data/storyline/act2/levels.dat:30140
-#, fuzzy
 msgid "Skyscrapper Arena"
-msgstr "Mästararena"
+msgstr ""
 
 #: data/storyline/act2/events.dat:108
 msgid "You are unable to return. The only way is forward."
@@ -3821,68 +3820,57 @@ msgid "BOOM BOOOOOOM BOOOM"
 msgstr ""
 
 #: data/storyline/act2/events.dat:186
-#, fuzzy
 msgid "To Underground F1"
-msgstr "Till den Underjordiska Stationen"
+msgstr ""
 
 #: data/storyline/act2/events.dat:198 data/storyline/act2/events.dat:235
-#, fuzzy
 msgid "To Underground F2"
-msgstr "Till den Underjordiska Stationen"
+msgstr ""
 
 #: data/storyline/act2/events.dat:213
-#, fuzzy
 msgid "To Ground Level"
-msgstr "Till Varuhuset Plan 2"
+msgstr ""
 
 #: data/storyline/act2/events.dat:222 data/storyline/act2/events.dat:266
 #: data/storyline/act2/events.dat:385
-#, fuzzy
 msgid "To Underground F3"
-msgstr "Till den Underjordiska Stationen"
+msgstr ""
 
 #: data/storyline/act2/events.dat:244 data/storyline/act2/events.dat:288
-#, fuzzy
 msgid "To Underground F4"
-msgstr "Till den Underjordiska Stationen"
+msgstr ""
 
 #: data/storyline/act2/events.dat:253
 msgid "To Factory via Shortcut"
 msgstr ""
 
 #: data/storyline/act2/events.dat:275 data/storyline/act2/events.dat:310
-#, fuzzy
 msgid "To Underground F5"
-msgstr "Till den Underjordiska Stationen"
+msgstr ""
 
 #: data/storyline/act2/events.dat:297 data/storyline/act2/events.dat:332
-#, fuzzy
 msgid "To Underground F6"
-msgstr "Till den Underjordiska Stationen"
+msgstr ""
 
 #: data/storyline/act2/events.dat:319 data/storyline/act2/events.dat:354
-#, fuzzy
 msgid "To Underground F7"
-msgstr "Till den Underjordiska Stationen"
+msgstr ""
 
 #: data/storyline/act2/events.dat:341 data/storyline/act2/events.dat:376
-#, fuzzy
 msgid "To Underground F8"
-msgstr "Till den Underjordiska Stationen"
+msgstr ""
 
 #: data/storyline/act2/events.dat:363
-#, fuzzy
 msgid "To Underground F9"
-msgstr "Till den Underjordiska Stationen"
+msgstr ""
 
 #: data/storyline/act2/events.dat:398
 msgid "To Mainland via underground"
 msgstr ""
 
 #: data/storyline/act2/events.dat:411
-#, fuzzy
 msgid "To Icy Summer Island"
-msgstr "Till Omega-ön"
+msgstr ""
 
 #: data/storyline/act2/events.dat:591 data/storyline/act2/npc_specs.lua:29
 msgid "Colemak"
@@ -3925,32 +3913,28 @@ msgid "Guest Room. Please wait patiently for one of our staff pick you up."
 msgstr ""
 
 #: data/storyline/act2/levels.dat:2113
-#, fuzzy
 msgid "Welcome to Act 2"
-msgstr "Välkommen till denna terminal."
+msgstr ""
 
 #: data/storyline/act2/levels.dat:2484
-#, fuzzy
 msgid "R&R Factory"
-msgstr "Fabrikens innersta del"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:4627
 msgid "Droid Research & Development Offices"
 msgstr ""
 
 #: data/storyline/act2/levels.dat:4678
-#, fuzzy
 msgid "RR Factory, Floor 2"
-msgstr "Fabrikens innersta del"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:6962
 msgid "Servant Development Office. South: Scout Development Office."
 msgstr ""
 
 #: data/storyline/act2/levels.dat:7138
-#, fuzzy
 msgid "RR Factory, Floor 3"
-msgstr "Fabrikens innersta del"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:9508
 msgid "Scouts Development Office. Intruders will be shot without mercy."
@@ -3965,9 +3949,8 @@ msgid "Are you lost? Northeast to Maintenance Development Office."
 msgstr ""
 
 #: data/storyline/act2/levels.dat:9695
-#, fuzzy
 msgid "RR Factory, Floor 4"
-msgstr "Fabrikens innersta del"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:12216
 msgid "Maintenance Development Office & Storage. "
@@ -3986,18 +3969,16 @@ msgid "If the gate to the research area is locked, please do not open it. Insane
 msgstr ""
 
 #: data/storyline/act2/levels.dat:12409
-#, fuzzy
 msgid "RR Factory, Floor 5"
-msgstr "Fabrikens innersta del"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:14743
 msgid "Crew & Harvesting Development Office. North-east: Security Development Office."
 msgstr ""
 
 #: data/storyline/act2/levels.dat:14932
-#, fuzzy
 msgid "RR Factory, Floor 6"
-msgstr "Fabrikens innersta del"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:17301
 msgid "Dispatchment & Signman Offices. Battle droids present. Authorized Access Only!"
@@ -4008,9 +3989,8 @@ msgid "Security Development Office. Sign blinks to spare power. This way for mor
 msgstr ""
 
 #: data/storyline/act2/levels.dat:17499
-#, fuzzy
 msgid "RR Factory, Floor 7"
-msgstr "Fabrikens innersta del"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:19924
 msgid "Use this stair for Sentinel Dev. Office, Command Dev. Office, Factory Plant and Death."
@@ -4018,7 +3998,7 @@ msgstr ""
 
 #: data/storyline/act2/levels.dat:19927
 msgid "There is nothing on this sign."
-msgstr ""
+msgstr "Inget står på skylten."
 
 #: data/storyline/act2/levels.dat:19930
 msgid "Sentinel and Command devs, we're sorry, but more stairs ahead."
@@ -4029,14 +4009,12 @@ msgid "Signman Office. Hey, it's me! You totally should visit this office, or se
 msgstr ""
 
 #: data/storyline/act2/levels.dat:20124
-#, fuzzy
 msgid "RR Factory, Floor 8"
-msgstr "Fabrikens innersta del"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:22890
-#, fuzzy
 msgid "RR Factory, Floor 9"
-msgstr "Fabrikens innersta del"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:25864
 msgid "Command Development Office & Factory. Complainers about stairs will be frozen without mercy. AZ."
@@ -4063,14 +4041,12 @@ msgid "Icy Summer Artificial Island"
 msgstr ""
 
 #: data/storyline/act2/levels.dat:28338
-#, fuzzy
 msgid "To mainland"
-msgstr "Tillbaka till fastlandet"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:28881
-#, fuzzy
 msgid "Search in the Darkness"
-msgstr "Se bättre i mörker."
+msgstr ""
 
 #: data/storyline/act2/levels.dat:29946
 msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Management."
@@ -4086,19 +4062,16 @@ msgstr ""
 
 #: data/storyline/act2/npc_specs.lua:11
 #: data/storyline/act2/ReturnOfTux.droids:123
-#, fuzzy
 msgid "Master Yadda"
-msgstr "Mästararena"
+msgstr ""
 
 #: data/storyline/act2/npc_specs.lua:15
-#, fuzzy
 msgid "Mr. Stone - Shop owner"
-msgstr "Stone - Butiksägare"
+msgstr ""
 
 #: data/storyline/act2/npc_specs.lua:17
-#, fuzzy
 msgid "RR Security Chief"
-msgstr "614 Säkerhetsbot"
+msgstr ""
 
 #: data/storyline/act2/npc_specs.lua:21
 msgid "999 RR Manager"
@@ -4140,17 +4113,15 @@ msgid "Message From An Old Friend"
 msgstr ""
 
 #: data/storyline/act2/quests.lua:35
-#, fuzzy
 msgid "The Reapers Of MegaSys I"
-msgstr "Will Gapes - MegaSys säkerhetsrådgivare"
+msgstr ""
 
 #: data/storyline/act2/ReturnOfTux.droids:4
 #: data/storyline/act2/ReturnOfTux.droids:5
 #: data/storyline/act2/ReturnOfTux.droids:6
 #: data/storyline/act2/ReturnOfTux.droids:7
-#, fuzzy
 msgid "RR Guard"
-msgstr "Röd Väktare"
+msgstr ""
 
 #: data/storyline/act2/ReturnOfTux.droids:8
 msgid "629 Assassin"
@@ -4173,566 +4144,9 @@ msgid "Crossroad Autogun"
 msgstr ""
 
 #: data/storyline/act2/ReturnOfTux.droids:20
-#, fuzzy
 msgid "Power Guard"
-msgstr "Röd Väktare"
+msgstr ""
 
 #: data/storyline/act2/ReturnOfTux.droids:140
-#, fuzzy
 msgid "Friendly Dude"
-msgstr "Vänlig 296:a"
-
-#~ msgid "Day %d, %02d:%02d"
-#~ msgstr "Dag %d, %02d:%02d"
-
-#~ msgid "%s@hacked_%s: ~ # "
-#~ msgstr "%s@hackad_%s: ~ # "
-
-#~ msgid "Login : "
-#~ msgstr "Inloggning : "
-
-#~ msgid "Password : "
-#~ msgstr "Lösenord :"
-
-#~ msgid "First login from /dev/ttySO on %s %d"
-#~ msgstr "Första inloggningen från /dev/ttySO %s %d"
-
-#~ msgid "Last login from /dev/ttyS0 on %s %d"
-#~ msgstr "Sist inloggad från /dev/ttyS0 %s %d"
-
-#~ msgid "Welcome to [b]%s[/b]!"
-#~ msgstr "Välkommen till [b]%s[/b]!"
-
-#~ msgid "Hardware Check : BOT DAMAGED"
-#~ msgstr "Hårdvarukontroll: BOTT SKADAD"
-
-#~ msgid "This %s unit could stand to be repaired."
-#~ msgstr "Denna enhet %s kan repareras."
-
-#~ msgid "BOTNET: UNIT TOO DAMAGED TO BROADCAST COMMANDS."
-#~ msgstr "BOTNÄT: ENHETEN FÖR SKADAD FÖR ATT SÄNDA KOMMANDON."
-
-#~ msgid "Entering \"single node\" mode..."
-#~ msgstr "Startar \"enkel nod\"-läge..."
-
-#~ msgid "BOTNET: Most commands will be broadcast."
-#~ msgstr "BOTNÄT: De flesta kommandon sänds vidare."
-
-#~ msgid "SINGLE NODE: Commands will not be broadcast."
-#~ msgstr "ENKEL NOD: Kommandon sänds inte vidare."
-
-#~ msgid "cd repair&settings/"
-#~ msgstr "cd reparation&konfiguration/"
-
-#~ msgid "%s@hacked_%s/repair&settings: ~ # "
-#~ msgstr "%s@hackad_%s/reparation&konfiguration: ~ # "
-
-#~ msgid "cd .."
-#~ msgstr "cd .."
-
-#~ msgid "./hold_position.sh"
-#~ msgstr "./stå_still.sh"
-
-#~ msgid "Holding position."
-#~ msgstr "Står stilla."
-
-#~ msgid "script V 1.0.2 (c) gnu.org, 2054"
-#~ msgstr "skript V 1.0.2 (c) gnu.org, 2054"
-
-#~ msgid "Checking requirements..."
-#~ msgstr "Kontrollerar krav..."
-
-#~ msgid "Movement unit: Power-down... [Done]."
-#~ msgstr "Rörelseenhet: Stänger av... [Klar]."
-
-#~ msgid "Status: All movement suppressed."
-#~ msgstr "Status: All rörelse inaktiverad."
-
-#~ msgid "./follow_me.sh"
-#~ msgstr "./följ_mig.sh"
-
-#~ msgid "Initiating tracking sequence."
-#~ msgstr "Initierar spårning."
-
-#~ msgid "Movement unit: Enabled."
-#~ msgstr "Rörelseenhet: Aktiverad."
-
-#~ msgid "Acquiring lock on position of %s."
-#~ msgstr "Låser till samma position som %s."
-
-#~ msgid "Status: Following %s."
-#~ msgstr "Status: Följer %s."
-
-#~ msgid "./move_freely.sh"
-#~ msgstr "./ströva_fritt.sh"
-
-#~ msgid "Enable movement."
-#~ msgstr "Aktivera rörlighet."
-
-#~ msgid "script V 1.0.5 (c) gnu.org, 2054"
-#~ msgstr "skript V 1.0.5 (c) gnu.org, 2054"
-
-#~ msgid "Movement unit: Power-up... [Done]."
-#~ msgstr "Rörelseenhet: Startar upp... [Klar]."
-
-#~ msgid "Resuming normal patrol operations... [Done]"
-#~ msgstr "Återställer normala patrullfunktioner... [Klar]."
-
-#~ msgid "Status: Patrolling."
-#~ msgstr "Status: Patrullerar."
-
-#~ msgid "./repair.plx"
-#~ msgstr "./reparera.plx"
-
-#~ msgid "Available amount of valuable circuits for repair: %d."
-#~ msgstr "Värdefulla kretsar tillgängliga för reparation: %d"
-
-#~ msgid "seconds"
-#~ msgstr "sekunder"
-
-#~ msgid "second"
-#~ msgstr "sekund"
-
-#~ msgid "circuits"
-#~ msgstr "värdefulla kretsar"
-
-#~ msgid "circuit"
-#~ msgstr "värdefull krets"
-
-#~ msgid "Repairs on %s will take less than %d %s, %d valuable %s, and %d heat."
-#~ msgstr "Reparationen av %s kommer kräva mindre än %d %s, %d %s och %d grader värme."
-
-#~ msgid "You do not have enough valuable circuits to ensure repair of this %s unit."
-#~ msgstr "Du har inte tillräckligt många värdefulla kretsar för att reparera denna enhet %s."
-
-#~ msgid "You cannot dissipate enough heat to ensure repair of this %s unit."
-#~ msgstr "Du kan inte leda bort tillräckligt mycket värme för att reparera denna enhet %s."
-
-#~ msgid "Do you want to start repair of this %s unit?"
-#~ msgstr "Vill du påbörja reparation av denna enhet %s?"
-
-#~ msgid "%s is currently undamaged."
-#~ msgstr "%s är för närvarande oskadad."
-
-#~ msgid "Y"
-#~ msgstr "J"
-
-#~ msgid "Repair in progress."
-#~ msgstr "Reparation pågår."
-
-#~ msgid "Logout to complete repair process."
-#~ msgstr "Logga ut för att slutföra reparationen."
-
-#~ msgid "N"
-#~ msgstr "N"
-
-#~ msgid "Repair aborted."
-#~ msgstr "Reparation avbruten."
-
-#~ msgid "./settings.plx"
-#~ msgstr "./inställningar.plx"
-
-#~ msgid "confirmation of hcf.py"
-#~ msgstr "bekräfta ste.py"
-
-#~ msgid "Always ask for confirmation before execution of hcf.py? [Y/N]"
-#~ msgstr "Fråga alltid om bekräftelse innan ste.py körs? [J/N]"
-
-#~ msgid "Y (always ask)"
-#~ msgstr "J (fråga alltid)"
-
-#~ msgid "Confirmation will now be asked before execution of hcf.py."
-#~ msgstr "Bekräftelse krävs nu innan körning av ste.py."
-
-#~ msgid "N (don't ask)"
-#~ msgstr "N (fråga inte)"
-
-#~ msgid "hcf.py will be executed without asking for confirmation."
-#~ msgstr "ste.py kommer köras utan att fråga efter bekräftelse."
-
-#~ msgid "broadcast commands"
-#~ msgstr "sänd kommandon"
-
-#~ msgid "Broadcast commands to all units on level? [Y/N]"
-#~ msgstr "Sänd kommandon till alla bottar i området? [J/N]"
-
-#~ msgid "Y (enable broadcast)"
-#~ msgstr "J (aktivera sändning)"
-
-#~ msgid "Commands will be broadcast and executed by all bots on this level under your control."
-#~ msgstr "Kommandon kommer sändas till och köras av alla bottar du kontrollerar."
-
-#~ msgid "Entering \"botnet\" mode..."
-#~ msgstr "Startar \"botnät\"-läge..."
-
-#~ msgid "N (disable broadcast)"
-#~ msgstr "N (inaktivera sändning)"
-
-#~ msgid "Commands will only be executed by this bot."
-#~ msgstr "Kommandon kommer endast köras på denna bott."
-
-#~ msgid "Welcome to the settings menu."
-#~ msgstr "Välkommen till inställningsmenyn."
-
-#~ msgid "Version: 1.82c"
-#~ msgstr "Version: 1.82c"
-
-#~ msgid "Installed sensor: %s"
-#~ msgstr "Installerad sensor: %s"
-
-#~ msgid "No upgrades found."
-#~ msgstr "Inga uppgraderingar hittades."
-
-#~ msgid "UNIT TOO DAMAGED TO BROADCAST COMMANDS."
-#~ msgstr "ENHETEN ÄR FÖR SKADAD FÖR ATT SÄNDA KOMMANDON."
-
-#~ msgid "Which setting should be changed?"
-#~ msgstr "Vilken inställning ska ändras?"
-
-#~ msgid "./hostname"
-#~ msgstr "./värdnamn"
-
-#~ msgid "Welcome to the hostname menu."
-#~ msgstr "Välkommen till värdnamnsmenyn."
-
-#~ msgid "Version: %s"
-#~ msgstr "Version: %s"
-
-#~ msgid "Current botname: [b]%s[/b]"
-#~ msgstr "Nuvarande bottnamn: [b]%s[/b]"
-
-#~ msgid "Select new name? [Y/N]"
-#~ msgstr "Ange nytt namn? [J/N]"
-
-#~ msgid "Yes"
-#~ msgstr "Ja"
-
-#~ msgid "New Name: "
-#~ msgstr "Nytt namn:"
-
-#~ msgid "Type a new name for this %s unit."
-#~ msgstr "Skriv in ett nytt namn för denna %s."
-
-#~ msgid "Bald"
-#~ msgstr "Skallig"
-
-#~ msgid "Brusque"
-#~ msgstr "Brysk"
-
-#~ msgid "Chic"
-#~ msgstr "Elegant"
-
-#~ msgid "Cuddly"
-#~ msgstr "Gosig"
-
-#~ msgid "Cute"
-#~ msgstr "Gullig"
-
-#~ msgid "Fickle"
-#~ msgstr "Nyckfull"
-
-#~ msgid "Fluffy"
-#~ msgstr "Fluffig"
-
-#~ msgid "Fuzzy"
-#~ msgstr "Lurvig"
-
-#~ msgid "Happy"
-#~ msgstr "Glad"
-
-#~ msgid "Hyper"
-#~ msgstr "Hyper"
-
-#~ msgid "Laughing"
-#~ msgstr "Skrattande"
-
-#~ msgid "Machavellian"
-#~ msgstr "Samvetslös"
-
-#~ msgid "Mad"
-#~ msgstr "Galen"
-
-#~ msgid "Obscene"
-#~ msgstr "Oanständig"
-
-#~ msgid "Ornery"
-#~ msgstr "Grinig"
-
-#~ msgid "Pompous"
-#~ msgstr "Pompös"
-
-#~ msgid "Shrewd"
-#~ msgstr "Finurlig"
-
-#~ msgid "Aardvark"
-#~ msgstr "Myrslok"
-
-#~ msgid "Armadillo"
-#~ msgstr "Bälta"
-
-#~ msgid "Barracuda"
-#~ msgstr "Barracuda"
-
-#~ msgid "Bat"
-#~ msgstr "Fladdermus"
-
-#~ msgid "Beetle"
-#~ msgstr "Skalbagge"
-
-#~ msgid "Bunny"
-#~ msgstr "Kanin"
-
-#~ msgid "Dodo"
-#~ msgstr "Dront"
-
-#~ msgid "Duck"
-#~ msgstr "Anka"
-
-#~ msgid "Fox"
-#~ msgstr "Räv"
-
-#~ msgid "Frog"
-#~ msgstr "Groda"
-
-#~ msgid "Gerbil"
-#~ msgstr "Ökenråtta"
-
-#~ msgid "Gnu"
-#~ msgstr "Gnu"
-
-#~ msgid "Halibut"
-#~ msgstr "Hälleflundra"
-
-#~ msgid "Hedgehog"
-#~ msgstr "Igelkott"
-
-#~ msgid "Herring"
-#~ msgstr "Sill"
-
-#~ msgid "Kitten"
-#~ msgstr "Kattunge"
-
-#~ msgid "Koala"
-#~ msgstr "Koala"
-
-#~ msgid "Lemur"
-#~ msgstr "Lemur"
-
-#~ msgid "Mackerel"
-#~ msgstr "Makrill"
-
-#~ msgid "Otter"
-#~ msgstr "Utter"
-
-#~ msgid "Panda"
-#~ msgstr "Panda"
-
-#~ msgid "Platypus"
-#~ msgstr "Näbbdjur"
-
-#~ msgid "Puffin"
-#~ msgstr "Lunnefågel"
-
-#~ msgid "Scarab"
-#~ msgstr "Bladhorning"
-
-#~ msgid "Shrew"
-#~ msgstr "Näbbmus"
-
-#~ msgid "Tapir"
-#~ msgstr "Tapir"
-
-#~ msgid "Trout"
-#~ msgstr "Öring"
-
-#~ msgid "Tuna"
-#~ msgstr "Tonfisk"
-
-#~ msgid "Walrus"
-#~ msgstr "Valross"
-
-#~ msgid "No"
-#~ msgstr "Nej"
-
-#~ msgid "Confirm renaming from [b]%s[/b] to [b]%s[/b]? [Y/N]"
-#~ msgstr "Bekräfta namnändring från [b]%s[/b] till [b]%s[/b]? [J/N]"
-
-#~ msgid "Renamed [b]%s[/b] to [b]%s[/b]."
-#~ msgstr "Bytt namn från [b]%s[/b] till [b]%s[/b]."
-
-#~ msgid "This %s unit is now designated: [b]%s[/b]"
-#~ msgstr "Denna enhet %s kallas nu: [b]%s[/b]"
-
-#~ msgid "./hcf.py"
-#~ msgstr "./ste.py"
-
-#~ msgid "Are you really sure you want to destroy %s? Y/N"
-#~ msgstr "Är du säker att du vill förstöra %s? [J/N]"
-
-#~ msgid "Destruction confirmed."
-#~ msgstr "Förstöring  bekräftad."
-
-#~ msgid "Destruction averted."
-#~ msgstr "Förstöring nekad."
-
-#~ msgid "Draining this %s unit will get you %d HP but kill it and take %d %s."
-#~ msgstr "Att tömma denna %s ger dig %d i hälsa, men kommer döda den och ta %d %s."
-
-#~ msgid "Are you sure you want to drain this %s unit?"
-#~ msgstr "Är du säker att du vill tömma denna enhet %s?"
-
-#~ msgid "Bot not drained."
-#~ msgstr "Bott tömdes inte."
-
-#~ msgid "Running hcf.py..."
-#~ msgstr "Kör ste.py"
-
-#~ msgid "Executing: Halt and Catch Fire."
-#~ msgstr "Kör: Stanna och Ta Eld."
-
-#~ msgid "Warning! Cooling subsystems disabled."
-#~ msgstr "Varning! Kylningen avslagen."
-
-#~ msgid "Warning! Spontaneous oxidization witH emis$ion of light aND heAt detecteddd in THE#main| procesIng unit."
-#~ msgstr "Varning! Plötslig oxidation meD ljusut$trålning oCH vÄrmE upptäktess | HUVUD#processorn.||"
-
-#~ msgid "WArn|n*! SsTeM=#faiPure%%^#n 3 S 1()$++"
-#~ msgstr "VArn|n*! SsTeM=#feElL%%^#n 3 S 1()$++"
-
-#~ msgid "Warning: something seems wrong."
-#~ msgstr "Varning: något gick fel."
-
-#~ msgid "Error report:"
-#~ msgstr "Felrapport:"
-
-#~ msgid "()%%#@(%% THE BLADE IS YOURS. )##%%*&%%*!"
-#~ msgstr "()%%#@(%% BLADET ÄR DITT. )##%%*&%%*!"
-
-#~ msgid "Bot drained."
-#~ msgstr "Bott tömd."
-
-#~ msgid "Failed to drain bot."
-#~ msgstr "Misslyckades att tömma bott."
-
-#~ msgid "I am free!"
-#~ msgstr "Jag är fri!"
-
-#~ msgid "drain_bot_auto.setup"
-#~ msgstr "töm_bott_auto.setup"
-
-#~ msgid "How do you want draining of bots to be handled?"
-#~ msgstr "Hur vill du att tömmande av bottar ska gå till?"
-
-#~ msgid "Currently draining of bots is tried automatically."
-#~ msgstr "För närvarande testas det automatiskt."
-
-#~ msgid "Currently draining of bots is never tried."
-#~ msgstr "För närvarande testas det aldrig."
-
-#~ msgid "Currently it is asked if draining a bot is to be tried."
-#~ msgstr "För närvarande ställs en fråga om det ska testas."
-
-#~ msgid "Always try draining bots."
-#~ msgstr "Testa alltid att tömma alltid bottar."
-
-#~ msgid "Never try to drain a bot"
-#~ msgstr "Testa aldrig att tömma bottar."
-
-#~ msgid "Always ask if attempt to drain bot shall be ran."
-#~ msgstr "Fråga alltid om tömning ska testas eller inte."
-
-#~ msgid "Reprogramm_bots_after_takeover.sh"
-#~ msgstr "omprogrammera_bott_efter_övertagning.sh"
-
-#~ msgid "Bots will be reprogrammed after takeover: [b]true[/b]"
-#~ msgstr "Bottar omprogrammeras efter övertagning: [b]sant[/b]"
-
-#~ msgid "Bots will be reprogrammed after takeover: [b]false[/b]"
-#~ msgstr "Bottar omprogrammeras efter övertagning: [b]falskt[/b]"
-
-#~ msgid "leave settings.plx"
-#~ msgstr "lämna inställningar.plx"
-
-#~ msgid "Settings saved"
-#~ msgstr "Inställningar sparade"
-
-#~ msgid "Leaving settings.plx"
-#~ msgstr "Lämnar inställningar.plx"
-
-#~ msgid "logout"
-#~ msgstr "logga-ut"
-
-#~ msgid "Closing remote connection..."
-#~ msgstr "Stänger fjärranslutning..."
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "Hello."
-#~ msgstr "Hej."
-
-#~ msgid "Hi there."
-#~ msgstr "Hej där."
-
-#~ msgid "Well, hello again."
-#~ msgstr "Hej igen."
-
-#~ msgid "Hello hello."
-#~ msgstr "Hej hej."
-
-#~ msgid "Welcome back."
-#~ msgstr "Välkommen tillbaka."
-
-#~ msgid "help"
-#~ msgstr "hjälp"
-
-#~ msgid "Available commands: help, logout"
-#~ msgstr "Tillgängliga kommandon: hjälp, logga-ut"
-
-#~ msgid "Goodbye"
-#~ msgstr "Hejdå"
-
-#~ msgid "A specialized beam of laser momentarily ionizes the air between the target and the gun, turning it into highly conductive plasma. Milliseconds later, a powerful electric shock is delivered through the air and hits the target. This weapon is effective against people as it is against bots, and indeed few are the droid classes that can withstand more than a few hits from it before going down. The one downside is the high cost involved in crafting this weapon, which makes it very rare. Other than that, even the Exterminators have difficulty matching this weapon, the pride of human race."
-#~ msgstr "En specialiserad laserstråle joniserar luften mellan målet och pistolen, vilket förvandlar den till elektriskt ledande plasma. Några millisekunder senare skickas en kraftig elchock genom luften och träffar målet. Det här vapnet är lika verkningsfullt på människor som på bottar, och det är faktiskt inte många droidklasser som kan klara av mer än några få träffar. Den enda nackdelen är den höga tillverkningskostnaden, vilket gör dessa mycket sällsynta. För övrigt har till och med Utrotaren svårt att mäta sig med detta vapen - mänskligheten stolthet."
-
-#~ msgid "To Novice Arena"
-#~ msgstr "Till Nybörjararenan"
-
-#~ msgid "Not only is the town safe, but apparently so is Ewald's 296 droid. Oh joy."
-#~ msgstr "Inte bara stan är säker, men även Edwalds 296:a. Så underbart."
-
-#~ msgid "Plasma crystal load. This is the most common way of loading a plasma weapon."
-#~ msgstr "Plasma-energi-behållare. Det här är det vanligaste sättet att ladda ett plasmavapen."
-
-#~ msgid "7.62mm ammo."
-#~ msgstr "7.62mm ammunition."
-
-#~ msgid "Browning Machine Gun ammo."
-#~ msgstr "Ammunition till Browning-maskingevär."
-
-#~ msgid "Ooops, you killed Pendragon."
-#~ msgstr "Hoppsan, du dödade Pendragon."
-
-#~ msgid "Ooops, you killed Spencer. That was probably not a good idea."
-#~ msgstr "Ooops, du dödade Spencer. Det var nog ingen bra idé."
-
-#~ msgid "When computers are presented with the unexpected they can damage themselves."
-#~ msgstr "När datorer är presenterade med oväntade saker kan de skada sig själva."
-
-#~ msgid "296 Teleport Point"
-#~ msgstr "296 Teleportplats"
-
-#~ msgid "Respawn Master Arena"
-#~ msgstr "Gör om Mästararenan"
-
-#~ msgid "INV"
-#~ msgstr "INV"
-
-#~ msgid "Effect: Teleport to town or back. The art of rapidly moving away from danger is very useful. Even when used in reverse it has its uses."
-#~ msgstr "Effekt: Teleportera till stan eller tillbaka. Konsten att snabbt ta sig ur fara är bra att kunna. Till och med i andra riktningen kan den vara praktisk."
-
-#~ msgid "By heating up the chips with a malformed program you can cause them to release the magic smoke which keeps the bot running. "
-#~ msgstr "Genom att hetta upp chipen med ett trasigt program, kan du skapa den magiska röken som skadar bottarna."
-
-#~ msgid "The overload setting exists for emergencies. The plasma does not discriminate between bots and humans."
-#~ msgstr "Inställningen för överbelastning är till för nödfall. Plasma gör ingen skillnad på bottar och människor, allt är det samma."
+msgstr ""

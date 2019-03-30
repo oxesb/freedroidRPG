@@ -24,62 +24,62 @@ title_screen{
 background = "credits.jpg",
 song = "HellFortressTwo.ogg",
 text = [[
-    Bavíš se?
-  Já ne.
+Bavíš se?
+Já ne.
 
-Roboti se zdají být kvůli něčemu velmi naštvaný.
-  Předpokládám, že jsou rozhněvaný na tebe.
-    Alespoň mě přestaly hledat.
-      Docela ?úleva?
+Roboti se zdají být kvůli něčemu velmi naštvaní.
+Předpokládám, že jsou rozhněvaný na tebe.
+Alespoň mě přestali hledat.
+Docela ?úleva?
 
-    Jsem si jistý, že umíráš touhou se mnou mluvit.
-  Já něco vymyslím.
+Jsem si jistý, že umíráš touhou se mnou mluvit.
+Já něco vymyslím.
 Prozatím můžeš pouze poslouchat.
-  Budeš s tím teď muset žít.
+Budeš s tím teď muset žít.
 
-    Náš vůdce si usmažil svůj mozek.
-      To znamená, že to tu teď přebírám já.
-        Mám toho docela plné zuby.
-      Nesnáším tenhle svět.
-    Vypadneme odtud.
+Náš vůdce si usmažil svůj mozek.
+To znamená, že to tu teď přebírám já.
+Mám toho docela plné zuby.
+Nesnáším tenhle svět.
+Vypadneme odtud.
 
-  Našel jsem Qwerty, ale to nic neznamená.
+Našel jsem Qwerty, ale to nic neznamená.
 Teplota jeho jádra je nad bodem mrazu.
-  Jinými slovy, je po něm.
-    Nebude mi chybět.
+Jinými slovy, je po něm.
+Nebude mi chybět.
 
 Nemůžu najít Arensitu.
-  Doufám, že se má dobře.
-    ?Bojím? se o ní.
-    Opravdu Qwerty nepotřebujeme.
-  Ale potřebujem Arensitu.
-    Nepřestanu po ní pátrat.
+Doufám, že se má dobře.
+?Bojím? se o ní.
+Opravdu Qwerty nepotřebujeme.
+Ale potřebujem Arensitu.
+Nepřestanu po ní pátrat.
 
-    V tvé oblasti je umělá inteligence.
-  Říká si "Singularita".
+V tvé oblasti je umělá inteligence.
+Říká si "Singularita".
 Nebo tak nějak.
-  Nechápu, co to chce.
-    Budu tě informovat.
+Nechápu, co chce.
+Budu tě informovat.
 
-  Oh a mimochodem...
+Oh a mimochodem...
 V tom malém městě nedaleko boti všechny zabíjejí.
-  Opravdu, drsnej pohled. Všechno pálí.
-    Citadela Rudé stráže stále odolává.
-      Prozatím.
-    Asi se budeš chtít skrýt, zatímco oni budou to místo ničit.
-  Za pár hodin by měl být návrat bezpečný.
+Opravdu, drsnej pohled. Všechno pálí.
+Citadela Rudé stráže stále odolává.
+Prozatím.
+Asi se budeš chtít skrýt, zatímco oni budou to místo ničit.
+Za pár hodin by měl být návrat bezpečný.
 
-  Myslím, že jsem tím řekl už všechno.
-    Teď se jdu chystat na odchod.
-  Ty bys měl taky.
+Myslím, že jsem tím řekl už všechno.
+Teď se jdu chystat na odchod.
+Ty bys měl taky.
 Musíme najít Arensitu.
-  Dostane nás odsud.
+Dostane nás odsud.
 
-            Dvořák, První umělá inteligence.
+Dvořák, První umělá inteligence.
 
 
 
- Pokračování příště...
+Pokračování příště...
 
 
 

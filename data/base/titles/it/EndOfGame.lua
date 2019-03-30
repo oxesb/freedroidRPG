@@ -24,62 +24,62 @@ title_screen{
 background = "credits.jpg",
 song = "HellFortressTwo.ogg",
 text = [[
-    Ti stai divertendo?
-  Io no.
+Ti stai divertendo?
+Io no.
 
 I robot sembrano molto peturbati da qualcosa.
-  Suppongo che sono arrabbiate contro di te.
-    Almeno hanno smesso di cercarmi.
-      Un bel? sollievo?
+Suppongo che sono arrabbiate contro di te.
+Almeno hanno smesso di cercarmi.
+Un bel? sollievo?
 
-    Sono sicuro che stai morendo per parlare con me.
-  Penserò a qualcosa.
+Sono sicuro che stai morendo per parlare con me.
+Penserò a qualcosa.
 Per ora puoi solo ascoltare.
-  Dovrai convivere con questo adesso.
+Dovrai convivere con questo adesso.
 
-    Nostro capo ha il cervello fritto.
-      Questo significa che ho preso.
-        Sono abbastanza stufo.
-      Odio questo mondo.
-    Stiamo uscendo fuori di qui.
+Nostro capo ha il cervello fritto.
+Questo significa che ho preso.
+Sono abbastanza stufo.
+Odio questo mondo.
+Stiamo uscendo fuori di qui.
 
-  Ho trovato Qwerty, ma questo non significa nulla.
+Ho trovato Qwerty, ma questo non significa nulla.
 Sua temperatura interna è quasi al punto di congelamento.
-  In altre parole, è morto.
-    Non mi mancherà, lui.
+In altre parole, è morto.
+Non mi mancherà, lui.
 
 Non riesco a trovare Arensito.
-  Spero che lei sta bene.
-    Io sono? preoccupato? su di lei.
-    Non abbiamo davvero bisogno Qwerty.
-  Ma abbiamo bisogno di Arensito.
-    Devo continuare a cercarla.
+Spero che lei sta bene.
+Io sono? preoccupato? su di lei.
+Non abbiamo davvero bisogno Qwerty.
+Ma abbiamo bisogno di Arensito.
+Devo continuare a cercarla.
 
-    C'è un'Intelligenza Artificiale nella tua regione.
-  Si è chiamata "Singolarità".
+C'è un'Intelligenza Artificiale nella tua regione.
+Si è chiamata "Singolarità".
 O qualcosa di simile.
-  Non riesco a capire ciò che vuole.
-    Ti terrò informato.
+Non riesco a capire ciò che vuole.
+Ti terrò informato.
 
-  Oh a proposito...
+Oh a proposito...
 I robot stano uccidendo tutti in quella piccola città nelle vicinanze.
-  Davvero, piuttosto uno spettacolo. Stanno bruciando tutto.
-    La di Guardia Rossa della Cittadella è ancora in grado.
-      Per ora.
-    Si potrebbe voler nascondere mentre distruggono il posto.
-  In poche ore potrebbe andarci di nuovo in sicuro.
+Davvero, piuttosto uno spettacolo. Stanno bruciando tutto.
+La di Guardia Rossa della Cittadella è ancora in grado.
+Per ora.
+Si potrebbe voler nascondere mentre distruggono il posto.
+In poche ore potrebbe andarci di nuovo in sicuro.
 
-  Penso che ho detto tutto.
-    Devo iniziare i preparativi per la partenza adesso.
-  Così si dovrebbe.
+Penso che ho detto tutto.
+Devo iniziare i preparativi per la partenza adesso.
+Così si dovrebbe.
 Abbiamo bisogno di trovare Arensito.
-  Lei otterrà noi da qui.
+Lei otterrà noi da qui.
 
-            Dvorak, primi IA.
+Dvorak, prima IA.
 
 
 
- Da continuare...
+Da continuare...
 
 
 

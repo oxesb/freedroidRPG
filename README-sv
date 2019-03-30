@@ -218,7 +218,7 @@ Grafikfrågor och svar:
 
 	   freedroidRPG -n
 
-	   för att start spelet utan OpenGL-utmatning. Grafiken kommer ändras till
+	   för att starta spelet utan OpenGL-utmatning. Grafiken kommer ändras till
 	   rent SDL-läge.
 	F: Jag kör Linux med två bildskärmar i TwinView (Xinerama)-läge, men helskärmsläget
 	   centreras över gapen mellan bildskärmarna. Jag vill hellre att det ska

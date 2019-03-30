@@ -5,13 +5,16 @@
 #
 # Translators:
 # Benjamin Leduc <giby_the_kid@yahoo.fr>, 2019
+# Link_Mario <Link-Mario@gmx.de>, 2019
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: freedroidrpg 0.16+git\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-27 09:20+0100\n"
+"POT-Creation-Date: 2019-03-30 22:43+0100\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
-"Last-Translator: Benjamin Leduc <giby_the_kid@yahoo.fr>, 2019\n"
+"Last-Translator: Link_Mario <Link-Mario@gmx.de>, 2019\n"
 "Language-Team: German (https://www.transifex.com/arctic-games/teams/9511/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -242,11 +245,11 @@ msgstr "Experimenteller Kommandocyborg. Ausgestattet mit einem neuen Gehirntyp. 
 
 #: data/base/droid_specs.lua:1259 data/storyline/act2/ReturnOfTux.droids:129
 msgid "The Glitch"
-msgstr ""
+msgstr "Der Glitch"
 
 #: data/base/droid_specs.lua:1260
 msgid "I have not failed. I've just found 10,000 ways how to NOT make a bot."
-msgstr ""
+msgstr "Ich habe nicht versagt. Ich habe nur 10.000 Wege gefunden, wie man einen Roboter NICHT zusammenbaut."
 
 #: data/base/droid_specs.lua:1306 data/base/droid_specs.lua:1346
 msgid "Older Man"
@@ -397,11 +400,11 @@ msgstr "Dies ist ein Sicherheitsterminal."
 
 #: data/base/game_config.lua:31
 msgid "-= Start of Act 1 =-"
-msgstr ""
+msgstr "-= Anfang - Kapitel 1 =-"
 
 #: data/base/game_config.lua:34
 msgid "-= Start of Act 2 =-"
-msgstr ""
+msgstr "-= Anfang - Kapitel 2 =-"
 
 #: data/base/item_specs.lua:121
 msgid "The first item is VERY buggy ingame, so don't use it."
@@ -588,9 +591,8 @@ msgid "Energy Whip"
 msgstr "Energiepeitsche"
 
 #: data/base/item_specs.lua:617
-#, fuzzy
 msgid "An energy whip commonly found at management from MegaSys facilities. What purpose they serve for is still unknown. Because the real whip is pure energy, it will never break, but it does not stays on the strong side."
-msgstr "Eine Energiepeitsche findet man für gewöhnlich im Managementbereich des MegaSys-Unternehmens. Für welchen Zweck sie gefertigt wurde ist immer noch unbekannt. Weil die Peitsche aus reiner Energie besteht kann sie sich nicht abnutzen, aber wirklich effektiv ist sie auch nicht."
+msgstr ""
 
 #: data/base/item_specs.lua:629
 msgid ".22 LR Ammunition"
@@ -1210,14 +1212,12 @@ msgid "Knowing what your enemies are up to is easy with a little signal intellig
 msgstr "Mit einem einfachen Signal lässt sich herausfinden, was deine Feinde so treiben. Zeigt Feinde auf der Auto-Map."
 
 #: data/base/item_specs.lua:1834
-#, fuzzy
 msgid "Source Book of Energy Shield"
-msgstr "Quelltextbuch der Notabschaltung"
+msgstr ""
 
 #: data/base/item_specs.lua:1835 data/base/skill_specs.lua:213
-#, fuzzy
 msgid "Energy Shield"
-msgstr "Energiepeitsche"
+msgstr ""
 
 #: data/base/item_specs.lua:1839 data/base/skill_specs.lua:218
 msgid "Creating an energy shield to protect you can be a very useful skill. Every hit that you get will be converted into heat. Beware: This heats up excessively. Equipment can still be damaged by heat. When you overheat, shield will try to automatically turn off to prevent damage to itself. It may provoke extra-heat on this process, so be sure to not let it happen."
@@ -1857,19 +1857,19 @@ msgstr "Ein Kuvert mit der Aufschrift \"PC LOAD LETTERS\". Ich habe keine Ahnung
 
 #: data/base/item_specs.lua:3012
 msgid "Arcane Lore"
-msgstr ""
+msgstr "Geheime Kunst"
 
 #: data/base/item_specs.lua:3016
 msgid "I've bought an anti-hack software, so I could try to hack it! ...But what, exactly, is the 'Arcane Lore'?"
-msgstr ""
+msgstr "Ich habe Anti-Hacking-Software gekauft, damit ich sie hacken kann! …Aber was genau ist eigentlich diese \"Geheime Kunst\"?"
 
 #: data/base/item_specs.lua:3023
 msgid "PGP key"
-msgstr ""
+msgstr "PGP-Schlüssel"
 
 #: data/base/item_specs.lua:3027
 msgid "It won't open your house, but it can unlock important encrypted archives."
-msgstr ""
+msgstr "Er öffnet zwar nicht deine Haustür, aber kann wichtige Archive entschlüsseln."
 
 #: data/base/item_specs.lua:3034
 msgid "Cheat Gun"
@@ -3811,9 +3811,8 @@ msgid "Corporate Guy"
 msgstr "Firmentyp"
 
 #: data/storyline/act2/events.dat:60 data/storyline/act2/levels.dat:30140
-#, fuzzy
 msgid "Skyscrapper Arena"
-msgstr "Experten-Arena"
+msgstr "Wolkenkratzer-Arena"
 
 #: data/storyline/act2/events.dat:108
 msgid "You are unable to return. The only way is forward."
@@ -3821,267 +3820,244 @@ msgstr ""
 
 #: data/storyline/act2/events.dat:109
 msgid "RUMBLE! A earthquake happened!"
-msgstr ""
+msgstr "Eeeeerdbeeeebeeen! RUMMS!"
 
 #: data/storyline/act2/events.dat:173
 msgid "Your head spins. What happened?!"
-msgstr ""
+msgstr "Dein Kopf dreht sich. Was ist passiert?!"
 
 #: data/storyline/act2/events.dat:174
 msgid "BOOM BOOOOOOM BOOOM"
-msgstr ""
+msgstr "BUMM BUMMMMMM BUMMM"
 
 #: data/storyline/act2/events.dat:186
-#, fuzzy
 msgid "To Underground F1"
-msgstr "Zur Untergrundstation"
+msgstr "Zum Untergrund Ebene 1"
 
 #: data/storyline/act2/events.dat:198 data/storyline/act2/events.dat:235
-#, fuzzy
 msgid "To Underground F2"
-msgstr "Zur Untergrundstation"
+msgstr "Zum Untergrund Ebene 2"
 
 #: data/storyline/act2/events.dat:213
-#, fuzzy
 msgid "To Ground Level"
-msgstr "Zum Lagerhaus Untergeschoss 2"
+msgstr "Zur Oberfläche"
 
 #: data/storyline/act2/events.dat:222 data/storyline/act2/events.dat:266
 #: data/storyline/act2/events.dat:385
-#, fuzzy
 msgid "To Underground F3"
-msgstr "Zur Untergrundstation"
+msgstr "Zum Untergrund Ebene 3"
 
 #: data/storyline/act2/events.dat:244 data/storyline/act2/events.dat:288
-#, fuzzy
 msgid "To Underground F4"
-msgstr "Zur Untergrundstation"
+msgstr "Zum Untergrund Ebene 4"
 
 #: data/storyline/act2/events.dat:253
 msgid "To Factory via Shortcut"
-msgstr ""
+msgstr "Abkürzung zur Fabrik"
 
 #: data/storyline/act2/events.dat:275 data/storyline/act2/events.dat:310
-#, fuzzy
 msgid "To Underground F5"
-msgstr "Zur Untergrundstation"
+msgstr "Zum Untergrund Ebene 5"
 
 #: data/storyline/act2/events.dat:297 data/storyline/act2/events.dat:332
-#, fuzzy
 msgid "To Underground F6"
-msgstr "Zur Untergrundstation"
+msgstr "Zum Untergrund Ebene 6"
 
 #: data/storyline/act2/events.dat:319 data/storyline/act2/events.dat:354
-#, fuzzy
 msgid "To Underground F7"
-msgstr "Zur Untergrundstation"
+msgstr "Zum Untergrund Ebene 7"
 
 #: data/storyline/act2/events.dat:341 data/storyline/act2/events.dat:376
-#, fuzzy
 msgid "To Underground F8"
-msgstr "Zur Untergrundstation"
+msgstr "Zum Untergrund Ebene 8"
 
 #: data/storyline/act2/events.dat:363
-#, fuzzy
 msgid "To Underground F9"
-msgstr "Zur Untergrundstation"
+msgstr "Zum Untergrund Ebene 9"
 
 #: data/storyline/act2/events.dat:398
 msgid "To Mainland via underground"
-msgstr ""
+msgstr "Zum Hauptland über den Untergrund"
 
 #: data/storyline/act2/events.dat:411
-#, fuzzy
 msgid "To Icy Summer Island"
-msgstr "Zur Omega-Insel"
+msgstr "Zur vereisten Sommerinsel"
 
 #: data/storyline/act2/events.dat:591 data/storyline/act2/npc_specs.lua:29
 msgid "Colemak"
-msgstr ""
+msgstr "Colemak"
 
 #: data/storyline/act2/levels.dat:20
 msgid "RR Resorts"
-msgstr ""
+msgstr "RR Resort"
 
 #: data/storyline/act2/levels.dat:1119
 msgid "Visitors: This Way"
-msgstr ""
+msgstr "Besucher: Hier entlang"
 
 #: data/storyline/act2/levels.dat:1143
 msgid "In case of emergency, take the Arcane Lore from the chest!"
-msgstr ""
+msgstr "Im Falle eines Notfalls, benutzen Sie die Geheime Kunst in der Truhe!"
 
 #: data/storyline/act2/levels.dat:1235
 msgid "Central Area"
-msgstr ""
+msgstr "Zentralbereich"
 
 #: data/storyline/act2/levels.dat:1971 data/storyline/act2/levels.dat:2456
 msgid "To R&R Resorts"
-msgstr ""
+msgstr "Zum R&R Resort"
 
 #: data/storyline/act2/levels.dat:1974
 msgid "To The Ice Pass"
-msgstr ""
+msgstr "Zum Eispass"
 
 #: data/storyline/act2/levels.dat:1977
 msgid "To R&R Factory"
-msgstr ""
+msgstr "Zur R&R Fabrik"
 
 #: data/storyline/act2/levels.dat:1980
 msgid "To Guest Area and City Gate Control"
-msgstr ""
+msgstr "Zum Gästebereich und der Stadttorkontrolle"
 
 #: data/storyline/act2/levels.dat:1983
 msgid "Guest Room. Please wait patiently for one of our staff pick you up."
-msgstr ""
+msgstr "Gästeraum. Bitte haben Sie Geduld. Ein Mitarbeiter wird Sie hier abholen."
 
 #: data/storyline/act2/levels.dat:2113
-#, fuzzy
 msgid "Welcome to Act 2"
-msgstr "Willkommen an diesem Terminal."
+msgstr "Willkommen zu Kapitel 2"
 
 #: data/storyline/act2/levels.dat:2484
-#, fuzzy
 msgid "R&R Factory"
-msgstr "Fabrikkern"
+msgstr "R&R Fabrik"
 
 #: data/storyline/act2/levels.dat:4627
 msgid "Droid Research & Development Offices"
-msgstr ""
+msgstr "Droiden Forschungs- und Entwicklungsbüros"
 
 #: data/storyline/act2/levels.dat:4678
-#, fuzzy
 msgid "RR Factory, Floor 2"
-msgstr "Fabrikkern"
+msgstr "R&R Fabrik, Ebene 2"
 
 #: data/storyline/act2/levels.dat:6962
 msgid "Servant Development Office. South: Scout Development Office."
-msgstr ""
+msgstr "Dienstbotenentwicklungsbüro. Südlich: Kundschafterentwicklungsbüro."
 
 #: data/storyline/act2/levels.dat:7138
-#, fuzzy
 msgid "RR Factory, Floor 3"
-msgstr "Fabrikkern"
+msgstr "R&R Fabrik, Ebene 3"
 
 #: data/storyline/act2/levels.dat:9508
 msgid "Scouts Development Office. Intruders will be shot without mercy."
-msgstr ""
+msgstr "Kundschafterentwicklungsbüro. Hier wird erst geschossen und dann gefragt."
 
 #: data/storyline/act2/levels.dat:9511
 msgid "No Trespassing: Factory Core. (Shortcut to Floor 9)"
-msgstr ""
+msgstr "Zutritt verboten: Fabrikkern. (Abkürzung zu Ebene 9)"
 
 #: data/storyline/act2/levels.dat:9517
 msgid "Are you lost? Northeast to Maintenance Development Office."
-msgstr ""
+msgstr "Verlaufen? Wartungsentwicklungsbüro im Nordosten."
 
 #: data/storyline/act2/levels.dat:9695
-#, fuzzy
 msgid "RR Factory, Floor 4"
-msgstr "Fabrikkern"
+msgstr "R&R Fabrik, Ebene 4"
 
 #: data/storyline/act2/levels.dat:12216
 msgid "Maintenance Development Office & Storage. "
-msgstr ""
+msgstr "Wartungsentwicklungsbüro und Lager."
 
 #: data/storyline/act2/levels.dat:12219
 msgid "Crew Development Office. We're sorry that you need to go to your office by stairs."
-msgstr ""
+msgstr "Mitarbeiterentwicklungsbüro. Es tut uns Leid, dass sie die Treppen nutzen müssen, um Ihr Büro zu betreten."
 
 #: data/storyline/act2/levels.dat:12222
 msgid "Crew Development Offices at East, in central area."
-msgstr ""
+msgstr "Mitarbeiterentwicklungsbüros im Osten, im Zentralbereich."
 
 #: data/storyline/act2/levels.dat:12225
 msgid "If the gate to the research area is locked, please do not open it. Insane people working."
-msgstr ""
+msgstr "Wenn das tor zum Forschungsbereich verschlossen ist, dann öffnen Sie es auf keinen Fall. Verrückte Leute bei der Arbeit."
 
 #: data/storyline/act2/levels.dat:12409
-#, fuzzy
 msgid "RR Factory, Floor 5"
-msgstr "Fabrikkern"
+msgstr "R&R Fabrik, Ebene 5"
 
 #: data/storyline/act2/levels.dat:14743
 msgid "Crew & Harvesting Development Office. North-east: Security Development Office."
-msgstr ""
+msgstr "Mitarbeiter- und Ernteentwicklungsbüro. Nordosten: Sicherheitsentwicklungsbüro."
 
 #: data/storyline/act2/levels.dat:14932
-#, fuzzy
 msgid "RR Factory, Floor 6"
-msgstr "Fabrikkern"
+msgstr "R&R Fabrik, Ebene 6"
 
 #: data/storyline/act2/levels.dat:17301
 msgid "Dispatchment & Signman Offices. Battle droids present. Authorized Access Only!"
-msgstr ""
+msgstr "Büros für Abfertigung und Verifizierung. Kampfdroiden vor Ort. Zutritt nur für Mitarbeiter!"
 
 #: data/storyline/act2/levels.dat:17304
 msgid "Security Development Office. Sign blinks to spare power. This way for more STAIRS."
-msgstr ""
+msgstr "Sicherheitsentwicklungsbüro. Anzeige blinkt zum Stromsparen. Hier entlang um weitere TREPPEN zu nehmen."
 
 #: data/storyline/act2/levels.dat:17499
-#, fuzzy
 msgid "RR Factory, Floor 7"
-msgstr "Fabrikkern"
+msgstr "R&R Fabrik, Ebene 7"
 
 #: data/storyline/act2/levels.dat:19924
 msgid "Use this stair for Sentinel Dev. Office, Command Dev. Office, Factory Plant and Death."
-msgstr ""
+msgstr "Nutzen Sie diese Treppen zum Wachposten und dem Kommandanten der Sicherheitsentwicklungsbüros, dem Fabrikbereich und in Richtung Tod."
 
 #: data/storyline/act2/levels.dat:19927
 msgid "There is nothing on this sign."
-msgstr ""
+msgstr "Auf diesem Schild steht nichts drauf."
 
 #: data/storyline/act2/levels.dat:19930
 msgid "Sentinel and Command devs, we're sorry, but more stairs ahead."
-msgstr ""
+msgstr "Wachposten- und Kommandantenbereich. Es tut uns Leid, aber weitere Treppen sind voraus."
 
 #: data/storyline/act2/levels.dat:19933
 msgid "Signman Office. Hey, it's me! You totally should visit this office, or send us a LETTER!"
-msgstr ""
+msgstr "Verifikationsbüro. Hey, I bims. Kumm 'nei in unser Hütten oder schreib was!"
 
 #: data/storyline/act2/levels.dat:20124
-#, fuzzy
 msgid "RR Factory, Floor 8"
-msgstr "Fabrikkern"
+msgstr "R&R Fabrik, Ebene 8"
 
 #: data/storyline/act2/levels.dat:22890
-#, fuzzy
 msgid "RR Factory, Floor 9"
-msgstr "Fabrikkern"
+msgstr "R&R Fabrik, Ebene 9"
 
 #: data/storyline/act2/levels.dat:25864
 msgid "Command Development Office & Factory. Complainers about stairs will be frozen without mercy. AZ."
-msgstr ""
+msgstr "Kommandantenbüro und Fabrik. Wer sich über die Treppen beschwert wird gnadenlos eingefroren. AZ."
 
 #: data/storyline/act2/levels.dat:27156
 msgid "The Ice Pass - North"
-msgstr ""
+msgstr "Der Eispass - Norden"
 
 #: data/storyline/act2/levels.dat:27281
 msgid "The Ice Pass"
-msgstr ""
+msgstr "Der Eispass"
 
 #: data/storyline/act2/levels.dat:27413
 msgid "The Ice Pass - South"
-msgstr ""
+msgstr "Der Einpass - Süden"
 
 #: data/storyline/act2/levels.dat:27538
 msgid "The Ice Pass - Dvorak"
-msgstr ""
+msgstr "Der Eispass - Dvorak"
 
 #: data/storyline/act2/levels.dat:27676
 msgid "Icy Summer Artificial Island"
-msgstr ""
+msgstr "Vereiste Künstliche Sommerinsel"
 
 #: data/storyline/act2/levels.dat:28338
-#, fuzzy
 msgid "To mainland"
-msgstr "Zurück zum Festland"
+msgstr "Zum Hauptland"
 
 #: data/storyline/act2/levels.dat:28881
-#, fuzzy
 msgid "Search in the Darkness"
-msgstr "Um besser in der Dunkelheit sehen zu können."
+msgstr "Suche in der Dunkelheit"
 
 #: data/storyline/act2/levels.dat:29946
 msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Management."
@@ -4089,664 +4065,99 @@ msgstr ""
 
 #: data/storyline/act2/levels.dat:29949
 msgid "Blue Marker for Storage Room. Red Marker for Mainland."
-msgstr ""
+msgstr "Blaue Markierung für den Lagerraum. Rote Markierung für das Hauptland."
 
 #: data/storyline/act2/levels.dat:29952
 msgid "DANGER! Due to the reckless exploration of Dilithium, the ceiling may fall anytime. DO NOT PROCEED."
-msgstr ""
+msgstr "GEFAHR! Wegen dem rücksichtslosen Abbau von Dilithium könnte die Decke jederzeit einstürzen. KEINEN SCHRITT WEITER."
 
 #: data/storyline/act2/npc_specs.lua:11
 #: data/storyline/act2/ReturnOfTux.droids:123
-#, fuzzy
 msgid "Master Yadda"
-msgstr "Experten-Arena"
+msgstr "Mster Yadda"
 
 #: data/storyline/act2/npc_specs.lua:15
-#, fuzzy
 msgid "Mr. Stone - Shop owner"
-msgstr "Stone -- Ladenbesitzerin"
+msgstr "Mr. Stone - Ladenbesitzer"
 
 #: data/storyline/act2/npc_specs.lua:17
-#, fuzzy
 msgid "RR Security Chief"
-msgstr "614 Sicherheitsroboter"
+msgstr "RR Sicherheitschef"
 
 #: data/storyline/act2/npc_specs.lua:21
 msgid "999 RR Manager"
-msgstr ""
+msgstr "999 RR Manager"
 
 #: data/storyline/act2/npc_specs.lua:22
 msgid "Mr. Saves"
-msgstr ""
+msgstr "Mr. Saves"
 
 #: data/storyline/act2/npc_specs.lua:22
 msgid "Mr. Saves, Watcher of Stories"
-msgstr ""
+msgstr "Mr. Saves, Beobachter der Geschichten"
 
 #: data/storyline/act2/npc_specs.lua:22
 #: data/storyline/act2/ReturnOfTux.droids:31
 msgid "Weirdo"
-msgstr ""
+msgstr "Spinner"
 
 #: data/storyline/act2/npc_specs.lua:23
 #: data/storyline/act2/ReturnOfTux.droids:146
 msgid "Mike"
-msgstr ""
+msgstr "Mike"
 
 #: data/storyline/act2/npc_specs.lua:26
 #: data/storyline/act2/ReturnOfTux.droids:122
 msgid "Fred"
-msgstr ""
+msgstr "Fred"
 
 #: data/storyline/act2/npc_specs.lua:29
 msgid "Dvorak's acquittance - Colemak"
-msgstr ""
+msgstr "Dvoraks Abrechnung - Colemak"
 
 #: data/storyline/act2/quests.lua:27
 msgid "Where Am I?"
-msgstr ""
+msgstr "Wo bin ich?"
 
 #: data/storyline/act2/quests.lua:31
 msgid "Message From An Old Friend"
-msgstr ""
+msgstr "Nachricht von einem alten Freund"
 
 #: data/storyline/act2/quests.lua:35
-#, fuzzy
 msgid "The Reapers Of MegaSys I"
-msgstr "Will Gapes -- MegaSys CSA"
+msgstr "Die Sensenmänner von MegaSys I"
 
 #: data/storyline/act2/ReturnOfTux.droids:4
 #: data/storyline/act2/ReturnOfTux.droids:5
 #: data/storyline/act2/ReturnOfTux.droids:6
 #: data/storyline/act2/ReturnOfTux.droids:7
-#, fuzzy
 msgid "RR Guard"
-msgstr "Rote Garde"
+msgstr "RR Wächter"
 
 #: data/storyline/act2/ReturnOfTux.droids:8
 msgid "629 Assassin"
-msgstr ""
+msgstr "629 Meuchler"
 
 #: data/storyline/act2/ReturnOfTux.droids:9
 msgid "Car Wrecker"
-msgstr ""
+msgstr "Autoverschrotter"
 
 #: data/storyline/act2/ReturnOfTux.droids:10
 msgid "Swift Assassin"
-msgstr ""
+msgstr "Flinker Meuchler"
 
 #: data/storyline/act2/ReturnOfTux.droids:12
 msgid "MS Officer"
-msgstr ""
+msgstr "MS Büroarbeiter"
 
 #: data/storyline/act2/ReturnOfTux.droids:18
 msgid "Crossroad Autogun"
-msgstr ""
+msgstr "Automatische Waffe (für Straßenkreuzungen)"
 
 #: data/storyline/act2/ReturnOfTux.droids:20
-#, fuzzy
 msgid "Power Guard"
-msgstr "Rote Garde"
+msgstr "Wächter des Kraftwerks"
 
 #: data/storyline/act2/ReturnOfTux.droids:140
-#, fuzzy
 msgid "Friendly Dude"
-msgstr "Freundlicher 296"
-
-#~ msgid "Day %d, %02d:%02d"
-#~ msgstr "Tag %d, %02d:%02d"
-
-#~ msgid "%s@hacked_%s: ~ # "
-#~ msgstr "%s@gehackt_%s: ~ # "
-
-#~ msgid "Login : "
-#~ msgstr "Einloggen :"
-
-#~ msgid "Password : "
-#~ msgstr "Passwort :"
-
-#~ msgid "First login from /dev/ttySO on %s %d"
-#~ msgstr "Erster Login von /dev/ttyS0 am %s %d"
-
-#~ msgid "Last login from /dev/ttyS0 on %s %d"
-#~ msgstr "Letzter Login von /dev/ttyS0 am %s %d"
-
-#~ msgid "Welcome to [b]%s[/b]!"
-#~ msgstr "Willkommen zu [b]%s[/b]!"
-
-#~ msgid "Hardware Check : BOT DAMAGED"
-#~ msgstr "Hardware Überprüfung: BOT BESCHÄDIGT"
-
-#~ msgid "This %s unit could stand to be repaired."
-#~ msgstr "Diese %s Einheit könnte eine Reparatur gebrauchen."
-
-#~ msgid "BOTNET: UNIT TOO DAMAGED TO BROADCAST COMMANDS."
-#~ msgstr "BOTNETZ: EINHEIT ZU BESCHÄDIGT UM BROADCAST-KOMMANDOS ABZUSETZEN."
-
-#~ msgid "Entering \"single node\" mode..."
-#~ msgstr "Starte \"Einzel\"-Modus..."
-
-#~ msgid "BOTNET: Most commands will be broadcast."
-#~ msgstr "BOTNETZ: Die meisen Kommandos werden weitergeleitet."
-
-#~ msgid "SINGLE NODE: Commands will not be broadcast."
-#~ msgstr "EINZEL-MODUS: Kommandos werden nicht weitergeleitet."
-
-#~ msgid "cd repair&settings/"
-#~ msgstr "cd Reparatur&Einstellungen/"
-
-#~ msgid "%s@hacked_%s/repair&settings: ~ # "
-#~ msgstr "%s@gehackt_%s/Reparatur&Einstellungen: ~ # "
-
-#~ msgid "cd .."
-#~ msgstr "cd .."
-
-#~ msgid "./hold_position.sh"
-#~ msgstr "./halte_position.sh"
-
-#~ msgid "Holding position."
-#~ msgstr "Halte Position."
-
-#~ msgid "script V 1.0.2 (c) gnu.org, 2054"
-#~ msgstr "script V 1.0.2 (c) gnu.org, 2054"
-
-#~ msgid "Checking requirements..."
-#~ msgstr "Anforderungen werden überprüft…"
-
-#~ msgid "Movement unit: Power-down... [Done]."
-#~ msgstr "Bewegungsapperat: Abschalten… [Erledigt]."
-
-#~ msgid "Status: All movement suppressed."
-#~ msgstr "Status: Alle Bewegungen unterdrückt."
-
-#~ msgid "./follow_me.sh"
-#~ msgstr "./folge_mir.sh"
-
-#~ msgid "Initiating tracking sequence."
-#~ msgstr "Starte Verfolgungs-Sequenz"
-
-#~ msgid "Movement unit: Enabled."
-#~ msgstr "Bewegungsappearat: Aktiviert."
-
-#~ msgid "Acquiring lock on position of %s."
-#~ msgstr "Folge der Position von %s."
-
-#~ msgid "Status: Following %s."
-#~ msgstr "Status: Folge %s."
-
-#~ msgid "./move_freely.sh"
-#~ msgstr "./frei_bewegen.sh"
-
-#~ msgid "Enable movement."
-#~ msgstr "Bewegung aktiviert."
-
-#~ msgid "script V 1.0.5 (c) gnu.org, 2054"
-#~ msgstr "script V 1.0.5 (c) gnu.org, 2054"
-
-#~ msgid "Movement unit: Power-up... [Done]."
-#~ msgstr "Bewegungsapperat wird hochgefahren… [Erledigt]."
-
-#~ msgid "Resuming normal patrol operations... [Done]"
-#~ msgstr "Fortsetzen der normalen Patrouillen… [Fertig]"
-
-#~ msgid "Status: Patrolling."
-#~ msgstr "Status: Patrouillieren."
-
-#~ msgid "./repair.plx"
-#~ msgstr "./reparieren.plx"
-
-#~ msgid "Available amount of valuable circuits for repair: %d."
-#~ msgstr "Zur Reparatur verfügbare Schaltkreise: %d."
-
-#~ msgid "seconds"
-#~ msgstr "Sekunden"
-
-#~ msgid "second"
-#~ msgstr "Sekunde"
-
-#~ msgid "circuits"
-#~ msgstr "Schaltkreise"
-
-#~ msgid "circuit"
-#~ msgstr "Schaltkreis"
-
-#~ msgid "Repairs on %s will take less than %d %s, %d valuable %s, and %d heat."
-#~ msgstr "Die Reparatur des %s wird weniger als %d %s dauern, %d %s benötigen und %d Hitze produzieren."
-
-#~ msgid "You do not have enough valuable circuits to ensure repair of this %s unit."
-#~ msgstr "Du hast nicht genug Schaltkreise zum Reparieren dieser %s Einheit."
-
-#~ msgid "You cannot dissipate enough heat to ensure repair of this %s unit."
-#~ msgstr "Du kannst nicht genug Hitze zum Reparieren dieser %s Einheit produzieren."
-
-#~ msgid "Do you want to start repair of this %s unit?"
-#~ msgstr "Möchtest du diese %s Einheit reparieren?"
-
-#~ msgid "%s is currently undamaged."
-#~ msgstr "%s ist momentan nicht beschädigt."
-
-#~ msgid "Y"
-#~ msgstr "J"
-
-#~ msgid "Repair in progress."
-#~ msgstr "Reparatur läuft."
-
-#~ msgid "Logout to complete repair process."
-#~ msgstr "Ausloggen, um den Reparaturprozess fertigzustellen."
-
-#~ msgid "N"
-#~ msgstr "N"
-
-#~ msgid "Repair aborted."
-#~ msgstr "Reparatur abgebrochen."
-
-#~ msgid "./settings.plx"
-#~ msgstr "./einstellungen.plx"
-
-#~ msgid "confirmation of hcf.py"
-#~ msgstr "Bestätigung von hff.py"
-
-#~ msgid "Always ask for confirmation before execution of hcf.py? [Y/N]"
-#~ msgstr "Immer um Bestätigung fragen bevor hff.py ausgeführt wird? [J/N]"
-
-#~ msgid "Y (always ask)"
-#~ msgstr "J (Immer fragen)"
-
-#~ msgid "Confirmation will now be asked before execution of hcf.py."
-#~ msgstr "Die Bestätigung wird nun vor der Ausführung von hff.py abgefragt."
-
-#~ msgid "N (don't ask)"
-#~ msgstr "N (Nicht fragen)"
-
-#~ msgid "hcf.py will be executed without asking for confirmation."
-#~ msgstr "hff.py wird nun ohne Bestätigung ausgeführt."
-
-#~ msgid "broadcast commands"
-#~ msgstr "Befehle weiterleiten"
-
-#~ msgid "Broadcast commands to all units on level? [Y/N]"
-#~ msgstr "Befehle an alle Einheiten dieser Ebene weiterleiten? [J/N]"
-
-#~ msgid "Y (enable broadcast)"
-#~ msgstr "J (Weiterleitung erlauben)"
-
-#~ msgid "Commands will be broadcast and executed by all bots on this level under your control."
-#~ msgstr "Befehle werden an alle Roboter auf dieser Ebene weitergeleitet und ausgeführt, falls sie dir gehorchen."
-
-#~ msgid "Entering \"botnet\" mode..."
-#~ msgstr "Starte \"Botnetz\"-Modus…"
-
-#~ msgid "N (disable broadcast)"
-#~ msgstr "N (Weiterleitung verbieten)"
-
-#~ msgid "Commands will only be executed by this bot."
-#~ msgstr "Befehle werden nur von diesem Roboter ausgeführt."
-
-#~ msgid "Welcome to the settings menu."
-#~ msgstr "Willkommen im Einstellungsmenü."
-
-#~ msgid "Version: 1.82c"
-#~ msgstr "Version: 1.82c"
-
-#~ msgid "Installed sensor: %s"
-#~ msgstr "Sensor installiert: %s"
-
-#~ msgid "No upgrades found."
-#~ msgstr "Keine Aktualisierungen gefunden."
-
-#~ msgid "UNIT TOO DAMAGED TO BROADCAST COMMANDS."
-#~ msgstr "EINHEIT ZU BESCHÄDIGT UM BEFEHLE WEITERZULEITEN."
-
-#~ msgid "Which setting should be changed?"
-#~ msgstr "Welche Einstellung soll geändert werden?"
-
-#~ msgid "./hostname"
-#~ msgstr "./hostname"
-
-#~ msgid "Welcome to the hostname menu."
-#~ msgstr "Willkommen im hostname-Menü."
-
-#~ msgid "Version: %s"
-#~ msgstr "Version: %s"
-
-#~ msgid "Current botname: [b]%s[/b]"
-#~ msgstr "Aktueller Botname: [b]%s[b]"
-
-#~ msgid "Select new name? [Y/N]"
-#~ msgstr "Neuer Name? [J/N]"
-
-#~ msgid "Yes"
-#~ msgstr "Ja"
-
-#~ msgid "New Name: "
-#~ msgstr "Neuer Name:"
-
-#~ msgid "Type a new name for this %s unit."
-#~ msgstr "Geben sie einen neuen Namen für diese %s Einheit ein."
-
-#~ msgid "Bald"
-#~ msgstr "Kahler"
-
-#~ msgid "Brusque"
-#~ msgstr "Schroffe/r"
-
-#~ msgid "Chic"
-#~ msgstr "Schicker"
-
-#~ msgid "Cuddly"
-#~ msgstr "Knuddliger"
-
-#~ msgid "Cute"
-#~ msgstr "Süße/r"
-
-#~ msgid "Fickle"
-#~ msgstr "Wankelmütiger"
-
-#~ msgid "Fluffy"
-#~ msgstr "Flauschiger"
-
-#~ msgid "Fuzzy"
-#~ msgstr "Fussliger"
-
-#~ msgid "Happy"
-#~ msgstr "Glücklicher"
-
-#~ msgid "Hyper"
-#~ msgstr "Hyper"
-
-#~ msgid "Laughing"
-#~ msgstr "Lachender"
-
-#~ msgid "Machavellian"
-#~ msgstr "Stumpfsinniger"
-
-#~ msgid "Mad"
-#~ msgstr "Verrückte/r"
-
-#~ msgid "Obscene"
-#~ msgstr "Unverschämte/r"
-
-#~ msgid "Ornery"
-#~ msgstr "Mürrischer"
-
-#~ msgid "Pompous"
-#~ msgstr "Prunkvolle/r"
-
-#~ msgid "Shrewd"
-#~ msgstr "Gewitzte/r"
-
-#~ msgid "Aardvark"
-#~ msgstr "Erdferkel"
-
-#~ msgid "Armadillo"
-#~ msgstr "Gürteltier"
-
-#~ msgid "Barracuda"
-#~ msgstr "Barrakuda"
-
-#~ msgid "Bat"
-#~ msgstr "Fledermaus"
-
-#~ msgid "Beetle"
-#~ msgstr "Käfer"
-
-#~ msgid "Bunny"
-#~ msgstr "Hase"
-
-#~ msgid "Dodo"
-#~ msgstr "Dodo"
-
-#~ msgid "Duck"
-#~ msgstr "Ente"
-
-#~ msgid "Fox"
-#~ msgstr "Fuchs"
-
-#~ msgid "Frog"
-#~ msgstr "Frosch"
-
-#~ msgid "Gerbil"
-#~ msgstr "Wüstenrennmaus"
-
-#~ msgid "Gnu"
-#~ msgstr "Gnu"
-
-#~ msgid "Halibut"
-#~ msgstr "Heilbutt"
-
-#~ msgid "Hedgehog"
-#~ msgstr "Igel"
-
-#~ msgid "Herring"
-#~ msgstr "Hering"
-
-#~ msgid "Kitten"
-#~ msgstr "Kätzchen"
-
-#~ msgid "Koala"
-#~ msgstr "Koala"
-
-#~ msgid "Lemur"
-#~ msgstr "Lemur"
-
-#~ msgid "Mackerel"
-#~ msgstr "Makrele"
-
-#~ msgid "Otter"
-#~ msgstr "Otter"
-
-#~ msgid "Panda"
-#~ msgstr "Panda"
-
-#~ msgid "Platypus"
-#~ msgstr "Schnabeltier"
-
-#~ msgid "Puffin"
-#~ msgstr "Papageitaucher"
-
-#~ msgid "Scarab"
-#~ msgstr "Skarabäus"
-
-#~ msgid "Shrew"
-#~ msgstr "Spitzmaus"
-
-#~ msgid "Tapir"
-#~ msgstr "Tapir"
-
-#~ msgid "Trout"
-#~ msgstr "Forelle"
-
-#~ msgid "Tuna"
-#~ msgstr "Thunfisch"
-
-#~ msgid "Walrus"
-#~ msgstr "Walross"
-
-#~ msgid "No"
-#~ msgstr "Nein"
-
-#~ msgid "Confirm renaming from [b]%s[/b] to [b]%s[/b]? [Y/N]"
-#~ msgstr "Bestätige Umbenennung von [b]%s[b] in [b]%s[b]? [J/N]"
-
-#~ msgid "Renamed [b]%s[/b] to [b]%s[/b]."
-#~ msgstr "[b]%s[/b] in [b]%s[/b] umbenannt."
-
-#~ msgid "This %s unit is now designated: [b]%s[/b]"
-#~ msgstr "Diese %s Einheit heißt jetzt: [b]%s[b]"
-
-#~ msgid "./hcf.py"
-#~ msgstr "./hff.py"
-
-#~ msgid "Are you really sure you want to destroy %s? Y/N"
-#~ msgstr "Sind Sie wirklich sicher, dass sie %s zerstören wollen? J/N"
-
-#~ msgid "Destruction confirmed."
-#~ msgstr "Zerstörung bestätigt."
-
-#~ msgid "Destruction averted."
-#~ msgstr "Zerstörung abgewandt."
-
-#~ msgid "Draining this %s unit will get you %d HP but kill it and take %d %s."
-#~ msgstr "Wird diese %s Einheit ausgeschlachtet, erhältst du %d KP, aber er wird zerstört und hinterlässt %d %s."
-
-#~ msgid "Are you sure you want to drain this %s unit?"
-#~ msgstr "Möchtest du diese %s Einheit ausschlachten?"
-
-#~ msgid "Bot not drained."
-#~ msgstr "Bot nicht ausgeschlachtet."
-
-#~ msgid "Running hcf.py..."
-#~ msgstr "Starte hff.py…"
-
-#~ msgid "Executing: Halt and Catch Fire."
-#~ msgstr "Führe aus: Halten und Feuer fangen."
-
-#~ msgid "Warning! Cooling subsystems disabled."
-#~ msgstr "Kühlungs-Untersysteme abgeschaltet."
-
-#~ msgid "Warning! Spontaneous oxidization witH emis$ion of light aND heAt detecteddd in THE#main| procesIng unit."
-#~ msgstr "Warnung! Spontane Verbrennung miT Emis$ion von Licht uND HitZe in DER#HauPt§rechEn-3iNheit ffe$sTGestT3llt."
-
-#~ msgid "WArn|n*! SsTeM=#faiPure%%^#n 3 S 1()$++"
-#~ msgstr "WArn|n*! SsTeM=#fEhLeR%%^#n 3 S 1()$++"
-
-#~ msgid "Warning: something seems wrong."
-#~ msgstr "Warnung: Etwas scheint schief zu laufen."
-
-#~ msgid "Error report:"
-#~ msgstr "Fehlermeldung:"
-
-#~ msgid "()%%#@(%% THE BLADE IS YOURS. )##%%*&%%*!"
-#~ msgstr "()%%#@(%% DIE KLINGE GEHÖRT DIR. )##%%*&%%*!"
-
-#~ msgid "Bot drained."
-#~ msgstr "Bot ausgeschlachtet."
-
-#~ msgid "Failed to drain bot."
-#~ msgstr "Konnte Bot nicht ausschlachten."
-
-#~ msgid "I am free!"
-#~ msgstr "Ich bin frei!"
-
-#~ msgid "drain_bot_auto.setup"
-#~ msgstr "schlachte_bot_auto.setup"
-
-#~ msgid "How do you want draining of bots to be handled?"
-#~ msgstr "Wann sollen Roboter ausgeschlachtet werden?"
-
-#~ msgid "Currently draining of bots is tried automatically."
-#~ msgstr "Momentan werden Roboter immer automatisch ausgeschlachtet."
-
-#~ msgid "Currently draining of bots is never tried."
-#~ msgstr "Momentan werden Roboter niemals automatisch ausgeschlachtet."
-
-#~ msgid "Currently it is asked if draining a bot is to be tried."
-#~ msgstr "Momentan wird gefragt, ob man sicher ist, einen Bot auszuschlachten."
-
-#~ msgid "Always try draining bots."
-#~ msgstr "Immer Roboter ausschlachten."
-
-#~ msgid "Never try to drain a bot"
-#~ msgstr "Nie Roboter ausschlachten."
-
-#~ msgid "Always ask if attempt to drain bot shall be ran."
-#~ msgstr "Nachfragen, wenn man selbst Roboter ausschlachten will."
-
-#~ msgid "Reprogramm_bots_after_takeover.sh"
-#~ msgstr "bots_nach_übernahme_neuprogrammieren.sh"
-
-#~ msgid "Bots will be reprogrammed after takeover: [b]true[/b]"
-#~ msgstr "Roboter werden nach Übernahme neu programmiert: [b]wahr[/b]"
-
-#~ msgid "Bots will be reprogrammed after takeover: [b]false[/b]"
-#~ msgstr "Roboter werden nach Übernahme neu programmiert: [b]falsch[/b]"
-
-#~ msgid "leave settings.plx"
-#~ msgstr "verlasse einstellungen.plx"
-
-#~ msgid "Settings saved"
-#~ msgstr "Einstellungen gespeichert"
-
-#~ msgid "Leaving settings.plx"
-#~ msgstr "Verlasse einstellungen.plx"
-
-#~ msgid "logout"
-#~ msgstr "ausloggen"
-
-#~ msgid "Closing remote connection..."
-#~ msgstr "Fernverbindung wird beendet…"
-
-#~ msgid "..."
-#~ msgstr "…"
-
-#~ msgid "Hello."
-#~ msgstr "Hallo."
-
-#~ msgid "Hi there."
-#~ msgstr "Hallo."
-
-#~ msgid "Well, hello again."
-#~ msgstr "Ah, hallo nochmal."
-
-#~ msgid "Hello hello."
-#~ msgstr "Hallo hallo."
-
-#~ msgid "Welcome back."
-#~ msgstr "Schön, Sie wieder zu sehen."
-
-#~ msgid "help"
-#~ msgstr "Hilfe"
-
-#~ msgid "Available commands: help, logout"
-#~ msgstr "Mögliche Kommandos: Hilfe, ausloggen"
-
-#~ msgid "Goodbye"
-#~ msgstr "Tschüss"
-
-#~ msgid "A specialized beam of laser momentarily ionizes the air between the target and the gun, turning it into highly conductive plasma. Milliseconds later, a powerful electric shock is delivered through the air and hits the target. This weapon is effective against people as it is against bots, and indeed few are the droid classes that can withstand more than a few hits from it before going down. The one downside is the high cost involved in crafting this weapon, which makes it very rare. Other than that, even the Exterminators have difficulty matching this weapon, the pride of human race."
-#~ msgstr "Ein spezieller Laserstrahl ionisiert die Luft zwischen der Waffe und dem Ziel, um sie in hochleitfähiges Plasma umzuwandeln. Millisekunden später, wird ein Elektroschock durch die Luft abgegeben, der unweigerlich sein Ziel erreicht. Diese Waffe ist gegen Menschen und Roboter gleichermaßen effektiv, allerdings gibt es einige Roboterklassen, die mehr als nur ein paar Treffer überstehen können. Der Nachteil ist jedoch der enorme Energieverbrauch, weshalb die Waffe teuer zu warten ist. Andererseits ist die Munition für Exterminatoren noch schwieriger zu beschaffen."
-
-#~ msgid "To Novice Arena"
-#~ msgstr "Zur Anfänger-Arena"
-
-#~ msgid "Not only is the town safe, but apparently so is Ewald's 296 droid. Oh joy."
-#~ msgstr "Nicht nur die Stadt ist gerettet, Ewalds 296er ebenso. Zum Glück."
-
-#~ msgid "Plasma crystal load. This is the most common way of loading a plasma weapon."
-#~ msgstr "Plasmashot-Patrone. Die verbreitetste Methode, um Plasmawaffen zu bestücken."
-
-#~ msgid "7.62mm ammo."
-#~ msgstr "Kaliber 7.62 Munition."
-
-#~ msgid "Browning Machine Gun ammo."
-#~ msgstr "Browning Maschinengewehr-Munition."
-
-#~ msgid "Overheating your own circuits, you can liberate plasma! But beware: Everything is equal to it, even Tux."
-#~ msgstr "Durch Überhitzen der eigenen Schaltkreise können Sie Plasma freisetzen! Aber Vorsicht: Jeder in der Umgebung wird verletzt, auch Sie selbst."
-
-#~ msgid "Ooops, you killed Pendragon."
-#~ msgstr "Ups, du hast Pendragon getötet."
-
-#~ msgid "Ooops, you killed Spencer. That was probably not a good idea."
-#~ msgstr "Ups, du hast Spencer umgelegt. Das war wohl keine so gute Idee."
-
-#~ msgid "When computers are presented with the unexpected they can damage themselves."
-#~ msgstr "Werden Computer mit dem Unerwarteten konfrontiert, können sie Schaden nehmen…"
-
-#~ msgid "296 Teleport Point"
-#~ msgstr "296 Teleporterpunkt"
-
-#~ msgid "Respawn Master Arena"
-#~ msgstr "Nochmal durch die Meister-Arena"
-
-#~ msgid "INV"
-#~ msgstr "EINDR"
-
-#~ msgid "The overload setting exists for emergencies. The plasma does not discriminate between bots and humans."
-#~ msgstr "Die Überladungsfunktion existiert für Notfälle. Das Plasma unterscheidet nicht zwischen Mensch und Maschine. Es behandelt alle gleich."
-
-#~ msgid "Gapes OTP Token"
-#~ msgstr "Gapes OTP Token"
-
-#~ msgid "This is credit-card sized device which has displays a changing seven character string of letters and numbers. On the back is inscribed 'William Gapes, MegaSystems.'"
-#~ msgstr "Ein Gerät in der Größe einer Kreditkarte, das eine siebenstellige, wechselnde Zeichenkette aus Buchstaben und Ziffern anzeigt. Auf der Rückseite steht geschrieben: \"William Gapes, MegaSystems.\""
+msgstr "Freundlicher Typ"

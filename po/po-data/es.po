@@ -4,14 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Pedro Arana <pedro.arana.matus@gmail.com>, 2019
+# Carlos Daniel Landin Montaperto <linkin_yh@hotmail.com>, 2019
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: freedroidrpg 0.16+git\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-27 09:20+0100\n"
+"POT-Creation-Date: 2019-03-30 22:43+0100\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
-"Last-Translator: Pedro Arana <pedro.arana.matus@gmail.com>, 2019\n"
+"Last-Translator: Carlos Daniel Landin Montaperto <linkin_yh@hotmail.com>, 2019\n"
 "Language-Team: Spanish (https://www.transifex.com/arctic-games/teams/9511/es/)\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -1207,14 +1209,12 @@ msgid "Knowing what your enemies are up to is easy with a little signal intellig
 msgstr "Saber que están planeando tus enemigos es fácil con un poco de análisis de señales.  Muestra la localización de tus enemigos en el mapa."
 
 #: data/base/item_specs.lua:1834
-#, fuzzy
 msgid "Source Book of Energy Shield"
-msgstr "Manual de Apagado de Emergencia"
+msgstr ""
 
 #: data/base/item_specs.lua:1835 data/base/skill_specs.lua:213
-#, fuzzy
 msgid "Energy Shield"
-msgstr "Látigo de energía"
+msgstr ""
 
 #: data/base/item_specs.lua:1839 data/base/skill_specs.lua:218
 msgid "Creating an energy shield to protect you can be a very useful skill. Every hit that you get will be converted into heat. Beware: This heats up excessively. Equipment can still be damaged by heat. When you overheat, shield will try to automatically turn off to prevent damage to itself. It may provoke extra-heat on this process, so be sure to not let it happen."
@@ -3815,68 +3815,57 @@ msgid "BOOM BOOOOOOM BOOOM"
 msgstr ""
 
 #: data/storyline/act2/events.dat:186
-#, fuzzy
 msgid "To Underground F1"
-msgstr "A Estación Subterránea"
+msgstr ""
 
 #: data/storyline/act2/events.dat:198 data/storyline/act2/events.dat:235
-#, fuzzy
 msgid "To Underground F2"
-msgstr "A Estación Subterránea"
+msgstr ""
 
 #: data/storyline/act2/events.dat:213
-#, fuzzy
 msgid "To Ground Level"
-msgstr "A Almacén nivel 2"
+msgstr ""
 
 #: data/storyline/act2/events.dat:222 data/storyline/act2/events.dat:266
 #: data/storyline/act2/events.dat:385
-#, fuzzy
 msgid "To Underground F3"
-msgstr "A Estación Subterránea"
+msgstr ""
 
 #: data/storyline/act2/events.dat:244 data/storyline/act2/events.dat:288
-#, fuzzy
 msgid "To Underground F4"
-msgstr "A Estación Subterránea"
+msgstr ""
 
 #: data/storyline/act2/events.dat:253
 msgid "To Factory via Shortcut"
 msgstr ""
 
 #: data/storyline/act2/events.dat:275 data/storyline/act2/events.dat:310
-#, fuzzy
 msgid "To Underground F5"
-msgstr "A Estación Subterránea"
+msgstr ""
 
 #: data/storyline/act2/events.dat:297 data/storyline/act2/events.dat:332
-#, fuzzy
 msgid "To Underground F6"
-msgstr "A Estación Subterránea"
+msgstr ""
 
 #: data/storyline/act2/events.dat:319 data/storyline/act2/events.dat:354
-#, fuzzy
 msgid "To Underground F7"
-msgstr "A Estación Subterránea"
+msgstr ""
 
 #: data/storyline/act2/events.dat:341 data/storyline/act2/events.dat:376
-#, fuzzy
 msgid "To Underground F8"
-msgstr "A Estación Subterránea"
+msgstr ""
 
 #: data/storyline/act2/events.dat:363
-#, fuzzy
 msgid "To Underground F9"
-msgstr "A Estación Subterránea"
+msgstr ""
 
 #: data/storyline/act2/events.dat:398
 msgid "To Mainland via underground"
 msgstr ""
 
 #: data/storyline/act2/events.dat:411
-#, fuzzy
 msgid "To Icy Summer Island"
-msgstr "A Isla Omega"
+msgstr ""
 
 #: data/storyline/act2/events.dat:591 data/storyline/act2/npc_specs.lua:29
 msgid "Colemak"
@@ -3919,9 +3908,8 @@ msgid "Guest Room. Please wait patiently for one of our staff pick you up."
 msgstr ""
 
 #: data/storyline/act2/levels.dat:2113
-#, fuzzy
 msgid "Welcome to Act 2"
-msgstr "Bienvenido a este terminal."
+msgstr ""
 
 #: data/storyline/act2/levels.dat:2484
 msgid "R&R Factory"
@@ -4005,7 +3993,7 @@ msgstr ""
 
 #: data/storyline/act2/levels.dat:19927
 msgid "There is nothing on this sign."
-msgstr ""
+msgstr "Nada hay en este cartel."
 
 #: data/storyline/act2/levels.dat:19930
 msgid "Sentinel and Command devs, we're sorry, but more stairs ahead."
@@ -4048,14 +4036,12 @@ msgid "Icy Summer Artificial Island"
 msgstr ""
 
 #: data/storyline/act2/levels.dat:28338
-#, fuzzy
 msgid "To mainland"
-msgstr "De vuelta al continente"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:28881
-#, fuzzy
 msgid "Search in the Darkness"
-msgstr "Ver mejor en la oscuridad"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:29946
 msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Management."
@@ -4075,14 +4061,12 @@ msgid "Master Yadda"
 msgstr ""
 
 #: data/storyline/act2/npc_specs.lua:15
-#, fuzzy
 msgid "Mr. Stone - Shop owner"
-msgstr "Stone - Propietaria de tienda"
+msgstr ""
 
 #: data/storyline/act2/npc_specs.lua:17
-#, fuzzy
 msgid "RR Security Chief"
-msgstr "614 Robot de seguridad"
+msgstr ""
 
 #: data/storyline/act2/npc_specs.lua:21
 msgid "999 RR Manager"
@@ -4124,17 +4108,15 @@ msgid "Message From An Old Friend"
 msgstr ""
 
 #: data/storyline/act2/quests.lua:35
-#, fuzzy
 msgid "The Reapers Of MegaSys I"
-msgstr "Will Gapes - JAS de MegaSys"
+msgstr ""
 
 #: data/storyline/act2/ReturnOfTux.droids:4
 #: data/storyline/act2/ReturnOfTux.droids:5
 #: data/storyline/act2/ReturnOfTux.droids:6
 #: data/storyline/act2/ReturnOfTux.droids:7
-#, fuzzy
 msgid "RR Guard"
-msgstr "Guardia"
+msgstr ""
 
 #: data/storyline/act2/ReturnOfTux.droids:8
 msgid "629 Assassin"
@@ -4157,413 +4139,9 @@ msgid "Crossroad Autogun"
 msgstr ""
 
 #: data/storyline/act2/ReturnOfTux.droids:20
-#, fuzzy
 msgid "Power Guard"
-msgstr "Martillo de energía"
+msgstr ""
 
 #: data/storyline/act2/ReturnOfTux.droids:140
-#, fuzzy
 msgid "Friendly Dude"
-msgstr "296 Amistoso"
-
-#~ msgid "%s@hacked_%s: ~ # "
-#~ msgstr "%s@%s_hackeado: ~ #"
-
-#~ msgid "Login : "
-#~ msgstr "Nombre:"
-
-#~ msgid "Password : "
-#~ msgstr "Contraseña :"
-
-#~ msgid "First login from /dev/ttySO on %s %d"
-#~ msgstr "Primera entrada desde /dev/ttySO el %s %d"
-
-#~ msgid "Last login from /dev/ttyS0 on %s %d"
-#~ msgstr "Ultima entrada desde /dev/ttyS0 en %s %d"
-
-#~ msgid "Welcome to [b]%s[/b]!"
-#~ msgstr "Bienvenido a  [b]%s[/b]!"
-
-#~ msgid "Hardware Check : BOT DAMAGED"
-#~ msgstr "Chequeo de Hardware : ARRANQUE DAÑADO"
-
-#~ msgid "This %s unit could stand to be repaired."
-#~ msgstr "La unidad %s podía ser reparado."
-
-#~ msgid "BOTNET: UNIT TOO DAMAGED TO BROADCAST COMMANDS."
-#~ msgstr "REDROBOT: UNIDAD DEMASIADO DAÑADA PARA TRANSMITIR COMANDOS."
-
-#~ msgid "Entering \"single node\" mode..."
-#~ msgstr "Entrando en el modo \"solo\"..."
-
-#~ msgid "BOTNET: Most commands will be broadcast."
-#~ msgstr "REDROBOT: Serán transmitidos mayoría de los comandos."
-
-#~ msgid "SINGLE NODE: Commands will not be broadcast."
-#~ msgstr "NODO SINGLE: Los comandos no serán transmitidos."
-
-#~ msgid "cd repair&settings/"
-#~ msgstr "cd repair&settings/"
-
-#~ msgid "%s@hacked_%s/repair&settings: ~ # "
-#~ msgstr "%s@hackeado_%s/repair&settings: ~ # "
-
-#~ msgid "cd .."
-#~ msgstr "cd..."
-
-#~ msgid "./hold_position.sh"
-#~ msgstr "./hold_position.sh"
-
-#~ msgid "Holding position."
-#~ msgstr "Manteniendo posición."
-
-#~ msgid "script V 1.0.2 (c) gnu.org, 2054"
-#~ msgstr "script V 1.0.2 (c) gnu.org, 2054"
-
-#~ msgid "Checking requirements..."
-#~ msgstr "Comprobando requisitos..."
-
-#~ msgid "Movement unit: Power-down... [Done]."
-#~ msgstr "Movimiento de unidad: Apagando... [Done]."
-
-#~ msgid "Status: All movement suppressed."
-#~ msgstr "Status: Todos los movimientos suprimidos."
-
-#~ msgid "./follow_me.sh"
-#~ msgstr "./follow_me.sh"
-
-#~ msgid "Initiating tracking sequence."
-#~ msgstr "Iniciando secuencia de seguimiento."
-
-#~ msgid "Movement unit: Enabled."
-#~ msgstr "Unidad de movimiento: Enabled."
-
-#~ msgid "Acquiring lock on position of %s."
-#~ msgstr "La adquisición de bloqueo en posición de %s."
-
-#~ msgid "Status: Following %s."
-#~ msgstr "Estatus: Siguiendo %s"
-
-#~ msgid "./move_freely.sh"
-#~ msgstr "./move_freely.sh"
-
-#~ msgid "Enable movement."
-#~ msgstr "Movimiento activado."
-
-#~ msgid "script V 1.0.5 (c) gnu.org, 2054"
-#~ msgstr "script V 1.0.5 (c) gnu.org, 2054"
-
-#~ msgid "Movement unit: Power-up... [Done]."
-#~ msgstr "Unidad de movimiento: Power-up... [Done]."
-
-#~ msgid "Resuming normal patrol operations... [Done]"
-#~ msgstr "Reanudando operaciones normales de patrulla... [Done]"
-
-#~ msgid "Status: Patrolling."
-#~ msgstr "Status: Patrullando."
-
-#~ msgid "./repair.plx"
-#~ msgstr "./reparar.plx"
-
-#~ msgid "Available amount of valuable circuits for repair: %d."
-#~ msgstr "Cantidad disponible de circuitos valiosos para la reparación: %d."
-
-#~ msgid "seconds"
-#~ msgstr "segundos"
-
-#~ msgid "second"
-#~ msgstr "segundo"
-
-#~ msgid "circuits"
-#~ msgstr "circuitos"
-
-#~ msgid "circuit"
-#~ msgstr "circuito"
-
-#~ msgid "Repairs on %s will take less than %d %s, %d valuable %s, and %d heat."
-#~ msgstr "Las reparaciones en %s tendrán menos de %d %s, %d %s, y %d decalor."
-
-#~ msgid "You do not have enough valuable circuits to ensure repair of this %s unit."
-#~ msgstr "Usted no tiene suficientes circuitos valiosos para asegurar la reparación de la unidad de este %s."
-
-#~ msgid "You cannot dissipate enough heat to ensure repair of this %s unit."
-#~ msgstr "No se puede disipar el calor suficiente para garantizar la reparación de la unidad de este %s."
-
-#~ msgid "Do you want to start repair of this %s unit?"
-#~ msgstr "¿Quieres iniciar la reparación de la unidad de este %s?"
-
-#~ msgid "%s is currently undamaged."
-#~ msgstr "%s se encuentra actualmente en buen estado."
-
-#~ msgid "Y"
-#~ msgstr "S"
-
-#~ msgid "Repair in progress."
-#~ msgstr "Reparación en progreso."
-
-#~ msgid "Logout to complete repair process."
-#~ msgstr "Salir para completar el proceso de reparación."
-
-#~ msgid "N"
-#~ msgstr "N"
-
-#~ msgid "Repair aborted."
-#~ msgstr "Reparación abortada."
-
-#~ msgid "./settings.plx"
-#~ msgstr "./settings.plx"
-
-#~ msgid "confirmation of hcf.py"
-#~ msgstr "confirmación de hcf.py"
-
-#~ msgid "Always ask for confirmation before execution of hcf.py? [Y/N]"
-#~ msgstr "¿Siempre pedir confirmación antes de la ejecución de hcf.py? [S/N]"
-
-#~ msgid "Y (always ask)"
-#~ msgstr "S (Siempre pedir confirmación)"
-
-#~ msgid "Confirmation will now be asked before execution of hcf.py."
-#~ msgstr "La confirmación no será pedida luego de la ejecución de hcf.py."
-
-#~ msgid "N (don't ask)"
-#~ msgstr "N (no pedir confirmación)"
-
-#~ msgid "hcf.py will be executed without asking for confirmation."
-#~ msgstr "hcf.py se ejecutará sin pedir confirmación."
-
-#~ msgid "broadcast commands"
-#~ msgstr "Comandos de transmisión"
-
-#~ msgid "Broadcast commands to all units on level? [Y/N]"
-#~ msgstr "¿Comandos de transmisión para todas las unidades del nivel? [S/N]"
-
-#~ msgid "Y (enable broadcast)"
-#~ msgstr "S (Activar transmisión)"
-
-#~ msgid "Commands will be broadcast and executed by all bots on this level under your control."
-#~ msgstr "Será transmitido en Comandos y ejecutado por todos los robots en este nivel bajo tu control."
-
-#~ msgid "Entering \"botnet\" mode..."
-#~ msgstr "Entrando en modo \"REDROBOT\"..."
-
-#~ msgid "N (disable broadcast)"
-#~ msgstr "N (Desactivar transmisión)"
-
-#~ msgid "Commands will only be executed by this bot."
-#~ msgstr "Los comandos solo serán ejecutados por este bot."
-
-#~ msgid "Welcome to the settings menu."
-#~ msgstr "Bienvenido al menú de ajustes."
-
-#~ msgid "Version: 1.82c"
-#~ msgstr "Versión: 1.82c"
-
-#~ msgid "Installed sensor: %s"
-#~ msgstr "Sensor instalado: %s"
-
-#~ msgid "No upgrades found."
-#~ msgstr "No hay actualizaciones disponibles."
-
-#~ msgid "UNIT TOO DAMAGED TO BROADCAST COMMANDS."
-#~ msgstr "UNIDAD DEMASIADO DAÑADA PARA TRANSMITIR COMANDOS."
-
-#~ msgid "Which setting should be changed?"
-#~ msgstr "¿Qué opción debería ser configurada?"
-
-#~ msgid "./hostname"
-#~ msgstr "./hostname"
-
-#~ msgid "Welcome to the hostname menu."
-#~ msgstr "Bienvenida al menú de nombre de máquina."
-
-#~ msgid "Version: %s"
-#~ msgstr "Versión: %s"
-
-#~ msgid "Current botname: [b]%s[/b]"
-#~ msgstr "Nombre de bot actual: [b]%s[/b]"
-
-#~ msgid "Select new name? [Y/N]"
-#~ msgstr "¿Seleccionar nombre nuevo? [S/N]"
-
-#~ msgid "Yes"
-#~ msgstr "Sí"
-
-#~ msgid "New Name: "
-#~ msgstr "Nuevo nombre:"
-
-#~ msgid "Type a new name for this %s unit."
-#~ msgstr "Introduzca el nuevo nombre para esta unidad %s."
-
-#~ msgid "Bald"
-#~ msgstr "Calvo"
-
-#~ msgid "Brusque"
-#~ msgstr "Brusco"
-
-#~ msgid "Chic"
-#~ msgstr "Chica"
-
-#~ msgid "Cuddly"
-#~ msgstr "Mimoso"
-
-#~ msgid "Cute"
-#~ msgstr "Lindo"
-
-#~ msgid "No"
-#~ msgstr "No"
-
-#~ msgid "Confirm renaming from [b]%s[/b] to [b]%s[/b]? [Y/N]"
-#~ msgstr "¿Confirmar renombrado de [b]%s[/b] a [b]%s[/b]? [S/N]"
-
-#~ msgid "Renamed [b]%s[/b] to [b]%s[/b]."
-#~ msgstr "Renombrado [b]%s[/b] a [b]%s[/b]."
-
-#~ msgid "This %s unit is now designated: [b]%s[/b]"
-#~ msgstr "Esta unidad %s es ahora designada: [b]%s[/b]"
-
-#~ msgid "./hcf.py"
-#~ msgstr "./hcf.py"
-
-#~ msgid "Are you really sure you want to destroy %s? Y/N"
-#~ msgstr "¿Realmente desea destruir %s? S/N"
-
-#~ msgid "Destruction confirmed."
-#~ msgstr "Destrucción confirmada"
-
-#~ msgid "Destruction averted."
-#~ msgstr "Destrucción evitada."
-
-#~ msgid "Draining this %s unit will get you %d HP but kill it and take %d %s."
-#~ msgstr "Drenar esta unidad %s te otorgará %d PS pero lo matará y tomará %d %s."
-
-#~ msgid "Are you sure you want to drain this %s unit?"
-#~ msgstr "¿Realmente desea drenar esta unidad %s?"
-
-#~ msgid "Bot not drained."
-#~ msgstr "Robot no drenado."
-
-#~ msgid "Running hcf.py..."
-#~ msgstr "Corriendo hcf.py..."
-
-#~ msgid "Executing: Halt and Catch Fire."
-#~ msgstr "Ejecutando: Detenerse y Prenderse Fuego."
-
-#~ msgid "Warning! Cooling subsystems disabled."
-#~ msgstr "¡Advertencia! Subsistemas de refrigeración deshabilitados."
-
-#~ msgid "Warning! Spontaneous oxidization witH emis$ion of light aND heAt detecteddd in THE#main| procesIng unit."
-#~ msgstr "¡Advertencia! Oxidación espontánea coN emi$ión de luz Y calOr detectadosss en EL#núcleO principal| de procesamiento."
-
-#~ msgid "WArn|n*! SsTeM=#faiPure%%^#n 3 S 1()$++"
-#~ msgstr "¡ADvertencla! =#falPoSsTeM%%^#n 3 S 1()$++"
-
-#~ msgid "Warning: something seems wrong."
-#~ msgstr "Advertencia: algo parece ir mal."
-
-#~ msgid "Error report:"
-#~ msgstr "Reporte de error:"
-
-#~ msgid "()%%#@(%% THE BLADE IS YOURS. )##%%*&%%*!"
-#~ msgstr "()%%#@(%% LA HOJA ES TUYA. )##%%*&%%*!"
-
-#~ msgid "Bot drained."
-#~ msgstr "Robot drenado."
-
-#~ msgid "Failed to drain bot."
-#~ msgstr "Fallo al drenar bot."
-
-#~ msgid "I am free!"
-#~ msgstr "¡Soy libre!"
-
-#~ msgid "drain_bot_auto.setup"
-#~ msgstr "drenar_bot_auto.setup"
-
-#~ msgid "How do you want draining of bots to be handled?"
-#~ msgstr "¿Cómo deseas que se maneje el drenado de bots?"
-
-#~ msgid "Currently draining of bots is tried automatically."
-#~ msgstr "Actualmente se intenta el drenado de bots automáticamente."
-
-#~ msgid "Currently draining of bots is never tried."
-#~ msgstr "Actualmente el drenado de bots nunca se intenta."
-
-#~ msgid "Currently it is asked if draining a bot is to be tried."
-#~ msgstr "Actualmente se pregunta si se intentará drenar el bot."
-
-#~ msgid "Always try draining bots."
-#~ msgstr "Siempre intentar drenar bots."
-
-#~ msgid "Never try to drain a bot"
-#~ msgstr "Nunca intentar drenar un bot."
-
-#~ msgid "Always ask if attempt to drain bot shall be ran."
-#~ msgstr "Siempre preguntar si un intento de drenar un bot será lanzado."
-
-#~ msgid "Reprogramm_bots_after_takeover.sh"
-#~ msgstr "Reprogramm_bots_after_takeover.sh"
-
-#~ msgid "Bots will be reprogrammed after takeover: [b]true[/b]"
-#~ msgstr "Los bots serán reprogramados tras tomar control: [b]sí[/b]"
-
-#~ msgid "Bots will be reprogrammed after takeover: [b]false[/b]"
-#~ msgstr "Los bots serán reprogramados tras tomar control: [b]no[/b]"
-
-#~ msgid "leave settings.plx"
-#~ msgstr "salir de settings.plx"
-
-#~ msgid "Settings saved"
-#~ msgstr "Ajustes guardados"
-
-#~ msgid "Leaving settings.plx"
-#~ msgstr "Saliendo de settings.plx"
-
-#~ msgid "logout"
-#~ msgstr "desconectar"
-
-#~ msgid "Closing remote connection..."
-#~ msgstr "Cerrando conexión remota..."
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "Hello."
-#~ msgstr "Hola."
-
-#~ msgid "Hi there."
-#~ msgstr "Hola."
-
-#~ msgid "Well, hello again."
-#~ msgstr "Bueno, hola de nuevo."
-
-#~ msgid "Hello hello."
-#~ msgstr "Hola hola."
-
-#~ msgid "Welcome back."
-#~ msgstr "Bienvenido de nuevo."
-
-#~ msgid "help"
-#~ msgstr "ayuda"
-
-#~ msgid "Available commands: help, logout"
-#~ msgstr "Los comandos disponibles: ayuda, cierre de sesión"
-
-#~ msgid "Goodbye"
-#~ msgstr "Adios."
-
-#~ msgid "To Novice Arena"
-#~ msgstr "A Arena para Novatos"
-
-#~ msgid "Not only is the town safe, but apparently so is Ewald's 296 droid. Oh joy."
-#~ msgstr "No sólo es la ciudad segura, pero al parecer lo es el droide 296 de Ewald. Qué alegría."
-
-#~ msgid "Plasma crystal load. This is the most common way of loading a plasma weapon."
-#~ msgstr "Cristales cargados de plasma. Esta es la forma mas comun de cargar plasma en una arma."
-
-#~ msgid "7.62mm ammo."
-#~ msgstr "7.62mm ammo"
-
-#~ msgid "Browning Machine Gun ammo."
-#~ msgstr "Munición para MG marca Browning"
-
-#~ msgid "Ooops, you killed Pendragon."
-#~ msgstr "Uuups, mataste a Pendragon."
+msgstr ""

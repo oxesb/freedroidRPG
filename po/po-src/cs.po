@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-24 17:21+0100\n"
-"PO-Revision-Date: 2019-01-19 20:11+0000\n"
+"POT-Creation-Date: 2019-03-30 22:43+0100\n"
+"PO-Revision-Date: 2019-03-24 16:24+0000\n"
 "Last-Translator: fluzz <fluzz@gmx.com>\n"
 "Language-Team: Czech (http://www.transifex.com/arctic-games/freedroid-rpg/language/cs/)\n"
 "Language: cs\n"
@@ -319,15 +319,15 @@ msgstr ""
 msgid "Energy shield disabled due to a risk of overheat."
 msgstr ""
 
-#: src/influ.c:1044 src/menu.c:1105
+#: src/influ.c:1044 src/menu.c:1122
 msgid "Load Latest"
 msgstr "Nahrát poslední"
 
-#: src/influ.c:1045 src/menu.c:1106
+#: src/influ.c:1045 src/menu.c:1123
 msgid "Load Backup"
 msgstr "Nahrát zálohu"
 
-#: src/influ.c:1047 src/menu.c:1108 src/lvledit/lvledit_menu.c:964
+#: src/influ.c:1047 src/menu.c:1125 src/lvledit/lvledit_menu.c:964
 msgid "Quit to Main Menu"
 msgstr "Odejít do hlavního menu"
 
@@ -335,7 +335,7 @@ msgstr "Odejít do hlavního menu"
 msgid "Return to Editor"
 msgstr "Návrat do editoru"
 
-#: src/influ.c:1051 src/menu.c:954 src/menu.c:1111
+#: src/influ.c:1051 src/menu.c:971 src/menu.c:1128
 #: src/lvledit/lvledit_menu.c:965
 msgid "Exit FreedroidRPG"
 msgstr "Ukončit FreedroidRPG"
@@ -358,7 +358,7 @@ msgstr "Spouštění výuky."
 msgid "Starting new game act."
 msgstr ""
 
-#: src/init.c:983
+#: src/init.c:998
 msgid ""
 "You are playing a Release Candidate.\n"
 "Strange bugs may still be present in the game.\n"
@@ -374,11 +374,11 @@ msgstr ""
 "\n"
 "Hodně štěstí!\n"
 
-#: src/init.c:1002 src/init.c:1003
+#: src/init.c:1017 src/init.c:1018
 msgid "Game over.\n"
 msgstr "Konec hry.\n"
 
-#: src/init.c:1069 src/init.c:1070
+#: src/init.c:1084 src/init.c:1085
 msgid "Game won.\n"
 msgstr "Hra vyhrána.\n"
 
@@ -1155,7 +1155,7 @@ msgstr ""
 "Akceptujeme její uložení z důvodu další analýzy chyby.\n"
 "Viz zpráva ve vašem terminálu."
 
-#: src/menu.c:44 src/menu.c:948
+#: src/menu.c:44 src/menu.c:965
 msgid "Play"
 msgstr "Hrát"
 
@@ -1183,61 +1183,61 @@ msgstr "Výstup OpenGL aktivní: ANO"
 msgid "OpenGL output active: NO"
 msgstr "Výstup OpenGL aktivní: NE"
 
-#: src/menu.c:340 src/menu.c:1747
+#: src/menu.c:340 src/menu.c:1764
 msgid "[down]"
 msgstr "[dolů]"
 
-#: src/menu.c:341 src/menu.c:1734
+#: src/menu.c:341 src/menu.c:1751
 msgid "[up]"
 msgstr "[nahoru]"
 
-#: src/menu.c:949
+#: src/menu.c:966
 msgid "Tutorial"
 msgstr "Výcvik"
 
-#: src/menu.c:950
+#: src/menu.c:967
 msgid "Level Editor"
 msgstr "Editor úrovní"
 
-#: src/menu.c:951 src/menu.c:1104
+#: src/menu.c:968 src/menu.c:1121
 msgid "Options"
 msgstr "Možnosti"
 
-#: src/menu.c:952
+#: src/menu.c:969
 msgid "Credits"
 msgstr "Autoři"
 
-#: src/menu.c:953
+#: src/menu.c:970
 msgid "Contribute"
 msgstr "Přispět"
 
-#: src/menu.c:984
+#: src/menu.c:1001
 msgid "easy"
 msgstr "jednoduchá"
 
-#: src/menu.c:985
+#: src/menu.c:1002
 msgid "normal"
 msgstr "normální"
 
-#: src/menu.c:986
+#: src/menu.c:1003
 msgid "hard"
 msgstr "náročná"
 
-#: src/menu.c:989
+#: src/menu.c:1006
 #, c-format
 msgid "Difficulty: %s"
 msgstr "Obtížnost: %s"
 
-#: src/menu.c:990 src/menu.c:1052 src/menu.c:1166 src/menu.c:1250
-#: src/menu.c:1335 src/menu.c:1446 src/menu.c:1526 src/menu.c:1599
-#: src/menu.c:1754 src/menu.c:1786 src/menu.c:1811 src/menu.c:1869
+#: src/menu.c:1007 src/menu.c:1069 src/menu.c:1183 src/menu.c:1267
+#: src/menu.c:1352 src/menu.c:1463 src/menu.c:1543 src/menu.c:1616
+#: src/menu.c:1771 src/menu.c:1803 src/menu.c:1828 src/menu.c:1886
 #: src/lvledit/lvledit_menu.c:121 src/lvledit/lvledit_menu.c:268
 #: src/lvledit/lvledit_menu.c:370 src/lvledit/lvledit_menu.c:595
 #: src/lvledit/lvledit_menu.c:883
 msgid "Back"
 msgstr "Zpět"
 
-#: src/menu.c:1012
+#: src/menu.c:1029
 msgid ""
 "You need to restart FreedroidRPG for some changes to take effect.\n"
 "\n"
@@ -1247,178 +1247,178 @@ msgstr ""
 "\n"
 "Omlouváme se za vzniklé potíže."
 
-#: src/menu.c:1043
+#: src/menu.c:1060
 msgid "Gameplay"
 msgstr "Hratelnost"
 
-#: src/menu.c:1044
+#: src/menu.c:1061
 msgid "Graphics"
 msgstr "Grafika"
 
-#: src/menu.c:1045
+#: src/menu.c:1062
 msgid "Sound"
 msgstr "Zvuk"
 
-#: src/menu.c:1046
+#: src/menu.c:1063
 msgid "Keys"
 msgstr "Klávesy"
 
-#: src/menu.c:1048
+#: src/menu.c:1065
 msgid "Languages"
 msgstr "Jazyk"
 
-#: src/menu.c:1050
+#: src/menu.c:1067
 msgid "On-Screen displays"
 msgstr "Zobrazení informací"
 
-#: src/menu.c:1051
+#: src/menu.c:1068
 msgid "Performance tweaks"
 msgstr "Ladění výkonu"
 
-#: src/menu.c:1099
+#: src/menu.c:1116
 msgid "Resume Play"
 msgstr "Pokračovat ve hře"
 
-#: src/menu.c:1101
+#: src/menu.c:1118
 msgid "Resume Playtest"
 msgstr "Pokračovat v herním testu"
 
-#: src/menu.c:1103
+#: src/menu.c:1120
 msgid "Save Hero"
 msgstr "Uložit hrdinu"
 
-#: src/menu.c:1110
+#: src/menu.c:1127
 msgid "Return to Level Editor"
 msgstr "Návrat do editoru úrovní"
 
-#: src/menu.c:1157
+#: src/menu.c:1174
 msgid "System default"
 msgstr "Výchozí nastavení"
 
-#: src/menu.c:1321
+#: src/menu.c:1338
 #, c-format
 msgid "Change screen resolution"
 msgstr "Změnit rozlišení obrazovky"
 
-#: src/menu.c:1323
+#: src/menu.c:1340
 #, c-format
 msgid "Fullscreen mode: %s"
 msgstr "Režim celé obrazovky: %s"
 
-#: src/menu.c:1323
+#: src/menu.c:1340
 msgid "ON"
 msgstr "ZAPNUT"
 
-#: src/menu.c:1323
+#: src/menu.c:1340
 msgid "OFF"
 msgstr "VYPNUT"
 
-#: src/menu.c:1327
+#: src/menu.c:1344
 #, c-format
 msgid "<-- Gamma correction: %1.2f -->"
 msgstr "<-- Korekce gamy: %1.2f -->"
 
-#: src/menu.c:1331
+#: src/menu.c:1348
 #, c-format
 msgid "Show blood: %s"
 msgstr "Zobrazit krev: %s"
 
-#: src/menu.c:1331 src/menu.c:1516 src/menu.c:1519 src/menu.c:1524
-#: src/menu.c:1593 src/menu.c:1594 src/menu.c:1595 src/menu.c:1596
+#: src/menu.c:1348 src/menu.c:1533 src/menu.c:1536 src/menu.c:1541
+#: src/menu.c:1610 src/menu.c:1611 src/menu.c:1612 src/menu.c:1613
 msgid "YES"
 msgstr "ANO"
 
-#: src/menu.c:1331 src/menu.c:1516 src/menu.c:1519 src/menu.c:1524
-#: src/menu.c:1593 src/menu.c:1594 src/menu.c:1595 src/menu.c:1596
+#: src/menu.c:1348 src/menu.c:1533 src/menu.c:1536 src/menu.c:1541
+#: src/menu.c:1610 src/menu.c:1611 src/menu.c:1612 src/menu.c:1613
 msgid "NO"
 msgstr "NE"
 
-#: src/menu.c:1418
+#: src/menu.c:1435
 #, c-format
 msgid "<-- Background music volume: %1.2f -->"
 msgstr "<-- Hlasitost hudby na pozadí: %1.2f -->"
 
-#: src/menu.c:1422
+#: src/menu.c:1439
 #, c-format
 msgid "<-- Sound effects volume: %1.2f -->"
 msgstr "<-- Hlasitost zvukových efektů: %1.2f -->"
 
-#: src/menu.c:1428
+#: src/menu.c:1445
 #, c-format
 msgid "<-- Output: Stereo -->"
 msgstr "<-- Výstup: Stereo -->"
 
-#: src/menu.c:1432
+#: src/menu.c:1449
 #, c-format
 msgid "<-- Output: 4.0 Surround -->"
 msgstr "<-- Výstup: 4.0 Surround -->"
 
-#: src/menu.c:1436
+#: src/menu.c:1453
 #, c-format
 msgid "<-- Output: 5.1 Surround -->"
 msgstr "<-- Výstup: 5.1 Surround -->"
 
-#: src/menu.c:1440
+#: src/menu.c:1457
 #, c-format
 msgid "<-- Output: Error -->"
 msgstr "<-- Výstup: Chyba -->"
 
-#: src/menu.c:1511
+#: src/menu.c:1528
 #, c-format
 msgid "FPS limit: none"
 msgstr "Omezení FPS: žádná"
 
-#: src/menu.c:1513
+#: src/menu.c:1530
 #, c-format
 msgid "FPS limit: %d"
 msgstr "Omezení FPS: %d"
 
-#: src/menu.c:1516
+#: src/menu.c:1533
 #, c-format
 msgid "Show light radius: %s"
 msgstr "Zobrazit světelnou auru: %s"
 
-#: src/menu.c:1519
+#: src/menu.c:1536
 #, c-format
 msgid "Show obstacle shadows: %s"
 msgstr "Zobrazit stíny překážek: %s"
 
-#: src/menu.c:1524
+#: src/menu.c:1541
 #, c-format
 msgid "Precache item graphics: %s"
 msgstr "Přednahrát grafiku předmětů: %s"
 
-#: src/menu.c:1593
+#: src/menu.c:1610
 #, c-format
 msgid "Show position: %s"
 msgstr "Zobrazit pozici: %s"
 
-#: src/menu.c:1594
+#: src/menu.c:1611
 #, c-format
 msgid "Show framerate: %s"
 msgstr "Zobrazit frekvenci snímků: %s"
 
-#: src/menu.c:1595
+#: src/menu.c:1612
 #, c-format
 msgid "Show enemies' energy bars: %s"
 msgstr "Zobrazit energii nepřátel: %s"
 
-#: src/menu.c:1596
+#: src/menu.c:1613
 #, c-format
 msgid "Show effect countdowns: %s"
 msgstr "Zobrazit efekt odpočítávání: %s"
 
-#: src/menu.c:1597
+#: src/menu.c:1614
 #, c-format
 msgid "<-- Max. screen messages: %d -->"
 msgstr "<-- Max. počet zpráv na obrazovku: %d -->"
 
-#: src/menu.c:1598
+#: src/menu.c:1615
 #, c-format
 msgid "<-- Screen message lifetime: %3.1fs -->"
 msgstr "<-- Doba zobrazení zpráv na obrazovce: %3.1fs -->"
 
-#: src/menu.c:1643
+#: src/menu.c:1660
 msgid ""
 "\n"
 "     Please enter a name\n"
@@ -1438,7 +1438,7 @@ msgstr ""
 "\n"
 ">"
 
-#: src/menu.c:1665
+#: src/menu.c:1682
 #, c-format
 msgid ""
 "A character named \"%s\" already exists.\n"
@@ -1447,28 +1447,28 @@ msgstr ""
 "Postava se jménem \"%s\" už existuje.\n"
 "Vyberte prosím jiné jméno."
 
-#: src/menu.c:1789
+#: src/menu.c:1806
 msgid "No saved games found!"
 msgstr "Žádné uložené hry nenalezeny!"
 
-#: src/menu.c:1810
+#: src/menu.c:1827
 msgid "Sure!"
 msgstr "Jistě!"
 
-#: src/menu.c:1814
+#: src/menu.c:1831
 #, c-format
 msgid "Really delete hero '%s'?"
 msgstr "Skutečně chcete smazat hrdinu '%s'?"
 
-#: src/menu.c:1866
+#: src/menu.c:1883
 msgid "New Hero"
 msgstr "Nový hrdina"
 
-#: src/menu.c:1867
+#: src/menu.c:1884
 msgid "Load existing Hero"
 msgstr "Nahrát existujícího hrdinu"
 
-#: src/menu.c:1868
+#: src/menu.c:1885
 msgid "Delete existing Hero"
 msgstr "Smazat existujícího hrdinu"
 
@@ -3055,116 +3055,22 @@ msgstr ""
 "Zdá se, že je uložená hra poškozená."
 
 #: src/savegame/filters_0_16_1.c:262
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Error during savegame filtering (%s:%s): Tux 'Inventory' attribute was not found.\n"
 "The savegame seems to be corrupted."
 msgstr ""
-"Chyba při filtrování uložené hry (%s:%s): Tuxův atribut 'AllMissions' nebyl nalezen.\n"
-"Zdá se, že je uložená hra poškozená."
 
 #: src/savegame/filters_0_16_1.c:273
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Error during savegame filtering (%s:%s): Tux 'HaveBeenToLevel' attribute was not found.\n"
 "The savegame seems to be corrupted."
 msgstr ""
-"Chyba při filtrování uložené hry (%s:%s): Tuxův atribut 'AllMissions' nebyl nalezen.\n"
-"Zdá se, že je uložená hra poškozená."
 
 #: src/savegame/filters_0_16_1.c:306
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Error during savegame filtering (%s:%s): Malformed item type string in Tux struct.\n"
 "The savegame seems to be corrupted."
 msgstr ""
-"Chyba při filtrování uložené hry (%s:%s): data 'mission_diary_texts' nebyla nalezena.\n"
-"Zdá se, že je uložená hra poškozená."
-
-#~ msgid "Multiplicity: %d\n"
-#~ msgstr "Množství: %d\n"
-
-#~ msgid "OpenGL output active: "
-#~ msgstr "Výstup OpenGL aktivní:"
-
-#~ msgid ""
-#~ "\n"
-#~ "\n"
-#~ "No saved games found!"
-#~ msgstr ""
-#~ "\n"
-#~ "\n"
-#~ "Žádné uložené hry nenalezeny!"
-
-#~ msgid "god"
-#~ msgstr "bůh"
-
-#~ msgid "The new name of the map label already exists, please choose an other name."
-#~ msgstr "Nové jméno štítku mapy už existuje, vyberte prosím jiný název."
-
-#~ msgid ""
-#~ "-=* Savegame loading *=-\n"
-#~ "\n"
-#~ "Your savegame is from an other game version.\n"
-#~ "If you are using a dev version of the game, this is expected.\n"
-#~ "We load it as is, but expect some errors or even a crash of the game."
-#~ msgstr ""
-#~ "-=* Nahrávání uložené hry *=-\n"
-#~ "\n"
-#~ "Uložená pozice je z jiné verze hry.\n"
-#~ "Pokud používáte vývojovou verzi hry, pak je toto očekáváno.\n"
-#~ "Nahrajeme ji tak, jak je, ale očekávejte možné chyby či dokonce pád hry."
-
-#~ msgid ""
-#~ "You selected %d x %d pixels.\n"
-#~ "\n"
-#~ "You need to restart FreedroidRPG for the changes to take effect.\n"
-#~ "\n"
-#~ "Sorry for the inconvenience."
-#~ msgstr ""
-#~ "Vybrali jste %d x %d pixelů\n"
-#~ "\n"
-#~ "Je třeba restartovat FreedroidRPG, aby se změny projevily\n"
-#~ "\n"
-#~ "Omlouváme se za vzniklé potíže."
-
-#~ msgid "Limit framerate (powersaving): %s"
-#~ msgstr "Omezit frekvenci snímků (úsporný režim): %s"
-
-#~ msgid ""
-#~ "W A R N I N G !\n"
-#~ "\n"
-#~ "FreedroidRPG was unable to locate the saved game file you requested to load.\n"
-#~ "This might mean that it really isn't there cause you tried to load a game without ever having saved the game before.\n"
-#~ "The other explanation of this error might be a severe error in FreedroidRPG. If you think this is the case, please report this to the developers."
-#~ msgstr ""
-#~ "V A R O V Á N Í !\n"
-#~ "\n"
-#~ "FreedroidRPG nemohl najít soubor s uloženou hrou, o jejíž načtění bylo zažádáno.\n"
-#~ "To by mohlo znamenat, že tam opravdu není, neboť jste se pokusili nahrát hru, která před tím nikdy nebyla uložena.\n"
-#~ "Jiným vysvětlením této chyby může být závažná chyba ve hře FreedroidRPG. Pokud si myslíte, že se jedná o tento případ, nahlaste to prosím vývojářům."
-
-#~ msgid "Failed to load old game."
-#~ msgstr "Nezdařilo se načíst starou hru."
-
-#~ msgid "Version or structsize mismatch! The savegame is not from the same version of FreedroidRPG... possible breakage."
-#~ msgstr "Nesoulad ve verzi či velikosti! Uložená hra není ze stejné verze FreedroidRPG... možné poškození."
-
-#~ msgid ""
-#~ "%s\n"
-#~ " Completely fixed: "
-#~ msgstr ""
-#~ "%s\n"
-#~ "Zcela opravený:"
-
-#~ msgid "Advanced Options"
-#~ msgstr "Pokročilé možnosti"
-
-#~ msgid "Recharge time: %3.2f\n"
-#~ msgstr "Temps de rechargement : %3.2f\n"
-
-#~ msgid "Current chat context has no 'partner'. How is it possible ?"
-#~ msgstr "Le contexte de dialogue n'a pas de 'partenaire'. Comment est-ce possible ?"
-
-#~ msgid "Could not find a droid with name \"%s\""
-#~ msgstr "Ne peut pas trouver un droïde nommé \"%s\""

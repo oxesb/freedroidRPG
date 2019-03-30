@@ -31,7 +31,7 @@ Dr. Como - "Poderosa tecnologia conveniente!"
 
 F4m4ci4 C4n4dense - "Remédios Herbais 1ncrív3is! 100% satisfação garan7ida!"
 
-Soluções em Criogênicos - "Faça uma viagem rápida para o futuro com Soluções em Criogênicos!"
+Soluções Criogênicas - "Faça uma viagem rápida para o futuro com Soluções Criogênicas!"
 
 Futura Balística - "Além de balistica. Futura Balística."
 
@@ -39,12 +39,12 @@ MegaSystems - "O que você não quer fazer hoje?"
 
 Masternak Remoção de Lixo - "Nós ESMAGAMOS seu LIXO."
 
-Companhia Nicholson - "Segurança com uma vingança."
+Nicholson Corp - "Segurança com uma vingança."
 
 Sol Vermelho - "A noite acabou: experimente o amanhecer!"
 
 
 
-Por favor tente novamente. Clique para continuar.
+Por favor, tente novamente. Clique para continuar.
 ]]
 }

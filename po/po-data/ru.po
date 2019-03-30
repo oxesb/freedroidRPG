@@ -5,13 +5,16 @@
 #
 # Translators:
 # algan011, 2019
+# Родион Р., 2019
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: freedroidrpg 0.16+git\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-27 09:20+0100\n"
+"POT-Creation-Date: 2019-03-30 22:43+0100\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
-"Last-Translator: algan011, 2019\n"
+"Last-Translator: Родион Р., 2019\n"
 "Language-Team: Russian (https://www.transifex.com/arctic-games/teams/9511/ru/)\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -149,7 +152,7 @@ msgstr "603 Газонокосилка"
 
 #: data/base/droid_specs.lua:743
 msgid "The 603 MowDown is a state-of-the-art lawnmower manufactured by the Nicholson company, and combines the functions of a regular lawnmower, a pet and a vicious guard dog in a single device."
-msgstr "603 модель — чудо-газонокосилка, разработанная компанией Николсона и сочетающая функции стандартной газонокосилки, домашнего питомца и злого сторожевого пса."
+msgstr "603 модель - чудо-газонокосилка, разработанная компанией Николсона и сочетающая функции стандартной газонокосилки, домашнего питомца и злого сторожевого пса."
 
 #: data/base/droid_specs.lua:791 data/storyline/act1/ReturnOfTux.droids:284
 msgid "614 Security Bot"
@@ -242,11 +245,11 @@ msgstr "Экспериментальный киборг-командир, осн
 
 #: data/base/droid_specs.lua:1259 data/storyline/act2/ReturnOfTux.droids:129
 msgid "The Glitch"
-msgstr ""
+msgstr "Проблема"
 
 #: data/base/droid_specs.lua:1260
 msgid "I have not failed. I've just found 10,000 ways how to NOT make a bot."
-msgstr ""
+msgstr "Я не провалился. Просто обнаружил 10 000 способов НЕ делать бота."
 
 #: data/base/droid_specs.lua:1306 data/base/droid_specs.lua:1346
 msgid "Older Man"
@@ -258,7 +261,7 @@ msgstr "Типичный профессор/мудрец преклонного 
 
 #: data/base/droid_specs.lua:1347
 msgid "Some people say that every doctor is addicted to drugs. You estimate that right now this one is high on at least four different narcotics. Doc Moore seems very happy indeed..."
-msgstr "Некоторые люди говорят, что каждый доктор — наркоман. Тебе кажется, что этот сейчас находится под действием, как минимум, четырёх препаратов. Док Мур действительно выглядит довольно счастливым..."
+msgstr "Некоторые говорят, что все доктора - наркоманы. Тебе кажется, что этот сейчас находится под действием, как минимум, четырёх препаратов. Док Мур действительно выглядит довольно счастливым..."
 
 #: data/base/droid_specs.lua:1387 data/base/droid_specs.lua:1428
 msgid "Red Guard"
@@ -266,7 +269,7 @@ msgstr "Красный страж"
 
 #: data/base/droid_specs.lua:1388
 msgid "This is a typical red (male) guard/fighter character.  They are equipped with powerful PowerExterminators."
-msgstr "Типичный красный (муж.) страж/боец. Вооружен мощным СилоИстребителем."
+msgstr "Типичный красный страж или боец (мужчина). Вооружён мощным истребителем."
 
 #: data/base/droid_specs.lua:1429
 msgid "This is Dixon, unlike a typical red (male) guard/fighter character, he has a knife weapon, and lowered aggression."
@@ -278,7 +281,7 @@ msgstr "Матрона"
 
 #: data/base/droid_specs.lua:1470
 msgid "This is the hot_mama shopkeeper character model."
-msgstr "Эта мамочка — модель персонажа-лавочника."
+msgstr "Эта мамочка - модель персонажа-лавочника."
 
 #: data/base/droid_specs.lua:1508 data/storyline/act1/ReturnOfTux.droids:214
 #: data/storyline/act1/ReturnOfTux.droids:466
@@ -295,7 +298,7 @@ msgstr "Шахтёр"
 
 #: data/base/droid_specs.lua:1548
 msgid "This is the brown worker model.  They are not armed as powerfully as e.g. the red guards."
-msgstr "Это модель смуглого рабочего. Они вооружены не столько мощно, как, например, красные стражи."
+msgstr "Это модель смуглого рабочего. Вооружён не столько мощно, как, например, красные стражи."
 
 #: data/base/droid_specs.lua:1587
 msgid "Blue Brother"
@@ -319,7 +322,7 @@ msgstr "Лысеющий мужик."
 
 #: data/base/droid_specs.lua:1670
 msgid "This is a typical professor/sage character of some older age. They are not armed as powerfully as e.g. the red guards."
-msgstr "Типичный профессор/мудрец преклонного возраста. Вооружены не столь мощно, как, например, красные стражи."
+msgstr "Типичный персонаж профессора или мудреца преклонного возраста. Вооружён не столь мощно, как, например, красные стражи."
 
 #: data/base/droid_specs.lua:1709
 msgid "Pretty Woman"
@@ -365,15 +368,15 @@ msgstr "Это терминал."
 #: data/storyline/act1/ReturnOfTux.droids:323
 #: data/storyline/act2/ReturnOfTux.droids:19
 msgid "Autogun"
-msgstr "Автоматическая пушка"
+msgstr "Автопушка"
 
 #: data/base/droid_specs.lua:1882
 msgid "Carefully designed by Future Ballistics(R), this autogun will shred you into pieces if you try pass across them."
-msgstr "Тщательно разработанная Баллистикой будущего® автоматическая пушка разорвёт тебя на кусочки, если ты попытаешься пройти перед ней."
+msgstr "Тщательно разработанная Баллистикой будущего (R) автопушка разорвёт тебя на кусочки, если попытаешься пройти перед ней."
 
 #: data/base/droid_specs.lua:1930
 msgid "598 Minister (Boss)"
-msgstr "598 Министер (Босс)"
+msgstr "598 Министр (Босс)"
 
 #: data/base/droid_specs.lua:1977
 msgid "883 Dalex (Boss)"
@@ -389,19 +392,19 @@ msgstr "Авторитет"
 
 #: data/base/droid_specs.lua:2075
 msgid "It has long since been known that game development is the most important job in the world. Also, the coolest. We know that thanks to this guy."
-msgstr "Давным-давно известно, что разработка игр — самая важная работа в мире. Как и самая крутая. Известно благодаря этому парню."
+msgstr "Давным-давно известно, что разработка игр - самая важная работа в мире. И самая крутая. Известно, благодаря этому парню."
 
 #: data/base/droid_specs.lua:2120
 msgid "This is a secure terminal."
-msgstr "Это закрытый терминал."
+msgstr "Это защищённый терминал."
 
 #: data/base/game_config.lua:31
 msgid "-= Start of Act 1 =-"
-msgstr ""
+msgstr "-= Начало 1 действия =-"
 
 #: data/base/game_config.lua:34
 msgid "-= Start of Act 2 =-"
-msgstr ""
+msgstr "-= Начало 2 действия =-"
 
 #: data/base/item_specs.lua:121
 msgid "The first item is VERY buggy ingame, so don't use it."
@@ -433,11 +436,11 @@ msgstr "Большой охват и сохранение достаточной
 
 #: data/base/item_specs.lua:184
 msgid "Antique Greatsword"
-msgstr "Античный двуручный меч"
+msgstr "Старинный двуручный меч"
 
 #: data/base/item_specs.lua:199
 msgid "Very maneuverable for its size, and heavy enough to punch though weaker bot armor in one hit, the only real disadvantage of this old weapon is the same as for other swords. It just doesn't last long when cutting into metal parts."
-msgstr "Очень маневренный для своего размера и достаточно тяжёлый, чтобы пробить наиболее слабую броню ботов за удар. Единственный недостаток этого старого оружия такой же, как и у других мечей: он не продержится долго, разрезая металлические части."
+msgstr "Очень маневренное для своих размеров и достаточно тяжёлое, чтобы пробить слабо бронированного бота одним ударом, это старое оружие обладает одним недостатком, как и прочие мечи: оно недолго протянет, разрезая металл на части."
 
 #: data/base/item_specs.lua:207
 msgid "Chainsaw"
@@ -588,9 +591,8 @@ msgid "Energy Whip"
 msgstr "Энергетический хлыст"
 
 #: data/base/item_specs.lua:617
-#, fuzzy
 msgid "An energy whip commonly found at management from MegaSys facilities. What purpose they serve for is still unknown. Because the real whip is pure energy, it will never break, but it does not stays on the strong side."
-msgstr "Энергетический хлыст часто находили у управляющих предприятий МегаСистемс. Для какой цели они служили, пока неизвестно. Так как настоящий хлыст — чистая энергия, он никогда не сломается, но это не сильная его сторона."
+msgstr ""
 
 #: data/base/item_specs.lua:629
 msgid ".22 LR Ammunition"
@@ -1087,7 +1089,7 @@ msgstr "Книга исходников \"Битые пакеты\""
 
 #: data/base/item_specs.lua:1647 data/base/skill_specs.lua:91
 msgid "When computers are presented with the unexpected, they can damage themselves."
-msgstr "Когда компьютеры сталкиваются с чем-либо неожиданным, то они могут повредить сами себя."
+msgstr "Компьютеры, столкнувшись с чем-либо неожиданным, могут повредить сами себя."
 
 #: data/base/item_specs.lua:1654
 msgid "Source Book of Calculate Pi"
@@ -1095,7 +1097,7 @@ msgstr "Книга исходников \"Вычисление пи\""
 
 #: data/base/item_specs.lua:1659 data/base/skill_specs.lua:102
 msgid "It is not a big problem to make a badly designed system to go hunting for the impossible, causing a performance impact."
-msgstr "Несложно заставить плохо сконструированную систему гоняться за невозможным, что приводит к падению производительности."
+msgstr "Несложно заставить неудачно спроектированную систему гоняться за невозможным, вызвав падение производительности."
 
 #: data/base/item_specs.lua:1666
 msgid "Source Book of Blue Screen"
@@ -1115,7 +1117,7 @@ msgstr "Книга исходников \"Невидимость\""
 
 #: data/base/item_specs.lua:1695 data/base/skill_specs.lua:80
 msgid "I am not the Linarian you are looking for."
-msgstr "Я не линарианец, которого вы ищете."
+msgstr "Линарианца, которого вы ищете, здесь нет."
 
 #: data/base/item_specs.lua:1702
 msgid "Source Book of Virus"
@@ -1123,7 +1125,7 @@ msgstr "Книга исходников \"Вирус\""
 
 #: data/base/item_specs.lua:1707 data/base/skill_specs.lua:137
 msgid "This is not just a firmware upgrade, my dear bot. You are about to find out what exactly I want to give you."
-msgstr "Это не только новая прошивка, мой дорогой бот. Вы узнаете то, что именно я хочу дать вам."
+msgstr "Это не просто обновление прошивки, мой дорогой бот. И скоро ты узнаешь, что именно я хочу тебе дать."
 
 #: data/base/item_specs.lua:1714
 msgid "Source Book of Broadcast Virus"
@@ -1207,17 +1209,15 @@ msgstr "Книга исходников \"Сетевой картограф\""
 
 #: data/base/item_specs.lua:1827 data/base/skill_specs.lua:195
 msgid "Knowing what your enemies are up to is easy with a little signal intelligence. Displays enemy locations on your automap."
-msgstr "Знание о том, что делает противник, может легко быть получено с помощью анализа исходящих от него слабых сигналов. Показывает положение противников на автокарте."
+msgstr "Знание, где враги, легко получить из анализа сигналов. Показывает положение противников на автокарте."
 
 #: data/base/item_specs.lua:1834
-#, fuzzy
 msgid "Source Book of Energy Shield"
-msgstr "Книга исходников \"Аварийное отключение\""
+msgstr ""
 
 #: data/base/item_specs.lua:1835 data/base/skill_specs.lua:213
-#, fuzzy
 msgid "Energy Shield"
-msgstr "Энергетический хлыст"
+msgstr ""
 
 #: data/base/item_specs.lua:1839 data/base/skill_specs.lua:218
 msgid "Creating an energy shield to protect you can be a very useful skill. Every hit that you get will be converted into heat. Beware: This heats up excessively. Equipment can still be damaged by heat. When you overheat, shield will try to automatically turn off to prevent damage to itself. It may provoke extra-heat on this process, so be sure to not let it happen."
@@ -1356,7 +1356,7 @@ msgstr "Бармены всего мира добавляют это в напи
 
 #: data/base/item_specs.lua:2004
 msgid "Liquid Nitrogen"
-msgstr "Жидкий озот"
+msgstr "Жидкий азот"
 
 #: data/base/item_specs.lua:2005
 msgid "Extreme Cooling aid"
@@ -1615,7 +1615,7 @@ msgstr "Применяется разработчиками МегаСис дл�
 
 #: data/base/item_specs.lua:2383
 msgid "Linarian Power Crank"
-msgstr "Линарианский силовой кривошип"
+msgstr "Линар. силовой кривошип"
 
 #: data/base/item_specs.lua:2387
 msgid "This mechanical crank, product of the highly advanced and sophisticated technological genius of the Linarian race, performs elaborate operations on energy and directs it towards a biochemical structure. For short, it buffs up your muscles. That's good."
@@ -1855,19 +1855,19 @@ msgstr "Конверт с надписью \"ПИСЬМА О ЗАГРУЗКЕ П
 
 #: data/base/item_specs.lua:3012
 msgid "Arcane Lore"
-msgstr ""
+msgstr "Тайные знания"
 
 #: data/base/item_specs.lua:3016
 msgid "I've bought an anti-hack software, so I could try to hack it! ...But what, exactly, is the 'Arcane Lore'?"
-msgstr ""
+msgstr "Я приобрёл программу антивзлома, так что могу попытаться взломать её! Но что такое \"тайные знания\"?.."
 
 #: data/base/item_specs.lua:3023
 msgid "PGP key"
-msgstr ""
+msgstr "Ключ PGP"
 
 #: data/base/item_specs.lua:3027
 msgid "It won't open your house, but it can unlock important encrypted archives."
-msgstr ""
+msgstr "В дом с ним не попасть, но можно открыть важные зашифрованные архивы."
 
 #: data/base/item_specs.lua:3034
 msgid "Cheat Gun"
@@ -1955,7 +1955,7 @@ msgstr "Торговый автомат"
 #: data/base/obstacle_specs.lua:3818 data/base/obstacle_specs.lua:3837
 #: data/base/obstacle_specs.lua:3856 data/base/obstacle_specs.lua:3875
 msgid "Bookshelf"
-msgstr "Книжная полка"
+msgstr "Книжный шкаф"
 
 #: data/base/obstacle_specs.lua:3911 data/base/obstacle_specs.lua:3921
 #: data/base/obstacle_specs.lua:3931 data/base/obstacle_specs.lua:3941
@@ -1965,7 +1965,7 @@ msgstr "Статуя"
 #: data/base/obstacle_specs.lua:3975 data/base/obstacle_specs.lua:3986
 #: data/base/obstacle_specs.lua:3997 data/base/obstacle_specs.lua:4007
 msgid "Secure terminal"
-msgstr "Закрытый терминал"
+msgstr "Защищённый терминал"
 
 #: data/base/skill_specs.lua:9
 msgid "Hacking"
@@ -1973,7 +1973,7 @@ msgstr "Хакерство"
 
 #: data/base/skill_specs.lua:15
 msgid "Linarians are gifted with the ability to hack any hostile bot in no time. With this program selected, initiate the takeover process by right clicking a hostile machine of your choice."
-msgstr "Линарианцы одарены способностью взломать любого враждебного бота в кратчайший срок. Выбрав эту программу, начните процесс поглощения правым щелчком мыши по враждебной машине."
+msgstr "Линарианцы одарены способностью взламывать враждебных ботов в кратчайшие сроки. Выбрав эту программу, запусти процесс взлома правым щелчком по враждебной машине."
 
 #: data/base/skill_specs.lua:21
 msgid "Repair equipment"
@@ -2001,11 +2001,11 @@ msgstr "Время от времени всем нужно отключитьс�
 
 #: data/base/skill_specs.lua:53
 msgid "Check system integrity"
-msgstr "Проверка целостности системы"
+msgstr "Проверка целостности"
 
 #: data/base/skill_specs.lua:59
 msgid "While repairing damage, you must remember that patience is a virtue."
-msgstr "Во время починки поверждений помните, что терпение это добродетель."
+msgstr "Восстанавливая повреждения, помни: терпение - добродетель."
 
 #: data/base/skill_specs.lua:64
 msgid "Sanctuary"
@@ -2037,15 +2037,15 @@ msgstr "Синий экран"
 
 #: data/base/skill_specs.lua:113
 msgid "With a little touch a war machine comes crashing down to a halt. For a while."
-msgstr "От легкого касания боевая машина впадает в ступор. На время."
+msgstr "От лёгкого прикосновения боевая машина сбоит и останавливается. Ненадолго."
 
 #: data/base/skill_specs.lua:118
 msgid "Broadcast Blue Screen"
-msgstr "Трансляция синего экрана"
+msgstr "Трансл. синего экрана"
 
 #: data/base/skill_specs.lua:124
 msgid "With a little touch a war machine comes crashing down to a halt. For a while. The radio network is a wonderful invention for the people who like to blow up a lot of stuff at once."
-msgstr "От лёгкого касания боевая машина впадает в ступор. На время. Радиосеть — удивительное изобретение для людей, которые любят ломать много вещей разом."
+msgstr "От лёгкого прикосновения боевая машина сбоит и останавливается. Ненадолго. Радиосеть - удивительное изобретение для людей, которые любят ломать много вещей разом."
 
 #: data/base/skill_specs.lua:130
 msgid "Virus"
@@ -2057,7 +2057,7 @@ msgstr "Трансляция вируса"
 
 #: data/base/skill_specs.lua:149
 msgid "The network is wide and dangerous. Many traps await for the weak and unprepared."
-msgstr "Сеть велика и полна опасностей. Много ловушек расставлено в ней для слабых и неподготовленных."
+msgstr "Сеть дика и опасна. Множество ловушек подстерегает слабых и неподготовленных."
 
 #: data/base/skill_specs.lua:155
 msgid "Dispel smoke"
@@ -2065,7 +2065,7 @@ msgstr "Рассеянный дым"
 
 #: data/base/skill_specs.lua:161
 msgid "By heating up the chips with a malformed program you can cause them to release the magic smoke which keeps the bot running."
-msgstr "Нагревом чипов с помощью вредоносной программы, вы можете создать волшебный дым, который заставляет бота двигаться."
+msgstr "Перегревая чипы искажённой программой, ты можешь заставить их источать волшебный дым, который обратит бота в бегство."
 
 #: data/base/skill_specs.lua:166
 msgid "Killer poke"
@@ -2073,7 +2073,7 @@ msgstr "Смертельний удар"
 
 #: data/base/skill_specs.lua:172
 msgid "Messing around with the bot's memory can cause it to severely damage itself, but the damage is greatly variable."
-msgstr "Возня с памятью ботов может нанести ущерб и вам, но ущерб бывает разный."
+msgstr "Порча памяти бота может привести его к серьёзному самоповреждению, но урон слишком вариативен."
 
 #: data/base/skill_specs.lua:178
 msgid "Plasma discharge"
@@ -2109,7 +2109,7 @@ msgstr "Природный магнетизм"
 
 #: data/base/skill_specs.lua:248
 msgid "Get in tune with the magnetic fields around you! Grants you half-second extra time per skill level when hacking bots. This skill is always active even when not selected."
-msgstr "Находись в гармонии с окружающими магнитными полями! Гарантирует полсекунды дополнительного времени на каждый уровень умения взлома ботов. Умение всегда активно, даже если не выбрано."
+msgstr "Достигни гармонии с окружающими магнитными полями! Гарантирует полсекунды дополнительного времени на каждый уровень умения при взломе ботов. Умение всегда активно, даже если не выбрано."
 
 #: data/base/skill_specs.lua:262
 msgid "Nethack"
@@ -2117,7 +2117,7 @@ msgstr "Нетхак"
 
 #: data/base/skill_specs.lua:268
 msgid "NOT IMPLEMENTED YET The open source game called Nethack is one of the world's greatest wasters of time. Machines don't care about it, but humans can get sucked in quite deeply."
-msgstr "ЕЩЕ НЕ РЕАЛИЗОВАНО. Игра с открытым кодом Нетхак это один из велчичайших в мире пожирателей времени. Машинам нечего ее бояться, но людей она может засосать глубоко."
+msgstr "ЕЩЁ НЕ РЕАЛИЗОВАНО. Игра с открытым исходным кодом \"Нетхак\" - один из всемирно известных пожирателей времени. Машинам не о чем беспокоиться, но люди могут подсесть всерьёз."
 
 #: data/base/skill_specs.lua:279
 msgid "Reverse-engineer"
@@ -2125,7 +2125,7 @@ msgstr "Обратная разработка"
 
 #: data/base/skill_specs.lua:283
 msgid "NOT IMPLEMENTED YET There is some dark magic in the art of turning devices or programs inside-out, picking them apart to learn all their secrets and putting them back again."
-msgstr "ЕЩЕ НЕ РЕАЛИЗОВАНО. Есть немного темной магии в искусстве которое позволяет вывернуть программы и устройства наизнанку, изучить все их секреты, а потом вернуть их обратно."
+msgstr "ЕЩЁ НЕ РЕАЛИЗОВАНО. Есть некая тёмная магия в искусстве выворачивать устройства или программы наизнанку, разбирать их на части, узнавая все секреты, а затем вернуть всё, как было."
 
 #: data/base/skill_specs.lua:294
 msgid "Ricer CFLAGS"
@@ -2133,7 +2133,7 @@ msgstr "Пресс-пюре CFLAGS"
 
 #: data/base/skill_specs.lua:299
 msgid "NOT IMPLEMENTED YET Optimization is the root of all evil. You can gain some temporary speed improvements to your system, but in the end you will likely overheat and cause permanent damage if you are not careful."
-msgstr "ЕЩЕ НЕ РЕАЛИЗОВАНО. Оптимизация - корень всего зла. Вы можете немного улучшить скорость работы системы, но в конце концов, если вы не будете осторожны, а то перегреетесь и здоровье ваше ухудшится навсегда."
+msgstr "ЕЩЁ НЕ РЕАЛИЗОВАНО. Оптимизация - корень зла. Ты можешь получить некоторое временное улучшение скорости системы, но в конце ты скорей всего перегреешься и, если не будешь осторожен, вызовешь необратимые повреждения."
 
 #: data/base/skill_specs.lua:307
 msgid "Small Plasma grenade"
@@ -2143,7 +2143,7 @@ msgstr "Малая плазменная граната"
 #: data/base/skill_specs.lua:338 data/base/skill_specs.lua:351
 #: data/base/skill_specs.lua:363 data/base/skill_specs.lua:375
 msgid "If you see this in game it is a bug. Please report this to the developers, unless you cheated, in which case you deserve to see this silly nonsense description."
-msgstr "Если вы это видите в игре - это ошибка. Пожалуйста, сообщите об этом разработчикам. Если только вы не читерите, чем и заслужили увидеть это глупое сообщение."
+msgstr "Если вы это видите в игре - это ошибка. Пожалуйста, сообщите о ней разработчикам, если только вы не читер: тогда вы заслужили увидеть это глупое и абсурдное описание."
 
 #: data/base/skill_specs.lua:320
 msgid "Plasma grenade"
@@ -2307,7 +2307,7 @@ msgstr "Волна"
 
 #: data/storyline/act1/events.dat:1912 data/storyline/act2/events.dat:491
 msgid "Final Wave - Take care!"
-msgstr "Последняя волна — будьте осторожны!"
+msgstr "Последняя волна - будьте осторожны!"
 
 #: data/storyline/act1/events.dat:1936 data/storyline/act1/events.dat:1968
 #: data/storyline/act2/events.dat:515 data/storyline/act2/events.dat:546
@@ -2892,11 +2892,11 @@ msgstr "Разделитель континентов"
 
 #: data/storyline/act1/npc_specs.lua:6
 msgid "Will Gapes - MegaSys CSA"
-msgstr "Уилл Гейпс — главный архитектор ПО MegaSys"
+msgstr "Уилл Гейпс - главный архитектор ПО Мегасис"
 
 #: data/storyline/act1/npc_specs.lua:8
 msgid "Tybalt - Citadel Gate Guard"
-msgstr "Тибальт — привратник Цитадели"
+msgstr "Тибальт - привратник Цитадели"
 
 #: data/storyline/act1/npc_specs.lua:9
 msgid "Tutorial Tom"
@@ -2908,27 +2908,27 @@ msgstr "Конвоир Красной стражи"
 
 #: data/storyline/act1/npc_specs.lua:18
 msgid "Tania - lonely scientist"
-msgstr "Таня — одинокий учёный"
+msgstr "Таня - одинокий учёный"
 
 #: data/storyline/act1/npc_specs.lua:19
 msgid "Tamara - Librarian"
-msgstr "Тамара — библиотекарь"
+msgstr "Тамара - библиотекарь"
 
 #: data/storyline/act1/npc_specs.lua:20
 msgid "Stone - Shop owner"
-msgstr "Стоун — владелица магазина"
+msgstr "Стоун - владелица магазина"
 
 #: data/storyline/act1/npc_specs.lua:20
 msgid "Lily Stone - Shop owner"
-msgstr "Лили Стоун — владелица магазина"
+msgstr "Лили Стоун - владелица магазина"
 
 #: data/storyline/act1/npc_specs.lua:23
 msgid "Sorenson - Mystery coder"
-msgstr "Соренсон — таинственный кодер"
+msgstr "Соренсон - таинственный кодер"
 
 #: data/storyline/act1/npc_specs.lua:24
 msgid "Skippy - Map-Maker Maker"
-msgstr "Скиппи — создатель картографа"
+msgstr "Скиппи - создатель картографа"
 
 #: data/storyline/act1/npc_specs.lua:28
 msgid "Scavenger Bot"
@@ -2954,15 +2954,15 @@ msgstr "Самсон, кодер"
 
 #: data/storyline/act1/npc_specs.lua:31
 msgid "SADD - Exterminate Mode"
-msgstr "ОДСЗ — режим истребления"
+msgstr "ОДСЗ - режим истребления"
 
 #: data/storyline/act1/npc_specs.lua:31
 msgid "SADD - Secret Area Defense Droid"
-msgstr "ОДСЗ — охранный дроид секретной зоны"
+msgstr "ОДСЗ - охранный дроид секретной зоны"
 
 #: data/storyline/act1/npc_specs.lua:33
 msgid "Richard - Programmer"
-msgstr "Ричард — программист"
+msgstr "Ричард - программист"
 
 #: data/storyline/act1/npc_specs.lua:35
 msgid "Fighter"
@@ -2970,11 +2970,11 @@ msgstr "Боец"
 
 #: data/storyline/act1/npc_specs.lua:35
 msgid "Pendragon - Fighter"
-msgstr "Пендрагон — боец"
+msgstr "Пендрагон - боец"
 
 #: data/storyline/act1/npc_specs.lua:42
 msgid "Michelangelo - Chef"
-msgstr "Микеландежло — шеф-повар"
+msgstr "Микеланджело - шеф-повар"
 
 #: data/storyline/act1/npc_specs.lua:46
 #: data/storyline/act1/ReturnOfTux.droids:339
@@ -2983,15 +2983,15 @@ msgstr "Коэн"
 
 #: data/storyline/act1/npc_specs.lua:48
 msgid "614 - Kevin's Guard"
-msgstr "614 — охранник Кевина"
+msgstr "614 - охранник Кевина"
 
 #: data/storyline/act1/npc_specs.lua:49
 msgid "Kevin - Hacker"
-msgstr "Кевин — хакер"
+msgstr "Кевин - хакер"
 
 #: data/storyline/act1/npc_specs.lua:50
 msgid "Karol - Shop owner"
-msgstr "Кароль — владелец магазина"
+msgstr "Кароль - владелец магазина"
 
 #: data/storyline/act1/npc_specs.lua:52
 msgid "Jim"
@@ -2999,7 +2999,7 @@ msgstr "Джим"
 
 #: data/storyline/act1/npc_specs.lua:52
 msgid "Jim - Portal Guardian"
-msgstr "Джим — страж портала"
+msgstr "Джим - страж портала"
 
 #: data/storyline/act1/npc_specs.lua:54
 msgid "Jasmine"
@@ -3007,7 +3007,7 @@ msgstr "Жасмин"
 
 #: data/storyline/act1/npc_specs.lua:54
 msgid "Jasmine - Girlfriend of a true Hacker"
-msgstr "Жасмин — подружка настоящего хакера"
+msgstr "Жасмин - подружка настоящего хакера"
 
 #: data/storyline/act1/npc_specs.lua:55
 msgid "Iris"
@@ -3015,23 +3015,23 @@ msgstr "Айрис"
 
 #: data/storyline/act1/npc_specs.lua:55
 msgid "Iris - treasure hunter"
-msgstr "Айрис — охотница за сокровищами"
+msgstr "Айрис - охотница за сокровищами"
 
 #: data/storyline/act1/npc_specs.lua:59
 msgid "Geist - Hunter"
-msgstr "Гайст — охотник"
+msgstr "Гайст - охотник"
 
 #: data/storyline/act1/npc_specs.lua:60
 msgid "Dr. Francis - Cryonicist"
-msgstr "Д-р Фрэнсис — крионист"
+msgstr "Д-р Фрэнсис - крионист"
 
 #: data/storyline/act1/npc_specs.lua:63
 msgid "Ewald - Barkeeper"
-msgstr "Эвальд — бармен"
+msgstr "Эвальд - бармен"
 
 #: data/storyline/act1/npc_specs.lua:64
 msgid "Erin - bot hunter"
-msgstr "Эрин — охотница на ботов"
+msgstr "Эрин - охотница на ботов"
 
 #: data/storyline/act1/npc_specs.lua:64
 msgid "Bot hunter"
@@ -3039,19 +3039,19 @@ msgstr "Охотник на ботов"
 
 #: data/storyline/act1/npc_specs.lua:65
 msgid "Engel - Hunter"
-msgstr "Энгель — охотник"
+msgstr "Энгель - охотник"
 
 #: data/storyline/act1/npc_specs.lua:66
 msgid "Duncan - Bombmaker"
-msgstr "Дункан — бомбодел"
+msgstr "Дункан - бомбодел"
 
 #: data/storyline/act1/npc_specs.lua:71
 msgid "Doc Moore - Medic"
-msgstr "Док Мур — медик"
+msgstr "Док Мур - медик"
 
 #: data/storyline/act1/npc_specs.lua:72
 msgid "Dixon - Mechanic"
-msgstr "Диксон — механик"
+msgstr "Диксон - механик"
 
 #: data/storyline/act1/npc_specs.lua:74
 #: data/storyline/act1/ReturnOfTux.droids:585
@@ -3063,15 +3063,15 @@ msgstr "Член культа"
 
 #: data/storyline/act1/npc_specs.lua:77
 msgid "Cerebrum - Portal Guardian"
-msgstr "Мозг — страж портала"
+msgstr "Мозг - страж портала"
 
 #: data/storyline/act1/npc_specs.lua:79
 msgid "Butch - Arena Master"
-msgstr "Бутч — мастер арены"
+msgstr "Бутч - мастер арены"
 
 #: data/storyline/act1/npc_specs.lua:80
 msgid "Bruce - Mine Worker"
-msgstr "Брюс — шахтёр"
+msgstr "Брюс - шахтёр"
 
 #: data/storyline/act1/npc_specs.lua:82
 msgid "Bob"
@@ -3079,11 +3079,11 @@ msgstr "Боб"
 
 #: data/storyline/act1/npc_specs.lua:82
 msgid "Bob - Gate Guardian"
-msgstr "Боб — привратник"
+msgstr "Боб - привратник"
 
 #: data/storyline/act1/npc_specs.lua:83
 msgid "Benjamin - Gunsmith"
-msgstr "Бенджамин — оружейник"
+msgstr "Бенджамин - оружейник"
 
 #: data/storyline/act1/npc_specs.lua:84
 msgid "Bender"
@@ -3091,7 +3091,7 @@ msgstr "Бендер"
 
 #: data/storyline/act1/npc_specs.lua:84
 msgid "Bender - The strongest one"
-msgstr "Бендер — сильнейший"
+msgstr "Бендер - сильнейший"
 
 #: data/storyline/act1/npc_specs.lua:85
 msgid "Arthur"
@@ -3099,11 +3099,11 @@ msgstr "Артур"
 
 #: data/storyline/act1/npc_specs.lua:85
 msgid "Arthur - Game developer"
-msgstr "Артур — разработчик игр"
+msgstr "Артур - разработчик игр"
 
 #: data/storyline/act1/npc_specs.lua:89
 msgid "614 - Cryo Lab Guard Bot"
-msgstr "614 — бот-охранник криолаборатории"
+msgstr "614 - бот-охранник криолаборатории"
 
 #: data/storyline/act1/quests.lua:27
 msgid "Bender's problem"
@@ -3111,19 +3111,19 @@ msgstr "Проблема Бендера"
 
 #: data/storyline/act1/quests.lua:31
 msgid "The yellow toolkit"
-msgstr "Желтый инструментарий "
+msgstr "Жёлтый инструментарий"
 
 #: data/storyline/act1/quests.lua:45
 msgid "Anything but the army snacks, please!"
-msgstr "Что угодно, только не армейские закуски!"
+msgstr "Только не армейские закуски!"
 
 #: data/storyline/act1/quests.lua:49
 msgid "Novice Arena"
-msgstr "Начальная арена"
+msgstr "Арена новичков"
 
 #: data/storyline/act1/quests.lua:53
 msgid "Time to say goodnight"
-msgstr "Время сказать Спокойной ночи"
+msgstr "Время пожелать спокойной ночи"
 
 #: data/storyline/act1/quests.lua:58
 msgid "Master arena cleared. Good job, man."
@@ -3139,19 +3139,19 @@ msgstr "Я умудрился победить на арене мастеров.
 
 #: data/storyline/act1/quests.lua:64
 msgid "Opening a can of bots..."
-msgstr "Открываю банку с роботами..."
+msgstr "Вскрытие банки ботов..."
 
 #: data/storyline/act1/quests.lua:68
 msgid "The first level of the warehouse has been cleared of bots; Dixon's men can now safely retrieve the supplies from here."
-msgstr "Первый уровень склада очищен от роботов; люди Диксона теперь могут безопасно получить отсюда запасы."
+msgstr "Первый уровень склада очищен от ботов; теперь люди Диксона могут без опаски забрать отсюда припасы."
 
 #: data/storyline/act1/quests.lua:72
 msgid "And there was light..."
-msgstr "И стал свет ..."
+msgstr "И там был свет..."
 
 #: data/storyline/act1/quests.lua:76
 msgid "Hope everything is back to normal now. I better go check with Kevin."
-msgstr "Надеюсь, теперь все снова в порядке. Я лучше пойду проверю с Кевином."
+msgstr "Надеюсь, теперь всё снова в порядке. Но лучше пойду проверю у Кевина."
 
 #: data/storyline/act1/quests.lua:77
 msgid "All hostiles on level disabled."
@@ -3159,19 +3159,19 @@ msgstr "Все противники на уровне отключены."
 
 #: data/storyline/act1/quests.lua:82
 msgid "A kingdom for a cluster!"
-msgstr "Король кластера!"
+msgstr "Царство для кластера!"
 
 #: data/storyline/act1/quests.lua:86
 msgid "Opening access to MS Office"
-msgstr "Открывается доступ к МС-Офису."
+msgstr "Открытие доступа в офис МС"
 
 #: data/storyline/act1/quests.lua:90
 msgid "Propagating a faulty firmware update"
-msgstr "Распространение испорченного обновления прошивки."
+msgstr "Распространение испорченного обновления прошивки"
 
 #: data/storyline/act1/quests.lua:94
 msgid "A New Mission From Spencer"
-msgstr "Новое задание от Спенсера"
+msgstr "Новое задание Спенсера"
 
 #: data/storyline/act1/quests.lua:98
 msgid "SADD's power supply"
@@ -3211,7 +3211,7 @@ msgstr "Спасти магазин"
 
 #: data/storyline/act1/quests.lua:133
 msgid "Doing Duncan a favor"
-msgstr "Сделать одолжение Дункану"
+msgstr "Одолжение для Дункана"
 
 #: data/storyline/act1/quests.lua:137
 msgid "Tutorial Movement"
@@ -3235,7 +3235,7 @@ msgstr "Стрельбище очищено!"
 
 #: data/storyline/act1/quests.lua:157
 msgid "Tutorial Hacking"
-msgstr "Обучение: взлом"
+msgstr "Обучение: хакерство"
 
 #: data/storyline/act1/quests.lua:161
 msgid "Hacking area cleared!"
@@ -3255,15 +3255,15 @@ msgstr "Ненасытность Гейпса"
 
 #: data/storyline/act1/quests.lua:177
 msgid "Tutorial Upgrading Items"
-msgstr "Обучение: Апгрейд предметов"
+msgstr "Обучение: улучшение предметов"
 
 #: data/storyline/act1/quests.lua:180
 msgid "Tutorial Upgrading Items finished!"
-msgstr "Обучение: апгрейд предметов завершен!"
+msgstr "Обучение: улучшение предметов завершено!"
 
 #: data/storyline/act1/quests.lua:184
 msgid "Droids are my friends"
-msgstr "Дроиды мои друзья"
+msgstr "Дроиды - мои друзья"
 
 #: data/storyline/act1/quests.lua:188
 msgid "The old server room is now secured."
@@ -3299,7 +3299,7 @@ msgstr "Цена билета - кристалл"
 
 #: data/storyline/act1/quests.lua:228
 msgid "Bot in need"
-msgstr "Нуждающийся Бот"
+msgstr "Бот в нужде"
 
 #: data/storyline/act1/ReturnOfTux.droids:4
 msgid "Hot Girl"
@@ -3765,11 +3765,11 @@ msgstr "Цель"
 
 #: data/storyline/act1/ReturnOfTux.droids:388
 msgid "Kill Me Too"
-msgstr "Убей Меня Тоже"
+msgstr "Убей меня тоже"
 
 #: data/storyline/act1/ReturnOfTux.droids:389
 msgid "Kill Me"
-msgstr "Убей Меня"
+msgstr "Убей меня"
 
 #: data/storyline/act1/ReturnOfTux.droids:416
 msgid "614 - Gate Guard Bot"
@@ -3801,9 +3801,8 @@ msgid "Corporate Guy"
 msgstr "Парень из корпорации"
 
 #: data/storyline/act2/events.dat:60 data/storyline/act2/levels.dat:30140
-#, fuzzy
 msgid "Skyscrapper Arena"
-msgstr "Арена мастеров"
+msgstr "Небесная арена"
 
 #: data/storyline/act2/events.dat:108
 msgid "You are unable to return. The only way is forward."
@@ -3811,194 +3810,176 @@ msgstr ""
 
 #: data/storyline/act2/events.dat:109
 msgid "RUMBLE! A earthquake happened!"
-msgstr ""
+msgstr "РОКОТ! Землетрясение!"
 
 #: data/storyline/act2/events.dat:173
 msgid "Your head spins. What happened?!"
-msgstr ""
+msgstr "Голова кружится. Что случилось?!"
 
 #: data/storyline/act2/events.dat:174
 msgid "BOOM BOOOOOOM BOOOM"
-msgstr ""
+msgstr "БУМ БУУУУУУМ БУУМ"
 
 #: data/storyline/act2/events.dat:186
-#, fuzzy
 msgid "To Underground F1"
-msgstr "На подземную станцию"
+msgstr "На 1 подземный этаж"
 
 #: data/storyline/act2/events.dat:198 data/storyline/act2/events.dat:235
-#, fuzzy
 msgid "To Underground F2"
-msgstr "На подземную станцию"
+msgstr "На 2 подземный этаж"
 
 #: data/storyline/act2/events.dat:213
-#, fuzzy
 msgid "To Ground Level"
-msgstr "На 2 уровень склада"
+msgstr "На наземный уровень"
 
 #: data/storyline/act2/events.dat:222 data/storyline/act2/events.dat:266
 #: data/storyline/act2/events.dat:385
-#, fuzzy
 msgid "To Underground F3"
-msgstr "На подземную станцию"
+msgstr "На 3 подземный этаж"
 
 #: data/storyline/act2/events.dat:244 data/storyline/act2/events.dat:288
-#, fuzzy
 msgid "To Underground F4"
-msgstr "На подземную станцию"
+msgstr "На 4 подземный этаж"
 
 #: data/storyline/act2/events.dat:253
 msgid "To Factory via Shortcut"
-msgstr ""
+msgstr "На фабрику коротким путём"
 
 #: data/storyline/act2/events.dat:275 data/storyline/act2/events.dat:310
-#, fuzzy
 msgid "To Underground F5"
-msgstr "На подземную станцию"
+msgstr "На 5 подземный этаж"
 
 #: data/storyline/act2/events.dat:297 data/storyline/act2/events.dat:332
-#, fuzzy
 msgid "To Underground F6"
-msgstr "На подземную станцию"
+msgstr "На 6 подземный этаж"
 
 #: data/storyline/act2/events.dat:319 data/storyline/act2/events.dat:354
-#, fuzzy
 msgid "To Underground F7"
-msgstr "На подземную станцию"
+msgstr "На 7 подземный этаж"
 
 #: data/storyline/act2/events.dat:341 data/storyline/act2/events.dat:376
-#, fuzzy
 msgid "To Underground F8"
-msgstr "На подземную станцию"
+msgstr "На 8 подземный этаж"
 
 #: data/storyline/act2/events.dat:363
-#, fuzzy
 msgid "To Underground F9"
-msgstr "На подземную станцию"
+msgstr "На 9 подземный этаж"
 
 #: data/storyline/act2/events.dat:398
 msgid "To Mainland via underground"
-msgstr ""
+msgstr "На материк через подземный ход"
 
 #: data/storyline/act2/events.dat:411
-#, fuzzy
 msgid "To Icy Summer Island"
-msgstr "На остров Омега"
+msgstr "На искусственный остров ледяного лета"
 
 #: data/storyline/act2/events.dat:591 data/storyline/act2/npc_specs.lua:29
 msgid "Colemak"
-msgstr ""
+msgstr "Colemak"
 
 #: data/storyline/act2/levels.dat:20
 msgid "RR Resorts"
-msgstr ""
+msgstr "Курорты ОВ"
 
 #: data/storyline/act2/levels.dat:1119
 msgid "Visitors: This Way"
-msgstr ""
+msgstr "Посетители: сюда"
 
 #: data/storyline/act2/levels.dat:1143
 msgid "In case of emergency, take the Arcane Lore from the chest!"
-msgstr ""
+msgstr "При чрезвычайной ситуации достаньте из сундука тайные знания!"
 
 #: data/storyline/act2/levels.dat:1235
 msgid "Central Area"
-msgstr ""
+msgstr "Центральная область"
 
 #: data/storyline/act2/levels.dat:1971 data/storyline/act2/levels.dat:2456
 msgid "To R&R Resorts"
-msgstr ""
+msgstr "На Курорты ОВ"
 
 #: data/storyline/act2/levels.dat:1974
 msgid "To The Ice Pass"
-msgstr ""
+msgstr "На ледяной перевал"
 
 #: data/storyline/act2/levels.dat:1977
 msgid "To R&R Factory"
-msgstr ""
+msgstr "На фабрику ОВ"
 
 #: data/storyline/act2/levels.dat:1980
 msgid "To Guest Area and City Gate Control"
-msgstr ""
+msgstr "К гостевой зоне и управлению городскими воротами"
 
 #: data/storyline/act2/levels.dat:1983
 msgid "Guest Room. Please wait patiently for one of our staff pick you up."
-msgstr ""
+msgstr "Гостевая комната. Пожалуйста, ожидайте, пока один из сотрудников не заберёт вас."
 
 #: data/storyline/act2/levels.dat:2113
-#, fuzzy
 msgid "Welcome to Act 2"
-msgstr "Добро пожаловать в этот терминал."
+msgstr "Добро пожаловать во 2 действие"
 
 #: data/storyline/act2/levels.dat:2484
-#, fuzzy
 msgid "R&R Factory"
-msgstr "Сердце фабрики"
+msgstr "Фабрика ОВ"
 
 #: data/storyline/act2/levels.dat:4627
 msgid "Droid Research & Development Offices"
-msgstr ""
+msgstr "Офисы исследования и разработки дроидов"
 
 #: data/storyline/act2/levels.dat:4678
-#, fuzzy
 msgid "RR Factory, Floor 2"
-msgstr "Сердце фабрики"
+msgstr "Фабрика ОВ, 2 этаж"
 
 #: data/storyline/act2/levels.dat:6962
 msgid "Servant Development Office. South: Scout Development Office."
-msgstr ""
+msgstr "Офир разработки прислуги. Юг: офис разработки разведчиков."
 
 #: data/storyline/act2/levels.dat:7138
-#, fuzzy
 msgid "RR Factory, Floor 3"
-msgstr "Сердце фабрики"
+msgstr "Фабрика ОВ, 3 этаж"
 
 #: data/storyline/act2/levels.dat:9508
 msgid "Scouts Development Office. Intruders will be shot without mercy."
-msgstr ""
+msgstr "Офис разработки разведчиков. Нарушители будут безжалостно расстреляны."
 
 #: data/storyline/act2/levels.dat:9511
 msgid "No Trespassing: Factory Core. (Shortcut to Floor 9)"
-msgstr ""
+msgstr "Вход воспрещён: ядро фабрики. (Короткий путь на 9 этаж)"
 
 #: data/storyline/act2/levels.dat:9517
 msgid "Are you lost? Northeast to Maintenance Development Office."
-msgstr ""
+msgstr "Потерялись? Офис разработки ремонтников на северо-востоке."
 
 #: data/storyline/act2/levels.dat:9695
-#, fuzzy
 msgid "RR Factory, Floor 4"
-msgstr "Сердце фабрики"
+msgstr "Фабрика ОВ, 4 этаж"
 
 #: data/storyline/act2/levels.dat:12216
 msgid "Maintenance Development Office & Storage. "
-msgstr ""
+msgstr "Хранилище и офис разработки ремонтников"
 
 #: data/storyline/act2/levels.dat:12219
 msgid "Crew Development Office. We're sorry that you need to go to your office by stairs."
-msgstr ""
+msgstr "Офис разработки экипажа. Сожалеем, что вам приходится ходить в офис по лестнице."
 
 #: data/storyline/act2/levels.dat:12222
 msgid "Crew Development Offices at East, in central area."
-msgstr ""
+msgstr "Офис разработки экипажа на востоке, в центральной области."
 
 #: data/storyline/act2/levels.dat:12225
 msgid "If the gate to the research area is locked, please do not open it. Insane people working."
-msgstr ""
+msgstr "Если ворота в исследовательскую зону закрыты, пожалуйста, не открывайте их. Безумцы работают."
 
 #: data/storyline/act2/levels.dat:12409
-#, fuzzy
 msgid "RR Factory, Floor 5"
-msgstr "Сердце фабрики"
+msgstr "Фабрика ОВ, 5 этаж"
 
 #: data/storyline/act2/levels.dat:14743
 msgid "Crew & Harvesting Development Office. North-east: Security Development Office."
 msgstr ""
 
 #: data/storyline/act2/levels.dat:14932
-#, fuzzy
 msgid "RR Factory, Floor 6"
-msgstr "Сердце фабрики"
+msgstr "Фабрика ОВ, 6 этаж"
 
 #: data/storyline/act2/levels.dat:17301
 msgid "Dispatchment & Signman Offices. Battle droids present. Authorized Access Only!"
@@ -4009,9 +3990,8 @@ msgid "Security Development Office. Sign blinks to spare power. This way for mor
 msgstr ""
 
 #: data/storyline/act2/levels.dat:17499
-#, fuzzy
 msgid "RR Factory, Floor 7"
-msgstr "Сердце фабрики"
+msgstr "Фабрика ОВ, 7 этаж"
 
 #: data/storyline/act2/levels.dat:19924
 msgid "Use this stair for Sentinel Dev. Office, Command Dev. Office, Factory Plant and Death."
@@ -4019,7 +3999,7 @@ msgstr ""
 
 #: data/storyline/act2/levels.dat:19927
 msgid "There is nothing on this sign."
-msgstr ""
+msgstr "На этом знаке ничего нет."
 
 #: data/storyline/act2/levels.dat:19930
 msgid "Sentinel and Command devs, we're sorry, but more stairs ahead."
@@ -4027,51 +4007,47 @@ msgstr ""
 
 #: data/storyline/act2/levels.dat:19933
 msgid "Signman Office. Hey, it's me! You totally should visit this office, or send us a LETTER!"
-msgstr ""
+msgstr "Офис связи. Эй, это я! Обязательно посетите этот офис или напишите нам ПИСЬМО!"
 
 #: data/storyline/act2/levels.dat:20124
-#, fuzzy
 msgid "RR Factory, Floor 8"
-msgstr "Сердце фабрики"
+msgstr "Фабрика ОВ, 8 этаж"
 
 #: data/storyline/act2/levels.dat:22890
-#, fuzzy
 msgid "RR Factory, Floor 9"
-msgstr "Сердце фабрики"
+msgstr "Фабрика ОВ, 9 этаж"
 
 #: data/storyline/act2/levels.dat:25864
 msgid "Command Development Office & Factory. Complainers about stairs will be frozen without mercy. AZ."
-msgstr ""
+msgstr "Офис команды разработки и фабрика. Кто пожалуется на ступеньки, будет безжалостно заморожен. АЗ."
 
 #: data/storyline/act2/levels.dat:27156
 msgid "The Ice Pass - North"
-msgstr ""
+msgstr "Ледяной перевал - север"
 
 #: data/storyline/act2/levels.dat:27281
 msgid "The Ice Pass"
-msgstr ""
+msgstr "Ледяной перевал"
 
 #: data/storyline/act2/levels.dat:27413
 msgid "The Ice Pass - South"
-msgstr ""
+msgstr "Ледяной перевал - юг"
 
 #: data/storyline/act2/levels.dat:27538
 msgid "The Ice Pass - Dvorak"
-msgstr ""
+msgstr "Ледяной перевал - Дворак"
 
 #: data/storyline/act2/levels.dat:27676
 msgid "Icy Summer Artificial Island"
-msgstr ""
+msgstr "Искусственный остров ледяного лета"
 
 #: data/storyline/act2/levels.dat:28338
-#, fuzzy
 msgid "To mainland"
-msgstr "Вернуться на материк"
+msgstr "На материк"
 
 #: data/storyline/act2/levels.dat:28881
-#, fuzzy
 msgid "Search in the Darkness"
-msgstr "Улучшает ночное зрение."
+msgstr "Поиск в темноте"
 
 #: data/storyline/act2/levels.dat:29946
 msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Management."
@@ -4079,619 +4055,99 @@ msgstr ""
 
 #: data/storyline/act2/levels.dat:29949
 msgid "Blue Marker for Storage Room. Red Marker for Mainland."
-msgstr ""
+msgstr "Синяя маркировка - хранилище. Красная маркировка - материк."
 
 #: data/storyline/act2/levels.dat:29952
 msgid "DANGER! Due to the reckless exploration of Dilithium, the ceiling may fall anytime. DO NOT PROCEED."
-msgstr ""
+msgstr "ОПАСНОСТЬ! Опасность обрушения перекрытия из-за неосторожной геологоразведки дилития. НЕ ПРОДОЛЖАТЬ."
 
 #: data/storyline/act2/npc_specs.lua:11
 #: data/storyline/act2/ReturnOfTux.droids:123
-#, fuzzy
 msgid "Master Yadda"
-msgstr "Арена мастеров"
+msgstr "Мастер Йадда"
 
 #: data/storyline/act2/npc_specs.lua:15
-#, fuzzy
 msgid "Mr. Stone - Shop owner"
-msgstr "Стоун — владелица магазина"
+msgstr "М-р Стоун - владелец магазина"
 
 #: data/storyline/act2/npc_specs.lua:17
-#, fuzzy
 msgid "RR Security Chief"
-msgstr "614 Бот-охранник"
+msgstr "Начальник охраны ОВ"
 
 #: data/storyline/act2/npc_specs.lua:21
 msgid "999 RR Manager"
-msgstr ""
+msgstr "999 Управляющий ОВ"
 
 #: data/storyline/act2/npc_specs.lua:22
 msgid "Mr. Saves"
-msgstr ""
+msgstr "М-р Сэйвс"
 
 #: data/storyline/act2/npc_specs.lua:22
 msgid "Mr. Saves, Watcher of Stories"
-msgstr ""
+msgstr "М-р Сэйвс, хранитель историй"
 
 #: data/storyline/act2/npc_specs.lua:22
 #: data/storyline/act2/ReturnOfTux.droids:31
 msgid "Weirdo"
-msgstr ""
+msgstr "Чудак"
 
 #: data/storyline/act2/npc_specs.lua:23
 #: data/storyline/act2/ReturnOfTux.droids:146
 msgid "Mike"
-msgstr ""
+msgstr "Майк"
 
 #: data/storyline/act2/npc_specs.lua:26
 #: data/storyline/act2/ReturnOfTux.droids:122
 msgid "Fred"
-msgstr ""
+msgstr "Фред"
 
 #: data/storyline/act2/npc_specs.lua:29
 msgid "Dvorak's acquittance - Colemak"
-msgstr ""
+msgstr "Оправдание Дворака - Colemak"
 
 #: data/storyline/act2/quests.lua:27
 msgid "Where Am I?"
-msgstr ""
+msgstr "Кто я?"
 
 #: data/storyline/act2/quests.lua:31
 msgid "Message From An Old Friend"
-msgstr ""
+msgstr "Послание от старого друга"
 
 #: data/storyline/act2/quests.lua:35
-#, fuzzy
 msgid "The Reapers Of MegaSys I"
-msgstr "Уилл Гейпс — главный архитектор ПО MegaSys"
+msgstr "Жнецы Мегасис I"
 
 #: data/storyline/act2/ReturnOfTux.droids:4
 #: data/storyline/act2/ReturnOfTux.droids:5
 #: data/storyline/act2/ReturnOfTux.droids:6
 #: data/storyline/act2/ReturnOfTux.droids:7
-#, fuzzy
 msgid "RR Guard"
-msgstr "Красный страж"
+msgstr "Страж ОВ"
 
 #: data/storyline/act2/ReturnOfTux.droids:8
 msgid "629 Assassin"
-msgstr ""
+msgstr "629 Убийца"
 
 #: data/storyline/act2/ReturnOfTux.droids:9
 msgid "Car Wrecker"
-msgstr ""
+msgstr "Разрушитель машин"
 
 #: data/storyline/act2/ReturnOfTux.droids:10
 msgid "Swift Assassin"
-msgstr ""
+msgstr "Стремительный убийца"
 
 #: data/storyline/act2/ReturnOfTux.droids:12
 msgid "MS Officer"
-msgstr ""
+msgstr "Офицер МС"
 
 #: data/storyline/act2/ReturnOfTux.droids:18
 msgid "Crossroad Autogun"
-msgstr ""
+msgstr "Автопушка на перекрёстке"
 
 #: data/storyline/act2/ReturnOfTux.droids:20
-#, fuzzy
 msgid "Power Guard"
-msgstr "Красный страж"
+msgstr "Страж силы"
 
 #: data/storyline/act2/ReturnOfTux.droids:140
-#, fuzzy
 msgid "Friendly Dude"
-msgstr "Дружественный 296"
-
-#~ msgid "Empty Map"
-#~ msgstr "Пустая карта"
-
-#~ msgid "Day %d, %02d:%02d"
-#~ msgstr "День %d, %02d:%02d"
-
-#~ msgid "%s@hacked_%s: ~ # "
-#~ msgstr "%s@взломан_%s: ~ #"
-
-#~ msgid "Login : "
-#~ msgstr "Логин : "
-
-#~ msgid "Password : "
-#~ msgstr "Пароль : "
-
-#~ msgid "First login from /dev/ttySO on %s %d"
-#~ msgstr "Первый вход из /dev/ttySO совершён %s %d"
-
-#~ msgid "Last login from /dev/ttyS0 on %s %d"
-#~ msgstr "Последний вход из /dev/ttyS0 совершён %s %d"
-
-#~ msgid "Welcome to [b]%s[/b]!"
-#~ msgstr "Добро пожаловать в [b]%s[/b]!"
-
-#~ msgid "Hardware Check : BOT DAMAGED"
-#~ msgstr "Проверка оборудования: БОТ ПОВРЕЖДЁН"
-
-#~ msgid "This %s unit could stand to be repaired."
-#~ msgstr "Этот робот типа %s нуждается в ремонте."
-
-#~ msgid "BOTNET: UNIT TOO DAMAGED TO BROADCAST COMMANDS."
-#~ msgstr "БОТНЕТ: РОБОТ СЛИШКОМ ПОВРЕЖДЕН ЧТОБЫ ТРАНСЛИРОВАТЬ КОМАНДЫ."
-
-#~ msgid "Entering \"single node\" mode..."
-#~ msgstr "Вход в режим \"единого узла\"..."
-
-#~ msgid "BOTNET: Most commands will be broadcast."
-#~ msgstr "БОТНЕТ: Большинство команд будет транслировано."
-
-#~ msgid "SINGLE NODE: Commands will not be broadcast."
-#~ msgstr "ЕДИНЫЙ УЗЕЛ: Команды не будут транслированы."
-
-#~ msgid "cd repair&settings/"
-#~ msgstr "cd repair&settings/"
-
-#~ msgid "%s@hacked_%s/repair&settings: ~ # "
-#~ msgstr "%s@взломан_%s/repair&settings: ~ #"
-
-#~ msgid "cd .."
-#~ msgstr "cd .."
-
-#~ msgid "./hold_position.sh"
-#~ msgstr "./удерживать_позицию.sh"
-
-#~ msgid "Holding position."
-#~ msgstr "Удерживаю позицию."
-
-#~ msgid "script V 1.0.2 (c) gnu.org, 2054"
-#~ msgstr "скрипт V 1.0.2 (c) gnu.org, 2054"
-
-#~ msgid "Checking requirements..."
-#~ msgstr "Проверка требований..."
-
-#~ msgid "Movement unit: Power-down... [Done]."
-#~ msgstr "Блок движения: отключение питания... [Выполнено]."
-
-#~ msgid "Status: All movement suppressed."
-#~ msgstr "Статус: Все движения прекращены."
-
-#~ msgid "./follow_me.sh"
-#~ msgstr "./следовать_за_мной.sh"
-
-#~ msgid "Initiating tracking sequence."
-#~ msgstr "Инициирование последовательности слежения."
-
-#~ msgid "Movement unit: Enabled."
-#~ msgstr "Блок движения: Включен."
-
-#~ msgid "Acquiring lock on position of %s."
-#~ msgstr "Получаю позицию %s."
-
-#~ msgid "Status: Following %s."
-#~ msgstr "Статус: Следую за %s."
-
-#~ msgid "./move_freely.sh"
-#~ msgstr "./двигайся_свободно.sh"
-
-#~ msgid "Enable movement."
-#~ msgstr "Движение включено."
-
-#~ msgid "script V 1.0.5 (c) gnu.org, 2054"
-#~ msgstr "скрипт версии 1.0.5 (c) gnu.org, 2054 г."
-
-#~ msgid "Movement unit: Power-up... [Done]."
-#~ msgstr "Блок движения: Включение питания... [Выполнено]."
-
-#~ msgid "Resuming normal patrol operations... [Done]"
-#~ msgstr "Возобновление нормальных операций патрулирования... [Выполнено]"
-
-#~ msgid "Status: Patrolling."
-#~ msgstr "Статус: Патрулирование."
-
-#~ msgid "./repair.plx"
-#~ msgstr "./ремонт.plx"
-
-#~ msgid "Available amount of valuable circuits for repair: %d."
-#~ msgstr "Доступно ценных схем для ремонта: %d."
-
-#~ msgid "seconds"
-#~ msgstr "секунды"
-
-#~ msgid "second"
-#~ msgstr "секунда"
-
-#~ msgid "circuits"
-#~ msgstr "схемы"
-
-#~ msgid "circuit"
-#~ msgstr "схема"
-
-#~ msgid "Repairs on %s will take less than %d %s, %d valuable %s, and %d heat."
-#~ msgstr "Ремонт %s потребует менее %d %s, %d ценных %s и %d тепла."
-
-#~ msgid "You do not have enough valuable circuits to ensure repair of this %s unit."
-#~ msgstr "У вас недостаточно ценных схем, чтобы обеспечить ремонт этого %s блока."
-
-#~ msgid "You cannot dissipate enough heat to ensure repair of this %s unit."
-#~ msgstr "Вы не можете рассеять достаточно тепла, чтобы обеспечить ремонт этого %s блока."
-
-#~ msgid "Do you want to start repair of this %s unit?"
-#~ msgstr "Вы хотите начать ремонт этого %s блока?"
-
-#~ msgid "%s is currently undamaged."
-#~ msgstr "В данный момент %s не повержден."
-
-#~ msgid "Y"
-#~ msgstr "Д"
-
-#~ msgid "Repair in progress."
-#~ msgstr "Выполняется ремонт."
-
-#~ msgid "Logout to complete repair process."
-#~ msgstr "Выйдите для завершения процесса ремонта."
-
-#~ msgid "N"
-#~ msgstr "Н"
-
-#~ msgid "Repair aborted."
-#~ msgstr "Ремонт прерван."
-
-#~ msgid "./settings.plx"
-#~ msgstr "./настройки.plx"
-
-#~ msgid "confirmation of hcf.py"
-#~ msgstr "подтверждение hcf.py"
-
-#~ msgid "Always ask for confirmation before execution of hcf.py? [Y/N]"
-#~ msgstr "Всегда запрашивать подтверждение перед выполнением hcf.py? [Y/N]"
-
-#~ msgid "Y (always ask)"
-#~ msgstr "Д (всегда спрашивать)"
-
-#~ msgid "Confirmation will now be asked before execution of hcf.py."
-#~ msgstr "Теперь будет запрошено подтверждение перед выполнением hcf.py."
-
-#~ msgid "N (don't ask)"
-#~ msgstr "Н (не спрашивать)"
-
-#~ msgid "hcf.py will be executed without asking for confirmation."
-#~ msgstr "hcf.py будет запущен без запроса подтверждения."
-
-#~ msgid "broadcast commands"
-#~ msgstr "транслировать команды"
-
-#~ msgid "Broadcast commands to all units on level? [Y/N]"
-#~ msgstr "Транслировать команды всем роботам на уровне? [Д/Н]"
-
-#~ msgid "Y (enable broadcast)"
-#~ msgstr "Д (включить трансляцию)"
-
-#~ msgid "Commands will be broadcast and executed by all bots on this level under your control."
-#~ msgstr "Команды будут транслированы и выполнены всеми роботами под вашим контролем на этом уровне."
-
-#~ msgid "Entering \"botnet\" mode..."
-#~ msgstr "Вход в режим \"ботнет\"..."
-
-#~ msgid "N (disable broadcast)"
-#~ msgstr "Н (отключить трансляцию)"
-
-#~ msgid "Commands will only be executed by this bot."
-#~ msgstr "Команды будут выполнены только этим роботом."
-
-#~ msgid "Welcome to the settings menu."
-#~ msgstr "Добро пожаловать в меню настроек."
-
-#~ msgid "Version: 1.82c"
-#~ msgstr "Версия: 1.82с"
-
-#~ msgid "Installed sensor: %s"
-#~ msgstr "Установлен сенсор: %s"
-
-#~ msgid "No upgrades found."
-#~ msgstr "Обновления не найдены."
-
-#~ msgid "UNIT TOO DAMAGED TO BROADCAST COMMANDS."
-#~ msgstr "РОБОТ СЛИШКОМ ПОВРЕЖДЕН, ЧТОБЫ ТРАНСЛИРОВАТЬ КОМАНДЫ."
-
-#~ msgid "Which setting should be changed?"
-#~ msgstr "Какую настройку следует изменить?"
-
-#~ msgid "./hostname"
-#~ msgstr "./имяхоста"
-
-#~ msgid "Welcome to the hostname menu."
-#~ msgstr "Добро пожаловать в меню имени хоста."
-
-#~ msgid "Version: %s"
-#~ msgstr "Версия: %s"
-
-#~ msgid "Current botname: [b]%s[/b]"
-#~ msgstr "Текущее имя робота: [b]%s[/b]"
-
-#~ msgid "Select new name? [Y/N]"
-#~ msgstr "Выбрать новое имя? [Y/N]"
-
-#~ msgid "Yes"
-#~ msgstr "Да"
-
-#~ msgid "New Name: "
-#~ msgstr "Новое имя:"
-
-#~ msgid "Type a new name for this %s unit."
-#~ msgstr "Введите новое имя для этого %s бота."
-
-#~ msgid "Bald"
-#~ msgstr "Лысый"
-
-#~ msgid "Brusque"
-#~ msgstr "Грубый"
-
-#~ msgid "Chic"
-#~ msgstr "Нарядный"
-
-#~ msgid "Cuddly"
-#~ msgstr "Приятный"
-
-#~ msgid "Cute"
-#~ msgstr "Милый"
-
-#~ msgid "Fickle"
-#~ msgstr "Изменчивый"
-
-#~ msgid "Fluffy"
-#~ msgstr "Пушистый"
-
-#~ msgid "Fuzzy"
-#~ msgstr "Ворсистый"
-
-#~ msgid "Happy"
-#~ msgstr "Счастливый"
-
-#~ msgid "Hyper"
-#~ msgstr "Гипер"
-
-#~ msgid "Laughing"
-#~ msgstr "Смеющийся"
-
-#~ msgid "Machavellian"
-#~ msgstr "Бессовестный"
-
-#~ msgid "Mad"
-#~ msgstr "Сумасшедший"
-
-#~ msgid "Obscene"
-#~ msgstr "Неприличный"
-
-#~ msgid "Ornery"
-#~ msgstr "Мерзкий"
-
-#~ msgid "Pompous"
-#~ msgstr "Напыщенный"
-
-#~ msgid "Shrewd"
-#~ msgstr "Проницательный"
-
-#~ msgid "Aardvark"
-#~ msgstr "Трубкозуб"
-
-#~ msgid "Armadillo"
-#~ msgstr "Броненосец"
-
-#~ msgid "Barracuda"
-#~ msgstr "Барракуда"
-
-#~ msgid "Bat"
-#~ msgstr "Летучая мышь"
-
-#~ msgid "Beetle"
-#~ msgstr "Жук"
-
-#~ msgid "Bunny"
-#~ msgstr "Кролик"
-
-#~ msgid "Dodo"
-#~ msgstr "Дронт"
-
-#~ msgid "Duck"
-#~ msgstr "Утка"
-
-#~ msgid "Fox"
-#~ msgstr "Лиса"
-
-#~ msgid "Frog"
-#~ msgstr "Лягушка"
-
-#~ msgid "Gerbil"
-#~ msgstr "Грызун"
-
-#~ msgid "Gnu"
-#~ msgstr "Гну"
-
-#~ msgid "Halibut"
-#~ msgstr "Палтус"
-
-#~ msgid "Hedgehog"
-#~ msgstr "Ёж"
-
-#~ msgid "Herring"
-#~ msgstr "Сельдь"
-
-#~ msgid "Kitten"
-#~ msgstr "Котёнок"
-
-#~ msgid "Koala"
-#~ msgstr "Коала"
-
-#~ msgid "Lemur"
-#~ msgstr "Лемур"
-
-#~ msgid "Mackerel"
-#~ msgstr "Скумбрия"
-
-#~ msgid "Otter"
-#~ msgstr "Выдра"
-
-#~ msgid "Panda"
-#~ msgstr "Панда"
-
-#~ msgid "Platypus"
-#~ msgstr "Утконос"
-
-#~ msgid "Puffin"
-#~ msgstr "Буревестник"
-
-#~ msgid "Scarab"
-#~ msgstr "Скарабей"
-
-#~ msgid "Shrew"
-#~ msgstr "Землеройка"
-
-#~ msgid "Tapir"
-#~ msgstr "Тапир"
-
-#~ msgid "Trout"
-#~ msgstr "Форель"
-
-#~ msgid "Tuna"
-#~ msgstr "Тунец"
-
-#~ msgid "Walrus"
-#~ msgstr "Морж"
-
-#~ msgid "No"
-#~ msgstr "Нет"
-
-#~ msgid "Confirm renaming from [b]%s[/b] to [b]%s[/b]? [Y/N]"
-#~ msgstr "Подтвердить переименование из [b]%s[/b] в [b]%s[/b]? [Д/Н]"
-
-#~ msgid "Renamed [b]%s[/b] to [b]%s[/b]."
-#~ msgstr "Переименовано [b]%s[/b] в [b]%s[/b]."
-
-#~ msgid "This %s unit is now designated: [b]%s[/b]"
-#~ msgstr "Этот %s робот теперь обозначен как: [b]%s[/b]"
-
-#~ msgid "./hcf.py"
-#~ msgstr "./hcf.py"
-
-#~ msgid "Are you really sure you want to destroy %s? Y/N"
-#~ msgstr "Вы правда уверены, что хотите уничтожить %s? Д/Н"
-
-#~ msgid "Destruction confirmed."
-#~ msgstr "Разрушение подтверждено."
-
-#~ msgid "Destruction averted."
-#~ msgstr "Разрушение предотвращено."
-
-#~ msgid "Draining this %s unit will get you %d HP but kill it and take %d %s."
-#~ msgstr "Слив этого %s робота даст вам %d здоровья, но убьет его и даст %d %s."
-
-#~ msgid "Are you sure you want to drain this %s unit?"
-#~ msgstr "Вы уверены, что хотите слить этого %s робота?"
-
-#~ msgid "Bot not drained."
-#~ msgstr "Робот не слит."
-
-#~ msgid "Running hcf.py..."
-#~ msgstr "Запуск hcf.py..."
-
-#~ msgid "Executing: Halt and Catch Fire."
-#~ msgstr "Выполняю: Завершить работу и загореться."
-
-#~ msgid "Warning! Cooling subsystems disabled."
-#~ msgstr "Внимание! Системы охлаждения отключены."
-
-#~ msgid "Warning! Spontaneous oxidization witH emis$ion of light aND heAt detecteddd in THE#main| procesIng unit."
-#~ msgstr "Внимание! Обнаружено спонтанное окислениееее с и$лy4ением света N тЕпл@ В#главн0м процессорном блоке."
-
-#~ msgid "WArn|n*! SsTeM=#faiPure%%^#n 3 S 1()$++"
-#~ msgstr "ВHиманNе! СiсTємнЬ|й сб0й%%^#n 3 S 1()$++"
-
-#~ msgid "Warning: something seems wrong."
-#~ msgstr "Внимание: похоже, что-то не так."
-
-#~ msgid "Error report:"
-#~ msgstr "Отчет об ошибке:"
-
-#~ msgid "()%%#@(%% THE BLADE IS YOURS. )##%%*&%%*!"
-#~ msgstr "()%%#@(%% КЛИНОК ВАШ. )##%%*&%%*!"
-
-#~ msgid "Bot drained."
-#~ msgstr "Робот слит."
-
-#~ msgid "Failed to drain bot."
-#~ msgstr "Не удалось слить робота."
-
-#~ msgid "I am free!"
-#~ msgstr "Я свободен!"
-
-#~ msgid "drain_bot_auto.setup"
-#~ msgstr "слить_робота_авто.setup"
-
-#~ msgid "How do you want draining of bots to be handled?"
-#~ msgstr "Как вы хотите сливать роботов?"
-
-#~ msgid "Currently draining of bots is tried automatically."
-#~ msgstr "В данный момент сливание роботов происходит автоматически."
-
-#~ msgid "Currently draining of bots is never tried."
-#~ msgstr "На данный момент сливание роботов никогда не производилось."
-
-#~ msgid "Currently it is asked if draining a bot is to be tried."
-#~ msgstr "На данный момент задается вопрос, нужно ли пробовать слить робота."
-
-#~ msgid "Always try draining bots."
-#~ msgstr "Всегда пытаться сливать роботов."
-
-#~ msgid "Never try to drain a bot"
-#~ msgstr "Никогда не пытаться сливать роботов."
-
-#~ msgid "Always ask if attempt to drain bot shall be ran."
-#~ msgstr "Всегда спрашивать, выполнять ли попытку слить робота."
-
-#~ msgid "Reprogramm_bots_after_takeover.sh"
-#~ msgstr "Перепрограммировать_роботов_после_захвата.sh"
-
-#~ msgid "Bots will be reprogrammed after takeover: [b]true[/b]"
-#~ msgstr "Роботы будут перепрограммированы после захвата:  [b]истина[/b]"
-
-#~ msgid "Bots will be reprogrammed after takeover: [b]false[/b]"
-#~ msgstr "Роботы будут перепрограммированы после захвата: [b]ложь[/b]"
-
-#~ msgid "leave settings.plx"
-#~ msgstr "покинуть настройки.plx"
-
-#~ msgid "Settings saved"
-#~ msgstr "Настройки сохранены"
-
-#~ msgid "Leaving settings.plx"
-#~ msgstr "Выход из настройки.plx"
-
-#~ msgid "logout"
-#~ msgstr "выход"
-
-#~ msgid "Closing remote connection..."
-#~ msgstr "Закрытие удаленного соединения..."
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "Hello."
-#~ msgstr "Здравствуй."
-
-#~ msgid "Hi there."
-#~ msgstr "Привет."
-
-#~ msgid "Well, hello again."
-#~ msgstr "Ну, еще раз привет."
-
-#~ msgid "Hello hello."
-#~ msgstr "Привет привет."
-
-#~ msgid "Welcome back."
-#~ msgstr "С возвращением"
-
-#~ msgid "help"
-#~ msgstr "help"
-
-#~ msgid "Available commands: help, logout"
-#~ msgstr "Доступные команды: help, logout"
-
-#~ msgid "Goodbye"
-#~ msgstr "До свидания"
+msgstr "Дружелюбный парень"

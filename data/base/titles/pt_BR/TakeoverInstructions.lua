@@ -20,9 +20,9 @@
 title_screen{
 song = "TheBeginning.ogg",
 text = [[
-Tentando hackear alguém, eh?
+Tentando hackear alguém, é?
 Não se lembra como fazê-lo?
-Estúpido. Não frite seu cérebro e então tente hackear.
+Estúpido. Não frite seu cérebro e, então, tente hackear.
 Aqui vai um curso intensivo pra refrescar a sua memória.
 
 Primeiro, não tente hackear se estiver prestes a morrer.

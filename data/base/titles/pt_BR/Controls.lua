@@ -40,32 +40,32 @@ Use o botão direito do mouse para ativar a habilidade/programa atualmente selec
 
 Teclas padrão (a maioria pode ser modificada na lista de atalhos - F1)
 
-  Escape ... Mostra o menu principal
-  F1 ... Mostra a lista de atalhos
-  F2 ... Habilita a tela cheia (apenas Linux)
-  F3 ... Salvar
-  F4 ... Carregar
-  F5-F12 ... Selecionar rapidamente programas de 1 até 8
+  Escape        ... Mostra o menu principal
+  F1            ... Mostra a lista de atalhos
+  F2            ... Habilita a tela cheia (apenas Linux)
+  F3            ... Salvamento rápido
+  F4            ... Carregamento rápido
+  F5-F12        ... Seleciona rapidamente programas de 1 até 8
 
-  I ... Painel do inventário
-  C ... Painel do personagem
-  S - Painel de programas/habilidades
-  Espaço - Fecha todos os painéis abertos
-  Q ... Registro de 'quests'
-  0-9 ... Utilizar os itens do inventário rápido 0-9
+  I             ... Painel do inventário
+  C             ... Painel do personagem
+  S             ... Painel de habilidades/programas
+  Espaço        ... Fecha todos os painéis abertos
+  Q             ... Registro de quests
+  0-9           ... Usa os itens do inventário rápido 0-9
 
-  P ... Pausar
-  Segura A ... Ataca enquanto parado na mesma posição
-  Segure Shoft ... Mantem o alvo selecionado enquanto se move
-  Tab ... Alternar automapa
+  P             ... Pausa
+  Segurar A     ... Ataca enquanto parado na mesma posição
+  Segurar Shift ... Mantém o alvo selecionado enquanto se move
+  Tab           ... Ativa o automapa
 
-  R ... Recarregar arma
-  Manter Ctrl ... Correr
-  U ... Correr sempre
+  R             ... Recarrega a arma
+  Segurar Ctrl  ... Correr
+  U             ... Ativa correr sempre
 
-  Segure
-  Z          ... Mostrar rórulos dos itens no chão 
-  T          ... Paredes ficam transparentes quando Tux se aproxima (apenas em OpenGL)
+  Segurar X     ... Mostra as etiquetas de itens no chão
+  Z             ... Ativa mostrar as etiquetas dos itens no chão
+  T             ... Ativa paredes ficarem transparentes quando Tux se aproxima (apenas OpenGL)
 
 TAKEOVER/CHAT
 
@@ -73,7 +73,7 @@ Para conversar com um robô amigável, basta clicar nele. Para controlar um rob�
 
 Para o jogo de hackear, você pode usar a roda do mouse ou as teclas direcionais.
 
-Você pode se interessar em jogar o Tutorial, acessivel no menu principal.
+Você pode se interessar em jogar o Tutorial, acessível no menu principal.
 
 Se você precisar de ajuda ou tiver problemas, sinta-se livre para vir em #freedroid em irc.freenode.net e pedir ajuda.
 

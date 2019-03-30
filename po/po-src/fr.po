@@ -17,8 +17,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-24 17:21+0100\n"
-"PO-Revision-Date: 2019-02-22 13:18+0000\n"
+"POT-Creation-Date: 2019-03-30 22:43+0100\n"
+"PO-Revision-Date: 2019-03-24 16:24+0000\n"
 "Last-Translator: fluzz <fluzz@gmx.com>\n"
 "Language-Team: French (http://www.transifex.com/arctic-games/freedroid-rpg/language/fr/)\n"
 "Language: fr\n"
@@ -328,15 +328,15 @@ msgstr ""
 msgid "Energy shield disabled due to a risk of overheat."
 msgstr ""
 
-#: src/influ.c:1044 src/menu.c:1105
+#: src/influ.c:1044 src/menu.c:1122
 msgid "Load Latest"
 msgstr "Recharger la partie"
 
-#: src/influ.c:1045 src/menu.c:1106
+#: src/influ.c:1045 src/menu.c:1123
 msgid "Load Backup"
 msgstr "Charger la sauvegarde précédente"
 
-#: src/influ.c:1047 src/menu.c:1108 src/lvledit/lvledit_menu.c:964
+#: src/influ.c:1047 src/menu.c:1125 src/lvledit/lvledit_menu.c:964
 msgid "Quit to Main Menu"
 msgstr "Retour au Menu Principal"
 
@@ -344,7 +344,7 @@ msgstr "Retour au Menu Principal"
 msgid "Return to Editor"
 msgstr "Retour à l'éditeur"
 
-#: src/influ.c:1051 src/menu.c:954 src/menu.c:1111
+#: src/influ.c:1051 src/menu.c:971 src/menu.c:1128
 #: src/lvledit/lvledit_menu.c:965
 msgid "Exit FreedroidRPG"
 msgstr "Quitter FreedroidRPG"
@@ -367,7 +367,7 @@ msgstr "Début du tutoriel."
 msgid "Starting new game act."
 msgstr "Début d'un nouvel acte du jeu."
 
-#: src/init.c:983
+#: src/init.c:998
 msgid ""
 "You are playing a Release Candidate.\n"
 "Strange bugs may still be present in the game.\n"
@@ -383,11 +383,11 @@ msgstr ""
 "\n"
 "Bonne chance !\n"
 
-#: src/init.c:1002 src/init.c:1003
+#: src/init.c:1017 src/init.c:1018
 msgid "Game over.\n"
 msgstr "Fin de la partie.\n"
 
-#: src/init.c:1069 src/init.c:1070
+#: src/init.c:1084 src/init.c:1085
 msgid "Game won.\n"
 msgstr "Tu as gagné la partie.\n"
 
@@ -1164,7 +1164,7 @@ msgstr ""
 "Nous effectuons sa sauvegarde, pour permettre de déterminer l'erreur.\n"
 "Voir le rapport dans la console du terminal."
 
-#: src/menu.c:44 src/menu.c:948
+#: src/menu.c:44 src/menu.c:965
 msgid "Play"
 msgstr "Jouer"
 
@@ -1192,61 +1192,61 @@ msgstr "Activation d'OpenGL : OUI"
 msgid "OpenGL output active: NO"
 msgstr "Activation d'OpenGL : NON"
 
-#: src/menu.c:340 src/menu.c:1747
+#: src/menu.c:340 src/menu.c:1764
 msgid "[down]"
 msgstr "[bas]"
 
-#: src/menu.c:341 src/menu.c:1734
+#: src/menu.c:341 src/menu.c:1751
 msgid "[up]"
 msgstr "[haut]"
 
-#: src/menu.c:949
+#: src/menu.c:966
 msgid "Tutorial"
 msgstr "Tutoriel"
 
-#: src/menu.c:950
+#: src/menu.c:967
 msgid "Level Editor"
 msgstr "Éditeur de Niveau"
 
-#: src/menu.c:951 src/menu.c:1104
+#: src/menu.c:968 src/menu.c:1121
 msgid "Options"
 msgstr "Options"
 
-#: src/menu.c:952
+#: src/menu.c:969
 msgid "Credits"
 msgstr "Crédits"
 
-#: src/menu.c:953
+#: src/menu.c:970
 msgid "Contribute"
 msgstr "Contribuer"
 
-#: src/menu.c:984
+#: src/menu.c:1001
 msgid "easy"
 msgstr "facile"
 
-#: src/menu.c:985
+#: src/menu.c:1002
 msgid "normal"
 msgstr "normal"
 
-#: src/menu.c:986
+#: src/menu.c:1003
 msgid "hard"
 msgstr "difficile"
 
-#: src/menu.c:989
+#: src/menu.c:1006
 #, c-format
 msgid "Difficulty: %s"
 msgstr "Difficulté : %s"
 
-#: src/menu.c:990 src/menu.c:1052 src/menu.c:1166 src/menu.c:1250
-#: src/menu.c:1335 src/menu.c:1446 src/menu.c:1526 src/menu.c:1599
-#: src/menu.c:1754 src/menu.c:1786 src/menu.c:1811 src/menu.c:1869
+#: src/menu.c:1007 src/menu.c:1069 src/menu.c:1183 src/menu.c:1267
+#: src/menu.c:1352 src/menu.c:1463 src/menu.c:1543 src/menu.c:1616
+#: src/menu.c:1771 src/menu.c:1803 src/menu.c:1828 src/menu.c:1886
 #: src/lvledit/lvledit_menu.c:121 src/lvledit/lvledit_menu.c:268
 #: src/lvledit/lvledit_menu.c:370 src/lvledit/lvledit_menu.c:595
 #: src/lvledit/lvledit_menu.c:883
 msgid "Back"
 msgstr "Retour"
 
-#: src/menu.c:1012
+#: src/menu.c:1029
 msgid ""
 "You need to restart FreedroidRPG for some changes to take effect.\n"
 "\n"
@@ -1256,178 +1256,178 @@ msgstr ""
 "\n"
 "Désolé pour le désagrément."
 
-#: src/menu.c:1043
+#: src/menu.c:1060
 msgid "Gameplay"
 msgstr "Paramètres de Jeu"
 
-#: src/menu.c:1044
+#: src/menu.c:1061
 msgid "Graphics"
 msgstr "Graphiques"
 
-#: src/menu.c:1045
+#: src/menu.c:1062
 msgid "Sound"
 msgstr "Son"
 
-#: src/menu.c:1046
+#: src/menu.c:1063
 msgid "Keys"
 msgstr "Touches"
 
-#: src/menu.c:1048
+#: src/menu.c:1065
 msgid "Languages"
 msgstr "Langues"
 
-#: src/menu.c:1050
+#: src/menu.c:1067
 msgid "On-Screen displays"
 msgstr "Menus à l'écran"
 
-#: src/menu.c:1051
+#: src/menu.c:1068
 msgid "Performance tweaks"
 msgstr "Réglage des performances"
 
-#: src/menu.c:1099
+#: src/menu.c:1116
 msgid "Resume Play"
 msgstr "Reprendre le jeu"
 
-#: src/menu.c:1101
+#: src/menu.c:1118
 msgid "Resume Playtest"
 msgstr "Reprendre le test"
 
-#: src/menu.c:1103
+#: src/menu.c:1120
 msgid "Save Hero"
 msgstr "Sauvegarder le héros"
 
-#: src/menu.c:1110
+#: src/menu.c:1127
 msgid "Return to Level Editor"
 msgstr "Retourner à l'éditeur de niveau"
 
-#: src/menu.c:1157
+#: src/menu.c:1174
 msgid "System default"
 msgstr "Valeur par défaut"
 
-#: src/menu.c:1321
+#: src/menu.c:1338
 #, c-format
 msgid "Change screen resolution"
 msgstr "Changer la résolution de l'écran"
 
-#: src/menu.c:1323
+#: src/menu.c:1340
 #, c-format
 msgid "Fullscreen mode: %s"
 msgstr "Mode Plein écran : %s"
 
-#: src/menu.c:1323
+#: src/menu.c:1340
 msgid "ON"
 msgstr "OUI"
 
-#: src/menu.c:1323
+#: src/menu.c:1340
 msgid "OFF"
 msgstr "NON"
 
-#: src/menu.c:1327
+#: src/menu.c:1344
 #, c-format
 msgid "<-- Gamma correction: %1.2f -->"
 msgstr "<-- Correction gamma : %1.2f -->"
 
-#: src/menu.c:1331
+#: src/menu.c:1348
 #, c-format
 msgid "Show blood: %s"
 msgstr "Mode sanglant : %s"
 
-#: src/menu.c:1331 src/menu.c:1516 src/menu.c:1519 src/menu.c:1524
-#: src/menu.c:1593 src/menu.c:1594 src/menu.c:1595 src/menu.c:1596
+#: src/menu.c:1348 src/menu.c:1533 src/menu.c:1536 src/menu.c:1541
+#: src/menu.c:1610 src/menu.c:1611 src/menu.c:1612 src/menu.c:1613
 msgid "YES"
 msgstr "OUI"
 
-#: src/menu.c:1331 src/menu.c:1516 src/menu.c:1519 src/menu.c:1524
-#: src/menu.c:1593 src/menu.c:1594 src/menu.c:1595 src/menu.c:1596
+#: src/menu.c:1348 src/menu.c:1533 src/menu.c:1536 src/menu.c:1541
+#: src/menu.c:1610 src/menu.c:1611 src/menu.c:1612 src/menu.c:1613
 msgid "NO"
 msgstr "NON"
 
-#: src/menu.c:1418
+#: src/menu.c:1435
 #, c-format
 msgid "<-- Background music volume: %1.2f -->"
 msgstr "<-- Volume musique ambiance : %1.2f -->"
 
-#: src/menu.c:1422
+#: src/menu.c:1439
 #, c-format
 msgid "<-- Sound effects volume: %1.2f -->"
 msgstr "<-- Volume bruitages : %1.2f -->"
 
-#: src/menu.c:1428
+#: src/menu.c:1445
 #, c-format
 msgid "<-- Output: Stereo -->"
 msgstr "<-- Sortie : Stéréo -->"
 
-#: src/menu.c:1432
+#: src/menu.c:1449
 #, c-format
 msgid "<-- Output: 4.0 Surround -->"
 msgstr "<-- Sortie : Surround 4.0 -->"
 
-#: src/menu.c:1436
+#: src/menu.c:1453
 #, c-format
 msgid "<-- Output: 5.1 Surround -->"
 msgstr "<-- Sortie : Surround 5.1 -->"
 
-#: src/menu.c:1440
+#: src/menu.c:1457
 #, c-format
 msgid "<-- Output: Error -->"
 msgstr "<-- Sortie : Erreur -->"
 
-#: src/menu.c:1511
+#: src/menu.c:1528
 #, c-format
 msgid "FPS limit: none"
 msgstr "Limite d'IPS : aucune"
 
-#: src/menu.c:1513
+#: src/menu.c:1530
 #, c-format
 msgid "FPS limit: %d"
 msgstr "Limite d'IPS : %d"
 
-#: src/menu.c:1516
+#: src/menu.c:1533
 #, c-format
 msgid "Show light radius: %s"
 msgstr "Affichage des halos lumineux : %s"
 
-#: src/menu.c:1519
+#: src/menu.c:1536
 #, c-format
 msgid "Show obstacle shadows: %s"
 msgstr "Affichage des ombres : %s"
 
-#: src/menu.c:1524
+#: src/menu.c:1541
 #, c-format
 msgid "Precache item graphics: %s"
 msgstr "Préchargement des images : %s"
 
-#: src/menu.c:1593
+#: src/menu.c:1610
 #, c-format
 msgid "Show position: %s"
 msgstr "Affichage de la position : %s"
 
-#: src/menu.c:1594
+#: src/menu.c:1611
 #, c-format
 msgid "Show framerate: %s"
 msgstr "Affichage de la fréquence image : %s"
 
-#: src/menu.c:1595
+#: src/menu.c:1612
 #, c-format
 msgid "Show enemies' energy bars: %s"
 msgstr "Affichage de la barre d'énergie des ennemis : %s"
 
-#: src/menu.c:1596
+#: src/menu.c:1613
 #, c-format
 msgid "Show effect countdowns: %s"
 msgstr "Affichage des comptes à rebours des effets : %s"
 
-#: src/menu.c:1597
+#: src/menu.c:1614
 #, c-format
 msgid "<-- Max. screen messages: %d -->"
 msgstr "<-- Nb messages écran : %d -->"
 
-#: src/menu.c:1598
+#: src/menu.c:1615
 #, c-format
 msgid "<-- Screen message lifetime: %3.1fs -->"
 msgstr "<-- Durée affichage messages écran : %3.1fs -->"
 
-#: src/menu.c:1643
+#: src/menu.c:1660
 msgid ""
 "\n"
 "     Please enter a name\n"
@@ -1447,7 +1447,7 @@ msgstr ""
 "\n"
 ">"
 
-#: src/menu.c:1665
+#: src/menu.c:1682
 #, c-format
 msgid ""
 "A character named \"%s\" already exists.\n"
@@ -1456,28 +1456,28 @@ msgstr ""
 "Un personnage nommé \"%s\" existe déjà.\n"
 "Merci de choisir un autre nom."
 
-#: src/menu.c:1789
+#: src/menu.c:1806
 msgid "No saved games found!"
 msgstr "Aucune sauvegarde trouvée!"
 
-#: src/menu.c:1810
+#: src/menu.c:1827
 msgid "Sure!"
 msgstr "Bien sûr !"
 
-#: src/menu.c:1814
+#: src/menu.c:1831
 #, c-format
 msgid "Really delete hero '%s'?"
 msgstr "Veux-tu vraiment effacer le héros '%s' ?"
 
-#: src/menu.c:1866
+#: src/menu.c:1883
 msgid "New Hero"
 msgstr "Nouvel héros"
 
-#: src/menu.c:1867
+#: src/menu.c:1884
 msgid "Load existing Hero"
 msgstr "Charger un héros existant"
 
-#: src/menu.c:1868
+#: src/menu.c:1885
 msgid "Delete existing Hero"
 msgstr "Effacer un héros existant"
 
@@ -3063,116 +3063,22 @@ msgstr ""
 "La sauvegarde semble être corrompue."
 
 #: src/savegame/filters_0_16_1.c:262
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Error during savegame filtering (%s:%s): Tux 'Inventory' attribute was not found.\n"
 "The savegame seems to be corrupted."
 msgstr ""
-"Erreur durant le filtrage sauvegarde (%s: %s): l'attribut Tux'AllMissions' n'a pas pu être trouvé\n"
-"La sauvegarde semble être corrompue."
 
 #: src/savegame/filters_0_16_1.c:273
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Error during savegame filtering (%s:%s): Tux 'HaveBeenToLevel' attribute was not found.\n"
 "The savegame seems to be corrupted."
 msgstr ""
-"Erreur durant le filtrage sauvegarde (%s: %s): l'attribut Tux'AllMissions' n'a pas pu être trouvé\n"
-"La sauvegarde semble être corrompue."
 
 #: src/savegame/filters_0_16_1.c:306
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Error during savegame filtering (%s:%s): Malformed item type string in Tux struct.\n"
 "The savegame seems to be corrupted."
 msgstr ""
-"Erreur durant l'application d'un filtre (%s:%s): la donnée 'mission_diary_texts' n'a pas été trouvée.\n"
-"La sauvegarde semble être corrompue."
-
-#~ msgid "Multiplicity: %d\n"
-#~ msgstr "Multiplicité : %d\n"
-
-#~ msgid "OpenGL output active: "
-#~ msgstr "Activation d'OpenGL : "
-
-#~ msgid ""
-#~ "\n"
-#~ "\n"
-#~ "No saved games found!"
-#~ msgstr ""
-#~ "\n"
-#~ "\n"
-#~ "Aucune sauvegarde disponible !"
-
-#~ msgid "god"
-#~ msgstr "dieu"
-
-#~ msgid "The new name of the map label already exists, please choose an other name."
-#~ msgstr "Le nouveau nom de l'étiquette de carte existe déjà, merci de choisir un autre nom."
-
-#~ msgid ""
-#~ "-=* Savegame loading *=-\n"
-#~ "\n"
-#~ "Your savegame is from an other game version.\n"
-#~ "If you are using a dev version of the game, this is expected.\n"
-#~ "We load it as is, but expect some errors or even a crash of the game."
-#~ msgstr ""
-#~ "-=* Chargement de sauvegarde *=-\n"
-#~ "\n"
-#~ "La sauvegarde provient d'une autre version du jeu.\n"
-#~ "Si tu utilises une version de développement, c'est une erreur normale.\n"
-#~ "On la charge telle quelle, mais il faut s'attendre à des erreurs ou même à un arrêt brutal du jeu."
-
-#~ msgid ""
-#~ "You selected %d x %d pixels.\n"
-#~ "\n"
-#~ "You need to restart FreedroidRPG for the changes to take effect.\n"
-#~ "\n"
-#~ "Sorry for the inconvenience."
-#~ msgstr ""
-#~ "Tu as sélectionné %d x %d pixels.\n"
-#~ "\n"
-#~ "Tu dois redémarrer FreedroidRPG pour que les changements prennent effet.\n"
-#~ "\n"
-#~ "Désolé pour le désagrément."
-
-#~ msgid "Limit framerate (powersaving): %s"
-#~ msgstr "Limitation fréquence image (économie d'énergie) : %s"
-
-#~ msgid ""
-#~ "W A R N I N G !\n"
-#~ "\n"
-#~ "FreedroidRPG was unable to locate the saved game file you requested to load.\n"
-#~ "This might mean that it really isn't there cause you tried to load a game without ever having saved the game before.\n"
-#~ "The other explanation of this error might be a severe error in FreedroidRPG. If you think this is the case, please report this to the developers."
-#~ msgstr ""
-#~ "A T T E N T I O N !\n"
-#~ "\n"
-#~ "FreedroidRPG n'a pas été capable de trouver la partie sauvegardée que tu as demandé de charger.\n"
-#~ "Cela peut signifier qu'elle n'existe réellement pas parce que tu as essayé de charger une partie qui n'a pas encore été sauvegardée.\n"
-#~ "L'autre explication de cette erreur peut être une erreur sévère dans FreedroidRPG. Si tu penses que c'est le cas, merci de l'indiquer aux développeurs."
-
-#~ msgid "Failed to load old game."
-#~ msgstr "Impossible de charger l'ancienne sauvegarde."
-
-#~ msgid "Version or structsize mismatch! The savegame is not from the same version of FreedroidRPG... possible breakage."
-#~ msgstr "Version ou 'structsize' non conforme ! Cette sauvegarde n'a pas été effectuée avec la même version de FreedroidRPG... Possible dysfonctionnement."
-
-#~ msgid ""
-#~ "%s\n"
-#~ " Completely fixed: "
-#~ msgstr ""
-#~ "%s\n"
-#~ " Entièrement fixe : "
-
-#~ msgid "Advanced Options"
-#~ msgstr "Options avancées"
-
-#~ msgid "Recharge time: %3.2f\n"
-#~ msgstr "Temps de rechargement : %3.2f\n"
-
-#~ msgid "Current chat context has no 'partner'. How is it possible ?"
-#~ msgstr "Le contexte de dialogue n'a pas de 'partenaire'. Comment est-ce possible ?"
-
-#~ msgid "Could not find a droid with name \"%s\""
-#~ msgstr "Ne peut pas trouver un droïde nommé \"%s\""

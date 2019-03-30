@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the freedroidrpg package.
 #
 # Translators:
-# Balázs Meskó <meskobalazs@gmail.com>, 2016-2018
+# Balázs Meskó <meskobalazs@gmail.com>, 2016-2019
 msgid ""
 msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-24 17:21+0100\n"
-"PO-Revision-Date: 2019-01-19 20:11+0000\n"
+"POT-Creation-Date: 2019-03-30 22:43+0100\n"
+"PO-Revision-Date: 2019-03-24 16:24+0000\n"
 "Last-Translator: fluzz <fluzz@gmx.com>\n"
 "Language-Team: Hungarian (http://www.transifex.com/arctic-games/freedroid-rpg/language/hu/)\n"
 "Language: hu\n"
@@ -319,15 +319,15 @@ msgstr ""
 msgid "Energy shield disabled due to a risk of overheat."
 msgstr ""
 
-#: src/influ.c:1044 src/menu.c:1105
+#: src/influ.c:1044 src/menu.c:1122
 msgid "Load Latest"
 msgstr "Legutóbbi betöltése"
 
-#: src/influ.c:1045 src/menu.c:1106
+#: src/influ.c:1045 src/menu.c:1123
 msgid "Load Backup"
 msgstr "Tartalék betöltése"
 
-#: src/influ.c:1047 src/menu.c:1108 src/lvledit/lvledit_menu.c:964
+#: src/influ.c:1047 src/menu.c:1125 src/lvledit/lvledit_menu.c:964
 msgid "Quit to Main Menu"
 msgstr "Visszatérés a főmenübe"
 
@@ -335,7 +335,7 @@ msgstr "Visszatérés a főmenübe"
 msgid "Return to Editor"
 msgstr "Visszatérés a szerkesztőbe"
 
-#: src/influ.c:1051 src/menu.c:954 src/menu.c:1111
+#: src/influ.c:1051 src/menu.c:971 src/menu.c:1128
 #: src/lvledit/lvledit_menu.c:965
 msgid "Exit FreedroidRPG"
 msgstr "Kilépés a FreedroidRPG-ből"
@@ -358,7 +358,7 @@ msgstr "Gyakorlótér indítása."
 msgid "Starting new game act."
 msgstr ""
 
-#: src/init.c:983
+#: src/init.c:998
 msgid ""
 "You are playing a Release Candidate.\n"
 "Strange bugs may still be present in the game.\n"
@@ -374,11 +374,11 @@ msgstr ""
 "\n"
 "Sok szerencsét!\n"
 
-#: src/init.c:1002 src/init.c:1003
+#: src/init.c:1017 src/init.c:1018
 msgid "Game over.\n"
 msgstr "Játék vége.\n"
 
-#: src/init.c:1069 src/init.c:1070
+#: src/init.c:1084 src/init.c:1085
 msgid "Game won.\n"
 msgstr "Játék megnyerve.\n"
 
@@ -650,7 +650,7 @@ msgstr "Elérted a maximális képességszintet ehhez: %s"
 
 #: src/items.c:1575
 msgid "You can not use the inventory while paralyzed."
-msgstr "Nem használhatod a leltárat amíg le vagy bénítva."
+msgstr "Nem használhatod a felszerelésed, amíg le vagy bénítva."
 
 #: src/items.c:1655
 msgid "You cannot fight with this!"
@@ -706,7 +706,7 @@ msgstr "képernyőkép készítése"
 
 #: src/keyboard.c:61
 msgid "inventory"
-msgstr "leltár"
+msgstr "felszerelés"
 
 #: src/keyboard.c:62
 msgid "skill"
@@ -798,43 +798,43 @@ msgstr "7. program aktiválása"
 
 #: src/keyboard.c:88
 msgid "quick_inventory0"
-msgstr "0. gyors leltárelem"
+msgstr "0. gyors felszerelés"
 
 #: src/keyboard.c:89
 msgid "quick_inventory1"
-msgstr "1. gyors leltárelem"
+msgstr "1. gyors felszerelés"
 
 #: src/keyboard.c:90
 msgid "quick_inventory2"
-msgstr "2. gyors leltárelem"
+msgstr "2. gyors felszerelés"
 
 #: src/keyboard.c:91
 msgid "quick_inventory3"
-msgstr "3. gyors leltárelem"
+msgstr "3. gyors felszerelés"
 
 #: src/keyboard.c:92
 msgid "quick_inventory4"
-msgstr "4. gyors leltárelem"
+msgstr "4. gyors felszerelés"
 
 #: src/keyboard.c:93
 msgid "quick_inventory5"
-msgstr "5. gyors leltárelem"
+msgstr "5. gyors felszerelés"
 
 #: src/keyboard.c:94
 msgid "quick_inventory6"
-msgstr "6. gyors leltárelem"
+msgstr "6. gyors felszerelés"
 
 #: src/keyboard.c:95
 msgid "quick_inventory7"
-msgstr "7. gyors leltárelem"
+msgstr "7. gyors felszerelés"
 
 #: src/keyboard.c:96
 msgid "quick_inventory8"
-msgstr "8. gyors leltárelem"
+msgstr "8. gyors felszerelés"
 
 #: src/keyboard.c:97
 msgid "quick_inventory9"
-msgstr "9. gyors leltárelem"
+msgstr "9. gyors felszerelés"
 
 #: src/keyboard.c:99
 msgid "close_windows"
@@ -1155,7 +1155,7 @@ msgstr ""
 "Elfogadjuk, hogy tovább segítsen megvizsgálni a hibát.\n"
 "Lásd a jelentést a terminálban."
 
-#: src/menu.c:44 src/menu.c:948
+#: src/menu.c:44 src/menu.c:965
 msgid "Play"
 msgstr "Játék"
 
@@ -1183,61 +1183,61 @@ msgstr "OpenGL kimenet aktív: IGEN"
 msgid "OpenGL output active: NO"
 msgstr "OpenGL kimenet aktív: NEM"
 
-#: src/menu.c:340 src/menu.c:1747
+#: src/menu.c:340 src/menu.c:1764
 msgid "[down]"
 msgstr "[le]"
 
-#: src/menu.c:341 src/menu.c:1734
+#: src/menu.c:341 src/menu.c:1751
 msgid "[up]"
 msgstr "[fel]"
 
-#: src/menu.c:949
+#: src/menu.c:966
 msgid "Tutorial"
 msgstr "Gyakorlótér"
 
-#: src/menu.c:950
+#: src/menu.c:967
 msgid "Level Editor"
 msgstr "Pályaszerkesztő"
 
-#: src/menu.c:951 src/menu.c:1104
+#: src/menu.c:968 src/menu.c:1121
 msgid "Options"
 msgstr "Beállítások"
 
-#: src/menu.c:952
+#: src/menu.c:969
 msgid "Credits"
 msgstr "Készítők"
 
-#: src/menu.c:953
+#: src/menu.c:970
 msgid "Contribute"
 msgstr "Közreműködés"
 
-#: src/menu.c:984
+#: src/menu.c:1001
 msgid "easy"
 msgstr "könnyű"
 
-#: src/menu.c:985
+#: src/menu.c:1002
 msgid "normal"
 msgstr "normál"
 
-#: src/menu.c:986
+#: src/menu.c:1003
 msgid "hard"
 msgstr "nehéz"
 
-#: src/menu.c:989
+#: src/menu.c:1006
 #, c-format
 msgid "Difficulty: %s"
 msgstr "Nehézség: %s"
 
-#: src/menu.c:990 src/menu.c:1052 src/menu.c:1166 src/menu.c:1250
-#: src/menu.c:1335 src/menu.c:1446 src/menu.c:1526 src/menu.c:1599
-#: src/menu.c:1754 src/menu.c:1786 src/menu.c:1811 src/menu.c:1869
+#: src/menu.c:1007 src/menu.c:1069 src/menu.c:1183 src/menu.c:1267
+#: src/menu.c:1352 src/menu.c:1463 src/menu.c:1543 src/menu.c:1616
+#: src/menu.c:1771 src/menu.c:1803 src/menu.c:1828 src/menu.c:1886
 #: src/lvledit/lvledit_menu.c:121 src/lvledit/lvledit_menu.c:268
 #: src/lvledit/lvledit_menu.c:370 src/lvledit/lvledit_menu.c:595
 #: src/lvledit/lvledit_menu.c:883
 msgid "Back"
 msgstr "Vissza"
 
-#: src/menu.c:1012
+#: src/menu.c:1029
 msgid ""
 "You need to restart FreedroidRPG for some changes to take effect.\n"
 "\n"
@@ -1247,178 +1247,178 @@ msgstr ""
 "\n"
 "Sajnáljuk a kényelmetlenséget."
 
-#: src/menu.c:1043
+#: src/menu.c:1060
 msgid "Gameplay"
 msgstr "Játékmenet"
 
-#: src/menu.c:1044
+#: src/menu.c:1061
 msgid "Graphics"
 msgstr "Grafika"
 
-#: src/menu.c:1045
+#: src/menu.c:1062
 msgid "Sound"
 msgstr "Hang"
 
-#: src/menu.c:1046
+#: src/menu.c:1063
 msgid "Keys"
 msgstr "Gyorsbillentyűk"
 
-#: src/menu.c:1048
+#: src/menu.c:1065
 msgid "Languages"
 msgstr "Nyelvek"
 
-#: src/menu.c:1050
+#: src/menu.c:1067
 msgid "On-Screen displays"
 msgstr "Képernyőn megjelenő feliratok"
 
-#: src/menu.c:1051
+#: src/menu.c:1068
 msgid "Performance tweaks"
 msgstr "Teljesítmény finomhangolások"
 
-#: src/menu.c:1099
+#: src/menu.c:1116
 msgid "Resume Play"
 msgstr "Játék folytatása"
 
-#: src/menu.c:1101
+#: src/menu.c:1118
 msgid "Resume Playtest"
 msgstr "Játéktesztelés folytatása"
 
-#: src/menu.c:1103
+#: src/menu.c:1120
 msgid "Save Hero"
 msgstr "Hős mentése"
 
-#: src/menu.c:1110
+#: src/menu.c:1127
 msgid "Return to Level Editor"
 msgstr "Visszatérés a pályaszerkesztőbe"
 
-#: src/menu.c:1157
+#: src/menu.c:1174
 msgid "System default"
 msgstr "Rendszer alapértelmezése"
 
-#: src/menu.c:1321
+#: src/menu.c:1338
 #, c-format
 msgid "Change screen resolution"
 msgstr "Képernyőfelbontás módosítása"
 
-#: src/menu.c:1323
+#: src/menu.c:1340
 #, c-format
 msgid "Fullscreen mode: %s"
 msgstr "Teljes képernyős mód: %s"
 
-#: src/menu.c:1323
+#: src/menu.c:1340
 msgid "ON"
 msgstr "BE"
 
-#: src/menu.c:1323
+#: src/menu.c:1340
 msgid "OFF"
 msgstr "KI"
 
-#: src/menu.c:1327
+#: src/menu.c:1344
 #, c-format
 msgid "<-- Gamma correction: %1.2f -->"
 msgstr "<-- Gamma korrekció: %1.2f -->"
 
-#: src/menu.c:1331
+#: src/menu.c:1348
 #, c-format
 msgid "Show blood: %s"
 msgstr "Vér megjelenítése: %s"
 
-#: src/menu.c:1331 src/menu.c:1516 src/menu.c:1519 src/menu.c:1524
-#: src/menu.c:1593 src/menu.c:1594 src/menu.c:1595 src/menu.c:1596
+#: src/menu.c:1348 src/menu.c:1533 src/menu.c:1536 src/menu.c:1541
+#: src/menu.c:1610 src/menu.c:1611 src/menu.c:1612 src/menu.c:1613
 msgid "YES"
 msgstr "IGEN"
 
-#: src/menu.c:1331 src/menu.c:1516 src/menu.c:1519 src/menu.c:1524
-#: src/menu.c:1593 src/menu.c:1594 src/menu.c:1595 src/menu.c:1596
+#: src/menu.c:1348 src/menu.c:1533 src/menu.c:1536 src/menu.c:1541
+#: src/menu.c:1610 src/menu.c:1611 src/menu.c:1612 src/menu.c:1613
 msgid "NO"
 msgstr "NEM"
 
-#: src/menu.c:1418
+#: src/menu.c:1435
 #, c-format
 msgid "<-- Background music volume: %1.2f -->"
 msgstr "<-- Háttérzene hangereje: %1.2f -->"
 
-#: src/menu.c:1422
+#: src/menu.c:1439
 #, c-format
 msgid "<-- Sound effects volume: %1.2f -->"
 msgstr "<-- Hanghatások hangereje: %1.2f -->"
 
-#: src/menu.c:1428
+#: src/menu.c:1445
 #, c-format
 msgid "<-- Output: Stereo -->"
 msgstr "<-- Kimenet: Sztereó -->"
 
-#: src/menu.c:1432
+#: src/menu.c:1449
 #, c-format
 msgid "<-- Output: 4.0 Surround -->"
 msgstr "<-- Kimenet: 4.0 térhatású -->"
 
-#: src/menu.c:1436
+#: src/menu.c:1453
 #, c-format
 msgid "<-- Output: 5.1 Surround -->"
 msgstr "<-- Kimenet: 5.1 térhatású"
 
-#: src/menu.c:1440
+#: src/menu.c:1457
 #, c-format
 msgid "<-- Output: Error -->"
 msgstr "<-- Kimenet: Hiba -->"
 
-#: src/menu.c:1511
+#: src/menu.c:1528
 #, c-format
 msgid "FPS limit: none"
 msgstr "FPS korlát: nincs"
 
-#: src/menu.c:1513
+#: src/menu.c:1530
 #, c-format
 msgid "FPS limit: %d"
 msgstr "FPS korlát: %d"
 
-#: src/menu.c:1516
+#: src/menu.c:1533
 #, c-format
 msgid "Show light radius: %s"
 msgstr "Fény hatótávjának megjelenítése: %s"
 
-#: src/menu.c:1519
+#: src/menu.c:1536
 #, c-format
 msgid "Show obstacle shadows: %s"
 msgstr "Akadályok árnyékának megjelenítése: %s"
 
-#: src/menu.c:1524
+#: src/menu.c:1541
 #, c-format
 msgid "Precache item graphics: %s"
 msgstr "Tárgygrafikák előzetes gyorsítótárazása: %s"
 
-#: src/menu.c:1593
+#: src/menu.c:1610
 #, c-format
 msgid "Show position: %s"
 msgstr "Pozíció megjelenítése: %s"
 
-#: src/menu.c:1594
+#: src/menu.c:1611
 #, c-format
 msgid "Show framerate: %s"
 msgstr "Képkockasebesség megjelenítése: %s"
 
-#: src/menu.c:1595
+#: src/menu.c:1612
 #, c-format
 msgid "Show enemies' energy bars: %s"
 msgstr "Ellenségek életerősávjának megjelenítése: %s"
 
-#: src/menu.c:1596
+#: src/menu.c:1613
 #, c-format
 msgid "Show effect countdowns: %s"
 msgstr "Hatás visszaszámlálások megjelenítése: %s"
 
-#: src/menu.c:1597
+#: src/menu.c:1614
 #, c-format
 msgid "<-- Max. screen messages: %d -->"
 msgstr "<-- Max. képernyőüzenetek: %d -->"
 
-#: src/menu.c:1598
+#: src/menu.c:1615
 #, c-format
 msgid "<-- Screen message lifetime: %3.1fs -->"
 msgstr "<-- Képernyőüzenetek élettartama: %3.1fs -->"
 
-#: src/menu.c:1643
+#: src/menu.c:1660
 msgid ""
 "\n"
 "     Please enter a name\n"
@@ -1438,7 +1438,7 @@ msgstr ""
 "\n"
 ">"
 
-#: src/menu.c:1665
+#: src/menu.c:1682
 #, c-format
 msgid ""
 "A character named \"%s\" already exists.\n"
@@ -1447,28 +1447,28 @@ msgstr ""
 "„%s” nevű karakter már létezik.\n"
 "Válassz egy másik nevet."
 
-#: src/menu.c:1789
+#: src/menu.c:1806
 msgid "No saved games found!"
 msgstr "Nem található mentett játék!"
 
-#: src/menu.c:1810
+#: src/menu.c:1827
 msgid "Sure!"
 msgstr "Persze!"
 
-#: src/menu.c:1814
+#: src/menu.c:1831
 #, c-format
 msgid "Really delete hero '%s'?"
 msgstr "Biztosan törli a hőst: „%s”?"
 
-#: src/menu.c:1866
+#: src/menu.c:1883
 msgid "New Hero"
 msgstr "Új hős"
 
-#: src/menu.c:1867
+#: src/menu.c:1884
 msgid "Load existing Hero"
 msgstr "Létező hős betöltése"
 
-#: src/menu.c:1868
+#: src/menu.c:1885
 msgid "Delete existing Hero"
 msgstr "Létező hős törlése"
 

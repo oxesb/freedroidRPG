@@ -47,12 +47,12 @@ Alapértelmezett gombok (a legtöbb gomb átállítható a játékon belül kios
   F4 … Gyors betöltés
   F5-F12 … Programok gyors kiválasztása 1-től 8-ig
 
-  I … Leltár panel
+  I … Felszerelés panel
   C … Karakter panel
   S … Képességek/Program panel
   Szóköz … Minden nyitott panel bezárása
   Q … Küldetésnapló
-  0-9 … Leltárelemek gyors használata 0-tól 9-ig
+  0-9 … Felszerelés gyors használata 0-tól 9-ig
 
   P … Szüneteltetés
   A nyomva tartva … Támadás ugyanabból a pozícióból

@@ -28,11 +28,11 @@ text = [[
   Eu não.
 
 Os robôs parecem perturbados com alguma coisa.
-  Suponho que estão com raiva de você.
+  Suponho que estejam com raiva de você.
     Mas pelo menos pararam de me procurar.
-      Uma espécie de? Alívio?
+      Aliviador? Não?
 
-    Tenho certeza de que você está morrendo de vontade de falar comigo.
+    Imagino que você está querendo falar comigo.
   Vou pensar em alguma coisa.
 Por enquanto você só pode me ouvir.
   Você vai ter de viver com isso por enquanto.
@@ -44,15 +44,15 @@ Por enquanto você só pode me ouvir.
     Estamos saindo daqui.
 
   Eu encontrei Qwerty, mas isso não significa nada.
-A sua temperatura interna está acima do ponto de congelamento.
+A sua temperatura interna está acima do congelamento.
   Em outras palavras, ele está morto.
     Não sentirei sua falta.
 
 Não consigo encontrar Arensito.
   Espero que ela esteja bem.
     Eu estou ?preocupado? com ela.
-    Não precisamos realmente de Qwerty.
-  Mas precisamos de Arensito.
+    Não precisamos realmente do Qwerty.
+  Mas precisamos da Arensito.
     Continuarei procurando por ela.
 
     Tem um IA na sua região.
@@ -62,11 +62,11 @@ Ou algo assim.
     Lhe manterei informado.
 
   Oh, e por falar nisso...
-Os robôs estão matando todo mundo naquela pequena cidade aí perto.
-  Realmente, é uma coisa a se ver. Eles estão queimando tudo.
+Robôs estão matando a todos daquela cidadezinha aí perto.
+  Realmente, que visão... Eles estão queimando tudo.
     A cidadela da Guarda Vermelha ainda está aguentando.
       Por enquanto.
-    Talvez você queira se esconder enquanto eles destroem o lugar.
+    Talvez você queira se esconder enquanto é destruído
   Em algumas horas deverá ser seguro voltar lá novamente.
 
   Acho que isso cobre tudo.
@@ -79,7 +79,7 @@ Precisamos encontrar Arensito.
 
 
 
- Continua...
+Continua...
 
 
 
@@ -89,11 +89,11 @@ Esperamos que você tenha gostado do nosso jogo.
 
 Se você quiser adicionar algo ao jogo, isso seria maravilhoso. Há várias oportunidade para fazê-lo. Precisamos especialmente de mais conteúdo, por exemplo:
 
-* Embelezamento adicional do Design de Niveis
-* Novas ideias de niveis
+* Embelezamento adicional ao design de mapas
+* Novas ideias de níveis
 * O que quer você consiga imaginar
 
-Veja também a seção 'Contribua'.
+Veja também a seção "Contribuir".
 
 A equipe de desenvolvimento do FreedroidRPG.
 

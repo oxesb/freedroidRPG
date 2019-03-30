@@ -31,7 +31,7 @@ text = [[
   Eu não.
 
 Os robôs parecem perturbados com alguma coisa.
-Suponho que estão com raiva de você.
+Suponho que estejam com raiva de você.
 Mas pelo menos pararam de me procurar.
 Aliviador? Não?
 

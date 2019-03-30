@@ -26,22 +26,22 @@ text = [[
 
 FreedroidRPG vem com um editor de mapas embutido. Esse editor permite-lhe controlar qualquer aspecto de um mapa normal do FreedroidRPG e salvar as mudanças.
 
-Você pode acessá-lo pelo menu principal (clique em "Editor de Mapas") ou executando 'freedroidRPG -e'.
+Você pode acessá-lo pelo menu principal (clique em "Editor de Mapas") ou executando "freedroidRPG -e".
 
     --- Dicas ---
-Para habilitar/desabilitar as descrições de interface quando o mouse paira sobre algo, clique no ícone de balão de conversa localizado perto da borda direita da janela (Linha de botões inferior).
+Para habilitar/desabilitar as descrições de interface quando o mouse paira sobre algum item, clique no ícone de balão de conversa localizado perto da borda direita da janela (Linha de botões inferior).
 
-    --- Detalhes de Sumário ---
-Detalhes de sumário sobre obstáculos e itens irão aparecer se você clicar com o botão direito do mouse no seletor de objetos superior.
+    --- Detalhes Resumidos ---
+Detalhes resumidos sobre obstáculos e itens vão aparecer se você clicar neles com o botão direito do mouse no seletor de objetos na parte superior da tela.
 
     --- Navegação ---
-Para mudar o nível atual, clique no número do nível no mini mapa no canto inferior direito, ou procure pelo nível desejado no menu do editor (descrito posteriormente)
+Para mudar o mapa atual, clique no número do mapa no minimapa no canto inferior direito, ou procure pelo mapa desejado no menu do editor (descrito posteriormente)
 
     --- Editando mapas ---
 Existem quatro tipos de modo de edição: edição de obstáculos, edição de piso, edição de item e edição de coordenadas.
 
 O botão selecionado ao lado inferior esquerdo indica os objetos que você pode selecionar ou colocar.
-Quando o botão está selecionado, e você está no modo de distruibuição, o objeto que você irá posicionar será indicado pela fita no topo da tela. A seleção na fita é dividida nas quatro abas imediatamente abaixo.
+Quando o botão está selecionado, e você está no modo de distribuição, o objeto que você irá posicionar será indicado pela fita no topo da tela. A seleção na fita é dividida nas quatro abas imediatamente abaixo.
 
 Você pode selecionar os tipos de obstáculos que você deseja que sejam posicionados no mapa, no selecionador de objeto superior. Apelas clique e selecione. Obstáculos são divididos em grupos, para fornecer uma melhor visualização.
 
@@ -54,195 +54,195 @@ Nota importante: Você só será capaz de selecionar coisas que estão inclusas 
 Para selecionar esse modo, clique no botão "Obstáculo", no selecionador de categorias, na área esquerda inferior.
 Tendo selecionado um obstáculo, apenas clique em qualquer lugar no mapa para coloca-lo na posição do cursor.
 Caso clicar seja impreciso, você também pode usar seu teclado numérico para posicionar objetos.
-Clicando mais a esquerda (isso irá mostrar uma pequena grade) dos cinco botões a cima do seletor de categoria para ter uma grade com numeros exibidos. Use o botão esquerdo do mouse para trocar entre grade ligada e desligada e o botão direito para trocar os tipos de grade
-Esses números se referem ao número do seu teclado numérico, se você tiver um. Pressionando '1' irá colocar o obstáculo que está em destaque no seletor de objetos na posição do digito '1' na grade roxa.
+Clicando mais a esquerda (isso irá mostrar uma pequena grade) dos cinco botões a cima do seletor de categoria para ter uma grade com números exibidos. Use o botão esquerdo do mouse para trocar entre grade ligada e desligada e o botão direito para trocar os tipos de grade
+Esses números se referem ao número do seu teclado numérico, se você tiver um. Pressionando "1" irá colocar o obstáculo que está em destaque no seletor de objetos na posição do digito "1" na grade roxa.
 Caso o posicionamento de linhas de parede dessa forma seja muito ineficiente, você pode simplesmente segurar o botão esquerdo do mouse e a linha de paredes será colocada enquanto você mover seu cursor se você tiver um objeto de parede selecionado. Isso funciona com a maioria das paredes comuns em FreedroidRPG
 Enquanto segurar o botão esquerdo do mouse e colocando paredes, um clique com o botão direito do mouse irá remover todas as paredes que você desenhou após começar a segurar o botão esquerdo do mouse
-Existem alguns objetos especiais. Paredes de vidro e paredes de blocos quebrados, mas também existem barris e engradados que podem ser destruidos com alguns golpes, enquanto os dois ultimos possam também liberar itens. Baús podem ser abertos e conter itens também.
-O símbolo com pegadas cruzadas nao é realmente um objeto, porém uma area pura e invisivel bloqueada ('retangulo de colisão'). Retangulos de colisão sao a essência de cada objeto, desde que eles previnam você de apenas andar através deles da mesma forma que é possível para pontos de controle ou ladrilhos.
+Existem alguns objetos especiais. Paredes de vidro e paredes de blocos quebrados, mas também existem barris e engradados que podem ser destruídos com alguns golpes, enquanto os dois últimos possam também liberar itens. Baús podem ser abertos e conter itens também.
+O símbolo com pegadas cruzadas não é realmente um objeto, porém uma área pura e invisível bloqueada ("retângulo de colisão"). Retângulos de colisão são a essência de cada objeto, desde que eles previnam você de apenas andar através deles da mesma forma que é possível para pontos de controle ou ladrilhos.
 
             Selecionando obstáculos
 
-Mantendo pressionado o botão esquerdo do mouse você pode selecionar um retangulo de obstáculos. Após soltar o botão do mouse, os obstáculos selecionados irão trocar para uma cor diferente, indicando que eles estão selecionados. Para selecionar obstaculos que não estão no alcance do retângulo de seleção, segure pressionado 'Ctrl' e clique no obstáculo ou selecione outro retângulo para eles.
-Você pode ter selecionado automaticamente muitos obstáculos com um clique. Você pode trocar entre os obstáculos clicando no icone com a cadeira e a prateleira sobre ele, ou pressionando 'n'.
-O ícone com o lixo pode apagar um obstâculo selecionado.
-You can also cut (Ctrl+x, can also be used to delete obstacles by just not pasting them again ;) ), copy (Ctrl+c) and paste (Ctrl+v) cut or copied obstacles.
-You can move selected obstacles holding down the left shift key while dragging the obstacle around. However, this may be quite imprecise.
+Mantendo pressionado o botão esquerdo do mouse você pode selecionar um retângulo de obstáculos. Após soltar o botão do mouse, os obstáculos selecionados irão trocar para uma cor diferente, indicando que eles estão selecionados. Para selecionar obstáculos que não estão no alcance do retângulo de seleção, segure pressionado "Ctrl" e clique no obstáculo ou selecione outro retângulo para eles.
+Você pode ter selecionado automaticamente muitos obstáculos com um clique. Você pode trocar entre os obstáculos clicando no ícone com a cadeira e a prateleira sobre ele, ou pressionando "n".
+O ícone com o lixo pode apagar um obstáculo selecionado.
+Você também pode recortar (Ctrl+x, podendo ser usado para excluir objetos se não colado em seguida ;) ), copiar (Ctrl+c) e colar (Ctrl+v) obstáculos cortados ou copiados.
+Você pode mover os obstáculos selecionados segurando a tecla shift enquanto arrasta o obstáculo ao redor. No entanto, isso pode ser bastante impreciso.
 
-            Colocando objetos em Baús
+            Colocando objetos dentro de baús
 
-Simply select the desired chest and click the most left button in the upper button row.
-You will be forwarded to a screen that looks like the shop screen.
-There will be a knife displayed (which is actually not placed in the chest by the way) select it and click on the 'sell' button.
-Select the items you want to be dropped when the player opens the chest.
-These items will be displayed in the upper shop bar.
-In order to remove one of these items, simply select it and click on 'buy'.
-The red cross gets you out of the screen.
+Basta selecionar o baú desejado e clicar no botão mais à esquerda na linha superior do botões.
+Você será encaminhado para uma tela que se parece com a tela de loja.
+Haverá uma faca exibida (que na verdade não está inserida no baú), selecione-a e clique no botão "vender".
+Selecione os itens que você deseja deixar cair quando o jogador abre o baú.
+Esses itens serão exibidos na barra superior de loja.
+Para remover um desses itens, basta selecioná-lo e clicar em "comprar".
+O "X" vermelho te tira da tela.
 
-            Adding Text to a Sign
+            Adicionando texto a uma placa
 
-Select the sign and add an obstacle label with the sign text. Save the map and exit.
-Open the level file (map/levels.dat) and find the new obstacle label. Change the line above the text from 'type=30' to 'type=32' and save.
-Now when you click on the sign in the game your short message will appear.
+Selecione o placa e adicione uma etiqueta de obstáculo com o texto do sinal. Salve o mapa e saia.
+Abra o arquivo de nível (map/levels.dat) e encontre a nova etiqueta de obstáculo. Altere a linha acima do texto de "type=30" para "type=32" e salve.
+Agora, quando você clicar na placa no jogo, sua mensagem curta será exibida.
 
-            Adicionando Diálogo a um Terminal
+            Adicionando um diálogo a um terminal
 
-Select the terminal and add an obstacle label with the dialog name you wish to use. Save the map and exit.
-Open the level file (map/levels.dat) and find the new obstacle label.
-Change the line above the text from 'type=30' to 'type=32' and save. Now when you click on the terminal in the game it will start the dialog you selected.
+Selecione o terminal e adicione uma etiqueta de obstáculo com o nome do diálogo que você deseja usar. Salve o mapa e saia.
+Abra o arquivo de nível (map/levels.dat) e encontre o novo rótulo de obstáculo.
+Altere a linha acima do texto de "type=30" para "type=32" e salve. Agora, quando você clicar no terminal do jogo, ele vai iniciar a caixa de diálogo que você selecionou.
 
-        Floor edit mode:
+        Modo de edição de piso:
 
-The floor edit mode works quite similar to the obstacle edit mode. You can select different types of floors at the object selector.
-To fill a region with a single floor tile, first select the tile to use, then click and drag the left mouse button until it covers the desired region. The floor tiles are placed on the current floor layer.
-There are no floors that are special in any way, they are pure decoration.
+O modo de edição do piso funciona de forma bastante semelhante ao modo de edição de obstáculos. Você pode selecionar diferentes tipos de piso no seletor de objetos.
+Para preencher uma região com um único piso, primeiro selecione o bloco a ser usado, depois clique e arraste o botão esquerdo do mouse até cobrir a região desejada. Os ladrilhos são colocados na camada atual do piso.
+Não há pisos que sejam especiais de qualquer forma, são pura decoração.
 
-The visibility of floor layers can be controlled by a button with the layer icon. The button is only displayed for levels with multilayer floors.
-Left click on the button switches between a single floor layer displayed and all floor layers displayed. Right click on the button changes the current floor layer.
+A visibilidade das camadas do piso pode ser controlada por um botão com o ícone da camada. O botão é exibido apenas para níveis com pisos multicamadas.
+Clicar com o botão esquerdo do mouse no botão alterna entre uma única camada de piso exibida e todas as camadas de piso exibidas. Clique com o botão direito do mouse no botão para alterar a camada atual do piso.
 
-            Selecting floor types
+            Selecionando tipos de piso
 
-Selecting is as easy as in the the obstacle mode. Floor tiles can be moved to with the method described above.
-For levels with multilayer floors only visible floor layers are selected. When a single floor layer is visible, only the tiles in the current floor layer are selected.
+A seleção é tão fácil quanto no modo de obstáculos. Os blocos de piso podem ser movidos com o método descrito acima.
+Para níveis com pisos multicamadas, somente camadas de piso visíveis são selecionadas. Quando uma única camada de piso está visível, somente as peças na camada de piso atual são selecionadas.
 
-In order to have a look at the floor only, click the lamp icon to have no obstacles displayed. Another click will let obstacles appear again.
-The icon with the turquoise rectangle displays collision rectangles. These rectangles indicate the blocking-area of an obstacle. Tux can't walk on such an area.
-If you turn it on and playtest (explained later) your map, the rectangles are still displayed if activated which is quite useful for testing whether the player can pass a gap or not.
+Para ver apenas o piso, clique no ícone da lâmpada para não exibir obstáculos. Outro clique permitirá que os obstáculos apareçam novamente.
+O ícone com o retângulo turquesa exibe retângulos de colisão. Esses retângulos indicam a área de bloqueio de um obstáculo. Tux não pode andar em tal área.
+Se você ligá-lo e testar o seu mapa (explicado mais abaixo), os retângulos ainda serão exibidos se ativados, o que é bastante útil para testar se o jogador pode passar uma lacuna ou não.
 
-        Item edit mode:
+        Modo de edição de item:
 
-You can place items to be used by the player on the map, too.
-Items are objects that the player can pick up. They can be they can be carried, some even be used or equipped.
-Some items are used to move the plot forward, others provide bonuses to the player, while still others do nothing at all.
-Select the item mode and click on an item displayed at the object selector. For some items, you must specify an amount before they are placed.
-You can set it by clicking the arrow buttons or dragging the blue orb to the left or the right.
-Press 'g' to have a better overview of what items are available (can also be used for dropping, items will be dropped at the crosshair). Hit 'Esc' to abort the process without dropping any items.
-You can also click the icon with the crossed-out boots to perform this.
-
-
-        Waypoint edit mode:
-
-Currently, droids (meaning all non-player characters) move around on levels using predefined waypoints.
-To plant a waypoint, press the 'w' key. This will toggle the waypoint on the rectangle under the crosshair.
-You can also click the map at a position you want to have a waypoint having this mode activated. Another click somewhere else plants another waypoint and automatically connects the previous selected one with it.
-Clicking on a preexisting waypoint lets you connect it with another one (just click the other one, too, to do it).
-However, there is a difference between those two planting methods. When you connect two waypoints using the keyboard, the connections will be unidirectional.
-That means that when you make a connection from waypoint A to waypoint B, the bot will only be able to walk from A to B but not back.
-You can remove an unidirectional connection by 'overlying' it with another one going into the very direction as the one you want to delete (this does not work with bidirectional connections!).
-Bidirectional connections are however automatically done using the click method to connect waypoints.
-Important note: It is not possible to connect waypoints on different maps with each other!
-Waypoints are also used to position randomly spawned bots. However this might be inappropriate for some waypoints.
-There are 'normal' ones which are white, for respawning bots and 'special', purple ones which should be used for NPCs. The normal ones are used for spawned bots, the purple ones should be used for NPCs.
-You can select these different types of waypoints in the upper selection bar. To turn a normal waypoint into a purple one or back again, press shift+w.
-Please make sure that paths between waypoints are not blocked by an obstacle in between of two waypoints.
-To automatically check a entire map for this, you can use the map level validator which is explained later.
+Você também pode colocar itens a serem usados pelo jogador no mapa.
+Itens são objetos que o jogador pode pegar. Eles podem ser carregados, alguns podem até ser usados ou equipados.
+Alguns itens são usados para avançar o enredo, outros fornecem bônus para o jogador, enquanto outros ainda não fazem nada.
+Selecione o modo de item e clique em um item exibido no seletor de objetos. Para alguns itens, você deve especificar um valor antes de serem colocados.
+Você pode configurá-lo clicando nos botões de seta ou arrastando a esfera azul para a esquerda ou para a direita.
+Pressione "g" para ter uma visão melhor de quais itens estão disponíveis (também pode ser usado para soltar, itens serão soltos na mira). Clique em "Esc" para abortar o processo sem perder nenhum item.
+Você também pode clicar no ícone com as botas cruzadas para fazer isso.
 
 
-        Planting Labels:
+        Modo de edição de waypoints:
 
-There are two kinds of tables: map labels and obstacle labels.
-Please make sure that each label ID is unique.
-Giving an empty string will delete the respective label.
+Atualmente, os robôs (o que significa todos os personagens que não são jogadores) movem-se em níveis usando "waypoints", que podem ser entendidas como coordenadas.
+Para plantar um waypoint, pressione a tecla "w". Isto irá alternar o waypoint no retângulo sob a mira.
+Você também pode clicar no mapa na posição em que deseja ter um waypoint com esse modo ativado. Outro clique em outro lugar coloca outro waypoint e conecta automaticamente o anterior selecionado com ele.
+Clicar em um waypoint preexistente permite conectá-lo com outro (basta clicar no outro também para fazer isso).
+No entanto, há uma diferença entre esses dois métodos de colocação. Quando você conecta dois waypoints usando o teclado, as conexões serão unidirecionais.
+Isso significa que quando você faz uma conexão do waypoint A ao waypoint B, o bot só poderá andar de A para B, mas não de volta.
+Você pode remover uma conexão unidirecional "sobrepondo-a" com outra indo para a mesma direção que a que você deseja excluir (isso não funciona com conexões bidirecionais!).
+No entanto, conexões bidirecionais são feitas automaticamente usando o método de clicar para conectar waypoints.
+Nota importante: Não é possível conectar waypoints em mapas diferentes uns com os outros!
+Waypoints também são usados ​​para posicionar robôs gerados aleatoriamente. No entanto, isso pode ser inadequado para alguns pontos de referência.
+Há "normais" que são brancos, para robôs que reaparecem e "especiais", aqueles roxos que devem ser usados ​​para NPCs. Os normais são usados ​​para bots gerados, os roxos devem ser usados ​​para NPCs.
+Você pode selecionar esses diferentes tipos de waypoints na barra de seleção superior. Para transformar um waypoint normal em um roxo ou vice-versa, pressione shift+w.
+Por favor, certifique-se de que os caminhos entre os waypoints não estão bloqueados por um obstáculo entre dois waypoints.
+Para verificar automaticamente um mapa inteiro para isso, você pode usar o validador de nível de mapa, explicado mais abaixo.
 
 
-            Planting map labels
+        Colocando etiquetas:
 
-Map labels are used to define starting locations of NPCs (see ReturnOfTux.droids), events that occur when Tux moves over them (see events.dat), or locations used for movement of NPCs through the lua script files (events, quests, and the dialogs).
-To define a new map label, press the 'm' key on the keyboard or click the button with the M on the sign on it. You will be prompted for the map label. Note that there will be a colorful circle appearing on any map tile that has been fitted with a map label.
-The map label will be automatically planted on the tile in the middle of the screen.
-You can switch the displaying of droids/NPCs on or off pressing the button with the 302 bot on it.
+Existem dois tipos de tabelas: etiquetas de mapa e etiquetas de obstáculos.
+Certifique-se de que cada ID de etiqueta seja único.
+Dar uma string vazia excluirá o respectivo rótulo.
 
-            Planting obstacle labels
 
-Obstacle labels are important so that some obstacles can be marked for events to happen (for example during a quest). If e.g. an event is supposed to remove a special wall obstacle, then this obstacle must be given a name or ID first, so it can be referred to later in the definition of the event.
-You can also use them to add dialogs to obstacles, so you can talk to them as they were NPCs.
-To plant a label on an obstacle, you must first mark this obstacle (see obstacle mode explanation above).
-Clicking the icon with the sign and the O on it you will be prompted for the new label to attach to this obstacle.
+            Colocando etiquetas de mapas
 
-You can toggle display of map labels using the small icon with the label-circle on it.
+Etiquetas de mapa são usadas para definir os locais iniciais de NPCs (veja ReturnOfTux.droids), eventos que ocorrem quando o Tux se move sobre eles (veja events.dat), ou locais usados para movimentação de NPCs através dos arquivos de script lua (eventos, missões e os diálogos).
+Para definir uma nova etiqueta de mapa, pressione a tecla "m" no teclado ou clique no botão com o M no sinal nele. Você será solicitado pela etiqueta do mapa. Observe que haverá um círculo colorido aparecendo em qualquer bloco de mapa que tenha sido equipado com uma etiqueta de mapa.
+A etiqueta de mapa será automaticamente colocada no bloco no meio da tela.
+Você pode ativar ou desativar a exibição de robôs/NPCs pressionando o botão com o robô 302 nele.
+
+            Colocando etiquetas de obstáculos
+
+As etiquetas de obstáculos são importantes para que alguns obstáculos possam ser marcados para que os eventos aconteçam (por exemplo, durante uma missão). Se, por exemplo, um evento deve remover um obstáculo especial de parede, então este obstáculo deve receber um nome ou ID primeiro, para que possa ser referido posteriormente na definição do evento.
+Você também pode usá-las para adicionar diálogos a obstáculos, assim você pode conversar com eles como se fossem NPCs.
+Para colocar uma etiqueta em um obstáculo, você deve primeiro marcar este obstáculo (veja a explicação do modo de obstáculo acima).
+Ao clicar no ícone com a placa e o O nele, você será solicitado a inserir a nova etiqueta nesse obstáculo.
+
+Você pode alternar a exibição de etiquetas de mapa usando o ícone pequeno com o círculo de etiquetas nele.
 
         Salvando mapas:
 
-In order to save a map, click the small disk icon in the upper right area of the editor screen. The door icon lets you exit the editor.
-Você também pode fazer isso através do menu que é aberto pressionando a tecla 'Esc'.
+Para salvar um mapa, clique no ícone do pequeno disco na área superior direita da tela do editor. O ícone da porta permite que você saia do editor.
+Você também pode fazer isso através do menu que é aberto pressionando a tecla "Esc".
 
 
 Dicas gerais:
 
-	Getting overview
-In order to change the zoom factor, press the 'o' key or click the icon with the magnifying glass on it.
-Try left and right clicking in order to access different zoom factors.
+	Obtendo uma visão geral
+Para alterar o fator de zoom, pressione a tecla "o" ou clique no ícone com a lupa nela.
+Tente clicar com o botão esquerdo e direito para acessar diferentes fatores de zoom.
 
 
-	The editor menu
+	O menu do editor
 
 Você pode acessar este menu pressionando ESC.
 
-		"Level:"
-Here you can easily navigate to other levels. You can either use the arrow keys having this option selected
-in order to switch to the next or previous (refers to level numbers) level, or, clicking on it, enter the number of the desired level and press enter.
+		"Nível:"
+Aqui você pode navegar facilmente para outros níveis. Você pode usar as teclas de seta com essa opção selecionada
+para mudar para o nível seguinte ou anterior (refere-se a números de nível) ou, clicando sobre ele, insira o número do nível desejado e pressione Enter.
 
-		Level options
-				Level:	See above for explanation
-				Name:	The map name displayed at the GPS in the upper right corner of the game screen. You can disable the GPS in-game using the options menu.
-				Size:	You can increase or reduce the size of your level. Select the desired edge where you want to add/remove a line of tiles and click the <- or -> arrow buttons.
-				Floor layers: In order to change the number of floor layers for the current level, use the <- or -> arrow buttons.
-				Edge interface:	Here you can set the levels that shall be next to the current level. Enter the level number for the respective edge.
-								A level can only have one adjacent level (one it touches edges with) in each of the four cardinal directions (North, South, West, East).
-				Random dungeon:	If you set this option to 'Yes', the map will automatically generate a dungeon. You set the number of teleporters to and from this map clicking on the option.
-								Randomly generated dungeons automatically will have everything necessary, like waypoints, bots, and obstacles, set.
-				Item drop class for obstacles:	Set of what item class items dropped by barrels/chests/crates should be.
-				Teleport blockade:	Make it (im)possible to teleport away from a level.
-				Teleport pair:	This important if you make a dungeon that is not directly connected to another map. You can set the number of exits and entrances for a randomly generated dungeon here.
-				Light:			How much light would you like to have? Press space to switch between ambient (general brightness of the present map) and bonus (light emitted by some obstacles, such as lamps or mushrooms) mode.
-				Background music:	Here you can set a music track to be played while the player walks around on the map. Possible tracks can be found in ./sound/music/ .
-									Just enter the file name including the .ogg extension.
-				Infinite running Stamina:	If you have this set to "yes", Tux' stamina will not decrease while running across the map. This should only be used if the level has no hostile NPCs on it, like on level 0, the Town, for example.
-				add/rem level:		Lets you add a new level or remove the current level.
+		Opções do Nível
+				Nível:	Veja acima para a explicação
+				Nome do Nível:	O nome do mapa exibido no GPS no canto superior direito da tela do jogo. Você pode desativar o GPS no jogo usando o menu de opções.
+				Tamanho:	Você pode aumentar ou reduzir o tamanho do seu nível. Selecione a borda desejada onde deseja adicionar/remover uma linha de blocos e clique nos botões de seta <- ou ->.
+				Camadas de piso: Para alterar o número de camadas de piso para o nível atual, use os botões de seta <- ou ->.
+				Interface de bordas:	Aqui você pode definir os níveis que devem estar próximos ao nível atual. Digite o número do nível para a respectiva borda.
+								Um nível só pode ter um nível adjacente (um com que ele toque com as bordas) em cada uma das quatro direções cardeais (norte, sul, oeste, leste).
+				Mapa aleatório:	Se você definir essa opção como "Sim", o mapa gerará automaticamente uma dungeon. Você define o número de teleportadores de e para este mapa clicando na opção.
+								Dungeons geradas aleatoriamente terão automaticamente tudo o que é necessário, como waypoints, robôs e obstáculos, definidos.
+				Classe de itens de obstáculos:	Define de qual classe de item devem ser os itens que surgem de barris/baús/caixas.
+				Bloqueio de teleporte:	Possibilidade ou não teletransportar de um nível.
+				Par de teleporte:	Isso é importante se você faz uma dungeon que não está diretamente conectada a outro mapa. Você pode definir o número de saídas e entradas de uma dungeon gerada aleatoriamente aqui.
+				Luz:			Quanta luz você gostaria de ter? Pressione espaço para alternar entre o modo Ambiente (brilho geral do mapa atual) e Bônus (luz emitida por alguns obstáculos, como lâmpadas ou cogumelos).
+				Música de fundo:	Aqui você pode definir uma faixa de música para ser tocada enquanto o jogador anda pelo mapa. Faixas possíveis podem ser encontradas em ./sound/music/ .
+									Basta inserir o nome do arquivo incluindo a extensão .ogg.
+				Vigor infinito:	Se você definir como "Sim", a resistência de Tux não diminuirá enquanto estiver correndo pelo mapa. Isso só deve ser usado se o nível não tiver NPCs hostis, como no nível 0, a Cidade, por exemplo.
+				Add/Rem nível:		Permite adicionar um novo nível ou remover o nível atual.
 
 		Opções avançadas
-Here you can run the map level validator.
-The map level validator checks all the paths between connected waypoints to ensure they are not blocked by obstacles. More detailed output explaining which paths are blocked can be found in the terminal, given the case that the game is run using it, or a global error output file.
-It can also check if you have obstacles near map borders in a critial way.
-This should ALWAYS be run before calling a map finished.
-"freedroidRPG -b leveltest" does also run this check.
+Aqui você pode executar o validador de nível de mapa.
+O validador de nível de mapa verifica todos os caminhos entre waypoints conectados para garantir que eles não sejam bloqueados por obstáculos. Uma saída mais detalhada explicando quais caminhos estão bloqueados pode ser encontrada no terminal, caso o jogo esteja sendo executado a partir da linha de comando, ou em um arquivo de saída de erros globais.
+Ele também pode verificar se você tem obstáculos próximos às bordas do mapa de maneira crítica.
+Isso deve SEMPRE ser executado antes de considerar um mapa como finalizado.
+"freedroidRPG -b leveltest" também faz essa verificação.
 
-		Playtest mapfile
-Allows you to playtest your modifications easily.
-If you leave this mode, obstacle changes that were made while playing, destroying crates for example, will be reverted to the time where you started playtesting.
+		Testar o Mapa
+Permite que você realizar um teste de jogo de suas modificações facilmente.
+Se você deixar este modo, as mudanças de obstáculos que foram feitas durante o jogo, destruindo as caixas, por exemplo, serão revertidas para a hora em que você começou o teste de jogo.
 
 
 
 
 Atalhos:
-space					toggle planting/selection mode
-w						plant waypoint
-shift+w					toggle mode for waypoints to 'random bot' or 'NPC'
-escape					access menu
-numberpad digits 1-9	used to plant obstacles at the respective positions of the grid
-n						cycle through selected obstacles (next)
-z						undo last action
-y						redo last undid action
-c						set paths between waypoints
-ctrl+x or backspace		cut selected object(s), can be used to delete objects by not pasting afterwards
-ctrl+c					copy selected object(s)
-ctrl+v					paste cut/copied object(s)
-alt+shift				drag/move selected object using the mouse
-arrow keys				scroll around the map
-ctrl+arrow keys			scroll around in bigger steps
-mousewheel				scroll through obstacles of the object selector
-ctrl+pageup/page down	scroll through obstacles of the object selector
-g						access drop item screen
-t						toggle 3x3 transparency around the crosshair
-m						add/edit a map label at the position of the crosshair or the selected tile
+espaço					alterna entre os modos de posicionamento e seleção
+w						posiciona waypoints
+shift+w					ativa o modo para waypoints para "robôs aleatórios" ou "NPC"
+espaço					acessa o menu
+teclas numéricos 1-9	usado para colocar obstáculos nas respectivas posições da grade
+n						alterna entre os (próximos) obstáculos selecionados
+z						desfaz a última ação
+y						refaz a última ação
+c						define os caminhos entre os waypoints
+ctrl+x ou backspace		recorta um ou mais objetos selecionados, podendo ser usado para excluir objetos se não colado em seguida
+ctrl+c					copia um ou mais  objetos selecionados
+ctrl+v					cola um ou mais objetos recortados/copiados
+alt+shift				arrasta/move o objeto selecionado usando o mouse
+teclas de seta			navega pelo mapa
+ctrl+teclas de seta		navega pelo mapa em passos longos
+rodinha do mouse		navega por obstáculos do seletor de objetos
+ctrl+pageup/page down	navega por obstáculos do seletor de objetos
+g						acessa a tela de itens caídos
+t						ativa transparência 3x3 em volta da mira
+m						adiciona/edita uma etiqueta do mapa na posição da mira ou do bloco selecionado
 o						zoom
-tab						switch to the next editing mode
-shift+tab				switch to the previous editing mode
-f						switch to the next object tab
-shift+f					switch to the previous object tab
+tab						alterna para o modo de edição seguinte
+shift+tab				alterna para o modo de edição anterior
+f						alterna para a aba de objeto seguinte
+shift+f					alterna para a aba de objeto anterior
 
 
-Se você encontrar problemas com o editor, por favor entre em contato conosco.
-E também, não tenha medo de nos enviar um mapa se achar que ele ficou legal. Nós não mordemos. :)
+Se você tiver problemas com o editor, por favor entre em contato conosco.
+E não tenha medo de nos enviar um mapa se achar que ele ficou legal. Nós não mordemos. :)
 ]]
 }

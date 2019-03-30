@@ -5,11 +5,13 @@
 #
 # Translators:
 # zdenek <chmelarz@gmail.com>, 2019
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: freedroidrpg 0.16+git\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-27 09:20+0100\n"
+"POT-Creation-Date: 2019-03-30 22:43+0100\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
 "Last-Translator: zdenek <chmelarz@gmail.com>, 2019\n"
 "Language-Team: Czech (https://www.transifex.com/arctic-games/teams/9511/cs/)\n"
@@ -1209,14 +1211,12 @@ msgid "Knowing what your enemies are up to is easy with a little signal intellig
 msgstr "Vědět, že jsou tví nepřátelé blízko, je s trochou toho signálového zpravodajství snadné. Zobraz pozice nepřátel na své automapě."
 
 #: data/base/item_specs.lua:1834
-#, fuzzy
 msgid "Source Book of Energy Shield"
-msgstr "Zdrojová kniha Nouzového vypnutí"
+msgstr ""
 
 #: data/base/item_specs.lua:1835 data/base/skill_specs.lua:213
-#, fuzzy
 msgid "Energy Shield"
-msgstr "Energetický bič"
+msgstr ""
 
 #: data/base/item_specs.lua:1839 data/base/skill_specs.lua:218
 msgid "Creating an energy shield to protect you can be a very useful skill. Every hit that you get will be converted into heat. Beware: This heats up excessively. Equipment can still be damaged by heat. When you overheat, shield will try to automatically turn off to prevent damage to itself. It may provoke extra-heat on this process, so be sure to not let it happen."
@@ -3800,9 +3800,8 @@ msgid "Corporate Guy"
 msgstr "Podnikový chlap"
 
 #: data/storyline/act2/events.dat:60 data/storyline/act2/levels.dat:30140
-#, fuzzy
 msgid "Skyscrapper Arena"
-msgstr "Aréna mistrů"
+msgstr ""
 
 #: data/storyline/act2/events.dat:108
 msgid "You are unable to return. The only way is forward."
@@ -3821,68 +3820,57 @@ msgid "BOOM BOOOOOOM BOOOM"
 msgstr ""
 
 #: data/storyline/act2/events.dat:186
-#, fuzzy
 msgid "To Underground F1"
-msgstr "Do podzemní stanice"
+msgstr ""
 
 #: data/storyline/act2/events.dat:198 data/storyline/act2/events.dat:235
-#, fuzzy
 msgid "To Underground F2"
-msgstr "Do podzemní stanice"
+msgstr ""
 
 #: data/storyline/act2/events.dat:213
-#, fuzzy
 msgid "To Ground Level"
-msgstr "Do skladiště - úroveň 2"
+msgstr ""
 
 #: data/storyline/act2/events.dat:222 data/storyline/act2/events.dat:266
 #: data/storyline/act2/events.dat:385
-#, fuzzy
 msgid "To Underground F3"
-msgstr "Do podzemní stanice"
+msgstr ""
 
 #: data/storyline/act2/events.dat:244 data/storyline/act2/events.dat:288
-#, fuzzy
 msgid "To Underground F4"
-msgstr "Do podzemní stanice"
+msgstr ""
 
 #: data/storyline/act2/events.dat:253
 msgid "To Factory via Shortcut"
 msgstr ""
 
 #: data/storyline/act2/events.dat:275 data/storyline/act2/events.dat:310
-#, fuzzy
 msgid "To Underground F5"
-msgstr "Do podzemní stanice"
+msgstr ""
 
 #: data/storyline/act2/events.dat:297 data/storyline/act2/events.dat:332
-#, fuzzy
 msgid "To Underground F6"
-msgstr "Do podzemní stanice"
+msgstr ""
 
 #: data/storyline/act2/events.dat:319 data/storyline/act2/events.dat:354
-#, fuzzy
 msgid "To Underground F7"
-msgstr "Do podzemní stanice"
+msgstr ""
 
 #: data/storyline/act2/events.dat:341 data/storyline/act2/events.dat:376
-#, fuzzy
 msgid "To Underground F8"
-msgstr "Do podzemní stanice"
+msgstr ""
 
 #: data/storyline/act2/events.dat:363
-#, fuzzy
 msgid "To Underground F9"
-msgstr "Do podzemní stanice"
+msgstr ""
 
 #: data/storyline/act2/events.dat:398
 msgid "To Mainland via underground"
 msgstr ""
 
 #: data/storyline/act2/events.dat:411
-#, fuzzy
 msgid "To Icy Summer Island"
-msgstr "Na ostrov Omega"
+msgstr ""
 
 #: data/storyline/act2/events.dat:591 data/storyline/act2/npc_specs.lua:29
 msgid "Colemak"
@@ -3925,32 +3913,28 @@ msgid "Guest Room. Please wait patiently for one of our staff pick you up."
 msgstr ""
 
 #: data/storyline/act2/levels.dat:2113
-#, fuzzy
 msgid "Welcome to Act 2"
-msgstr "Vítej v tomto terminálu."
+msgstr ""
 
 #: data/storyline/act2/levels.dat:2484
-#, fuzzy
 msgid "R&R Factory"
-msgstr "Jádro továrny"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:4627
 msgid "Droid Research & Development Offices"
 msgstr ""
 
 #: data/storyline/act2/levels.dat:4678
-#, fuzzy
 msgid "RR Factory, Floor 2"
-msgstr "Jádro továrny"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:6962
 msgid "Servant Development Office. South: Scout Development Office."
 msgstr ""
 
 #: data/storyline/act2/levels.dat:7138
-#, fuzzy
 msgid "RR Factory, Floor 3"
-msgstr "Jádro továrny"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:9508
 msgid "Scouts Development Office. Intruders will be shot without mercy."
@@ -3965,9 +3949,8 @@ msgid "Are you lost? Northeast to Maintenance Development Office."
 msgstr ""
 
 #: data/storyline/act2/levels.dat:9695
-#, fuzzy
 msgid "RR Factory, Floor 4"
-msgstr "Jádro továrny"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:12216
 msgid "Maintenance Development Office & Storage. "
@@ -3986,18 +3969,16 @@ msgid "If the gate to the research area is locked, please do not open it. Insane
 msgstr ""
 
 #: data/storyline/act2/levels.dat:12409
-#, fuzzy
 msgid "RR Factory, Floor 5"
-msgstr "Jádro továrny"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:14743
 msgid "Crew & Harvesting Development Office. North-east: Security Development Office."
 msgstr ""
 
 #: data/storyline/act2/levels.dat:14932
-#, fuzzy
 msgid "RR Factory, Floor 6"
-msgstr "Jádro továrny"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:17301
 msgid "Dispatchment & Signman Offices. Battle droids present. Authorized Access Only!"
@@ -4008,9 +3989,8 @@ msgid "Security Development Office. Sign blinks to spare power. This way for mor
 msgstr ""
 
 #: data/storyline/act2/levels.dat:17499
-#, fuzzy
 msgid "RR Factory, Floor 7"
-msgstr "Jádro továrny"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:19924
 msgid "Use this stair for Sentinel Dev. Office, Command Dev. Office, Factory Plant and Death."
@@ -4018,7 +3998,7 @@ msgstr ""
 
 #: data/storyline/act2/levels.dat:19927
 msgid "There is nothing on this sign."
-msgstr ""
+msgstr "Na této značce není nic."
 
 #: data/storyline/act2/levels.dat:19930
 msgid "Sentinel and Command devs, we're sorry, but more stairs ahead."
@@ -4029,14 +4009,12 @@ msgid "Signman Office. Hey, it's me! You totally should visit this office, or se
 msgstr ""
 
 #: data/storyline/act2/levels.dat:20124
-#, fuzzy
 msgid "RR Factory, Floor 8"
-msgstr "Jádro továrny"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:22890
-#, fuzzy
 msgid "RR Factory, Floor 9"
-msgstr "Jádro továrny"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:25864
 msgid "Command Development Office & Factory. Complainers about stairs will be frozen without mercy. AZ."
@@ -4063,14 +4041,12 @@ msgid "Icy Summer Artificial Island"
 msgstr ""
 
 #: data/storyline/act2/levels.dat:28338
-#, fuzzy
 msgid "To mainland"
-msgstr "Zpět na pevninu"
+msgstr ""
 
 #: data/storyline/act2/levels.dat:28881
-#, fuzzy
 msgid "Search in the Darkness"
-msgstr "Vidět lépe ve tmě."
+msgstr ""
 
 #: data/storyline/act2/levels.dat:29946
 msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Management."
@@ -4086,19 +4062,16 @@ msgstr ""
 
 #: data/storyline/act2/npc_specs.lua:11
 #: data/storyline/act2/ReturnOfTux.droids:123
-#, fuzzy
 msgid "Master Yadda"
-msgstr "Aréna mistrů"
+msgstr ""
 
 #: data/storyline/act2/npc_specs.lua:15
-#, fuzzy
 msgid "Mr. Stone - Shop owner"
-msgstr "Stone - majitelka obchodu"
+msgstr ""
 
 #: data/storyline/act2/npc_specs.lua:17
-#, fuzzy
 msgid "RR Security Chief"
-msgstr "614 Bezpečnostní Bot"
+msgstr ""
 
 #: data/storyline/act2/npc_specs.lua:21
 msgid "999 RR Manager"
@@ -4140,17 +4113,15 @@ msgid "Message From An Old Friend"
 msgstr ""
 
 #: data/storyline/act2/quests.lua:35
-#, fuzzy
 msgid "The Reapers Of MegaSys I"
-msgstr "Will Gapes - MegaSys CSA"
+msgstr ""
 
 #: data/storyline/act2/ReturnOfTux.droids:4
 #: data/storyline/act2/ReturnOfTux.droids:5
 #: data/storyline/act2/ReturnOfTux.droids:6
 #: data/storyline/act2/ReturnOfTux.droids:7
-#, fuzzy
 msgid "RR Guard"
-msgstr "Rudá stráž"
+msgstr ""
 
 #: data/storyline/act2/ReturnOfTux.droids:8
 msgid "629 Assassin"
@@ -4173,563 +4144,9 @@ msgid "Crossroad Autogun"
 msgstr ""
 
 #: data/storyline/act2/ReturnOfTux.droids:20
-#, fuzzy
 msgid "Power Guard"
-msgstr "Rudá stráž"
+msgstr ""
 
 #: data/storyline/act2/ReturnOfTux.droids:140
-#, fuzzy
 msgid "Friendly Dude"
-msgstr "Přátelská 296ka"
-
-#~ msgid "Day %d, %02d:%02d"
-#~ msgstr "Den %d, %02d:%02d"
-
-#~ msgid "%s@hacked_%s: ~ # "
-#~ msgstr "%s@hacknut_%s: ~ # "
-
-#~ msgid "Login : "
-#~ msgstr "Přihlášení :"
-
-#~ msgid "Password : "
-#~ msgstr " Heslo :"
-
-#~ msgid "First login from /dev/ttySO on %s %d"
-#~ msgstr "První přihlášení z /dev/ttySO dne %s %d"
-
-#~ msgid "Last login from /dev/ttyS0 on %s %d"
-#~ msgstr "Poslední přihlášení z /dev/ttyS0 dne %s %d"
-
-#~ msgid "Welcome to [b]%s[/b]!"
-#~ msgstr "Vítejte v [b]%s[/b]!"
-
-#~ msgid "Hardware Check : BOT DAMAGED"
-#~ msgstr "Kontrola hardware : ROBOT POŠKOZEN"
-
-#~ msgid "This %s unit could stand to be repaired."
-#~ msgstr "Tuto jednotku %s lze opravit."
-
-#~ msgid "BOTNET: UNIT TOO DAMAGED TO BROADCAST COMMANDS."
-#~ msgstr "BOTNET: JEDNOTKA PRO VYSÍLÁNÍ PŘÍKAZŮ PŘÍLIŠ POŠKOZENA."
-
-#~ msgid "Entering \"single node\" mode..."
-#~ msgstr "Vstup do módu \"jednoho nódu\"..."
-
-#~ msgid "BOTNET: Most commands will be broadcast."
-#~ msgstr "BOTNET: Většina příkazů bude vysílána."
-
-#~ msgid "SINGLE NODE: Commands will not be broadcast."
-#~ msgstr "JEDEN NÓD: Příkazy nebudou vysílány."
-
-#~ msgid "cd repair&settings/"
-#~ msgstr "cd opravy&nastavení/"
-
-#~ msgid "%s@hacked_%s/repair&settings: ~ # "
-#~ msgstr "%s@hacknut_%s/opravy&nastavení: ~ # "
-
-#~ msgid "cd .."
-#~ msgstr "cd .."
-
-#~ msgid "./hold_position.sh"
-#~ msgstr "./drž_pozici.sh"
-
-#~ msgid "Holding position."
-#~ msgstr "Držení pozice."
-
-#~ msgid "script V 1.0.2 (c) gnu.org, 2054"
-#~ msgstr "skript V 1.0.2 (c) gnu.org, 2054"
-
-#~ msgid "Checking requirements..."
-#~ msgstr "Kontrola požadavků..."
-
-#~ msgid "Movement unit: Power-down... [Done]."
-#~ msgstr "Pohonná jednotka: Napájení vypnuto... [Hotovo]."
-
-#~ msgid "Status: All movement suppressed."
-#~ msgstr "Stav: Všechen pohyb potlačen."
-
-#~ msgid "./follow_me.sh"
-#~ msgstr "./následuj_mě.sh"
-
-#~ msgid "Initiating tracking sequence."
-#~ msgstr "Zahájení sledovací sekvence."
-
-#~ msgid "Movement unit: Enabled."
-#~ msgstr "Pohonná jednotka: Povolena."
-
-#~ msgid "Acquiring lock on position of %s."
-#~ msgstr "Získávání uzamčení pozice %s."
-
-#~ msgid "Status: Following %s."
-#~ msgstr "Stav: Následuje %s."
-
-#~ msgid "./move_freely.sh"
-#~ msgstr "./choď_volně.sh"
-
-#~ msgid "Enable movement."
-#~ msgstr "Povolit pohyb."
-
-#~ msgid "script V 1.0.5 (c) gnu.org, 2054"
-#~ msgstr "skript V 1.0.5 (c) gnu.org, 2054"
-
-#~ msgid "Movement unit: Power-up... [Done]."
-#~ msgstr "Pohonná jednotka: Napájení zapnuto... [Hotovo]."
-
-#~ msgid "Resuming normal patrol operations... [Done]"
-#~ msgstr "Obnovení normální hlídkové činnosti... [Hotovo]"
-
-#~ msgid "Status: Patrolling."
-#~ msgstr "Stav: Hlídkování."
-
-#~ msgid "./repair.plx"
-#~ msgstr "./oprav.plx"
-
-#~ msgid "Available amount of valuable circuits for repair: %d."
-#~ msgstr "Dostupné množství cenných obvodů pro opravu: %d."
-
-#~ msgid "seconds"
-#~ msgstr "sekund"
-
-#~ msgid "second"
-#~ msgstr "sekundu"
-
-#~ msgid "circuits"
-#~ msgstr "cenných obvodů"
-
-#~ msgid "circuit"
-#~ msgstr "cenný obvod"
-
-#~ msgid "Repairs on %s will take less than %d %s, %d valuable %s, and %d heat."
-#~ msgstr "Opravy na %s budou trvat méně než %d %s, stát %d %s a %d tepla."
-
-#~ msgid "You do not have enough valuable circuits to ensure repair of this %s unit."
-#~ msgstr "Nemáš dostatek cenných obvodů k zajištění opravy jednotky %s."
-
-#~ msgid "You cannot dissipate enough heat to ensure repair of this %s unit."
-#~ msgstr "Nemůžeš rozptýlit dostatek tepla, abys zajistil opravu jednotky %s."
-
-#~ msgid "Do you want to start repair of this %s unit?"
-#~ msgstr "Chceš začít opravu jednotky %s?"
-
-#~ msgid "%s is currently undamaged."
-#~ msgstr "%s je v současné době nepoškozen."
-
-#~ msgid "Y"
-#~ msgstr "A"
-
-#~ msgid "Repair in progress."
-#~ msgstr "Oprava probíhá."
-
-#~ msgid "Logout to complete repair process."
-#~ msgstr "Odhlásit se pro dokončení procesu opravy."
-
-#~ msgid "N"
-#~ msgstr "N"
-
-#~ msgid "Repair aborted."
-#~ msgstr "Oprava byla přerušena."
-
-#~ msgid "./settings.plx"
-#~ msgstr "./nastavení.plx"
-
-#~ msgid "confirmation of hcf.py"
-#~ msgstr "potvrzení hcf.py"
-
-#~ msgid "Always ask for confirmation before execution of hcf.py? [Y/N]"
-#~ msgstr "Vždy požádat o potvrzení před provedením hcf.py? [A/N]"
-
-#~ msgid "Y (always ask)"
-#~ msgstr "A (žádat vždy)"
-
-#~ msgid "Confirmation will now be asked before execution of hcf.py."
-#~ msgstr "Potvrzení nyní bude požadováno před spuštěním hcf.py."
-
-#~ msgid "N (don't ask)"
-#~ msgstr "N (nežádat)"
-
-#~ msgid "hcf.py will be executed without asking for confirmation."
-#~ msgstr "hcf.py bude proveden bez žádosti o potvrzení."
-
-#~ msgid "broadcast commands"
-#~ msgstr "vysílat příkazy"
-
-#~ msgid "Broadcast commands to all units on level? [Y/N]"
-#~ msgstr "Vysílat příkazy všem jednotkám na úrovni? [A/N]"
-
-#~ msgid "Y (enable broadcast)"
-#~ msgstr "A (umožnit vysílání)"
-
-#~ msgid "Commands will be broadcast and executed by all bots on this level under your control."
-#~ msgstr "Příkazy budou vysílány a prováděny všemi roboty na této úrovni pod vaší kontrolou."
-
-#~ msgid "Entering \"botnet\" mode..."
-#~ msgstr "Vstup do režimu \"botnet\" ..."
-
-#~ msgid "N (disable broadcast)"
-#~ msgstr "N (vypnout vysílání)"
-
-#~ msgid "Commands will only be executed by this bot."
-#~ msgstr "Příkazy budou provedeny pouze tímto robotem."
-
-#~ msgid "Welcome to the settings menu."
-#~ msgstr "Vítáme vás v menu nastavení."
-
-#~ msgid "Version: 1.82c"
-#~ msgstr "Verze: 1.82c"
-
-#~ msgid "Installed sensor: %s"
-#~ msgstr "Nainstalovaný senzor: %s"
-
-#~ msgid "No upgrades found."
-#~ msgstr "Žádné upgrady nenalezeny."
-
-#~ msgid "UNIT TOO DAMAGED TO BROADCAST COMMANDS."
-#~ msgstr "JEDNOTKA PRO VYSÍLÁNÍ PŘÍKAZŮ PŘÍLIŠ POŠKOZENA."
-
-#~ msgid "Which setting should be changed?"
-#~ msgstr "Jaké nastavení má být změněno?"
-
-#~ msgid "./hostname"
-#~ msgstr "./hostname"
-
-#~ msgid "Welcome to the hostname menu."
-#~ msgstr "Vítáme Vás v menu jméno hosta."
-
-#~ msgid "Version: %s"
-#~ msgstr "Verze: %s"
-
-#~ msgid "Current botname: [b]%s[/b]"
-#~ msgstr "Současné jméno robota: [b]%s[/b]"
-
-#~ msgid "Select new name? [Y/N]"
-#~ msgstr "Vybrat nové jméno? [A/N]"
-
-#~ msgid "Yes"
-#~ msgstr "Ano"
-
-#~ msgid "New Name: "
-#~ msgstr "Nové jméno:"
-
-#~ msgid "Type a new name for this %s unit."
-#~ msgstr "Zadejte nový název pro tuto jednotku %s."
-
-#~ msgid "Bald"
-#~ msgstr "Plešoun"
-
-#~ msgid "Brusque"
-#~ msgstr "Příkrý"
-
-#~ msgid "Chic"
-#~ msgstr "Elegán"
-
-#~ msgid "Cuddly"
-#~ msgstr "Mazlíček"
-
-#~ msgid "Cute"
-#~ msgstr "Roztomilý"
-
-#~ msgid "Fickle"
-#~ msgstr "Přelétavec"
-
-#~ msgid "Fluffy"
-#~ msgstr "Načechranec"
-
-#~ msgid "Fuzzy"
-#~ msgstr "Chlupáč"
-
-#~ msgid "Happy"
-#~ msgstr "Šťastlivec"
-
-#~ msgid "Hyper"
-#~ msgstr "Nabíječ"
-
-#~ msgid "Laughing"
-#~ msgstr "Chechtal"
-
-#~ msgid "Machavellian"
-#~ msgstr "Machiavelista"
-
-#~ msgid "Mad"
-#~ msgstr "Šílený"
-
-#~ msgid "Obscene"
-#~ msgstr "Obscénní"
-
-#~ msgid "Ornery"
-#~ msgstr "Zloduch"
-
-#~ msgid "Pompous"
-#~ msgstr "Pompézní"
-
-#~ msgid "Shrewd"
-#~ msgstr "Mazaný"
-
-#~ msgid "Aardvark"
-#~ msgstr "Hrabáč"
-
-#~ msgid "Armadillo"
-#~ msgstr "Pásovec"
-
-#~ msgid "Barracuda"
-#~ msgstr "Barakuda"
-
-#~ msgid "Bat"
-#~ msgstr "Netopýr"
-
-#~ msgid "Beetle"
-#~ msgstr "Brouk"
-
-#~ msgid "Bunny"
-#~ msgstr "Králíček"
-
-#~ msgid "Dodo"
-#~ msgstr "Trdlo"
-
-#~ msgid "Duck"
-#~ msgstr "Kachna"
-
-#~ msgid "Fox"
-#~ msgstr "Liška"
-
-#~ msgid "Frog"
-#~ msgstr "Žába"
-
-#~ msgid "Gerbil"
-#~ msgstr "Pískomil"
-
-#~ msgid "Gnu"
-#~ msgstr "Pakůň"
-
-#~ msgid "Halibut"
-#~ msgstr "Platýs"
-
-#~ msgid "Hedgehog"
-#~ msgstr "Ježek"
-
-#~ msgid "Herring"
-#~ msgstr "Sleď"
-
-#~ msgid "Kitten"
-#~ msgstr "Kotě"
-
-#~ msgid "Koala"
-#~ msgstr "Koala"
-
-#~ msgid "Lemur"
-#~ msgstr "Lemur"
-
-#~ msgid "Mackerel"
-#~ msgstr "Makrela"
-
-#~ msgid "Otter"
-#~ msgstr "Vydra"
-
-#~ msgid "Panda"
-#~ msgstr "Panda"
-
-#~ msgid "Platypus"
-#~ msgstr "Ptakopysk"
-
-#~ msgid "Puffin"
-#~ msgstr "Papuchalk"
-
-#~ msgid "Scarab"
-#~ msgstr "Skarabeus"
-
-#~ msgid "Shrew"
-#~ msgstr "Rejsek"
-
-#~ msgid "Tapir"
-#~ msgstr "Tapír"
-
-#~ msgid "Trout"
-#~ msgstr "Pstruh"
-
-#~ msgid "Tuna"
-#~ msgstr "Tuňák"
-
-#~ msgid "Walrus"
-#~ msgstr "Mrož"
-
-#~ msgid "No"
-#~ msgstr "Ne"
-
-#~ msgid "Confirm renaming from [b]%s[/b] to [b]%s[/b]? [Y/N]"
-#~ msgstr "Potvrďte přejmenování z [b]%s[/b] na [b]%s[/b]? [A/N]"
-
-#~ msgid "Renamed [b]%s[/b] to [b]%s[/b]."
-#~ msgstr "Přejmenováno z [b]%s[/b] na [b]%s[/b]."
-
-#~ msgid "This %s unit is now designated: [b]%s[/b]"
-#~ msgstr "Jednotka %s je nyní označena: [b]%s[/b]"
-
-#~ msgid "./hcf.py"
-#~ msgstr "./hcf.py"
-
-#~ msgid "Are you really sure you want to destroy %s? Y/N"
-#~ msgstr "Jste si opravdu jist, že chcete zničit %s? A/N"
-
-#~ msgid "Destruction confirmed."
-#~ msgstr "Zničení potvrzeno."
-
-#~ msgid "Destruction averted."
-#~ msgstr "Zničení odvráceno."
-
-#~ msgid "Draining this %s unit will get you %d HP but kill it and take %d %s."
-#~ msgstr "Vyčerpáním jednotky %s dostanete %d HP, ale zabije ji to a bude to trvat %d %s."
-
-#~ msgid "Are you sure you want to drain this %s unit?"
-#~ msgstr "Jste si jisti, že chcete vyčerpat jednotku %s?"
-
-#~ msgid "Bot not drained."
-#~ msgstr "Robot byl vyčerpán."
-
-#~ msgid "Running hcf.py..."
-#~ msgstr "Spuštění hcf.py..."
-
-#~ msgid "Executing: Halt and Catch Fire."
-#~ msgstr "Vykonat: Zastavit a Vzplanout."
-
-#~ msgid "Warning! Cooling subsystems disabled."
-#~ msgstr "Varování! Chladicí subsystémy zakázány."
-
-#~ msgid "Warning! Spontaneous oxidization witH emis$ion of light aND heAt detecteddd in THE#main| procesIng unit."
-#~ msgstr "Varování! Spontánní oxidace S emi$í světla A tePLa deTekokokováNA v #hlaVní| jednotce ZpraCoVánÍ."
-
-#~ msgid "WArn|n*! SsTeM=#faiPure%%^#n 3 S 1()$++"
-#~ msgstr "VArovAn*! PoR^cH@ SsTem=#%%^#n 3 S 1()$++"
-
-#~ msgid "Warning: something seems wrong."
-#~ msgstr "Varování: něco je špatně."
-
-#~ msgid "Error report:"
-#~ msgstr "Zpráva chyby:"
-
-#~ msgid "()%%#@(%% THE BLADE IS YOURS. )##%%*&%%*!"
-#~ msgstr "()%%#@(%% OSTŘÍ JE VAŠE. )##%%*&%%*!"
-
-#~ msgid "Bot drained."
-#~ msgstr "Bot vyčerpán."
-
-#~ msgid "Failed to drain bot."
-#~ msgstr "Nepodařilo se vyčerpat robota."
-
-#~ msgid "I am free!"
-#~ msgstr "Jsem volný!"
-
-#~ msgid "drain_bot_auto.setup"
-#~ msgstr "vyčerpat_robota_auto.setup"
-
-#~ msgid "How do you want draining of bots to be handled?"
-#~ msgstr "Jak chceš, aby vyčerpávání robotů probíhalo?"
-
-#~ msgid "Currently draining of bots is tried automatically."
-#~ msgstr "Momentálně je zkoušeno automatické vyčerpání robotů."
-
-#~ msgid "Currently draining of bots is never tried."
-#~ msgstr "Momentálně nebylo vyčerpání robotů ještě vyzkoušeno."
-
-#~ msgid "Currently it is asked if draining a bot is to be tried."
-#~ msgstr "Momentálně je dotazováno, zda-li má být vyčerpání robota vyzkoušeno."
-
-#~ msgid "Always try draining bots."
-#~ msgstr "Vždy se snaž vyčerpat roboty."
-
-#~ msgid "Never try to drain a bot"
-#~ msgstr "Nikdy nečerpej roboty."
-
-#~ msgid "Always ask if attempt to drain bot shall be ran."
-#~ msgstr "Vždy se zeptat, zda-li se má rozběhnout pokus o vyčerpání robota."
-
-#~ msgid "Reprogramm_bots_after_takeover.sh"
-#~ msgstr "Přeprogramovat_roboty_po_převzetí_kontroly.sh"
-
-#~ msgid "Bots will be reprogrammed after takeover: [b]true[/b]"
-#~ msgstr "Roboti budou přeprogramováni po převzetí kontroly: [b]pravda[/b]"
-
-#~ msgid "Bots will be reprogrammed after takeover: [b]false[/b]"
-#~ msgstr "Roboti budou přeprogramováni po převzetí kontroly: [b]nepravda[/b]"
-
-#~ msgid "leave settings.plx"
-#~ msgstr "opustit nastavení.plx"
-
-#~ msgid "Settings saved"
-#~ msgstr "Nastavení uloženo"
-
-#~ msgid "Leaving settings.plx"
-#~ msgstr "Opouštím nastavení.plx"
-
-#~ msgid "logout"
-#~ msgstr "odhlášení"
-
-#~ msgid "Closing remote connection..."
-#~ msgstr "Ukončení vzdáleného připojení..."
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "Hello."
-#~ msgstr "Ahoj."
-
-#~ msgid "Hi there."
-#~ msgstr "Čau ty tam."
-
-#~ msgid "Well, hello again."
-#~ msgstr "Nuže, ahoj znovu."
-
-#~ msgid "Hello hello."
-#~ msgstr "Ahoj ahoj."
-
-#~ msgid "Welcome back."
-#~ msgstr "Vítej zpět."
-
-#~ msgid "help"
-#~ msgstr "pomoc"
-
-#~ msgid "Available commands: help, logout"
-#~ msgstr "Dostupné příkazy: pomoc, odhlásit"
-
-#~ msgid "Goodbye"
-#~ msgstr "Sbohem"
-
-#~ msgid "A specialized beam of laser momentarily ionizes the air between the target and the gun, turning it into highly conductive plasma. Milliseconds later, a powerful electric shock is delivered through the air and hits the target. This weapon is effective against people as it is against bots, and indeed few are the droid classes that can withstand more than a few hits from it before going down. The one downside is the high cost involved in crafting this weapon, which makes it very rare. Other than that, even the Exterminators have difficulty matching this weapon, the pride of human race."
-#~ msgstr "Specializovaný paprsek laseru na okamžik ionizuje vzduch mezi cílem a zbraní, což zapříčiní jeho přeměnu na vysoce vodivé plazma. O pár milisekund později je výkonný elektrický výboj přiveden vzduchem a zasáhne cíl. Tato zbraň je stejně efektivní proti lidem jako proti robotům a je jen několik typů droidů, kterých vydrží více než pár zásahů před tím než klesnou k zemi. Jedinou nevýhodou jsou vysoké náklady spojené s výrobou této zbraně, což ji činí velmi vzácnou. Kromě toho, dokonce i Exterminatory mají potíže se srovnávat s touto zbraní, pýchou lidské rasy."
-
-#~ msgid "To Novice Arena"
-#~ msgstr "Do arény začátečníků"
-
-#~ msgid "Not only is the town safe, but apparently so is Ewald's 296 droid. Oh joy."
-#~ msgstr "Nejen že je město v bezpečí, ale zřejmě tak i Ewaldův droid 296. Taková radost."
-
-#~ msgid "Plasma crystal load. This is the most common way of loading a plasma weapon."
-#~ msgstr "Plazmový krystalový zásobník. Nejběžnější způsob nabíjení plazmových zbraní."
-
-#~ msgid "7.62mm ammo."
-#~ msgstr "7.62mm náboj."
-
-#~ msgid "Browning Machine Gun ammo."
-#~ msgstr "Browningův M2 kulomet."
-
-#~ msgid "Overheating your own circuits, you can liberate plasma! But beware: Everything is equal to it, even Tux."
-#~ msgstr "Přehříváním svých vlastních obvodů můžeš osvobodit plazmu! Ale pozor: Vše se jí vyrovná, dokonce i Tux."
-
-#~ msgid "Ooops, you killed Pendragon."
-#~ msgstr "Ajajaj, zabil jsi Pendragona."
-
-#~ msgid "Ooops, you killed Spencer. That was probably not a good idea."
-#~ msgstr "Jejda, zabil jsi Spencera. To asi nebyl dobrý nápad."
-
-#~ msgid "When computers are presented with the unexpected they can damage themselves."
-#~ msgstr "Pokud se počítače setkají s neočekávaným, mohou se sami poškodit."
-
-#~ msgid "296 Teleport Point"
-#~ msgstr "Teleportovací bod 296ky"
-
-#~ msgid "Respawn Master Arena"
-#~ msgstr "Znovuzhmotnění arény mistrů"
-
-#~ msgid "INV"
-#~ msgstr "INV"
-
-#~ msgid "The overload setting exists for emergencies. The plasma does not discriminate between bots and humans."
-#~ msgstr "La configuration de surcharge est utilisée pour les urgences. Le plasma ne fait pas de différence entre les robots et les humains."
+msgstr ""

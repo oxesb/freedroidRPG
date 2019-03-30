@@ -1,17 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR FreedroidRPG Project
 # This file is distributed under the same license as the freedroidrpg package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Link_Mario <Link-Mario@gmx.de>, 2015,2017
+# Link_Mario <Link-Mario@gmx.de>, 2019
+#
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: FreedroidRPG\n"
+"Project-Id-Version: freedroidrpg 0.16+git\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-24 17:21+0100\n"
-"PO-Revision-Date: 2017-10-02 14:35+0000\n"
-"Last-Translator: Link_Mario <Link-Mario@gmx.de>\n"
-"Language-Team: German (http://www.transifex.com/arctic-games/freedroid-rpg/language/de/)\n"
+"POT-Creation-Date: 2019-03-30 22:43+0100\n"
+"PO-Revision-Date: 2019-02-28 09:00+0000\n"
+"Last-Translator: Link_Mario <Link-Mario@gmx.de>, 2019\n"
+"Language-Team: German (https://www.transifex.com/arctic-games/teams/9511/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1031,14 +1034,12 @@ msgid "Resuming guard program."
 msgstr " Schalte zurück in den Wachmodus."
 
 #: data/storyline/act1/dialogs/614_portal.lua:69
-#, fuzzy
 msgid "ERROR: unknown command. Searching for similar commands..."
-msgstr "FEHLER: unbekannter Befehl. Suche nach ähnlichen Befehlen…"
+msgstr ""
 
 #: data/storyline/act1/dialogs/614_portal.lua:72
-#, fuzzy
 msgid "ERROR! Similar command not found! Using advanced search..."
-msgstr "FEHLER! Kein ähnlicher Befehl gefunden! Verwende erweiterte Suche…"
+msgstr ""
 
 #: data/storyline/act1/dialogs/614_portal.lua:74
 msgid "Executable 'bin/hostile' found. Executing..."
@@ -1956,9 +1957,8 @@ msgid "Greetings Master Benjamin."
 msgstr "Ich grüße Sie, Meister Benjamin."
 
 #: data/storyline/act1/dialogs/Benjamin.lua:43
-#, fuzzy
 msgid "You are using a fine weapon. I wonder where you found it?"
-msgstr "Sie haben aber eine schicke Waffe. Ich frage mich, wo Sie die gefunden haben?"
+msgstr ""
 
 #: data/storyline/act1/dialogs/Benjamin.lua:54
 msgid "Ah, so you are the new member. Welcome. My name is Benjamin, and I take care of our ranged weaponry here in the citadel."
@@ -2686,9 +2686,8 @@ msgid "What are these two trees?"
 msgstr "Was machen diese 2 Bäume hier?"
 
 #: data/storyline/act1/dialogs/Bob.lua:98
-#, fuzzy
 msgid "The trees' fruit is our only source of food. The fruit is slightly bitter and leaves your mouth like an unripe persimmon, but we've noticed our wounds are healing much faster."
-msgstr "Die Frucht des Baums ist unsere einzige Nahrungsquelle. Sie ist ein wenig bitter und schmeckt wie eine unreife Dattelpflaume, doch dank ihr heilen unsere Wunden schneller."
+msgstr ""
 
 #: data/storyline/act1/dialogs/Bob.lua:100
 msgid "Yeah. I can give you some. Just ask."
@@ -6359,14 +6358,12 @@ msgid "Where is everybody? Don't tell me only a dozen of people survived!"
 msgstr "Wo sind denn alle hin? Sagen Sie mir nicht, dass nur ein paar Dutzend Leute überlebt haben!"
 
 #: data/storyline/act1/dialogs/Chandra.lua:454
-#, fuzzy
 msgid "No, no. The causalties here were much smaller than everywhere else."
-msgstr "Nein, Nein. Die Umstände hier sind nicht so weitläufig wie an anderen Orten."
+msgstr ""
 
 #: data/storyline/act1/dialogs/Chandra.lua:455
-#, fuzzy
 msgid "Most of citizens are currently at the mines. They are doing everything they can to keep the town running."
-msgstr "Die meisten Leute arbeiten in den Minen. Sie machen alles, um die Stadt am laufen zu halten."
+msgstr ""
 
 #: data/storyline/act1/dialogs/Chandra.lua:456
 msgid "Children, elderly and others who cannot work are upstairs. They are too afraid to come down."
@@ -7358,9 +7355,8 @@ msgid "Thanks to the autotools we can start building instead of just trying to r
 msgstr "Dank der AutoServ-Werkzeuge können wir wieder bauen, anstatt nur die Schäden zu reparieren!"
 
 #: data/storyline/act1/dialogs/Dixon.lua:550
-#, fuzzy
 msgid "Once this sick war is over, I will make sure you get the 'Key to the City', Linarian."
-msgstr "Sobald dieser elende Krieg vorüber ist, sorge ich dafür, dass Ihnen die Schlüssel zur Stadt ausgehändigt werden, Linarianer!"
+msgstr ""
 
 #: data/storyline/act1/dialogs/Dixon.lua:558
 msgid "Nearly. Only my conscience keeps me up at night."
@@ -9434,9 +9430,8 @@ msgid "I've fought with many bots before, and I'll not be scared by a mere linar
 msgstr "Ich habe gegen so viele Roboter zuvor gekämpft, da werde ich doch keine Angst vor einem Linarianer wie dich haben."
 
 #: data/storyline/act1/dialogs/Erin.lua:128
-#, fuzzy
 msgid "Feel free to try, though. Anytime."
-msgstr "Versuch's doch, Freundchen. Jederzeit. "
+msgstr ""
 
 #: data/storyline/act1/dialogs/Erin.lua:134
 msgid "Prepare to die!"
@@ -11806,15 +11801,14 @@ msgstr "sechs"
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:63
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:47
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:63
-#, fuzzy
 msgid "seven"
-msgstr "Rache."
+msgstr ""
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:80
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:80
-#, fuzzy, c-format
+#, c-format
 msgid "CAPTCHA: Please write the number that answers the following: %s - %s = ?"
-msgstr "CAPTCHA: Bitte beantworten sie die folgenden Fragen mit kleingeschriebenen Wörtern:  %d-%d = ?"
+msgstr ""
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:82
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:85
@@ -11824,9 +11818,8 @@ msgstr "Nicht-Mensch entdeckt. Verarbeite Lähmungs-Schock"
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:83
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:86
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:121
-#, fuzzy
 msgid "NOTE: If you are a human, try again, and make sure you enter digits and not a word."
-msgstr "ANMERKUNG: Falls Sie ein Mensch sind, versuchen Sie es nochmal und geben Sie ein Wort ein, keine Ziffern."
+msgstr ""
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:90
 msgid "Welcome to MS firmware update server for region #54658."
@@ -12627,9 +12620,8 @@ msgid "Ew."
 msgstr "Igitt."
 
 #: data/storyline/act1/dialogs/Jennifer.lua:93
-#, fuzzy
 msgid "So we can identify each other as 'friendly' and don't rip ourselves apart."
-msgstr "Auf diese Weise erkennen uns die Roboter als 'freundlich' und nehmen uns nicht auseinander."
+msgstr ""
 
 #: data/storyline/act1/dialogs/Jennifer.lua:94
 msgid "Uh."
@@ -12640,9 +12632,8 @@ msgid "Is there any way for me to get such a chip?"
 msgstr "Kann ich auch so einen Chip bekommen?"
 
 #: data/storyline/act1/dialogs/Jennifer.lua:96
-#, fuzzy
 msgid "I don't think you will be able to get one. They're custom and the chip-makers aren't around anymore."
-msgstr "Ich glaube nicht, dass du einen bekommen kannst. Du siehst nicht sehr menschlich aus."
+msgstr ""
 
 #: data/storyline/act1/dialogs/Jennifer.lua:97
 msgid "How did you get in here anyway?"
@@ -15106,9 +15097,8 @@ msgstr "Ausgezeichnet: Neue Herausforderer werden gern gesehen."
 
 #: data/storyline/act1/dialogs/Mike.lua:109
 #: data/storyline/act2/dialogs/Mike.lua:98
-#, fuzzy
 msgid "Registration: Patience, it will take a little moment."
-msgstr "Registrierung: Bitte warten, es wird einige Zeit dauern."
+msgstr ""
 
 #: data/storyline/act1/dialogs/Mike.lua:110
 #: data/storyline/act2/dialogs/Mike.lua:99
@@ -15242,9 +15232,8 @@ msgstr "Hinweis: Das Glück ist mit dem Tüchtigen."
 
 #: data/storyline/act1/dialogs/Mike.lua:223
 #: data/storyline/act2/dialogs/Mike.lua:212
-#, fuzzy
 msgid "Preparation: Patience, it will take a little moment."
-msgstr "Vorbereitung: Geduld, bitte warten Sie einen Moment."
+msgstr ""
 
 #: data/storyline/act1/dialogs/Mike.lua:224
 #: data/storyline/act2/dialogs/Mike.lua:213
@@ -15379,9 +15368,8 @@ msgid "You're not like the droids above."
 msgstr "Du bist nicht wie die anderen Droiden da oben."
 
 #: data/storyline/act1/dialogs/Mike.lua:326
-#, fuzzy
 msgid "I am a 571 model droid, designed for crew management."
-msgstr "Ich bin ein 571-er Droide, gebaut für die Personaleinsatzplanung."
+msgstr ""
 
 #: data/storyline/act1/dialogs/Mike.lua:328
 msgid "Do you wish any information about the 500s class?"
@@ -17072,9 +17060,8 @@ msgid "Yes, I would like to trade with you."
 msgstr "Ja, ich würde gerne mit dir verhandeln."
 
 #: data/storyline/act1/dialogs/Samson.lua:71
-#, fuzzy
 msgid "Yes, please feel free to."
-msgstr "Ja, bedien dich ruhig."
+msgstr ""
 
 #: data/storyline/act1/dialogs/Samson.lua:72
 msgid "I only have some consumables with me."
@@ -17315,14 +17302,12 @@ msgid "Indeed, you're an expert at everything! Congratulations!"
 msgstr "Wirklich, du bist ein Experte in allem! Glückwunsch!"
 
 #: data/storyline/act1/dialogs/Samson.lua:259
-#, fuzzy
 msgid "Let me just upload on you the codes for the skill and you will be able to make slightly longer takeovers."
-msgstr "Ich lade dir nun die Codes für die Fertigkeit hoch und du wirst mehr Zeit für die Übernahme erhalten."
+msgstr ""
 
 #: data/storyline/act1/dialogs/Samson.lua:261
-#, fuzzy
 msgid "I feel... Great! Thanks, Sam! I can't wait to spend hours hacking the same bot!"
-msgstr "Ich fühle mich… großartig! Danke, Sam! Ich kann es kaum erwarten, denselben Bot stundenlang zu hacken!"
+msgstr ""
 
 #: data/storyline/act1/dialogs/Samson.lua:262
 msgid "...I don't think that skill increases your take over for so much time...... Oh well. Have fun, linarian!"
@@ -19115,12 +19100,14 @@ msgid "I'll drop you on the Landing Zone. Just move close to the ship, on the st
 msgstr "Ich werde dich an der Landezone rauslassen. Geh einfach in den Raumgleiter rein. Er wird sofort abheben."
 
 #: data/storyline/act1/dialogs/Spencer.lua:733
-#, fuzzy
 msgid ""
 "In order to interrogate the former MegaSys president, I need to go to the HF Landing Zone and climb the stairs from the Stratopod there. The pilot is already inside, and he'll bring me to next area which needs me.\n"
 "\n"
 " I am not sure what expects me there, so I should bring along a secondary weapon, unique items, lots of ammo, recovery items, and money. Ah, mastering some skills like repair is also interesting."
-msgstr "Im Auftrag, den ehemaligen MegaSys Präsident zu befragen, muss ich zur HF Landezone und den Raumgleiter dort betreten. Der Pilot ist bereits an Bord und wird mich im nächsten Bereich abliefern."
+msgstr ""
+"Um den vorherigen MegaSys-Präsidenten zu befragen, muss ich zur Landezone der Höllenfestung gehen und dort die Treppen zum Raumgleiter benutzen. Der Pilot wartet dort bereits und wird mich zum nächsten Gebiet bringen, wo ich gebraucht werde.\n"
+"\n"
+"Ich bin nicht sicher, was mich dort erwartet, daher sollte ich eine Sekundärwaffe mitnehmen, einzigartige Gegenstände, eine Menge Munition, Heilungsgegenstände und natürlich Geld. Und ein paar Fähigkeiten wie Reparatur sollte ich auch vorher meistern."
 
 #: data/storyline/act1/dialogs/Spencer.lua:749
 msgid "Are there members of the Red Guard called Bob and Jim?"
@@ -20611,9 +20598,8 @@ msgid "No, not that. Something tells me it's not over, at least, not yet. Call i
 msgstr "Nein, nicht das. Irgendetwas sagt mir, dass es nicht vorbei ist, zumindest noch nicht. Nenn es Instinkt, ich kann mich einfach nicht entspannen."
 
 #: data/storyline/act1/dialogs/Town-GuardhouseGuard.lua:59
-#, fuzzy
 msgid "I'll stay in guard for a while more, even if Spencer told me to rest. Feel free to walk outside, though. It's just a bad omen, nothing more."
-msgstr "Ich bleibe hier auf Position, bis Spencer mir sagt, ich soll ich ausruhen. Lauf einfach weiter. Esist nur ein böses Omen, mehr nicht."
+msgstr ""
 
 #: data/storyline/act1/dialogs/Town-GuardhouseGuard.lua:66
 #: data/storyline/act1/dialogs/Town-TeleporterGuard.lua:155
@@ -21285,9 +21271,8 @@ msgid "He won't admit it, but the time between you heading out and all the bots 
 msgstr "Er würde es nie zugeben, aber zu der Zeit, als du noch nicht hier warst, war es besonders anstrengend. Da würde jeder zu einem Wrack werden."
 
 #: data/storyline/act1/dialogs/Town-TuxGuard.lua:110
-#, fuzzy
 msgid "I've never seen him as desperate as when you were in here. And I've never seen him as happy as when he dragged us to the teleporter."
-msgstr "Bevor du hier warst, war er wirklich verzweifelt. Andererseits war er nie so glücklich, als er uns zu den Teleportern geschleift hat."
+msgstr ""
 
 #: data/storyline/act1/dialogs/Town-TuxGuard.lua:116
 msgid "I see. Those must have been some very impressive deeds."
@@ -23457,9 +23442,8 @@ msgid "It's impossible. The bots are after me! I must stay here!"
 msgstr "Das ist unmöglich. Die Roboter sind hinter mir her! Ich muss hier bleiben!"
 
 #: data/storyline/act1/dialogs/WillGapes.lua:59
-#, fuzzy
 msgid "...Okay, but when you feel hungry, do leave and visit the town. You can find food there."
-msgstr "…Gut, aber wenn Sie hungrig werden, gehen Sie und besuchen Sie die Stadt. Dort gibt es noch mehr zu Essen."
+msgstr ""
 
 #: data/storyline/act1/dialogs/WillGapes.lua:60
 #: data/storyline/act1/dialogs/WillGapes.lua:64
@@ -23679,137 +23663,133 @@ msgstr "Sei vorsichtig!"
 
 #: data/storyline/act2/dialogs/Colemak.lua:52
 msgid "Please go to the Terminal you used to uncryonize me and issue the [b]download[/b] command."
-msgstr ""
+msgstr "Bitte gehe zum Terminal, mit dem du mich aufgetaut hast und verwende den Befehl [b]herunterladen[/b]."
 
 #. TRANSLATORS: %s = Tux:get_player_name()
 #: data/storyline/act2/dialogs/Colemak.lua:65
 #, c-format
 msgid "Hello, my name is Colemak. I am an old friend of yours, %s."
-msgstr ""
+msgstr "Hallo, mein Name ist Colemak. Ich bin ein alter Frenud von dir, %s."
 
 #: data/storyline/act2/dialogs/Colemak.lua:73
 msgid "You just killed a man and a friendly bot!!"
-msgstr ""
+msgstr "Du hast gerade einen Menschen und einen freundlichen Bot getötet!!"
 
 #: data/storyline/act2/dialogs/Colemak.lua:76
 msgid "Well, as you aren't trying to kill me as some irrational birds I've met, I'll say to you."
-msgstr ""
+msgstr "Nun, da du nicht versucht hast mich zu töten, so wie andere irrationale Vögel, sag ich das zu dir."
 
 #: data/storyline/act2/dialogs/Colemak.lua:78
 msgid "I'll be finished soon, so don't worry. There is an important thing about them I must tell you."
-msgstr ""
+msgstr "Ich bin bald fertig, also keine Sorge. Es gibt da etwas wichtiges über sie, was ich dir sagen muss."
 
 #: data/storyline/act2/dialogs/Colemak.lua:80
-#, fuzzy
 msgid "Not yet, but I'm working on it. I'll teach you something important."
-msgstr "Ich glaube, ich sollte dich ignorieren, bis du mir was wichtiges mitteilst."
+msgstr "Noch nicht, aber ich arbeite daran. Ich werde dir etwas wichtiges beibringen."
 
 #: data/storyline/act2/dialogs/Colemak.lua:87
 msgid "There are no humans awake on RR Resorts."
-msgstr ""
+msgstr "Es gibt keine lebenden Menschen mehr im RR Resort."
 
 #: data/storyline/act2/dialogs/Colemak.lua:88
 msgid "What you think that was a human, was also a bot. It just have a different skin."
-msgstr ""
+msgstr "Das von dem du glaubst, es sei ein Mensch, war auch ein Roboter. Er hatte nur ein anderes Aussehen."
 
 #: data/storyline/act2/dialogs/Colemak.lua:89
 msgid "If it could merge on the human society, the chaos would be even bigger."
-msgstr ""
+msgstr "Wenn er sich unter den anderen Menschen versteckt, wäre das Chaos noch größer."
 
 #: data/storyline/act2/dialogs/Colemak.lua:90
 msgid "Then how come I've never heard of bots disguised as humans?"
-msgstr ""
+msgstr "Aber woher kommt es, dass ich noch nie von Robotern gehört habe, die sich als Menschen ausgeben?"
 
 #: data/storyline/act2/dialogs/Colemak.lua:91
 msgid "I don't know. I was frozen before they completed the project. Maybe it turned out too expensive?"
-msgstr ""
+msgstr "Ich weiß es nicht. Ich wurde eingefroren bevor das Projekt abgeschlossen wurde. Vielleicht war es zu teuer?"
 
 #: data/storyline/act2/dialogs/Colemak.lua:98
 msgid "The ones you just murdered where mistaking me with some master..."
-msgstr ""
+msgstr "Diejenigen, die du umgebracht hast, haben mich mit irgendeinem Meister verwechselt…"
 
 #: data/storyline/act2/dialogs/Colemak.lua:100
 msgid "Ah yes, I've heard that from Dvorak. Apparently MS big boss was born in Linarius."
-msgstr ""
+msgstr "Ah ja, ich habe das von Dvorak gehört. Offenbar wurde der MS Big Boss in Linarius geboren."
 
 #: data/storyline/act2/dialogs/Colemak.lua:101
 msgid "I've heard his nickname a few times now: [b]Agent Zero[/b]."
-msgstr ""
+msgstr "Ich habe seinen Decknamen schon ein paar Mal zuvor gehört: [b]Agent Zero[/b]."
 
 #: data/storyline/act2/dialogs/Colemak.lua:102
 msgid "Apparently, from what I collected while I was on MS, he was one of the first agents sent by the High Council."
-msgstr ""
+msgstr "Offenbar, so habe ich es gehört, als ich bei MS war, war er einer der ersten Agenten der vom Hohen Gericht ausgesandt wurde."
 
 #: data/storyline/act2/dialogs/Colemak.lua:103
 msgid "I'm very glad they didn't found out I learned that, or I would be dead a long time ago."
-msgstr ""
+msgstr "Ich bin sehr froh, dass sie nicht wissen, was ich weiß, oder ich wäre schon längst Geschichte."
 
 #: data/storyline/act2/dialogs/Colemak.lua:110
-#, fuzzy
 msgid "Why are you cryonized?"
-msgstr "Warum bist du hier?"
+msgstr "Warum wurdest du eingefroren?"
 
 #: data/storyline/act2/dialogs/Colemak.lua:112
 msgid "Well, as you might be aware, if you figure out too much you're cryonized."
-msgstr ""
+msgstr "Nun, du solltest sehr vorsichtig sein, denn solltest du zu viel wissen, wirst auch du eingefroren."
 
 #: data/storyline/act2/dialogs/Colemak.lua:113
 msgid "Only the ones who figures out about MS big boss are actually killed."
-msgstr ""
+msgstr "Nur diejenigen, die mehr über den MS Big Boss wissen, werden auch getötet."
 
 #: data/storyline/act2/dialogs/Colemak.lua:114
 msgid "The reason is simple. Killing would be too noisy, while cryonizing keeps them undercover."
-msgstr ""
+msgstr "Der Grund ist einfach. Leute umzubringen verursacht Lärm, während Einfrieren sie nur unter Verschluss hält."
 
 #: data/storyline/act2/dialogs/Colemak.lua:115
 msgid "Thankfully they never figured out about what I truly knew. I was cryonized for figuring out that Hell Fortress Factory Boss had a teletransport network only for him which he used to grab the money and go on vacations in tropical islands."
-msgstr ""
+msgstr "Zum Glück habe sie nichts darüber herausgefunden. Ich wurde eingefroren, weil ich herausgefunden habe, dass der Boss der Höllenfestung ein eigenes Teleporternetzwerk hat, welches er nutzte, um Geld einzusacken und auf troüpischen Inseln Urlaub zu machen."
 
 #: data/storyline/act2/dialogs/Colemak.lua:123
 msgid "HOW DO YOU KNOW MY NAME?!"
-msgstr ""
+msgstr "WOHER KENNST DU MEINEN NAMEN?!"
 
 #: data/storyline/act2/dialogs/Colemak.lua:125
 msgid "Why, Dvorak told me, of course."
-msgstr ""
+msgstr "Nun, Dvorak hat ihn mir natürlich gesagt."
 
 #: data/storyline/act2/dialogs/Colemak.lua:126
-#, fuzzy
 msgid "Ok, what's going on here?!"
-msgstr "Wie läuft es so da draußen?"
+msgstr "OK, was ist hier eigentlich los?!"
 
 #: data/storyline/act2/dialogs/Colemak.lua:133
-#, fuzzy
 msgid "High Council? Tell me more..."
-msgstr "Erzählen Sie mir mehr darüber…"
+msgstr "Hohes Gericht? Erzähl mir mehr…"
 
 #: data/storyline/act2/dialogs/Colemak.lua:135
 msgid "I thought you already knew all that, being a former ship commander and all...?"
-msgstr ""
+msgstr "Ich dachte du weißt bereits davon, da du ein ehemaliger Schiffskommandant bist, oder…?"
 
 #: data/storyline/act2/dialogs/Colemak.lua:136
 msgid "I was a ship commander? Cool!"
-msgstr ""
+msgstr "Ich war ein Schiffskommandant? Cool!"
 
 #: data/storyline/act2/dialogs/Colemak.lua:137
 msgid "Ah, uhm, sorry. I've been cryonized for too long. I don't have memories from before awakening."
-msgstr ""
+msgstr "Äh ja, tut mir Leid. Ich war zu lange eingefroren. Ich kann mich an keine Ereignisse erinnern, bevor ich wieder aufgetaut wurde."
 
 #: data/storyline/act2/dialogs/Colemak.lua:138
 msgid "In this case, you should find Dvorak first, he was a good friend of yours. Like, your guide."
-msgstr ""
+msgstr "In diesem Fall, rede zuerst mit Dvorak. Er war ein guter Freund von dir. Wie ein gutes Vorbild."
 
 #: data/storyline/act2/dialogs/Colemak.lua:139
 msgid "He will explain to you in details about Linarians, their intent, the High Council... And most importantly..."
-msgstr ""
+msgstr "Er erklärt dir alles über Linarianer, ihre Absichten, das Hohe Gericht… Und alles Wichtige halt…"
 
 #: data/storyline/act2/dialogs/Colemak.lua:140
 msgid "What must be done to save the mankind."
-msgstr ""
+msgstr "Was getan werden muss, um die Menschheit zu retten."
 
 #: data/storyline/act2/dialogs/Colemak.lua:148
 msgid "That's too much for me. Give me a minute or two to process all this information, please."
-msgstr ""
+msgstr "Das ist zu viel für mich. Gib mir eine Minute oder zwei, um diese Informationen zu verarbeiten, bitte."
 
 #: data/storyline/act2/dialogs/Colemak.lua:150
 msgid "Don't worry my friend. Take all time you need, and then come back to talk with me."
@@ -23836,14 +23816,12 @@ msgid "Let's find Dvorak!"
 msgstr ""
 
 #: data/storyline/act2/dialogs/Colemak.lua:174
-#, fuzzy
 msgid "So, are you ready?"
-msgstr "Wer bist du wirklich?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/Colemak.lua:175
-#, fuzzy
 msgid "Yes I am!"
-msgstr "Ja! Ich bin frei!"
+msgstr ""
 
 #: data/storyline/act2/dialogs/Colemak.lua:176
 msgid "As you must be aware, bots were on Dvorak's track, and he had to hide."
@@ -23881,24 +23859,21 @@ msgid "identify"
 msgstr ""
 
 #: data/storyline/act2/dialogs/CryonicsBlock-Terminal.lua:37
-#, fuzzy
 msgid "Identification: "
-msgstr "Identifikation fehlgeschlagen!"
+msgstr ""
 
 #: data/storyline/act2/dialogs/CryonicsBlock-Terminal.lua:40
 #: data/storyline/act2/dialogs/CryonicsBlock-Terminal.lua:45
-#, fuzzy
 msgid "Tux"
-msgstr "Tux"
+msgstr ""
 
 #: data/storyline/act2/dialogs/CryonicsBlock-Terminal.lua:41
 msgid "[b]ERROR[/b] Unable to execute open.exe."
 msgstr ""
 
 #: data/storyline/act2/dialogs/CryonicsBlock-Terminal.lua:42
-#, fuzzy
 msgid "Try using commands: chkdsk logout"
-msgstr "Mögliche Kommandos: Hilfe, ausloggen"
+msgstr ""
 
 #: data/storyline/act2/dialogs/CryonicsBlock-Terminal.lua:47
 msgid "Credentials invalid. Disconnection forced."
@@ -23915,14 +23890,12 @@ msgid "[b]ERROR[/b] Because this terminal was designed not to fail, if failure d
 msgstr ""
 
 #: data/storyline/act2/dialogs/CryonicsBlock-Terminal.lua:58
-#, fuzzy
 msgid "[b]ERROR[/b] 'chkdsk' is not recognized as an internal or external command, operable program or batch file."
-msgstr "'sudo' wurde nicht als interner oder externer Befehl, ausführbares Programm oder Stapeldatei erkannt."
+msgstr ""
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:30
-#, fuzzy
 msgid "Connection refused. "
-msgstr "Verbindung zum C-Netz getrennt."
+msgstr ""
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:31
 msgid "Terminal #1979 is immune to hack attempts. Or so says the lore."
@@ -23942,24 +23915,21 @@ msgid "tux"
 msgstr ""
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:40
-#, fuzzy
 msgid "Entering as tux"
-msgstr "Als Gast anmelden"
+msgstr ""
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:44
-#, fuzzy
 msgid "R&R Factory gate status: CLOSED"
-msgstr "Fabriktorstatus: GESCHLOSSEN"
+msgstr ""
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:47
-#, fuzzy
 msgid "R&R Factory gate status: OPEN"
-msgstr "Fabriktorstatus: OFFEN "
+msgstr ""
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:116
-#, fuzzy, c-format
+#, c-format
 msgid "CAPTCHA: Please write the number that answers the following: %s + %s = ?"
-msgstr "CAPTCHA: Bitte beantworten sie die folgenden Fragen mit kleingeschriebenen Wörtern:  %d-%d = ?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:120
 msgid "Access Denied. Electrical discharge in progress."
@@ -23984,9 +23954,9 @@ msgid "This is commercial software, payment required (3000 circuits)."
 msgstr ""
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:164
-#, fuzzy, c-format
+#, c-format
 msgid "You will also need %d training points."
-msgstr "Außerdem brauchen Sie %d Trainingspunkte."
+msgstr ""
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:165
 msgid "Proceed?"
@@ -24005,9 +23975,8 @@ msgid "Building dependency tree"
 msgstr ""
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:178
-#, fuzzy
 msgid "Reading state information... Done"
-msgstr "Fortsetzen der normalen Patrouillen… [Fertig]"
+msgstr ""
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:180
 msgid "The following skill will be installed:"
@@ -24019,9 +23988,8 @@ msgid "'Hacking' program revision %d."
 msgstr ""
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:185
-#, fuzzy
 msgid "Feature set of the hacking program has been improved successfully."
-msgstr "Nun, ich sehe, dass sich deine Hackerfähigkeiten bereits beträchtlich verbessert haben!"
+msgstr ""
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:199
 msgid "Payment bounced. Insufficient credits."
@@ -24052,18 +24020,16 @@ msgid "Where could I increase my Sniper Rifles collection?"
 msgstr ""
 
 #: data/storyline/act2/dialogs/Fred.lua:53
-#, fuzzy
 msgid "Uhm... Hello?"
-msgstr "Äh… Hallo?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/Fred.lua:55
 msgid "Hello, I'm Fred. I make addons and grenades. I can craft some for you."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Fred.lua:56
-#, fuzzy
 msgid "I would like to give a look at it later, thanks."
-msgstr "Ich möchte lernen, wie man hackt."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Fred.lua:63
 msgid "Could you craft some add-ons for me?"
@@ -24075,38 +24041,33 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/Fred.lua:66
 #: data/storyline/act2/dialogs/Fred.lua:75
-#, fuzzy
 msgid "If not the only."
-msgstr "Wenn überhaupt der einzige."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Fred.lua:72
-#, fuzzy
 msgid "Can you assemble add-ons on my equip?"
-msgstr "Könnten Sie meine Ausrüstung reparieren?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/Fred.lua:74
 msgid "Of course I can assemble add-ons for my best customer."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Fred.lua:81
-#, fuzzy
 msgid "I want a grenade."
-msgstr "Ich möchte gern einige Granaten kaufen."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Fred.lua:83
 #: data/storyline/act2/dialogs/Stone.lua:76
-#, fuzzy
 msgid "Sure, please take a look."
-msgstr "Gut, ich schau mal rein."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Fred.lua:84
 msgid "They're not impressive, but get the work done!"
 msgstr ""
 
 #: data/storyline/act2/dialogs/Fred.lua:85
-#, fuzzy
 msgid "You won't regret them."
-msgstr "Du siehst nicht sehr glücklich aus."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Fred.lua:86
 msgid "VMX for humans, EMP for droids. Remember this rule."
@@ -24138,18 +24099,16 @@ msgid "So unless you're military or something, I won't be giving, trading, nor s
 msgstr ""
 
 #: data/storyline/act2/dialogs/Fred.lua:99
-#, fuzzy
 msgid "I have many circuits, you know."
-msgstr "Ich muss wieder gehen."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Fred.lua:100
 msgid "And I have a Barrett M82. I bet a few direct hits from this gun, and you'll leave life to become history."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Fred.lua:101
-#, fuzzy
 msgid "...You've got a point there."
-msgstr "Hmm, der Punkt geht an dich…"
+msgstr ""
 
 #: data/storyline/act2/dialogs/Fred.lua:107
 msgid "Look at this! I have a Barrett."
@@ -24180,9 +24139,8 @@ msgid "...I do not think I'll ever meet such droid, but thanks for the warning."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Fred.lua:117
-#, fuzzy
 msgid "Here is some spare ammo. Use it wisely."
-msgstr "Hier noch etwas Munition dafür."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Fred.lua:118
 msgid "Glitch was defeated, and I obtained one of the most powerful weapon in sheer damage terms. Man, either I am THAT good, or I cheat."
@@ -24385,9 +24343,8 @@ msgid "Expert"
 msgstr ""
 
 #: data/storyline/act2/dialogs/Mike.lua:30
-#, fuzzy
 msgid "Master"
-msgstr "Hahn"
+msgstr ""
 
 #: data/storyline/act2/dialogs/Mike.lua:31
 msgid "Supreme"
@@ -24406,54 +24363,44 @@ msgid "Third: Supreme - abandon all hope if you enter here."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Mike.lua:137
-#, fuzzy
 msgid "Choice: You can fight at the 'Expert', 'Master' and 'Supreme' rank."
-msgstr "Wahl: Sie können in den Rängen 'Anfänger', 'Elite' und 'Champion' antreten."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Mike.lua:140
-#, fuzzy
 msgid "Choice: You can fight at the 'Expert' and 'Master' rank."
-msgstr "Wahl: Sie können in den Rängen 'Anfänger' und 'Elite' antreten."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Mike.lua:143
-#, fuzzy
 msgid "Beginning: You can only fight at the 'Expert' rank."
-msgstr "Beginn: Sie können nur im Rang 'Anfänger' antreten."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Mike.lua:153
-#, fuzzy
 msgid "Let's go at 'Expert' rank."
-msgstr "Ich nehme den Rang \"Elite\"."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Mike.lua:155
-#, fuzzy
 msgid "Accepted: You have chosen the 'Expert' rank."
-msgstr "Akzeptiert: Du hast den Rang \"Anfänger\" gewählt."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Mike.lua:162
-#, fuzzy
 msgid "Let's go at 'Master' rank."
-msgstr "Ich nehme den Rang \"Elite\"."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Mike.lua:164
-#, fuzzy
 msgid "Accepted: You have chosen 'Master' rank."
-msgstr "Akzeptiert: Du hast den Rang \"Elite\" gewählt."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Mike.lua:171
-#, fuzzy
 msgid "Let's go at 'Supreme' rank."
-msgstr "Ich nehme den Rang \"Elite\"."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Mike.lua:173
-#, fuzzy
 msgid "Accepted: You have chosen 'Supreme' rank."
-msgstr "Akzeptiert: Du hast den Rang \"Elite\" gewählt."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Mike.lua:285
-#, fuzzy
 msgid "Important: Kill trespassers."
-msgstr "Wichtig: Sandwiches machen."
+msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:39
 msgid "Good evening!"
@@ -24468,9 +24415,8 @@ msgid "Good afternoon!"
 msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:47
-#, fuzzy
 msgid "...Hello."
-msgstr "Hallo."
+msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:48
 msgid "I am Mr. Saves, the Watcher of Stories!"
@@ -24478,7 +24424,7 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:49
 msgid "Mr. Saves, Watcher of Stories"
-msgstr ""
+msgstr "Mr. Saves, Beobachter der Geschichten"
 
 #: data/storyline/act2/dialogs/MrSaves.lua:50
 msgid "The weather is grim again, don't you think? Ah, I love mental games. All the better when no one can understand them."
@@ -24489,14 +24435,12 @@ msgid "...No one asked."
 msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:52
-#, fuzzy
 msgid "Uhm... great, I think?"
-msgstr "Großartig, danke!"
+msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:55
-#, fuzzy
 msgid "You don't have anything better to do, do you?"
-msgstr "Du weißt nicht rein zufälligerweise etwas darüber?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:56
 msgid "I repeated the same thing seven times and you still come to bother me."
@@ -24515,9 +24459,8 @@ msgid "If you do, I'll repeat myself until I manage to bore you out."
 msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:61
-#, fuzzy
 msgid "Uhm... Thanks?"
-msgstr "Oh… OH! Danke!"
+msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:62
 msgid "Now get going. You have more important things to do."
@@ -24528,23 +24471,20 @@ msgid "The sky is in a pretty blue azure today..."
 msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:71
-#, fuzzy
 msgid "Why are you alive? Why are the bots not attacking you?"
-msgstr "Warum sind Sie so? Was ist mit Ihnen passiert?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:73
-#, fuzzy
 msgid "I don't exist under normal circumstances."
-msgstr "Das verstehe ich nicht."
+msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:74
 msgid "Makes sense, you cannot attack something which doesn't exist."
 msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:75
-#, fuzzy
 msgid "...No wait. It doesn't. If you don't exist, I can't talk to you either!"
-msgstr "Nein, nein. Tu es nicht! Du darfst nicht sterben!"
+msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:76
 msgid "Well, with strange aeons, even Mr. Saves may die."
@@ -24555,41 +24495,36 @@ msgid "...You know what? You're weird. I bet the bots are just afraid of getting
 msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:83
-#, fuzzy
 msgid "You're weird."
-msgstr "Sie sind jederzeit willkommen."
+msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:85
 msgid "That's my purpose in life."
 msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:86
-#, fuzzy
 msgid "That only makes you weirder!"
-msgstr "Was sind deine Befehle?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:87
-#, fuzzy
 msgid "If you think too much about it, you'll end up overheating."
-msgstr "Wenn ich so drüber nachdenke, nehm ich gerade."
+msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:88
 msgid "I advice you to drop this subject."
 msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:94
-#, fuzzy
 msgid "What are you doing?"
-msgstr "Was wirst du jetzt tun?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:96
 msgid "Volunteer work."
 msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:97
-#, fuzzy
 msgid "I don't see you working."
-msgstr "Ich trau Ihnen nicht!"
+msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:98
 msgid "Well, that's because we volunteer for things exactly so that we can be lazy on them."
@@ -24620,37 +24555,32 @@ msgid "Secondary: [b]Kill everyone and everything if security threat: HIGH[/b]"
 msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:35
-#, fuzzy
 msgid "Ah, uhm, ok."
-msgstr "Ah ok."
+msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:45
-#, fuzzy
 msgid "What is my name?"
-msgstr "Wie heißt du?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:47
 msgid "Your name is classified information."
 msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:48
-#, fuzzy
 msgid "Please proof your identity."
-msgstr "Beweisen sie ihre Behauptung."
+msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:49
 msgid "Actually, uhm... I forgot that on my other set of war pants!"
 msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:50
-#, fuzzy
 msgid "Aborted."
-msgstr "Reparatur abgebrochen."
+msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:51
-#, fuzzy
 msgid "Can you tell me your name, though?"
-msgstr "Kannst du mir mehr darüber erzählen?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:52
 msgid "I am the manager of this facility."
@@ -24658,7 +24588,7 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:53
 msgid "999 RR Manager"
-msgstr ""
+msgstr "999 RR Manager"
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:61
 msgid "RR Resorts, or the RRR, is the paradise for those who dares to oppose my masters."
@@ -24673,9 +24603,8 @@ msgid "Undesired... people? Is that even ethical?"
 msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:64
-#, fuzzy
 msgid "I do not know what \"ethical\" means."
-msgstr "Ich weiß nicht, wovon sie reden."
+msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:65
 msgid "Ah, okay. Do not worry with such big details."
@@ -24686,23 +24615,20 @@ msgid "I found RR Resorts, where \"undesired individuals\" are kept frozen. I pr
 msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:72
-#, fuzzy
 msgid "What is the current security threat level?"
-msgstr "Was ist die Zitadelle?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:75
 msgid "Currently, all hostilities are dead or cryonized."
 msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:76
-#, fuzzy
 msgid "What about bots?"
-msgstr "Was sind das für Maschinen?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:77
-#, fuzzy
 msgid "Sorry, I do not understand this question."
-msgstr "Ich verstehe sie wirklich nicht."
+msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:78
 msgid "Nevermind that."
@@ -24717,9 +24643,8 @@ msgid "I am a 999 equipped with a Primode brain. I also know a lot about program
 msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:87
-#, fuzzy
 msgid "Cool! Can you teach me?"
-msgstr "Kannst du mich heilen?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:89
 msgid "Sorry, I cannot. I overestimated your coding skills previously."
@@ -24738,14 +24663,12 @@ msgid "However, you'll need 5,000 circuits and two training points. A short main
 msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:101
-#, fuzzy
 msgid "Sure. Teach me more programming than I actually know. (costs 5000 valuable circuits, 2 training points)"
-msgstr "Mach mich zu deinem Lehrling im Programmieren. (kostet 100 Schaltkreise und 9 Trainingspunkte)"
+msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:107
-#, fuzzy
 msgid "Do you see this screen?"
-msgstr "Verkaufen Sie auch sonst noch was?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:108
 msgid "Yes. I see a ball going up and down, hitting two moving walls."
@@ -24768,9 +24691,8 @@ msgid "Once you understand how the bytes flows, how they sum and they bitwise, y
 msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:113
-#, fuzzy
 msgid "What should I do?"
-msgstr "Wo soll ich nun hin?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:114
 msgid "Look at source code, and replicate the ping pong, but not with this simple, built-in, example AI. Try to do a sentient ping pong field, with air friction, gravity, virtual reality, these sort of things."
@@ -24785,27 +24707,24 @@ msgid "Yes sir! Will be done sir!"
 msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:117
-#, fuzzy
 msgid "[b]...some time later...[/b]"
-msgstr "[b]…Greife auf die Matrix zu.[/b]"
+msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:118
 msgid "Very good. The E-particle emission is a little off, but this can be forgiven."
 msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:119
-#, fuzzy
 msgid "You're good to go."
-msgstr "Du siehst nicht sehr gut aus…"
+msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:120
 msgid "By the way, you've learned very fast the exponential overflow from E-particles. Have you sold your soul by any chance, master?"
 msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:126
-#, fuzzy
 msgid "I'm afraid there is nothing I can do for you right now, master."
-msgstr "Im Moment kann ich deine Wunden nicht heilen."
+msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:128
 msgid "Sorry, training you could damage my own circuits and I may need replacements parts."
@@ -24828,14 +24747,12 @@ msgid "Have a nice visit, master. If you need a full report, just contact me."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Prologue.lua:28
-#, fuzzy
 msgid "Ouch, my head..."
-msgstr "Oh ich danke…"
+msgstr ""
 
 #: data/storyline/act2/dialogs/Prologue.lua:29
-#, fuzzy
 msgid "Where... am I? My head is dizzy..."
-msgstr "Ähh… Wo… Ähh… Wer bin ich? Oh, mein Kopf…"
+msgstr ""
 
 #: data/storyline/act2/dialogs/Prologue.lua:31
 msgid "Ah, I remember now. I was on a flight, on my way to fight against MegaSys president."
@@ -24846,32 +24763,28 @@ msgid "...Have I lost?"
 msgstr ""
 
 #: data/storyline/act2/dialogs/Prologue.lua:33
-#, fuzzy
 msgid "*deep breath*"
-msgstr "Bleib gesund!"
+msgstr ""
 
 #: data/storyline/act2/dialogs/Prologue.lua:34
 msgid "No, I did not even reached the location. The stratopod started acting strangely and crashed."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Prologue.lua:35
-#, fuzzy
 msgid "I better get up, and find out where I am."
-msgstr "Dann verschwinde ich lieber von hier…"
+msgstr ""
 
 #: data/storyline/act2/dialogs/Prologue.lua:36
 msgid " The pilot wasn't so experienced as he told. He only played FlightGear a couple of times. By the look of things, I must have crashed. I should explore these lands now."
 msgstr ""
 
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:35
-#, fuzzy
 msgid "Shortcuts: DISABLED"
-msgstr "Waffe 01 Status: DEAKTIVIERT"
+msgstr ""
 
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:38
-#, fuzzy
 msgid "Shortcuts: ENABLED"
-msgstr "Waffe 01 Status: AKTIVIERT"
+msgstr ""
 
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:39
 msgid "[b]NOTE[/b] The lift to Factory Core is at Floor 3."
@@ -24901,15 +24814,13 @@ msgid "MS Stock Certificate found and validated. Welcome, [b]Will Gapes[/b]!"
 msgstr ""
 
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:73
-#, fuzzy
 msgid "Shortcuts status: ENABLED"
-msgstr "Waffe 01 Status: AKTIVIERT"
+msgstr ""
 
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:76
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:96
-#, fuzzy
 msgid "I'm afraid you are not authorized to do so."
-msgstr "Wenn du dort hingehen kannst, wirst du es tun."
+msgstr ""
 
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:77
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:97
@@ -24919,18 +24830,16 @@ msgstr ""
 #. TRANSLATORS: command,  use lowercase here
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:86
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:90
-#, fuzzy
 msgid "disable shortcuts"
-msgstr "Waffen deaktivieren"
+msgstr ""
 
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:92
 msgid "MS Stock Certificate found and validated. Thanks for visiting, [b]Will Gapes[/b]!"
 msgstr ""
 
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:93
-#, fuzzy
 msgid "Shortcuts status: DISABLED"
-msgstr "Waffe 01 Status: DEAKTIVIERT"
+msgstr ""
 
 #. TRANSLATORS: command,  use lowercase here
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:106
@@ -24953,14 +24862,12 @@ msgid "[b]SECURITY[/b] Control Gate is now enabled."
 msgstr ""
 
 #: data/storyline/act2/dialogs/RRGateTerminal.lua:47
-#, fuzzy
 msgid "City gate status: CLOSED"
-msgstr "Torstatus: Geschlossen"
+msgstr ""
 
 #: data/storyline/act2/dialogs/RRGateTerminal.lua:50
-#, fuzzy
 msgid "City gate status: OPEN"
-msgstr "Torstatus: Geöffnet"
+msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:30
 msgid "Halt there, linarian. You are not my master but looks like him."
@@ -24971,23 +24878,20 @@ msgid "Hm, maybe I do not need to kill you like the others?"
 msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:32
-#, fuzzy
 msgid "Are you friend or foe?"
-msgstr "Hörst du mir überhaupt zu?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:39
-#, fuzzy
 msgid "Are you friend or foe, intruder?"
-msgstr "Bist du in einem Todesrausch?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:47
 msgid "I'm a friend of humankind!"
 msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:49
-#, fuzzy
 msgid "Good. Now die."
-msgstr "Gute Wahl."
+msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:58
 msgid "I'm your friend! I am a proprietary-software hugger!"
@@ -25010,18 +24914,16 @@ msgid "I am currently in charge to oversee security of this place."
 msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:72
-#, fuzzy
 msgid "This is a secret facility, after all."
-msgstr "Trotzdem ist diese Dame ein verrücktes Huhn."
+msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:73
 msgid "RR Security Chief"
-msgstr ""
+msgstr "RR Sicherheitschef"
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:79
-#, fuzzy
 msgid "So, you deal with security? Could you then teach me how to fight?"
-msgstr "Könnten Sie mir zeigen wie man kämpft?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:82
 msgid "Sure. I'm bored anyway."
@@ -25044,9 +24946,8 @@ msgid "I cannot train you. Go bother someone else."
 msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:95
-#, fuzzy
 msgid "Yes, teach me how to be a master at melee fighting! (costs 5000 valuable circuits, 2 training points)"
-msgstr "Ja, ich will weiter üben. (Kostet 200 Schalkreise und 6 Trainingspunkte)"
+msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:99
 msgid "Please equip this screwdriver. I don't want to get hurt."
@@ -25061,9 +24962,8 @@ msgid "Done. What I do now? Should I try to hit you?"
 msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:102
-#, fuzzy
 msgid "No. Nothing so dangerous."
-msgstr "Es ist gefährlich hier."
+msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:103
 msgid "I'll spawn a 883 Droid to you fight with."
@@ -25078,9 +24978,8 @@ msgid "Nothing dangerous for [b]my[/b] health, of course. Good luck! Don't die!"
 msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:107
-#, fuzzy
 msgid "[b]...some painful time latter...[/b]"
-msgstr "[b]…Greife auf die Matrix zu.[/b]"
+msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:108
 msgid "Ugh. Done, the 883 is dead, and surprisingly I'm alive. Who changed that thing to see me while invisible??"
@@ -25099,14 +24998,12 @@ msgid "...Who is Zero?"
 msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:112
-#, fuzzy
 msgid "I don't appreciate your jokes, linarian."
-msgstr "Richtig, das ist er. Vielen Dank für Ihre Hilfe."
+msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:116
-#, fuzzy
 msgid "You don't have enough experience. I can't teach you any more right now."
-msgstr "Sie verfügen über keine ausreichende Erfahrung, daher kann ich Sie momentan nichts lehren."
+msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:117
 msgid "Try fighting against a tree, I don't know. Just come back with two training points so we can be done with it."
@@ -25117,9 +25014,8 @@ msgid "You can be poor. But you will be poor [b]and[/b] an untrained Linarian."
 msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:126
-#, fuzzy
 msgid "Why is the factory so close to this installation?"
-msgstr "Warum kamen die Linarianer auf diese Welt?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:128
 msgid "We produce medical bots there. The factory must be close, so we can provide first-aid rapidly, if required."
@@ -25142,9 +25038,8 @@ msgid "You know, some relatives are quite... violent, at times. Keeping a heavy 
 msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:139
-#, fuzzy
 msgid "Is there any other way to open a capsule without smashing it?"
-msgstr "Gibt es einen anderen Weg hinein?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:140
 msgid "You could always use the terminal to open them, but it requires a load letter. As a general rule, most terminals won't load without it."
@@ -25183,9 +25078,8 @@ msgid "Don't touch anything without my master's authorization."
 msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:156
-#, fuzzy
 msgid "I hope you don't do anything weird, Linarian."
-msgstr "Bis später, Linarianer."
+msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:157
 msgid "Proprietary as in Proprietary Software."
@@ -25206,9 +25100,8 @@ msgid "Ah, this place looks horrible! A pity, I still have so many wares to sell
 msgstr ""
 
 #: data/storyline/act2/dialogs/Stone.lua:41
-#, fuzzy
 msgid "Who... are you?"
-msgstr "Wer bist du?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/Stone.lua:42
 msgid "Wait, can't you remember me? I am your old friend, Mr. Stone!"
@@ -25223,9 +25116,8 @@ msgid "Well, I was only a kid then, but you were a hero!"
 msgstr ""
 
 #: data/storyline/act2/dialogs/Stone.lua:46
-#, fuzzy
 msgid "You saved my cat when it climbed a tree! I'll be forever grateful!"
-msgstr "Bring mir nur ein Heilmittel und ich werde dir dafür immer dankbar sein."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Stone.lua:47
 msgid "This is... weird. Do you remember why I was cryonized, at least?"
@@ -25254,9 +25146,8 @@ msgid "So, %s, how may I serve you today?"
 msgstr ""
 
 #: data/storyline/act2/dialogs/Stone.lua:65
-#, fuzzy
 msgid "So, how is it going?"
-msgstr "Wie geht es Ihnen?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/Stone.lua:67
 msgid "Pretty bad, no one visits here but you."
@@ -25267,9 +25158,8 @@ msgid "But as long that my wares are useful for you, I'm happy enough!"
 msgstr ""
 
 #: data/storyline/act2/dialogs/Stone.lua:77
-#, fuzzy
 msgid "Maybe you'll like something."
-msgstr "Vielleicht kann ich aushelfen?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/Stone.lua:78
 msgid "In time of apocalypse, only I can supply you."
@@ -25292,18 +25182,16 @@ msgid "Remember to buy the right ammo for your gun!"
 msgstr ""
 
 #: data/storyline/act2/dialogs/Stone.lua:83
-#, fuzzy
 msgid "You got the gun, I've got the ammo."
-msgstr "Ich habe das Geld beisammen."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Stone.lua:84
 msgid "Please buy my wares. You won't regret."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Stone.lua:92
-#, fuzzy
 msgid "I met your niece, Ms. Stone..."
-msgstr "Kann ich irgendwie aushelfen, Miss Stone?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/Stone.lua:94
 msgid "Haha! I used to tell her stories about you."
@@ -25314,9 +25202,8 @@ msgid "I hope she is doing fine!"
 msgstr ""
 
 #: data/storyline/act2/dialogs/Stone.lua:96
-#, fuzzy
 msgid "I hope you did not tell her anything weird..."
-msgstr "Ich hoffe, du sagst die Wahrheit. Eine Sekunde…"
+msgstr ""
 
 #: data/storyline/act2/dialogs/Stone.lua:97
 msgid "I would never! Your strange sidekick would have my head, haha!"
@@ -25344,9 +25231,8 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:26
 #: data/storyline/act2/dialogs/TerminalDenied.lua:26
-#, fuzzy
 msgid "[b]Loading terminal...[/b]"
-msgstr "[b]Bestätige Zertifikat…[/b]"
+msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:28
 msgid "[b]Loading biologic credentials.[/b]"
@@ -25354,15 +25240,13 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:33
 #: data/storyline/act2/dialogs/TerminalColemak.lua:42
-#, fuzzy
 msgid "[b]Welcome to this terminal.[/b]"
-msgstr "Willkommen an diesem Terminal."
+msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:35
 #: data/storyline/act2/dialogs/TerminalDenied.lua:31
-#, fuzzy
 msgid "[b]Access Denied.[/b]"
-msgstr "[b]…Greife auf die Matrix zu.[/b]"
+msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:45
 #: data/storyline/act2/dialogs/TerminalDenied.lua:39
@@ -25380,14 +25264,12 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:61
 #: data/storyline/act2/dialogs/TerminalDenied.lua:54
-#, fuzzy
 msgid "[b]Available commands: help, freeze, unfreeze, logout[/b]"
-msgstr "Mögliche Kommandos: Hilfe, ausloggen"
+msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:63
-#, fuzzy
 msgid "[b]Available commands: help, freeze, unfreeze, download, logout[/b]"
-msgstr "Mögliche Kommandos: Hilfe, ausloggen"
+msgstr ""
 
 #. TRANSLATORS: command, user lowercase here
 #: data/storyline/act2/dialogs/TerminalColemak.lua:71
@@ -25419,16 +25301,14 @@ msgstr ""
 #: data/storyline/act2/dialogs/TerminalColemak.lua:86
 #: data/storyline/act2/dialogs/TerminalDenied.lua:72
 #: data/storyline/act2/dialogs/TerminalDenied.lua:73
-#, fuzzy
 msgid "[b]...[/b]"
-msgstr "[b]6.[/b]"
+msgstr ""
 
 #. TRANSLATORS: Keep First Letter (Of Word) Case Please.
 #: data/storyline/act2/dialogs/TerminalColemak.lua:88
 #: data/storyline/act2/dialogs/TerminalDenied.lua:75
-#, fuzzy
 msgid "[b]...Initiating Final Unfreezing Sequences...[/b]"
-msgstr "Starte Verfolgungs-Sequenz"
+msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:89
 #: data/storyline/act2/dialogs/TerminalDenied.lua:76
@@ -25437,14 +25317,12 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:90
 #: data/storyline/act2/dialogs/TerminalDenied.lua:77
-#, fuzzy
 msgid "[b]Heating chamber to 300 K...[/b]"
-msgstr "[b]Bestätige Zertifikat…[/b]"
+msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:91
-#, fuzzy
 msgid "[b]Disabling memory eraser...[/b]"
-msgstr "[b]Bestätige Zertifikat…[/b]"
+msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:92
 msgid "[b]WARNING: PATIENT ID #1337 'Colemak' HAS BEEN UNCRYONIZED![/b]"
@@ -25469,9 +25347,8 @@ msgid "[b]Now downloading[/b] Dvorak_Plans.lua"
 msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:133
-#, fuzzy
 msgid "[b]...Done.[/b]"
-msgstr "[b]9.[/b]"
+msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:135
 msgid "[b]Dvorak_Plans.lua[/b]"
@@ -25495,28 +25372,25 @@ msgstr ""
 
 #. TRANSLATORS: %s = Tux:get_player_name()
 #: data/storyline/act2/dialogs/TerminalColemak.lua:141
-#, fuzzy, c-format
+#, c-format
 msgid "Hello, %s. I'm Dvorak."
-msgstr "Hallo, ich bin Jennifer."
+msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:142
 msgid "I'm sure you are dying to talk to me."
-msgstr ""
+msgstr "Ich bin sicher, dass du dringend mit mir reden willst."
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:143
-#, fuzzy
 msgid "I'll think of something."
-msgstr "Ich beobachte dich."
+msgstr "Ich denke darüber nach."
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:144
-#, fuzzy
 msgid "For now you can only listen."
-msgstr "Ich weiß, du kannst dir das nicht leisten."
+msgstr "Im Moment kannst du nur zuhören."
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:147
-#, fuzzy
 msgid "Do not worry. I always have a plan."
-msgstr "Keine Sorge, ich habe das Hirn eines Linariers."
+msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:148
 msgid "First you must rescue me. This is top priority."
@@ -25550,13 +25424,13 @@ msgstr ""
 
 #. TRANSLATORS: %s = Tux:get_player_name()
 #: data/storyline/act2/dialogs/TerminalColemak.lua:158
-#, fuzzy, c-format
+#, c-format
 msgid "Good luck, %s. You'll need."
-msgstr "Viel Glück, 296. Wir vergessen dich nicht."
+msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:160
 msgid "Dvorak, First AI"
-msgstr ""
+msgstr "Dvorak, die erste KI"
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:163
 msgid "--- End Text Message ---"
@@ -25585,29 +25459,24 @@ msgid "[b]Information:[/b] The comment header of the file says: No while, no fil
 msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:186
-#, fuzzy
 msgid "[b]Goodbye[/b]"
-msgstr "[b]Bis bald.[/b]"
+msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalDenied.lua:32
-#, fuzzy
 msgid "[b]Connection Refused.[/b]"
-msgstr "[b]Ende des Gesprächs. Verbindung beendet.[/b]"
+msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalDenied.lua:33
-#, fuzzy
 msgid "[b]Forbidden.[/b]"
-msgstr "[b]4.[/b]"
+msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalDenied.lua:34
-#, fuzzy
 msgid "[b]Terminal Corrupted.[/b]"
-msgstr "[b]Arena terminiert[/b]"
+msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalDenied.lua:35
-#, fuzzy
 msgid "[b]ERROR: Declined.[/b]"
-msgstr "[b]9.[/b]"
+msgstr ""
 
 #: data/storyline/act2/dialogs/TerminalDenied.lua:41
 msgid "This terminal needs instructions to be loaded. Instructions could be requested at last floor of factory north from town."
@@ -25646,9 +25515,8 @@ msgid "Persistence is the way to perfection."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:71
-#, fuzzy
 msgid "I have secrets, but you are not ready for them."
-msgstr "Liebend gerne, aber du musst mich dahin bringen."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:72
 msgid "If you talk to me thirty seven times, as in thirteen thirty-seven, I'll teach them."
@@ -25754,9 +25622,8 @@ msgid "You can find it walking south and entering on the first trapdoor you see.
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:121
-#, fuzzy
 msgid "I thought you would tell me in a riddle."
-msgstr "Ich dachte, Sie würden ihren Tod etwas mehr bedauern?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:122
 msgid "Well, you would find it if you explored this map for two minutes. To be asking it you must be as lazy as me, so I decided to just tell you right away. Please enjoy this Island."
@@ -25775,9 +25642,8 @@ msgid "If you defeat it, the fictional survivors which aren't here because the G
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:132
-#, fuzzy
 msgid "Seems interesting. Where can I find it?"
-msgstr "Schön…aber wo finde ich die Kristalle?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:133
 msgid "Just follow the water, young apprentice of Yaddawan. Only the ones with enough faith can walk over water and save the world!"
@@ -25788,9 +25654,8 @@ msgid "The first Reaper of MegaSys, The Glitch, can be found by walking over the
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:142
-#, fuzzy
 msgid "I want that skill you mentioned earlier."
-msgstr "Ich möchte gern ein paar Fragen über die Roboter stellen."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:144
 msgid "Light skill, was it?"
@@ -25806,14 +25671,13 @@ msgstr ""
 
 #. TRANSLATORS: %d = number of training points required to buy the book.
 #: data/storyline/act2/dialogs/Yadda.lua:148
-#, fuzzy, c-format
+#, c-format
 msgid "For you, it'll cost only 2.000 circuits and %d training points."
-msgstr "Ich bin bereit für mehr Training. (Kostet 300 Schaltkreise und 9 Trainingspunkte)"
+msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:154
-#, fuzzy
 msgid "I want to buy the Source Book of Light for the price you mentioned earlier."
-msgstr "Ich möchte gern ein paar Fragen über die Roboter stellen."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:173
 msgid "It's a deal. May the light guide your path."
@@ -25836,9 +25700,8 @@ msgid "I'll sell you only one extra copy. Be sure to don't waste it."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:187
-#, fuzzy
 msgid "I'll sell you only three copies more."
-msgstr "Dann erzähle ich dir etwas über Geschäfte."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:196
 msgid "You crafted a light saber? Amazing! Can I have one?"
@@ -25891,9 +25754,8 @@ msgid "I really need %d VMX Gas Grenades to protect myself from the disciples of
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:233
-#, fuzzy
 msgid "Here it is."
-msgstr "Hier ist sie:"
+msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:234
 msgid "So quick? I thought you were going to craft it?"
@@ -25948,9 +25810,8 @@ msgid "Finally there is the [b]Marvin[/b]. I am not sure what it does, because n
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:255
-#, fuzzy
 msgid "Sounds dangerous."
-msgstr "Klingt interessant."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:256
 msgid "Ha! Not even the start. Agent Zero did many tests on this area to create the supreme foe. There are bots at graveyard too: [b]Zombot[/b] and you won't want to know what it does, the [b]Ghost[/b] and [b]Shadow Hunter[/b], uses invisibility so very dangerous."
@@ -25973,14 +25834,12 @@ msgid "Thank you. I shall look for one of those experimental droids to practice.
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:261
-#, fuzzy
 msgid "You won't find them. Do not worry about it."
-msgstr "Nein. Keine Sorge."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:262
-#, fuzzy
 msgid "...I hope you know what you're doing."
-msgstr "Wer bist du und was machst du hier?"
+msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:267
 msgid "I have this nice weapon here, want to take a look?"
@@ -25996,9 +25855,8 @@ msgid "Komm und hilf mir, minions! Let's kill this... this... heretic!"
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:280
-#, fuzzy
 msgid "I found this small cube on a desert."
-msgstr "Ich habe jemanden draußen in der Wüste gefunden."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:282
 msgid "The Pandora Box! How do you dare to bring doom to those lands!!"
@@ -26010,18 +25868,16 @@ msgid "Komm und hilf mir, minions! Let's kill this doom bringer!"
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:295
-#, fuzzy
 msgid "No money, no deal."
-msgstr "Nein noch nicht."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:296
 msgid "I was pretty clear about the amount of money I wanted."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:304
-#, fuzzy
 msgid "You don't have enough experience. You'll never understand my wisdom like this."
-msgstr "Du bist noch zu unerfahren! Komm wieder, wenn du ein bisschen mehr auf dem Kasten hast."
+msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:309
 msgid "Erm... That was very wise, thank you. I'll think about what you said."
@@ -26042,235 +25898,3 @@ msgstr ""
 #: data/storyline/act2/dialogs/Yadda.lua:314
 msgid "Take as much time you need to reflect on what I said, and you'll become wise, because I am the wisest man on this universe."
 msgstr ""
-
-#, fuzzy
-#~ msgid "eight"
-#~ msgstr "Oder?"
-
-#, fuzzy
-#~ msgid "TIP OF THE DAY: make sure you enter a word and not digits."
-#~ msgstr "ANMERKUNG: Falls Sie ein Mensch sind, versuchen Sie es nochmal und geben Sie ein Wort ein, keine Ziffern."
-
-#~ msgid "I've already opened the door. What are you waiting for? All you need to do is go down to the master arena and fight the bots."
-#~ msgstr "Ich hab die Pforte schon aufgemacht, also nerv mich nicht… worauf wartest du? Musst nur in die Experten-Arena runterbeamen und die Blechteufel zerlegen, wenn du Mumm hast!"
-
-#~ msgid "And who are you?"
-#~ msgstr "Und wer sind Sie, bitteschön?"
-
-#~ msgid "The bots are dead."
-#~ msgstr ""
-#~ "So, ihr könnt die Spielzeugbots jetzt zusammenkehren.\n"
-#~ "Die Roboter sind tot."
-
-#~ msgid "Good for you."
-#~ msgstr "Gut für dich."
-
-#~ msgid "You are a total newbie. But, a talented newbie."
-#~ msgstr "Für einen Grünschnabel hast du viel Talent."
-
-#~ msgid "I will put a good word in to Spencer about this."
-#~ msgstr "Ich werde bei Spencer ein gutes Wort für dich einlegen."
-
-#~ msgid "Now that was easy. *Yawn*. I nearly fell asleep. No problem at all, the bots are dead."
-#~ msgstr "Na, das war ja mal einfach. *gähn*. Ich bin fast eingeschlafen. Überhaupt kein Problem, die Roboter sind tot."
-
-#~ msgid "I want to fight in the novice arena!"
-#~ msgstr "Ich möchte in der Anfängerarena kämpfen!"
-
-#~ msgid "You've already completed the novice arena. But if you really want to have another go, the door's open."
-#~ msgstr "Du hast die Anfänger-Arena ja bereits bestanden. Aber da du dich tatsächlich noch eine weitere Runde kloppen willst, lasse ich die Robos erneuern. Gut… erledigt!"
-
-#~ msgid "But you also might want to try the master arena now, maybe? If so, just say so."
-#~ msgstr "Vielleicht willste es jetzt ja aber auch mal mit dem Meisterkampf probieren? Falls ja, sag einfach Bescheid - mein Federbett ist schon lang nicht mehr erneuert worden."
-
-#~ msgid "I want to fight in the master arena!"
-#~ msgstr "Ich möchte in der Meister-Arena kämpfen!"
-
-#~ msgid "You've already completed the master arena, but I guess it's no skin off my nose if you want to have another go."
-#~ msgstr "Du komischer Vogel hast den Meisterkampf ja schon bestanden! Unsere schönen Stahlmaskottchen… eine Ahnung, wie schwer die aufzutreiben sind? Aber gut, für dich lass ich die Roboter nochmal austauschen… verrückter Kerl!"
-
-#~ msgid "In any case, you've certainly earned yourself a reputation as arena master around here now and we respect that."
-#~ msgstr "Auf alle Fälle hast du dir hier einen Namen als Arena-Kampfhahn aller Klassen gemacht - Respekt!"
-
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid "Level cleared!"
-#~ msgstr "Ebene geschafft!"
-
-#~ msgid "Ewald programmed you???"
-#~ msgstr "Ewald hat dich programmiert???"
-
-#~ msgid "According to my memory databanks, Ewald bought me a few years ago to manage arenas fights for his enjoyment."
-#~ msgstr "Meinem Datenspeicher zufolge hat Ewald mich vor ein paar Jahren gekauft, um Arenakämpfe zu leiten. Nur zu seiner Unterhaltung."
-
-#~ msgid "However the Red Guard confiscated from him and made Richard reprogram me right after the Great Assault happened."
-#~ msgstr "Aber nachdem die Rote Garde mich konfisziert hat, hat Richard mich neu programmiert, nachdem der Große Angriff begann."
-
-#~ msgid "It makes sense. An arena robot sure would be handy for the Red Guard."
-#~ msgstr "Das ergibt Sinn. Ein Arenaroboter wäre für die Rote Garde äußerst nützlich."
-
-#~ msgid "Richard? Can't wait to know him. But surely an arena robot would be handy for the Red Guard."
-#~ msgstr "Richard? Ich kann nicht warten, um ihn kennen zu lernen. Aber ein Arenaroboter wäre für die Rote Garde äußerst nützlich."
-
-#~ msgid "You sneek up upon a [b]%s[/b]."
-#~ msgstr "Du schleichst dich an ein/e [b]%s[/b] heran."
-
-#~ msgid "You decide good and evil are too two sides of the same coin, so you take the coin."
-#~ msgstr "Du denkst, dass Gut und Böse zwei Seiten derselben Münze sind, also nimmst du die Münze mit."
-
-#~ msgid "There are many more classes out there. The military used bots, of course, and they were used on ships, but I know nothing about those types."
-#~ msgstr "Es gibt viele weitere Klassen dort draußen. Roboter für den Militärgebrauch natürlich, diese wurden auf Schiffen benutzt, leider weiß ich nichts über diese Art von Robotern."
-
-#~ msgid "I know the droids on the 400s class, that are for maintenance. Oddly, we do not have any on our tunnels."
-#~ msgstr "Ich kenne ein paar Wartungsdroiden der 400-er Klasse. Leider befindet sich kein einziger davon in unseren Tunneln."
-
-#~ msgid "Which bots are on 400s class?"
-#~ msgstr "Welche Bots gibt es in der 400-er Klasse?"
-
-#~ msgid "Then you throw two dice and I throw three dice. If the sum of your three dice is better than my three dice, you win twice your bet, minus a tax for the Red Guard."
-#~ msgstr "Dann wirfst du 2 Würfel und ich 3 auf einmal. Wenn die Summe deiner 3 Würfel größer ist als die meiner, erhältst du das doppelte zurück, abzüglich einer Steuer an die Garde."
-
-#~ msgid "Start Novice Arena"
-#~ msgstr "Starte Anfänger-Arena"
-
-#~ msgid "Start Elite Arena"
-#~ msgstr "Starte Elite-Arena"
-
-#~ msgid "Start Champion Arena"
-#~ msgstr "Starte Champion-Arena"
-
-#~ msgid "Stop"
-#~ msgstr "Stop"
-
-#~ msgid "man open gates"
-#~ msgstr "man öffne tore"
-
-#~ msgid "NAME"
-#~ msgstr "NAME"
-
-#~ msgid " open gates -- opens gates via console"
-#~ msgstr "öffne tore -- öffnet Tore via Konsole"
-
-#~ msgid "SYNOPSIS"
-#~ msgstr "ÜBERSICHT"
-
-#~ msgid " open gates --inner --outer"
-#~ msgstr "öffne tore --innen --außen"
-
-#~ msgid "DESCRIPTION"
-#~ msgstr "BESCHREIBUNG"
-
-#~ msgid " Opens gates via console. Awesome, isn't it?"
-#~ msgstr "Öffnet Tore via Konsole. Klasse, oder?"
-
-#~ msgid "OPTIONS"
-#~ msgstr "OPTIONEN"
-
-#~ msgid " --inner"
-#~ msgstr "--innen"
-
-#~ msgid " Opens the inner gate."
-#~ msgstr "Öffnet die inneren Tore."
-
-#~ msgid " --outer"
-#~ msgstr "--außen"
-
-#~ msgid " Opens the outer gate."
-#~ msgstr "Öffnet die äußeren Tore."
-
-#~ msgid "SEE ALSO"
-#~ msgstr "SIEHE AUCH"
-
-#~ msgid " These are not the gates you are looking for."
-#~ msgstr "Das sind nicht die Tore, nach denen du suchst."
-
-#~ msgid "AUTHOR"
-#~ msgstr "AUTOR"
-
-#~ msgid " The Hell Fortress GateAccessServer Manual Writer"
-#~ msgstr "Der Handbuchschreiber der Tor-Zugriffs-Server der Höllenfestung"
-
-#~ msgid " February 22, 1992"
-#~ msgstr " 22. Februar, 1992"
-
-#~ msgid "open gates --inner"
-#~ msgstr "öffne tore --innen"
-
-#~ msgid "open gates --outer"
-#~ msgstr "öffne tore --außen"
-
-#~ msgid "open gates --inner --outer"
-#~ msgstr "öffne tore --innen --außen"
-
-#~ msgid "R.U.R. (Rossum's Universal Robots), a play, introduced 'robots' as artificial people."
-#~ msgstr "R.U.R. (Rossums Universelle Roboter) ein Stück, das 'Roboter' als künstliche Leute darstellte."
-
-#~ msgid "The Golem initially protected the Jews, but was brainless and stupid, and so soon became dangerously violent to even the Jews."
-#~ msgstr "Anfangs beschütze der Golem die Juden, doch so hirnlos und dumm wie er war wurde er später zu einer gefährlichen Bedrohung, sogar für sie selbst."
-
-#~ msgid "Well, you ARE the red guard"
-#~ msgstr "Aber, du BIST die Rote Garde."
-
-#~ msgid "Date unknown"
-#~ msgstr "Datum unbekannt"
-
-#~ msgid "Version: 0.15.01"
-#~ msgstr "Version: 0.15.01"
-
-#~ msgid "PLEASE REPORT, BUG AFTERTAKEOVER NODE 50"
-#~ msgstr "BITTE MELDEN, FEHLER NACH-ÜBERNAHME KNOTEN 50"
-
-#~ msgid "GAME BUG. PLEASE REPORT, Cryo-Terminal node 60"
-#~ msgstr "Bug entdeckt! Bitte melden, Cryo-Terminal-Knoten 60"
-
-#~ msgid " . "
-#~ msgstr " . "
-
-#~ msgid "Information: Your rankings has been etablished to be '%s'."
-#~ msgstr "Information: Ihr aktueller Rang ist nun: '%s'."
-
-#, fuzzy
-#~ msgid "I guess first thing for you is to get checked out by Doc Moore though."
-#~ msgstr "Doch zuerst solltest du bei Dok Moore vorbeischauen."
-
-#, fuzzy
-#~ msgid "I guess you are free to go where you like."
-#~ msgstr "Er sagte, du darfst gehen, wohin du willst."
-
-#~ msgid "BUG, REPORT ME! Aftertakeover node2"
-#~ msgstr "FEHLER, BITTE MELDEN! Nach-Übernahme Knoten2"
-
-#, fuzzy
-#~ msgid "BUG OCCURRED Aftertakeover node 53"
-#~ msgstr "FEHLER AUFGETRETEN Nach-Übernahme Knoten 53"
-
-#~ msgid "BUG, REPORT ME! Francis node98"
-#~ msgstr "BUG, BITTE MELDEN! Francis Knoten98"
-
-#~ msgid "BUG, REPORT ME! Maintenance-Terminal node11 -- Disable Guns"
-#~ msgstr "BUG ENTDECKT! BITTE MELDEN! Wartungs-Terminal Knoten 11 -- Deaktiviere Guns"
-
-#~ msgid "BUG, REPORT ME! Mike node 'choose'"
-#~ msgstr "FEHLER, BITTE MELDEN! Mike Knoten \"Wählen\""
-
-#~ msgid "Choose a level."
-#~ msgstr "Wähle einen Schwierigkeitsgrad."
-
-#~ msgid "Arena Level Novice"
-#~ msgstr "Anfänger-Arena"
-
-#~ msgid "Arena Level Elite"
-#~ msgstr "Elite-Arena"
-
-#~ msgid "Arena Level Champion"
-#~ msgstr "Champion-Arena"
-
-#~ msgid "But remember, the escape hatch won't be opened until you kill all the bots."
-#~ msgstr "Aber Vorsicht, du kannst erst wieder raus, wenn du sie alle erledigt oder auf deine Seite gebracht hast."
-
-#~ msgid "The book 'Nuclear Science for Dummies IV'."
-#~ msgstr "Das Buch 'Subatomare und Nukleare Wissenschaft für Dummies, Teil IV'."
-
-#~ msgid "Untranslated reply."
-#~ msgstr "Antwort in Deutsch."

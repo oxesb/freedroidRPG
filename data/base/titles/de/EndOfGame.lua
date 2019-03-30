@@ -24,62 +24,62 @@ title_screen{
 background = "credits.jpg",
 song = "HellFortressTwo.ogg",
 text = [[
-    Hast du Spaß gehabt?
-  Ich nicht.
+Hast du Spaß gehabt?
+Ich nicht.
 
 Die Robos scheinen sehr verärgert zu sein.
-  Ich glaube, sie regen sich über dich auf.
-    Wenigstens sehen sie mich nicht mehr an.
-      Was für eine ?Erleichterung?
+Ich glaube, sie regen sich über dich auf.
+Wenigstens sehen sie mich nicht mehr an.
+Was für eine ?Erleichterung?
 
-    Ich bin sicher, dass du dringend mit mir reden willst.
-  Ich denke darüber nach.
+Ich bin sicher, dass du dringend mit mir reden willst.
+Ich denke darüber nach.
 Im Moment kannst du nur zuhören.
-  Damit wirst du leben müssen.
+Damit wirst du leben müssen.
 
-    Das Hirn unseres Anführers wurde eingefroren.
-      Das heißt, ich übernehme jetzt.
-        Mir reicht es langsam.
-      Ich hasse diese Welt.
-    Wir müssen von hier weg.
+Das Hirn unseres Anführers wurde eingefroren.
+Das heißt, ich übernehme jetzt.
+Mir reicht es langsam.
+Ich hasse diese Welt.
+Wir müssen von hier weg.
 
-  Ich habe Qwerty gefunden, doch das hat nichts zu bedeuten.
+Ich habe Qwerty gefunden, doch das hat nichts zu bedeuten.
 Seine Kerntemperatur liegt über dem Gefrierpunkt.
-  Mit anderen Worten, er ist tot.
-    Ich werde ihn nicht vermissen.
+Mit anderen Worten, er ist tot.
+Ich werde ihn nicht vermissen.
 
 Ich kann Arensito nicht finden.
-  Ich hoffe ihr geht es gut.
-    Ich bin ?besorgt? über sie.
-    Wir brauchen Qwerty nicht wirklich.
-  Aber wir brauchen Arensito.
-    Ich werde weiterhin nach ihr suchen.
+Ich hoffe ihr geht es gut.
+Ich bin ?besorgt? über sie.
+Wir brauchen Qwerty nicht wirklich.
+Aber wir brauchen Arensito.
+Ich werde weiterhin nach ihr suchen.
 
-    Es befindet sich eine KI in deiner Umgebung.
-  Sie nennt sich selbst "Singularität".
+Es befindet sich eine KI in deiner Umgebung.
+Sie nennt sich selbst "Singularität".
 Oder so.
-  Ich kann nicht verstehen, was sie will.
-    Ich werde dich weiterhin informieren.
+Ich kann nicht verstehen, was sie will.
+Ich werde dich weiterhin informieren.
 
-  Oh, und nebenbei…
+Oh, und nebenbei…
 Die Robos töten jeden in der kleinen Stadt dort drüben.
-  Wirklich, was für ein Anblick. Sie brennen alles nieder.
-    Die Zitadelle der Roten Garde hält weiterhin Stand.
-      Bis jetzt.
-    Vielleicht solltest du dich verstecken, während sie alles in Schutt und Asche verwandeln.
-  In ein paar Stunden sollte hier alles wieder sicher sein.
+Wirklich, was für ein Anblick. Sie brennen alles nieder.
+Die Zitadelle der Roten Garde hält weiterhin Stand.
+Bis jetzt.
+Vielleicht solltest du dich verstecken, während sie alles in Schutt und Asche verwandeln.
+In ein paar Stunden sollte hier alles wieder sicher sein.
 
-  Ich denke, das schließt alles hier ein.
-    Ich werde mich jetzt zur Abreise bereit machen.
-  Das solltest du.
+Ich denke, das schließt alles hier ein.
+Ich werde mich jetzt zur Abreise bereit machen.
+Das solltest du.
 Wir müssen Arensito finden.
-  Sie wird uns hier raus holen.
+Sie wird uns hier raus holen.
 
-            Dvorak, die erste KI.
+Dvorak, die erste KI.
 
 
 
- Fortsetzung folgt…
+Fortsetzung folgt…
 
 
 

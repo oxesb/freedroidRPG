@@ -84,7 +84,7 @@
   F5-F12     ... Быстрый выбор из восьми программ
 
   I          ... Инвентарь
-  C          ... Панель характеристик
+  C          ... Панель персонажа
   S          ... Панель умений/программ
   Пробел      ... Закрыть все открытые панели
   Q          ... Журнал заданий
@@ -121,8 +121,8 @@
    * Когда во время запуска в режиме OpenGL что-нибудь перекрывает окно FreedroidRPG,
 	 фоновые изображения выглядят очень странно. Если вы щёлкните один из пунктов меню, всё вернётся
 	 к задуманному виду.
-   * Alt tab in/out of the game in OpenGL while a static popup is displayed makes the screen completely black.
-	 Clicking or pressing the required key to close the popup will redraw/bring back the screen.
+   * После сворачивания игры в режиме OpenGL с открытым статичным всплывающим окном по Alt+Tab экран становится чёрным.
+	 Нажатие горячей клавиши для закрытия всплывающего окна перерисует и вернёт изображение на экран.
 
  Mac
    *Открытие файлов: по умолчанию в OS X (в. 10.6) макс. количество открытых файлов — 256. Это может вызвать ошибки
@@ -132,24 +132,24 @@
 		1) Проверьте лимит открытых файлов: $ ulimit -n
 		2) Введите новый лимит открытых файлов: $ ulimit -n 2048
 	(проблема #2913487)
-   * Font rendering: If you get no fonts in the main menu with SDL or if in openGL mode, the game dies
-	with the error message "In Function: PutCharFont. Surface for character 46 was NULL pointer!",
-	check your display configuration and set the color profile to sRGB.
+   * Отрисовка шрифтов: Если шрифты не отображаются в главном меню с SDL или в режиме OpenGL игра крашится
+	с ошибкой «Функция: PutCharFont. У поверхности символа 46 НУЛЕВОЙ указатель!»,
+	проверьте настройки дисплея и установите цветовой профиль sRGB.
 	(проблемы #2913485 и #2913484)
-   * SDL installed via MacPorts: SDL installed via MacPorts will give freedroidRPG wrong information
-	about the byteorder if you have a big-endian (PowerPC) CPU, so the colors may be wrong and you
-	probably couldn't start a new game because FreedroidRPG crashes.
-	To fix it, with root privileges edit the /opt/include/SDL/SDL_config.h file so the line
+   * SDL, установленный из MacPorts: SDL, установленный из MacPorts будет отсылать FreedroidRPG неверную информацию
+	о порядке байтов, если ваш процессор в режиме big-endian (PowerPC), поэтому цвета могут быть неправильными,
+	и вы, вероятно, не сможете начать новую игру из-за краха FreedroidRPG.
+	Исправляется это изменением с правами суперпользователя в файле /opt/include/SDL/SDL_config.h строки
 		#define SDL_BYTEORDER=1234
-	says
+	на
 		#define SDL_BYTEORDER=4321
-	After editing and saving the file recompile freedroidRPG and it should work correctly.
-	Using SDL compiled from source instead of from MacPorts will work as well.
+	После изменения и сохранения файла пересоберите FreedroidRPG, и она должна работать правильно.
+	Использование SDL, собранного из исходников, вместо сборки MacPorts тоже сработает.
 
  Linux
-   * Pulseaudio: Using SDL-pulseaudio you are currently likely not to get sound. This has nothing to do
-	 with FreedroidRPG but with Pulseaudio and its plugins still in general being immature. We recommend using
-	 e.g. SDL-esd or SDL-alsa until these problems has been fixed upstream.
+   * Pulseaudio: При использовании SDL-pulseaudio у вас может отсутствовать звук. Это не из-за ошибки
+	 во FreedroidRPG, а из-за незрелости самого Pulseaudio и её плагинов. Мы рекомендуем использовать,
+	 например, SDL-esd или SDL-alsa, пока эта проблема не будет устранена.
    * Видеокарты Intel 915/945/IDG (EEE PC, нетбуки и т. д.): в Mesa 7.9-devel есть проблема, которая заставляет игру
    	 тормозить и потреблять много памяти. Это исправляется установкой и запуском «driconf», где нужно в строке 
 	 «Включить тайлинг текстур» выбрать «Нет».   
@@ -175,29 +175,29 @@
 Разные ЧЗВ:
 
 	В.: Нужен ли мне Linux, чтобы поиграть во FreedroidRPG?
-	A: While using Linux is greatly recommended for the sanity of the system
-	   administrator, FreedroidRPG has MS-Windows executables available.
-	   Note that since the FreedroidRPG development team doesn't use 
-	   MS-Windows, it gets much less testing. Help with testing and feedback 
-	   from Windows users thus is greatly appreciated.
+	О.: Хотя Linux крайне рекомендован для психического здоровья системного
+	   администратора, у FreedroidRPG есть версия для MS Windows.
+	   Отметим, что команда разработчиков FreedroidRPG не использует 
+	   MS Windows, и версия для неё намного менее протестирована. Поэтому мы 
+	   высоко ценим помощь и отзывы пользователей Windows.
 
 	В.: Как подписаться или отписаться от почтовой рассылки?
-	A: FreedroidRPG has two mailing lists. One is for discussing stuff related to
-	   FreedroidRPG, the other one is a list with auto-generated change logs from our 
-	   developer server and therefore usually only interesting for developers themselves.
-	   In any case, you can subscribe, unsubscribe or change your membership options
-			from the following web page:
+	О.: у FreedroidRPG два списка рассылки. Один для обсуждения вещей, связанных
+	   с FreedroidRPG, другой - список автоматически создаваемых журналов изменений 
+	   с нашего сервера разработки, который обычно интересен только самим разработчикам.
+	   В любом случае, вы можете подписаться, отписаться или изменить членство
+			на следующей странице:
 	   http://sourceforge.net/mail/?group_id=54521
 
 
 ЧЗВ о графике:
 
-	В.: Игра *ужасно* тормозит в моей системе с Windows при использовании режима OpenGL.
-	A: It might be that you're using the OpenGL drivers that came with your
-	   operating system from Microsoft. These drivers don't use hardware acceleration
-	   and are therefore extremely slow. You'll have to download and install a real
-	   OpenGL capable driver for you graphics card. Usually these can be downloaded 
-	   from the home page of the graphics chip manufacturer, typically Nvidia, AMD/ATI,
+	В.: Игра *ужасно* тормозит в моей системе Windows при использовании режима OpenGL.
+	О.: Возможно, причина связана с драйверами OpenGL, поставляемыми с вашей
+	   операционной системой от Майкрософт. Эти драйверы не используют аппаратное ускорение
+	   и поэтому жутко медленные. Вам необходимо скачать и установить настоящие 
+	   драйверы OpenGL для своей видеокарты. Обычно их можно загрузить 
+	   с официальной страницы производителя графических чипов, например, Nvidia, AMD/ATI и т. д.
 	   etc. Note, that if you do absolutely cannot get OpenGL working reliably on your
 	   system, you can still run the game in pure SDL output mode. For this, you
 	   must either use a 'MS-DOS command line prompt' and type
@@ -249,13 +249,13 @@
 
 		      checking for Mix_ChannelFinished in -lSDL_mixer... yes
 
-		    If you get instead something like
+		    Если же вы получили что-то вроде
 
 		      checking for Mix_ChannelFinished in -lSDL_mixer... no
 
-		    then the ./configure script didn't detect your SDL_mixer
-		    installation. You might want to make sure you've got SDL_mixer and
-		    SDL_mixer_devel packages installed or install SDL_mixer from source.
+		    значит скрипт ./configure не обнаружил у вас установленный
+		    SDL_mixer. Возможно, вы захотите убедиться, что пакеты SDL_mixer и
+		    SDL_mixer_devel установлены или установить SDL_mixer из исходников.
 		    Вы можете скачать всё отсюда:
 
 		      http://www.libsdl.org/projects/SDL_mixer/
@@ -286,27 +286,27 @@
 
 		  freedroidRPG -e
 
-       It has tooltips on every button to help you find your
-       way. Play around with it a bit by yourself and don't hesitate to ask for
-       assistance on IRC or the mailing list.
+       Чтобы было легче разобраться, все кнопки имеют подсказки.
+       Поиграйте с ним немного самостоятельно и не стесняйтесь попросить помощи
+       в IRC или списке рассылки.
 
 	В.: Как мне получить последнюю разрабатываемую версию игры?
 	О.: Это очень просто, когда используется Linux:
 	      git clone https://gitlab.com/freedroid/freedroid-src.git
 	   Если же вы используете Windows, мы рекомендуем, например 
 	      http://www.collab.net/downloads/giteye?CID=tigris
-	   If you still run into problems, best again discuss it with the people on
-	   the freedroid-discussion mailing list or ask for it on IRC channel as well.
+	   Если у вас всё ещё возникают проблемы, лучше снова обсудить это с людьми
+	   в списке рассылки freedroid-discussion или же спросить на IRC-канале.
 
 	В.: Хочу помочь с разработкой FreedroidRPG. Что мне сделать в первую очередь?
 	О.: Во-первых, рекомендуем прочесть http://www.freedroid.org/developer-area/contribute/
 	   Во-вторых, свяжитесь с нами. Это возможно через IRC (см. «Контакты» ниже)
 	   или при помощи списка рассылки freedroid-discussion.
-	   Then the next thing to do is to get the latest development version of the game
-	   from git, then to either make a small patch right away or to discuss anything
-	   bigger you have in mind with the people on the discussion mailing list or IRC, so
-	   it can be assured that all the developers are pulling in the same direction and
-	   know what's going on and who is working on what.
+	   Следующее, что нужно сделать, - получить последнюю разрабатываемую версию игры
+	   из git, а затем либо сразу сделать небольшой патч, либо обсудить вашу
+	   масштабную задумку с людьми в списке рассылке или на IRC,
+	   чтобы удостовериться, все ли разработчики идут в одном направлении и
+	   знают, что происходит и кто над чем работает.
 
 
 7. Контакты

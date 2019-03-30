@@ -29,18 +29,18 @@ Ele é desenvolvido exclusivamente por voluntários em seu tempo livre.
 FreedroidRPG depende dessas contribuições para ser um jogo melhor.
 Se você gostaria de contribuir de algum jeito, mas não sabe como, aqui tem uma lista de coisas:
 
-TESTES E REPORTES DE BUG:
+TESTES E RELATÓRIOS DE ERROS:
 
-Precisamos de pessoas que testem o jogo e reportem qualquer coisa que não funcione corretamente ou parece instável. Isso inclui coisas menores, como erros de grafia. O trabalho de testar está crescendo com o tamanho de FreedroidRPG. Precisamos de sua ajuda.
+Precisamos de pessoas que testem o jogo e relatem qualquer coisa que não funcione corretamente ou parece instável. Isso inclui coisas menores, como erros de grafia. O trabalho de testar está crescendo com o tamanho de FreedroidRPG. Precisamos de sua ajuda.
 Não hesite em enviar sugestões!
 
 MAPEAMENTO:
 
-Nós estamos procurando pessoas que possam fazer mapas para nós. Há um editor de mapas embutido no jogo. Tente-o, e se fizer algo interessante, tenha certeza de nos enviar.
+Nós estamos procurando pessoas que possam fazer mapas para nós. Há um editor de mapas embutido no jogo. Experimente-o, e se fizer algo interessante, certifique-se de nos enviar.
 
 DOCUMENTAÇÃO:
 
-Atualmente falta documentação. Nós precisamos de documentação de usuario final relacionada ao jogo e a seu editor de mapas, assim como documentação com foco no desenvolvedor. Habilidade com escrita requerida.
+Atualmente falta documentação. Nós precisamos de documentação de usuário final relacionada ao jogo e a seu editor de mapas, assim como documentação com foco no desenvolvedor. Habilidade com escrita requerida.
 
 EFEITOS SONOROS:
 
