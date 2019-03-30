@@ -569,6 +569,89 @@ void InitiateMenu(const char *background_name)
 	SDL_SetClipRect(Screen, NULL);
 };				// void InitiateMenu(void)
 
+static void display_bot_list(int x0, int y0, int skip_dead)
+{
+	int i;
+	int l = 0;	// counter for displayed lines
+	// 5 = 2 header lines + line "MORE" + line "END" + line "Number_Of_Droids_On_Ship"
+	int list_size = (GameConfig.screen_height-y0) / (1.1f*get_font_height(get_current_font())) - 5;
+
+	for (i = ((skip_dead == 1) ? 1 : 0); i < ((skip_dead == 2) ? 1 : 2); i++) {
+		enemy *erot;
+		list_for_each_entry(erot, (i) ? &alive_bots_head : &dead_bots_head, global_list) {
+			if (erot->pos.z == Me.pos.z) {
+
+				if (l && (l % list_size == 0)) {
+					printf_SDL(Screen, -1, -1, " --- MORE --- \n");
+					our_SDL_flip_wrapper();
+					if (getchar_ascii() == 'q')
+						break;
+					while ((!SpacePressed()) && (!EscapePressed()) && (!MouseLeftPressed())) ;
+				}
+				if (l % list_size == 0) {
+					clear_screen();
+					printf_SDL(Screen, x0, y0,
+						   "ID    X     Y    ENERGY   speedX  Status  Friendly An-type An-Phase \n");
+					printf_SDL(Screen, -1, -1, "---------------------------------------------\n");
+				}
+
+				l++;
+				if ((erot->type >= 0) && (erot->type <= Number_Of_Droid_Types)) {
+					printf_SDL(Screen, x0, -1,
+						   "%s  %3.1f  %3.1f  %4d  %g ",
+						   Droidmap[erot->type].droidname,
+						   erot->pos.x, erot->pos.y, (int)erot->energy, erot->speed.x);
+				} else {
+					printf_SDL(Screen, x0, -1, "SEVERE ERROR: Type=%d. ", erot->type);
+				}
+				if (is_friendly(erot->faction, FACTION_SELF))
+					printf_SDL(Screen, -1, -1, " YES");
+				else
+					printf_SDL(Screen, -1, -1, "  NO");
+				switch (erot->animation_type) {
+				case WALK_ANIMATION:
+					printf_SDL(Screen, -1, -1, " Walk");
+					break;
+				case ATTACK_ANIMATION:
+					printf_SDL(Screen, -1, -1, " Atta");
+					break;
+				case GETHIT_ANIMATION:
+					printf_SDL(Screen, -1, -1, " GHit");
+					break;
+				case DEATH_ANIMATION:
+					printf_SDL(Screen, -1, -1, " Deth");
+					break;
+				case DEAD_ANIMATION:
+					printf_SDL(Screen, -1, -1, " Dead");
+					break;
+				case STAND_ANIMATION:
+					printf_SDL(Screen, -1, -1, " Stnd");
+					break;
+				default:
+					printf_SDL(Screen, -1, -1, " ERROR!");
+					break;
+				}
+				printf_SDL(Screen, -1, -1, " %4.1f", erot->animation_phase);
+				printf_SDL(Screen, -1, -1, "\n");
+
+			}
+		}
+	}
+
+	if (!l) {
+		clear_screen();
+		printf_SDL(Screen, 15, y0, "No corresponding bots on current level\n");
+	}
+
+	printf_SDL(Screen, x0, -1, " --- END --- \n");
+	CountNumberOfDroidsOnShip();
+	printf_SDL(Screen, x0, -1, " BTW:  Number_Of_Droids_On_Ship: %d \n", Number_Of_Droids_On_Ship);
+	our_SDL_flip_wrapper();
+	do {
+		getchar_ascii();
+	} while ((!SpacePressed()) && (!EscapePressed()) && (!MouseLeftPressed()));
+}
+
 /**
  * This function provides a convenient cheat menu, so that any 
  * tester does not have to play all through the game again and again
@@ -577,9 +660,8 @@ void InitiateMenu(const char *background_name)
 void Cheatmenu(void)
 {
 	int can_continue;
-	int i, l;
+	int i;
 	int x0, y0;
-	int skip_dead = 0;
 	item cheat_gun;
 
 	// Prevent distortion of framerate by the delay coming from 
@@ -641,82 +723,17 @@ void Cheatmenu(void)
 				break;
 			}
 			break;
+
 		case 'k':
-			skip_dead = 2;
+			display_bot_list(15, y0, 2);
 			break;
+
 		case 'L':
-			if (skip_dead == 0)
-				skip_dead = 1;
+			display_bot_list(15, y0, 1);
 			break;
-		case 'l':	// robot list of this deck 
-			l = 0;	// l is counter for lines of display of enemy output
-			for (i = ((skip_dead == 1) ? 1 : 0); i < ((skip_dead == 2) ? 1 : 2); i++) {
-				enemy *erot;
-				list_for_each_entry(erot, (i) ? &alive_bots_head : &dead_bots_head, global_list) {
-					if (erot->pos.z == Me.pos.z) {
 
-						if (l && !(l % ((GameConfig.screen_height == 768) ? 25 : 16))) {
-							printf_SDL(Screen, -1, -1, " --- MORE --- \n");
-							our_SDL_flip_wrapper();
-							if (getchar_ascii() == 'q')
-								break;
-						}
-						if (!(l % ((GameConfig.screen_height == 768) ? 25 : 16))) {
-							clear_screen();
-							printf_SDL(Screen, 15, y0,
-								   "ID    X     Y    ENERGY   speedX  Status  Friendly An-type An-Phase \n");
-							printf_SDL(Screen, -1, -1, "---------------------------------------------\n");
-						}
-
-						l++;
-						if ((erot->type >= 0) && (erot->type <= Number_Of_Droid_Types)) {
-							printf_SDL(Screen, 15, -1,
-								   "%s  %3.1f  %3.1f  %4d  %g ",
-								   Droidmap[erot->type].droidname,
-								   erot->pos.x, erot->pos.y, (int)erot->energy, erot->speed.x);
-						} else {
-							printf_SDL(Screen, 15, -1, "SEVERE ERROR: Type=%d. ", erot->type);
-						}
-						if (is_friendly(erot->faction, FACTION_SELF))
-							printf_SDL(Screen, -1, -1, " YES");
-						else
-							printf_SDL(Screen, -1, -1, "  NO");
-						switch (erot->animation_type) {
-						case WALK_ANIMATION:
-							printf_SDL(Screen, -1, -1, " Walk");
-							break;
-						case ATTACK_ANIMATION:
-							printf_SDL(Screen, -1, -1, " Atta");
-							break;
-						case GETHIT_ANIMATION:
-							printf_SDL(Screen, -1, -1, " GHit");
-							break;
-						case DEATH_ANIMATION:
-							printf_SDL(Screen, -1, -1, " Deth");
-							break;
-						case DEAD_ANIMATION:
-							printf_SDL(Screen, -1, -1, " Dead");
-							break;
-						case STAND_ANIMATION:
-							printf_SDL(Screen, -1, -1, " Stnd");
-							break;
-						default:
-							printf_SDL(Screen, -1, -1, " ERROR!");
-							break;
-						}
-						printf_SDL(Screen, -1, -1, " %4.1f", erot->animation_phase);
-						printf_SDL(Screen, -1, -1, "\n");
-
-					}	// if (enemy on current level)
-				}
-			}
-
-			printf_SDL(Screen, 15, -1, " --- END --- \n");
-			CountNumberOfDroidsOnShip();
-			printf_SDL(Screen, 15, -1, " BTW:  Number_Of_Droids_On_Ship: %d \n", Number_Of_Droids_On_Ship);
-			our_SDL_flip_wrapper();
-			while ((!SpacePressed()) && (!EscapePressed()) && (!MouseLeftPressed())) ;
-			while (SpacePressed() || EscapePressed() || MouseLeftPressed()) ;
+		case 'l':	// robot list of this deck
+			display_bot_list(15, y0, 0);
 			break;
 
 		case 'd':	// destroy all robots on this level, very useful
