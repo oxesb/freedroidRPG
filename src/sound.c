@@ -58,6 +58,7 @@ void close_audio(void) {}
 void set_music_volume(float volume) {}
 void set_SFX_volume(float volume) {}
 void switch_background_music(char *filename) {}
+char *get_background_music() { return NULL; }
 int play_voice(const char *fpath, int pause, float *voice_length) { return 0; }
 void stop_voice(int channel) {}
 void resume_voice(int channel) {}
