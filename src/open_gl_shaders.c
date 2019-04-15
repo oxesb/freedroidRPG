@@ -26,6 +26,8 @@
  * This file contains OpenGL shaders.
  */
 
+#ifdef HAVE_LIBGL
+
 #include "system.h"
 
 #include "defs.h"
@@ -201,3 +203,5 @@ void init_shaders(void)
 	int tmp[] = { 0, 1, 2, 3 };
 	glUniform1iv(blitter_shader_texID_uniform, 4, &tmp[0]);
 }
+
+#endif // HAVE_LIBGL

@@ -247,6 +247,7 @@ static inline void gl_repeat_quad(int x0, int y0, int w, int h, float tx0, float
 }
 #endif
 
+#ifdef HAVE_LIBGL
 /**
  * Get a texture unit number for the given texture name.
  * Returns the texture unit, or -1 if no texture unit is
@@ -285,6 +286,7 @@ static int get_texture_unit_for_tex(int tex)
 	// to bind it.
 	return -1;
 }
+#endif
 
 #ifdef HAVE_LIBGL
 /**
@@ -527,7 +529,6 @@ void create_subimage(struct image *source, struct image *new_img, SDL_Rect *rect
 	new_img->h = rect->h;
 
 	if (use_open_gl) {
-
 		// If the source isn't a texture, it means that something bad happened,
 		// e.g. OpenGL implementation doesn't support big enough textures.
 		// In this case, FreedroidRPG will try to create a separate texture

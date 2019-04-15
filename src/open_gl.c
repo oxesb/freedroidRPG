@@ -208,9 +208,9 @@ static void compute_POT_texture_dimensions(struct image *img)
  * If OpenGL is in use, we need to make textured quads out of our normal
  * SDL surfaces.
  */
-#ifdef HAVE_LIBGL
 void make_texture_out_of_surface(struct image *img)
 {
+#ifdef HAVE_LIBGL
 	void *data_ptr = img->surface->pixels;
 	void *data_ptr_pbo = (pbo) ? NULL : data_ptr;
 
@@ -266,13 +266,12 @@ void make_texture_out_of_surface(struct image *img)
 	SDL_FreeSurface(img->surface);
 	img->surface = NULL;
 	open_gl_check_error_status(__FUNCTION__);
-}
 #endif
+}
 
+#ifdef HAVE_LIBGL
 static void safely_set_open_gl_viewport_and_matrix_mode(void)
 {
-#ifdef HAVE_LIBGL
-
 	glViewport(0, 0, GameConfig.screen_width, GameConfig.screen_height);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
@@ -280,9 +279,8 @@ static void safely_set_open_gl_viewport_and_matrix_mode(void)
 	glMatrixMode(GL_MODELVIEW);
 
 	open_gl_check_error_status(__FUNCTION__);
-
-#endif
 }
+#endif
 
 /**
  * This function does the second part of the OpenGL parameter 
@@ -290,10 +288,9 @@ static void safely_set_open_gl_viewport_and_matrix_mode(void)
  * such that the frequent issues with OpenGL drivers can be attributed to
  * a particular spot in the code more easily.
  */
+#ifdef HAVE_LIBGL
 void safely_set_some_open_gl_flags_and_shade_model(void)
 {
-#ifdef HAVE_LIBGL
-
 	glClearColor(0.0, 0.0, 0.0, 1.0);
 
 	glDisable(GL_TEXTURE_2D);
@@ -320,9 +317,8 @@ void safely_set_some_open_gl_flags_and_shade_model(void)
 	glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 
 	open_gl_check_error_status(__FUNCTION__);
-
-#endif
 }
+#endif
 
 /**
  * Initialize the OpenGL interface.
@@ -718,6 +714,7 @@ void unset_gl_clip_rect(void)
 int get_opengl_quirks(void)
 {
 	static int quirks = 0;
+#ifdef HAVE_LIBGL
 	static int done = 0;
 
 	if (!done) {
@@ -749,7 +746,7 @@ int get_opengl_quirks(void)
 
 		done = 1;
 	}
-
+#endif
 	return quirks;
 }
 
