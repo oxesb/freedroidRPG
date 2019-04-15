@@ -759,6 +759,7 @@ static int input_key(int keynum, int value)
 			mode = SDL_GRAB_OFF;
 
 		SDL_WM_GrabInput(mode);
+		return 0;
 	} else if (KEYPRESS("take_screenshot")) {
 		play_sound("effects/CameraTakesPicture.ogg");
 		char filename[PATH_MAX];
@@ -767,6 +768,7 @@ static int input_key(int keynum, int value)
 		find_file(filename, CONFIG_DIR, relative_filename, NULL, SILENT);
 		save_screenshot(filename, FALSE);
 		alert_window(_("Screenshot saved to \"%s\" in your .freedroid_rpg/ directory."), relative_filename);
+		return 0;
 	} else if (KEYPRESS("wall_transparency")) {
 		GameConfig.transparency = !GameConfig.transparency;
 		return 0;
