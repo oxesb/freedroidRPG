@@ -26,9 +26,9 @@
  * This file contains OpenGL shaders.
  */
 
-#ifdef HAVE_LIBGL
-
 #include "system.h"
+
+#ifdef HAVE_LIBGL
 
 #include "defs.h"
 #include "struct.h"
