@@ -642,7 +642,7 @@ char *get_editable_string_in_popup_window(int max_len, const char *popup_window_
 #define EDIT_WINDOW_TEXT_OFFSET 15
 
 	char *input = MyMalloc(max_len + 5); // pointer to the string entered by the user
-	strncpy(input, default_string, max_len - 1);
+	strncpy(input, default_string, max_len);
 	input[max_len] = 0;
 	int curpos = strlen(input); // counts the characters entered so far
 
@@ -705,25 +705,6 @@ char *get_editable_string_in_popup_window(int max_len, const char *popup_window_
 				SDL_Delay(1);
 			free(input);
 			return NULL;
-		} else if (isprint(key) && (curpos < max_len)) {
-			// If a printable character has been entered, it is either appended to
-			// the end of the current input string or the rest of the string is being
-			// moved and the new character inserted at the end.
-			//
-			if (curpos == ((int)strlen(input))) {
-				input[curpos] = (char)key;
-				curpos++;
-				input[curpos] = 0;
-			} else {
-				if (((int)strlen(input)) == max_len - 1)
-					input[max_len - 2] = 0;
-				int i;
-				for (i = strlen(input); i >= curpos; i--) {
-					input[i + 1] = input[i];
-				}
-				input[curpos] = (char)key;
-				curpos++;
-			}
 		} else if (key == SDLK_LEFT) {
 			if (curpos > 0)
 				curpos--;
@@ -734,31 +715,38 @@ char *get_editable_string_in_popup_window(int max_len, const char *popup_window_
 			// input[curpos] = '.';
 		} else if (key == SDLK_BACKSPACE) {
 			if (curpos > 0) {
-				int i = curpos;
-				while (input[i - 1] != 0) {
-					input[i - 1] = input[i];
-					i++;
-				}
+				for (int i = curpos; input[i-1] != '\0'; i++)
+					input[i-1] = input[i];
 				curpos--;
 			}
 		} else if (key == SDLK_DELETE) {
-			if (curpos > 0) {
-				int i = curpos;
-				while (input[i] != 0) {
-					input[i] = input[i + 1];
-					i++;
+			if (curpos < max_len) {
+				for (int i = curpos; input[i] != '\0'; i++)
+					input[i] = input[i+1];
+			}
+		} else {
+			// Do not accept any new character if the input string is full
+			if ((int)strlen(input) < max_len) {
+				if ((key <= SDLK_KP9) && (key >= SDLK_KP0))
+					key = key - SDLK_KP0 + '0';
+
+				if (isprint(key)) {
+					// If a printable character has been entered, it is either appended to
+					// the end of the current input string or the rest of the string is being
+					// moved and the new character inserted at the cursor position.
+					if (curpos == ((int)strlen(input))) {
+						input[curpos++] = (char)key;
+						input[curpos] = '\0';
+					} else {
+						for (int i = (int)strlen(input); i >= curpos; i--) {
+							input[i+1] = input[i];
+						}
+						input[curpos++] = (char)key;
+					}
 				}
 			}
-
-		} else if ((key <= SDLK_KP9) && (key >= SDLK_KP0) && (curpos < max_len)) {
-			key -= SDLK_KP0;
-			key += '0';
-
-			input[curpos] = (char)key;
-			curpos++;
 		}
-
-	}			// while ( ! finished ) 
+	}
 
 	SDL_EnableKeyRepeat(0, SDL_DEFAULT_REPEAT_INTERVAL);
 
