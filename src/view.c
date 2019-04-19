@@ -1030,7 +1030,18 @@ int resolve_virtual_position(gps *rpos, gps *vpos)
 		};
 
 		// Check that the transformed position is valid (i.e. inside level boundaries)
+		// But, due to floating point arithmetic accuracy an invalid tmp_pos has possibly
+		// been computed. So we first need to apply some corrections, if needed.
+		// Note that this limits position's precision, around level's boundary, to 1/1000,
+		// which seems to be small enough.
 		level *rlvl = curShip.AllLevels[tmp_pos.z];
+		float EPSILON_FIX = 0.001f;
+
+		if ((-EPSILON_FIX < tmp_pos.x) && (tmp_pos.x < 0)) tmp_pos.x = 0.0f;
+		else if ((rlvl->xlen <= tmp_pos.x) && (tmp_pos.x <= rlvl->xlen+EPSILON_FIX)) tmp_pos.x = rlvl->xlen - EPSILON_FIX;
+		if ((-EPSILON_FIX < tmp_pos.y) && (tmp_pos.y < 0)) tmp_pos.y = 0.0f;
+		else if ((rlvl->ylen <= tmp_pos.y) && (tmp_pos.y <= rlvl->ylen+EPSILON_FIX)) tmp_pos.y = rlvl->ylen - EPSILON_FIX;
+
 		if (pos_inside_level(tmp_pos.x, tmp_pos.y, rlvl)) {
 			rpos->x = tmp_pos.x;
 			rpos->y = tmp_pos.y;
