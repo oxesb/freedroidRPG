@@ -204,11 +204,23 @@ int teleport_to_random_waypoint(enemy *erot, level *this_level, char *wp_used)
  */
 void teleport_enemy(enemy *robot, int z, float x, float y)
 {
+	// Due to possible bugs in the storyline scripts, we could be requested to
+	// teleport a dead bot. This shoud not happen. So we inform the player but
+	// fails the teleportation
+	if (robot->energy <= 0) {
+		error_message(__FUNCTION__,
+				"Trying to teleport a dead NPC (dialog name %s) from x=%f y=%f level=%d\n"
+				" to x=%f y=%f level=%d is not possible: the bot is dead.\n"
+				"A bug in a dialog is to be suspected... Expect the game to be in bad state now...",
+				PLEASE_INFORM, robot->dialog_section_name, robot->pos.x, robot->pos.y, robot->pos.z, x, y, z);
+		return;
+	}
+
 	// Check the validity of the teleport destination
 	if (!level_exists(z) || !pos_inside_level(x, y, curShip.AllLevels[z])) {
-		error_message(__FUNCTION__, "\
-				Trying to teleport NPC (dialog name %s) from x=%f y=%f level=%d to x=%f y=%f level=%d\n\
-				is not possible because the target location is not valid.", 
+		error_message(__FUNCTION__,
+				"Trying to teleport NPC (dialog name %s) from x=%f y=%f level=%d\n"
+				" to x=%f y=%f level=%d is not possible: the target location is not valid.",
 				PLEASE_INFORM, robot->dialog_section_name, robot->pos.x, robot->pos.y, robot->pos.z, x, y, z);
 		return;
 	}
@@ -445,18 +457,18 @@ int enemy_set_destination(enemy *en, const char *label)
 	int destinationwaypoint = get_waypoint(lvl, dest_pos.x, dest_pos.y);
 
 	if (dest_pos.z !=  en->pos.z) {
-		error_message(__FUNCTION__, "\
-				Sending bot %s to map label %s (found on level %d) cannot be done because the bot\n\
-				is not on the same level (z = %d). Doing nothing.",
+		error_message(__FUNCTION__,
+				"Sending bot %s to map label %s (found on level %d) cannot be done because the bot\n"
+				"is not on the same level (z = %d). Doing nothing.",
 				PLEASE_INFORM, en->dialog_section_name, label, dest_pos.z, en->pos.z);
 		return 0;
 	}
 
 	if (destinationwaypoint == -1) {
-		error_message(__FUNCTION__, "\
-				Map label %s (found on level %d) does not have a waypoint. Cannot send bot %s\n\
-				to this location. Doing nothing.\n\
-				GPS center coordinates x=%f, y=%f.",
+		error_message(__FUNCTION__,
+				"Map label %s (found on level %d) does not have a waypoint. Cannot send bot %s\n"
+				"to this location. Doing nothing.\n"
+				"GPS center coordinates x=%f, y=%f.",
 				PLEASE_INFORM, label, dest_pos.z, en->dialog_section_name, dest_pos.x, dest_pos.y);
 		return 0;
 	}
