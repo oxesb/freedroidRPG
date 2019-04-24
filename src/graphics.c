@@ -812,8 +812,6 @@ void init_video(void)
 	blit_background("startup1.jpg");
 	our_SDL_flip_wrapper();
 
-	SDL_SetGamma(GameConfig.current_gamma_correction, GameConfig.current_gamma_correction, GameConfig.current_gamma_correction);
-
 	mouse_cursor = MOUSE_CURSOR_NORMAL;
 	SDL_ShowCursor(SDL_DISABLE);
 

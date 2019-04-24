@@ -1273,32 +1273,12 @@ static int Graphics_handle(int n)
 	enum {
 		CHANGE_SCREEN_RESOLUTION = 1,
 		SET_FULLSCREEN_FLAG,
-		SET_GAMMA_CORRECTION,
 		SET_SHOW_BLOOD_FLAG,
 		LEAVE_OPTIONS_MENU
 	};
 	switch (n) {
 	case (-1):
 		return EXIT_MENU;
-	case SET_GAMMA_CORRECTION:
-		if (RightPressed()) {
-			while (RightPressed()) ;
-			GameConfig.current_gamma_correction += 0.05;
-			SDL_SetGamma(GameConfig.current_gamma_correction, GameConfig.current_gamma_correction,
-				     GameConfig.current_gamma_correction);
-		}
-
-		if (LeftPressed()) {
-			while (LeftPressed()) ;
-			GameConfig.current_gamma_correction -= 0.05;
-			if (GameConfig.current_gamma_correction < 0.0) {
-				GameConfig.current_gamma_correction = 0.0;
-			}
-			SDL_SetGamma(GameConfig.current_gamma_correction, GameConfig.current_gamma_correction,
-				     GameConfig.current_gamma_correction);
-		}
-
-		break;
 
 	case SET_FULLSCREEN_FLAG:
 		while (EnterPressed() || SpacePressed()) ;
@@ -1338,10 +1318,6 @@ static void Graphics_fill(char *MenuTexts[MAX_MENU_ITEMS])
 	sprintf(MenuTexts[i++], _("Change screen resolution"));
 
 	sprintf(Options[i], _("Fullscreen mode: %s"), GameConfig.fullscreen_on ? _("ON") : _("OFF"));
-	strncpy(MenuTexts[i], Options[i], 1024);
-	i++;
-
-	sprintf(Options[i], _("<-- Gamma correction: %1.2f -->"), GameConfig.current_gamma_correction);
 	strncpy(MenuTexts[i], Options[i], 1024);
 	i++;
 
