@@ -585,9 +585,20 @@ SDL_Surface *load_surface_bitmap(const char *filepath)
 	}
 
 	// Add an alpha channel if none already exists, and possibly swap the
-	// channels to suit the configuration of the framebuffer
+	// channels to suit the configuration of the framebuffer, in SDL mode,
+	// or to be in BGRA pixel format, in OpenGL mode (expected to create glTexture)
+
 	SDL_SetAlpha(surf, 0, SDL_ALPHA_OPAQUE);
-	prepared_surf = SDL_DisplayFormatAlpha(surf);
+	if (use_open_gl) {
+		// SDL_ConvertSurface() could be used, but it needs a PixelFormat
+		// parameter and SDL_AllocFormat() is not exported in SDL1.2, so we
+		// use SDL_BlitSurface() as a fallback.
+		prepared_surf = SDL_CreateRGBSurface(surf->flags, surf->w, surf->h, 32,
+		                                     0x00ff0000, 0x0000ff00, 0x000000ff, 0xff000000);
+		SDL_BlitSurface(surf, NULL, prepared_surf, NULL);
+	} else {
+		prepared_surf = SDL_DisplayFormatAlpha(surf);
+	}
 	SDL_FreeSurface(surf);
 
 	return prepared_surf;

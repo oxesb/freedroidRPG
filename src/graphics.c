@@ -696,18 +696,21 @@ static void set_video_mode_for_open_gl(void)
 	//
 	Screen = SDL_SetVideoMode(GameConfig.screen_width, GameConfig.screen_height, vid_bpp, video_flags);
 	if (!Screen) {
-		fprintf(stderr, "Video mode set failed: %s\n", SDL_GetError());
+		fprintf(stderr, "\nVideo mode set failed: %s\n", SDL_GetError());
 		Terminate(EXIT_FAILURE);
 	} else {
-		//      open_gl_check_error_status ( __FUNCTION__ );
 		SDL_GL_GetAttribute(SDL_GL_BUFFER_SIZE, &buffer_size);
 		SDL_GL_GetAttribute(SDL_GL_RED_SIZE, &red_size);
 		SDL_GL_GetAttribute(SDL_GL_GREEN_SIZE, &green_size);
 		SDL_GL_GetAttribute(SDL_GL_BLUE_SIZE, &blue_size);
 		SDL_GL_GetAttribute(SDL_GL_ALPHA_SIZE, &alpha_size);
 		SDL_GL_GetAttribute(SDL_GL_DEPTH_SIZE, &depth_size);
-		fprintf(stderr, "\n\nvideo mode set (bpp=%d RGBA=%d%d%d%d depth=%d)",
+		fprintf(stderr, "\nvideo mode set (bpp=%d RGBA=%d%d%d%d depth=%d)",
 			buffer_size, red_size, green_size, blue_size, alpha_size, depth_size);
+
+		SDL_PixelFormat *fmt = Screen->format;
+		fprintf(stderr, "\npixel format (shift/mask) : red: %d/0x%.8x, green: %d/0x%.8x, blue: %d/0x%.8x, alpha: %d/0x%.8x\n",
+			fmt->Rshift, fmt->Rmask, fmt->Gshift, fmt->Gmask, fmt->Bshift, fmt->Bmask, fmt->Ashift, fmt->Amask);
 	}
 
 	show_open_gl_driver_info();
