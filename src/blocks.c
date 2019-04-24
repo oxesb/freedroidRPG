@@ -184,93 +184,69 @@ void Load_Blast_Surfaces(void)
 
 static void load_item_graphics(int item_type)
 {
-	char our_filename[PATH_MAX];
 	itemspec *spec = &ItemMap[item_type];
-	int target_x = spec->inv_size.x * 32;
-	int target_y = spec->inv_size.y * 32;
+	char image_filename[PATH_MAX];
+	struct image item_image = EMPTY_IMAGE;
 
-	sprintf(our_filename, "items/%s", spec->item_inv_file_name);
+	sprintf(image_filename, "items/%s", spec->item_inv_file_name);
+	load_image(&item_image, GRAPHICS_DIR, image_filename, 0);
 
-	if (use_open_gl) {
-		load_image(&spec->inventory_image, GRAPHICS_DIR, our_filename, 0);
-		spec->shop_image = spec->inventory_image;
+	if (item_image.surface || item_image.texture) {
+		// Inventory image 'scaled' to inventory slot size (32x32)
+		spec->inventory_image = item_image;
+		spec->inventory_image.w = spec->inv_size.x * 32;
+		spec->inventory_image.h = spec->inv_size.y * 32;
 
-		// Scale inventory image
-		spec->inventory_image.w = target_x;
-		spec->inventory_image.h = target_y;
-        
-		// Scale shop image to keep aspect ratio and fill 64 pixels (at -r0)
-		float shop_square_size = 64.0 * GameConfig.screen_width / 640.0;
-		short int *small = &(spec->shop_image.w);
-		short int *big = &(spec->shop_image.h);
+		// A slot for an item, in the shop GUI, is a 64x64 square (in -r0).
+		// The item's image has to be scaled to fill that square, while keeping
+		// the image ratio : if the 'relative' height of the image is greater
+		// than the slot height, the scale is constraint by the slot height.
+		// That is : if (item_image.h * (shop_slot_w/item_image.w) > shop_slot_h) ...
+		// Or: if (shop_slot_ratio > item_image_ratio) ...
 
-		if (*small > *big) {
-			big = &(spec->shop_image.w);
-			small = &(spec->shop_image.h);
-		}
+		spec->shop_image = item_image;
 
-		float ratio = (float)*small/(float)*big;
-		*big = shop_square_size;
-		*small = shop_square_size * ratio;
+		float shop_slot_w = 64.0 * (GameConfig.screen_width / 640.0);
+		float shop_slot_h = 64.0 * (GameConfig.screen_height / 480.0);
+		float shop_slot_ratio = shop_slot_w / shop_slot_h;
+		float item_image_ratio = (float)item_image.w / (float)item_image.h;
 
-	} else {
-		SDL_Surface *original_img;
-		SDL_Surface *tmp_surf2 = NULL;
-		char fpath[PATH_MAX];
-		float factor_x, factor_y;
-
-		// Load the inventory image
-		find_file(fpath, GRAPHICS_DIR, our_filename, NULL, PLEASE_INFORM | IS_FATAL);
-
-		original_img = IMG_Load(fpath);
-		if (original_img == NULL) {
-			error_message(__FUNCTION__, "Inventory image for item type %d, at path %s was not found",
-					PLEASE_INFORM | IS_FATAL, item_type, fpath);
-		}
-
-		if ((target_x != original_img->w) || (target_y != original_img->h)) {
-			factor_x = (float)target_x / (float)original_img->w;
-			factor_y = (float)target_y / (float)original_img->h;
-			tmp_surf2 = zoomSurface(original_img, factor_x, factor_y, FALSE);
-			spec->inventory_image.surface = SDL_DisplayFormatAlpha(tmp_surf2);
-			SDL_FreeSurface(tmp_surf2);
+		if (shop_slot_ratio > item_image_ratio) {
+			spec->shop_image.h = (int)shop_slot_h;
+			spec->shop_image.w = (int)(shop_slot_h * item_image_ratio);
+			spec->shop_image.offset_x = (short)((shop_slot_w - (float)spec->shop_image.w) / 2.0);
 		} else {
-			spec->inventory_image.surface = SDL_DisplayFormatAlpha(original_img);
+			spec->shop_image.w = (int)shop_slot_w;
+			spec->shop_image.h = (int)(shop_slot_w / item_image_ratio);
+			spec->shop_image.offset_y = (short)((shop_slot_h - (float)spec->shop_image.h) / 2.0);
 		}
 
-		spec->inventory_image.w = spec->inventory_image.surface->w;
-		spec->inventory_image.h = spec->inventory_image.surface->h;
+		// In SDL mode, images have to be actually scaled
 
-		// For the shop, we need versions of each image, where the image is scaled so
-		// that it takes up a whole 64x64 shop display square.  So we prepare scaled
-		// versions here and now...
+		if (!use_open_gl) {
 
-		// Scale shop image
-		if (original_img->w >= original_img->h) {
-			target_x = 64;
-			target_y = original_img->h * 64.0 / (float)original_img->w;	//keep the scaling ratio !
+			float zoom_w = 1.0;
+			float zoom_h = 1.0;
+
+			// Scale inventory image
+			zoom_w = (float)spec->inventory_image.w / (float)item_image.w;
+			zoom_h = (float)spec->inventory_image.h / (float)item_image.h;
+			spec->inventory_image.surface = zoomSurface(item_image.surface, zoom_w, zoom_h, FALSE);
+
+			// Shop image
+			zoom_w = (float)spec->shop_image.w / (float)item_image.w;
+			zoom_h = (float)spec->shop_image.h / (float)item_image.h;
+			spec->shop_image.surface = zoomSurface(item_image.surface, zoom_w, zoom_h, FALSE);
+
+			free_image_surface(&item_image);
 		}
-
-		if (original_img->h > original_img->w) {
-			target_y = 64;
-			target_x = original_img->w * 64.0 / (float)original_img->h;
-		}
-
-		factor_x = ((float)GameConfig.screen_width / 640.0) * ((float)target_x / (float)original_img->w);
-		factor_y = ((float)GameConfig.screen_height / 480.0) * ((float)target_y / (float)original_img->h);
-		tmp_surf2 = zoomSurface(original_img, factor_x, factor_y, FALSE);
-		spec->shop_image.surface = SDL_DisplayFormatAlpha(tmp_surf2);
-		SDL_FreeSurface(original_img);
-		SDL_FreeSurface(tmp_surf2);
-
-		spec->shop_image.w = spec->shop_image.surface->w;
-		spec->shop_image.h = spec->shop_image.surface->h;
 	}
 
 	// Load ingame image
+
 	if (strcmp(spec->item_rotation_series_prefix, "NONE_AVAILABLE_YET")) {
-		sprintf(our_filename, "items/%s/ingame.png", spec->item_rotation_series_prefix);
-		load_image(&spec->ingame_image, GRAPHICS_DIR, our_filename, USE_OFFSET);
+		sprintf(image_filename, "items/%s/ingame.png", spec->item_rotation_series_prefix);
+		load_image(&spec->ingame_image, GRAPHICS_DIR, image_filename, USE_OFFSET);
 	} else {
 		memcpy(&spec->ingame_image, &spec->inventory_image, sizeof(struct image));
 	}
