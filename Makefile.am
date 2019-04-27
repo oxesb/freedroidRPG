@@ -12,6 +12,7 @@ AM_CPPFLAGS     = @FD_CPPFLAGS@
 AM_LDFLAGS      = @FD_LDFLAGS@
 LIBS            = @FD_LIBS@ @LIBS@
 AM_DISTCHECK_CONFIGURE_FLAGS = --enable-dev-tools --enable-rtprof
+PACKAGE_YEAR = $(shell date +'%Y')
 
 if WIN32
 WIN32_PREBUILD = win32
@@ -113,7 +114,7 @@ dist-macosx: src/freedroidRPG
 	mkdir -p $(macosx_dir)/Contents/Frameworks
 	cp macosx/Icon.icns $(macosx_dir)/Contents/Resources/Icon.icns
 	cp src/freedroidRPG $(macosx_dir)/Contents/MacOS
-	sed -e "s/__#PROGNAME#__/$(PACKAGE_NAME)/" -e "s/__#VERSION#__/$(PACKAGE_VERSION)/" macosx/Info.plist.in > $(macosx_dir)/Contents/Info.plist
+	sed -e "s/__#PROGNAME#__/$(PACKAGE_NAME)/" -e "s/__#VERSION#__/$(PACKAGE_VERSION)/" -e "s/__#YEAR#__/$(PACKAGE_YEAR)/" macosx/Info.plist.in > $(macosx_dir)/Contents/Info.plist
 	echo "APPL????" > $(macosx_dir)/Contents/PkgInfo
 	rsync -ar --exclude='.git' --exclude='Makefile*' --exclude='*~' --exclude='.#*' data lua_modules locale $(macosx_dir)/Contents
 	perl macosx/pkgApp.pl $(macosx_dir)/Contents MacOS/freedroidRPG Frameworks

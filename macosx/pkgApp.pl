@@ -1,7 +1,10 @@
 #!/usr/bin/perl
 #
-# Script from http://www.stellarium.org/
+# Script based on a macosx packager from http://www.stellarium.org/
 # under GPL General Public License
+#
+# Note: Stellarium is now (as of April 2019) using a python
+# script, probably worth replacing this old perl script.
 #
 
 use strict;
@@ -17,17 +20,11 @@ my $appdir = shift(@ARGV);
 chdir $appdir;
 my $main_executable = shift(@ARGV);
 my $frameworks_dir = shift(@ARGV);
-my $current_arch = `/usr/bin/arch`;
-chomp($current_arch);
 
-if ( ! -e "$frameworks_dir/$current_arch" ) {
-    `mkdir -p $frameworks_dir/$current_arch`;
-}
-
-&recurse( $main_executable, $frameworks_dir, $current_arch );
+&recurse( $main_executable, $frameworks_dir );
 
 sub recurse {
-    my($main_executable, $frameworks_dir, $current_arch) = @_;
+    my($main_executable, $frameworks_dir) = @_;
 
     my $cmd1 = sprintf($otool, $main_executable);
     my($app, @names) = `$cmd1`;
@@ -46,45 +43,9 @@ sub recurse {
 	}
 
 	## leave sys libraries alone and don't include them
-	if ( $name =~ m,^(/System/Library|/usr/lib|\@executable_name), &&
+	if ( $name =~ m,^(/System/Library|/usr/lib|\@executable_path), &&
 	     $name !~ m,^(/usr/lib/libiconv), ){ 
 	    next NAME_LOOP; 
-	}
-
-	## a rooted Framework
-
-	## an unrooted Framework
-	if ( $name =~ m,^([^/]+\.framework)/(\S+)$, ) {
-	    my $fwname = $1;
-	    my $binary = $2;
-
-	    my $absname = &locateFramework($fwname);
-	    my $arch = &architecture("$absname/$binary");
-
-	    if ( $arch eq $current_arch || $arch eq 'fat' ) {
-		my $relPath = "\@executable_path/../Frameworks/$fwname/$binary";
-		my $fwPath = "$frameworks_dir/$fwname/$binary";
-
-		my $not_existed = 1;
-		if ( ! -e $fwPath ) {
-		    my $c = "cp -RP -p $absname $frameworks_dir/$fwname";
-		    `$c`;
-		} else {
-		    $not_existed = 0;
-		}
-
-		my $c = sprintf($id_inmt, $relPath, $fwPath);
-		`$c`;
-		$c = sprintf($ch_inmt, $name, $relPath, $main_executable);
-		`$c`;
-
-		if ( $not_existed ) {
-		    &recurse($fwPath, $frameworks_dir, $current_arch);
-		}
-	    } else {
-		warn qq{$0: [1] for $main_executable: what to do about $absname being $arch!!!!!\n};
-	    }
-	    next NAME_LOOP;
 	}
 
 	## a rooted dylib
@@ -92,82 +53,32 @@ sub recurse {
 	    my $basename = $1;
 	    my $absname = $name;
 
-	    my $arch = &architecture($absname);
+	    my $relPath = "\@executable_path/../Frameworks/$basename";
+	    my $fwPath = "$frameworks_dir/$basename";
 
-	    if ( $arch eq $current_arch || $arch eq 'fat' ) {
-		my $relPath = "\@executable_path/../Frameworks/$current_arch/$basename";
-		my $fwPath = "$frameworks_dir/$current_arch/$basename";
-
-		my $not_existed = 1;
-		if ( ! -e $fwPath ) {
-		    my $c = "cp -P $absname $frameworks_dir/$current_arch";
-		    `$c`;
-		} else {
-		    $not_existed = 0;
-		}
-
-		my $c = sprintf($id_inmt, $relPath, $fwPath);
-		`$c`;
-		$c = sprintf($ch_inmt, $absname, $relPath, $main_executable);
-		`$c`;
-
-		if ( $not_existed ) {
-		    &recurse($fwPath, $frameworks_dir, $current_arch);
-		}
+	    my $not_existed = 1;
+	    if ( ! -e $fwPath ) {
+	        my $c = "cp -P $absname $frameworks_dir";
+                #print "$c\n";
+	        `$c`;
 	    } else {
-		warn qq{$0: [2] for $main_executable: what to do about $name being $arch!!!\n};
+	        $not_existed = 0;
 	    }
-	    next NAME_LOOP;
+
+	    my $c = sprintf($id_inmt, $relPath, $fwPath);
+            #print "$c\n";
+	    `$c`;
+	    $c = sprintf($ch_inmt, $absname, $relPath, $main_executable);
+            #print "$c\n";
+	    `$c`;
+
+	    if ( $not_existed ) {
+	        &recurse($fwPath, $frameworks_dir);
+	    }
+            next NAME_LOOP;
 	}
 
 	## something else?
 	warn qq{$0: [3] for $main_executable: what to do with $name?!?!?\n};
     }
-}
-
-
-sub architecture {
-    my $file = shift;
-    my(@output) = `/usr/bin/file $file`;
-
-    if ( grep(m/^${file}: symbolic link to ([^\']+)/, @output) ) {
-	my($r, @junk) = grep(m/^${file}: symbolic link to ([^\']+)/, @output);
-	$r =~ m,^(.+)/([^/]+.dylib): symbolic link to ([^\']+),;
-	my $root = $1;
-	my $base = $2;
-	my $target = $3;
-
-	if ( $target =~ m,^/, ) {
-	    return &architecture("$target");
-	} else {
-	    return &architecture("$root/$target");
-	}
-    }
-
-    my $retval = undef;
-    # file with 2 architectures
-
-    if ( grep(m/(universal binary|fat file) with [0-9] architectures/i, @output)) {
-	$retval =  'fat';
-    }
-    elsif ( grep(m/ppc/, @output) ) {
-	$retval =  'ppc';
-    }
-    elsif ( grep(m/i386/, @output) ) {
-	$retval =  'i386';
-    }
-    # warn qq{$0: $file isa '$retval' arch\n};
-    return $retval;
-}
-
-sub locateFramework {
-    my $fname = shift;
-    my $lib;
-    foreach $lib ( '~/Library/Frameworks', '/Library/Frameworks', '/usr/local/Trolltech/Qt-4.5.0/lib' ) {
-	if ( -e "$lib/$fname" ) {
-	    return "$lib/$fname";
-	}
-    }
-    warn qq{$0: unable to find $fname!!!!\n};
-    return undef;
 }
