@@ -735,7 +735,6 @@ static void set_signal_handlers(void)
  */
 static void detect_available_resolutions(void)
 {
-	SDL_Rect **modes;
 	int size = 0;
 
 	// Check that a video driver exists
@@ -753,7 +752,7 @@ static void detect_available_resolutions(void)
 		;
 	} else {
 		// Get available fullscreen/hardware modes (reported by SDL)
-		modes = SDL_ListModes(NULL, SDL_FULLSCREEN|SDL_HWSURFACE);
+		SDL_Rect **modes = SDL_ListModes(NULL, SDL_FULLSCREEN|SDL_HWSURFACE);
 		if (modes == (SDL_Rect**) -1) {
 			error_message(__FUNCTION__,
 				"SDL reports all resolutions are supported in fullscreen mode.\n"

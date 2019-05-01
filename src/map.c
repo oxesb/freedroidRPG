@@ -999,9 +999,6 @@ void blast_obstacle(level *lvl, obstacle *target_obstacle)
 static int smash_obstacles_only_on_tile(float x, float y, int lvl, int map_x, int map_y)
 {
 	struct level *box_level = curShip.AllLevels[lvl];
-	int i;
-	int target_idx;
-	struct obstacle *target_obstacle;
 	int smashed_something = FALSE;
 
 	// First some security checks against touching the outsides of the map...
@@ -1012,12 +1009,12 @@ static int smash_obstacles_only_on_tile(float x, float y, int lvl, int map_x, in
 	// We check all the obstacles on this square if they are maybe destructible
 	// and if they are, we destruct them, haha
 
-	for (i = 0; i < box_level->map[map_y][map_x].glued_obstacles.size; i++) {
+	for (int i = 0; i < box_level->map[map_y][map_x].glued_obstacles.size; i++) {
 		// First we see if there is something glued to this map tile at all.
 
-		target_idx = ((int *)(box_level->map[map_y][map_x].glued_obstacles.arr))[i];
+		int target_idx = ((int *)(box_level->map[map_y][map_x].glued_obstacles.arr))[i];
 
-		target_obstacle = &(box_level->obstacle_list[target_idx]);
+		struct obstacle *target_obstacle = &(box_level->obstacle_list[target_idx]);
 
 		struct obstacle_spec *obstacle_spec = get_obstacle_spec(target_obstacle->type);
 		if (!(obstacle_spec->flags & IS_SMASHABLE))
@@ -1194,14 +1191,11 @@ static void generate_dungeon_if_needed(level *l)
 
 void free_ship_level(level *lvl)
 {
-	int row = 0;
-	int col = 0;
-
 	// Map tiles
 	remove_volatile_obstacles(lvl->levelnum);
-	for (row = 0; row < lvl->ylen; row++) {
+	for (int row = 0; row < lvl->ylen; row++) {
 		if (lvl->map[row]) {
-			for (col = 0; col < lvl->xlen; col++) {
+			for (int col = 0; col < lvl->xlen; col++) {
 				dynarray_free(&lvl->map[row][col].glued_obstacles);
 				free(lvl->map[row][col].volatile_obstacles);
 			}
@@ -1223,8 +1217,7 @@ void free_ship_level(level *lvl)
 	}
 
 	// Waypoints
-	int w;
-	for (w = 0; w < lvl->waypoints.size; w++) {
+	for (int w = 0; w < lvl->waypoints.size; w++) {
 		struct waypoint *wpts = lvl->waypoints.arr;
 		dynarray_free(&wpts[w].connections);
 	}
@@ -1241,7 +1234,7 @@ void free_ship_level(level *lvl)
 	lvl->random_droids.types_size = 0;
 
 	// Items
-	for (w = 0; w < MAX_ITEMS_PER_LEVEL; w++) {
+	for (int w = 0; w < MAX_ITEMS_PER_LEVEL; w++) {
 		if (lvl->ItemList[w].type != -1) {
 			delete_upgrade_sockets(&(lvl->ItemList[w]));
 		}

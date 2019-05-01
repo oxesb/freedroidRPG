@@ -24,4 +24,4 @@ extern int *human_enemies_list;
 extern int *all_enemies_list;
 
 void lvledit_build_tile_lists(void);
-void lvledit_set_obstacle_list_for_category(const char *category_name, struct dynarray *obstacle_list);
+void lvledit_set_obstacle_list_for_category(const char *category_name, struct dynarray *obstacles_filenames);

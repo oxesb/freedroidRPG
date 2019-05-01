@@ -1,10 +1,9 @@
 cppcheckflags = -I${top_srcdir} -I${top_srcdir}/src \
 				--language=c \
 				--enable=warning,performance,portability,unusedFunction,missingInclude,style,information \
-				--suppressions-list=.cppcheck_suppressions                             \
-				--library=sdl.cfg,posix.cfg                                                      \
-				--inline-suppr                                                         \
-				--inconclusive
+				--suppressions-list=.cppcheck_suppressions \
+				--library=sdl.cfg,posix.cfg \
+				--inline-suppr
 
 cppcheckdefs = -DHAVE_ICONV -DWITH_RTPROF -D__GNUC__ -DHAVE_CONFIG_H -D_GNU_SOURCE=1 -D_REENTRANT
 

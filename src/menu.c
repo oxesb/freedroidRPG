@@ -853,12 +853,11 @@ static void RunSubMenu(int startup, int menu_id)
 {
 	int can_continue = 0;
 	char *texts[MAX_MENU_ITEMS];
-	int i = 0;
 	int pos = 1;
 	while (!can_continue) {
 		// We need to fill at each loop because
 		// several menus change their contents
-		for (i = 0; i < MAX_MENU_ITEMS; i++)
+		for (int i = 0; i < MAX_MENU_ITEMS; i++)
 			texts[i] = (char *)malloc(1024);
 		menus[menu_id].FillText(texts);
 
@@ -869,7 +868,7 @@ static void RunSubMenu(int startup, int menu_id)
 
 		int ret = menus[menu_id].HandleSelection(pos);
 
-		for (i = 0; i < MAX_MENU_ITEMS; i++)
+		for (int i = 0; i < MAX_MENU_ITEMS; i++)
 			free(texts[i]);
 
 		if (ret == EXIT_MENU) {
@@ -1846,7 +1845,6 @@ static int Delete_Existing_Hero_Menu(void)
 int Single_Player_Menu(void)
 {
 	int can_continue = FALSE;
-	int MenuPosition = 1;
 	char *MenuTexts[MAX_MENU_ITEMS];
 
 	enum {
@@ -1864,6 +1862,7 @@ int Single_Player_Menu(void)
 
 	while (!can_continue) {
 
+		int MenuPosition;
 		if (!skip_initial_menus)
 			MenuPosition = do_menu_selection("", (char **)MenuTexts, 1, "title.jpg", Menu_Font);
 		else
