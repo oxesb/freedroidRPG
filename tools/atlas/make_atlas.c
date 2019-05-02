@@ -48,7 +48,7 @@ const char *img_dir = NULL;
 const char *image_out_path;
 SDL_Surface *atlas_surf;
 const char *output_path;
-FILE *atlas_file;
+FILE *atlas_file = NULL;
 
 int atlas_width;
 int atlas_height;
@@ -399,5 +399,9 @@ int main(int argc, char **argv)
 	create_atlas();
 
 	finish_output(atlas_num);
+
+	if (atlas_file)
+		fclose(atlas_file);
+
 	return 0;
 }

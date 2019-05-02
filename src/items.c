@@ -628,6 +628,12 @@ void DeleteItem(item *it)
  */
 void CopyItem(item * SourceItem, item * DestItem)
 {
+	if (DestItem == SourceItem) {
+		// Should not happen, but the following memcpy() could fail in case of
+		// overlapping buffers, so it's worth protecting us against a bug in
+		// the caller.
+		return;
+	}
 
 	memcpy(DestItem, SourceItem, sizeof(item));
 

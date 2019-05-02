@@ -813,6 +813,13 @@ static char *decode_map(level *loadlevel, char *data)
 	if ((map_end = strstr(data, MAP_END_STRING)) == NULL)
 		return NULL;
 
+	if (loadlevel->floor_layers > MAX_FLOOR_LAYERS) {
+		error_message(__FUNCTION__,
+		              "Too much layers on level %d: %d layers found for a max of %d.\n"
+		              "We ignore the extra layers.",
+				      PLEASE_INFORM, loadlevel->levelnum, loadlevel->floor_layers, MAX_FLOOR_LAYERS);
+	}
+
 	/* now scan the map */
 	unsigned int curlinepos = 0;
 	this_line = (char *)MyMalloc(4096);
@@ -839,7 +846,7 @@ static char *decode_map(level *loadlevel, char *data)
 			// Make sure that all floor layers are always initialized properly.
 			init_map_tile(&Buffer[col]);
 
-			for (layer = 0; layer < loadlevel->floor_layers; layer++) {
+			for (layer = 0; (layer < loadlevel->floor_layers) && (layer < MAX_FLOOR_LAYERS); layer++) {
 				tmp = strtol(this_line + 4 * (loadlevel->floor_layers * col + layer), NULL, 10);
 				if (tmp >= underlay_floor_tiles.size) {
 					if (tmp < MAX_UNDERLAY_FLOOR_TILES || (tmp - MAX_UNDERLAY_FLOOR_TILES) >= overlay_floor_tiles.size) {

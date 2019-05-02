@@ -194,8 +194,10 @@ static void adj(struct cplist_t *cplist, int *nx, int *ny)
 	static const int dx[] = {0, 0, -1, 1};
 	static const int dy[] = {-1, 1, 0, 0}; 
 	if (cplist->t != UP && cplist->t != DOWN && cplist->t != LEFT && cplist->t != RIGHT) {
-		*nx = 0;
-		*ny = 0;
+		// Should never happen
+		*nx = cplist->x;
+		*ny = cplist->y;
+		return;
 	}
 	*nx = cplist->x + dx[cplist->t];
 	*ny = cplist->y + dy[cplist->t];
