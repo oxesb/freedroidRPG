@@ -140,32 +140,35 @@ int handle_switch_font_char(char **ptr)
 	if (**ptr == '[' && *(*ptr+2) != ']')
 		return FALSE;
 
+	// if '\x'
 	int index = 0;
 	int incr = 1;
+	char code = **ptr;
 
+	// if bbcode
 	if (**ptr == '[') {
-		(*ptr)++;
 		index = 2;
-		incr = 2;
+		incr = 3;
+		code = *(*ptr+1);
 	}
 
-	if (**ptr == font_switchto_red[index]) {
+	if (code == font_switchto_red[index]) {
 		set_current_font(Red_Font);
 		(*ptr) += incr;
 		return TRUE;
-	} else if (**ptr == font_switchto_blue[index]) {
+	} else if (code == font_switchto_blue[index]) {
 		set_current_font(Blue_Font);
 		(*ptr) += incr;
 		return TRUE;
-	} else if (**ptr == font_switchto_neon[index]) {
+	} else if (code == font_switchto_neon[index]) {
 		set_current_font(FPS_Display_Font);
 		(*ptr) += incr;
 		return TRUE;
-	} else if (**ptr == font_switchto_msgstat[index]) {
+	} else if (code == font_switchto_msgstat[index]) {
 		set_current_font(Messagestat_Font);
 		(*ptr) += incr;
 		return TRUE;
-	} else if (**ptr == font_switchto_msgvar[index]) {
+	} else if (code == font_switchto_msgvar[index]) {
 		set_current_font(Messagevar_Font);
 		(*ptr) += incr;
 		return TRUE;
