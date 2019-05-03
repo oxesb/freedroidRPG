@@ -150,6 +150,7 @@ int do_menu_selection(char *header_text, char **items_texts, int first_item_idx,
 	else
 		set_current_font(menu_font);
 	int font_height = get_font_height(get_current_font());
+	struct font* store_font = get_current_font();
 
 	// Find out how may items we have been given for the menu.
 
@@ -260,7 +261,6 @@ int do_menu_selection(char *header_text, char **items_texts, int first_item_idx,
 	//    interaction loop
 	//----------
 
-	struct font* store_font = get_current_font();
 	InitiateMenu(background_name);
 
 	if (!strcmp(items_texts[0], SINGLE_PLAYER_STRING)) {
@@ -287,7 +287,6 @@ int do_menu_selection(char *header_text, char **items_texts, int first_item_idx,
 		put_string_left(FPS_Display_Font, GameConfig.screen_height - 1.4 * line_height, open_gl_string);
 	}
 
-	set_current_font(store_font);
 	StoreMenuBackground(0);
 
 	// Some menus are intended to start with the default setting of the
@@ -329,6 +328,7 @@ int do_menu_selection(char *header_text, char **items_texts, int first_item_idx,
 		// SDL output case.
 
 		RestoreMenuBackground(0);
+		set_current_font(store_font);
 
 		// Maybe we should display some thumbnails with the saved games entries?
 		// But this will only apply for the load_hero and the delete_hero menus,
@@ -499,6 +499,9 @@ int do_menu_selection(char *header_text, char **items_texts, int first_item_idx,
 			}
 
 		}
+
+		// Ensure to restore the previous font
+		set_current_font(store_font);
 
 		if (MouseLeftClicked()) {
 			// Only when the mouse click really occurred on the menu do we
