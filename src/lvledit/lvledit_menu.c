@@ -562,26 +562,21 @@ static void level_options(void)
 		menu_texts[i] = options[i];
 		i++;
 
-		sprintf(options[i], _("Light:  Ambient"));
 		if (l == 0) {
-			sprintf(options[i + 1], " [%d]  ", EditLevel()->minimum_light_value);
-			strcat(options[i], options[i + 1]);
-			strcat(options[i], _("Bonus"));
-			sprintf(options[i + 1], "  %d   (<-/->)", EditLevel()->light_bonus);
+			snprintf(options[i], OPTLEN-1, "%s [%d]  %s  %d   (<-/->)",
+			         _("Light:  Ambient"), EditLevel()->minimum_light_value,
+			         _("Bonus"), EditLevel()->light_bonus);
 		} else if (l == 1) {
-			sprintf(options[i + 1], "  %d   ", EditLevel()->minimum_light_value);
-			strcat(options[i], options[i + 1]);
-			strcat(options[i], _("Bonus"));
-			sprintf(options[i + 1], " [%d]  (<-/->)", EditLevel()->light_bonus);
-		} else
-			sprintf(options[i + 1], "I'm a bug");
-		strcat(options[i], options[i + 1]);
+			snprintf(options[i], OPTLEN-1, "%s  %d   %s [%d]  (<-/->)",
+			         _("Light:  Ambient"), EditLevel()->minimum_light_value,
+			         _("Bonus"), EditLevel()->light_bonus);
+		} else {
+			snprintf(options[i], OPTLEN-1, "%s I'm a bug", _("Light:  Ambient"));
+		}
 		menu_texts[i] = options[i];
 		i++;
 
-		sprintf(options[i], _("Background Music"));
-		sprintf(options[i + 1], ": %s", EditLevel()->Background_Song_Name);
-		strcat(options[i], options[i + 1]);
+		snprintf(options[i], OPTLEN-1, "%s: %s", _("Background Music"), EditLevel()->Background_Song_Name);
 		menu_texts[i] = options[i];
 		i++;
 		sprintf(options[i], _("Infinite Running Stamina: "));
