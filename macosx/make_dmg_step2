@@ -1,0 +1,42 @@
+#!/bin/sh
+#
+# This script is used by the buildbot master to create a dmg, based
+# on a 'template'. It populates the template using:
+# 1- the content of the freedroidRPG.app transfered from the 1st step
+#    buildbot worker.
+# 2- the game data from the local repo
+#
+# This 2 steps process is needed because the first step is executed
+# on a MacMini with a low internet bandwith, too low to transfer a whole
+# dmg in a reasonnable time.
+
+on_exit() {
+	umount $WORKDIR/wc
+	rm -f $WORKDIR/wc.dmg
+}
+
+trap on_exit 0
+set -e
+set -x
+
+WORKDIR=dmg_tmp
+[ -d ${WORKDIR} ] && rm -rf ${WORKDIR}
+mkdir ${WORKDIR}
+mkdir ${WORKDIR}/wc
+
+gunzip -c macosx/template.dmg.gz > ${WORKDIR}/wc.dmg
+mount ${WORKDIR}/wc
+
+tar -C ${WORKDIR}/wc/FreedroidRPG -xzf lite-freedroidRPG.app.tgz
+
+tar -c -f - --exclude='.svn' --exclude='.git' --exclude='Makefile' --exclude='*~' --exclude='.#*' data locale lua_modules | (cd ${WORKDIR}/wc/FreedroidRPG/freedroidRPG.app/Contents; tar -xf -)
+cp COPYING AUTHORS README ChangeLog ${WORKDIR}/wc/FreedroidRPG
+
+umount ${WORKDIR}/wc
+
+/usr/local/bin/dmg dmg ${WORKDIR}/wc.dmg FreedroidRPG.dmg > /dev/null
+
+rm -f ${WORKDIR}
+
+set +x
+trap '' 0
