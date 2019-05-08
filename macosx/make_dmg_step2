@@ -11,7 +11,7 @@
 # dmg in a reasonnable time.
 
 on_exit() {
-	umount $WORKDIR/wc
+	findmnt $WORKDIR/wc >/dev/null && umount $WORKDIR/wc
 	rm -f $WORKDIR/wc.dmg
 }
 
@@ -36,7 +36,7 @@ umount ${WORKDIR}/wc
 
 /usr/local/bin/dmg dmg ${WORKDIR}/wc.dmg FreedroidRPG.dmg > /dev/null
 
-rm -f ${WORKDIR}
+[ -d ${WORKDIR} ] && rm -rf ${WORKDIR}
 
 set +x
 trap '' 0
