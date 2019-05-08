@@ -28,10 +28,10 @@ FreedroidRPG s'accompagne d'un éditeur de niveau intégré. Cette éditeur de n
 
 Vous pouvez y accéder depuis le menu principale (choisissez "Editeur de Niveau") ou en executant la commande "freedroidRPG -e".
 
-    --- Tooltips ---
+    --- Infobulles ---
 Pour activer/désactiver les descriptions de l'interface pendant le survol de la souris, cliquez sur l'icône de bulle de discours blanc situé près du bord de la fenêtre de droite (rangée inférieure de bouton).
 
-    --- Summary Details ---
+    --- Détail sommaire ---
 Un détail sommaire sur les obstacles et les objets sera affichés si vous cliquez droit sur eux dans le sélecteur d'objet supérieur.
 
     --- Navigation ---
@@ -194,7 +194,7 @@ in order to switch to the next or previous (refers to level numbers) level, or, 
 				Item drop class for obstacles:	Set of what item class items dropped by barrels/chests/crates should be.
 				Teleport blockade:	Make it (im)possible to teleport away from a level.
 				Teleport pair:	This important if you make a dungeon that is not directly connected to another map. You can set the number of exits and entrances for a randomly generated dungeon here.
-				Light:			How much light would you like to have? Press space to switch between ambient (general brightness of the present map) and bonus (light emitted by some obstacles, such as lamps or mushrooms) mode.
+				Lumière :			Combien de lumière aimeriez-vous avoir ? Appuyez sur espace pour passer entre les modes ambiante (luminosité générale sur la carte actuelle) et bonus (lumière émise par certains obstacles, comme des lampes ou des champignons).
 				Background music:	Here you can set a music track to be played while the player walks around on the map. Possible tracks can be found in ./sound/music/ .
 									Just enter the file name including the .ogg extension.
 				Infinite running Stamina:	If you have this set to "yes", Tux' stamina will not decrease while running across the map. This should only be used if the level has no hostile NPCs on it, like on level 0, the Town, for example.
@@ -222,7 +222,7 @@ shift+w					toggle mode for waypoints to 'random bot' or 'NPC'
 numberpad digits 1-9	used to plant obstacles at the respective positions of the grid
 n						cycle through selected obstacles (next)
 z						annule la dernière action
-y						répète la dernière action annulé
+y						répète la dernière action annulée
 c						set paths between waypoints
 ctrl+x or backspace		cut selected object(s), can be used to delete objects by not pasting afterwards
 ctrl+c					copie les objets selectionnés

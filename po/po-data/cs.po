@@ -9,7 +9,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 0.16+git\n"
+"Project-Id-Version: freedroidrpg 1.0RC1\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
 "POT-Creation-Date: 2019-03-30 22:43+0100\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
@@ -244,11 +244,11 @@ msgstr "Experimentální velící kyborg. Vybaven novým typem mozku. Pro větš
 
 #: data/base/droid_specs.lua:1259 data/storyline/act2/ReturnOfTux.droids:129
 msgid "The Glitch"
-msgstr ""
+msgstr "Závada"
 
 #: data/base/droid_specs.lua:1260
 msgid "I have not failed. I've just found 10,000 ways how to NOT make a bot."
-msgstr ""
+msgstr "Neselhal jsem. Právě jsem našel 10 000 způsobů, jak NEudělat bota."
 
 #: data/base/droid_specs.lua:1306 data/base/droid_specs.lua:1346
 msgid "Older Man"
@@ -399,11 +399,11 @@ msgstr "Toto je zabezpečený terminál."
 
 #: data/base/game_config.lua:31
 msgid "-= Start of Act 1 =-"
-msgstr ""
+msgstr "-= Začátek Aktu 1 =-"
 
 #: data/base/game_config.lua:34
 msgid "-= Start of Act 2 =-"
-msgstr ""
+msgstr "-= Začátek Aktu 1 =-"
 
 #: data/base/item_specs.lua:121
 msgid "The first item is VERY buggy ingame, so don't use it."
@@ -591,7 +591,7 @@ msgstr "Energetický bič"
 
 #: data/base/item_specs.lua:617
 msgid "An energy whip commonly found at management from MegaSys facilities. What purpose they serve for is still unknown. Because the real whip is pure energy, it will never break, but it does not stays on the strong side."
-msgstr ""
+msgstr "Energický bič, který byl v běžné výbavě vedení MegaSys zařízení. Jakému účelu slouží není stále známo. Díky tomu,  že se jedná  o čistou formu energie, nikdy nedojde k jeho poruše, nebude ale ani vaší silnou stránkou."
 
 #: data/base/item_specs.lua:629
 msgid ".22 LR Ammunition"
@@ -763,7 +763,7 @@ msgstr "Elektro-laserová puška"
 
 #: data/base/item_specs.lua:1062
 msgid "A specialized beam of laser momentarily ionizes the air between the target and the gun, turning it into highly conductive plasma. Milliseconds later, a powerful electric shock is delivered through the air and hits the target. This weapon is effective against people as it is against bots, and indeed few are the droid classes that can withstand more than a few hits from it before going down. The ammo is cheap, and it is one of the few man-made weapons which actually produces a blast, being able to harm more than one bot at once. However, it is still no match against Exterminators."
-msgstr ""
+msgstr "Specializovaný paprsek laseru na okamžik ionizuje vzduch mezi cílem a zbraní, což zapříčiní jeho přeměnu na vysoce vodivé plazma. O pár milisekund později je výkonný elektrický výboj přiveden vzduchem a zasáhne cíl. Tato zbraň je stejně efektivní proti lidem jako proti robotům a je jen několik typů droidů, kterých vydrží více než pár zásahů před tím než jsou k zemi. Munice je levná a je to jedna z mála lidmi vytvořených zbraní, která ve skutečnosti produkuje výbuch, který je schopen ublížit více než jednomu botu najednou. Nicméně, stále ji nelze porovnat s Exterminátory."
 
 #: data/base/item_specs.lua:1070
 msgid "Plasma Energy Container"
@@ -791,11 +791,11 @@ msgstr "Poněkud pomalá zbraň, ale jakmile učiníte zásah, bot se na místě
 
 #: data/base/item_specs.lua:1130
 msgid "Plasma Cannon"
-msgstr ""
+msgstr "Plazmový kanón"
 
 #: data/base/item_specs.lua:1148
 msgid "The plasma cannon is one of the slowest weapon mankind even produced. Based on the Barrett M86 Sniper Rifle, it takes a long time to heat before shooting. Being a plasma bullet, a newbie will most likely miss the target. However, for the skilled marksman, it is a good alternative to a pulse laser cannon, because once it hit, molten metal is usually all that remains where the bot used to be."
-msgstr ""
+msgstr "Plazmové dělo je jednou z nejpomalejších zbraní, kterou lidstvo vyrobilo. Vychází z odstřelovací pušky Barretta M86. Trvá dlouho, než se zahřeje. Nováček s největší pravděpodobností cíl mine, ale pro zkušeného střelce se jedná o dobrou alternativu k pulznímu laserovému dělu, protože jakmile dělo jednou udeří, roztavený kov je obvykle vše, co pro robotu zůstane."
 
 #: data/base/item_specs.lua:1156
 msgid "2mm Exterminator Ammunition"
@@ -831,7 +831,7 @@ msgstr "Plynový útok"
 
 #: data/base/item_specs.lua:1222
 msgid "The gas does not look terrifying. It even smells somewhat nice. And then you die. You die a most horrible death, never knowing what killed you. (Note: This does not work on bots)"
-msgstr ""
+msgstr "Plyn nevypadá děsivě. Dokonce zapáchá tak nějak hezky. A pak umřeš. Zemřeš v celku hroznou smrtí, aniž bys poznal, co tě zabilo. (Poznámka: Toto nefunguje u robotů)"
 
 #: data/base/item_specs.lua:1229
 msgid "Small EMP Shockwave Generator"
@@ -1212,15 +1212,15 @@ msgstr "Vědět, že jsou tví nepřátelé blízko, je s trochou toho signálov
 
 #: data/base/item_specs.lua:1834
 msgid "Source Book of Energy Shield"
-msgstr ""
+msgstr "Zdrojová kniha Energetického štítu"
 
 #: data/base/item_specs.lua:1835 data/base/skill_specs.lua:213
 msgid "Energy Shield"
-msgstr ""
+msgstr "Energetický štít"
 
 #: data/base/item_specs.lua:1839 data/base/skill_specs.lua:218
 msgid "Creating an energy shield to protect you can be a very useful skill. Every hit that you get will be converted into heat. Beware: This heats up excessively. Equipment can still be damaged by heat. When you overheat, shield will try to automatically turn off to prevent damage to itself. It may provoke extra-heat on this process, so be sure to not let it happen."
-msgstr ""
+msgstr "Vytvoření energetického štítu pro svou ochranu může být velmi užitečnou dovedností. Každý zásah, který dostanete, bude přeměněn na teplo. Dejte si pozor: Příliš se zahřívá. Může dojít k trvalému poškození zařízení teplem. Při přehřátí se štít pokusí automaticky vypnout, aby nedošlo k jeho poškození. Tento proces může vyvolat nadměrné teplo, takže se tomu pokud možno pokuste zabránit."
 
 #: data/base/item_specs.lua:1846
 msgid "Subatomic and Nuclear Science for Dummies, Volume IV"
@@ -1244,7 +1244,7 @@ msgstr "Manuál extrahování částí robotů"
 
 #: data/base/item_specs.lua:1869 data/base/item_specs.lua:1873
 msgid "USE FOR CHEATING ONLY. If you see this ingame, please report the bug."
-msgstr ""
+msgstr "POUŽÍVÁ SE JEN K PODVÁDĚNÍ. Pokud toto vidíte, nahlaste prosím problém."
 
 #: data/base/item_specs.lua:1884
 msgid "Strength Pill"
@@ -1606,11 +1606,11 @@ msgstr "Plechovka naplněná těžkou dřinou. Pěkně těžký ji vyrobit, poku
 
 #: data/base/item_specs.lua:2368
 msgid "MS EPROM Programming Interface"
-msgstr ""
+msgstr "Programovací rozhraní MS EPROM"
 
 #: data/base/item_specs.lua:2372
 msgid "Used by developers at MegaSys to load firmware onto newly assembled droids."
-msgstr ""
+msgstr "Používán vývojáři MegaSysu k nahrání firmwaru do nově sestavených droidů."
 
 #: data/base/item_specs.lua:2383
 msgid "Linarian Power Crank"
@@ -1690,7 +1690,7 @@ msgstr "Tlumič"
 
 #: data/base/item_specs.lua:2486
 msgid "This new generation silencer will not only allow you to catch your enemies by surprise, but will also help you to do more damage in ranged combat."
-msgstr ""
+msgstr "Tato nová generace tlumiče vám umožní nejen nachytat vaše nepřátele nepřipravené, ale také vám pomůže způsobit větší škodou v boji na dálku."
 
 #: data/base/item_specs.lua:2494
 msgid "Coprocessor"
@@ -1854,19 +1854,19 @@ msgstr "Obálka říkající 'DOPISY PC ZÁTĚŽE'. Nemám sebemenší ponětí,
 
 #: data/base/item_specs.lua:3012
 msgid "Arcane Lore"
-msgstr ""
+msgstr "Arcane Lore"
 
 #: data/base/item_specs.lua:3016
 msgid "I've bought an anti-hack software, so I could try to hack it! ...But what, exactly, is the 'Arcane Lore'?"
-msgstr ""
+msgstr "Koupil jsem si software proti hacknutí, abych se ho mohl pokusit hacknout! ... Ale co přesně je 'Arcane Lore'?"
 
 #: data/base/item_specs.lua:3023
 msgid "PGP key"
-msgstr ""
+msgstr "PGP klíč"
 
 #: data/base/item_specs.lua:3027
 msgid "It won't open your house, but it can unlock important encrypted archives."
-msgstr ""
+msgstr "Sice neotevře váš dům, ale může odemknout důležité zašifrované archivy."
 
 #: data/base/item_specs.lua:3034
 msgid "Cheat Gun"
@@ -2170,7 +2170,7 @@ msgstr "Do tunelů údržby"
 
 #: data/storyline/act1/events.dat:68
 msgid "To Regular Arena"
-msgstr ""
+msgstr "Do základní arény "
 
 #: data/storyline/act1/events.dat:79
 msgid "To Master Arena"
@@ -2294,7 +2294,7 @@ msgstr "Průlez se zlomeným žebříkem"
 
 #: data/storyline/act1/events.dat:1840 data/storyline/act2/events.dat:423
 msgid "Exit Arena"
-msgstr ""
+msgstr "Opustit arénu"
 
 #: data/storyline/act1/events.dat:1847 data/storyline/act2/events.dat:430
 msgid "Start New Wave"
@@ -2400,7 +2400,7 @@ msgstr "Všichni na palubě!"
 
 #: data/storyline/act1/events.dat:7227
 msgid "All aboard, we're leaving now!"
-msgstr ""
+msgstr "Všichni na palubu, odjíždíme!"
 
 #: data/storyline/act1/events.dat:7290
 msgid "Back to mainland"
@@ -2936,11 +2936,11 @@ msgstr "Mrchožroutí bot"
 #: data/storyline/act1/npc_specs.lua:29
 #: data/storyline/act1/ReturnOfTux.droids:439
 msgid "Saul"
-msgstr ""
+msgstr "Saul"
 
 #: data/storyline/act1/npc_specs.lua:29
 msgid "Saul, leader of the Resistance"
-msgstr ""
+msgstr "Saul, vůdce odporu"
 
 #: data/storyline/act1/npc_specs.lua:30
 #: data/storyline/act1/ReturnOfTux.droids:35
@@ -4063,7 +4063,7 @@ msgstr ""
 #: data/storyline/act2/npc_specs.lua:11
 #: data/storyline/act2/ReturnOfTux.droids:123
 msgid "Master Yadda"
-msgstr ""
+msgstr "Mistr Yadda"
 
 #: data/storyline/act2/npc_specs.lua:15
 msgid "Mr. Stone - Shop owner"
@@ -4088,17 +4088,17 @@ msgstr ""
 #: data/storyline/act2/npc_specs.lua:22
 #: data/storyline/act2/ReturnOfTux.droids:31
 msgid "Weirdo"
-msgstr ""
+msgstr "Podivín"
 
 #: data/storyline/act2/npc_specs.lua:23
 #: data/storyline/act2/ReturnOfTux.droids:146
 msgid "Mike"
-msgstr ""
+msgstr "Mike"
 
 #: data/storyline/act2/npc_specs.lua:26
 #: data/storyline/act2/ReturnOfTux.droids:122
 msgid "Fred"
-msgstr ""
+msgstr "Fred"
 
 #: data/storyline/act2/npc_specs.lua:29
 msgid "Dvorak's acquittance - Colemak"
@@ -4121,32 +4121,32 @@ msgstr ""
 #: data/storyline/act2/ReturnOfTux.droids:6
 #: data/storyline/act2/ReturnOfTux.droids:7
 msgid "RR Guard"
-msgstr ""
+msgstr "Stráž RR"
 
 #: data/storyline/act2/ReturnOfTux.droids:8
 msgid "629 Assassin"
-msgstr ""
+msgstr "629 Vrah"
 
 #: data/storyline/act2/ReturnOfTux.droids:9
 msgid "Car Wrecker"
-msgstr ""
+msgstr "Vrak auta"
 
 #: data/storyline/act2/ReturnOfTux.droids:10
 msgid "Swift Assassin"
-msgstr ""
+msgstr "Rychlý vrah"
 
 #: data/storyline/act2/ReturnOfTux.droids:12
 msgid "MS Officer"
-msgstr ""
+msgstr "MS důstojník"
 
 #: data/storyline/act2/ReturnOfTux.droids:18
 msgid "Crossroad Autogun"
-msgstr ""
+msgstr "Autozbraň rozcestí"
 
 #: data/storyline/act2/ReturnOfTux.droids:20
 msgid "Power Guard"
-msgstr ""
+msgstr "Ochranný kryt"
 
 #: data/storyline/act2/ReturnOfTux.droids:140
 msgid "Friendly Dude"
-msgstr ""
+msgstr "Přítelský týpek"

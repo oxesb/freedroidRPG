@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 0.16+git\n"
+"Project-Id-Version: freedroidrpg 1.0RC1\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-30 22:43+0100\n"
+"POT-Creation-Date: 2019-05-08 17:36+0200\n"
 "PO-Revision-Date: 2019-02-28 09:00+0000\n"
 "Last-Translator: Link_Mario <Link-Mario@gmx.de>, 2019\n"
 "Language-Team: German (https://www.transifex.com/arctic-games/teams/9511/de/)\n"
@@ -1958,7 +1958,7 @@ msgstr "Ich grüße Sie, Meister Benjamin."
 
 #: data/storyline/act1/dialogs/Benjamin.lua:43
 msgid "You are using a fine weapon. I wonder where you found it?"
-msgstr ""
+msgstr "Sie haben aber eine schicke Waffe. Ich frage mich, wo Sie die gefunden haben?"
 
 #: data/storyline/act1/dialogs/Benjamin.lua:54
 msgid "Ah, so you are the new member. Welcome. My name is Benjamin, and I take care of our ranged weaponry here in the citadel."
@@ -6358,12 +6358,12 @@ msgid "Where is everybody? Don't tell me only a dozen of people survived!"
 msgstr "Wo sind denn alle hin? Sagen Sie mir nicht, dass nur ein paar Dutzend Leute überlebt haben!"
 
 #: data/storyline/act1/dialogs/Chandra.lua:454
-msgid "No, no. The causalties here were much smaller than everywhere else."
-msgstr ""
+msgid "No, no. The casualties here were much smaller than everywhere else."
+msgstr "Nein, Nein. Die Umstände hier sind nicht so weitläufig wie an anderen Orten."
 
 #: data/storyline/act1/dialogs/Chandra.lua:455
 msgid "Most of citizens are currently at the mines. They are doing everything they can to keep the town running."
-msgstr ""
+msgstr "Die meisten Leute arbeiten in den Minen. Sie machen alles, um die Stadt am laufen zu halten."
 
 #: data/storyline/act1/dialogs/Chandra.lua:456
 msgid "Children, elderly and others who cannot work are upstairs. They are too afraid to come down."
@@ -17061,7 +17061,7 @@ msgstr "Ja, ich würde gerne mit dir verhandeln."
 
 #: data/storyline/act1/dialogs/Samson.lua:71
 msgid "Yes, please feel free to."
-msgstr ""
+msgstr "Ja, bedien dich ruhig."
 
 #: data/storyline/act1/dialogs/Samson.lua:72
 msgid "I only have some consumables with me."
@@ -17303,11 +17303,11 @@ msgstr "Wirklich, du bist ein Experte in allem! Glückwunsch!"
 
 #: data/storyline/act1/dialogs/Samson.lua:259
 msgid "Let me just upload on you the codes for the skill and you will be able to make slightly longer takeovers."
-msgstr ""
+msgstr "Ich lade dir nun die Codes für die Fertigkeit hoch und du wirst mehr Zeit für die Übernahme erhalten."
 
 #: data/storyline/act1/dialogs/Samson.lua:261
 msgid "I feel... Great! Thanks, Sam! I can't wait to spend hours hacking the same bot!"
-msgstr ""
+msgstr "Ich fühle mich… großartig! Danke, Sam! Ich kann es kaum erwarten, denselben Bot stundenlang zu hacken!"
 
 #: data/storyline/act1/dialogs/Samson.lua:262
 msgid "...I don't think that skill increases your take over for so much time...... Oh well. Have fun, linarian!"

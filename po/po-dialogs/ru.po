@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Родион Р., 2019
+# 231975d40d64bc4f68b60594f3e6fa73, 2019
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 0.16+git\n"
+"Project-Id-Version: freedroidrpg 1.0RC1\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-30 22:43+0100\n"
+"POT-Creation-Date: 2019-05-08 17:36+0200\n"
 "PO-Revision-Date: 2019-02-28 09:00+0000\n"
-"Last-Translator: Родион Р., 2019\n"
+"Last-Translator: 231975d40d64bc4f68b60594f3e6fa73, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/arctic-games/teams/9511/ru/)\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -1035,11 +1035,11 @@ msgstr "Возобновление охранной программы."
 
 #: data/storyline/act1/dialogs/614_portal.lua:69
 msgid "ERROR: unknown command. Searching for similar commands..."
-msgstr ""
+msgstr "ОШИБКА: неизвестная команда. Поиск похожих команд..."
 
 #: data/storyline/act1/dialogs/614_portal.lua:72
 msgid "ERROR! Similar command not found! Using advanced search..."
-msgstr ""
+msgstr "ОШИБКА! Похожие команды не найдены! Производится усиленный поиск..."
 
 #: data/storyline/act1/dialogs/614_portal.lua:74
 msgid "Executable 'bin/hostile' found. Executing..."
@@ -1958,7 +1958,7 @@ msgstr "Приветствую, мастер Бенджамин."
 
 #: data/storyline/act1/dialogs/Benjamin.lua:43
 msgid "You are using a fine weapon. I wonder where you found it?"
-msgstr ""
+msgstr "У тебя прекрасное оружие. Интересно, где ты его нашёл?"
 
 #: data/storyline/act1/dialogs/Benjamin.lua:54
 msgid "Ah, so you are the new member. Welcome. My name is Benjamin, and I take care of our ranged weaponry here in the citadel."
@@ -2687,7 +2687,7 @@ msgstr "Что это за два дерева?"
 
 #: data/storyline/act1/dialogs/Bob.lua:98
 msgid "The trees' fruit is our only source of food. The fruit is slightly bitter and leaves your mouth like an unripe persimmon, but we've noticed our wounds are healing much faster."
-msgstr ""
+msgstr "Плоды деревьев — наш единственный источник пищи. Они немного горчат и вяжут, как незрелая хурма, но мы заметили, что наши раны восстанавливаются намного быстрее."
 
 #: data/storyline/act1/dialogs/Bob.lua:100
 msgid "Yeah. I can give you some. Just ask."
@@ -6358,12 +6358,12 @@ msgid "Where is everybody? Don't tell me only a dozen of people survived!"
 msgstr "Где все? Не говори мне, что выжила всего дюжина человек!"
 
 #: data/storyline/act1/dialogs/Chandra.lua:454
-msgid "No, no. The causalties here were much smaller than everywhere else."
+msgid "No, no. The casualties here were much smaller than everywhere else."
 msgstr ""
 
 #: data/storyline/act1/dialogs/Chandra.lua:455
 msgid "Most of citizens are currently at the mines. They are doing everything they can to keep the town running."
-msgstr ""
+msgstr "Большинство горожан сейчас в шахтах. Они делают всё возможное, чтобы поддерживать существование города."
 
 #: data/storyline/act1/dialogs/Chandra.lua:456
 msgid "Children, elderly and others who cannot work are upstairs. They are too afraid to come down."
@@ -6391,7 +6391,7 @@ msgstr "Ты мне льстишь."
 
 #: data/storyline/act1/dialogs/Cryo-Terminal.lua:27
 msgid "Welcome to [b]Cryonic Solutions[/b]!"
-msgstr "Добро пожаловать в [b]«Крионические решения»[/b]!"
+msgstr "Добро пожаловать в [b]\"Крионические решения\"[/b]!"
 
 #: data/storyline/act1/dialogs/Cryo-Terminal.lua:28
 msgid "We freeze you today, so you can see tomorrow!"
@@ -6400,7 +6400,7 @@ msgstr "Мы заморозим вас сегодня, чтобы вы смог�
 #: data/storyline/act1/dialogs/Cryo-Terminal.lua:29
 #: data/storyline/act1/dialogs/Cryo-Terminal.lua:51
 msgid "Take the fast trip to the future with Cryonic Solutions!"
-msgstr "Совершите быстрое путешествие в будущее с «Крионическими решениями»!"
+msgstr "Совершите быстрое путешествие в будущее с \"Крионическими решениями\"!"
 
 #: data/storyline/act1/dialogs/Cryo-Terminal.lua:30
 msgid "Please make your selection to learn more!"
@@ -6416,7 +6416,7 @@ msgstr "О нас"
 
 #: data/storyline/act1/dialogs/Cryo-Terminal.lua:49
 msgid "Cryonic Solutions is a full service cryonic company."
-msgstr "«Крионические решения» — это крионическая компания с полным спектром услуг."
+msgstr "\"Крионические решения\" - это крионическая компания с полным спектром услуг."
 
 #: data/storyline/act1/dialogs/Cryo-Terminal.lua:50
 msgid "We provide not only full cryostasis, but post-stasis reintegration into the world of tomorrow!"
@@ -6426,7 +6426,7 @@ msgstr "Мы предоставляем не только услуги крио�
 #: data/storyline/act1/dialogs/Cryo-Terminal.lua:53
 #, c-format
 msgid "Cryonic Solutions, since %d, is the name people trust in cryonics!"
-msgstr "С %d года «Крионические решения» — имя, которому люди доверяют!"
+msgstr "С %d года \"Крионические решения\" - имя, которому люди доверяют!"
 
 #: data/storyline/act1/dialogs/Cryo-Terminal.lua:60
 msgid "Appointments and visiting hours"
@@ -6434,7 +6434,7 @@ msgstr "Время приёма и часы посещений"
 
 #: data/storyline/act1/dialogs/Cryo-Terminal.lua:62
 msgid "Cryonic Solutions operates 24 hours a day every day of the year."
-msgstr "«Крионические решения» круглый год работает 24 часа в сутки."
+msgstr "\"Крионические решения\" круглый год работает 24 часа в сутки."
 
 #: data/storyline/act1/dialogs/Cryo-Terminal.lua:63
 msgid "However, for the safety of our clients, visiting hours are restricted."
@@ -6442,11 +6442,11 @@ msgstr "Однако для безопасности наших клиентов
 
 #: data/storyline/act1/dialogs/Cryo-Terminal.lua:64
 msgid "Visiting hours for family and friends are by appointment only [b]Monday-Thursday 10:00-14:00[/b]."
-msgstr "Часы посещения для семьи и друзей только по предварительной записи: [b]понедельник — четверг, 10:00 — 14:00[/b]."
+msgstr "Часы посещения для семьи и друзей только по предварительной записи: [b]понедельник - четверг, 10:00 - 14:00[/b]."
 
 #: data/storyline/act1/dialogs/Cryo-Terminal.lua:65
 msgid "Prospective clients are welcome to make appointments from [b]15:00-17:00 Fridays[/b]."
-msgstr "Запись на приём для возможных клиентов: [b]пятница, 15:00 — 17:00[/b]."
+msgstr "Запись на приём для возможных клиентов: [b]пятница, 15:00 - 17:00[/b]."
 
 #: data/storyline/act1/dialogs/Cryo-Terminal.lua:72
 msgid "Pricing"
@@ -6454,11 +6454,11 @@ msgstr "Ценовая политика"
 
 #: data/storyline/act1/dialogs/Cryo-Terminal.lua:74
 msgid "Seeing the distant future is priceless."
-msgstr "Видеть отдалённое будущее — бесценно."
+msgstr "Увидеть далёкое будущее - бесценно."
 
 #: data/storyline/act1/dialogs/Cryo-Terminal.lua:75
 msgid "But we here at Cryonic Solutions understand that you and your loved ones have a budget. So we offer a wide range of products to make your trip to the future affordable."
-msgstr "Но здесь, в «Крионических решениях», мы понимаем, что вы и ваши близкие имеете ограниченный бюджет. Поэтому мы предоставляем широкий выбор продукции, чтобы ваше путешествие в будущее стало достижимо."
+msgstr "Но здесь, в \"Крионических решениях\", мы понимаем, что вы и ваши близкие имеете ограниченный бюджет. Поэтому мы предоставляем широкий выбор продукции, чтобы ваше путешествие в будущее стало достижимо."
 
 #: data/storyline/act1/dialogs/Cryo-Terminal.lua:76
 msgid "Make an appointment today!"
@@ -6482,7 +6482,7 @@ msgstr "А может, вы хотите увидеть, что вам даду�
 
 #: data/storyline/act1/dialogs/Cryo-Terminal.lua:88
 msgid "These are just some of the many advantages of taking the fast trip to the future with Cryonic Solutions!"
-msgstr "Это лишь некоторые из многих преимуществ от быстрого путешествия в будущее с «Крионическими решениями»!"
+msgstr "Это лишь некоторые из многих преимуществ от быстрого путешествия в будущее с \"Крионическими решениями\"!"
 
 #: data/storyline/act1/dialogs/Cryo-Terminal.lua:98
 msgid "Enter command code"
@@ -7004,11 +7004,11 @@ msgstr ""
 
 #: data/storyline/act1/dialogs/Dixon.lua:309
 msgid "No, negotiations really aren't my cup of tea."
-msgstr ""
+msgstr "Нет, переговоры мне не по душе."
 
 #: data/storyline/act1/dialogs/Dixon.lua:312
 msgid "OK, I understand. However, I will try to contact them somehow. We will see, if there is a benefit in this."
-msgstr ""
+msgstr "ОК, понятно. В любом случае, я попытаюсь с ними связаться. Посмотрим, может из этого что-то выйдет."
 
 #: data/storyline/act1/dialogs/Dixon.lua:313
 msgid "I refused to get the toolkit from the bots in the tunnels because I think they might be sentient. Life is precious and should be preserved. I also turned down Dixon's request to be his middleman."
@@ -7016,7 +7016,7 @@ msgstr ""
 
 #: data/storyline/act1/dialogs/Dixon.lua:322
 msgid "Yes, I think so. The robots must be alive. This is why we need to exterminate them as soon as possible before they kill us all."
-msgstr ""
+msgstr "Да, я так думаю. Роботы еще живы. Поэтому мы должны уничтожить их как можно быстрее, до того как они нас убьют."
 
 #: data/storyline/act1/dialogs/Dixon.lua:325
 msgid "OH MY GOD! Linarian, there is no time to lose!"
@@ -7032,7 +7032,7 @@ msgstr "Да смилостивятся над нами небеса, но уж 
 
 #: data/storyline/act1/dialogs/Dixon.lua:328
 msgid "I will go in there first and clean out the place. Then your people can mop up after me and kill the remainder."
-msgstr ""
+msgstr "Я пойду первым и зачищу это место. Потом твои люди могут пойти за мной и перебить оставшихся."
 
 #: data/storyline/act1/dialogs/Dixon.lua:329
 msgid "Linarian, my people do not carry guns. We are mechanics. You want the military division's help."
@@ -7044,7 +7044,7 @@ msgstr "Ым-м... И ты не слишком ли агрессивен? Воз
 
 #: data/storyline/act1/dialogs/Dixon.lua:331
 msgid "DIXON! Snap out of it! We need to take action NOW. There is no such thing as a friendly bot. They are probably planning to kill us all in our sleep!"
-msgstr ""
+msgstr "ДИКСОН! Приди в себя! Нам нужно действовать СЕЙЧАС. Дружелюбных ботов не бывает. Они явно планируют убить нас пока мы спим! "
 
 #: data/storyline/act1/dialogs/Dixon.lua:332
 msgid "... *sigh*"
@@ -7052,7 +7052,7 @@ msgstr "... *вздох*"
 
 #: data/storyline/act1/dialogs/Dixon.lua:333
 msgid "With a heavy heart I have to admit you are right. There are no friendly bots anymore. Those times are long gone."
-msgstr ""
+msgstr "Скрипя сердцем я должен признать, что ты прав. Никаких дружественных ботов уже нет. Эти времена давно прошли."
 
 #: data/storyline/act1/dialogs/Dixon.lua:334
 msgid "The tunnels are open. Good luck."
@@ -7060,7 +7060,7 @@ msgstr "Туннели открыты. Удачи тебе."
 
 #: data/storyline/act1/dialogs/Dixon.lua:335
 msgid "Once you get inside, you'll need to use the terminal to unlock the door. I've written my password down for you."
-msgstr ""
+msgstr "Когда будешь внутри, тебе нужно использовать терминал чтобы разблокировать дверь. Я записал свой пароль для тебя."
 
 #: data/storyline/act1/dialogs/Dixon.lua:336
 msgid "I will talk to Spencer and ask him for a few attack teams. We will take care of the bots."
@@ -7077,7 +7077,7 @@ msgstr ""
 
 #: data/storyline/act1/dialogs/Dixon.lua:352
 msgid "That wasn't very funny. You scared me. Sheesh."
-msgstr ""
+msgstr "Не смешно. Ты меня напугал. Уххх."
 
 #: data/storyline/act1/dialogs/Dixon.lua:353
 msgid "No one jokes about the bots anymore. We have seen too much death to do that. It is a serious matter."
@@ -7114,7 +7114,7 @@ msgstr "Я дам вам два мальньких устройства, кот�
 
 #: data/storyline/act1/dialogs/Dixon.lua:383
 msgid "I will give you a small device that can emit an Electro Magnetic Pulse."
-msgstr ""
+msgstr "Я дам вам небольшое устройство, которое может создавать электро-магнитный импульс."
 
 #: data/storyline/act1/dialogs/Dixon.lua:384
 msgid "If you get in trouble just activate it and it emits a shockwave damaging any bot nearby. It should give you some breathing room."
@@ -7134,7 +7134,7 @@ msgstr ""
 
 #: data/storyline/act1/dialogs/Dixon.lua:390
 msgid "Once you get inside, you'll need to use the terminal to unlock the door. I'll write down my password for you."
-msgstr ""
+msgstr "Когда будешь внутри, тебе нужно использовать терминал чтобы разблокировать дверь. Я запишу свой пароль для тебя."
 
 #: data/storyline/act1/dialogs/Dixon.lua:391
 msgid "Good luck. Oh, and please come back alive. Better come back with nothing than not at all."
@@ -7178,7 +7178,7 @@ msgstr "Я принёс Диксону инструментарий. Он так
 
 #: data/storyline/act1/dialogs/Dixon.lua:420
 msgid "I killed that strange bot that robbed you. So, here is your toolkit."
-msgstr ""
+msgstr "Я убил ограбившего тебя бота. Что ж, вот твой ящик с инструментами."
 
 #: data/storyline/act1/dialogs/Dixon.lua:422
 msgid "*sigh* I hate to see this end in such a way. Bot or no bot, they let me live. They deserved a chance."
@@ -11752,7 +11752,7 @@ msgstr "Помните, продукты Мегасис — лучшие!"
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:77
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:89
 msgid "one"
-msgstr "one"
+msgstr "один"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:37
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:53
@@ -11761,7 +11761,7 @@ msgstr "one"
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:79
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:91
 msgid "two"
-msgstr "two"
+msgstr "два"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:39
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:55
@@ -11770,7 +11770,7 @@ msgstr "two"
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:81
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:93
 msgid "three"
-msgstr "three"
+msgstr "три"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:41
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:57
@@ -11779,7 +11779,7 @@ msgstr "three"
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:83
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:95
 msgid "four"
-msgstr "four"
+msgstr "четыре"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:43
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:59
@@ -11788,27 +11788,27 @@ msgstr "four"
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:85
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:97
 msgid "five"
-msgstr "five"
+msgstr "пять"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:45
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:61
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:45
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:61
 msgid "six"
-msgstr "six"
+msgstr "шесть"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:47
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:63
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:47
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:63
 msgid "seven"
-msgstr ""
+msgstr "семь"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:80
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:80
 #, c-format
 msgid "CAPTCHA: Please write the number that answers the following: %s - %s = ?"
-msgstr ""
+msgstr "КАПЧА: Пожалуйста, напишите число, которое будет ответом для: %s - %s = ?"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:82
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:85
@@ -11819,7 +11819,7 @@ msgstr "Обнаружен не человек. Парализующий уда�
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:86
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:121
 msgid "NOTE: If you are a human, try again, and make sure you enter digits and not a word."
-msgstr ""
+msgstr "ПРИМЕЧАНИЕ: если вы человек, попробуйте ещё раз, но убедитесь, что вводите цифры, а не слово."
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:90
 msgid "Welcome to MS firmware update server for region #54658."
@@ -15078,7 +15078,7 @@ msgstr "Приветствие: добро пожаловать на арену.
 #: data/storyline/act1/dialogs/Mike.lua:90
 #: data/storyline/act2/dialogs/Mike.lua:80
 msgid "Salutations: M.I.K.E. says hello."
-msgstr "Приветствие: М.И.Ш.А. говорит «здравствуй»."
+msgstr "Приветствие: МИША. говорит \"здравствуй\"."
 
 #: data/storyline/act1/dialogs/Mike.lua:93
 #: data/storyline/act2/dialogs/Mike.lua:83
@@ -15098,7 +15098,7 @@ msgstr "Отлично: новые бойцы ценятся высоко."
 #: data/storyline/act1/dialogs/Mike.lua:109
 #: data/storyline/act2/dialogs/Mike.lua:98
 msgid "Registration: Patience, it will take a little moment."
-msgstr ""
+msgstr "Регистрация: терпение, это недолго."
 
 #: data/storyline/act1/dialogs/Mike.lua:110
 #: data/storyline/act2/dialogs/Mike.lua:99
@@ -15233,7 +15233,7 @@ msgstr "Совет: бережённого Бог бережёт."
 #: data/storyline/act1/dialogs/Mike.lua:223
 #: data/storyline/act2/dialogs/Mike.lua:212
 msgid "Preparation: Patience, it will take a little moment."
-msgstr ""
+msgstr "Подготовка: терпение, это недолго."
 
 #: data/storyline/act1/dialogs/Mike.lua:224
 #: data/storyline/act2/dialogs/Mike.lua:213
@@ -15369,7 +15369,7 @@ msgstr "Ты не такой, как дроиды наверху."
 
 #: data/storyline/act1/dialogs/Mike.lua:326
 msgid "I am a 571 model droid, designed for crew management."
-msgstr ""
+msgstr "Я дроид 571 модели, созданный для управления экипажем."
 
 #: data/storyline/act1/dialogs/Mike.lua:328
 msgid "Do you wish any information about the 500s class?"
@@ -18179,11 +18179,11 @@ msgstr "Спенсер связался со мной и сказал, что я
 
 #: data/storyline/act1/dialogs/Spencer.lua:78
 msgid "Even a Red Guard Member only points Exterminators to rebels and bots."
-msgstr ""
+msgstr "Даже члены Красной стражи направляют истребители только на повстанцев и ботов."
 
 #: data/storyline/act1/dialogs/Spencer.lua:79
 msgid "Unless I am a bot and do not realize it, I must request that you unequip it."
-msgstr ""
+msgstr "Кроме ситуаций, где я бот и не осознаю этого, должен попросить тебя убирать пушку."
 
 #: data/storyline/act1/dialogs/Spencer.lua:82
 msgid "Greetings fellow Red Guard member."
@@ -18315,7 +18315,7 @@ msgstr "А я сейчас не могу выделить ни одного че
 
 #: data/storyline/act1/dialogs/Spencer.lua:210
 msgid "I actually do have the 15 million bucks, here take it!"
-msgstr "А у меня есть 15 миллионов баксов, вот, держите!"
+msgstr "А у меня есть 15 миллионов баксов, вот, держи!"
 
 #: data/storyline/act1/dialogs/Spencer.lua:212
 msgid "Wow, err, I mean, thanks."
@@ -18323,7 +18323,7 @@ msgstr "Ого, э... то есть спасибо."
 
 #: data/storyline/act1/dialogs/Spencer.lua:213
 msgid "You are a Red Guard now."
-msgstr "Теперь ты Красный Страж."
+msgstr "Теперь ты Красный страж."
 
 #: data/storyline/act1/dialogs/Spencer.lua:214
 msgid "Oh, wait, you cheated, didn't you?"
@@ -18331,11 +18331,11 @@ msgstr "Так, постой. Читеришь поди?"
 
 #: data/storyline/act1/dialogs/Spencer.lua:215
 msgid "There is no way we can have lame cheaters in the Red Guard, forget about it!"
-msgstr "Если это так, то проваливай! Красная Стража не нуждается в читерах!"
+msgstr "Если это так, то проваливай! Красная стража не нуждается в читерах!"
 
 #: data/storyline/act1/dialogs/Spencer.lua:216
 msgid "However, if you did in fact NOT cheat, please tell the developers how you got so much money so they can fix it. :)"
-msgstr "Но если это не так, доложите разработчикам о том, откуда вы взяли столько денег, чтобы они исправили проблему. :)"
+msgstr "Но если это НЕ чит, пожалуйста, сообщи разработчикам, откуда ты взял столько денег, чтобы они исправили проблему. :)"
 
 #: data/storyline/act1/dialogs/Spencer.lua:217
 msgid "Contact information can be found at http://www.freedroid.org/Contact"
@@ -18351,105 +18351,105 @@ msgstr "Припоминаю, что у нашего механика Диксо
 
 #: data/storyline/act1/dialogs/Spencer.lua:230
 msgid "Dixon told me about the matter with his toolkit. He seemed pretty impressed by you."
-msgstr "Диксон рассказал мне про его инструменты. Кажется он тобой доволен."
+msgstr "Диксон рассказал мне про инструментарий. Кажется, он тобой доволен."
 
 #: data/storyline/act1/dialogs/Spencer.lua:232
 #: data/storyline/act1/dialogs/Spencer.lua:238
 #: data/storyline/act1/dialogs/Spencer.lua:244
 msgid "Dixon has his toolkit back."
-msgstr ""
+msgstr "Диксон получил свой инструментарий обратно."
 
 #: data/storyline/act1/dialogs/Spencer.lua:233
 msgid "He was in bad mood and told me he had to pay you for getting his own property back."
-msgstr ""
+msgstr "Он был в дурном настроении и сообщил мне, что пришлось заплатить тебе, чтобы вернуть свою собственность."
 
 #: data/storyline/act1/dialogs/Spencer.lua:234
 msgid "I think it is the best for him if we leave him alone the next days."
-msgstr ""
+msgstr "Думаю, лучше оставить его одного на несколько дней."
 
 #: data/storyline/act1/dialogs/Spencer.lua:235
 msgid "I'm sure he has to do a lot now."
-msgstr ""
+msgstr "Уверен, теперь у него много дел."
 
 #: data/storyline/act1/dialogs/Spencer.lua:239
 msgid "He seemed quite aggressive and stressed."
-msgstr ""
+msgstr "Похоже, у него стресс, и он весьма рассержен."
 
 #: data/storyline/act1/dialogs/Spencer.lua:240
 msgid "Poor guy, if we weren't in such a bad situation, he could have some work-free days, but bot attacks continue all the time."
-msgstr ""
+msgstr "Бедняга, если бы не настолько ужасная ситуация, он мог бы получить несколько выходных, но боты постоянно атакуют."
 
 #: data/storyline/act1/dialogs/Spencer.lua:241
 msgid "You better don't bother him the next days."
-msgstr ""
+msgstr "В ближайшие дни тебе лучше его не беспокоить."
 
 #: data/storyline/act1/dialogs/Spencer.lua:245
 msgid "He did rail against you though. He said he had to give you 400 circuits to get his toolkit back, his own property."
-msgstr ""
+msgstr "Хотя он тебя ругал, говорил, что пришлось заплатить тебе 400 схем, чтобы вернуть инструментарий, его собственность."
 
 #: data/storyline/act1/dialogs/Spencer.lua:246
 msgid "That was nearly all the money he had. He said you were too greedy to become a good member and he doesn't want to see you anymore."
-msgstr ""
+msgstr "Это почти все деньги, которые у него были. Он сказал, ты слишком жадный для вступления в стражу, и он больше не желает тебя видеть."
 
 #: data/storyline/act1/dialogs/Spencer.lua:247
 msgid "I think everybody deserves to get a chance. Remember this: If you are negatively conspicuous again, we will ban you from our town!"
-msgstr ""
+msgstr "Думаю, у каждого должен быть шанс, но запомни: если ты снова проштрафишься, мы выгоним тебя из нашего города!"
 
 #: data/storyline/act1/dialogs/Spencer.lua:252
 msgid "When I was eating, Michelangelo told me about his renewed oven energy supply. He seemed very pleased, and so was I."
-msgstr "Когда я обедал, Микелянжело сказал мне, что ты восстановил его источник питания. Он этим весьма доволен, кстати, я тоже."
+msgstr "Когда я ел, Микеланджело рассказал о восстановлении источника энергии его печи. Похоже, он очень доволен, да и я тоже."
 
 #: data/storyline/act1/dialogs/Spencer.lua:254
 msgid "I think you should visit the town's cook sometime. He's usually in the restaurant kitchen."
-msgstr ""
+msgstr "Думаю, тебе стоит как-нибудь навестить городского повара. Обычно он в кухне ресторана."
 
 #: data/storyline/act1/dialogs/Spencer.lua:258
 msgid "From Butch I hear you've become a novice arena master. Congratulations."
-msgstr "От Бутча я слышал, что ты получил звание мастера на арене для новичков. Поздравляю."
+msgstr "От Бутча я слышал, что ты получил звание мастера на арене новичков. Поздравляю."
 
 #: data/storyline/act1/dialogs/Spencer.lua:260
 msgid "You might want to score some arena victories. That could also help your reputation a lot."
-msgstr "Возможно ты захочешь сразиться на арене. Заодно это поднимет твою репутацию."
+msgstr "Возможно, ты захочешь сразиться на арене. Заодно это поднимет твою репутацию."
 
 #: data/storyline/act1/dialogs/Spencer.lua:264
 msgid "Helping Bender along was also a smart move. But you should be very careful with that one. He can get mad rather easily. A bit of a security threat, but we can't be too picky."
-msgstr ""
+msgstr "Помочь Бендеру — мудрый шаг. Но будь с ним очень осторожен. Он слишком легко приходит в ярость. Конечно, это некоторая угроза безопасности, но сейчас не до придирок."
 
 #: data/storyline/act1/dialogs/Spencer.lua:266
 msgid "As far as I know, Bender is still very sick."
-msgstr "Насколько я знаю, Бендер все еще болен."
+msgstr "Насколько я знаю, Бендер всё ещё очень болен."
 
 #: data/storyline/act1/dialogs/Spencer.lua:270
 msgid "But most importantly, I was very impressed with you when you cleared out the warehouse. That was a huge deed I will never forget."
-msgstr "Но, более всего, я был удивлен тем, что ты очистил склад от ботов. Этого поступка я не забуду."
+msgstr "Но важнее, что ты впечатлил меня, когда зачистил склад от ботов. Этого поступка я никогда не забуду."
 
 #: data/storyline/act1/dialogs/Spencer.lua:272
 msgid "Personally I'm also worrying about how we will manage to get some necessary supplies from our warehouse. It's filled with bots and we just don't have the manpower to spare to clean them out."
-msgstr ""
+msgstr "Лично меня беспокоит, как нам перевезти необходимые материалы со склада. Его заполонили боты, а у нас не хватает людей, чтобы отправить туда кого-нибудь для зачистки."
 
 #: data/storyline/act1/dialogs/Spencer.lua:280
 msgid "OK. Your list of achievements is long enough. You can join us. So I hereby declare you a member of the Red Guard."
-msgstr "Хорошо. Список твоих заслуг достаточно велик. Ты можешь вступить в наши ряды. Так что я торжественно объявляю тебя членом Красной Гвардии."
+msgstr "Ладно. Список твоих заслуг достаточно велик - можешь вступить в наши ряды. Итак объявляю тебя членом Красной стражи."
 
 #: data/storyline/act1/dialogs/Spencer.lua:281
 msgid "But now that you are in the Guard, know this: There is only one rule for us guards: We stick together. We survive together or we die together. But we do it together."
-msgstr "Но теперь, когда ты один из нас, помни: для гвардейцев есть только одно правило: быть вместе. Мы вместе выживаем и вместе умираем. Но мы делаем это вместе."
+msgstr "Но теперь, когда ты один из нас, помни: для стражей есть только одно правило - держаться вместе. Мы вместе выживаем или вместе умираем. Но делаем это вместе."
 
 #: data/storyline/act1/dialogs/Spencer.lua:282
 msgid "And now you might want to inspect the guard house. Tell Tybalt to open the door for you. Lukas at the arms counter will give you your armor."
-msgstr ""
+msgstr "А теперь, ты, наверное, захочешь осмотреться в нашей цитадели. Скажи Тибальту, чтобы открыл дверь. Лукас в оружейной выдаст тебе доспехи."
 
 #: data/storyline/act1/dialogs/Spencer.lua:283
 msgid "I hope you will prove yourself a worthy member of the Red Guard."
-msgstr "Я надеюсь, что ты покажешь себя как достойным гвардейцем."
+msgstr "Надеюсь,ты покажешь себя достойным членом Красной стражи."
 
 #: data/storyline/act1/dialogs/Spencer.lua:284
 msgid "Joined Town Guard!!"
-msgstr ""
+msgstr "Вступил в городскую стражу!"
 
 #: data/storyline/act1/dialogs/Spencer.lua:302
 msgid "All in all, not half bad. But there are still things you need to do. Once you finish, then we can talk about it."
-msgstr ""
+msgstr "В целом, неплохо, но всё ещё есть вещи, которые тебе необходимо сделать. Когда закончишь, мы поговорим об этом."
 
 #: data/storyline/act1/dialogs/Spencer.lua:304
 msgid "I can't accept you into the Guard like this. Get going. There are still many things to do for you."
@@ -20594,7 +20594,7 @@ msgstr "Нет, не то. Что-то подсказывает мне, ещё �
 
 #: data/storyline/act1/dialogs/Town-GuardhouseGuard.lua:59
 msgid "I'll stay in guard for a while more, even if Spencer told me to rest. Feel free to walk outside, though. It's just a bad omen, nothing more."
-msgstr ""
+msgstr "Я ещё немного покараулю, хоть Спенсер и сказал мне отдохнуть. Никто не запрещает выйти и погулять. Это просто дурное предчувствие, не более."
 
 #: data/storyline/act1/dialogs/Town-GuardhouseGuard.lua:66
 #: data/storyline/act1/dialogs/Town-TeleporterGuard.lua:155
@@ -22213,7 +22213,7 @@ msgstr "Затем [b]щёлкни левой[/b] по цели, и ты нач�
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:666
 msgid "Alternatively, you can fire a single shot using the [b]Fire Weapon[/b] program, and [b]right clicking[/b] on the enemy."
-msgstr ""
+msgstr "Кроме того можно стрелять одиночными выстрелами с помощью программы [b]Использование оружия[/b], [b]щёлкая правой[/b] по врагу."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:667
 msgid "That is the best way if you are trying to conserve precious ammo with high rate of fire guns."
@@ -22237,11 +22237,11 @@ msgstr "Иногда требуется ручная перезарядка. Т�
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:672
 msgid "If you are reloading, or you are out of ammo, the small message screen at the bottom of your HUD will tell you what type of ammo to get."
-msgstr ""
+msgstr "Во время перезарядки, или когда закончились патроны, на небольшом экране сообщений снизу HUD ты увидишь, какой нужен тип патронов."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:675
 msgid "If I have equipped a ranged weapon and I left click on an enemy, I will begin firing upon it until my gun is empty, and automatically reload. But if I want to fire a single shot, I need to also equip the Fire Weapon program, and then right click. To move while firing, I have to shift + left click to where I want to go. Also, if I want to manually reload I have to press the 'r' key. The small message screen at the bottom of my HUD will tell me if I'm reloading or out of ammunition."
-msgstr ""
+msgstr "Экипировав оружие дальнего боя и щёлкнув левой по врагу, я начну стрелять, пока не закончатся патроны, затем пушка автоматически перезарядится. Для одиночного выстрела нужно, активировав программу \"Использование оружия\", щёлкнуть цель правой. Для движения со стрельбой нужно сделать \"shift + щелчок левой\" по месту, куда перейти. Кроме того, для перезарядки оружия вручную, нужно нажать клавишу \"r\". Небольшой экран сообщений снизу HUD подскажет, идёт перезарядка или патроны закончились."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:685
 msgid "I think I understand how to use guns now."
@@ -22257,11 +22257,11 @@ msgstr "Будь осторожен, разбивая ящики и бочки, 
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:690
 msgid "You already got the .22 pistol I gave you earlier? It's not much as guns go, but it can do the trick."
-msgstr ""
+msgstr "У тебя же есть .22 пистолет, который я дал? Он не так хорош, как другие пушки, но вполне сгодится."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:692
 msgid "Here's my personal .22 Automatic pistol. It's not much as guns go, but it can do the trick."
-msgstr ""
+msgstr "Вот мой личный .22 автоматический пистолет. Он не так хорош, как другие пушки, однако сгодится."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:696
 msgid "Here is some more ammunition for it."
@@ -22269,7 +22269,7 @@ msgstr "Вот ещё немного патронов к нему."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:697
 msgid "You'll no doubt get more mileage out of the plasma pistol, though. Or any other gun, for that matter."
-msgstr ""
+msgstr "Хотя от плазменного пистолета будет больше пользы. Да и от любого другого оружия, если уж на то пошло."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:698
 msgid "Practice switching weapons and reloading."
@@ -22277,11 +22277,11 @@ msgstr "Попрактикуйся в смене и перезарядке ор�
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:699
 msgid "On the other side of that fence are some bots. Practice killing them off with various ranged weapons."
-msgstr ""
+msgstr "По ту сторону забора есть несколько ботов. Попрактикуйся, убивая их разным оружием дальнего боя."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:700
 msgid "Once you've gotten rid of them all, we can move on."
-msgstr ""
+msgstr "Когда избавишься от них, мы продолжим."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:701
 msgid "Tutorial Tom wants me to shoot those bots."
@@ -22293,19 +22293,19 @@ msgstr "У меня закончились патроны. Можно мне е�
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:718
 msgid "Looks like you still have some ammo left in your inventory..."
-msgstr ""
+msgstr "Похоже, что в инвентаре у тебя всё ещё остались патроны..."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:719
 msgid "Why don't you use this first?"
-msgstr ""
+msgstr "Почему бы сначала не использовать их?"
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:720
 msgid "Try to switch to another gun maybe..."
-msgstr ""
+msgstr "Может, попробовать сменить оружие..."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:722
 msgid "Ok, I will give you some more ammo. You seem to be in need, indeed..."
-msgstr ""
+msgstr "Ладно, дам тебе ещё патронов. Похоже, они тебе и правда нужны..."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:728
 msgid "Check the storage room to the west for more guns and ammo."
@@ -23055,7 +23055,7 @@ msgstr ""
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:1182
 msgid "As a reward, I'm giving you a .22 Automatic pistol."
-msgstr ""
+msgstr "В качестве награды я дам тебе .22 автоматический пистолет."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:1186
 msgid "But I have to take these sourcebooks from you to prevent you from cheating in the next section of the tutorial."
@@ -23438,7 +23438,7 @@ msgstr "Это невозможно. Боты преследуют меня! Я 
 
 #: data/storyline/act1/dialogs/WillGapes.lua:59
 msgid "...Okay, but when you feel hungry, do leave and visit the town. You can find food there."
-msgstr ""
+msgstr "...Ладно, но когда проголодаешься, вылезай и отправляйся в город. Там ты сможешь найти еду."
 
 #: data/storyline/act1/dialogs/WillGapes.lua:60
 #: data/storyline/act1/dialogs/WillGapes.lua:64
@@ -23890,24 +23890,24 @@ msgstr "[b]ОШИБКА:[/b] \"chkdsk\" не распознано как вну�
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:30
 msgid "Connection refused. "
-msgstr ""
+msgstr "В соединении отказано."
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:31
 msgid "Terminal #1979 is immune to hack attempts. Or so says the lore."
-msgstr ""
+msgstr "Терминал № 1979 невосприимчив к хакерским атакам. Или так гласит предание."
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:34
 msgid "[b]Arcane Lore[/b] - I've bought an anti-hack software, so I could try to hack it!"
-msgstr ""
+msgstr "[b]Тайные знания[/b] - купив антихакерское программное обеспечение, я могу попытаться взломать его!"
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:35
 msgid "[b]User tux created.[/b] Enjoy!"
-msgstr ""
+msgstr "[b]Пользователь такс создан.[/b] Пользуйтесь!"
 
 #. TRANSLATORS: username, maybe this should stay in lowercase letters?
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:39
 msgid "tux"
-msgstr ""
+msgstr "такс"
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:40
 msgid "Entering as tux"
@@ -23924,11 +23924,11 @@ msgstr ""
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:116
 #, c-format
 msgid "CAPTCHA: Please write the number that answers the following: %s + %s = ?"
-msgstr ""
+msgstr "КАПЧА: Пожалуйста, напишите число, которое будет ответом для: %s + %s = ?"
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:120
 msgid "Access Denied. Electrical discharge in progress."
-msgstr ""
+msgstr "Доступ запрещён. Электрический разряд."
 
 #. TRANSLATORS: command, use lowercase here
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:154
@@ -23938,7 +23938,7 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:160
 msgid "The max available software revision is 9."
-msgstr ""
+msgstr "Максимальная версия программного обеспечения - 9."
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:161
 msgid "Your hacking skill already has or exceeds this level."
@@ -24249,7 +24249,7 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/IcePass-Terminal.lua:75
 msgid "PC LOAD LETTER not found."
-msgstr "ПИСЬМО О ЗАГРУЗКЕ ПК не найдено."
+msgstr "ПИСЬМО ЗАГРУЗКИ ПК не найдено."
 
 #: data/storyline/act2/dialogs/IcePass-Terminal.lua:76
 msgid "Checking B:\\ ....... [b]FAILURE[/b]"
@@ -24307,7 +24307,7 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/IcePass-Terminal.lua:100
 msgid "[b]BOOT ERROR[/b] PC LOAD LETTER not found."
-msgstr "[b]ОШИБКА ЗАГРУЗКИ:[/b] ПИСЬМО О ЗАГРУЗКЕ ПК не найдено."
+msgstr "[b]ОШИБКА ЗАГРУЗКИ:[/b] ПИСЬМО ЗАГРУЗКИ ПК не найдено."
 
 #: data/storyline/act2/dialogs/IcePass-Terminal.lua:105
 msgid "[b]AUTHENTICATION ERROR[/b] PGP Public Key not found."
@@ -24775,11 +24775,11 @@ msgstr " Пилот оказался не таким опытным, как го
 
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:35
 msgid "Shortcuts: DISABLED"
-msgstr ""
+msgstr "Короткие пути: ЗАБЛОКИРОВАНЫ"
 
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:38
 msgid "Shortcuts: ENABLED"
-msgstr ""
+msgstr "Короткие пути: РАЗБЛОКИРОВАНЫ"
 
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:39
 msgid "[b]NOTE[/b] The lift to Factory Core is at Floor 3."
@@ -24806,7 +24806,7 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:72
 msgid "MS Stock Certificate found and validated. Welcome, [b]Will Gapes[/b]!"
-msgstr ""
+msgstr "Сертификат на акции МС найден и подтверждён. Добро пожаловать, [b]Уилл Гейпс[/b]!"
 
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:73
 msgid "Shortcuts status: ENABLED"
@@ -24858,11 +24858,11 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/RRGateTerminal.lua:47
 msgid "City gate status: CLOSED"
-msgstr ""
+msgstr "Городские ворота, состояние: ЗАКРЫТЫ"
 
 #: data/storyline/act2/dialogs/RRGateTerminal.lua:50
 msgid "City gate status: OPEN"
-msgstr ""
+msgstr "Городские ворота, состояние: ОТКРЫТЫ"
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:30
 msgid "Halt there, linarian. You are not my master but looks like him."

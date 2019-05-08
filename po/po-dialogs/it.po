@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 0.16+git\n"
+"Project-Id-Version: freedroidrpg 1.0RC1\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-30 22:43+0100\n"
+"POT-Creation-Date: 2019-05-08 17:36+0200\n"
 "PO-Revision-Date: 2019-02-28 09:00+0000\n"
 "Last-Translator: Silvia, 2019\n"
 "Language-Team: Italian (https://www.transifex.com/arctic-games/teams/9511/it/)\n"
@@ -6358,7 +6358,7 @@ msgid "Where is everybody? Don't tell me only a dozen of people survived!"
 msgstr ""
 
 #: data/storyline/act1/dialogs/Chandra.lua:454
-msgid "No, no. The causalties here were much smaller than everywhere else."
+msgid "No, no. The casualties here were much smaller than everywhere else."
 msgstr ""
 
 #: data/storyline/act1/dialogs/Chandra.lua:455

@@ -9,7 +9,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 0.16+git\n"
+"Project-Id-Version: freedroidrpg 1.0RC1\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
 "POT-Creation-Date: 2019-03-30 22:43+0100\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
@@ -244,11 +244,11 @@ msgstr "Experimentell officer-cyborg. Utrustad med en ny typ av hjärna. Install
 
 #: data/base/droid_specs.lua:1259 data/storyline/act2/ReturnOfTux.droids:129
 msgid "The Glitch"
-msgstr ""
+msgstr "Buggen"
 
 #: data/base/droid_specs.lua:1260
 msgid "I have not failed. I've just found 10,000 ways how to NOT make a bot."
-msgstr ""
+msgstr "Jag har inte misslyckats. Jag har bara hittat 10.000 sätt som man INTE gör en bott på."
 
 #: data/base/droid_specs.lua:1306 data/base/droid_specs.lua:1346
 msgid "Older Man"
@@ -399,11 +399,11 @@ msgstr "Detta är en säker terminal."
 
 #: data/base/game_config.lua:31
 msgid "-= Start of Act 1 =-"
-msgstr ""
+msgstr "-= Början på Akt 1 =-"
 
 #: data/base/game_config.lua:34
 msgid "-= Start of Act 2 =-"
-msgstr ""
+msgstr "-= Början på Akt 2 =-"
 
 #: data/base/item_specs.lua:121
 msgid "The first item is VERY buggy ingame, so don't use it."
@@ -591,7 +591,7 @@ msgstr "Energipiska"
 
 #: data/base/item_specs.lua:617
 msgid "An energy whip commonly found at management from MegaSys facilities. What purpose they serve for is still unknown. Because the real whip is pure energy, it will never break, but it does not stays on the strong side."
-msgstr ""
+msgstr "En energipiska som använts bland arbetsledarna på MegaSys. Ingen vet ännu vad man har den till. Eftersom själva piskan bara består av ren energi, kan den inte gå sönder. Men den är inte särskilt kraftfull."
 
 #: data/base/item_specs.lua:629
 msgid ".22 LR Ammunition"
@@ -763,7 +763,7 @@ msgstr "Elektro-lasergevär"
 
 #: data/base/item_specs.lua:1062
 msgid "A specialized beam of laser momentarily ionizes the air between the target and the gun, turning it into highly conductive plasma. Milliseconds later, a powerful electric shock is delivered through the air and hits the target. This weapon is effective against people as it is against bots, and indeed few are the droid classes that can withstand more than a few hits from it before going down. The ammo is cheap, and it is one of the few man-made weapons which actually produces a blast, being able to harm more than one bot at once. However, it is still no match against Exterminators."
-msgstr ""
+msgstr "En specialiserad laserstråle joniserar luften mellan målet och pistolen, och förvandlar den till elektriskt ledande plasma. Några millisekunder senare skickas en kraftig elstöt genom luften och in i målet. Det här vapnet är lika effektivt på människor som på bottar, och det är faktiskt få sorters droider som klarar mer än några träffar. Ammunitionen är billig och det är ett av få vapen som människor uppfunnit, vars skott kan skada mer än en bott åt gången. Men den kan ändå inte möta sig med Utrotaren."
 
 #: data/base/item_specs.lua:1070
 msgid "Plasma Energy Container"
@@ -791,11 +791,11 @@ msgstr "Ett aningen långsamt vapen, men den skjuter ner botten på stället, n�
 
 #: data/base/item_specs.lua:1130
 msgid "Plasma Cannon"
-msgstr ""
+msgstr "Plasmakanon"
 
 #: data/base/item_specs.lua:1148
 msgid "The plasma cannon is one of the slowest weapon mankind even produced. Based on the Barrett M86 Sniper Rifle, it takes a long time to heat before shooting. Being a plasma bullet, a newbie will most likely miss the target. However, for the skilled marksman, it is a good alternative to a pulse laser cannon, because once it hit, molten metal is usually all that remains where the bot used to be."
-msgstr ""
+msgstr "Plasmakanonen är det långsammaste vapnet skapat av människan. Det är baserat på krypskyttsgeväret Barret M86 och tar lång tid på sig att värma upp. Liksom andra plasmavapen är det svårt för en nybörjare att pricka rätt. Men för en skicklig skytt är detta ett bra alternativ till pulslaserkanonen, eftersom när den väl träffar blir det oftast bara smält metall kvar."
 
 #: data/base/item_specs.lua:1156
 msgid "2mm Exterminator Ammunition"
@@ -831,7 +831,7 @@ msgstr "Gasattack"
 
 #: data/base/item_specs.lua:1222
 msgid "The gas does not look terrifying. It even smells somewhat nice. And then you die. You die a most horrible death, never knowing what killed you. (Note: This does not work on bots)"
-msgstr ""
+msgstr "Gasen ser inte så hemsk ut. Den doftar till och med lite gott. Och sedan dör du. Du dör en mycket fruktansvärd död, ovetandes om vad som dödat dig. (OBS: Funkar inte på bottar)"
 
 #: data/base/item_specs.lua:1229
 msgid "Small EMP Shockwave Generator"
@@ -1212,15 +1212,15 @@ msgstr "Att veta vad dina fiender håller på med är enkelt med hjälp av lite 
 
 #: data/base/item_specs.lua:1834
 msgid "Source Book of Energy Shield"
-msgstr ""
+msgstr "Boken om \"Energisköld\""
 
 #: data/base/item_specs.lua:1835 data/base/skill_specs.lua:213
 msgid "Energy Shield"
-msgstr ""
+msgstr "Energisköld"
 
 #: data/base/item_specs.lua:1839 data/base/skill_specs.lua:218
 msgid "Creating an energy shield to protect you can be a very useful skill. Every hit that you get will be converted into heat. Beware: This heats up excessively. Equipment can still be damaged by heat. When you overheat, shield will try to automatically turn off to prevent damage to itself. It may provoke extra-heat on this process, so be sure to not let it happen."
-msgstr ""
+msgstr "Att kunna skydda sig med en energisköld är mycket praktiskt. Var enda träff omvandlas till värme. Varning: Den blir väldigt varm. Utrustning kan också skadas av värme. När du överhettas kommer skölden stängas av för att inte själv ta skada. Detta leder till ytterligare värme, så se till att det inte händer."
 
 #: data/base/item_specs.lua:1846
 msgid "Subatomic and Nuclear Science for Dummies, Volume IV"
@@ -1244,7 +1244,7 @@ msgstr "Manual om att Extrahera Bottdelar"
 
 #: data/base/item_specs.lua:1869 data/base/item_specs.lua:1873
 msgid "USE FOR CHEATING ONLY. If you see this ingame, please report the bug."
-msgstr ""
+msgstr "ENDAST TILL FÖR FUSK. Om du ser detta i spelet, var vänlig rapportera buggen."
 
 #: data/base/item_specs.lua:1884
 msgid "Strength Pill"
@@ -1469,7 +1469,7 @@ msgstr "Antimateria-omvandlare"
 
 #: data/base/item_specs.lua:2156
 msgid "Tachyon Condensator"
-msgstr "Takyon-kondensator"
+msgstr "Takyon-kondensor"
 
 #: data/base/item_specs.lua:2167
 msgid "Desk Lamp"
@@ -1606,11 +1606,11 @@ msgstr "En flaska fylld med smörj. Den är svår att använda på ett varsamt s
 
 #: data/base/item_specs.lua:2368
 msgid "MS EPROM Programming Interface"
-msgstr ""
+msgstr "MS EPROM Programmeringsgränssnitt"
 
 #: data/base/item_specs.lua:2372
 msgid "Used by developers at MegaSys to load firmware onto newly assembled droids."
-msgstr ""
+msgstr "Användes av utvecklare på MegaSys för att ladda in mjukvara i nytillverkade droider."
 
 #: data/base/item_specs.lua:2383
 msgid "Linarian Power Crank"
@@ -1690,7 +1690,7 @@ msgstr "Ljuddämpare"
 
 #: data/base/item_specs.lua:2486
 msgid "This new generation silencer will not only allow you to catch your enemies by surprise, but will also help you to do more damage in ranged combat."
-msgstr ""
+msgstr "Med den nya generationen ljuddämpare överraskar du inte bara dina fiender. Dina skjutvapen kan även göra mer skada."
 
 #: data/base/item_specs.lua:2494
 msgid "Coprocessor"
@@ -1854,19 +1854,19 @@ msgstr "Ett omslag med texten \"PC LADDNINGSBOKSTÄVER\". Jag har ingen aning va
 
 #: data/base/item_specs.lua:3012
 msgid "Arcane Lore"
-msgstr ""
+msgstr "Mystisk Skrift"
 
 #: data/base/item_specs.lua:3016
 msgid "I've bought an anti-hack software, so I could try to hack it! ...But what, exactly, is the 'Arcane Lore'?"
-msgstr ""
+msgstr "Jag har köpt ett anti-hacking program, så jag kanske kan försöka hacka det! ... Men vad är det ens för \"Mystisk Skrift\"?"
 
 #: data/base/item_specs.lua:3023
 msgid "PGP key"
-msgstr ""
+msgstr "PGP-nyckel"
 
 #: data/base/item_specs.lua:3027
 msgid "It won't open your house, but it can unlock important encrypted archives."
-msgstr ""
+msgstr "Den låser inte upp ditt hem, men den kan låsa upp viktiga krypterade arkiv."
 
 #: data/base/item_specs.lua:3034
 msgid "Cheat Gun"
@@ -2170,7 +2170,7 @@ msgstr "Till Underhållstunnlarna"
 
 #: data/storyline/act1/events.dat:68
 msgid "To Regular Arena"
-msgstr ""
+msgstr "Till Standardarenan"
 
 #: data/storyline/act1/events.dat:79
 msgid "To Master Arena"
@@ -2294,7 +2294,7 @@ msgstr "Lucka med trasig stege"
 
 #: data/storyline/act1/events.dat:1840 data/storyline/act2/events.dat:423
 msgid "Exit Arena"
-msgstr ""
+msgstr "Lämna arenan"
 
 #: data/storyline/act1/events.dat:1847 data/storyline/act2/events.dat:430
 msgid "Start New Wave"
@@ -2400,7 +2400,7 @@ msgstr "Stig ombord!"
 
 #: data/storyline/act1/events.dat:7227
 msgid "All aboard, we're leaving now!"
-msgstr ""
+msgstr "Alle man ombord, då åker vi!"
 
 #: data/storyline/act1/events.dat:7290
 msgid "Back to mainland"
@@ -2936,11 +2936,11 @@ msgstr "Kringströvande bott"
 #: data/storyline/act1/npc_specs.lua:29
 #: data/storyline/act1/ReturnOfTux.droids:439
 msgid "Saul"
-msgstr ""
+msgstr "Saul"
 
 #: data/storyline/act1/npc_specs.lua:29
 msgid "Saul, leader of the Resistance"
-msgstr ""
+msgstr "Saul, Motståndsrörelsens ledare"
 
 #: data/storyline/act1/npc_specs.lua:30
 #: data/storyline/act1/ReturnOfTux.droids:35
@@ -3801,200 +3801,200 @@ msgstr "Företagssnubbe"
 
 #: data/storyline/act2/events.dat:60 data/storyline/act2/levels.dat:30140
 msgid "Skyscrapper Arena"
-msgstr ""
+msgstr "Arenan Skyskrapan"
 
 #: data/storyline/act2/events.dat:108
 msgid "You are unable to return. The only way is forward."
-msgstr ""
+msgstr "Du kan inte återvända. Den enda vägen är framåt."
 
 #: data/storyline/act2/events.dat:109
 msgid "RUMBLE! A earthquake happened!"
-msgstr ""
+msgstr "MULLER! Det inträffade en jordbävning!"
 
 #: data/storyline/act2/events.dat:173
 msgid "Your head spins. What happened?!"
-msgstr ""
+msgstr "Det snurrar i huvudet. Vad hände?!"
 
 #: data/storyline/act2/events.dat:174
 msgid "BOOM BOOOOOOM BOOOM"
-msgstr ""
+msgstr "BOOM BOOOOOOM BOOOM"
 
 #: data/storyline/act2/events.dat:186
 msgid "To Underground F1"
-msgstr ""
+msgstr "Till Underjorden plan 1"
 
 #: data/storyline/act2/events.dat:198 data/storyline/act2/events.dat:235
 msgid "To Underground F2"
-msgstr ""
+msgstr "Till Underjorden plan 2"
 
 #: data/storyline/act2/events.dat:213
 msgid "To Ground Level"
-msgstr ""
+msgstr "Till Markplan"
 
 #: data/storyline/act2/events.dat:222 data/storyline/act2/events.dat:266
 #: data/storyline/act2/events.dat:385
 msgid "To Underground F3"
-msgstr ""
+msgstr "Till Underjorden plan 3"
 
 #: data/storyline/act2/events.dat:244 data/storyline/act2/events.dat:288
 msgid "To Underground F4"
-msgstr ""
+msgstr "Till Underjorden plan 4"
 
 #: data/storyline/act2/events.dat:253
 msgid "To Factory via Shortcut"
-msgstr ""
+msgstr "Till Fabriken via genväg"
 
 #: data/storyline/act2/events.dat:275 data/storyline/act2/events.dat:310
 msgid "To Underground F5"
-msgstr ""
+msgstr "Till Underjorden plan 5"
 
 #: data/storyline/act2/events.dat:297 data/storyline/act2/events.dat:332
 msgid "To Underground F6"
-msgstr ""
+msgstr "Till Underjorden plan 6"
 
 #: data/storyline/act2/events.dat:319 data/storyline/act2/events.dat:354
 msgid "To Underground F7"
-msgstr ""
+msgstr "Till Underjorden plan 7"
 
 #: data/storyline/act2/events.dat:341 data/storyline/act2/events.dat:376
 msgid "To Underground F8"
-msgstr ""
+msgstr "Till Underjorden plan 8"
 
 #: data/storyline/act2/events.dat:363
 msgid "To Underground F9"
-msgstr ""
+msgstr "Till Underjorden plan 9"
 
 #: data/storyline/act2/events.dat:398
 msgid "To Mainland via underground"
-msgstr ""
+msgstr "Till Fastlandet via Underjorden"
 
 #: data/storyline/act2/events.dat:411
 msgid "To Icy Summer Island"
-msgstr ""
+msgstr "Till Frostiga Sommarön"
 
 #: data/storyline/act2/events.dat:591 data/storyline/act2/npc_specs.lua:29
 msgid "Colemak"
-msgstr ""
+msgstr "Colemak"
 
 #: data/storyline/act2/levels.dat:20
 msgid "RR Resorts"
-msgstr ""
+msgstr "RR Resorts"
 
 #: data/storyline/act2/levels.dat:1119
 msgid "Visitors: This Way"
-msgstr ""
+msgstr "Besökare: Hitåt"
 
 #: data/storyline/act2/levels.dat:1143
 msgid "In case of emergency, take the Arcane Lore from the chest!"
-msgstr ""
+msgstr "Vid nödsituation, ta upp den Mystiska Skriften ur lådan!"
 
 #: data/storyline/act2/levels.dat:1235
 msgid "Central Area"
-msgstr ""
+msgstr "Centrum"
 
 #: data/storyline/act2/levels.dat:1971 data/storyline/act2/levels.dat:2456
 msgid "To R&R Resorts"
-msgstr ""
+msgstr "Till R&R Resorts"
 
 #: data/storyline/act2/levels.dat:1974
 msgid "To The Ice Pass"
-msgstr ""
+msgstr "Till Ispasset"
 
 #: data/storyline/act2/levels.dat:1977
 msgid "To R&R Factory"
-msgstr ""
+msgstr "Till R&R-fabriken"
 
 #: data/storyline/act2/levels.dat:1980
 msgid "To Guest Area and City Gate Control"
-msgstr ""
+msgstr "Till Gästområde och Stadsportens Kontrollenhet"
 
 #: data/storyline/act2/levels.dat:1983
 msgid "Guest Room. Please wait patiently for one of our staff pick you up."
-msgstr ""
+msgstr "Gästrum. Vänligen vänta tills vår personal hämtar dig."
 
 #: data/storyline/act2/levels.dat:2113
 msgid "Welcome to Act 2"
-msgstr ""
+msgstr "Välkommen till Akt 2"
 
 #: data/storyline/act2/levels.dat:2484
 msgid "R&R Factory"
-msgstr ""
+msgstr "R&R-fabriken"
 
 #: data/storyline/act2/levels.dat:4627
 msgid "Droid Research & Development Offices"
-msgstr ""
+msgstr "Droidutveckling & Forskning"
 
 #: data/storyline/act2/levels.dat:4678
 msgid "RR Factory, Floor 2"
-msgstr ""
+msgstr "RR-fabriken, Plan 2"
 
 #: data/storyline/act2/levels.dat:6962
 msgid "Servant Development Office. South: Scout Development Office."
-msgstr ""
+msgstr "Utveckling av Tjänare. Söderut: Spanare."
 
 #: data/storyline/act2/levels.dat:7138
 msgid "RR Factory, Floor 3"
-msgstr ""
+msgstr "RR-fabriken, Plan 3"
 
 #: data/storyline/act2/levels.dat:9508
 msgid "Scouts Development Office. Intruders will be shot without mercy."
-msgstr ""
+msgstr "Utveckling av Spanare. Inkräktare skjuts skoningslöst."
 
 #: data/storyline/act2/levels.dat:9511
 msgid "No Trespassing: Factory Core. (Shortcut to Floor 9)"
-msgstr ""
+msgstr "Beträdes ej: Fabrikskärna. (Genväg till vån 9)"
 
 #: data/storyline/act2/levels.dat:9517
 msgid "Are you lost? Northeast to Maintenance Development Office."
-msgstr ""
+msgstr "Är du vilse? Nordöst till Underhållsavdelningen."
 
 #: data/storyline/act2/levels.dat:9695
 msgid "RR Factory, Floor 4"
-msgstr ""
+msgstr "RR-fabriken, Plan 4"
 
 #: data/storyline/act2/levels.dat:12216
 msgid "Maintenance Development Office & Storage. "
-msgstr ""
+msgstr "Utveckling av Underhåll & Lager"
 
 #: data/storyline/act2/levels.dat:12219
 msgid "Crew Development Office. We're sorry that you need to go to your office by stairs."
-msgstr ""
+msgstr "Utveckling av Bemanning. Vi beklagar att du måste ta trappan till kontoret."
 
 #: data/storyline/act2/levels.dat:12222
 msgid "Crew Development Offices at East, in central area."
-msgstr ""
+msgstr "Utvecklingsavdelning för Bemanning, österut, i centrum."
 
 #: data/storyline/act2/levels.dat:12225
 msgid "If the gate to the research area is locked, please do not open it. Insane people working."
-msgstr ""
+msgstr "Om porten till forskningsavdelningen är låst, öppna den inte. Galna personer jobbar där."
 
 #: data/storyline/act2/levels.dat:12409
 msgid "RR Factory, Floor 5"
-msgstr ""
+msgstr "RR-fabriken, Plan 5"
 
 #: data/storyline/act2/levels.dat:14743
 msgid "Crew & Harvesting Development Office. North-east: Security Development Office."
-msgstr ""
+msgstr "Utveckling av Bemanning & Insamling. Åt nordost: Säkerhet."
 
 #: data/storyline/act2/levels.dat:14932
 msgid "RR Factory, Floor 6"
-msgstr ""
+msgstr "RR-fabriken, Plan 6"
 
 #: data/storyline/act2/levels.dat:17301
 msgid "Dispatchment & Signman Offices. Battle droids present. Authorized Access Only!"
-msgstr ""
+msgstr "Utveckling av Befäl & Skyltmakeri. Varning för stridsdroidar. Endast behörig personal!"
 
 #: data/storyline/act2/levels.dat:17304
 msgid "Security Development Office. Sign blinks to spare power. This way for more STAIRS."
-msgstr ""
+msgstr "Utveckling av Säkerhet. Skylten blinkar för att spara ström. Här finns mer TRAPPOR."
 
 #: data/storyline/act2/levels.dat:17499
 msgid "RR Factory, Floor 7"
-msgstr ""
+msgstr "RR-fabriken, Plan 7"
 
 #: data/storyline/act2/levels.dat:19924
 msgid "Use this stair for Sentinel Dev. Office, Command Dev. Office, Factory Plant and Death."
-msgstr ""
+msgstr "Trappan leder till avdelning för Patrull, Befäl, Fabriksgolvet och Döden."
 
 #: data/storyline/act2/levels.dat:19927
 msgid "There is nothing on this sign."
@@ -4002,151 +4002,151 @@ msgstr "Inget står på skylten."
 
 #: data/storyline/act2/levels.dat:19930
 msgid "Sentinel and Command devs, we're sorry, but more stairs ahead."
-msgstr ""
+msgstr "Patrull- och Befälavdelning. Ursäkta, det blir fler trappor."
 
 #: data/storyline/act2/levels.dat:19933
 msgid "Signman Office. Hey, it's me! You totally should visit this office, or send us a LETTER!"
-msgstr ""
+msgstr "Skyltmakeri. Hej, det är jag! Du borde absolut besöka avdelningen, eller skriva ett BREV!"
 
 #: data/storyline/act2/levels.dat:20124
 msgid "RR Factory, Floor 8"
-msgstr ""
+msgstr "RR-fabriken, Plan 8"
 
 #: data/storyline/act2/levels.dat:22890
 msgid "RR Factory, Floor 9"
-msgstr ""
+msgstr "RR-fabriken, Plan 9"
 
 #: data/storyline/act2/levels.dat:25864
 msgid "Command Development Office & Factory. Complainers about stairs will be frozen without mercy. AZ."
-msgstr ""
+msgstr "Utveckling av Befäl & Fabrik. De som klagar på trapporna kommer att frysas skoningslöst. AZ."
 
 #: data/storyline/act2/levels.dat:27156
 msgid "The Ice Pass - North"
-msgstr ""
+msgstr "Ispasset - Norr"
 
 #: data/storyline/act2/levels.dat:27281
 msgid "The Ice Pass"
-msgstr ""
+msgstr "Ispasset"
 
 #: data/storyline/act2/levels.dat:27413
 msgid "The Ice Pass - South"
-msgstr ""
+msgstr "Ispasset - Söder"
 
 #: data/storyline/act2/levels.dat:27538
 msgid "The Ice Pass - Dvorak"
-msgstr ""
+msgstr "Ispasset - Dvorak"
 
 #: data/storyline/act2/levels.dat:27676
 msgid "Icy Summer Artificial Island"
-msgstr ""
+msgstr "Artificiella Frostiga Sommarön"
 
 #: data/storyline/act2/levels.dat:28338
 msgid "To mainland"
-msgstr ""
+msgstr "Till fastlandet"
 
 #: data/storyline/act2/levels.dat:28881
 msgid "Search in the Darkness"
-msgstr ""
+msgstr "På jakt i Mörkret"
 
 #: data/storyline/act2/levels.dat:29946
 msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Management."
-msgstr ""
+msgstr "Hej, nu är du ganska nära tunneln som leder till fastlandet. Se till att du tar med dig nycklarna. Chefen på RR Resorts."
 
 #: data/storyline/act2/levels.dat:29949
 msgid "Blue Marker for Storage Room. Red Marker for Mainland."
-msgstr ""
+msgstr "Blå markering till Lagret. Röd markering till Fastlandet."
 
 #: data/storyline/act2/levels.dat:29952
 msgid "DANGER! Due to the reckless exploration of Dilithium, the ceiling may fall anytime. DO NOT PROCEED."
-msgstr ""
+msgstr "FARA! Pga. den vårdslösa utvinningen av Dilitium kan taket kollapsa när som helst. GÅ EJ VIDARE!"
 
 #: data/storyline/act2/npc_specs.lua:11
 #: data/storyline/act2/ReturnOfTux.droids:123
 msgid "Master Yadda"
-msgstr ""
+msgstr "Master Yadda"
 
 #: data/storyline/act2/npc_specs.lua:15
 msgid "Mr. Stone - Shop owner"
-msgstr ""
+msgstr "Herr Stone - Butiksägare"
 
 #: data/storyline/act2/npc_specs.lua:17
 msgid "RR Security Chief"
-msgstr ""
+msgstr "RR Säkerhetschef"
 
 #: data/storyline/act2/npc_specs.lua:21
 msgid "999 RR Manager"
-msgstr ""
+msgstr "999 RR Chef"
 
 #: data/storyline/act2/npc_specs.lua:22
 msgid "Mr. Saves"
-msgstr ""
+msgstr "Herr Saves"
 
 #: data/storyline/act2/npc_specs.lua:22
 msgid "Mr. Saves, Watcher of Stories"
-msgstr ""
+msgstr "Herr Saves, Berättelsens Åskådare"
 
 #: data/storyline/act2/npc_specs.lua:22
 #: data/storyline/act2/ReturnOfTux.droids:31
 msgid "Weirdo"
-msgstr ""
+msgstr "Knäppis"
 
 #: data/storyline/act2/npc_specs.lua:23
 #: data/storyline/act2/ReturnOfTux.droids:146
 msgid "Mike"
-msgstr ""
+msgstr "Mike"
 
 #: data/storyline/act2/npc_specs.lua:26
 #: data/storyline/act2/ReturnOfTux.droids:122
 msgid "Fred"
-msgstr ""
+msgstr "Fred"
 
 #: data/storyline/act2/npc_specs.lua:29
 msgid "Dvorak's acquittance - Colemak"
-msgstr ""
+msgstr "Dvoraks bekanting - Colemak"
 
 #: data/storyline/act2/quests.lua:27
 msgid "Where Am I?"
-msgstr ""
+msgstr "Var Är Jag?"
 
 #: data/storyline/act2/quests.lua:31
 msgid "Message From An Old Friend"
-msgstr ""
+msgstr "Meddelande Från En Gammal Vän"
 
 #: data/storyline/act2/quests.lua:35
 msgid "The Reapers Of MegaSys I"
-msgstr ""
+msgstr "Skörderarbetarna På MegaSys I"
 
 #: data/storyline/act2/ReturnOfTux.droids:4
 #: data/storyline/act2/ReturnOfTux.droids:5
 #: data/storyline/act2/ReturnOfTux.droids:6
 #: data/storyline/act2/ReturnOfTux.droids:7
 msgid "RR Guard"
-msgstr ""
+msgstr "RR Vakt"
 
 #: data/storyline/act2/ReturnOfTux.droids:8
 msgid "629 Assassin"
-msgstr ""
+msgstr "629 Lönnmördare"
 
 #: data/storyline/act2/ReturnOfTux.droids:9
 msgid "Car Wrecker"
-msgstr ""
+msgstr "Bilskrotare"
 
 #: data/storyline/act2/ReturnOfTux.droids:10
 msgid "Swift Assassin"
-msgstr ""
+msgstr "Blixtsnabb Mördare"
 
 #: data/storyline/act2/ReturnOfTux.droids:12
 msgid "MS Officer"
-msgstr ""
+msgstr "MS-officer"
 
 #: data/storyline/act2/ReturnOfTux.droids:18
 msgid "Crossroad Autogun"
-msgstr ""
+msgstr "Autogevär i korsning"
 
 #: data/storyline/act2/ReturnOfTux.droids:20
 msgid "Power Guard"
-msgstr ""
+msgstr "Kraftnätets Vakt"
 
 #: data/storyline/act2/ReturnOfTux.droids:140
 msgid "Friendly Dude"
-msgstr ""
+msgstr "Trevlig Snubbe"

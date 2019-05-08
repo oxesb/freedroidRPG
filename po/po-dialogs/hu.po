@@ -10,9 +10,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 0.16+git\n"
+"Project-Id-Version: freedroidrpg 1.0RC1\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-30 22:43+0100\n"
+"POT-Creation-Date: 2019-05-08 17:36+0200\n"
 "PO-Revision-Date: 2019-02-28 09:00+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@gmail.com>, 2019\n"
 "Language-Team: Hungarian (https://www.transifex.com/arctic-games/teams/9511/hu/)\n"
@@ -1036,11 +1036,11 @@ msgstr "Őrző program folytatása."
 
 #: data/storyline/act1/dialogs/614_portal.lua:69
 msgid "ERROR: unknown command. Searching for similar commands..."
-msgstr ""
+msgstr "HIBA: ismeretlen parancs. Hasonló parancsok keresése…"
 
 #: data/storyline/act1/dialogs/614_portal.lua:72
 msgid "ERROR! Similar command not found! Using advanced search..."
-msgstr ""
+msgstr "HIBA! Nem található hasonló parancs! Speciális keresés használata…"
 
 #: data/storyline/act1/dialogs/614_portal.lua:74
 msgid "Executable 'bin/hostile' found. Executing..."
@@ -1959,7 +1959,7 @@ msgstr "Üdvözletem Benjamin Uram."
 
 #: data/storyline/act1/dialogs/Benjamin.lua:43
 msgid "You are using a fine weapon. I wonder where you found it?"
-msgstr ""
+msgstr "Egy nagyszerű fegyvert használsz. Vajon hol találhattad?"
 
 #: data/storyline/act1/dialogs/Benjamin.lua:54
 msgid "Ah, so you are the new member. Welcome. My name is Benjamin, and I take care of our ranged weaponry here in the citadel."
@@ -6361,7 +6361,7 @@ msgid "Where is everybody? Don't tell me only a dozen of people survived!"
 msgstr ""
 
 #: data/storyline/act1/dialogs/Chandra.lua:454
-msgid "No, no. The causalties here were much smaller than everywhere else."
+msgid "No, no. The casualties here were much smaller than everywhere else."
 msgstr ""
 
 #: data/storyline/act1/dialogs/Chandra.lua:455
@@ -11805,13 +11805,13 @@ msgstr "hat"
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:47
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:63
 msgid "seven"
-msgstr ""
+msgstr "hét"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:80
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:80
 #, c-format
 msgid "CAPTCHA: Please write the number that answers the following: %s - %s = ?"
-msgstr ""
+msgstr "CAPTCHA: írd be a számot, amely válasz a következőre: %s – %s = ?"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:82
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:85
@@ -11822,7 +11822,7 @@ msgstr "Nem-ember detektálva. Bénító sokk eszközlése."
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:86
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:121
 msgid "NOTE: If you are a human, try again, and make sure you enter digits and not a word."
-msgstr ""
+msgstr "MEGJEGYZÉS: ha ember vagy, akkor próbáld újra, és számokat be, nem egy szót."
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:90
 msgid "Welcome to MS firmware update server for region #54658."
@@ -12624,7 +12624,7 @@ msgstr "Jaj."
 
 #: data/storyline/act1/dialogs/Jennifer.lua:93
 msgid "So we can identify each other as 'friendly' and don't rip ourselves apart."
-msgstr ""
+msgstr "Így egymást „barátként” azonosítjuk, és nem tépjük szét egymást."
 
 #: data/storyline/act1/dialogs/Jennifer.lua:94
 msgid "Uh."
@@ -12636,7 +12636,7 @@ msgstr "Valahogy én is kaphatok egy ilyen chipet?"
 
 #: data/storyline/act1/dialogs/Jennifer.lua:96
 msgid "I don't think you will be able to get one. They're custom and the chip-makers aren't around anymore."
-msgstr ""
+msgstr "Nem hinném, hogy ez lehetséges. Egyénileg készültek és a chipgyártók már nincsenek a közelben."
 
 #: data/storyline/act1/dialogs/Jennifer.lua:97
 msgid "How did you get in here anyway?"
@@ -20597,7 +20597,7 @@ msgstr "Nem, nem az. Valami azt mondja, hogy nincs vége, legalábbis még nem. 
 
 #: data/storyline/act1/dialogs/Town-GuardhouseGuard.lua:59
 msgid "I'll stay in guard for a while more, even if Spencer told me to rest. Feel free to walk outside, though. It's just a bad omen, nothing more."
-msgstr ""
+msgstr "Továbbra is őrt állok, akkor is ha Spencer azt mondta, hogy pihenjek. Viszont nyugodtan kimehetsz. Ez csak egy rossz ómen, semmi több."
 
 #: data/storyline/act1/dialogs/Town-GuardhouseGuard.lua:66
 #: data/storyline/act1/dialogs/Town-TeleporterGuard.lua:155
@@ -21270,7 +21270,7 @@ msgstr "Nem vallaná be, de az elindulásod és a botok összeesése közti idő
 
 #: data/storyline/act1/dialogs/Town-TuxGuard.lua:110
 msgid "I've never seen him as desperate as when you were in here. And I've never seen him as happy as when he dragged us to the teleporter."
-msgstr ""
+msgstr "Sosem láttam olyan elkeseredettnek, mint akkor amikor itt voltál. És sosem láttam olyan boldognak, mint amikor odahúzott minket a teleportálóhoz."
 
 #: data/storyline/act1/dialogs/Town-TuxGuard.lua:116
 msgid "I see. Those must have been some very impressive deeds."
@@ -23441,7 +23441,7 @@ msgstr "Ez lehetetlen. A botok üldöznek! Itt kell maradnom!"
 
 #: data/storyline/act1/dialogs/WillGapes.lua:59
 msgid "...Okay, but when you feel hungry, do leave and visit the town. You can find food there."
-msgstr ""
+msgstr "…Rendben, de ha megéheznél, akkor menj és látogasd meg a várost. Ott találhatsz élelmet."
 
 #: data/storyline/act1/dialogs/WillGapes.lua:60
 #: data/storyline/act1/dialogs/WillGapes.lua:64
@@ -24861,11 +24861,11 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/RRGateTerminal.lua:47
 msgid "City gate status: CLOSED"
-msgstr ""
+msgstr "Városkapu állapota: ZÁRVA"
 
 #: data/storyline/act2/dialogs/RRGateTerminal.lua:50
 msgid "City gate status: OPEN"
-msgstr ""
+msgstr "Városkapu állapota: NYITVA"
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:30
 msgid "Halt there, linarian. You are not my master but looks like him."

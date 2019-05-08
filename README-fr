@@ -1,8 +1,8 @@
     FreedroidRPG : Lisez-moi
-   ----------------------
+   --------------------------
 
 0. Sommaire
-=========
+============
   1. Introduction
   2. Installer et jouer
   3. Contrôles de base
@@ -59,7 +59,7 @@
 
 
 3. Contrôles de base
-============
+=====================
  Mouvement
  
   Le jeu se contrôle en utilisant la souris. Clic gauche vers l'endroit où tu veux bouger. Maintiens
@@ -131,7 +131,7 @@
 	 Solution :
 		1) Vérifier la limite de fichiers ouverts avec la commande 'ulimit -n'
 		2) Définir une nouvelle valeur avec 'ulimit -n 2048'
-	(issue #2913487
+	(issue #2913487)
    * Affichage des caractères : Si aucun caractère ne s'affiche sur le menu principal en mode SDL ou OpenGL, le jeu s'arrête
 	avec le message d'erreur : "In Function: PutCharFont. Surface for character 46 was NULL pointer!",
 	vérifier la configuration écran et définir le profil couleur à sRGB.
@@ -147,7 +147,7 @@
 	Compiler directement SDL depuis les sources plutôt que d'utiliser la version de MacPorts est également une possibilité.
 
  Linux
-   * Pulseaudio: En utilisant SDL-pulseaudio, vous n'aurez probablement aucun son. Cela n'a rien à voir
+   * Pulseaudio : En utilisant SDL-pulseaudio, vous n'aurez probablement aucun son. Cela n'a rien à voir
 	 avec FreedroidRPG mais avec Pulseaudio et ces plugins toujours en général immature. Nous recommandons
 	 d'utiliser e.g. SDL-esd ou SDL-alsa jusqu'à ce que ces problèmes soit régler en amont.
    * Cartes graphiques Intel 915/945/IDG (EEE PCs, netbooks, etc) : Avec Mesa 7.9-devel le jeu peut fonctionner avec 
@@ -170,11 +170,11 @@
 	- Scrolling de texte parfois incorrect dans les dialogues avec les PNJs
 
 
-6. FAQs
-============
+6. FAQ
+=====================
 FAQ diverses :
 
-	Q: Ai-je besoin de Linux pour jouer à FreedroidRPG ?
+	Q : Ai-je besoin de Linux pour jouer à FreedroidRPG ?
 	R : Bien que l'utilisation de Linux soit grandement recommandé pour la santé mentale de
 	   l'administrateur système, des versions d'exécutables de FreedroidRPG pour MS-Windows sont disponibles.
 	   Notez qu'étant donné que l'équipe de développement de FreedroidRPG n'utilise pas 
@@ -223,7 +223,7 @@ FAQ Graphismes :
 	Q : J'utilise Linux avec plusieurs écrans en mode TwinView (Xinerama), cependant le mode
 	   plein écran est centré sur l'espace entre les deux écrans. Je voudrais plutôt qu'il soit
 	   centré sur un des écrans.
-	A : Pour que le jeu n'utilise qu'un seul écran en mode plein écran, faire ceci :
+	R : Pour que le jeu n'utilise qu'un seul écran en mode plein écran, faire ceci :
 	   1) Soyez sûr d'utiliser une version de SDL >= 1.2.14
 	   2) Positionnez la variable d'environnement 'SDL_VIDEO_FULLSCREEN_DISPLAY' au numéro de
 			l'écran que vous voulez utiliser : 0 pour le premier écran, 1 pour le second, etc.
@@ -299,7 +299,7 @@ FAQ Éditeur de Niveau & Développeur :
 	   la liste de diffusion freedroid-discussion ou posez également la question sur le salon IRC. 
 
 	Q : Je veux aider dans le développement de FreedroidRPG. Qu'est ce que je devrais faire en premier ?
-	A : Premièrement, nous recommandons de lire http://www.freedroid.org/developer-area/contribute/ (en anglais)
+	R : Premièrement, nous recommandons de lire http://www.freedroid.org/developer-area/contribute/ (en anglais)
 	   La seconde chose est de nous contacter. Cela peut être fait via IRC (voir 'Contact' plus bas)
 	   ou en utilisant la liste de diffusion freedroid-discussion.
 	   Ensuite, il faut récupérer la dernière version de développement du jeu
@@ -311,12 +311,12 @@ FAQ Éditeur de Niveau & Développeur :
 
 7. Contact
 ===========
- Site web ................ http://www.freedroid.org
+ Site web ................. http://www.freedroid.org
  Page des sources  ........ https://gitlab.com/groups/freedroid
  Canal IRC ................ #freedroid sur irc.freenode.net ou
 								http://webchat.freenode.net/?channels=freedroid (nécessite Javascript)
- Liste de diffusion ................ freedroid-discussion@lists.sourceforge.net
- Bug tracker ................ http://bugs.freedroid.org/
+ Liste de diffusion ....... freedroid-discussion@lists.sourceforge.net
+ Bug tracker .............. http://bugs.freedroid.org/
 
 
 8. Licence

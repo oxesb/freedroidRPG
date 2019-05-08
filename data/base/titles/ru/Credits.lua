@@ -21,42 +21,41 @@ title_screen{
 background = "credits.jpg",
 song = "HellFortressTwo.ogg",
 text = [[
-            FreedroidRPG 0.16
+            FreedroidRPG 1.0
 
 ПРОГРАММИРОВАНИЕ:
 
-        Боб
         Сэмюэль Дегранд
-        Майк Фляйшманн
+        Christoph Franzen
         Скотт Фурри
         Артур Юйе
-        Янн Хорн
-        Джозеф Кусия
         Грегори Лозе
-        Майкл Мендельсон
-        Майлз Маккамон
-        Майкл Паркс
-        Сэмюэль Питуазе
-        v4hn
+        skangas
         Xenux
 
 НАПОЛНЕНИЕ ИГРЫ:
 
-        Эми Батлер
-        Infrared
-        Рэймонд Дженнингс
-        Jonatas L. Nogueira
-        Matthias Krüger
+        Kunjappu Abhijith
+        DroidBotAI
+        Rafael Fontenelle
+        can-ned_food
+        Скотт Фурри
+        Robin Gareus
+        Инфракрасный
+        Маттиас Крюгер
         Майлз Маккамон
+        Жонатас Л. Ногейра
+        Sydney
+        wlan2
 
 ГРАФИКА:
 
-        Infrared
+        Инфракрасный
         Бастиан Салмела
 
 МУЗЫКА:
 
-        Ник Хагман
+        girix8
 
 ПЕРЕВОДЫ:
 
@@ -65,31 +64,50 @@ text = [[
           Зденек
 
         немецкий:
-          JM Franz
-          Matthias Krüger
-          Link Mario
+          JМ Франц
+          Маттиас Крюгер
+          Линк Марио
+
+        es:
+          Педро Арана
+          Carlos Daniel Landin Montaperto
+          Lua Marchante Tello
 
         французский:
-          Sebastian Adam
+          Себастьян Адам
           Алерион
+          Benjamin Bertrand
           Сэмюэль Дегранд
           Николя Фаржье
           Бенжамен Ледюк
           Дыон Кханг Нгуен
           Xenux
 
+        hu:
+          Balazs Mesko
+
+        it:
+          ginoingras
+          Silvia
+          Sebastiano Pistore
+
         бразильский португальский:
-          Anelise D. J.
+          Анелиз Д. Дж.
           Луис Фелипе Феррейра да Силва
-          Jonatas L. Nogueira
+          Rafael Fontenelle
+          Жонатас Л. Ногейра
+
+        ru:
+          Rodion
+          Roman M. Yagodin
 
         шведский:
           Александр Форсберг
+          Jonatan Nyberg
 
 РАЗНОЕ:
 
-        Эйно Кескитало
-        Дыон Кханг Нгуен
+        Julien Puydt
 
 
 
@@ -100,26 +118,36 @@ text = [[
         Мария Грация Аластра
         Педро Арана
         Кэтэлин Бадя
+        Боб
         Пьер Бурдон
         Брайан Си
         Симон Кастельян
+        Майк Фляйшманн
+        Янн Хорн
         jcoral
         Stefan Kangas
+        Джозеф Кусия
         Pavaluca Matei
+        Майлз Маккамон
         Майкл Мендельсон
         Esa-Matti Mourujarvi
         Ari Mustonen
+        Майкл Паркс
         Nicolas Pepin-Perreault
+        Сэмюэль Питуазе
         Quentin Pradet
-        Johannes Prix
-        Reinhard Prix
+        Иоганнес Прикс
+        Райнхард Прикс
         Alexander Solovets
         Philippe Tetar
+        v4hn
 
 НАПОЛНЕНИЕ ИГРЫ:
 
+        Эми Батлер
         Stefan Huszics
-        James
+        Джеймс
+        Рэймонд Дженнингс
         Sebastian Offermann
         Kurtis Parramore
         Niklas Spille
@@ -128,7 +156,7 @@ text = [[
         rudi_s
         Thor
         JK Wood
-
+ 
 МУЗЫКА:
 
         Nick "Nario" Hagman
@@ -142,18 +170,20 @@ text = [[
 
 РАЗНОЕ:
 
-        MBROLA — преобразование текста в речь
-        eSpeak — преобразование текста в речь
+        MBROLA - преобразование текста в речь
+        eSpeak - преобразование текста в речь
         Ryan 'simcop2387' Voots
         Andrew A. Gill
         Zombie Ryushu
         Ted Cipicchio
         Доктор
+        Эйно Кескитало
         Саймон Ньютон
+        Дыон Кханг Нгуен
         Клинт Херрон
-        Hike Danakian
+        Хайк Данакян
         Иэн Гриффитс
         Дэвид Кремер
-        Armin Winterer
+        Армин Уинтерер
 ]]
 }

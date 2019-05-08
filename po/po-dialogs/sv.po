@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 0.16+git\n"
+"Project-Id-Version: freedroidrpg 1.0RC1\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-30 22:43+0100\n"
+"POT-Creation-Date: 2019-05-08 17:36+0200\n"
 "PO-Revision-Date: 2019-02-28 09:00+0000\n"
 "Last-Translator: Alexander Forsberg <alex@datafluss.se>, 2019\n"
 "Language-Team: Swedish (https://www.transifex.com/arctic-games/teams/9511/sv/)\n"
@@ -1035,11 +1035,11 @@ msgstr "Återgår till vaktprogrammet."
 
 #: data/storyline/act1/dialogs/614_portal.lua:69
 msgid "ERROR: unknown command. Searching for similar commands..."
-msgstr ""
+msgstr "FEL: okänt kommando. Söker efter liknande kommandon..."
 
 #: data/storyline/act1/dialogs/614_portal.lua:72
 msgid "ERROR! Similar command not found! Using advanced search..."
-msgstr ""
+msgstr "FEL! Liknande kommandon hittades inte! Gör avancerad sökning..."
 
 #: data/storyline/act1/dialogs/614_portal.lua:74
 msgid "Executable 'bin/hostile' found. Executing..."
@@ -1182,7 +1182,7 @@ msgstr "Lämnar Databasen Med Information Om Interaktiva Produkter"
 #: data/storyline/act1/dialogs/ArenaTerminal.lua:27
 #: data/storyline/act2/dialogs/ArenaTerminal.lua:27
 msgid "[b]Arena Terminated[/b]"
-msgstr ""
+msgstr "[b]Arena Avslutad[/b]"
 
 #: data/storyline/act1/dialogs/ArenaTerminal.lua:30
 #: data/storyline/act2/dialogs/ArenaTerminal.lua:30
@@ -1442,7 +1442,7 @@ msgstr "Det var för att jag röstade på dig som du kom med!"
 
 #: data/storyline/act1/dialogs/Bender.lua:111
 msgid "I said we'd be buddies, didn't I? Want to stand guard with me? It gets boring after a while."
-msgstr ""
+msgstr "Jag sa att vi va polare, visst? Ska vi vakta tillsammans? Det blir tråkigt efter ett tag."
 
 #: data/storyline/act1/dialogs/Bender.lua:112
 msgid "I could tell you all the secrets of the Red Guard."
@@ -1958,7 +1958,7 @@ msgstr "Goddag Mästare Benjamin."
 
 #: data/storyline/act1/dialogs/Benjamin.lua:43
 msgid "You are using a fine weapon. I wonder where you found it?"
-msgstr ""
+msgstr "Du har ett fint vapen. Undrar var du hittade det?"
 
 #: data/storyline/act1/dialogs/Benjamin.lua:54
 msgid "Ah, so you are the new member. Welcome. My name is Benjamin, and I take care of our ranged weaponry here in the citadel."
@@ -2687,7 +2687,7 @@ msgstr "Vad är det här för träd?"
 
 #: data/storyline/act1/dialogs/Bob.lua:98
 msgid "The trees' fruit is our only source of food. The fruit is slightly bitter and leaves your mouth like an unripe persimmon, but we've noticed our wounds are healing much faster."
-msgstr ""
+msgstr "Trädens frukt är den enda mat vi har. Den är bitter och eftersmaken är som sandpapper, men vi har märkt att våra skador läker mycket fortare."
 
 #: data/storyline/act1/dialogs/Bob.lua:100
 msgid "Yeah. I can give you some. Just ask."
@@ -3313,11 +3313,11 @@ msgstr "Bra. Jag måste sova."
 
 #: data/storyline/act1/dialogs/Butch.lua:36
 msgid "Hey! Never seen you, newbie."
-msgstr ""
+msgstr "Tjena! Har aldrig sett dig tidigare, nollan."
 
 #: data/storyline/act1/dialogs/Butch.lua:37
 msgid "Wanna enter the arena?"
-msgstr ""
+msgstr "Vill du in i arenan?"
 
 #: data/storyline/act1/dialogs/Butch.lua:56
 #: data/storyline/act1/dialogs/Butch.lua:68
@@ -3326,15 +3326,15 @@ msgstr "Jaha, vad vill du då, nollan?"
 
 #: data/storyline/act1/dialogs/Butch.lua:57
 msgid "The master arena is by no means an easy task. Maybe you should practice some more before you go there."
-msgstr ""
+msgstr "Mästararenan är ingen lätt match. Kanske du borde öva lite mer innan du går in dit."
 
 #: data/storyline/act1/dialogs/Butch.lua:58
 msgid "It's the trapdoor north of the regular arena. Good luck, newbie: You'll need it."
-msgstr ""
+msgstr "Det är luckan norr om den vanliga arenan. Lycka till, nollan - du kommer behöva det."
 
 #: data/storyline/act1/dialogs/Butch.lua:60
 msgid "Yeah, what do you want?"
-msgstr ""
+msgstr "Jaha, vad vill du?"
 
 #: data/storyline/act1/dialogs/Butch.lua:83
 msgid "Butch... The arena master."
@@ -3346,7 +3346,7 @@ msgstr "Arenan? Vilken arena?"
 
 #: data/storyline/act1/dialogs/Butch.lua:92
 msgid "This underground arena. With holographic bots to train combat techniques against."
-msgstr ""
+msgstr "Den underjordiska arenan. Med holografiska bottar att träna stridstekniker på."
 
 #: data/storyline/act1/dialogs/Butch.lua:93
 #: data/storyline/act1/dialogs/Butch.lua:103
@@ -3355,11 +3355,11 @@ msgstr "Vill du slåss?"
 
 #: data/storyline/act1/dialogs/Butch.lua:100
 msgid "It's about the arena."
-msgstr ""
+msgstr "Angående arenan..."
 
 #: data/storyline/act1/dialogs/Butch.lua:107
 msgid "All you need to do is walk in there and talk to Mike."
-msgstr ""
+msgstr "Du behöver bara gå in dit och prata med Mike."
 
 #: data/storyline/act1/dialogs/Butch.lua:114
 msgid "Yeah. I want to fight."
@@ -3367,11 +3367,11 @@ msgstr "Ja. Jag vill slåss."
 
 #: data/storyline/act1/dialogs/Butch.lua:117
 msgid "Good. I opened up the door. Just continue to the corridor."
-msgstr ""
+msgstr "Bra. Jag öppnade dörren. Fortsätt bara till korridoren."
 
 #: data/storyline/act1/dialogs/Butch.lua:118
 msgid "You'll need talk to Mike, the arena manager, there."
-msgstr ""
+msgstr "Du får snacka med Mike, arenans manager, där inne."
 
 #: data/storyline/act1/dialogs/Butch.lua:119
 msgid "And be careful, your brain will be fooled by what happens in the holographic world. Any damage you take there, will result in actual physical damage."
@@ -3388,11 +3388,11 @@ msgstr "Att slåss i en arena är inte något jag brukar göra, men jag vill tes
 
 #: data/storyline/act1/dialogs/Butch.lua:122
 msgid "Oh, and this room is made out of some special material. People reported their teleporter gadgets didn't work in here. Take care!"
-msgstr ""
+msgstr "Åh just det, rummet är gjort av nått speciellt material. Folk säger att deras teleporterprylar inte fungerar här inne. Var rädd om dig!"
 
 #: data/storyline/act1/dialogs/Butch.lua:123
 msgid "Butch says that teleporter gadgets may not work in the arena."
-msgstr ""
+msgstr "Butch säger att teleportering kanske inte fungerar i arenan."
 
 #: data/storyline/act1/dialogs/Butch.lua:132
 msgid "No way! Violence is wrong! Make love not war!"
@@ -3408,7 +3408,7 @@ msgstr "Få slut på våldet! Allt blod är rött!"
 
 #: data/storyline/act1/dialogs/Butch.lua:153
 msgid "Hey, the bots bleed black. With oil."
-msgstr "Öj, bottarnas blod är svart. Av olja."
+msgstr "Hörru, bottarnas blod är svart. Av olja."
 
 #: data/storyline/act1/dialogs/Butch.lua:154
 msgid "But... But..."
@@ -3428,19 +3428,19 @@ msgstr "Du... Du har förstört mitt pacifistiska slagord... Jag är arg... Så 
 
 #: data/storyline/act1/dialogs/Butch.lua:158
 msgid "Great. Get in the door, newbie, and go talk to Mike."
-msgstr ""
+msgstr "Toppen. Kliv in genom dörren, nollan, och snacka med Mike."
 
 #: data/storyline/act1/dialogs/Butch.lua:169
 msgid "I don't have time, I need to save the world."
-msgstr ""
+msgstr "Jag har inte tid, jag måste rädda världen."
 
 #: data/storyline/act1/dialogs/Butch.lua:172
 msgid "Yeah! Continue to dream, newbie."
-msgstr ""
+msgstr "Hah! Fortsätt drömma, nollan."
 
 #: data/storyline/act1/dialogs/Butch.lua:179
 msgid "Why the heck are you organizing fights? Enough people have died already!"
-msgstr "Varför i hela friden organiserar du slagsmål? Nog med personer har dött redan!"
+msgstr "Varför i hela friden organiserar du slagsmål? Tillräckligt många har dött redan!"
 
 #: data/storyline/act1/dialogs/Butch.lua:181
 msgid "I have a very good reason not to tell you."
@@ -3468,11 +3468,11 @@ msgstr "Jag erbjöd dig att slåss och det ville du."
 
 #: data/storyline/act1/dialogs/Butch.lua:195
 msgid "You wanted a fight, and you will get one."
-msgstr ""
+msgstr "Du ville slåss, och det kommer du få."
 
 #: data/storyline/act1/dialogs/Butch.lua:196
 msgid "I offered a fight, then do it."
-msgstr ""
+msgstr "Jag erbjöd dig en fight. Sätt igång."
 
 #: data/storyline/act1/dialogs/Butch.lua:198
 msgid "There is nothing more to say, newbie."
@@ -3484,36 +3484,36 @@ msgstr "Jag vill ha en större utmaning."
 
 #: data/storyline/act1/dialogs/Butch.lua:207
 msgid "I'm sorry, but town regulations forbid access to the more advanced ranks unless you've completed the noob-, errr, novice first."
-msgstr ""
+msgstr "Tyvärr, stadens bestämmelser tillåter inte att man kommer in i de högre klasserna, förrän man klarat noll-, öh, nybörjar-arenan."
 
 #: data/storyline/act1/dialogs/Butch.lua:208
 msgid "This regulation is in place for your own safety, so that no newbie accidentally signs up as Champion."
-msgstr ""
+msgstr "Den lagen finns till för ditt eget bästa, så inga gröngölingar av misstag skriver in sig som en Mästare."
 
 #. TRANSLATORS: 'more difficult' is related to arena rank
 #: data/storyline/act1/dialogs/Butch.lua:210
 msgid "You might try taking the novice challenge first. Then Mike will grant you access to a more difficult."
-msgstr ""
+msgstr "Försök klara utmaningen som nybörjare först. Sedan kommer Mike låta dig få en svårare."
 
 #: data/storyline/act1/dialogs/Butch.lua:212
 msgid "Newbie, just go talk to Mike."
-msgstr ""
+msgstr "Gå bara och snacka med Mike, nollan."
 
 #: data/storyline/act1/dialogs/Butch.lua:213
 msgid "He has better challenges."
-msgstr ""
+msgstr "Han har bättre utmaningar."
 
 #: data/storyline/act1/dialogs/Butch.lua:220
 msgid "I'm not a 'newbie'."
-msgstr ""
+msgstr "Jag är inte en \"nolla\"."
 
 #: data/storyline/act1/dialogs/Butch.lua:222
 msgid "Of course you are. Everyone start as newbie."
-msgstr ""
+msgstr "Klart du är. Det är alla när de just börjat."
 
 #: data/storyline/act1/dialogs/Butch.lua:223
 msgid "You are just a little more newbie than others."
-msgstr ""
+msgstr "Du är bara lite mer \"nolla\" än alla andra."
 
 #: data/storyline/act1/dialogs/Butch.lua:229
 msgid "What is wrong with you? Why do you keep calling me a newbie?"
@@ -3526,7 +3526,7 @@ msgstr "För att du är en nolla, nollan!"
 #. TRANSLATORS: 'less' refers to 'newbie'
 #: data/storyline/act1/dialogs/Butch.lua:233
 msgid "You are just a little less."
-msgstr ""
+msgstr "Men inte helt och hållet."
 
 #: data/storyline/act1/dialogs/Butch.lua:239
 msgid "Say 'newbie' again and I will rip your spine out."
@@ -3566,23 +3566,23 @@ msgstr "Bäst att ladda om ditt senast sparade spel och testa igen."
 
 #: data/storyline/act1/dialogs/Butch.lua:266
 msgid "Ooops, the Red Guard hates you now."
-msgstr ""
+msgstr "Ooops, Röda Väktarna hatar dig nu."
 
 #: data/storyline/act1/dialogs/Butch.lua:276
 msgid "So, it was just for show. Anything else, newbie?"
-msgstr ""
+msgstr "Så, det var bara ett spel. Nått mer, nollan?"
 
 #: data/storyline/act1/dialogs/Butch.lua:283
 msgid "If Mike manages the arena, how comes you're the arena master?"
-msgstr ""
+msgstr "Om Mike sköter arenan, hur kan du då vara arenans mästare?"
 
 #: data/storyline/act1/dialogs/Butch.lua:286
 msgid "Newbie, we have a second arena, the Master Arena."
-msgstr ""
+msgstr "Nollan, vi har en annan arena, Mästararenan."
 
 #: data/storyline/act1/dialogs/Butch.lua:289
 msgid "It is no place to test your cool Exterminator."
-msgstr ""
+msgstr "Det är inget ställe att testa din häftiga Utrotare."
 
 #: data/storyline/act1/dialogs/Butch.lua:291
 msgid "You will die if you go there."
@@ -3594,31 +3594,31 @@ msgstr "Jag tycker synd om dig din dumma fågel. Gå inte dig."
 
 #: data/storyline/act1/dialogs/Butch.lua:293
 msgid "But if you really want to, the door is now open. It's inside the city, north of this one."
-msgstr ""
+msgstr "Men om du verkligen vill så är dörren öppen nu. Den är i stan, norr om den här."
 
 #: data/storyline/act1/dialogs/Butch.lua:294
 msgid "I told the arena master to let me into the master arena. He agreed. Now all that remains to do is to climb down the ladder to the north arena and wait for death herself to come on her black wings and claim my soul. You know, now that I think about it... Maybe I should stay out of there?"
-msgstr ""
+msgstr "Jag vill ville att arenamästaren skulle släppa in mig på mästararenan. Han gick med på det. Nu är det bara att klättra ner för den norra stegen och vänta på att döden själv ska komma flygande med sina svarta vingar och ta min själ. Vet du, nu när jag tänker efter så... kanske jag inte borde klättra ner dit."
 
 #: data/storyline/act1/dialogs/Butch.lua:295
 msgid "Remember, if your teleporter don't work on the convencional arena, it won't work in the master arena either..."
-msgstr ""
+msgstr "Kom ihåg att om din teleporter inte fungerar i den vanliga arenan kommer den inte fungera i mästararenan heller..."
 
 #: data/storyline/act1/dialogs/Butch.lua:296
 msgid "Again, Butch warned me about possibly broken teleporter gadgets."
-msgstr "Än en gång varnade Butch om att teleportersaker kanske inte fungerar."
+msgstr "Än en gång varnade Butch om att teleportrar kanske inte fungerar."
 
 #: data/storyline/act1/dialogs/Butch.lua:299
 msgid "Oh, that? I've completed a special challenge."
-msgstr ""
+msgstr "Bra fråga. Jag har klarat en särskild utmaning."
 
 #: data/storyline/act1/dialogs/Butch.lua:300
 msgid "But you're still too green to try that. You know, town regulations. You must complete the Elite arena first."
-msgstr ""
+msgstr "Men du är för grön för den. Stadens bestämmelser, förstår du. Du måste klara Elitarenan först."
 
 #: data/storyline/act1/dialogs/Butch.lua:301
 msgid "Once you're done, come talk to me about this again."
-msgstr ""
+msgstr "Kom tillbaka och prata med mig när du är färdig."
 
 #: data/storyline/act1/dialogs/Butch.lua:308
 msgid "The master arena is clear."
@@ -3626,11 +3626,11 @@ msgstr "Mästararenan är tömd."
 
 #: data/storyline/act1/dialogs/Butch.lua:310
 msgid "What!? Impossible! No one has ever survived the second arena! Well, except me, of course."
-msgstr ""
+msgstr "Va?! Omöjligt! Ingen har någonsin överlevt den andra arenan! Ja, utom jag då, förstås."
 
 #: data/storyline/act1/dialogs/Butch.lua:311
 msgid "One has to be out of his mind to even attempt the second arena. Not even Bender tried it!"
-msgstr ""
+msgstr "Man måste vara galen för att ens ge sig på den andra arenan. Inte ens Bender försökte!"
 
 #: data/storyline/act1/dialogs/Butch.lua:312
 msgid "You are not a newbie... You are COMPLETELY INSANE!"
@@ -3646,15 +3646,15 @@ msgstr "Jag överlevde mästararenan. Ett mirakel. Pust."
 
 #: data/storyline/act1/dialogs/Butch.lua:323
 msgid "Sure, go hide away in fear."
-msgstr ""
+msgstr "Visst, gå och göm dig som en fegis."
 
 #: data/storyline/act1/dialogs/Butch.lua:324
 msgid "See you around, newbie."
-msgstr ""
+msgstr "Vi ses, nollan."
 
 #: data/storyline/act1/dialogs/Butch.lua:325
 msgid "Remember: pain is temporary but glory is forever."
-msgstr "Och kom ihåg: smärta är tillfällig men ära är evig."
+msgstr "Kom ihåg: smärta är tillfällig men ära är evig."
 
 #: data/storyline/act1/dialogs/Butch.lua:326
 msgid "Go kill some bots."
@@ -5512,169 +5512,169 @@ msgstr "Vad hände?"
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:135
 msgid "The amount of hostile droids increases in rate of geometric progression!"
-msgstr ""
+msgstr "Det sker en kvadratisk ökning av antalet bottar i området!"
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:136
 msgid "If that was the only problem, I wouldn't worry, but the reactor went offline!"
-msgstr ""
+msgstr "Om det var det enda problemet skulle jag inte oroa mig. Men nu ligger reaktorn nere!"
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:137
 msgid "Looks like its underground power system has left without fuel!"
-msgstr ""
+msgstr "Verkar som det underjordiska kraftnätet saknar bränsle."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:138
 msgid "If I won't restore its power source, then bots will assault the fortress, and the robotic 'plague' will spread through the portal!"
-msgstr ""
+msgstr "Om jag inte fyller på energikällan kommer bottar anfalla fortet, och denna \"pest\" kommer sprida sig vidare genom portalen!"
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:139
 msgid "Hmm... Power source?"
-msgstr ""
+msgstr "Hm... Energikälla?"
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:140
 msgid "DAC. Dilithium-Antimatter Cartridge. To build it, I'll need dilithium crystal, 2 antimatter converters, 6 Tachyon condensators and standard 'H4PPY FUS10N' cartridge."
-msgstr ""
+msgstr "DAC. En Dilitium-Antimateria-kassett. För att tillverka den behöver jag en dilitiumkristall, 2 antimateria-omvandlare, 6 takyon-kondensorer och en vanlig \"H4PPY FUS10N\"-kassett."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:141
 msgid "Fortunately, I've got one crystal somewhere in my junk... Let me search..."
-msgstr ""
+msgstr "Som tur är, har jag en kristall bland allt skräp... Ska bara leta lite..."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:142
 msgid "Second... No... Not there..."
-msgstr ""
+msgstr "Andra... Nej... Inte där..."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:143
 msgid "Rubber duck..."
-msgstr ""
+msgstr "Gummianka..."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:144
 msgid "Instruments..."
-msgstr ""
+msgstr "Instrument..."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:145
 msgid "Another rubber duck..."
-msgstr ""
+msgstr "En gummianka till..."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:147
 msgid "Aha! Found it! Here, take."
-msgstr ""
+msgstr "Aha! Hittade den! Var så god."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:150
 msgid "No... Looks like I don't have it... You'll have to find that one too..."
-msgstr ""
+msgstr "Nej... Verkar inte som jag har någon... Du får hitta även den på egen hand..."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:151
 msgid "*I have a bad feeling somewhy...*"
-msgstr ""
+msgstr "*Jag får dåliga vibbar av någon anledning...*"
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:153
 msgid "The earlier you'll get DAC, the better."
-msgstr ""
+msgstr "Ju snabbare du hämtar DAC:n desto bättre."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:154
 msgid "Otherwise defensive systems will go offline once reserved generators will become exhausted, and bots will destroy everything here, going further through the portal."
-msgstr ""
+msgstr "Annars stängs försvarssystemen ner när reservkraften tar slut, och bottarna kommer förstöra allt här, och ta sig vidare genom portalen."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:155
 msgid "You must help me, or that gonna end bad."
-msgstr ""
+msgstr "Du måste hjälpa mig, annars slutar det illa."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:156
 msgid "Err... Okay."
-msgstr ""
+msgstr "Öh... Okej."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:157
 msgid "Cerebrum's fortress is about to stay undefended because of an exhaust of reactor's fuel. I have to bring him DAC - Dilithium-Antimatter Cartridge. For that I'll need: dilithium crystal, 2 antimatter converters, 6 Tachyon condensators and a 'H4PPY FUS10N' cartridge."
-msgstr ""
+msgstr "Cerebrums fort kommer snart vara försvarslöst, när reaktorns bränsle tar slut. Jag måste ge honom en DAC - Dilitium-Antimateria-kassett. Till den behövs: en dilitiumkristall, 2 antimateria-konverterare, 6 takyon-kondensorer och en \"H4PPY FUS10N-kasset\"."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:160
 msgid "Well, more or less good. After you helped me with my troubles everything is going back to normal."
-msgstr ""
+msgstr "Bra, mer eller mindre. Sedan du hjälpt mig med problemen är allt som vanligt igen."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:163
 msgid "Where are my addons? I need them, really... Hurry please."
-msgstr ""
+msgstr "Var är min extrautrustning? Jag behöver den... Snälla skynda dig."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:166
 msgid "[b]STATUS[/b]: Bad. I am in need of many addons. My targeting system is outdated, armor is too, and reactor is unstable..."
-msgstr ""
+msgstr "[b]STATUS[/b]: Dålig. Jag behöver mycket utrustning. Min system för sikte är utdaterat, min sköld också, och min reaktor är instabil."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:167
 msgid "Maybe I can help you somehow? Which addons do you need?"
-msgstr ""
+msgstr "Kanske jag kan hjälpa på nått sätt? Vilken utrustning behöver du?"
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:168
 msgid "I need these ones:"
-msgstr ""
+msgstr "Jag behöver det här:"
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:169
 msgid "[b]Laser Sight[/b] - it'll make my targeting much easier;"
-msgstr ""
+msgstr "[b]Lasersyn[/b] - det gör att jag kan sikta bättre."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:170
 msgid "[b]Tinfoil Patch[/b] - it'll raise my armor;"
-msgstr ""
+msgstr "[b]Aluminiumfolie[/b] - för att laga min sköld."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:171
 msgid "[b]Peltier Element[/b] - I'll use this one for stabilizing the reactor's cooling."
-msgstr ""
+msgstr "[b]Peltier-element[/b] - för att stabilisera reaktorns kylsystem."
 
 #. TRANSLATORS: %s = Tux:get_player_name()
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:173
 #, c-format
 msgid "So will you help me %s? I will give you some required components."
-msgstr ""
+msgstr "Så, vill du hjälpa mig, %s? Jag kan ge dig några delar du behöver."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:174
 msgid "Of course I will help."
-msgstr ""
+msgstr "Klart jag ska hjälpa dig."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:175
 msgid "Thank you, duck."
-msgstr ""
+msgstr "Tack så mycket, ankan."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:192
 msgid "999 Cerebrum bot asked me for Laser Sight, Tinfoil Patch and Peltier Element. I want to help my new friend so I will bring these addons to him."
-msgstr ""
+msgstr "999 Cerebrum botten ville ha Lasersyn, Aluminiumfolie och ett Peltier-element. Jag vill hjälpa min vän, så jag ska hämta de här tilläggen till honom."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:201
 msgid "I brought your addons. It was a very long way!"
-msgstr ""
+msgstr "Jag tog med tillägg till dig. Det var en lång väg."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:203
 msgid "Thank you! I was fearing that you took my components and happily made addons for yourself."
-msgstr ""
+msgstr "Tack så mycket! Jag var rädd att du skulle fara med mina komponenter och göra utrustning till dig själv."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:204
 msgid "For that I will award you! While you were searching for addons I found two Brain Stimulators. You may have them."
-msgstr ""
+msgstr "Jag ska belöna dig för det här! Medan du sökte efter tillägg, hittade jag två Hjärnsimulatorer. Du kan få dem."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:205
 msgid "Brain Stimulators are very special addons. They speed up learning making you gain more experience from killing bots. But don't use them too often! I have heard that they can burn human's brain!"
-msgstr ""
+msgstr "Hjärnsimulatorer är väldigt speciella tillägg. De påskyndar inlärningen och gör att du får mer erfarenhet av att döda bottar. Men använd dem inte för ofta. Jag har hört att de kan bränna en människohjärna."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:206
 msgid "Don't worry, I have Linarian brain."
-msgstr ""
+msgstr "Oroa dig inte, jag har en linärianhjärna."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:212
 msgid "I brought addons to Cerebrum. He gave me pair of Brain Stimulators as reward. They will be useful."
-msgstr ""
+msgstr "Jag tog med tillägg till Cerebrum. Han gav mig ett par Hjärnsimulatorer som belöning. De kan komma väl till hands."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:219
 msgid "What are these two bots?"
-msgstr ""
+msgstr "Vilka de där två bottarna?"
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:221
 msgid "629 guards the gate, and 476 watches for the cables' state."
-msgstr ""
+msgstr "629 vaktar porten och 476 övervakar kablarnas tillstånd."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:222
 msgid "Why does he watch the cables? Is there something wrong with them?"
-msgstr ""
+msgstr "Varför övervakar han kablarna? Är det något fel på dem?"
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:223
 msgid "No. It just has an error or something. Just ignore that."
-msgstr ""
+msgstr "Nej. Han har bara en bugg eller nått. Bry dig inte om det."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:230
 #: data/storyline/act1/dialogs/SADD.lua:101
@@ -5683,19 +5683,19 @@ msgstr "Varför är du inte fientlig?"
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:232
 msgid "I was inactive during the day, when all bots went insane."
-msgstr ""
+msgstr "Jag var inaktiv den dagen då alla bottar blev galna."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:233
 msgid "I was activated just few weeks ago, so I could survive."
-msgstr ""
+msgstr "Jag aktiverades bara för några veckor sedan, så jag överlevde."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:234
 msgid "Who activated you?"
-msgstr ""
+msgstr "Vem aktiverade dig?"
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:235
 msgid "Who knows... The archive that contains this information can only be accessed through network connection, but it's broken. Sorry duck, I don't know."
-msgstr ""
+msgstr "Vem vet... Arkivet där den informationen finns är bara åtkomligt över en nätverksuppkoppling, men den ligger nere. Ledsen, ankan, men jag vet inte."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:244
 #: data/storyline/act1/dialogs/Town-GuardhouseGuard.lua:68
@@ -5705,15 +5705,15 @@ msgstr "Hejdå."
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:245
 msgid "See you later duck!"
-msgstr ""
+msgstr "Ses senare, ankan!"
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:246
 msgid "If hostile droids won't kill you, then of course we'll see!"
-msgstr ""
+msgstr "Om fientliga bottar inte dödar dig, så ses vi!"
 
 #: data/storyline/act1/dialogs/CerebrumPortalGuardian.lua:247
 msgid "Good luck, funny duck."
-msgstr ""
+msgstr "Lycka till, lustiga anka."
 
 #: data/storyline/act1/dialogs/Chandra.lua:37
 msgid "So the rumors are true - a real live Linarian walks among us!"
@@ -5804,15 +5804,15 @@ msgstr "Men, om vi inte är döda, och bottarna dödar allt som lever..."
 
 #: data/storyline/act1/dialogs/Chandra.lua:106
 msgid "According to my calculations based on the Fermi estimate, there used to be about seven million bots active in the region, everything from cleaner bots and servant droids to much more dangerous ones."
-msgstr ""
+msgstr "Enligt mina inexakta beräkningar bör det ha funnits ca sju miljoner bottar i området, alltifrån skräprensarbottar och betjäntdroider till mycket farligare sorter."
 
 #: data/storyline/act1/dialogs/Chandra.lua:109
 msgid "But, if we are not dead, and if bots were killing everything alive even before you were awaken..."
-msgstr ""
+msgstr "Men, om vi inte är döda, och bottarna dödar allt som lever, till och med innan du väcktes upp..."
 
 #: data/storyline/act1/dialogs/Chandra.lua:111
 msgid "... THEN WE HAVE A CONTRADICTION!"
-msgstr "... ÄR DET NÅGOT SOM INTE STÄMMER HÄR!"
+msgstr "... SÅ ÄR DET NÅGOT SOM INTE STÄMMER!"
 
 #: data/storyline/act1/dialogs/Chandra.lua:112
 msgid "Calm down. There must be some logic behind this."
@@ -5836,7 +5836,7 @@ msgstr "Det är helt ologiskt!"
 
 #: data/storyline/act1/dialogs/Chandra.lua:122
 msgid "Could you explain me about bot respawn?"
-msgstr "Kan du förklara bottarnas respawn?"
+msgstr "Kan du förklara varför bottar respawnar?"
 
 #: data/storyline/act1/dialogs/Chandra.lua:124
 msgid "Respawn? Interesting choice of words. Bots doesn't actually \"respawn\", not literally, but the ships in orbit periodically checks some areas at random and makes a special request so the factory can replace the dead bots."
@@ -5844,7 +5844,7 @@ msgstr "Respawn? Intressant ordval. Bottar \"respawnar\" inte bokstavligen, men 
 
 #: data/storyline/act1/dialogs/Chandra.lua:125
 msgid "I believe that during the check, they also reboot the droids. Therefore I guess that even if you hack a bot, it'll be only a temporary companion."
-msgstr "Jag tror att droiderna även startas om under kontrollen. Därför kommer förmodligen en bott, trots att du hackat den, bara att vara en tillfällig kompis."
+msgstr "Jag tror att droiderna även startas om när de kontrolleras. Därför kommer förmodligen en bott, trots att du hackat den, bara att vara en tillfällig kompis."
 
 #: data/storyline/act1/dialogs/Chandra.lua:126
 msgid "There might be areas where their signals doesn't reach, but it's just too rare to even consider it."
@@ -6355,27 +6355,27 @@ msgstr "Det var allt jag vill fråga dig om."
 
 #: data/storyline/act1/dialogs/Chandra.lua:452
 msgid "Where is everybody? Don't tell me only a dozen of people survived!"
-msgstr ""
+msgstr "Vars är alla? Säg inte att bara ett dussin personer har överlevt!"
 
 #: data/storyline/act1/dialogs/Chandra.lua:454
-msgid "No, no. The causalties here were much smaller than everywhere else."
+msgid "No, no. The casualties here were much smaller than everywhere else."
 msgstr ""
 
 #: data/storyline/act1/dialogs/Chandra.lua:455
 msgid "Most of citizens are currently at the mines. They are doing everything they can to keep the town running."
-msgstr ""
+msgstr "De flesta stadsbor är i gruvorna för tillfället. De gör allt de kan för att hålla liv i stan."
 
 #: data/storyline/act1/dialogs/Chandra.lua:456
 msgid "Children, elderly and others who cannot work are upstairs. They are too afraid to come down."
-msgstr ""
+msgstr "Barn, äldre och andra som inte kan jobba, sitter på sin övervåning. De är för rädda för att komma ned."
 
 #: data/storyline/act1/dialogs/Chandra.lua:457
 msgid "The ones who you will find here are Red Guards, shopkeepers, medics, programmers, librarians, etc."
-msgstr ""
+msgstr "De som syns är Röda Väktare, affärsinnehavare, doktorer, programmerare, bibliotekarier, etc."
 
 #: data/storyline/act1/dialogs/Chandra.lua:458
 msgid "So do not worry. Things may be dire, but we weren't wiped off. Yet."
-msgstr ""
+msgstr "Så oroa dig inte. Det kanske ser illa ut, men vi är inte krossade. Än."
 
 #: data/storyline/act1/dialogs/Chandra.lua:464
 msgid "Thank you for your wise words."
@@ -8268,7 +8268,7 @@ msgstr "Skölden inaktiverad."
 
 #: data/storyline/act1/dialogs/DSB-MachineDeckControl.lua:66
 msgid "I've taken over the control terminal and disabled the disruptor shield. Now, I should go to the Hell Fortress and hack the MS firmware update system."
-msgstr "Jag har tagit över kontrollterminalen och stängt av disruptorskölden. Nu ska jag gå till Helvetesfortet och hacka mig in i MS:s uppdateringssystem."
+msgstr "Jag har tagit över styrenheten och stängt av disruptorskölden. Nu ska jag gå till Helvetesfortet och hacka mig in i MS:s uppdateringssystem."
 
 #: data/storyline/act1/dialogs/DSB-MachineDeckControl.lua:71
 msgid "WARNING: Another user is using this computer."
@@ -8301,19 +8301,19 @@ msgstr "admin@huvud.pc.dsb.ms: ~ #"
 
 #: data/storyline/act1/dialogs/DSB-PowerControl.lua:46
 msgid "powercontrol --halt"
-msgstr ""
+msgstr "strömstyrning --stoppa"
 
 #: data/storyline/act1/dialogs/DSB-PowerControl.lua:48
 msgid "[b]ERROR:[/b] Impossible to shutdown. Please contact Machine Deck."
-msgstr ""
+msgstr "[b]FEL:[/b] Går ej stänga av. Var vänlig kontakta Maskindäcket."
 
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:35
 msgid "[b]Login failed. Entering as Guest[/b]"
-msgstr ""
+msgstr "[b]Inloggning misslyckades. Ansluter som Gäst[/b]"
 
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:37
 msgid "Welcome to [b]Power Control Gate 1 Terminal[/b]!"
-msgstr ""
+msgstr "Välkommen till [b]Styrenheten för Port 1[/b]!"
 
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:54
 msgid "GAME BUG. PLEASE REPORT."
@@ -8465,19 +8465,19 @@ msgstr "Nu jag tar för givet att vi vinner, men det ser förstås ytterst osann
 
 #: data/storyline/act1/dialogs/Duncan.lua:117
 msgid "The war is already over. The bots are all dead."
-msgstr ""
+msgstr "Kriget är redan över. Alla bottar är döda."
 
 #: data/storyline/act1/dialogs/Duncan.lua:118
 msgid "It's still too early to sing victory. You need some time to realize if you truly won or if you're just playing along someone's else plan."
-msgstr ""
+msgstr "Än kan vi inte jubla. Tiden får utvisa om vi verkligen har vunnit, eller om vi bara spelar någon i händerna."
 
 #: data/storyline/act1/dialogs/Duncan.lua:119
 msgid "Someone else? Like whom?"
-msgstr ""
+msgstr "Vem skulle vi spela i händerna?"
 
 #: data/storyline/act1/dialogs/Duncan.lua:120
 msgid "How can you be sure everyone behind the Great Assault is dead, Linarian? Or that it wasn't done on purpose? Only time will tell."
-msgstr ""
+msgstr "Hur vet du att alla som låg bakom det Stora Angreppet verkligen är döda? Eller att det inte var avsiktligt? Det lär vi se med tiden."
 
 #: data/storyline/act1/dialogs/Duncan.lua:127
 msgid "The fall of the Red Guard? Tell me more about it."
@@ -9005,7 +9005,7 @@ msgstr "Donnerwetter, du är en rolig en."
 
 #: data/storyline/act1/dialogs/Engel.lua:135
 msgid "I hope that one day we shall meet again, maybe in a better time."
-msgstr "Jag hoppas vi möts igen en dag, kanske bättre tider."
+msgstr "Jag hoppas vi möts igen en dag, kanske i bättre tider."
 
 #. TRANSLATORS: -- gut = good
 #: data/storyline/act1/dialogs/Engel.lua:137
@@ -9074,7 +9074,7 @@ msgstr "Hur fungerar det?"
 
 #: data/storyline/act1/dialogs/Engel.lua:188
 msgid "I don't know."
-msgstr "Vet ej."
+msgstr "Vet inte."
 
 #: data/storyline/act1/dialogs/Engel.lua:189
 msgid "But these gadgets are very nice for making your equipment better."
@@ -9156,7 +9156,7 @@ msgstr "Bara ta en hammare och slå sehr hårt på bottens huvud."
 
 #: data/storyline/act1/dialogs/Engel.lua:271
 msgid "When you have the head open wide, look around for a part which looks like two circles around a cube. That is what you are looking for."
-msgstr "När huvudet är öppet, letar du efter en bit som ser ut som två cirkel runt en kub. Det är det ut vill ha."
+msgstr "När huvudet är öppet, letar du efter en bit som ser ut som två cirklar runt en kub. Det är den ut vill ha."
 
 #: data/storyline/act1/dialogs/Engel.lua:276
 msgid "What was that about Plasma Transistors?"
@@ -9164,7 +9164,7 @@ msgstr "Hur var det där om Plasmatransistorer?"
 
 #: data/storyline/act1/dialogs/Engel.lua:286
 msgid "How about... Plasma Transistors? Trivial."
-msgstr "Hur är det med... Plasmatransistor? Enkelt."
+msgstr "Hur är det med... Plasmatransistorer? Enkelt."
 
 #: data/storyline/act1/dialogs/Engel.lua:287
 msgid "Remove the bot's engine and look around somewhere close to the battery."
@@ -9220,15 +9220,15 @@ msgstr "Om du inte gör det, blir du själv konverterad till antimateria. Och so
 
 #: data/storyline/act1/dialogs/Engel.lua:330
 msgid "My memory of Tachyon Condensators is incomplete."
-msgstr "Jag minns inte riktigt allt om Takyon-kondensatorer."
+msgstr "Jag minns inte riktigt allt om Takyon-kondensorer."
 
 #: data/storyline/act1/dialogs/Engel.lua:340
 msgid "I will teach you about Tachyon Condensators."
-msgstr "Jag ska lära dig om Takoyn-kondensatorer."
+msgstr "Jag ska lära dig om Takoyn-kondensorer."
 
 #: data/storyline/act1/dialogs/Engel.lua:341
 msgid "Tachyons are very interesting particles. Many stories have been told about them."
-msgstr "Takyoner är mycket intressanta partikelar. Många berättelser finns om dem."
+msgstr "Takyoner är mycket intressanta partiklar. Många berättelser finns om dem."
 
 #: data/storyline/act1/dialogs/Engel.lua:342
 msgid "I have no idea why bots have them inside. They are usually not connected to anything and serve no function."
@@ -9304,17 +9304,17 @@ msgstr "RACHE!!"
 
 #: data/storyline/act1/dialogs/Erin.lua:38
 msgid "Oh great. A greenie. This is no place for you. Come back from where you came."
-msgstr ""
+msgstr "Toppen. En gröngöling. Det här är inget ställe för dig. Gå tillbaka dit du kom från."
 
 #. TRANSLATORS: %s = player name
 #: data/storyline/act1/dialogs/Erin.lua:40
 #, c-format
 msgid "Well, excuse me?! I am %s, the Linarian who will save the world!"
-msgstr ""
+msgstr "Ursäkta mig?! Jag är %s, Linärianen som ska rädda världen!"
 
 #: data/storyline/act1/dialogs/Erin.lua:41
 msgid "Linarian? You're more to some sort of overgrown penguin who forgot where the North Pole is. You're wasting my time, so you better have a reason to be talking to me."
-msgstr ""
+msgstr "Linärian? Du liknar mer en förväxt pingvin som glömt var Nordpolen ligger. Du tar upp min tid, så det är bäst du har en bra anledning."
 
 #: data/storyline/act1/dialogs/Erin.lua:48
 msgid "What's your name?"
@@ -9322,87 +9322,87 @@ msgstr "Vad heter du?"
 
 #: data/storyline/act1/dialogs/Erin.lua:50
 msgid "I am Erin, the bot hunter."
-msgstr ""
+msgstr "Jag är Erin, bottjägaren."
 
 #: data/storyline/act1/dialogs/Erin.lua:51
 msgid "Pleased to meet you! I am-"
-msgstr ""
+msgstr "Trevligt att träffa dig! Jag heter-"
 
 #: data/storyline/act1/dialogs/Erin.lua:52
 msgid "Yes, yes, I don't care. Is that all?"
-msgstr ""
+msgstr "Ja, ja, jag bryr mig inte. Var det allt?"
 
 #: data/storyline/act1/dialogs/Erin.lua:59
 msgid "Do you hate me?"
-msgstr ""
+msgstr "Hatar du mig?"
 
 #: data/storyline/act1/dialogs/Erin.lua:61
 msgid "No, I'm just annoyed with your silly questions."
-msgstr ""
+msgstr "Nej, jag stör mig bara på dina dumma frågor."
 
 #: data/storyline/act1/dialogs/Erin.lua:67
 msgid "You hunt bots?"
-msgstr ""
+msgstr "Jagar du bottar?"
 
 #: data/storyline/act1/dialogs/Erin.lua:69
 msgid "I have to make a living, after all. Food is not free."
-msgstr ""
+msgstr "Man måste försörja sig. Mat är inte gratis."
 
 #: data/storyline/act1/dialogs/Erin.lua:70
 msgid "Even military rations?"
-msgstr ""
+msgstr "Inte ens militärens ransoner?"
 
 #: data/storyline/act1/dialogs/Erin.lua:71
 msgid "...are you being serious?"
-msgstr ""
+msgstr "...skojar du med mig?"
 
 #: data/storyline/act1/dialogs/Erin.lua:77
 msgid "You're the most annoying person I've ever met."
-msgstr ""
+msgstr "Du är den mest irriterande person jag träffat."
 
 #: data/storyline/act1/dialogs/Erin.lua:79
 msgid "The same can be said from my part. Now, will you leave me alone?"
-msgstr ""
+msgstr "Tack detsamma. Lämnar du mig ifred nu?"
 
 #: data/storyline/act1/dialogs/Erin.lua:85
 msgid "I'm serious. You're being rude and mean. What have I done for you?!"
-msgstr ""
+msgstr "Jag är allvarlig. Du är oförskämd och elak. Vad har jag gjort dig?!"
 
 #: data/storyline/act1/dialogs/Erin.lua:87
 msgid "You're wasting my time. This is a reason good enough to I be mean."
-msgstr ""
+msgstr "Du tar min tid. Det är en tillräckligt bra anledning att vara elak."
 
 #: data/storyline/act1/dialogs/Erin.lua:88
 msgid "I think I'll ignore you until you say something important."
-msgstr ""
+msgstr "Jag tror jag ska ignorera dig tills du säger nått viktigt."
 
 #: data/storyline/act1/dialogs/Erin.lua:94
 msgid "Where did you got your outfit?"
-msgstr ""
+msgstr "Vars fick du tag i den där dräkten?"
 
 #: data/storyline/act1/dialogs/Erin.lua:102
 msgid "You look strong."
-msgstr ""
+msgstr "Du ser stark ut."
 
 #: data/storyline/act1/dialogs/Erin.lua:104
 msgid "I don't look strong. I [b]AM[/b] strong. I hunt bots, after all."
-msgstr ""
+msgstr "Jag ser inte stark ut. Jag [b]ÄR[/b] stark. Jag är ju trots allt en bottjägare."
 
 #: data/storyline/act1/dialogs/Erin.lua:105
 msgid "Well, I hunt bots too."
-msgstr ""
+msgstr "Ja men jag jagar också bottar."
 
 #: data/storyline/act1/dialogs/Erin.lua:106
 msgid "...are you being serious? No, you surely jest."
-msgstr ""
+msgstr "...seriöst? Nej, du skämtar bara med mig."
 
 #: data/storyline/act1/dialogs/Erin.lua:112
 msgid "Jest?? I am at least so strong as you!"
-msgstr ""
+msgstr "Skämtar?? Jag är minst lika stark som du!"
 
 #: data/storyline/act1/dialogs/Erin.lua:114
 msgid "Oh, is this a challenge?"
-msgstr ""
+msgstr "Åh, är det en utmaning?"
 
 #: data/storyline/act1/dialogs/Erin.lua:116
 #: data/storyline/act1/dialogs/Francis.lua:110
@@ -9411,55 +9411,55 @@ msgstr "... Ja."
 
 #: data/storyline/act1/dialogs/Erin.lua:117
 msgid "Hmm. Good. I like challenges. We shall fight then, Linarian!"
-msgstr ""
+msgstr "Hmm. Bra. Jag gillar utmaningar. Låt oss fightas då, Linärian!"
 
 #: data/storyline/act1/dialogs/Erin.lua:118
 msgid "But I will be fair. Only when you get expertise at melee training, we can spar."
-msgstr ""
+msgstr "Men jag ska vara rättvis. När du fått träna upp dig i närstrid, då kan vi mötas."
 
 #: data/storyline/act1/dialogs/Erin.lua:124
 msgid "How do you dare to call me a penguin?? Face my wrath!"
-msgstr ""
+msgstr "Hur vågar du kalla mig för pingvin?? Smaka på min vrede!"
 
 #: data/storyline/act1/dialogs/Erin.lua:126
 msgid "HAHAHA!"
-msgstr ""
+msgstr "HAHAHA!"
 
 #: data/storyline/act1/dialogs/Erin.lua:127
 msgid "I've fought with many bots before, and I'll not be scared by a mere linarian."
-msgstr ""
+msgstr "Jag har slagits mot många bottar och jag kommer inte bli skrämd av en liten linärian."
 
 #: data/storyline/act1/dialogs/Erin.lua:128
 msgid "Feel free to try, though. Anytime."
-msgstr ""
+msgstr "Men försök gärna, när som helst."
 
 #: data/storyline/act1/dialogs/Erin.lua:134
 msgid "Prepare to die!"
-msgstr ""
+msgstr "Gör dig redo att dö!"
 
 #: data/storyline/act1/dialogs/Erin.lua:136
 msgid "Who, me? Didn't you mean... you?"
-msgstr ""
+msgstr "Jag nä? Du menar väl... du?"
 
 #: data/storyline/act1/dialogs/Erin.lua:137
 msgid "[b]She draws a short sword she kept hidden the whole time, and struck it against your chest.[/b]"
-msgstr ""
+msgstr "[b]Hon drar fram ett svärd som hon haft gömt hela tiden och kör det mot bröstet på dig.[/b]"
 
 #: data/storyline/act1/dialogs/Erin.lua:138
 msgid "Now you die."
-msgstr ""
+msgstr "Nu är det du som dör."
 
 #: data/storyline/act1/dialogs/Erin.lua:140
 msgid "Not... yet!"
-msgstr ""
+msgstr "Inte... än!"
 
 #: data/storyline/act1/dialogs/Erin.lua:141
 msgid "[b]With visible effort, you manage to get away.[/b]"
-msgstr ""
+msgstr "[b]Med stor ansträngning lyckas du ta dig undan.[/b]"
 
 #: data/storyline/act1/dialogs/Erin.lua:142
 msgid "Come back, penguin... I'll make you... SUFFER."
-msgstr ""
+msgstr "Kom tillbaka pingvin... Jag ska få dig att... LIDA."
 
 #: data/storyline/act1/dialogs/Erin.lua:150
 #: data/storyline/act1/dialogs/Stone.lua:72
@@ -9469,63 +9469,63 @@ msgstr "Jag vill göra affärer med dig."
 
 #: data/storyline/act1/dialogs/Erin.lua:152
 msgid "Do I look some sort of vending machine to you? What makes you think I will have anything to trade with you?"
-msgstr ""
+msgstr "Ser jag ut som nån automat? Vad får dig att tro att jag har nått att byta med dig?"
 
 #: data/storyline/act1/dialogs/Erin.lua:153
 msgid "I said you were overgrown earlier. Forget it. You're just a kid."
-msgstr ""
+msgstr "Jag kallade dig förväxt tidigare. Glöm det. Du är bara en unge."
 
 #: data/storyline/act1/dialogs/Erin.lua:162
 msgid "Can you train me, so I can get expertise at melee fighting for our promised fight?"
-msgstr ""
+msgstr "Kan du träna upp mig på närstrid inför vår utlovade fight?"
 
 #: data/storyline/act1/dialogs/Erin.lua:165
 msgid "What?? I am not a Linarian babysitter!"
-msgstr ""
+msgstr "Va?? Jag är ingen barnvakt för nån Linärian!"
 
 #: data/storyline/act1/dialogs/Erin.lua:166
 msgid "See in the town if someone is fool enough to want to teach you the BASICS."
-msgstr ""
+msgstr "Se om nån i stan är dum nog att försöka lära dig GRUNDERNA."
 
 #: data/storyline/act1/dialogs/Erin.lua:167
 msgid "You better get out of my face!"
-msgstr ""
+msgstr "Försvinn så jag slipper se dig!"
 
 #: data/storyline/act1/dialogs/Erin.lua:170
 msgid "Oh, so the duck wants a lesson. So, tell me, what would I gain from that?"
-msgstr ""
+msgstr "Jaså, ankan vill få en kurs. Så säg mig, vad vinner jag på det?"
 
 #: data/storyline/act1/dialogs/Erin.lua:171
 msgid "My time is precious, after all."
-msgstr ""
+msgstr "Min tid är värdefull, trots allt."
 
 #: data/storyline/act1/dialogs/Erin.lua:174
 msgid "You want me to train you, then? Have you already look on the mirror?"
-msgstr ""
+msgstr "Så du vill att jag ska träna dig? Har du sett dig i spegeln på sistone?"
 
 #: data/storyline/act1/dialogs/Erin.lua:175
 msgid "You're more green than the color green. In fact, calling you a newbie would be a offense to the term itself."
-msgstr ""
+msgstr "Du är grönare än färgen grön. Att ens kalla dig en nybörjare vore en förolämpning ordet själv."
 
 #: data/storyline/act1/dialogs/Erin.lua:176
 msgid "But, maybe, with my training, you can improve. Assuming you can improve, that is. But it'll be hard, I warn you."
-msgstr ""
+msgstr "Men, kanske, du kunde bli bättre med min hjälp. Om du ens kan förbättras. Men det kommer bli tufft, jag varnar dig."
 
 #: data/storyline/act1/dialogs/Erin.lua:177
 msgid "It's take or leave."
-msgstr ""
+msgstr "Ta det eller gå."
 
 #: data/storyline/act1/dialogs/Erin.lua:190
 msgid "Look who is back asking for more training. I'm amused."
-msgstr ""
+msgstr "Titta vem som kommer och ber om mer träning. Jag är road."
 
 #: data/storyline/act1/dialogs/Erin.lua:191
 msgid "It seems like you've been doing your homework, uhm?"
-msgstr ""
+msgstr "Det verkar som du gjort din hemläxa, inte sant?"
 
 #: data/storyline/act1/dialogs/Erin.lua:192
 msgid "Of course I've improved. I have an excellent teacher, after all."
-msgstr ""
+msgstr "Klart jag blivit bättre. Jag har ju en toppenbra lärare."
 
 #: data/storyline/act1/dialogs/Erin.lua:193
 msgid "You...! Okay, maybe I took too easy previously! I will train you so hard this time, that you'll sweat blood!"
@@ -9855,11 +9855,11 @@ msgstr ""
 
 #: data/storyline/act1/dialogs/Ewald.lua:30
 msgid "Welcome to this Bar! First time here, eh? Here, take this Mug for FREE!"
-msgstr ""
+msgstr "Välkommen till baren! Första gången va? Varsågod, ta den här muggen, alldeles GRATIS!"
 
 #: data/storyline/act1/dialogs/Ewald.lua:31
 msgid "You are required to bring it any time you want something to drink! Don't lose it, or you'll need to buy a new one!"
-msgstr ""
+msgstr "Du måste ta med dig den varje gång du vill ha nått att dricka! Slarva inte bort den! Då måste du köpa en ny."
 
 #: data/storyline/act1/dialogs/Ewald.lua:40
 msgid "Your lady friend just told me the epic story of how you rescued her."
@@ -10126,7 +10126,7 @@ msgstr "Du, jag kunde behöva en uppfriskande drink."
 
 #: data/storyline/act1/dialogs/Ewald.lua:232
 msgid "You'll need a mug or a cup for me to put it in."
-msgstr ""
+msgstr "Du måste ha en mugg eller nått att dricka ur."
 
 #: data/storyline/act1/dialogs/Ewald.lua:234
 msgid "Here, have a Watery Mary."
@@ -11614,7 +11614,7 @@ msgstr "Välkommen till MegaSys fabrikskomplex."
 
 #: data/storyline/act1/dialogs/HF-EntranceBot.lua:31
 msgid "Still alive? Don't you know that you should update your firmware often?"
-msgstr ""
+msgstr "Lever du än? Vet du inte att man ska uppdatera sin mjukvara ofta?"
 
 #: data/storyline/act1/dialogs/HF-EntranceBot.lua:33
 msgid "Access is restricted to authorized personnel."
@@ -11695,7 +11695,7 @@ msgstr "Men jag har det här certifikatet."
 
 #: data/storyline/act1/dialogs/HF-EntranceBot.lua:89
 msgid "The gates are open. The firmware server should lay beyond them."
-msgstr ""
+msgstr "Portarna är öppna. Mjukvaruservern borde finnas bakom dem."
 
 #: data/storyline/act1/dialogs/HF-EntranceBot.lua:100
 msgid "I have come to save the world, I don't need any proof."
@@ -11802,13 +11802,13 @@ msgstr "sex"
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:47
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:63
 msgid "seven"
-msgstr ""
+msgstr "sju"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:80
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:80
 #, c-format
 msgid "CAPTCHA: Please write the number that answers the following: %s - %s = ?"
-msgstr ""
+msgstr "CAPTCHA: Vänligen skriv det nummer som blir svaret: %s - %s = ?"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:82
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:85
@@ -11819,7 +11819,7 @@ msgstr "Icke-människa detekterad. Tilldelar paralyserande chock."
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:86
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:121
 msgid "NOTE: If you are a human, try again, and make sure you enter digits and not a word."
-msgstr ""
+msgstr "OBS: Om du är en människa, försök igen och skriv siffror, inte ett ord."
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:90
 msgid "Welcome to MS firmware update server for region #54658."
@@ -11943,15 +11943,15 @@ msgstr "Laddar Upp Status..."
 
 #: data/storyline/act1/dialogs/InvaderBot.lua:68
 msgid "Target attempts to engage discourse. Unacceptable outcomes predicted. Threat identified."
-msgstr ""
+msgstr "Målet försöker inleda samtal. Oacceptabla konsekvenser förutsedda. Hot upptäckt."
 
 #: data/storyline/act1/dialogs/InvaderBot.lua:70
 msgid "Target is inquisitive. Threat identified."
-msgstr ""
+msgstr "Målet är frågvist. Hot upptäckt."
 
 #: data/storyline/act1/dialogs/InvaderBot.lua:72
 msgid "Target issues verbal threat."
-msgstr ""
+msgstr "Målet avger ett verbalt hot."
 
 #: data/storyline/act1/dialogs/InvaderBot.lua:74
 msgid "Linarian is hostile. Destroy!"
@@ -12115,15 +12115,15 @@ msgstr "Visst, det låter som en bra affär."
 
 #: data/storyline/act1/dialogs/Iris.lua:180
 msgid "Uhm, sorry, but where is the Desk Lamp?"
-msgstr ""
+msgstr "Öh, ursäkta, men var är Skrivbordslampan?"
 
 #: data/storyline/act1/dialogs/Iris.lua:181
 msgid "Erm, ah, good question, where could it be?"
-msgstr ""
+msgstr "Eh, ja, bra fråga, var kan den vara?"
 
 #: data/storyline/act1/dialogs/Iris.lua:182
 msgid "Well, eff off until you have the lamp!"
-msgstr ""
+msgstr "Om du inte har lampan, stick och brinn!"
 
 #: data/storyline/act1/dialogs/Iris.lua:184
 msgid "Take these 100 valuable circuits."
@@ -12168,11 +12168,11 @@ msgstr "Det kan du drömma om, Pingvin!"
 
 #: data/storyline/act1/dialogs/Iris.lua:209
 msgid "It requires a certain stylization of form and technique, so you have to be in the proper mindset."
-msgstr ""
+msgstr "Det kräver en speciell teknik och finess, så det gäller att vara förberedd mentalt."
 
 #: data/storyline/act1/dialogs/Iris.lua:210
 msgid "Likewise I'll require a small gratuity for my time."
-msgstr ""
+msgstr "Och jag vill också ha något för min tid."
 
 #. TRANSLATORS: %d = number of circuits needed
 #: data/storyline/act1/dialogs/Iris.lua:212
@@ -12186,25 +12186,25 @@ msgstr "Något intresse?"
 
 #: data/storyline/act1/dialogs/Iris.lua:221
 msgid "Yes, teach me how to find bots 'treasures' more often."
-msgstr ""
+msgstr "Ja, lär mig hur man hittar fler \"skatter\" i bottarna."
 
 #: data/storyline/act1/dialogs/Iris.lua:225
 msgid "Good. I'll give you an algorithm better than the one you're using right now."
-msgstr ""
+msgstr "Härligt. Du ska få en algoritm som är bättre än den du har nu."
 
 #: data/storyline/act1/dialogs/Iris.lua:226
 msgid "Try using the 0x6974656D6D6F6E6579 algorithm."
-msgstr ""
+msgstr "Försök använda algoritmen 0x6974656D6D6F6E6579."
 
 #. TRANSLATORS: %d = "random" one-digit number.
 #: data/storyline/act1/dialogs/Iris.lua:228
 #, c-format
 msgid "But this time, replaces every 6 with %d61."
-msgstr ""
+msgstr "Men istället byter du ut 6 med %d61."
 
 #: data/storyline/act1/dialogs/Iris.lua:229
 msgid "Yes, I understand. It's so simple! How I never thought on this before."
-msgstr ""
+msgstr "Ja, jag fattar. Det är så enkelt! Att jag inte tänkt på det tidigare."
 
 #: data/storyline/act1/dialogs/Iris.lua:243
 #: data/storyline/act1/dialogs/Kevin.lua:340
@@ -12235,7 +12235,7 @@ msgstr "Tyvärr tror jag inte att jag kan bearbeta en annan algoritm just nu."
 
 #: data/storyline/act1/dialogs/Iris.lua:255
 msgid "Everyone has the right to be stupid, but sometimes you abuse the privilege."
-msgstr ""
+msgstr "Alla har rätt att vara dumma, men ibland missbrukar du den rättigheten."
 
 #: data/storyline/act1/dialogs/Iris.lua:256
 msgid "Come back when you are going to be serious."
@@ -12253,63 +12253,63 @@ msgstr "Hej igen."
 
 #: data/storyline/act1/dialogs/Iris.lua:266
 msgid "I've been hearing about you all day. You're the talk of the town."
-msgstr ""
+msgstr "Jag har hört folk prata om dig hela dan. Du är stadens snackis."
 
 #: data/storyline/act1/dialogs/Iris.lua:273
 msgid "Yep, that's me. I saved everyone's hide. Including yours."
-msgstr ""
+msgstr "Jajamän, det är jag. Jag räddade skinnet på allihop, inklusive dig."
 
 #: data/storyline/act1/dialogs/Iris.lua:275
 msgid "You did save a lot of lives, I'll give you that."
-msgstr ""
+msgstr "Du räddade många liv, det håller jag med om."
 
 #: data/storyline/act1/dialogs/Iris.lua:276
 msgid "But I wouldn't get so excited if I were you. I don't think we're in the clear yet."
-msgstr ""
+msgstr "Men jag skulle inte hurra om jag var du. Jag tror inte vi är riktigt säkra än."
 
 #: data/storyline/act1/dialogs/Iris.lua:282
 msgid "Oh, and what have you heard?"
-msgstr ""
+msgstr "Jaså, vad har du hört?"
 
 #: data/storyline/act1/dialogs/Iris.lua:284
 msgid "Pretty cool stuff, actually. I heard you practically saved the town."
-msgstr ""
+msgstr "Riktigt grymma saker. Jag hörde att du räddade typ hela stan."
 
 #: data/storyline/act1/dialogs/Iris.lua:285
 msgid "You penetrated the Hell Fortress in a bold operation against all odds, and managed to sabotage every bot from here to the next MegaSys service cell over, without so much as touching any standard interface."
-msgstr ""
+msgstr "Du riskerade livet och tog dig in i Helvetesfortet mot alla odds. Du lyckades sabotera var enda bott, härifrån och till MegaSys nästa nätverkscell. Och det, utan att använda något vanligt gränssnitt."
 
 #: data/storyline/act1/dialogs/Iris.lua:286
 msgid "That's what they say, anyway."
-msgstr ""
+msgstr "Det är i alla fall vad de säger."
 
 #: data/storyline/act1/dialogs/Iris.lua:287
 msgid "Hehe, well, the stories people tell..."
-msgstr ""
+msgstr "Hehe, ja, vilka historier man hittar på..."
 
 #: data/storyline/act1/dialogs/Iris.lua:288
 msgid "The important thing is that everyone's safe now."
-msgstr "Det viktiga är att alla är säkert nu."
+msgstr "Det viktiga är att alla är i säkerhet nu."
 
 #: data/storyline/act1/dialogs/Iris.lua:289
 msgid "Yeah. I just wish I could be as certain of that..."
-msgstr ""
+msgstr "Ja. Önskar bara att jag kunde vara lika övertygad..."
 
 #: data/storyline/act1/dialogs/Iris.lua:295
 msgid "I know what they say, but I'm really not the superhero they make me out to be."
-msgstr ""
+msgstr "Jag vet vad de säger, men jag är verkligen inte den superhjälte de får mig att låta som."
 
 #: data/storyline/act1/dialogs/Iris.lua:297
 msgid "Hey, you gotta give yourself some credit."
-msgstr ""
+msgstr "Äsch, du måste ta åt dig lite."
 
 #: data/storyline/act1/dialogs/Iris.lua:298
 msgid "Infiltration and sabotage are some of the most complicated types of operations out there. And also the most fun."
-msgstr ""
+msgstr "Infiltration och sabotage är några av de mest invecklade operationer som finns. Och de roligaste."
 
 #: data/storyline/act1/dialogs/Iris.lua:299
 msgid "And you did pretty well, by the looks of it. Especially for someone with no fingers."
-msgstr ""
+msgstr "Och det verkar som du lyckades rätt bra. Särskilt för en som inte har några fingrar."
 
 #: data/storyline/act1/dialogs/Iris.lua:300
 msgid "Thank you... I guess."
@@ -12317,19 +12317,19 @@ msgstr "Tack... antar jag..."
 
 #: data/storyline/act1/dialogs/Iris.lua:301
 msgid "Yeah. Although there's still a lot to be done."
-msgstr ""
+msgstr "Ja, men det är fortfarande mycket kvar att göra."
 
 #: data/storyline/act1/dialogs/Iris.lua:309
 msgid "I... I'm not sure."
-msgstr "Jag... Jag är inte säker."
+msgstr "Jag... Jag vet inte riktigt."
 
 #: data/storyline/act1/dialogs/Iris.lua:310
 msgid "It could be just background noise. Maybe it's not even that. But there's still something a little weird about it."
-msgstr ""
+msgstr "Det kanske bara är bakgrundsbrus. Eller inte ens det. Men det är fortfarande något konstigt med det."
 
 #: data/storyline/act1/dialogs/Iris.lua:311
 msgid "More than a little, when I think about it."
-msgstr ""
+msgstr "Något mycket konstigt, när jag tänker efter."
 
 #: data/storyline/act1/dialogs/Iris.lua:312
 msgid "What are you talking about?"
@@ -12337,60 +12337,60 @@ msgstr "Vad pratar du om?"
 
 #: data/storyline/act1/dialogs/Iris.lua:313
 msgid "... I hope trusting you with this isn't a mistake."
-msgstr ""
+msgstr "... Hoppas det inte är ett misstag att anförtro dig med det här."
 
 #. TRANSLATORS: comm = communication
 #: data/storyline/act1/dialogs/Iris.lua:315
 msgid "My comm devices have been intercepting strange signals in this area, ever since I got here. It's usually scrambled beyond recognition, and I wasn't even sure it was a signal at all until recently."
-msgstr ""
+msgstr "Ända sedan jag kom hit har min mottagare har fångat upp underliga signaler i området. Oftast är de så brusiga att man knappt kan urskilja dem. Och jag var inte säker på att det ens var en signal, ända tills nu."
 
 #: data/storyline/act1/dialogs/Iris.lua:316
 msgid "It was just before you arrived, actually."
-msgstr ""
+msgstr "Bara strax innan du kom, faktiskt."
 
 #: data/storyline/act1/dialogs/Iris.lua:317
 msgid "Are you saying I'm emitting some kind of signal?"
-msgstr ""
+msgstr "Vad då, skickar jag ut någon sorts signal?"
 
 #: data/storyline/act1/dialogs/Iris.lua:318
 msgid "No - if that were the case my equipment would've been going crazy right now. But it's definitely related to you."
-msgstr ""
+msgstr "Nej. I så fall borde min utrustning vara helt galen nu. Men det har absolut något med dig att göra."
 
 #: data/storyline/act1/dialogs/Iris.lua:319
 msgid "But how do you know?"
-msgstr "Men hur vet du?"
+msgstr "Men hur vet du det?"
 
 #: data/storyline/act1/dialogs/Iris.lua:320
 msgid "Because just before you arrived, everything did go crazy. At first I thought we were being nuked and the EMP was causing it."
-msgstr ""
+msgstr "Jo, strax innan du kom så blev allting helt galet. Först trodde jag att någon släppt en atombomb, och att det var EMP-vågen som kom."
 
 #: data/storyline/act1/dialogs/Iris.lua:321
 msgid "But then I realized: someone is broadcasting, and they really wanted outreach."
-msgstr ""
+msgstr "Men så förstod jag: någon skickar en broadcast, och de vill verkligen nå ut."
 
 #: data/storyline/act1/dialogs/Iris.lua:322
 msgid "It wasn't scrambled this time, and I listened. The whole thing lasted about an hour. It was mostly binary; I couldn't figure most of it out, but there were some names encoded in hex in there. Places. People."
-msgstr ""
+msgstr "Det var inte brusigt den här gången, så jag lyssnade. Det pågick i ungefär en timma. Mest binärt, jag fattade inte särskilt mycket. Men det fanns några namn kodade i hex där. Platser. Personer."
 
 #: data/storyline/act1/dialogs/Iris.lua:323
 msgid "One of them was you."
-msgstr ""
+msgstr "En av dem var du."
 
 #: data/storyline/act1/dialogs/Iris.lua:330
 msgid "My name? What does this mean?"
-msgstr "Mitt namn? Vad betyder det här?"
+msgstr "Mitt namn? Vad innebär det?"
 
 #: data/storyline/act1/dialogs/Iris.lua:333
 msgid "It means someone knew about you before the Red Guard did, and it means whoever it was broadcast it far and wide."
-msgstr ""
+msgstr "Det innebär att någon kände till dig innan Röda Väktarna gjorde det, och att den personen broadcastade det vitt och brett."
 
 #: data/storyline/act1/dialogs/Iris.lua:334
 msgid "That's all I can make of it."
-msgstr ""
+msgstr "Det är allt jag kan säga."
 
 #: data/storyline/act1/dialogs/Iris.lua:343
 msgid "If I were you, I would be very careful. I'm sure there were a lot of hands stirring in this mess, but I think some of them weren't chopped off by a bot."
-msgstr ""
+msgstr "Jag skulle vara mycket försiktig om jag var du. Säkert är det många händer inblandade, och några av dem blev nog inte avhuggna av en bott."
 
 #: data/storyline/act1/dialogs/Iris.lua:349
 msgid "I don't understand."
@@ -12398,12 +12398,12 @@ msgstr "Jag förstår inte."
 
 #: data/storyline/act1/dialogs/Iris.lua:352
 msgid "I don't either, and I don't have anything more to say on the matter."
-msgstr ""
+msgstr "Inte jag heller. Och jag har inget mer att säga om saken."
 
 #. TRANSLATORS: previous sentence was "I don't have anything more to say on the matter"
 #: data/storyline/act1/dialogs/Iris.lua:354
 msgid "Just that I hope that your optimism will be justified."
-msgstr ""
+msgstr "Jag hoppas bara att din optimism visar sig stämma."
 
 #: data/storyline/act1/dialogs/Iris.lua:364
 msgid "Take care."
@@ -12415,11 +12415,11 @@ msgstr "Var försiktig där ute."
 
 #: data/storyline/act1/dialogs/Iris.lua:366
 msgid "Keep an eye out for anything weird."
-msgstr ""
+msgstr "Håll utkik efter konstiga saker."
 
 #: data/storyline/act1/dialogs/Iris.lua:367
 msgid "Remember the saying, 'Speak softly and carry a big stick.' I think you'll need that stick soon."
-msgstr ""
+msgstr "Tänk på uttrycket \"använd både morot och piska\". Jag tror du kommer behöva den där piskan snart."
 
 #: data/storyline/act1/dialogs/Iris.lua:369
 #: data/storyline/act1/dialogs/Jennifer.lua:143
@@ -12549,7 +12549,7 @@ msgstr "Kärnan dumpades. Systemet stoppat."
 
 #: data/storyline/act1/dialogs/Jennifer.lua:34
 msgid "Hey, what are you doing?! Go back to work! All bots died and I can't make them work again. We'll be all in trouble if boss decides to pay us visit!"
-msgstr ""
+msgstr "Vad gör du?! Fortsätt jobba! Alla bottar har dött och jag får inte igång dem igen. Vi kommer ligga risigt till om chefen bestämmer sig för att hälsa på!"
 
 #: data/storyline/act1/dialogs/Jennifer.lua:39
 msgid "Hello"
@@ -12621,7 +12621,7 @@ msgstr "Urk."
 
 #: data/storyline/act1/dialogs/Jennifer.lua:93
 msgid "So we can identify each other as 'friendly' and don't rip ourselves apart."
-msgstr ""
+msgstr "Så vi kan identifiera oss som \"vänner\" istället för att slita varandra i stycken."
 
 #: data/storyline/act1/dialogs/Jennifer.lua:94
 msgid "Uh."
@@ -12633,7 +12633,7 @@ msgstr "Kan jag få ett sånt chipp på något vis?"
 
 #: data/storyline/act1/dialogs/Jennifer.lua:96
 msgid "I don't think you will be able to get one. They're custom and the chip-makers aren't around anymore."
-msgstr ""
+msgstr "Jag tror inte det går. De är specialtillverkade, och leverantören finns inte längre."
 
 #: data/storyline/act1/dialogs/Jennifer.lua:97
 msgid "How did you get in here anyway?"
@@ -12978,23 +12978,23 @@ msgstr "Ta en titt."
 
 #: data/storyline/act1/dialogs/Karol.lua:63
 msgid "Can I buy droid parts? Like Entropy Inverters?"
-msgstr ""
+msgstr "Kan jag köpa droiddelar? Som Entropi-inverterare?"
 
 #: data/storyline/act1/dialogs/Karol.lua:65
 msgid "Sorry, these are all sold out."
-msgstr ""
+msgstr "Ledsen, de är slutsålda."
 
 #: data/storyline/act1/dialogs/Karol.lua:66
 msgid "But I think a shipment will come by the next month."
-msgstr ""
+msgstr "Men jag tror det kommer en leverans nästa månad."
 
 #: data/storyline/act1/dialogs/Karol.lua:67
 msgid "I can't wait that long."
-msgstr ""
+msgstr "Jag kan inte vänta tills dess."
 
 #: data/storyline/act1/dialogs/Karol.lua:68
 msgid "There is nothing I can do about it. Try exchanging with another worker, maybe?"
-msgstr ""
+msgstr "Jag kan inte hjälpa dig. Kanske du kan byta till dig några från någon arbetare?"
 
 #: data/storyline/act1/dialogs/Karol.lua:76
 msgid "Bye bye."
@@ -14173,11 +14173,11 @@ msgstr "Det här är en tillflykt från öknen ovanför."
 
 #: data/storyline/act1/dialogs/Lukas.lua:35
 msgid "Hey, if it isn't our hero! Do you need ammo? A new gun, maybe? Or armor, yes, you definitely should get a new one!"
-msgstr "Hej, är det inte är vår hjälte! Behöver du ammo? En ny pistol, kanske? Eller rustning, ja, du borde definitivt få en ny!"
+msgstr "Hej, är det inte är vår hjälte! Behöver du ammo? En ny pistol, kanske? Eller rustning, ja, du borde definitivt ha en ny!"
 
 #: data/storyline/act1/dialogs/Lukas.lua:44
 msgid "A newcomer! Great! We can always use more people. Welcome to the Red Guard! I'm Lukas. I'm in charge of our little armory here."
-msgstr "En nykomling! Härligt! Vi har alltid nytta av mer folk. Välkommen till Röda Väktarna! Jag heter Lukas. Jag har hand om vårt lilla vapenförråd här."
+msgstr "En nykomling! Toppen! Vi behöver alltid mer folk. Välkommen till Röda Väktarna! Jag heter Lukas. Jag har hand om vårt lilla vapenförråd."
 
 #: data/storyline/act1/dialogs/Lukas.lua:50
 msgid "Spencer said you'd be able to provide me with better armor and equipment."
@@ -14185,11 +14185,11 @@ msgstr "Spencer sa att du kunde ge mig bättre vapen och utrustning."
 
 #: data/storyline/act1/dialogs/Lukas.lua:52
 msgid "Of course. As a member of the Guard, you're entitled to wear one of our suits of armor."
-msgstr "Självklart. Som medlem av Gardet, har du rätt att bära en av våra rustningar."
+msgstr "Självklart. Som en Väktare, har du rätt att bära en av våra rustningar."
 
 #: data/storyline/act1/dialogs/Lukas.lua:53
 msgid "There are two kinds or armor, a heavy Red Guard robe and a light version of the same thing, though we also trade guns."
-msgstr ""
+msgstr "Det finns två sorters skyddsdräkter, den tunga eller lätta versionen av Röda Väktarnas dräkt, men för övrigt handlar vi också med vapen."
 
 #: data/storyline/act1/dialogs/Lukas.lua:54
 #: data/storyline/act1/dialogs/Lukas.lua:65
@@ -14203,23 +14203,23 @@ msgstr "Så, vad vill du köpa?"
 
 #: data/storyline/act1/dialogs/Lukas.lua:62
 msgid "I am interesting in buying ammo."
-msgstr ""
+msgstr "Jag vill köpa ammo."
 
 #: data/storyline/act1/dialogs/Lukas.lua:64
 msgid "Of course. Because ammo is always at high demand, we sell them separately."
-msgstr ""
+msgstr "Självklart. Eftersom det är sådan efterfrågan på ammo, säljer vi den separat."
 
 #: data/storyline/act1/dialogs/Lukas.lua:73
 msgid "What do you do all day here at the armory?"
-msgstr "Vad gör du hela dagen här i vapenförrådet?"
+msgstr "Vad gör du hela dagarna här i vapenförrådet?"
 
 #: data/storyline/act1/dialogs/Lukas.lua:75
 msgid "Oh, there's always something to do. Don't worry. I'm pretty occupied keeping the place in order."
-msgstr "Åh, det finns alltid något att göra. Var inte orolig. Jag har nog med att bara hålla stället i ordning."
+msgstr "Åh, det finns alltid något att göra. Var inte orolig. Jag har fullt upp bara med att hålla ordning på allt."
 
 #: data/storyline/act1/dialogs/Lukas.lua:81
 msgid "I'd like to buy an exterminator."
-msgstr "Jag skulle vilja köpa en utrotare."
+msgstr "Jag vill köpa en utrotare."
 
 #: data/storyline/act1/dialogs/Lukas.lua:83
 msgid "Haha, good one."
@@ -14227,11 +14227,11 @@ msgstr "Haha, den var bra."
 
 #: data/storyline/act1/dialogs/Lukas.lua:86
 msgid "You are already using one. It is on your hands!"
-msgstr ""
+msgstr "Du har redan en. I händerna!"
 
 #: data/storyline/act1/dialogs/Lukas.lua:87
 msgid "Stop trying to make a fool of me."
-msgstr ""
+msgstr "Sluta driva med mig."
 
 #: data/storyline/act1/dialogs/Lukas.lua:89
 msgid "Sorry, they are not for sale."
@@ -14255,11 +14255,11 @@ msgstr "Gå nu, döda några bottar."
 
 #: data/storyline/act1/dialogs/Lukas.lua:96
 msgid "Why would you need one, anyway? The bots are all dead."
-msgstr ""
+msgstr "Varför behöver du ens en? Alla bottar är döda."
 
 #: data/storyline/act1/dialogs/Lukas.lua:97
 msgid "While I agree you deserve one, only Spencer can authorize that. Sorry."
-msgstr ""
+msgstr "Även om jag tycker du ska ha en, så måste Spencer godkänna det också. Tyvärr."
 
 #: data/storyline/act1/dialogs/Maintenance-Terminal.lua:32
 #: data/storyline/act1/dialogs/MiniFactory-Terminal.lua:30
@@ -22101,11 +22101,11 @@ msgstr "Du måste även ta dem i händerna. Det gör jag inte åt dig."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:587
 msgid "Like the last bot, this one will be carrying an item. Bring me the [b]Tachyon Condensator[/b] it is carrying to continue."
-msgstr "Precis som förra botten bär den här på ett föremål. Ta hit [b]Takyon-kondensatorn[/b] den bär på för att fortsätta."
+msgstr "Precis som förra botten bär den här på ett föremål. Ta hit [b]Takyon-kondensorn[/b] den bär på för att fortsätta."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:588
 msgid "I've unlocked the door. Good luck, and talk to me when you have the Tachyon Condensator."
-msgstr "Jag har låst upp dörren. Lycka till, och prata med mig när du har Takyon-kondensatorn."
+msgstr "Jag har låst upp dörren. Lycka till, och prata med mig när du har Takyon-kondensorn."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:601
 msgid "I've beaten the second bot."
@@ -22125,7 +22125,7 @@ msgstr "Prata med mig när du är redo att gå vidare i handledningen."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:610
 msgid "You didn't bring back the Tachyon Condensator. You'll need to bring it back before we can continue."
-msgstr "Du tog inte med dig Takyon-kondensatorn tillbaka. Du måste göra det innan vi kan fortsätta."
+msgstr "Du tog inte med dig Takyon-kondensorn tillbaka. Du måste göra det innan vi kan fortsätta."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:611
 msgid "I'll go ahead and heal you. If your weapon or armor are in bad shape, perhaps you should repair them before going back in there."
@@ -22133,7 +22133,7 @@ msgstr "Jag läker dig. Om ditt vapen eller skölden är i dåligt skick bör du
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:612
 msgid "Don't come back without the [b]Tachyon Condensator[/b]."
-msgstr "Kom inte tillbaka utan [b]Takyon-kondensatorn[/b]."
+msgstr "Kom inte tillbaka utan [b]Takyon-kondensorn[/b]."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:620
 msgid "I'm ready to move on."
@@ -23898,7 +23898,7 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:34
 msgid "[b]Arcane Lore[/b] - I've bought an anti-hack software, so I could try to hack it!"
-msgstr ""
+msgstr "[b]Mystisk Skrift[/b] - Jag har köpt ett anti-hack program, så jag kan försöka hacka den!"
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:35
 msgid "[b]User tux created.[/b] Enjoy!"
@@ -24419,7 +24419,7 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:49
 msgid "Mr. Saves, Watcher of Stories"
-msgstr ""
+msgstr "Herr Saves, Berättelsens Åskådare"
 
 #: data/storyline/act2/dialogs/MrSaves.lua:50
 msgid "The weather is grim again, don't you think? Ah, I love mental games. All the better when no one can understand them."
@@ -24583,7 +24583,7 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:53
 msgid "999 RR Manager"
-msgstr ""
+msgstr "999 RR Chef"
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:61
 msgid "RR Resorts, or the RRR, is the paradise for those who dares to oppose my masters."
@@ -24914,7 +24914,7 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:73
 msgid "RR Security Chief"
-msgstr ""
+msgstr "RR Säkerhetschef"
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:79
 msgid "So, you deal with security? Could you then teach me how to fight?"

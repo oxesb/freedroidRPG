@@ -10,7 +10,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 0.16+git\n"
+"Project-Id-Version: freedroidrpg 1.0RC1\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
 "POT-Creation-Date: 2019-03-30 22:43+0100\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
@@ -104,7 +104,7 @@ msgstr "Robot de maintenance du vaisseau. Il possède de nombreux bras pour rép
 
 #: data/base/droid_specs.lua:509 data/storyline/act1/ReturnOfTux.droids:279
 msgid "493 Spinster"
-msgstr "493 Vielle Fille"
+msgstr "493 Fileuse"
 
 #: data/base/droid_specs.lua:510
 msgid "Slave maintenance droid. Standard version will carry its own toolbox."
@@ -424,7 +424,7 @@ msgstr "Gros couteau de cuisine"
 
 #: data/base/item_specs.lua:154
 msgid "Light and maneuverable in combat, but unfortunately not very effective in cutting through steel as well as quickly reaching the point of breaking if you try. Though, for sure better than hitting at metal with your bare fists."
-msgstr "Léger et maniable en combat, mais cependant pas très efficace pour percer le métal ni pour rapidement atteindre le point de rupture des protections. Cependant, c'est mieux que de de taper le métal à poings nus."
+msgstr "Léger et maniable en combat, mais cependant pas très efficace pour percer le métal ni pour rapidement atteindre le point de rupture des protections. Cependant, c'est mieux que de taper le métal à poings nus."
 
 #: data/base/item_specs.lua:162
 msgid "Cutlass"
@@ -440,7 +440,7 @@ msgstr "Épée médiévale"
 
 #: data/base/item_specs.lua:199
 msgid "Very maneuverable for its size, and heavy enough to punch though weaker bot armor in one hit, the only real disadvantage of this old weapon is the same as for other swords. It just doesn't last long when cutting into metal parts."
-msgstr "Très maniable pour sa taille, et suffisamment lourd pour perforer en un coup les armures les plus légères des droïdes. Le seul réel désavantage de cette vielle arme est le même que pour toutes les épées, elle ne dure pas très longtemps quand elle est utilisée pour couper dans du métal."
+msgstr "Très maniable pour sa taille, et suffisamment lourd pour perforer en un coup les armures les plus légères des droïdes. Le seul réel désavantage de cette vieille arme est le même que pour toutes les épées, elle ne dure pas très longtemps quand elle est utilisée pour couper dans du métal."
 
 #: data/base/item_specs.lua:207
 msgid "Chainsaw"
@@ -528,7 +528,7 @@ msgstr "Batte de base-ball"
 
 #: data/base/item_specs.lua:441
 msgid "With 1-2 good two handed swings, a former droids head might fly far enough for you to score a home run. Just make sure to bring a backup weapon, because wooden bats have a predilection for splitting in two after too many hard hits."
-msgstr "Avec une ou deux frappes à deux mains bien placées, ce qui fût une tête de droïde peut voler assez loin pour que réaliser un home run. Sois cependant sûr d'avoir une arme de rechange à proximité, parce que les battes en bois ont tendance à se briser en deux après quelques frappes bien appuyées."
+msgstr "Avec une ou deux frappes à deux mains bien placées, ce qui fût une tête de droïde peut voler assez loin pour réaliser un home run. Sois cependant sûr d'avoir une arme de rechange à proximité, parce que les battes en bois ont tendance à se briser en deux après quelques frappes bien appuyées."
 
 #: data/base/item_specs.lua:449
 msgid "Iron Bar"
@@ -592,7 +592,7 @@ msgstr "Fouet énergétique"
 
 #: data/base/item_specs.lua:617
 msgid "An energy whip commonly found at management from MegaSys facilities. What purpose they serve for is still unknown. Because the real whip is pure energy, it will never break, but it does not stays on the strong side."
-msgstr ""
+msgstr "Un fouet énergétique, que l'on trouve habituellement chez les managers des complexes MegaSys. Leur usage est encore aujourd'hui inconnu. Comme le fouet par lui-même est constitué d'énergie pure, il ne peut se briser, mais il ne reste pas toujours du bon côté."
 
 #: data/base/item_specs.lua:629
 msgid ".22 LR Ammunition"
@@ -936,7 +936,7 @@ msgstr "Une défense à haut niveau est obtenue avec cette pièce d'armure à lo
 
 #: data/base/item_specs.lua:1379
 msgid "Improvised Buckler"
-msgstr "Lanière improvisée"
+msgstr "Petit bouclier improvisé"
 
 #: data/base/item_specs.lua:1386
 msgid "This shield is a compilation of various objects which happened to be around. It has tubes, bolts and parts of metal, all slapped together to provide a small bit of protection from enemies. It's very simple and rough, but some sensors and lights have been added to let the wielder know when the item is getting hit, and how long it will remain operational and other cool stuff like that."
@@ -952,11 +952,11 @@ msgstr "Un bouclier petit, léger, et robuste. Il fournit une protection décent
 
 #: data/base/item_specs.lua:1409
 msgid "Standard Shield"
-msgstr "Bouclier"
+msgstr "Bouclier standard"
 
 #: data/base/item_specs.lua:1416
 msgid "Better than a buckler, and a lot more effective."
-msgstr "Mieux qu'un bouclier, et beaucoup plus efficace."
+msgstr "Mieux qu'un petit bouclier, et beaucoup plus efficace."
 
 #: data/base/item_specs.lua:1424
 msgid "Heavy Shield"
@@ -1000,7 +1000,7 @@ msgstr "Ça peut sembler un peu bête, mais ça vous sauvera plusieurs fois la v
 
 #: data/base/item_specs.lua:1505
 msgid "Light Battle Helmet"
-msgstr "Petit casque de bataille"
+msgstr "Petit casque de combat"
 
 #: data/base/item_specs.lua:1513
 msgid "A rather useful helmet, has a few defense issues here and there but mainly is worth the wear."
@@ -1008,7 +1008,7 @@ msgstr "Un casque plutôt utile. Malgré quelques petits défauts défensifs ici
 
 #: data/base/item_specs.lua:1521
 msgid "Battle Helmet"
-msgstr "Casque de bataille"
+msgstr "Casque de combat"
 
 #: data/base/item_specs.lua:1529
 msgid "Now this is head protection. Feel safe with sturdy Resosteel(TM) protecting your head. Not as comfortable as other hats but the precious content stays safe."
@@ -1048,7 +1048,7 @@ msgstr "Ces bottes sont similaires à de simples chaussures, mais le matériau d
 
 #: data/base/item_specs.lua:1606
 msgid "Source Book of Emergency Shutdown"
-msgstr "Listing Source d'Arrêt d'Urgence"
+msgstr "Listing source d'Arrêt d'urgence"
 
 #: data/base/item_specs.lua:1607 data/base/item_specs.lua:1619
 #: data/base/item_specs.lua:1631 data/base/item_specs.lua:1643
@@ -1069,7 +1069,7 @@ msgstr "Tout le monde a besoin de relâcher la pression de temps en temps."
 
 #: data/base/item_specs.lua:1618
 msgid "Source Book of Check System Integrity"
-msgstr "Listing Source de Vérification d'Intégrité Système"
+msgstr "Listing source de Vérification d'intégrité système"
 
 #: data/base/item_specs.lua:1623
 msgid "An incredible healing program, probably the only one you will ever need."
@@ -1077,7 +1077,7 @@ msgstr "Un incroyable code de guérison, probablement le seul dont vous aurez ja
 
 #: data/base/item_specs.lua:1630
 msgid "Source Book of Sanctuary"
-msgstr "Listing Source du Sanctuaire"
+msgstr "Listing source du Sanctuaire"
 
 #: data/base/item_specs.lua:1635
 msgid "The art of rapidly moving away from danger is very useful. Even when used in reverse, it has its uses."
@@ -1085,7 +1085,7 @@ msgstr "C'est une façon de fuir face au danger très rapidement. C'est très ut
 
 #: data/base/item_specs.lua:1642
 msgid "Source Book of Malformed Packet"
-msgstr "Listing Source de Paquet Malformé"
+msgstr "Listing source de Paquet malformé"
 
 #: data/base/item_specs.lua:1647 data/base/skill_specs.lua:91
 msgid "When computers are presented with the unexpected, they can damage themselves."
@@ -1093,15 +1093,15 @@ msgstr "Un ordinateur dans une situation non prévue peut s'auto-endommager."
 
 #: data/base/item_specs.lua:1654
 msgid "Source Book of Calculate Pi"
-msgstr "Listing Source du Calcul de Pi"
+msgstr "Listing source du Calcul de pi"
 
 #: data/base/item_specs.lua:1659 data/base/skill_specs.lua:102
 msgid "It is not a big problem to make a badly designed system to go hunting for the impossible, causing a performance impact."
-msgstr "Ce n'est souvent pas un problème de coder un système mal conçu, à la recherche d'une solution impossible, causant un problème de performance."
+msgstr "Ce n'est pas un problème de coder un système mal conçu essayant de trouver une solution impossible, ce qui cause un problème de performance."
 
 #: data/base/item_specs.lua:1666
 msgid "Source Book of Blue Screen"
-msgstr "Listing Source de l'Ecran Bleu"
+msgstr "Listing source de l'Écran bleu"
 
 #: data/base/item_specs.lua:1671 data/base/item_specs.lua:1683
 msgid "With a little touch a war machine comes crashing to a halt. For a while."
@@ -1109,11 +1109,11 @@ msgstr "Avec la bonne précision, un contact bien placé peut arrêter une machi
 
 #: data/base/item_specs.lua:1678
 msgid "Source Book of Broadcast Blue Screen"
-msgstr "Listing Source de diffusion d'Ecran Bleu"
+msgstr "Listing source de diffusion d'écran bleu"
 
 #: data/base/item_specs.lua:1690
 msgid "Source Book of Invisibility"
-msgstr "Listing Source d'Invisibilité"
+msgstr "Listing source d'Invisibilité"
 
 #: data/base/item_specs.lua:1695 data/base/skill_specs.lua:80
 msgid "I am not the Linarian you are looking for."
@@ -1121,7 +1121,7 @@ msgstr "Je ne suis pas le Linarien que tu recherches."
 
 #: data/base/item_specs.lua:1702
 msgid "Source Book of Virus"
-msgstr "Listing Source des Virus"
+msgstr "Listing source des Virus"
 
 #: data/base/item_specs.lua:1707 data/base/skill_specs.lua:137
 msgid "This is not just a firmware upgrade, my dear bot. You are about to find out what exactly I want to give you."
@@ -1129,7 +1129,7 @@ msgstr "Ce n'est pas seulement un mise à jour de microcode, mon cher robot. Tu 
 
 #: data/base/item_specs.lua:1714
 msgid "Source Book of Broadcast Virus"
-msgstr "Listing Source de Diffusion de Virus"
+msgstr "Listing source de Diffusion de virus"
 
 #: data/base/item_specs.lua:1719
 msgid "The network is wide and dangerous. Many traps await the weak and unprepared."
@@ -1137,7 +1137,7 @@ msgstr "Le réseau est vaste et dangereux. Beaucoup de pièges attendent les êt
 
 #: data/base/item_specs.lua:1726
 msgid "Source Book of Dispel Smoke"
-msgstr "Listing Source de la Dissipation de Fumée"
+msgstr "Listing source de la Dissipation de fumée"
 
 #: data/base/item_specs.lua:1731
 msgid "By heating up the chips with a malformed program, you can cause them to release the magic smoke which keeps the bot running."
@@ -1145,7 +1145,7 @@ msgstr "En surchauffant les puces avec un programme mal-formé, on peut leur fai
 
 #: data/base/item_specs.lua:1738
 msgid "Source Book of Killer Poke"
-msgstr "Listing Source de la Manipulation Mémoire"
+msgstr "Listing source de la Manipulation mémoire"
 
 #: data/base/item_specs.lua:1743
 msgid "Messing around with the bot's memory can cause it to damage itself, but the damage is greatly variable."
@@ -1153,7 +1153,7 @@ msgstr "Mettre la pagaille dans la mémoire d'un robot peut le faire s'auto-endo
 
 #: data/base/item_specs.lua:1750
 msgid "Source Book of Repair Equipment"
-msgstr "Listing Source de la Réparation d'Équipement"
+msgstr "Listing source de la Réparation d'équipement"
 
 #: data/base/item_specs.lua:1751
 msgid "Learn about repairing items"
@@ -1165,7 +1165,7 @@ msgstr "Ce manuel vous apprendra à réparer une machine à laver, une voiture o
 
 #: data/base/item_specs.lua:1762
 msgid "Source Book of Plasma Discharge"
-msgstr "Listing Source de Décharge de plasma"
+msgstr "Listing source de Décharge de plasma"
 
 #: data/base/item_specs.lua:1767 data/base/skill_specs.lua:184
 msgid "The overload setting exists for emergencies. Plasma does not discriminate between bots and humans. Everything is the same to it."
@@ -1173,7 +1173,7 @@ msgstr "La configuration de surcharge est utilisée pour les urgences. Le plasma
 
 #: data/base/item_specs.lua:1774
 msgid "Source Book of Nethack"
-msgstr "Listing Source de Nethack"
+msgstr "Listing source de Nethack"
 
 #: data/base/item_specs.lua:1779
 msgid "The open source game called Nethack is one of the world's greatest wasters of time. Machines don't care about it, but humans can get sucked in quite deeply."
@@ -1181,7 +1181,7 @@ msgstr "Le jeu open source appelé Nethack est un des plus grands gaspilleurs de
 
 #: data/base/item_specs.lua:1786
 msgid "Source Book of Ricer CFLAGS"
-msgstr "Listing Source du Jacky-Tuning des CFLAGS"
+msgstr "Listing source du Jacky-Tuning des CFLAGS"
 
 #: data/base/item_specs.lua:1791
 msgid "Optimization is the root of all evil. You can gain some temporary improvements to your system, but in the end you are only likely to cause permanent damage."
@@ -1189,7 +1189,7 @@ msgstr "L'optimisation est la racine du mal. Tu peux obtenir quelques gains de p
 
 #: data/base/item_specs.lua:1798
 msgid "Source Book of Reverse-engineer"
-msgstr "Listing Source de la Rétroingénierie"
+msgstr "Listing source de la Rétro-ingénierie"
 
 #: data/base/item_specs.lua:1803
 msgid "There is some dark magic in the art of turning bots inside-out to learn all their secrets."
@@ -1197,7 +1197,7 @@ msgstr "Il y a comme de la magie noire dans l'art d'ouvrir et d'examiner l'inté
 
 #: data/base/item_specs.lua:1810
 msgid "Source Book of Light"
-msgstr "Listing Source de la Lumière"
+msgstr "Listing source de la Lumière"
 
 #: data/base/item_specs.lua:1815 data/base/skill_specs.lua:205
 msgid "Let there be light..."
@@ -1205,7 +1205,7 @@ msgstr "Que la lumière soit..."
 
 #: data/base/item_specs.lua:1822
 msgid "Source Book of Network Mapper"
-msgstr "Listing Source de la Cartographie des Réseaux"
+msgstr "Listing source de la Cartographie des réseaux"
 
 #: data/base/item_specs.lua:1827 data/base/skill_specs.lua:195
 msgid "Knowing what your enemies are up to is easy with a little signal intelligence. Displays enemy locations on your automap."
@@ -1213,15 +1213,15 @@ msgstr "Savoir où se situent tes ennemis est facile un peu de traitement de sig
 
 #: data/base/item_specs.lua:1834
 msgid "Source Book of Energy Shield"
-msgstr ""
+msgstr "Listing source du Bouclier énergétique"
 
 #: data/base/item_specs.lua:1835 data/base/skill_specs.lua:213
 msgid "Energy Shield"
-msgstr ""
+msgstr "Bouclier énergétique"
 
 #: data/base/item_specs.lua:1839 data/base/skill_specs.lua:218
 msgid "Creating an energy shield to protect you can be a very useful skill. Every hit that you get will be converted into heat. Beware: This heats up excessively. Equipment can still be damaged by heat. When you overheat, shield will try to automatically turn off to prevent damage to itself. It may provoke extra-heat on this process, so be sure to not let it happen."
-msgstr ""
+msgstr "Savoir créer un bouclier énergétique pour se protéger peut être une compétence très utile. Chaque coup reçu sera converti en chaleur. Attention : la chaleur peut très vite devenir excessive. L'équipement peut être endommagé par la chaleur. En cas de surchauffe, le bouclier peut se couper automatiquement pour éviter de s'auto-endommager. Cette action peut provoquer un excédent de chaleur supplémentaire, alors il vaut mieux éviter d'en arriver là."
 
 #: data/base/item_specs.lua:1846
 msgid "Subatomic and Nuclear Science for Dummies, Volume IV"
@@ -1253,7 +1253,7 @@ msgstr "Gélule de force"
 
 #: data/base/item_specs.lua:1885
 msgid "Permanently gain +1 strength"
-msgstr "Gagne de manière permanent +1 en Force"
+msgstr "Gagne de manière permanente +1 en force"
 
 #: data/base/item_specs.lua:1889
 msgid "These pills permanently raise strength within a person. They work on a nano-technological basis. Consult your physician, the receipt or pharmacy experts for details on intended effects, possible interactions and side effects of this drug."
@@ -1265,7 +1265,7 @@ msgstr "Gélule de dextérité"
 
 #: data/base/item_specs.lua:1897
 msgid "Permanently gain +1 dexterity"
-msgstr "Gagne de manière permanent +1 en Dextérité"
+msgstr "Gagne de manière permanente +1 en dextérité"
 
 #: data/base/item_specs.lua:1901
 msgid "These pills permanently raise dexterity within a person. They work on a nano-technological basis. Consult your physician, the receipt or pharmacy experts for details on intended effects, possible interactions and side effects of this drug."
@@ -1277,7 +1277,7 @@ msgstr "Gélule de code"
 
 #: data/base/item_specs.lua:1909
 msgid "Permanently gain +1 cooling"
-msgstr "Gagne de manière permanente +1 en Refroidissement"
+msgstr "Gagne de manière permanente +1 en refroidissement"
 
 #: data/base/item_specs.lua:1913
 msgid "Dude! This fab food will totally bump up your code skills, man! A real blast. Scarf these down to *see* the code."
@@ -1539,7 +1539,7 @@ msgstr "Téléporte toi autre part"
 
 #: data/base/item_specs.lua:2272
 msgid "This device sends a signal to a nearby teleporter requesting a transport, and then helps with locking on and boosting the signal to ensure the teleportation attempt is successful. The battery inside is sufficient for one use *only* and the device becomes useless afterwards. At least, most people don't try to use them twice... and those few who do usually end up with parts of their body missing or attached in the wrong place. Note: Multiple of these may be grouped together in the inventory."
-msgstr "Cet appareil émet un signal vers le télé-porteur le plus proche, pour demander un transport, puis effectue le blocage et l'amplification du signal pour garantir le succès de la téléportation. La batterie interne permet un seul usage unique, après quoi l'appareil devient inutilisable. Tout du moins, la plupart des gens ne tente pas de l'utiliser une seconde fois... et le peu de ceux qui essayent finissent généralement avec des parties de corps manquantes ou attachées à la mauvaise place. Note : ces appareils peuvent être groupés dans l'inventaire."
+msgstr "Cet appareil émet un signal vers le téléporteur le plus proche, pour demander un transport, puis effectue le blocage et l'amplification du signal pour garantir le succès de la téléportation. La batterie interne permet un seul usage unique, après quoi l'appareil devient inutilisable. Tout du moins, la plupart des gens ne tente pas de l'utiliser une seconde fois... et le peu de ceux qui essayent finissent généralement avec des parties de corps manquantes ou attachées à la mauvaise place. Note : ces appareils peuvent être groupés dans l'inventaire."
 
 #: data/base/item_specs.lua:2279
 msgid "Data Cube"
@@ -1679,7 +1679,7 @@ msgstr "Un robuste filet métallique procurant une couche de protection supplém
 
 #: data/base/item_specs.lua:2471
 msgid "Shock Discharger"
-msgstr "Déchargeur de Choc"
+msgstr "Déchargeur de choc"
 
 #: data/base/item_specs.lua:2475
 msgid "When installed to a melee weapon, this nifty device gives a small electric shock to enemies you hit."
@@ -1920,7 +1920,7 @@ msgstr "Terminal"
 
 #: data/base/obstacle_specs.lua:455 data/base/obstacle_specs.lua:465
 msgid "Barrel"
-msgstr "Tonnau"
+msgstr "Tonneau"
 
 #: data/base/obstacle_specs.lua:475 data/base/obstacle_specs.lua:485
 #: data/base/obstacle_specs.lua:3246
@@ -2001,7 +2001,7 @@ msgstr "Tout le monde a besoin de s'arrêter et de se refroidir les circuits de 
 
 #: data/base/skill_specs.lua:53
 msgid "Check system integrity"
-msgstr "Vérification d'Intégrité Système"
+msgstr "Vérification d'intégrité système"
 
 #: data/base/skill_specs.lua:59
 msgid "While repairing damage, you must remember that patience is a virtue."
@@ -2025,11 +2025,11 @@ msgstr "Invisibilité"
 
 #: data/base/skill_specs.lua:85
 msgid "Malformed packet"
-msgstr "Paquet mal-formé"
+msgstr "Paquet malformé"
 
 #: data/base/skill_specs.lua:96
 msgid "Calculate Pi"
-msgstr "Calcul de Pi"
+msgstr "Calcul de pi"
 
 #: data/base/skill_specs.lua:107
 msgid "Blue Screen"
@@ -2053,7 +2053,7 @@ msgstr "Virus"
 
 #: data/base/skill_specs.lua:142
 msgid "Broadcast virus"
-msgstr "Diffusion de virus."
+msgstr "Diffusion de virus"
 
 #: data/base/skill_specs.lua:149
 msgid "The network is wide and dangerous. Many traps await for the weak and unprepared."
@@ -2105,7 +2105,7 @@ msgstr "Améliorant tes algorithmes de recherche, tu peux plus facilement trouve
 
 #: data/base/skill_specs.lua:243
 msgid "Animal Magnetism"
-msgstr "Magnétisme animal"
+msgstr "Magnétisme Animal"
 
 #: data/base/skill_specs.lua:248
 msgid "Get in tune with the magnetic fields around you! Grants you half-second extra time per skill level when hacking bots. This skill is always active even when not selected."
@@ -2171,11 +2171,11 @@ msgstr "Vers les tunnels de maintenance"
 
 #: data/storyline/act1/events.dat:68
 msgid "To Regular Arena"
-msgstr "Vers l'Arène des Habitués"
+msgstr "Vers l'arène habituel"
 
 #: data/storyline/act1/events.dat:79
 msgid "To Master Arena"
-msgstr "Vers l'Arène des Confirmés"
+msgstr "Vers l'arène pour confirmé"
 
 #: data/storyline/act1/events.dat:482 data/storyline/act1/events.dat:495
 msgid ""
@@ -2321,7 +2321,7 @@ msgstr "Tous les robots sont détruits ! Tu as gagné."
 
 #: data/storyline/act1/events.dat:1992
 msgid "Exit Master Arena"
-msgstr "Quitter l'Arène des Confirmés"
+msgstr "Quitter l'arène pour confirmé"
 
 #: data/storyline/act1/events.dat:2302
 msgid "Exit Crystal Caves"
@@ -2373,7 +2373,7 @@ msgstr "Incident de sécurité à la réception de la Forteresse Infernale."
 
 #: data/storyline/act1/events.dat:2713
 msgid "Back to Disruptor Shield Control"
-msgstr "Retour au Contrôle du Bouclier du Disrupteur"
+msgstr "Retour au Contrôle du bouclier disrupteur"
 
 #: data/storyline/act1/events.dat:2720
 msgid "To Machine Deck Lower Catacombs"
@@ -2389,7 +2389,7 @@ msgstr "Vers le Pont des Machines du Disrupteur"
 
 #: data/storyline/act1/events.dat:2751
 msgid "Back To Maintenance Tunnel"
-msgstr "Retour vers le tunnel de maintenance"
+msgstr "Retour vers les tunnels de maintenance"
 
 #: data/storyline/act1/events.dat:2758
 msgid "We need to go deeper..."
@@ -2453,7 +2453,7 @@ msgstr "Salle de Contrôle du Pont des Machines"
 
 #: data/storyline/act1/levels.dat:6894 data/storyline/act1/levels.dat:9176
 msgid "Disruptor Shield Control"
-msgstr "Contrôle du Bouclier Disrupteur"
+msgstr "Contrôle du bouclier disrupteur"
 
 #: data/storyline/act1/levels.dat:8413
 msgid "Maintenance Tunnels"
@@ -2478,7 +2478,7 @@ msgstr "Champs de cristaux"
 #: data/storyline/act1/levels.dat:12654 data/storyline/act1/levels.dat:39423
 #: data/storyline/act1/levels.dat:39777 data/storyline/act1/levels.dat:40177
 msgid "Desert Valley"
-msgstr "Vallée Déserte"
+msgstr "Vallée déserte"
 
 #: data/storyline/act1/levels.dat:13136
 msgid "Slasher Mountains"
@@ -2494,7 +2494,7 @@ msgstr "Tetracastin"
 
 #: data/storyline/act1/levels.dat:17323
 msgid "In case of panic: run!"
-msgstr "En cas d'Urgence :  Fuyez"
+msgstr "En cas d'urgence :  fuyez !"
 
 #: data/storyline/act1/levels.dat:17448
 msgid "Scientists quarters and Telemetry"
@@ -2548,7 +2548,7 @@ msgstr "Forêt de champignons"
 
 #: data/storyline/act1/levels.dat:28432
 msgid "Some sanctuary"
-msgstr "Divers Sanctuaires"
+msgstr "Divers sanctuaires"
 
 #: data/storyline/act1/levels.dat:29306
 msgid "Storage room"
@@ -3111,7 +3111,7 @@ msgstr "Le problème de Bender"
 
 #: data/storyline/act1/quests.lua:31
 msgid "The yellow toolkit"
-msgstr "La boite à outils jaune."
+msgstr "La boite à outils jaune"
 
 #: data/storyline/act1/quests.lua:45
 msgid "Anything but the army snacks, please!"
@@ -3139,7 +3139,7 @@ msgstr "J'ai réussi à gagner le combat dans l'arène maître. Suis je vraiment
 
 #: data/storyline/act1/quests.lua:64
 msgid "Opening a can of bots..."
-msgstr "Ouverture  de robots en Boîte…"
+msgstr "Ouverture de robots en boîte…"
 
 #: data/storyline/act1/quests.lua:68
 msgid "The first level of the warehouse has been cleared of bots; Dixon's men can now safely retrieve the supplies from here."
@@ -3802,200 +3802,200 @@ msgstr "Personnel d'entreprise"
 
 #: data/storyline/act2/events.dat:60 data/storyline/act2/levels.dat:30140
 msgid "Skyscrapper Arena"
-msgstr ""
+msgstr "Arène grandiose"
 
 #: data/storyline/act2/events.dat:108
 msgid "You are unable to return. The only way is forward."
-msgstr ""
+msgstr "Tu ne peux faire marche arrière. Le seul chemin est devant toi."
 
 #: data/storyline/act2/events.dat:109
 msgid "RUMBLE! A earthquake happened!"
-msgstr ""
+msgstr "GRONDEMENT ! Un tremblement de terre s'est produit !"
 
 #: data/storyline/act2/events.dat:173
 msgid "Your head spins. What happened?!"
-msgstr ""
+msgstr "Ta tête tourne. Que s'est-il passé ?"
 
 #: data/storyline/act2/events.dat:174
 msgid "BOOM BOOOOOOM BOOOM"
-msgstr ""
+msgstr "BOUM BOOOOOUM BOUM"
 
 #: data/storyline/act2/events.dat:186
 msgid "To Underground F1"
-msgstr ""
+msgstr "Vers le sous-sol N1"
 
 #: data/storyline/act2/events.dat:198 data/storyline/act2/events.dat:235
 msgid "To Underground F2"
-msgstr ""
+msgstr "Vers le sous-sol N2"
 
 #: data/storyline/act2/events.dat:213
 msgid "To Ground Level"
-msgstr ""
+msgstr "Vers la surface"
 
 #: data/storyline/act2/events.dat:222 data/storyline/act2/events.dat:266
 #: data/storyline/act2/events.dat:385
 msgid "To Underground F3"
-msgstr ""
+msgstr "Vers le sous-sol N3"
 
 #: data/storyline/act2/events.dat:244 data/storyline/act2/events.dat:288
 msgid "To Underground F4"
-msgstr ""
+msgstr "Vers le sous-sol N4"
 
 #: data/storyline/act2/events.dat:253
 msgid "To Factory via Shortcut"
-msgstr ""
+msgstr "Vers l'Usine par un raccourci"
 
 #: data/storyline/act2/events.dat:275 data/storyline/act2/events.dat:310
 msgid "To Underground F5"
-msgstr ""
+msgstr "Vers le sous-sol N5"
 
 #: data/storyline/act2/events.dat:297 data/storyline/act2/events.dat:332
 msgid "To Underground F6"
-msgstr ""
+msgstr "Vers le sous-sol N6"
 
 #: data/storyline/act2/events.dat:319 data/storyline/act2/events.dat:354
 msgid "To Underground F7"
-msgstr ""
+msgstr "Vers le sous-sol N7"
 
 #: data/storyline/act2/events.dat:341 data/storyline/act2/events.dat:376
 msgid "To Underground F8"
-msgstr ""
+msgstr "Vers le sous-sol N8"
 
 #: data/storyline/act2/events.dat:363
 msgid "To Underground F9"
-msgstr ""
+msgstr "Vers le sous-sol N9"
 
 #: data/storyline/act2/events.dat:398
 msgid "To Mainland via underground"
-msgstr ""
+msgstr "Vers la zone principale par le sous-sol"
 
 #: data/storyline/act2/events.dat:411
 msgid "To Icy Summer Island"
-msgstr ""
+msgstr "Vers l'Île de l'Été Glacé"
 
 #: data/storyline/act2/events.dat:591 data/storyline/act2/npc_specs.lua:29
 msgid "Colemak"
-msgstr ""
+msgstr "Colemak"
 
 #: data/storyline/act2/levels.dat:20
 msgid "RR Resorts"
-msgstr ""
+msgstr "Résidence RR"
 
 #: data/storyline/act2/levels.dat:1119
 msgid "Visitors: This Way"
-msgstr ""
+msgstr "Visiteurs : Par ici"
 
 #: data/storyline/act2/levels.dat:1143
 msgid "In case of emergency, take the Arcane Lore from the chest!"
-msgstr ""
+msgstr "En cas d'urgence, prendre le Savoir Arcanique dans le coffre !"
 
 #: data/storyline/act2/levels.dat:1235
 msgid "Central Area"
-msgstr ""
+msgstr "Zone Centrale"
 
 #: data/storyline/act2/levels.dat:1971 data/storyline/act2/levels.dat:2456
 msgid "To R&R Resorts"
-msgstr ""
+msgstr "Vers la Résidence R&R"
 
 #: data/storyline/act2/levels.dat:1974
 msgid "To The Ice Pass"
-msgstr ""
+msgstr "Vers la Passe Glacée"
 
 #: data/storyline/act2/levels.dat:1977
 msgid "To R&R Factory"
-msgstr ""
+msgstr "Vers l'Usine R&R"
 
 #: data/storyline/act2/levels.dat:1980
 msgid "To Guest Area and City Gate Control"
-msgstr ""
+msgstr "Vers la Zone des Invités et le Contrôle de la Porte de la Ville"
 
 #: data/storyline/act2/levels.dat:1983
 msgid "Guest Room. Please wait patiently for one of our staff pick you up."
-msgstr ""
+msgstr "Pièce des invités. Merci d'attendre patiemment qu'un membre du personnel vienne vous chercher."
 
 #: data/storyline/act2/levels.dat:2113
 msgid "Welcome to Act 2"
-msgstr ""
+msgstr "Bienvenu dans l'Acte 2"
 
 #: data/storyline/act2/levels.dat:2484
 msgid "R&R Factory"
-msgstr ""
+msgstr "Usine R&R"
 
 #: data/storyline/act2/levels.dat:4627
 msgid "Droid Research & Development Offices"
-msgstr ""
+msgstr "Bureaux de Recherche et Développement de Robotique"
 
 #: data/storyline/act2/levels.dat:4678
 msgid "RR Factory, Floor 2"
-msgstr ""
+msgstr "Usine RR, Étage 2"
 
 #: data/storyline/act2/levels.dat:6962
 msgid "Servant Development Office. South: Scout Development Office."
-msgstr ""
+msgstr "Bureau de Développement des Employés. Au Sud : Bureau de Développement des Sentinelles."
 
 #: data/storyline/act2/levels.dat:7138
 msgid "RR Factory, Floor 3"
-msgstr ""
+msgstr "Usine RR, Étage 3"
 
 #: data/storyline/act2/levels.dat:9508
 msgid "Scouts Development Office. Intruders will be shot without mercy."
-msgstr ""
+msgstr "Bureau de Développements des Sentinelles. Les intrus seront abattus sans pitié."
 
 #: data/storyline/act2/levels.dat:9511
 msgid "No Trespassing: Factory Core. (Shortcut to Floor 9)"
-msgstr ""
+msgstr "Passage interdit : Noyau de l'Usine. (Raccourci vers étage 9)"
 
 #: data/storyline/act2/levels.dat:9517
 msgid "Are you lost? Northeast to Maintenance Development Office."
-msgstr ""
+msgstr "Vous êtes perdu ? Bureau de Développement de la Maintenance au Nord-Est."
 
 #: data/storyline/act2/levels.dat:9695
 msgid "RR Factory, Floor 4"
-msgstr ""
+msgstr "Usine RR, Étage 4"
 
 #: data/storyline/act2/levels.dat:12216
 msgid "Maintenance Development Office & Storage. "
-msgstr ""
+msgstr "Bureau de Développement de la Maintenance & Entrepôts."
 
 #: data/storyline/act2/levels.dat:12219
 msgid "Crew Development Office. We're sorry that you need to go to your office by stairs."
-msgstr ""
+msgstr "Bureau de Développement des Équipages. Désolé de vous faire prendre les escaliers pour accéder à votre bureau."
 
 #: data/storyline/act2/levels.dat:12222
 msgid "Crew Development Offices at East, in central area."
-msgstr ""
+msgstr "Bureau de Développement des Équipages à l'Est, dans la zone centrale."
 
 #: data/storyline/act2/levels.dat:12225
 msgid "If the gate to the research area is locked, please do not open it. Insane people working."
-msgstr ""
+msgstr "Si la porte de la zone de recherche est fermée, merci de ne pas l'ouvrir. Des personnes démentes peuvent y travailler."
 
 #: data/storyline/act2/levels.dat:12409
 msgid "RR Factory, Floor 5"
-msgstr ""
+msgstr "Usine RR, Étage 5"
 
 #: data/storyline/act2/levels.dat:14743
 msgid "Crew & Harvesting Development Office. North-east: Security Development Office."
-msgstr ""
+msgstr "Bureau de Développement des Équipages et des Récoltes. Nord-est : Bureau de Développement de la Sécurité."
 
 #: data/storyline/act2/levels.dat:14932
 msgid "RR Factory, Floor 6"
-msgstr ""
+msgstr "Usine RR, Étage 6"
 
 #: data/storyline/act2/levels.dat:17301
 msgid "Dispatchment & Signman Offices. Battle droids present. Authorized Access Only!"
-msgstr ""
+msgstr "Bureaux des Expéditions et du Préposé au Courrier. Présence de droïdes de combat. Accès réservé aux personnes autorisées ! "
 
 #: data/storyline/act2/levels.dat:17304
 msgid "Security Development Office. Sign blinks to spare power. This way for more STAIRS."
-msgstr ""
+msgstr "Bureau de Développement de la Sécurité. Panneaux lumineux clignotants pour économie d'énergie. Par ici pour d'autres ESCALIERS."
 
 #: data/storyline/act2/levels.dat:17499
 msgid "RR Factory, Floor 7"
-msgstr ""
+msgstr "Usine RR, Étage 7"
 
 #: data/storyline/act2/levels.dat:19924
 msgid "Use this stair for Sentinel Dev. Office, Command Dev. Office, Factory Plant and Death."
-msgstr ""
+msgstr "Utiliser cet escalier pour le Bureau de Dév. des Sentinelles, le Bureau de Dév. du Commandement, les installations de l'Usine et la Mort."
 
 #: data/storyline/act2/levels.dat:19927
 msgid "There is nothing on this sign."
@@ -4003,107 +4003,107 @@ msgstr "Il n'y a rien sur ce panneau."
 
 #: data/storyline/act2/levels.dat:19930
 msgid "Sentinel and Command devs, we're sorry, but more stairs ahead."
-msgstr ""
+msgstr "Dév. des Sentinelles et du Commandement, désolé, pas d'autres escaliers."
 
 #: data/storyline/act2/levels.dat:19933
 msgid "Signman Office. Hey, it's me! You totally should visit this office, or send us a LETTER!"
-msgstr ""
+msgstr "Bureau du Préposé au Courrier. Hé, c'est moi ! Vous devriez vraiment entrer dans ce bureau, ou nous envoyer une LETTRE !"
 
 #: data/storyline/act2/levels.dat:20124
 msgid "RR Factory, Floor 8"
-msgstr ""
+msgstr "Usine RR, Étage 8"
 
 #: data/storyline/act2/levels.dat:22890
 msgid "RR Factory, Floor 9"
-msgstr ""
+msgstr "Usine RR, Étage 9"
 
 #: data/storyline/act2/levels.dat:25864
 msgid "Command Development Office & Factory. Complainers about stairs will be frozen without mercy. AZ."
-msgstr ""
+msgstr "Bureau de Développement du Commandement & Usine. Les personnes se plaignant des escaliers seront congelées sans pitié."
 
 #: data/storyline/act2/levels.dat:27156
 msgid "The Ice Pass - North"
-msgstr ""
+msgstr "La Passe Glacée - Nord"
 
 #: data/storyline/act2/levels.dat:27281
 msgid "The Ice Pass"
-msgstr ""
+msgstr "La Passe Glacée"
 
 #: data/storyline/act2/levels.dat:27413
 msgid "The Ice Pass - South"
-msgstr ""
+msgstr "La Passe Glacée - Sud"
 
 #: data/storyline/act2/levels.dat:27538
 msgid "The Ice Pass - Dvorak"
-msgstr ""
+msgstr "La Passe Glacée - Dvorak"
 
 #: data/storyline/act2/levels.dat:27676
 msgid "Icy Summer Artificial Island"
-msgstr ""
+msgstr "Île artificielle de l'Été glacée"
 
 #: data/storyline/act2/levels.dat:28338
 msgid "To mainland"
-msgstr ""
+msgstr "Vers le Continent"
 
 #: data/storyline/act2/levels.dat:28881
 msgid "Search in the Darkness"
-msgstr ""
+msgstr "Chercher dans l'Obscurité"
 
 #: data/storyline/act2/levels.dat:29946
 msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Management."
-msgstr ""
+msgstr "Hé, vous êtes très proche du passage souterrain vers le continent. Soyez sûr d'avoir emmener les clés. La direction de la Résidence RR."
 
 #: data/storyline/act2/levels.dat:29949
 msgid "Blue Marker for Storage Room. Red Marker for Mainland."
-msgstr ""
+msgstr "Marquage Bleu pour l'Entrepôt. Marquage Rouge pour le Continent."
 
 #: data/storyline/act2/levels.dat:29952
 msgid "DANGER! Due to the reckless exploration of Dilithium, the ceiling may fall anytime. DO NOT PROCEED."
-msgstr ""
+msgstr "DANGER ! À cause de l'extraction irréfléchie de Dilithium, le plafond pourrait tomber à tout moment. NE PAS CONTINUER."
 
 #: data/storyline/act2/npc_specs.lua:11
 #: data/storyline/act2/ReturnOfTux.droids:123
 msgid "Master Yadda"
-msgstr ""
+msgstr "Maître Yadda"
 
 #: data/storyline/act2/npc_specs.lua:15
 msgid "Mr. Stone - Shop owner"
-msgstr ""
+msgstr "M. Stone – Propriétaire du magasin"
 
 #: data/storyline/act2/npc_specs.lua:17
 msgid "RR Security Chief"
-msgstr ""
+msgstr "Chef de la sécurité RR"
 
 #: data/storyline/act2/npc_specs.lua:21
 msgid "999 RR Manager"
-msgstr ""
+msgstr "999 Directeur RR"
 
 #: data/storyline/act2/npc_specs.lua:22
 msgid "Mr. Saves"
-msgstr ""
+msgstr "Mr. Saves"
 
 #: data/storyline/act2/npc_specs.lua:22
 msgid "Mr. Saves, Watcher of Stories"
-msgstr ""
+msgstr "Mr. Saves, Gardien des Histoires"
 
 #: data/storyline/act2/npc_specs.lua:22
 #: data/storyline/act2/ReturnOfTux.droids:31
 msgid "Weirdo"
-msgstr ""
+msgstr "Weirdo"
 
 #: data/storyline/act2/npc_specs.lua:23
 #: data/storyline/act2/ReturnOfTux.droids:146
 msgid "Mike"
-msgstr ""
+msgstr "Mike"
 
 #: data/storyline/act2/npc_specs.lua:26
 #: data/storyline/act2/ReturnOfTux.droids:122
 msgid "Fred"
-msgstr ""
+msgstr "Fred"
 
 #: data/storyline/act2/npc_specs.lua:29
 msgid "Dvorak's acquittance - Colemak"
-msgstr ""
+msgstr "Débiteur de Dvorak - Colemak"
 
 #: data/storyline/act2/quests.lua:27
 msgid "Where Am I?"
@@ -4115,39 +4115,39 @@ msgstr "Message d'Un Vieil Ami"
 
 #: data/storyline/act2/quests.lua:35
 msgid "The Reapers Of MegaSys I"
-msgstr ""
+msgstr "Les Faucheurs de MegaSys I"
 
 #: data/storyline/act2/ReturnOfTux.droids:4
 #: data/storyline/act2/ReturnOfTux.droids:5
 #: data/storyline/act2/ReturnOfTux.droids:6
 #: data/storyline/act2/ReturnOfTux.droids:7
 msgid "RR Guard"
-msgstr ""
+msgstr "Garde RR"
 
 #: data/storyline/act2/ReturnOfTux.droids:8
 msgid "629 Assassin"
-msgstr ""
+msgstr "629 Assassin"
 
 #: data/storyline/act2/ReturnOfTux.droids:9
 msgid "Car Wrecker"
-msgstr ""
+msgstr "Briseur de voiture"
 
 #: data/storyline/act2/ReturnOfTux.droids:10
 msgid "Swift Assassin"
-msgstr ""
+msgstr "Assassin véloce"
 
 #: data/storyline/act2/ReturnOfTux.droids:12
 msgid "MS Officer"
-msgstr ""
+msgstr "Policier MS"
 
 #: data/storyline/act2/ReturnOfTux.droids:18
 msgid "Crossroad Autogun"
-msgstr ""
+msgstr "Tourelle automatique de carrefour"
 
 #: data/storyline/act2/ReturnOfTux.droids:20
 msgid "Power Guard"
-msgstr ""
+msgstr "Garde de la centrale"
 
 #: data/storyline/act2/ReturnOfTux.droids:140
 msgid "Friendly Dude"
-msgstr ""
+msgstr "Mec sympa"

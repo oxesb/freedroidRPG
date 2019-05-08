@@ -21,33 +21,32 @@ title_screen{
 background = "credits.jpg",
 song = "HellFortressTwo.ogg",
 text = [[
-            FreedroidRPG 0.16
+            FreedroidRPG 1.0
 
 PROGRAMMATION :
 
-        Bob
         Samuel Degrande
-        Mike Fleischmann
+         Christoph Franzen
         Scott Furry
         Arthur Huillet
-        Jann Horn
-        Józef Kucia
         Gregory Lozet
-        Michael Mendelson
-        Miles McCammon
-        Michael Parks
-        Samuel Pitoiset
-        v4hn
+         skangas
         Xenux
 
 CONTENU DU JEU :
 
-        Amy de Buitléir
+         Kunjappu Abhijith
+         DroidBotAI 
+         Rafael Fontenelle
+         can-ned_food
+        Scott Furry
+         Robin Gareus
         Infrared
-        Raymond Jennings
-        Jonatas L. Nogueira
         Matthias Krüger
         Miles McCammon
+        Jonatas L. Nogueira
+         Sydney
+         wlan2
 
 GRAPHISMES :
 
@@ -56,7 +55,7 @@ GRAPHISMES :
 
 MUSIQUE :
 
-        Nick Hagman
+         girix8
 
 TRADUCTIONS :
 
@@ -69,27 +68,46 @@ TRADUCTIONS :
           Matthias Krüger
           Link Mario
 
+         es:
+          Pedro Arana
+           Carlos Daniel Landin Montaperto
+           Lua Marchante Tello
+
         fr_FR:
           Sebastian Adam
           Alérion
+           Benjamin Bertrand
           Samuel Degrande
           Nicolas Fargier
           Benjamin Leduc
           Duong Khang Nguyen
           Xenux
 
+         hu:
+           Balazs Mesko
+
+         it:
+           ginoingras
+           Silvia
+           Sebastiano Pistore
+
         pt_BR:
           Anelise D. J.
           Luiz Phelipe Ferreira da Silva
+           Rafael Fontenelle
           Jonatas L. Nogueira
+
+         ru:
+           Rodion
+           Roman M. Yagodin
 
         sv_SV:
           Alexander Forsberg
+           Jonatan Nyberg
 
 AUTRES :
 
-        Eino Keskitalo
-        Duong Khang Nguyen
+         Julien Puydt
 
 
 
@@ -100,26 +118,36 @@ PROGRAMMATION :
         Maria Grazia Alastra
         Pedro Arana
         Catalin Badea
+        Bob
         Pierre Bourdon
         Bryan C
         Simon Castellan
+        Mike Fleischmann
+        Jann Horn
         jcoral
         Stefan Kangas
+        Józef Kucia
         Pavaluca Matei
+        Miles McCammon
         Michael Mendelson
         Esa-Matti Mourujarvi
         Ari Mustonen
+        Michael Parks
         Nicolas Pepin-Perreault
+        Samuel Pitoiset
         Quentin Pradet
         Johannes Prix
         Reinhard Prix
         Alexander Solovets
         Philippe Tetar
+        v4hn
 
 CONTENU DU JEU :
 
+        Amy de Buitléir
         Stefan Huszics
         James
+        Raymond Jennings
         Sebastian Offermann
         Kurtis Parramore
         Niklas Spille
@@ -128,7 +156,7 @@ CONTENU DU JEU :
         rudi_s
         Thor
         JK Wood
-
+ 
 MUSIQUE :
 
         Nick "Nario" Hagman
@@ -149,7 +177,9 @@ AUTRES :
         Zombie Ryushu
         Ted Cipicchio
         The Doctor
+        Eino Keskitalo
         Simon Newton
+        Duong Khang Nguyen
         Clint Herron
         Hike Danakian
         Ian Griffiths

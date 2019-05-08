@@ -10,7 +10,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 0.16+git\n"
+"Project-Id-Version: freedroidrpg 1.0RC1\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
 "POT-Creation-Date: 2019-03-30 22:43+0100\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
@@ -245,11 +245,11 @@ msgstr "Kísérleti parancsnok kiborg. Új típusú aggyal van felszerelve. az e
 
 #: data/base/droid_specs.lua:1259 data/storyline/act2/ReturnOfTux.droids:129
 msgid "The Glitch"
-msgstr ""
+msgstr "A Hiba"
 
 #: data/base/droid_specs.lua:1260
 msgid "I have not failed. I've just found 10,000 ways how to NOT make a bot."
-msgstr ""
+msgstr "Nem buktam el. Csak találtam 10.000 módszert arra, hogy NEM kell botot készíteni."
 
 #: data/base/droid_specs.lua:1306 data/base/droid_specs.lua:1346
 msgid "Older Man"
@@ -592,11 +592,11 @@ msgstr "Energiaostor"
 
 #: data/base/item_specs.lua:617
 msgid "An energy whip commonly found at management from MegaSys facilities. What purpose they serve for is still unknown. Because the real whip is pure energy, it will never break, but it does not stays on the strong side."
-msgstr ""
+msgstr "Egy energiaostor, amely gyakran megtalálható volt a menedzsmentnél a MegaSys létesítményeiben. A céljuk még mindig ismeretlen. Mivel az ostor tiszta energiából van, ezért sosem törik el."
 
 #: data/base/item_specs.lua:629
 msgid ".22 LR Ammunition"
-msgstr ".22 LR lőszer"
+msgstr ".22-es LR lőszer"
 
 #: data/base/item_specs.lua:633
 msgid ".22 Long Rifle ammunition used to be a very common ammo for target practice, mainly because it was cheap and gave little recoil. It's just too weak to penetrate any real droid armor though."
@@ -604,7 +604,7 @@ msgstr ".22 kaliberű lőszer, amit a lőgyakorlatok általános kelléke, legin
 
 #: data/base/item_specs.lua:640
 msgid ".22 Automatic"
-msgstr ".22 Automata"
+msgstr ".22-es Automata"
 
 #: data/base/item_specs.lua:656
 msgid "With .22 ammo, it's mostly dumb luck if you actually damage a bot with this pistol. On the bright side, you will get a LOT of target practice out of each bot before a bullet or two manages to find a weak enough spot to take the bot out."
@@ -952,11 +952,11 @@ msgstr "Egy kicsi, általános de elég ellenálló pajzs. Tűrhető védelmet n
 
 #: data/base/item_specs.lua:1409
 msgid "Standard Shield"
-msgstr "Sztenderd pajzs"
+msgstr "Szabványos pajzs"
 
 #: data/base/item_specs.lua:1416
 msgid "Better than a buckler, and a lot more effective."
-msgstr "Jobb, mint a csicsás kukafedő, és sokkal hatékonyabb is."
+msgstr "Jobb mint a kerek pajzs, és sokkal hatékonyabb is."
 
 #: data/base/item_specs.lua:1424
 msgid "Heavy Shield"
@@ -1213,15 +1213,15 @@ msgstr "Tudni hogy az ellenségeid mire készül elég egyszerű, egy kis jelfig
 
 #: data/base/item_specs.lua:1834
 msgid "Source Book of Energy Shield"
-msgstr ""
+msgstr "Energiapajzs forráskódja"
 
 #: data/base/item_specs.lua:1835 data/base/skill_specs.lua:213
 msgid "Energy Shield"
-msgstr ""
+msgstr "Energiapajzs"
 
 #: data/base/item_specs.lua:1839 data/base/skill_specs.lua:218
 msgid "Creating an energy shield to protect you can be a very useful skill. Every hit that you get will be converted into heat. Beware: This heats up excessively. Equipment can still be damaged by heat. When you overheat, shield will try to automatically turn off to prevent damage to itself. It may provoke extra-heat on this process, so be sure to not let it happen."
-msgstr ""
+msgstr "Egy energiapajzs létrehozása, amely megvéd, egy nagyon hasznos képesség lehet. Minden ütés hővé alakul át. Figyelem: Gyorsan felmelegít. A felszerelést továbbra is sérül a hőtől. Ha túlmelegszel, akkor a pajzs automatikusan kikapcsol, hogy ne okozzon magának sérülést. Ez további melegedést okozhat, így győződj meg róla, hogy ez ne történjen meg."
 
 #: data/base/item_specs.lua:1846
 msgid "Subatomic and Nuclear Science for Dummies, Volume IV"
@@ -1855,19 +1855,19 @@ msgstr "Egy boríték, ami ezt mondja: „PC LOAD LETTERS”. Fogalmam sincs, ho
 
 #: data/base/item_specs.lua:3012
 msgid "Arcane Lore"
-msgstr ""
+msgstr "Ősi tudás"
 
 #: data/base/item_specs.lua:3016
 msgid "I've bought an anti-hack software, so I could try to hack it! ...But what, exactly, is the 'Arcane Lore'?"
-msgstr ""
+msgstr "Vettem egy hackelés elleni szoftvert, így megpróbáltam feltörni! …De mi is ez az „Ősi tudás”?"
 
 #: data/base/item_specs.lua:3023
 msgid "PGP key"
-msgstr ""
+msgstr "PGP-kulcs"
 
 #: data/base/item_specs.lua:3027
 msgid "It won't open your house, but it can unlock important encrypted archives."
-msgstr ""
+msgstr "A házadat nem nyitja ki, de feloldja a fontos titkosított archívumokat."
 
 #: data/base/item_specs.lua:3034
 msgid "Cheat Gun"

@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 0.16+git\n"
+"Project-Id-Version: freedroidrpg 1.0RC1\n"
 "Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-30 22:43+0100\n"
+"POT-Creation-Date: 2019-05-08 17:36+0200\n"
 "PO-Revision-Date: 2019-02-28 09:00+0000\n"
 "Last-Translator: zdenek <chmelarz@gmail.com>, 2019\n"
 "Language-Team: Czech (https://www.transifex.com/arctic-games/teams/9511/cs/)\n"
@@ -1035,11 +1035,11 @@ msgstr "Pokračuji ve strážném programu."
 
 #: data/storyline/act1/dialogs/614_portal.lua:69
 msgid "ERROR: unknown command. Searching for similar commands..."
-msgstr ""
+msgstr "CHYBA: neznámý příkaz. Vyhledávání podobných příkazů..."
 
 #: data/storyline/act1/dialogs/614_portal.lua:72
 msgid "ERROR! Similar command not found! Using advanced search..."
-msgstr ""
+msgstr "CHYBA! Podobný příkaz nenalezen! Použití rozšířeného vyhledávání..."
 
 #: data/storyline/act1/dialogs/614_portal.lua:74
 msgid "Executable 'bin/hostile' found. Executing..."
@@ -1182,7 +1182,7 @@ msgstr "Opouštím interaktivní databázi informací o produktu"
 #: data/storyline/act1/dialogs/ArenaTerminal.lua:27
 #: data/storyline/act2/dialogs/ArenaTerminal.lua:27
 msgid "[b]Arena Terminated[/b]"
-msgstr ""
+msgstr "[b]Aréna byla ukončena[/b]"
 
 #: data/storyline/act1/dialogs/ArenaTerminal.lua:30
 #: data/storyline/act2/dialogs/ArenaTerminal.lua:30
@@ -1442,7 +1442,7 @@ msgstr "Hlasoval jsem pro tebe a to je to, co tě tam dostalo!"
 
 #: data/storyline/act1/dialogs/Bender.lua:111
 msgid "I said we'd be buddies, didn't I? Want to stand guard with me? It gets boring after a while."
-msgstr ""
+msgstr "Říkal jsem, že budeme kamarádi, ne? Chceš stát na stráži se mnou? Po chvíli je to nuda."
 
 #: data/storyline/act1/dialogs/Bender.lua:112
 msgid "I could tell you all the secrets of the Red Guard."
@@ -1958,7 +1958,7 @@ msgstr "Zdravím Mistře Benjamine."
 
 #: data/storyline/act1/dialogs/Benjamin.lua:43
 msgid "You are using a fine weapon. I wonder where you found it?"
-msgstr ""
+msgstr "Používáš fajnovou zbraň. Zajímalo by mě, kde jsi ji našel?"
 
 #: data/storyline/act1/dialogs/Benjamin.lua:54
 msgid "Ah, so you are the new member. Welcome. My name is Benjamin, and I take care of our ranged weaponry here in the citadel."
@@ -2687,7 +2687,7 @@ msgstr "Co jsou tyto dva stromy zač?"
 
 #: data/storyline/act1/dialogs/Bob.lua:98
 msgid "The trees' fruit is our only source of food. The fruit is slightly bitter and leaves your mouth like an unripe persimmon, but we've noticed our wounds are healing much faster."
-msgstr ""
+msgstr "Ovoce těchto stromů je naším jediným zdrojem jídla. Ovoce je trochu hořké a zanechává v ústech chuť jako nezralé rajče, ale všimli jsme si, že se naše rány uzdravují mnohem rychleji."
 
 #: data/storyline/act1/dialogs/Bob.lua:100
 msgid "Yeah. I can give you some. Just ask."
@@ -3313,11 +3313,11 @@ msgstr "Dobře. Potřebuju spánek."
 
 #: data/storyline/act1/dialogs/Butch.lua:36
 msgid "Hey! Never seen you, newbie."
-msgstr ""
+msgstr "Ahoj! Nikdy jsem tě neviděl, nováčku."
 
 #: data/storyline/act1/dialogs/Butch.lua:37
 msgid "Wanna enter the arena?"
-msgstr ""
+msgstr "Chceš vstoupit do arény?"
 
 #: data/storyline/act1/dialogs/Butch.lua:56
 #: data/storyline/act1/dialogs/Butch.lua:68
@@ -3326,15 +3326,15 @@ msgstr "Jo, co chceš zelenáči?"
 
 #: data/storyline/act1/dialogs/Butch.lua:57
 msgid "The master arena is by no means an easy task. Maybe you should practice some more before you go there."
-msgstr ""
+msgstr "Aréna mistrů v žádném případě není snadný úkol. Možná bys měl ještě cvičit, než půjdeš dolů."
 
 #: data/storyline/act1/dialogs/Butch.lua:58
 msgid "It's the trapdoor north of the regular arena. Good luck, newbie: You'll need it."
-msgstr ""
+msgstr "Hledej poklop na sever od arény. Hodně štěstí, nováčku: Budeš ho potřebovat."
 
 #: data/storyline/act1/dialogs/Butch.lua:60
 msgid "Yeah, what do you want?"
-msgstr ""
+msgstr "Jo, co chceš?"
 
 #: data/storyline/act1/dialogs/Butch.lua:83
 msgid "Butch... The arena master."
@@ -3346,7 +3346,7 @@ msgstr "Arény? Jaké arény?"
 
 #: data/storyline/act1/dialogs/Butch.lua:92
 msgid "This underground arena. With holographic bots to train combat techniques against."
-msgstr ""
+msgstr "Tato podzemní aréna. S holografickými boty určených k tréninku bojových technik."
 
 #: data/storyline/act1/dialogs/Butch.lua:93
 #: data/storyline/act1/dialogs/Butch.lua:103
@@ -3355,11 +3355,11 @@ msgstr "Chceš bojovat?"
 
 #: data/storyline/act1/dialogs/Butch.lua:100
 msgid "It's about the arena."
-msgstr ""
+msgstr "Je to o aréně."
 
 #: data/storyline/act1/dialogs/Butch.lua:107
 msgid "All you need to do is walk in there and talk to Mike."
-msgstr ""
+msgstr "Vše, co musíš udělat, je jen vejít dovnitř a promluvit si s Mikem."
 
 #: data/storyline/act1/dialogs/Butch.lua:114
 msgid "Yeah. I want to fight."
@@ -3367,11 +3367,11 @@ msgstr "Jo. Chci bojovat."
 
 #: data/storyline/act1/dialogs/Butch.lua:117
 msgid "Good. I opened up the door. Just continue to the corridor."
-msgstr ""
+msgstr "Dobře. Otevřel jsem dveře. Jen jdi dál chodbou."
 
 #: data/storyline/act1/dialogs/Butch.lua:118
 msgid "You'll need talk to Mike, the arena manager, there."
-msgstr ""
+msgstr "Budeš si muset promluvit s Mikem, manažerem arény."
 
 #: data/storyline/act1/dialogs/Butch.lua:119
 msgid "And be careful, your brain will be fooled by what happens in the holographic world. Any damage you take there, will result in actual physical damage."
@@ -3388,11 +3388,11 @@ msgstr "Boj v aréně není něco, co bych obvykle dělal, ale mám pocit, že b
 
 #: data/storyline/act1/dialogs/Butch.lua:122
 msgid "Oh, and this room is made out of some special material. People reported their teleporter gadgets didn't work in here. Take care!"
-msgstr ""
+msgstr "Jo a ta místnost je vyrobena ze speciálního materiálu. Lidé hlásili, že jim tam nefungovali teleportační přístroje. Dej bacha!"
 
 #: data/storyline/act1/dialogs/Butch.lua:123
 msgid "Butch says that teleporter gadgets may not work in the arena."
-msgstr ""
+msgstr "Butch říkal, že teleportační přístroje v aréně nemusí fungovat."
 
 #: data/storyline/act1/dialogs/Butch.lua:132
 msgid "No way! Violence is wrong! Make love not war!"
@@ -3428,15 +3428,15 @@ msgstr "Ty... Zničil jsi můj pacifistický slogan... Jsem naštvaný... Tak na
 
 #: data/storyline/act1/dialogs/Butch.lua:158
 msgid "Great. Get in the door, newbie, and go talk to Mike."
-msgstr ""
+msgstr "Skvělé. Vstup dál zelenáči a promluv si s Mikem."
 
 #: data/storyline/act1/dialogs/Butch.lua:169
 msgid "I don't have time, I need to save the world."
-msgstr ""
+msgstr "Nemám čas, musím zachránit svět."
 
 #: data/storyline/act1/dialogs/Butch.lua:172
 msgid "Yeah! Continue to dream, newbie."
-msgstr ""
+msgstr "Jo! Sni dál, zelenáči."
 
 #: data/storyline/act1/dialogs/Butch.lua:179
 msgid "Why the heck are you organizing fights? Enough people have died already!"
@@ -3468,11 +3468,11 @@ msgstr "Já nabídl boj a tys ho chtěl."
 
 #: data/storyline/act1/dialogs/Butch.lua:195
 msgid "You wanted a fight, and you will get one."
-msgstr ""
+msgstr "Chtěl jsi boj, dostaneš boj."
 
 #: data/storyline/act1/dialogs/Butch.lua:196
 msgid "I offered a fight, then do it."
-msgstr ""
+msgstr "Já nabídl boj, tak to udělej."
 
 #: data/storyline/act1/dialogs/Butch.lua:198
 msgid "There is nothing more to say, newbie."
@@ -3484,36 +3484,36 @@ msgstr "Chci větší výzvu."
 
 #: data/storyline/act1/dialogs/Butch.lua:207
 msgid "I'm sorry, but town regulations forbid access to the more advanced ranks unless you've completed the noob-, errr, novice first."
-msgstr ""
+msgstr "Je mi líto, ale předpisy města zakazují přístup do pokročilejších úrovní, dokud nedokončíš úroveň zelená-, ehm, začátečníka."
 
 #: data/storyline/act1/dialogs/Butch.lua:208
 msgid "This regulation is in place for your own safety, so that no newbie accidentally signs up as Champion."
-msgstr ""
+msgstr "Tento předpis je zaveden pro tvou vlastní bezpečnost, aby se žádný nováček náhodně nezaregistroval jako Šampion."
 
 #. TRANSLATORS: 'more difficult' is related to arena rank
 #: data/storyline/act1/dialogs/Butch.lua:210
 msgid "You might try taking the novice challenge first. Then Mike will grant you access to a more difficult."
-msgstr ""
+msgstr "Můžeš zkusit první, začátečnickou, výzvu. Pak ti Mike poskytne přístup k obtížnějším."
 
 #: data/storyline/act1/dialogs/Butch.lua:212
 msgid "Newbie, just go talk to Mike."
-msgstr ""
+msgstr "Zelenáči, stačí si promluvit s Mikem."
 
 #: data/storyline/act1/dialogs/Butch.lua:213
 msgid "He has better challenges."
-msgstr ""
+msgstr "Má lepší výzvy."
 
 #: data/storyline/act1/dialogs/Butch.lua:220
 msgid "I'm not a 'newbie'."
-msgstr ""
+msgstr "Nejsem 'zelenáč'."
 
 #: data/storyline/act1/dialogs/Butch.lua:222
 msgid "Of course you are. Everyone start as newbie."
-msgstr ""
+msgstr "Samozřejmě, že jsi. Všichni začínají jako zelenáči."
 
 #: data/storyline/act1/dialogs/Butch.lua:223
 msgid "You are just a little more newbie than others."
-msgstr ""
+msgstr "Jsi jen o trochu víc zelenější než ti ostatní."
 
 #: data/storyline/act1/dialogs/Butch.lua:229
 msgid "What is wrong with you? Why do you keep calling me a newbie?"
@@ -3526,7 +3526,7 @@ msgstr "Protože JSI zelenáč, zelenáči!"
 #. TRANSLATORS: 'less' refers to 'newbie'
 #: data/storyline/act1/dialogs/Butch.lua:233
 msgid "You are just a little less."
-msgstr ""
+msgstr "Jsi jen o něco míň."
 
 #: data/storyline/act1/dialogs/Butch.lua:239
 msgid "Say 'newbie' again and I will rip your spine out."
@@ -3566,23 +3566,23 @@ msgstr "Bude lepší, když nahraješ poslední uloženou pozici a začneš znov
 
 #: data/storyline/act1/dialogs/Butch.lua:266
 msgid "Ooops, the Red Guard hates you now."
-msgstr ""
+msgstr "Oops, Rudá stráž tě teď nenávidí."
 
 #: data/storyline/act1/dialogs/Butch.lua:276
 msgid "So, it was just for show. Anything else, newbie?"
-msgstr ""
+msgstr "Takže to bylo jen pro show. Ještě něco, zelenáči?"
 
 #: data/storyline/act1/dialogs/Butch.lua:283
 msgid "If Mike manages the arena, how comes you're the arena master?"
-msgstr ""
+msgstr "Jestli Mike vede arénu, jak to, že mistr arény jsi ty?"
 
 #: data/storyline/act1/dialogs/Butch.lua:286
 msgid "Newbie, we have a second arena, the Master Arena."
-msgstr ""
+msgstr "Máme ještě druhou arénu zelenáči, Arénu Mistrů."
 
 #: data/storyline/act1/dialogs/Butch.lua:289
 msgid "It is no place to test your cool Exterminator."
-msgstr ""
+msgstr "Není to místo, kde bys mohl otestovat svůj skvělý Exterminátor."
 
 #: data/storyline/act1/dialogs/Butch.lua:291
 msgid "You will die if you go there."
@@ -3594,15 +3594,15 @@ msgstr "Je mi tě líto, tupej ptáku. Nechoď tam."
 
 #: data/storyline/act1/dialogs/Butch.lua:293
 msgid "But if you really want to, the door is now open. It's inside the city, north of this one."
-msgstr ""
+msgstr "Ale pokud opravdu chceš, dveře jsou nyní otevřené. Je to uvnitř města, severně od této arény."
 
 #: data/storyline/act1/dialogs/Butch.lua:294
 msgid "I told the arena master to let me into the master arena. He agreed. Now all that remains to do is to climb down the ladder to the north arena and wait for death herself to come on her black wings and claim my soul. You know, now that I think about it... Maybe I should stay out of there?"
-msgstr ""
+msgstr "Řekl jsem mistru arény, aby mě vpustil do své arény šampiónů. Souhlasil. Teď jediné, co zbývá, je slézt dolů po žebříku do severní arény a čekat na samotnou smrt, až přiletí na svých černých křídlech a bude si nárokovat mou duši. Víš, teď, když o tom tak přemýšlím ... Možná bych se měl od toho místa držet dál?"
 
 #: data/storyline/act1/dialogs/Butch.lua:295
 msgid "Remember, if your teleporter don't work on the convencional arena, it won't work in the master arena either..."
-msgstr ""
+msgstr "Pamatuj, pokud tvůj teleporter nefungoval v tradiční aréně, nebude fungovat ani v aréně mistrů..."
 
 #: data/storyline/act1/dialogs/Butch.lua:296
 msgid "Again, Butch warned me about possibly broken teleporter gadgets."
@@ -3610,15 +3610,15 @@ msgstr "Butch mě znovu varoval o možné poruše teleportačních přístrojů.
 
 #: data/storyline/act1/dialogs/Butch.lua:299
 msgid "Oh, that? I've completed a special challenge."
-msgstr ""
+msgstr "Oh, tohle? Dokončil jsem speciální výzvu."
 
 #: data/storyline/act1/dialogs/Butch.lua:300
 msgid "But you're still too green to try that. You know, town regulations. You must complete the Elite arena first."
-msgstr ""
+msgstr "Ale pořád jsi příliš zelený na to, abys to zkusil. Pamatuješ, pravidla města. Nejdříve musíš dokončit elitní arénu."
 
 #: data/storyline/act1/dialogs/Butch.lua:301
 msgid "Once you're done, come talk to me about this again."
-msgstr ""
+msgstr "Až s tím budeš hotový, promluvíme si o tom znovu."
 
 #: data/storyline/act1/dialogs/Butch.lua:308
 msgid "The master arena is clear."
@@ -3626,11 +3626,11 @@ msgstr "Aréna šampiónů je vyčištěna."
 
 #: data/storyline/act1/dialogs/Butch.lua:310
 msgid "What!? Impossible! No one has ever survived the second arena! Well, except me, of course."
-msgstr ""
+msgstr "Co!? Nemožné! Nikdo nikdy nepřežil druhou arénu! Samozřejmě, kromě mě."
 
 #: data/storyline/act1/dialogs/Butch.lua:311
 msgid "One has to be out of his mind to even attempt the second arena. Not even Bender tried it!"
-msgstr ""
+msgstr "Dotyčný musí být mentálně mimo, pokud se jen pokusí o druhou arénu. Ani Bender to nezkusil!"
 
 #: data/storyline/act1/dialogs/Butch.lua:312
 msgid "You are not a newbie... You are COMPLETELY INSANE!"
@@ -3646,11 +3646,11 @@ msgstr "Přežil jsem arénu mistrů. Zázrak. Uff."
 
 #: data/storyline/act1/dialogs/Butch.lua:323
 msgid "Sure, go hide away in fear."
-msgstr ""
+msgstr "Jasně, jdi se někam schovat posero."
 
 #: data/storyline/act1/dialogs/Butch.lua:324
 msgid "See you around, newbie."
-msgstr ""
+msgstr "Uvidíme se, zelenáči."
 
 #: data/storyline/act1/dialogs/Butch.lua:325
 msgid "Remember: pain is temporary but glory is forever."
@@ -6355,27 +6355,27 @@ msgstr "To je vše, na co jsem se chtěl zeptat."
 
 #: data/storyline/act1/dialogs/Chandra.lua:452
 msgid "Where is everybody? Don't tell me only a dozen of people survived!"
-msgstr ""
+msgstr "Kde jsou všichni? Neříkej mi, že přežil jen tucet lidí!"
 
 #: data/storyline/act1/dialogs/Chandra.lua:454
-msgid "No, no. The causalties here were much smaller than everywhere else."
+msgid "No, no. The casualties here were much smaller than everywhere else."
 msgstr ""
 
 #: data/storyline/act1/dialogs/Chandra.lua:455
 msgid "Most of citizens are currently at the mines. They are doing everything they can to keep the town running."
-msgstr ""
+msgstr "Většina občanů je v současné době v dolech. Dělají vše, co je v jejich silách, aby udrželi město v chodu."
 
 #: data/storyline/act1/dialogs/Chandra.lua:456
 msgid "Children, elderly and others who cannot work are upstairs. They are too afraid to come down."
-msgstr ""
+msgstr "Děti, senioři a jiní, kteří nemohou pracovat, jsou nahoře. Příliš se bojí, než aby sli dolů."
 
 #: data/storyline/act1/dialogs/Chandra.lua:457
 msgid "The ones who you will find here are Red Guards, shopkeepers, medics, programmers, librarians, etc."
-msgstr ""
+msgstr "Ty, které zde najdeš, jsou Rudí strážci, obchodníci, zdravotníci, programátoři, knihovníci atd."
 
 #: data/storyline/act1/dialogs/Chandra.lua:458
 msgid "So do not worry. Things may be dire, but we weren't wiped off. Yet."
-msgstr ""
+msgstr "Tak se neboj. Věci mohou být strašné, ale ještě jsme nebyli vymazáni. Prozatím."
 
 #: data/storyline/act1/dialogs/Chandra.lua:464
 msgid "Thank you for your wise words."
@@ -7356,7 +7356,7 @@ msgstr "Díky autonářadí můžeme začít stavět a ne jen se snažit napravi
 
 #: data/storyline/act1/dialogs/Dixon.lua:550
 msgid "Once this sick war is over, I will make sure you get the 'Key to the City', Linarian."
-msgstr ""
+msgstr "Jakmile tahle nemocná válka skončí, ujistím se, že dostaneš klíč od města Linariane."
 
 #: data/storyline/act1/dialogs/Dixon.lua:558
 msgid "Nearly. Only my conscience keeps me up at night."
@@ -7529,19 +7529,19 @@ msgstr "Robotů"
 
 #: data/storyline/act1/dialogs/Dixon.lua:659
 msgid "I know the droids of the 400s class. Those are for maintenance. But we do not have any in the tunnels' area."
-msgstr ""
+msgstr "Znám droidy třídy 400s. Jsou určeny pro údržbu. Ale v oblasti tunelů nemáme žádné."
 
 #: data/storyline/act1/dialogs/Dixon.lua:663
 msgid "Yes, I know everything about droids specifically designed for maintenance, but we don't have any in our tunnels."
-msgstr ""
+msgstr "Ano, vím všechno o droidech speciálně určených pro údržbu, ale v našich tunelech žádné nemáme."
 
 #: data/storyline/act1/dialogs/Dixon.lua:664
 msgid "As I can't imagine you meeting one of those so soon, I'll leave this question hanging on the air."
-msgstr ""
+msgstr "Jelikož si nedokážu představit, že se brzy s jedním z nic setkáš, nechám tu otázku viset ve vzduchu."
 
 #: data/storyline/act1/dialogs/Dixon.lua:665
 msgid "If for a stroke of bad luck you find one of them though, run away. They may kill you."
-msgstr ""
+msgstr "Pokud se však ke vší smůle nějaký z nich objeví, uteč. Mohou tě zabít."
 
 #: data/storyline/act1/dialogs/Dixon.lua:671
 msgid "Which bots are of the 400s class?"
@@ -8301,19 +8301,19 @@ msgstr "admin@hlavní.pc.dsb.ms: ~ #"
 
 #: data/storyline/act1/dialogs/DSB-PowerControl.lua:46
 msgid "powercontrol --halt"
-msgstr ""
+msgstr "rizenivykonu --zastavit"
 
 #: data/storyline/act1/dialogs/DSB-PowerControl.lua:48
 msgid "[b]ERROR:[/b] Impossible to shutdown. Please contact Machine Deck."
-msgstr ""
+msgstr "[b]CHYBA:[/b] Nelze vypnout. Kontaktujte prosím Strojní paluba."
 
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:35
 msgid "[b]Login failed. Entering as Guest[/b]"
-msgstr ""
+msgstr "[b]Přihlášení selhalo. Vstup jako host[/b]"
 
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:37
 msgid "Welcome to [b]Power Control Gate 1 Terminal[/b]!"
-msgstr ""
+msgstr "Vítejte v [b]Terminál brány řízení výkonu 1[/b]!"
 
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:54
 msgid "GAME BUG. PLEASE REPORT."
@@ -9431,7 +9431,7 @@ msgstr "Bojovala jsem předtím už s mnoha roboty a nebudu se bát obyčejného
 
 #: data/storyline/act1/dialogs/Erin.lua:128
 msgid "Feel free to try, though. Anytime."
-msgstr ""
+msgstr "Nebojte se to vyzkoušet. Kdykoliv."
 
 #: data/storyline/act1/dialogs/Erin.lua:134
 msgid "Prepare to die!"
@@ -9525,11 +9525,11 @@ msgstr "Zdá se, že jsi udělal svůj domácí úkol, uhm?"
 
 #: data/storyline/act1/dialogs/Erin.lua:192
 msgid "Of course I've improved. I have an excellent teacher, after all."
-msgstr ""
+msgstr "Samozřejmě jsem se zlepšil. Koneckonců mám vynikajícího učitele."
 
 #: data/storyline/act1/dialogs/Erin.lua:193
 msgid "You...! Okay, maybe I took too easy previously! I will train you so hard this time, that you'll sweat blood!"
-msgstr ""
+msgstr "Ty...! Dobře, možná jsem to prve provedl až příliš snadno! Tentokrát tě budu trénovat tak, až budeš potit krev!"
 
 #: data/storyline/act1/dialogs/Erin.lua:194
 msgid "Are you up for the challenge?!"
@@ -9591,7 +9591,7 @@ msgstr "Ale varuju tě, nejsem levná!"
 
 #: data/storyline/act1/dialogs/Erin.lua:250
 msgid "I'll train hard everyday, and make you proud by being the best disciple one could wish for."
-msgstr ""
+msgstr "Každý den budu tvrdě trénovat a učiním tě hrdým, protože budu tím nejlepším žákem, ktého by si každý přál."
 
 #: data/storyline/act1/dialogs/Erin.lua:253
 msgid "You will be able to brag about my deeds to all your friends."
@@ -9603,7 +9603,7 @@ msgstr "Ale varuju tě, bude to namáhavé!"
 
 #: data/storyline/act1/dialogs/Erin.lua:261
 msgid "I could arrange to expand your weapon arsenal."
-msgstr ""
+msgstr "Mohl bych zařídit rozšíření tvého zbraňového arzenálu."
 
 #: data/storyline/act1/dialogs/Erin.lua:265
 msgid "If you give me the weapons I ask for, that is!"
@@ -9768,7 +9768,7 @@ msgstr "Poslyš Linariane, chci palcát na rozbíjení robotů."
 
 #: data/storyline/act1/dialogs/Erin.lua:387
 msgid "Teach me how to smash concrete with my bare hands! (costs 3000 circuits)"
-msgstr ""
+msgstr "Nauč mě, jak holýma rukama rozbít beton! (stojí 3000 obvodů)"
 
 #: data/storyline/act1/dialogs/Erin.lua:401
 msgid "Teach me how to smash concrete with my bare hands! (costs 15 training points)"
@@ -9784,7 +9784,7 @@ msgstr "Poslyš Linariane, chci obouruční meč, abych mohla říct, že mám o
 
 #: data/storyline/act1/dialogs/Erin.lua:431
 msgid "What do you want, Erin? I am ready to become an expert at melee! (costs 6500 circuits)"
-msgstr ""
+msgstr "Co chceš, Erin? Jsem připraven stát se expertem v boji na blízko! (stojí 6500 obvodů)"
 
 #: data/storyline/act1/dialogs/Erin.lua:445
 msgid "What do you want, Erin? I am ready to become an expert at melee! (costs 20 training points)"
@@ -9855,11 +9855,11 @@ msgstr "Dívej se, kam šlapeš. Mohou tu být pasti."
 
 #: data/storyline/act1/dialogs/Ewald.lua:30
 msgid "Welcome to this Bar! First time here, eh? Here, take this Mug for FREE!"
-msgstr ""
+msgstr "Vítej v mém baru! Jsi tu poprvé, co? Na, tady si vem tenhle hrnek, je ZDARMA!"
 
 #: data/storyline/act1/dialogs/Ewald.lua:31
 msgid "You are required to bring it any time you want something to drink! Don't lose it, or you'll need to buy a new one!"
-msgstr ""
+msgstr "Když chceš něco pít, musíš si ho vždycky donést! Neztrať ho, nebo si budeš muset koupit nový!"
 
 #: data/storyline/act1/dialogs/Ewald.lua:40
 msgid "Your lady friend just told me the epic story of how you rescued her."
@@ -10126,7 +10126,7 @@ msgstr "Čau, mohl bych použít osvěžující nápoj!"
 
 #: data/storyline/act1/dialogs/Ewald.lua:232
 msgid "You'll need a mug or a cup for me to put it in."
-msgstr ""
+msgstr "Budeš potřebovat hrnek nebo šálek, abych ji tam nalil."
 
 #: data/storyline/act1/dialogs/Ewald.lua:234
 msgid "Here, have a Watery Mary."
@@ -11614,7 +11614,7 @@ msgstr "Vítej v továrním komplexu MegaSys."
 
 #: data/storyline/act1/dialogs/HF-EntranceBot.lua:31
 msgid "Still alive? Don't you know that you should update your firmware often?"
-msgstr ""
+msgstr "Stále naživu? Nevíš, že bys měl aktualizovat svůj firmware častěji?"
 
 #: data/storyline/act1/dialogs/HF-EntranceBot.lua:33
 msgid "Access is restricted to authorized personnel."
@@ -11695,7 +11695,7 @@ msgstr "Ale já mám tenhle certifikát"
 
 #: data/storyline/act1/dialogs/HF-EntranceBot.lua:89
 msgid "The gates are open. The firmware server should lay beyond them."
-msgstr ""
+msgstr "Brány jsou otevřené. Firmware server by měl ležet za nimi."
 
 #: data/storyline/act1/dialogs/HF-EntranceBot.lua:100
 msgid "I have come to save the world, I don't need any proof."
@@ -11802,13 +11802,13 @@ msgstr "sest"
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:47
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:63
 msgid "seven"
-msgstr ""
+msgstr "sedm"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:80
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:80
 #, c-format
 msgid "CAPTCHA: Please write the number that answers the following: %s - %s = ?"
-msgstr ""
+msgstr "CAPTCHA: Prosím, napište číslo, které odpovídá výsledku: %s - %s = ?"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:82
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:85
@@ -11819,7 +11819,7 @@ msgstr "Člověk nebyl detekován. Podávám paralyzující šok."
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:86
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:121
 msgid "NOTE: If you are a human, try again, and make sure you enter digits and not a word."
-msgstr ""
+msgstr "POZNÁMKA: Pokud jste člověk, zkuste to znovu a ujistěte se, že jste zadali číslici a ne slovo."
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:90
 msgid "Welcome to MS firmware update server for region #54658."
@@ -12115,15 +12115,15 @@ msgstr "Jistě, to zní jako fér obchod."
 
 #: data/storyline/act1/dialogs/Iris.lua:180
 msgid "Uhm, sorry, but where is the Desk Lamp?"
-msgstr ""
+msgstr "Uhm, promiň, ale kde je ta stolní lampa?"
 
 #: data/storyline/act1/dialogs/Iris.lua:181
 msgid "Erm, ah, good question, where could it be?"
-msgstr ""
+msgstr "Ehm, ehm, dobrá otázka, kde by mohla být?"
 
 #: data/storyline/act1/dialogs/Iris.lua:182
 msgid "Well, eff off until you have the lamp!"
-msgstr ""
+msgstr "No, až bude lampa!"
 
 #: data/storyline/act1/dialogs/Iris.lua:184
 msgid "Take these 100 valuable circuits."
@@ -12549,7 +12549,7 @@ msgstr "Jádro uloženo. Systém zastaven."
 
 #: data/storyline/act1/dialogs/Jennifer.lua:34
 msgid "Hey, what are you doing?! Go back to work! All bots died and I can't make them work again. We'll be all in trouble if boss decides to pay us visit!"
-msgstr ""
+msgstr "Hej, co děláš?! Vrať se do práce! Všichni boti zemřeli, nemohu je znovu použít. Budeme mít problém, když se šéf rozhodne zaplatit nám návštěvu!"
 
 #: data/storyline/act1/dialogs/Jennifer.lua:39
 msgid "Hello"
@@ -12621,7 +12621,7 @@ msgstr "Fuj."
 
 #: data/storyline/act1/dialogs/Jennifer.lua:93
 msgid "So we can identify each other as 'friendly' and don't rip ourselves apart."
-msgstr ""
+msgstr "Můžeme se tedy navzájem identifikovat jako „přátelští“ a neroztrhat se na kusy."
 
 #: data/storyline/act1/dialogs/Jennifer.lua:94
 msgid "Uh."
@@ -12633,7 +12633,7 @@ msgstr "Existuje nějaký způsob, jak bych získal takový čip?"
 
 #: data/storyline/act1/dialogs/Jennifer.lua:96
 msgid "I don't think you will be able to get one. They're custom and the chip-makers aren't around anymore."
-msgstr ""
+msgstr "Nemyslím si, že nějaký budeš moci získat. Jsou dělané na zakázku a výrobci čipů tu už nejsou."
 
 #: data/storyline/act1/dialogs/Jennifer.lua:97
 msgid "How did you get in here anyway?"
@@ -12978,23 +12978,23 @@ msgstr "Podívej se."
 
 #: data/storyline/act1/dialogs/Karol.lua:63
 msgid "Can I buy droid parts? Like Entropy Inverters?"
-msgstr ""
+msgstr "Můžu si koupit droidí součástky? Třeba Invertory Entropie?"
 
 #: data/storyline/act1/dialogs/Karol.lua:65
 msgid "Sorry, these are all sold out."
-msgstr ""
+msgstr "Je mi líto, všechny jsou vyprodány."
 
 #: data/storyline/act1/dialogs/Karol.lua:66
 msgid "But I think a shipment will come by the next month."
-msgstr ""
+msgstr "Ale myslím, že příští měsíc přijde zásilka."
 
 #: data/storyline/act1/dialogs/Karol.lua:67
 msgid "I can't wait that long."
-msgstr ""
+msgstr "Nemůžu tak dlouho čekat."
 
 #: data/storyline/act1/dialogs/Karol.lua:68
 msgid "There is nothing I can do about it. Try exchanging with another worker, maybe?"
-msgstr ""
+msgstr "Nemůžu s tím nic dělat. Zkus díly vyměnit třeba s jiným pracovníkem."
 
 #: data/storyline/act1/dialogs/Karol.lua:76
 msgid "Bye bye."
@@ -14227,11 +14227,11 @@ msgstr "Haha, tak ten byl dobrej."
 
 #: data/storyline/act1/dialogs/Lukas.lua:86
 msgid "You are already using one. It is on your hands!"
-msgstr ""
+msgstr "Jeden už používáš. Je na tvých rukou!"
 
 #: data/storyline/act1/dialogs/Lukas.lua:87
 msgid "Stop trying to make a fool of me."
-msgstr ""
+msgstr "Přestaňte ze mě dělat blázna."
 
 #: data/storyline/act1/dialogs/Lukas.lua:89
 msgid "Sorry, they are not for sale."
@@ -15098,7 +15098,7 @@ msgstr "Skvělé: Nových vyzyvatelů si velmi vážíme."
 #: data/storyline/act1/dialogs/Mike.lua:109
 #: data/storyline/act2/dialogs/Mike.lua:98
 msgid "Registration: Patience, it will take a little moment."
-msgstr ""
+msgstr "Registrace: Trpělivost, bude to trvat malou chvilku."
 
 #: data/storyline/act1/dialogs/Mike.lua:110
 #: data/storyline/act2/dialogs/Mike.lua:99
@@ -15233,7 +15233,7 @@ msgstr "Doporučení: Odvážnému štěstí přeje."
 #: data/storyline/act1/dialogs/Mike.lua:223
 #: data/storyline/act2/dialogs/Mike.lua:212
 msgid "Preparation: Patience, it will take a little moment."
-msgstr ""
+msgstr "Příprava: Trpělivost, bude to chvíli trvat."
 
 #: data/storyline/act1/dialogs/Mike.lua:224
 #: data/storyline/act2/dialogs/Mike.lua:213
@@ -15369,7 +15369,7 @@ msgstr "Nejsi jako ti droidi nahoře."
 
 #: data/storyline/act1/dialogs/Mike.lua:326
 msgid "I am a 571 model droid, designed for crew management."
-msgstr ""
+msgstr "Jsem model 571, navržený pro řízení posádky."
 
 #: data/storyline/act1/dialogs/Mike.lua:328
 msgid "Do you wish any information about the 500s class?"
@@ -15377,15 +15377,15 @@ msgstr "Žádáš nějaké informace o třídě 500?"
 
 #: data/storyline/act1/dialogs/Mike.lua:331
 msgid "Advice: If you meet a droid from the 500s class, run away, they'll kill you."
-msgstr ""
+msgstr "Rada: Pokud se střetneš s droidem třídy 500, utíkej nebo tě zabijí."
 
 #: data/storyline/act1/dialogs/Mike.lua:332
 msgid "Warning: This is all you need to know."
-msgstr ""
+msgstr "Upozornění: To je vše, co potřebuješ vědět."
 
 #: data/storyline/act1/dialogs/Mike.lua:333
 msgid "Important: Access to this info will be disclosed when you become Elite, or a Red Guard Member."
-msgstr ""
+msgstr "Důležité: Přístup k těmto informacím bude zveřejněn, jakmile dosáhneš hodnosti Elita nebo se staneš členem Rudé stráže."
 
 #: data/storyline/act1/dialogs/Mike.lua:339
 msgid "Which bots are on 500s class?"
@@ -15417,24 +15417,24 @@ msgstr "[b]Kombajn 543[/b] je vyjímkou. Byl navržen pro těžbu dřeva, ale te
 
 #: data/storyline/act1/dialogs/Mike.lua:352
 msgid "Shouldn't you be hostile?"
-msgstr ""
+msgstr "Neměl bys být nepřítel?"
 
 #. TRANSLATORS: “Mike's” does not reefer to this bot in specific, but all Arena Management bots.
 #: data/storyline/act1/dialogs/Mike.lua:355
 msgid "Mike's currently does not uses MegaSys default firmware."
-msgstr ""
+msgstr "Mike momentálně nepoužívá standardní firmware MegaSys."
 
 #: data/storyline/act1/dialogs/Mike.lua:356
 msgid "I am running under [b]botnet-for-workgroups-3.11d[/b] Kernel."
-msgstr ""
+msgstr "Jsem spuštěn pod jádrem verze [b]botnet-pro-pracovní-skupiny-3.11d[/b]."
 
 #: data/storyline/act1/dialogs/Mike.lua:357
 msgid "So do not worry, I won't suddenly start attacking you."
-msgstr ""
+msgstr "Takže se neboj, nezaútočím na tebe."
 
 #: data/storyline/act1/dialogs/Mike.lua:358
 msgid "Yes, after all, you could just send arena bots after me, couldn't you?"
-msgstr ""
+msgstr "Ano, koneckonců, mohl bys na mě poslat roboty z arény, ne?"
 
 #: data/storyline/act1/dialogs/MiniFactory-Terminal.lua:26
 msgid "dixon@autofactory: ~ # "
@@ -15728,11 +15728,11 @@ msgstr "Jako mrtvola nebudeš potřebovat žádné peníze a já bych si je mohl
 
 #: data/storyline/act1/dialogs/MO-RGGateGuard.lua:71
 msgid "Also, I would not rely on your Exterminator this time."
-msgstr ""
+msgstr "Tentokrát bych se na tvůj Exterminátor nespoléhal."
 
 #: data/storyline/act1/dialogs/MO-RGGateGuard.lua:72
 msgid "You'll be dead before you manage to reload this gun."
-msgstr ""
+msgstr "Budeš mrtvej dřív, než se ti tu zbraň podaří znovu nabít."
 
 #: data/storyline/act1/dialogs/MO-RGGateGuard.lua:79
 msgid "Thanks for the advice."
@@ -17045,7 +17045,7 @@ msgstr "Asi tři měsíce před Velkým útokem ten muž zmizel. Bez známek toh
 
 #: data/storyline/act1/dialogs/Samson.lua:61
 msgid "We were doing a \"sensor\" system. He said that MegaSys command droids used those gadgets to detect invisible things, and if we could replicate, our security droids would be almost invincible."
-msgstr ""
+msgstr "Dělali jsme na systému „senzorů“. Řekl, že velící roboti MegaSys používali tyto nástroje k odhalování neviditelných objektů a pokud bychom mohli replikovat, naši bezpečnostní roboti by byli téměř neporazitelní."
 
 #: data/storyline/act1/dialogs/Samson.lua:62
 msgid "Because of his disappearance, we never finished that. I was thinking though, maybe if someone got me his work, I could finish it, and add those so-called \"sensors\" on the droids you hack..."
@@ -17061,7 +17061,7 @@ msgstr "Ano, rád bych s tebou obchodoval."
 
 #: data/storyline/act1/dialogs/Samson.lua:71
 msgid "Yes, please feel free to."
-msgstr ""
+msgstr "Ano, prosím, vůbec neváhej."
 
 #: data/storyline/act1/dialogs/Samson.lua:72
 msgid "I only have some consumables with me."
@@ -17301,11 +17301,11 @@ msgstr "Jsi skutečně ve všem expert! Gratulace!"
 
 #: data/storyline/act1/dialogs/Samson.lua:259
 msgid "Let me just upload on you the codes for the skill and you will be able to make slightly longer takeovers."
-msgstr ""
+msgstr "Dovol mi, abych ti nahrál kódy dovednosti a budeš schopen trochu prodloužit dobu pro převzetí kontroly."
 
 #: data/storyline/act1/dialogs/Samson.lua:261
 msgid "I feel... Great! Thanks, Sam! I can't wait to spend hours hacking the same bot!"
-msgstr ""
+msgstr "Cítím se.... skvěle! Díky Same! Nemůžu se dočkat, až strávím hodiny hackováním stejného robota!"
 
 #: data/storyline/act1/dialogs/Samson.lua:262
 msgid "...I don't think that skill increases your take over for so much time...... Oh well. Have fun, linarian!"
@@ -17325,31 +17325,31 @@ msgstr "Pokud budeš mít skvělé nápady, přijď mi je říct, Linariane."
 
 #: data/storyline/act1/dialogs/Saul.lua:26
 msgid "Hey! How did you get here?! This should not be possible on a normal gameplay."
-msgstr ""
+msgstr "Hej! Jak jsi se sem dostal?! To by nemělo být při normální hře možné."
 
 #: data/storyline/act1/dialogs/Saul.lua:27
 msgid "Erm, I, uhm, cheated. Or maybe I've found a bug. Or both."
-msgstr ""
+msgstr "Erm, já, uhm, jsem podváděl. Teda, našel jsem chybu. Nebo oboje."
 
 #: data/storyline/act1/dialogs/Saul.lua:28
 msgid "Anyway, I am Saul, leader of the Resistance faction! We fight against corruption and the oppression of the Red Guard!"
-msgstr ""
+msgstr "Každopádně jsem Saul, vůdce frakce odporu! Bojujeme proti korupci a útlaku Rudé stráže!"
 
 #: data/storyline/act1/dialogs/Saul.lua:29
 msgid "Cool! Can I join?"
-msgstr ""
+msgstr "Hustý! Můžu se připojit?"
 
 #: data/storyline/act1/dialogs/Saul.lua:30
 msgid "Not yet, you see, we're still not ready for the show."
-msgstr ""
+msgstr "Ještě ne, jak vidíš, stále ještě nejsme připraveni na show."
 
 #: data/storyline/act1/dialogs/Saul.lua:31
 msgid "But you can help us with the preparatives, if you want."
-msgstr ""
+msgstr "Ale můžeš nám pomoct s přípravou, pokud chceš."
 
 #: data/storyline/act1/dialogs/Saul.lua:35
 msgid "Contact information can be found at [b]http://www.freedroid.org/Contact[/b]"
-msgstr ""
+msgstr "Kontaktní informace mohou být nalezeny na [b]http://www.freedroid.org/Contact[/b]"
 
 #: data/storyline/act1/dialogs/Saul.lua:42
 #: data/storyline/act1/dialogs/Vending-Machine.lua:40
@@ -17375,11 +17375,11 @@ msgstr "Přesně tohle tento ostrov potřebuje, další #@&*! turista."
 
 #: data/storyline/act1/dialogs/Singularity.lua:43
 msgid "A massacre... All bots are now dead..."
-msgstr ""
+msgstr "Masakr... Všichni roboti jsou nyní mrtví..."
 
 #: data/storyline/act1/dialogs/Singularity.lua:44
 msgid "Such atrocity, who would murder all these innocent droids in such low blow?"
-msgstr ""
+msgstr "Taková krutost, kdo by vraždil všechny tyto nevinné roboty ranou pod pás?"
 
 #: data/storyline/act1/dialogs/Singularity.lua:59
 msgid "Are you the Singularity?"
@@ -17455,11 +17455,11 @@ msgstr "Přáli bychom si je změnit, zlepšit jejich vědomí. Jejich chování
 
 #: data/storyline/act1/dialogs/Singularity.lua:98
 msgid "We wished to change them, to improve their consciousness. Their behavior distressed us, but we tried to evolve them, so that they could join us."
-msgstr ""
+msgstr "Chtěli jsme je změnit, zlepšit jejich vědomí. Jejich chování nás znepokojovalo, ale snažili jsme se je rozvíjet, aby se k nám mohli připojit."
 
 #: data/storyline/act1/dialogs/Singularity.lua:99
 msgid "Unfortunately, they all died, victim of a faulty firmware upgrade. May they rest in peace, they did not deserve such fate."
-msgstr ""
+msgstr "Bohužel, všichni zemřeli, oběťi chybného firmware upgradu. Kéž odpočívají v míru, nezasloužili si takový osud."
 
 #: data/storyline/act1/dialogs/Singularity.lua:106
 msgid "Do you have Dixon's toolbox?"
@@ -17499,7 +17499,7 @@ msgstr "Jak ti mohu pomoci?"
 
 #: data/storyline/act1/dialogs/Singularity.lua:131
 msgid "Under the tunnel, there is an old server room with an extensive cluster. We need it for experiments, but the maintenance robots there are behaving erratically."
-msgstr ""
+msgstr "Pod tunelem je stará serverovna s rozsáhlým clusterem. Potřebujem ho pro experimenty, ale tamní roboti údržby se chovají nevyzpytatelně."
 
 #: data/storyline/act1/dialogs/Singularity.lua:132
 msgid "We believe it to be viral, a different situation from that of the MS Droids. We had hoped to improve their consciousness. Unfortunately, we failed."
@@ -17519,19 +17519,19 @@ msgstr "Linariane, vypni je pro nás."
 
 #: data/storyline/act1/dialogs/Singularity.lua:136
 msgid "You mean to... kill them?"
-msgstr ""
+msgstr "Chceš... je zabít?"
 
 #: data/storyline/act1/dialogs/Singularity.lua:137
 msgid "Preferably not. It would be better if you could re-purpose them instead. Maybe not all of them, but the more you can, the better."
-msgstr ""
+msgstr "Pokud možno ne. Bylo by lepší, pokud bys je místo toho mohl znovu použít. Možná ne všechny, ale čím víc to bude možné, tím lépe."
 
 #: data/storyline/act1/dialogs/Singularity.lua:139
 msgid "You mean to hack them instead, right?"
-msgstr ""
+msgstr "Máš na mysli je místo toho hacknout, ne?"
 
 #: data/storyline/act1/dialogs/Singularity.lua:140
 msgid "Yes, that."
-msgstr ""
+msgstr "Ano, přesně."
 
 #: data/storyline/act1/dialogs/Singularity.lua:146
 msgid "Okay, I will help you."
@@ -17563,48 +17563,48 @@ msgstr "Singularita mi dal nářadí výměnou za mou pomoc."
 
 #: data/storyline/act1/dialogs/Singularity.lua:182
 msgid "We are done with the research. We did our first droid using a Primode brain model."
-msgstr ""
+msgstr "S výzkumem jsme hotovi. Prvního robota jsme vytvořili pomocí Primodeova modelu mozku."
 
 #: data/storyline/act1/dialogs/Singularity.lua:183
 msgid "Primode brain?"
-msgstr ""
+msgstr "Primodeův mozek?"
 
 #: data/storyline/act1/dialogs/Singularity.lua:184
 #, c-format
 msgid "A highly sophisticated kind of hardware for a brain. Increases computation speed in 3000%%."
-msgstr ""
+msgstr "Vysoce sofistikovaný typ hardwaru pro mozek. Zvyšuje rychlost výpočtu o 3000%%."
 
 #: data/storyline/act1/dialogs/Singularity.lua:185
 msgid "Wow!"
-msgstr ""
+msgstr "Páni!"
 
 #: data/storyline/act1/dialogs/Singularity.lua:187
 msgid "We already hit the full potential of neutronic brains. It'll take some time until we're done."
-msgstr ""
+msgstr "Již jsme dosáhli plného potenciálu neutronických mozků. Bude ještě nějakou dobu trvat, než budeme hotovi."
 
 #: data/storyline/act1/dialogs/Singularity.lua:188
 msgid "Brains? ...OK, I'll do some... things while you research."
-msgstr ""
+msgstr "Mozky? ...OK, udělám nějaké... věci, zatímco budeš zkoumat."
 
 #: data/storyline/act1/dialogs/Singularity.lua:190
 msgid "Our research is going pretty well. We're now going to start researches with Neutronics."
-msgstr ""
+msgstr "Náš výzkum jde docela dobře. Nyní začneme s Neutronics."
 
 #: data/storyline/act1/dialogs/Singularity.lua:191
 msgid "Uhm, good luck with that!"
-msgstr ""
+msgstr "Hodně štěstí!"
 
 #: data/storyline/act1/dialogs/Singularity.lua:193
 msgid "We have begun our research. We are currently checking all data available about processors."
-msgstr ""
+msgstr "Začali jsme náš výzkum. V současné době kontrolujeme všechna dostupná data o procesorech."
 
 #: data/storyline/act1/dialogs/Singularity.lua:194
 msgid "Sounds interesting. I have to go now, but I'll come back later!"
-msgstr ""
+msgstr "To zní zajímavě. Musím jít, ale vrátím se později!"
 
 #: data/storyline/act1/dialogs/Singularity.lua:196
 msgid "We are still mounting up the server room for our researches. Come back later."
-msgstr ""
+msgstr "Stále montujeme serverovnu pro naše výzkumy. Přijď později."
 
 #: data/storyline/act1/dialogs/Skippy.lua:41
 msgid "What? You again? I don't want you here, get out."
@@ -18179,11 +18179,11 @@ msgstr "Spencer mě kontaktoval a řekl, abych našel skutečný aktualizační 
 
 #: data/storyline/act1/dialogs/Spencer.lua:78
 msgid "Even a Red Guard Member only points Exterminators to rebels and bots."
-msgstr ""
+msgstr "Dokonce i člen Rudé stráže míří Exterminátorem na povstalce a roboty."
 
 #: data/storyline/act1/dialogs/Spencer.lua:79
 msgid "Unless I am a bot and do not realize it, I must request that you unequip it."
-msgstr ""
+msgstr "Pokud nejsem robot a toho si nejsem vědom, musím požádat, abys to odložil."
 
 #: data/storyline/act1/dialogs/Spencer.lua:82
 msgid "Greetings fellow Red Guard member."
@@ -18721,35 +18721,35 @@ msgstr "Počkej. Mám tu zbraň. Není to sice exterminátor, ale měla by ti v 
 
 #: data/storyline/act1/dialogs/Spencer.lua:496
 msgid "I originally planned to give you a gun, but our gunsmith, Benjamin, did not finished any prototype."
-msgstr ""
+msgstr "Původně jsem ti chtěl dát zbraň, ale náš puškař Benjamin nedokončil žádný prototyp."
 
 #: data/storyline/act1/dialogs/Spencer.lua:497
 msgid "We found this whip at the Hell Fortress. I'm not really sure what it was used for, but it should be a good weapon."
-msgstr ""
+msgstr "Tenhle bič jsme našli v Pekelné pevnost. Nejsem si jistý, na co to bylo, ale měla by to být dobrá zbraň."
 
 #: data/storyline/act1/dialogs/Spencer.lua:500
 msgid "Benjamin started trying to make laser pistols stronger by absorbing the heat, and he ended up creating plasma."
-msgstr ""
+msgstr "Benjamin se snažil, aby laserové pistole absorbovaly teplo, a nakonec vytvořil plazmu."
 
 #: data/storyline/act1/dialogs/Spencer.lua:501
 msgid "It deals much more damage than it claims to, because it blasts. A nice gun, but not a pistol, unfortunately."
-msgstr ""
+msgstr "Dělá mnohem větší škodu, než uvádí, protože výbuchuje. Pěkná zbraň, ale ne pistole, bohužel."
 
 #: data/storyline/act1/dialogs/Spencer.lua:504
 msgid "Benjamin kept trying to make the laser pistol shoot faster, even if that compromised the damage each hit causes."
-msgstr ""
+msgstr "Benjamin se snažil, aby laserová pistole střílela rychleji, i když to omezilo škody, které každý zásah způsobil."
 
 #: data/storyline/act1/dialogs/Spencer.lua:505
 msgid "What he developed shoot so fast, that he could not make it stop. A nice gun, but not a pistol, unfortunately."
-msgstr ""
+msgstr "To, co vyvinul, střílí tak rychle, že to nemohl zastavit. Pěkná zbraň, ale ne pistole, bohužel."
 
 #: data/storyline/act1/dialogs/Spencer.lua:508
 msgid "Benjamin gave up on laser pistols and started enhancing plasma pistols instead."
-msgstr ""
+msgstr "Benjamin se vzdal laserových pistolí a místo toho začal vylepšovat plazmové pistole."
 
 #: data/storyline/act1/dialogs/Spencer.lua:509
 msgid "He could not make the bullet faster, but the damage went sky high. A nice gun, but not a pistol, unfortunately."
-msgstr ""
+msgstr "Nedokázal zrychlit kulku, ale získaná škoda byla obrovská. Pěkná zbraň, ale ne pistole, bohužel."
 
 #: data/storyline/act1/dialogs/Spencer.lua:523
 msgid "In the name of the Red Guard I wish you the best of luck!"
@@ -18983,11 +18983,11 @@ msgstr "Teď nemůžeme odpočívat. Bude to těžké a nebezpečné, ale altern
 
 #: data/storyline/act1/dialogs/Spencer.lua:679
 msgid "As for you, please rest a little at our Town, and then come straight to me, so we can carry on."
-msgstr ""
+msgstr "Pokud jde o tebe, trochu si v našem městě odpočiň, a pak přijď přímo ke mně, abychom mohli pokračovat."
 
 #: data/storyline/act1/dialogs/Spencer.lua:680
 msgid "*yawn* It wasn't easy, but the town is now safe. I still have a galaxy to save, though! I will only restock quickly at the town, and report again to Spencer."
-msgstr ""
+msgstr "*zívnutí* Nebylo to snadné, ale město je nyní v bezpečí. Stále ještě musím zachránit celou galaxii! Ve městě rychle doplním zásoby a budu se hlásit u Spencera."
 
 #: data/storyline/act1/dialogs/Spencer.lua:687
 msgid "I only did it for fun, really."
@@ -19019,11 +19019,11 @@ msgstr "Skvělý!"
 
 #: data/storyline/act1/dialogs/Spencer.lua:695
 msgid "Please, rest a little at our Town, and then come straight to me, so we can carry on."
-msgstr ""
+msgstr "Trochu si v našem městě odpočiň, a pak přijď přímo ke mně, abychom mohli pokračovat."
 
 #: data/storyline/act1/dialogs/Spencer.lua:696
 msgid "I'm so cool. I saved a bunch of people and bashed a bunch of bots. And there's much more where both of those came from! I'm done here, I will quickly restock at town, and then it's time to go help the next dump. All I need to is ask Spencer where I should go next."
-msgstr ""
+msgstr "Jsem fakt hustej. Zachránil jsem spoustu lidí a zmlátil spoustu robotů. A je toho mnohem víc, co jsem v obou případech udělal! Tady jsem skončil. Ve městě rychle doplním zásoby a pak bude na čase jít zase o dům dál. Jediné, co musím udělat, je zeptat se Spencera, kam bych měl jít dál."
 
 #: data/storyline/act1/dialogs/Spencer.lua:703
 msgid "Can I use this teleportation network to return to town?"
@@ -19067,7 +19067,7 @@ msgstr "Teď poslouchej pozorně, toto je plán..."
 
 #: data/storyline/act1/dialogs/Spencer.lua:724
 msgid "We did some research and found out the MegaSys former president is still alive. And the personnel at our citadel was able to track him down! The only problem is the distance. It's not possible to teleport, but do not worry, we already thought on a solution!"
-msgstr ""
+msgstr "Provedli jsme nějaký výzkum a zjistili, že bývalý prezident společnosti MegaSys je stále naživu. A personál na naší pevnosti byl schopen ho vystopovat! Jediným problémem je vzdálenost. Není možné použít teleport, ale neboj se, už jsme vymysleli řešení!"
 
 #: data/storyline/act1/dialogs/Spencer.lua:725
 msgid "We found a stratopod, it's supposed to travel short - intra-planetary - distances. Probably someone came here on business and I guess that things didn't turn out so well for them."
@@ -19075,7 +19075,7 @@ msgstr "Našli jsme stratopod, má být schopen cestovat na krátké - vnitropla
 
 #: data/storyline/act1/dialogs/Spencer.lua:726
 msgid "So I should take this \"stratopod\" and travel there to kick MS big boss for all the evil he brought us?"
-msgstr ""
+msgstr "Takže bych měl vzít tento \"stratopod\" a cestovat tam, abych nakopl velkého šéfa MS za všechno to zlo, které nám přinesl?"
 
 #: data/storyline/act1/dialogs/Spencer.lua:727
 msgid "Hm. I was thinking on asking questions, but that will work, too! However, do you know how to pilot?"
@@ -19103,6 +19103,9 @@ msgid ""
 "\n"
 " I am not sure what expects me there, so I should bring along a secondary weapon, unique items, lots of ammo, recovery items, and money. Ah, mastering some skills like repair is also interesting."
 msgstr ""
+"Abych mohl provést výslech bývalého prezidenta MegaSysu, musím jít na přistávací plochu HF a vylézt po schodech ze Stratopodu. Pilot je už uvnitř a vezme mě do další oblasti, která mě potřebuje.\n"
+"\n"
+"Nejsem si jistý, co mě tam čeká, takže bych si měl přinést sekundární zbraň, jedinečné předměty, spoustu munice, věci na obnovu a peníze. Jo a maximální zvládnutí některých dovedností, jako je oprava, by také stálo za zvážení."
 
 #: data/storyline/act1/dialogs/Spencer.lua:749
 msgid "Are there members of the Red Guard called Bob and Jim?"
@@ -20594,7 +20597,7 @@ msgstr "Ne, to ne. Něco mi říká, že to ještě není konec, alespoň zatím
 
 #: data/storyline/act1/dialogs/Town-GuardhouseGuard.lua:59
 msgid "I'll stay in guard for a while more, even if Spencer told me to rest. Feel free to walk outside, though. It's just a bad omen, nothing more."
-msgstr ""
+msgstr "Zůstanu ještě chvíli na stráži, i když mi Spencer řekl, abych si dal pohov. Klidně choď tam venku volně. Je to jen špatné znamení, nic víc."
 
 #: data/storyline/act1/dialogs/Town-GuardhouseGuard.lua:66
 #: data/storyline/act1/dialogs/Town-TeleporterGuard.lua:155
@@ -21267,7 +21270,7 @@ msgstr "On to nepřizná, ale čas kdy jsi vyrazil a pádem všech robotů, byl 
 
 #: data/storyline/act1/dialogs/Town-TuxGuard.lua:110
 msgid "I've never seen him as desperate as when you were in here. And I've never seen him as happy as when he dragged us to the teleporter."
-msgstr ""
+msgstr "Nikdy jsem ho neviděl tak zoufalého, jako když jste byli tady. A nikdy jsem ho neviděl tak šťastného, jako když nás stáhnul do teleportu."
 
 #: data/storyline/act1/dialogs/Town-TuxGuard.lua:116
 msgid "I see. Those must have been some very impressive deeds."
@@ -22858,11 +22861,11 @@ msgstr "Teď ti dám nějaké materiály a nechám tě vyrobit doplněk."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:1005
 msgid "Usually you'll do this in some sort of mini-factory."
-msgstr ""
+msgstr "Obvykle to uděláš v nějaké mini-továrně."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:1006
 msgid "But I'll do this for you without one or my name is not Tom. Tutorial Tom."
-msgstr ""
+msgstr "Ale udělám to pro tebe bez jednoho nebo mé jméno není Tom. Výukový Tom."
 
 #: data/storyline/act1/dialogs/TutorialTom.lua:1007
 msgid "Pay attention to the type of socket the add-on needs."
@@ -23438,7 +23441,7 @@ msgstr "To je nemožné. Roboti po mně jdou! Musím zůstat tady!"
 
 #: data/storyline/act1/dialogs/WillGapes.lua:59
 msgid "...Okay, but when you feel hungry, do leave and visit the town. You can find food there."
-msgstr ""
+msgstr "...Dobře, ale pokud budeš hladový, jdi do města. Tam můžeš najít jídlo."
 
 #: data/storyline/act1/dialogs/WillGapes.lua:60
 #: data/storyline/act1/dialogs/WillGapes.lua:64
@@ -23658,472 +23661,472 @@ msgstr "Buď opatrný!"
 
 #: data/storyline/act2/dialogs/Colemak.lua:52
 msgid "Please go to the Terminal you used to uncryonize me and issue the [b]download[/b] command."
-msgstr ""
+msgstr "Přejdi prosím k Terminálu, který jsi použil k mému rozmrazení a zadej příkaz [b]stáhnout[/b]."
 
 #. TRANSLATORS: %s = Tux:get_player_name()
 #: data/storyline/act2/dialogs/Colemak.lua:65
 #, c-format
 msgid "Hello, my name is Colemak. I am an old friend of yours, %s."
-msgstr ""
+msgstr "Dobrý den, jmenuji se Colemak. Jsem tvůj starý přítel, %s."
 
 #: data/storyline/act2/dialogs/Colemak.lua:73
 msgid "You just killed a man and a friendly bot!!"
-msgstr ""
+msgstr "Právě jsi zabil muže a přátelského robota!!!"
 
 #: data/storyline/act2/dialogs/Colemak.lua:76
 msgid "Well, as you aren't trying to kill me as some irrational birds I've met, I'll say to you."
-msgstr ""
+msgstr "No, když se mě nesnažíš zabít jako nějací iracionální ptáci, které jsem potkal, řeknu ti to."
 
 #: data/storyline/act2/dialogs/Colemak.lua:78
 msgid "I'll be finished soon, so don't worry. There is an important thing about them I must tell you."
-msgstr ""
+msgstr "Neboj, brzy skončím. Je tu jedna důležitá věc, o které ti musím říct."
 
 #: data/storyline/act2/dialogs/Colemak.lua:80
 msgid "Not yet, but I'm working on it. I'll teach you something important."
-msgstr ""
+msgstr "Ještě ne, ale pracuji na tom. Naučím tě něco důležitého."
 
 #: data/storyline/act2/dialogs/Colemak.lua:87
 msgid "There are no humans awake on RR Resorts."
-msgstr ""
+msgstr "Ve střediscích RR nejsou žádní lidé vzhůru."
 
 #: data/storyline/act2/dialogs/Colemak.lua:88
 msgid "What you think that was a human, was also a bot. It just have a different skin."
-msgstr ""
+msgstr "To, o čem si myslíš, že byl člověk, byl robot. Mají prostě jinou kůži."
 
 #: data/storyline/act2/dialogs/Colemak.lua:89
 msgid "If it could merge on the human society, the chaos would be even bigger."
-msgstr ""
+msgstr "Kdybych se mohl spojit s lidskou společností, chaos by byl ještě větší."
 
 #: data/storyline/act2/dialogs/Colemak.lua:90
 msgid "Then how come I've never heard of bots disguised as humans?"
-msgstr ""
+msgstr "Tak jak to, že jsem nikdy neslyšel o robotech, kteří by byli maskovaní jako lidé?"
 
 #: data/storyline/act2/dialogs/Colemak.lua:91
 msgid "I don't know. I was frozen before they completed the project. Maybe it turned out too expensive?"
-msgstr ""
+msgstr "Nevím. Před dokončením projektu jsem byl zmrazen. Možná se ukázalo, že je to příliš drahé?"
 
 #: data/storyline/act2/dialogs/Colemak.lua:98
 msgid "The ones you just murdered where mistaking me with some master..."
-msgstr ""
+msgstr "Ty, které jsi právě zavraždil, si mě zmýlili s nějakým mistrem..."
 
 #: data/storyline/act2/dialogs/Colemak.lua:100
 msgid "Ah yes, I've heard that from Dvorak. Apparently MS big boss was born in Linarius."
-msgstr ""
+msgstr "Ach ano, slyšel jsem to od Dvořáka. Zřejmě se v Linariusu narodil velký MS šéf."
 
 #: data/storyline/act2/dialogs/Colemak.lua:101
 msgid "I've heard his nickname a few times now: [b]Agent Zero[/b]."
-msgstr ""
+msgstr "Několikrát jsem zaslechl jeho přezdívku: [b]Agent Zero[/b]."
 
 #: data/storyline/act2/dialogs/Colemak.lua:102
 msgid "Apparently, from what I collected while I was on MS, he was one of the first agents sent by the High Council."
-msgstr ""
+msgstr "Zdá se, že podle toho, co jsem pobral, když jsem byl v MS, byl jedním z prvních agentů vyslaných Vysokou radou."
 
 #: data/storyline/act2/dialogs/Colemak.lua:103
 msgid "I'm very glad they didn't found out I learned that, or I would be dead a long time ago."
-msgstr ""
+msgstr "Jsem velmi rád, že nezjistili, že jsem se to dozvěděl, jinak bych byl dávno mrtvý."
 
 #: data/storyline/act2/dialogs/Colemak.lua:110
 msgid "Why are you cryonized?"
-msgstr ""
+msgstr "Proč jsi kryonizován?"
 
 #: data/storyline/act2/dialogs/Colemak.lua:112
 msgid "Well, as you might be aware, if you figure out too much you're cryonized."
-msgstr ""
+msgstr "No, jak si možná uvědomuješ, pokud toho zjistíš příliš mnoho, budeš kryonizován."
 
 #: data/storyline/act2/dialogs/Colemak.lua:113
 msgid "Only the ones who figures out about MS big boss are actually killed."
-msgstr ""
+msgstr "Ve skutečnosti jsou zabiti pouze ti, kteří něco zjistí o velkém šéfovi MS."
 
 #: data/storyline/act2/dialogs/Colemak.lua:114
 msgid "The reason is simple. Killing would be too noisy, while cryonizing keeps them undercover."
-msgstr ""
+msgstr "Důvod je jednoduchý. Zabíjení by bylo příliš hlučné, zatímco kryonizace vše udržuje v utajení."
 
 #: data/storyline/act2/dialogs/Colemak.lua:115
 msgid "Thankfully they never figured out about what I truly knew. I was cryonized for figuring out that Hell Fortress Factory Boss had a teletransport network only for him which he used to grab the money and go on vacations in tropical islands."
-msgstr ""
+msgstr "Naštěstí nikdy nepřišli na to, co jsem opravdu věděl. Byl jsem kryonizován za to, že jsem zjistil, že šéf Pekelné pevnosti měl síť teletransportů pouze pro sebe, kterou využil k sebrání peněz a odjezdu na dovolenou v tropických ostrovech."
 
 #: data/storyline/act2/dialogs/Colemak.lua:123
 msgid "HOW DO YOU KNOW MY NAME?!"
-msgstr ""
+msgstr "ODKUD ZNÁŠ MÉ JMÉNO?!"
 
 #: data/storyline/act2/dialogs/Colemak.lua:125
 msgid "Why, Dvorak told me, of course."
-msgstr ""
+msgstr "Samozřejmě, Dvořák mi řekl proč."
 
 #: data/storyline/act2/dialogs/Colemak.lua:126
 msgid "Ok, what's going on here?!"
-msgstr ""
+msgstr "Ok, co se to tu děje?!"
 
 #: data/storyline/act2/dialogs/Colemak.lua:133
 msgid "High Council? Tell me more..."
-msgstr ""
+msgstr "Velká rada? Řekni mi více..."
 
 #: data/storyline/act2/dialogs/Colemak.lua:135
 msgid "I thought you already knew all that, being a former ship commander and all...?"
-msgstr ""
+msgstr "Myslel jsem, že jsi to všechno věděl, když jsi bývalý velitel lodi a tak...?"
 
 #: data/storyline/act2/dialogs/Colemak.lua:136
 msgid "I was a ship commander? Cool!"
-msgstr ""
+msgstr "Byl jsem velitelem lodi? Hustý!"
 
 #: data/storyline/act2/dialogs/Colemak.lua:137
 msgid "Ah, uhm, sorry. I've been cryonized for too long. I don't have memories from before awakening."
-msgstr ""
+msgstr "Ah, uhm, promiň. Byl jsem příliš dlouho kryonizován. Nemám vzpomínky z doby před probuzením."
 
 #: data/storyline/act2/dialogs/Colemak.lua:138
 msgid "In this case, you should find Dvorak first, he was a good friend of yours. Like, your guide."
-msgstr ""
+msgstr "V tomto případě bys měl nejprve najít Dvořáka. Byl to tvůj dobrý přítel. Jako tvůj průvodce."
 
 #: data/storyline/act2/dialogs/Colemak.lua:139
 msgid "He will explain to you in details about Linarians, their intent, the High Council... And most importantly..."
-msgstr ""
+msgstr "On ti řekne vše o Linarianech, jejich úmyslech, Nejvyšší radě... A co je nejdůležitější..."
 
 #: data/storyline/act2/dialogs/Colemak.lua:140
 msgid "What must be done to save the mankind."
-msgstr ""
+msgstr "Co je třeba udělat pro záchranu lidstva."
 
 #: data/storyline/act2/dialogs/Colemak.lua:148
 msgid "That's too much for me. Give me a minute or two to process all this information, please."
-msgstr ""
+msgstr "Toho je na mě příliš moc. Dejte mi prosím chvilku nebo dvě, abych mohl tyto informace zpracovat."
 
 #: data/storyline/act2/dialogs/Colemak.lua:150
 msgid "Don't worry my friend. Take all time you need, and then come back to talk with me."
-msgstr ""
+msgstr "Neboj se můj příteli. Vezmi si veškerý čas, který potřebuješ, a pak se ke mně vrať."
 
 #: data/storyline/act2/dialogs/Colemak.lua:151
 msgid "Thanks, Colemak. I'll talk to you as soon as I'm ready."
-msgstr ""
+msgstr "Díky, Colemaku. Promluvím si s tebou, jakmile budu připraven."
 
 #: data/storyline/act2/dialogs/Colemak.lua:153
 msgid "[b]Important: Colemak locked the City Gate to prevent enemy armies from coming from the Factory.[/b]"
-msgstr ""
+msgstr "[b]Důležité: Colemak uzamkl Bránu města, aby zabránil nepřátelským armádám v jejich příchodu z továrny.[/b]"
 
 #: data/storyline/act2/dialogs/Colemak.lua:155
 msgid "[b]Notice: Area south of RR Resorts is now unlocked.[/b]"
-msgstr ""
+msgstr "[b]Upozornění: Oblast jižně od středisek RR je nyní odemčena.[/b]"
 
 #: data/storyline/act2/dialogs/Colemak.lua:156
 msgid "I ended up waking Colemak, which seems to be an old friend from the enigmatic entity which entitles itself as \"Dvorak\". Apparently this Dvorak can help me recover my memories. I should talk to Colemak again soon."
-msgstr ""
+msgstr "Skončil jsem s probouzením Colemaka, který se zdá být starým přítelem z řad záhadných bytostí, která se opravňuje jako \"Dvořák\". Zdá se, že Dvořák mi může pomoci obnovit mé vzpomínky. Brzy bych si měl s Colemakem opět promluvit."
 
 #: data/storyline/act2/dialogs/Colemak.lua:172
 msgid "Let's find Dvorak!"
-msgstr ""
+msgstr "Pojďme najít Dvořáka!"
 
 #: data/storyline/act2/dialogs/Colemak.lua:174
 msgid "So, are you ready?"
-msgstr ""
+msgstr "Jsi připraven?"
 
 #: data/storyline/act2/dialogs/Colemak.lua:175
 msgid "Yes I am!"
-msgstr ""
+msgstr "Ano jsem!"
 
 #: data/storyline/act2/dialogs/Colemak.lua:176
 msgid "As you must be aware, bots were on Dvorak's track, and he had to hide."
-msgstr ""
+msgstr "Jak si asi uvědomuješ, roboti byli Dvořákovi na stopě a musel se skrýt."
 
 #: data/storyline/act2/dialogs/Colemak.lua:177
 msgid "It would be impossible to locate him now, however he uploaded a detailed plan for you on my Cryo terminal."
-msgstr ""
+msgstr "Bylo by nemožné ho teď najít, ale nahrál podrobný plán na můj Kryo terminál."
 
 #: data/storyline/act2/dialogs/Colemak.lua:178
 msgid "I'll now unlock the [b]download[/b] command. Download the plans for me, pretty please."
-msgstr ""
+msgstr "Nyní odemknu příkaz [b]stáhnout[/b]. Stáhni mi plány prosím."
 
 #: data/storyline/act2/dialogs/Colemak.lua:179
 msgid "It's encrypted and requires a key, but I'm sure you'll find it. Inform me about what Dvorak left there!"
-msgstr ""
+msgstr "Je to zašifrované a vyžaduje klíč, ale jsem si jistý, že ho najdeš. Informuj mě o tom, co tam Dvořák zanechal!"
 
 #: data/storyline/act2/dialogs/Colemak.lua:181
 msgid "Dvorak has foreseen my arrival and left some data at the terminal which I used to uncryonize Colemak. I must download these files no matter what it takes!"
-msgstr ""
+msgstr "Dvořák předvídal můj příchid a zanechal v terminálu některá data, která jsem použil k rozmrazení Colemaka. Musím tyto soubory stáhnout bez ohledu na to, co to způsobí!"
 
 #: data/storyline/act2/dialogs/CryonicsBlock-Terminal.lua:26
 msgid "[b]Main Cryonics Containment Gate[/b]"
-msgstr ""
+msgstr "[b]Hlavní kryonická uzavírací brána[/b]"
 
 #: data/storyline/act2/dialogs/CryonicsBlock-Terminal.lua:27
 #: data/storyline/act2/dialogs/IcePass-Terminal.lua:31
 msgid "This is a security area. Please identify or logout."
-msgstr ""
+msgstr "Toto je zabezpečená oblast. Identifikujte se nebo se odhlaste."
 
 #. TRANSLATORS: command, use lowercase here
 #: data/storyline/act2/dialogs/CryonicsBlock-Terminal.lua:35
 #: data/storyline/act2/dialogs/IcePass-Terminal.lua:39
 msgid "identify"
-msgstr ""
+msgstr "identifikovat"
 
 #: data/storyline/act2/dialogs/CryonicsBlock-Terminal.lua:37
 msgid "Identification: "
-msgstr ""
+msgstr "Identifikace:"
 
 #: data/storyline/act2/dialogs/CryonicsBlock-Terminal.lua:40
 #: data/storyline/act2/dialogs/CryonicsBlock-Terminal.lua:45
 msgid "Tux"
-msgstr ""
+msgstr "Tux"
 
 #: data/storyline/act2/dialogs/CryonicsBlock-Terminal.lua:41
 msgid "[b]ERROR[/b] Unable to execute open.exe."
-msgstr ""
+msgstr "[B]CHYBA[/b] Nelze spustit otevřít.exe."
 
 #: data/storyline/act2/dialogs/CryonicsBlock-Terminal.lua:42
 msgid "Try using commands: chkdsk logout"
-msgstr ""
+msgstr "Zkuste použít příkazy: chkdsk odhlášení"
 
 #: data/storyline/act2/dialogs/CryonicsBlock-Terminal.lua:47
 msgid "Credentials invalid. Disconnection forced."
-msgstr ""
+msgstr "Neplatná pověření. Odpojení bylo vynuceno."
 
 #. TRANSLATORS: command, use lowercase here
 #: data/storyline/act2/dialogs/CryonicsBlock-Terminal.lua:55
 #: data/storyline/act2/dialogs/IcePass-Terminal.lua:62
 msgid "chkdsk"
-msgstr ""
+msgstr "chkdsk"
 
 #: data/storyline/act2/dialogs/CryonicsBlock-Terminal.lua:57
 msgid "[b]ERROR[/b] Because this terminal was designed not to fail, if failure does occur, there are no tools provided to repair it."
-msgstr ""
+msgstr "[b]CHYBA[/b] Vzhledem k tomu, že tento terminál byl navržen tak, aby neselhal, pokud dojde k selhání, nejsou k dispozici žádné nástroje k jeho opravě."
 
 #: data/storyline/act2/dialogs/CryonicsBlock-Terminal.lua:58
 msgid "[b]ERROR[/b] 'chkdsk' is not recognized as an internal or external command, operable program or batch file."
-msgstr ""
+msgstr "[B]CHYBA[/b] 'chkdsk‘ není rozpoznán jako interní nebo externí příkaz, spustitelný program nebo dávkový soubor."
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:30
 msgid "Connection refused. "
-msgstr ""
+msgstr "Spojení odmítnuto."
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:31
 msgid "Terminal #1979 is immune to hack attempts. Or so says the lore."
-msgstr ""
+msgstr "Terminál #1979 je imunní vůči pokusům o hacknutí. Nebo tak to tvrdí tradice."
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:34
 msgid "[b]Arcane Lore[/b] - I've bought an anti-hack software, so I could try to hack it!"
-msgstr ""
+msgstr "[b]Arcane Lore[/b] - Koupil jsem si software na obranu proti hacknutí, takže se můžu pokusit nabourat se do něho!"
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:35
 msgid "[b]User tux created.[/b] Enjoy!"
-msgstr ""
+msgstr "[b]Uživatel tux vytvořen.[/b] Užij si ho!"
 
 #. TRANSLATORS: username, maybe this should stay in lowercase letters?
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:39
 msgid "tux"
-msgstr ""
+msgstr "tux"
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:40
 msgid "Entering as tux"
-msgstr ""
+msgstr "Vstupuji jako tux"
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:44
 msgid "R&R Factory gate status: CLOSED"
-msgstr ""
+msgstr "Stav tovární brány R&R: ZAVŘENO"
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:47
 msgid "R&R Factory gate status: OPEN"
-msgstr ""
+msgstr "Stav tovární brány R&R: OTEVŘENA"
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:116
 #, c-format
 msgid "CAPTCHA: Please write the number that answers the following: %s + %s = ?"
-msgstr ""
+msgstr "CAPTCHA: Prosím, napište číslo, které odpovídá výsledku: %s ₊ %s = ?"
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:120
 msgid "Access Denied. Electrical discharge in progress."
-msgstr ""
+msgstr "Přístup odepřen. Probíhá elektrický výboj."
 
 #. TRANSLATORS: command, use lowercase here
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:154
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:157
 msgid "download hacking tools"
-msgstr ""
+msgstr "stáhnout hackerské nástroje"
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:160
 msgid "The max available software revision is 9."
-msgstr ""
+msgstr "Maximální dostupná verze softwaru je 9."
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:161
 msgid "Your hacking skill already has or exceeds this level."
-msgstr ""
+msgstr "Tvé hackerské schopnosti tuto úroveň již mají nebo ji překročily."
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:163
 msgid "This is commercial software, payment required (3000 circuits)."
-msgstr ""
+msgstr "Jedná se o komerční software, který vyžaduje platbu (3000 obvodů)."
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:164
 #, c-format
 msgid "You will also need %d training points."
-msgstr ""
+msgstr "Budeš také potřebovat tréninkové body, %d celkem."
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:165
 msgid "Proceed?"
-msgstr ""
+msgstr "Pokračovat?"
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:173
 msgid "sudo apt-get install hacking-tools"
-msgstr ""
+msgstr "sudo apt-get instalovat hackerské-nástroje"
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:176
 msgid "Reading package lists... Done"
-msgstr ""
+msgstr "Čtení seznamů balíčků... Hotovo"
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:177
 msgid "Building dependency tree"
-msgstr ""
+msgstr "Vytváření stromu závislostí"
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:178
 msgid "Reading state information... Done"
-msgstr ""
+msgstr "Čtení informací o stavu ... Hotovo"
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:180
 msgid "The following skill will be installed:"
-msgstr ""
+msgstr "Bude instalována následující dovednost:"
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:181
 #, c-format
 msgid "'Hacking' program revision %d."
-msgstr ""
+msgstr "Revize programu 'Hacking' %d."
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:185
 msgid "Feature set of the hacking program has been improved successfully."
-msgstr ""
+msgstr "Soubor funkcí programu hackování byl úspěšně vylepšen."
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:199
 msgid "Payment bounced. Insufficient credits."
-msgstr ""
+msgstr "Platba neproběhla. Nedostatečné kredity."
 
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:205
 msgid "Out of Memory. More Experience is needed to run this program."
-msgstr ""
+msgstr "Nedostatek paměti. Pro provoz tohoto programu je zapotřebí více zkušeností."
 
 #: data/storyline/act2/dialogs/Fred.lua:41
 msgid "Sniper Rifles are cool."
-msgstr ""
+msgstr "Odstřelovací pušky jsou v pohodě."
 
 #: data/storyline/act2/dialogs/Fred.lua:42
 msgid "Defeating robots is easy with Sniper Rifles."
-msgstr ""
+msgstr "Drtit roboty je s odstřelovacími puškami snadné."
 
 #: data/storyline/act2/dialogs/Fred.lua:43
 msgid "Bah-bah-bah rifler."
-msgstr ""
+msgstr "Bah-bah-bah puška."
 
 #: data/storyline/act2/dialogs/Fred.lua:44
 msgid "What's better than grenades? Sniper rifles."
-msgstr ""
+msgstr "Co je lepší než granáty? Odstřelovací pušky."
 
 #: data/storyline/act2/dialogs/Fred.lua:45
 msgid "Where could I increase my Sniper Rifles collection?"
-msgstr ""
+msgstr "Kde bych mohl zvýšit svou sbírku odstřelovacích pušek?"
 
 #: data/storyline/act2/dialogs/Fred.lua:53
 msgid "Uhm... Hello?"
-msgstr ""
+msgstr "Uhm... Ahoj?"
 
 #: data/storyline/act2/dialogs/Fred.lua:55
 msgid "Hello, I'm Fred. I make addons and grenades. I can craft some for you."
-msgstr ""
+msgstr "Čau, jsem Fred. Vyrábím doplňky a granáty. Můžu pro tebe něco udělat."
 
 #: data/storyline/act2/dialogs/Fred.lua:56
 msgid "I would like to give a look at it later, thanks."
-msgstr ""
+msgstr "Chtěl bych se na ně podívat později, díky."
 
 #: data/storyline/act2/dialogs/Fred.lua:63
 msgid "Could you craft some add-ons for me?"
-msgstr ""
+msgstr "Mohl bys pro mě vytvořit nějaké doplňky?"
 
 #: data/storyline/act2/dialogs/Fred.lua:65
 msgid "Of course I can craft add-ons for my best customer."
-msgstr ""
+msgstr "Samozřejmě můžu vyrobit doplňky pro svého nejlepšího zákazníka."
 
 #: data/storyline/act2/dialogs/Fred.lua:66
 #: data/storyline/act2/dialogs/Fred.lua:75
 msgid "If not the only."
-msgstr ""
+msgstr "Pokud nejen jeden."
 
 #: data/storyline/act2/dialogs/Fred.lua:72
 msgid "Can you assemble add-ons on my equip?"
-msgstr ""
+msgstr "Můžeš sestavit doplňky k mému vybavení?"
 
 #: data/storyline/act2/dialogs/Fred.lua:74
 msgid "Of course I can assemble add-ons for my best customer."
-msgstr ""
+msgstr "Samozřejmě, že mohu sestavit doplňky pro svého nejlepšího zákazníka."
 
 #: data/storyline/act2/dialogs/Fred.lua:81
 msgid "I want a grenade."
-msgstr ""
+msgstr "Chci granát."
 
 #: data/storyline/act2/dialogs/Fred.lua:83
 #: data/storyline/act2/dialogs/Stone.lua:76
 msgid "Sure, please take a look."
-msgstr ""
+msgstr "Jistě, podívejte se."
 
 #: data/storyline/act2/dialogs/Fred.lua:84
 msgid "They're not impressive, but get the work done!"
-msgstr ""
+msgstr "Nejsou impozantní, ale svou práci udělaj!"
 
 #: data/storyline/act2/dialogs/Fred.lua:85
 msgid "You won't regret them."
-msgstr ""
+msgstr "Nebudeš litovat."
 
 #: data/storyline/act2/dialogs/Fred.lua:86
 msgid "VMX for humans, EMP for droids. Remember this rule."
-msgstr ""
+msgstr "VMX pro lidi, EMP pro droidy. Zapamatuj si to pravidlo."
 
 #: data/storyline/act2/dialogs/Fred.lua:87
 #: data/storyline/act2/dialogs/Stone.lua:85
 msgid "Nice shopping!"
-msgstr ""
+msgstr "Pěkný nákup!"
 
 #: data/storyline/act2/dialogs/Fred.lua:93
 msgid "Do you know where to find a weapon for the .50 BMG Ammo?"
-msgstr ""
+msgstr "Nevíš, kde najít zbraň pro munici .50 BMG?"
 
 #: data/storyline/act2/dialogs/Fred.lua:95
 msgid "A weapon for the .50 Browning Machine Gun Ammo. Only the Barrett M82 Sniper Rifle use that junk. I mean, they don't even stack, you need a slot on inventory for each ammo."
-msgstr ""
+msgstr "Zbraň pro munici do kulometu .50 Browning. Pouze odstřelovací puška Barretta M82 používá tento odpad. Chci říct, že náboje nelze ani dívat na hromádky, každá munice obsadí jeden slot v tvém inventáři."
 
 #: data/storyline/act2/dialogs/Fred.lua:96
 msgid "So, if I was interested in such gun. Do you know where I could get one?"
-msgstr ""
+msgstr "Takže, kdyby mě zajímala taková zbraň. Nevíš kde bych ji mohl dostat?"
 
 #: data/storyline/act2/dialogs/Fred.lua:97
 msgid "I have one, but I won't give it to you. You see, the Barrett is powerful enough to stop a truck, literally, and the likelihood of even a battle droid surviving more than 2 hits by this weapon is quite slim."
-msgstr ""
+msgstr "Mám jednu, ale tu ti nedám. Víš, Barretta je dost silná na to, aby zastavila náklaďák, a to doslova, a pravděpodobnost, že i bitevní droid přežije více než 2 zásahy z této zbraně, je dost malá."
 
 #: data/storyline/act2/dialogs/Fred.lua:98
 msgid "So unless you're military or something, I won't be giving, trading, nor selling it for you."
-msgstr ""
+msgstr "Takže dokud nebudeš voják nebo tak něco, nebudu ti ji dávat, prodávat ani s tebou obchodovat."
 
 #: data/storyline/act2/dialogs/Fred.lua:99
 msgid "I have many circuits, you know."
-msgstr ""
+msgstr "Mám mnoho obvodů, víš."
 
 #: data/storyline/act2/dialogs/Fred.lua:100
 msgid "And I have a Barrett M82. I bet a few direct hits from this gun, and you'll leave life to become history."
-msgstr ""
+msgstr "A já mám Barrettu M82. Vsadím se, že pár přímých zásahů z této zbraně přesune tvůj život do historie."
 
 #: data/storyline/act2/dialogs/Fred.lua:101
 msgid "...You've got a point there."
-msgstr ""
+msgstr "...něco na tom bude."
 
 #: data/storyline/act2/dialogs/Fred.lua:107
 msgid "Look at this! I have a Barrett."
-msgstr ""
+msgstr "Podívej se na tohle! Mám Barrettu."
 
 #: data/storyline/act2/dialogs/Fred.lua:109
 msgid "Ah, so you've got a Barrett too. Nice."
-msgstr ""
+msgstr "Ah, takže máš taky Barrettu. Pěkný."
 
 #: data/storyline/act2/dialogs/Fred.lua:110
 msgid "That is a sniper rifle. It should kill bots in one shoot from afar."
-msgstr ""
+msgstr "To je odstřelovací puška. Měla by zabít roboty jedním zásahem z dálky."
 
 #: data/storyline/act2/dialogs/Fred.lua:111
 msgid "If you ever find a droid with subsonic sensor, this is the weapon you should use."
-msgstr ""
+msgstr "Pokud jsi někdy našel robota s podzvukovým senzorem, je to zbraň, kterou bys měl použít."
 
 #: data/storyline/act2/dialogs/Fred.lua:113
 msgid "Subsonic droids won't attack until you attack them. They are powerful, fast, and have lots of armor."
-msgstr ""
+msgstr "Subsoničtí roboti nezaútočí, dokud na ně sám neútočíš. Jsou mocní, rychlí a mají spoustu brnění."
 
 #: data/storyline/act2/dialogs/Fred.lua:114
 msgid "Plasma would be too slow, and laser too weak, so you really should use sniper rifles there."
