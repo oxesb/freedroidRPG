@@ -550,7 +550,6 @@ Enemy faction="ms"
 
 			-- Open the doors
 			change_obstacle_state("Arena-RingEntrance", "opened")
-			change_obstacle_state("Arena-AccessTrapdoor", "opened")
 		end
 	end
 </LuaCode>
