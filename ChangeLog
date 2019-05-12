@@ -1,4 +1,103 @@
 ------------------------------------------------------------------------
+7eb8f1c31 | fluzz | 2019-05-12 16:03:58 +0200
+
+[L10N] Clean PO files pulled from tx (remove obsolete entries and clear
+fuzzy flags)
+------------------------------------------------------------------------
+e135404c7 | fluzz | 2019-05-09 18:57:53 +0200
+
+Skyscrapper arena (act2): The game fatally-terminates if the last bot of
+the last wave is taken-over.
+------------------------------------------------------------------------
+0cf210287 | fluzz | 2019-05-08 23:14:57 +0200
+
+[macosx packager] Wrong param used to remove a directory
+------------------------------------------------------------------------
+939a14508 | fluzz | 2019-05-08 19:25:57 +0200
+
+Push the scripts used to package a MacOSX dmg.
+------------------------------------------------------------------------
+aa570d856 | fluzz | 2019-05-08 19:09:54 +0200
+
+Update translations.
+------------------------------------------------------------------------
+7a2871979 | alex | 2019-05-08 17:31:07 +0200
+
+Typo in Chandra dialog.
+------------------------------------------------------------------------
+691906960 | fluzz | 2019-05-03 18:29:55 +0200
+
+Replace several sprint()+strcat() by calls to snprint() to avoid
+potential buffer overruns, reported as warnings by gcc (8.3.1,
+currently).
+------------------------------------------------------------------------
+b5d5448d3 | fluzz | 2019-05-03 18:23:54 +0200
+
+Restore the current font at the end of the display of a menu.
+------------------------------------------------------------------------
+82f5f842b | fluzz | 2019-05-03 18:15:18 +0200
+
+Fix the display of texts containing '[x]' when that '[x]' is not a
+bbcode.
+------------------------------------------------------------------------
+8449871af | fluzz | 2019-05-02 18:41:38 +0200
+
+Fix some potential OOB accesses and a potential memcpy() buffer overlap,
+reported by clang-analyzer.
+------------------------------------------------------------------------
+c110d0b97 | fluzz | 2019-05-01 15:45:16 +0200
+
+Some code style improvments, proposed by cppcheck
+------------------------------------------------------------------------
+0c143241c | fluzz | 2019-04-27 17:06:30 +0200
+
+MacOSX App: we now only build for a 64bits arch
+------------------------------------------------------------------------
+2abbdc54f | fluzz | 2019-04-24 18:38:34 +0200
+
+Remove gamma correction adjustement.
+------------------------------------------------------------------------
+c88d4bb37 | fluzz | 2019-04-24 18:09:28 +0200
+
+Some item's inventory images stick out of their slot in the item list.
+------------------------------------------------------------------------
+6976875f2 | fluzz | 2019-04-24 09:46:28 +0200
+
+Fix color channels inversion on some computers (such as Mac).
+------------------------------------------------------------------------
+7a43ff815 | fluzz | 2019-04-21 14:36:00 +0200
+
+Do not attempt to teleport a dead NPC.
+------------------------------------------------------------------------
+dade2a74c | fluzz | 2019-04-19 13:18:57 +0200
+
+Prevent a crash, possibly, due to FP arithmetic accuracy problems when
+resolving the virtual position of the player.
+------------------------------------------------------------------------
+1fcccd5f2 | fluzz | 2019-04-18 17:54:47 +0200
+
+Text insert does not correctly check the input string size.
+------------------------------------------------------------------------
+bb45b870a | fluzz | 2019-04-15 22:14:48 +0200
+
+Fix an error in the former commit (1403f40e6).
+------------------------------------------------------------------------
+1403f40e6 | Gregory Lozet | 2019-04-15 21:57:32 +0200
+
+Add guards to compile without opengl
+------------------------------------------------------------------------
+743d26c78 | Gregory Lozet | 2019-04-15 18:32:06 +0200
+
+Missing return statements in if else
+------------------------------------------------------------------------
+1d8c2f7ac | Józef Kucia | 2019-04-15 18:26:08 +0200
+
+Missing empty get_background_music() for builds without sounds.
+------------------------------------------------------------------------
+c38b7ff82 | fluzz | 2019-03-30 16:27:29 +0100
+
+This is FreedroidRPG 1.0rc1
+------------------------------------------------------------------------
 544c6e214 | Gregory Lozet | 2019-03-30 16:05:21 +0100
 
 List dead bots and living bots more naturally in the cheat menu
