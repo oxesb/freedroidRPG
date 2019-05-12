@@ -3068,6 +3068,3 @@ msgid ""
 "Error during savegame filtering (%s:%s): Malformed item type string in Tux struct.\n"
 "The savegame seems to be corrupted."
 msgstr ""
-
-#~ msgid "<-- Gamma correction: %1.2f -->"
-#~ msgstr "<-- Korekce gamy: %1.2f -->"

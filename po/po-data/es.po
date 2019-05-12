@@ -6,7 +6,6 @@
 # Translators:
 # Carlos Daniel Landin Montaperto <linkin_yh@hotmail.com>, 2019
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: freedroidrpg 1.0RC1\n"

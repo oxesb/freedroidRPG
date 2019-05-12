@@ -34,7 +34,7 @@ $(L10NSTATSDIRS):
 .PHONY: l10n-stats-no l10n-stats-yes $(L10NSTATSDIRS)
 
 #
-# Clean PO files (remove obsolete strings)
+# Clean PO files (remove obsolete strings and clear fuzzy flags)
 #
 L10NCLEANDIRS = $(SUBDIRS:%=l10nclean-%)
 

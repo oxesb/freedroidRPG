@@ -23,20 +23,25 @@ l10n-stats:
 	  echo "    $$lang: $$stats"; \
 	done
 
-#== Clean obsolete strings
+#== Clean obsolete strings and clear fuzzy flags
+
+define clean_po =
+	msgattrib $(MSGCAT_OPTIONS) --no-obsolete --clear-fuzzy -o cleaned.po $(1); \
+	if ! cmp -s cleaned.po $(1) ; then \
+	  count_obsolete=`grep -c "#~ msgid" $(1)`; \
+	  count_fuzzy=`grep -c "#, fuzzy" $(1)`; \
+	  echo "Cleaning $(1): $$count_obsolete obsolete entries, $$count_fuzzy fuzzy entries"; \
+	  rm $(1) && mv cleaned.po $(1); \
+	else \
+	  rm cleaned.po; \
+	fi
+endef
 
 l10n-clean:
 	@catalogs='$(CATALOGS)'; \
 	for cat in $$catalogs; do \
 	  lang=`basename $$cat .gmo;`; \
-	  msgattrib $(MSGCAT_OPTIONS) --no-obsolete -o cleaned.po $$lang.po; \
-	  if ! cmp -s cleaned.po $$lang.po ; then \
-	    count=`grep -c "#~ msgid" $$lang.po`; \
-	    echo "Cleaning $$lang.po: $$count obsolete entries"; \
-	    rm $$lang.po && mv cleaned.po $$lang.po; \
-	  else \
-	    rm cleaned.po; \
-	  fi; \
+	  $(call clean_po,$$lang.po); \
 	done
 
 #== Regenerate POTFILES.in if the list of source files changed
@@ -170,6 +175,7 @@ tx-pull:
 	    fi; \
 	  done; \
 	  $(MSGMERGE_UPDATE) $(MSGMERGE_OPTIONS) $$lang.po $(DOMAIN).pot; \
+	  $(call clean_po,$$lang.po); \
 	done; \
 	rm -rf tx
 

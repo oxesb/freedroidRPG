@@ -7,7 +7,6 @@
 # Benjamin Leduc <giby_the_kid@yahoo.fr>, 2019
 # Link_Mario <Link-Mario@gmx.de>, 2019
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: freedroidrpg 1.0RC1\n"

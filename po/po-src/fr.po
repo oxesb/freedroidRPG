@@ -3082,6 +3082,3 @@ msgid ""
 msgstr ""
 "Erreur durant l'application d'un filtre (%s:%s): définition malformée d'un type d'item dans la structure Tux.\n"
 "La sauvegarde semble être corrompue."
-
-#~ msgid "<-- Gamma correction: %1.2f -->"
-#~ msgstr "<-- Correction gamma : %1.2f -->"
