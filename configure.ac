@@ -132,9 +132,9 @@ AS_VAR_IF([USE_NLS], [yes],
 
 PKG_PROG_PKG_CONFIG([])
 if test -z "$PKG_CONFIG"; then
-    AC_MSG_WARN([pkg-config not found])
-    AC_MSG_WARN([required libraries cannot be detected])
-    AC_MSG_WARN([please install pkg-config])
+    AC_MSG_ERROR([The pkg-config script could not be found. Make sure it is
+installed and is in your PATH, or set the PKG_CONFIG environment variable to
+the full path to pkg-config.])
 fi
 
 dnl Not sure if the following tests are really needed
