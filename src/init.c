@@ -991,7 +991,7 @@ void InitFreedroid(int argc, char **argv)
 	InitPictures(); //requires game data loaded in Init_Game_Data()
 
 	next_startup_percentage(100);
-	if (strstr(VERSION, "rc") && !do_benchmark) {
+	if ((strstr(VERSION, "rc") || strstr(VERSION, "RC")) && !do_benchmark) {
 		blit_background("startup1.jpg");
 		alert_window(_("You are playing a Release Candidate.\n"
 		               "Strange bugs may still be present in the game.\n"
