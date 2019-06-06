@@ -172,11 +172,11 @@ static int _extract_savegame_info(struct savegame_data *savegame, struct auto_st
 	if (!strncmp(ptr, "SAVEGAME", 8)) {
 
 		int version, revision;
-		char *code_sign = NULL;
+		char *code_sign = malloc(150);
 
 		char *marker = strchr(ptr, '\n');
 		*marker = '\0';
-		int nb = sscanf(ptr, "SAVEGAME: %d %d %ms", &version, &revision, &code_sign);
+		int nb = sscanf(ptr, "SAVEGAME: %d %d %s", &version, &revision, code_sign);
 		*marker = '\n';
 
 		if (nb != 3) {
