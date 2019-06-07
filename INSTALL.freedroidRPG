@@ -28,7 +28,7 @@ sudo apt-get install pkg-config libsdl1.2-dev libsdl-mixer1.2-dev libsdl-gfx1.2-
 
 2) Fedora
 
-dnf install pkgconfig SDL_image-devel SDL_net-devel SDL_mixer-devel SDL_gfx-devel SDL_ttf-devel libjpeg-devel libpng-devel libvorbis-devel libGLU-devel lua-devel gettext gettext-devel
+dnf install pkgconfig SDL_image-devel SDL_mixer-devel SDL_gfx-devel SDL_ttf-devel libjpeg-devel libpng-devel libvorbis-devel libGLU-devel lua-devel gettext gettext-devel
 
 3) Archlinux
 
@@ -40,7 +40,11 @@ There is also a freedroidrpg-git pkgbuild at the arch user repository: https://a
 
 emerge -av libsdl sdl-image sdl-gfx sdl-mixer libogg libvorbis eselect-opengl lua virtual/jpeg media-libs/libpng media-libs/glew
 
-5) Please contribute lists for your distribution!
+5) FreeBSD
+
+pkg install lang/gcc devel/gmake devel/automake devel/pkgconf devel/sdl12 audio/sdl_mixer graphics/sdl_image graphics/sdl_gfx graphics/sdl_ttf graphics/glew
+
+6) Please contribute lists for your distribution!
 
 Building with autotools
 =========================
@@ -59,12 +63,15 @@ Building with autotools
 3) Run the configure script: 
    ./configure
    You can check the options it accepts with --help.
-   If you are running MAC OSX you will probably want to use ./configure --with-apple-opengl-framework
+
+   If you are running MAC OSX you will probably want to use "./configure --with-apple-opengl-framework"
+   If you are running FreeBSD, you need to use "env MAKE=gmake ./configure"
+
    During the configure process, the terminal may notify you that some software is required.
    Install the required packages and restart ./configure.
 
 4) If ./configure finishes without errors or warnings, then proceed with building the game with:
-   make
+   make (or gmake, on FreeBSD and any other OS not using GNU make by default))
 
 5) Installation
    a) "make install" will install the game system-wide. You need to be root for this. The binary name is freedroidRPG.
