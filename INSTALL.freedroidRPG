@@ -63,10 +63,7 @@ Building with autotools
 3) Run the configure script: 
    ./configure
    You can check the options it accepts with --help.
-
-   If you are running MAC OSX you will probably want to use "./configure --with-apple-opengl-framework"
    If you are running FreeBSD, you need to use "env MAKE=gmake ./configure"
-
    During the configure process, the terminal may notify you that some software is required.
    Install the required packages and restart ./configure.
 

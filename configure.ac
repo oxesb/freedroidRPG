@@ -97,7 +97,7 @@ SILENT_BOX([Checking compulsory programs])
 
 AC_PROG_CC
 AC_PROG_CC_STDC
-XIPH_C_COMPILER_IS_CLANG
+AX_COMPILER_VENDOR
 AC_PROG_CC_C_O
 AC_PROG_INSTALL
 AC_PROG_LN_S
@@ -242,7 +242,7 @@ dnl Checking for optional libraries
 SILENT_BOX([Checking optional libraries])
 
 dnl the 'new way' to check for openGL (sets 'no_gl=yes' if not found)
-ACX_PTHREAD
+AX_PTHREAD
 AX_CHECK_GL
 
 AC_MSG_CHECKING(for openGL libraries)
@@ -522,7 +522,7 @@ AC_OUTPUT
 
 dnl Display a summary of the build configuration
 
-AS_VAR_IF([xiph_cv_c_compiler_clang], [yes],
+AS_VAR_IF([ax_cv_c_compiler_vendor], [clang],
 	[summary_compiler="clang"],
 	[summary_compiler=$CC]
 )
