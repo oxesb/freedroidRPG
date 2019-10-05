@@ -330,29 +330,46 @@ void Load_Mouse_Move_Cursor_Surfaces(void)
 
 };				// void Load_Mouse_Move_Cursor_Surfaces( void )
 
+static struct image *get_storage_for_bullet_image(const char *filename)
+{
+	int j, k;
+    char fname[PATH_MAX];
+    
+    // e.g. iso_bullet_half_pulse_04_0001.png
+    sscanf(filename, "iso_bullet_%s", &fname[0]);
+    char *p = &fname[0];
+    while (!isdigit(*p)) {
+        p++;
+    }
+    p--;
+    *p = 0;
+
+    for (int i = 0; i < bullet_specs.size; i++) {
+		struct bulletspec *bullet_spec = dynarray_member(&bullet_specs, i, sizeof(struct bulletspec));
+
+        if (!strcmp(fname, bullet_spec->name)) {
+            // Found bullet name, now match k and j
+            p++;
+            sscanf(p, "%02d_%04d.png", &k, &j);
+            return &bullet_spec->image[k][j-1];
+        }
+	}
+
+	error_message(__FUNCTION__, "Bullet texture atlas specifies element %s which is not expected.",
+		PLEASE_INFORM, filename);
+	return NULL;
+	
+    
+}
+
+
 /**
  * This function loads all the bullet images into memory.
  *
  */
 void iso_load_bullet_surfaces(void)
 {
-	int i, j, k;
-	char constructed_filename[5000];
-
-	for (i = 0; i < bullet_specs.size; i++) {
-		struct bulletspec *bullet_spec = dynarray_member(&bullet_specs, i, sizeof(struct bulletspec));
-
-		if (strlen(bullet_spec->name) && strstr(bullet_spec->name, "NO BULLET IMAGE"))
-			continue;
-
-		for (j = 0; j < bullet_spec->phases; j++) {
-			for (k = 0; k < BULLET_DIRECTIONS; k++) {
-				sprintf(constructed_filename, "bullets/iso_bullet_%s_%02d_%04d.png", bullet_spec->name, k, j + 1);
-
-				load_image(&bullet_spec->image[k][j], GRAPHICS_DIR, constructed_filename, USE_OFFSET);
-			}
-		}
-	}
+    load_texture_atlas("bullets/atlas.txt", "bullets/", get_storage_for_bullet_image);
 
 };				// void iso_load_bullet_surfaces ( void )
 
