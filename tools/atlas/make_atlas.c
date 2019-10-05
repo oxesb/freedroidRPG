@@ -112,13 +112,9 @@ static void finish_output(int atlas_num)
 	sprintf(path, "%s%d.png", image_out_path, atlas_num);
 
 	// There is a possibility that a lot of space is empty in an atlas image and
-	// the height of the image can be cropped to lower power of two.
-	// It's especially true for the last image of texture atlas.
-	// If possible the height of the current atlas image is cropped to
-	// lower power of two.
-	int height = atlas_height;
-	while (last_y < height / 2)
-		height /= 2;
+	// the height of the image can be reduced. It's especially true for the last image of texture atlas.
+	// If possible the height of the current atlas image is cropped.
+	int height = last_y + 1;
 
 	if (height != atlas_height) {
 		SDL_Rect src;
