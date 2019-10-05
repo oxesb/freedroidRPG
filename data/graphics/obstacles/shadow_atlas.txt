@@ -1,4 +1,4 @@
-* ./obstacles_shadows_atlas1.png size 2048 2048
+* obstacles_shadows_atlas1.png size 2048 2048
 shadow_iso_stratopod_landed_s_0001.png 0 0 510 232 off -291 -132
 shadow_iso_stratopod_landed_s_0002.png 511 0 510 232 off -291 -132
 shadow_iso_vendingmachine_blue_e.png 1022 0 237 151 off -111 -71
@@ -96,11 +96,11 @@ shadow_iso_bookshelf_lootable_n.png 0 1029 155 56 off -104 -31
 shadow_iso_bookshelf_looted_n.png 156 1029 164 56 off -104 -31
 shadow_iso_bookshelf_looted_s.png 321 1029 156 56 off -107 -28
 shadow_iso_bookshelf_n.png 478 1029 155 56 off -104 -31
-shadow_iso_wall_purple_curve_ws.png 634 1029 92 56 off -93 -31
-shadow_iso_wall_purple_T_ess.png 727 1029 140 56 off -92 -31
-shadow_iso_wall_purple_T_nwe.png 868 1029 140 56 off -92 -31
-shadow_iso_wall_purple_T_nws.png 1009 1029 140 56 off -92 -31
-shadow_iso_wall_purple_T_wes.png 1150 1029 140 56 off -92 -31
+shadow_iso_wall_purple_T_ess.png 634 1029 140 56 off -92 -31
+shadow_iso_wall_purple_T_nwe.png 775 1029 140 56 off -92 -31
+shadow_iso_wall_purple_T_nws.png 916 1029 140 56 off -92 -31
+shadow_iso_wall_purple_T_wes.png 1057 1029 140 56 off -92 -31
+shadow_iso_wall_purple_curve_ws.png 1198 1029 92 56 off -93 -31
 shadow_iso_wall_purple_we.png 1291 1029 140 56 off -92 -31
 shadow_iso_bookshelf_e.png 1432 1029 155 55 off -102 -29
 shadow_iso_bookshelf_lootable_e.png 1588 1029 155 55 off -102 -29
