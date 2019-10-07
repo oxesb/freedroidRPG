@@ -1023,11 +1023,38 @@ int resolve_virtual_position(gps *rpos, gps *vpos)
 	struct neighbor_data_cell *ngb_data = level_neighbors_map[vpos->z][idY][idX];
 
 	if (ngb_data && ngb_data->valid) {
+		// We need to ensure that the computed position is inside the boundaries of
+		// the 'real' level. Due to a lack of precision during floating point computations
+		// (i.e. if x<<<y, then (y+x) => (y)), we could possibly get a wrong output.
+		// For instance, if vpos.x = -0.000002, we expect the computed position to be
+		// rpos.x = 89.999998 on the left level (given a level's width of 90).
+		// But, using floats, 90.0-0.000002 gives 90.0, which is not "inside" the level,
+		// and thus this function returns false.
+		// The same issue applies to small positive quantities.
+		// As a fix, a "too small" value is replaced by EPSILON_FIX, which is high enough
+		// to be representable in the range of float values that we use for the positions.
+		// Note that this limits the position's precision, around level's boundary, to 1/1000,
+		// which seems to be small enough.
+		float EPSILON_FIX = 0.001f;
+
 		struct gps tmp_pos = {
-				vpos->x + ngb_data->delta_x,
-				vpos->y + ngb_data->delta_y,
-				ngb_data->lvl_idx
+			ngb_data->delta_x,
+			ngb_data->delta_y,
+			ngb_data->lvl_idx
 		};
+
+		if (fabsf(vpos->x) < EPSILON_FIX) {
+			if (vpos->x < 0) tmp_pos.x += -EPSILON_FIX;
+			else             tmp_pos.x += +EPSILON_FIX;
+		} else {
+			tmp_pos.x += vpos->x;
+		}
+		if (fabsf(vpos->y) < EPSILON_FIX) {
+			if (vpos->y < 0) tmp_pos.y += -EPSILON_FIX;
+			else             tmp_pos.y += +EPSILON_FIX;
+		} else {
+			tmp_pos.y += vpos->y;
+		}
 
 		// Check that the transformed position is valid (i.e. inside level boundaries)
 		level *rlvl = curShip.AllLevels[tmp_pos.z];
