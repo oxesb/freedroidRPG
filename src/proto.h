@@ -306,6 +306,7 @@ void init_shaders(void);
 void iso_load_bullet_surfaces(void);
 void Load_Mouse_Move_Cursor_Surfaces(void);
 void load_droid_animation_images(struct droidspec *);
+void load_all_enemy_graphics(void);
 void free_enemy_graphics(void);
 void Load_Blast_Surfaces(void);
 void load_floor_tiles(void);

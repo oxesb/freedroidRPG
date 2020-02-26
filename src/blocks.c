@@ -433,6 +433,13 @@ void load_droid_animation_images(struct droidspec *this_droid_spec)
 	this_droid_spec->gfx_prepared = TRUE;
 }
 
+void load_all_enemy_graphics(void)
+{
+	for (int i = 0; i < Number_Of_Droid_Types; i++) {
+		load_droid_animation_images(&Droidmap[i]);
+	}
+}
+
 void free_enemy_graphics(void)
 {
 	int i;
