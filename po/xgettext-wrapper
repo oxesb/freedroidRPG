@@ -45,7 +45,7 @@ extract_strings()
 			print $0
 			next
 		}
-		/_\"|_\[{2}/ { 
+		/_"|_\[{2}/ {
 			inline = $0
 			outline = ""
 			postout = ""

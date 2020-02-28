@@ -51,26 +51,26 @@ fi
 
 top=$(git rev-parse --show-toplevel)
 
-# The awk script alphabetically sorts the files list, with files first and then directories
-# ("width first traversal").
-allfiles=$(cd "$top" && git ls-files --no-empty-directory --exclude-standard ${include[@]} | ${AWK} '
-BEGIN { IGNORECASE = 1; lines = 0; }
-{
-  match("/" $0, "(/.*/)[^/]+$", result);
-  dirname = result[1];
-  d[dirname] = dirname;
-  f[dirname][length(f[dirname])+1] = $0;
-}
-END {
-  asort(d);
-  for (i=1; i<=length(d); i++) {
-    dirname = d[i];
-    asort(f[dirname]);
-    for (j=1; j<=length(f[dirname]); j++) {
-      print f[dirname][j];
-    }
-  }
-}')
+# Get the list of the files to inspect from 'git ls-files'.
+#
+# The order of the generated list depends of factors such as the OS or
+# the locale. A different order means a different POTFILES.in, and so
+# a re-generation of the PO files.
+# To avoid unwanted modifications of PO files, we sort the list in a
+# well known order: files first and then directories ("width first
+# traversal"), using byte ordering (hence the 'LC_ALL=C')
+declare -A filesmap # Key: directory name - Value: list of files in that dir
+dirlist=""
+for f in $(cd "$top" && git ls-files --no-empty-directory --exclude-standard ${include[@]}) ; do
+  dirn=$(dirname $f)
+  filesmap[$dirn]="${filesmap[$dirn]} $f"
+  dirlist="$dirlist $dirn"
+done
+allfiles=""
+for d in $(echo $dirlist | tr " " "\n" | LC_ALL=C sort -u -f) ; do
+	allfiles="$allfiles $(echo ${filesmap[$d]} | tr " " "\n" | LC_ALL=C sort -f)"
+done
+unset filesmap
 
 # Only keep files containing gettext markers
 
