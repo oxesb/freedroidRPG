@@ -1320,11 +1320,11 @@ static void Graphics_fill(char *MenuTexts[MAX_MENU_ITEMS])
 	sprintf(MenuTexts[i++], _("Change screen resolution"));
 
 	sprintf(Options[i], _("Fullscreen mode: %s"), GameConfig.fullscreen_on ? _("ON") : _("OFF"));
-	strncpy(MenuTexts[i], Options[i], 1024);
+	strncpy(MenuTexts[i], &(Options[i][0]), 1024);
 	i++;
 
 	sprintf(Options[i], _("Show blood: %s"), GameConfig.show_blood ? _("YES") : _("NO"));
-	strncpy(MenuTexts[i], Options[i], 1024);
+	strncpy(MenuTexts[i], &(Options[i][0]), 1024);
 	i++;
 
 	strncpy(MenuTexts[i++], _("Back"), 1024);
@@ -1411,11 +1411,11 @@ static void Sound_fill(char *MenuTexts[MAX_MENU_ITEMS])
 	char Options[20][1000];
 	int i = 0;
 	sprintf(Options[i], _("<-- Background music volume: %1.2f -->"), GameConfig.Current_BG_Music_Volume);
-	strncpy(MenuTexts[i], Options[i], 1024);
+	strncpy(MenuTexts[i], &(Options[i][0]), 1024);
 	i++;
 
 	sprintf(Options[i], _("<-- Sound effects volume: %1.2f -->"), GameConfig.Current_Sound_FX_Volume);
-	strncpy(MenuTexts[i], Options[i], 1024);
+	strncpy(MenuTexts[i], &(Options[i][0]), 1024);
 	i++;
 
 	switch (GameConfig.Current_Sound_Output_Fmt) {
@@ -1435,7 +1435,7 @@ static void Sound_fill(char *MenuTexts[MAX_MENU_ITEMS])
 		sprintf(Options[i], _("<-- Output: Error -->"));
 		break;
 	}
-	strncpy(MenuTexts[i], Options[i], 1024);
+	strncpy(MenuTexts[i], &(Options[i][0]), 1024);
 	i++;
 
 	strncpy(MenuTexts[i++], _("Back"), 1024);
@@ -1506,13 +1506,13 @@ static void Performance_fill(char *MenuTexts[])
 		sprintf(Options[i], _("FPS limit: none"));
 	else
 		sprintf(Options[i], _("FPS limit: %d"), GameConfig.framerate_limit);
-	strncpy(MenuTexts[i], Options[i], 1024);
+	strncpy(MenuTexts[i], &(Options[i][0]), 1024);
 	i++;
 	sprintf(Options[i], _("Show light radius: %s"), GameConfig.skip_light_radius ? _("NO") : _("YES"));
-	strncpy(MenuTexts[i], Options[i], 1024);
+	strncpy(MenuTexts[i], &(Options[i][0]), 1024);
 	i++;
 	sprintf(Options[i], _("Show obstacle shadows: %s"), GameConfig.skip_shadow_blitting ? _("NO") : _("YES"));
-	strncpy(MenuTexts[i], Options[i], 1024);
+	strncpy(MenuTexts[i], &(Options[i][0]), 1024);
 	i++;
 	// was before:  sprintf(MenuTexts[i], _("Graphics lazy loading: %s"), GameConfig.lazyload ? _("YES") : _("NO"));
 	// moved to performance settings from graphics settings
