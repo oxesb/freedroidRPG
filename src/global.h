@@ -36,7 +36,6 @@ extern char *freedroid_version;
 #define INTERN_FOR _main_c
 #include "extint_macros.h"
 
-EXTERN float FPSover1;
 EXTERN char *AllSkillTexts[];
 EXTERN char font_switchto_red[];
 EXTERN char font_switchto_blue[];
@@ -95,6 +94,7 @@ EXTERN FPSmanager SDL_FPSmanager;
 #define INTERN_FOR _misc_c
 #include "extint_macros.h"
 
+EXTERN float FPSover1;
 EXTERN float timeout_from_item_drop;
 EXTERN int use_open_gl;
 #ifdef DEBUG_QUAD_BORDER

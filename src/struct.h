@@ -1063,7 +1063,7 @@ struct tux_rendering {
 	struct tux_part_instances default_instances;    // Default part instances
 	tux_part_render_motionclass *render_order;      // The render_sets of each motion class
 	int gun_muzzle_height;							// Vertical offset to apply to bullets
-} tux_rendering;
+};
 
 /**
  * Contains a set of Tux's parts images for a motion class.

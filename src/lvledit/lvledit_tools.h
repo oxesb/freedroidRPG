@@ -34,9 +34,9 @@ struct leveleditor_tool {
 	int (*display) ();
 };
 
-void leveleditor_init_tools(void);
+EXTERN void leveleditor_init_tools(void);
 
-struct leveleditor_tool tool_place, tool_move, tool_select;
+EXTERN struct leveleditor_tool tool_place, tool_move, tool_select;
 
 #define EVENT_LEFT_PRESS(e) (((e) && e->type == SDL_MOUSEBUTTONDOWN) && (e->button.button == 1))
 #define EVENT_RIGHT_PRESS(e) (((e) && e->type == SDL_MOUSEBUTTONDOWN) && (e->button.button == 3))
