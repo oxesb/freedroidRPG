@@ -59,7 +59,7 @@ return {
 	},
 	{
 		id = "node2",
-		text = _"I am interesting in buying ammo.",
+		text = _"I am interested in buying ammo.",
 		code = function()
 			Npc:says(_"Of course. Because ammo is always at high demand, we sell them separately.")
 			Npc:says_random(_"Now, what will it be?",
