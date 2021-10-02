@@ -1498,7 +1498,7 @@ static int Performance_handle(int n)
 	return CONTINUE_MENU;
 }
 
-static void Performance_fill(char *MenuTexts[])
+static void Performance_fill(char *MenuTexts[MAX_MENU_ITEMS])
 {
 	char Options[20][1000];
 	int i = 0;

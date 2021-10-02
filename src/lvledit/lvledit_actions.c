@@ -1044,7 +1044,7 @@ static int get_chest_contents(level *l, obstacle *o, item *items[MAX_ITEMS_IN_IN
 void level_editor_edit_chest(struct obstacle *o)
 {
 	struct item *chest_items[MAX_ITEMS_IN_INVENTORY];
-	struct item *user_items[2];
+	struct item *user_items[MAX_ITEMS_IN_INVENTORY];
 	struct shop_decision shop_order;
 
 	item dummy_addtochest;

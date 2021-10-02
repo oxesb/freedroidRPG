@@ -66,7 +66,7 @@ int amask = 0x000000FF;
 
 static int old_current_level = -1;
 
-void put_radial_blue_sparks(float, float, float, int, uint8_t[], float);
+void put_radial_blue_sparks(float, float, float, int, uint8_t[RADIAL_SPELL_DIRECTIONS], float);
 
 struct blitting_list_element {
 	int element_type;
