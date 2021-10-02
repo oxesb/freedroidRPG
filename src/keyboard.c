@@ -878,6 +878,10 @@ int getchar_ascii()
 			// First check for 'arrow' keys
 			if (SDLK_UP <= event.key.keysym.sym && event.key.keysym.sym <= SDLK_PAGEDOWN) {
 				return_key = (int)event.key.keysym.sym;
+			} else if (event.key.keysym.sym == SDLK_BACKSPACE || event.key.keysym.sym == SDLK_DELETE) {
+				// On MacOSX, the conversion of thse keys to unicode is buggy
+				// so we directly return the keysym value
+				return_key = (int)event.key.keysym.sym;
 			} else if ((event.key.keysym.unicode & 0xFF00) != 0) {
 				// This is a non ASCII character, we do not handle it
 				continue;
