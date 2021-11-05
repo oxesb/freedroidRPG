@@ -433,6 +433,7 @@ int do_menu_selection(char *header_text, char **items_texts, int first_item_idx,
 			}
 
 			if (event.type == SDL_KEYDOWN) {
+				fix_keysym(&(event.key.keysym));
 				switch (event.key.keysym.sym) {
 				case SDLK_ESCAPE:
 					MenuItemDeselectedSound();

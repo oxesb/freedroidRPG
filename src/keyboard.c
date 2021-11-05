@@ -367,6 +367,8 @@ void keychart()
 			endpos = display_keychart(startpos, cursor, FALSE);
 
 			if (event.type == SDL_KEYDOWN) {
+				fix_keysym(&(event.key.keysym));
+
 				if (event.key.keysym.sym == SDLK_ESCAPE)
 					done = 1;
 				if (event.key.keysym.sym == SDLK_RIGHT || event.key.keysym.sym == SDLK_PAGEDOWN) {
@@ -798,7 +800,7 @@ static int input_key_event(SDLKey key, SDLMod mod, int value)
  * Fix some raw keysym values, such as 'shifted numerical key' or non
  * printable keys from the numpad.
  */
-static void fix_keysym(SDL_keysym *keysym)
+void fix_keysym(SDL_keysym *keysym)
 {
 	// First case: on some keyboards (such as AZERTY), the Shift modifier has
 	// to be pressed to input a numeral from the 'main' keyboard.
@@ -874,7 +876,7 @@ int getchar_ascii()
 		}
 
 		if (event.type == SDL_KEYDOWN) {
-
+			fix_keysym(&(event.key.keysym));
 			// First check for 'arrow' keys
 			if (SDLK_UP <= event.key.keysym.sym && event.key.keysym.sym <= SDLK_PAGEDOWN) {
 				return_key = (int)event.key.keysym.sym;

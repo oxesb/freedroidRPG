@@ -314,6 +314,7 @@ void alert_window(const char *text, ...)
 			Terminate(EXIT_SUCCESS);
 			break;
 		case SDL_KEYDOWN:
+			fix_keysym(&(e.key.keysym));
 			if (e.key.keysym.sym == SDLK_SPACE || e.key.keysym.sym == SDLK_RETURN || e.key.keysym.sym == SDLK_ESCAPE)
 				goto wait_click_and_out;
 			break;

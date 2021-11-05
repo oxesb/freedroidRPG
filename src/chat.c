@@ -675,6 +675,7 @@ void chat_run()
 				}
 			}
 			if (current_chat_context->wait_user_click && event.type == SDL_KEYDOWN) {
+				fix_keysym(&(event.key.keysym));
 				switch (event.key.keysym.sym) {
 				case SDLK_SPACE:
 				case SDLK_RETURN:

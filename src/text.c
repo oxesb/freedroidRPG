@@ -697,7 +697,7 @@ char *get_editable_string_in_popup_window(int max_len, const char *popup_window_
 
 		int key = getchar_ascii(); // last 'character' entered
 
-		if (key == SDLK_RETURN || key == SDLK_KP_ENTER) {
+		if (key == SDLK_RETURN) {
 			// input[curpos] = 0;
 			finished = TRUE;
 		} else if (key == SDLK_ESCAPE) {

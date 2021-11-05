@@ -189,7 +189,7 @@ int SpacePressed()
 
 int EnterPressed()
 {
-	return key_is_pressed(SDLK_RETURN);
+	return key_is_pressed(SDLK_RETURN) || key_is_pressed(SDLK_KP_ENTER);
 }
 
 int EscapePressed()

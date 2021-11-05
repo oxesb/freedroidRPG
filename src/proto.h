@@ -577,6 +577,7 @@ int QPressed(void);
 int XPressed(void);
 void WaitNoEvent(void);
 
+void fix_keysym(SDL_keysym *);
 int input_key_press(SDL_Event *);
 void keychart(void);
 void input_keyboard_init(void);

@@ -245,6 +245,7 @@ int do_graphical_number_selection_in_range(int lower_range, int upper_range, int
 			if (event.type == SDL_QUIT) {
 				Terminate(EXIT_SUCCESS);
 			} else if (event.type == SDL_KEYDOWN) {
+				fix_keysym(&(event.key.keysym));
 				switch(event.key.keysym.sym) {
 					case SDLK_LEFT:
 						delta = -1;
