@@ -30,6 +30,9 @@
 #include "struct.h"
 #include "global.h"
 #include "proto.h"
+#ifdef __APPLE__
+#include <CoreFoundation/CoreFoundation.h>
+#endif
 
 static struct codeset _default_codeset = { "_default_", "ASCII" };
 #ifdef ENABLE_NLS
@@ -120,6 +123,9 @@ void lang_set(const char *locale, int *encoding_changed)
 	// (see GNU gettext manual), avoiding to have to install any locale.
 
 	char *applied_locale = NULL;
+#ifdef __APPLE__
+	char mac_locale[1024]; mac_locale[0] = '\0';
+#endif
 
 	// If a specific locale was requested, we set the LANGUAGE envvar.
 	if (locale && strlen(locale)) {
@@ -136,12 +142,24 @@ void lang_set(const char *locale, int *encoding_changed)
 			return;
 		applied_locale = setlocale(LC_MESSAGES, ""); // gettext() will use envvars
 		if (!applied_locale) {
+#ifdef __APPLE__
+			// Since MacOSX 10.14 (Mojave), the system locale can no more been retrieved
+			// with the above setlocale() call, when run by double-clicking on the App's icon.
+			// It however works as expected when run from the command line...
+			CFLocaleRef localeRef = CFLocaleCopyCurrent();
+			CFStringRef value = CFLocaleGetValue(localeRef, kCFLocaleIdentifier);
+			CFStringGetCString(value, mac_locale, 1023, kCFStringEncodingUTF8);
+			applied_locale = mac_locale;
+			CFRelease(localeRef);
+			setlocale(LC_MESSAGES, applied_locale);
+#else
 			error_message(__FUNCTION__,
 					"You asked to use the system default local, defined by the LC_MESSAGES envvar.\n"
 					"But that locale seems to be unknown on your system. Switching to C locale.",
 					PLEASE_INFORM);
 			setlocale(LC_MESSAGES, "C");
 			applied_locale = "";
+#endif
 		}
 	}
 
