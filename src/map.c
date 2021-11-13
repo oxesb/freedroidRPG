@@ -803,7 +803,6 @@ static char *decode_item_section(level *loadlevel, char *data)
 static char *decode_map(level *loadlevel, char *data)
 {
 	char *map_begin, *map_end;
-	char *this_line;
 	int i;
 
 	if ((map_begin = strstr(data, MAP_BEGIN_STRING)) == NULL)
@@ -822,7 +821,6 @@ static char *decode_map(level *loadlevel, char *data)
 
 	/* now scan the map */
 	unsigned int curlinepos = 0;
-	this_line = (char *)MyMalloc(4096);
 
 	/* read MapData */
 	for (i = 0; i < loadlevel->ylen; i++) {
@@ -831,14 +829,29 @@ static char *decode_map(level *loadlevel, char *data)
 		map_tile *Buffer;
 		int tmp;
 
-		/* Select the next line */
+		/* Get the next line */
 		unsigned int nlpos = 0;
-		memset(this_line, 0, 4096);
-		while (map_begin[curlinepos + nlpos] != '\n')
+		while (map_begin[curlinepos + nlpos] != '\n' && (map_begin + curlinepos + nlpos <= map_end))
 			nlpos++;
+
+		if (nlpos > (200*10*4)) { // Enough room for a width of 200 tiles on 10 layers
+			error_message(__FUNCTION__,
+			              "A very long line has been detected in a map data of the savegame.\n"
+			              "Line length: %d chars.\n"
+			              "That savegame is probably corrupted, we do not want to load it.",
+			              IS_FATAL, nlpos);
+		}
+		if (nlpos != (loadlevel->xlen * loadlevel->floor_layers * 4)) {
+			error_message(__FUNCTION__,
+			              "A line with a wrong length has been detected in a map data of the savegame.\n"
+			              "Line length: %d chars. Should be: %d (xlen: %d - nb of layers: %d) \n"
+			              "That savegame is probably corrupted, we do not want to load it.",
+			              IS_FATAL, nlpos, loadlevel->xlen * loadlevel->floor_layers * 4, loadlevel->xlen, loadlevel->floor_layers);
+		}
+
+		char *this_line = (char *)MyMalloc(nlpos+1);
 		memcpy(this_line, map_begin + curlinepos, nlpos);
 		this_line[nlpos] = '\0';
-		nlpos++;
 
 		/* Decode it */
 		Buffer = MyMalloc((loadlevel->xlen + 10) * sizeof(map_tile));
@@ -860,23 +873,22 @@ static char *decode_map(level *loadlevel, char *data)
 			}
 		}
 
+		free(this_line);
+
 		// Now the old text pointer can be replaced with a pointer to the
 		// correctly assembled struct...
 		//
 		loadlevel->map[i] = Buffer;
 
-		curlinepos += nlpos;
+		curlinepos += (nlpos+1);
 	}
 
-	free(this_line);
 	return map_end;
 }
 
 static char *decode_waypoints(level *loadlevel, char *data)
 {
 	char *wp_begin, *wp_end;
-	char *this_line;
-	int nr, x, y, wp_rnd;
 
 	// Initialize waypoints
 	dynarray_init(&loadlevel->waypoints, 2, sizeof(struct waypoint));
@@ -893,34 +905,35 @@ static char *decode_waypoints(level *loadlevel, char *data)
 		return NULL;
 
 	int curlinepos = 0;
-	this_line = (char *)MyMalloc(4096);
 	
 	while (1) {
-		/* Select the next line */
+		// Get the next line
+
 		short int nlpos = 0;
-		memset(this_line, 0, 4096);
-		while (wp_begin[curlinepos + nlpos] != '\n')
+		while (wp_begin[curlinepos + nlpos] != '\n' && (wp_begin + curlinepos + nlpos < wp_end))
 			nlpos++;
+
+		if (nlpos > (37+100*4)) { // Enough room for a waypoint with 100 connections
+			error_message(__FUNCTION__,
+			              "A very long line has been detected in a waypoint config of the savegame.\n"
+			              "Line length: %d chars.\n"
+			              "That savegame is probably corrupted, we do not want to load it.",
+			              IS_FATAL, nlpos);
+		}
+
+		char *this_line = (char *)MyMalloc(nlpos+1);
 		memcpy(this_line, wp_begin + curlinepos, nlpos);
 		this_line[nlpos] = '\0';
-		nlpos++;
-		
-		curlinepos += nlpos;
-
-		if (!strncmp(this_line, wp_end, strlen(WP_END_STRING))) {
-			break;
-		}
-		wp_rnd = 0;
-		sscanf(this_line, "Nr.=%d \t x=%d \t y=%d   rnd=%d", &nr, &x, &y, &wp_rnd);
 
 		// Create a new waypoint
-		waypoint new_wp;
-		new_wp.x = x;
-		new_wp.y = y;
-		new_wp.suppress_random_spawn = wp_rnd;
+
+		int nr, x, y, wp_rnd;
+		sscanf(this_line, "Nr.=%d \t x=%d \t y=%d   rnd=%d", &nr, &x, &y, &wp_rnd);
+
+		waypoint new_wp = { .x = x, .y = y, .suppress_random_spawn = wp_rnd };
+		dynarray_init(&new_wp.connections, 2, sizeof(int));
 
 		// Initialize the connections of the new waypoint
-		dynarray_init(&new_wp.connections, 2, sizeof(int));
 
 		char *pos = strstr(this_line, CONNECTION_STRING);
 		if (pos == NULL) {
@@ -938,7 +951,7 @@ static char *decode_waypoints(level *loadlevel, char *data)
 					break;
 				int connection;
 				int res = sscanf(pos, "%d", &connection);
-				if ((connection == -1) || (res == 0) || (res == EOF))
+				if ((connection == -1) || (res == '\0') || (res == EOF))
 					break;
 
 				// Add the connection on this waypoint
@@ -950,10 +963,18 @@ static char *decode_waypoints(level *loadlevel, char *data)
 		}
 
 		// Add the waypoint on the level
+
 		dynarray_add(&loadlevel->waypoints, &new_wp, sizeof(struct waypoint));
+
+		// Prepare for next loop, unless we reached the end of the buffer
+
+		free(this_line);
+		curlinepos += nlpos + 1;
+		if (wp_begin + curlinepos >= wp_end) {
+			break;
+		}
 	}
 
-	free(this_line);
 	return wp_end;
 }
 
