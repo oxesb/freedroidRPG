@@ -38,6 +38,11 @@ dump_structs = [
                  "event_timer"
                ]
 
+# For some structures, a missing attribute during file loading is not an
+# issue, and no warning is needed
+
+no_warm_for_structs = [ "configuration_for_freedroid" ]
+
 # A list of forbidden types in the structures.
 # If such a type is encountered, the script will output an error message, and exit with failure.
 
@@ -225,6 +230,7 @@ def main():
     for s_name in sorted(data.keys()):
 
         func_name = s_name.replace('struct ', '')
+        must_warn = not s_name in no_warm_for_structs
 
         header_str  = '/*! \ingroup genrw */\n'
         header_str += 'void write_%s(struct auto_string *, %s *);\n'  % (func_name, s_name)
@@ -255,10 +261,17 @@ def main():
                 if size == 0: read_str += '    data->%s = NULL;\n' % field
                 else:         read_str += '    memcpy(data->%s, 0, %s * sizeof(%s));\n' % (field, size, type)
             else:
-                read_str += '    if (lua_getfield_or_warn(L, index, "%s")) {\n' % field
-                read_str += '        read_%s(L, -1, %sdata->%s%s);\n' % (type, '' if size else '&', field, (', %s' % size) if size else '')
-                read_str += '        lua_pop(L, 1);\n'
-                read_str += '    }\n'
+                if must_warn:
+                    read_str += '    if (lua_getfield_or_warn(L, index, "%s")) {\n' % field
+                    read_str += '        read_%s(L, -1, %sdata->%s%s);\n' % (type, '' if size else '&', field, (', %s' % size) if size else '')
+                    read_str += '        lua_pop(L, 1);\n'
+                    read_str += '    }\n'
+                else:
+                    read_str += '    lua_getfield(L, index, "%s");\n' % field
+                    read_str += '    if (!lua_isnil(L, -1)) {\n'
+                    read_str += '        read_%s(L, -1, %sdata->%s%s);\n' % (type, '' if size else '&', field, (', %s' % size) if size else '')
+                    read_str += '    }\n'
+                    read_str += '    lua_pop(L, 1);\n'
         read_str += '}\n\n'
 
         output_c.write(read_str)
