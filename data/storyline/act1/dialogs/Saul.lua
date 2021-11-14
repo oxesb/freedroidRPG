@@ -32,7 +32,7 @@ return {
 	end,
 
 	EveryTime = function()
-		Npc:says(_"Contact information can be found at [b]http://www.freedroid.org/Contact[/b]")
+		Npc:says(_"Contact information can be found at [b]https://www.freedroid.org/Contact[/b]")
 		end_dialog()
 	end,
 

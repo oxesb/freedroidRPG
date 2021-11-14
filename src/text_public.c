@@ -221,8 +221,8 @@ void error_message(const char *fn, const char *fmt, int error_type, ...)
 		                "If you encounter this message, please inform the FreedroidRPG developers about it!\n"
 		                "You can\n"
 		                "  send an e-mail to                    freedroid-discussion AT lists.sourceforge.net\n"""
-		                "  mention it on our IRC channel        #freedroid on irc.freenode.net\n"
-		                "  or report the bug on our tracker at  http://bugs.freedroid.org/\n"
+		                "  mention it on our IRC channel        #freedroid on irc.libera.chat\n"
+		                "  or report the bug on our tracker at  https://bugs.freedroid.org/\n"
 		                "\n"
 		                "Thank you!\n");
 	}

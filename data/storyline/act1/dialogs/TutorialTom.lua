@@ -1056,7 +1056,7 @@ return {
 		text = _"Shops?",
 		code = function()
 			Npc:says(_"Some people are willing to trade items and circuits with you.")
-			--Npc:says(_"Although, if you have too many circuits, they will charge you a bit more.") http://rb.freedroid.org/r/1327/
+			--Npc:says(_"Although, if you have too many circuits, they will charge you a bit more.") https://rb.freedroid.org/r/1327/
 			Npc:says(_"Most are willing to buy whatever you have, at a discounted price.")
 			Npc:says(_"There are also some automated vending machines, that dispense small items.") -- but these cannot buy from you.") -- to be implemented
 			hide("node61") show("node62")

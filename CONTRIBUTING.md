@@ -23,7 +23,7 @@ The more coders the more new features and bug fixes. So if you like FreedroidRPG
 
 .
 
-By all means, you should also check http://www.freedroid.org/dev-section/
+By all means, you should also check https://www.freedroid.org/dev-section/
 since it is more likely to be up-to-date.
 
 .
@@ -34,8 +34,8 @@ Finally, remember that no contribution is too small to be interesting. :)
 
 Find us at :
 
-* `Website       ................ http://www.freedroid.org/`
-* `IRC channel   ................ #freedroid on irc.freenode.net or http://webchat.freenode.net/?channels=freedroid`
+* `Website       ................ https://www.freedroid.org/`
+* `IRC channel   ................ #freedroid on irc.libera.chat or https://web.libera.chat/?channels=freedroid`
 * `Mailing list  ................ freedroid-discussion@lists.sourceforge.net`
 * `Gitlab project page   ........ https://gitlab.com/freedroid/freedroid-src`
 * `Translation   ................ https://www.transifex.com/arctic-games/freedroid-rpg/`

@@ -75,7 +75,7 @@ For the takeover game, you can use the mouse wheel or the cursor keys.
 
 You may be interested in playing the Tutorial which you can access from the main menu.
 
-If you are stuck and need help, feel free to come to #freedroid on irc.freenode.net and ask for help.
+If you are stuck and need help, feel free to come to #freedroid on irc.libera.chat and ask for help.
 
 That is all, have a nice game.
 

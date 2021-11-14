@@ -69,8 +69,8 @@ We do not accept merge requests, but we welcome you to submit all your contribut
 | :---------------------------------------- | :--------------------------------------------- | :-------: |
 | Side-Scrolling/Arcade Games, Role-Playing | GNU General Public License version 2.0 (GPLv2) | <a><img alt="bsd" src="https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/platforms/bsd.png"></a><a><img alt="linux" src="https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/platforms/linux.png"></a><a><img alt="mac" src="https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/platforms/mac.png"></a><a><img alt="windows" src="https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/platforms/windows.png"></a>
 
-[WWW]: http://www.freedroid.org
-[RB]: http://rb.freedroid.org
+[WWW]: https://www.freedroid.org
+[RB]: https://rb.freedroid.org
 [BSD]: https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/platforms/bsd.png
 [LIN]: https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/platforms/linux.png
 [MAC]: https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/platforms/mac.png

@@ -214,7 +214,7 @@ return {
 			Npc:says(_"Oh, wait, you cheated, didn't you?")
 			Npc:says(_"There is no way we can have lame cheaters in the Red Guard, forget about it!")
 			Npc:says(_"However, if you did in fact NOT cheat, please tell the developers how you got so much money so they can fix it. :)")
-			Npc:says(_"Contact information can be found at http://www.freedroid.org/Contact")
+			Npc:says(_"Contact information can be found at https://www.freedroid.org/Contact")
 			hide("node9")
 			Tux:del_gold(1000000)
 		end,

@@ -374,7 +374,7 @@ char usage_string[] = ""
 "                                                 graphicsloading | mapgraph\n"
 "\n"
 "Please report bugs either by entering them into the bug tracker on our website at:\n\n"
-"http://bugs.freedroid.org\n\n"
+"https://bugs.freedroid.org\n\n"
 "or by sending an e-mail to:\n\n"
 "freedroid-discussion AT lists.sourceforge.net\n\n"
 "For more information and known issues please see README.\n"
@@ -995,7 +995,7 @@ void InitFreedroid(int argc, char **argv)
 		blit_background("startup1.jpg");
 		alert_window(_("You are playing a Release Candidate.\n"
 		               "Strange bugs may still be present in the game.\n"
-		               "Please report any issues you find to our bugtracker at http://bugs.freedroid.org/\n"
+		               "Please report any issues you find to our bugtracker at https://bugs.freedroid.org/\n"
 		               "Thank you for helping us test the game.\n\nGood luck!\n"));
 	}
 }

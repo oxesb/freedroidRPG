@@ -141,7 +141,7 @@ be used directly as a wiki page. If one wishes to view the data, perform the fol
 	- this will set the value of modWPCommon.sandbox to "true" and disable some wiki conversions
 2) open resulting doc/wiki/wiki.d/Doc.* file
 3) copy everything after "text=" and before "time="
-4) open the page http://www.freedroid.org/pmwiki/pmwiki.php?n=Main.WikiSandbox?action=edit in your browser
+4) open the page https://www.freedroid.org/pmwiki/pmwiki.php?n=Main.WikiSandbox?action=edit in your browser
 	- FDRPG pmwiki sandbox page in edit mode
 5) paste into the sandbox page text box
 6) select "preview" button to view resulting wiki page

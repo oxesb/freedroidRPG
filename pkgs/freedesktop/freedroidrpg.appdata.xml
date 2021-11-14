@@ -55,9 +55,9 @@
       <caption>A view from the Town's bar</caption>
     </screenshot>
   </screenshots>
-  <url type="homepage">http://www.freedroid.org/</url>
-  <url type="bugtracker">http://bugs.freedroid.org</url>
-  <url type="help">http://www.freedroid.org/player-section</url>
+  <url type="homepage">https://www.freedroid.org/</url>
+  <url type="bugtracker">https://bugs.freedroid.org</url>
+  <url type="help">https://www.freedroid.org/player-section</url>
   <url type="translate">https://www.transifex.com/arctic-games/freedroid-rpg/</url>
   <developer_name>The FreedroidRPG Team</developer_name>
   <update_contact>contact_at_freedroid.org</update_contact>
