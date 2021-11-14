@@ -343,11 +343,32 @@ static void decode_dimensions(level *loadlevel, char *DataPointer)
 	// Note: if another decoding part is added, do not forget to comment out the 2 lines
 	// above...
 
+	if (loadlevel->xlen < 10) {
+		error_message(__FUNCTION__,
+		              "A map/level line has not enough tiles (%d). The savegame is probably corrupted.\n"
+		              "Sorry, but FreedroidRPG will refuse to load this map.",
+		              PLEASE_INFORM | IS_FATAL, loadlevel->xlen);
+	}
+
+	if (loadlevel->xlen >= MAX_MAP_LINES) {
+		error_message(__FUNCTION__,
+		              "A map/level line has more tiles (%d) than allowed by the constant MAX_MAP_LINES in defs.h.\n"
+		              "Sorry, but unless this constant is raised, FreedroidRPG will refuse to load this map.",
+		              PLEASE_INFORM | IS_FATAL, loadlevel->xlen);
+	}
+
+	if (loadlevel->ylen < 10) {
+		error_message(__FUNCTION__,
+	                  "A map/level has not enough map lines (%d). The savegame is probably corrupted.\n"
+	                  "Sorry, but FreedroidRPG will refuse to load this map.",
+		              PLEASE_INFORM | IS_FATAL, loadlevel->ylen);
+	}
+
 	if (loadlevel->ylen >= MAX_MAP_LINES) {
-		error_message(__FUNCTION__, "\
-A map/level in FreedroidRPG which was supposed to load has more map lines than allowed\n\
-for a map/level as by the constant MAX_MAP_LINES in defs.h.\n\
-Sorry, but unless this constant is raised, FreedroidRPG will refuse to load this map.", PLEASE_INFORM | IS_FATAL);
+		error_message(__FUNCTION__,
+		              "A map/level has more map lines (%d) than allowed by the constant MAX_MAP_LINES in defs.h.\n"
+		              "Sorry, but unless this constant is raised, FreedroidRPG will refuse to load this map.",
+		              PLEASE_INFORM | IS_FATAL, loadlevel->ylen);
 	}
 }
 
@@ -831,22 +852,22 @@ static char *decode_map(level *loadlevel, char *data)
 
 		/* Get the next line */
 		unsigned int nlpos = 0;
-		while (map_begin[curlinepos + nlpos] != '\n' && (map_begin + curlinepos + nlpos <= map_end))
+		while (map_begin[curlinepos + nlpos] != '\n' && (map_begin + curlinepos + nlpos < map_end))
 			nlpos++;
 
-		if (nlpos > (200*10*4)) { // Enough room for a width of 200 tiles on 10 layers
+		if (nlpos > MAX_MAP_LINE_LENGTH) { // Enough room for a width of 200 tiles on 10 layers
 			error_message(__FUNCTION__,
 			              "A very long line has been detected in a map data of the savegame.\n"
-			              "Line length: %d chars.\n"
+			              "Line length: %d chars - Max length: %d chars\n"
 			              "That savegame is probably corrupted, we do not want to load it.",
-			              IS_FATAL, nlpos);
+						  PLEASE_INFORM | IS_FATAL, nlpos, MAX_MAP_LINE_LENGTH);
 		}
 		if (nlpos != (loadlevel->xlen * loadlevel->floor_layers * 4)) {
 			error_message(__FUNCTION__,
 			              "A line with a wrong length has been detected in a map data of the savegame.\n"
-			              "Line length: %d chars. Should be: %d (xlen: %d - nb of layers: %d) \n"
+			              "Expected length: %d (due to xlen: %d and #layers: %d) - Actual length: %d chars.\n"
 			              "That savegame is probably corrupted, we do not want to load it.",
-			              IS_FATAL, nlpos, loadlevel->xlen * loadlevel->floor_layers * 4, loadlevel->xlen, loadlevel->floor_layers);
+						  PLEASE_INFORM | IS_FATAL, loadlevel->xlen * loadlevel->floor_layers * 4, loadlevel->xlen, loadlevel->floor_layers, nlpos);
 		}
 
 		char *this_line = (char *)MyMalloc(nlpos+1);
@@ -873,14 +894,20 @@ static char *decode_map(level *loadlevel, char *data)
 			}
 		}
 
-		free(this_line);
-
 		// Now the old text pointer can be replaced with a pointer to the
 		// correctly assembled struct...
-		//
+
 		loadlevel->map[i] = Buffer;
 
-		curlinepos += (nlpos+1);
+		free(this_line);
+		curlinepos += nlpos+1;
+		if ((map_begin + curlinepos >= map_end) && ((i+1) != loadlevel->ylen)) {
+			error_message(__FUNCTION__,
+			              "A map data of the savegame has not the right number of lines.\n"
+			              "Expected ylen: %d lines - Actual: %d lines\n"
+			              "That savegame is probably corrupted, we do not want to load it.",
+						  PLEASE_INFORM | IS_FATAL, loadlevel->ylen, i+1);
+		}
 	}
 
 	return map_end;
@@ -913,12 +940,12 @@ static char *decode_waypoints(level *loadlevel, char *data)
 		while (wp_begin[curlinepos + nlpos] != '\n' && (wp_begin + curlinepos + nlpos < wp_end))
 			nlpos++;
 
-		if (nlpos > (37+100*4)) { // Enough room for a waypoint with 100 connections
+		if (nlpos > MAX_WP_LINE_LENGTH) { // Enough room for a waypoint with 100 connections
 			error_message(__FUNCTION__,
 			              "A very long line has been detected in a waypoint config of the savegame.\n"
-			              "Line length: %d chars.\n"
+			              "Line length: %d chars - Max length: %d\n"
 			              "That savegame is probably corrupted, we do not want to load it.",
-			              IS_FATAL, nlpos);
+			              IS_FATAL, nlpos, MAX_WP_LINE_LENGTH);
 		}
 
 		char *this_line = (char *)MyMalloc(nlpos+1);

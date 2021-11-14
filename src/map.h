@@ -88,4 +88,9 @@
 #define OBSTACLE_X_POSITION_STRING "x"
 #define OBSTACLE_Y_POSITION_STRING "y"
 
+// Enough room for a width of 200 tiles on 10 layers
+#define MAX_MAP_LINE_LENGTH (200*10*4)
+// Enough room for a waypoint with 100 connections
+#define MAX_WP_LINE_LENGTH (37+100*4)
+
 #endif
