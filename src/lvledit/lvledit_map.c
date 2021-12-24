@@ -72,27 +72,18 @@ static void move_map_labels(level *EditLevel, int x, int y)
  * \param x The displacement on horizontal axis
  * \param y The displacement on vertical axis
  */
-static void move_items(level *EditLevel, int x, int y)
+static void move_items(struct level *edit_lvl, int x, int y)
 {
-
-	int i;
-
-	for (i = 0; i < MAX_ITEMS_PER_LEVEL; i++) {
-		// Get the item
-		item *item = &EditLevel->ItemList[i];
-
-		// Maybe the item entry isn't used at all. That's the simplest
-		// case...: do nothing
-		if (item->type <= (-1))
-			continue;
-
+	struct item *the_item = NULL;
+	int idx = 0;
+	BROWSE_LEVEL_ITEMS(edit_lvl, the_item, idx) {
 		// Move the item
-		item->pos.x += x;
-		item->pos.y += y;
+		the_item->pos.x += x;
+		the_item->pos.y += y;
 		
-		if (!pos_inside_level(item->pos.x, item->pos.y, EditLevel)) {
+		if (!pos_inside_level(the_item->pos.x, the_item->pos.y, edit_lvl)) {
 			// When the item is outside of the map, we must remove it
-			DeleteItem(item);
+			DeleteItem(the_item);
 		}
 	}
 }

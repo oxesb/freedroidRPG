@@ -687,10 +687,11 @@ int check_for_items_to_pickup(level *item_lvl, int item_index)
 {
 	gps item_vpos;
 
-	if (item_lvl == NULL || item_index == -1)
+	if (item_lvl == NULL || item_index == -1 || item_index >= item_lvl->item_list.size)
 		return FALSE;
+	struct item *the_item = dynarray_member(&item_lvl->item_list, item_index, sizeof(struct item));
 
-	update_virtual_position(&item_vpos, &item_lvl->ItemList[item_index].pos, Me.pos.z);
+	update_virtual_position(&item_vpos, &the_item->pos, Me.pos.z);
 
 	if ((calc_distance(Me.pos.x, Me.pos.y, item_vpos.x, item_vpos.y) < ITEM_TAKE_DIST)
 		&& DirectLineColldet(Me.pos.x, Me.pos.y, item_vpos.x, item_vpos.y, Me.pos.z, NULL))
@@ -699,8 +700,8 @@ int check_for_items_to_pickup(level *item_lvl, int item_index)
 	}
 
 	// Set up the combo_action
-	Me.mouse_move_target.x = item_lvl->ItemList[item_index].pos.x;
-	Me.mouse_move_target.y = item_lvl->ItemList[item_index].pos.y;
+	Me.mouse_move_target.x = the_item->pos.x;
+	Me.mouse_move_target.y = the_item->pos.y;
 	Me.mouse_move_target.z = item_lvl->levelnum;
 
 	enemy_set_reference(&Me.current_enemy_target_n, &Me.current_enemy_target_addr, NULL);

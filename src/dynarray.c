@@ -122,8 +122,10 @@ static void dynarray_store_data(struct dynarray *array, int index, void *data, s
  * \param array      Pointer to the dynarray to which the element is to be added.
  * \param data       Pointer to the data to add.
  * \param membersize Size of the data to copy into the array.
+ *
+ * \return Index of the array slot containing the added element
  */
-void dynarray_add(struct dynarray *array, void *data, size_t membersize)
+int dynarray_add(struct dynarray *array, void *data, size_t membersize)
 {
 	if (array->size >= array->capacity) {
 		// If the dynarray was not yet allocated, allocate a default capacity
@@ -132,10 +134,11 @@ void dynarray_add(struct dynarray *array, void *data, size_t membersize)
 	}
 
 	// Copy the data at the tail of the dynarray
-	dynarray_store_data(array, array->size, data, membersize);
-
+	int slot = array->size;
+	dynarray_store_data(array, slot, data, membersize);
 	array->size++;
-	return;
+
+	return slot;
 }
 
 /**
@@ -294,8 +297,7 @@ static void sparse_dynarray_resize(struct sparse_dynarray *array, int membernum,
 		              IS_FATAL, membernum * sizeof(array->used_members[0]));
 	}
 	array->used_members = buffer;
-	// set new slots as unused (not really needed since they are after the
-	// last used slot, but it can prevent a potential bug)
+	// Set new slots as unused. Needed if the resize is due to a call from sparse_dynarray_set()
 	memset(&array->used_members[array->size], 0, (membernum - array->size) * sizeof(array->used_members[0]));
 }
 
@@ -308,8 +310,10 @@ static void sparse_dynarray_resize(struct sparse_dynarray *array, int membernum,
  * \param array      Pointer to the sparse dynarray to which the element is to be added.
  * \param data       Pointer to the data to add.
  * \param membersize Size of the data to copy into the array.
+ *
+ * \return Index of the array slot containing the added element
  */
-void sparse_dynarray_add(struct sparse_dynarray *array, void *data, size_t membersize)
+int sparse_dynarray_add(struct sparse_dynarray *array, void *data, size_t membersize)
 {
 	int slot_index = -1;
 
@@ -338,7 +342,39 @@ void sparse_dynarray_add(struct sparse_dynarray *array, void *data, size_t membe
 	dynarray_store_data((struct dynarray *)array, slot_index, data, membersize);
 	array->used_members[slot_index] = TRUE;
 
-	return;
+	return slot_index;
+}
+
+/**
+ * \brief Set an element into a slot of a sparse dynamic array. This function will extend the array capacity as required.
+ *
+ * \details The element is stored in the 'index' slot.
+ *          If the size of the sparse dynarray is less than the index,
+ *          the sparse dynarray is resizeed.
+ *
+ * \param array      Pointer to the sparse dynarray to which the element is to be added.
+ * \param index      Index of the slot to be filled with the data.
+ * \param data       Pointer to the data to add.
+ * \param membersize Size of the data to copy into the array.
+ */
+void sparse_dynarray_set(struct sparse_dynarray *array, int index, void *data, size_t membersize)
+{
+	// If the array is smaller than the index, resize it
+	if (array->size <= index) {
+		// compute the needed capacity and resize the array if needed
+		if (array->capacity <= index) {
+			int needed_capacity = (array->capacity) ? array->capacity : 8;
+			while (needed_capacity <= index) needed_capacity *= 2;
+			sparse_dynarray_resize(array, needed_capacity, membersize);
+		}
+		// During a resize, the new slots are marked as unused, so we only
+		// need to set the new size of the array
+		array->size = index + 1;
+	}
+
+	// Copy the data in the free slot and mark the slot as being used
+	dynarray_store_data((struct dynarray *)array, index, data, membersize);
+	array->used_members[index] = TRUE;
 }
 
 /**

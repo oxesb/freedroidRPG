@@ -782,10 +782,7 @@ static char *decode_item_section(level *loadlevel, char *data)
 	char *ItemsSectionEnd;
 
 	// First we initialize the items arrays with 'empty' information
-	//
-	for (i = 0; i < MAX_ITEMS_PER_LEVEL; i++) {
-		init_item(&loadlevel->ItemList[i]);
-	}
+	dynarray_init(&loadlevel->item_list, 10, sizeof(struct item));
 
 	if (loadlevel->random_dungeon && !loadlevel->dungeon_generated)
 		return data;
@@ -809,8 +806,10 @@ static char *decode_item_section(level *loadlevel, char *data)
 			NextItemPointer = strstr(ItemPointer + 1, ITEM_ID_STRING);
 			if (NextItemPointer)
 				NextItemPointer[0] = 0;
-			ReadInOneItem(ItemPointer, ItemsSectionEnd, &(loadlevel->ItemList[i]));
-			loadlevel->ItemList[i].pos.z = loadlevel->levelnum;
+			struct item new_item;
+			ReadInOneItem(ItemPointer, ItemsSectionEnd, &new_item);
+			new_item.pos.z = loadlevel->levelnum;
+			dynarray_add(&loadlevel->item_list, &new_item, sizeof(struct item));
 			if (NextItemPointer)
 				NextItemPointer[0] = ITEM_ID_STRING[0];
 		}
@@ -1289,10 +1288,10 @@ void free_ship_level(level *lvl)
 	lvl->random_droids.types_size = 0;
 
 	// Items
-	for (int w = 0; w < MAX_ITEMS_PER_LEVEL; w++) {
-		if (lvl->ItemList[w].type != -1) {
-			delete_upgrade_sockets(&(lvl->ItemList[w]));
-		}
+	struct item *the_item = NULL;
+	int w = 0;
+	BROWSE_LEVEL_ITEMS(lvl, the_item, w) {
+		delete_upgrade_sockets(the_item);
 	}
 
 	free(lvl);
@@ -1497,20 +1496,15 @@ static void WriteOutOneItem(struct auto_string *shipstr, item *ItemToWriteOut)
 	autostr_append(shipstr, "\n");
 }
 
-static void EncodeItemSectionOfThisLevel(struct auto_string *shipstr, level *Lev)
+static void encode_level_items_section(struct auto_string *shipstr, struct level *lvl)
 {
-	int i;
-
 	autostr_append(shipstr, "%s\n", ITEMS_SECTION_BEGIN_STRING);
 
 	// Now we write out the bulk of items infos
-	//
-	for (i = 0; i < MAX_ITEMS_PER_LEVEL; i++) {
-		if (Lev->ItemList[i].type == (-1))
-			continue;
-
-		WriteOutOneItem(shipstr, &(Lev->ItemList[i]));
-
+	struct item *the_item = NULL;
+	int i = 0;
+	BROWSE_LEVEL_ITEMS(lvl, the_item, i) {
+		WriteOutOneItem(shipstr, the_item);
 	}
 
 	autostr_append(shipstr, "%s\n", ITEMS_SECTION_END_STRING);
@@ -1715,7 +1709,7 @@ jump target west: %d\n", LEVEL_HEADER_LEVELNUMBER, lvl->levelnum,
 
 		encode_map_labels(shipstr, lvl);
 
-		EncodeItemSectionOfThisLevel(shipstr, lvl);
+		encode_level_items_section(shipstr, lvl);
 
 		encode_obstacle_extensions(shipstr, lvl);
 

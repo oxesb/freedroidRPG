@@ -410,15 +410,9 @@ static void select_waypoint_on_tile(int x, int y)
 
 static void select_item_on_tile(int x, int y)
 {
-	int i;
-
-	for (i = 0; i < MAX_ITEMS_PER_LEVEL; i++) {
-		// Get the item
-		struct item *it = &EditLevel()->ItemList[i];
-
-		if (it->type == -1)
-			continue;
-
+	struct item *it = NULL;
+	int idx = 0;
+	BROWSE_LEVEL_ITEMS(EditLevel(), it, idx) {
 		if ((it->pos.x - x) >= 0 && (it->pos.x - x) <= 1 && (it->pos.y - y) >= 0 && (it->pos.y - y) <= 1) {
 			if (!element_in_selection(it)) {
 				add_object_to_list(&selected_elements, it, OBJECT_ITEM);
@@ -820,14 +814,11 @@ static void end_drag_drop()
 
 static int level_editor_number_of_marked_items()
 {
-	int i, num = 0;
+	int num = 0;
 
-	for (i = 0; i < MAX_ITEMS_PER_LEVEL; i++) {
-		struct item *it = &EditLevel()->ItemList[i];
-
-		if (it->type == -1)
-			continue;
-
+	struct item *it = NULL;
+	int i = 0;
+	BROWSE_LEVEL_ITEMS(EditLevel(), it, i) {
 		if ((fabsf(state.rect_start.x - it->pos.x) <= 0.5) && (fabsf(state.rect_start.y - it->pos.y) <= 0.5)) {
 			num++;
 		}
@@ -881,30 +872,24 @@ static void level_editor_cycle_marked_obstacle()
 
 static void level_editor_cycle_marked_item()
 {
-	item *it;
-	int i, j;	
-
 	if (state.single_tile_mark_index >= level_editor_number_of_marked_items()) {
 		state.single_tile_mark_index = 0;
 	}
 
-	for (i = 0,j = 0; i < MAX_ITEMS_PER_LEVEL; i++) {
-		it = &EditLevel()->ItemList[i];
+	struct item *it = NULL;
+	int i = 0;
+	int idx = 0;
 
-		if (it->type == -1)
-			continue;
-
+	BROWSE_LEVEL_ITEMS(EditLevel(), it, i) {
 		if ((fabsf(state.rect_start.x - it->pos.x) <= 0.5) && (fabsf(state.rect_start.y- it->pos.y) <= 0.5)) {
-			if (state.single_tile_mark_index == j) {
+			if (state.single_tile_mark_index == idx) {
+				add_object_to_list(&selected_elements, it, OBJECT_ITEM);
 				break;
 			}
-
-			j++;
+			idx++;
 		}
  
 	}
-
-	add_object_to_list(&selected_elements, it, OBJECT_ITEM);
 }
 
 void level_editor_cycle_marked_object()

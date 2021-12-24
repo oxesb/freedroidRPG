@@ -298,13 +298,13 @@ void UpdateCountersForThisFrame()
 	
 	BROWSE_VISIBLE_LEVELS(vis_lvl, n) {
 		level *lvl = vis_lvl->lvl_pointer;
-		for (i = 0; i < MAX_ITEMS_PER_LEVEL; i++) {
-			if (lvl->ItemList[i].type == (-1))
-				continue;
-			if (lvl->ItemList[i].throw_time > 0)
-				lvl->ItemList[i].throw_time += latest_frame_time;
-			if (lvl->ItemList[i].throw_time > (M_PI / 3.0))
-				lvl->ItemList[i].throw_time = 0;
+		struct item *the_item = NULL;
+		int i = 0;
+		BROWSE_LEVEL_ITEMS(lvl, the_item, i) {
+			if (the_item->throw_time > 0)
+				the_item->throw_time += latest_frame_time;
+			if (the_item->throw_time > (M_PI / 3.0))
+				the_item->throw_time = 0;
 		}
 	}
 	

@@ -115,7 +115,6 @@ enum {
 #define MAX_OBSTACLES_ON_MAP 4000
 
 #define FLOOR_TILES_VISIBLE_AROUND_TUX ((GameConfig . screen_width >= 1024 ? 13 : GameConfig . screen_width >= 800 ? 9 : 7))
-#define MAX_ITEMS_PER_LEVEL 300
 #define MAX_ITEMS_IN_INVENTORY 100
 #define MAX_ITEMS_IN_NPC_SHOPLIST 200
 #define INVENTORY_GRID_WIDTH 10

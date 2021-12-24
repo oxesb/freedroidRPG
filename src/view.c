@@ -1194,20 +1194,16 @@ static void insert_blasts_into_blitting_list(int mask)
  */
 static void insert_thrown_items_into_blitting_list(int mask)
 {
-	int i;
 	struct visible_level *vis_lvl, *n;
-	item *it;
 
 	int xmin, xmax, ymin, ymax;
 	get_floor_boundaries(mask, &ymin, &ymax, &xmin, &xmax);
 	
 	BROWSE_VISIBLE_LEVELS(vis_lvl, n) {
 		level *lvl = vis_lvl->lvl_pointer;
-		for (i = 0; i < MAX_ITEMS_PER_LEVEL; i++) {
-			it = &lvl->ItemList[i];
-			
-			if (it->type == -1)
-				continue;
+		struct item *it = NULL;
+		int i = 0;
+		BROWSE_LEVEL_ITEMS(lvl, it, i) {
 
 			update_virtual_position(&it->virt_pos, &it->pos, Me.pos.z);
 
@@ -1531,7 +1527,6 @@ static void show_obstacle_labels(int mask)
  */
 static void blit_all_item_slots(int mask)
 {
-	int i;
 	struct visible_level *vis_lvl, *n;
 	
 	if (mask & OMIT_ITEMS_LABEL) {
@@ -1541,39 +1536,35 @@ static void blit_all_item_slots(int mask)
 
 	BROWSE_VISIBLE_LEVELS(vis_lvl, n) {
 		
-		level *item_level = vis_lvl->lvl_pointer;
-
-		for (i = 0; i < MAX_ITEMS_PER_LEVEL; i++) {
-			// We don't work with unused item slots...
-			//
-			if (item_level->ItemList[i].type == (-1))
-				continue;
-	
-			// Now we check if the cursor is on that slot, because then the
+		struct level *item_level = vis_lvl->lvl_pointer;
+		struct item *the_item = NULL;
+		int i = 0;
+		BROWSE_LEVEL_ITEMS(item_level, the_item, i) {
+			// Check if the cursor is on that slot, because then the
 			// background of the slot will be highlighted...
-			//
-			if (MouseCursorIsInRect(&(item_level->ItemList[i].text_slot_rectangle), GetMousePos_x(), GetMousePos_y()))
-				draw_rectangle(&item_level->ItemList[i].text_slot_rectangle, 0, 0, 153, 100);
+
+			if (MouseCursorIsInRect(&the_item->text_slot_rectangle, GetMousePos_x(), GetMousePos_y()))
+				draw_rectangle(&the_item->text_slot_rectangle, 0, 0, 153, 100);
 			else {
-				if ((item_level->ItemList[i].text_slot_rectangle.x + item_level->ItemList[i].text_slot_rectangle.w <= 0) ||
-					(item_level->ItemList[i].text_slot_rectangle.y + item_level->ItemList[i].text_slot_rectangle.h <= 0) ||
-					(item_level->ItemList[i].text_slot_rectangle.x >= GameConfig.screen_width) ||
-					(item_level->ItemList[i].text_slot_rectangle.y >= GameConfig.screen_height))
+				if ((the_item->text_slot_rectangle.x + the_item->text_slot_rectangle.w <= 0) ||
+					(the_item->text_slot_rectangle.y + the_item->text_slot_rectangle.h <= 0) ||
+					(the_item->text_slot_rectangle.x >= GameConfig.screen_width) ||
+					(the_item->text_slot_rectangle.y >= GameConfig.screen_height))
 					continue;
 
-				draw_rectangle(&item_level->ItemList[i].text_slot_rectangle, 0, 0, 0, BACKGROUND_TEXT_RECT_ALPHA);
+				draw_rectangle(&the_item->text_slot_rectangle, 0, 0, 0, BACKGROUND_TEXT_RECT_ALPHA);
 			}
 	
 			// Finally it's time to insert the font into the item slot.  We
 			// use the item name, but currently font color is not adapted for
 			// special item properties...
-			//
-			put_string(FPS_Display_Font, item_level->ItemList[i].text_slot_rectangle.x,
-					  item_level->ItemList[i].text_slot_rectangle.y, D_(item_specs_get_name(item_level->ItemList[i].type)));
+
+			put_string(FPS_Display_Font, the_item->text_slot_rectangle.x,
+					  the_item->text_slot_rectangle.y, D_(item_specs_get_name(the_item->type)));
 	
 		}
 	}
-};				// void blit_all_item_slots ( void )
+}
 
 /**
  *
@@ -1581,8 +1572,6 @@ static void blit_all_item_slots(int mask)
  */
 int item_slot_position_blocked(item * given_item, int item_slot)
 {
-	int i;
-	item *cur_item;
 	struct visible_level *vis_lvl, *n;
 	int item_level_reached = FALSE;
 	int last_slot_to_check;
@@ -1599,14 +1588,14 @@ int item_slot_position_blocked(item * given_item, int item_slot)
 			item_level_reached = TRUE;
 			last_slot_to_check = item_slot;
 		} else {
-			last_slot_to_check = MAX_ITEMS_PER_LEVEL;
+			last_slot_to_check = item_level->item_list.size;
 		}
 		
-		for (i = 0; i < last_slot_to_check + 1; i++) {
-			cur_item = &(item_level->ItemList[i]);
-	
-			if (cur_item->type == (-1))
-				continue;
+		struct item *cur_item = NULL;;
+		int i = 0;
+		BROWSE_LEVEL_ITEMS(item_level, cur_item, i) {
+			if (i >= last_slot_to_check + 1)
+				break;
 	
 			if (MouseCursorIsInRect(&(cur_item->text_slot_rectangle),
 						given_item->text_slot_rectangle.x, given_item->text_slot_rectangle.y)) {
@@ -1646,7 +1635,7 @@ int item_slot_position_blocked(item * given_item, int item_slot)
 	}
 	
 	return (FALSE);
-};				// void item_slot_position_blocked ( int x , int y , int last_slot_to_check )
+}
 
 /**
  * Each item is lying on the floor.  But that means some of the items,
@@ -1661,24 +1650,18 @@ int item_slot_position_blocked(item * given_item, int item_slot)
  */
 void update_item_text_slot_positions(void)
 {
-	int i;
 	struct font *BFont_to_use = FPS_Display_Font;
-	item *cur_item;
 	struct visible_level *vis_lvl, *n;
 	
 	BROWSE_VISIBLE_LEVELS(vis_lvl, n) {
 		
 		level *item_level = vis_lvl->lvl_pointer;
-	
-		for (i = 0; i < MAX_ITEMS_PER_LEVEL; i++) {
-			cur_item = &(item_level->ItemList[i]);
-	
-			if (cur_item->type == (-1))
-				continue;
-	
+
+		struct item *cur_item = NULL;
+		int i = 0;
+		BROWSE_LEVEL_ITEMS(item_level, cur_item, i) {
 			// We try to use a text rectangle that is close to the
 			// actual item...
-			//
 			update_virtual_position(&cur_item->virt_pos, &cur_item->pos, Me.pos.z);
 			cur_item->text_slot_rectangle.h = get_font_height(BFont_to_use);
 			cur_item->text_slot_rectangle.w = text_width(BFont_to_use, D_(item_specs_get_name(cur_item->type)));
@@ -1706,7 +1689,6 @@ void update_item_text_slot_positions(void)
 				    	
 					// Maybe just a hundred left or right would also do...  but if it
 					// doesn't, we'll undo the changes made.
-					//
 					Sint16 tmp = cur_item->text_slot_rectangle.x;
 					
 					cur_item->text_slot_rectangle.x += 100;
@@ -1723,7 +1705,7 @@ void update_item_text_slot_positions(void)
 			}
 		}
 	}
-};				// void update_item_text_slot_positions ( void )
+}
 
 void draw_grid_on_the_floor(int mask)
 {

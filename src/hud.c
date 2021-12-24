@@ -378,9 +378,10 @@ static void prepare_text_window_content(struct auto_string *str, SDL_Rect *rect)
 		
 		if (index_of_floor_item_below_mouse_cursor != (-1) && obj_lvl != NULL) {
 			gps item_vpos;
-			update_virtual_position(&item_vpos, &(obj_lvl->ItemList[index_of_floor_item_below_mouse_cursor].pos), Me.pos.z);
+			struct item *the_item = dynarray_member(&obj_lvl->item_list, index_of_floor_item_below_mouse_cursor, sizeof(struct item));
+			update_virtual_position(&item_vpos, &the_item->pos, Me.pos.z);
 			if (item_vpos.x != -1) {
-				append_item_description(str, &(obj_lvl->ItemList[index_of_floor_item_below_mouse_cursor]));
+				append_item_description(str, the_item);
 				rect->x =	translate_map_point_to_screen_pixel_x(item_vpos.x, item_vpos.y) + 80;
 				rect->y =	translate_map_point_to_screen_pixel_y(item_vpos.x, item_vpos.y) - 30;
 			}

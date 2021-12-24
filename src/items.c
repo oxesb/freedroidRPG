@@ -294,6 +294,28 @@ static enum item_quality random_item_quality()
 }
 
 /**
+ * Find a free item's slot, or create one, in the item array of the drop level.
+ */
+
+static struct item *find_free_floor_index(struct level* drop_level)
+{
+	// Search for an unused item's slot
+	for (int i = 0; i < drop_level->item_list.size; i++) {
+		struct item *it = dynarray_member(&drop_level->item_list, i, sizeof(struct item));
+		if (it->type == -1) {
+			return it;
+		}
+	}
+
+	// No unused slot, create one
+	struct item new_item;
+	init_item(&new_item);
+
+	int item_idx = dynarray_add(&drop_level->item_list, &new_item, sizeof(struct item));
+	return dynarray_member(&drop_level->item_list, item_idx, sizeof(struct item));
+}
+
+/**
  * \brief Initializes the properties of the item.
  *
  * Sets the durability, armor rating, and other such properties based on the
@@ -587,31 +609,19 @@ void DamageProtectiveEquipment()
  * the floor, but not visible yet of course, cause it still gets the 
  * held in hand attribute.
  */
-static void MakeHeldFloorItemOutOf(item * SourceItem)
+static void MakeHeldFloorItemOutOf(struct item * source_item)
 {
-	int i;
+	struct item *item_free_slot = find_free_floor_index(CURLEVEL());
 
-	for (i = 0; i < MAX_ITEMS_PER_LEVEL; i++) {
-		if (CURLEVEL()->ItemList[i].type == (-1))
-			break;
-	}
-	if (i >= MAX_ITEMS_PER_LEVEL) {
-		DebugPrintf(0, "\n No free position to drop item!!! ");
-		i = 0;
-		Terminate(EXIT_FAILURE);
-	}
-	// Now we enter the item into the item list of this level
-	//
-	CopyItem(SourceItem, &(CURLEVEL()->ItemList[i]));
+	// Set the item's properties
+	CopyItem(source_item, item_free_slot);
+	item_free_slot->pos.x = Me.pos.x;
+	item_free_slot->pos.y = Me.pos.y;
+	item_free_slot->pos.z = Me.pos.z;
 
-	CURLEVEL()->ItemList[i].pos.x = Me.pos.x;
-	CURLEVEL()->ItemList[i].pos.y = Me.pos.y;
-	CURLEVEL()->ItemList[i].pos.z = Me.pos.z;
-
-	item_held_in_hand = &(CURLEVEL()->ItemList[i]);
-
-	DeleteItem(SourceItem);
-};				// void MakeHeldFloorItemOutOf( item* SourceItem )
+	item_held_in_hand = item_free_slot;
+	DeleteItem(source_item);
+}
 
 /**
  * This function DELETES an item from the source location.
@@ -1172,56 +1182,28 @@ int ItemCanBeDroppedInInv(int ItemType, int InvPos_x, int InvPos_y)
 };				// int ItemCanBeDroppedInInv ( int ItemType , int InvPos_x , int InvPos_y )
 
 /**
- * Find a free index in the item array of the drop level.
- */
-static int find_free_floor_index(level* drop_level)
-{
-	int i;
-	for (i = 0; i < MAX_ITEMS_PER_LEVEL; i++) {
-		if (drop_level->ItemList[i].type == -1) {
-			return i;
-		}
-	}
-
-	// We did not find a free index.
-	error_message(__FUNCTION__, "The item array for level %d was full.",
-	            PLEASE_INFORM, drop_level->levelnum);
-	return -1;
-}
-
-/**
  * Drop an item to the floor in the given location.  No checks are done to
  * verify this location is unobstructed or otherwise reasonable.
  */
 item *drop_item(item *item_pointer, float x, float y, int level_num)
 {
-	level *drop_level = curShip.AllLevels[level_num];
+	struct level *drop_level = curShip.AllLevels[level_num];
 
-	int index = find_free_floor_index(drop_level);
-
-	// Cancel the drop if we did not find an empty index to use.
-	if (index == -1) {
-		return NULL;
-	}
-
-	// Create the item
-	init_item(&(drop_level->ItemList[index]));
-	MoveItem(item_pointer, &(drop_level->ItemList[index]));
-
-	// Place item on level
-	drop_level->ItemList[index].inventory_position.x = -1;
-	drop_level->ItemList[index].inventory_position.y = -1;
-	drop_level->ItemList[index].pos.x = x;
-	drop_level->ItemList[index].pos.y = y;
-	drop_level->ItemList[index].pos.z = level_num;
-	drop_level->ItemList[index].throw_time = 0.01;  // something > 0
+	struct item *item_free_slot = find_free_floor_index(drop_level);
+	MoveItem(item_pointer, item_free_slot);
+	item_free_slot->inventory_position.x = -1;
+	item_free_slot->inventory_position.y = -1;
+	item_free_slot->pos.x = x;
+	item_free_slot->pos.y = y;
+	item_free_slot->pos.z = level_num;
+	item_free_slot->throw_time = 0.01;  // something > 0
 
 	timeout_from_item_drop = 0.4;
 
 	if (item_pointer == item_held_in_hand)
 		item_held_in_hand = NULL;
 
-	return &(drop_level->ItemList[index]);
+	return item_free_slot;
 }
 
 /**
@@ -1474,10 +1456,10 @@ void drop_held_item_to_inventory(void)
  *
  *
  */
+
 int get_floor_item_index_under_mouse_cursor(level **item_lvl)
 {
 	gps mouse_pos;
-	int i;
 
 	// no interaction with the game when the world is frozen
 	if (world_frozen())
@@ -1485,28 +1467,29 @@ int get_floor_item_index_under_mouse_cursor(level **item_lvl)
 
 	// In the case that X was pressed, we don't use the item positions but rather
 	// we use the item slot rectangles from the item texts.
-	//
+
 	if (XPressed() || GameConfig.show_item_labels) {
 		struct visible_level *vis_lvl, *n;
 		
 		BROWSE_VISIBLE_LEVELS(vis_lvl, n) {	
 			level *lvl = vis_lvl->lvl_pointer;
 
-			for (i = 0; i < MAX_ITEMS_PER_LEVEL; i++) {
-				if (lvl->ItemList[i].type == (-1))
-					continue;
-	
-				if (MouseCursorIsInRect(&(lvl->ItemList[i].text_slot_rectangle), GetMousePos_x(), GetMousePos_y())) {
+			struct item *the_item = NULL;
+			int idx = 0;
+
+			BROWSE_LEVEL_ITEMS(lvl, the_item, idx) {
+				if (MouseCursorIsInRect(&(the_item->text_slot_rectangle), GetMousePos_x(), GetMousePos_y())) {
 					*item_lvl = lvl;
-					return (i);
+					return idx;
 				}
 			}
 		}
 	}
+
 	// If no X was pressed, we only use the floor position the mouse
 	// has pointed to and see if we can find an item that has geographically
 	// that very same (or a similar enough) position.
-	//
+
 	else {
 		mouse_pos.x = translate_pixel_to_map_location(input_axis.x, input_axis.y, TRUE);
 		mouse_pos.y = translate_pixel_to_map_location(input_axis.x, input_axis.y, FALSE);
@@ -1520,14 +1503,14 @@ int get_floor_item_index_under_mouse_cursor(level **item_lvl)
 			level *lvl = vis_lvl->lvl_pointer;
 			update_virtual_position(&virt_mouse_pos, &mouse_pos, lvl->levelnum);
 			
-			for (i = 0; i < MAX_ITEMS_PER_LEVEL; i++) {
-				if (lvl->ItemList[i].type == (-1))
-					continue;
-	
-				if ((fabsf(virt_mouse_pos.x - lvl->ItemList[i].pos.x) < 0.5) &&
-					(fabsf(virt_mouse_pos.y - lvl->ItemList[i].pos.y) < 0.5)) {
+			struct item *the_item = NULL;
+			int idx = 0;
+
+			BROWSE_LEVEL_ITEMS(lvl, the_item, idx) {
+				if ((fabsf(virt_mouse_pos.x - the_item->pos.x) < 0.5) &&
+					(fabsf(virt_mouse_pos.y - the_item->pos.y) < 0.5)) {
 					*item_lvl = lvl;
-					return (i);
+					return idx;
 				}
 			}
 		}
@@ -1623,7 +1606,7 @@ void HandleInventoryScreen(void)
 			// Try to auto-put or auto-equip the item. If it's not possible,
 			// the item will be 'put in hand'.
 			if (check_for_items_to_pickup(item_lvl, item_idx)) {
-				item *it = &item_lvl->ItemList[item_idx];
+				struct item *it = dynarray_member(&item_lvl->item_list, item_idx, sizeof(struct item));
 				if (!try_give_item(it)) {
 					item_held_in_hand = it;
 				}

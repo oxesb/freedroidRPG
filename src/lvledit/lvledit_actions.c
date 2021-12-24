@@ -971,14 +971,7 @@ void CreateNewMapLevel(int level_num)
 	}
 
 	// First we initialize the items arrays with 'empty' information
-	//
-	for (i = 0; i < MAX_ITEMS_PER_LEVEL; i++) {
-		NewLevel->ItemList[i].pos.x = (-1);
-		NewLevel->ItemList[i].pos.y = (-1);
-		NewLevel->ItemList[i].pos.z = (-1);
-		NewLevel->ItemList[i].type = (-1);
-
-	}
+	dynarray_init(&NewLevel->item_list, 10, sizeof(struct item));
 
 	// Initialize obstacle extensions
 	dynarray_init(&NewLevel->obstacle_extensions, 10, sizeof(struct obstacle_extension));

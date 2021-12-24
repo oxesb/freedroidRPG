@@ -268,6 +268,26 @@ void show_inventory_screen(void);
 
 #define BROWSE_LEVELS(lvl) BROWSE_LEVELS_IMPL(lvl, __COUNTER__)
 
+// The BROWWE_LEVEL_ITEMS browse all the item of a level, skipping
+// the unused one.
+// The macro's implementation uses the same strategy as the one used
+// for BROWSE_LEVEL
+
+#define next_valid_item(lvl, it, counter, start) ({ \
+	counter = start; \
+	while (counter < lvl->item_list.size) { \
+		it = dynarray_member(&lvl->item_list, counter, sizeof(struct item)); \
+		if (it->type != -1) break; \
+		counter++; \
+	} \
+	})
+
+#define BROWSE_LEVEL_ITEMS(lvl, it, counter) \
+	for (next_valid_item(lvl, it, counter, 0) ; \
+	     counter < lvl->item_list.size ; \
+	     next_valid_item(lvl, it, counter, counter+1))
+
+
 // light.c 
 void LightRadiusInit(void);
 void LightRadiusClean(void);
@@ -820,14 +840,15 @@ void dynarray_init(struct dynarray *, int, size_t);
 struct dynarray *dynarray_alloc(int, size_t);
 void dynarray_cpy(struct dynarray *, struct dynarray *, size_t);
 void dynarray_free(struct dynarray *);
-void dynarray_add(struct dynarray *, void *, size_t);
+int dynarray_add(struct dynarray *, void *, size_t);
 void dynarray_del(struct dynarray *, int, size_t);
 void dynarray_append(struct dynarray *, struct dynarray *, size_t);
 void *dynarray_member(struct dynarray *, int, size_t);
 void sparse_dynarray_init(struct sparse_dynarray *, int, size_t);
 struct sparse_dynarray *sparse_dynarray_alloc(int, size_t);
 void sparse_dynarray_free(struct sparse_dynarray *);
-void sparse_dynarray_add(struct sparse_dynarray *, void *, size_t);
+int sparse_dynarray_add(struct sparse_dynarray *, void *, size_t);
+void sparse_dynarray_set(struct sparse_dynarray *, int, void *, size_t);
 void sparse_dynarray_del(struct sparse_dynarray *, int, size_t);
 void *sparse_dynarray_member(struct sparse_dynarray *, int, size_t);
 int sparse_dynarray_member_used(struct sparse_dynarray *, int);

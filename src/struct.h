@@ -834,7 +834,16 @@ typedef struct level {
 	int jump_target_west;
 
 	obstacle obstacle_list[MAX_OBSTACLES_ON_MAP];
-	item ItemList[MAX_ITEMS_PER_LEVEL];
+	struct dynarray item_list;  // Should be a sparse_dynarray, because items are
+	                            // frequently added and removed. But several
+	                            // parts of the code set the item's type to -1 to
+	                            // denote that an item slot is no more used. For some
+	                            // entities, such as the inventory, items are stored
+	                            // into fixed C arrays. For some other, such as the
+	                            // level map, there are stored into dynarrays.
+	                            // The same functions are used to handle the items,
+	                            // and thus lot of rewriting is needed to change
+	                            // that "item.type == -1" way of doing.
 
 	struct dynarray obstacle_extensions;
 	struct dynarray map_labels;

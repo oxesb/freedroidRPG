@@ -635,7 +635,7 @@ static void move_tux_towards_intermediate_point(void)
 		case COMBO_ACTION_PICK_UP_ITEM:
 			// If Tux arrived at destination, pick up the item and give it to the player
 			if (check_for_items_to_pickup(lvl, Me.mouse_move_target_combo_action_parameter)) {
-				item *it = &lvl->ItemList[Me.mouse_move_target_combo_action_parameter];
+				struct item *it = dynarray_member(&lvl->item_list, Me.mouse_move_target_combo_action_parameter, sizeof(struct item));
 
 				if (GameConfig.Inventory_Visible) {
 					// Special case: when the inventory screen is open, and there
@@ -1626,7 +1626,7 @@ static void analyze_players_mouse_click()
 			if ((tmp = get_floor_item_index_under_mouse_cursor(&obj_lvl)) != -1) {
 				if (check_for_items_to_pickup(obj_lvl, tmp)) {
 					// The item can be picked up immediately , so give it to the player
-					give_item(&obj_lvl->ItemList[tmp]);
+					give_item(dynarray_member(&obj_lvl->item_list, tmp, sizeof(struct item)));
 					wait_mouseleft_release = TRUE;
 				}
 				return;
