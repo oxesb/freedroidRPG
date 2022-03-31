@@ -9,9 +9,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 1.0RC1\n"
-"Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-30 22:43+0100\n"
+"Project-Id-Version: freedroidrpg 1.0RC2\n"
+"Report-Msgid-Bugs-To: https://www.freedroid.org\n"
+"POT-Creation-Date: 2022-03-31 13:00+0200\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
 "Last-Translator: 231975d40d64bc4f68b60594f3e6fa73, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/arctic-games/teams/9511/ru/)\n"
@@ -3872,7 +3872,7 @@ msgstr "На материк через подземный ход"
 msgid "To Icy Summer Island"
 msgstr "На искусственный остров ледяного лета"
 
-#: data/storyline/act2/events.dat:591 data/storyline/act2/npc_specs.lua:29
+#: data/storyline/act2/events.dat:590 data/storyline/act2/npc_specs.lua:29
 msgid "Colemak"
 msgstr "Colemak"
 
@@ -3974,7 +3974,7 @@ msgstr "Фабрика ОВ, 5 этаж"
 
 #: data/storyline/act2/levels.dat:14743
 msgid "Crew & Harvesting Development Office. North-east: Security Development Office."
-msgstr ""
+msgstr "Офис разработки экипажа и добытчиков. Северо-восток: Офис  разработки службы безопасности."
 
 #: data/storyline/act2/levels.dat:14932
 msgid "RR Factory, Floor 6"
@@ -3982,11 +3982,11 @@ msgstr "Фабрика ОВ, 6 этаж"
 
 #: data/storyline/act2/levels.dat:17301
 msgid "Dispatchment & Signman Offices. Battle droids present. Authorized Access Only!"
-msgstr ""
+msgstr "Офисы путей и знаков. Присутствуют боевые дроидиы. Вход по пропускам! "
 
 #: data/storyline/act2/levels.dat:17304
 msgid "Security Development Office. Sign blinks to spare power. This way for more STAIRS."
-msgstr ""
+msgstr "Офис разработки службы безопасности. Знак мигает для экономии энергии. На этом пути еще больше ЛЕСТНИЦ."
 
 #: data/storyline/act2/levels.dat:17499
 msgid "RR Factory, Floor 7"
@@ -3994,7 +3994,7 @@ msgstr "Фабрика ОВ, 7 этаж"
 
 #: data/storyline/act2/levels.dat:19924
 msgid "Use this stair for Sentinel Dev. Office, Command Dev. Office, Factory Plant and Death."
-msgstr ""
+msgstr "По лестницам к офису разраб. охранников, к офису разраб. команд, к фабрике и к смерти."
 
 #: data/storyline/act2/levels.dat:19927
 msgid "There is nothing on this sign."
@@ -4002,7 +4002,7 @@ msgstr "На этом знаке ничего нет."
 
 #: data/storyline/act2/levels.dat:19930
 msgid "Sentinel and Command devs, we're sorry, but more stairs ahead."
-msgstr ""
+msgstr "Офисы разработки охранников и команд, извините, но впереди еще больше лестниц."
 
 #: data/storyline/act2/levels.dat:19933
 msgid "Signman Office. Hey, it's me! You totally should visit this office, or send us a LETTER!"
@@ -4050,7 +4050,7 @@ msgstr "Поиск в темноте"
 
 #: data/storyline/act2/levels.dat:29946
 msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Management."
-msgstr ""
+msgstr "Эй, вы приблизились к подземному проходу. Пожалуйста убедитесь, что у вы принисли ключи. Администрация ОВ Курортов."
 
 #: data/storyline/act2/levels.dat:29949
 msgid "Blue Marker for Storage Room. Red Marker for Mainland."
@@ -4106,7 +4106,7 @@ msgstr "Оправдание Дворака - Colemak"
 
 #: data/storyline/act2/quests.lua:27
 msgid "Where Am I?"
-msgstr "Кто я?"
+msgstr "Где я?"
 
 #: data/storyline/act2/quests.lua:31
 msgid "Message From An Old Friend"

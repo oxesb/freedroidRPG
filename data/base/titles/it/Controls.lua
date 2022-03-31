@@ -75,7 +75,7 @@ Per la takeover partita, è possibile utilizzare la rotellina del mouse o i tast
 
 Se sei interessato a giocare il Tutorial, è possibile accederelo dal menu principale.
 
-Se si sono bloccati e hai bisogno di aiuto, vieni discutere a #freedroid su IRC.freenode.net e chiedere aiuto.
+If you are stuck and need help, feel free to come to #freedroid on irc.libera.chat and ask for help.
 
 Questo è tutto, buono gioco.
 

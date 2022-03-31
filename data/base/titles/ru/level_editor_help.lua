@@ -40,176 +40,176 @@ FreedroidRPG поставляется со встроенным редактор
     --- Редактирование карты ---
 Всего четыре режима редактирования: редактирование препятствий, редактирование пола, редактирование предметов, правка путей.
 
-The button selected at the lower left indicates the objects you can select or place.
-When a button is selected, and you are in placement mode, the object you will place is indicated by the ribbon at the top of the screen. The selection in the ribbon is divided by tabs immediately underneath.
+Кнопка, выбранная в левом нижнем углу, указывает объекты, которые можно выбрать или разместить.
+Когда кнопка выбрана, и вы находитесь в режиме размещения, объект, который вы разместите, отображается лентой в верхней части экрана. Выделение на ленте разделено вкладками непосредственно под ней.
 
-You can select the obstacle type you want to be placed on the map at the upper object selector. Just click it to select it. Obstacles are divided into groups to provide better overview.
+Вы можете выбрать тип препятствия, который вы хотите разместить на карте в верхнем селекторе объектов. Просто нажмите на него, чтобы выбрать. Препятствия разделены на группы, чтобы обеспечить лучший обзор.
 
-Pressing space, you will enter the selection mode being indicated by the cursor changing. You can only select group of objects represented by the current activated object mode.
-Important note: You will only be able to select things that are included in the currently selected mode. If you are in obstacle mode, you won't be able to select items or floor tiles.
+Нажав пробел, вы войдете в режим выбора, на который указывает изменение курсора. Можно выбрать только группу объектов, представленных текущим активированным режимом объектов.
+Важное примечание: вы сможете выбрать только те вещи, которые включены в текущий выбранный режим. Если вы находитесь в режиме препятствий, вы не сможете выбрать элементы или плитки пола.
 
 
         Режим редактирования препятствий:
 
-In order to select this mode, click on button that says 'Obstacle' of the category selector on the left lower area.
-Having selected an obstacle, just click somewhere on the map to place it at the cursor's position.
-Since clicking is a little imprecise, you can also use your numberpad to place obstacles.
-Click on the leftmost (it shows a small grid) of the five button above category selector to have a grid with numbers displayed. Use left click for switching the grid on and off and right click for changing the grid mode.
-These numbers refer to the numbers of your numberpad if you have one. Pressing '1' will place the obstacle that is highlighted in the object selector at the position of the digit '1' on the purple grid.
-Since placing a line of walls that way is quite inefficient, you can simply hold down the left mouse button and a line of walls is placed as you move the cursor if you have a wall object selected. This works with the most common walls in FreedroidRPG.
-While holding the left mouse button down and placing walls, a click with the right mouse button will remove all the walls you drew after starting to hold down the left mouse button.
-There are some special objects. Glass walls and cracked brick walls, but also barrels and crates can be destroyed with a few strikes, while the latter two may also release items. Chests can be opened and may contain items, too.
-The symbol with the crossed out footsteps is not really an object but pure and invisible blocking area ('collision rectangle'). Collision rectangles are the very core of each object since they prevent you from just walking through them as it possible for waypoints or floor tiles.
+Для того, чтобы выбрать этот режим, нажмите на кнопку, селектора категории на левой нижней области, которая помечена 'препятствие'.
+Выбрав препятствие, просто нажмите где-нибудь на карте, чтобы поместить его в местоположение курсора.
+Поскольку щелчок немного неточен, вы также можете использовать свою цифровую панель для размещения препятствий.
+Нажмите на крайнюю левую (она показывает небольшую сетку) из пяти кнопок над селектором категорий, чтобы получить сетку с отображаемыми номерами. Используйте щелчок левой кнопкой мыши для включения и выключения сетки и щелкните правой кнопкой мыши для изменения режима сетки.
+Эти цифры относятся к номерам вашей цифровой панели, если она у вас есть. Нажатие кнопки '1 ' поместит препятствие, выделенное в селекторе объектов, в место помеченное '1' на фиолетовой сетке.
+Поскольку размещение линии стен таким образом довольно неэффективно, вы можете просто удерживать левую кнопку мыши, и линия стен будет помещена при перемещении курсора, если у вас выбран объект стены. Это работает с наиболее распространенными стенами в FreedroidRPG.
+Если удерживать левую кнопку мыши и размещать стены, щелчок правой кнопкой мыши удалит все стены, которые вы нарисовали после начала удержания левой кнопки мыши.
+Есть некоторые специальные объекты. Стеклянные стены и треснувшие кирпичные стены, а также бочки и ящики могут быть уничтожены несколькими ударами. При этом бочки и ящики могут выбрасывать предметы. Сундуки могут быть открыты и при этом так-же могут выбрасывать предметы.
+Символ с перечеркнутыми шагами на самом деле не объект, а чистая и невидимая блокирующая область ('прямоугольник столкновения'). Прямоугольники столкновения являются самой сердцевиной каждого объекта, так как они мешают вам просто проходить через них. Так-же это возможно для путевых точек или напольных плиток.
 
-            Selecting obstacles
+            Выбор препятствий
 
-Holding down the left mouse button you can select a rectangle of obstacles. After releasing the mouse button, selected obstacles will turn a different color indicating that they are selected. To select obstacles that are not in the range of such a selection rectangle, hold down 'Ctrl' and click the obstacle or select another rectangle of them.
-You may have automatically selected several obstacles with one click. You can switch between the obstacles clicking the icon with the chair and the shelf on it, or pressing 'n'.
-The icon with the trash can delete the selected obstacle.
-You can also cut (Ctrl+x, can also be used to delete obstacles by just not pasting them again ;) ), copy (Ctrl+c) and paste (Ctrl+v) cut or copied obstacles.
-You can move selected obstacles holding down the left shift key while dragging the obstacle around. However, this may be quite imprecise.
+Удерживая левую кнопку мыши, вы можете выбрать прямоугольник препятствий. После отпускания кнопки мыши, выбранные препятствия будут окрашены в другой цвет, указывающий, что они выбраны. Чтобы выбрать препятствия, которые не находятся в области такого прямоугольника выбора, удерживайте клавишу "Ctrl" и щелкните препятствие или выберите другой прямоугольник, включайющий их.
+Возможно, вы автоматически выбрали несколько препятствий одним щелчком мыши. Вы можете переключаться между выбранными препятствиями, щелкнув значок со стулом и полкой на нем, или нажав "n".
+Значок с корзиной позволяет удалить выбранное препятствие.
+Вы также можете вырезать (Ctrl+x, также можно использовать для удаления препятствий, просто не вставляя их снова;)), копировать (Ctrl+c) и вставлять (Ctrl+v) вырезанные или скопированые препятствия.
+Вы можете перемещать выбранные препятствия, удерживая левую клавишу shift, перетаскивая препятствие. Однако это может быть довольно неточно.
 
-            Placing objects in Chests
+            Размещение объектов в сундуках.
 
-Simply select the desired chest and click the most left button in the upper button row.
-You will be forwarded to a screen that looks like the shop screen.
-There will be a knife displayed (which is actually not placed in the chest by the way) select it and click on the 'sell' button.
-Select the items you want to be dropped when the player opens the chest.
-These items will be displayed in the upper shop bar.
-In order to remove one of these items, simply select it and click on 'buy'.
-The red cross gets you out of the screen.
+Просто выберите нужный сундук и нажмите самую левую кнопку в верхнем ряду кнопок.
+Вы будете перенаправлены на экран, который выглядит как экран магазина.
+Там будет отображаться нож (который, кстати, на самом деле не помещается в сундук) выберите его и нажмите на кнопку 'Sell' (продать}.
+Выберите элементы, которые должны выпасть, когда игрок открывает сундук.
+Эти элементы будут отображаться в верхней панели магазина.
+Для того, чтобы удалить один из этих пунктов, просто выберите его и нажмите на кнопку 'Buy' (купить).
+Нажатие на красный крестик позволит вам выйти из этого экрана.
 
-            Adding Text to a Sign
+            Добавление текста на указатель.
 
-Select the sign and add an obstacle label with the sign text. Save the map and exit.
-Open the level file (map/levels.dat) and find the new obstacle label. Change the line above the text from 'type=30' to 'type=32' and save.
-Now when you click on the sign in the game your short message will appear.
+Выберите знак и добавьте метку препятствия с текстом знака. Сохраните карту и выйдите.
+Откройте файл уровня (карта / уровни.dat) и найти новую метку препятствия. Измените строку над текстом с 'type=30' на 'type=32' и сохраните.
+Теперь при нажатии на кнопку входа в игру появится ваше короткое сообщение.
 
-            Adding a Dialog to a Terminal
+            Добавление диалога в терминал
 
-Select the terminal and add an obstacle label with the dialog name you wish to use. Save the map and exit.
-Open the level file (map/levels.dat) and find the new obstacle label.
-Change the line above the text from 'type=30' to 'type=32' and save. Now when you click on the terminal in the game it will start the dialog you selected.
+Выберите терминал и добавьте метку препятствия с именем диалогового окна, которое вы хотите использовать. Сохраните карту и выйдите.
+Откройте файл уровня (карта / уровни.dat) и найти новую метку препятствия.
+Измените строку над текстом с 'type=30' на 'type=32' и сохраните. Теперь при нажатии на терминал в игре он начнет диалог, который вы выбрали.
 
         Режим редактирования пола:
 
-The floor edit mode works quite similar to the obstacle edit mode. You can select different types of floors at the object selector.
-To fill a region with a single floor tile, first select the tile to use, then click and drag the left mouse button until it covers the desired region. The floor tiles are placed on the current floor layer.
-There are no floors that are special in any way, they are pure decoration.
+Режим редактирования пола работает аналогично режиму редактирования препятствий. В селекторе объектов можно выбрать различные типы этажей.
+Чтобы заполнить область одной плиткой пола, сначала выберите плитку для использования, затем нажмите и перетащите левую кнопку мыши, пока она не покроет нужную область. Напольная плитка укладывается на текущий слой пола.
+Нет полов, которые являются особенными в любом случае, они являются чистым украшением.
 
-The visibility of floor layers can be controlled by a button with the layer icon. The button is only displayed for levels with multilayer floors.
-Left click on the button switches between a single floor layer displayed and all floor layers displayed. Right click on the button changes the current floor layer.
+Видимость слоев пола можно регулировать с помощью кнопки со значком слоя. Кнопка отображается только для уровней с многослойными полами.
+Щелкните левой кнопкой мыши на кнопке переключения между отображением одного слоя и отображением всех слоев. Щелчок правой кнопкой мыши по кнопке изменяет текущий слой пола.
 
-            Selecting floor types
+            Выбор типов полов
 
-Selecting is as easy as in the the obstacle mode. Floor tiles can be moved to with the method described above.
-For levels with multilayer floors only visible floor layers are selected. When a single floor layer is visible, only the tiles in the current floor layer are selected.
+Выбор так же прост, как в режиме препятствия. Плитки пола можно передвигать методом, который описан выше для препятствий.
+Для уровней с многослойными полами выбираются только видимые слои пола. Когда виден один слой пола, выбираются только плитки в текущем слое пола.
 
-In order to have a look at the floor only, click the lamp icon to have no obstacles displayed. Another click will let obstacles appear again.
-The icon with the turquoise rectangle displays collision rectangles. These rectangles indicate the blocking-area of an obstacle. Tux can't walk on such an area.
-If you turn it on and playtest (explained later) your map, the rectangles are still displayed if activated which is quite useful for testing whether the player can pass a gap or not.
+Чтобы посмотреть только на пол, нажмите на значок лампы, чтобы не было никаких препятствий. Еще один щелчок позволит снова отобразить препятствия.
+Значок с бирюзовым прямоугольником отображает прямоугольники столкновений. Этими прямоуголниками обозначенаблокирующая область препятствия. Такс не может ходить по этому месту.
+Если вы включите его и запустите игровое тестирование (об этом режим будет рассказано позже) свей карты, прямоугольники по-прежнему будут отображаться, если они активированы, что очень полезно для проверки того, может ли игрок пройти это место или нет.
 
         Режим редактирования предметов:
 
-You can place items to be used by the player on the map, too.
-Items are objects that the player can pick up. They can be they can be carried, some even be used or equipped.
-Some items are used to move the plot forward, others provide bonuses to the player, while still others do nothing at all.
-Select the item mode and click on an item displayed at the object selector. For some items, you must specify an amount before they are placed.
-You can set it by clicking the arrow buttons or dragging the blue orb to the left or the right.
-Press 'g' to have a better overview of what items are available (can also be used for dropping, items will be dropped at the crosshair). Hit 'Esc' to abort the process without dropping any items.
-You can also click the icon with the crossed-out boots to perform this.
+Вы также можете разместить на карте предметы, которые будут использоваться игроком.
+Предметы - это объекты, которые игрок может забрать. Их можно носить с собой, некоторые даже использовать или надеть.
+Некоторые предметы используются для продвижения по сюжету, другие предоставляют бонусы игроку, а третьи вообще ничего не делают.
+Выберите режим предметов и нажмите на элемент, отображаемый в селекторе объектов. Для некоторых предметов перед их размещением необходимо указать количество.
+Вы можете установить его, нажимая кнопки со стрелками или перетащив синий шар влево или вправо.
+Нажмите 'g', чтобы лучше рассмотреть, какие элементы доступны (также может быть использован для установки предмета, он будет поставлен на перекрестье). Нажмите 'Esc', чтобы прервать процесс без установки предметов.
+Для отмены можно также щелкнуть значок с перечеркнутыми ботинками.
 
 
         Режим правки путей:
 
-Currently, droids (meaning all non-player characters) move around on levels using predefined waypoints.
-To plant a waypoint, press the 'w' key. This will toggle the waypoint on the rectangle under the crosshair.
-You can also click the map at a position you want to have a waypoint having this mode activated. Another click somewhere else plants another waypoint and automatically connects the previous selected one with it.
-Clicking on a preexisting waypoint lets you connect it with another one (just click the other one, too, to do it).
-However, there is a difference between those two planting methods. When you connect two waypoints using the keyboard, the connections will be unidirectional.
-That means that when you make a connection from waypoint A to waypoint B, the bot will only be able to walk from A to B but not back.
-You can remove an unidirectional connection by 'overlying' it with another one going into the very direction as the one you want to delete (this does not work with bidirectional connections!).
-Bidirectional connections are however automatically done using the click method to connect waypoints.
-Important note: It is not possible to connect waypoints on different maps with each other!
-Waypoints are also used to position randomly spawned bots. However this might be inappropriate for some waypoints.
-There are 'normal' ones which are white, for respawning bots and 'special', purple ones which should be used for NPCs. The normal ones are used for spawned bots, the purple ones should be used for NPCs.
-You can select these different types of waypoints in the upper selection bar. To turn a normal waypoint into a purple one or back again, press shift+w.
-Please make sure that paths between waypoints are not blocked by an obstacle in between of two waypoints.
-To automatically check a entire map for this, you can use the map level validator which is explained later.
+В настоящее время дроиды (то есть все неигровые персонажи) перемещаются по уровням, используя предопределенные путевые точки.
+Чтобы установить путевую точку, нажмите клавишу "w". Это переключит путевую точку на прямоугольнике под перекрестием.
+Вы также можете щелкнуть карту в том месте, где вы хотите, чтобы в этом режиме была активирована путевая точка. Другой щелчок где-то еще устанавливает другую путевую точку и автоматически соединяет с ней предыдущую выбранную.
+Нажатие на уже существующую путевую точку позволяет подключить ее к другой (просто нажмите на другую, чтобы сделать это).
+Однако есть разница между этими двумя методами установки путевых точек. При подключении двух путевых точек с помощью клавиатуры соединения будут однонаправленными.
+Это означает, что при подключении из путевой точки A в путевую точку B бот сможет ходить только от A до B, но не обратно.
+Вы можете удалить однонаправленное соединение, "перекрыв" его другим, идущим в том же направлении, что и тот, который вы хотите удалить (это не работает с двунаправленными соединениями!).
+Однако двунаправленные соединения создаются автоматически с помощью нажатия клавиши мыши для подключения путевых точек.
+Важное примечание: невозможно соединить друг с другом путевые точки, находящиеся на разных картах!
+Путевые точки также используются для размещения случайно спаунящихся ботов. Однако это может быть неуместно для некоторых путевых точек.
+'Нормальные' белые точки преднозначены для спауна ботов, 'специальные' фиолетовые - для НПС.
+Вы можете выбрать эти различные типы путевых точек в верхней панели выбора. Чтобы превратить обычную маршрутную точку в фиолетовую или обратно, нажмите shift+w.
+Убедитесь, что пути между путевыми точками не заблокированы препятствиями.
+Чтобы автоматически проверить всю карту для этого, вы можете использовать валидатор уровня карты, о котором будет рассказано ниже.
 
 
         Установка меток:
 
-There are two kinds of tables: map labels and obstacle labels.
-Please make sure that each label ID is unique.
-Giving an empty string will delete the respective label.
+Существует два вида табличек: метки карт и метки препятствий.
+Убедитесь, что каждый идентификатор метки уникален.
+Назначение пустой строки ID приведет к удалению соответствующей метки.
 
 
             Установка меток карты
 
-Map labels are used to define starting locations of NPCs (see ReturnOfTux.droids), events that occur when Tux moves over them (see events.dat), or locations used for movement of NPCs through the lua script files (events, quests, and the dialogs).
-To define a new map label, press the 'm' key on the keyboard or click the button with the M on the sign on it. You will be prompted for the map label. Note that there will be a colorful circle appearing on any map tile that has been fitted with a map label.
-The map label will be automatically planted on the tile in the middle of the screen.
-You can switch the displaying of droids/NPCs on or off pressing the button with the 302 bot on it.
+Метки карты используются для определения начальных местоположений НПС (см. ReturnOfTux.droids), для задания событий, которые происходят, когда Tux перемещается по ним (см. events.dat), или локаций, для перемещения НПС посредством файлов сценариев lua (события, квесты и диалоги).
+Чтобы определить новую метку карты, нажмите клавишу 'm' на клавиатуре или нажмите кнопку с надписью 'M' на ней. Вам будет предложено ввести метку карты. Обратите внимание, что на любой плитке карты, снабженной меткой карты, появится красочный круг.
+Метка карты будет автоматически установлена на плитку в середине экрана.
+Вы можете включить или выключить отображение дроидов/НПС, нажав кнопку с ботом 302 на ней.
 
             Установка меток препятствий
 
-Obstacle labels are important so that some obstacles can be marked for events to happen (for example during a quest). If e.g. an event is supposed to remove a special wall obstacle, then this obstacle must be given a name or ID first, so it can be referred to later in the definition of the event.
-You can also use them to add dialogs to obstacles, so you can talk to them as they were NPCs.
-To plant a label on an obstacle, you must first mark this obstacle (see obstacle mode explanation above).
-Clicking the icon with the sign and the O on it you will be prompted for the new label to attach to this obstacle.
+Метки препятствий важны, так как некоторые препятствия могут быть отмечены для событий (например, во время квеста). Если, например, предполагается, что событие устраняет специальное препятствие стены, то этому препятствию сначала должно быть дано имя или идентификатор, поэтому оно может быть упомянуто позже в определении события.
+Вы также можете использовать их, чтобы добавить диалоги к препятствиям, так что вы можете говорить с ними, как если бы они были NPC.
+Чтобы разместить метку на препятствии, необходимо сначала пометить это препятствие (см. описание режима препятствий выше).
+При нажатии на значок со знаком и буквой O на нем вам будет предложено прикрепить новую метку к этому препятствию.
 
-You can toggle display of map labels using the small icon with the label-circle on it.
+Вы можете переключать отображение меток карты с помощью небольшого значка с меткой-кругом на нем.
 
-        Saving maps:
+        Сохранение карт:
 
-In order to save a map, click the small disk icon in the upper right area of the editor screen. The door icon lets you exit the editor.
-You can also do this via the menu that is opened by pressing the 'Esc' key.
-
-
-General tips:
-
-	Getting overview
-In order to change the zoom factor, press the 'o' key or click the icon with the magnifying glass on it.
-Try left and right clicking in order to access different zoom factors.
+Для того, чтобы сохранить карту, нажмите на значок диска в верхней правой части окна редактора. Значок двери позволяет выйти из редактора.
+Вы также можете сделать это через меню, которое открывается нажатием клавиши 'Esc'.
 
 
-	The editor menu
+Общие советы:
 
-You can access this menu by pressing ESC.
+	Изменение обзора
+Чтобы изменить коэффициент масштабирования, нажмите клавишу " o " или щелкните значок с увеличительным стеклом на нем.
+Попробуйте щелкнуть левой и правой кнопкой мыши, чтобы получить доступ к различным коэффициентам масштабирования.
 
-		"Level:"
-Here you can easily navigate to other levels. You can either use the arrow keys having this option selected
-in order to switch to the next or previous (refers to level numbers) level, or, clicking on it, enter the number of the desired level and press enter.
 
-		Level options
-				Level:	See above for explanation
-				Name:	The map name displayed at the GPS in the upper right corner of the game screen. You can disable the GPS in-game using the options menu.
-				Size:	You can increase or reduce the size of your level. Select the desired edge where you want to add/remove a line of tiles and click the <- or -> arrow buttons.
-				Floor layers: In order to change the number of floor layers for the current level, use the <- or -> arrow buttons.
-				Edge interface:	Here you can set the levels that shall be next to the current level. Enter the level number for the respective edge.
-								A level can only have one adjacent level (one it touches edges with) in each of the four cardinal directions (North, South, West, East).
-				Random dungeon:	If you set this option to 'Yes', the map will automatically generate a dungeon. You set the number of teleporters to and from this map clicking on the option.
-								Randomly generated dungeons automatically will have everything necessary, like waypoints, bots, and obstacles, set.
-				Item drop class for obstacles:	Set of what item class items dropped by barrels/chests/crates should be.
-				Teleport blockade:	Make it (im)possible to teleport away from a level.
-				Teleport pair:	This important if you make a dungeon that is not directly connected to another map. You can set the number of exits and entrances for a randomly generated dungeon here.
-				Light:			How much light would you like to have? Press space to switch between ambient (general brightness of the present map) and bonus (light emitted by some obstacles, such as lamps or mushrooms) mode.
-				Background music:	Here you can set a music track to be played while the player walks around on the map. Possible tracks can be found in ./sound/music/ .
-									Just enter the file name including the .ogg extension.
-				Infinite running Stamina:	If you have this set to "yes", Tux' stamina will not decrease while running across the map. This should only be used if the level has no hostile NPCs on it, like on level 0, the Town, for example.
-				add/rem level:		Lets you add a new level or remove the current level.
+	Меню редактора
 
-		Advanced options
-Here you can run the map level validator.
-The map level validator checks all the paths between connected waypoints to ensure they are not blocked by obstacles. More detailed output explaining which paths are blocked can be found in the terminal, given the case that the game is run using it, or a global error output file.
-It can also check if you have obstacles near map borders in a critial way.
-This should ALWAYS be run before calling a map finished.
-"freedroidRPG -b leveltest" does also run this check.
+Вы можете получить доступ к этому меню, нажав Esc.
 
-		Playtest mapfile
-Allows you to playtest your modifications easily.
-If you leave this mode, obstacle changes that were made while playing, destroying crates for example, will be reverted to the time where you started playtesting.
+		'Уровень:'
+Здесь вы можете легко перейти на другие уровни. Вы можете использовать клавиши со стрелками, если выбран этот пункт
+для того чтобы перейти на следующий или предыдущий (по номеру) уровень, или, нажав на нужный уровень, или введя номер нужного уровня и нажав enter.
+
+		Настройки уровня
+				Уровень: см. объяснение выше.
+				Наименование: название карты отображается на GPS в правом верхнем углу игрового экрана. Вы можете отключить GPS в игре с помощью меню 'параметры'.
+				Размер:  вы можете увеличить или уменьшить размер вашего уровня. Выберите нужный край, где вы хотите добавить/удалить линию плиток и нажмите кнопки со стрелками <- or ->.
+				Слои пола: чтобы изменить количество слоев пола для текущего уровня, используйте кнопки со стрелками <- or ->.
+				Интерфейс края: здесь вы можете установить уровни, которые должны быть рядом с текущим уровнем. Введите номер уровня для соответствующего края.
+								У уровня может быть только один смежный уровень (тот, с которым он соприкасается краем) в каждом из четырех основных направлений (Север, Юг, Запад, Восток).
+				Случайное подземелье: если вы установите этот параметр в 'Да', игра автоматически создаст подземелье. Вы можете устанавить количество телепортов на карту и с карты с помощью соответствующей опции.
+								Случайно сгенерированные подземелья автоматически будут иметь все необходимое, как путевые точки, ботов и препятствия.
+				Класс выбрасываемых предметов для препятствий: набор предметов класса предметов, выбрасываемых бочками/сундуками/ящиками.
+				Блокада телепорта: разрешает/запрещает телепортироваться от уровня.
+				Парный телепорт: это важно, если вы делаете подземелье, которое непосредственно не связано с другой картой. Здесь вы можете установить количество выходов и входов для случайно сгенерированного подземелья.
+				Свет: сколько света вам нужно? Нажмите пробел, чтобы переключиться между окружающим (общая яркость настоящей карты) и бонусным (свет, излучаемый некоторыми препятствиями, такими как лампы или грибы) режимом.
+				Фоновая музыка: Здесь вы можете установить музыкальную дорожку для воспроизведения, в то время пока игрок ходит по карте. Возможные звуковые дорожки можно найти внутри ./ звук / музыка/.
+									 Просто введите имя файла в том числе расширение .ogg.
+				Бесконечная выносливость при беге: если у вас установлено значение 'да', выносливость Tux не уменьшится во время бега по карте. Это должно использоваться только в том случае, если на уровне нет враждебных NPC, например, на уровне 0, в городе.
+				добавить/удалить уровень: позволяет добавить новый уровень или удалить текущий уровень.
+
+		Расширенные настройки
+Здесь вы можете запустить валидатор уровня карты
+Валидатор уровня карты проверяет все пути между соединенными путевыми точками, чтобы убедиться, что они не заблокированы препятствиями. Более подробный вывод данных, объясняющих, какие пути заблокированы, можно найти в терминале, когда игра запускается с его помощью, или в глобальном файле вывода ошибок.
+Он также может проверить, есть ли у вас критически важные препятствия вблизи границ карты.
+Валидатор нужно запускать всегда перед завершением вызова карты.
+Запуск 'freedroidRPG -b leveltest' также выполняет эту проверку.
+
+		Игровое тестирование карты
+Позволяет легко провести игровой тест ваших модификаций.
+После выхода из этого режима, изменения препятствий, которые были сделаны во время игры, например, уничтожение ящиков, будут возвращены к тому времени, когда вы начали тестирование.
 
 
 
@@ -217,32 +217,32 @@ If you leave this mode, obstacle changes that were made while playing, destroyin
 Горячие клавиши:
 пробел					переключение режима установки/выбора
 w						установить метку пути
-shift+w					toggle mode for waypoints to 'random bot' or 'NPC'
-escape					access menu
-numberpad digits 1-9	used to plant obstacles at the respective positions of the grid
-n						cycle through selected obstacles (next)
-z						undo last action
-y						redo last undid action
-c						set paths between waypoints
-ctrl+x or backspace		cut selected object(s), can be used to delete objects by not pasting afterwards
-ctrl+c					copy selected object(s)
-ctrl+v					paste cut/copied object(s)
-alt+shift				drag/move selected object using the mouse
-arrow keys				scroll around the map
-ctrl+arrow keys			scroll around in bigger steps
-mousewheel				scroll through obstacles of the object selector
-ctrl+pageup/page down	scroll through obstacles of the object selector
-g						access drop item screen
-t						toggle 3x3 transparency around the crosshair
-m						add/edit a map label at the position of the crosshair or the selected tile
-o						zoom
-tab						switch to the next editing mode
-shift+tab				switch to the previous editing mode
-f						switch to the next object tab
-shift+f					switch to the previous object tab
+shift+w					переключение режима для путевых точек на между 'случайный бот' или NPC
+escape					доступ к меню
+боковые цифровые клавиши 1-9	используется для установки препятствий в соответствующих положениях сетки
+n						циклический перебор выбранных препятствий (далее)
+z						отмена последнего действия
+y						повторить последнее отмененное действие
+с						установление пути между точками пути
+ctrl+x или backspace		 вырезать выбранные объекты, можно использованы для удаления объектов, без вставки в дальнейшем
+ctrl+c					копирование выбранных объектов
+ctrl+v					вставка вырезанных/скопированных объектов
+alt+shift				перетаскивание выбранных объектов с помощью мыши
+клавиши курсора				прокручивание карты
+ctrl+стрелки курсора			прокручивание карты большими шагами
+колесико мыши				прокручивание в селекторе объектов
+ctrl+pageup/page down	прокручивание в селекторе объектов
+g						переключение в экран размещения предметов
+t						переключение прозрачности в области 3х3 вокруг курсора
+m						добавление/редактирование метки в позиции выбранной плитки
+o						увеличение
+tab						переключение к следующему режиму редактирования
+shift+tab				переключение к предыдущему режиму редактирования
+f						переключение к следующей закладке объекта
+shift+f						переключение к предыдущей закладке объекта
 
 
-If you encounter problems with the editor, please contact us.
-Also, don't be afraid to send us maps if you made something cool, we don't bite. :)
+Если у вас возникли проблемы с редактором, пожалуйста, свяжитесь с нами.
+ Кроме того, не бойтесь присылать нам карты, если вы сделали что-то крутое, мы не кусаемся. :)
 ]]
 }

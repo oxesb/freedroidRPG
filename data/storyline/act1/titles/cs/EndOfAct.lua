@@ -52,5 +52,6 @@ Teď, kdy je tvé milované město v bezpečí...
 
 
 === KONEC 1. AKTU ===
+
 ]]
 }

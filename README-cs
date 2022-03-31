@@ -299,7 +299,7 @@ Různé často se opakující dotazy:
 	   mailové konferenci freedroid-discussion nebo se poptat na IRC kanálu.
 
 	Otázka: Chtěl bych pomoct s vývojem FreedroidRPG. Co bych měl udělat jako první?
-	Odpověď: Nejprve doporučujeme přečíst si http://www.freedroid.org/developer-area/contribute/
+	A: First, we recommend to read https://www.freedroid.org/developer-area/contribute/
 	   Za druhé nás kontaktujte. To lze učinit buď skrze IRC (viz "Kontakt" níže)
 	   nebo použitím mailové konference freedroid-discussion.
 	   Dalším krokem pak je získání nejnovější vývojové verze hry
@@ -311,12 +311,12 @@ Různé často se opakující dotazy:
 
 7. Kontakt
 ===========
- Webová stránka ......... http://www.freedroid.org
+ Website       ................ https://www.freedroid.org
  Stránka se zdrojový kódem .... https://gitlab.com/groups/freedroid
- IRC kanál .................. #freedroid na irc.freenode.net nebo
-								http://webchat.freenode.net/?channels=freedroid (vyžaduje Javascript)
+ IRC channel   ................ #freedroid on irc.libera.chat or
+                                https://web.libera.chat/?channels=freedroid
  Mailová konference .......... freedroid-discussion@lists.sourceforge.net
- Sledování chyb ............. http://bugs.freedroid.org/
+ Bug tracker   ................ https://bugs.freedroid.org/
 
 
 8. Licence

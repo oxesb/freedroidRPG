@@ -35,6 +35,7 @@ PROGRAMOZÁS:
 
 JÁTÉKTARTALOM:
 
+        alex
         Kunjappu Abhijith
         DroidBotAI
         Rafael Fontenelle

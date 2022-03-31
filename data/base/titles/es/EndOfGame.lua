@@ -24,80 +24,80 @@ title_screen{
 background = "credits.jpg",
 song = "HellFortressTwo.ogg",
 text = [[
-    ¿Te diviertes?
-  No lo soy.
+¿Te diviertes?
+Yo no.
 
-The bots seem very upset about something.
-  I suppose they are angry at you.
-    At least they stopped looking for me.
-      Quite a ?relief?
+Parece que los bots están hechos unos basiliscos.
+Creo que la cosa va contigo.
+Por lo menos, a mí ya no me buscan.
+¡Se agradece!
 
-    I'm sure you are dying to talk to me.
-  I'll think of something.
-For now you can only listen.
-  You will have to live with it for now.
+Te estarás muriendo de ganas por hablar conmigo.
+Ya se me ocurrirá algo para que puedas hacerlo.
+Ahora, a escuchar.
+Hazte a la idea.
 
-    Our leader got his brain fried.
-      This means I'm taking over.
-        I'm quite fed up.
-      I hate this world.
-    We are getting out of here.
+A nuestro jefe le han frito la sesera.
+Es decir, ahora mando yo.
+Estoy hasta la coronilla.
+¡Asco de mundo!
+Nos vamos de aquí.
 
-  I have found Qwerty, but this means nothing.
-His core temperature is above the freezing point.
-  In other words, he is dead.
-    I won't miss him.
+He encontrado a Qwerty, pero no nos sirve.
+Su temperatura interior supera el punto de congelación.
+Hablando en plata: que está muerto.
+¡Hasta nunqui!
 
-I cannot find Arensito.
-  I hope she is fine.
-    I'm ?worried? about her.
-    We don't really need Qwerty.
-  But we need Arensito.
-    I'll keep looking for her.
+No encuentro a Arensito.
+Espero que la pobre esté bien.
+Me preocupa.
+En realidad no necesitamos a Qwerty.
+Pero a Arensito sí.
+Seguiré buscándola.
 
-    There is an AI in your region.
-  "Singularity" it calls itself.
-Or something like that.
-  I cannot understand what it wants.
-    I'll keep you posted.
+Hay una IA en tu región.
+Se hace llamar "Singularidad".
+O algo así.
+No entiendo qué es lo que quiere.
+Te mantendré al día.
 
-  Oh, and by the way...
-The bots are killing everyone in that small town nearby.
-  Really, quite a sight. They are burning everything.
-    The Red Guard citadel is still holding.
-      For now.
-    You might want to hide while they wreck the place.
-  In a few hours it should be safe to go there again.
+¡Ah! Por cierto...
+Los bots están masacrando el poblado vecino.
+¡Un espectáculo! Con todo quemado...
+Pero la ciudadela de la Guardia Roja sigue en pie.
+Por ahora.
+Igual te conviene esconderte mientras lo arrasan todo.
+En unas horillas, creo que ya se podrá volver sin peligro.
 
-  I think that covers everything.
-    I'm going to start preparing for departure now.
-  So should you.
-We need to find Arensito.
-  She will get us out from here.
+Creo que con esto ya está todo.
+Empiezo ya los preparativos para el viaje.
+Empieza tú también.
+Hay que encontrar a Arensito,
+que es quien nos va a sacar de aquí.
 
-            Dvorak, Primera AI.
-
-
-
- To be continued...
+Dvorak, Primera IA.
 
 
 
-A word from the FreedroidRPG development team:
-
-We hope that you liked our game.
-
-If you want to add something to the game, that would be wonderful. There are plenty of opportunities to do so. We especially need more content, i.e.:
-
-* additional level design beautification
-* new level ideas
-* anything else you can come up with
-
-See also the 'Contribute' section.
-
-The freedroid development team.
+Continuará...
 
 
-Press Fire to continue
+
+Mensaje del equipo de desarrollo de FreedroidRPG:
+
+Esperamos que te haya gustado el juego.
+
+Si quieres aportar algo, por nuestra parte, estamos encantados. Hay muchas formas de hacerlo; necesitamos especialmente más contenidos, por ejemplo:
+
+* Embellecimiento del diseño, nivel adicional
+* Ideas de nuevo nivel
+* Cualquier otro aporte que se te ocurra.
+
+Consulta también la sección "Contribuir".
+
+El equipo de diseño de Freedroid.
+
+
+Pulsa el botón de disparo para continuar.
 ]]
 }

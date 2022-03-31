@@ -1,4 +1,4 @@
-    FreedroidRPG: README
+    FreedroidRPG: ПРОЧТИМЕНЯ
    ----------------------
 
 0. Содержание
@@ -197,38 +197,38 @@
 	   операционной системой от Майкрософт. Эти драйверы не используют аппаратное ускорение
 	   и поэтому жутко медленные. Вам необходимо скачать и установить настоящие 
 	   драйверы OpenGL для своей видеокарты. Обычно их можно загрузить 
-	   с официальной страницы производителя графических чипов, например, Nvidia, AMD/ATI и т. д.
-	   etc. Note, that if you do absolutely cannot get OpenGL working reliably on your
-	   system, you can still run the game in pure SDL output mode. For this, you
-	   must either use a 'MS-DOS command line prompt' and type
+	   с официальной страницы производителя графических чипов, например, Nvidia, AMD/ATI и
+	   так далее. Обратите внимание, что если вы абсолютно не можете заставить OpenGL надежно работать на вашей
+	   система, вы все еще можете запустить игру в чистом режиме вывода SDL. Для этого вы
+	   необходимо либо использовать 'командной строкой MS-DOS ' и ввести
 
 	   freedroidRPG -n 
 
-	   inside this command line, or you can also make a link to freedroidRPG.exe
-	   and then edit the link properties and add the -n after freedroidRPG.exe in
-	   the link properties dialog box.
+	   в командной строке, либо сделать ярлык на  freedroidRPG.exe
+	   а затем отредактировать свойства ссылки и добавить -n после freedroidRPG.exe в
+	   в диалоговом окне свойств ярлыка.
 
 	В.: Игра *ужасно* тормозит на моём ПК с Linux при включённом OpenGL.
-	A: The reason for this might be that you're not using hardware accelerated OpenGL.
-	   Software OpenGL should be avoided.  If you don't have hardware-accelerated
-	   OpenGL on your system (because e.g. your graphics card manufacturer doesn't
-	   make suitable Linux drivers), you might be much better off when disabling
-	   OpenGL support altogether.  For this, you can use command line switch -n,
-	   i.e type
+	A: Причиной этого может быть то, что вы не используете аппаратное ускорение OpenGL.
+	   Программного OpenGL следует избегать. Если у вас нет аппаратного ускорения
+	   OpenGL в вашей системе (потому что, например, производитель вашей видеокарты этого не делает
+	   драйверов под Linux), возможно, будет намного лучше при отключенной
+	   совсем OpenGL. Для этого можно использовать в командной строке ключ -n, т.е. напечатайте:
+	   freedroidRPG -n
 
 	   freedroidRPG -n
 
-	   to start the game with OpenGL output disabled.  Graphics will revert to
-	   pure SDL mode.
-	Q: I run Linux with multiple monitors in TwinView (Xinerama) mode, however fullscreen
-	   mode is centered over the break between the two monitors. I would rather it be
-	   centered on one of the screens.
-	A: To have the game use only one monitor for fullscreen mode, do the following:
-	   1)  Make certain you use SDL version >=1.2.14.
-	   2)  Set the environmental variable "SDL_VIDEO_FULLSCREEN_DISPLAY" to the number corresponding to
-			the monitor you wish to use: 0 is your first display, 1 is your second, etc.
+	   чтобы начать игру с отключенным выводом OpenGL. Графика вернется к
+	   режиму чистой SDL.
+	Q: я запускаю Linux с несколькими мониторами в режиме TwinView (Xinerama), однако полноэкранный
+	   режим разворачивается на оба монитора. Я бы предпочел, чтобы игра переходила в полноэкранный режим 
+	   на одном из экранов.
+	О: Чтобы игра использовала только один монитор для полноэкранного режима, выполните следующие действия:
+	   1) Убедитесь, что вы используете SDL версии >=1.2.14.
+	   2) Установите переменную среды "SDL_VIDEO_FULLSCREEN_DISPLAY" на число, соответствующее
+			монитору, который вы хотите использовать: 0-это первый дисплей, 1 второй и т. д.
 
-	   If that does not work you may have to add single-monitor metamodes to your xorg.conf file.
+	   Если это не сработает, вам, возможно, придется добавить метарежимы (metamodes) для одного монитора в файл xorg.conf.
 	   Изменения xorg.conf требуют перезапуска X-сервера, прежде чем они вступят в силу.
 
 ЧЗВ о звуке:
@@ -239,13 +239,13 @@
 		    значит, звук на вашем компьютере не настроен и эта
 		    проблема не зависит от freedroidRPG. В таком случае, вы должны установить
 		    звуковую карту сначала
-	   2.)  See if you have the SDL_mixer libraries installed. You might want
-		    to use "locate SDL_mixer" and see if you get a lot of results.  If
-		    not, then the missing SDL_mixer library is the problem.
-		    Also check if you have libogg and libvorbis installed.
-	   3.)  If you're compiling from source, make sure the ./configure script has
-		    properly detected the SDL_mixer library. Just look at the ./configure
-		    output. There should be a line like:
+	   2.) Посмотрите, установлены ли библиотеки SDL_mixer. Возможно, вы захотите
+		    использовать 'locate SDL_mixer' и посмотреть на вывод, должно получиться много строк. Если
+		    нет, то проблема в том, отсутствует библиотека SDL_mixer.
+		    Также проверьте, установлены ли библиотеки libogg и libvorbis.
+	   3.) Если вы компилируете из исходников, убедитесь, что скрипт ./configure
+		    корректно обнаружил библиотеку SDL_mixer. Просто посмотрите на  ./configure
+		    в нем должны быть строки подобные:
 
 		      checking for Mix_ChannelFinished in -lSDL_mixer... yes
 
@@ -260,15 +260,15 @@
 
 		      http://www.libsdl.org/projects/SDL_mixer/
 
-		    If you compiled from source, you'll have to recompile now, because the
-		    previous compile didn't include the sound module of FreedroidRPG. If
-		    the SDL_mixer stuff is installed properly, it should work after the
-		    recompile.
+		     Если вы скомпилированы из исходного кода, вам придется перекомпилировать заново, потому что
+		    предыдущая компиляция не включает в себя звуковой модуль FreedroidRPG. Если
+		    библиотека SDL_mixer установлена корректно, все должно заработать после
+		    перекомпиляции.
 
 	В.: У меня запаздывает звук. Кажется, что всё несколько рассинхронизировано. 
-	A: There might be a sound daemon running on your system.  Many window managers
-	   like e.g. KDE start a sound daemon by default upon start up. To get rid of
-	   the most common sound daemons, you can try (best as root)
+	О: В вашей системе может быть звуковой деймон. Многие оконные менеджеры
+	   например, KDE запускают звуковой деймон по умолчанию при собственном запуске. Чтобы избавиться от
+	   наиболее распространенных звуковых деймонов, вы можете попробовать (лучше всего, с правами root)
 
 	   killall -9 artsd
 	   killall -9 esd
@@ -299,7 +299,7 @@
 	   в списке рассылки freedroid-discussion или же спросить на IRC-канале.
 
 	В.: Хочу помочь с разработкой FreedroidRPG. Что мне сделать в первую очередь?
-	О.: Во-первых, рекомендуем прочесть http://www.freedroid.org/developer-area/contribute/
+	A: First, we recommend to read https://www.freedroid.org/developer-area/contribute/
 	   Во-вторых, свяжитесь с нами. Это возможно через IRC (см. «Контакты» ниже)
 	   или при помощи списка рассылки freedroid-discussion.
 	   Следующее, что нужно сделать, - получить последнюю разрабатываемую версию игры
@@ -311,12 +311,12 @@
 
 7. Контакты
 ===========
- Веб-сайт      ................ http://www.freedroid.org
+ Website       ................ https://www.freedroid.org
  Страница с исходниками   ..... https://gitlab.com/groups/freedroid
- IRC-канал     ................ #freedroid на irc.freenode.net или
-								http://webchat.freenode.net/?channels=freedroid (требует Javascript)
+ IRC channel   ................ #freedroid on irc.libera.chat or
+                                https://web.libera.chat/?channels=freedroid
  Список рассылки .............. freedroid-discussion@lists.sourceforge.net
- Багтрекер     ................ http://bugs.freedroid.org/
+ Bug tracker   ................ https://bugs.freedroid.org/
 
 
 8. Лицензия

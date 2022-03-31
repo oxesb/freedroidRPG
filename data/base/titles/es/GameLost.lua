@@ -25,26 +25,26 @@ postroll_text = 3,
 text = [[
             Juego Perdido
 
-Please try again, and when you do, be sure to buy from our sponsors:
+Por favor intentalo de nuevo, y cuando lo hagas, asegurate de comprar de nuestros patrocinadores:
 
-Dr. How - "Mighty convenient technology!"
+Dr. How - "¡Tecnología altamente conveniente!"
 
-Can4dian ph4rm4cy - "Amazing breakthrough herbal r3medies! 100% satisfaction guarant3ed!!!"
+F4rm4cia C4n4diense - "¡R3medios herbarios de increíble progreso! ¡¡¡Satisfacción 100% garantiz4da!!!"
 
-Cryonic Solutions - "Take the fast trip to the future with Cryonic Solutions!"
+Soluciones Criónicas - "¡Tome el viaje mas rápido hacia el futuro con Soluciones Criónicas!"
 
-Future Ballistics - "Beyond ballistics. Future Ballistics."
+Balística Futura - "Mas haya de la balística. Balística Futura."
 
-MegaSystems - "What don't you want to do today?"
+MegaSystems - "¿Que es lo que no quieres hacer hoy?"
 
-Masternak Rubbish Removal - "We CRUSH your RUBBISH."
+Eliminación de Basura Masternak - "APLASTAMOS tu BASURA."
 
-Nicholson Company - "Security with a vengeance."
+Compañía Nicholson - "Seguridad con venganza."
 
-Red Sun - "The night is over: taste the dawn!"
+Sol Rojo - "La noche se acabo: ¡saborea el amanecer!"
 
 
 
-Please try again. Click to continue.
+Por favor inténtelo de nuevo. Pulse para continuar.
 ]]
 }

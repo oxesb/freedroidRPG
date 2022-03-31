@@ -52,5 +52,6 @@ Agora que sua amada cidade está salva...
 
 
 === FIM DO PRIMEIRO ATO ===
+
 ]]
 }

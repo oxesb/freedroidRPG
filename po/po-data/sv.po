@@ -4,15 +4,15 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Alexander Forsberg <alex@datafluss.se>, 2019
+# Alex, 2019
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 1.0RC1\n"
-"Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-30 22:43+0100\n"
+"Project-Id-Version: freedroidrpg 1.0RC2\n"
+"Report-Msgid-Bugs-To: https://www.freedroid.org\n"
+"POT-Creation-Date: 2022-03-31 13:00+0200\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
-"Last-Translator: Alexander Forsberg <alex@datafluss.se>, 2019\n"
+"Last-Translator: Alex, 2019\n"
 "Language-Team: Swedish (https://www.transifex.com/arctic-games/teams/9511/sv/)\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
@@ -1087,7 +1087,7 @@ msgstr "Boken om \"Felformaterat Paket\""
 
 #: data/base/item_specs.lua:1647 data/base/skill_specs.lua:91
 msgid "When computers are presented with the unexpected, they can damage themselves."
-msgstr "När datorer är presenterade oväntade saker kan de skada sig själva."
+msgstr "När datorer möter det oväntade kan de skada sig själva."
 
 #: data/base/item_specs.lua:1654
 msgid "Source Book of Calculate Pi"
@@ -1167,7 +1167,7 @@ msgstr "Boken om \"Plasmaurladdning\""
 
 #: data/base/item_specs.lua:1767 data/base/skill_specs.lua:184
 msgid "The overload setting exists for emergencies. Plasma does not discriminate between bots and humans. Everything is the same to it."
-msgstr "Inställningen för överbelastning är till för nödfall. Plasma gör ingen skillnad på bottar och människor, allt är det samma."
+msgstr "Läget för överbelastning är till för nödfall. Plasma skiljer inte på bottar och människor. För plasman är allt samma."
 
 #: data/base/item_specs.lua:1774
 msgid "Source Book of Nethack"
@@ -1207,7 +1207,7 @@ msgstr "Boken om \"Nätverksmappning\""
 
 #: data/base/item_specs.lua:1827 data/base/skill_specs.lua:195
 msgid "Knowing what your enemies are up to is easy with a little signal intelligence. Displays enemy locations on your automap."
-msgstr "Att veta vad dina fiender håller på med är enkelt med hjälp av lite \"signal-intelligens\". Visar fiendernas position på autokartan."
+msgstr "Med lite smarta signaler får du lätt reda på vad dina fiender gör. Visar fiendernas position på autokartan."
 
 #: data/base/item_specs.lua:1834
 msgid "Source Book of Energy Shield"
@@ -1845,11 +1845,11 @@ msgstr "Det här är lasern från ett autogevär. Om du ser det här i spelet, v
 
 #: data/base/item_specs.lua:3001
 msgid "PC LOAD LETTER"
-msgstr "PC LADDNINGSBOKSTAV"
+msgstr "PC LADDNINGSBREV"
 
 #: data/base/item_specs.lua:3005
 msgid "An envelop saying 'PC LOAD LETTERS'. I have no idea what that means..."
-msgstr "Ett omslag med texten \"PC LADDNINGSBOKSTÄVER\". Jag har ingen aning vad det ska betyda..."
+msgstr "Ett omslag med texten \"PC LADDNINGSBREV\". Jag har ingen aning vad det ska betyda..."
 
 #: data/base/item_specs.lua:3012
 msgid "Arcane Lore"
@@ -2103,7 +2103,7 @@ msgstr "Uppgraderar dina sökalgoritmer. Du kommer hitta föremål oftare när d
 
 #: data/base/skill_specs.lua:243
 msgid "Animal Magnetism"
-msgstr "Animal Magnetism"
+msgstr "Djurisk Dragningskraft"
 
 #: data/base/skill_specs.lua:248
 msgid "Get in tune with the magnetic fields around you! Grants you half-second extra time per skill level when hacking bots. This skill is always active even when not selected."
@@ -3161,11 +3161,11 @@ msgstr "Ett kungarike för ett kluster!"
 
 #: data/storyline/act1/quests.lua:86
 msgid "Opening access to MS Office"
-msgstr "Få tillgång till \"MS Office\""
+msgstr "Lås upp MS kontorssvit"
 
 #: data/storyline/act1/quests.lua:90
 msgid "Propagating a faulty firmware update"
-msgstr "Skicka ut en defekt mjukvaruuppdatering"
+msgstr "Sänd ut en skadlig uppdatering"
 
 #: data/storyline/act1/quests.lua:94
 msgid "A New Mission From Spencer"
@@ -3673,7 +3673,7 @@ msgstr "JAGÄLSKARDIG"
 
 #: data/storyline/act1/ReturnOfTux.droids:308
 msgid "Fail-safe"
-msgstr "Felsäker"
+msgstr "Fail-safe"
 
 #: data/storyline/act1/ReturnOfTux.droids:309
 msgid "CIH.1103"
@@ -3871,7 +3871,7 @@ msgstr "Till Fastlandet via Underjorden"
 msgid "To Icy Summer Island"
 msgstr "Till Frostiga Sommarön"
 
-#: data/storyline/act2/events.dat:591 data/storyline/act2/npc_specs.lua:29
+#: data/storyline/act2/events.dat:590 data/storyline/act2/npc_specs.lua:29
 msgid "Colemak"
 msgstr "Colemak"
 
@@ -4113,7 +4113,7 @@ msgstr "Meddelande Från En Gammal Vän"
 
 #: data/storyline/act2/quests.lua:35
 msgid "The Reapers Of MegaSys I"
-msgstr "Skörderarbetarna På MegaSys I"
+msgstr "Skördearbetarna På MegaSys I"
 
 #: data/storyline/act2/ReturnOfTux.droids:4
 #: data/storyline/act2/ReturnOfTux.droids:5

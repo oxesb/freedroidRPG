@@ -9,9 +9,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 1.0RC1\n"
-"Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-30 22:43+0100\n"
+"Project-Id-Version: freedroidrpg 1.0RC2\n"
+"Report-Msgid-Bugs-To: https://www.freedroid.org\n"
+"POT-Creation-Date: 2022-03-31 13:00+0200\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
 "Last-Translator: fluzz <fluzz@gmx.com>, 2019\n"
 "Language-Team: French (https://www.transifex.com/arctic-games/teams/9511/fr/)\n"
@@ -244,7 +244,7 @@ msgstr "Cyborg expérimental de commande. Assemblé avec un nouveau type de cerv
 
 #: data/base/droid_specs.lua:1259 data/storyline/act2/ReturnOfTux.droids:129
 msgid "The Glitch"
-msgstr "La Fluctuation"
+msgstr "L'Anomalie"
 
 #: data/base/droid_specs.lua:1260
 msgid "I have not failed. I've just found 10,000 ways how to NOT make a bot."
@@ -3872,7 +3872,7 @@ msgstr "Vers la zone principale par le sous-sol"
 msgid "To Icy Summer Island"
 msgstr "Vers l'Île de l'Été Glacé"
 
-#: data/storyline/act2/events.dat:591 data/storyline/act2/npc_specs.lua:29
+#: data/storyline/act2/events.dat:590 data/storyline/act2/npc_specs.lua:29
 msgid "Colemak"
 msgstr "Colemak"
 

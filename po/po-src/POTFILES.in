@@ -13,9 +13,9 @@ src/graphics.c
 src/hud.c
 src/influ.c
 src/init.c
+src/items.c
 src/item_upgrades.c
 src/item_upgrades_ui.c
-src/items.c
 src/keyboard.c
 src/lua.c
 src/main.c
@@ -41,8 +41,8 @@ src/lvledit/lvledit_enemy.c
 src/lvledit/lvledit_map.c
 src/lvledit/lvledit_menu.c
 src/lvledit/lvledit_tool_place.c
-src/lvledit/lvledit_widget_toolbar.c
 src/lvledit/lvledit_widgets.c
+src/lvledit/lvledit_widget_toolbar.c
 src/savegame/convert.c
 src/savegame/filters_0_16.c
 src/savegame/filters_0_16_1.c

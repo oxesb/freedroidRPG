@@ -3,16 +3,17 @@
 # This file is distributed under the same license as the freedroidrpg package.
 #
 # Translators:
-# Alexander Forsberg <alex@datafluss.se>, 2019
-# Alexander Forsberg <alex@datafluss.se>, 2014-2015,2017
-# Jonatan Nyberg, 2017
+# Alex, 2019
+# Alex, 2019
+# Alex, 2014-2015,2017
+# efef6ec5b435a041fce803c7f8af77d2_2341d43, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
-"Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-05-08 17:36+0200\n"
-"PO-Revision-Date: 2019-05-08 15:42+0000\n"
-"Last-Translator: fluzz <fluzz@gmx.com>\n"
+"Report-Msgid-Bugs-To: https://www.freedroid.org\n"
+"POT-Creation-Date: 2022-03-31 13:00+0200\n"
+"PO-Revision-Date: 2014-03-27 23:12+0000\n"
+"Last-Translator: Alex, 2019\n"
 "Language-Team: Swedish (http://www.transifex.com/arctic-games/freedroid-rpg/language/sv/)\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +24,7 @@ msgstr ""
 #: lua_modules/FDtux_lfuns.lua:239 lua_modules/script_helpers.lua:268
 #: lua_modules/script_helpers.lua:271
 msgid "New Quest assigned: "
-msgstr "Nytt uppdrag tilldelad:"
+msgstr "Nytt uppdrag:"
 
 #: lua_modules/FDtux_lfuns.lua:259 lua_modules/script_helpers.lua:280
 #: lua_modules/script_helpers.lua:283
@@ -73,7 +74,7 @@ msgstr "Högre nivå!"
 
 #: src/character.c:375
 msgid "Melee"
-msgstr "Strid"
+msgstr "Närstrid"
 
 #: src/character.c:389
 msgid "Ranged"
@@ -147,7 +148,7 @@ msgstr "Sköld"
 msgid "Click anywhere to continue..."
 msgstr "Klicka någonstans för att fortsätta..."
 
-#: src/chat.c:704 src/chat.c:714
+#: src/chat.c:705 src/chat.c:715
 msgid "[n]--- Start of Dialog ---\n"
 msgstr "[n]--- Samtalets början ---\n"
 
@@ -287,16 +288,16 @@ msgstr "Socklar: %d av %d använda\n"
 msgid "REQUIREMENTS NOT MET"
 msgstr "KRAVEN UPPFYLLS INTE"
 
-#: src/hud.c:400
+#: src/hud.c:401
 msgid "No label for this obstacle"
 msgstr "Hindret saknar beskrivning."
 
-#: src/hud.c:607
+#: src/hud.c:608
 #, c-format
 msgid "FPS: %d\n"
 msgstr "FPS: %d\n"
 
-#: src/hud.c:624
+#: src/hud.c:625
 #, c-format
 msgid "Bots remaining on level: %d\n"
 msgstr ""
@@ -304,7 +305,7 @@ msgstr ""
 "\n"
 
 #. TRANSLATORS: In-game date: Day <day number> <hour>:<minute>
-#: src/hud.c:652 src/hud.c:659
+#: src/hud.c:653 src/hud.c:660
 #, c-format
 msgid "Day %d  %02d:%02d"
 msgstr "Dag %d %02d:%02d"
@@ -317,21 +318,21 @@ msgstr "%s tom, laddar om..."
 
 #: src/influ.c:804
 msgid "Energy shield disabled due to overheat."
-msgstr ""
+msgstr "Energisköld avstäng pga överhettning."
 
 #: src/influ.c:818
 msgid "Energy shield disabled due to a risk of overheat."
-msgstr ""
+msgstr "Energisköld avstäng pga risk för överhettning."
 
-#: src/influ.c:1044 src/menu.c:1124
+#: src/influ.c:1044 src/menu.c:1125
 msgid "Load Latest"
 msgstr "Ladda Senaste"
 
-#: src/influ.c:1045 src/menu.c:1125
+#: src/influ.c:1045 src/menu.c:1126
 msgid "Load Backup"
 msgstr "Ladda Säkerhetskopia"
 
-#: src/influ.c:1047 src/menu.c:1127 src/lvledit/lvledit_menu.c:959
+#: src/influ.c:1047 src/menu.c:1128 src/lvledit/lvledit_menu.c:959
 msgid "Quit to Main Menu"
 msgstr "Avsluta till Huvudmenyn"
 
@@ -339,7 +340,7 @@ msgstr "Avsluta till Huvudmenyn"
 msgid "Return to Editor"
 msgstr "Återgå till Redigeraren"
 
-#: src/influ.c:1051 src/menu.c:973 src/menu.c:1130
+#: src/influ.c:1051 src/menu.c:974 src/menu.c:1131
 #: src/lvledit/lvledit_menu.c:960
 msgid "Exit FreedroidRPG"
 msgstr "Avsluta FreedroidRPG"
@@ -360,23 +361,17 @@ msgstr "Handledning inleds."
 
 #: src/init.c:623
 msgid "Starting new game act."
-msgstr ""
+msgstr "Påbörjar ny akt."
 
 #: src/init.c:996
 msgid ""
 "You are playing a Release Candidate.\n"
 "Strange bugs may still be present in the game.\n"
-"Please report any issues you find to our bugtracker at http://bugs.freedroid.org/\n"
+"Please report any issues you find to our bugtracker at https://bugs.freedroid.org/\n"
 "Thank you for helping us test the game.\n"
 "\n"
 "Good luck!\n"
 msgstr ""
-"Du spelar en \"Release Candidate\".\n"
-"Konstiga buggar kanske fortfarande finns i spelet.\n"
-"Var vänlig att rapportera alla problem du här: http://bugs.freedroid.org/\n"
-"Tack för att du hjälper oss testa spelet.\n"
-"\n"
-"Lycka till!\n"
 
 #: src/init.c:1015 src/init.c:1016
 msgid "Game over.\n"
@@ -385,6 +380,98 @@ msgstr "Game over.\n"
 #: src/init.c:1082 src/init.c:1083
 msgid "Game won.\n"
 msgstr "Du har vunnit spelet.\n"
+
+#: src/items.c:406
+msgid "Good quality"
+msgstr "Bra kvalitet"
+
+#: src/items.c:409
+msgid "Bad quality"
+msgstr "Dålig kvalitet"
+
+#: src/items.c:736
+msgid "I can't use this item here."
+msgstr "Jag kan inte använda det här föremålet här"
+
+#: src/items.c:742
+msgid "You can not use any items while paralyzed."
+msgstr "Du kan inte använda föremål när du är paralyserad."
+
+#: src/items.c:750
+msgid "You are drinking a potion!"
+msgstr "Du dricker en brygd!"
+
+#: src/items.c:753
+msgid "Your are waiting for your weapon to fire again!"
+msgstr "Du väntar på att ditt vapen ska skjuta igen!"
+
+#: src/items.c:756
+msgid "You are reloading your weapon!"
+msgstr "Du laddar om ditt vapen!"
+
+#: src/items.c:759
+msgid "You are throwing a grenade!"
+msgstr "Du slänger en granat!"
+
+#: src/items.c:762
+msgid "You are running a program!"
+msgstr "Du kör ett program!"
+
+#: src/items.c:765
+msgid "You are taking a pill!"
+msgstr "Du tar ett piller!"
+
+#: src/items.c:768
+msgid "You are doing something so weird the game does not understand what it is"
+msgstr "Du gör något mysko som spelet inte förstår"
+
+#. TRANSLATORS: the trailing %s is what the player is currently already doing (drinking, running a program, ...)
+#: src/items.c:771
+#, c-format
+msgid "How do you expect to do two things at a time? %s"
+msgstr "Hur tror du att du ska kunna göra två saker samtidigt? %s"
+
+#: src/items.c:822
+msgid "The doctor warned you. You are now weak and sickly."
+msgstr "Doktorn varnade dig. Nu känner du dig svag och sjuk."
+
+#. TRANSLATORS: the trailing %s is a program name
+#: src/items.c:836
+#, c-format
+msgid "You have reached the maximum skill level for %s"
+msgstr "Du har nått den högsta möjliga nivån i %s"
+
+#: src/items.c:1561
+msgid "You can not use the inventory while paralyzed."
+msgstr "Du kan inte använda förrådet när du är paralyserad."
+
+#: src/items.c:1641
+msgid "You cannot fight with this!"
+msgstr "Du kan inte slåss med det här!"
+
+#: src/items.c:1647
+msgid "You cannot yet fight with this!"
+msgstr "Du kan inte slåss med det här, än!"
+
+#: src/items.c:1686
+msgid "Two-handed weapon requirements not met: shield bonus doesn't count."
+msgstr "Du uppfyller inte kraven för tvåhandsvapnet: bonus från skölden räknas inte med."
+
+#: src/items.c:1699
+msgid "You cannot equip this!"
+msgstr "Du kan inte använda det här!"
+
+#: src/items.c:1705
+msgid "You cannot equip this yet!"
+msgstr "Du kan inte använda det här, än!"
+
+#: src/items.c:1737
+msgid "Shield requirements not met: two-handed weapon bonus doesn't count."
+msgstr "Du uppfyller inte sköldens krav: bonus från tvåhandsvapnet räknas inte med."
+
+#: src/items.c:1878 src/items.c:2055
+msgid "I can't carry any more."
+msgstr "Jag kan inte bära mer."
 
 #. TRANSLATORS: Item's bonus: '10 to strength' means 'add 10 to player's strength'
 #. TRANSLATORS: (trailing %s contains a text separator)
@@ -512,7 +599,7 @@ msgstr "Installeras i universalsockel\n"
 
 #: src/item_upgrades.c:355
 msgid "Install to a melee weapon\n"
-msgstr "Installeras på ett handvapen\n"
+msgstr "Installeras på ett närstridsvapen\n"
 
 #: src/item_upgrades.c:357
 msgid "Install to a ranged weapon\n"
@@ -520,9 +607,7 @@ msgstr "Installeras på ett skjutvapen\n"
 
 #: src/item_upgrades.c:359
 msgid "Install to any armor\n"
-msgstr ""
-"Installeras på någon typ av skydd\n"
-"\n"
+msgstr "Installeras på någon typ av skydd\n"
 
 #: src/item_upgrades.c:361
 msgid "Install to boots\n"
@@ -534,7 +619,7 @@ msgstr "Installeras på kläder\n"
 
 #: src/item_upgrades.c:365
 msgid "Install to a shield\n"
-msgstr "Installeras på sköldar\n"
+msgstr "Installeras på en sköld\n"
 
 #: src/item_upgrades.c:367
 msgid "Install to a helmet\n"
@@ -543,17 +628,17 @@ msgstr "Installeras på en hjälm\n"
 #. TRANSLATORS: Socket's type
 #: src/item_upgrades_ui.c:169
 msgid "Electric"
-msgstr "Elektriskt"
+msgstr "Elektrisk"
 
 #. TRANSLATORS: Socket's type
 #: src/item_upgrades_ui.c:171
 msgid "Mechanical"
-msgstr "Mekaniskt"
+msgstr "Mekanisk"
 
 #. TRANSLATORS: Socket's type
 #: src/item_upgrades_ui.c:173
 msgid "Universal"
-msgstr "Universellt"
+msgstr "Universell"
 
 #. TRANSLATORS: Cancel socket's type choice menu
 #: src/item_upgrades_ui.c:175
@@ -593,98 +678,6 @@ msgstr "Kostnad: %d"
 #: src/item_upgrades_ui.c:270
 msgid "Bonuses"
 msgstr "Bonusar"
-
-#: src/items.c:384
-msgid "Good quality"
-msgstr "Bra kvalitet"
-
-#: src/items.c:387
-msgid "Bad quality"
-msgstr "Dålig kvalitet"
-
-#: src/items.c:726
-msgid "I can't use this item here."
-msgstr "Jag kan inte använda det här föremålet här"
-
-#: src/items.c:732
-msgid "You can not use any items while paralyzed."
-msgstr "Du kan inte använda föremål när du är paralyserad."
-
-#: src/items.c:740
-msgid "You are drinking a potion!"
-msgstr "Du dricker en brygd!"
-
-#: src/items.c:743
-msgid "Your are waiting for your weapon to fire again!"
-msgstr "Du väntar på att ditt vapen ska skjuta igen!"
-
-#: src/items.c:746
-msgid "You are reloading your weapon!"
-msgstr "Du laddar om ditt vapen!"
-
-#: src/items.c:749
-msgid "You are throwing a grenade!"
-msgstr "Du slänger en granat!"
-
-#: src/items.c:752
-msgid "You are running a program!"
-msgstr "Du kör ett program!"
-
-#: src/items.c:755
-msgid "You are taking a pill!"
-msgstr "Du tar ett piller!"
-
-#: src/items.c:758
-msgid "You are doing something so weird the game does not understand what it is"
-msgstr "Du gör något mysko som spelet inte förstår"
-
-#. TRANSLATORS: the trailing %s is what the player is currently already doing (drinking, running a program, ...)
-#: src/items.c:761
-#, c-format
-msgid "How do you expect to do two things at a time? %s"
-msgstr "Hur tror du att du ska kunna göra två saker samtidigt? %s"
-
-#: src/items.c:812
-msgid "The doctor warned you. You are now weak and sickly."
-msgstr "Doktorn varnade dig. Nu känner du dig svag och sjuk."
-
-#. TRANSLATORS: the trailing %s is a program name
-#: src/items.c:826
-#, c-format
-msgid "You have reached the maximum skill level for %s"
-msgstr "Du har nått den högsta möjliga nivån i %s"
-
-#: src/items.c:1578
-msgid "You can not use the inventory while paralyzed."
-msgstr "Du kan inte använda förrådet när du är paralyserad."
-
-#: src/items.c:1658
-msgid "You cannot fight with this!"
-msgstr "Du kan inte slåss med det här!"
-
-#: src/items.c:1664
-msgid "You cannot yet fight with this!"
-msgstr "Du kan inte slåss med det här, än!"
-
-#: src/items.c:1703
-msgid "Two-handed weapon requirements not met: shield bonus doesn't count."
-msgstr "Du uppfyller inte kraven för tvåhandsvapnet: bonus från skölden räknas inte med."
-
-#: src/items.c:1716
-msgid "You cannot equip this!"
-msgstr "Du kan inte använda det här!"
-
-#: src/items.c:1722
-msgid "You cannot equip this yet!"
-msgstr "Du kan inte använda det här, än!"
-
-#: src/items.c:1754
-msgid "Shield requirements not met: two-handed weapon bonus doesn't count."
-msgstr "Du uppfyller inte sköldens krav: bonus från tvåhandsvapnet räknas inte med."
-
-#: src/items.c:1895 src/items.c:2072
-msgid "I can't carry any more."
-msgstr "Jag kan inte bära mer."
 
 #: src/keyboard.c:53
 msgid "keychart"
@@ -856,43 +849,43 @@ msgstr "släpp_föremål"
 
 #: src/keyboard.c:104
 msgid "place_obstacle_kp0"
-msgstr "placera_objekt_tb0"
+msgstr "placera_objekt_kp0"
 
 #: src/keyboard.c:105
 msgid "place_obstacle_kp1"
-msgstr "placera_objekt_tb1"
+msgstr "placera_objekt_kp1"
 
 #: src/keyboard.c:106
 msgid "place_obstacle_kp2"
-msgstr "placera_objekt_tb2"
+msgstr "placera_objekt_kp2"
 
 #: src/keyboard.c:107
 msgid "place_obstacle_kp3"
-msgstr "placera_objekt_tb3"
+msgstr "placera_objekt_kp3"
 
 #: src/keyboard.c:108
 msgid "place_obstacle_kp4"
-msgstr "placera_objekt_tb4"
+msgstr "placera_objekt_kp4"
 
 #: src/keyboard.c:109
 msgid "place_obstacle_kp5"
-msgstr "placera_objekt_tb5"
+msgstr "placera_objekt_kp5"
 
 #: src/keyboard.c:110
 msgid "place_obstacle_kp6"
-msgstr "placera_objekt_tb6"
+msgstr "placera_objekt_kp6"
 
 #: src/keyboard.c:111
 msgid "place_obstacle_kp7"
-msgstr "placera_objekt_tb7"
+msgstr "placera_objekt_kp7"
 
 #: src/keyboard.c:112
 msgid "place_obstacle_kp8"
-msgstr "placera_objekt_tb8"
+msgstr "placera_objekt_kp8"
 
 #: src/keyboard.c:113
 msgid "place_obstacle_kp9"
-msgstr "placera_objekt_tb9"
+msgstr "placera_objekt_kp9"
 
 #: src/keyboard.c:114
 msgid "change_obstacle_label"
@@ -1070,7 +1063,7 @@ msgstr "Kontroller"
 msgid "ARROWS to select, ENTER to remap, ESCAPE to exit"
 msgstr "PILTANGENTER för att markera, RETUR för att ändra, ESC för att avsluta"
 
-#: src/keyboard.c:770
+#: src/keyboard.c:772
 #, c-format
 msgid "Screenshot saved to \"%s\" in your .freedroid_rpg/ directory."
 msgstr "Skärmdump sparad som \"%s\" i din \".freedroid_rpg/\"-katalog."
@@ -1137,7 +1130,7 @@ msgstr "Stänger av automatiskt"
 msgid "Weapon reloaded"
 msgstr "Vapnet omladdat"
 
-#: src/map.c:1154
+#: src/map.c:1201
 msgid ""
 "-- WARNING --\n"
 "An obstacle with invalid coords was loaded onto a map.\n"
@@ -1149,7 +1142,7 @@ msgstr ""
 "Vi behåller det för att underlätta felsökning.\n"
 "Se rapporten i din terminal."
 
-#: src/map.c:1375
+#: src/map.c:1422
 msgid ""
 "-- WARNING --\n"
 "An obstacle with invalid coords is saved to a map.\n"
@@ -1161,7 +1154,7 @@ msgstr ""
 "Vi lät det sparas för ytterligare felsökning.\n"
 "Se rapporten i din terminal."
 
-#: src/menu.c:44 src/menu.c:967
+#: src/menu.c:44 src/menu.c:968
 msgid "Play"
 msgstr "Spela"
 
@@ -1189,61 +1182,61 @@ msgstr "OpenGL-utmatning aktiv: JA"
 msgid "OpenGL output active: NO"
 msgstr "OpenGL-utmatning aktiv: NEJ"
 
-#: src/menu.c:340 src/menu.c:1742
+#: src/menu.c:340 src/menu.c:1743
 msgid "[down]"
 msgstr "[ner]"
 
-#: src/menu.c:341 src/menu.c:1729
+#: src/menu.c:341 src/menu.c:1730
 msgid "[up]"
 msgstr "[upp]"
 
-#: src/menu.c:968
+#: src/menu.c:969
 msgid "Tutorial"
 msgstr "Handledning"
 
-#: src/menu.c:969
+#: src/menu.c:970
 msgid "Level Editor"
 msgstr "Kartredigerare"
 
-#: src/menu.c:970 src/menu.c:1123
+#: src/menu.c:971 src/menu.c:1124
 msgid "Options"
 msgstr "Inställningar"
 
-#: src/menu.c:971
+#: src/menu.c:972
 msgid "Credits"
 msgstr "Författare"
 
-#: src/menu.c:972
+#: src/menu.c:973
 msgid "Contribute"
 msgstr "Hjälp till"
 
-#: src/menu.c:1003
+#: src/menu.c:1004
 msgid "easy"
 msgstr "lätt"
 
-#: src/menu.c:1004
+#: src/menu.c:1005
 msgid "normal"
 msgstr "normal"
 
-#: src/menu.c:1005
+#: src/menu.c:1006
 msgid "hard"
 msgstr "svår"
 
-#: src/menu.c:1008
+#: src/menu.c:1009
 #, c-format
 msgid "Difficulty: %s"
 msgstr "Svårighetsgrad: %s"
 
-#: src/menu.c:1009 src/menu.c:1071 src/menu.c:1185 src/menu.c:1269
-#: src/menu.c:1330 src/menu.c:1441 src/menu.c:1521 src/menu.c:1594
-#: src/menu.c:1749 src/menu.c:1781 src/menu.c:1806 src/menu.c:1863
+#: src/menu.c:1010 src/menu.c:1072 src/menu.c:1186 src/menu.c:1270
+#: src/menu.c:1331 src/menu.c:1442 src/menu.c:1522 src/menu.c:1595
+#: src/menu.c:1750 src/menu.c:1782 src/menu.c:1807 src/menu.c:1864
 #: src/lvledit/lvledit_menu.c:121 src/lvledit/lvledit_menu.c:268
 #: src/lvledit/lvledit_menu.c:370 src/lvledit/lvledit_menu.c:590
 #: src/lvledit/lvledit_menu.c:878
 msgid "Back"
 msgstr "Tillbaka"
 
-#: src/menu.c:1031
+#: src/menu.c:1032
 msgid ""
 "You need to restart FreedroidRPG for some changes to take effect.\n"
 "\n"
@@ -1253,173 +1246,173 @@ msgstr ""
 "\n"
 "Vi ber om ursäkt för besväret."
 
-#: src/menu.c:1062
+#: src/menu.c:1063
 msgid "Gameplay"
 msgstr "Spelet"
 
-#: src/menu.c:1063
+#: src/menu.c:1064
 msgid "Graphics"
 msgstr "Grafik"
 
-#: src/menu.c:1064
+#: src/menu.c:1065
 msgid "Sound"
 msgstr "Ljud"
 
-#: src/menu.c:1065
+#: src/menu.c:1066
 msgid "Keys"
 msgstr "Kontroller"
 
-#: src/menu.c:1067
+#: src/menu.c:1068
 msgid "Languages"
 msgstr "Språk"
 
-#: src/menu.c:1069
+#: src/menu.c:1070
 msgid "On-Screen displays"
 msgstr "Skärmen"
 
-#: src/menu.c:1070
+#: src/menu.c:1071
 msgid "Performance tweaks"
 msgstr "Prestandajusteringar"
 
-#: src/menu.c:1118
+#: src/menu.c:1119
 msgid "Resume Play"
 msgstr "Återuppta Spel"
 
-#: src/menu.c:1120
+#: src/menu.c:1121
 msgid "Resume Playtest"
 msgstr "Återuppta Speltest"
 
-#: src/menu.c:1122
+#: src/menu.c:1123
 msgid "Save Hero"
 msgstr "Spara Hjälte"
 
-#: src/menu.c:1129
+#: src/menu.c:1130
 msgid "Return to Level Editor"
 msgstr "Återvänd till Kartredigerare"
 
-#: src/menu.c:1176
+#: src/menu.c:1177
 msgid "System default"
 msgstr "Systemets standard"
 
-#: src/menu.c:1320
+#: src/menu.c:1321
 #, c-format
 msgid "Change screen resolution"
 msgstr "Ändra skärmupplösning"
 
-#: src/menu.c:1322
+#: src/menu.c:1323
 #, c-format
 msgid "Fullscreen mode: %s"
 msgstr "Helskärmsläge: %s"
 
-#: src/menu.c:1322
+#: src/menu.c:1323
 msgid "ON"
 msgstr "PÅ"
 
-#: src/menu.c:1322
+#: src/menu.c:1323
 msgid "OFF"
 msgstr "AV"
 
-#: src/menu.c:1326
+#: src/menu.c:1327
 #, c-format
 msgid "Show blood: %s"
 msgstr "Visa blod: %s"
 
-#: src/menu.c:1326 src/menu.c:1511 src/menu.c:1514 src/menu.c:1519
-#: src/menu.c:1588 src/menu.c:1589 src/menu.c:1590 src/menu.c:1591
+#: src/menu.c:1327 src/menu.c:1512 src/menu.c:1515 src/menu.c:1520
+#: src/menu.c:1589 src/menu.c:1590 src/menu.c:1591 src/menu.c:1592
 msgid "YES"
 msgstr "JA"
 
-#: src/menu.c:1326 src/menu.c:1511 src/menu.c:1514 src/menu.c:1519
-#: src/menu.c:1588 src/menu.c:1589 src/menu.c:1590 src/menu.c:1591
+#: src/menu.c:1327 src/menu.c:1512 src/menu.c:1515 src/menu.c:1520
+#: src/menu.c:1589 src/menu.c:1590 src/menu.c:1591 src/menu.c:1592
 msgid "NO"
 msgstr "NEJ"
 
-#: src/menu.c:1413
+#: src/menu.c:1414
 #, c-format
 msgid "<-- Background music volume: %1.2f -->"
 msgstr "<-- Volym på bakgrundsmusik: %1.2f -->"
 
-#: src/menu.c:1417
+#: src/menu.c:1418
 #, c-format
 msgid "<-- Sound effects volume: %1.2f -->"
 msgstr "<-- Volym på ljudeffekter:  %1.2f -->"
 
-#: src/menu.c:1423
+#: src/menu.c:1424
 #, c-format
 msgid "<-- Output: Stereo -->"
 msgstr "<-- Ljud ut: Stereo -->"
 
-#: src/menu.c:1427
+#: src/menu.c:1428
 #, c-format
 msgid "<-- Output: 4.0 Surround -->"
 msgstr "<-- Ljud ut: 4.0 Surround -->"
 
-#: src/menu.c:1431
+#: src/menu.c:1432
 #, c-format
 msgid "<-- Output: 5.1 Surround -->"
 msgstr "<-- Ljud ut: 5.1 Surround -->"
 
-#: src/menu.c:1435
+#: src/menu.c:1436
 #, c-format
 msgid "<-- Output: Error -->"
 msgstr "<-- Ljud ut: Fel -->"
 
-#: src/menu.c:1506
+#: src/menu.c:1507
 #, c-format
 msgid "FPS limit: none"
 msgstr "FPS-gräns: ingen"
 
-#: src/menu.c:1508
+#: src/menu.c:1509
 #, c-format
 msgid "FPS limit: %d"
 msgstr "FPS-gräns: %d"
 
-#: src/menu.c:1511
+#: src/menu.c:1512
 #, c-format
 msgid "Show light radius: %s"
 msgstr "Visa ljusradie: %s"
 
-#: src/menu.c:1514
+#: src/menu.c:1515
 #, c-format
 msgid "Show obstacle shadows: %s"
 msgstr "Visa skuggor från hinder: %s"
 
-#: src/menu.c:1519
+#: src/menu.c:1520
 #, c-format
 msgid "Precache item graphics: %s"
 msgstr "Läs in grafik i cache i förväg: %s"
 
-#: src/menu.c:1588
+#: src/menu.c:1589
 #, c-format
 msgid "Show position: %s"
 msgstr "Visa position: %s"
 
-#: src/menu.c:1589
+#: src/menu.c:1590
 #, c-format
 msgid "Show framerate: %s"
 msgstr "Visa framerate: %s"
 
-#: src/menu.c:1590
+#: src/menu.c:1591
 #, c-format
 msgid "Show enemies' energy bars: %s"
 msgstr "Visa energimätare för fiender: %s"
 
-#: src/menu.c:1591
+#: src/menu.c:1592
 #, c-format
 msgid "Show effect countdowns: %s"
 msgstr "Visa nedräkningar för program: %s"
 
-#: src/menu.c:1592
+#: src/menu.c:1593
 #, c-format
 msgid "<-- Max. screen messages: %d -->"
 msgstr "<-- Max. antal meddelanden på skärmen: %d -->"
 
-#: src/menu.c:1593
+#: src/menu.c:1594
 #, c-format
 msgid "<-- Screen message lifetime: %3.1fs -->"
 msgstr "<-- Livsläng för meddelanden på skärmen: %3.1fs -->"
 
-#: src/menu.c:1638
+#: src/menu.c:1639
 msgid ""
 "\n"
 "     Please enter a name\n"
@@ -1439,7 +1432,7 @@ msgstr ""
 "\n"
 ">"
 
-#: src/menu.c:1660
+#: src/menu.c:1661
 #, c-format
 msgid ""
 "A character named \"%s\" already exists.\n"
@@ -1448,28 +1441,28 @@ msgstr ""
 "En karaktär med namnet \"%s\" finns redan.\n"
 "Var vänlig välj ett annat namn."
 
-#: src/menu.c:1784
+#: src/menu.c:1785
 msgid "No saved games found!"
 msgstr "Inga sparade spel funna!"
 
-#: src/menu.c:1805
+#: src/menu.c:1806
 msgid "Sure!"
 msgstr "Säkert!"
 
-#: src/menu.c:1809
+#: src/menu.c:1810
 #, c-format
 msgid "Really delete hero '%s'?"
 msgstr "Vill du verkligen ta bort hjälten \"%s\"?"
 
-#: src/menu.c:1860
+#: src/menu.c:1861
 msgid "New Hero"
 msgstr "Ny Hjälte"
 
-#: src/menu.c:1861
+#: src/menu.c:1862
 msgid "Load existing Hero"
 msgstr "Ladda befintlig Hjälte"
 
-#: src/menu.c:1862
+#: src/menu.c:1863
 msgid "Delete existing Hero"
 msgstr "Ta bort Hjälte"
 
@@ -1869,7 +1862,7 @@ msgstr "Lys upp området"
 #: src/skills.c:920
 #, c-format
 msgid "Turn damage into heat"
-msgstr ""
+msgstr "Konvertera skada till värme"
 
 #: src/skills.c:926
 #, c-format
@@ -1973,7 +1966,7 @@ msgstr "osynlig"
 
 #: src/text.c:381
 msgid "shielded"
-msgstr ""
+msgstr "skyddad"
 
 #: src/text.c:387
 msgid "scanning"
@@ -2009,7 +2002,7 @@ msgstr "mästare"
 
 #: src/vars.h:45
 msgid "Ph. D."
-msgstr ""
+msgstr "Ph. D."
 
 #: src/vars.h:46
 msgid "haxx0r"
@@ -2221,16 +2214,16 @@ msgstr ""
 "%s\n"
 "Närmar sig Tux:"
 
-#: src/lvledit/lvledit_map.c:410
+#: src/lvledit/lvledit_map.c:401
 #, c-format
 msgid "Saving map files to %s/ instead of the default location %s/."
 msgstr "Sparar kartan till %s/ istället för standardplatsen %s/."
 
-#: src/lvledit/lvledit_map.c:416
+#: src/lvledit/lvledit_map.c:407
 msgid "Your ship was saved..."
 msgstr "Ditt skepp sparades..."
 
-#: src/lvledit/lvledit_map.c:422
+#: src/lvledit/lvledit_map.c:413
 msgid "Your ship can not be saved !!! See the console output..."
 msgstr "Ditt skepp kan inte sparas !!! Se utdatat i konsolen..."
 
@@ -2509,95 +2502,6 @@ msgstr "Visa Hjälp"
 msgid "Place tool does not support this type of object."
 msgstr "Placeringsverktyget stödjer inte detta objekt."
 
-#. TRANSLATORS: "Obs." is for "obstacle" please keep it abbreviated in your language respectively
-#: src/lvledit/lvledit_widget_toolbar.c:115
-#, c-format
-msgid "Obs. number %d, %s\n"
-msgstr "Hinder nr. %d, %s\n"
-
-#: src/lvledit/lvledit_widget_toolbar.c:133
-#, c-format
-msgid ""
-"%s\n"
-"\t\t\tclass: %d, xp_reward: %hd\n"
-"\t\t\theal: %.2f /s, max_energy: %.2f, max_speed: %.2f\n"
-"\t\t\taggression_dist: %.2f, eyeing_tux_for: %.2f s"
-msgstr ""
-"%s\n"
-"\t\t\tklass: %d, erf_belöning: %hd\n"
-"\t\t\tläkning: %.2f /s, max_energi: %.2f, max_fart: %.2f\n"
-"\t\t\taggression_avst: %.2f, ser_tux_i: %.2f s"
-
-#: src/lvledit/lvledit_widget_toolbar.c:147
-#, c-format
-msgid ""
-"%s (%s)\n"
-"\t\t\tDamage: %d-%d, Attack Time: %.2fs, Reload Time: %.2fs, Ammo: (%d/%s)\n"
-"\t\t\tSTR: >%d\n"
-"%s"
-msgstr ""
-"%s (%s)\n"
-"\t\t\tSkada: %d-%d, Attacktid: %.2fs, Omladdningstid: %.2fs\n"
-"\t\t\tAmmo: (%d/%s), STRK: >%d\n"
-"%s"
-
-#: src/lvledit/lvledit_widget_toolbar.c:155
-#: src/lvledit/lvledit_widget_toolbar.c:165
-msgid "Requires two hands\n"
-msgstr "Kräver båda händer\n"
-
-#: src/lvledit/lvledit_widget_toolbar.c:158
-#, c-format
-msgid ""
-"%s (%s)\n"
-"\t\t\tDamage: %d-%d, Attack Time: %.2fs,\n"
-"\t\t\tSTR: >%d, DEX: >%d, COOL: >%d\n"
-"%s"
-msgstr ""
-"%s (%s)\n"
-"\t\t\tSkada: %d-%d, Attacktid: %.2fs,\n"
-"\t\t\tSTRK: >%d, SMD: >%d, KYL: >%d\n"
-"%s"
-
-#: src/lvledit/lvledit_widget_toolbar.c:168
-#, c-format
-msgid ""
-"%s (%s)\n"
-"\t\t\tArmor: %d-%d, Durability:  %d-%d,\n"
-"\t\t\tSTR: >%d, DEX: >%d, COOL: >%d\n"
-msgstr ""
-"%s (%s)\n"
-"\t\t\tSkydd: %d-%d, Hållbarhet:  %d-%d,\n"
-"\t\t\tSTRK: >%d, SMD: >%d, KYL: >%d\n"
-
-#: src/lvledit/lvledit_widget_toolbar.c:189
-#, c-format
-msgid "Overlay floor tile number %d, filename %s\n"
-msgstr "Mönster till övre golvlager, nummer %d, filnamn %s\n"
-
-#: src/lvledit/lvledit_widget_toolbar.c:192
-#, c-format
-msgid "Underlay floor tile number %d, filename %s\n"
-msgstr "Mönster till undre golvlager, nummer %d, filnamn %s\n"
-
-#: src/lvledit/lvledit_widget_toolbar.c:199
-#, c-format
-msgid "Waypoint %s connection, %sused for random spawn\n"
-msgstr "Waypoint %s-anslutning, %sanvänd för slumpmässig uplacering\n"
-
-#: src/lvledit/lvledit_widget_toolbar.c:199
-msgid "two way"
-msgstr "tvåvägs-"
-
-#: src/lvledit/lvledit_widget_toolbar.c:199
-msgid "not "
-msgstr "inte"
-
-#: src/lvledit/lvledit_widget_toolbar.c:208
-#, c-format
-msgid "There currently is only one type of map label"
-msgstr "För tillfället finns endast en sorts kartetikett"
-
 #: src/lvledit/lvledit_widgets.c:54
 msgid "wall"
 msgstr "vägg"
@@ -2651,7 +2555,7 @@ msgstr "sand"
 
 #: src/lvledit/lvledit_widgets.c:74
 msgid "melee"
-msgstr "strid"
+msgstr "närstrid"
 
 #: src/lvledit/lvledit_widgets.c:75
 msgid "gun"
@@ -2663,7 +2567,7 @@ msgstr "försvar"
 
 #: src/lvledit/lvledit_widgets.c:77
 msgid "usable"
-msgstr "användbar"
+msgstr "förbrukning"
 
 #: src/lvledit/lvledit_widgets.c:91
 msgid "droids"
@@ -2893,7 +2797,7 @@ msgstr "Hinder"
 
 #: src/lvledit/lvledit_widgets.c:578
 msgid "Floor"
-msgstr "Mark"
+msgstr "Golv"
 
 #: src/lvledit/lvledit_widgets.c:585
 msgid "Item"
@@ -2911,6 +2815,95 @@ msgstr "Wayp."
 #: src/lvledit/lvledit_widgets.c:607
 msgid "Label"
 msgstr "Etikett"
+
+#. TRANSLATORS: "Obs." is for "obstacle" please keep it abbreviated in your language respectively
+#: src/lvledit/lvledit_widget_toolbar.c:115
+#, c-format
+msgid "Obs. number %d, %s\n"
+msgstr "Hinder nr. %d, %s\n"
+
+#: src/lvledit/lvledit_widget_toolbar.c:133
+#, c-format
+msgid ""
+"%s\n"
+"\t\t\tclass: %d, xp_reward: %hd\n"
+"\t\t\theal: %.2f /s, max_energy: %.2f, max_speed: %.2f\n"
+"\t\t\taggression_dist: %.2f, eyeing_tux_for: %.2f s"
+msgstr ""
+"%s\n"
+"\t\t\tklass: %d, erf_belöning: %hd\n"
+"\t\t\tläkning: %.2f /s, max_energi: %.2f, max_fart: %.2f\n"
+"\t\t\taggression_avst: %.2f, ser_tux_i: %.2f s"
+
+#: src/lvledit/lvledit_widget_toolbar.c:147
+#, c-format
+msgid ""
+"%s (%s)\n"
+"\t\t\tDamage: %d-%d, Attack Time: %.2fs, Reload Time: %.2fs, Ammo: (%d/%s)\n"
+"\t\t\tSTR: >%d\n"
+"%s"
+msgstr ""
+"%s (%s)\n"
+"\t\t\tSkada: %d-%d, Attacktid: %.2fs, Omladdningstid: %.2fs\n"
+"\t\t\tAmmo: (%d/%s), STRK: >%d\n"
+"%s"
+
+#: src/lvledit/lvledit_widget_toolbar.c:155
+#: src/lvledit/lvledit_widget_toolbar.c:165
+msgid "Requires two hands\n"
+msgstr "Kräver båda händer\n"
+
+#: src/lvledit/lvledit_widget_toolbar.c:158
+#, c-format
+msgid ""
+"%s (%s)\n"
+"\t\t\tDamage: %d-%d, Attack Time: %.2fs,\n"
+"\t\t\tSTR: >%d, DEX: >%d, COOL: >%d\n"
+"%s"
+msgstr ""
+"%s (%s)\n"
+"\t\t\tSkada: %d-%d, Attacktid: %.2fs,\n"
+"\t\t\tSTRK: >%d, SMD: >%d, KYL: >%d\n"
+"%s"
+
+#: src/lvledit/lvledit_widget_toolbar.c:168
+#, c-format
+msgid ""
+"%s (%s)\n"
+"\t\t\tArmor: %d-%d, Durability:  %d-%d,\n"
+"\t\t\tSTR: >%d, DEX: >%d, COOL: >%d\n"
+msgstr ""
+"%s (%s)\n"
+"\t\t\tSkydd: %d-%d, Hållbarhet:  %d-%d,\n"
+"\t\t\tSTRK: >%d, SMD: >%d, KYL: >%d\n"
+
+#: src/lvledit/lvledit_widget_toolbar.c:189
+#, c-format
+msgid "Overlay floor tile number %d, filename %s\n"
+msgstr "Mönster till övre golvlager, nummer %d, filnamn %s\n"
+
+#: src/lvledit/lvledit_widget_toolbar.c:192
+#, c-format
+msgid "Underlay floor tile number %d, filename %s\n"
+msgstr "Mönster till undre golvlager, nummer %d, filnamn %s\n"
+
+#: src/lvledit/lvledit_widget_toolbar.c:199
+#, c-format
+msgid "Waypoint %s connection, %sused for random spawn\n"
+msgstr "Waypoint %s-anslutning, %sanvänd för slumpmässig uplacering\n"
+
+#: src/lvledit/lvledit_widget_toolbar.c:199
+msgid "two way"
+msgstr "tvåvägs-"
+
+#: src/lvledit/lvledit_widget_toolbar.c:199
+msgid "not "
+msgstr "inte"
+
+#: src/lvledit/lvledit_widget_toolbar.c:208
+#, c-format
+msgid "There currently is only one type of map label"
+msgstr "För tillfället finns endast en sorts kartetikett"
 
 #: src/savegame/convert.c:184
 msgid ""
@@ -3055,6 +3048,8 @@ msgid ""
 "Error during savegame filtering (%s:%s): Tux 'Inventory' attribute was not found.\n"
 "The savegame seems to be corrupted."
 msgstr ""
+"Fel vid filtrering av sparat spel (%s:%s): Attributet Tux 'Inventory' hittades inte.\n"
+"Detta sparade spel verkar vara skadat."
 
 #: src/savegame/filters_0_16_1.c:273
 #, c-format
@@ -3062,6 +3057,8 @@ msgid ""
 "Error during savegame filtering (%s:%s): Tux 'HaveBeenToLevel' attribute was not found.\n"
 "The savegame seems to be corrupted."
 msgstr ""
+"Fel vid filtrering av sparat spel (%s:%s): Attributet Tux 'HaveBeenToLevel' hittades inte.\n"
+"Detta sparade spel verkar vara skadat."
 
 #: src/savegame/filters_0_16_1.c:306
 #, c-format
@@ -3069,3 +3066,5 @@ msgid ""
 "Error during savegame filtering (%s:%s): Malformed item type string in Tux struct.\n"
 "The savegame seems to be corrupted."
 msgstr ""
+"Fel vid filtrering av sparat spel (%s:%s): Felaktig item type sträng i Tux struct.\n"
+"Detta sparade spel verkar vara skadat."

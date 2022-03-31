@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 1.0RC1\n"
-"Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-05-08 17:36+0200\n"
+"Project-Id-Version: freedroidrpg 1.0RC2\n"
+"Report-Msgid-Bugs-To: https://www.freedroid.org\n"
+"POT-Creation-Date: 2022-03-31 13:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14198,7 +14198,7 @@ msgid "So, what do you want to buy?"
 msgstr ""
 
 #: data/storyline/act1/dialogs/Lukas.lua:62
-msgid "I am interesting in buying ammo."
+msgid "I am interested in buying ammo."
 msgstr ""
 
 #: data/storyline/act1/dialogs/Lukas.lua:64
@@ -17344,7 +17344,7 @@ msgid "But you can help us with the preparatives, if you want."
 msgstr ""
 
 #: data/storyline/act1/dialogs/Saul.lua:35
-msgid "Contact information can be found at [b]http://www.freedroid.org/Contact[/b]"
+msgid "Contact information can be found at [b]https://www.freedroid.org/Contact[/b]"
 msgstr ""
 
 #: data/storyline/act1/dialogs/Saul.lua:42
@@ -18334,7 +18334,7 @@ msgid "However, if you did in fact NOT cheat, please tell the developers how you
 msgstr ""
 
 #: data/storyline/act1/dialogs/Spencer.lua:217
-msgid "Contact information can be found at http://www.freedroid.org/Contact"
+msgid "Contact information can be found at https://www.freedroid.org/Contact"
 msgstr ""
 
 #: data/storyline/act1/dialogs/Spencer.lua:224

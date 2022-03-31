@@ -75,7 +75,7 @@ Para o jogo de hackear, você pode usar a roda do mouse ou as teclas direcionais
 
 Você pode se interessar em jogar o Tutorial, acessível no menu principal.
 
-Se você precisar de ajuda ou tiver problemas, sinta-se livre para vir em #freedroid em irc.freenode.net e pedir ajuda.
+If you are stuck and need help, feel free to come to #freedroid on irc.libera.chat and ask for help.
 
 Isso é tudo, tenha um bom jogo.
 

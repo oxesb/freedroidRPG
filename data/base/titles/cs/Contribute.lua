@@ -51,7 +51,7 @@ KONTAKT:
 Pokud byste rádi něčím přispěli nebo poskytli zpětnou vazbu ohledně hry, můžete se jednoduše spojit s vývojáři. Stačí poslat e-mail na následující adresu:
 freedroid-discussion@lists.sourceforge.net
 
-Nebo se můžete zastavit na našem IRC kanálu (#freedroid na irc.freenode.net).  Všichni jsou vítáni. Přiveďte i své přátele!
+Or, if you prefer, you might want to pop into our IRC channel (#freedroid on irc.libera.chat). Everyone's invited. Bring your friends!
 
 Díky,
 

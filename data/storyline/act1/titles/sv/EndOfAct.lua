@@ -33,24 +33,25 @@ text = [[
 Bottarna verkar väldig upprörda över något.
 Dig, antar jag.
 Åtminstone slutade de leta efter mig.
-Quite a? Relief?
+En sådan... Lättnad?
 
 Det finns en AI i närheten av dig.
 Den kallar sig "Singulariteten".
 Eller något i den stilen.
 Jag förstår inte vad den vill.
-Jag höra av mig.
+Jag hör av mig.
 
 Och, förresten...
-I'm still waiting for you.
-I haven't moved an inch since you woke up.
-Now that the beloved town of yours is safe...
-...Wouldn't it be a good time to save me as well?
+Jag väntar fortfarande på dig.
+Jag har inte rört mig en millimeter sedan du vaknade.
+Nu när du räddat din kära lilla stad...
+... är det inte dags att rädda mig också?
 
             Dvorak, Förste AI.
 
 
 
-=== END OF ACT 1 ===
+=== SLUT PÅ AKT 1 ===
+
 ]]
 }

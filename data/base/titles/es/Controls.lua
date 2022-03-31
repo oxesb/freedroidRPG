@@ -26,19 +26,19 @@ song = "Bleostrada.ogg",
 text = [[
             CONTROLES
 
-MOVEMENT:
+MOVIMIENTO:
 
-The game is controlled using the mouse. Left click onto the locations you want to move to.  Hold the button down to keep moving in that direction.  Holding down CTRL key will make you run.
+El juego se controla usando el ratón. Haz click izquierdo en las zonas a las que quieras moverte. Mantén el botón pulsado para moverte en esa dirección. Manteniendo pulsado la tecla CTRL hará que corras.
 
-ATTACK:
+ATACAR:
 
-Left clicking an enemy will cause Tux to come close to the bot and to start attacking it with the current weapon. If the current weapon is a gun then Tux will stand still and shoot the bot.
+Haciendo click izquierdo sobre un enemigo hará que Tux se acerque al robot y lo ataque con su arma equipada. Si la arma presente es un arma de fuego entonces Tux se quedara quieto y disparara al robot.
 
-SPECIAL FUNCTIONS:
+FUNCIONES ESPECIALES:
 
 Use el click derecho para activar la habilidad o programa seleccionado.
 
-Default keys (most keys can be reassigned with the ingame key chart - F1)
+Teclas por defecto (la mayoria de teclas pueden ser reasignadas con la configuracion de teclas en juego - F1)
 
   Escape ... Mostrar menú principal
   F1 ... Mostrar configuración de teclas
@@ -57,7 +57,7 @@ Default keys (most keys can be reassigned with the ingame key chart - F1)
   P... Pausa
   Mantener A ... Atacar manteniando la posición
   Mantener Shift ... Mantener el objetivo actual seleccionado moviéndose
-  Tab        ... Toggle automap
+  Tab ... Activa el automapa
 
   R ... Recargar arma
   Mantener Ctrl ... Correr
@@ -65,22 +65,22 @@ Default keys (most keys can be reassigned with the ingame key chart - F1)
 
   Mantener X ... Mostrar etiquetas de objetos en el suelo
   Z ... Conmutar mostrar etiquetas de objetos en el suelo
-  T          ... Toggle walls becoming transparent when Tux approaches (OpenGL only)
+  T ... Activa la transparencia de las paredes cuando Tux se acerque (Solo con OpenGL)
 
-TAKEOVER/CHAT
+CAPTURAR/HABLAR
 
-To chat with a friendly droid, it's enough to click on it.  To take over a hostile bot, select the takeover/chat skill from the skills screen, then click the right mouse button to initiate takeover.
+Para hablar con un droide amistoso, es suficiente pulsar sobre el. Para capturar un robot hostil, selecciona la habilidad capturar/hablar de la pantalla de habilidades, entonces pulsa el botón derecho del ratón para iniciar la captura.
 
-For the takeover game, you can use the mouse wheel or the cursor keys.
+Para el juego de la captura, puedes usar la rueda del ratón o las teclas de cursor.
 
-You may be interested in playing the Tutorial which you can access from the main menu.
+Quizá te interese jugar el Tutorial el cual puede ser accedido desde el menú principal.
 
-If you are stuck and need help, feel free to come to #freedroid on irc.freenode.net and ask for help.
+If you are stuck and need help, feel free to come to #freedroid on irc.libera.chat and ask for help.
 
-That is all, have a nice game.
+Eso es todo. ¡Que te diviertas!
 
 
 
-Press left mouse button to start playing.
+Pulsa el botón izquierdo del ratón para empezar a jugar.
 ]]
 }

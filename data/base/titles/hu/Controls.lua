@@ -75,7 +75,7 @@ Az átvételi játékhoz az egérgörgőt vagy a kurzorbillentyűket használhat
 
 Esetleg érdekelhet az Oktatójáték, amelyet a főmenüből tudsz elérni.
 
-Ha elakadtál, és segítéségre van szükséged, akkor gyere fel a #freedroid csatornára az irc.freenode.net-en, és kérj segítséget.
+If you are stuck and need help, feel free to come to #freedroid on irc.libera.chat and ask for help.
 
 Ennyi, jó játékot.
 

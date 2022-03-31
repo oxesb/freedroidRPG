@@ -30,27 +30,28 @@ text = [[
     ¿Te diviertes?
   No lo soy.
 
-The bots seem very upset about something.
-I suppose they are angry at you.
-At least they stopped looking for me.
-Quite a? Relief?
+Parece que los bots están muy cabreados por lo que sea.
+Supongo que están enfadados contigo.
+Al menos dejaron de venir a por mi.
+Menudo alivio.
 
-There is an AI in your region.
-"Singularity" it calls itself.
-Or something like that.
-I cannot understand what it wants.
-I'll keep you posted.
+Hay una IA en tu región.
+"Singularidad" es como se hace llamar.
+O algo así.
+No puedo entender lo que quiere.
+Te mantendré informado.
 
-Oh, and by the way...
-I'm still waiting for you.
-I haven't moved an inch since you woke up.
-Now that the beloved town of yours is safe...
-...Wouldn't it be a good time to save me as well?
+Oh, por cierto...
+Todavía sigo esperando por ti.
+No me he movido un centímetro desde que despertaste.
+Ahora que ese querido pueblo tuyo esta a salvo…
+¿...No seria un buen tiempo para salvarme a mi también?
 
             Dvorak, Primera AI.
 
 
 
-=== END OF ACT 1 ===
+=== FIN DEL ACTO 1 ===
+
 ]]
 }

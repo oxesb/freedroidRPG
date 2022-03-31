@@ -5,14 +5,15 @@
 #
 # Translators:
 # Carlos Daniel Landin Montaperto <linkin_yh@hotmail.com>, 2019
+# Valora Valenteno <valvalenteno@gmail.com>, 2021
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 1.0RC1\n"
-"Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-30 22:43+0100\n"
+"Project-Id-Version: freedroidrpg 1.0RC2\n"
+"Report-Msgid-Bugs-To: https://www.freedroid.org\n"
+"POT-Creation-Date: 2022-03-31 13:00+0200\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
-"Last-Translator: Carlos Daniel Landin Montaperto <linkin_yh@hotmail.com>, 2019\n"
+"Last-Translator: Valora Valenteno <valvalenteno@gmail.com>, 2021\n"
 "Language-Team: Spanish (https://www.transifex.com/arctic-games/teams/9511/es/)\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +27,7 @@ msgstr "123 Acolyte"
 
 #: data/base/droid_specs.lua:99
 msgid "A simple rubbish disposal robot. Common device in most factories to maintain a clean yard."
-msgstr ""
+msgstr "Un simple robot de eliminación de basura. Dispositivo común en la mayoría de las fábricas para mantener un patio limpio."
 
 #: data/base/droid_specs.lua:140 data/storyline/act1/ReturnOfTux.droids:271
 msgid "139 Templar"
@@ -34,7 +35,7 @@ msgstr "139 Templario "
 
 #: data/base/droid_specs.lua:141
 msgid "Created by Dr. Masternak to clean up large heaps of rubbish. Its large scoop is used to collect rubbish. It is then crushed internally."
-msgstr ""
+msgstr "Creado por el Dr. Masternak para limpiar grandes cantidades de basura. Su pala grande se utiliza para recoger basura. Luego se tritura internamente."
 
 #: data/base/droid_specs.lua:183 data/storyline/act1/ReturnOfTux.droids:272
 msgid "247 Banshee"
@@ -42,7 +43,7 @@ msgstr "247 Banshee"
 
 #: data/base/droid_specs.lua:184
 msgid "A light duty servant robot. One of the first to use the anti-grav system."
-msgstr ""
+msgstr "Un robot de servicio ligero. Uno de los primeros en utilizar el sistema anti-gravitación."
 
 #: data/base/droid_specs.lua:230 data/storyline/act1/ReturnOfTux.droids:112
 #: data/storyline/act1/ReturnOfTux.droids:273
@@ -51,15 +52,15 @@ msgstr "249 Chicago"
 
 #: data/base/droid_specs.lua:231
 msgid "Cheaper version of the anti-grav servant robot. This one is armed with rapid fire weaponry."
-msgstr ""
+msgstr "Versión más barata del robot sirviente anti-gravedad. Éste está munido armas de fuego rápido."
 
 #: data/base/droid_specs.lua:276 data/storyline/act1/ReturnOfTux.droids:274
 msgid "296 Sawmill"
-msgstr "296 Acerradero"
+msgstr "296 Aserradero"
 
 #: data/base/droid_specs.lua:277
 msgid "Originally designed by Orchard and Marsden Enterprises, this robot was used as a servant droid in drinking establishments. A tray is mounted on the head for carrying drinks and a wide wheel base provided droid stability to prevent spillage. WARNING: You will lose something if you try to steal a drink!"
-msgstr ""
+msgstr "Originalmente diseñado por Orchard y Marsden Enterprises, este robot fue usado como un doide sirviente en establecimientos de bebidas. Una bandeja está montada en su cabeza para transportar bebidas y una amplia base de ruedas proporciona estabilidad para evitar derrames. ADVERTENCIA: ¡Perderá algo si intenta robar una bebida!"
 
 #: data/base/droid_specs.lua:321 data/storyline/act1/ReturnOfTux.droids:103
 #: data/storyline/act1/ReturnOfTux.droids:104
@@ -71,7 +72,7 @@ msgstr "302 Nemesis"
 
 #: data/base/droid_specs.lua:322
 msgid "Common device for moving small packages. Clamp is mounted on the lower body."
-msgstr ""
+msgstr "Un dispositivo común para mover paquetes pequeños. La abrazadera está montada en la parte inferior del cuerpo."
 
 #: data/base/droid_specs.lua:369 data/storyline/act1/ReturnOfTux.droids:110
 #: data/storyline/act1/ReturnOfTux.droids:276
@@ -81,7 +82,7 @@ msgstr "329 Sparkie"
 
 #: data/base/droid_specs.lua:370
 msgid "Early type messenger robot. Large wheels impede motion on small craft."
-msgstr ""
+msgstr "Robot mensajero de tipo antiguo. Las ruedas grandes impiden el movimiento en embarcaciones pequeñas."
 
 #: data/base/droid_specs.lua:416 data/storyline/act1/ReturnOfTux.droids:277
 msgid "420 Surgeon"
@@ -89,7 +90,7 @@ msgstr "420 Cirujano"
 
 #: data/base/droid_specs.lua:417
 msgid "A slow maintenance robot. Confined to drive maintenance during flight."
-msgstr ""
+msgstr "Un robot de mantenimiento lento. Confinado al mantenimiento de la unidad durante el vuelo."
 
 #: data/base/droid_specs.lua:462 data/storyline/act1/ReturnOfTux.droids:278
 #: data/storyline/act1/ReturnOfTux.droids:601
@@ -98,15 +99,15 @@ msgstr "476 Cobarde"
 
 #: data/base/droid_specs.lua:463
 msgid "Ship maintenance robot. Fitted with multiple arms to carry out repairs to the ship efficiently. All craft built after the Jupiter-incident are supplied with a team of these."
-msgstr ""
+msgstr "Robot de mantenimiento de barcos. Equipado con múltiples brazos para realizar reparaciones al barco de manera eficiente. Todas las naves construidas después del incidente de Júpiter se suministran con un equipo de estos."
 
 #: data/base/droid_specs.lua:509 data/storyline/act1/ReturnOfTux.droids:279
 msgid "493 Spinster"
-msgstr "493 Spinter"
+msgstr "493 Spinster"
 
 #: data/base/droid_specs.lua:510
 msgid "Slave maintenance droid. Standard version will carry its own toolbox."
-msgstr ""
+msgstr "Droide de mantenimiento esclavo. La versión estándar llevará su propia caja de herramientas."
 
 #: data/base/droid_specs.lua:556 data/storyline/act1/ReturnOfTux.droids:280
 msgid "516 Ghoul"
@@ -114,15 +115,15 @@ msgstr "516 Ghoul"
 
 #: data/base/droid_specs.lua:557
 msgid "Early crew droid. Able to carry out simple flight checks only. No longer supplied."
-msgstr ""
+msgstr "Droide de tripulación antiguo. Capaz de realizar unicamente simples comprobaciones de vuelo. Ya no se suministra."
 
 #: data/base/droid_specs.lua:603 data/storyline/act1/ReturnOfTux.droids:281
 msgid "543 Forest Harvester"
-msgstr "543 Bosque cegador"
+msgstr "543 Segador de Bosques"
 
 #: data/base/droid_specs.lua:604
 msgid "This bot was designed for logging, but instead of harvesting trees, it's now harvesting people!!! Run away! This bot will kill you!"
-msgstr ""
+msgstr "Este bot fue diseñado para la tala, pero en lugar de cosechar árboles, ¡ahora está cosechando personas! ¡Corre! ¡Este bot te matará!"
 
 #: data/base/droid_specs.lua:648 data/storyline/act1/ReturnOfTux.droids:282
 msgid "571 Apollo"
@@ -130,7 +131,7 @@ msgstr "571 Apollo"
 
 #: data/base/droid_specs.lua:649
 msgid "A standard crew droid. Supplied with the ship."
-msgstr ""
+msgstr "Un droide de tripulación estándar. Suministrado con el barco."
 
 #: data/base/droid_specs.lua:696 data/storyline/act1/ReturnOfTux.droids:283
 msgid "598 Minister"
@@ -243,7 +244,7 @@ msgstr ""
 
 #: data/base/droid_specs.lua:1259 data/storyline/act2/ReturnOfTux.droids:129
 msgid "The Glitch"
-msgstr ""
+msgstr "El Glitch"
 
 #: data/base/droid_specs.lua:1260
 msgid "I have not failed. I've just found 10,000 ways how to NOT make a bot."
@@ -394,15 +395,15 @@ msgstr ""
 
 #: data/base/droid_specs.lua:2120
 msgid "This is a secure terminal."
-msgstr ""
+msgstr "Esta es una terminal segura"
 
 #: data/base/game_config.lua:31
 msgid "-= Start of Act 1 =-"
-msgstr ""
+msgstr "-= Inicio del Acto 1 =-"
 
 #: data/base/game_config.lua:34
 msgid "-= Start of Act 2 =-"
-msgstr ""
+msgstr "-= Inicio del Acto 2 =-"
 
 #: data/base/item_specs.lua:121
 msgid "The first item is VERY buggy ingame, so don't use it."
@@ -1209,15 +1210,15 @@ msgstr "Saber que están planeando tus enemigos es fácil con un poco de anális
 
 #: data/base/item_specs.lua:1834
 msgid "Source Book of Energy Shield"
-msgstr ""
+msgstr "Libro fuente del escudo de energía"
 
 #: data/base/item_specs.lua:1835 data/base/skill_specs.lua:213
 msgid "Energy Shield"
-msgstr ""
+msgstr "Escudo de energía"
 
 #: data/base/item_specs.lua:1839 data/base/skill_specs.lua:218
 msgid "Creating an energy shield to protect you can be a very useful skill. Every hit that you get will be converted into heat. Beware: This heats up excessively. Equipment can still be damaged by heat. When you overheat, shield will try to automatically turn off to prevent damage to itself. It may provoke extra-heat on this process, so be sure to not let it happen."
-msgstr ""
+msgstr "Crear un escudo de energía para protegerte puede ser una habilidad muy útil. Cada golpe que recibas se convertirá en calor. Advertencia: esto genera un exceso de temperatura. Puede que tu equipamiento todavía sea dañado por el calor. Si se produce un sobrecalentamiento, el escudo tratará de desactivarse automáticamente para evitar dañarse a sí mismo. Esto puede producir calor adicional, así que procura que no pase."
 
 #: data/base/item_specs.lua:1846
 msgid "Subatomic and Nuclear Science for Dummies, Volume IV"
@@ -2164,7 +2165,7 @@ msgstr "A Túneles de Mantenimiento"
 
 #: data/storyline/act1/events.dat:68
 msgid "To Regular Arena"
-msgstr ""
+msgstr "A Arena Normal"
 
 #: data/storyline/act1/events.dat:79
 msgid "To Master Arena"
@@ -2288,7 +2289,7 @@ msgstr "Esclusa con escalera rotaº"
 
 #: data/storyline/act1/events.dat:1840 data/storyline/act2/events.dat:423
 msgid "Exit Arena"
-msgstr ""
+msgstr "Salir de Arena"
 
 #: data/storyline/act1/events.dat:1847 data/storyline/act2/events.dat:430
 msgid "Start New Wave"
@@ -2354,7 +2355,7 @@ msgstr "Lugar desconocido"
 
 #: data/storyline/act1/events.dat:2637
 msgid "To the other continent..."
-msgstr ""
+msgstr "Al otro continente..."
 
 #: data/storyline/act1/events.dat:2647
 msgid "Hidden way out"
@@ -2390,11 +2391,11 @@ msgstr "Necesitamos ir más profundo..."
 
 #: data/storyline/act1/events.dat:7222
 msgid "All aboard!"
-msgstr ""
+msgstr "¡Todo el mundo a bordo!"
 
 #: data/storyline/act1/events.dat:7227
 msgid "All aboard, we're leaving now!"
-msgstr ""
+msgstr "¡Todo el mundo a bordo, partimos ya!"
 
 #: data/storyline/act1/events.dat:7290
 msgid "Back to mainland"
@@ -2402,7 +2403,7 @@ msgstr "De vuelta al continente"
 
 #: data/storyline/act1/events.dat:7304
 msgid "Let us return!"
-msgstr ""
+msgstr "¡Déjanos volver!"
 
 #: data/storyline/act1/levels.dat:20
 msgid "Town"
@@ -2410,7 +2411,7 @@ msgstr "Ciudad"
 
 #: data/storyline/act1/levels.dat:3717
 msgid "Armory of the Red Guard."
-msgstr ""
+msgstr "Arsenal de la Guardia Roja."
 
 #: data/storyline/act1/levels.dat:3720
 msgid "Bonjour - need some cure?"
@@ -2418,11 +2419,11 @@ msgstr "Bonjour, ¿necesitas curarte de algo?"
 
 #: data/storyline/act1/levels.dat:3723
 msgid "Office - this way."
-msgstr "Oficina - Siga de frente. "
+msgstr "Oficina - Sigue de frente."
 
 #: data/storyline/act1/levels.dat:3726
 msgid "Unauthorized access is strictly forbidden!"
-msgstr "El acceso esta prohibido sin autorización."
+msgstr "¡El acceso está prohibido sin autorización!"
 
 #: data/storyline/act1/levels.dat:3732
 msgid "Teleporter. Go anywhere?"
@@ -2438,11 +2439,11 @@ msgstr "Bodega. 2do Piso"
 
 #: data/storyline/act1/levels.dat:5679
 msgid "Kevins Underground Station"
-msgstr "Estación subterránea de Kevin. "
+msgstr "Estación subterránea de Kevin"
 
 #: data/storyline/act1/levels.dat:6151
 msgid "Machine Deck Control Room"
-msgstr "Cuarto de control del área de maquinas."
+msgstr "Cuarto de control del área de máquinas"
 
 #: data/storyline/act1/levels.dat:6894 data/storyline/act1/levels.dat:9176
 msgid "Disruptor Shield Control"
@@ -2450,7 +2451,7 @@ msgstr "Control del escudo disruptor"
 
 #: data/storyline/act1/levels.dat:8413
 msgid "Maintenance Tunnels"
-msgstr "Túneles de mantenimiento."
+msgstr "Túneles de mantenimiento"
 
 #: data/storyline/act1/levels.dat:9842
 msgid "Temple Wood"
@@ -2462,7 +2463,7 @@ msgstr "Casa en venta"
 
 #: data/storyline/act1/levels.dat:11378
 msgid "This sign blocks the path so you cannot walk out of the Matrix. If you did, the Matrix would crash and Mr Smith would be very angry at you!"
-msgstr ""
+msgstr "Este letrero bloquea el camino para que no puedas salir de la Matrix. Si lo hicieras, ¡la Matrix se colgaría y el Sr. Smith estaría muy enfadado contigo!"
 
 #: data/storyline/act1/levels.dat:11593
 msgid "Crystal Fields"
@@ -2471,11 +2472,11 @@ msgstr "Campos de cristal"
 #: data/storyline/act1/levels.dat:12654 data/storyline/act1/levels.dat:39423
 #: data/storyline/act1/levels.dat:39777 data/storyline/act1/levels.dat:40177
 msgid "Desert Valley"
-msgstr "Valle desértico."
+msgstr "Valle desértico"
 
 #: data/storyline/act1/levels.dat:13136
 msgid "Slasher Mountains"
-msgstr "Montañas asesinas."
+msgstr "Montañas asesinas"
 
 #: data/storyline/act1/levels.dat:14320
 msgid "Cryo Stasis Lab"
@@ -2487,7 +2488,7 @@ msgstr "Tierra de los tres Fermis"
 
 #: data/storyline/act1/levels.dat:17323
 msgid "In case of panic: run!"
-msgstr "En caso de pánico: ¡huya!"
+msgstr "En caso de pánico: ¡huye!"
 
 #: data/storyline/act1/levels.dat:17448
 msgid "Scientists quarters and Telemetry"
@@ -2495,210 +2496,210 @@ msgstr "Telemetría y cámaras científicas"
 
 #: data/storyline/act1/levels.dat:18930
 msgid "Disruptor Base Access Tunnel"
-msgstr "Tunel de acceso a la Base del Disruptor"
+msgstr "Tunel de acceso a la base del disruptor"
 
 #: data/storyline/act1/levels.dat:20022
 msgid "Terminal Shore"
-msgstr "Playa Terminal"
+msgstr "Playa terminal"
 
 #: data/storyline/act1/levels.dat:20909
 msgid "Ethereal Meadows"
-msgstr ""
+msgstr "Praderas etéreas"
 
 #: data/storyline/act1/levels.dat:22126
 msgid "Kevins Main Energy Source"
-msgstr ""
+msgstr "Fuente de energía principal de Kevin"
 
 #: data/storyline/act1/levels.dat:22379 data/storyline/act1/levels.dat:22899
 msgid "Northern Shoreline"
-msgstr ""
+msgstr "Costa norteña"
 
 #: data/storyline/act1/levels.dat:23523 data/storyline/act1/levels.dat:23648
 #: data/storyline/act1/levels.dat:23773 data/storyline/act1/levels.dat:40642
 #: data/storyline/act1/levels.dat:67972
 msgid "World Edge Sea"
-msgstr ""
+msgstr "Mar del límite del mundo"
 
 #: data/storyline/act1/levels.dat:23898 data/storyline/act2/levels.dat:30013
 msgid "DEBUG LEVEL 24 -- This level was created to make testing of FreedroidRPG a little easier and is NOT meant to be accessible without cheating."
-msgstr ""
+msgstr "DEBUG NIVEL 24 -- Este nivel se creó para que las pruebas de FreedroidRPG fueran un poco más fáciles y NO se podrá acceder sin hacer trampas."
 
 #: data/storyline/act1/levels.dat:24279
 msgid "Guy signmessage A"
-msgstr ""
+msgstr "Mensaje de chico A"
 
 #: data/storyline/act1/levels.dat:24479
 msgid "Broken Glass Path"
-msgstr ""
+msgstr "Camino de los vidrios rotos"
 
 #: data/storyline/act1/levels.dat:25570
 msgid "Swamp"
-msgstr ""
+msgstr "Pantano"
 
 #: data/storyline/act1/levels.dat:26949
 msgid "Mushroom Forest"
-msgstr ""
+msgstr "Bosque de hongos"
 
 #: data/storyline/act1/levels.dat:28432
 msgid "Some sanctuary"
-msgstr ""
+msgstr "Algún santuario"
 
 #: data/storyline/act1/levels.dat:29306
 msgid "Storage room"
-msgstr ""
+msgstr "Almacén"
 
 #: data/storyline/act1/levels.dat:29309
 msgid "Warning: Hot steam is hot!"
-msgstr ""
+msgstr "Advertencia: ¡El vapor caliente está caliente!"
 
 #: data/storyline/act1/levels.dat:29312
 msgid "Danger: High voltage!"
-msgstr ""
+msgstr "Peligro: ¡Alto voltaje!"
 
 #: data/storyline/act1/levels.dat:29462
 msgid "Arena"
-msgstr ""
+msgstr "Arena"
 
 #: data/storyline/act1/levels.dat:30106
 msgid "Master Arena"
-msgstr ""
+msgstr "Arena para Maestros"
 
 #: data/storyline/act1/levels.dat:30640
 msgid "Hell Fortress Entrance"
-msgstr ""
+msgstr "Entrada a la Fortaleza infernal"
 
 #: data/storyline/act1/levels.dat:33574
 msgid "Upgrade distribution server room. Access restricted to authorized personnel - trespassers will be fired."
-msgstr ""
+msgstr "Actualiza la sala de servidores de distribución. Acceso restringido al personal autorizado"
 
 #: data/storyline/act1/levels.dat:33577
 msgid "Please close the door behind you."
-msgstr ""
+msgstr "Por favor, cierra la puerta detrás de ti."
 
 #: data/storyline/act1/levels.dat:33580
 msgid "Beware of hydroxyl acid!"
-msgstr ""
+msgstr "¡Cuidado con el ácido hidroxílico!"
 
 #: data/storyline/act1/levels.dat:33583
 msgid "Beware of the guns."
-msgstr ""
+msgstr "Cuidado con las pistolas."
 
 #: data/storyline/act1/levels.dat:33586 data/storyline/act1/levels.dat:33646
 #: data/storyline/act1/levels.dat:33652
 msgid "Please read the other sign first."
-msgstr ""
+msgstr "Por favor, lee el otro cartel primero."
 
 #: data/storyline/act1/levels.dat:33589
 msgid "To main office."
-msgstr ""
+msgstr "A la oficina principal."
 
 #: data/storyline/act1/levels.dat:33592
 msgid "Workers office."
-msgstr ""
+msgstr "Oficina de los trabajadores."
 
 #: data/storyline/act1/levels.dat:33595
 msgid "First MS operating system - printed version"
-msgstr ""
+msgstr "Primer sistema operativo MS: versión impresa"
 
 #: data/storyline/act1/levels.dat:33598
 msgid "Beatings will continue until morale improves."
-msgstr ""
+msgstr "Las palizas seguirán hasta que mejore la moral."
 
 #: data/storyline/act1/levels.dat:33601 data/storyline/act1/levels.dat:67367
 msgid "!"
-msgstr ""
+msgstr "!"
 
 #: data/storyline/act1/levels.dat:33604
 msgid "Don't waste your time reading signs. Work!"
-msgstr ""
+msgstr "No pierdas el tiempo leyendo letreros. ¡Trabaja!"
 
 #: data/storyline/act1/levels.dat:33607
 msgid "Server room"
-msgstr ""
+msgstr "Sala de servidores"
 
 #: data/storyline/act1/levels.dat:33610
 msgid "Offices - this way"
-msgstr ""
+msgstr "Oficinas - Sigue de frente"
 
 #: data/storyline/act1/levels.dat:33613
 msgid "Slalom"
-msgstr ""
+msgstr "Slalom"
 
 #: data/storyline/act1/levels.dat:33616
 msgid "Outdoor track"
-msgstr ""
+msgstr "Pista al aire libre"
 
 #: data/storyline/act1/levels.dat:33619
 msgid "Accessing computers"
-msgstr ""
+msgstr "Accediendo a las computadoras"
 
 #: data/storyline/act1/levels.dat:33622
 msgid "Passing doors I"
-msgstr ""
+msgstr "Puertas de paso I"
 
 #: data/storyline/act1/levels.dat:33625
 msgid "Passing doors II"
-msgstr ""
+msgstr "Puertas de paso II"
 
 #: data/storyline/act1/levels.dat:33628
 msgid "To MegaSys office"
-msgstr ""
+msgstr "A la oficina MegaSys"
 
 #: data/storyline/act1/levels.dat:33631
 msgid "For service: wait"
-msgstr ""
+msgstr "Para servicio: espera"
 
 #: data/storyline/act1/levels.dat:33634
 msgid "Today's special: Foobar"
-msgstr ""
+msgstr "Especial de hoy: Foobar"
 
 #: data/storyline/act1/levels.dat:33637
 msgid "We recommend: Quxbaz"
-msgstr ""
+msgstr "Recomendamos: Quxbaz"
 
 #: data/storyline/act1/levels.dat:33640 data/storyline/act1/levels.dat:33643
 msgid "In case of boredom turn gun on."
-msgstr ""
+msgstr "En caso de aburrimiento, activa el arma."
 
 #: data/storyline/act1/levels.dat:33649
 msgid "Authorized personnel only!"
-msgstr ""
+msgstr "¡Solo personal autorizado!"
 
 #: data/storyline/act1/levels.dat:33667
 msgid "If the gate is closed, please ask the office for access."
-msgstr ""
+msgstr "Si la puerta está cerrada, por favor, solicita acceso a la oficina"
 
 #: data/storyline/act1/levels.dat:33929
 msgid "Johns Riddle"
-msgstr ""
+msgstr "Johns Riddle"
 
 #: data/storyline/act1/levels.dat:34069
 msgid "Looking from above, hostiles may appear as salvation."
-msgstr ""
+msgstr "Mirando desde arriba, los hostiles pueden aparecer como la salvación."
 
 #: data/storyline/act1/levels.dat:34111
 msgid "Crystal Caves"
-msgstr ""
+msgstr "Cuevas de cristal"
 
 #: data/storyline/act1/levels.dat:36565
 msgid "Forgotten bunker"
-msgstr ""
+msgstr "Búnker olvidado"
 
 #: data/storyline/act1/levels.dat:36766
 msgid "Secret research center"
-msgstr ""
+msgstr "Centro de investigación secreto"
 
 #: data/storyline/act1/levels.dat:38032
 msgid "Stop!"
-msgstr ""
+msgstr "¡Detente!"
 
 #: data/storyline/act1/levels.dat:38035
 msgid "I warned you... You should consider turning back and running away screaming."
-msgstr ""
+msgstr "Te lo advertí... Deberías considerar la posibilidad de dar la vuelta y huir gritando."
 
 #: data/storyline/act1/levels.dat:38137
 msgid "Secret area service tunnels"
-msgstr ""
+msgstr "Túneles de servicio del área secreta"
 
 #: data/storyline/act1/levels.dat:38377
 msgid "Tutorial"
@@ -2706,15 +2707,15 @@ msgstr "Tutorial"
 
 #: data/storyline/act1/levels.dat:39297
 msgid "Welcome to FreedroidRPG!"
-msgstr ""
+msgstr "¡Bienvenido a FreedroidRPG!"
 
 #: data/storyline/act1/levels.dat:40767
 msgid "Forgotten Portal"
-msgstr ""
+msgstr "Portal olvidado"
 
 #: data/storyline/act1/levels.dat:41342
 msgid "Old abandoned complex"
-msgstr ""
+msgstr "Complejo antiguo abandonado"
 
 #: data/storyline/act1/levels.dat:41456 data/storyline/act1/levels.dat:41610
 #: data/storyline/act1/levels.dat:57032 data/storyline/act1/levels.dat:63906
@@ -2725,163 +2726,163 @@ msgstr ""
 #: data/storyline/act2/levels.dat:26781 data/storyline/act2/levels.dat:26906
 #: data/storyline/act2/levels.dat:27031 data/storyline/act2/levels.dat:28441
 msgid "World Edge"
-msgstr ""
+msgstr "Límite del mundo"
 
 #: data/storyline/act1/levels.dat:41855
 msgid "Worker Mines Entrance"
-msgstr ""
+msgstr "Entrada a las minas de los trabajadores"
 
 #: data/storyline/act1/levels.dat:42595 data/storyline/act1/levels.dat:42950
 msgid "Southern Shoreline"
-msgstr ""
+msgstr "Costa sureña"
 
 #: data/storyline/act1/levels.dat:43546
 msgid "HF North Perimeter Defense Structure"
-msgstr ""
+msgstr "Estructura de defensa del perímetro norte de HF "
 
 #: data/storyline/act1/levels.dat:44306
 msgid "Factory Entrance"
-msgstr ""
+msgstr "Entrada a la fábrica"
 
 #: data/storyline/act1/levels.dat:47427
 msgid "Power Station and Worker District"
-msgstr ""
+msgstr "Central eléctrica y Distrito de los trabajadores"
 
 #: data/storyline/act1/levels.dat:49801 data/storyline/act1/levels.dat:49804
 msgid "Power generator, don't change settings!"
-msgstr ""
+msgstr "Generador eléctrico, ¡no cambies la configuración!"
 
 #: data/storyline/act1/levels.dat:49807
 msgid "Insert coin!!!!"
-msgstr ""
+msgstr "¡Inserta moneda!!!!!"
 
 #: data/storyline/act1/levels.dat:49810
 msgid "You always loose? Play again, I am sure you'll win next time!"
-msgstr ""
+msgstr "¿Siempre pierdes? Juega otra vez, ¡estoy seguro de que ganarás la próxima!"
 
 #: data/storyline/act1/levels.dat:49813
 msgid "This is only decoration for good atmosphere. Don't cut plastic lawn!"
-msgstr ""
+msgstr "Esto solo es decoración para un buen ambiente. ¡No cortes el césped de plástico! "
 
 #: data/storyline/act1/levels.dat:49816
 msgid "Plastic leaves, do not eat!"
-msgstr ""
+msgstr "Hojas de plástico, ¡no te las comas!"
 
 #: data/storyline/act1/levels.dat:49819
 msgid "Caution: nothing. - There is absolutely nothing dangerous in the area!"
-msgstr ""
+msgstr "Precaución: nada. - ¡No hay absolutamente nada peligroso en el área!"
 
 #: data/storyline/act1/levels.dat:49822
 msgid "Stepping on this pad will affect absolutely nothing. LOL!"
-msgstr ""
+msgstr "Pisar esta plataforma no afectará absolutamente nada. ¡LOL!"
 
 #: data/storyline/act1/levels.dat:50108
 msgid "Factory Core"
-msgstr ""
+msgstr "Núcleo de la fábrica"
 
 #: data/storyline/act1/levels.dat:53550
 msgid "Research Centre"
-msgstr ""
+msgstr "Centro de Investigación"
 
 #: data/storyline/act1/levels.dat:56733
 msgid "Worker 1"
-msgstr ""
+msgstr "Trabajador 1"
 
 #: data/storyline/act1/levels.dat:56736
 msgid "Worker 2"
-msgstr ""
+msgstr "Trabajador 2"
 
 #: data/storyline/act1/levels.dat:56739
 msgid "Worker 3"
-msgstr ""
+msgstr "Trabajador 3"
 
 #: data/storyline/act1/levels.dat:56742
 msgid "Worker 4"
-msgstr ""
+msgstr "Trabajador 4"
 
 #: data/storyline/act1/levels.dat:56745
 msgid "Please don't talk, sing, take any drugs or write on walls in there!"
-msgstr ""
+msgstr "¡Por favor, no hables, cantes, tomes medicamentos ni escribas en las paredes de allí!"
 
 #: data/storyline/act1/levels.dat:56748
 msgid "Don't touch the fence, there are more efficient ways to waste energy here."
-msgstr ""
+msgstr "No toques la cerca, hay más formas eficientes de gastar energía aquí."
 
 #: data/storyline/act1/levels.dat:56751
 msgid "I have no idea what this red thing is, but it looks pretty cool."
-msgstr ""
+msgstr "No tengo idea de lo que es esta cosa roja, pero se ve bastante bien. "
 
 #: data/storyline/act1/levels.dat:57187
 msgid "Machine Deck Upper Catacombs"
-msgstr ""
+msgstr "Catacombas superiores de la sala de máquinas"
 
 #: data/storyline/act1/levels.dat:57301
 msgid "Machine Deck Lower Catacombs"
-msgstr ""
+msgstr "Catacombas inferiores de la sala de máquinas"
 
 #: data/storyline/act1/levels.dat:57415
 msgid "Freight Station"
-msgstr ""
+msgstr "Estación de carga"
 
 #: data/storyline/act1/levels.dat:58903
 msgid "Old Server Room"
-msgstr ""
+msgstr "Vieja sala de servidores"
 
 #: data/storyline/act1/levels.dat:59825
 msgid "Factory Office"
-msgstr ""
+msgstr "Oficina de la fábrica"
 
 #: data/storyline/act1/levels.dat:63615
 msgid "Strange Dungeon"
-msgstr ""
+msgstr "Mazmorra extraña"
 
 #: data/storyline/act1/levels.dat:64239
 msgid "Landing Zone"
-msgstr ""
+msgstr "Zona de aterrizaje"
 
 #: data/storyline/act1/levels.dat:66335
 msgid "Shelter"
-msgstr ""
+msgstr "Refugio"
 
 #: data/storyline/act1/levels.dat:66452
 msgid "DEBUG LEVEL 70 -- This level was created to make testing of FreedroidRPG a little easier and is NOT meant to be accessible without cheating."
-msgstr ""
+msgstr "DEBUG NIVEL 70 -- Este nivel se creó para que las pruebas de FreedroidRPG fueran un poco más fáciles y NO se podrá acceder sin hacer trampas."
 
 #: data/storyline/act1/levels.dat:67364
 msgid "?"
-msgstr ""
+msgstr "?"
 
 #: data/storyline/act1/levels.dat:67370
 msgid "<"
-msgstr ""
+msgstr "<"
 
 #: data/storyline/act1/levels.dat:67373
 msgid "? (flashing)"
-msgstr ""
+msgstr "? (parpadeando)"
 
 #: data/storyline/act1/levels.dat:67376
 msgid "! (flashing)"
-msgstr ""
+msgstr "! (parpadeando)"
 
 #: data/storyline/act1/levels.dat:67379
 msgid "< (flashing)"
-msgstr ""
+msgstr "< (parpadeando)"
 
 #: data/storyline/act1/levels.dat:67405
 msgid "Empty Sea"
-msgstr ""
+msgstr "Mar vacío"
 
 #: data/storyline/act1/levels.dat:67567
 msgid "Omega Island"
-msgstr ""
+msgstr "Isla Omega"
 
 #: data/storyline/act1/levels.dat:68097
 msgid "Beginning of new continent"
-msgstr ""
+msgstr "Comienzo del nuevo continente"
 
 #: data/storyline/act1/levels.dat:68500
 msgid "Continent Separator"
-msgstr ""
+msgstr "Separador de continente"
 
 #: data/storyline/act1/npc_specs.lua:6
 msgid "Will Gapes - MegaSys CSA"
@@ -2930,20 +2931,20 @@ msgstr "Robot Carroñero"
 #: data/storyline/act1/npc_specs.lua:29
 #: data/storyline/act1/ReturnOfTux.droids:439
 msgid "Saul"
-msgstr ""
+msgstr "Saul"
 
 #: data/storyline/act1/npc_specs.lua:29
 msgid "Saul, leader of the Resistance"
-msgstr ""
+msgstr "Saul, líder de la Resistencia"
 
 #: data/storyline/act1/npc_specs.lua:30
 #: data/storyline/act1/ReturnOfTux.droids:35
 msgid "Coder"
-msgstr ""
+msgstr "Programador"
 
 #: data/storyline/act1/npc_specs.lua:30
 msgid "Samson, the Coder"
-msgstr ""
+msgstr "Samson, el Programador"
 
 #: data/storyline/act1/npc_specs.lua:31
 msgid "SADD - Exterminate Mode"
@@ -3008,7 +3009,7 @@ msgstr "Iris"
 
 #: data/storyline/act1/npc_specs.lua:55
 msgid "Iris - treasure hunter"
-msgstr ""
+msgstr "Iris - caza tesoros"
 
 #: data/storyline/act1/npc_specs.lua:59
 msgid "Geist - Hunter"
@@ -3024,11 +3025,11 @@ msgstr "Ewald - Cantinero"
 
 #: data/storyline/act1/npc_specs.lua:64
 msgid "Erin - bot hunter"
-msgstr ""
+msgstr "Erin - cazadora de bots"
 
 #: data/storyline/act1/npc_specs.lua:64
 msgid "Bot hunter"
-msgstr ""
+msgstr "Cazador de bots"
 
 #: data/storyline/act1/npc_specs.lua:65
 msgid "Engel - Hunter"
@@ -3164,7 +3165,7 @@ msgstr "Propagación de una actualización de firmware defectuosa"
 
 #: data/storyline/act1/quests.lua:94
 msgid "A New Mission From Spencer"
-msgstr ""
+msgstr "Una nueva Misión de Spencer"
 
 #: data/storyline/act1/quests.lua:98
 msgid "SADD's power supply"
@@ -3288,11 +3289,11 @@ msgstr "24_muchacho_prueba_busqueda"
 
 #: data/storyline/act1/quests.lua:220
 msgid "Ticket's price - crystal"
-msgstr ""
+msgstr "Precio de los tiques - cristal"
 
 #: data/storyline/act1/quests.lua:228
 msgid "Bot in need"
-msgstr ""
+msgstr "Robot necesitado"
 
 #: data/storyline/act1/ReturnOfTux.droids:4
 msgid "Hot Girl"
@@ -3332,7 +3333,7 @@ msgstr "Spencer - Líder de la Guardia Roja"
 
 #: data/storyline/act1/ReturnOfTux.droids:13
 msgid "Sketchy Guy"
-msgstr "Chico Sospechoso"
+msgstr "Tipo Sospechoso"
 
 #: data/storyline/act1/ReturnOfTux.droids:14
 msgid "Guy with Hat"
@@ -3340,7 +3341,7 @@ msgstr "Tipo con Sombrero"
 
 #: data/storyline/act1/ReturnOfTux.droids:18
 msgid "*nix Admin"
-msgstr "Administrador *nix"
+msgstr "Administrador de *nix"
 
 #: data/storyline/act1/ReturnOfTux.droids:19
 #: data/storyline/act1/ReturnOfTux.droids:20
@@ -3770,7 +3771,7 @@ msgstr "614 - Robot Guardia de Puerta"
 
 #: data/storyline/act1/ReturnOfTux.droids:450
 msgid "Bot Hunter"
-msgstr ""
+msgstr "Cazador de Robots"
 
 #: data/storyline/act1/ReturnOfTux.droids:456
 msgid "Bot Factory Gate Guard Leader"
@@ -3795,352 +3796,352 @@ msgstr "Ejecutivo"
 
 #: data/storyline/act2/events.dat:60 data/storyline/act2/levels.dat:30140
 msgid "Skyscrapper Arena"
-msgstr ""
+msgstr "Arena de Rascacielos"
 
 #: data/storyline/act2/events.dat:108
 msgid "You are unable to return. The only way is forward."
-msgstr ""
+msgstr "Eres incapaz de volver. El único camino es hacia adelante."
 
 #: data/storyline/act2/events.dat:109
 msgid "RUMBLE! A earthquake happened!"
-msgstr ""
+msgstr "¡RETUMBE! !Un terremoto acaba de pasar!"
 
 #: data/storyline/act2/events.dat:173
 msgid "Your head spins. What happened?!"
-msgstr ""
+msgstr "Tu cabeza da vueltas. ¡¿Que ha pasado?!"
 
 #: data/storyline/act2/events.dat:174
 msgid "BOOM BOOOOOOM BOOOM"
-msgstr ""
+msgstr "BOOM BOOOOOOM BOOOM"
 
 #: data/storyline/act2/events.dat:186
 msgid "To Underground F1"
-msgstr ""
+msgstr "Al Subsuelo F1"
 
 #: data/storyline/act2/events.dat:198 data/storyline/act2/events.dat:235
 msgid "To Underground F2"
-msgstr ""
+msgstr "Al Subsuelo F2"
 
 #: data/storyline/act2/events.dat:213
 msgid "To Ground Level"
-msgstr ""
+msgstr "A la Superficie"
 
 #: data/storyline/act2/events.dat:222 data/storyline/act2/events.dat:266
 #: data/storyline/act2/events.dat:385
 msgid "To Underground F3"
-msgstr ""
+msgstr "Al Subsuelo F3"
 
 #: data/storyline/act2/events.dat:244 data/storyline/act2/events.dat:288
 msgid "To Underground F4"
-msgstr ""
+msgstr "Al Subsuelo F4"
 
 #: data/storyline/act2/events.dat:253
 msgid "To Factory via Shortcut"
-msgstr ""
+msgstr "A la Fabrica Mediante Atajo"
 
 #: data/storyline/act2/events.dat:275 data/storyline/act2/events.dat:310
 msgid "To Underground F5"
-msgstr ""
+msgstr "Al Subsuelo F5"
 
 #: data/storyline/act2/events.dat:297 data/storyline/act2/events.dat:332
 msgid "To Underground F6"
-msgstr ""
+msgstr "Al Subsuelo F6"
 
 #: data/storyline/act2/events.dat:319 data/storyline/act2/events.dat:354
 msgid "To Underground F7"
-msgstr ""
+msgstr "Al Subsuelo F7"
 
 #: data/storyline/act2/events.dat:341 data/storyline/act2/events.dat:376
 msgid "To Underground F8"
-msgstr ""
+msgstr "Al Subsuelo F8"
 
 #: data/storyline/act2/events.dat:363
 msgid "To Underground F9"
-msgstr ""
+msgstr "Al Subsuelo F9"
 
 #: data/storyline/act2/events.dat:398
 msgid "To Mainland via underground"
-msgstr ""
+msgstr "A Tierra Firme Mediante el Subsuelo"
 
 #: data/storyline/act2/events.dat:411
 msgid "To Icy Summer Island"
-msgstr ""
+msgstr "A la Isla de Verano Helado"
 
-#: data/storyline/act2/events.dat:591 data/storyline/act2/npc_specs.lua:29
+#: data/storyline/act2/events.dat:590 data/storyline/act2/npc_specs.lua:29
 msgid "Colemak"
-msgstr ""
+msgstr "Colemak"
 
 #: data/storyline/act2/levels.dat:20
 msgid "RR Resorts"
-msgstr ""
+msgstr "Resorts RR"
 
 #: data/storyline/act2/levels.dat:1119
 msgid "Visitors: This Way"
-msgstr ""
+msgstr "Visitantes: Sigue de frente"
 
 #: data/storyline/act2/levels.dat:1143
 msgid "In case of emergency, take the Arcane Lore from the chest!"
-msgstr ""
+msgstr "En caso de emergencia, ¡toma la Sabiduría Arcana del cofre!"
 
 #: data/storyline/act2/levels.dat:1235
 msgid "Central Area"
-msgstr ""
+msgstr "Área central"
 
 #: data/storyline/act2/levels.dat:1971 data/storyline/act2/levels.dat:2456
 msgid "To R&R Resorts"
-msgstr ""
+msgstr "A Resorts R&R"
 
 #: data/storyline/act2/levels.dat:1974
 msgid "To The Ice Pass"
-msgstr ""
+msgstr "Al Paso de Hielo"
 
 #: data/storyline/act2/levels.dat:1977
 msgid "To R&R Factory"
-msgstr ""
+msgstr "A la Fábrica R&R"
 
 #: data/storyline/act2/levels.dat:1980
 msgid "To Guest Area and City Gate Control"
-msgstr ""
+msgstr "Al Área de invitados y Control de la puerta de la ciudad "
 
 #: data/storyline/act2/levels.dat:1983
 msgid "Guest Room. Please wait patiently for one of our staff pick you up."
-msgstr ""
+msgstr "Sala de invitados Por favor, espera pacientemente hasta que alguien de nuestro personal te recoja."
 
 #: data/storyline/act2/levels.dat:2113
 msgid "Welcome to Act 2"
-msgstr ""
+msgstr "Bienvenido al Acto 2"
 
 #: data/storyline/act2/levels.dat:2484
 msgid "R&R Factory"
-msgstr ""
+msgstr "Fábrica R&R"
 
 #: data/storyline/act2/levels.dat:4627
 msgid "Droid Research & Development Offices"
-msgstr ""
+msgstr "Oficinas de Investigación y Desarrollo de Droides"
 
 #: data/storyline/act2/levels.dat:4678
 msgid "RR Factory, Floor 2"
-msgstr ""
+msgstr "Fábrica RR, 2.º Piso"
 
 #: data/storyline/act2/levels.dat:6962
 msgid "Servant Development Office. South: Scout Development Office."
-msgstr ""
+msgstr "Oficina de Desarrollo de Servicio Sur: Oficina de Desarrollo de Exploradores"
 
 #: data/storyline/act2/levels.dat:7138
 msgid "RR Factory, Floor 3"
-msgstr ""
+msgstr "Fábrica RR, 3.er Piso"
 
 #: data/storyline/act2/levels.dat:9508
 msgid "Scouts Development Office. Intruders will be shot without mercy."
-msgstr ""
+msgstr "Oficina de Desarrollo de Exploradores Dispararemos a los intrusos sin piedad."
 
 #: data/storyline/act2/levels.dat:9511
 msgid "No Trespassing: Factory Core. (Shortcut to Floor 9)"
-msgstr ""
+msgstr "No pasar: Núcleo de la fáblica (Atajo al 9.º Piso)"
 
 #: data/storyline/act2/levels.dat:9517
 msgid "Are you lost? Northeast to Maintenance Development Office."
-msgstr ""
+msgstr "¿Estás perdido? Noreste a la Oficina de Desarrollo de Mantenimiento"
 
 #: data/storyline/act2/levels.dat:9695
 msgid "RR Factory, Floor 4"
-msgstr ""
+msgstr "Fábrica RR, 4.º Piso"
 
 #: data/storyline/act2/levels.dat:12216
 msgid "Maintenance Development Office & Storage. "
-msgstr ""
+msgstr "Oficina de Desarrollo de Mantenimiento y Almacén "
 
 #: data/storyline/act2/levels.dat:12219
 msgid "Crew Development Office. We're sorry that you need to go to your office by stairs."
-msgstr ""
+msgstr "Oficina de Desarrollo de Personal Sentimos que tengas que ir a la oficina por las escaleras."
 
 #: data/storyline/act2/levels.dat:12222
 msgid "Crew Development Offices at East, in central area."
-msgstr ""
+msgstr "Oficinas de Desarrollo de Tripulaciones al este, en el área central"
 
 #: data/storyline/act2/levels.dat:12225
 msgid "If the gate to the research area is locked, please do not open it. Insane people working."
-msgstr ""
+msgstr "Si la puerta del área de investigación está cerrada, no la abras. Gente loca trabajando."
 
 #: data/storyline/act2/levels.dat:12409
 msgid "RR Factory, Floor 5"
-msgstr ""
+msgstr "Fábrica RR, 5.º Piso"
 
 #: data/storyline/act2/levels.dat:14743
 msgid "Crew & Harvesting Development Office. North-east: Security Development Office."
-msgstr ""
+msgstr "Oficina de Desarrollo de Personal y Hallazgos Noreste: Oficina de Desarrollo de Seguridad"
 
 #: data/storyline/act2/levels.dat:14932
 msgid "RR Factory, Floor 6"
-msgstr ""
+msgstr "Fábrica RR, 6.º Piso"
 
 #: data/storyline/act2/levels.dat:17301
 msgid "Dispatchment & Signman Offices. Battle droids present. Authorized Access Only!"
-msgstr ""
+msgstr "Oficina de Correos y Letreros Droides de batalla presentes ¡Solo acceso autorizado!"
 
 #: data/storyline/act2/levels.dat:17304
 msgid "Security Development Office. Sign blinks to spare power. This way for more STAIRS."
-msgstr ""
+msgstr "Oficina de Desarrollo de Seguridad El letrero parpadea para ahorrar energía Por aquí para acceder a más ESCALERAS"
 
 #: data/storyline/act2/levels.dat:17499
 msgid "RR Factory, Floor 7"
-msgstr ""
+msgstr "Fábrica RR, 7.º Piso"
 
 #: data/storyline/act2/levels.dat:19924
 msgid "Use this stair for Sentinel Dev. Office, Command Dev. Office, Factory Plant and Death."
-msgstr ""
+msgstr "Utiliza estas escaleras para acceder a la Oficina de Desarrolladores de Centinelas, Oficina de Desarrolladores de Comandos, Planta de Producción y Muerte."
 
 #: data/storyline/act2/levels.dat:19927
 msgid "There is nothing on this sign."
-msgstr "Nada hay en este cartel."
+msgstr "No hay nada en este letrero."
 
 #: data/storyline/act2/levels.dat:19930
 msgid "Sentinel and Command devs, we're sorry, but more stairs ahead."
-msgstr ""
+msgstr "Desarrolladores de Centinelas y de Comandos, lo sentimos, pero las otras escaleras están más adelante."
 
 #: data/storyline/act2/levels.dat:19933
 msgid "Signman Office. Hey, it's me! You totally should visit this office, or send us a LETTER!"
-msgstr ""
+msgstr "Oficina de Letreros ¡Hey, soy yo! ¡Definitivamente deberías visitar esta oficina, o enviarnos una CARTA! "
 
 #: data/storyline/act2/levels.dat:20124
 msgid "RR Factory, Floor 8"
-msgstr ""
+msgstr "Fábrica RR, 8.º Piso"
 
 #: data/storyline/act2/levels.dat:22890
 msgid "RR Factory, Floor 9"
-msgstr ""
+msgstr "Fábrica RR, 9.º Piso"
 
 #: data/storyline/act2/levels.dat:25864
 msgid "Command Development Office & Factory. Complainers about stairs will be frozen without mercy. AZ."
-msgstr ""
+msgstr "Oficina de Desarrollo de Comandos y Fábrica A los que se quejen de las escaleras los congelarán sin piedad.  AZ"
 
 #: data/storyline/act2/levels.dat:27156
 msgid "The Ice Pass - North"
-msgstr ""
+msgstr "El Paso de Hielo - Norte"
 
 #: data/storyline/act2/levels.dat:27281
 msgid "The Ice Pass"
-msgstr ""
+msgstr "El Paso de Hielo"
 
 #: data/storyline/act2/levels.dat:27413
 msgid "The Ice Pass - South"
-msgstr ""
+msgstr "El Paso de Hielo - Sur"
 
 #: data/storyline/act2/levels.dat:27538
 msgid "The Ice Pass - Dvorak"
-msgstr ""
+msgstr "El Paso de Hielo - Dvorak"
 
 #: data/storyline/act2/levels.dat:27676
 msgid "Icy Summer Artificial Island"
-msgstr ""
+msgstr "Isla Artificial de Verano Helado"
 
 #: data/storyline/act2/levels.dat:28338
 msgid "To mainland"
-msgstr ""
+msgstr "Al continente"
 
 #: data/storyline/act2/levels.dat:28881
 msgid "Search in the Darkness"
-msgstr ""
+msgstr "Búsqueda en la oscuridad"
 
 #: data/storyline/act2/levels.dat:29946
 msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Management."
-msgstr ""
+msgstr "Hey, estás bastante cerca del pasadizo subterráneo del continente. Por favor, asegúrate de traer las llaves. Administración de RR Resorts"
 
 #: data/storyline/act2/levels.dat:29949
 msgid "Blue Marker for Storage Room. Red Marker for Mainland."
-msgstr ""
+msgstr "Marcador azul para el almacén. Marcador rojo para el continente."
 
 #: data/storyline/act2/levels.dat:29952
 msgid "DANGER! Due to the reckless exploration of Dilithium, the ceiling may fall anytime. DO NOT PROCEED."
-msgstr ""
+msgstr "¡Peligro! Es posible que el techo se caiga en cualguier momento por culpa de la exploración imprudente de Dilithium. NO PROSEGUIR."
 
 #: data/storyline/act2/npc_specs.lua:11
 #: data/storyline/act2/ReturnOfTux.droids:123
 msgid "Master Yadda"
-msgstr ""
+msgstr "Maestro Yadda"
 
 #: data/storyline/act2/npc_specs.lua:15
 msgid "Mr. Stone - Shop owner"
-msgstr ""
+msgstr "Sr. Stone - Dueño de la tienda"
 
 #: data/storyline/act2/npc_specs.lua:17
 msgid "RR Security Chief"
-msgstr ""
+msgstr "Jefe de Seguridad RR"
 
 #: data/storyline/act2/npc_specs.lua:21
 msgid "999 RR Manager"
-msgstr ""
+msgstr "999 Gerente de RR"
 
 #: data/storyline/act2/npc_specs.lua:22
 msgid "Mr. Saves"
-msgstr ""
+msgstr "Sr. Saves"
 
 #: data/storyline/act2/npc_specs.lua:22
 msgid "Mr. Saves, Watcher of Stories"
-msgstr ""
+msgstr "Sr. Saves, Observador de Historias"
 
 #: data/storyline/act2/npc_specs.lua:22
 #: data/storyline/act2/ReturnOfTux.droids:31
 msgid "Weirdo"
-msgstr ""
+msgstr "Rarito"
 
 #: data/storyline/act2/npc_specs.lua:23
 #: data/storyline/act2/ReturnOfTux.droids:146
 msgid "Mike"
-msgstr ""
+msgstr "Mike"
 
 #: data/storyline/act2/npc_specs.lua:26
 #: data/storyline/act2/ReturnOfTux.droids:122
 msgid "Fred"
-msgstr ""
+msgstr "Fred"
 
 #: data/storyline/act2/npc_specs.lua:29
 msgid "Dvorak's acquittance - Colemak"
-msgstr ""
+msgstr "Conocido de Dvorak - Colemak"
 
 #: data/storyline/act2/quests.lua:27
 msgid "Where Am I?"
-msgstr ""
+msgstr "¿Donde estoy?"
 
 #: data/storyline/act2/quests.lua:31
 msgid "Message From An Old Friend"
-msgstr ""
+msgstr "Mensaje De Un Viejo Amigo"
 
 #: data/storyline/act2/quests.lua:35
 msgid "The Reapers Of MegaSys I"
-msgstr ""
+msgstr "Los Segadores de MegaSys I"
 
 #: data/storyline/act2/ReturnOfTux.droids:4
 #: data/storyline/act2/ReturnOfTux.droids:5
 #: data/storyline/act2/ReturnOfTux.droids:6
 #: data/storyline/act2/ReturnOfTux.droids:7
 msgid "RR Guard"
-msgstr ""
+msgstr "Guarda RR"
 
 #: data/storyline/act2/ReturnOfTux.droids:8
 msgid "629 Assassin"
-msgstr ""
+msgstr "629 Asesino"
 
 #: data/storyline/act2/ReturnOfTux.droids:9
 msgid "Car Wrecker"
-msgstr ""
+msgstr "Destructor de Coches"
 
 #: data/storyline/act2/ReturnOfTux.droids:10
 msgid "Swift Assassin"
-msgstr ""
+msgstr "Asesino Ágil"
 
 #: data/storyline/act2/ReturnOfTux.droids:12
 msgid "MS Officer"
-msgstr ""
+msgstr "Oficial de MS"
 
 #: data/storyline/act2/ReturnOfTux.droids:18
 msgid "Crossroad Autogun"
-msgstr ""
+msgstr "Autoarma del Cruce"
 
 #: data/storyline/act2/ReturnOfTux.droids:20
 msgid "Power Guard"
-msgstr ""
+msgstr "Guardia de Poder"
 
 #: data/storyline/act2/ReturnOfTux.droids:140
 msgid "Friendly Dude"
-msgstr ""
+msgstr "Tipo Amistoso"

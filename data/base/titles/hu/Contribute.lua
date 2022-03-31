@@ -51,7 +51,7 @@ KAPCSOLAT:
 Ha közre akarsz működni valamiben, vagy visszajelzést adnál a játékhoz, akkor könnyen kapcsolatba léphetsz a fejlesztőkkel. Csak küldj egy e-mailt a következő címre:
 freedroid-discussion@lists.sourceforge.net
 
-Vagy, ha az jobb, akkor beléphetsz az IRC csatornánkra (#freedroid az irc.freenode.net odalon). Mindenki meghívott. Hozd a barátaid is!
+Or, if you prefer, you might want to pop into our IRC channel (#freedroid on irc.libera.chat). Everyone's invited. Bring your friends!
 
 Köszönjük,
 

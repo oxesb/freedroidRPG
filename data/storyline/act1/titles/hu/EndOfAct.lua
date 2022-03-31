@@ -52,5 +52,6 @@ Most hogy a kedvelt városod biztonságban van…
 
 
 === VÉGE AZ 1. FELVONÁSNAK ===
+
 ]]
 }

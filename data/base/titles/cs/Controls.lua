@@ -75,7 +75,7 @@ V průběhu hry převzetí lze použít kolečko myši nebo kurzorová tlačítk
 
 Možná vás bude zajímat výuková hra, která je přístupná z hlavního menu.
 
-Pokud jste se zasekli a potřebujete pomoc, neváhejte přijít na #freedroid na irc.freenode.net a požádejte o pomoc.
+If you are stuck and need help, feel free to come to #freedroid on irc.libera.chat and ask for help.
 
 To je vše, užijte si hru.
 

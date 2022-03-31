@@ -23,38 +23,38 @@ song = "TheBeginning.ogg",
 text = [[
             CÓMO CONTRIBUIR
 
-FreedroidRPG is entirely free software and free artwork.
-It is developed exclusively by volunteers in their leisure time.
+FreedroidRPG es enteramente software libre y arte gratuito.
+Es exclusivamente desarrollado por voluntarios en sus tiempos de ocio.
 
-FreedroidRPG depends on these contributions to become a better game.
-If you would like to contribute something, but are not completely sure how, here's a list of things:
+FreedroidRPG depende de estos contribuidores para convertirse en un mejor juego.
+Si te gustaría contribuir algo, pero no estas completamente seguro de como, aquí hay una lista de cosas:
 
-TESTING AND BUG REPORTING:
+TESTEO Y REPORTAJE DE BUGS:
 
-We need people to try out the game and report anything that does not work correctly or seems to be unstable. This includes minor things, such as spelling mistakes and the like. The task of testing is growing with the size of FreedroidRPG. We need your help.
-Don't hesitate to send patches!
+Necesitamos gente para que prueben el juego y reporten cualquier cosa que no funcione correctamente o parezca inestable. Esto incluye cosas menores, como errores de ortografía y similares. La tarea de testear crece junto el tamaño de FreedroidRPG. Necesitamos tu ayuda.
+¡No dudes en enviar parches!
 
-MAP MAKING:
+CREACIÓN DE MAPAS:
 
-We are looking for people who would make maps for us. There is a map editor built into the game. Try it, and if you make something interesting make sure to get back to us.
+Estamos buscando a gente que le gustaría hacer mapas por nosotros. Hay un editor de mapas dentro del juego. Pruebalo, y si haces algo interesante asegurate de contactarnos.
 
-DOCUMENTATION:
+DOCUMENTACIÓN:
 
-We currently lack documentation. We would need end-user documentation related to the game and its level editor, as well as developer targeted documentation. Good writing skills required.
+Actualmente estamos faltos de documentación. Necesitaríamos documentación para usuarios con relación al juego y su editor de niveles, al igual que documentación dirigida a desarrolladores. Buenas habilidades de escritura requeridas.
 
-SOUND EFFECTS:
+EFECTOS DE SONIDO:
 
-We sure could use some sound effects. If you want to contribute some to a good cause we will not say no to that. :)
+Desde luego podríamos usar algunos efectos de sonido. Si quieres contribuir algunos a una buena causa no te diremos que no lo hagas. :)
 
-CONTACT:
+CONTACTO:
 
-If you would like to contribute something or give some feedback concerning the game, you can easily get in contact with the developers. Just send an e-mail to the following address:
+Si te gustaría contribuir algo o darnos alguna opinión acerca del juego, puedes ponerte en contacto fácilmente con los desarrolladores. Solo enviá un e-mail a estas siguientes direcciones:
 freedroid-discussion@lists.sourceforge.net
 
-Or, if you prefer, you might want to pop into our IRC channel (#freedroid on irc.freenode.net). Everyone's invited. Bring your friends!
+Or, if you prefer, you might want to pop into our IRC channel (#freedroid on irc.libera.chat). Everyone's invited. Bring your friends!
 
-Thank you,
+Gracias.
 
-            The FreedroidRPG dev team.
+            El equipo de desarrollo de FreedroidRPG.
 ]]
 }

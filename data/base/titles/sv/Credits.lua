@@ -35,6 +35,7 @@ PROGRAMMERING:
 
 SPELINNEHÅLL:
 
+        alex
         Kunjappu Abhijith
         DroidBotAI
         Rafael Fontenelle

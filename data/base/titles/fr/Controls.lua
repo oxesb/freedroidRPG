@@ -75,7 +75,7 @@ Pour le jeu de piratage, vous pouvez utiliser la molette de la souris ou les tou
 
 Vous pourriez être intéressé par le tutoriel accessible depuis le menu principal.
 
-Si vous êtes coincé et avez besoin d'aide, n'hésitez pas à vous connecter sur #freedroid chez irc.freenode.net pour demander de l'aide.
+If you are stuck and need help, feel free to come to #freedroid on irc.libera.chat and ask for help.
 
 C'est tout, bon jeu.
 

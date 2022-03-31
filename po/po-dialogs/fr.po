@@ -5,16 +5,16 @@
 #
 # Translators:
 # Benjamin Leduc <giby_the_kid@yahoo.fr>, 2019
-# fluzz <fluzz@gmx.com>, 2019
 # syl_, 2019
+# fluzz <fluzz@gmx.com>, 2019
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 1.0RC1\n"
-"Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-05-08 17:36+0200\n"
+"Project-Id-Version: freedroidrpg 1.0RC2\n"
+"Report-Msgid-Bugs-To: https://www.freedroid.org\n"
+"POT-Creation-Date: 2022-03-31 13:00+0200\n"
 "PO-Revision-Date: 2019-02-28 09:00+0000\n"
-"Last-Translator: syl_, 2019\n"
+"Last-Translator: fluzz <fluzz@gmx.com>, 2019\n"
 "Language-Team: French (https://www.transifex.com/arctic-games/teams/9511/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -14205,8 +14205,8 @@ msgid "So, what do you want to buy?"
 msgstr "Donc, que veux tu acheter ?"
 
 #: data/storyline/act1/dialogs/Lukas.lua:62
-msgid "I am interesting in buying ammo."
-msgstr "J'ai besoin de munitions."
+msgid "I am interested in buying ammo."
+msgstr ""
 
 #: data/storyline/act1/dialogs/Lukas.lua:64
 msgid "Of course. Because ammo is always at high demand, we sell them separately."
@@ -17351,8 +17351,8 @@ msgid "But you can help us with the preparatives, if you want."
 msgstr "Mais tu peux nous aider à nous préparer, si tu veux."
 
 #: data/storyline/act1/dialogs/Saul.lua:35
-msgid "Contact information can be found at [b]http://www.freedroid.org/Contact[/b]"
-msgstr "Les informations pour nous contacter peuvent être trouvées sur [b]http://www.freedroid.org/Contact[/b]"
+msgid "Contact information can be found at [b]https://www.freedroid.org/Contact[/b]"
+msgstr ""
 
 #: data/storyline/act1/dialogs/Saul.lua:42
 #: data/storyline/act1/dialogs/Vending-Machine.lua:40
@@ -18341,8 +18341,8 @@ msgid "However, if you did in fact NOT cheat, please tell the developers how you
 msgstr "Cependant, si tu n'as réellement PAS triché, alors indique aux développeurs comment tu as réussi à obtenir autant de circuits, afin qu'ils corrigent le problème."
 
 #: data/storyline/act1/dialogs/Spencer.lua:217
-msgid "Contact information can be found at http://www.freedroid.org/Contact"
-msgstr "Les informations pour nous contacter peuvent être trouvées à http://www.freedroid.org/Contact"
+msgid "Contact information can be found at https://www.freedroid.org/Contact"
+msgstr ""
 
 #: data/storyline/act1/dialogs/Spencer.lua:224
 msgid "Have I done enough quests to become a member now?"
@@ -24147,7 +24147,7 @@ msgstr "Voilà un peu de munitions de rechange. Utilises-les judicieusement."
 
 #: data/storyline/act2/dialogs/Fred.lua:118
 msgid "Glitch was defeated, and I obtained one of the most powerful weapon in sheer damage terms. Man, either I am THAT good, or I cheat."
-msgstr "La Fluctuation a été battue, et j'ai obtenu une des armes les plus puissantes en terme de pur dégât causé. Mec, soit je suis bon de chez bon, soit j'ai triché."
+msgstr "L'Anomalie a été battue, et j'ai obtenu une des armes les plus puissantes en terme de purs dégâts causés. Mec, soit je suis bon de chez bon, soit j'ai triché."
 
 #: data/storyline/act2/dialogs/Fred.lua:125
 msgid "I'll leave this strange man to his... evil doings."
@@ -25640,7 +25640,7 @@ msgstr "J'ai entendu dire qu'il y a un robot très dangereux qui doit être abat
 
 #: data/storyline/act2/dialogs/Yadda.lua:130
 msgid "Indeed, an evil bot there is. A glitch from the gamers at MegaSys threatens this lands."
-msgstr "Effectivement, il y a un robot diabolique dans le coin. Une Fluctuation créée par les joueurs de MegaSys menace le pays."
+msgstr "Effectivement, il y a un robot diabolique dans le coin. Une Anomalie créée par les joueurs de MegaSys menace le pays."
 
 #: data/storyline/act2/dialogs/Yadda.lua:131
 msgid "If you defeat it, the fictional survivors which aren't here because the Great Assault would be very grateful. You will also gain a nice amount of experience, and who knows what it will drop?"
@@ -25656,7 +25656,7 @@ msgstr "Contente-toi de suivre l'eau, jeune apprenti Yaddawan. Seul celui qui a 
 
 #: data/storyline/act2/dialogs/Yadda.lua:134
 msgid "The first Reaper of MegaSys, The Glitch, can be found by walking over the water on Icy Summer Island. I better stay away, as searching for it is a death wish."
-msgstr "Le premier Faucheur de MegaSys, la Fluctuation, peut être trouvé en marchant sur l'eau sur l'Île de l'Été Glacé. Je ferais mieux de me tenir à l'écart, parce que souhaiter le rencontrer c'est souhaiter mourir."
+msgstr "Le premier Faucheur de MegaSys, l'Anomalie, peut être trouvé en marchant sur l'eau sur l'Île de l'Été Glacé. Je ferais mieux de me tenir à l'écart, parce que souhaiter le rencontrer c'est souhaiter mourir."
 
 #: data/storyline/act2/dialogs/Yadda.lua:142
 msgid "I want that skill you mentioned earlier."

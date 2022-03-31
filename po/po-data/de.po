@@ -9,9 +9,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 1.0RC1\n"
-"Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-30 22:43+0100\n"
+"Project-Id-Version: freedroidrpg 1.0RC2\n"
+"Report-Msgid-Bugs-To: https://www.freedroid.org\n"
+"POT-Creation-Date: 2022-03-31 13:00+0200\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
 "Last-Translator: Link_Mario <Link-Mario@gmx.de>, 2019\n"
 "Language-Team: German (https://www.transifex.com/arctic-games/teams/9511/de/)\n"
@@ -591,7 +591,7 @@ msgstr "Energiepeitsche"
 
 #: data/base/item_specs.lua:617
 msgid "An energy whip commonly found at management from MegaSys facilities. What purpose they serve for is still unknown. Because the real whip is pure energy, it will never break, but it does not stays on the strong side."
-msgstr ""
+msgstr "Eine Energiepeitsche findet man für gewöhnlich im Managementbereich des MegaSys-Unternehmens. Für welchen Zweck sie gefertigt wurde ist immer noch unbekannt. Weil die Peitsche aus reiner Energie besteht kann sie sich nicht abnutzen, aber wirklich effektiv ist sie auch nicht."
 
 #: data/base/item_specs.lua:629
 msgid ".22 LR Ammunition"
@@ -1212,15 +1212,15 @@ msgstr "Mit einem einfachen Signal lässt sich herausfinden, was deine Feinde so
 
 #: data/base/item_specs.lua:1834
 msgid "Source Book of Energy Shield"
-msgstr ""
+msgstr "Quelltextbuch des Energieschilds"
 
 #: data/base/item_specs.lua:1835 data/base/skill_specs.lua:213
 msgid "Energy Shield"
-msgstr ""
+msgstr "Energieschild"
 
 #: data/base/item_specs.lua:1839 data/base/skill_specs.lua:218
 msgid "Creating an energy shield to protect you can be a very useful skill. Every hit that you get will be converted into heat. Beware: This heats up excessively. Equipment can still be damaged by heat. When you overheat, shield will try to automatically turn off to prevent damage to itself. It may provoke extra-heat on this process, so be sure to not let it happen."
-msgstr ""
+msgstr "Die Fähigkeit, einen Energieschild zu erzeugen, kann sehr nützlich sein. Jeder Treffer, den du einstecken würdest, wird einfach in Hitze umgewandelt. Vorsicht: Heizt sich sehr schnell auf. Deine Ausrüstung kann trotzdem durch Hitze beschädigt werden. Wenn du selbst überhitzt, schaltet sich der Schild ab, um selbst nicht beschädigt zu werden. Pass daher auf, dass du ihn nicht zu lange verwendest."
 
 #: data/base/item_specs.lua:1846
 msgid "Subatomic and Nuclear Science for Dummies, Volume IV"
@@ -3815,7 +3815,7 @@ msgstr "Wolkenkratzer-Arena"
 
 #: data/storyline/act2/events.dat:108
 msgid "You are unable to return. The only way is forward."
-msgstr ""
+msgstr "Es gibt keinen Weg zurück. Du kannst nur weiter voranschreiten."
 
 #: data/storyline/act2/events.dat:109
 msgid "RUMBLE! A earthquake happened!"
@@ -3882,7 +3882,7 @@ msgstr "Zum Hauptland über den Untergrund"
 msgid "To Icy Summer Island"
 msgstr "Zur vereisten Sommerinsel"
 
-#: data/storyline/act2/events.dat:591 data/storyline/act2/npc_specs.lua:29
+#: data/storyline/act2/events.dat:590 data/storyline/act2/npc_specs.lua:29
 msgid "Colemak"
 msgstr "Colemak"
 

@@ -5,14 +5,16 @@
 #
 # Translators:
 # ginoingras <ginoingras@gmail.com>, 2019
+# Silvia, 2019
+# Emanuele Sorce <emanuele.sorce@hotmail.com>, 2020
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 1.0RC1\n"
-"Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-30 22:43+0100\n"
+"Project-Id-Version: freedroidrpg 1.0RC2\n"
+"Report-Msgid-Bugs-To: https://www.freedroid.org\n"
+"POT-Creation-Date: 2022-03-31 13:00+0200\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
-"Last-Translator: ginoingras <ginoingras@gmail.com>, 2019\n"
+"Last-Translator: Emanuele Sorce <emanuele.sorce@hotmail.com>, 2020\n"
 "Language-Team: Italian (https://www.transifex.com/arctic-games/teams/9511/it/)\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -243,11 +245,11 @@ msgstr "Cyborg di comando sperimentale. Dotato di un nuovo tipo di cervello. Mon
 
 #: data/base/droid_specs.lua:1259 data/storyline/act2/ReturnOfTux.droids:129
 msgid "The Glitch"
-msgstr ""
+msgstr "Il Glitch"
 
 #: data/base/droid_specs.lua:1260
 msgid "I have not failed. I've just found 10,000 ways how to NOT make a bot."
-msgstr ""
+msgstr "Non ho fallito. Ho appena trovato 10.000 modi per NON fare un robot."
 
 #: data/base/droid_specs.lua:1306 data/base/droid_specs.lua:1346
 msgid "Older Man"
@@ -398,11 +400,11 @@ msgstr "Si tratta di un terminale sicuro."
 
 #: data/base/game_config.lua:31
 msgid "-= Start of Act 1 =-"
-msgstr ""
+msgstr "-= Inizio Atto 1 =-"
 
 #: data/base/game_config.lua:34
 msgid "-= Start of Act 2 =-"
-msgstr ""
+msgstr "-= Inizio Atto 2 =-"
 
 #: data/base/item_specs.lua:121
 msgid "The first item is VERY buggy ingame, so don't use it."
@@ -438,7 +440,7 @@ msgstr "Spadone antico"
 
 #: data/base/item_specs.lua:199
 msgid "Very maneuverable for its size, and heavy enough to punch though weaker bot armor in one hit, the only real disadvantage of this old weapon is the same as for other swords. It just doesn't last long when cutting into metal parts."
-msgstr ""
+msgstr "Molto manovrabile per la sua taglia, e abbastanza pesante per prendere a pugni un'armatura robot debole in un colpo solo, l'unico vero svantaggio di questa vecchia arma è lo stesso che per le altre spade. Ossia che non dura a lungo quando si tagliano parti metalliche."
 
 #: data/base/item_specs.lua:207
 msgid "Chainsaw"
@@ -494,7 +496,7 @@ msgstr "Grande chiave"
 
 #: data/base/item_specs.lua:351
 msgid "A big heavy wrench can be surprisingly efficient at turning a bot into second hand parts, in a hands-on and brutal way, if needed."
-msgstr ""
+msgstr "Una gran pesante chiave inglese può essere sorprendentemente efficiente a trasformare un robot in pezzi di seconda mano, in modo brutale, se necessario."
 
 #: data/base/item_specs.lua:359
 msgid "Crowbar"
@@ -590,7 +592,7 @@ msgstr "Frusta di energia"
 
 #: data/base/item_specs.lua:617
 msgid "An energy whip commonly found at management from MegaSys facilities. What purpose they serve for is still unknown. Because the real whip is pure energy, it will never break, but it does not stays on the strong side."
-msgstr ""
+msgstr "Una frusta energetica comunemente trovata alla gestione dei servizi MegaSys. Lo scopo a cui serve è sconosciuto. Dal momento che la frusta è energia pura, non si romperà, ma non sta nel lato forte."
 
 #: data/base/item_specs.lua:629
 msgid ".22 LR Ammunition"
@@ -656,7 +658,7 @@ msgstr "Munizioni 9x19mm"
 
 #: data/base/item_specs.lua:779
 msgid "You know a little about these. A metal jacket holds a bullet tightly at one end and is filled with an explosive chemical which acts as a propellant. At the other end is a primer cap filled with another explosive, which when struck will ignite the propellant. The bullet then becomes a projectile and is usually launched out through the barrel of a gun or similar device. Or, something like that."
-msgstr ""
+msgstr "Tu sai poco riguardo a queste. Un rivestimento metallico tiene una pallottola stretto a un capo ed è riempito con composti chimici esplosivi che funzionano da propellente. Sull'altro capo c'è un innesco sulla cima riempito con altro esplosivo, che quando colpito accende la carica. La pallottola allora diventa un proiettile ed è normalmente lanciato fuori attraverso la canna della pistola o di un dispositivo simile. Oppure, qualcosa del genere."
 
 #: data/base/item_specs.lua:786
 msgid "9mm Automatic"
@@ -680,7 +682,7 @@ msgstr "Munizioni 7.62x39mm"
 
 #: data/base/item_specs.lua:839
 msgid "7.62mm ammo. Commonly used in assault rifles from old."
-msgstr ""
+msgstr "Munizioni da 7.62mm. Comunemente usate in fucili d'assalto di parecchio tempo fa."
 
 #: data/base/item_specs.lua:846
 msgid "7.62mm Hunting Rifle"
@@ -704,7 +706,7 @@ msgstr "Munizioni .50 BMG (12.7x99mm)"
 
 #: data/base/item_specs.lua:900
 msgid "Browning Machine Gun ammo. Commonly used against small fortress and also to stop vehicles. You probably won't find a weapon to use this ammo, though."
-msgstr ""
+msgstr "Munizioni per Mitragliatrice Rosolante. Comunemente usata contro piccole fortezze e anche per fermare veicoli. Probabilmente non troverai armi per usare questa munizione, comunque."
 
 #: data/base/item_specs.lua:907
 msgid "Barrett M82 Sniper Rifle"
@@ -788,7 +790,7 @@ msgstr "Un'arma lenta, ma un impatto distrusse immediatamente il robot. Una buon
 
 #: data/base/item_specs.lua:1130
 msgid "Plasma Cannon"
-msgstr ""
+msgstr "Cannone al plasma"
 
 #: data/base/item_specs.lua:1148
 msgid "The plasma cannon is one of the slowest weapon mankind even produced. Based on the Barrett M86 Sniper Rifle, it takes a long time to heat before shooting. Being a plasma bullet, a newbie will most likely miss the target. However, for the skilled marksman, it is a good alternative to a pulse laser cannon, because once it hit, molten metal is usually all that remains where the bot used to be."
@@ -828,7 +830,7 @@ msgstr "Attacco a gas"
 
 #: data/base/item_specs.lua:1222
 msgid "The gas does not look terrifying. It even smells somewhat nice. And then you die. You die a most horrible death, never knowing what killed you. (Note: This does not work on bots)"
-msgstr ""
+msgstr "Il gas non appare terrificante. Ha perfino un odorino piacevole. E poi muori. Muori della più orribile morte, senza mai sapere che cosa ti ha ucciso. (Nota: questo non funziona sui robot)"
 
 #: data/base/item_specs.lua:1229
 msgid "Small EMP Shockwave Generator"
@@ -1213,7 +1215,7 @@ msgstr ""
 
 #: data/base/item_specs.lua:1835 data/base/skill_specs.lua:213
 msgid "Energy Shield"
-msgstr ""
+msgstr "Scudo d'energia"
 
 #: data/base/item_specs.lua:1839 data/base/skill_specs.lua:218
 msgid "Creating an energy shield to protect you can be a very useful skill. Every hit that you get will be converted into heat. Beware: This heats up excessively. Equipment can still be damaged by heat. When you overheat, shield will try to automatically turn off to prevent damage to itself. It may provoke extra-heat on this process, so be sure to not let it happen."
@@ -1603,11 +1605,11 @@ msgstr "Una lattina piena di olio di gomito. Difficile da fare se non sei un uom
 
 #: data/base/item_specs.lua:2368
 msgid "MS EPROM Programming Interface"
-msgstr ""
+msgstr "MS EPROM Interfaccia di Programmazione"
 
 #: data/base/item_specs.lua:2372
 msgid "Used by developers at MegaSys to load firmware onto newly assembled droids."
-msgstr ""
+msgstr "Utilizzato dagli sviluppatori della MegaSys per caricare i firmware nei nuovi androidi assemblati."
 
 #: data/base/item_specs.lua:2383
 msgid "Linarian Power Crank"
@@ -1859,11 +1861,11 @@ msgstr ""
 
 #: data/base/item_specs.lua:3023
 msgid "PGP key"
-msgstr ""
+msgstr "Chiave PGP"
 
 #: data/base/item_specs.lua:3027
 msgid "It won't open your house, but it can unlock important encrypted archives."
-msgstr ""
+msgstr "Non aprirà casa tua, ma può sbloccare importanti archivi criptati."
 
 #: data/base/item_specs.lua:3034
 msgid "Cheat Gun"
@@ -2093,7 +2095,7 @@ msgstr "Con un po' di conoscenza, è possibile estrarre alcune parti utili fuori
 
 #: data/base/skill_specs.lua:233
 msgid "Treasure Hunting"
-msgstr ""
+msgstr "Caccia al tesoro"
 
 #: data/base/skill_specs.lua:238
 msgid "Upgrading your search algorithms, you may find items more frequently when destroying bots. This skill is always active even when not selected."
@@ -2101,7 +2103,7 @@ msgstr ""
 
 #: data/base/skill_specs.lua:243
 msgid "Animal Magnetism"
-msgstr ""
+msgstr "Magnetismo Animale"
 
 #: data/base/skill_specs.lua:248
 msgid "Get in tune with the magnetic fields around you! Grants you half-second extra time per skill level when hacking bots. This skill is always active even when not selected."
@@ -2291,7 +2293,7 @@ msgstr "Boccaporto con una scaletta rotta"
 
 #: data/storyline/act1/events.dat:1840 data/storyline/act2/events.dat:423
 msgid "Exit Arena"
-msgstr ""
+msgstr "Esci dall'arena"
 
 #: data/storyline/act1/events.dat:1847 data/storyline/act2/events.dat:430
 msgid "Start New Wave"
@@ -2942,7 +2944,7 @@ msgstr ""
 #: data/storyline/act1/npc_specs.lua:30
 #: data/storyline/act1/ReturnOfTux.droids:35
 msgid "Coder"
-msgstr ""
+msgstr "Programmatore"
 
 #: data/storyline/act1/npc_specs.lua:30
 msgid "Samson, the Coder"
@@ -2991,11 +2993,11 @@ msgstr "Karol - Proprietaria di negozio"
 
 #: data/storyline/act1/npc_specs.lua:52
 msgid "Jim"
-msgstr ""
+msgstr "Jim"
 
 #: data/storyline/act1/npc_specs.lua:52
 msgid "Jim - Portal Guardian"
-msgstr ""
+msgstr "Jim - Il guardiano del portale"
 
 #: data/storyline/act1/npc_specs.lua:54
 msgid "Jasmine"
@@ -3011,7 +3013,7 @@ msgstr "Iris"
 
 #: data/storyline/act1/npc_specs.lua:55
 msgid "Iris - treasure hunter"
-msgstr ""
+msgstr "Iris - Cacciatrice di tesori"
 
 #: data/storyline/act1/npc_specs.lua:59
 msgid "Geist - Hunter"
@@ -3075,7 +3077,7 @@ msgstr "Bob"
 
 #: data/storyline/act1/npc_specs.lua:82
 msgid "Bob - Gate Guardian"
-msgstr ""
+msgstr "Bob - Il guardiano dei cancelli"
 
 #: data/storyline/act1/npc_specs.lua:83
 msgid "Benjamin - Gunsmith"
@@ -3365,7 +3367,7 @@ msgstr "614 - Robot di Guardia al Cancello Nord"
 
 #: data/storyline/act1/ReturnOfTux.droids:25
 msgid "COBOL Programmer"
-msgstr ""
+msgstr "Programmatore COBOL"
 
 #: data/storyline/act1/ReturnOfTux.droids:26
 #: data/storyline/act1/ReturnOfTux.droids:472
@@ -3769,11 +3771,11 @@ msgstr "Uccidimi"
 
 #: data/storyline/act1/ReturnOfTux.droids:416
 msgid "614 - Gate Guard Bot"
-msgstr ""
+msgstr "614 - Robot Guardia del Cancello"
 
 #: data/storyline/act1/ReturnOfTux.droids:450
 msgid "Bot Hunter"
-msgstr ""
+msgstr "Cacciatore di Robot"
 
 #: data/storyline/act1/ReturnOfTux.droids:456
 msgid "Bot Factory Gate Guard Leader"
@@ -3798,200 +3800,200 @@ msgstr "Personale aziendale"
 
 #: data/storyline/act2/events.dat:60 data/storyline/act2/levels.dat:30140
 msgid "Skyscrapper Arena"
-msgstr ""
+msgstr "Arena Grattacielo"
 
 #: data/storyline/act2/events.dat:108
 msgid "You are unable to return. The only way is forward."
-msgstr ""
+msgstr "Non sei in grado di tornare indietro. L'unico modo è andare avanti."
 
 #: data/storyline/act2/events.dat:109
 msgid "RUMBLE! A earthquake happened!"
-msgstr ""
+msgstr "RUMBLE! C'è stato un terremoto!"
 
 #: data/storyline/act2/events.dat:173
 msgid "Your head spins. What happened?!"
-msgstr ""
+msgstr "Ti gira la testa. Cos'è successo?!"
 
 #: data/storyline/act2/events.dat:174
 msgid "BOOM BOOOOOOM BOOOM"
-msgstr ""
+msgstr "BOOM BOOOOOOM BOOOM"
 
 #: data/storyline/act2/events.dat:186
 msgid "To Underground F1"
-msgstr ""
+msgstr "Al Sottosuolo P1"
 
 #: data/storyline/act2/events.dat:198 data/storyline/act2/events.dat:235
 msgid "To Underground F2"
-msgstr ""
+msgstr "Al Sottosuolo P2"
 
 #: data/storyline/act2/events.dat:213
 msgid "To Ground Level"
-msgstr ""
+msgstr "Al Piano Terra"
 
 #: data/storyline/act2/events.dat:222 data/storyline/act2/events.dat:266
 #: data/storyline/act2/events.dat:385
 msgid "To Underground F3"
-msgstr ""
+msgstr "Al Sottosuolo P3"
 
 #: data/storyline/act2/events.dat:244 data/storyline/act2/events.dat:288
 msgid "To Underground F4"
-msgstr ""
+msgstr "Al Sottosuolo P4"
 
 #: data/storyline/act2/events.dat:253
 msgid "To Factory via Shortcut"
-msgstr ""
+msgstr "Alla Fabbrica attraverso la scorciatoia"
 
 #: data/storyline/act2/events.dat:275 data/storyline/act2/events.dat:310
 msgid "To Underground F5"
-msgstr ""
+msgstr "Al Sottosuolo P5"
 
 #: data/storyline/act2/events.dat:297 data/storyline/act2/events.dat:332
 msgid "To Underground F6"
-msgstr ""
+msgstr "Al Sottosuolo P6"
 
 #: data/storyline/act2/events.dat:319 data/storyline/act2/events.dat:354
 msgid "To Underground F7"
-msgstr ""
+msgstr "Al Sottosuolo P7"
 
 #: data/storyline/act2/events.dat:341 data/storyline/act2/events.dat:376
 msgid "To Underground F8"
-msgstr ""
+msgstr "Al Sottosuolo P8"
 
 #: data/storyline/act2/events.dat:363
 msgid "To Underground F9"
-msgstr ""
+msgstr "Al Sottosuolo P9"
 
 #: data/storyline/act2/events.dat:398
 msgid "To Mainland via underground"
-msgstr ""
+msgstr "Alla Terraferma via sottosuolo"
 
 #: data/storyline/act2/events.dat:411
 msgid "To Icy Summer Island"
-msgstr ""
+msgstr "All'Isola dell'Estate Ghiacciata"
 
-#: data/storyline/act2/events.dat:591 data/storyline/act2/npc_specs.lua:29
+#: data/storyline/act2/events.dat:590 data/storyline/act2/npc_specs.lua:29
 msgid "Colemak"
-msgstr ""
+msgstr "Colemak"
 
 #: data/storyline/act2/levels.dat:20
 msgid "RR Resorts"
-msgstr ""
+msgstr "Resort RR"
 
 #: data/storyline/act2/levels.dat:1119
 msgid "Visitors: This Way"
-msgstr ""
+msgstr "Visitatori: Da Questa Parte"
 
 #: data/storyline/act2/levels.dat:1143
 msgid "In case of emergency, take the Arcane Lore from the chest!"
-msgstr ""
+msgstr "In caso di emergenza, prendi la Tradizione Arcana dalla cassa!"
 
 #: data/storyline/act2/levels.dat:1235
 msgid "Central Area"
-msgstr ""
+msgstr "Area Centrale"
 
 #: data/storyline/act2/levels.dat:1971 data/storyline/act2/levels.dat:2456
 msgid "To R&R Resorts"
-msgstr ""
+msgstr "Al Resort R&R"
 
 #: data/storyline/act2/levels.dat:1974
 msgid "To The Ice Pass"
-msgstr ""
+msgstr "Al Passo Ghiacciato"
 
 #: data/storyline/act2/levels.dat:1977
 msgid "To R&R Factory"
-msgstr ""
+msgstr "Alla Fabbrica R&R"
 
 #: data/storyline/act2/levels.dat:1980
 msgid "To Guest Area and City Gate Control"
-msgstr ""
+msgstr "All'Area Ospiti e al Controllo del Cancello della Città"
 
 #: data/storyline/act2/levels.dat:1983
 msgid "Guest Room. Please wait patiently for one of our staff pick you up."
-msgstr ""
+msgstr "Sala Ospiti. Per favore attendi pazientemente che uno del nostro staff ti prelevi."
 
 #: data/storyline/act2/levels.dat:2113
 msgid "Welcome to Act 2"
-msgstr ""
+msgstr "Benvenuti all'Atto 2"
 
 #: data/storyline/act2/levels.dat:2484
 msgid "R&R Factory"
-msgstr ""
+msgstr "Fabbrica R&R"
 
 #: data/storyline/act2/levels.dat:4627
 msgid "Droid Research & Development Offices"
-msgstr ""
+msgstr "Ufficio Ricerca & Sviluppo Droidi"
 
 #: data/storyline/act2/levels.dat:4678
 msgid "RR Factory, Floor 2"
-msgstr ""
+msgstr "Fabbrica RR, Piano 2"
 
 #: data/storyline/act2/levels.dat:6962
 msgid "Servant Development Office. South: Scout Development Office."
-msgstr ""
+msgstr "Ufficio Sviluppo Servitori. Sud: Ufficio Sviluppo Esploratori."
 
 #: data/storyline/act2/levels.dat:7138
 msgid "RR Factory, Floor 3"
-msgstr ""
+msgstr "Fabbrica RR, Piano 3"
 
 #: data/storyline/act2/levels.dat:9508
 msgid "Scouts Development Office. Intruders will be shot without mercy."
-msgstr ""
+msgstr "Ufficio Sviluppo Esploratori. Gli intrusi verranno sparati senza pietà."
 
 #: data/storyline/act2/levels.dat:9511
 msgid "No Trespassing: Factory Core. (Shortcut to Floor 9)"
-msgstr ""
+msgstr "Non Oltrepassare: Cuore della Fabbrica. (Scorciatoia al Piano 9)"
 
 #: data/storyline/act2/levels.dat:9517
 msgid "Are you lost? Northeast to Maintenance Development Office."
-msgstr ""
+msgstr "Ti sei perso? A nordest per l'Ufficio Sviluppo Manutenzione."
 
 #: data/storyline/act2/levels.dat:9695
 msgid "RR Factory, Floor 4"
-msgstr ""
+msgstr "Fabbrica RR, Piano 4"
 
 #: data/storyline/act2/levels.dat:12216
 msgid "Maintenance Development Office & Storage. "
-msgstr ""
+msgstr "Ufficio Sviluppo Manutenzione & Deposito."
 
 #: data/storyline/act2/levels.dat:12219
 msgid "Crew Development Office. We're sorry that you need to go to your office by stairs."
-msgstr ""
+msgstr "Ufficio Sviluppo Equipaggio. Ci dispiace che tu abbia dovuto venire al nostro ufficio usando le scale."
 
 #: data/storyline/act2/levels.dat:12222
 msgid "Crew Development Offices at East, in central area."
-msgstr ""
+msgstr "Ufficio Sviluppo Equipaggio a est, nell'area centrale."
 
 #: data/storyline/act2/levels.dat:12225
 msgid "If the gate to the research area is locked, please do not open it. Insane people working."
-msgstr ""
+msgstr "Se il cancello che conduce all'area di ricerca è chiuso, per favore non aprirlo. Ci lavorano persone insane."
 
 #: data/storyline/act2/levels.dat:12409
 msgid "RR Factory, Floor 5"
-msgstr ""
+msgstr "Fabbrica RR, Piano 5"
 
 #: data/storyline/act2/levels.dat:14743
 msgid "Crew & Harvesting Development Office. North-east: Security Development Office."
-msgstr ""
+msgstr "Ufficio Sviluppo Equipaggio & Raccolta. Nord-est: Ufficio Sviluppo Sicurezza."
 
 #: data/storyline/act2/levels.dat:14932
 msgid "RR Factory, Floor 6"
-msgstr ""
+msgstr "Fabbrica RR, Piano 6"
 
 #: data/storyline/act2/levels.dat:17301
 msgid "Dispatchment & Signman Offices. Battle droids present. Authorized Access Only!"
-msgstr ""
+msgstr "Uffici Consegne & Insegne. Presenza di droidi da battaglia. Solo Accessi Autorizzati!"
 
 #: data/storyline/act2/levels.dat:17304
 msgid "Security Development Office. Sign blinks to spare power. This way for more STAIRS."
-msgstr ""
+msgstr "Ufficio Sviluppo Sicurezza. L'insegna lampeggia per risparmiare energia. Da questa parte per altre SCALE."
 
 #: data/storyline/act2/levels.dat:17499
 msgid "RR Factory, Floor 7"
-msgstr ""
+msgstr "Fabbrica RR, Piano 7"
 
 #: data/storyline/act2/levels.dat:19924
 msgid "Use this stair for Sentinel Dev. Office, Command Dev. Office, Factory Plant and Death."
-msgstr ""
+msgstr "Usa questa scala per l'Ufficio Svil. Sentinelle, Ufficio Svil. Comando, Pianta Industriale e Morte."
 
 #: data/storyline/act2/levels.dat:19927
 msgid "There is nothing on this sign."
@@ -3999,7 +4001,7 @@ msgstr "Non c'è nulla su questo segno."
 
 #: data/storyline/act2/levels.dat:19930
 msgid "Sentinel and Command devs, we're sorry, but more stairs ahead."
-msgstr ""
+msgstr "Sviluppo sentinella e comando, ci spiace, ma hai ancora scale davanti."
 
 #: data/storyline/act2/levels.dat:19933
 msgid "Signman Office. Hey, it's me! You totally should visit this office, or send us a LETTER!"
@@ -4007,43 +4009,43 @@ msgstr ""
 
 #: data/storyline/act2/levels.dat:20124
 msgid "RR Factory, Floor 8"
-msgstr ""
+msgstr "Fabbrica RR, Piano 8"
 
 #: data/storyline/act2/levels.dat:22890
 msgid "RR Factory, Floor 9"
-msgstr ""
+msgstr "Fabbrica RR, Piano 9"
 
 #: data/storyline/act2/levels.dat:25864
 msgid "Command Development Office & Factory. Complainers about stairs will be frozen without mercy. AZ."
-msgstr ""
+msgstr "Ufficio dello Sviluppo di Comando & Fabbrica.Chi si lamenta delle scale verrà congelato senza pietà. AZ."
 
 #: data/storyline/act2/levels.dat:27156
 msgid "The Ice Pass - North"
-msgstr ""
+msgstr "Il passo ghiacciato - Nord"
 
 #: data/storyline/act2/levels.dat:27281
 msgid "The Ice Pass"
-msgstr ""
+msgstr "Il passo ghiacciato"
 
 #: data/storyline/act2/levels.dat:27413
 msgid "The Ice Pass - South"
-msgstr ""
+msgstr "Il passo ghiacciato - Sud"
 
 #: data/storyline/act2/levels.dat:27538
 msgid "The Ice Pass - Dvorak"
-msgstr ""
+msgstr "Il passo ghiacciato - Dvorak"
 
 #: data/storyline/act2/levels.dat:27676
 msgid "Icy Summer Artificial Island"
-msgstr ""
+msgstr "Isola Artificiale dell'Estate Ghiacciata"
 
 #: data/storyline/act2/levels.dat:28338
 msgid "To mainland"
-msgstr ""
+msgstr "Alla terraferma"
 
 #: data/storyline/act2/levels.dat:28881
 msgid "Search in the Darkness"
-msgstr ""
+msgstr "Cerca nell'Oscurità"
 
 #: data/storyline/act2/levels.dat:29946
 msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Management."
@@ -4051,11 +4053,11 @@ msgstr ""
 
 #: data/storyline/act2/levels.dat:29949
 msgid "Blue Marker for Storage Room. Red Marker for Mainland."
-msgstr ""
+msgstr "Pennarello Blu per il Deposito. Pennarello Rosso per la Terraferma."
 
 #: data/storyline/act2/levels.dat:29952
 msgid "DANGER! Due to the reckless exploration of Dilithium, the ceiling may fall anytime. DO NOT PROCEED."
-msgstr ""
+msgstr "PERICOLO! A causa della speriolata esplorazione del Dilitio, il soffitto potrebbe cadere in qualsiasi momento. NON PROCEDERE."
 
 #: data/storyline/act2/npc_specs.lua:11
 #: data/storyline/act2/ReturnOfTux.droids:123
@@ -4064,7 +4066,7 @@ msgstr ""
 
 #: data/storyline/act2/npc_specs.lua:15
 msgid "Mr. Stone - Shop owner"
-msgstr ""
+msgstr "Mr. Stone - Negoziante"
 
 #: data/storyline/act2/npc_specs.lua:17
 msgid "RR Security Chief"
@@ -4076,7 +4078,7 @@ msgstr ""
 
 #: data/storyline/act2/npc_specs.lua:22
 msgid "Mr. Saves"
-msgstr ""
+msgstr "Mr. Saves"
 
 #: data/storyline/act2/npc_specs.lua:22
 msgid "Mr. Saves, Watcher of Stories"
@@ -4090,7 +4092,7 @@ msgstr ""
 #: data/storyline/act2/npc_specs.lua:23
 #: data/storyline/act2/ReturnOfTux.droids:146
 msgid "Mike"
-msgstr ""
+msgstr "Mike"
 
 #: data/storyline/act2/npc_specs.lua:26
 #: data/storyline/act2/ReturnOfTux.droids:122
@@ -4103,15 +4105,15 @@ msgstr ""
 
 #: data/storyline/act2/quests.lua:27
 msgid "Where Am I?"
-msgstr ""
+msgstr "Dove sono?"
 
 #: data/storyline/act2/quests.lua:31
 msgid "Message From An Old Friend"
-msgstr ""
+msgstr "Messaggio Da Un Vecchio Amico"
 
 #: data/storyline/act2/quests.lua:35
 msgid "The Reapers Of MegaSys I"
-msgstr ""
+msgstr "Il Mietitore Di MegaSys I"
 
 #: data/storyline/act2/ReturnOfTux.droids:4
 #: data/storyline/act2/ReturnOfTux.droids:5
@@ -4146,4 +4148,4 @@ msgstr ""
 
 #: data/storyline/act2/ReturnOfTux.droids:140
 msgid "Friendly Dude"
-msgstr ""
+msgstr "Tipo Amichevole"

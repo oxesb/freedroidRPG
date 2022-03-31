@@ -299,7 +299,7 @@ Level-Editor- & Entwickler-FAQ:
 	   Freedroid-Diskussionsliste oder im IRC-Kanal reden.
 
 	Q: Ich möchte bei der Entwicklung von FreedroidRPG mithelfen. Was muss ich als erstes tun?
-	A: Als Erstes, lies die Seite http://www.freedroid.org/developer-area/contribute/
+	A: First, we recommend to read https://www.freedroid.org/developer-area/contribute/
 	   Als Zweites solltest du uns kontaktieren, z.B. über IRC (siehe Kontakt)
 	   oder indem du die Freedroid-Diskussionsliste benutzt.
 	   Danach musst du die neuste Entwicklungsversion des Spiels von
@@ -311,12 +311,12 @@ Level-Editor- & Entwickler-FAQ:
 
 7. Kontakt
 ===========
- Webseite       ................ http://www.freedroid.org
+ Website       ................ https://www.freedroid.org
  Quelltext Projektseite   ........ https://gitlab.com/groups/freedroid
- IRC Kanal   ................ #freedroid on irc.freenode.net oder
-								http://webchat.freenode.net/?channels=freedroid (erfordert Javascript)
+ IRC channel   ................ #freedroid on irc.libera.chat or
+                                https://web.libera.chat/?channels=freedroid
  E-Mail-Liste  ................ freedroid-discussion@lists.sourceforge.net
- Bugtracker   ................ http://bugs.freedroid.org/
+ Bug tracker   ................ https://bugs.freedroid.org/
 
 
 8. Lizenz

@@ -51,7 +51,7 @@ KONTAKT:
 Om du vill bidra med något eller ge feedback om spelet, kan du enkelt få kontakt med utvecklarna. Skicka bara ett brev till den här e-postadressen:
 freedroid-discussion@lists.sourceforge.net
 
-Eller, om du föredrar, kan du hoppa in i vår IRC-kanal (#freedroid på irc.freenode.net). Alla är välkommna. Ta med dig dina vänner!
+Or, if you prefer, you might want to pop into our IRC channel (#freedroid on irc.libera.chat). Everyone's invited. Bring your friends!
 
 Tack,
 

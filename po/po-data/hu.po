@@ -5,15 +5,15 @@
 #
 # Translators:
 # Benjamin Leduc <giby_the_kid@yahoo.fr>, 2019
-# Balázs Meskó <meskobalazs@gmail.com>, 2019
+# Balázs Meskó <meskobalazs@mailbox.org>, 2019
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 1.0RC1\n"
-"Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-30 22:43+0100\n"
+"Project-Id-Version: freedroidrpg 1.0RC2\n"
+"Report-Msgid-Bugs-To: https://www.freedroid.org\n"
+"POT-Creation-Date: 2022-03-31 13:00+0200\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
-"Last-Translator: Balázs Meskó <meskobalazs@gmail.com>, 2019\n"
+"Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>, 2019\n"
 "Language-Team: Hungarian (https://www.transifex.com/arctic-games/teams/9511/hu/)\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -3872,7 +3872,7 @@ msgstr ""
 msgid "To Icy Summer Island"
 msgstr ""
 
-#: data/storyline/act2/events.dat:591 data/storyline/act2/npc_specs.lua:29
+#: data/storyline/act2/events.dat:590 data/storyline/act2/npc_specs.lua:29
 msgid "Colemak"
 msgstr ""
 

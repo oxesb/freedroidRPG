@@ -26,7 +26,7 @@ text = [[
 ПРОГРАММИРОВАНИЕ:
 
         Сэмюэль Дегранд
-        Christoph Franzen
+        Кристов Франзен
         Скотт Фурри
         Артур Юйе
         Грегори Лозе
@@ -35,13 +35,14 @@ text = [[
 
 НАПОЛНЕНИЕ ИГРЫ:
 
-        Kunjappu Abhijith
+        alex
+        Канджаппу Абиджит
         DroidBotAI
-        Rafael Fontenelle
+        Рафаэль Фонтелли
         can-ned_food
         Скотт Фурри
-        Robin Gareus
-        Инфракрасный
+        Робин Гэриус
+        Infrared
         Маттиас Крюгер
         Майлз Маккамон
         Жонатас Л. Ногейра
@@ -50,7 +51,7 @@ text = [[
 
 ГРАФИКА:
 
-        Инфракрасный
+        Infrared
         Бастиан Салмела
 
 МУЗЫКА:
@@ -68,46 +69,46 @@ text = [[
           Маттиас Крюгер
           Линк Марио
 
-        es:
+        испанский:
           Педро Арана
-          Carlos Daniel Landin Montaperto
-          Lua Marchante Tello
+          Карлос Даниэль Лэндин Монтэперто
+          Луа Марчант Телло
 
         французский:
           Себастьян Адам
           Алерион
-          Benjamin Bertrand
+          Бенджамин Бертран
           Сэмюэль Дегранд
           Николя Фаржье
           Бенжамен Ледюк
           Дыон Кханг Нгуен
           Xenux
 
-        hu:
-          Balazs Mesko
+        венгерский:
+          Блазс Меско
 
-        it:
+        итальянский:
           ginoingras
           Silvia
-          Sebastiano Pistore
+          Себастиано Песторе
 
         бразильский португальский:
           Анелиз Д. Дж.
           Луис Фелипе Феррейра да Силва
-          Rafael Fontenelle
+          Рафаэль Фонтелли
           Жонатас Л. Ногейра
 
-        ru:
-          Rodion
-          Roman M. Yagodin
+        русский:
+          Родион
+          Роман М. Ягодин
 
         шведский:
           Александр Форсберг
-          Jonatan Nyberg
+          Джонатан Найберг
 
 РАЗНОЕ:
 
-        Julien Puydt
+        Жульен Пьюдт
 
 
 
@@ -125,42 +126,42 @@ text = [[
         Майк Фляйшманн
         Янн Хорн
         jcoral
-        Stefan Kangas
+        Стефан Кэнгэс
         Джозеф Кусия
-        Pavaluca Matei
+        Паулика Матей
         Майлз Маккамон
         Майкл Мендельсон
-        Esa-Matti Mourujarvi
-        Ari Mustonen
+        Иса-Маттей Моуруджарви
+        Ари Мустонен
         Майкл Паркс
-        Nicolas Pepin-Perreault
+        Николас Пепин-Перрулт
         Сэмюэль Питуазе
-        Quentin Pradet
+        Квентин Прэдет
         Иоганнес Прикс
         Райнхард Прикс
-        Alexander Solovets
-        Philippe Tetar
+        Александр Соловец
+        Филипп Титар
         v4hn
 
 НАПОЛНЕНИЕ ИГРЫ:
 
         Эми Батлер
-        Stefan Huszics
+        Стефан Хазикс
         Джеймс
         Рэймонд Дженнингс
-        Sebastian Offermann
-        Kurtis Parramore
-        Niklas Spille
+        Себастиан Офферман
+        Кертис Пэррэмо
+        Никлас Спилл
         Starminn
-        Karol Swietlicki
+        Кэрол Светицки
         rudi_s
         Thor
         JK Wood
  
 МУЗЫКА:
 
-        Nick "Nario" Hagman
-        Arvid Picciani
+        Ник "Nario" Хэгман
+        Арвид Пицциани
         "The Beginning"
             by 4t thieves
         "Daybreak"
@@ -172,8 +173,8 @@ text = [[
 
         MBROLA - преобразование текста в речь
         eSpeak - преобразование текста в речь
-        Ryan 'simcop2387' Voots
-        Andrew A. Gill
+        Райан 'simcop2387' Вутис
+        Эндрю А. Гилл
         Zombie Ryushu
         Ted Cipicchio
         Доктор

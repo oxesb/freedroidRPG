@@ -5,15 +5,15 @@
 #
 # Translators:
 # Benjamin Leduc <giby_the_kid@yahoo.fr>, 2019
-# Balázs Meskó <meskobalazs@gmail.com>, 2019
+# Balázs Meskó <meskobalazs@mailbox.org>, 2019
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 1.0RC1\n"
-"Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-05-08 17:36+0200\n"
+"Project-Id-Version: freedroidrpg 1.0RC2\n"
+"Report-Msgid-Bugs-To: https://www.freedroid.org\n"
+"POT-Creation-Date: 2022-03-31 13:00+0200\n"
 "PO-Revision-Date: 2019-02-28 09:00+0000\n"
-"Last-Translator: Balázs Meskó <meskobalazs@gmail.com>, 2019\n"
+"Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>, 2019\n"
 "Language-Team: Hungarian (https://www.transifex.com/arctic-games/teams/9511/hu/)\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -14204,8 +14204,8 @@ msgid "So, what do you want to buy?"
 msgstr "Nos, mit akarsz vásárolni?"
 
 #: data/storyline/act1/dialogs/Lukas.lua:62
-msgid "I am interesting in buying ammo."
-msgstr "Lőszert szeretnék venni."
+msgid "I am interested in buying ammo."
+msgstr ""
 
 #: data/storyline/act1/dialogs/Lukas.lua:64
 msgid "Of course. Because ammo is always at high demand, we sell them separately."
@@ -17350,8 +17350,8 @@ msgid "But you can help us with the preparatives, if you want."
 msgstr "De segíthetsz az előkészületekben, ha szeretnél."
 
 #: data/storyline/act1/dialogs/Saul.lua:35
-msgid "Contact information can be found at [b]http://www.freedroid.org/Contact[/b]"
-msgstr "A kapcsolati információk megtalálhatóak a [b]http://www.freedroid.org/Contact[/b] oldalon"
+msgid "Contact information can be found at [b]https://www.freedroid.org/Contact[/b]"
+msgstr ""
 
 #: data/storyline/act1/dialogs/Saul.lua:42
 #: data/storyline/act1/dialogs/Vending-Machine.lua:40
@@ -18340,8 +18340,8 @@ msgid "However, if you did in fact NOT cheat, please tell the developers how you
 msgstr "Viszont ha MÉGSEM csaltál, akkor mondd el a fejlesztőknek, hogy szereztél ennyi pénzt, hogy kijavíthassák. :)"
 
 #: data/storyline/act1/dialogs/Spencer.lua:217
-msgid "Contact information can be found at http://www.freedroid.org/Contact"
-msgstr "A kapcsolati információk megtalálhatóak a http://www.freedroid.org/Contact oldalon"
+msgid "Contact information can be found at https://www.freedroid.org/Contact"
+msgstr ""
 
 #: data/storyline/act1/dialogs/Spencer.lua:224
 msgid "Have I done enough quests to become a member now?"

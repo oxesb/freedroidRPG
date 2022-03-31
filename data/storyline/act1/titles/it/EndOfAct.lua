@@ -52,5 +52,6 @@ Now that the beloved town of yours is safe...
 
 
 === END OF ACT 1 ===
+
 ]]
 }

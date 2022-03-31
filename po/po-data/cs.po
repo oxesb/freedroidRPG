@@ -4,15 +4,15 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# zdenek <chmelarz@gmail.com>, 2019
+# Zdenek Chmelar <chmelarz@gmail.com>, 2019
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 1.0RC1\n"
-"Report-Msgid-Bugs-To: http://www.freedroid.org\n"
-"POT-Creation-Date: 2019-03-30 22:43+0100\n"
+"Project-Id-Version: freedroidrpg 1.0RC2\n"
+"Report-Msgid-Bugs-To: https://www.freedroid.org\n"
+"POT-Creation-Date: 2022-03-31 13:00+0200\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
-"Last-Translator: zdenek <chmelarz@gmail.com>, 2019\n"
+"Last-Translator: Zdenek Chmelar <chmelarz@gmail.com>, 2019\n"
 "Language-Team: Czech (https://www.transifex.com/arctic-games/teams/9511/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -3800,264 +3800,264 @@ msgstr "Podnikový chlap"
 
 #: data/storyline/act2/events.dat:60 data/storyline/act2/levels.dat:30140
 msgid "Skyscrapper Arena"
-msgstr ""
+msgstr "Výšková aréna"
 
 #: data/storyline/act2/events.dat:108
 msgid "You are unable to return. The only way is forward."
-msgstr ""
+msgstr "Není návratu. Jediná cesta ven je pokračovat vpřed."
 
 #: data/storyline/act2/events.dat:109
 msgid "RUMBLE! A earthquake happened!"
-msgstr ""
+msgstr "BURÁCENÍ! Došlo k zemětřesení!"
 
 #: data/storyline/act2/events.dat:173
 msgid "Your head spins. What happened?!"
-msgstr ""
+msgstr "Točí se ti hlava. Co se stalo?!"
 
 #: data/storyline/act2/events.dat:174
 msgid "BOOM BOOOOOOM BOOOM"
-msgstr ""
+msgstr "BOOM BOOOOOOM BOOOM"
 
 #: data/storyline/act2/events.dat:186
 msgid "To Underground F1"
-msgstr ""
+msgstr "Do podzemí F1"
 
 #: data/storyline/act2/events.dat:198 data/storyline/act2/events.dat:235
 msgid "To Underground F2"
-msgstr ""
+msgstr "Do podzemí F2"
 
 #: data/storyline/act2/events.dat:213
 msgid "To Ground Level"
-msgstr ""
+msgstr "Na úroveň terénu"
 
 #: data/storyline/act2/events.dat:222 data/storyline/act2/events.dat:266
 #: data/storyline/act2/events.dat:385
 msgid "To Underground F3"
-msgstr ""
+msgstr "Do podzemí F3"
 
 #: data/storyline/act2/events.dat:244 data/storyline/act2/events.dat:288
 msgid "To Underground F4"
-msgstr ""
+msgstr "Do podzemí F4"
 
 #: data/storyline/act2/events.dat:253
 msgid "To Factory via Shortcut"
-msgstr ""
+msgstr "Zkratkou do Továrny"
 
 #: data/storyline/act2/events.dat:275 data/storyline/act2/events.dat:310
 msgid "To Underground F5"
-msgstr ""
+msgstr "Do podzemí F5"
 
 #: data/storyline/act2/events.dat:297 data/storyline/act2/events.dat:332
 msgid "To Underground F6"
-msgstr ""
+msgstr "Do podzemí F6"
 
 #: data/storyline/act2/events.dat:319 data/storyline/act2/events.dat:354
 msgid "To Underground F7"
-msgstr ""
+msgstr "Do podzemí F7"
 
 #: data/storyline/act2/events.dat:341 data/storyline/act2/events.dat:376
 msgid "To Underground F8"
-msgstr ""
+msgstr "Do podzemí F8"
 
 #: data/storyline/act2/events.dat:363
 msgid "To Underground F9"
-msgstr ""
+msgstr "Do podzemí F9"
 
 #: data/storyline/act2/events.dat:398
 msgid "To Mainland via underground"
-msgstr ""
+msgstr "Podzemím na pevninu"
 
 #: data/storyline/act2/events.dat:411
 msgid "To Icy Summer Island"
-msgstr ""
+msgstr "Na Ledový letní ostrov"
 
-#: data/storyline/act2/events.dat:591 data/storyline/act2/npc_specs.lua:29
+#: data/storyline/act2/events.dat:590 data/storyline/act2/npc_specs.lua:29
 msgid "Colemak"
-msgstr ""
+msgstr "Colemak"
 
 #: data/storyline/act2/levels.dat:20
 msgid "RR Resorts"
-msgstr ""
+msgstr "RR resorty"
 
 #: data/storyline/act2/levels.dat:1119
 msgid "Visitors: This Way"
-msgstr ""
+msgstr "Návštěvníci: Tudy"
 
 #: data/storyline/act2/levels.dat:1143
 msgid "In case of emergency, take the Arcane Lore from the chest!"
-msgstr ""
+msgstr "V případě nouze vezměte z truhly Tajné umění!"
 
 #: data/storyline/act2/levels.dat:1235
 msgid "Central Area"
-msgstr ""
+msgstr "Centrální oblast"
 
 #: data/storyline/act2/levels.dat:1971 data/storyline/act2/levels.dat:2456
 msgid "To R&R Resorts"
-msgstr ""
+msgstr "K resortům R&R"
 
 #: data/storyline/act2/levels.dat:1974
 msgid "To The Ice Pass"
-msgstr ""
+msgstr "K Ledovému průsmyku"
 
 #: data/storyline/act2/levels.dat:1977
 msgid "To R&R Factory"
-msgstr ""
+msgstr "K továrně R&R"
 
 #: data/storyline/act2/levels.dat:1980
 msgid "To Guest Area and City Gate Control"
-msgstr ""
+msgstr "K Oblasti pro hosty a Řízení městské brány"
 
 #: data/storyline/act2/levels.dat:1983
 msgid "Guest Room. Please wait patiently for one of our staff pick you up."
-msgstr ""
+msgstr "Pokoj pro hosty. Trpělivě prosím vyčkejte, dokud si vás nevyzvedne některý z našich zaměstnanců. "
 
 #: data/storyline/act2/levels.dat:2113
 msgid "Welcome to Act 2"
-msgstr ""
+msgstr "Vítejte v Aktu 2"
 
 #: data/storyline/act2/levels.dat:2484
 msgid "R&R Factory"
-msgstr ""
+msgstr "Továrna R&R"
 
 #: data/storyline/act2/levels.dat:4627
 msgid "Droid Research & Development Offices"
-msgstr ""
+msgstr "Úřady výzkumu a vývoje droidů"
 
 #: data/storyline/act2/levels.dat:4678
 msgid "RR Factory, Floor 2"
-msgstr ""
+msgstr "Továrna RR, 2. patro"
 
 #: data/storyline/act2/levels.dat:6962
 msgid "Servant Development Office. South: Scout Development Office."
-msgstr ""
+msgstr "Úřad pro rozvoj úředníků. Jižně: Úřad pro rozvoj skautů."
 
 #: data/storyline/act2/levels.dat:7138
 msgid "RR Factory, Floor 3"
-msgstr ""
+msgstr "Továrna RR, 3. patro"
 
 #: data/storyline/act2/levels.dat:9508
 msgid "Scouts Development Office. Intruders will be shot without mercy."
-msgstr ""
+msgstr "Úřad pro rozvoj skautů. Vetřelci budou bez milosti zastřeleni."
 
 #: data/storyline/act2/levels.dat:9511
 msgid "No Trespassing: Factory Core. (Shortcut to Floor 9)"
-msgstr ""
+msgstr "Vstup zakázán: Jádro továrny. (Zkratka do 9. patra)"
 
 #: data/storyline/act2/levels.dat:9517
 msgid "Are you lost? Northeast to Maintenance Development Office."
-msgstr ""
+msgstr "Ztratil ses? Na severovýchod k Úřadu pro rozvoj údržby. "
 
 #: data/storyline/act2/levels.dat:9695
 msgid "RR Factory, Floor 4"
-msgstr ""
+msgstr "Továrna RR, 4. patro"
 
 #: data/storyline/act2/levels.dat:12216
 msgid "Maintenance Development Office & Storage. "
-msgstr ""
+msgstr "Úřad pro rozvoj údržby & sklad."
 
 #: data/storyline/act2/levels.dat:12219
 msgid "Crew Development Office. We're sorry that you need to go to your office by stairs."
-msgstr ""
+msgstr "Úřad pro rozvoj posádek. Je nám líto, že musíte jít do úřadu po schodech."
 
 #: data/storyline/act2/levels.dat:12222
 msgid "Crew Development Offices at East, in central area."
-msgstr ""
+msgstr "Úřady pro rozvoj posádek na východě, v centrální oblasti."
 
 #: data/storyline/act2/levels.dat:12225
 msgid "If the gate to the research area is locked, please do not open it. Insane people working."
-msgstr ""
+msgstr "Pokud je brána do výzkumné oblasti zamčená, neotevírejte ji prosím. Pracují zde šílení lidé."
 
 #: data/storyline/act2/levels.dat:12409
 msgid "RR Factory, Floor 5"
-msgstr ""
+msgstr "Továrna RR, 5. patro"
 
 #: data/storyline/act2/levels.dat:14743
 msgid "Crew & Harvesting Development Office. North-east: Security Development Office."
-msgstr ""
+msgstr "Úřad pro rozvoj posádky a sklizně. Severovýchodně: Úřad pro rozvoj bezpečnosti."
 
 #: data/storyline/act2/levels.dat:14932
 msgid "RR Factory, Floor 6"
-msgstr ""
+msgstr "Továrna RR, 6. patro"
 
 #: data/storyline/act2/levels.dat:17301
 msgid "Dispatchment & Signman Offices. Battle droids present. Authorized Access Only!"
-msgstr ""
+msgstr "Úřad expedice a dozoru. Přítomni bitevní droidi. Vstup pouze autorizovaným osobám!"
 
 #: data/storyline/act2/levels.dat:17304
 msgid "Security Development Office. Sign blinks to spare power. This way for more STAIRS."
-msgstr ""
+msgstr "Úřad pro rozvoj bezpečnosti. Cedule bliká, aby se šetřila energie. Tímto směrem k dalším SCHODŮM."
 
 #: data/storyline/act2/levels.dat:17499
 msgid "RR Factory, Floor 7"
-msgstr ""
+msgstr "Továrna RR, 7. patro"
 
 #: data/storyline/act2/levels.dat:19924
 msgid "Use this stair for Sentinel Dev. Office, Command Dev. Office, Factory Plant and Death."
-msgstr ""
+msgstr "Toto schodiště vede k Úřadu pro rozvoj stráží, Úřadu pro rozvoj velitelství, továrně a smrti."
 
 #: data/storyline/act2/levels.dat:19927
 msgid "There is nothing on this sign."
-msgstr "Na této značce není nic."
+msgstr "Na této ceduli není nic."
 
 #: data/storyline/act2/levels.dat:19930
 msgid "Sentinel and Command devs, we're sorry, but more stairs ahead."
-msgstr ""
+msgstr "Omlouváme se, ale před vámi jsou další schody k Úřadům rozvoje stráží a velitelství."
 
 #: data/storyline/act2/levels.dat:19933
 msgid "Signman Office. Hey, it's me! You totally should visit this office, or send us a LETTER!"
-msgstr ""
+msgstr "Úřad dozoru. Hej to jsem já! Tuto kancelář byste definitivně měli navštívit nebo nám pošlete DOPIS!"
 
 #: data/storyline/act2/levels.dat:20124
 msgid "RR Factory, Floor 8"
-msgstr ""
+msgstr "Továrna RR, 8. patro"
 
 #: data/storyline/act2/levels.dat:22890
 msgid "RR Factory, Floor 9"
-msgstr ""
+msgstr "Továrna RR, 9. patro"
 
 #: data/storyline/act2/levels.dat:25864
 msgid "Command Development Office & Factory. Complainers about stairs will be frozen without mercy. AZ."
-msgstr ""
+msgstr "Úřad pro rozvoj velitelství & továrna. Ten, kdo si bude stěžovat na schody, bude bez milosti zmražen. AZ."
 
 #: data/storyline/act2/levels.dat:27156
 msgid "The Ice Pass - North"
-msgstr ""
+msgstr "Ledový průsmyk - sever"
 
 #: data/storyline/act2/levels.dat:27281
 msgid "The Ice Pass"
-msgstr ""
+msgstr "Ledový průsmyk"
 
 #: data/storyline/act2/levels.dat:27413
 msgid "The Ice Pass - South"
-msgstr ""
+msgstr "Ledový průsmyk - jih"
 
 #: data/storyline/act2/levels.dat:27538
 msgid "The Ice Pass - Dvorak"
-msgstr ""
+msgstr "Ledový průsmyk - Dvořák"
 
 #: data/storyline/act2/levels.dat:27676
 msgid "Icy Summer Artificial Island"
-msgstr ""
+msgstr "Umělý Ledový letní ostrov"
 
 #: data/storyline/act2/levels.dat:28338
 msgid "To mainland"
-msgstr ""
+msgstr "Na pevninu"
 
 #: data/storyline/act2/levels.dat:28881
 msgid "Search in the Darkness"
-msgstr ""
+msgstr "Hledání v temnotě"
 
 #: data/storyline/act2/levels.dat:29946
 msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Management."
-msgstr ""
+msgstr "Hej, jste docela blízko k podzemní chodbě na pevninu. Ujistěte se, že s sebou máte klíče. Management RR Resortů."
 
 #: data/storyline/act2/levels.dat:29949
 msgid "Blue Marker for Storage Room. Red Marker for Mainland."
-msgstr ""
+msgstr "Modré značení pro sklad. Červené značení pro pevninu."
 
 #: data/storyline/act2/levels.dat:29952
 msgid "DANGER! Due to the reckless exploration of Dilithium, the ceiling may fall anytime. DO NOT PROCEED."
-msgstr ""
+msgstr "NEBEZPEČÍ! Kvůli neuváženému průzkumu Dilithia může strop kdykoli spadnout. NEPOKRAČUJTE."
 
 #: data/storyline/act2/npc_specs.lua:11
 #: data/storyline/act2/ReturnOfTux.droids:123
@@ -4066,23 +4066,23 @@ msgstr "Mistr Yadda"
 
 #: data/storyline/act2/npc_specs.lua:15
 msgid "Mr. Stone - Shop owner"
-msgstr ""
+msgstr "Pan Stone - Majitel obchodu"
 
 #: data/storyline/act2/npc_specs.lua:17
 msgid "RR Security Chief"
-msgstr ""
+msgstr "Šéf bezpečnosti RR"
 
 #: data/storyline/act2/npc_specs.lua:21
 msgid "999 RR Manager"
-msgstr ""
+msgstr "999 RR Manažer"
 
 #: data/storyline/act2/npc_specs.lua:22
 msgid "Mr. Saves"
-msgstr ""
+msgstr "Pan Saves"
 
 #: data/storyline/act2/npc_specs.lua:22
 msgid "Mr. Saves, Watcher of Stories"
-msgstr ""
+msgstr "Pan Saves, Strážce příběhů"
 
 #: data/storyline/act2/npc_specs.lua:22
 #: data/storyline/act2/ReturnOfTux.droids:31
@@ -4101,19 +4101,19 @@ msgstr "Fred"
 
 #: data/storyline/act2/npc_specs.lua:29
 msgid "Dvorak's acquittance - Colemak"
-msgstr ""
+msgstr "Dvořákovo zproštění viny - Colemak"
 
 #: data/storyline/act2/quests.lua:27
 msgid "Where Am I?"
-msgstr ""
+msgstr "Kde to jsem?"
 
 #: data/storyline/act2/quests.lua:31
 msgid "Message From An Old Friend"
-msgstr ""
+msgstr "Zpráva od starého přítele"
 
 #: data/storyline/act2/quests.lua:35
 msgid "The Reapers Of MegaSys I"
-msgstr ""
+msgstr "Sekačky MegaSysu I"
 
 #: data/storyline/act2/ReturnOfTux.droids:4
 #: data/storyline/act2/ReturnOfTux.droids:5
