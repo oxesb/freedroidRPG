@@ -28,11 +28,11 @@ text = [[
 
 POHYB:
 
-Hra se ovládá pomocí myši. Klikněte levým tlačítkem na místa, do nichž se chcete přesunout. Podržte tlačítko, aby jste se pohybovali tímto směrem. Držením klávesnice CTRL budete utíkat.
+Hra se ovládá pomocí myši. Klikněte levým tlačítkem na místo, do něhož se chcete přesunout. Podržte tlačítko, aby jste se pohybovali tímto směrem. Podržením klávesnice CTRL budete utíkat.
 
 ÚTOK:
 
-Klikání levým tlačítkem myši na nepřítele způsobí, že se Tux přiblíží k robotovi a začne útočit s aktuální zbraní. Pokud je aktuální zbraní pistole, pak bude Tux stát na místě a střílet na robota.
+Klikáním levého tlačítka myši na nepřítele se Tux přiblíží k robotovi a začne útočit s aktuální zbraní. Pokud je aktuální zbraní pistole, pak bude Tux stát na místě a střílet na robota.
 
 SPECIÁLNÍ FUNKCE:
 
@@ -69,13 +69,13 @@ Výchozí klávesy (většina kláves může být přeřazena pomocí přehledu 
 
 PŘEVZETÍ/CHAT
 
-Chcete-li konverzovat s přátelským droidem, stačí, abyste na něj klikli. Pro převzetí vlády nad nepřátelským robotem vyberte dovednost převzetí/chat z panelu dovedností, pak klepněte pravým tlačítkem myši pro zahájení převzetí.
+Chcete-li hovořit s přátelským droidem, stačí, abyste na něj klikli. Pro převzetí vlády nad nepřátelským robotem vyberte dovednost převzetí/chat z panelu dovedností, pak klepněte pravým tlačítkem myši pro zahájení převzetí.
 
-V průběhu hry převzetí lze použít kolečko myši nebo kurzorová tlačítka.
+Při průběhu minihry o převzetí robota lze používat kolečko myši nebo kurzorová tlačítka.
 
 Možná vás bude zajímat výuková hra, která je přístupná z hlavního menu.
 
-If you are stuck and need help, feel free to come to #freedroid on irc.libera.chat and ask for help.
+Pokud jste uvízli a potřebujete pomoc, neváhejte a přijďte na #freedroid na irc.libera.chat a požádejte o pomoc.
 
 To je vše, užijte si hru.
 

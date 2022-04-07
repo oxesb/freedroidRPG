@@ -14202,7 +14202,7 @@ msgstr "Also, was darf's sein?"
 
 #: data/storyline/act1/dialogs/Lukas.lua:62
 msgid "I am interested in buying ammo."
-msgstr ""
+msgstr "Ich brauche etwas Munition."
 
 #: data/storyline/act1/dialogs/Lukas.lua:64
 msgid "Of course. Because ammo is always at high demand, we sell them separately."
@@ -17350,7 +17350,7 @@ msgstr "Aber du kannst uns dabei unterstützen, wenn du willst."
 
 #: data/storyline/act1/dialogs/Saul.lua:35
 msgid "Contact information can be found at [b]https://www.freedroid.org/Contact[/b]"
-msgstr ""
+msgstr "Kontaktinformationen findest du unter: [b]https://www.freedroid.org/Contact[/b]"
 
 #: data/storyline/act1/dialogs/Saul.lua:42
 #: data/storyline/act1/dialogs/Vending-Machine.lua:40
@@ -18340,7 +18340,7 @@ msgstr "Sollten Sie jedoch nicht geschummelt haben, wie auch immer, beschreiben 
 
 #: data/storyline/act1/dialogs/Spencer.lua:217
 msgid "Contact information can be found at https://www.freedroid.org/Contact"
-msgstr ""
+msgstr "Kontaktinformationen finden Sie unter: https://www.freedroid.org/Contact"
 
 #: data/storyline/act1/dialogs/Spencer.lua:224
 msgid "Have I done enough quests to become a member now?"

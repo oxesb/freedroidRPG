@@ -24,19 +24,19 @@ text = [[
             JAK PŘISPĚT
 
 FreedroidRPG je zcela svobodný software a svobodné dílo.
-Je vyvinut výhradně dobrovolníky v jejich volném čase.
+Je vyvíjen výhradně dobrovolníky v jejich volném čase.
 
-Aby se FreedroidRPG stal lepší hrou, závisí na těchto příspěvcích.
-Pokud byste chtěli něčím přispět, ale nejste si zcela jisti jak, tady je seznam věcí:
+Aby se FreedroidRPG mohl neustále zlepšovat, závisí na těchto dobrovolných příspěvcích.
+Pokud byste chtěli něčím přispět, ale nejste si zcela jisti čím nebo jak, zde je seznam možností:
 
 TESTOVÁNÍ A REPORTOVÁNÍ CHYB:
 
 Potřebujeme lidi, kteří hru vyzkouší a nahlásí cokoli, co nefunguje správně nebo se nezdá být stabilní. To zahrnuje drobné věci jako je kontrola překlepů, chyb v textu a podobně. Úloha testování roste s velikostí hry FreedroidRPG. Potřebujeme vaši pomoc.
-Neváhejte a pošlete nám opravy (patche)!
+Neváhejte a posílejte nám návrhy na opravy (patche)!
 
 TVORBA MAP:
 
-Hledáme lidi, kteří by pro nás dělali mapy. K dispozici je editor map vestavěný ve hře. Zkuste ho a když uděláte něco zajímavého, ujistěte se, že se to dostane zpátky k nám.
+Hledáme lidi, kteří by pro nás dělali mapy. K dispozici je editor map vestavěný ve hře. Zkuste ho a když uděláte něco zajímavého, ujistěte se, že se vaše práce dostane zpět k nám.
 
 DOKUMENTACE:
 
@@ -44,14 +44,14 @@ V současné době se potýkáme s nedostatkem dokumentace. Potřebovali bychom 
 
 ZVUKOVÉ EFEKTY:
 
-Z cela určitě bychom mohli použít zvukové efekty. Chcete-li nějakým přispět, nebudeme říkat ne. :)
+Z cela určitě bychom mohli použít zvukové efekty. Chcete-li nějakým přispět, rozhodně vás neodmítneme. :)
 
 KONTAKT:
 
 Pokud byste rádi něčím přispěli nebo poskytli zpětnou vazbu ohledně hry, můžete se jednoduše spojit s vývojáři. Stačí poslat e-mail na následující adresu:
 freedroid-discussion@lists.sourceforge.net
 
-Or, if you prefer, you might want to pop into our IRC channel (#freedroid on irc.libera.chat). Everyone's invited. Bring your friends!
+Nebo se můžete zastavit na našem IRC kanálu (#freedroid na irc.libera.chat).  Všichni jsou vítáni. Přiveďte i své přátele!
 
 Díky,
 

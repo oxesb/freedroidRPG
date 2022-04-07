@@ -23,7 +23,7 @@ voice_acting = "GameLost.ogg",
 preroll_text = 3,
 postroll_text = 3,
 text = [[
-            Hra byla ztracena
+            Prohráls. Hra byla ztracena.
 
 Zkus to prosím znovu, a pokud tak učiníš, ujisti se, že od našich sponzorů koupíš:
 
@@ -35,13 +35,13 @@ KryoniK Řešení - "Vemte to rychlou cestu do budoucnosti s KryoniK Řešením!
 
 Budoucí Balistiky - "Za hranice balistiky. Budoucí Balistiky."
 
-MegaSystémy - "Co dnes  nechceš dělat?"
+MegaSystémy - "Co nechceš dnes dělat?"
 
 Odstraňování odpadků Masternak - "ODSTRAŇUJEM tvé ODPADKY."
 
 Nicholsonovy závody - "Bezpečnost v plné síle."
 
-Rudé Slunce - "Noc je u konce: ochutnejte úsvit!"
+Rudé Slunce - "Noc je u konce: ochutnej úsvit!"
 
 
 

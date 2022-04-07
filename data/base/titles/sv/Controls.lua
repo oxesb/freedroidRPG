@@ -75,7 +75,7 @@ I övertagningsspelet kan du använda mushjulet eller piltangenterna.
 
 Du kanske vill spela Handledningen som du hittar i huvudmenyn.
 
-If you are stuck and need help, feel free to come to #freedroid on irc.libera.chat and ask for help.
+Om du fastnar och behöver hjälp, tveka inte att gå till #freedroid på irc.libera.chat och fråga om hjälp.
 
 Det var allt, ha det så roligt med spelet.
 

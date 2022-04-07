@@ -8941,7 +8941,7 @@ msgstr "No."
 
 #: data/storyline/act1/dialogs/Engel.lua:104
 msgid "Every day since this mess started I come here to fight the bots."
-msgstr ""
+msgstr "Ogni giorno da quando è accaduto il disordine io vengo qui per combattere i robot."
 
 #: data/storyline/act1/dialogs/Engel.lua:105
 msgid "Today will be no different."
@@ -12805,7 +12805,7 @@ msgstr "Oh, grazie."
 
 #: data/storyline/act1/dialogs/John.lua:142
 msgid "Err... How did you get in here?!"
-msgstr ""
+msgstr "Err... Come ha fatto ad entrare qui?!"
 
 #: data/storyline/act1/dialogs/John.lua:143
 msgid "I just walked through the door."
@@ -14534,7 +14534,7 @@ msgstr "Non sembri felice. Cosa c'è che non va?"
 
 #: data/storyline/act1/dialogs/Michelangelo.lua:139
 msgid "I am very happy! The Red Guard is making us so secure, it is great to live here with them taking care of us!"
-msgstr ""
+msgstr "Sono felicissimo! La Guardia Rossa ci stanno facendo così sicuro, è bello vivere qui con loro che prendendo cura di noi!"
 
 #: data/storyline/act1/dialogs/Michelangelo.lua:141
 msgid "EVERYTHING!"
@@ -17350,7 +17350,7 @@ msgstr "Ma se vuoi, puoi aiutarci con i preparativi."
 
 #: data/storyline/act1/dialogs/Saul.lua:35
 msgid "Contact information can be found at [b]https://www.freedroid.org/Contact[/b]"
-msgstr ""
+msgstr "Le informazioni sui contatti puoi trovarle su [b]https://www.freedroid.org/Contact[/b]"
 
 #: data/storyline/act1/dialogs/Saul.lua:42
 #: data/storyline/act1/dialogs/Vending-Machine.lua:40
@@ -21268,7 +21268,7 @@ msgstr "Egli non vuole ammetterlo, ma tra il tempo che èri fuori e la caduta di
 
 #: data/storyline/act1/dialogs/Town-TuxGuard.lua:110
 msgid "I've never seen him as desperate as when you were in here. And I've never seen him as happy as when he dragged us to the teleporter."
-msgstr ""
+msgstr "Non l'ho mai visto così disperato come quando c'eri. E non l'ho mai visto così felice come quando ci ha trascinato al teletrasporto."
 
 #: data/storyline/act1/dialogs/Town-TuxGuard.lua:116
 msgid "I see. Those must have been some very impressive deeds."
@@ -23183,7 +23183,7 @@ msgstr "Che cosa è la Cittadella?"
 
 #: data/storyline/act1/dialogs/Tybalt.lua:75
 msgid "Our headquarters, the strengthened building behind me. It's the area reserved to the Red Guard."
-msgstr ""
+msgstr "I nostri quartier generali, l'edificio rinforzato dietro di me. Quest'area è riservata alla Guardia Rossa."
 
 #: data/storyline/act1/dialogs/Tybalt.lua:76
 msgid "We need to protect our equipment and documents: lives depend on it."

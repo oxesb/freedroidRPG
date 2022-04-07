@@ -75,7 +75,7 @@ text = [[
 
 Возможно, вас заинтересует учебная игра, доступная из главного меню.
 
-If you are stuck and need help, feel free to come to #freedroid on irc.libera.chat and ask for help.
+Если вы застряли и нужна помощь, не стесняйтесь попросить о ней во #freedroid на irc.libera.chat.
 
 Вот и всё, приятной игры.
 

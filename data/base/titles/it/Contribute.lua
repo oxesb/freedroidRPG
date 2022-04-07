@@ -51,7 +51,7 @@ CONTATTI:
 Se volete contribuire a qualcosa o dare qualche riscontro riguardo al gioco, puoi facilmente metterti in contatto con gli sviluppatori. Mandando una email al seguente indirizzo:
 freedroid-discussion@lists.sourceforge.net
 
-Or, if you prefer, you might want to pop into our IRC channel (#freedroid on irc.libera.chat). Everyone's invited. Bring your friends!
+Oppure, se preferisci, potresti fare un salto nel nostro IRC channel (#freedroid on irc.libera.chat). Tutti sono invitati. Porta i tuoi amici!
 
 Grazie,
 

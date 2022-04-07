@@ -1513,7 +1513,7 @@ msgstr "Vidlička"
 #: data/base/item_specs.lua:2226 data/base/item_specs.lua:2238
 #: data/base/item_specs.lua:2249 data/base/item_specs.lua:2260
 msgid "This item is part of the 'Self Cleaning Kitchen' (SCK) project from before the Great Assault. All of the items in the SCK project have an inner mechanism that will clean the object automatically if left alone for a given time. It comes with its own power supply, and has a supposed duration of 200 years."
-msgstr "Tento předmět je součástí projektu 'Samočisticí kuchyně' (SK) z doby před Velkým útokem. Všechny předměty projektu SK mají vnitřní mechanismus, který čistí předmět automaticky, ponecháš-li ho samotě po určitou dobu. Jsou dodávány s vlastním zdrojem napájení s předpokládanou dobou životnosti 200 let."
+msgstr "Tento předmět je součástí projektu 'Samočisticí kuchyně' (SK). Pochází z doby před Velkým útokem. Všechny předměty projektu SK mají vnitřní mechanismus, který daný objekt automaticky čistí, necháš-li ho po určitou dobu o samotě. Jsou dodávány s vlastním zdrojem napájení, jehož předpokládaná doba životnosti je 200 let."
 
 #: data/base/item_specs.lua:2234
 msgid "Plate"
@@ -1877,7 +1877,7 @@ msgstr "Tento předmět je používán testery. Pokud ho najdete ve hře bez pou
 
 #: data/base/item_specs.lua:3063
 msgid "Small Tutorial Axe"
-msgstr "Malá výuková sekera"
+msgstr "Malá výcviková sekera"
 
 #: data/base/item_specs.lua:3077
 msgid ""
@@ -1891,7 +1891,7 @@ msgstr ""
 
 #: data/base/item_specs.lua:3086
 msgid "Bottled Tutorial Ice"
-msgstr "Balený výukový led"
+msgstr "Balený výcvikový led"
 
 #: data/base/item_specs.lua:3091
 msgid ""
@@ -1967,7 +1967,7 @@ msgstr "Zabezpečený terminál"
 
 #: data/base/skill_specs.lua:9
 msgid "Hacking"
-msgstr "Hackni"
+msgstr "Hackování"
 
 #: data/base/skill_specs.lua:15
 msgid "Linarians are gifted with the ability to hack any hostile bot in no time. With this program selected, initiate the takeover process by right clicking a hostile machine of your choice."
@@ -2347,7 +2347,7 @@ msgstr "Dobře, nyní se přesuň na černou mřížku směrem na východ."
 
 #: data/storyline/act1/events.dat:2414
 msgid "Good, now talk to Tutorial Tom again."
-msgstr "Dobře. A teď si znovu promluv s výukovým Tomem."
+msgstr "Dobře. A teď si znovu promluv s učitelem Tomem."
 
 #: data/storyline/act1/events.dat:2603
 msgid "To a Forgotten Bunker"
@@ -2526,7 +2526,7 @@ msgstr "Moře u Okraje světa"
 
 #: data/storyline/act1/levels.dat:23898 data/storyline/act2/levels.dat:30013
 msgid "DEBUG LEVEL 24 -- This level was created to make testing of FreedroidRPG a little easier and is NOT meant to be accessible without cheating."
-msgstr "ÚROVEŇ LADĚNÍ 24 - Tato úroveň byla vytvořena pro jednodušší testování hry FreedroidRPG a NENÍ určena k přístupu ve hře bez podvádění."
+msgstr "ÚROVEŇ LADĚNÍ 24 - Tato úroveň byla vytvořena pro jednodušší testování hry FreedroidRPG a bez podvádění NENÍ ve hře určena k přístupu."
 
 #: data/storyline/act1/levels.dat:24279
 msgid "Guy signmessage A"
@@ -3213,11 +3213,11 @@ msgstr "Udělat Duncanovi laskavost"
 
 #: data/storyline/act1/quests.lua:137
 msgid "Tutorial Movement"
-msgstr "Výuka pohybu"
+msgstr "Výcvik pohybu"
 
 #: data/storyline/act1/quests.lua:141
 msgid "Tutorial Melee"
-msgstr "Výuka boje na blízko"
+msgstr "Výcvik boje na blízko"
 
 #: data/storyline/act1/quests.lua:145
 msgid "Melee droids destroyed!"
@@ -3225,7 +3225,7 @@ msgstr "Droidi zničeni v osobním souboji!"
 
 #: data/storyline/act1/quests.lua:149
 msgid "Tutorial Shooting"
-msgstr "Výuka střelby"
+msgstr "Výcvik střelby"
 
 #: data/storyline/act1/quests.lua:153
 msgid "Shooting range cleared!"
@@ -3233,7 +3233,7 @@ msgstr "Střelnice vyčištěna!"
 
 #: data/storyline/act1/quests.lua:157
 msgid "Tutorial Hacking"
-msgstr "Výuka hackování"
+msgstr "Výcvik hackování"
 
 #: data/storyline/act1/quests.lua:161
 msgid "Hacking area cleared!"
@@ -3253,11 +3253,11 @@ msgstr "Gapesovo obžerství"
 
 #: data/storyline/act1/quests.lua:177
 msgid "Tutorial Upgrading Items"
-msgstr "Výuka modernizace předmětů"
+msgstr "Výcvik modernizace předmětů"
 
 #: data/storyline/act1/quests.lua:180
 msgid "Tutorial Upgrading Items finished!"
-msgstr "Výuka modernizace předmětů dokončena!"
+msgstr "Výcvik modernizace předmětů dokončen!"
 
 #: data/storyline/act1/quests.lua:184
 msgid "Droids are my friends"
@@ -3877,7 +3877,7 @@ msgstr "Colemak"
 
 #: data/storyline/act2/levels.dat:20
 msgid "RR Resorts"
-msgstr "RR resorty"
+msgstr "Resorty RR"
 
 #: data/storyline/act2/levels.dat:1119
 msgid "Visitors: This Way"
@@ -3893,7 +3893,7 @@ msgstr "Centrální oblast"
 
 #: data/storyline/act2/levels.dat:1971 data/storyline/act2/levels.dat:2456
 msgid "To R&R Resorts"
-msgstr "K resortům R&R"
+msgstr "K Resortům R&R"
 
 #: data/storyline/act2/levels.dat:1974
 msgid "To The Ice Pass"
@@ -3901,7 +3901,7 @@ msgstr "K Ledovému průsmyku"
 
 #: data/storyline/act2/levels.dat:1977
 msgid "To R&R Factory"
-msgstr "K továrně R&R"
+msgstr "K Továrně R&R"
 
 #: data/storyline/act2/levels.dat:1980
 msgid "To Guest Area and City Gate Control"
@@ -4049,7 +4049,7 @@ msgstr "Hledání v temnotě"
 
 #: data/storyline/act2/levels.dat:29946
 msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Management."
-msgstr "Hej, jste docela blízko k podzemní chodbě na pevninu. Ujistěte se, že s sebou máte klíče. Management RR Resortů."
+msgstr "Hej, jste docela blízko k podzemní chodbě na pevninu. Ujistěte se, že s sebou máte klíče. Management Resortů RR."
 
 #: data/storyline/act2/levels.dat:29949
 msgid "Blue Marker for Storage Room. Red Marker for Mainland."

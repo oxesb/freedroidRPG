@@ -75,7 +75,7 @@ Beim darauf folgenden Minispiel können das Mausrad oder die Richtungstasten ben
 
 Es ist empfehlenswert, im Hauptmenü die Einführung zu benutzen, um die genaue Spielweise zu erfahren.
 
-If you are stuck and need help, feel free to come to #freedroid on irc.libera.chat and ask for help.
+Wer weitere Hilfe benötigt, kann den Chat-Kanal #freedroid auf irc.libera.chat besuchen und höflich fragen. Achtung: Nur auf Englisch!
 
 Das war's auch schon. Fröhliches Zocken!
 

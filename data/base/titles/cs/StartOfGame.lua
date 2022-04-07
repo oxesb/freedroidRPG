@@ -26,14 +26,14 @@ text = [[
 Jakýž toť nádherný den.
 Ano, jsem zase sarkastický.
 Celá planeta je v plamenech.
-Tisíce lidí jsou mrtvý.
+Tisíce lidí jsou po smrti.
 Qwerty a Arensito nereagují.
 
 Ah ano, málem jsem zapomněl.
-Ty prokletí boti mě každou chvíli najdou.
-Nejsem s tím moc spokojený. Nejsem vůbec šťastný.
-Evidentně budu muset zase předstírat, že jsem jen pěkný kus skály.
-Nemyslíš si, že by bylo skvělé se probudit?
+Ti prokletí roboti mě každou chvíli najdou.
+Nejsem z toho moc nadšený. Nejsem vůbec nadšený.
+Evidentně budu muset předstírat, že jsem jen kus pěkný skály. Už zase.
+Nemyslíš si, že by bylo na čase se probudit?
 Vstávat. Okamžitě sem. Zachraň mi zadek.
 Prosím.
 

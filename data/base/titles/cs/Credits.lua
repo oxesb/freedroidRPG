@@ -23,7 +23,7 @@ song = "HellFortressTwo.ogg",
 text = [[
             FreedroidRPG 1.0
 
-PROGRAMOVÁNÍ:
+NAPROGRAMOVÁNÍ:
 
         Samuel Degrande
         Christoph Franzen
@@ -62,7 +62,7 @@ PŘEKLADY:
 
         cs:
           Jan Tojnar
-          Zdenek
+          Zdenek Chmelař
 
         de_DE:
           JM Franz
@@ -114,7 +114,7 @@ OSTATNÍ:
 
             TAKÉ V PŘEDCHOZÍCH VERZÍCH
 
-PROGRAMOVÁNÍ:
+NAPROGRAMOVÁNÍ:
 
         Maria Grazia Alastra
         Pedro Arana

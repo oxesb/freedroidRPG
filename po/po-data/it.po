@@ -626,7 +626,7 @@ msgstr "Cartucce per fucili"
 msgid ""
 "Shotgun shells come in a range of gauges, but mixing and matching shotgun ammo sizes can cause your gun to explode and take your hand along with it. Luckily for you, all of your ammo is the same size and fits your shotgun(s) perfectly. An additional bonus is that it all seems to be buckshot.\n"
 "\tUndoubtedly these were the most popular type of shotgun ammunition when hunting for food became unfeasible due to the extinction of most wildlife."
-msgstr ""
+msgstr "Le Cartucce per Fucili sono disponibili in diverse calibri, ma mescolando dimensioni di munizioni può fare esplodere la pistola. Ma sei fortunato, tutte le munizioni sono dello stesso calibro e si adattano perfettamente alla tua pistola. Inoltre, questi sono dei pallettoni."
 
 #: data/base/item_specs.lua:701
 msgid "Two Barrel Sawn Off Shotgun"
@@ -762,7 +762,7 @@ msgstr "Fucile Electro Laser"
 
 #: data/base/item_specs.lua:1062
 msgid "A specialized beam of laser momentarily ionizes the air between the target and the gun, turning it into highly conductive plasma. Milliseconds later, a powerful electric shock is delivered through the air and hits the target. This weapon is effective against people as it is against bots, and indeed few are the droid classes that can withstand more than a few hits from it before going down. The ammo is cheap, and it is one of the few man-made weapons which actually produces a blast, being able to harm more than one bot at once. However, it is still no match against Exterminators."
-msgstr ""
+msgstr "Un fascio laser specializzate ionizza temporaneamente l'aria tra la destinazione e la pistola, trasformandolo in un plasma altamente conduttivo. pochi millisecondi dopo, una potente scossa elettrica viene trasmesso e raggiunto l'obiettivo. Quest'arma è efficace contro le gente e contro i robot, e in realtà pochi droidi sono in grado di raccogliere più di un paio di colpi prima di soccombere. L'unico svantaggio è il consumo di energia enorme che rende quest'arma costosa da mantenere."
 
 #: data/base/item_specs.lua:1070
 msgid "Plasma Energy Container"
@@ -1243,7 +1243,7 @@ msgstr "Manuale delle pezzi di ricambio dei Robot"
 
 #: data/base/item_specs.lua:1869 data/base/item_specs.lua:1873
 msgid "USE FOR CHEATING ONLY. If you see this ingame, please report the bug."
-msgstr ""
+msgstr "USO PER CHEAT SOLO. Se poi vedere questo online, ti preggiamo di segnalare il bug."
 
 #: data/base/item_specs.lua:1884
 msgid "Strength Pill"
@@ -1287,7 +1287,7 @@ msgstr "Pillole Antidoto del Allargamento di Cervello"
 
 #: data/base/item_specs.lua:1924
 msgid "These pills can reverse the harmful effects of the 'brain enlargement pills' that are publicly sold via the Internet. The planet-wide guild of medics has recommended not to respond to these adverts at all, while attempts to entirely ban the distribution of those pills were never completely successful."
-msgstr ""
+msgstr "Queste pillole possono invertire gli effetti nocivi delle pillole di 'allargamento del cervello' che pubblicamente sono venduti via Internet. La Gilda planetaria dell'erba medica ha raccomandato di non rispondere a questi annunci, mentre i tentativi di vietare completamente la distribuzione di quelle pillole non sono mai completamente riusciti."
 
 #: data/base/item_specs.lua:1931
 msgid "Brain Enlargement Pill"
@@ -1418,7 +1418,7 @@ msgstr "Preziosi Circuiti"
 
 #: data/base/item_specs.lua:2072
 msgid "The new monetary standard of the world. With the collapse of the banking system, the precious metals in bot circuitry are now de facto hard cash. A bit difficult to get, though, as the bots are not likely to just hand it over..."
-msgstr ""
+msgstr "Il nuovo standard monetario del mondo. Con il crollo del sistema bancario, i metalli preziosi nei circuiti di robot sono diventati letteralmente denaro sonante. Un po' difficile da trovare anche se i robot non sono interessati di prenderne..."
 
 #: data/base/item_specs.lua:2079
 msgid "Anti-grav Pod for Droids"
@@ -1689,7 +1689,7 @@ msgstr "Silenziatore "
 
 #: data/base/item_specs.lua:2486
 msgid "This new generation silencer will not only allow you to catch your enemies by surprise, but will also help you to do more damage in ranged combat."
-msgstr ""
+msgstr "Permette di prendere tui nemici di sorpresa, questo silenziatore ti aiuta a fare più danni nel combattimento a distanza."
 
 #: data/base/item_specs.lua:2494
 msgid "Coprocessor"
@@ -2935,7 +2935,7 @@ msgstr "Robot Carogne"
 #: data/storyline/act1/npc_specs.lua:29
 #: data/storyline/act1/ReturnOfTux.droids:439
 msgid "Saul"
-msgstr ""
+msgstr "Saul"
 
 #: data/storyline/act1/npc_specs.lua:29
 msgid "Saul, leader of the Resistance"

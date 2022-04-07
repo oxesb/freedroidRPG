@@ -299,7 +299,7 @@ FAQ de Editor de mapas & Desenvolvedor:
 	   lista de discussão freedroid-discussion ou pedir ajuda no canal IRC também.
 
 	P: Eu quero ajudar com o desenvolvimento do FreedroidRPG. O que eu devo fazer primeiro?
-	A: First, we recommend to read https://www.freedroid.org/developer-area/contribute/
+	R: Primeiro, recomendamos que leia https://www.freedroid.org/developer-area/contribute/
 	   Em seguida, entre em contato conosco. Isso pode ser feito via IRC (veja "Contato")
 	   ou usando a lista de discussão freedroid-discussion.
 	   Então, a próxima coisa a se fazer é obter a última versão de desenvolvimento do jogo
@@ -311,12 +311,12 @@ FAQ de Editor de mapas & Desenvolvedor:
 
 7. Contato
 ===========
- Website       ................ https://www.freedroid.org
+ Site       ................... https://www.freedroid.org
  Código-fonte do projeto   .... https://gitlab.com/groups/freedroid
- IRC channel   ................ #freedroid on irc.libera.chat or
-                                https://web.libera.chat/?channels=freedroid
+ Canal IRC            ......... #freedroid em irc.libera.chat ou
+                                https://web.libera.chat/#freedroid
  Lista de discussão   ......... freedroid-discussion@lists.sourceforge.net
- Bug tracker   ................ https://bugs.freedroid.org/
+ Rastreador de erros  ......... https://bugs.freedroid.org/
 
 
 8. Licença

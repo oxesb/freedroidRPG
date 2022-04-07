@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the freedroidrpg package.
 #
 # Translators:
+# fluzz <fluzz@gmx.com>, 2022
 # SebastianoPistore <SebastianoPistore.info@protonmail.ch>, 2016
 msgid ""
 msgstr ""
@@ -10,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://www.freedroid.org\n"
 "POT-Creation-Date: 2022-03-31 13:00+0200\n"
 "PO-Revision-Date: 2014-03-27 23:12+0000\n"
-"Last-Translator: SebastianoPistore <SebastianoPistore.info@protonmail.ch>, 2016\n"
+"Last-Translator: fluzz <fluzz@gmx.com>, 2022\n"
 "Language-Team: Italian (http://www.transifex.com/arctic-games/freedroid-rpg/language/it/)\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -367,6 +368,12 @@ msgid ""
 "\n"
 "Good luck!\n"
 msgstr ""
+"Stai giocando ad una Release candidate.\n"
+"Potrebbero ancora essere presenti dei bug.\n"
+"Per favore, riporta eventuali problemi che trovi al nostro bugtracker al https://bugs.freedroid.org/\n"
+" Grazie per averci aiutato a testare il gioco.\n"
+"\n"
+"Buona fortuna!\n"
 
 #: src/init.c:1015 src/init.c:1016
 msgid "Game over.\n"

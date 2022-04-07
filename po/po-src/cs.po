@@ -60,11 +60,11 @@ msgstr "Části"
 
 #: src/automap.c:317
 msgid "Compass on. You need a Map Maker to enable the minimap."
-msgstr "Kompas zapnutý. K zobrazeni minimapy potřebuješ mapovou navigaci."
+msgstr "Kompas zapnut. K zobrazeni minimapy potřebuješ mapovou navigaci."
 
 #: src/automap.c:319
 msgid "Compass off."
-msgstr "Kompas je vypnut."
+msgstr "Kompas vypnut."
 
 #: src/character.c:155
 msgid "Level Gained!"
@@ -357,7 +357,7 @@ msgstr "Spouštění výuky."
 
 #: src/init.c:623
 msgid "Starting new game act."
-msgstr "Spouštění nové aktu hry."
+msgstr "Spouštění nového aktu hry."
 
 #: src/init.c:996
 msgid ""
@@ -368,6 +368,12 @@ msgid ""
 "\n"
 "Good luck!\n"
 msgstr ""
+"Hrajete hru před vydáním její finální verze.\n"
+"Ve hře se stále mohou vyskytovat různé chyby.\n"
+"Pokud při hraní naleznete chybu nebo problém, nahlaste ho prosím v našem systému pro sledování chyb na https://bugs.freedroid.org/\n"
+"Děkujeme, že pomáháte naši hru testovat.\n"
+"\n"
+"Hodně štěstí!\n"
 
 #: src/init.c:1015 src/init.c:1016
 msgid "Game over.\n"
@@ -387,7 +393,7 @@ msgstr "Špatná kvalita"
 
 #: src/items.c:736
 msgid "I can't use this item here."
-msgstr "Tady tento předmět nelze použít."
+msgstr "Tento předmět zde nelze použít."
 
 #: src/items.c:742
 msgid "You can not use any items while paralyzed."
@@ -1238,7 +1244,7 @@ msgid ""
 "\n"
 "Sorry for the inconvenience."
 msgstr ""
-"Je třeba restartovat FreedroidRPG, aby se změny projevily.\n"
+"FreedroidRPG je třeba restartovat, aby se změny projevily.\n"
 "\n"
 "Omlouváme se za vzniklé potíže."
 
@@ -1326,12 +1332,12 @@ msgstr "NE"
 #: src/menu.c:1414
 #, c-format
 msgid "<-- Background music volume: %1.2f -->"
-msgstr "<-- Hlasitost hudby na pozadí: %1.2f -->"
+msgstr "<-- Background music volume: %1.2f -->"
 
 #: src/menu.c:1418
 #, c-format
 msgid "<-- Sound effects volume: %1.2f -->"
-msgstr "<-- Hlasitost zvukových efektů: %1.2f -->"
+msgstr "<-- Sound effects volume: %1.2f -->"
 
 #: src/menu.c:1424
 #, c-format
@@ -1932,7 +1938,7 @@ msgstr "Pro více informaci klikni na tlačítko pomoc."
 #: src/takeover.c:602
 #, c-format
 msgid "For taking control of your enemy, [s]%s[v], you receive %d experience."
-msgstr "Za převzetí kontroly na nepřítelem, [s]%s[v], jsi obdržel %d zkušeností."
+msgstr "Za převzetí kontroly nad nepřítelem, [s]%s[v], jsi obdržel %d zkušeností."
 
 #: src/takeover.c:891
 msgid "Complete"
