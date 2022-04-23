@@ -82,7 +82,9 @@ sfx_sounds = {
 
 	d123 = "effects/bot_sounds/death_sound_123.ogg",
 	d247 = "effects/bot_sounds/death_sound_247.ogg",
+	d249 = "effects/bot_sounds/death_sound_249.ogg",
 	d302 = "effects/bot_sounds/death_sound_302.ogg",
+	d476 = "effects/bot_sounds/death_sound_476.ogg",
 
 	voice_samples = {
 		path = "effects/bot_sounds/voice_samples",
@@ -263,6 +265,7 @@ droid_list {
 	sound = {
 		greeting = sfx_sounds.g10,
 		attack = sfx_sounds.a10,
+		death = sfx_sounds.d249,
 		voice_samples = {
 			path = sfx_sounds.voice_samples.path,
 			first = sfx_sounds.voice_samples.first,
@@ -496,6 +499,7 @@ droid_list {
 	sound = {
 		greeting = sfx_sounds.g15,
 		attack = sfx_sounds.a15,
+		death = sfx_sounds.d476,
 		voice_samples = {
 			path = sfx_sounds.voice_samples.path,
 			first = sfx_sounds.voice_samples.first,
@@ -543,6 +547,7 @@ droid_list {
 	sound = {
 		greeting = sfx_sounds.g16,
 		attack = sfx_sounds.a16,
+		death = sfx_sounds.d476,
 		voice_samples = {
 			path = sfx_sounds.voice_samples.path,
 			first = sfx_sounds.voice_samples.first,
@@ -963,6 +968,7 @@ droid_list {
 		},
 	},
 	sound = {
+		death = sfx_sounds.d249,
 		voice_samples = {
 			path = sfx_sounds.voice_samples.path,
 			first = sfx_sounds.voice_samples.first,
