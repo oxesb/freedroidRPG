@@ -1,4 +1,4 @@
-/* 
+/*
  *
  *   Copyright (c) 2010 Ari Mustonen
  *
@@ -15,8 +15,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -312,7 +312,7 @@ void show_addon_crafting_ui()
 	rect.y = rects.materials_list.y + 20 + MARGIN_SPACE;
 	rect.w = rects.materials_list.w;
 
-	char text[10];
+	char text[32];
 	for (i = 0; i < 5; i++) {
 		if(ui.materials_for_selected[i].required == 0){
 			continue;
