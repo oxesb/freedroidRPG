@@ -91,11 +91,20 @@ local-install:
 
 #== Transifex synchronization
 
+CURL     = curl
+TX       = tx
+TXORG    = artic-games
 TXPROJ   = freedroid-rpg
 TXFILES  = $(shell grep -v -E "^\#" POTFILES.in)
 TXPREFIX = data
-TXPROPS  = '{"category":"data"}'
-TXCRED   = $(shell $(top_srcdir)/po/tx-credentials)
+TXPROPS  = '{"category":["data"]}'
+TXCRED   = $(shell $(top_srcdir)/po/tx-credentials -t)
+TXHOST   = $(shell $(top_srcdir)/po/tx-credentials -r)
+
+comma:= ,
+empty:=
+space:= $(empty) $(empty)
+TXLANGS = $(subst $(space),$(comma),$(foreach cata,$(CATALOGS),$(basename $(cata))))
 
 # Update the transifex potfiles
 #
@@ -118,27 +127,36 @@ tx-update: $(DOMAIN).pot
 	      echo "You do not have a Transifex account"; \
 	      exit 1; \
 	    }; \
-	$(mkdir_p) tx; \
+	$(mkdir_p) tx-$(TXPREFIX); \
 	files='$(TXFILES)'; \
 	for file in $$files; do \
 	  $(call rsrc_name,$$file); \
-	  msggrep $(MSGCAT_OPTIONS) --location=$$file -o tx/$$rsrc.pot $(DOMAIN).pot; \
-	  if test -r tx/$$rsrc.pot; then \
-	    if ! tx -q status -r $(TXPROJ).$(TXPREFIX)-$$rsrc >/dev/null 2>/dev/null; then \
+	  msggrep $(MSGCAT_OPTIONS) --location=$$file -o tx-$(TXPREFIX)/$$rsrc.pot $(DOMAIN).pot; \
+	  if test -r tx-$(TXPREFIX)/$$rsrc.pot; then \
+	    if ! $(TX) status $(TXPROJ).$(TXPREFIX)-$$rsrc >/dev/null 2>/dev/null; then \
 	      echo "Creating $(TXPREFIX)-$$rsrc"; \
-	      tx -q config mapping -r $(TXPROJ).$(TXPREFIX)-$$rsrc --source-lang en --type PO --source-file tx/$$rsrc.pot --expression "tx/$$rsrc-<lang>.po" --execute; \
-	      if tx -q push -r $(TXPROJ).$(TXPREFIX)-$$rsrc -s >/dev/null 2>/dev/null; then \
-	        curl_output=`curl -s -L $(TXCRED) -X PUT -d $(TXPROPS) -H "Content-Type: application/json" https://www.transifex.com/api/2/project/$(TXPROJ)/resource/$(TXPREFIX)-$$rsrc;` \
+	      $(TX) add --file-filter="tx-$(TXPREFIX)/$$rsrc-<lang>.po" --type=PO --organization=$(TXORG) --project=$(TXPROJ) --resource=$(TXPREFIX)-$$rsrc tx-$(TXPREFIX)/$$rsrc.pot; \
+	      if $(TX) push -s $(TXPROJ).$(TXPREFIX)-$$rsrc >/dev/null 2>/dev/null; then \
+	        curl_output=`curl --request PATCH \
+	                        -s -o /dev/null -w "%{http_code}" \
+	                        --url $(TXHOST)/resources/o%3A$(TXORG)%3Ap%3A$(TXPROJ)%3Ar%3A$(TXPREFIX)-$$rsrc \
+	                        --header 'Accept: application/vnd.api+json' \
+	                        --header 'Authorization: Bearer $(TXCRED)' \
+	                        --header 'Content-Type: application/vnd.api+json' \
+	                        --data '{ "data": { "attributes": $(TXPROPS), \
+	                                            "id": "o:$(TXORG):p:$(TXPREFIX):r:$(TXPREFIX)-$$rsrc", \
+	                                            "type": "resources" } \
+	                                }'`; \
 	        rtn=$$?; \
-	        if test $$rtn -ne 0 -o " $$curl_output" != " OK"; then echo "Warning. Failed to set properties: $$curl_output (error code $$rtn)"; fi; \
+	        if test $$rtn -ne 0 -o " $$curl_output" != " 200"; then echo "Warning. Failed to set properties: error code $$curl_output"; fi; \
 	      fi; \
 	    else \
 	      echo "Updating $(TXPREFIX)-$$rsrc"; \
-	      tx -q push -r $(TXPROJ).$(TXPREFIX)-$$rsrc -s; \
+	      $(TX) push -s $(TXPROJ).$(TXPREFIX)-$$rsrc; \
 	    fi; \
 	  fi; \
 	done; \
-	rm -rf tx
+	rm -rf tx-$(TXPREFIX)
 
 # Pull the translations from transifex.
 #
@@ -156,28 +174,28 @@ tx-pull:
 	      echo "You do not have a Transifex account"; \
 	      exit 1; \
 	    }; \
-	$(mkdir_p) tx; \
+	$(mkdir_p) tx-$(TXPREFIX); \
 	catalogs='$(CATALOGS)'; \
 	files='$(TXFILES)'; \
-	for cat in $$catalogs; do \
-	  cat=`basename $$cat`; \
-	  lang=`echo $$cat | sed -e 's/\.gmo$$//'`; \
-	  for file in $$files; do \
-	    $(call rsrc_name,$$file); \
-	    echo "Pulling $$rsrc-$$lang.po from transifex"; \
-	    if tx -q pull -r $(TXPROJ).$(TXPREFIX)-$$rsrc -l $$lang; then \
-	      if test -r tx/$$rsrc-$$lang.po; then \
+	for file in $$files; do \
+	  $(call rsrc_name,$$file); \
+	  echo "Pulling $$rsrc-<lang>.po from transifex"; \
+	  if $(TX) pull -l $(TXLANGS) $(TXPROJ).$(TXPREFIX)-$$rsrc; then \
+	    for cat in $$catalogs; do \
+	      cat=`basename $$cat`; \
+	      lang=`echo $$cat | sed -e 's/\.gmo$$//'`; \
+	      if test -r tx-$(TXPREFIX)/$$rsrc-$$lang.po; then \
 	        echo "Merging with $$lang.po"; \
-	        msgcat $(MSGCAT_OPTIONS) --use-first -o $$lang.po tx/$$rsrc-$$lang.po $$lang.po; \
+	        msgcat $(MSGCAT_OPTIONS) --use-first -o $$lang.po tx-$(TXPREFIX)/$$rsrc-$$lang.po $$lang.po; \
 	      else \
 	        echo "Nothing to merge"; \
 	      fi; \
-	    fi; \
-	  done; \
-	  $(MSGMERGE_UPDATE) $(MSGMERGE_OPTIONS) $$lang.po $(DOMAIN).pot; \
-	  $(call clean_po,$$lang.po); \
+	      $(MSGMERGE_UPDATE) $(MSGMERGE_OPTIONS) $$lang.po $(DOMAIN).pot; \
+	      $(call clean_po,$$lang.po); \
+	    done; \
+	  fi; \
 	done; \
-	rm -rf tx
+	rm -rf tx-$(TXPREFIX)
 
 # Push the translations to transifex.
 #
@@ -199,9 +217,9 @@ tx-push:
 	     exit 1; \
 	   }; \
 	rm -f tx-push-granted; \
-	$(mkdir_p) tx; \
+	$(mkdir_p) tx-$(TXPREFIX); \
 	catalogs='$(CATALOGS)'; \
-	files='$(TXFILES)'; \
+	files='$(shell cat POTFILES.in | grep -v -E "^#")'; \
 	for cat in $$catalogs; do \
 	  cat=`basename $$cat`; \
 	  lang=`echo $$cat | sed -e 's/\.gmo$$//'`; \
@@ -209,9 +227,9 @@ tx-push:
 	    $(call rsrc_name,$$file); \
 	    msggrep $(MSGCAT_OPTIONS) --location=$$file -o tx/$$rsrc-$$lang.po $$lang.po; \
 	    echo "Pushing $$rsrc-$$lang.po to transifex"; \
-	    tx -q push -r $(TXPROJ).$(TXPREFIX)-$$rsrc -l $$lang -t; \
+	    $(TX) push -l $$lang -t -r $(TXPROJ).$(TXPREFIX)-$$rsrc; \
 	  done; \
 	done; \
-	rm -rf tx
+	rm -rf tx-$(TXPREFIX)
 
 .PHONY: tx-update tx-pull tx-push

@@ -1,783 +1,784 @@
 [main]
 host = https://www.transifex.com
 
-[freedroid-rpg.src-freedroidrpg]
-file_filter = po/po-src/tx/freedroidrpg-<lang>.po
-source_file = po/po-src/tx/freedroidrpg.pot
+[o:arctic-games:p:freedroid-rpg:r:all_in_one]
+file_filter = tx/all_in_one-<lang>.po
+source_file = tx/all_in_one.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-AfterTakeover]
-file_filter = po/po-dialogs/tx/AfterTakeover-<lang>.po
-source_file = po/po-dialogs/tx/AfterTakeover.pot
+[o:arctic-games:p:freedroid-rpg:r:data-act1-ReturnOfTux]
+file_filter = tx-data/act1-ReturnOfTux-<lang>.po
+source_file = tx-data/act1-ReturnOfTux.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-Speechless]
-file_filter = po/po-dialogs/tx/Speechless-<lang>.po
-source_file = po/po-dialogs/tx/Speechless.pot
+[o:arctic-games:p:freedroid-rpg:r:data-act1-events]
+file_filter = tx-data/act1-events-<lang>.po
+source_file = tx-data/act1-events.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-Terminal]
-file_filter = po/po-dialogs/tx/Terminal-<lang>.po
-source_file = po/po-dialogs/tx/Terminal.pot
+[o:arctic-games:p:freedroid-rpg:r:data-act1-levels]
+file_filter = tx-data/act1-levels-<lang>.po
+source_file = tx-data/act1-levels.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-614_cryo]
-file_filter = po/po-dialogs/tx/act1-614_cryo-<lang>.po
-source_file = po/po-dialogs/tx/act1-614_cryo.pot
+[o:arctic-games:p:freedroid-rpg:r:data-act1-npc_specs]
+file_filter = tx-data/act1-npc_specs-<lang>.po
+source_file = tx-data/act1-npc_specs.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-614_portal]
-file_filter = po/po-dialogs/tx/act1-614_portal-<lang>.po
-source_file = po/po-dialogs/tx/act1-614_portal.pot
+[o:arctic-games:p:freedroid-rpg:r:data-act1-quests]
+file_filter = tx-data/act1-quests-<lang>.po
+source_file = tx-data/act1-quests.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-614_sub]
-file_filter = po/po-dialogs/tx/act1-614_sub-<lang>.po
-source_file = po/po-dialogs/tx/act1-614_sub.pot
+[o:arctic-games:p:freedroid-rpg:r:data-act2-ReturnOfTux]
+file_filter = tx-data/act2-ReturnOfTux-<lang>.po
+source_file = tx-data/act2-ReturnOfTux.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-ArenaTerminal]
-file_filter = po/po-dialogs/tx/act1-ArenaTerminal-<lang>.po
-source_file = po/po-dialogs/tx/act1-ArenaTerminal.pot
+[o:arctic-games:p:freedroid-rpg:r:data-act2-events]
+file_filter = tx-data/act2-events-<lang>.po
+source_file = tx-data/act2-events.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Arthur]
-file_filter = po/po-dialogs/tx/act1-Arthur-<lang>.po
-source_file = po/po-dialogs/tx/act1-Arthur.pot
+[o:arctic-games:p:freedroid-rpg:r:data-act2-levels]
+file_filter = tx-data/act2-levels-<lang>.po
+source_file = tx-data/act2-levels.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Bender]
-file_filter = po/po-dialogs/tx/act1-Bender-<lang>.po
-source_file = po/po-dialogs/tx/act1-Bender.pot
+[o:arctic-games:p:freedroid-rpg:r:data-act2-npc_specs]
+file_filter = tx-data/act2-npc_specs-<lang>.po
+source_file = tx-data/act2-npc_specs.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Benjamin]
-file_filter = po/po-dialogs/tx/act1-Benjamin-<lang>.po
-source_file = po/po-dialogs/tx/act1-Benjamin.pot
+[o:arctic-games:p:freedroid-rpg:r:data-act2-quests]
+file_filter = tx-data/act2-quests-<lang>.po
+source_file = tx-data/act2-quests.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Bob]
-file_filter = po/po-dialogs/tx/act1-Bob-<lang>.po
-source_file = po/po-dialogs/tx/act1-Bob.pot
+[o:arctic-games:p:freedroid-rpg:r:data-droid_specs]
+file_filter = tx-data/droid_specs-<lang>.po
+source_file = tx-data/droid_specs.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Bruce]
-file_filter = po/po-dialogs/tx/act1-Bruce-<lang>.po
-source_file = po/po-dialogs/tx/act1-Bruce.pot
+[o:arctic-games:p:freedroid-rpg:r:data-game_config]
+file_filter = tx-data/game_config-<lang>.po
+source_file = tx-data/game_config.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Butch]
-file_filter = po/po-dialogs/tx/act1-Butch-<lang>.po
-source_file = po/po-dialogs/tx/act1-Butch.pot
+[o:arctic-games:p:freedroid-rpg:r:data-item_specs]
+file_filter = tx-data/item_specs-<lang>.po
+source_file = tx-data/item_specs.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-c-net-nethack_sub]
-file_filter = po/po-dialogs/tx/act1-c-net-nethack_sub-<lang>.po
-source_file = po/po-dialogs/tx/act1-c-net-nethack_sub.pot
+[o:arctic-games:p:freedroid-rpg:r:data-obstacle_specs]
+file_filter = tx-data/obstacle_specs-<lang>.po
+source_file = tx-data/obstacle_specs.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-c-net]
-file_filter = po/po-dialogs/tx/act1-c-net-<lang>.po
-source_file = po/po-dialogs/tx/act1-c-net.pot
+[o:arctic-games:p:freedroid-rpg:r:data-skill_specs]
+file_filter = tx-data/skill_specs-<lang>.po
+source_file = tx-data/skill_specs.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-CerebrumPortalGuardian]
-file_filter = po/po-dialogs/tx/act1-CerebrumPortalGuardian-<lang>.po
-source_file = po/po-dialogs/tx/act1-CerebrumPortalGuardian.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-AfterTakeover]
+file_filter = tx-dialog/AfterTakeover-<lang>.po
+source_file = tx-dialog/AfterTakeover.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Chandra]
-file_filter = po/po-dialogs/tx/act1-Chandra-<lang>.po
-source_file = po/po-dialogs/tx/act1-Chandra.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-Speechless]
+file_filter = tx-dialog/Speechless-<lang>.po
+source_file = tx-dialog/Speechless.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Cryo-Terminal]
-file_filter = po/po-dialogs/tx/act1-Cryo-Terminal-<lang>.po
-source_file = po/po-dialogs/tx/act1-Cryo-Terminal.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-Terminal]
+file_filter = tx-dialog/Terminal-<lang>.po
+source_file = tx-dialog/Terminal.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Cult-Member]
-file_filter = po/po-dialogs/tx/act1-Cult-Member-<lang>.po
-source_file = po/po-dialogs/tx/act1-Cult-Member.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-614_cryo]
+file_filter = tx-dialog/act1-614_cryo-<lang>.po
+source_file = tx-dialog/act1-614_cryo.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-DeadGuy]
-file_filter = po/po-dialogs/tx/act1-DeadGuy-<lang>.po
-source_file = po/po-dialogs/tx/act1-DeadGuy.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-614_portal]
+file_filter = tx-dialog/act1-614_portal-<lang>.po
+source_file = tx-dialog/act1-614_portal.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Dixon]
-file_filter = po/po-dialogs/tx/act1-Dixon-<lang>.po
-source_file = po/po-dialogs/tx/act1-Dixon.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-614_sub]
+file_filter = tx-dialog/act1-614_sub-<lang>.po
+source_file = tx-dialog/act1-614_sub.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-DocMoore]
-file_filter = po/po-dialogs/tx/act1-DocMoore-<lang>.po
-source_file = po/po-dialogs/tx/act1-DocMoore.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-ArenaTerminal]
+file_filter = tx-dialog/act1-ArenaTerminal-<lang>.po
+source_file = tx-dialog/act1-ArenaTerminal.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-DSB-MachineDeckControl]
-file_filter = po/po-dialogs/tx/act1-DSB-MachineDeckControl-<lang>.po
-source_file = po/po-dialogs/tx/act1-DSB-MachineDeckControl.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Arthur]
+file_filter = tx-dialog/act1-Arthur-<lang>.po
+source_file = tx-dialog/act1-Arthur.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-DSB-PowerControl]
-file_filter = po/po-dialogs/tx/act1-DSB-PowerControl-<lang>.po
-source_file = po/po-dialogs/tx/act1-DSB-PowerControl.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Bender]
+file_filter = tx-dialog/act1-Bender-<lang>.po
+source_file = tx-dialog/act1-Bender.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-DSB-PowerControlGate1]
-file_filter = po/po-dialogs/tx/act1-DSB-PowerControlGate1-<lang>.po
-source_file = po/po-dialogs/tx/act1-DSB-PowerControlGate1.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Benjamin]
+file_filter = tx-dialog/act1-Benjamin-<lang>.po
+source_file = tx-dialog/act1-Benjamin.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Dude]
-file_filter = po/po-dialogs/tx/act1-Dude-<lang>.po
-source_file = po/po-dialogs/tx/act1-Dude.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Bob]
+file_filter = tx-dialog/act1-Bob-<lang>.po
+source_file = tx-dialog/act1-Bob.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Duncan]
-file_filter = po/po-dialogs/tx/act1-Duncan-<lang>.po
-source_file = po/po-dialogs/tx/act1-Duncan.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Bruce]
+file_filter = tx-dialog/act1-Bruce-<lang>.po
+source_file = tx-dialog/act1-Bruce.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Engel]
-file_filter = po/po-dialogs/tx/act1-Engel-<lang>.po
-source_file = po/po-dialogs/tx/act1-Engel.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Butch]
+file_filter = tx-dialog/act1-Butch-<lang>.po
+source_file = tx-dialog/act1-Butch.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Erin]
-file_filter = po/po-dialogs/tx/act1-Erin-<lang>.po
-source_file = po/po-dialogs/tx/act1-Erin.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-CerebrumPortalGuardian]
+file_filter = tx-dialog/act1-CerebrumPortalGuardian-<lang>.po
+source_file = tx-dialog/act1-CerebrumPortalGuardian.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Ewald]
-file_filter = po/po-dialogs/tx/act1-Ewald-<lang>.po
-source_file = po/po-dialogs/tx/act1-Ewald.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Chandra]
+file_filter = tx-dialog/act1-Chandra-<lang>.po
+source_file = tx-dialog/act1-Chandra.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Ewalds_296]
-file_filter = po/po-dialogs/tx/act1-Ewalds_296-<lang>.po
-source_file = po/po-dialogs/tx/act1-Ewalds_296.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Cryo-Terminal]
+file_filter = tx-dialog/act1-Cryo-Terminal-<lang>.po
+source_file = tx-dialog/act1-Cryo-Terminal.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-FactionDeadBot]
-file_filter = po/po-dialogs/tx/act1-FactionDeadBot-<lang>.po
-source_file = po/po-dialogs/tx/act1-FactionDeadBot.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Cult-Member]
+file_filter = tx-dialog/act1-Cult-Member-<lang>.po
+source_file = tx-dialog/act1-Cult-Member.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Francis]
-file_filter = po/po-dialogs/tx/act1-Francis-<lang>.po
-source_file = po/po-dialogs/tx/act1-Francis.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-DSB-MachineDeckControl]
+file_filter = tx-dialog/act1-DSB-MachineDeckControl-<lang>.po
+source_file = tx-dialog/act1-DSB-MachineDeckControl.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Geist]
-file_filter = po/po-dialogs/tx/act1-Geist-<lang>.po
-source_file = po/po-dialogs/tx/act1-Geist.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-DSB-PowerControl]
+file_filter = tx-dialog/act1-DSB-PowerControl-<lang>.po
+source_file = tx-dialog/act1-DSB-PowerControl.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Guy]
-file_filter = po/po-dialogs/tx/act1-Guy-<lang>.po
-source_file = po/po-dialogs/tx/act1-Guy.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-DSB-PowerControlGate1]
+file_filter = tx-dialog/act1-DSB-PowerControlGate1-<lang>.po
+source_file = tx-dialog/act1-DSB-PowerControlGate1.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-HF-EntranceBot]
-file_filter = po/po-dialogs/tx/act1-HF-EntranceBot-<lang>.po
-source_file = po/po-dialogs/tx/act1-HF-EntranceBot.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-DeadGuy]
+file_filter = tx-dialog/act1-DeadGuy-<lang>.po
+source_file = tx-dialog/act1-DeadGuy.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-HF-FirmwareUpdateServer]
-file_filter = po/po-dialogs/tx/act1-HF-FirmwareUpdateServer-<lang>.po
-source_file = po/po-dialogs/tx/act1-HF-FirmwareUpdateServer.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Dixon]
+file_filter = tx-dialog/act1-Dixon-<lang>.po
+source_file = tx-dialog/act1-Dixon.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-InvaderBot]
-file_filter = po/po-dialogs/tx/act1-InvaderBot-<lang>.po
-source_file = po/po-dialogs/tx/act1-InvaderBot.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-DocMoore]
+file_filter = tx-dialog/act1-DocMoore-<lang>.po
+source_file = tx-dialog/act1-DocMoore.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Iris]
-file_filter = po/po-dialogs/tx/act1-Iris-<lang>.po
-source_file = po/po-dialogs/tx/act1-Iris.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Dude]
+file_filter = tx-dialog/act1-Dude-<lang>.po
+source_file = tx-dialog/act1-Dude.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Jasmine]
-file_filter = po/po-dialogs/tx/act1-Jasmine-<lang>.po
-source_file = po/po-dialogs/tx/act1-Jasmine.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Duncan]
+file_filter = tx-dialog/act1-Duncan-<lang>.po
+source_file = tx-dialog/act1-Duncan.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Jennifer]
-file_filter = po/po-dialogs/tx/act1-Jennifer-<lang>.po
-source_file = po/po-dialogs/tx/act1-Jennifer.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Engel]
+file_filter = tx-dialog/act1-Engel-<lang>.po
+source_file = tx-dialog/act1-Engel.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Jim]
-file_filter = po/po-dialogs/tx/act1-Jim-<lang>.po
-source_file = po/po-dialogs/tx/act1-Jim.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Erin]
+file_filter = tx-dialog/act1-Erin-<lang>.po
+source_file = tx-dialog/act1-Erin.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-John]
-file_filter = po/po-dialogs/tx/act1-John-<lang>.po
-source_file = po/po-dialogs/tx/act1-John.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Ewald]
+file_filter = tx-dialog/act1-Ewald-<lang>.po
+source_file = tx-dialog/act1-Ewald.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Karol]
-file_filter = po/po-dialogs/tx/act1-Karol-<lang>.po
-source_file = po/po-dialogs/tx/act1-Karol.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Ewalds_296]
+file_filter = tx-dialog/act1-Ewalds_296-<lang>.po
+source_file = tx-dialog/act1-Ewalds_296.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Kevin-Lawnmower]
-file_filter = po/po-dialogs/tx/act1-Kevin-Lawnmower-<lang>.po
-source_file = po/po-dialogs/tx/act1-Kevin-Lawnmower.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-FactionDeadBot]
+file_filter = tx-dialog/act1-FactionDeadBot-<lang>.po
+source_file = tx-dialog/act1-FactionDeadBot.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Kevin]
-file_filter = po/po-dialogs/tx/act1-Kevin-<lang>.po
-source_file = po/po-dialogs/tx/act1-Kevin.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Francis]
+file_filter = tx-dialog/act1-Francis-<lang>.po
+source_file = tx-dialog/act1-Francis.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-KevinGuard]
-file_filter = po/po-dialogs/tx/act1-KevinGuard-<lang>.po
-source_file = po/po-dialogs/tx/act1-KevinGuard.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Geist]
+file_filter = tx-dialog/act1-Geist-<lang>.po
+source_file = tx-dialog/act1-Geist.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Koan]
-file_filter = po/po-dialogs/tx/act1-Koan-<lang>.po
-source_file = po/po-dialogs/tx/act1-Koan.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Guy]
+file_filter = tx-dialog/act1-Guy-<lang>.po
+source_file = tx-dialog/act1-Guy.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Lukas]
-file_filter = po/po-dialogs/tx/act1-Lukas-<lang>.po
-source_file = po/po-dialogs/tx/act1-Lukas.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-HF-EntranceBot]
+file_filter = tx-dialog/act1-HF-EntranceBot-<lang>.po
+source_file = tx-dialog/act1-HF-EntranceBot.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Maintenance-Terminal]
-file_filter = po/po-dialogs/tx/act1-Maintenance-Terminal-<lang>.po
-source_file = po/po-dialogs/tx/act1-Maintenance-Terminal.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-HF-FirmwareUpdateServer]
+file_filter = tx-dialog/act1-HF-FirmwareUpdateServer-<lang>.po
+source_file = tx-dialog/act1-HF-FirmwareUpdateServer.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Michelangelo]
-file_filter = po/po-dialogs/tx/act1-Michelangelo-<lang>.po
-source_file = po/po-dialogs/tx/act1-Michelangelo.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-InvaderBot]
+file_filter = tx-dialog/act1-InvaderBot-<lang>.po
+source_file = tx-dialog/act1-InvaderBot.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Mike]
-file_filter = po/po-dialogs/tx/act1-Mike-<lang>.po
-source_file = po/po-dialogs/tx/act1-Mike.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Iris]
+file_filter = tx-dialog/act1-Iris-<lang>.po
+source_file = tx-dialog/act1-Iris.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-MiniFactory-Terminal]
-file_filter = po/po-dialogs/tx/act1-MiniFactory-Terminal-<lang>.po
-source_file = po/po-dialogs/tx/act1-MiniFactory-Terminal.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Jasmine]
+file_filter = tx-dialog/act1-Jasmine-<lang>.po
+source_file = tx-dialog/act1-Jasmine.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-MO-HFGateAccessServer]
-file_filter = po/po-dialogs/tx/act1-MO-HFGateAccessServer-<lang>.po
-source_file = po/po-dialogs/tx/act1-MO-HFGateAccessServer.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Jennifer]
+file_filter = tx-dialog/act1-Jennifer-<lang>.po
+source_file = tx-dialog/act1-Jennifer.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-MO-RGGateGuard]
-file_filter = po/po-dialogs/tx/act1-MO-RGGateGuard-<lang>.po
-source_file = po/po-dialogs/tx/act1-MO-RGGateGuard.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Jim]
+file_filter = tx-dialog/act1-Jim-<lang>.po
+source_file = tx-dialog/act1-Jim.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-MO-RGGateGuardLeader]
-file_filter = po/po-dialogs/tx/act1-MO-RGGateGuardLeader-<lang>.po
-source_file = po/po-dialogs/tx/act1-MO-RGGateGuardLeader.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-John]
+file_filter = tx-dialog/act1-John-<lang>.po
+source_file = tx-dialog/act1-John.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-MS-Factory-Addon-Terminal]
-file_filter = po/po-dialogs/tx/act1-MS-Factory-Addon-Terminal-<lang>.po
-source_file = po/po-dialogs/tx/act1-MS-Factory-Addon-Terminal.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Karol]
+file_filter = tx-dialog/act1-Karol-<lang>.po
+source_file = tx-dialog/act1-Karol.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Pendragon]
-file_filter = po/po-dialogs/tx/act1-Pendragon-<lang>.po
-source_file = po/po-dialogs/tx/act1-Pendragon.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Kevin]
+file_filter = tx-dialog/act1-Kevin-<lang>.po
+source_file = tx-dialog/act1-Kevin.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Peter]
-file_filter = po/po-dialogs/tx/act1-Peter-<lang>.po
-source_file = po/po-dialogs/tx/act1-Peter.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Kevin-Lawnmower]
+file_filter = tx-dialog/act1-Kevin-Lawnmower-<lang>.po
+source_file = tx-dialog/act1-Kevin-Lawnmower.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Richard]
-file_filter = po/po-dialogs/tx/act1-Richard-<lang>.po
-source_file = po/po-dialogs/tx/act1-Richard.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-KevinGuard]
+file_filter = tx-dialog/act1-KevinGuard-<lang>.po
+source_file = tx-dialog/act1-KevinGuard.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-SACD]
-file_filter = po/po-dialogs/tx/act1-SACD-<lang>.po
-source_file = po/po-dialogs/tx/act1-SACD.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Koan]
+file_filter = tx-dialog/act1-Koan-<lang>.po
+source_file = tx-dialog/act1-Koan.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-SADD]
-file_filter = po/po-dialogs/tx/act1-SADD-<lang>.po
-source_file = po/po-dialogs/tx/act1-SADD.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Lukas]
+file_filter = tx-dialog/act1-Lukas-<lang>.po
+source_file = tx-dialog/act1-Lukas.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Samson]
-file_filter = po/po-dialogs/tx/act1-Samson-<lang>.po
-source_file = po/po-dialogs/tx/act1-Samson.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-MO-HFGateAccessServer]
+file_filter = tx-dialog/act1-MO-HFGateAccessServer-<lang>.po
+source_file = tx-dialog/act1-MO-HFGateAccessServer.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Saul]
-file_filter = po/po-dialogs/tx/act1-Saul-<lang>.po
-source_file = po/po-dialogs/tx/act1-Saul.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-MO-RGGateGuard]
+file_filter = tx-dialog/act1-MO-RGGateGuard-<lang>.po
+source_file = tx-dialog/act1-MO-RGGateGuard.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Scavenger]
-file_filter = po/po-dialogs/tx/act1-Scavenger-<lang>.po
-source_file = po/po-dialogs/tx/act1-Scavenger.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-MO-RGGateGuardLeader]
+file_filter = tx-dialog/act1-MO-RGGateGuardLeader-<lang>.po
+source_file = tx-dialog/act1-MO-RGGateGuardLeader.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Singularity-Drone]
-file_filter = po/po-dialogs/tx/act1-Singularity-Drone-<lang>.po
-source_file = po/po-dialogs/tx/act1-Singularity-Drone.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-MS-Factory-Addon-Terminal]
+file_filter = tx-dialog/act1-MS-Factory-Addon-Terminal-<lang>.po
+source_file = tx-dialog/act1-MS-Factory-Addon-Terminal.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Singularity]
-file_filter = po/po-dialogs/tx/act1-Singularity-<lang>.po
-source_file = po/po-dialogs/tx/act1-Singularity.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Maintenance-Terminal]
+file_filter = tx-dialog/act1-Maintenance-Terminal-<lang>.po
+source_file = tx-dialog/act1-Maintenance-Terminal.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Skippy]
-file_filter = po/po-dialogs/tx/act1-Skippy-<lang>.po
-source_file = po/po-dialogs/tx/act1-Skippy.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Michelangelo]
+file_filter = tx-dialog/act1-Michelangelo-<lang>.po
+source_file = tx-dialog/act1-Michelangelo.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Sorenson]
-file_filter = po/po-dialogs/tx/act1-Sorenson-<lang>.po
-source_file = po/po-dialogs/tx/act1-Sorenson.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Mike]
+file_filter = tx-dialog/act1-Mike-<lang>.po
+source_file = tx-dialog/act1-Mike.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Spencer]
-file_filter = po/po-dialogs/tx/act1-Spencer-<lang>.po
-source_file = po/po-dialogs/tx/act1-Spencer.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-MiniFactory-Terminal]
+file_filter = tx-dialog/act1-MiniFactory-Terminal-<lang>.po
+source_file = tx-dialog/act1-MiniFactory-Terminal.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Stone]
-file_filter = po/po-dialogs/tx/act1-Stone-<lang>.po
-source_file = po/po-dialogs/tx/act1-Stone.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Pendragon]
+file_filter = tx-dialog/act1-Pendragon-<lang>.po
+source_file = tx-dialog/act1-Pendragon.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Tamara]
-file_filter = po/po-dialogs/tx/act1-Tamara-<lang>.po
-source_file = po/po-dialogs/tx/act1-Tamara.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Peter]
+file_filter = tx-dialog/act1-Peter-<lang>.po
+source_file = tx-dialog/act1-Peter.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Tania]
-file_filter = po/po-dialogs/tx/act1-Tania-<lang>.po
-source_file = po/po-dialogs/tx/act1-Tania.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Richard]
+file_filter = tx-dialog/act1-Richard-<lang>.po
+source_file = tx-dialog/act1-Richard.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-TestDroid]
-file_filter = po/po-dialogs/tx/act1-TestDroid-<lang>.po
-source_file = po/po-dialogs/tx/act1-TestDroid.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-SACD]
+file_filter = tx-dialog/act1-SACD-<lang>.po
+source_file = tx-dialog/act1-SACD.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Town-614]
-file_filter = po/po-dialogs/tx/act1-Town-614-<lang>.po
-source_file = po/po-dialogs/tx/act1-Town-614.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-SADD]
+file_filter = tx-dialog/act1-SADD-<lang>.po
+source_file = tx-dialog/act1-SADD.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Town-GuardhouseGuard]
-file_filter = po/po-dialogs/tx/act1-Town-GuardhouseGuard-<lang>.po
-source_file = po/po-dialogs/tx/act1-Town-GuardhouseGuard.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Samson]
+file_filter = tx-dialog/act1-Samson-<lang>.po
+source_file = tx-dialog/act1-Samson.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Town-NorthGateGuard]
-file_filter = po/po-dialogs/tx/act1-Town-NorthGateGuard-<lang>.po
-source_file = po/po-dialogs/tx/act1-Town-NorthGateGuard.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Saul]
+file_filter = tx-dialog/act1-Saul-<lang>.po
+source_file = tx-dialog/act1-Saul.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Town-TeleporterGuard]
-file_filter = po/po-dialogs/tx/act1-Town-TeleporterGuard-<lang>.po
-source_file = po/po-dialogs/tx/act1-Town-TeleporterGuard.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Scavenger]
+file_filter = tx-dialog/act1-Scavenger-<lang>.po
+source_file = tx-dialog/act1-Scavenger.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Town-TuxGuard]
-file_filter = po/po-dialogs/tx/act1-Town-TuxGuard-<lang>.po
-source_file = po/po-dialogs/tx/act1-Town-TuxGuard.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Singularity]
+file_filter = tx-dialog/act1-Singularity-<lang>.po
+source_file = tx-dialog/act1-Singularity.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-TutorialTerminal]
-file_filter = po/po-dialogs/tx/act1-TutorialTerminal-<lang>.po
-source_file = po/po-dialogs/tx/act1-TutorialTerminal.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Singularity-Drone]
+file_filter = tx-dialog/act1-Singularity-Drone-<lang>.po
+source_file = tx-dialog/act1-Singularity-Drone.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-TutorialTom]
-file_filter = po/po-dialogs/tx/act1-TutorialTom-<lang>.po
-source_file = po/po-dialogs/tx/act1-TutorialTom.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Skippy]
+file_filter = tx-dialog/act1-Skippy-<lang>.po
+source_file = tx-dialog/act1-Skippy.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Tybalt]
-file_filter = po/po-dialogs/tx/act1-Tybalt-<lang>.po
-source_file = po/po-dialogs/tx/act1-Tybalt.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Sorenson]
+file_filter = tx-dialog/act1-Sorenson-<lang>.po
+source_file = tx-dialog/act1-Sorenson.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-Vending-Machine]
-file_filter = po/po-dialogs/tx/act1-Vending-Machine-<lang>.po
-source_file = po/po-dialogs/tx/act1-Vending-Machine.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Spencer]
+file_filter = tx-dialog/act1-Spencer-<lang>.po
+source_file = tx-dialog/act1-Spencer.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act1-WillGapes]
-file_filter = po/po-dialogs/tx/act1-WillGapes-<lang>.po
-source_file = po/po-dialogs/tx/act1-WillGapes.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Stone]
+file_filter = tx-dialog/act1-Stone-<lang>.po
+source_file = tx-dialog/act1-Stone.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act2-Act2-Vending-Machine]
-file_filter = po/po-dialogs/tx/act2-Act2-Vending-Machine-<lang>.po
-source_file = po/po-dialogs/tx/act2-Act2-Vending-Machine.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Tamara]
+file_filter = tx-dialog/act1-Tamara-<lang>.po
+source_file = tx-dialog/act1-Tamara.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act2-ArenaTerminal]
-file_filter = po/po-dialogs/tx/act2-ArenaTerminal-<lang>.po
-source_file = po/po-dialogs/tx/act2-ArenaTerminal.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Tania]
+file_filter = tx-dialog/act1-Tania-<lang>.po
+source_file = tx-dialog/act1-Tania.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act2-Colemak]
-file_filter = po/po-dialogs/tx/act2-Colemak-<lang>.po
-source_file = po/po-dialogs/tx/act2-Colemak.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-TestDroid]
+file_filter = tx-dialog/act1-TestDroid-<lang>.po
+source_file = tx-dialog/act1-TestDroid.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act2-CryonicsBlock-Terminal]
-file_filter = po/po-dialogs/tx/act2-CryonicsBlock-Terminal-<lang>.po
-source_file = po/po-dialogs/tx/act2-CryonicsBlock-Terminal.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Town-614]
+file_filter = tx-dialog/act1-Town-614-<lang>.po
+source_file = tx-dialog/act1-Town-614.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act2-FactoryTerminal]
-file_filter = po/po-dialogs/tx/act2-FactoryTerminal-<lang>.po
-source_file = po/po-dialogs/tx/act2-FactoryTerminal.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Town-GuardhouseGuard]
+file_filter = tx-dialog/act1-Town-GuardhouseGuard-<lang>.po
+source_file = tx-dialog/act1-Town-GuardhouseGuard.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act2-Fred]
-file_filter = po/po-dialogs/tx/act2-Fred-<lang>.po
-source_file = po/po-dialogs/tx/act2-Fred.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Town-NorthGateGuard]
+file_filter = tx-dialog/act1-Town-NorthGateGuard-<lang>.po
+source_file = tx-dialog/act1-Town-NorthGateGuard.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act2-IcePass-Terminal]
-file_filter = po/po-dialogs/tx/act2-IcePass-Terminal-<lang>.po
-source_file = po/po-dialogs/tx/act2-IcePass-Terminal.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Town-TeleporterGuard]
+file_filter = tx-dialog/act1-Town-TeleporterGuard-<lang>.po
+source_file = tx-dialog/act1-Town-TeleporterGuard.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act2-Mike]
-file_filter = po/po-dialogs/tx/act2-Mike-<lang>.po
-source_file = po/po-dialogs/tx/act2-Mike.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Town-TuxGuard]
+file_filter = tx-dialog/act1-Town-TuxGuard-<lang>.po
+source_file = tx-dialog/act1-Town-TuxGuard.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act2-MrSaves]
-file_filter = po/po-dialogs/tx/act2-MrSaves-<lang>.po
-source_file = po/po-dialogs/tx/act2-MrSaves.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-TutorialTerminal]
+file_filter = tx-dialog/act1-TutorialTerminal-<lang>.po
+source_file = tx-dialog/act1-TutorialTerminal.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act2-ProgrammingChief]
-file_filter = po/po-dialogs/tx/act2-ProgrammingChief-<lang>.po
-source_file = po/po-dialogs/tx/act2-ProgrammingChief.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-TutorialTom]
+file_filter = tx-dialog/act1-TutorialTom-<lang>.po
+source_file = tx-dialog/act1-TutorialTom.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act2-Prologue]
-file_filter = po/po-dialogs/tx/act2-Prologue-<lang>.po
-source_file = po/po-dialogs/tx/act2-Prologue.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Tybalt]
+file_filter = tx-dialog/act1-Tybalt-<lang>.po
+source_file = tx-dialog/act1-Tybalt.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act2-RRF-ManagmentTerminal]
-file_filter = po/po-dialogs/tx/act2-RRF-ManagmentTerminal-<lang>.po
-source_file = po/po-dialogs/tx/act2-RRF-ManagmentTerminal.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-Vending-Machine]
+file_filter = tx-dialog/act1-Vending-Machine-<lang>.po
+source_file = tx-dialog/act1-Vending-Machine.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act2-RRGateTerminal]
-file_filter = po/po-dialogs/tx/act2-RRGateTerminal-<lang>.po
-source_file = po/po-dialogs/tx/act2-RRGateTerminal.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-WillGapes]
+file_filter = tx-dialog/act1-WillGapes-<lang>.po
+source_file = tx-dialog/act1-WillGapes.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act2-SecurityChief]
-file_filter = po/po-dialogs/tx/act2-SecurityChief-<lang>.po
-source_file = po/po-dialogs/tx/act2-SecurityChief.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-c-net]
+file_filter = tx-dialog/act1-c-net-<lang>.po
+source_file = tx-dialog/act1-c-net.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act2-Stone]
-file_filter = po/po-dialogs/tx/act2-Stone-<lang>.po
-source_file = po/po-dialogs/tx/act2-Stone.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act1-c-net-nethack_sub]
+file_filter = tx-dialog/act1-c-net-nethack_sub-<lang>.po
+source_file = tx-dialog/act1-c-net-nethack_sub.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act2-TerminalColemak]
-file_filter = po/po-dialogs/tx/act2-TerminalColemak-<lang>.po
-source_file = po/po-dialogs/tx/act2-TerminalColemak.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act2-Act2-Vending-Machine]
+file_filter = tx-dialog/act2-Act2-Vending-Machine-<lang>.po
+source_file = tx-dialog/act2-Act2-Vending-Machine.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act2-TerminalDenied]
-file_filter = po/po-dialogs/tx/act2-TerminalDenied-<lang>.po
-source_file = po/po-dialogs/tx/act2-TerminalDenied.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act2-ArenaTerminal]
+file_filter = tx-dialog/act2-ArenaTerminal-<lang>.po
+source_file = tx-dialog/act2-ArenaTerminal.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.dialog-act2-Yadda]
-file_filter = po/po-dialogs/tx/act2-Yadda-<lang>.po
-source_file = po/po-dialogs/tx/act2-Yadda.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act2-Colemak]
+file_filter = tx-dialog/act2-Colemak-<lang>.po
+source_file = tx-dialog/act2-Colemak.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.data-droid_specs]
-file_filter = po/po-data/tx/droid_specs-<lang>.po
-source_file = po/po-data/tx/droid_specs.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act2-CryonicsBlock-Terminal]
+file_filter = tx-dialog/act2-CryonicsBlock-Terminal-<lang>.po
+source_file = tx-dialog/act2-CryonicsBlock-Terminal.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.data-game_config]
-file_filter = po/po-data/tx/game_config-<lang>.po
-source_file = po/po-data/tx/game_config.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act2-FactoryTerminal]
+file_filter = tx-dialog/act2-FactoryTerminal-<lang>.po
+source_file = tx-dialog/act2-FactoryTerminal.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.data-item_specs]
-file_filter = po/po-data/tx/item_specs-<lang>.po
-source_file = po/po-data/tx/item_specs.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act2-Fred]
+file_filter = tx-dialog/act2-Fred-<lang>.po
+source_file = tx-dialog/act2-Fred.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.data-obstacle_specs]
-file_filter = po/po-data/tx/obstacle_specs-<lang>.po
-source_file = po/po-data/tx/obstacle_specs.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act2-IcePass-Terminal]
+file_filter = tx-dialog/act2-IcePass-Terminal-<lang>.po
+source_file = tx-dialog/act2-IcePass-Terminal.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.data-skill_specs]
-file_filter = po/po-data/tx/skill_specs-<lang>.po
-source_file = po/po-data/tx/skill_specs.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act2-Mike]
+file_filter = tx-dialog/act2-Mike-<lang>.po
+source_file = tx-dialog/act2-Mike.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.data-act1-events]
-file_filter = po/po-data/tx/act1-events-<lang>.po
-source_file = po/po-data/tx/act1-events.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act2-MrSaves]
+file_filter = tx-dialog/act2-MrSaves-<lang>.po
+source_file = tx-dialog/act2-MrSaves.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.data-act1-levels]
-file_filter = po/po-data/tx/act1-levels-<lang>.po
-source_file = po/po-data/tx/act1-levels.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act2-ProgrammingChief]
+file_filter = tx-dialog/act2-ProgrammingChief-<lang>.po
+source_file = tx-dialog/act2-ProgrammingChief.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.data-act1-npc_specs]
-file_filter = po/po-data/tx/act1-npc_specs-<lang>.po
-source_file = po/po-data/tx/act1-npc_specs.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act2-Prologue]
+file_filter = tx-dialog/act2-Prologue-<lang>.po
+source_file = tx-dialog/act2-Prologue.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.data-act1-quests]
-file_filter = po/po-data/tx/act1-quests-<lang>.po
-source_file = po/po-data/tx/act1-quests.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act2-RRF-ManagmentTerminal]
+file_filter = tx-dialog/act2-RRF-ManagmentTerminal-<lang>.po
+source_file = tx-dialog/act2-RRF-ManagmentTerminal.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.data-act1-ReturnOfTux]
-file_filter = po/po-data/tx/act1-ReturnOfTux-<lang>.po
-source_file = po/po-data/tx/act1-ReturnOfTux.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act2-RRGateTerminal]
+file_filter = tx-dialog/act2-RRGateTerminal-<lang>.po
+source_file = tx-dialog/act2-RRGateTerminal.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.data-act2-events]
-file_filter = po/po-data/tx/act2-events-<lang>.po
-source_file = po/po-data/tx/act2-events.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act2-SecurityChief]
+file_filter = tx-dialog/act2-SecurityChief-<lang>.po
+source_file = tx-dialog/act2-SecurityChief.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.data-act2-levels]
-file_filter = po/po-data/tx/act2-levels-<lang>.po
-source_file = po/po-data/tx/act2-levels.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act2-Stone]
+file_filter = tx-dialog/act2-Stone-<lang>.po
+source_file = tx-dialog/act2-Stone.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.data-act2-npc_specs]
-file_filter = po/po-data/tx/act2-npc_specs-<lang>.po
-source_file = po/po-data/tx/act2-npc_specs.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act2-TerminalColemak]
+file_filter = tx-dialog/act2-TerminalColemak-<lang>.po
+source_file = tx-dialog/act2-TerminalColemak.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.data-act2-quests]
-file_filter = po/po-data/tx/act2-quests-<lang>.po
-source_file = po/po-data/tx/act2-quests.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act2-TerminalDenied]
+file_filter = tx-dialog/act2-TerminalDenied-<lang>.po
+source_file = tx-dialog/act2-TerminalDenied.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.data-act2-ReturnOfTux]
-file_filter = po/po-data/tx/act2-ReturnOfTux-<lang>.po
-source_file = po/po-data/tx/act2-ReturnOfTux.pot
+[o:arctic-games:p:freedroid-rpg:r:dialog-act2-Yadda]
+file_filter = tx-dialog/act2-Yadda-<lang>.po
+source_file = tx-dialog/act2-Yadda.pot
 source_lang = en
-type = PO
+type        = PO
 
-[freedroid-rpg.title-StartOfGame]
-file_filter = po/l10n-others/tx/title-StartOfGame-<lang>.txt
-source_file = po/l10n-others/tx/title-StartOfGame.txt
+[o:arctic-games:p:freedroid-rpg:r:src-freedroidrpg]
+file_filter = tx-src/freedroidrpg-<lang>.po
+source_file = tx-src/freedroidrpg.pot
 source_lang = en
-type = TXT
+type        = PO
 
-[freedroid-rpg.title-TakeoverInstructions]
-file_filter = po/l10n-others/tx/title-TakeoverInstructions-<lang>.txt
-source_file = po/l10n-others/tx/title-TakeoverInstructions.txt
+[o:arctic-games:p:freedroid-rpg:r:README]
+file_filter = tx-other/README-<lang>.txt
+source_file = tx-other/README.txt
 source_lang = en
-type = TXT
+type        = TXT
 
-[freedroid-rpg.title-Controls]
-file_filter = po/l10n-others/tx/title-Controls-<lang>.txt
-source_file = po/l10n-others/tx/title-Controls.txt
+[o:arctic-games:p:freedroid-rpg:r:title-Contribute]
+file_filter = tx-other/title-Contribute-<lang>.txt
+source_file = tx-other/title-Contribute.txt
 source_lang = en
-type = TXT
+type        = TXT
 
-[freedroid-rpg.title-level_editor_help]
-file_filter = po/l10n-others/tx/title-level_editor_help-<lang>.txt
-source_file = po/l10n-others/tx/title-level_editor_help.txt
+[o:arctic-games:p:freedroid-rpg:r:title-Controls]
+file_filter = tx-other/title-Controls-<lang>.txt
+source_file = tx-other/title-Controls.txt
 source_lang = en
-type = TXT
+type        = TXT
 
-[freedroid-rpg.title-Contribute]
-file_filter = po/l10n-others/tx/title-Contribute-<lang>.txt
-source_file = po/l10n-others/tx/title-Contribute.txt
+[o:arctic-games:p:freedroid-rpg:r:title-Credits]
+file_filter = tx-other/title-Credits-<lang>.txt
+source_file = tx-other/title-Credits.txt
 source_lang = en
-type = TXT
+type        = TXT
 
-[freedroid-rpg.title-GameLost]
-file_filter = po/l10n-others/tx/title-GameLost-<lang>.txt
-source_file = po/l10n-others/tx/title-GameLost.txt
+[o:arctic-games:p:freedroid-rpg:r:title-EndOfGame]
+file_filter = tx-other/title-EndOfGame-<lang>.txt
+source_file = tx-other/title-EndOfGame.txt
 source_lang = en
-type = TXT
+type        = TXT
 
-[freedroid-rpg.title-EndOfGame]
-file_filter = po/l10n-others/tx/title-EndOfGame-<lang>.txt
-source_file = po/l10n-others/tx/title-EndOfGame.txt
+[o:arctic-games:p:freedroid-rpg:r:title-GameLost]
+file_filter = tx-other/title-GameLost-<lang>.txt
+source_file = tx-other/title-GameLost.txt
 source_lang = en
-type = TXT
+type        = TXT
 
-[freedroid-rpg.title-Credits]
-file_filter = po/l10n-others/tx/title-Credits-<lang>.txt
-source_file = po/l10n-others/tx/title-Credits.txt
+[o:arctic-games:p:freedroid-rpg:r:title-StartOfGame]
+file_filter = tx-other/title-StartOfGame-<lang>.txt
+source_file = tx-other/title-StartOfGame.txt
 source_lang = en
-type = TXT
+type        = TXT
 
-[freedroid-rpg.title-act1-EndOfAct]
-file_filter = po/l10n-others/tx/title-act1-EndOfAct-<lang>.txt
-source_file = po/l10n-others/tx/title-act1-EndOfAct.txt
+[o:arctic-games:p:freedroid-rpg:r:title-TakeoverInstructions]
+file_filter = tx-other/title-TakeoverInstructions-<lang>.txt
+source_file = tx-other/title-TakeoverInstructions.txt
 source_lang = en
-type = TXT
+type        = TXT
 
-[freedroid-rpg.title-act1-EndOfGame]
-file_filter = po/l10n-others/tx/title-act1-EndOfGame-<lang>.txt
-source_file = po/l10n-others/tx/title-act1-EndOfGame.txt
+[o:arctic-games:p:freedroid-rpg:r:title-act1-EndOfAct]
+file_filter = tx-other/title-act1-EndOfAct-<lang>.txt
+source_file = tx-other/title-act1-EndOfAct.txt
 source_lang = en
-type = TXT
+type        = TXT
 
-[freedroid-rpg.README]
-file_filter = po/l10n-others/tx/README-<lang>.txt
-source_file = po/l10n-others/tx/README.txt
+[o:arctic-games:p:freedroid-rpg:r:title-act1-EndOfGame]
+file_filter = tx-other/title-act1-EndOfGame-<lang>.txt
+source_file = tx-other/title-act1-EndOfGame.txt
 source_lang = en
-type = TXT
+type        = TXT
 
-[freedroid-rpg.all_in_one]
-file_filter = po/tx/all_in_one-<lang>.po
-source_file = po/tx/all_in_one.pot
+[o:arctic-games:p:freedroid-rpg:r:title-level_editor_help]
+file_filter = tx-other/title-level_editor_help-<lang>.txt
+source_file = tx-other/title-level_editor_help.txt
 source_lang = en
-type = PO
+type        = TXT
+
 

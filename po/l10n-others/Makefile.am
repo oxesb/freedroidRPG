@@ -26,29 +26,47 @@ l10n-clean:
 
 #== Transifex synchronization - Shared functions definition
 
+CURL     = curl
 TX       = tx
+TXORG    = artic-games
 TXPROJ   = freedroid-rpg
-TXPROPS  = '{"category":"other"}'
-TXCREDS  = $(shell $(top_srcdir)/po/tx-credentials)
+TXPREFIX = other
+TXPROPS  = '{"category":["other"]}'
+TXCRED   = $(shell $(top_srcdir)/po/tx-credentials -t)
+TXHOST   = $(shell $(top_srcdir)/po/tx-credentials -r)
 
 LANGS = $(shell tail -n +2 $(srcdir)/LINGUAS)
+comma:= ,
+empty:=
+space:= $(empty) $(empty)
+TXLANGS = $(subst $(space),$(comma),$(LANGS))
+
 
 #-- Update tx rsrc
 # $(1) = rsrc name
 # $(2) = rsrc file
 
 define rsrc_update =
-	if ! $(TX) -q status -r $(TXPROJ).$(1) >/dev/null 2>/dev/null; then \
+	if ! $(TX) status $(TXPROJ).$(1) >/dev/null 2>/dev/null; then \
 	  echo "Creating $(1)"; \
-	  $(TX) -q config mapping -r $(TXPROJ).$(1) --source-lang en --type TXT --source-file $(2) --expression "tx/$(1)-<lang>.txt" --execute; \
-	  if $(TX) -q push -r $(TXPROJ).$(1) -s >/dev/null 2>/dev/null; then \
-	    curl_output=`curl -s -L $(TXCREDS) -X PUT -d $(TXPROPS) -H "Content-Type: application/json" https://www.transifex.com/api/2/project/$(TXPROJ)/resource/$(1);` \
+	  $(TX) add --file-filter="tx-$(TXPREFIX)/$(1)-<lang>.txt" --type=TXT --organization=$(TXORG) --resource=$(1) $(2); \
+	  if $(TX) push -s $(TXPROJ).$(1) >/dev/null 2>/dev/null; then \
+	    curl_output=`$(CURL) --request PATCH \
+	                        -s -o /dev/null -w "%{http_code}" \
+	                        --url $(TXHOST)/resources/o%3A$(TXORG)%3Ap%3A$(TXPROJ)%3Ar%3A$(1) \
+	                        --header 'Accept: application/vnd.api+json' \
+	                        --header 'Authorization: Bearer $(TXCRED)' \
+	                        --header 'Content-Type: application/vnd.api+json' \
+	                        --data '{ "data": { "attributes": $(TXPROPS), \
+	                                            "id": "o:$(TXORG):p:$(TXPREFIX):r:$(1)", \
+	                                            "type": "resources" } \
+	                                }'`; \
 	    rtn=$$?; \
-	    if test $$rtn -ne 0 -o " $$curl_output" != " OK"; then echo "Warning. Failed to set properties: $$curl_output (error code $$rtn)"; fi; \
+	    if test $$rtn -ne 0 -o " $$curl_output" != " 200"; then echo "Warning. Failed to set properties: error code $$curl_output"; fi; \
 	  fi; \
 	else \
 	  echo "Updating $(1)"; \
-	  $(TX) -q push -r $(TXPROJ).$(1) -s; \
+	  $(TX) push -s $(TXPROJ).$(1); \
 	fi
 endef
 
@@ -61,13 +79,15 @@ endef
 # $(2) = lang
 
 define rsrc_pull =
-	echo "Pulling $(1)-$(2) from transifex"; \
-	$(TX) -q pull -r $(TXPROJ).$(1) -l $(2); \
-	sed -i -e '$$a\' tx/$(1)-$(2).txt; \
-	if diff -q --ignore-blank-lines tx/$(1).txt tx/$(1)-$(2).txt >/dev/null; then \
-	  echo "    no translated strings: removing"; \
-	  rm tx/$(1)-$(2).txt; \
-	fi
+	echo "Pulling $(1)-<lang> from transifex"; \
+	$(TX) pull -l $(TXLANGS) $(TXPROJ).$(1); \
+	for lang in $(LANGS); do \
+	  sed -i -e '$$a\' tx-$(TXPREFIX)/$(1)-$$lang.txt; \
+	  if diff -q --ignore-blank-lines tx-$(TXPREFIX)/$(1).txt tx-$(TXPREFIX)/$(1)-$$lang.txt >/dev/null; then \
+	    echo "    no translated strings: removing"; \
+	    rm tx-$(TXPREFIX)/$(1)-$$lang.txt; \
+	  fi; \
+	done
 endef
 
 #-- Copy src file to dest file if src and dest are different
@@ -99,15 +119,15 @@ l10n_name = $(dir $(1))$(2)/$(notdir $(1))
 
 TITLES_POTSRC = $(wildcard $(addsuffix /*.lua, $(TITLES_DIR)))
 TITLES_RSRC = $(foreach potsrc,$(TITLES_POTSRC),$(call rsrc_full_name,$(potsrc)))
-TITLES_TX = $(TITLES_RSRC:%=tx/%.txt)
+TITLES_TX = $(TITLES_RSRC:%=tx-$(TXPREFIX)/%.txt)
 TITLES_L10N = $(foreach lang,$(LANGS),$(foreach potsrc,$(TITLES_POTSRC),$(call l10n_name,$(potsrc),$(lang))))
 
 #-- Create a TX rsrc by extracting the text part of a title
 # $(1) = source file name
 
 define update-po-title =
- tx/$(call rsrc_full_name,$(1)).txt: $(1)
-	@$(mkdir_p) tx; \
+ tx-$(TXPREFIX)/$(call rsrc_full_name,$(1)).txt: $(1)
+	@$(mkdir_p) tx-$(TXPREFIX); \
 	 $(AWK) "BEGIN { isintext=0; } /^text[[:space:]]*=[[:space:]]*[\[]+/ { isintext=1; next; } /^[\]]+/ { exit; } isintext == 1 { print; }" $$< > $$@
 endef
 
@@ -121,8 +141,8 @@ $(foreach potsrc,$(TITLES_POTSRC),$(eval $(call update-po-title,$(potsrc))))
 # $(2) = lang
 
 define update-gmo-title =
- $(call l10n_name,$(1),$(2)): $(wildcard tx/$(call rsrc_full_name,$(1))-$(2).txt)
-	@if test -r tx/$(call rsrc_full_name,$(1))-$(2).txt ; then \
+ $(call l10n_name,$(1),$(2)): $(wildcard tx-$(TXPREFIX)/$(call rsrc_full_name,$(1))-$(2).txt)
+	@if test -r tx-$(TXPREFIX)/$(call rsrc_full_name,$(1))-$(2).txt ; then \
 	   $(mkdir_p) $(dir $(1))$(2); \
 	   $(AWK) "/^text[[:space:]]*=[[:space:]]*[\[]+/ { print; nextfile; } { print; } END { print \"]]\"; print \"}\"; }" \
 	        $(1) $$< > $$<.tmp; \
@@ -141,25 +161,23 @@ update-po:: $(TITLES_TX)
 #-- Push all title rsrcs to TX
 
 tx-update:: $(TITLES_TX)
-	@if [ " $(TXCREDS)" = " " ] ; then \
+	@if [ " $(TXCRED)" = " " ] ; then \
 		echo "You do not have a Transifex account"; \
 		exit 1; \
 	 fi
 	@for rsrc in $(TITLES_RSRC); do \
-		$(call rsrc_update,$$rsrc,tx/$$rsrc.txt); \
+		$(call rsrc_update,$$rsrc,tx-$(TXPREFIX)/$$rsrc.txt); \
 	 done
 
 #-- Pull all l10n versions of the titles' text from TX
 
 tx-pull:: $(TITLES_TX)
-	@if [ " $(TXCREDS)" = " " ] ; then \
+	@if [ " $(TXCRED)" = " " ] ; then \
 		echo "You do not have a Transifex account"; \
 		exit 1; \
 	 fi
-	@for lang in $(LANGS); do \
-	   for rsrc in $(TITLES_RSRC); do \
-	     $(call rsrc_pull,$$rsrc,$$lang); \
-	   done; \
+	@for rsrc in $(TITLES_RSRC); do \
+	   $(call rsrc_pull,$$rsrc); \
 	 done
 
 #-- update-gmo creates the new l10n version of the titles
@@ -170,13 +188,13 @@ update-gmo:: $(TITLES_L10N)
 
 README_DIR  = $(top_srcdir)
 README_RSRC = README
-README_TX   = tx/README.txt
+README_TX   = tx-$(TXPREFIX)/README.txt
 README_L10N = $(foreach lang,$(LANGS),$(README_RSRC:%=$(README_DIR)/README-$(lang)))
 
 #-- Copy the README into the tx/ subdir
 
-tx/README.txt: $(README_DIR)/README
-	@$(mkdir_p) tx; \
+tx-$(TXPREFIX)/README.txt: $(README_DIR)/README
+	@$(mkdir_p) tx-$(TXPREFIX); \
 	 cp $< $@
 
 
@@ -184,8 +202,8 @@ tx/README.txt: $(README_DIR)/README
 # $(1) = lang
 
 define update-gmo-readme =
- $(README_DIR)/README-$(1): $(wildcard tx/README-$(1).txt)
-	@if test -r tx/README-$(1).txt ; then \
+ $(README_DIR)/README-$(1): $(wildcard tx-$(TXPREFIX)/README-$(1).txt)
+	@if test -r tx-$(TXPREFIX)/README-$(1).txt ; then \
 	   cp $$< $$<.tmp; \
 	   $(call copy_on_diff,$$<.tmp,$$@); \
 	 fi
@@ -201,22 +219,20 @@ update-po:: $(README_TX)
 #-- Push the README rsrc to TX
 
 tx-update:: $(README_TX)
-	@if [ " $(TXCREDS)" = " " ] ; then \
+	@if [ " $(TXCRED)" = " " ] ; then \
 		echo "You do not have a Transifex account"; \
 		exit 1; \
 	 fi
-	@$(call rsrc_update,README,tx/README.txt)
+	@$(call rsrc_update,README,tx-$(TXPREFIX)/README.txt)
 
 #-- Pull all l10n versions of the README from TX
 
 tx-pull:: $(README_TX)
-	@if [ " $(TXCREDS)" = " " ] ; then \
+	@if [ " $(TXCRED)" = " " ] ; then \
 		echo "You do not have a Transifex account"; \
 		exit 1; \
 	 fi
-	@for lang in $(LANGS); do \
-	   $(call rsrc_pull,README,$$lang); \
-	 done
+	@$(call rsrc_pull,README)
 
 #-- update-gmo creates the new l10n version of the README
 

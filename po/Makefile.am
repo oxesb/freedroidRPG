@@ -102,9 +102,14 @@ $(UPDATEGMODIRS):
 # too much
 
 TXTARGETS = tx-update tx-pull tx-push
+
+TX        = tx
+TXORG     = artic-games
 TXPROJ    = freedroid-rpg
-TXPROPS   = '{"category":"autoTM"}'
-TXCRED    = $(shell $(top_srcdir)/po/tx-credentials)
+TXPROPS   = '{"category":["autoTM"]}'
+TXCRED    = $(shell $(top_srcdir)/po/tx-credentials -t)
+TXHOST    = $(shell $(top_srcdir)/po/tx-credentials -r)
+
 # Create a list of potfiles:
 #  foreach dir in $SUBDIRS - $(foreach ...)
 #    - extract from Makevars the value of the DOMAIN parameter - $(shell ...)
@@ -127,17 +132,26 @@ $(TXTARGETS):
 	     $(mkdir_p) tx; \
 	     msgcat --width=80 --no-wrap --sort-by-file --use-first -o tx/all_in_one.pot $(TXPOTS); \
 	     if test -r tx/all_in_one.pot; then \
-	       if ! tx -q status -r $(TXPROJ).all_in_one >/dev/null 2>/dev/null; then \
+	       if ! $(TX) status $(TXPROJ).all_in_one >/dev/null 2>/dev/null; then \
 	         echo "Creating all_in_one"; \
-	         tx -q config mapping -r $(TXPROJ).all_in_one --source-lang en --type PO --source-file tx/all_in_one.pot --expression "tx/all_in_one-<lang>.po" --execute; \
-	         if tx -q push -r $(TXPROJ).all_in_one -s; then \
-	           curl_output=`curl -s -L $(TXCRED) -X PUT -d $(TXPROPS) -H "Content-Type: application/json" https://www.transifex.com/api/2/project/$(TXPROJ)/resource/all_in_one;` \
+	         $(TX) add --file-filter="tx/all_in_one-<lang>.po" --type=PO --organization=$(TXORG) --project=$(TXPROJ) --resource="all_in_one" tx/all_in_one.pot; \
+	         if $(TX) push -s $(TXPROJ).all_in_one; then \
+	           curl_output=`curl --request PATCH \
+	                        -s -o /dev/null -w "%{http_code}" \
+	                        --url $(TXHOST)/resources/o%3A$(TXORG)%3Ap%3A$(TXPROJ)%3Ar%3Aall_in_one \
+	                        --header 'Accept: application/vnd.api+json' \
+	                        --header 'Authorization: Bearer $(TXCRED)' \
+	                        --header 'Content-Type: application/vnd.api+json' \
+	                        --data '{ "data": { "attributes": $(TXPROPS), \
+	                                            "id": "o:$(TXORG):p:$(TXPREFIX):r:all_in_one", \
+	                                            "type": "resources" } \
+	                                }'`; \	           
 	           rtn=$$?; \
-	           if test $$rtn -ne 0 -o " $$curl_output" != " OK"; then echo "Warning. Failed to set properties: $$curl_output (error code $$rtn)"; fi; \
+	           if test $$rtn -ne 0 -o " $$curl_output" != " 200"; then echo "Warning. Failed to set properties: error code $$culr_output"; fi; \
 	         fi; \
 	       else \
 	         echo "Updating all_in_one"; \
-	         tx -q push -r $(TXPROJ).all_in_one -s; \
+	         $(TX) push -s $(TXPROJ).all_in_one; \
 	       fi; \
 	     fi; \
 	     rm -rf tx; \

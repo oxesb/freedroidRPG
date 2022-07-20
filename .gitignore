@@ -104,7 +104,7 @@ po/*/tx-push-granted
 po/*/*.po~
 po/*/*.gmo
 po/*/stamp-*
-po/l10n-others/tx
+po/l10n-others/tx-other
 locale/
 
 # Wiki parse output
