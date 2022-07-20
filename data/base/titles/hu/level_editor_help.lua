@@ -24,23 +24,23 @@ text = [[
 
 === BEVEZETÉS ===
 
-FreedroidRPG comes with a built-in level editor. This level editor allows you to control any aspect of a normal FreedroidRPG map and to save maps.
+A FreedroidRPG-nek saját pályaszerkesztője van, amelyben a FreedroidRPG térképek bármely részét szerkesztheted és elmentheted.
 
-You can access it from the main menu (click "Level Editor") or executing 'freedroidRPG -e'.
+Ezt meg tudod nyitni a főmenüből, vagy a „freedroidRPG -e” parancs futtatásával.
 
-    --- Tooltips ---
-To toggle descriptions of the interface while the mouse hovers, click the white speech bubble icon located near the right window border (lower button row).
+    --- Gyorstippek ---
+Be/kikapcsolja egyes dolgok rövid leírásainak megjelenítését, miközben az egér fölöttük lebeg. Kattints a fehér szóbuborék ikonra a jobb alsó sarokban.
 
-    --- Summary Details ---
-Summary details about obstacles and items will appear if you right click on them in the upper object selector.
+    --- Részletes Összegzés ---
+Összegzés az akadályokról és egyéb elemekről, melyek meg fognak jelenni ha jobbklikkelsz rájuk a felső objektumválasztón.
 
-    --- Navigation ---
-To change the current level, click the nearby level number in the minimap the lower right corner, or select the desired level from the editor menu (described later).
+    --- Navigáció ---
+Hogy átválts egy másik pályára, kattints egy közeli pálya számára a kistérkép jobb alsó sarkában vagy válaszd ki a kívánt pályát a szerkesztő menüjéből (bővebb leírás később).
 
-    --- Map editing ---
-There are four editing modes: Obstacle editing, Floor editing, Item editing, and Waypoint editing.
+    --- Térképszerkesztés ---
+A szerkesztő négy szerkesztési módban működhet: Akadályszerkesztés, Padlószerkesztés, Elemek szerkesztése, illetve Útvonalak szerkesztése.
 
-The button selected at the lower left indicates the objects you can select or place.
+A bal alsó sarokban kiválasztott gomb jelzi, hogy éppen milyen objektumokat tudsz lehelyezni vagy módosítani.
 When a button is selected, and you are in placement mode, the object you will place is indicated by the ribbon at the top of the screen. The selection in the ribbon is divided by tabs immediately underneath.
 
 You can select the obstacle type you want to be placed on the map at the upper object selector. Just click it to select it. Obstacles are divided into groups to provide better overview.

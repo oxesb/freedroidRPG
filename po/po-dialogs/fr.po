@@ -20,7 +20,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. TRANSLATORS: It shows the ingame date in format: Day day, hour:minute
 #: data/base/dialogs/AfterTakeover.lua:34
@@ -2278,7 +2278,7 @@ msgstr "Tu n'es pas prêt. Va tuer quelques robots et revient."
 #: data/storyline/act1/dialogs/Erin.lua:487
 #: data/storyline/act1/dialogs/Samson.lua:205
 msgid "Come back when you are mentally prepared to learn."
-msgstr "Reviens que tu sera mentalement prêt à apprendre."
+msgstr "Reviens quand tu seras mentalement prêt à apprendre."
 
 #: data/storyline/act1/dialogs/Benjamin.lua:246
 #: data/storyline/act1/dialogs/Kevin.lua:358

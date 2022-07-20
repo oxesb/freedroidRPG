@@ -2542,41 +2542,41 @@ msgstr "Majd még találkozunk!"
 
 #: data/storyline/act1/dialogs/Bob.lua:30
 msgid "Hi... Wait... How did you find this place?"
-msgstr ""
+msgstr "Szia! Várjunk... Hogyan találtad meg ezt a helyet?"
 
 #: data/storyline/act1/dialogs/Bob.lua:31
 msgid "Well, I was researching our beautiful continent, then I saw a gate, and walked through."
-msgstr ""
+msgstr "Jó, éppen kutattam a gyönyörű kontinensünket, mikor megláttam a kaput és átmentem rajta."
 
 #: data/storyline/act1/dialogs/Bob.lua:32
 msgid "Oh... Well, welcome to this little fortress. There are only three people - me, my friend Jim and you."
-msgstr ""
+msgstr "Ó... Jól van, üdvözlünk a kis erődünkben. Itt csak hárman vagyunk: én, a barátom Jim és te."
 
 #: data/storyline/act1/dialogs/Bob.lua:33
 msgid "There is also a 614 security droid."
-msgstr ""
+msgstr "Itt van még úgy egy 614 biztonsági robot."
 
 #: data/storyline/act1/dialogs/Bob.lua:34
 msgid "Yeah, I noticed..."
-msgstr ""
+msgstr "Igen, észrevettem..."
 
 #: data/storyline/act1/dialogs/Bob.lua:35
 msgid "By the way, who are you?"
-msgstr ""
+msgstr "Azomban mégis ki vagy te?"
 
 #. TRANSLATORS: %s = Tux:get_player_name()
 #: data/storyline/act1/dialogs/Bob.lua:37
 #, c-format
 msgid "I am %s."
-msgstr ""
+msgstr "Én vagyok %s."
 
 #: data/storyline/act1/dialogs/Bob.lua:38
 msgid "And, who are you?"
-msgstr ""
+msgstr "És ki vagy te?"
 
 #: data/storyline/act1/dialogs/Bob.lua:39
 msgid "Bob. I'm guardian of these gates."
-msgstr ""
+msgstr "Bob, ezeknek a kapuknak az őre."
 
 #: data/storyline/act1/dialogs/Bob.lua:40
 msgid "Bob - Gate Guardian"
@@ -2588,7 +2588,7 @@ msgstr "Jim – a portál őre"
 
 #: data/storyline/act1/dialogs/Bob.lua:55
 msgid "Hi again, Bob."
-msgstr ""
+msgstr "Szia újra Bob."
 
 #: data/storyline/act1/dialogs/Bob.lua:57
 msgid "Hi again. "
@@ -2596,7 +2596,7 @@ msgstr ""
 
 #: data/storyline/act1/dialogs/Bob.lua:57
 msgid "Hi again, my friend."
-msgstr ""
+msgstr "Szia újra, barátom."
 
 #: data/storyline/act1/dialogs/Bob.lua:57
 msgid "Welcome back, my friend."
@@ -2614,19 +2614,19 @@ msgstr ""
 
 #: data/storyline/act1/dialogs/Bob.lua:72
 msgid "I see a room near."
-msgstr ""
+msgstr "Látok egy közeli szobát."
 
 #: data/storyline/act1/dialogs/Bob.lua:74
 msgid "This is the room with the portal to the other continent inside."
-msgstr ""
+msgstr "Ez az a szoba, amiben a másik kontinens belsejébe vezető portál van."
 
 #: data/storyline/act1/dialogs/Bob.lua:75
 msgid "To the other continent?!"
-msgstr ""
+msgstr "A másik kontinensre???"
 
 #: data/storyline/act1/dialogs/Bob.lua:76
 msgid "Yeah. But the gate is closed."
-msgstr ""
+msgstr "Igen, de a kapu be van zárva."
 
 #: data/storyline/act1/dialogs/Bob.lua:77
 #: data/storyline/act2/dialogs/Fred.lua:112
@@ -2635,63 +2635,63 @@ msgstr "Miért?"
 
 #: data/storyline/act1/dialogs/Bob.lua:78
 msgid "Jim told me to do that, because he is afraid that bots can teleport through the portal."
-msgstr ""
+msgstr "Jim figyelmeztetett, hogy szerinte átteleportálhatnak a portálon."
 
 #: data/storyline/act1/dialogs/Bob.lua:79
 msgid "But they will kill him if he stays inside a locked room!"
-msgstr ""
+msgstr "De azok meg fogják ölni, hogyha egy bezárt szobában marad!"
 
 #: data/storyline/act1/dialogs/Bob.lua:80
 msgid "I know. But Jim doesn't fear that... He hates bots and wants to destroy them all."
-msgstr ""
+msgstr "Tudom de Jimet ez nem érdekli. Ő utálja a robotokat és meg akarja semmisíteni mindet."
 
 #: data/storyline/act1/dialogs/Bob.lua:81
 msgid "What's wrong with him? Is he crazy?"
-msgstr ""
+msgstr "Mi baja van velük? Egy kicsit bolond?"
 
 #: data/storyline/act1/dialogs/Bob.lua:82
 msgid "No... That's a bad story..."
-msgstr ""
+msgstr "Nem... Ez egy szomorú történet."
 
 #: data/storyline/act1/dialogs/Bob.lua:83
 msgid "Spencer, the leader of Red Guard, sent a group of soldiers to scout the area, but none of them came back."
-msgstr ""
+msgstr "Spencer, a Vörös Őrség vezetője küldött egy csapat katonát, hogy figyeljék a terepet, de senki nem tért vissza közülük."
 
 #: data/storyline/act1/dialogs/Bob.lua:84
 msgid "He got a message from one of them before the connection terminated. This message contained two coordinates and description with just one word: [b]Portal[/b]."
-msgstr ""
+msgstr "Kapott egy üzenetet az egyik katonától mielőtt a kapcsolat megszakadt. Ez az üzenet csak két koordinátát tartalmazott, leírásként pedig csak eztaz egy szót: [b]Portal[/b]."
 
 #: data/storyline/act1/dialogs/Bob.lua:85
 msgid "So, he sent us to find this portal. There were 3 of us. Me, Jim and his brother. Also there was our 614. One day Jim's brother woke us up, and said that there were lots of bots around."
-msgstr ""
+msgstr "Szóval ideküldött minket, hogy találjuk meg ezt a portált. Hárman jöttünk. Én, Jim és a bátyja. És itt volt a mi 614 őrünk. Egy nap aztán Jim bátyja felkeltett minket és azt mondta, hogy itt volt körülöttünk sok robot."
 
 #: data/storyline/act1/dialogs/Bob.lua:86
 msgid "We started to flee, but some bots were faster than we are. Jim's brother said that he would hold them as long as possible, and ordered us to run... We have never seen him again..."
-msgstr ""
+msgstr "Elkezdtünk menekülni, de néhány robot gyorsabb volt nálunk. Jim bátyja azt mondta hogy ő majd föltartja őket ameddig csak lehet és azt kérte hogy fussunk. Soha többé nem láttuk őt..."
 
 #: data/storyline/act1/dialogs/Bob.lua:87
 msgid "After about four hours of running, we found this little fortress, and noticed that it was at Spencer's coordinates."
-msgstr ""
+msgstr "Körübelül négy óra futás után megtaláltuk a kis erődjét és rájöttünk, hogy pont Spencer koordinátáinál van."
 
 #: data/storyline/act1/dialogs/Bob.lua:88
 msgid "We hid inside."
-msgstr ""
+msgstr "Ebben bújtunk el."
 
 #: data/storyline/act1/dialogs/Bob.lua:89
 msgid "And Jim hasn't talked since."
-msgstr ""
+msgstr "És Jim ettől kezdve nem beszél."
 
 #: data/storyline/act1/dialogs/Bob.lua:96
 msgid "What are these two trees?"
-msgstr ""
+msgstr "Mi az a két fa ott?"
 
 #: data/storyline/act1/dialogs/Bob.lua:98
 msgid "The trees' fruit is our only source of food. The fruit is slightly bitter and leaves your mouth like an unripe persimmon, but we've noticed our wounds are healing much faster."
-msgstr ""
+msgstr "Ezen fák gyümölcse az egyetlen élelmünk. A gyümölcsük enyhén keserű és olyan, mint az éretlen datolya, de észrevettük, hogy a sebeink gyorsabban gyógyulnak tőle."
 
 #: data/storyline/act1/dialogs/Bob.lua:100
 msgid "Yeah. I can give you some. Just ask."
-msgstr ""
+msgstr "Igen, tudok neked adni néhányat, csak kérj."
 
 #: data/storyline/act1/dialogs/Bob.lua:101
 #: data/storyline/act1/dialogs/DocMoore.lua:310
@@ -2702,63 +2702,63 @@ msgstr "Köszönöm."
 
 #: data/storyline/act1/dialogs/Bob.lua:108
 msgid "Could you give me another fruit please?"
-msgstr ""
+msgstr "Tudnál adni még egy gyümölcsöt?"
 
 #: data/storyline/act1/dialogs/Bob.lua:110
 msgid "Of course. Take this one."
-msgstr ""
+msgstr "Persze! Vidd el ezt."
 
 #: data/storyline/act1/dialogs/Bob.lua:117
 msgid "I would like to walk inside this portal room anyways."
-msgstr ""
+msgstr "Mindazonáltal szeretném megnézni ezt a portál szobát belülről is."
 
 #: data/storyline/act1/dialogs/Bob.lua:119
 msgid "Sorry, my friend, but I can't let you do that. I need a good reason why I should open the gate for you."
-msgstr ""
+msgstr "Sajnos ezt nem szabad. Kell nekem egy jó indok, hogy kinyissam a kaput."
 
 #: data/storyline/act1/dialogs/Bob.lua:120
 msgid "What about a deal? I'll help you, you'll open this gate."
-msgstr ""
+msgstr "Mit szólnál egy ajánlathoz? Én segítek neked, te meg kinyitod a kaput."
 
 #: data/storyline/act1/dialogs/Bob.lua:121
 msgid "Good idea, but I don't need any help... Wait! My 614... Its power level is too low. I think that soon it will turn off."
-msgstr ""
+msgstr "Jó ötlet, de nem hiszem, hogy most bármiben kéne segítség. Várjunk... A 614! Az energiájuk fogytán van. Azt hiszem mindjárt kikapcsolnak."
 
 #: data/storyline/act1/dialogs/Bob.lua:122
 msgid "Well, here is my task for you: bring me one dilithium crystal. I'll need it to raise my bot's power level."
-msgstr ""
+msgstr "Jó, itt van a feladat: hozz nekem egy dilithiumkristályt. Ez kell, hogy a robotoknak legyen elég energiája."
 
 #: data/storyline/act1/dialogs/Bob.lua:123
 msgid "Ok... but where can I find it?"
-msgstr ""
+msgstr "Igen, de hol találok ilyet?"
 
 #: data/storyline/act1/dialogs/Bob.lua:124
 msgid "Hmmm... You have to go to the underground. The entrance is situated far away from here on the south. I don't know anything else."
-msgstr ""
+msgstr "Hmmm... Le kell menned a föld alá. A lejárat innen messze, dél felé van. Ennél többet én sem tudok."
 
 #: data/storyline/act1/dialogs/Bob.lua:125
 msgid "Thanks for the information. Well, I'll go then."
-msgstr ""
+msgstr "Köszönöm az útmutatást, akkor indulok is."
 
 #: data/storyline/act1/dialogs/Bob.lua:126
 msgid "Linarian... Please, be careful! I don't want to have same story with you as Jim had with his brother."
-msgstr ""
+msgstr "Linarian kérlek legyél óvatos! Nem szeretném, ha úgy járnál, mint Jim a bátyjával."
 
 #: data/storyline/act1/dialogs/Bob.lua:127
 msgid "*gulp* Ok... I'll be careful..."
-msgstr ""
+msgstr "*glp* Jó... Óvatos leszek."
 
 #: data/storyline/act1/dialogs/Bob.lua:128
 msgid "I asked Bob to open a gate for me, but he said that he will open it only if I'll help him by bringing one dilithium crystal for his 614. He said that I must go somewhere to the south. Also he warned me to be careful. But I think that some bunch of stupid bots won't scare me."
-msgstr ""
+msgstr "Megkértem Bobot, hogy nyissa ki a kaput nekem, de ő csak akkor nyitja ki, ha segítek neki dilithiumkristályt szerezni a 614 robotjához. Azt mondta, dél felé kell indulnom, és figyelmeztetett, hogy legyek óvatos. De azt hiszem, néhány őrült robot nem fog megijeszteni."
 
 #: data/storyline/act1/dialogs/Bob.lua:134
 msgid "Well, here is your difficult-to-find dilithium crystal."
-msgstr ""
+msgstr "Jó, itt nehéz dilithiumkristályt találni."
 
 #: data/storyline/act1/dialogs/Bob.lua:136
 msgid "COOL!! Give it to me."
-msgstr ""
+msgstr "Szuper! Add nekem ide!"
 
 #: data/storyline/act1/dialogs/Bob.lua:137
 #: data/storyline/act1/dialogs/Bruce.lua:224
@@ -2769,11 +2769,11 @@ msgstr "Tessék."
 
 #: data/storyline/act1/dialogs/Bob.lua:139
 msgid "Oh dude, you can't even imagine how thankful I am!"
-msgstr ""
+msgstr "Ó, azt sem tudom, hogy köszönjem meg neked."
 
 #: data/storyline/act1/dialogs/Bob.lua:141
 msgid "My bot is now fine: the power level is holding steady at 9001 megawatts. I won't need to worry that bots will kill me while I am sleeping! Thank you so much!"
-msgstr ""
+msgstr "A robotom most már jól működik, a feszültségmérője 9001 megaWatton áll. Mostmár nem kell aggódnom, hogy a robotok álmomban ölnek meg. Köszönöm szépen!"
 
 #: data/storyline/act1/dialogs/Bob.lua:143
 msgid "My bot is now fine: the power level is holding steady at 9001 megawatts. Now I have a robot and my brother to talk to, even knowing none of them will reply my questions! Thank you so much!"
