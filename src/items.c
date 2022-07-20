@@ -1,7 +1,7 @@
-/* 
+/*
  *
  *   Copyright (c) 2002, 2003 Johannes Prix
- *   Copyright (c) 2004-2010 Arthur Huillet 
+ *   Copyright (c) 2004-2010 Arthur Huillet
  *
  *
  *  This file is part of Freedroid
@@ -17,8 +17,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -81,7 +81,7 @@ void equip_item(item *new_item)
 {
 	item *old_item;
 	itemspec *new_itemspec;
-	
+
 	new_itemspec = &ItemMap[new_item->type];
 
 	// If the item can't be equipped, stop now and throw a warning.
@@ -105,7 +105,7 @@ void equip_item(item *new_item)
 	}
 
 	// Before equipping a shield, if a two-handed weapon is equipped, you need to drop it.
-	if (new_itemspec->slot == SHIELD_SLOT && Me.weapon_item.type != -1 
+	if (new_itemspec->slot == SHIELD_SLOT && Me.weapon_item.type != -1
 			&& ItemMap[Me.weapon_item.type].weapon_needs_two_hands) {
 		give_item(&Me.weapon_item);
 	}
@@ -125,7 +125,7 @@ item *get_equipped_item_in_slot_for(int item_type)
 	itemspec *spec;
 
 	spec = &ItemMap[item_type];
-	
+
 	if (spec->slot == WEAPON_SLOT) {
 		equipped_item = &Me.weapon_item;
 	}
@@ -145,7 +145,7 @@ item *get_equipped_item_in_slot_for(int item_type)
 	{
 		equipped_item = NULL;
 	}
-	
+
 	return equipped_item;
 }
 
@@ -159,7 +159,7 @@ static void self_repair_item(item *it)
 	if (it->max_durability == -1) {
 		play_sound("effects/tux_ingame_comments/Tux_Item_Cant_Be_0.ogg");
 		return;
-	} 
+	}
 
 	int my_skill_level = Me.skill_level[get_program_index_with_name("Repair equipment")];
 	int percent_chance = MyRandom(100);
@@ -278,7 +278,7 @@ static enum item_quality random_item_quality()
 	// In order to make normal quality items more common than others, we first
 	// choose a quality level by indexing a probability distribution array.
 	const enum item_quality quality_distribution[] = {
-		BAD_QUALITY, 
+		BAD_QUALITY,
 		BAD_QUALITY, 	//20%
 		NORMAL_QUALITY,
 		NORMAL_QUALITY,
@@ -331,7 +331,7 @@ void FillInItemProperties(item *it, int full_durability, int multiplicity)
 	if ((it->type < 0) || (it->type >= Number_Of_Item_Types)) {
 		error_message(__FUNCTION__, "Cannot fill in information for item with invalid type.", PLEASE_INFORM | IS_FATAL);
 		return;
-	}	
+	}
 
 	itemspec *spec = &ItemMap[it->type];
 
@@ -340,7 +340,7 @@ void FillInItemProperties(item *it, int full_durability, int multiplicity)
 	it->throw_time = 0;
 	it->quality = NORMAL_QUALITY;
 	it->max_durability = -1;
-	
+
 	if (!equippable_item(it)) {
 		return;
 	}
@@ -480,7 +480,7 @@ void drop_random_item(int level_num, float x, float y, int class, int force_magi
 	int drop_decision;
 	int drop_item_chance = Me.skill_level[get_program_index_with_name("Treasure Hunting")] * 2 + ITEM_DROP_PERCENTAGE;
 
-	if (class == -1) 
+	if (class == -1)
 		return; // -1 is the value to not drop item.
 
 	// Drop item only if the class is between 0 and MAX_DROP_CLASS.
@@ -549,11 +549,11 @@ void drop_random_item(int level_num, float x, float y, int class, int force_magi
 void DamageItem(item * CurItem)
 {
 
-	// If the item mentioned as parameter exists and if it is of 
+	// If the item mentioned as parameter exists and if it is of
 	// a destructable sort, then we apply the usual damage to it
 	if ((CurItem->type != (-1)) && (CurItem->max_durability != (-1))) {
 		CurItem->current_durability -= (MyRandom(100) < ARMOUR_DURABILITYLOSS_PERCENTAGE_WHEN_HIT) ? 1 : 0;
-		
+
 		// Make sound denoting some protective item was damaged
 		BulletReflectedSound();
 
@@ -594,19 +594,19 @@ void DamageProtectiveEquipment()
 		DamageItem(&(Me.shield_item));
 	else if (ItemHit < 5)
 		DamageItem(&(Me.drive_item));
-	else		
+	else
                 DamageItem(&(Me.special_item));
 
 };				// void DamageProtectiveEquipment( void )
 
 /**
  * This function is used when an equipment EXCHANGE is performed, i.e.
- * one weapon equipped is replaced by a new item using the mouse.  This 
- * leads to an exchange in the items.  Yet, if the new item came from 
+ * one weapon equipped is replaced by a new item using the mouse.  This
+ * leads to an exchange in the items.  Yet, if the new item came from
  * inventory, the old item can't be just put in the same place where the
  * new item was, cause it might be bigger.  So, attempting to solve the
  * problem, the old item from the slot can just be made into an item on
- * the floor, but not visible yet of course, cause it still gets the 
+ * the floor, but not visible yet of course, cause it still gets the
  * held in hand attribute.
  */
 static void MakeHeldFloorItemOutOf(struct item * source_item)
@@ -654,7 +654,7 @@ void CopyItem(item * SourceItem, item * DestItem)
 
 /**
  * This function MOVES an item from the source location to the destination
- * location.  The source location is then marked as unused inventory 
+ * location.  The source location is then marked as unused inventory
  * entry.
  */
 void MoveItem(item *source_item, item *dest_item)
@@ -666,7 +666,7 @@ void MoveItem(item *source_item, item *dest_item)
 }
 
 /**
- * This function applies a given item (to the influencer) and maybe 
+ * This function applies a given item (to the influencer) and maybe
  * eliminates the item after that, if it's an item that gets used up.
  */
 void Quick_ApplyItem(int ItemKey)
@@ -720,7 +720,7 @@ int item_spec_eq_id(int type, const char *id)
 }
 
 /**
- * This function applies a given item (to the influencer) and maybe 
+ * This function applies a given item (to the influencer) and maybe
  * eliminates the item after that, if it's an item that gets used up.
  */
 void apply_item(item * CurItem)
@@ -833,7 +833,7 @@ void apply_item(item * CurItem)
 			Play_Spell_ForceToEnergy_Sound();
 		} else {
 			// TRANSLATORS: the trailing %s is a program name
-			append_new_game_message(_("You have reached the maximum skill level for %s"), 
+			append_new_game_message(_("You have reached the maximum skill level for %s"),
 									D_(ItemMap[CurItem->type].right_use.add_skill));
 			Takeover_Game_Deadlock_Sound();
 		}
@@ -894,7 +894,7 @@ int Inv_Pos_Is_Free(int x, int y)
  * This function returns the index in the inventory list of the object
  * at the inventory position x y.  If no object is found to occupy that
  * square, an index of (-1) is returned.
- * 
+ *
  * NOTE: The mentioned coordinates refer to the squares of the inventory grid!!
  *
  */
@@ -926,7 +926,7 @@ int GetInventoryItemAt(int x, int y)
  * Often, especially in dialogs and in order to determine if some answer
  * should be allowed for the Tux or not, it is important to know if the
  * Tux has some special item of a given type in inventory or not and also
- * how many of those items the Tux really has.  
+ * how many of those items the Tux really has.
  *
  * This function is now intended to count the number of items of a given
  * type in the inventory of the Me.
@@ -972,7 +972,7 @@ did not contain this item type at all!  This indicates a severe bug in Freedroid
 /**
  * At some point the Tux will hand over all his items of a given type
  * to a dialog partner.  This function is intended to do exactly this:
- * To remove all items of a given type from the inventory of a given 
+ * To remove all items of a given type from the inventory of a given
  * player.
  */
 void DeleteInventoryItemsOfType(int Itemtype, int amount)
@@ -990,7 +990,7 @@ void DeleteInventoryItemsOfType(int Itemtype, int amount)
 };				// void DeleteInventoryItemsOfType( int Itemtype )
 
 /**
- * This deletes ONE item of the given type, like one bullet that has 
+ * This deletes ONE item of the given type, like one bullet that has
  * just been expended.
  */
 void DeleteOneInventoryItemsOfType(int Itemtype)
@@ -1131,7 +1131,7 @@ int MouseCursorIsInUserRect(int x, int y)
 };				// int MouseCursorIsInUserRect( int x , int y )
 
 /**
- * This function gives the x coordinate of the inventory square that 
+ * This function gives the x coordinate of the inventory square that
  * corresponds to the mouse cursor location given to the function.
  */
 int GetInventorySquare_x(int x)
@@ -1140,7 +1140,7 @@ int GetInventorySquare_x(int x)
 };				// int GetInventorySquare_x( x )
 
 /**
- * This function gives the y coordinate of the inventory square that 
+ * This function gives the y coordinate of the inventory square that
  * corresponds to the mouse cursor location given to the function.
  */
 int GetInventorySquare_y(int y)
@@ -1149,7 +1149,7 @@ int GetInventorySquare_y(int y)
 };				// int GetInventorySquare_y( y )
 
 /**
- * This function checks if a given item type could be dropped into the 
+ * This function checks if a given item type could be dropped into the
  * inventory grid at location x y.  Only the space is taken into account
  * and if other items block the way or not.
  */
@@ -1233,7 +1233,7 @@ static void drop_held_item(void)
 		pos.x = Me.pos.x + ux;
 		pos.y = Me.pos.y + uy;
 	}
-	
+
 	/* If we have an invalid drop position, attempt positions closer to Tux
 	 * until we have a good position. */
 	colldet_filter margin = WalkableWithMarginPassFilter;
@@ -1294,14 +1294,14 @@ static int HeldItemUsageRequirementsMet(void)
 	// Check validity of HeldItem
 	if (item_held_in_hand == NULL) {
 		DebugPrintf(0, "\nvoid HeldItemUsageRequirementsMet ( void ) : No item in inventory seems to be currently held in hand...");
-		return (FALSE);		
+		return (FALSE);
 	}
-	
+
 	return (ItemUsageRequirementsMet(item_held_in_hand, TRUE));
 };				// int HeldItemUsageRequirementsMet( void )
 
 /**
- * This function installs an item into a slot.  The given parameter is 
+ * This function installs an item into a slot.  The given parameter is
  * only the slot where this item should be installed.  The source item
  * will be found out from inside this function.  Very convenient.
  */
@@ -1312,13 +1312,13 @@ static void DropHeldItemToSlot(item * SlotItem)
 	// Check validity of held item
 	if (item_held_in_hand == NULL) {
 		DebugPrintf(0, "\nvoid DropHeldItemToSlot ( void ) : No item in inventory seems to be currently held in hand...");
-		return;		
+		return;
 	}
 
 	// If there is an old item in the slot, we make a held item on the
 	// floor out of it and also set the HeldItemType accordingly, so that
 	// after the new item was placed successfully, the old item will
-	// be out of all inventory slots, but still in the hand of the 
+	// be out of all inventory slots, but still in the hand of the
 	// player and ready to be put somewhere else
 	//
 	// But this may only be done of course, if the 'old item' is not
@@ -1329,7 +1329,7 @@ static void DropHeldItemToSlot(item * SlotItem)
 		MakeHeldFloorItemOutOf(SlotItem);
 	else
 		item_held_in_hand = NULL;
-	
+
 	// Move the item to the slot and mark it as no longer grabbed.
 	MoveItem(DropItemPointer, SlotItem);
 	play_item_sound(SlotItem->type, &Me.pos);
@@ -1337,9 +1337,9 @@ static void DropHeldItemToSlot(item * SlotItem)
 
 /**
  * This function looks for a free inventory index.  Since there are more
- * inventory indices than squares in the inventory grid, the function 
+ * inventory indices than squares in the inventory grid, the function
  * should always be able to find a free inventory index.  If not, this is
- * considered a severe program error, which will cause immediate 
+ * considered a severe program error, which will cause immediate
  * termination of FreedroidRPG.
  */
 int GetFreeInventoryIndex(void)
@@ -1397,7 +1397,7 @@ void drop_held_item_to_inventory(void)
 		Me.Inventory[free_inv_index].inventory_position.x = GetInventorySquare_x(current_pos.x);
 		Me.Inventory[free_inv_index].inventory_position.y = GetInventorySquare_y(current_pos.y);
 
-		// Now that we know that the item could be dropped directly to inventory 
+		// Now that we know that the item could be dropped directly to inventory
 		// without swapping any spaces, we can as well make the item
 		// 'not held in hand' immediately and return
 
@@ -1411,7 +1411,7 @@ void drop_held_item_to_inventory(void)
 
 		int i;
 		for (i = 0; i < MAX_ITEMS_IN_INVENTORY - 1; i++) {
-			// FIRST: Security check against segfaults:  It might happen that we 
+			// FIRST: Security check against segfaults:  It might happen that we
 			// delete the Dropitem itself while trying several items as candidates
 			// for removal.  This would cause testing dropability with a -1 item
 			// type and a SEGFAULT would result...
@@ -1419,7 +1419,7 @@ void drop_held_item_to_inventory(void)
 			if (&(Me.Inventory[i]) == item_held_in_hand)
 				continue;
 
-			// So we make a copy of each of the items we remove in order to 
+			// So we make a copy of each of the items we remove in order to
 			// try to create new space for the drop item.  After that, we can
 			// remove it.
 
@@ -1427,7 +1427,7 @@ void drop_held_item_to_inventory(void)
 			Me.Inventory[i].type = (-1);
 
 			if (ItemCanBeDroppedInInv(item_held_in_hand->type, GetInventorySquare_x(current_pos.x), GetInventorySquare_y(current_pos.y))) {
-				
+
 				// Copy the HelItem to the now free position
 				CopyItem(item_held_in_hand, &(Me.Inventory[free_inv_index]));
 				play_item_sound(item_held_in_hand->type, &Me.pos);
@@ -1469,9 +1469,9 @@ int get_floor_item_index_under_mouse_cursor(level **item_lvl)
 	// we use the item slot rectangles from the item texts.
 
 	if (XPressed() || GameConfig.show_item_labels) {
-		struct visible_level *vis_lvl, *n;
-		
-		BROWSE_VISIBLE_LEVELS(vis_lvl, n) {	
+		struct visible_level *vis_lvl = NULL, *n = NULL;
+
+		BROWSE_VISIBLE_LEVELS(vis_lvl, n) {
 			level *lvl = vis_lvl->lvl_pointer;
 
 			struct item *the_item = NULL;
@@ -1494,15 +1494,15 @@ int get_floor_item_index_under_mouse_cursor(level **item_lvl)
 		mouse_pos.x = translate_pixel_to_map_location(input_axis.x, input_axis.y, TRUE);
 		mouse_pos.y = translate_pixel_to_map_location(input_axis.x, input_axis.y, FALSE);
 		mouse_pos.z = Me.pos.z;
-		
+
 		gps virt_mouse_pos;
-		struct visible_level *vis_lvl, *n;
-		
+		struct visible_level *vis_lvl = NULL, *n = NULL;
+
 		BROWSE_VISIBLE_LEVELS(vis_lvl, n) {
-			
+
 			level *lvl = vis_lvl->lvl_pointer;
 			update_virtual_position(&virt_mouse_pos, &mouse_pos, lvl->levelnum);
-			
+
 			struct item *the_item = NULL;
 			int idx = 0;
 
@@ -1527,23 +1527,23 @@ int get_floor_item_index_under_mouse_cursor(level **item_lvl)
 void HandleInventoryScreen(void)
 {
 	point CurPos;
-	
+
 	struct {
 		int buttonidx;
 		item *slot;
 	} allslots[] = {		/*list of all slots and their associated item */
-			{ WEAPON_RECT_BUTTON, &(Me.weapon_item) }, 
+			{ WEAPON_RECT_BUTTON, &(Me.weapon_item) },
 			{ DRIVE_RECT_BUTTON, &(Me.drive_item) },
-		   	{ SHIELD_RECT_BUTTON, &(Me.shield_item) }, 
-			{ ARMOUR_RECT_BUTTON, &(Me.armour_item) }, 
+		   	{ SHIELD_RECT_BUTTON, &(Me.shield_item) },
+			{ ARMOUR_RECT_BUTTON, &(Me.armour_item) },
 			{ HELMET_RECT_BUTTON, &(Me.special_item) },
 	};
 
 	if (Me.energy <= 0) {
 		return;
 	}
-	
-	// If the inventory is not visible there is nothing to do 
+
+	// If the inventory is not visible there is nothing to do
 	if (GameConfig.Inventory_Visible == FALSE) {
 		item_held_in_hand = NULL;
 		return;
@@ -1570,12 +1570,12 @@ void HandleInventoryScreen(void)
 			Inv_GrabLoc.x = GetInventorySquare_x(CurPos.x);
 			Inv_GrabLoc.y = GetInventorySquare_y(CurPos.y);
 			Grabbed_InvPos = GetInventoryItemAt(Inv_GrabLoc.x, Inv_GrabLoc.y);
-			
+
 			if (Grabbed_InvPos == (-1)) {
 				/* No item under the cursor */
 				return;
 			}
-			
+
 			// At this point we know, that we have just grabbed something from the inventory
 			// So we set, that something should be displayed in the 'hand', and it should of
 			// course be the image of the item grabbed from inventory.
@@ -1584,7 +1584,7 @@ void HandleInventoryScreen(void)
 
 			return;
 		}
-		
+
 		// Case 1.2: The user left-clicks on one of the equipment slots
 		unsigned int i;
 
@@ -1601,7 +1601,7 @@ void HandleInventoryScreen(void)
 		int item_idx;
 		level *item_lvl = NULL;
 
-		if (MouseCursorIsInUserRect(GetMousePos_x(), GetMousePos_y()) 
+		if (MouseCursorIsInUserRect(GetMousePos_x(), GetMousePos_y())
 		   && (item_idx = get_floor_item_index_under_mouse_cursor(&item_lvl)) != -1) {
 			// Try to auto-put or auto-equip the item. If it's not possible,
 			// the item will be 'put in hand'.
@@ -1613,17 +1613,17 @@ void HandleInventoryScreen(void)
 			}
 			return;
 		}
-		
+
 		// No item was picked
 		return;
 	}
-	
+
 	// Case 2: The user left-clicks somewhere to drop a held item
 	//
 	if (MouseLeftClicked() && (item_held_in_hand != NULL)) {
-		
-		// The left-click is on the inventory grid -> we must see if 
-		// the item was dropped onto a correct inventory location and 
+
+		// The left-click is on the inventory grid -> we must see if
+		// the item was dropped onto a correct inventory location and
 		// should from then on not only no longer be in the players
 		// hand but also remain at the newly assigned position.
 		if (MouseCursorIsInInventoryGrid(CurPos.x, CurPos.y)) {
@@ -1635,19 +1635,19 @@ void HandleInventoryScreen(void)
 		// HUD weapon display.
 		if (MouseCursorIsOnButton(WEAPON_RECT_BUTTON, CurPos.x, CurPos.y)
 			|| MouseCursorIsOnButton(WEAPON_MODE_BUTTON, CurPos.x, CurPos.y)) {
-			
+
 			// Check if the item can be installed in the weapon slot
 			if (ItemMap[item_held_in_hand->type].slot != WEAPON_SLOT) {
 				append_new_game_message(_("You cannot fight with this!"));
 				return;
 			}
-			
+
 			// Check if the user has enough skill to use the weapon
 			if (!HeldItemUsageRequirementsMet()) {
 				append_new_game_message(_("You cannot yet fight with this!"));
 				return;
 			}
-	
+
 			// Now a weapon is about to be dropped to the weapons rectangle and obviously
 			// the stat requirements for usage are met.  But maybe this is a 2-handed weapon.
 			// In this case we need to do some extra check.  If it isn't a 2-handed weapon,
@@ -1656,23 +1656,23 @@ void HandleInventoryScreen(void)
 				DropHeldItemToSlot(&(Me.weapon_item));
 				return;
 			}
-			
-			// So, this is a 2-handed weapon. If the shield slot is just empty, 
-			// that makes matters a lot simpler, because then we can just drop 
-			// this 2-handed weapon to the weapon slot and all is fine, because 
+
+			// So, this is a 2-handed weapon. If the shield slot is just empty,
+			// that makes matters a lot simpler, because then we can just drop
+			// this 2-handed weapon to the weapon slot and all is fine, because
 			//no conflicts will result...
 			if (Me.shield_item.type == (-1)) {
 				DropHeldItemToSlot(&(Me.weapon_item));
 				return;
 			}
-			
+
 			// But if there is something in the shield slot too, then we need to be
 			// a bit more sophisticated and either swap the 2-handed item in for just
 			// the shield alone, which then will be held OR we need to refuse completely
 			// because there might be a weapon AND a shield equipped already.
 			if (Me.weapon_item.type == (-1)) {
 				// first of all check requirements again but without the shield :
-				// virtually remove the shield, compute requirements, if 
+				// virtually remove the shield, compute requirements, if
 				// everything is okay, proceed otherwise we inform the player
 				int shield_item_type = Me.shield_item.type;
 				Me.shield_item.type = (-1);
@@ -1693,19 +1693,19 @@ void HandleInventoryScreen(void)
 
 		// The user left-clicks in the shield's equipment slot
 		if (MouseCursorIsOnButton(SHIELD_RECT_BUTTON, CurPos.x, CurPos.y)) {
-			
+
 			// Check if the item can be installed in the shield slot
 			if (ItemMap[item_held_in_hand->type].slot != SHIELD_SLOT) {
 				append_new_game_message(_("You cannot equip this!"));
 				return;
 			}
-			
+
 			// Check if the user has enough skill to use the shield
 			if (!HeldItemUsageRequirementsMet()) {
 				append_new_game_message(_("You cannot equip this yet!"));
 				return;
 			}
-			
+
 			// Now if there isn't any weapon equipped right now, the matter
 			// is rather simple and we just need to do the normal drop-to-slot-thing.
 			if (Me.weapon_item.type == (-1)) {
@@ -1720,10 +1720,10 @@ void HandleInventoryScreen(void)
 				DropHeldItemToSlot(&(Me.shield_item));
 				return;
 			}
-			
-			// There is a 2-handed weapon equipped, so first of all check 
+
+			// There is a 2-handed weapon equipped, so first of all check
 			// requirements again but without the weapon :
-			// virtually remove the weapon, compute requirements, if 
+			// virtually remove the weapon, compute requirements, if
 			// everything is okay, proceed otherwise we inform the player
 			int weapon_item_type = Me.weapon_item.type;
 			Me.weapon_item.type = (-1);
@@ -1758,7 +1758,7 @@ void HandleInventoryScreen(void)
 			}
 		}
 
-		// The user left-clicks in the "UserRect" -> the item should 
+		// The user left-clicks in the "UserRect" -> the item should
 		// be dropped to the floor
 		if (MouseCursorIsInUserRect(CurPos.x, CurPos.y)) {
 			drop_held_item();
@@ -1769,19 +1769,19 @@ void HandleInventoryScreen(void)
 		return;
 	}
 
-	// Case 3: The user is right-clicking inside the inventory rectangle which 
+	// Case 3: The user is right-clicking inside the inventory rectangle which
 	// would mean for us that he is applying the item under the mouse button
 	//
 	if (MouseRightClicked()) {
 
 		if (Me.readied_skill == get_program_index_with_name("Repair equipment") && Me.busy_time <= 0) {
-			// Here we know, that the repair skill is selected, therefore we try to 
+			// Here we know, that the repair skill is selected, therefore we try to
 			// repair the item currently under the mouse cursor.
 			//
 			if (MouseCursorIsInInventoryGrid(CurPos.x, CurPos.y)) {
 				point Inv_GrabLoc;
 				int Grabbed_InvPos;
-				
+
 				Inv_GrabLoc.x = GetInventorySquare_x(CurPos.x);
 				Inv_GrabLoc.y = GetInventorySquare_y(CurPos.y);
 
@@ -1933,7 +1933,7 @@ int try_give_item(struct item *it)
 		if (ItemUsageRequirementsMet(it, TRUE)) {
 			// Now we're picking up a weapon while no weapon is equipped.  But still
 			// it might be a 2-handed weapon while there is some shield equipped.  Well,
-			// when that is the case, we refuse to put it directly to the proper slot, 
+			// when that is the case, we refuse to put it directly to the proper slot,
 			// otherwise we do it.
 
 			if (Me.shield_item.type == (-1)) {
@@ -1998,7 +1998,7 @@ int try_give_item(struct item *it)
 
 	// Maybe the item in question is something, that would best be placed inside
 	// the quick inventory.  If that is so, we try to put it there first.  If that
-	// isn't possible, it can still be placed somewhere outside of the quick 
+	// isn't possible, it can still be placed somewhere outside of the quick
 	// inventory later.
 
 	if ((ItemMap[it->type].inv_size.x == 1) &&
@@ -2070,13 +2070,13 @@ int item_is_currently_equipped(item * Item)
 
 enum slot_type get_slot_type_by_name(char *name)
 {
-	struct { 
+	struct {
 		const char *name;
 		enum slot_type slot;
-	} slots[] = {	{ "weapon", WEAPON_SLOT }, 
-					{"drive", 	BOOT_SLOT 	}, 
-					{"shield", 	SHIELD_SLOT }, 
-					{"armour", 	ARMOR_SLOT 	}, 
+	} slots[] = {	{ "weapon", WEAPON_SLOT },
+					{"drive", 	BOOT_SLOT 	},
+					{"shield", 	SHIELD_SLOT },
+					{"armour", 	ARMOR_SLOT 	},
 					{"special", HELM_SLOT 	}};
 
 	int i;

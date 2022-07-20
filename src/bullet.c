@@ -17,8 +17,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  */
 
@@ -52,7 +52,7 @@ static int move_this_bullet_and_check_its_collisions(struct bullet *current_bull
 
 	// In case of a bullet, which is not a melee weapon, we just move
 	// the bullets as specified in it's speed vector.  But of course we
-	// must make several stops and check for collisions in case the 
+	// must make several stops and check for collisions in case the
 	// planned step would be too big to crash into walls...
 	//
 	whole_step_size = max(fabsf(current_bullet->speed.x * Frame_Time()), fabsf(current_bullet->speed.y * Frame_Time()));
@@ -135,7 +135,7 @@ void do_melee_damage(void)
 			}
 
 			if (tg->energy <= 0) {
-				// our enemy is already dead ! 
+				// our enemy is already dead !
 				delete_melee_shot(i);
 				continue;
 			}
@@ -217,7 +217,7 @@ void delete_bullet(int bullet_number)
  * EXTERMINATORBLAST (explosion of an exterminator)
  *
  * start_blast will either use sound_name if passed, or if NULL will use
- * the default sound for the blast. 
+ * the default sound for the blast.
  */
 void start_blast(float x, float y, int lvl, int type, int dmg, int faction, char *sound_name)
 {
@@ -298,7 +298,7 @@ void animate_blasts(void)
 				delete_blast(i);
 				continue;
 			}
-			
+
 			if (Blastmap[current_blast->type].do_damage)
 				check_blast_collisions(current_blast);
 
@@ -390,8 +390,8 @@ void move_spells(void)
 
 		float minDist = (0.2 + current_spell->spell_radius) * (0.2 + current_spell->spell_radius);
 
-		struct visible_level *visible_lvl, *n;
-		enemy *erot, *nerot;
+		struct visible_level *visible_lvl = NULL, *n = NULL;
+		enemy *erot = NULL, *nerot = NULL;
 		BROWSE_NEARBY_VISIBLE_LEVELS(visible_lvl, n, minDist) {
 			BROWSE_LEVEL_BOTS_SAFE(erot, nerot, visible_lvl->lvl_pointer->levelnum) {
 				update_virtual_position(&erot->virt_pos, &erot->pos, Me.pos.z);
@@ -407,7 +407,7 @@ void move_spells(void)
 						continue;
 
 					// Let's see if that enemy has a direction, that is still
-					// active for the spell. 
+					// active for the spell.
 					// We get the angle in radians but with zero at the 'north' direction.
 					// And we convert the angle to a normal direction index
 
@@ -418,7 +418,7 @@ void move_spells(void)
 						// so do not check if the spell is active or not
 						direction_index = -1;
 					} else {
-						// nota : Y axis is toward down in fdrpg 
+						// nota : Y axis is toward down in fdrpg
 						angle = atan2(-displacement.y, displacement.x);	// -M_PI <= Angle <= M_PI
 						if (angle < 0)
 							angle += 2 * M_PI;	// 0 <= Angle <= 2 * M_PI
@@ -720,7 +720,7 @@ int check_bullet_collisions(struct bullet *current_bullet)
 	// Store bullet's current position, in order to restore it after level dependent code
 
 	gps bullet_actual_pos = current_bullet->pos;
-	struct visible_level *visible_lvl, *next_lvl;
+	struct visible_level *visible_lvl = NULL, *next_lvl = NULL;
 
 	BROWSE_VISIBLE_LEVELS(visible_lvl, next_lvl) {
 		level *lvl = visible_lvl->lvl_pointer;
@@ -756,7 +756,7 @@ RESTORE:
  * This function checks for collisions of blasts with bullets and droids
  * and delivers damage to the hit objects according to how long they have
  * been in the blast.
- * 
+ *
  * Maybe even some text like 'Ouch, this was hot' might be generated.
  */
 void check_blast_collisions(struct blast *current_blast)
@@ -769,8 +769,8 @@ void check_blast_collisions(struct blast *current_blast)
 	// The blast is on a visible level, and we are only concerned with the effect
 	// of the blast on any potentially visible enemy.
 
-	struct visible_level *visible_lvl, *n;
-	enemy *erot, *nerot;
+	struct visible_level *visible_lvl = NULL, *n = NULL;
+	enemy *erot = NULL, *nerot = NULL;
 	gps blast_vpos;
 
 	BROWSE_VISIBLE_LEVELS(visible_lvl, n) {

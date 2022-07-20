@@ -1,8 +1,8 @@
-/* 
+/*
  *
  *   Copyright (c) 1994, 2002, 2003 Johannes Prix
  *   Copyright (c) 1994, 2002 Reinhard Prix
- *   Copyright (c) 2004-2010 Arthur Huillet 
+ *   Copyright (c) 2004-2010 Arthur Huillet
  *
  *
  *  This file is part of Freedroid
@@ -18,8 +18,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -58,22 +58,22 @@ int *light_strength_buffer = NULL;
  * ------------------------------------------------
  * Foreword to the 'light interpolation' algorithm
  * ------------------------------------------------
- * 
+ *
  * Some data (such as minimum_light_value) used to create the 'darkness map'
  * are level dependants. If several levels are displayed (i.e. when Tux is
  * near a level's border), we want to avoid abrupt light changes at level
  * boundaries. The call to soften_light_distribution() is not enough to smooth
  * those changes in a correct way. A better method is to interpolate the level
  * dependent values near the level boundaries.
- * 
+ *
  * For each tile of the darkness map there are several cases :
- * 1) the darkness tile is near a boundary's corner, which can be connected to 
+ * 1) the darkness tile is near a boundary's corner, which can be connected to
  *    0, 1, 2 or 3 neighbors, needing no interpolation or an interpolation
  *    between up to 4 values (barycentric interpolation).
  * 2) the tile is near a boundary's line, with 0 or 1 neighbor, needing no
  *    no interpolation or an interpolation between 2 values.
  * 3) the tile is far from any level boundary, so no interpolation is needed.
- *    
+ *
  * Those different cases thus depend on where the darkness tile is, relatively
  * to the levels boundaries, but they also depend on the levels neighborhood.
  * Many darkness tiles thus share some properties and interpolation parameters.
@@ -81,16 +81,16 @@ int *light_strength_buffer = NULL;
  * for each darkness tile we will use a simple switch with 3 cases :
  * - no interpolation
  * - interpolation between 2 pre-computed values
- * - interpolation between 4 pre-computed values 
- * 
+ * - interpolation between 4 pre-computed values
+ *
  * ==================
  * Interpolation Mesh
  * ==================
- * 
+ *
  * We thus have a given DATA (such as 'minimum_light_value'), which has a
  * specific VALUE on each level. Let's use the following diagram, showing
  * the 8 potential neighbors around the current level (denoted 'C'):
- * 
+ *
  * +----+----+----+  We call 'c_val', the VALUE of the DATA on the Current level.
  * | NW | N  | NE |  We call 'nw_val', the VALUE of the DATA on the North-West
  * +----+----+----+  neighbor. And so on...
@@ -98,97 +98,97 @@ int *light_strength_buffer = NULL;
  * +----+----+----+  Conceptually, this defines a "quad-mesh", with a VALUE for
  * | SW | S  | SE |  each quad. Our aim is to interpolate those VALUES on the
  * +----+----+----+  quad-mesh, to have a smooth variation of the DATA.
- * 
+ *
  * However, given the semantic of the DATAs, we only want to interpolate on a
  * small area near the levels' boundaries. So, we refine *each* quad into a
  * set of quads (that we will call AREAs):
- * 
- *   |     (vc)   |(vd)   
- * --+--+------+--+--    
+ *
+ *   |     (vc)   |(vd)
+ * --+--+------+--+--
  *   |  |      |  |      In the central AREA there will be no interpolation.
- *   +--+------+--+       
+ *   +--+------+--+
  *   |  |  (va)|  |(vb)  In the side AREAs, there will be an interpolation with
  *   |  |      |  |      the corresponding direct neighbor.
- *   |  |      |  |      
+ *   |  |      |  |
  *   |  |  (ve)|  |(vf)  In the corner AREAs, there will be an interpolation
  *   +--+------+--+      with all the surrounding neighbors.
- *   |  |      |  |      
- * --+--+------+--+--    
+ *   |  |      |  |
+ * --+--+------+--+--
  *   |            |
- * 
- * We now need to define the VALUE of the DATA at each vertex of the AREAs. 
- * 
+ *
+ * We now need to define the VALUE of the DATA at each vertex of the AREAs.
+ *
  * Let's take the north-east corner AREA and the east side AREA as an example.
  * We call 'A', the VALUE at vertex 'va'.
  * We call 'B', the VALUE at vertex 'vb', and so on.
- *   
+ *
  * The vertex 'va' is at the boundary of the central AREA. So we have:
  *      A = c_val
- * 
+ *
  * The vertex 'vb' is at a level boundary, that is at *the middle* of the current
- * level and the eastern neighbor. The VALUE at 'vb' is thus the *middle* of 
+ * level and the eastern neighbor. The VALUE at 'vb' is thus the *middle* of
  * the VALUE at current level (c_val) and the VALUE at eastern neighbor (e_val).
  * So we have:
  *     B = 1/2 * (c_val + e_val)
- * 
+ *
  * In the same way, we have:
  *     C = 1/2 * (c_val + n_val)
  *
- * The vertex 'vd' is at *the center* of 4 levels, so at the *center* of the 
+ * The vertex 'vd' is at *the center* of 4 levels, so at the *center* of the
  * VALUEs of the DATA in those 4 levels. So we have:
  *     D = 1/4 * (c_val + n_val + ne_val + e_val)
  *
  * The vertices 've' and 'vf' are equivalent to 'va' and 'vb', so:
  *     E = A = c_val
  *     F = B = 1/2 * (c_val + e_val)
- *     
+ *
  * =============================
  * Application to "darkness map"
  * =============================
- * 
+ *
  * To compute the VALUE of the DATA on a specific darkness tile, we need to find
  * in which AREA the tile is lying. If the tile is:
- * 
+ *
  * - in the central AREA, no interpolation is needed,
- * 
+ *
  * - in a side AREA, we can easily see that we only need an interpolation along
  *   one axis between 2 values (in our east side AREA example, the interpolation
  *   is between the 'A' and 'B' VALUES),
- *   
+ *
  * - in a corner AREA, a 4-values interpolation is needed (in our north-east
  *   corner AREA example, the interpolation is between 'A', 'B', 'C' and 'D').
- * 
+ *
  * As a result, a given level can thus be defined by a 3x3 matrix of data
- * structures (one per AREA), and for each AREA we have to store the kind of 
+ * structures (one per AREA), and for each AREA we have to store the kind of
  * interpolation to apply, and the VALUEs needed to compute this interpolation.
  * This data structure is called "Interpolation Data Storage".
- * 
+ *
  * ================================
  * Interpolation Data Storage (IDS)
  * ================================
- * 
- * If we look at our example (east side AREA and north-east corner AREA), 
- * we easily see that the 'B' value is in common to the two AREAs. 
- * In the same way, the 'C' value is in common to the north side AREA and the 
+ *
+ * If we look at our example (east side AREA and north-east corner AREA),
+ * we easily see that the 'B' value is in common to the two AREAs.
+ * In the same way, the 'C' value is in common to the north side AREA and the
  * north-east corner AREA. And so on...
- * 
+ *
  * The 'A' VALUE (this is the value inside the current level) is common to
- * every AREA, and will be stored in the central IDS (that is the IDS 
+ * every AREA, and will be stored in the central IDS (that is the IDS
  * associated to the central AREA).
  *
- * If we store 'B' in the eastern IDS, and 'C' in the northern IDS, then 
- * only the 'D' VALUE (that is the 'diagonal' value) has to be stored in the 
+ * If we store 'B' in the eastern IDS, and 'C' in the northern IDS, then
+ * only the 'D' VALUE (that is the 'diagonal' value) has to be stored in the
  * north-eastern IDS. Other values can be retrieved from the other IDSs.
- * 
- * As a conclusion, for each of the 9 AREAs, we only need to store one VALUE 
+ *
+ * As a conclusion, for each of the 9 AREAs, we only need to store one VALUE
  * along with the kind of interpolation to apply.
- * 
+ *
  * Hence the following definitions:
- * 
+ *
  */
 
 /* Interpolation type: Defines the axis along which an interpolation is needed */
-enum interpolation_methods { 
+enum interpolation_methods {
 	NO_INTERP = 0,	 // No interpolation is needed
 	ALONG_X   = 1,	 // Interpolation with the neighbor along X axis is needed
 	ALONG_Y   = 2,	 // Interpolation with the neighbor along Y axis is needed
@@ -201,10 +201,10 @@ struct interpolation_data_cell
 	/* Interpolation values */
 	float minimum_light_value;
 	float light_bonus;
-	
+
 	/* Interpolation type */
 	enum interpolation_methods interpolation_method;
-	
+
 	/* prepare_light_interpolation() Internal use */
 	float sum;
 };
@@ -217,7 +217,7 @@ static struct interpolation_data_cell interpolation_data[MAX_LEVELS][3][3];
  * This function adds interpolation values to some interpolation
  * areas.
  */
-static void add_interpolation_values(int curr_id, int ngb_id, 
+static void add_interpolation_values(int curr_id, int ngb_id,
 		int starty, int endy, int startx, int endx, enum interpolation_methods method)
 {
 	if (ngb_id != -1) {
@@ -236,33 +236,33 @@ static void add_interpolation_values(int curr_id, int ngb_id,
 
 /*
  * This function prepares some data structures used later to accelerate the
- * creation of the 'darkness map'. 
+ * creation of the 'darkness map'.
  * This function is called only once per frame.
  */
 static void prepare_light_interpolation()
 {
-	struct visible_level *visible_lvl, *next_lvl;
-	
-	// We only care of the visible levels 
+	struct visible_level *visible_lvl = NULL, *next_lvl = NULL;
+
+	// We only care of the visible levels
 
 	BROWSE_VISIBLE_LEVELS(visible_lvl, next_lvl) {
-		
+
 		struct level *curr_lvl = visible_lvl->lvl_pointer;
 		int curr_id  = curr_lvl->levelnum;
-		
+
 		// Step 1
 		//   Initialize all interpolation areas with the 'c_val'
 
 		int x, y;
 		for (y = 0; y < 3; y++) {
 			for (x = 0; x < 3; x++) {
-				interpolation_data[curr_id][y][x].light_bonus = curr_lvl->light_bonus; 
+				interpolation_data[curr_id][y][x].light_bonus = curr_lvl->light_bonus;
 				interpolation_data[curr_id][y][x].minimum_light_value = curr_lvl->minimum_light_value;
 				interpolation_data[curr_id][y][x].sum = 1;
 				interpolation_data[curr_id][y][x].interpolation_method = NO_INTERP;
 			}
 		}
-		
+
 		// Step 2
 		//   For each existing neighbor, add its data to the related areas
 
@@ -274,13 +274,13 @@ static void prepare_light_interpolation()
 		add_interpolation_values(curr_id, NEIGHBOR_ID_NE(curr_id), 0, 0, 2, 2, ALONG_XY);
 		add_interpolation_values(curr_id, NEIGHBOR_ID_SW(curr_id), 2, 2, 0, 0, ALONG_XY);
 		add_interpolation_values(curr_id, NEIGHBOR_ID_SE(curr_id), 2, 2, 2, 2, ALONG_XY);
-		
+
 		// Step 3
 		//   Compute the mean of each value
 
 		for (y = 0; y < 3; y++) {
 			for (x = 0; x < 3; x++) {
-				interpolation_data[curr_id][y][x].light_bonus /= interpolation_data[curr_id][y][x].sum; 
+				interpolation_data[curr_id][y][x].light_bonus /= interpolation_data[curr_id][y][x].sum;
 				interpolation_data[curr_id][y][x].minimum_light_value /= interpolation_data[curr_id][y][x].sum;
 				interpolation_data[curr_id][y][x].sum = 1;
 			}
@@ -293,14 +293,14 @@ static void prepare_light_interpolation()
  * at a given gps position.
  * (for a global comment on light interpolation see 'Foreword to light interpolation
  *  algorithm')
- * 
- * Some Notes: 
- * 1) The interpolation is computed in an area inside the level's boundaries. 
- *    The width of this area is INTERP_WIDTH. If the current point is inside such 
- *    an area, an interpolation factor is computed. 
- *    The interpolation factor is defined as : 
+ *
+ * Some Notes:
+ * 1) The interpolation is computed in an area inside the level's boundaries.
+ *    The width of this area is INTERP_WIDTH. If the current point is inside such
+ *    an area, an interpolation factor is computed.
+ *    The interpolation factor is defined as :
  *              distance_to_level_boundary / INTERP_WIDTH.
- *    The range of this factor is thus [0, 1] ('O' if the point is at the level 
+ *    The range of this factor is thus [0, 1] ('O' if the point is at the level
  *    boundary).
  * 2) We assume that the level's size, along one given axis, is always greater
  *    than 2*INTER_WIDTH. We thus never have to interpolate the current level
@@ -316,14 +316,14 @@ static void interpolate_light_data(gps *pos, struct interpolation_data_cell *dat
 	float Y = pos->y;
 	int lvl_id = pos->z;
 	level *lvl = curShip.AllLevels[pos->z];
-	
+
 	// Interpolation macros
-	
+
 #	define INTERP_2_VALUES(dir, field) \
 	(                                                  \
 	       interp_factor_##dir  * center_area->field + \
 	  (1.0-interp_factor_##dir) *   curr_area->field   \
-	) 
+	)
 
 #	define INTERP_4_VALUES(field) \
 	(                                                                       \
@@ -336,13 +336,13 @@ static void interpolate_light_data(gps *pos, struct interpolation_data_cell *dat
 	// Compute the 'N/C/S' and 'W/C/E' indices of the area containing
 	// the current position, compute the interpolation factors,
 	// and get the associated interpolation data cell.
-	
+
 	int area_x = 1; // default value : center
 	int area_y = 1; // default value : center
 	float interp_factor_x = 1.0; // Interpolation factor along X axis
 	float interp_factor_y = 1.0; // Interpolation factor along Y axis
-	struct interpolation_data_cell *curr_area; 
-	
+	struct interpolation_data_cell *curr_area;
+
 	if (X < INTERP_WIDTH) {
 		area_x = 0;
 		interp_factor_x = INTERP_FACTOR(X);
@@ -359,10 +359,10 @@ static void interpolate_light_data(gps *pos, struct interpolation_data_cell *dat
 		interp_factor_y = INTERP_FACTOR(lvl->ylen - Y);
 	}
 
-	curr_area = &interpolation_data[lvl_id][area_y][area_x]; 
+	curr_area = &interpolation_data[lvl_id][area_y][area_x];
 
 	// And now, the interpolation
-	
+
 	switch (curr_area->interpolation_method) {
 	case NO_INTERP:
 		data->minimum_light_value = curr_area->minimum_light_value;
@@ -370,23 +370,23 @@ static void interpolate_light_data(gps *pos, struct interpolation_data_cell *dat
 		break;
 	case ALONG_X:
 		{
-			struct interpolation_data_cell *center_area = &interpolation_data[lvl_id][1][1]; 
+			struct interpolation_data_cell *center_area = &interpolation_data[lvl_id][1][1];
 			data->minimum_light_value = INTERP_2_VALUES(x, minimum_light_value);
 			data->light_bonus = INTERP_2_VALUES(x, light_bonus);
 		}
 		break;
 	case ALONG_Y:
 		{
-			struct interpolation_data_cell *center_area = &interpolation_data[lvl_id][1][1]; 
+			struct interpolation_data_cell *center_area = &interpolation_data[lvl_id][1][1];
 			data->minimum_light_value = INTERP_2_VALUES(y, minimum_light_value);
 			data->light_bonus = INTERP_2_VALUES(y, light_bonus);
 		}
 		break;
 	default:
 		{	// In any other case, a 4-values interpolation was prepared
-			struct interpolation_data_cell *center_area  = &interpolation_data[lvl_id][1][1]; 
-			struct interpolation_data_cell *xborder_area = &interpolation_data[lvl_id][1][area_x]; 
-			struct interpolation_data_cell *yborder_area = &interpolation_data[lvl_id][area_y][1]; 
+			struct interpolation_data_cell *center_area  = &interpolation_data[lvl_id][1][1];
+			struct interpolation_data_cell *xborder_area = &interpolation_data[lvl_id][1][area_x];
+			struct interpolation_data_cell *yborder_area = &interpolation_data[lvl_id][area_y][1];
 			data->minimum_light_value = INTERP_4_VALUES(minimum_light_value);
 			data->light_bonus = INTERP_4_VALUES(light_bonus);
 		}
@@ -397,7 +397,7 @@ static void interpolate_light_data(gps *pos, struct interpolation_data_cell *dat
 #	undef INTERP_4_VALUES
 #	undef INTERP_FACTOR
 #	undef INTERP_WIDTH
-	
+
 } // static void interpolate_light_data(...)
 
 /**
@@ -463,7 +463,7 @@ void LightRadiusInit()
 	// The center of the light_radius texture will be translated along the Y axe,
 	// to simulate a light coming from bot/tux heads, instead of their feet.
 
-	// First: convert a universal unit into a screen height. 
+	// First: convert a universal unit into a screen height.
 	// But because the UNIVERSAL_COORD macros currently works only for 4:3 screen,
 	// we take the real screen ration into account
 	//
@@ -518,7 +518,7 @@ void update_light_list()
 	int glue_index;
 	int light_strength;
 	int obs_index;
-	int map_x, map_y;	
+	int map_x, map_y;
 	struct obstacle *emitter;
 	int blast_idx;
 	struct gps me_vpos;
@@ -579,14 +579,14 @@ void update_light_list()
 	// For each visible level, compute the intersection between the scanned area
 	// and the level's limits, and search light emitting obstacles inside this
 	// intersection
-	BROWSE_VISIBLE_LEVELS(visible_lvl, next_lvl) {	
+	BROWSE_VISIBLE_LEVELS(visible_lvl, next_lvl) {
 		curr_lvl = visible_lvl->lvl_pointer;
 		curr_id  = curr_lvl->levelnum;
 
 		// transform area gps relatively to current level
 		update_virtual_position(&intersection_start, &area_start, curr_id);
 		update_virtual_position(&intersection_end, &area_end, curr_id);
-		
+
 		// intersect with level's limits
 		intersection_start.x = max(intersection_start.x, 0);
 		intersection_start.y = max(intersection_start.y, 0);
@@ -626,12 +626,12 @@ void update_light_list()
 	// Second, we add the potentially visible bots
 
 	struct enemy *erot;
-	
-	BROWSE_VISIBLE_LEVELS(visible_lvl, next_lvl) {	
+
+	BROWSE_VISIBLE_LEVELS(visible_lvl, next_lvl) {
 		curr_lvl = visible_lvl->lvl_pointer;
 		curr_id  = curr_lvl->levelnum;
 		update_virtual_position(&me_vpos, &Me.pos, curr_id);
-		
+
 		BROWSE_LEVEL_BOTS(erot, curr_id) {
 			if (fabsf(me_vpos.x - erot->pos.x) >= FLOOR_TILES_VISIBLE_AROUND_TUX)
 				continue;
@@ -669,7 +669,7 @@ static int calculate_light_strength(gps *cell_vpos)
 		return 0;
 
 	interpolate_light_data(&cell_rpos, &ilights);
-	
+
 	// Interpolated ambient light
 	// Full dark:  final_light_strength = 0
 	// Max bright: final_light_strength = minimum light value
@@ -685,16 +685,16 @@ static int calculate_light_strength(gps *cell_vpos)
 	// 1) The light_strength value of a light source is a relative value, to
 	//    be added to the level's ambient light strength. We thus define:
 	//        Absolute_intensity = level_ambient + source_strength
-	//    Moreover, the light emitted from a light source decreases linearly 
-	//    with the distance. So, at a given target position, the perceived 
-	//    intensity of a light is: 
+	//    Moreover, the light emitted from a light source decreases linearly
+	//    with the distance. So, at a given target position, the perceived
+	//    intensity of a light is:
 	//        I = Absolute_intensity - 4.0 * distance(Light_pos, Cell_vpos)
 	//
 	//    Note on the 4.0 factor :
 	//      This factor is used to reduce the size of the radius of the "light
 	//      circle" around the light source.
 	//
-	// 2) The code loops on each light source, and keeps the maximum light 
+	// 2) The code loops on each light source, and keeps the maximum light
 	//    strength. It does not accumulate light intensity.
 	//
 	// So the initial code is :
@@ -707,8 +707,8 @@ static int calculate_light_strength(gps *cell_vpos)
 	// 6: }
 	//
 	// However, this function is time-critical, simply because it is called many
-	// times at every frame. Therefore we want to avoid the sqrt() needed to compute 
-	// a distance, if the test fails, and instead use squared values as much as 
+	// times at every frame. Therefore we want to avoid the sqrt() needed to compute
+	// a distance, if the test fails, and instead use squared values as much as
 	// possible.
 	//
 	// So, lines 3 and 4 are transformed into:
@@ -724,7 +724,7 @@ static int calculate_light_strength(gps *cell_vpos)
 	//
 	// 1: foreach this_light in (set of lights) {
 	// 2:   if ((4.0 * distance)^2 < (Abs_intensity - final_strength)^2) {
-	// 3:     if (this_light is visible from the target) 
+	// 3:     if (this_light is visible from the target)
 	// 4:       final_strength = Abs_intensity - 4.0 * distance;
 	// 5:   }
 	// 6: }
@@ -733,7 +733,7 @@ static int calculate_light_strength(gps *cell_vpos)
 	//
 	for (i = 0; i < light_sources.size; i++) {
 		float absolute_intensity = ilights.minimum_light_value + lights[i].strength;
-		
+
 		// Optimization 1:
 		// If absolute_intensity is lower than current intensity, we do not take
 		// the light source into account. It means that we do not accumulate
@@ -760,7 +760,7 @@ static int calculate_light_strength(gps *cell_vpos)
 		}
 
 		// New final_light_strength
-		final_light_strength = absolute_intensity - 4.0 * sqrt(squared_dist); 
+		final_light_strength = absolute_intensity - 4.0 * sqrt(squared_dist);
 
 		// Full bright, no need to test any other light source
 		if (final_light_strength >= (NUMBER_OF_SHADOW_IMAGES - 1))
@@ -776,11 +776,11 @@ static int calculate_light_strength(gps *cell_vpos)
  * set up, the shadows usually are very 'hard' in the sense that extreme
  * darkness can be right next to very bright light.  This does not look
  * very real.  Therefore we 'soften' the shadow a bit, by allowing only
- * a limited step size from one shadow square to the next.  Of course 
+ * a limited step size from one shadow square to the next.  Of course
  * these changes have to be propagated, so we run through the whole
- * shadow grid twice and propagate in 'both' directions.  
+ * shadow grid twice and propagate in 'both' directions.
  * The hardness of the shadow can be controlled in the definition of
- * MAX_LIGHT_STEP.  Higher values will lead to harder shadows, while 
+ * MAX_LIGHT_STEP.  Higher values will lead to harder shadows, while
  * lower values will give very smooth and fluorescent shadows propagating
  * even a bit under walls (which doesn't look too good).  3 seems like
  * a reasonable setting.
@@ -858,7 +858,7 @@ void set_up_light_strength_buffer(int *decay_x, int *decay_y)
 	if (*decay_y > 0) *decay_y -= (int)LightRadiusConfig.scale_factor;
 
 	prepare_light_interpolation();
-	
+
 	for (y = 0; y < LightRadiusConfig.cells_h; y++) {
 		for (x = 0; x < LightRadiusConfig.cells_w; x++) {
 			screen_x = (int)(x * LightRadiusConfig.scale_factor) - UserCenter_x + *decay_x;
@@ -924,7 +924,7 @@ int get_light_strength_screen(int x, int y)
 
 /**
  * This function should blit the shadows on the floor, that are used to
- * generate the impression of a 'light radius' around the players 
+ * generate the impression of a 'light radius' around the players
  * character.
  *
  * decay_x and decay_y does translate the textured rectangle to avoid
@@ -948,8 +948,8 @@ void blit_classic_SDL_light_radius(int decay_x, int decay_y)
 	 *  /\/\/\  First half of first line
 	 *  \/\/\/\
 	 *   \/\/\/ Second half of first line
-	 *   
-	 *  The ligth_strength value to apply is computed at the center of each tile. 
+	 *
+	 *  The ligth_strength value to apply is computed at the center of each tile.
 	 */
 
 	// Width and height of the tiles
@@ -982,7 +982,7 @@ void blit_classic_SDL_light_radius(int decay_x, int decay_y)
 	int l, c;
 	SDL_Rect target_rectangle;	// Used to store the position of the blitted tile, centered on (center_x,center_y)
 
-	// Note : target_rectangle is modified by the SDL_BlitSurface call, 
+	// Note : target_rectangle is modified by the SDL_BlitSurface call,
 	// so it has to be reinitialized after each call
 
 	// First line
@@ -1035,19 +1035,19 @@ void blit_classic_SDL_light_radius(int decay_x, int decay_y)
 /**
  * FreedroidRPG does some light/shadow computations and then draws some
  * shadows/light on the floor.  There is a certain amount of light around
- * the Tux.  This light is called the 'light radius'.  
- * 
+ * the Tux.  This light is called the 'light radius'.
+ *
  * This function is supposed to compute all light/shadow values for the
- * the floor and then draw the light radius on the floor.  Note, that 
+ * the floor and then draw the light radius on the floor.  Note, that
  * this is something completely different from the prerendered shadows
- * that are to be blitted for obstacles, when they are exposed to 
+ * that are to be blitted for obstacles, when they are exposed to
  * daylight.
  */
 void blit_light_radius(void)
 {
 	int decay_x, decay_y;
 
-	// Before making any reference to the light, it's best to 
+	// Before making any reference to the light, it's best to
 	// first calculate the values in the light buffer, because
 	// those will be used when drawing the light radius.
 	//

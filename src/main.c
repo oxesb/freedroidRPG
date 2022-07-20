@@ -1,8 +1,8 @@
-/* 
+/*
  *
  *   Copyright (c) 1994, 2002, 2003 Johannes Prix
  *   Copyright (c) 1994, 2002 Reinhard Prix
- *   Copyright (c) 2004-2007 Arthur Huillet 
+ *   Copyright (c) 2004-2007 Arthur Huillet
  *
  *
  *  This file is part of Freedroid
@@ -18,8 +18,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -79,7 +79,7 @@ void Game()
 
 	// Reset tooltips.
 	widget_set_tooltip(NULL, NULL);
-	
+
 	while ((!GameOver && !QuitProgram)) {
 		game_status = INSIDE_GAME;
 
@@ -120,7 +120,7 @@ void Game()
 		}
 
 		ComputeFPSForThisFrame();
-	}			// while !GameOver 
+	}			// while !GameOver
 }
 
 /* -----------------------------------------------------------------
@@ -139,16 +139,16 @@ int main(int argc, char *argv[])
 	gps_transform_map_dirty_flag = TRUE;
 
 	/*
-	 *  Parse command line and set global switches 
-	 *  this function exits program when error, so we don't need to 
+	 *  Parse command line and set global switches
+	 *  this function exits program when error, so we don't need to
 	 *  check its success  (dunno if that's good design?)
 	 */
-	sound_on = TRUE;	// default value, can be overridden by command-line 
-	use_open_gl = TRUE;	// default value, can be overridden by command-line 
-	start_editor = FALSE;	// default value, can be overridden by command-line 
+	sound_on = TRUE;	// default value, can be overridden by command-line
+	use_open_gl = TRUE;	// default value, can be overridden by command-line
+	start_editor = FALSE;	// default value, can be overridden by command-line
 	load_saved = FALSE;	// default value, can be overridden by command-line
 	saved_game_name = NULL;
-	debug_level = -1;	// -1: shut up all debug ... 0=no debug 1=first debug level (at the moment=all) 
+	debug_level = -1;	// -1: shut up all debug ... 0=no debug 1=first debug level (at the moment=all)
 
 	InitFreedroid(argc, argv);	// Initialisation of global variables and arrays
 
@@ -193,7 +193,7 @@ int main(int argc, char *argv[])
 					PLEASE_INFORM | IS_FATAL);
 			break;
 		}
-	}			// while !QuitProgram 
+	}			// while !QuitProgram
 
 	LightRadiusClean();
 
@@ -202,16 +202,16 @@ int main(int argc, char *argv[])
 };				// int main ( void )
 
 /**
- * Some bots might be frozen and some might be poisoned, some might still 
+ * Some bots might be frozen and some might be poisoned, some might still
  * have a 'firewait' or a normal wait or a paralysis.  Other bots have
  * a text, that is being displayed and that will timeout at some point.
  *
- * In any case those counteres must be updated, which is what this 
+ * In any case those counteres must be updated, which is what this
  * function is supposed to do.
  *
- * NOTE:  This whole updating business is a bit in-efficient.  It might 
+ * NOTE:  This whole updating business is a bit in-efficient.  It might
  *        be better to use some sort of 'game_time' for this and then
- *        not use 'duration left' but rather 'end time' for all these 
+ *        not use 'duration left' but rather 'end time' for all these
  *        poison, paralysis, etc. effects.  That way, we would be able
  *        be skip this whole counter advancement here...
  *
@@ -261,7 +261,7 @@ void update_timeouts_for_bots_on_level(int level_num, float latest_frame_time)
 		this_bot->TextVisibleTime += latest_frame_time;
 	}
 
-};				// void update_timeouts_for_bots_on_level ( int level_num ) 
+};				// void update_timeouts_for_bots_on_level ( int level_num )
 
 /* -----------------------------------------------------------------
  * This function updates counters and is called ONCE every frame.
@@ -294,8 +294,8 @@ void UpdateCountersForThisFrame()
 	// Maybe some items are just thrown in the air and still in the air.
 	// We need to keep track of the time the item has spent in the air so far.
 	//
-	struct visible_level *vis_lvl, *n;
-	
+	struct visible_level *vis_lvl = NULL, *n = NULL;
+
 	BROWSE_VISIBLE_LEVELS(vis_lvl, n) {
 		level *lvl = vis_lvl->lvl_pointer;
 		struct item *the_item = NULL;
@@ -307,14 +307,14 @@ void UpdateCountersForThisFrame()
 				the_item->throw_time = 0;
 		}
 	}
-	
+
 	// We stop here to prevent animation glitches when Tux is dead
 	if (GameOver)
-		return;	
+		return;
 
 	// Some bots might be frozen and some might be poisoned, some
 	// might still have a 'firewait' or a normal wait or a paralysis.
-	// In any case those counters must be updated, but we'll only to 
+	// In any case those counters must be updated, but we'll only to
 	// that for the Tux current level (at present).
 	//
 	for (level_num = 0; level_num < curShip.num_levels; level_num++) {
@@ -435,7 +435,7 @@ void UpdateCountersForThisFrame()
 			}
 
 		} else {
-			// When the Tux is right on this level, there is absolutely no need 
+			// When the Tux is right on this level, there is absolutely no need
 			// for respawning anything...
 			//
 			Me.time_since_last_visit_or_respawn[i] = 0;
@@ -450,6 +450,6 @@ void UpdateCountersForThisFrame()
 		Me.running_power = Me.max_running_power;
 	}
 
-};				// void UpdateCountersForThisFrame(...) 
+};				// void UpdateCountersForThisFrame(...)
 
 #undef _main_c

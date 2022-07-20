@@ -1,9 +1,9 @@
-/* 
+/*
  *   Copyright (c) 1994, 2002, 2003 Johannes Prix
  *   Copyright (c) 1994, 2002 Reinhard Prix
- *   Copyright (c) 2004-2010 Arthur Huillet 
+ *   Copyright (c) 2004-2010 Arthur Huillet
  *
- *  
+ *
  *  This file is part of Freedroid
  *
  *  Freedroid is free software; you can redistribute it and/or modify
@@ -17,16 +17,16 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
 
 /**
- * This file contains all enemy related functions.  This includes their 
- * whole behavior, healing, initialization, shuffling them around after 
- * elevator-transitions, deleting them, collisions of enemies among 
+ * This file contains all enemy related functions.  This includes their
+ * whole behavior, healing, initialization, shuffling them around after
+ * elevator-transitions, deleting them, collisions of enemies among
  * themselves, their fireing, animation and such.
  */
 
@@ -200,7 +200,7 @@ int teleport_to_random_waypoint(enemy *erot, level *this_level, char *wp_used)
 
 /**
  * This function teleports an enemy to a new position on the
- * map. 
+ * map.
  */
 void teleport_enemy(enemy *robot, int z, float x, float y)
 {
@@ -347,7 +347,7 @@ enemy *enemy_new(int type)
 	this_enemy->short_description_text = strdup(Droidmap[this_enemy->type].default_short_description);
 	this_enemy->on_death_drop_item_code = -1;
 	this_enemy->sensor_id = Droidmap[this_enemy->type].sensor_id;
-	
+
 	// Set the default value of the 'global state' attributes
 	this_enemy->faction = FACTION_BOTS;
 	this_enemy->will_respawn = TRUE;
@@ -486,7 +486,7 @@ static void enemy_get_current_walk_target(enemy *ThisRobot, pointf *a)
 
 	// Get the number of path nodes.
 	for (count = 0; count < 5; count++) {
-		if (ThisRobot->PrivatePathway[count].x == -1) 
+		if (ThisRobot->PrivatePathway[count].x == -1)
 			break;
 	}
 
@@ -539,7 +539,7 @@ static void DetermineAngleOfFacing(enemy * e)
 };				// void DetermineAngleOfFacing ( int EnemyNum )
 
 /**
- * Once the next waypoint or the next private pathway point has been 
+ * Once the next waypoint or the next private pathway point has been
  * selected, this generic low_level movement function can be called to
  * actually move the robot towards this spot.
  */
@@ -832,10 +832,10 @@ static void set_new_waypointless_walk_target(enemy * ThisRobot, pointf * mt)
 };				// void set_new_waypointless_walk_target ( enemy* ThisRobot )
 
 /**
- * When a (hostile) robot is defeated and explodes, it will drop some 
+ * When a (hostile) robot is defeated and explodes, it will drop some
  * treasure, i.e. stuff it had or parts that it consisted of or similar
  * things.  Maybe there will even be some extra magical treasures if the
- * robot in question was a 'boss monster'.  This function does the 
+ * robot in question was a 'boss monster'.  This function does the
  * treasure dropping.
  */
 static void enemy_drop_treasure(struct enemy *this_droid)
@@ -902,7 +902,7 @@ static void enemy_drop_treasure(struct enemy *this_droid)
 
 /**
  * When an enemy is hit, this causes some blood to be sprayed on the floor.
- * The blood is just an obstacle (several types of blood exist) with 
+ * The blood is just an obstacle (several types of blood exist) with
  * preput flag set, so that the Tux and everyone can really step *on* the
  * blood.
  *
@@ -1007,7 +1007,7 @@ static int kill_enemy(enemy * target, char givexp, int killertype)
 			// TRANSLATORS: For defeating <bot's short description>, you receive <10> experience
 			append_new_game_message(_("For defeating [s]%s[v], you receive %d experience."), D_(target->short_description_text),
 						reward);
-			Me.destroyed_bots[target->type]++;		
+			Me.destroyed_bots[target->type]++;
 		}
 
 		//	The below section is much more of debug info that something that actually should be "spammed" to the user by default.
@@ -1072,17 +1072,17 @@ static void start_gethit_animation(enemy * ThisRobot)
 		ThisRobot->animation_type = GETHIT_ANIMATION;
 	}
 
-};				// void start_gethit_animation_if_applicable ( enemy* ThisRobot ) 
+};				// void start_gethit_animation_if_applicable ( enemy* ThisRobot )
 
 /*
- *  Hit an enemy for "hit" HP. This is supposed to be the *only* means 
+ *  Hit an enemy for "hit" HP. This is supposed to be the *only* means
  *  of removing HPs to a bot.
  *
  *  target is a pointer to the bot to hit
  *  hit is the amount of HPs to remove
  *  givexp (0 or 1) indicates whether to give an XP reward to the player or not
  *  killertype is the id of the bot who is responsible of the attack, or -1 if it is unknown
- *  or if it is the player, -2 for a non-human dialog-killed droid.  
+ *  or if it is the player, -2 for a non-human dialog-killed droid.
  *  mine is 0 or 1 depending on whether it's the player who is responsible for the attack
  */
 void hit_enemy(enemy * target, float hit, char givexp, short int killertype, char mine)
@@ -1149,7 +1149,7 @@ static void MoveThisEnemy(enemy * ThisRobot)
 };
 
 /**
- * This function returns a gps (position) for a robot's current target, 
+ * This function returns a gps (position) for a robot's current target,
  * or NULL if such target doesn't exist or is dead or is invisible (if target is Tux)
  */
 static gps *enemy_get_target_position(enemy * ThisRobot)
@@ -1269,13 +1269,13 @@ void enemy_say_current_state_on_screen(enemy * ThisRobot)
 };				// void enemy_say_current_state_on_screen ( enemy* ThisRobot )
 
 /**
- * Some robots (currently) tend to get stuck in walls.  This is an 
+ * Some robots (currently) tend to get stuck in walls.  This is an
  * annoying bug case we have not yet been able to eliminate completely.
  * To provide some safety against this case, some extra fallback handling
- * should be introduced, so that the bots can still recover if that 
+ * should be introduced, so that the bots can still recover if that
  * unlucky case really happens, which is what we provide here.
  *
- * Since passability checks usually can become quite costly in terms of 
+ * Since passability checks usually can become quite costly in terms of
  * processor time and also because it makes sense to allow for some more
  * 'natural' fallbacks to work, we only check for stuck bots every second
  * or so.  In order to better distribute the checks (and not cause fps
@@ -1304,7 +1304,7 @@ void enemy_handle_stuck_in_walls(enemy * ThisRobot)
 		// In one word:  we have arrived in a situation that might make a crude correction
 		// sensible.  We teleport the robot back to the nearest waypoint.  From there, it
 		// might find a suitable way on it's own again.
-		//      
+		//
 		DebugPrintf(-2, "\n\nFound robot that seems really stuck on position: %f/%f/%d.",
 			    ThisRobot->pos.x, ThisRobot->pos.y, ThisRobot->pos.z);
 		DebugPrintf(-2, "\nMore details on this robot:  Type=%d.", ThisRobot->type);
@@ -1335,7 +1335,7 @@ void enemy_handle_stuck_in_walls(enemy * ThisRobot)
 };				// enemy_handle_stuck_in_walls ( enemy* ThisRobot )
 
 /**
- * This function selects a target for a friendly bot. 
+ * This function selects a target for a friendly bot.
  * It takes closest reachable enemy bot in view range.
  * A new target is selected at each frame. This should prevent a friendly bot to follow
  * an enemy and thus get too far away from its "steady" position.
@@ -1385,7 +1385,7 @@ void update_vector_to_shot_target_for_friend(enemy * ThisRobot)
  * Selected target is the previous target if it is still valid (see paragraph below),
  * or the closest potential target.
  *
- * For gameplay value purposes, it also performs a little hack : the target of 
+ * For gameplay value purposes, it also performs a little hack : the target of
  * the previous frame can be selected even if it is "slightly" out of view (2 times the range),
  * in order to simulate "pursuit". Sorry for the mess but there is no other proper place for that.
  *
@@ -1402,12 +1402,12 @@ void update_vector_to_shot_target_for_enemy(enemy * this_robot)
 
 	// Check validity of old target (if any)
 	//
-	// Logic : 
+	// Logic :
 	// A target is valid if :
 	// 1- always available (not dead and not invisible)
 	// 2- was reachable (this_robot was not blocked along its way to the target)
 	// 3- is not too far
-	// 
+	//
 	gps *tpos = enemy_get_target_position(this_robot);
 
 	if (!tpos) {		// Old target is no more available
@@ -1433,7 +1433,7 @@ void update_vector_to_shot_target_for_enemy(enemy * this_robot)
 			xdist = tpos->x - this_robot->virt_pos.x;
 			ydist = tpos->y - this_robot->virt_pos.y;
 
-			if ((xdist * xdist + ydist * ydist) > 3.0*3.0) {	
+			if ((xdist * xdist + ydist * ydist) > 3.0*3.0) {
 				/// Previous target is too far away to follow without checking if
 				// there are enemies located closer
 				this_robot->attack_target_type = ATTACK_TARGET_IS_NOTHING;
@@ -1477,14 +1477,14 @@ void update_vector_to_shot_target_for_enemy(enemy * this_robot)
  */
 static void state_machine_inconditional_updates(enemy * ThisRobot)
 {
-	// Robots that are paralyzed are completely stuck and do not 
+	// Robots that are paralyzed are completely stuck and do not
 	// see their state machine running
 
 	// For debugging purposes we display the current state of the robot
 	// in game
 	enemy_say_current_state_on_screen(ThisRobot);
 
-	// we check whether the current robot is 
+	// we check whether the current robot is
 	// stuck inside a wall or something...
 	//
 	enemy_handle_stuck_in_walls(ThisRobot);
@@ -1504,8 +1504,8 @@ static void state_machine_inconditional_updates(enemy * ThisRobot)
 }
 
 /**
- * This function handles state transitions based solely (or almost) on 
- * the external situation and not on the current state of the bot. 
+ * This function handles state transitions based solely (or almost) on
+ * the external situation and not on the current state of the bot.
  * The purpose is to reduce code duplication in the "big switch" that follows.
  */
 static void state_machine_situational_transitions(enemy * ThisRobot)
@@ -1526,7 +1526,7 @@ static void state_machine_situational_transitions(enemy * ThisRobot)
 	if (ThisRobot->combat_state == RUSH_TUX_AND_OPEN_TALK) {
 		if (!ThisRobot->will_rush_tux)
 			ThisRobot->combat_state = UNDEFINED_STATE;
-			
+
 		if (!is_friendly(ThisRobot->faction, FACTION_SELF)) {
 			ThisRobot->combat_state = UNDEFINED_STATE;
 			ThisRobot->will_rush_tux = 0;
@@ -1583,7 +1583,7 @@ static void state_machine_situational_transitions(enemy * ThisRobot)
 }
 
 /* ----------------------------------------------------------
- * "stop and eye tux" state handling 
+ * "stop and eye tux" state handling
  * ---------------------------------------------------------- */
 static void state_machine_stop_and_eye_target(enemy * ThisRobot, pointf * new_move_target)
 {
@@ -1636,29 +1636,29 @@ static void state_machine_stop_and_eye_target(enemy * ThisRobot, pointf * new_mo
 
 /* ---------------------------------
  * "attack tux" state
- * 
+ *
  * This function will compute the destination position of a bot in order
- * to reach its target. In the caller (update_enemy), the pathfinder is 
+ * to reach its target. In the caller (update_enemy), the pathfinder is
  * called, to define the path of the bot up to its target.
- * 
+ *
  * This function will also eventually start a shoot.
- * 
+ *
  * --------------------------------- */
 
 /*
  * Note concerning the modification of pathfinder_context :
- * 
- * When we ask the pathfinder to find a path between two points, the pathfinder 
+ *
+ * When we ask the pathfinder to find a path between two points, the pathfinder
  * will, by default, check if no bots are blocking the path.
- * Let consider the following case : an attacking bot (B1) with a melee weapon 
- * is at the entrance of a corridor. Its target (T) is inside the corridor, and an 
+ * Let consider the following case : an attacking bot (B1) with a melee weapon
+ * is at the entrance of a corridor. Its target (T) is inside the corridor, and an
  * other bot (B2) is also inside the corridor :
  *       ---------------------
  *   B1                 B2 T
  *       ---------------------
  * In this case, the pathfinder will not be able to find a way between B1 and T.
  * B1 will thus not move.
- * 
+ *
  * However, if B1 were able to go just behind B2, it could be near enough to its
  * target to shoot it :
  *       ---------------------
@@ -1666,9 +1666,9 @@ static void state_machine_stop_and_eye_target(enemy * ThisRobot, pointf * new_mo
  *       ---------------------
  * Such behavior will make B1 be as aggressive as possible.
  * We will only use it with friendly bots, so that the game is not too hard.
- * 
+ *
  * To implement this behavior, we have to tell the pathfinder not to check
- * collisions with bots. This is implemented in ReachMeleeCombat(). 
+ * collisions with bots. This is implemented in ReachMeleeCombat().
  */
 static void state_machine_attack(enemy * ThisRobot, pointf * new_move_target, pathfinder_context * pf_ctx)
 {
@@ -1727,7 +1727,7 @@ static void state_machine_attack(enemy * ThisRobot, pointf * new_move_target, pa
 			shoot_target = FALSE;
 			goto EXECUTE_ATTACK;
 		}
-		// Check distance               
+		// Check distance
 		float dist2 =
 		    (ThisRobot->virt_pos.x - move_pos.x) * (ThisRobot->virt_pos.x - move_pos.x) + (ThisRobot->virt_pos.y -
 												   move_pos.y) * (ThisRobot->virt_pos.y -
@@ -1752,7 +1752,7 @@ static void state_machine_attack(enemy * ThisRobot, pointf * new_move_target, pa
 	else			// Range weapon
 
 	{
-		// Check visibility                     
+		// Check visibility
 		int target_visible =
 		    DirectLineColldet(ThisRobot->virt_pos.x, ThisRobot->virt_pos.y, move_pos.x, move_pos.y, move_pos.z, &FlyablePassFilter);
 
@@ -1793,7 +1793,7 @@ static void state_machine_attack(enemy * ThisRobot, pointf * new_move_target, pa
 	// Execute the bot's move
 	//
 	// We will often have to move towards our target.
-	// But this moving around can lead to jittering of droids moving back and 
+	// But this moving around can lead to jittering of droids moving back and
 	// forth between two positions very rapidly.  Therefore we will not do this
 	// movement thing every frame, but rather only sometimes
 	//
@@ -1983,7 +1983,7 @@ static void state_machine_waypointless_wandering(enemy * ThisRobot, pointf * new
 }
 
 /**
- * 
+ *
  * This function runs the finite state automaton that powers the bots.
  * It handles attack and movement behaviors.
  *
@@ -2081,7 +2081,7 @@ void update_enemy(enemy * ThisRobot)
 	}
 
 	/* Pathfind current target */
-	/* I am sorry this is a bit dirty, but I've got time and efficiency constraints. If you're not happy please send a patch. No complaints will 
+	/* I am sorry this is a bit dirty, but I've got time and efficiency constraints. If you're not happy please send a patch. No complaints will
 	 * be accepted.*/
 
 	/* The basic design is the following :
@@ -2090,7 +2090,7 @@ void update_enemy(enemy * ThisRobot)
 	 *    if they differ : we have to set up a new route (pathfind the route)
 	 *    if they do not : we move towards our first waypoint
 	 *
-	 * special case: 
+	 * special case:
 	 *                if first waypoint is -1 -1 we have a bug and do nothing (hack around)
 	 */
 	pointf wps[40];
@@ -2103,7 +2103,7 @@ void update_enemy(enemy * ThisRobot)
 		ThisRobot->PrivatePathway[1].x = -1;
 		ThisRobot->PrivatePathway[1].y = -1;
 	} else if (((new_move_target.x != old_move_target.x) || (new_move_target.y != old_move_target.y))) {	// If the current move target differs from the old one
-		// This implies we do not re-pathfind every frame, which means we may bump into colleagues. 
+		// This implies we do not re-pathfind every frame, which means we may bump into colleagues.
 		// This is handled in MoveThisEnemy()
 		if (set_up_intermediate_course_between_positions(&ThisRobot->pos, &new_move_target, &wps[0], 40, &pf_ctx) && wps[5].x == -1) {	/* If position was passable *and* streamline course uses max 4 waypoints */
 			memcpy(&ThisRobot->PrivatePathway[0], &wps[0], 5 * sizeof(pointf));
@@ -2159,7 +2159,7 @@ void move_enemies(void)
 }
 
 /**
- * When an enemy is firing a shot, the newly created bullet must be 
+ * When an enemy is firing a shot, the newly created bullet must be
  * assigned a speed, that would lead the bullet towards the intended
  * target, which is done here.
  */
@@ -2230,7 +2230,7 @@ static void raw_start_enemys_shot(struct enemy *this_robot, float xdist, float y
 
 	} else {		/* melee weapon */
 
-		struct melee_shot new_melee_shot;
+		struct melee_shot new_melee_shot = {};
 
 		new_melee_shot.attack_target_type = this_robot->attack_target_type;
 		new_melee_shot.mine = FALSE;	/* shot comes from a bot not tux */
@@ -2299,10 +2299,10 @@ static int ConsideredMoveIsFeasible(Enemy ThisRobot, pointf StepVector)
 
 /*
  * This function will find a place near target_pos that is free of any bots.
- * 
+ *
  * During a melee, several bots will try to shoot a common enemy.
  * We will "distribute" them around the enemy.
- * 
+ *
  * The approach is :
  * - compute several positions around the target, by rotating a unit vector
  * - halt as soon as one of those positions is free
@@ -2425,7 +2425,7 @@ static void MoveAwayFromMeleeCombat(Enemy ThisRobot, pointf * set_move_tgt)
 };				// void MoveAwayFromMeleeCombat( Enemy ThisRobot , pointf * set_move_tgt )
 
 /**
- * 
+ *
  */
 static void ReachMeleeCombat(enemy *ThisRobot, gps *tpos, pointf *new_move_target, pathfinder_context *pf_ctx)
 {
@@ -2469,7 +2469,7 @@ static int TurnABitTowardsPosition(enemy *ThisRobot, float x, float y, float Tur
 	// be.
 	//
 	// For this we use the atan2, which gives angles from -pi to +pi.
-	// 
+	//
 	// Attention must be paid, since 'y' in our coordinates ascends when
 	// moving down and descends when moving 'up' on the screen.  So that
 	// one sign must be corrected, so that everything is right again.
@@ -2482,7 +2482,7 @@ static int TurnABitTowardsPosition(enemy *ThisRobot, float x, float y, float Tur
 	//
 	RightAngle += 90;
 
-	// Now it's time do determine which direction to move, i.e. if to 
+	// Now it's time do determine which direction to move, i.e. if to
 	// turn to the left or to turn to the right...  For this purpose
 	// we convert the current angle, which is between 270 and -90 degrees
 	// to one between -180 and +180 degrees...
@@ -2506,7 +2506,7 @@ static int TurnABitTowardsPosition(enemy *ThisRobot, float x, float y, float Tur
 
 	// Now we turn and show the image until both chat partners are
 	// facing each other, mostly the chat partner is facing the Tux,
-	// since the Tux may still turn around to somewhere else all the 
+	// since the Tux may still turn around to somewhere else all the
 	// while, if the chose so
 	//
 	ThisRobot->current_angle += TurningDirection * TurnSpeed * Frame_Time();
@@ -2551,7 +2551,7 @@ void SetRestOfGroupToState(Enemy ThisRobot, short NewState)
 };				// void SetRestOfGroupToState ( Enemy ThisRobot , int NewState )
 
 /**
- * This function checks for enemy collisions and returns TRUE if enemy 
+ * This function checks for enemy collisions and returns TRUE if enemy
  * with number enemynum collided with another enemy from the list.
  */
 int CheckEnemyEnemyCollision(enemy * OurBot)
@@ -2566,7 +2566,7 @@ int CheckEnemyEnemyCollision(enemy * OurBot)
 	if (OurBot->pure_wait)
 		return FALSE;
 
-	// Now we check through all the other enemys on this level if 
+	// Now we check through all the other enemys on this level if
 	// there is perhaps a collision with them...
 
 	enemy *erot;
@@ -2670,8 +2670,8 @@ void animate_enemy(enemy *our_enemy)
 }
 
 /******************************************************
- * Resolve the address of an enemy, given its number (primary key) and 
- * the cache value of its address. 
+ * Resolve the address of an enemy, given its number (primary key) and
+ * the cache value of its address.
  * 1- number == -1 means no enemy targeted, means we return NULL
  * 2- if the cache value is not NULL, we return it
  * 3- if the cache value is NULL, resolve the address by browsing the list and set the cache value
@@ -2754,7 +2754,7 @@ const char *get_sensor_name_by_id(int sensor_flags)
 int can_see_tux(enemy *ThisRobot) {
 
 	return ((Me.invisible_duration <= 0) || (ThisRobot->sensor_id & SENSOR_DETECT_INVISIBLE));
-	
+
 }
 
 
@@ -2766,12 +2766,12 @@ int can_see_tux(enemy *ThisRobot) {
  *    distance 'squared_best_dist')
  * 2) to be visible
  * 3) to be reachable (definition depends on the robot's weapon)
- * 
+ *
  * If the enemy is a potential target, 'squared_best_dist' is changed, and
  * the function returns TRUE.
- * 
+ *
  * Note: All operations are executed in this_robot's level
- * 
+ *
  */
 static int is_potential_target(enemy * this_robot, gps * target_pos, float *squared_best_dist)
 {

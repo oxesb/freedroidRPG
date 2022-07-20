@@ -18,8 +18,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  */
 
@@ -44,7 +44,7 @@ static struct list_head animated_floor_tile_list = LIST_HEAD_INIT(animated_floor
 static int animated_floor_tiles_dirty_flag;
 
 //--------------------
-// Distance, where door opens 
+// Distance, where door opens
 //
 #define DOOROPENDIST2 (2.0)
 #define DOOROPENDIST2_FOR_DROIDS (1.0)
@@ -58,7 +58,7 @@ static float animation_timeline = 0.0;
 
 /*****************************************************************************
  * Animation callbacks for obstacles
- * 
+ *
  * Functions called to animate one specific type of animated obstacle
  *****************************************************************************/
 
@@ -89,8 +89,8 @@ static int animate_door(level* door_lvl, void *scenery_piece)
 			one_player_close_enough = TRUE;
 		}
 	}
-			
-	// If the Tux is not close enough, then we must see if perhaps one of the 
+
+	// If the Tux is not close enough, then we must see if perhaps one of the
 	// enemies is close enough, so that the door would still get opened.
 	//
 	if (!one_player_close_enough) {
@@ -105,7 +105,7 @@ static int animate_door(level* door_lvl, void *scenery_piece)
 			if (xdist < 2.0) {
 				ydist = fabsf(erot->pos.y - obs->pos.y);
 				if (ydist < 2.0) {
-	
+
 					// Now that we know, that there is some droid at least halfway
 					// close to this door, we can start to go into more details and
 					// compute the exact distance from the droid to the door.
@@ -115,13 +115,13 @@ static int animate_door(level* door_lvl, void *scenery_piece)
 						some_bot_was_close_to_this_door = TRUE;
 						break;
 					}
-	
+
 				}	// ydist < 2.0
 			}	// xdist < 2.0
-	
+
 		}	// bots
 	}
-	
+
 	// Depending on the presence or not of someone near the door, open it or
 	// close it.
 	Pos = &obs->type;
@@ -141,7 +141,7 @@ static int animate_door(level* door_lvl, void *scenery_piece)
 		     ((*Pos > ISO_DV_DOOR_000_OPEN) && (*Pos <= ISO_DV_DOOR_100_OPEN)) ||
 		     ((*Pos > ISO_OUTER_DOOR_H_00) && (*Pos <= ISO_OUTER_DOOR_H_100)) ||
 		     ((*Pos > ISO_OUTER_DOOR_V_00) && (*Pos <= ISO_OUTER_DOOR_V_100)) )
-			*Pos -= 1;	
+			*Pos -= 1;
 	}
 
 	return TRUE;
@@ -149,7 +149,7 @@ static int animate_door(level* door_lvl, void *scenery_piece)
 
 /*
  * This function animates an autogun.
- * It fires a bullet regularly 
+ * It fires a bullet regularly
  */
 static int animate_autogun(level* autogun_lvl, void *scenery_piece)
 {
@@ -161,21 +161,21 @@ static int animate_autogun(level* autogun_lvl, void *scenery_piece)
 	//
 	static int static_initialized = FALSE;
 	static int weapon_item_type = -1;
-	static int bullet_image_type = -1; 
+	static int bullet_image_type = -1;
 	static float bullet_speed = 0.0;
-	
+
 	if (!static_initialized) {
 		weapon_item_type = get_item_type_by_id("Laser pistol");
 		bullet_image_type = ItemMap[weapon_item_type].weapon_bullet_type;	// which gun do we have ?
 		bullet_speed = ItemMap[weapon_item_type].weapon_bullet_speed;
 		static_initialized = TRUE;
 	}
-	
+
 	// Wait until it's time to fire a new bullet
 	//
 	if (autogun_timeline != 0.0)
 		return TRUE;
-	
+
 	// Fire a new bullet
 	//
 	autogunx = obs->pos.x;
@@ -236,7 +236,7 @@ static int animate_autogun(level* autogun_lvl, void *scenery_piece)
 		              PLEASE_INFORM | IS_FATAL);
 		break;
 	}
-	
+
 	sparse_dynarray_add(&all_bullets, &new_bullet, sizeof(struct bullet));
 
 	return TRUE;
@@ -463,8 +463,8 @@ void animation_timeline_advance()
  */
 void animate_scenery(void)
 {
-	struct animated_scenery_piece *a;
-	struct visible_level *visible_lvl, *next_lvl;
+	struct animated_scenery_piece *a = NULL;
+	struct visible_level *visible_lvl = NULL, *next_lvl = NULL;
 
 	animation_timeline_advance();
 

@@ -1,8 +1,8 @@
-/* 
+/*
  *
  *   Copyright (c) 1994, 2002, 2003, 2004 Johannes Prix
  *   Copyright (c) 1994, 2002 Reinhard Prix
- *   Copyright (c) 2004-2010 Arthur Huillet 
+ *   Copyright (c) 2004-2010 Arthur Huillet
  *
  *
  *  This file is part of Freedroid
@@ -18,8 +18,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -105,8 +105,8 @@ static void DisplayItemImageAtMouseCursor(int ItemImageCode)
 		return;
 	}
 	// We define the target location for the item.  This will be the current
-	// mouse cursor position of course, but -16 for the crosshair center, 
-	// which is somewhat (16) to the lower right of the cursor top left 
+	// mouse cursor position of course, but -16 for the crosshair center,
+	// which is somewhat (16) to the lower right of the cursor top left
 	// corner.
 	//
 	// And then of course we also have to take into account the size of the
@@ -118,7 +118,7 @@ static void DisplayItemImageAtMouseCursor(int ItemImageCode)
 	// Do not move an item out of the screen
 	if (TargetRect.x < 0)
 		TargetRect.x = 0;
-	
+
 	if (TargetRect.y < 0)
 		TargetRect.y = 0;
 
@@ -257,7 +257,7 @@ void blit_leveleditor_point(int x, int y)
 }
 
 /**
- * More for debugging purposes than for real gameplay, we add some 
+ * More for debugging purposes than for real gameplay, we add some
  * function to illustrate the collision rectangle of a certain obstacle
  * on the floor via a bright ugly distorted rectangular shape.
  */
@@ -329,7 +329,7 @@ void blit_one_obstacle(obstacle *o, int highlight, int zoom, int opacity)
 		object_vtx_color(o, &r, &g, &b);
 	}
 
-	if (GameConfig.transparency) { 
+	if (GameConfig.transparency) {
 		if ((pos.x > Me.pos.x - 1.0) && (pos.y > Me.pos.y - 1.0)
 			&& (pos.x < Me.pos.x + 1.5) && (pos.y < Me.pos.y + 1.5)) {
 				if (game_status == INSIDE_LVLEDITOR) {
@@ -509,9 +509,9 @@ void insert_one_blast_into_blitting_list(struct blast *current_blast)
 {
 	struct gps virtpos;
 
-	// Due to the use of a painter algorithm, we need to sort the objects depending of their 
+	// Due to the use of a painter algorithm, we need to sort the objects depending of their
 	// isometric distance on the current level.
-	// We thus have to get the blast's position on the current level. 
+	// We thus have to get the blast's position on the current level.
 	update_virtual_position(&virtpos, &current_blast->pos, Me.pos.z);
 
 	// Could not find virtual position? Give up drawing.
@@ -522,8 +522,8 @@ void insert_one_blast_into_blitting_list(struct blast *current_blast)
 }
 
 /**
- * 
- * 
+ *
+ *
  */
 void insert_move_cursor_into_blitting_list()
 {
@@ -550,7 +550,7 @@ int level_is_visible(int level_num)
 	if (level_num == Me.pos.z)
 		return TRUE;
 
-	struct visible_level *l, *n;
+	struct visible_level *l = NULL, *n = NULL;
 	BROWSE_VISIBLE_LEVELS(l, n) {
 		if (l->lvl_pointer->levelnum == level_num)
 			return TRUE;
@@ -568,18 +568,18 @@ int level_is_visible(int level_num)
 void get_visible_levels()
 {
 	struct visible_level *e, *n;
-	
+
 	// Invalidate all entries in the visible_level list
-	
+
 	list_for_each_entry(e, &visible_level_list, node) {
 		e->valid = FALSE;
 	}
 
 	// Find the 4 visible levels
 	//
-	// Those 4 levels form a square (eventually a degenerated one), one corner 
+	// Those 4 levels form a square (eventually a degenerated one), one corner
 	// of the square being the current level.
-	// The 2 corners are initialized to be on the current level (idx = 1), and 
+	// The 2 corners are initialized to be on the current level (idx = 1), and
 	// we will extend one of them, depending on Tux's position.
 	// (see gps_transform_map_init() main comment for an explanation about neighbor index)
 
@@ -607,7 +607,7 @@ void get_visible_levels()
 		bottom_idx = 2;
 		top_or_bottom_distance = CURLEVEL()->ylen - Me.pos.y;
 	}
-	
+
 	// Add or re-validate entries in the visible_level list
 
 	int i, j;
@@ -624,9 +624,9 @@ void get_visible_levels()
 			// if i==1, then current neighbor is at the same 'longitude' than Tux's level,
 			// so longitude = 0.0
 			longitude = (i == 1) ? 0.0 : left_or_right_distance;
- 
+
 			if (level_neighbors_map[Me.pos.z][j][i]) {
-				// if there is already an entry in the visible_level list for 
+				// if there is already an entry in the visible_level list for
 				// this level, update the entry and re-validate it
 				int in_list = FALSE;
 				list_for_each_entry(e, &visible_level_list, node) {
@@ -650,16 +650,16 @@ void get_visible_levels()
 			}
 		}
 	}
-	
+
 	// If the current level changed, remove useless invalid entries.
 	// An entry is useless if the associated level is not a neighbor of the
 	// current level. To find if two levels are connected, we look at the content
 	// of 'gps_transform_matrix' (there is no gps transformation between two
 	// unconnected levels).
-	
+
 	if (old_current_level != Me.pos.z) {
 		old_current_level = Me.pos.z;
-		
+
 		list_for_each_entry_safe(e, n, &visible_level_list, node) {
 			if (e->valid)
 				continue;
@@ -681,26 +681,26 @@ void get_visible_levels()
 void reset_visible_levels()
 {
 	struct visible_level *e, *n;
-	
+
 	// Clear current list
 	list_for_each_entry_safe(e, n, &visible_level_list, node) {
 		clear_animated_obstacle_list(e);
 		list_del(&e->node);
 		free(e);
 	}
-	
+
 	old_current_level = -1;
 }
 
 /*
  * Initialization of the 2 arrays used to accelerate gps transformations.
- * 
+ *
  * gps_transform_matrix[lvl1][lvl2] is a matrix used in update_virtual_position().
  * It contains the data needed to transform a gps position defined relatively to one level
  * into a gps position defined relatively to another level.
  * gps_transform_matrix[lvl1][lvl2] is used for a transformation from 'lvl1' to 'lvl2'.
- * 
- * level_neighbors_map[lvl][idY][idX] is used to retrieve all the neighbors (and the corresponding 
+ *
+ * level_neighbors_map[lvl][idY][idX] is used to retrieve all the neighbors (and the corresponding
  * transformation data) of one given level. It is used in resolve_virtual_position().
  * The (idY, idX) pair defines one of the nine neighbors, using the following schema:
  *              N
@@ -928,10 +928,10 @@ void gps_transform_map_init()
  * There are several cases where an object or a character (Tux or a bot)
  * could become visible or active when they are technically still not on the
  * current level.
- * 
- * Therefore we introduce 'virtual' positions, i.e. the position the object 
+ *
+ * Therefore we introduce 'virtual' positions, i.e. the position the object
  * would have, if the object were in fact counted as part of a neighboring level,
- * mostly the level of the Tux.  Using this concept, we can more easily compute 
+ * mostly the level of the Tux.  Using this concept, we can more easily compute
  * distances and compare positions.
  *
  * This function is an abstract approach to this problem, working with
@@ -940,7 +940,7 @@ void gps_transform_map_init()
  */
 void update_virtual_position(gps * target_pos, gps * source_pos, int level_num)
 {
-	// The case where the position in question is already directly on 
+	// The case where the position in question is already directly on
 	// the virtual level, things are really simple and we can quit
 	// almost immediately...
 	//
@@ -982,12 +982,12 @@ void update_virtual_position(gps * target_pos, gps * source_pos, int level_num)
 /*
  * Transform a virtual position, defined in the 'lvl' coordinate system, into
  * its real level and position
- * 
+ *
  * The function is safe to be called with the same actual parameter, i.e.
  * resolve_virtual_pos(&my_pos, &my_pos)
  *
  * Note: this function only works if the real position is one of the 8 neighbors of 'lvl'.
- * If not, the function returns FALSE. 
+ * If not, the function returns FALSE.
  * (a recursive call could be used to remove this limitation)
  */
 int resolve_virtual_position(gps *rpos, gps *vpos)
@@ -1071,7 +1071,7 @@ int resolve_virtual_position(gps *rpos, gps *vpos)
 
 /**
  * Check if a position is inside a level's boundaries
- * 
+ *
  * return TRUE if '(x,y)' is inside 'lvl'
  */
 int pos_inside_level(float x, float y, level * lvl)
@@ -1081,7 +1081,7 @@ int pos_inside_level(float x, float y, level * lvl)
 
 /**
  * Check if a position is inside or near a level's boundaries
- * 
+ *
  * return TRUE if (x,y) is inside 'lvl' or at less than 'dist' from
  * 'lvl' borders.
  */
@@ -1091,7 +1091,7 @@ int pos_near_level(float x, float y, level * lvl, float dist)
 }				// pos_near_level()
 
 /**
- * The blitting list must contain the enemies too.  This function is 
+ * The blitting list must contain the enemies too.  This function is
  * responsible for inserting the enemies at the right positions.
  */
 static void insert_enemies_into_blitting_list(int mask)
@@ -1114,7 +1114,7 @@ static void insert_enemies_into_blitting_list(int mask)
 			if (!level_is_visible(ThisRobot->pos.z))
 				continue;
 
-			// We update the virtual position of this bot, such that we can handle it 
+			// We update the virtual position of this bot, such that we can handle it
 			// with easier expressions later...
 			//
 			update_virtual_position(&(ThisRobot->virt_pos), &(ThisRobot->pos), Me.pos.z);
@@ -1174,7 +1174,7 @@ static void insert_blasts_into_blitting_list(int mask)
 			continue;
 
 		struct blast *current_blast = (struct blast *)sparse_dynarray_member(&all_blasts, i, sizeof(struct blast));
-		
+
 		gps vpos;
 		update_virtual_position(&vpos, &current_blast->pos, Me.pos.z);
 
@@ -1194,11 +1194,11 @@ static void insert_blasts_into_blitting_list(int mask)
  */
 static void insert_thrown_items_into_blitting_list(int mask)
 {
-	struct visible_level *vis_lvl, *n;
+	struct visible_level *vis_lvl = NULL, *n = NULL;
 
 	int xmin, xmax, ymin, ymax;
 	get_floor_boundaries(mask, &ymin, &ymax, &xmin, &xmax);
-	
+
 	BROWSE_VISIBLE_LEVELS(vis_lvl, n) {
 		level *lvl = vis_lvl->lvl_pointer;
 		struct item *it = NULL;
@@ -1212,7 +1212,7 @@ static void insert_thrown_items_into_blitting_list(int mask)
 
 			if (it->virt_pos.x < xmin || it->virt_pos.x > xmax || it->virt_pos.y < ymin || it->virt_pos.y > ymax)
 				continue;
-		
+
 			insert_one_thrown_item_into_blitting_list(it, i);
 		}
 	}
@@ -1323,7 +1323,7 @@ void blit_preput_objects_according_to_blitting_list(int mask)
 			if ((((obstacle *) e->element_pointer)->type <= -1) ||
 			    ((obstacle *) e->element_pointer)->type >= obstacle_map.size) {
 				error_message(__FUNCTION__,
-					     "The blitting list contained an illegal obstacle type %d, for obstacle at coordinates %f %f. Doing nothing.", PLEASE_INFORM, 
+					     "The blitting list contained an illegal obstacle type %d, for obstacle at coordinates %f %f. Doing nothing.", PLEASE_INFORM,
 						 ((obstacle *) e->element_pointer)->type, ((obstacle *) e->element_pointer)->pos.x, ((obstacle *) e->element_pointer)->pos.y);
 				break;
 
@@ -1342,7 +1342,7 @@ void blit_preput_objects_according_to_blitting_list(int mask)
 				struct image *shadow_img = get_obstacle_shadow_image(our_obstacle->type, our_obstacle->frame_index);
 				display_image_on_map(shadow_img, vpos.x, vpos.y, IMAGE_SCALE_TRANSFO((mask & ZOOM_OUT) ? lvledit_zoomfact_inv() : 1.0));
 			}
-			
+
 			// If the obstacle in question does have a collision rectangle, then we
 			// draw that on the floor now.
 			//
@@ -1357,9 +1357,9 @@ void blit_preput_objects_according_to_blitting_list(int mask)
 					show_obstacle(mask, ((obstacle *) e->element_pointer), e->code_number, 255);
 			}
 			break;
-		
+
 		case BLITTING_TYPE_ENEMY:
-			// Enemies, which are dead already become like decoration on the floor.  
+			// Enemies, which are dead already become like decoration on the floor.
 			// They should never hide the Tux, so we blit them beforehand and not
 			// again later from the list.
 			//
@@ -1370,7 +1370,7 @@ void blit_preput_objects_according_to_blitting_list(int mask)
 				}
 			}
 			break;
-			
+
 		case BLITTING_TYPE_THROWN_ITEM:
 			if (mask & SHOW_ITEMS) {
 				// Preput thrown items when they are on the floor (i.e. not during the
@@ -1383,11 +1383,11 @@ void blit_preput_objects_according_to_blitting_list(int mask)
 						the_item->pos.z == item_under_cursor_lvl->levelnum && item_under_cursor == e->code_number)
 						PutItem(the_item, mask, PUT_NO_THROWN_ITEMS, TRUE);
 					else
-						PutItem(the_item, mask, PUT_NO_THROWN_ITEMS, FALSE);				
+						PutItem(the_item, mask, PUT_NO_THROWN_ITEMS, FALSE);
 				}
 			}
 			break;
-			
+
 		case BLITTING_TYPE_MOVE_CURSOR:
 			PutMouseMoveCursor();
 			break;
@@ -1504,7 +1504,7 @@ static void show_obstacle_labels(int mask)
 
 	for (i = 0; i < l->obstacle_extensions.size; i++) {
 		struct obstacle_extension *ext = &ACCESS_OBSTACLE_EXTENSION(l->obstacle_extensions, i);
-		
+
 		if (ext->type == OBSTACLE_EXTENSION_LABEL) {
 			show_backgrounded_label_at_map_position(ext->data,
 					0, ext->obs->pos.x,
@@ -1522,20 +1522,20 @@ static void show_obstacle_labels(int mask)
  * you're standing close to.
  *
  * This function blits all the item names to the screen on the exact
- * positions that have been computed before (hopefully!) in other 
+ * positions that have been computed before (hopefully!) in other
  * functions like update_item_text_slot_positions ( ... ) or so.
  */
 static void blit_all_item_slots(int mask)
 {
-	struct visible_level *vis_lvl, *n;
-	
 	if (mask & OMIT_ITEMS_LABEL) {
 		// Do not show item slots
 		return;
 	}
 
+	struct visible_level *vis_lvl = NULL, *n = NULL;
+
 	BROWSE_VISIBLE_LEVELS(vis_lvl, n) {
-		
+
 		struct level *item_level = vis_lvl->lvl_pointer;
 		struct item *the_item = NULL;
 		int i = 0;
@@ -1554,14 +1554,14 @@ static void blit_all_item_slots(int mask)
 
 				draw_rectangle(&the_item->text_slot_rectangle, 0, 0, 0, BACKGROUND_TEXT_RECT_ALPHA);
 			}
-	
+
 			// Finally it's time to insert the font into the item slot.  We
 			// use the item name, but currently font color is not adapted for
 			// special item properties...
 
 			put_string(FPS_Display_Font, the_item->text_slot_rectangle.x,
 					  the_item->text_slot_rectangle.y, D_(item_specs_get_name(the_item->type)));
-	
+
 		}
 	}
 }
@@ -1572,16 +1572,16 @@ static void blit_all_item_slots(int mask)
  */
 int item_slot_position_blocked(item * given_item, int item_slot)
 {
-	struct visible_level *vis_lvl, *n;
+	struct visible_level *vis_lvl = NULL, *n = NULL;
 	int item_level_reached = FALSE;
 	int last_slot_to_check;
-	
+
 	// We will browse all visible levels, until we reach the item's level.
 	// For each browsed level, we check against all items.
 	// But, on the item's level, we stop when the current item is reached.
-	
+
 	BROWSE_VISIBLE_LEVELS(vis_lvl, n) {
-		
+
 		level *item_level = vis_lvl->lvl_pointer;
 
 		if (item_level->levelnum == given_item->pos.z) {
@@ -1590,13 +1590,13 @@ int item_slot_position_blocked(item * given_item, int item_slot)
 		} else {
 			last_slot_to_check = item_level->item_list.size;
 		}
-		
+
 		struct item *cur_item = NULL;;
 		int i = 0;
 		BROWSE_LEVEL_ITEMS(item_level, cur_item, i) {
 			if (i >= last_slot_to_check + 1)
 				break;
-	
+
 			if (MouseCursorIsInRect(&(cur_item->text_slot_rectangle),
 						given_item->text_slot_rectangle.x, given_item->text_slot_rectangle.y)) {
 				return (TRUE);
@@ -1629,11 +1629,11 @@ int item_slot_position_blocked(item * given_item, int item_slot)
 				return (TRUE);
 			}
 		}
-		
-		if (item_level_reached) 
+
+		if (item_level_reached)
 			break;
 	}
-	
+
 	return (FALSE);
 }
 
@@ -1645,16 +1645,16 @@ int item_slot_position_blocked(item * given_item, int item_slot)
  * all item names flash up, so that you can't possibly miss an item that
  * you're standing close to.
  *
- * This function computes the best rectangles and positions for such 
+ * This function computes the best rectangles and positions for such
  * item names to flash up.
  */
 void update_item_text_slot_positions(void)
 {
 	struct font *BFont_to_use = FPS_Display_Font;
-	struct visible_level *vis_lvl, *n;
-	
+	struct visible_level *vis_lvl = NULL, *n = NULL;
+
 	BROWSE_VISIBLE_LEVELS(vis_lvl, n) {
-		
+
 		level *item_level = vis_lvl->lvl_pointer;
 
 		struct item *cur_item = NULL;
@@ -1669,7 +1669,7 @@ void update_item_text_slot_positions(void)
 				translate_map_point_to_screen_pixel_x(cur_item->virt_pos.x, cur_item->virt_pos.y) - cur_item->text_slot_rectangle.w / 2;
 			cur_item->text_slot_rectangle.y =
 				translate_map_point_to_screen_pixel_y(cur_item->virt_pos.x, cur_item->virt_pos.y) - cur_item->text_slot_rectangle.h / 2;
-	
+
 			// But maybe the situation is already very crowded, i.e. maybe there are
 			// already (a lot of) items there with slot positions conflicting...
 			// Well, what to do?  If there is already an item there, we try to escape,
@@ -1686,19 +1686,19 @@ void update_item_text_slot_positions(void)
 
 					if (!item_slot_position_blocked(cur_item, i - 1))
 						break;
-				    	
+
 					// Maybe just a hundred left or right would also do...  but if it
 					// doesn't, we'll undo the changes made.
 					Sint16 tmp = cur_item->text_slot_rectangle.x;
-					
+
 					cur_item->text_slot_rectangle.x += 100;
 					if (!item_slot_position_blocked(cur_item, i - 1))
 						break;
-					
+
 					cur_item->text_slot_rectangle.x = tmp - 100;
 					if (!item_slot_position_blocked(cur_item, i - 1))
 						break;
-					
+
 					cur_item->text_slot_rectangle.x = tmp;
 					max_tries--;
 				}
@@ -1771,7 +1771,7 @@ void draw_grid_on_the_floor(int mask)
 	draw_line_on_map(0, 0, our_level->xlen, 0, 0xFF, 0x00, 0x00, 3);
 	draw_line_on_map(0, our_level->ylen, our_level->xlen, our_level->ylen, 0xFF, 0x00, 0x00, 3);
 
-	// display numbers, corresponding to the numpad keys for quick placing 
+	// display numbers, corresponding to the numpad keys for quick placing
 	struct font *PreviousFont;
 	PreviousFont = get_current_font();
 	set_current_font(Messagevar_Font);
@@ -1797,7 +1797,7 @@ void draw_grid_on_the_floor(int mask)
 }
 
 /* -----------------------------------------------------------------
- * This function assembles the contents of the combat window 
+ * This function assembles the contents of the combat window
  * in Screen.
  *
  * Several FLAGS can be used to control its behavior:
@@ -1834,7 +1834,7 @@ void AssembleCombatPicture(int mask)
 	set_up_ordered_blitting_list(mask);
 
 	blit_preput_objects_according_to_blitting_list(mask);
-	
+
 	blit_nonpreput_objects_according_to_blitting_list(mask);
 
 	if ((!GameConfig.skip_light_radius) && (!(mask & SKIP_LIGHT_RADIUS)))
@@ -2306,7 +2306,7 @@ void blit_tux(int x, int y)
 
 /**
  * If the corresponding configuration flag is enabled, enemies might 'say'
- * some text comment on the screen, like 'ouch' or 'i'll getch' or 
+ * some text comment on the screen, like 'ouch' or 'i'll getch' or
  * something else more sensible.  This function is here to blit these
  * comments, that must have been set before, to the screen.
  */
@@ -2319,7 +2319,7 @@ void print_comment_of_this_enemy(struct enemy * e)
 
 	// At this point we can assume, that the enemys has been blittet to the
 	// screen, whether it's a friendly enemy or not.
-	// 
+	//
 	// So now we can add some text the enemys says.  That might be fun.
 	//
 	if (!(e->TextToBeDisplayed))
@@ -2350,11 +2350,11 @@ void print_comment_of_this_enemy(struct enemy * e)
  */
 static int must_blit_enemy(enemy *e)
 {
-	// if enemy is on other level, return 
+	// if enemy is on other level, return
 	if (e->virt_pos.z != Me.pos.z) {
 		return FALSE;
 	}
-	// if enemy is of type (-1), return 
+	// if enemy is of type (-1), return
 	if (e->type == (-1)) {
 		return FALSE;
 	}
@@ -2441,7 +2441,7 @@ void put_enemy_energy_bar(struct enemy *e, SDL_Rect target_rect)
 
 		// Now after the energy bar has been drawn, we can start to draw the
 		// empty part of the energy bar (but only of course, if there is some
-		// empty part at all! 
+		// empty part at all!
 		fill_rect.x = target_rect.x + health_pixels;
 		fill_rect.w = target_rect.w - health_pixels;
 
@@ -2459,8 +2459,8 @@ int set_rotation_index_for_this_robot(enemy * ThisRobot)
 	int RotationIndex;
 
 	// By now the angle the robot is facing is determined, so we just need to
-	// translate this angle into an index within the image series, i.e. into 
-	// a 'phase' of rotation. 
+	// translate this angle into an index within the image series, i.e. into
+	// a 'phase' of rotation.
 	//
 	RotationIndex = ((ThisRobot->current_angle - 45.0 + 360.0 + 360 /
 			  (2 * ROTATION_ANGLES_PER_ROTATION_MODEL)) * ROTATION_ANGLES_PER_ROTATION_MODEL / 360);
@@ -2498,7 +2498,7 @@ int set_rotation_index_for_this_robot(enemy * ThisRobot)
 
 	return (RotationIndex);
 
-};				// int set_rotation_index_for_this_robot ( enemy* ThisRobot ) 
+};				// int set_rotation_index_for_this_robot ( enemy* ThisRobot )
 
 /**
  * This function is here to blit the 'body' of a droid to the screen.
@@ -2523,16 +2523,16 @@ void PutIndividuallyShapedDroidBody(enemy * ThisRobot, SDL_Rect TargetRectangle,
 	//
 	struct droidspec *droid_spec = &Droidmap[ThisRobot->type];
 
-	// Maybe the rotation model we're going to use now isn't yet loaded. 
+	// Maybe the rotation model we're going to use now isn't yet loaded.
 	// Now in this case, we must load it immediately, or a segfault may
 	// result...
 	//
 	load_droid_animation_images(droid_spec);
 
-	// Maybe we don't have an enemy here that would really stick to the 
+	// Maybe we don't have an enemy here that would really stick to the
 	// exact size of a block but be somewhat bigger or smaller instead.
 	// In this case, we'll just adapt the given target rectangle a little
-	// bit, cause this rectangle assumes exactly the same size as a map 
+	// bit, cause this rectangle assumes exactly the same size as a map
 	// block and has the origin shifted accordingly.
 	//
 	if ((TargetRectangle.x != 0) && (TargetRectangle.y != 0)) {
@@ -2549,7 +2549,7 @@ void PutIndividuallyShapedDroidBody(enemy * ThisRobot, SDL_Rect TargetRectangle,
 		}
 	}
 	// Maybe the enemy is desired e.g. for the takeover game, so a pixel position on
-	// the screen is given and we blit the enemy to that position, not taking into 
+	// the screen is given and we blit the enemy to that position, not taking into
 	// account any map coordinates or stuff like that...
 	//
 	if ((TargetRectangle.x != 0) && (TargetRectangle.y != 0)) {
@@ -2665,10 +2665,10 @@ There was a droid type on this level, that does not really exist.", PLEASE_INFOR
 	if (e->energy > 0)
 		print_comment_of_this_enemy(e);
 
-};				// void PutEnemy(int Enum , int x , int y) 
+};				// void PutEnemy(int Enum , int x , int y)
 
 /**
- * This function draws a Bullet into the combat window.  The only 
+ * This function draws a Bullet into the combat window.  The only
  * parameter given is a pointer to the bullet's struct.
  * Everything else is computed in here.
  */
@@ -2813,7 +2813,7 @@ void put_radial_blue_sparks(float posX, float posY, float radius, int spark_type
 				                            "function used for this did not succeed (%s).",
 				              PLEASE_INFORM | IS_FATAL, fpath);
 			}
-			// SDL_SetColorKey( tmp_surf , 0 , 0 ); 
+			// SDL_SetColorKey( tmp_surf , 0 , 0 );
 			spark_prototype_surface[spark_type][k] = SDL_DisplayFormatAlpha(tmp_surf);
 			SDL_FreeSurface(tmp_surf);
 
@@ -2935,7 +2935,7 @@ void draw_inventory_occupied_rectangle(SDL_Rect TargetRect, int bgcolor)
 
 /**
  * This function displays the inventory screen and also fills in all the
- * items the influencer is carrying in his inventory and also all the 
+ * items the influencer is carrying in his inventory and also all the
  * items the influencer is fitted with.
  */
 void show_inventory_screen(void)
@@ -3093,7 +3093,7 @@ void show_inventory_screen(void)
 		// In case the player does not have anything in his hand, then of course we need to
 		// unset everything as 'not in his hand'.
 		//
-		// printf("\n Mouse button should cause no image now."); 
+		// printf("\n Mouse button should cause no image now.");
 	}
 }
 

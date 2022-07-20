@@ -1,8 +1,8 @@
-/* 
+/*
  *
  *   Copyright (c) 1994, 2002, 2003 Johannes Prix
  *   Copyright (c) 1994, 2002 Reinhard Prix
- *   Copyright (c) 2004-2010 Arthur Huillet 
+ *   Copyright (c) 2004-2010 Arthur Huillet
  *
  *  This file is part of Freedroid
  *
@@ -17,8 +17,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -45,7 +45,7 @@
 #	define CLANG_ANALYZER_NORETURN
 #endif
 
-// main.c 
+// main.c
 void Game(void);
 
 // automap.c
@@ -105,7 +105,7 @@ void write_lua_variables(struct auto_string *);
 void init_luaconfig(void);
 void lua_end_skill_init(void);
 
-// influ.c 
+// influ.c
 float calc_distance(float pos1_x, float pos1_y, float pos2_x, float pos2_y);
 float vect_len(pointf our_vector);
 enemy *GetLivingDroidBelowMouseCursor(void);
@@ -144,7 +144,7 @@ int set_up_intermediate_course_between_positions(gps * curpos, pointf * move_tar
 						 int maxwp, pathfinder_context * ctx);
 void clear_out_intermediate_points(gps *, pointf *, int);
 
-// bullet.c 
+// bullet.c
 void RotateVectorByAngle(pointf * vector, float rot_angle);
 void move_bullets(void);
 void do_melee_damage(void);
@@ -163,7 +163,7 @@ void bullet_init_for_enemy(struct bullet *, int, short int, struct enemy*);
 void delete_melee_shot(int);
 int GetBulletByName(const char *bullet_name);
 
-// view.c 
+// view.c
 void get_floor_boundaries(int, int *, int *, int *, int *);
 void gps_transform_map_init(void);
 void update_virtual_position(gps * target_pos, gps * source_pos, int level_num);
@@ -200,12 +200,12 @@ void show_inventory_screen(void);
 // It is based on the list_for_each_entry_safe() macro.
 // However, some entries in the visible_level_list are marked as not "valid",
 // and such levels have to be ignored during the call to the macro.
-// So, in the 'update part' of the 'for' statement we have to advance the ptr 
+// So, in the 'update part' of the 'for' statement we have to advance the ptr
 // *until* a valid entry is found. Thus, a loop (i.e. a compound-statement) is
 // needed.
 // However, the 'update part' of a 'for' statement has to be an 'expression'.
-// Thanks to gcc (this is not part of the C99 standard), it is possible to 
-// transform a compound statement into an expression, with the 
+// Thanks to gcc (this is not part of the C99 standard), it is possible to
+// transform a compound statement into an expression, with the
 // "({compound-statement;})" construct.
 // To ease readiness, the loop is defined in a next_valid_visible_level() macro.
 // This loop is also used in the 'initialization part' of the 'for' statement,
@@ -261,7 +261,7 @@ void show_inventory_screen(void);
 #define CRYPTICNAME(counter) _CRYPTIC_ ## counter ## _NAME_ ## counter
 
 #define BROWSE_LEVELS_IMPL(lvl, counter) \
-	int CRYPTICNAME(counter); \
+	int CRYPTICNAME(counter) = 0; \
 	for (next_valid_level(CRYPTICNAME(counter), 0), lvl = curShip.AllLevels[CRYPTICNAME(counter)] ; \
 	     CRYPTICNAME(counter) < curShip.num_levels ; \
 	     next_valid_level(CRYPTICNAME(counter), CRYPTICNAME(counter)+1), lvl = curShip.AllLevels[CRYPTICNAME(counter)])
@@ -288,7 +288,7 @@ void show_inventory_screen(void);
 	     next_valid_item(lvl, it, counter, counter+1))
 
 
-// light.c 
+// light.c
 void LightRadiusInit(void);
 void LightRadiusClean(void);
 int get_light_strength_screen(int x, int y);
@@ -296,7 +296,7 @@ int get_light_strength_cell(uint32_t x, uint32_t y);
 void update_light_list(void);
 void blit_light_radius(void);
 
-// open_gl.c 
+// open_gl.c
 int our_SDL_flip_wrapper(void);
 void our_SDL_update_rect_wrapper(SDL_Surface * screen, Sint32 x, Sint32 y, Sint32 w, Sint32 h);
 void drawIsoEnergyBar(int, int, int, int, int, int, float, myColor *, myColor *);
@@ -322,7 +322,7 @@ void gl_debug_marker(const char *str);
 void use_shader(enum shader shader);
 void init_shaders(void);
 
-// blocks.c 
+// blocks.c
 void iso_load_bullet_surfaces(void);
 void Load_Mouse_Move_Cursor_Surfaces(void);
 void load_droid_animation_images(struct droidspec *);
@@ -346,7 +346,7 @@ void load_tux_graphics(int motion_class, int tux_part_group, const char *part_st
 void reload_tux_graphics(void);
 void get_offset_for_iso_image_from_file_and_path(const char *fpath, struct image * our_iso_image);
 
-// graphics.c 
+// graphics.c
 void blit_mouse_cursor(void);
 void fade_out_screen(void);
 void fade_in_screen(void);
@@ -369,7 +369,7 @@ void free_graphics(void);
 void reload_graphics(void);
 void clear_screen(void);
 
-// saveloadgame.c 
+// saveloadgame.c
 int find_saved_games(struct dirent ***);
 void load_and_show_thumbnail(char *);
 int save_game(void);
@@ -378,7 +378,7 @@ int load_game(void);
 int delete_game(void);
 void load_and_show_stats(char *);
 
-// mission.c 
+// mission.c
 void complete_mission(const char *);
 void assign_mission(const char *);
 void get_quest_list(char *);
@@ -391,7 +391,7 @@ int get_mission_index_by_name(const char *);
 void toggle_quest_browser(void);
 struct widget_group *create_quest_browser(void);
 
-// map.c 
+// map.c
 void init_map_tile(struct map_tile*);
 void respawn_level(int level_num);
 gps get_map_label_center(const char *);
@@ -569,7 +569,7 @@ int CursorIsOnWhichSkillButton(int x, int y);
 void load_skill_icon_if_needed(spell_skill_spec *spec);
 int TeleportHome(void);
 
-// input.c 
+// input.c
 int input_handle(void);
 void save_mouse_state(void);
 void init_keyboard_input_array(void);
@@ -609,7 +609,7 @@ void input_get_keybind(const char *cmdname, SDLKey * key, SDLMod * mod);
 void input_get_keybind_string(const keybind_t *kb, char *out);
 void input_set_keybind(char *keybind, SDLKey key, SDLMod mod);
 
-// menu.c 
+// menu.c
 void StoreMenuBackground(int backup_slot);
 void RestoreMenuBackground(int backup_slot);
 int do_menu_selection(char *, char **, int, const char *, struct font *);
@@ -619,7 +619,7 @@ void Cheatmenu(void);
 void EscapeMenu(void);
 int load_named_game(const char *name);
 
-// misc.c 
+// misc.c
 #define CURLEVEL() (curShip.AllLevels[Me.pos.z])
 void print_trace(int signum);
 void adapt_button_positions_to_screen_resolution(void);
@@ -656,7 +656,7 @@ int world_frozen(void);
 int fd_setenv(const char *, const char *, int);
 int fd_unsetenv(const char *);
 
-// enemy.c 
+// enemy.c
 void SetRestOfGroupToState(Enemy ThisRobot, short NewState);
 int MakeSureEnemyIsInsideHisLevel(Enemy ThisRobot);
 int CheckEnemyEnemyCollision(enemy *);
@@ -709,7 +709,7 @@ char *get_string(int, const char *, const char *);
 void printf_SDL(SDL_Surface * screen, int x, int y, const char *fmt, ...) PRINTF_FMT_ATTRIBUTE(4,5);
 int longest_line_width(char *text);
 
-// text_public.c 
+// text_public.c
 char *ReadAndMallocStringFromData(char *SearchString, const char *StartIndicationString, const char *EndIndicationString);
 char *ReadAndMallocStringFromDataOptional(char *SearchString, const char *StartIndicationString, const char *EndIndicationString);
 int CountStringOccurences(char *SearchString, const char *TargetString);
@@ -734,7 +734,7 @@ int FS_filelength(FILE * f);
 int inflate_stream(FILE *, unsigned char **, int *);
 int deflate_to_stream(unsigned char *, int, FILE *);
 
-// hud.c 
+// hud.c
 void append_item_description(struct auto_string *str, item *);
 void show_texts_and_banner(int);
 int get_days_of_game_duration(float current_game_date);
@@ -764,7 +764,7 @@ void addon_crafting_ui(void);
 int addon_crafting_ui_visible(void);
 void addon_crafting_ui_close();
 
-// shop.c 
+// shop.c
 void ShowItemPicture(int, int, int);
 void ShowRescaledItem(int position, int TuxItemRow, item * ShowItem);
 int AssemblePointerListForItemShow(item ** ItemPointerListPointer, int IncludeWornItems);
@@ -772,7 +772,7 @@ void init_trade_with_character(struct npc *);
 int GreatShopInterface(int, item * ShowPointerList[MAX_ITEMS_IN_INVENTORY], int, item * TuxItemsList[MAX_ITEMS_IN_INVENTORY],
 		       struct shop_decision *);
 
-// takeover.c 
+// takeover.c
 
 int droid_takeover(struct enemy *, float *);
 int do_takeover(int, int, int, enemy *);

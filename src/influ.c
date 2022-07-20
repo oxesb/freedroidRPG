@@ -1407,7 +1407,7 @@ int perform_tux_attack(int use_mouse_cursor_for_targeting)
 				continue;
 
 			// Set up a melee attack
-			struct melee_shot new_melee_shot;
+			struct melee_shot new_melee_shot = {};
 			new_melee_shot.attack_target_type = ATTACK_TARGET_IS_ENEMY;
 			new_melee_shot.mine = TRUE;
 			new_melee_shot.bot_target_n = erot->id;

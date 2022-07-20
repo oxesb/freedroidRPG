@@ -17,8 +17,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -75,7 +75,7 @@ void our_SDL_update_rect_wrapper(SDL_Surface * screen, Sint32 x, Sint32 y, Sint3
 	} else {
 		SDL_UpdateRect(screen, x, y, w, h);
 	}
-};				// void our_SDL_update_rect_wrapper ( SDL_Surface *screen, Sint32 x, Sint32 y, Sint32 w, Sint32 h ) 
+};				// void our_SDL_update_rect_wrapper ( SDL_Surface *screen, Sint32 x, Sint32 y, Sint32 w, Sint32 h )
 
 /**
  * Simon N.:  ISO functions.  these draw quads in the 3D planes
@@ -148,11 +148,11 @@ void drawIsoEnergyBar(int x, int y, int z, int h, int d, int length, float fill,
 	glEnd();
 	glColor4ub(255, 255, 255, 255);
 #endif
-};				// void drawIsoEnergyBar(int dir, int x, int y, int z, int h, int d, int length, float fill, myColor *c1, myColor *c2  ) 
+};				// void drawIsoEnergyBar(int dir, int x, int y, int z, int h, int d, int length, float fill, myColor *c1, myColor *c2  )
 
 /**
  * This function flips a given SDL_Surface.
- * 
+ *
  * This is particularly necessary, since OpenGL has a different native
  * coordinate system than SDL and therefore images often appear flipped
  * around if one doesn't counter this effect with OpenGL by flipping the
@@ -181,7 +181,7 @@ void flip_image_vertically(SDL_Surface * tmp1)
 
 	SDL_UnlockSurface(tmp1);
 
-};				// void flip_image_vertically ( SDL_Surface* tmp1 ) 
+};				// void flip_image_vertically ( SDL_Surface* tmp1 )
 
 /**
  * Compute the dimensions of the smaller power-of-two-sized texture
@@ -283,7 +283,7 @@ static void safely_set_open_gl_viewport_and_matrix_mode(void)
 #endif
 
 /**
- * This function does the second part of the OpenGL parameter 
+ * This function does the second part of the OpenGL parameter
  * initialization.  We've made this chunk of code into a separate function
  * such that the frequent issues with OpenGL drivers can be attributed to
  * a particular spot in the code more easily.
@@ -353,7 +353,7 @@ void RestoreMenuBackground(int backup_slot)
 		int h = GameConfig.screen_height;
 		int w = GameConfig.screen_width;
 
-		// Stop any image batch being constructed, 
+		// Stop any image batch being constructed,
 		// so that struct image does not get confused.
 		end_image_batch(__FUNCTION__);
 
@@ -397,7 +397,7 @@ void StoreMenuBackground(int backup_slot)
 
 	if (use_open_gl) {
 #ifdef HAVE_LIBGL
-		// Stop any image batch being constructed, 
+		// Stop any image batch being constructed,
 		// so that struct image does not get confused.
 		end_image_batch(__FUNCTION__);
 
@@ -451,7 +451,7 @@ void set_up_stretched_texture_for_light_radius(void)
 	if (!use_open_gl)
 		return;
 
-	// Stop any image batch being constructed, 
+	// Stop any image batch being constructed,
 	// so that struct image does not get confused.
 	end_image_batch(__FUNCTION__);
 
@@ -481,7 +481,7 @@ void set_up_stretched_texture_for_light_radius(void)
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
 
-	// Generate The Texture 
+	// Generate The Texture
 	if (pbo) {
 		glBufferData(GL_PIXEL_UNPACK_BUFFER,
 				light_radius_stretch_surface->w * light_radius_stretch_surface->h * 4,
@@ -522,7 +522,7 @@ void light_radius_update_stretched_texture(void)
 		}
 	}
 
-	// Stop any image batch being constructed, 
+	// Stop any image batch being constructed,
 	// so that struct image does not get confused.
 	end_image_batch(__FUNCTION__);
 
@@ -539,7 +539,7 @@ void light_radius_update_stretched_texture(void)
 
 #endif
 
-};				// void light_radius_update_stretched_texture ( void ) 
+};				// void light_radius_update_stretched_texture ( void )
 
 /**
  * Following a suggestion from Simon, we're now implementing one single
@@ -553,8 +553,6 @@ void light_radius_update_stretched_texture(void)
 void blit_open_gl_stretched_texture_light_radius(int decay_x, int decay_y)
 {
 #ifdef HAVE_LIBGL
-	struct image local_iso_image;
-
 	// We make sure, that there is one single texture created before
 	// doing any of our texture-blitting or texture-modification stuff
 	// with it.
@@ -567,6 +565,8 @@ void blit_open_gl_stretched_texture_light_radius(int decay_x, int decay_y)
 	// texture blitting code for this, so we need to embed the automap texture
 	// in a surrounding 'iso_image', but that shouldn't be costly or anything...
 	//
+	struct image local_iso_image = {};
+
 	local_iso_image.texture = light_radius_stretch_texture;
 	local_iso_image.tex_w = LightRadiusConfig.texture_w;
 	local_iso_image.tex_h = LightRadiusConfig.texture_h;
@@ -665,7 +665,7 @@ void blit_background(const char *background)
 	// Compute coordinates and display
 	int x = bg->x;
 	int y = bg->y;
-	
+
 	float scalex = 1.0, scaley = 1.0;
 	if (bg->must_scale) {
 		scalex = (float)GameConfig.screen_width / bg->img.w;
