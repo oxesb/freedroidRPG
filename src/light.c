@@ -551,15 +551,15 @@ void update_light_list()
 
 		// We add some light strength according to the phase of the blast
 
-		int light_strength = 10 + current_blast->phase / 2;
-		if (light_strength < 0) continue;
+		int add_light_strength = 10 + current_blast->phase / 2;
+		if (add_light_strength < 0) continue;
 
 		struct gps vpos;
 		update_virtual_position(&vpos, &current_blast->pos, Me.pos.z);
 		if (vpos.x == -1)
 			continue;
 
-		add_light_source(current_blast->pos, vpos, light_strength);
+		add_light_source(current_blast->pos, vpos, add_light_strength);
 	}
 
 	// Now we can fill in the remaining light sources of this level.

@@ -672,9 +672,9 @@ struct widget_group *get_lvledit_ui()
 		enum lvledit_object_type type = category_list[i].object_type;
 		object_category *categories = category_list[i].categories;
 		for (j = 0; j < category_list[i].length; j++) {
-			struct widget *widget = widget_lvledit_categoryselector_create(j, _(categories[j].name), type, *categories[j].object_list);
-			categories[j].cs = widget->ext;
-			widget_group_add(level_editor_widget_group, widget);
+			struct widget *selector = widget_lvledit_categoryselector_create(j, _(categories[j].name), type, *categories[j].object_list);
+			categories[j].cs = selector->ext;
+			widget_group_add(level_editor_widget_group, selector);
 		}
 	}
 

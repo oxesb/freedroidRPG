@@ -397,8 +397,8 @@ static int load_saved_game(int use_backup)
 		// We reload the savegame and use it as is.
 		free(game_data);
 		data_file = fopen(sav_filepath, "rb");
-		int loaded_size = 0;
-		inflate_stream(data_file, (unsigned char **)&game_data, &loaded_size);
+		int data_size = 0;
+		inflate_stream(data_file, (unsigned char **)&game_data, &data_size);
 		fclose(data_file);
 	}
 

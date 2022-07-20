@@ -488,10 +488,10 @@ void probe_display_stats(int x, int y, int width, int height, struct probe_stats
 
 	// Adapt the bars width to fit the graph's width.
 	// However, the bars width can not be lower than 2 (so that the graph is 'readable')
-	int bar_width = max(2, (int)floor((float)width / (float)stats->max_value));
+	int vbar_width = max(2, (int)floor((float)width / (float)stats->max_value));
 
 	// Maximum number of bars that can be displayed on the graph
-	int nb_bars = width / bar_width;
+	int nb_bars = width / vbar_width;
 
 	// If the number of bars is lower than the number of values to display,
 	// then we have to aggregate several values into one bar (this is due to
@@ -525,10 +525,10 @@ void probe_display_stats(int x, int y, int width, int height, struct probe_stats
 		for (i = 0; i < nb_bars; i++) {
 			if (aggregated_bars[i].val == 0)
 				continue;
-			SDL_Rect fill_rect = { x + i*bar_width, y + height - (int)(aggregated_bars[i].val*scale), bar_width, (int)(aggregated_bars[i].val*scale) };
+			SDL_Rect fill_rect = { x + i*vbar_width, y + height - (int)(aggregated_bars[i].val*scale), vbar_width, (int)(aggregated_bars[i].val*scale) };
 			draw_rectangle(&fill_rect, 0xff, 0x00, 0x00, 0x88);
 		}
-		SDL_Rect fill_rect = { x + nb_bars*bar_width, y + height - (int)(stats->overflow_cntr*scale), bar_width, (int)(stats->overflow_cntr*scale) };
+		SDL_Rect fill_rect = { x + nb_bars*vbar_width, y + height - (int)(stats->overflow_cntr*scale), vbar_width, (int)(stats->overflow_cntr*scale) };
 		draw_rectangle(&fill_rect, 0xff, 0xff, 0x00, 0x88);
 	}
 

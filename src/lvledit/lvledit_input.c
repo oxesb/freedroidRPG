@@ -40,9 +40,9 @@
 
 static void HandleLevelEditorCursorKeys()
 {
-	level *EditLevel;
+	level *edit_level;
 
-	EditLevel = curShip.AllLevels[Me.pos.z];
+	edit_level = curShip.AllLevels[Me.pos.z];
 	static int PressedSince[4] = { 0, 0, 0, 0 };
 	int DoAct[4] = { 0, 0, 0, 0 };
 	int i;
@@ -92,12 +92,12 @@ static void HandleLevelEditorCursorKeys()
 	}
 	if (DoAct[1]) {
 		for (i = 0; i < repeat; i++)
-			if (rintf(Me.pos.x) < EditLevel->xlen - 1)
+			if (rintf(Me.pos.x) < edit_level->xlen - 1)
 				Me.pos.x += 1;
 	}
 	if (DoAct[2]) {
 		for (i = 0; i < repeat; i++)
-			if (rintf(Me.pos.y) < EditLevel->ylen - 1)
+			if (rintf(Me.pos.y) < edit_level->ylen - 1)
 				Me.pos.y += 1;
 	}
 	if (DoAct[3]) {

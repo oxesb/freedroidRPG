@@ -704,8 +704,8 @@ int validate_events()
 		run_lua(LUA_DIALOG, "function exit_game(a)\nend\n");
 
 		// Loop on all events
-		for (int i = 0; i < event_triggers.size; i++) {
-			struct event_trigger *evt = (struct event_trigger *)dynarray_member(&event_triggers, i, sizeof(struct event_trigger));
+		for (int e = 0; e < event_triggers.size; e++) {
+			struct event_trigger *evt = (struct event_trigger *)dynarray_member(&event_triggers, e, sizeof(struct event_trigger));
 			printf("Testing event \"%s\" from  \"%s\"...\n", evt->name, act->name);
 			int rtn = run_lua(LUA_DIALOG, evt->lua_code);
 			if (rtn)

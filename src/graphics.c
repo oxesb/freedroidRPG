@@ -121,18 +121,18 @@ static void fade(int fade_delay, int direction)
 	Uint32 now   = SDL_GetTicks();
 	Uint32 start = now;
 	while (now < start + fade_delay) {
-		Uint8 fade = 255 * ((float)(now - start)) / fade_delay;
+		Uint8 fade_value = 255 * ((float)(now - start)) / fade_delay;
 
 		if (direction < 0)
-			fade = 255 - fade;
+			fade_value = 255 - fade_value;
 
 		if (!use_open_gl) {
-			SDL_SetAlpha(bg, SDL_SRCALPHA | SDL_RLEACCEL, fade);
+			SDL_SetAlpha(bg, SDL_SRCALPHA | SDL_RLEACCEL, fade_value);
 			SDL_FillRect(Screen, NULL, 0);
 			SDL_BlitSurface(bg, NULL, Screen, NULL);
 		} else {
 #ifdef HAVE_LIBGL
-			glColor4ub(fade, fade, fade, 255);
+			glColor4ub(fade_value, fade_value, fade_value, 255);
 			RestoreMenuBackground(0);
 			glColor4ub(255, 255, 255, 255);
 #endif

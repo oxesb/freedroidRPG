@@ -1,4 +1,4 @@
-/* 
+/*
  *
  *   Copyright (c) 2004-2010 Arthur Huillet
  *
@@ -16,8 +16,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -62,7 +62,7 @@ int get_number_popup(const char *displayed_text, const char *suggested_val)
 			tgt = atoi(str);
 	} else
 		tgt = -2;
-	
+
 	free(str);
 
 	return (tgt);
@@ -289,28 +289,28 @@ static void set_level_interfaces(void)
 			break;
 
 		case JUMP_TARGET_NORTH:
-			if (LeftPressed() || RightPressed()) {	//left or right arrow ? handled below 
+			if (LeftPressed() || RightPressed()) {	//left or right arrow ? handled below
 				break;
 			}
 			input_target_value(&edit_level->jump_target_north);
 			break;
 
 		case JUMP_TARGET_EAST:
-			if (LeftPressed() || RightPressed()) {	//left or right arrow ? handled below 
+			if (LeftPressed() || RightPressed()) {	//left or right arrow ? handled below
 				break;
 			}
 			input_target_value(&edit_level->jump_target_east);
 			break;
 
 		case JUMP_TARGET_SOUTH:
-			if (LeftPressed() || RightPressed()) {	//left or right arrow ? handled below 
+			if (LeftPressed() || RightPressed()) {	//left or right arrow ? handled below
 				break;
 			}
 			input_target_value(&edit_level->jump_target_south);
 			break;
 
 		case JUMP_TARGET_WEST:
-			if (LeftPressed() || RightPressed()) {	//left or right arrow ? handled below 
+			if (LeftPressed() || RightPressed()) {	//left or right arrow ? handled below
 				break;
 			}
 			input_target_value(&edit_level->jump_target_west);
@@ -390,11 +390,10 @@ static void add_rem_level(void)
 				SDL_Delay(1);
 			if (curShip.num_levels < MAX_LEVELS) {
 				int new_level_num = curShip.num_levels;
-				int i;
 				// search empty level, if any
-				for (i = 0; i < curShip.num_levels; ++i) {
-					if (!level_exists(i)) {
-						new_level_num = i;
+				for (int l = 0; l < curShip.num_levels; ++l) {
+					if (!level_exists(l)) {
+						new_level_num = l;
 						break;
 					}
 				}
@@ -604,7 +603,7 @@ static void level_options(void)
 			proceed_now = !proceed_now;
 			break;
 		case CHANGE_LEVEL_POSITION:
-			if (LeftPressed() || RightPressed()) {	//left or right arrow ? handled below 
+			if (LeftPressed() || RightPressed()) {	//left or right arrow ? handled below
 				break;
 			}
 			while (EnterPressed() || SpacePressed() || MouseLeftPressed())
@@ -631,7 +630,7 @@ static void level_options(void)
 			EditLevel()->flags ^= NO_RESPAWN;
 			break;
 		case SET_DROP_CLASS:
-			if (LeftPressed() || RightPressed()) {	//left or right arrow ? handled below 
+			if (LeftPressed() || RightPressed()) {	//left or right arrow ? handled below
 				break;
 			}
 			while (EnterPressed() || SpacePressed() || MouseLeftPressed())
@@ -649,7 +648,7 @@ static void level_options(void)
 				EditLevel()->drop_class = MAX_DROP_CLASS;
 			else
 				EditLevel()->drop_class = tgt;
-				
+
 			break;
 		case SET_TELEPORT_BLOCKED:
 			EditLevel()->flags ^= TELEPORT_BLOCKED;
@@ -981,7 +980,7 @@ int do_level_editor_main_menu()
 			choose_game_act();
 			break;
 		case ENTER_LEVEL_POSITION:
-			if (LeftPressed() || RightPressed()) {	//left or right arrow ? handled below 
+			if (LeftPressed() || RightPressed()) {	//left or right arrow ? handled below
 				break;
 			}
 			while (EnterPressed() || SpacePressed() || MouseLeftPressed())
@@ -1051,7 +1050,7 @@ int do_level_editor_main_menu()
 
 		if (LeftPressed() || RightPressed()) {
 			switch (menu_position) {
-			
+
 			case ENTER_LEVEL_POSITION:
 				if (LeftPressed()) {
 					// find first available level lower than the current one

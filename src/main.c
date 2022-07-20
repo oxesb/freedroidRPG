@@ -299,8 +299,8 @@ void UpdateCountersForThisFrame()
 	BROWSE_VISIBLE_LEVELS(vis_lvl, n) {
 		level *lvl = vis_lvl->lvl_pointer;
 		struct item *the_item = NULL;
-		int i = 0;
-		BROWSE_LEVEL_ITEMS(lvl, the_item, i) {
+		int it = 0;
+		BROWSE_LEVEL_ITEMS(lvl, the_item, it) {
 			if (the_item->throw_time > 0)
 				the_item->throw_time += latest_frame_time;
 			if (the_item->throw_time > (M_PI / 3.0))
