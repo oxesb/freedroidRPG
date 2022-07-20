@@ -18,16 +18,16 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
 
 /**
- * This file contains (all?) map-related functions, which also includes 
- * loading of decks and whole ships, starting the lifts and consoles if 
- * close to the paradroid, refreshes as well as determining the map brick 
+ * This file contains (all?) map-related functions, which also includes
+ * loading of decks and whole ships, starting the lifts and consoles if
+ * close to the paradroid, refreshes as well as determining the map brick
  * that contains specified coordinates are done in this file.
  */
 
@@ -109,7 +109,7 @@ void respawn_level(int level_num)
 			erot->CompletelyFixed = FALSE;
 			erot->follow_tux = FALSE;
 		}
-		
+
 		erot->has_greeted_influencer = FALSE;
 
 		if (wp_num > 0) {
@@ -179,8 +179,8 @@ This is a severe error in the game data of FreedroidRPG.", PLEASE_INFORM, label)
 };
 
 /**
- * Next we extract the level interface data from the human-readable data 
- * into the level struct, but WITHOUT destroying or damaging the 
+ * Next we extract the level interface data from the human-readable data
+ * into the level struct, but WITHOUT destroying or damaging the
  * human-readable data in the process!
  */
 static void decode_interfaces(level *loadlevel, char *DataPointer)
@@ -470,7 +470,7 @@ static char *decode_obstacles(level *load_level, char *data_pointer)
 
 	char *curfield = obstacle_SectionBegin;
 	while (*curfield != '/') {
-		//structure of obstacle entry is :      // t59 x2.50 y63.50 l-1 d-1 
+		//structure of obstacle entry is :      // t59 x2.50 y63.50 l-1 d-1
 		//we read the type
 		curfield++;
 		char *curfieldend = curfield;
@@ -598,7 +598,7 @@ static char *decode_extension_chest(char *ext, void **data)
 {
 	struct dynarray *chest = dynarray_alloc(1, sizeof(item));
 	char *item_str, *item_end;
-	
+
 	item_str = ext;
 
 	while (*item_str != '}') {
@@ -791,7 +791,7 @@ static char *decode_item_section(level *loadlevel, char *data)
 	ItemsSectionBegin = LocateStringInData(data, ITEMS_SECTION_BEGIN_STRING);
 	ItemsSectionEnd = LocateStringInData(ItemsSectionBegin, ITEMS_SECTION_END_STRING);
 
-	// We add a terminator at the end of the items section, but ONLY TEMPORARY.  
+	// We add a terminator at the end of the items section, but ONLY TEMPORARY.
 	// The damage will be restored later!
 	Preserved_Letter = ItemsSectionEnd[0];
 	ItemsSectionEnd[0] = 0;
@@ -931,7 +931,7 @@ static char *decode_waypoints(level *loadlevel, char *data)
 		return NULL;
 
 	int curlinepos = 0;
-	
+
 	while (1) {
 		// Get the next line
 
@@ -1106,7 +1106,7 @@ static int smash_obstacles_only_on_tile(float x, float y, int lvl, int map_x, in
 
 
 /**
- * When a destructible type of obstacle gets hit, e.g. by a blast 
+ * When a destructible type of obstacle gets hit, e.g. by a blast
  * exploding on the tile or a melee hit on the same floor tile, then some
  * of the obstacles around it (like barrels or crates) might explode, sometimes
  * leaving some treasure behind.
@@ -1164,12 +1164,12 @@ static level *decode_level(char **buffer)
 	char *data = *buffer;
 
 	loadlevel = (level *)MyMalloc(sizeof(level));
-	
+
 	if (decode_header(loadlevel, data)) {
 		error_message(__FUNCTION__, "Unable to decode level header!", PLEASE_INFORM | IS_FATAL);
 	}
-	
-	// The order of sections in the file has to match this.	
+
+	// The order of sections in the file has to match this.
 	data = decode_map(loadlevel, data);
 	if (!data) {
 		error_message(__FUNCTION__, "Unable to decode the map for level %d", PLEASE_INFORM | IS_FATAL, loadlevel->levelnum);
@@ -1225,7 +1225,7 @@ static level *decode_level(char **buffer)
 }
 
 
-/** 
+/**
  * Call the random dungeon generator on this level  if this level is marked
  * as being randomly generated and if we are not in the "leveleditor" mode
  * in which case random dungeons must not be considered as generated (so that
@@ -1322,7 +1322,7 @@ int LoadShip(char *filename, int compressed)
 	// Free existing level data
 	free_current_ship();
 
-	// Read the whole ship-data to memory 
+	// Read the whole ship-data to memory
 	//
 	ShipFile = fopen(filename, "rb");
 	if (!ShipFile) {
@@ -1359,7 +1359,7 @@ int LoadShip(char *filename, int compressed)
 
 		curShip.AllLevels[this_levelnum] = this_level;
 		curShip.num_levels = this_levelnum + 1;
-		
+
 		generate_dungeon_if_needed(this_level);
 
 		// Move to the level termination marker
@@ -1369,7 +1369,7 @@ int LoadShip(char *filename, int compressed)
 		// Check if there is another level
 		if (!strstr(pos, LEVEL_HEADER_LEVELNUMBER)) {
 			done = 1;
-		} 
+		}
 	}
 
 	// Now that all the information has been copied, we can free the loaded data
@@ -1383,7 +1383,7 @@ int LoadShip(char *filename, int compressed)
 
 	return OK;
 
-};				// int LoadShip ( ... ) 
+};				// int LoadShip ( ... )
 
 /**
  * This should write the obstacle information in human-readable form into
@@ -1459,10 +1459,11 @@ static void encode_map_labels(struct auto_string *shipstr, struct level *lvl)
 
 /**
  *
- * 
+ *
  */
 static void WriteOutOneItem(struct auto_string *shipstr, item *ItemToWriteOut)
 {
+	if (ItemToWriteOut == NULL) return;
 
 	autostr_append(shipstr, "%s%s\" %s%f %s%f ", ITEM_ID_STRING, ItemMap[ItemToWriteOut->type].id,
 			ITEM_POS_X_STRING, ItemToWriteOut->pos.x, ITEM_POS_Y_STRING, ItemToWriteOut->pos.y);
@@ -1645,7 +1646,7 @@ static void encode_level_for_saving(struct auto_string *shipstr, level *lvl, int
 	int i;
 	int xlen = lvl->xlen, ylen = lvl->ylen;
 
-	// Write level header	
+	// Write level header
 	autostr_append(shipstr, "%s %d\n\
 xlen of this level: %d\n\
 ylen of this level: %d\n\
@@ -1716,7 +1717,7 @@ jump target west: %d\n", LEVEL_HEADER_LEVELNUMBER, lvl->levelnum,
 		encode_waypoints(shipstr, lvl);
 	}
 
-	autostr_append(shipstr, "%s\n----------------------------------------------------------------------\n", 
+	autostr_append(shipstr, "%s\n----------------------------------------------------------------------\n",
 			LEVEL_END_STRING);
 }
 
@@ -1735,7 +1736,7 @@ int SaveShip(const char *filename, int reset_random_levels, int compress)
 	FILE *ShipFile = NULL;
 	struct auto_string *shipstr;
 
-	// Open the ship file 
+	// Open the ship file
 	if ((ShipFile = fopen(filename, "wb")) == NULL) {
 		error_message(__FUNCTION__, "Error opening ship file %s for writing.", NO_REPORT, filename);
 		return ERR;
@@ -1743,7 +1744,7 @@ int SaveShip(const char *filename, int reset_random_levels, int compress)
 
 	shipstr	= alloc_autostr(1048576);
 	autostr_printf(shipstr, "\n");
-	
+
 	// Save all the levels
 	for (i = 0; i < curShip.num_levels; i++) {
 		if (level_exists(i)) {
@@ -1753,7 +1754,7 @@ int SaveShip(const char *filename, int reset_random_levels, int compress)
 
 	autostr_append(shipstr, "%s\n\n", END_OF_SHIP_DATA_STRING);
 
-	if (compress) { 
+	if (compress) {
 		deflate_to_stream((unsigned char *)shipstr->value, shipstr->length, ShipFile);
 	}	else {
 		if (fwrite((unsigned char *)shipstr->value, shipstr->length, 1, ShipFile) != 1) {
@@ -1842,7 +1843,7 @@ out:	free_autostr(s_forces_str);
 }
 
 /**
- * This function is used to calculate the number of the droids on the 
+ * This function is used to calculate the number of the droids on the
  * ship, which is a global variable.
  */
 void CountNumberOfDroidsOnShip(void)
@@ -1862,7 +1863,7 @@ void CountNumberOfDroidsOnShip(void)
 
 /* -----------------------------------------------------------------
  * This function initializes all enemies, which means that enemies are
- * filled in into the enemy list according to the enemies types that 
+ * filled in into the enemy list according to the enemies types that
  * are to be found on each deck.
  * ----------------------------------------------------------------- */
 int GetCrew(char *filename)
@@ -1907,7 +1908,7 @@ int GetCrew(char *filename)
 	free(MainDroidsFilePointer);
 	return (OK);
 
-};				// int GetCrew ( ... ) 
+};				// int GetCrew ( ... )
 
 /**
  *
@@ -2042,7 +2043,7 @@ void GetThisLevelsDroids(char *section_pointer)
 		newen->faction = FACTION_BOTS;
 
 		enemy_insert_into_lists(newen, TRUE);
-	}			// while (enemy-limit of this level not reached) 
+	}			// while (enemy-limit of this level not reached)
 
 	search_ptr = section_pointer;
 	get_this_levels_special_forces(search_ptr, our_level_number, lvl_end_location);
@@ -2054,7 +2055,7 @@ void GetThisLevelsDroids(char *section_pointer)
 /**
  * This function determines whether a given object on x/y is visible to
  * the 001 or not (due to some walls or something in between
- * 
+ *
  * Return values are TRUE or FALSE accordingly
  *
  */
@@ -2100,7 +2101,7 @@ inline float translate_pixel_to_map_location(float axis_x, float axis_y, int giv
 		return (Me.pos.y - (axis_x / ((float)FLOOR_TILE_WIDTH)) + (axis_y / ((float)FLOOR_TILE_HEIGHT)));
 	}
 
-};				// int translate_pixel_to_map_location ( int axis_x , int axis_y , int give_x ) 
+};				// int translate_pixel_to_map_location ( int axis_x , int axis_y , int give_x )
 
 /**
  *
@@ -2117,7 +2118,7 @@ float translate_pixel_to_zoomed_map_location(float axis_x, float axis_y, int giv
 		// return ( - ( axis_x / ISO_WIDTH ) + ( axis_y / ISO_HEIGHT ) ) ;
 	}
 
-};				// int translate_pixel_to_zoomed_map_location ( int axis_x , int axis_y , int give_x ) 
+};				// int translate_pixel_to_zoomed_map_location ( int axis_x , int axis_y , int give_x )
 
 /**
  *
@@ -2150,7 +2151,7 @@ int map_is_zoomed_out(void)
  * @param x_res	pointer to the int that will hold the x position on screen
  * @param y_res pointer to the y position on screen
  * @param zoom_factor zoom factor in use
- * 
+ *
  */
 void translate_map_point_to_screen_pixel_func(float X, float Y, int *x_res, int *y_res)
 {

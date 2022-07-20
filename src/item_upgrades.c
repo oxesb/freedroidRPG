@@ -1,4 +1,4 @@
-/* 
+/*
  *
  *  Copyright (c) 2010 Ari Mustonen
  *
@@ -15,8 +15,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -35,7 +35,7 @@ static struct dynarray *addon_specs = NULL;
  */
 void create_upgrade_socket(item *it, int type, const char *addon)
 {
-	struct upgrade_socket socket; 
+	struct upgrade_socket socket;
 
 	// Initialize upgrade socket data.
 	socket.type = type;
@@ -54,8 +54,9 @@ void create_upgrade_socket(item *it, int type, const char *addon)
  */
 void delete_upgrade_sockets(item *it)
 {
-	int i;
-	for (i = 0 ; i < it->upgrade_sockets.size ; i++) {
+	if (it == NULL) return;
+
+	for (int i = 0 ; i < it->upgrade_sockets.size ; i++) {
 		struct upgrade_socket *socket = (struct upgrade_socket *)dynarray_member(&it->upgrade_sockets, i, sizeof(struct upgrade_socket));
 		free(socket->addon);
 	}
@@ -483,7 +484,7 @@ int count_used_sockets(item *it)
 	for (i = 0; i < it->upgrade_sockets.size; i++) {
 		struct upgrade_socket *socket = (struct upgrade_socket *)dynarray_member(&it->upgrade_sockets, i, sizeof(struct upgrade_socket));
 		const char *addon = socket->addon;
-		if (addon)	
+		if (addon)
 			count++;
 	}
 

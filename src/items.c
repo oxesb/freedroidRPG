@@ -210,11 +210,13 @@ static void self_repair_item(item *it)
  */
 unsigned long calculate_item_buy_price(item * BuyItem)
 {
-	int i;
+	if (BuyItem == NULL)
+		return 0;
+
 	int price = ItemMap[BuyItem->type].base_list_price;
 
 	// Add the prices of the add-ons to the total price.
-	for (i = 0; i < BuyItem->upgrade_sockets.size; i++) {
+	for (int i = 0; i < BuyItem->upgrade_sockets.size; i++) {
 		struct upgrade_socket *socket = (struct upgrade_socket *)dynarray_member(&BuyItem->upgrade_sockets, i, sizeof(struct upgrade_socket));
 		const char *addon = socket->addon;
 		if (addon) {

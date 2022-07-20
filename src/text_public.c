@@ -1,8 +1,8 @@
-/* 
+/*
  *
  *
  *   Copyright (c) 2003 Johannes Prix
- *   Copyright (c) 2004-2010 Arthur Huillet 
+ *   Copyright (c) 2004-2010 Arthur Huillet
  *
  *  This file is part of Freedroid
  *
@@ -17,14 +17,14 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
 
 /**
- * This file contains some text code, that is also needed in the 
+ * This file contains some text code, that is also needed in the
  * dialog editor.
  */
 
@@ -52,7 +52,7 @@ struct msg_store_item {
 
 static struct dynarray *msg_store = NULL;
 
-/** 
+/**
  * This function works a malloc, except that it also checks for
  * success and terminates in case of "out of memory", so we don't
  * need to do this always in the code.
@@ -487,10 +487,10 @@ int CountStringOccurences(char *SearchString, const char *TargetString)
 		Counter++;
 	}
 	return (Counter);
-};				// CountStringOccurences ( char* SearchString , char* TargetString ) 
+};				// CountStringOccurences ( char* SearchString , char* TargetString )
 
 /**
- * This function read in a file with the specified name, allocated 
+ * This function read in a file with the specified name, allocated
  * memory for it of course, looks for the file end string and then
  * terminates the whole read in file with a 0 character, so that it
  * can easily be treated like a common string.
@@ -498,7 +498,7 @@ int CountStringOccurences(char *SearchString, const char *TargetString)
 char *read_and_malloc_and_terminate_file(const char *filename, const char *file_end_string)
 {
 	// Read the whole theme data to memory.  We use binary mode, as we
-	// don't want to have to deal with any carriage return/line feed 
+	// don't want to have to deal with any carriage return/line feed
 	// convention mess on win32 or something...
 
 	FILE *data_file = fopen(filename, "rb");
@@ -563,7 +563,7 @@ char *read_and_malloc_and_terminate_file(const char *filename, const char *file_
  * This function tries to locate a string in some given data string.
  * The data string is assumed to be null terminated.  Otherwise SEGFAULTS
  * might happen.
- * 
+ *
  * The return value is a pointer to the first instance where the substring
  * we are searching is found in the main text.
  */
@@ -583,7 +583,7 @@ This indicates a corrupted or seriously outdated game data or saved game file.",
 };				// char* LocateStringInData ( ... )
 
 /**
- * This function should analyze a given passage of text, locate an 
+ * This function should analyze a given passage of text, locate an
  * indicator for a value, and read in the value.
  */
 void
@@ -606,7 +606,7 @@ ReadValueFromStringWithDefault(char *SearchBeginPointer, const char *ValuePrecee
 	else
 		SourceLocation = DefaultValueString;
 
-	// Attention!!! 
+	// Attention!!!
 	// Now we try to read in the value!!!
 	//
 	if (sscanf(SourceLocation, FormatString, TargetValue) == EOF) {
@@ -622,7 +622,7 @@ ReadValueFromStringWithDefault(char *SearchBeginPointer, const char *ValuePrecee
 }
 
 /**
- * This function should analyze a given passage of text, locate an 
+ * This function should analyze a given passage of text, locate an
  * indicator for a value, and read in the value.
  */
 void
@@ -641,7 +641,7 @@ ReadValueFromString(char *SearchBeginPointer, const char *ValuePreceedText, cons
 	SourceLocation = LocateStringInData(SearchBeginPointer, ValuePreceedText);
 	SourceLocation += strlen(ValuePreceedText);
 
-	// Attention!!! 
+	// Attention!!!
 	// Now we try to read in the value!!!
 	//
 	if (sscanf(SourceLocation, FormatString, TargetValue) == EOF) {
@@ -658,7 +658,7 @@ ReadValueFromString(char *SearchBeginPointer, const char *ValuePreceedText, cons
 
 };				// void ReadValueFromString( ... )
 
-/** 
+/**
  * \deprecated Use get_range_from_string.
  * \brief Read a range of integer values from a string with a default.
  *
@@ -785,31 +785,29 @@ void RotateVectorByAngle(pointf * vector, float rot_angle)
  * Copyright (C) 1997-2001 Id Software, Inc., under GPL
  *
  * FS_filelength().. (taken from quake2)
- * 		contrary to stat() this fct is nice and portable, 
+ * 		contrary to stat() this fct is nice and portable,
  *----------------------------------------------------------------------*/
 int FS_filelength(FILE * f)
 {
-	int pos;
-	int end;
+	if (f == NULL)
+		return 0;
 
-	pos = ftell(f);
+	int pos = ftell(f);
 	fseek(f, 0, SEEK_END);
-	end = ftell(f);
+	int end = ftell(f);
 	fseek(f, pos, SEEK_SET);
 
-	// DebugPrintf ( -4 , "\n%s(): file length: %d." , __FUNCTION__ , end );
-
 	return end;
-};				// int FS_filelength (FILE *f)
+}
 
 /*-------------------------------------------------------------------------
  * Inflate a given stream using zlib
  *
- * Takes DataFile file and points DataBuffer to a buffer containing the 
- * uncompressed data. Sets '*size' to the size of said uncompressed data, if size 
+ * Takes DataFile file and points DataBuffer to a buffer containing the
+ * uncompressed data. Sets '*size' to the size of said uncompressed data, if size
  * is not NULL.
  *
- * Returns nonzero in case of error. 
+ * Returns nonzero in case of error.
  ***/
 int inflate_stream(FILE * DataFile, unsigned char **DataBuffer, int *size)
 {

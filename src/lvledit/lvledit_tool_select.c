@@ -1,5 +1,5 @@
 
-/* 
+/*
  *
  *   Copyright (c) 2009-2010 Arthur Huillet
  *
@@ -17,8 +17,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -60,7 +60,7 @@ struct selected_element {
 
 #define ALL_FLOOR_LAYERS (-1)
 
-/* Selected floor tiles are wrapped into a struct lvledit_map_tile, that holds 
+/* Selected floor tiles are wrapped into a struct lvledit_map_tile, that holds
  * coordinate information. struct map_tile does not have coordinate information,
  * and the game doesn't need it, only the leveleditor. */
 struct lvledit_map_tile {
@@ -131,7 +131,7 @@ int element_in_selection(void *data)
 		default:
 			if (e->data == data)
 				return 1;
-		}		
+		}
 	}
 
 	return 0;
@@ -222,20 +222,20 @@ static void calc_min_max_selection(struct list_head *list, pointf *cmin, pointf 
 	item *it;
 	map_label *m;
 	enemy *en;
-	
+
 	cmin->x = 9999;
 	cmin->y = 9999;
 	cmax->x = 0;
 	cmax->y = 0;
-	
+
 	list_for_each_entry(e, list, node) {
 		switch (e->type) {
 		case OBJECT_OBSTACLE:
 			o = e->data;
-		
+
 			__calc_min_max(o->pos.x, o->pos.y, cmin, cmax);
 			break;
-		case OBJECT_FLOOR:	
+		case OBJECT_FLOOR:
 			t = e->data;
 
 			__calc_min_max(t->coord.x, t->coord.y, cmin, cmax);
@@ -371,7 +371,7 @@ static void select_floor_on_tile(int x, int y)
 		t->tile = &EditLevel()->map[y][x];
 		t->coord.x = x;
 		t->coord.y = y;
-		
+
 		add_object_to_list(&selected_elements, t, OBJECT_FLOOR);
 		state.rect_nbelem_selected++;
 	}
@@ -584,8 +584,8 @@ static void end_rect_select()
 		mode = DISABLED;
 
 	state.single_tile_mark_index = 0;
-	
-	// A drag&drop operation for the floor is finished when the floor tiles are 
+
+	// A drag&drop operation for the floor is finished when the floor tiles are
 	// deselected.
 	// Do not allow to undo the previous actions for drag&drop
 	state.drag_drop_floor_undoable = 0;
@@ -598,7 +598,7 @@ static void start_drag_drop()
 		// operation
 		level_editor_copy_selection();
 	}
-	
+
 	mode = DRAGDROP;
 	state.drag_start.x = mouse_mapcoord.x;
 	state.drag_start.y = mouse_mapcoord.y;
@@ -617,7 +617,7 @@ static void do_drag_drop_obstacle(pointf diff)
 		obstacle *o = ((obstacle *)(e->data));
 
 		move_obstacle(o, o->pos.x + diff.x, o->pos.y + diff.y);
-	}	
+	}
 	state.cur_drag_pos.x = mouse_mapcoord.x;
 	state.cur_drag_pos.y = mouse_mapcoord.y;
 }
@@ -627,9 +627,9 @@ static void do_drag_drop_floor(pointf diff)
 	// Move the selection if the displacement exceeds half a tile
 	if (fabsf(diff.x) >= 0.5 || fabsf(diff.y) >= 0.5 ) {
 
-		if ((state.drag_start.x != state.cur_drag_pos.x) 
+		if ((state.drag_start.x != state.cur_drag_pos.x)
 			|| (state.drag_start.y != state.cur_drag_pos.y)) {
-			// When the selection has already moved during the drag&drop, 
+			// When the selection has already moved during the drag&drop,
 			// we must undo the actions to the old selection
 			level_editor_action_undo();
 		}
@@ -640,12 +640,12 @@ static void do_drag_drop_floor(pointf diff)
 			level_editor_action_undo();
 			state.drag_drop_floor_undoable = 0;
 		}
-		
-		// When moving the selection, new tiles will be selected, so, we must 
+
+		// When moving the selection, new tiles will be selected, so, we must
 		// deselect the previous selection because we must not change the original
 		// selection
 		clear_selection(-1);
-		
+
 		// Browse the original selection in order to set the floor of the new selection
 		int changed_tiles = 0;
 		struct selected_element *e = NULL;
@@ -668,7 +668,7 @@ static void do_drag_drop_floor(pointf diff)
 		}
 		state.cur_drag_pos.x += (int)rintf(diff.x);
 		state.cur_drag_pos.y += (int)rintf(diff.y);
-		
+
 		action_push(ACT_MULTIPLE_ACTIONS, changed_tiles);
 	}
 }
@@ -684,7 +684,7 @@ static void do_drag_drop_item(pointf diff)
 		// Calculate the new coordinates of the item
 		((item *) (e->data))->pos.x += diff.x;
 		((item *) (e->data))->pos.y += diff.y;
-	}	
+	}
 	state.cur_drag_pos.x = mouse_mapcoord.x;
 	state.cur_drag_pos.y = mouse_mapcoord.y;
 }
@@ -802,7 +802,7 @@ static void end_drag_drop()
 		action_push(ACT_MULTIPLE_ACTIONS, enb);
 
 	mode = FD_RECTDONE;
-	
+
 	if (selection_type() == OBJECT_FLOOR) {
 		// Remember that we have just dragged some floor tiles.
 		// As long as they remain selected, a subsequent drag operation
@@ -836,22 +836,22 @@ int level_editor_can_cycle_marked_object()
 	// N key does nothing on a selection larger than one tile
 	if (abs(state.rect_len.x) != 1 || abs(state.rect_len.y) != 1)
 		return 0;
-	
+
 	if (!pos_inside_level(state.rect_start.x, state.rect_start.y, EditLevel()))
 		return 0;
 
-	switch (selection_type()) {	
-		case OBJECT_OBSTACLE: 		
+	switch (selection_type()) {
+		case OBJECT_OBSTACLE:
 			if (EditLevel()->map[state.rect_start.y][state.rect_start.x].glued_obstacles.size <= 1)
 				return 0;
-			break;		
+			break;
 		case OBJECT_ITEM:
 			if (level_editor_number_of_marked_items() <= 1)
 				return 0;
 			break;
 		default:
 			return 0;
-			break;				
+			break;
 	}
 
 	return 1;
@@ -888,7 +888,7 @@ static void level_editor_cycle_marked_item()
 			}
 			idx++;
 		}
- 
+
 	}
 }
 
@@ -898,8 +898,8 @@ void level_editor_cycle_marked_object()
 		return;
 
 	clear_selection(state.rect_nbelem_selected);
-	state.rect_nbelem_selected = 0;	
-	
+	state.rect_nbelem_selected = 0;
+
 	switch (selection_type()) {
 		case OBJECT_OBSTACLE:
 			level_editor_cycle_marked_obstacle();
@@ -911,7 +911,7 @@ void level_editor_cycle_marked_object()
 			error_message(__FUNCTION__, "Unhandled selection type.", NO_REPORT);
 			break;
 	}
-	
+
 	state.single_tile_mark_index++;
 	state.rect_nbelem_selected = 1;
 }
@@ -970,7 +970,7 @@ void level_editor_delete_selection()
 			break;
 		}
 	}
-	
+
 	action_push(ACT_MULTIPLE_ACTIONS, nbelem);
 
 	clear_selection(-1);
@@ -979,12 +979,12 @@ void level_editor_delete_selection()
 void level_editor_copy_selection()
 {
 	struct selected_element *e;
-	struct lvledit_map_tile *t;	
+	struct lvledit_map_tile *t;
 	map_label *m;
 	waypoint *w;
 	obstacle *o;
 	item *it;
-	
+
 	if (mode != FD_RECTDONE) {
 		// We get called from the outside so check mode coherency first
 		return;
@@ -1006,23 +1006,23 @@ void level_editor_copy_selection()
 
 			add_object_to_list(&clipboard_elements, o, OBJECT_OBSTACLE);
 			break;
-		case OBJECT_FLOOR:	
+		case OBJECT_FLOOR:
 			t = MyMalloc(sizeof(struct lvledit_map_tile));
-			t->tile = MyMalloc(sizeof(map_tile));		
-				
+			t->tile = MyMalloc(sizeof(map_tile));
+
 			memcpy(t->tile, ((struct lvledit_map_tile *) (e->data))->tile, sizeof(map_tile));
 			t->coord.x = ((struct lvledit_map_tile *) (e->data))->coord.x;
-			t->coord.y = ((struct lvledit_map_tile *) (e->data))->coord.y;		
+			t->coord.y = ((struct lvledit_map_tile *) (e->data))->coord.y;
 			t->layer = GameConfig.show_all_floor_layers ? ALL_FLOOR_LAYERS : current_floor_layer;
-			
+
 			add_object_to_list(&clipboard_elements, t, OBJECT_FLOOR);
 			break;
 		case OBJECT_ITEM:
 			it = MyMalloc(sizeof(item));
 			memcpy(it, e->data, sizeof(item));
-			
+
 			add_object_to_list(&clipboard_elements, it, OBJECT_ITEM);
-			break;	
+			break;
 		case OBJECT_WAYPOINT:
 			w = MyMalloc(sizeof(waypoint));
 			memcpy(w, e->data, sizeof(waypoint));
@@ -1042,9 +1042,9 @@ void level_editor_copy_selection()
 }
 
 void level_editor_paste_selection()
-{		
+{
 	struct selected_element *e;
-	struct lvledit_map_tile *t;	
+	struct lvledit_map_tile *t;
 	map_label *m;
 	waypoint *w;
 	obstacle *o;
@@ -1061,34 +1061,34 @@ void level_editor_paste_selection()
 		// We must not paste objects outside of the level
 		return;
 	}
-	
+
 	// Before a paste operation we want to deselect the previous selection
 	clear_selection(-1);
-	
+
 	// Calculate the coordinates min/max of the selection
 	calc_min_max_selection(&clipboard_elements, &cmin, &cmax);
 
 	// Calculate the center of the selection
 	center.x = (cmax.x + cmin.x) / 2;
 	center.y = (cmax.y + cmin.y) / 2;
-		
+
 	list_for_each_entry(e, &clipboard_elements, node) {
 		switch (e->type) {
-		case OBJECT_OBSTACLE:	
+		case OBJECT_OBSTACLE:
 			o = e->data;
-			
+
 			o->pos.x -= center.x;
 			o->pos.y -= center.y;
 
 			o->pos.x += mouse_mapcoord.x;
 			o->pos.y += mouse_mapcoord.y;
-			
+
 			if (o->pos.x >= EditLevel()->xlen || o->pos.y >= EditLevel()->ylen
 				|| o->pos.x < 0 || o->pos.y < 0) {
 				// We must not paste obstacles outside the boundaries of level
 				break;
 			}
-			
+
 			// Add and select
 			struct obstacle *newo = action_create_obstacle_user(EditLevel(), o->pos.x, o->pos.y, o->type);
 			if (newo) {
@@ -1098,13 +1098,13 @@ void level_editor_paste_selection()
 			break;
 		case OBJECT_FLOOR:
 			t = e->data;
-			
+
 			t->coord.x -= ceil(center.x);
 			t->coord.y -= ceil(center.y);
-					
+
 			t->coord.x += (int)Me.pos.x;
 			t->coord.y += (int)Me.pos.y;
-						
+
 			if (t->coord.x >= EditLevel()->xlen || t->coord.y >= EditLevel()->ylen
 				|| t->coord.x < 0 || t->coord.y < 0) {
 				// We must not paste tiles outside the boundaries of level
@@ -1174,7 +1174,7 @@ void level_editor_paste_selection()
 			// Create the autostr to manipulate string
 			struct auto_string *str = alloc_autostr(32);
 			autostr_printf(str, "%s", m->label_name);
-			
+
 			// Modify the label until possible value
 			counter = 1;
 			while (map_label_exists(str->value)) {
@@ -1192,7 +1192,7 @@ void level_editor_paste_selection()
 			break;
 		}
 	}
-	
+
 	action_push(ACT_MULTIPLE_ACTIONS, nbact);
 }
 

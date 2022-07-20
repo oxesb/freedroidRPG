@@ -1204,7 +1204,6 @@ static void insert_thrown_items_into_blitting_list(int mask)
 		struct item *it = NULL;
 		int i = 0;
 		BROWSE_LEVEL_ITEMS(lvl, it, i) {
-
 			update_virtual_position(&it->virt_pos, &it->pos, Me.pos.z);
 
 			if (it->virt_pos.z == -1)
@@ -1572,6 +1571,9 @@ static void blit_all_item_slots(int mask)
  */
 int item_slot_position_blocked(item * given_item, int item_slot)
 {
+	if (given_item == NULL)
+		return FALSE;
+
 	struct visible_level *vis_lvl = NULL, *n = NULL;
 	int item_level_reached = FALSE;
 	int last_slot_to_check;
@@ -1599,34 +1601,34 @@ int item_slot_position_blocked(item * given_item, int item_slot)
 
 			if (MouseCursorIsInRect(&(cur_item->text_slot_rectangle),
 						given_item->text_slot_rectangle.x, given_item->text_slot_rectangle.y)) {
-				return (TRUE);
+				return TRUE;
 			}
 			if (MouseCursorIsInRect(&(cur_item->text_slot_rectangle),
 						given_item->text_slot_rectangle.x,
 						given_item->text_slot_rectangle.y + get_font_height(FPS_Display_Font))) {
-				return (TRUE);
+				return TRUE;
 			}
 			if (MouseCursorIsInRect(&(cur_item->text_slot_rectangle),
 						given_item->text_slot_rectangle.x +
 						given_item->text_slot_rectangle.w, given_item->text_slot_rectangle.y)) {
-				return (TRUE);
+				return TRUE;
 			}
 			if (MouseCursorIsInRect(&(cur_item->text_slot_rectangle),
 						given_item->text_slot_rectangle.x +
 						given_item->text_slot_rectangle.w,
 						given_item->text_slot_rectangle.y + get_font_height(FPS_Display_Font))) {
-				return (TRUE);
+				return TRUE;
 			}
 			if (MouseCursorIsInRect(&(cur_item->text_slot_rectangle),
 						given_item->text_slot_rectangle.x +
 						given_item->text_slot_rectangle.w / 2, given_item->text_slot_rectangle.y)) {
-				return (TRUE);
+				return TRUE;
 			}
 			if (MouseCursorIsInRect(&(cur_item->text_slot_rectangle),
 						given_item->text_slot_rectangle.x +
 						given_item->text_slot_rectangle.w / 2,
 						given_item->text_slot_rectangle.y + get_font_height(FPS_Display_Font))) {
-				return (TRUE);
+				return TRUE;
 			}
 		}
 
@@ -1634,7 +1636,7 @@ int item_slot_position_blocked(item * given_item, int item_slot)
 			break;
 	}
 
-	return (FALSE);
+	return FALSE;
 }
 
 /**

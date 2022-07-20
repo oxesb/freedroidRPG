@@ -1,4 +1,4 @@
-/* 
+/*
  *
  *   Copyright (c) 2004-2009 Arthur Huillet
  *   Copyright (c) 2002, 2003 Johannes Prix
@@ -17,8 +17,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -59,7 +59,7 @@ static void move_map_labels(level *EditLevel, int x, int y)
 			del_map_label(EditLevel, m->label_name);
 
 			// When we remove a map label from the level, we must decrease the
-			// index because the total number of the map labels on this level 
+			// index because the total number of the map labels on this level
 			// has been reduced
 			i--;
 		}
@@ -80,7 +80,7 @@ static void move_items(struct level *edit_lvl, int x, int y)
 		// Move the item
 		the_item->pos.x += x;
 		the_item->pos.y += y;
-		
+
 		if (!pos_inside_level(the_item->pos.x, the_item->pos.y, edit_lvl)) {
 			// When the item is outside of the map, we must remove it
 			DeleteItem(the_item);
@@ -137,7 +137,7 @@ static void move_waypoints(level *EditLevel, int x, int y)
 			del_waypoint(EditLevel, wpts[i].x, wpts[i].y);
 
 			// When we remove a waypoint from the level, we must decrease the
-			// index because the total number of the waypoints on this level 
+			// index because the total number of the waypoints on this level
 			// has been reduced
 			i--;
 		}
@@ -145,7 +145,7 @@ static void move_waypoints(level *EditLevel, int x, int y)
 }
 
 /**
- * Move all objects (ie. obstacles, map_labels, items, waypoints) with 
+ * Move all objects (ie. obstacles, map_labels, items, waypoints) with
  * the rest of the map
  * \param EditLevel Pointer towards the editing level where all objects lie
  * \param x The displacement on horizontal axis
@@ -196,7 +196,7 @@ void insert_line_south(level *EditLevel)
 		return;
 
 	EditLevel->ylen++;
-	
+
 	// Create the new line, and fill it with default values
 	EditLevel->map[EditLevel->ylen - 1] = MyMalloc((EditLevel->xlen + 1) * sizeof(map_tile));
 	for (i = 0; i < EditLevel->xlen; i++) {
@@ -384,7 +384,7 @@ void remove_line_south(level *EditLevel)
 }
 
 /**
- * Save the map - either to the real location, or to the home directory 
+ * Save the map - either to the real location, or to the home directory
  * as a fallback if the main location is not writable.
  *
  */
