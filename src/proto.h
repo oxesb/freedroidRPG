@@ -475,6 +475,7 @@ void Play_Spell_ForceToEnergy_Sound(void);
 void play_melee_weapon_hit_something_sound(void);
 void play_melee_weapon_missed_sound(struct gps *attacker_pos);
 void play_open_chest_sound(void);
+void play_read_sign_sound(void);
 
 // items.c
 void init_item(item *);

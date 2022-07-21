@@ -58,6 +58,10 @@ MUSIC:
 
         girix8
 
+SFX:
+
+        pekpek
+
 TRANSLATIONS:
 
         cs:

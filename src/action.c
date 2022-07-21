@@ -1,4 +1,4 @@
-/* 
+/*
  *
  *   Copyright (c) 1994, 2002, 2003 Johannes Prix
  *   Copyright (c) 1994, 2002 Reinhard Prix
@@ -17,8 +17,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -140,7 +140,7 @@ static void throw_out_all_chest_content(int obst_index)
 		for (i = 0; i < drop_count; i++) {
 
 			item *it = &((item *)item_list->arr)[i];
-			
+
 			if (it->type == -1)
 				continue;
 
@@ -154,7 +154,7 @@ static void throw_out_all_chest_content(int obst_index)
 		// Remove the chest items obstacle extension
 		del_obstacle_extension(lvl, &(lvl->obstacle_list[obst_index]), OBSTACLE_EXTENSION_CHEST_ITEMS);
 	}
-	
+
 	// If the chest was empty, maybe generate a random item to be dropped
 	if (!drop_count) {
 		find_droppable_position_near_chest(&item_x, &item_y, obst_index, lvl);
@@ -187,9 +187,9 @@ static int mouse_cursor_is_on_that_obstacle(level *lvl, int obst_index)
 }
 
 /**
- * This function checks if there is an obstacle beneath the current 
- * mouse cursor.  
- * It takes into account the actual size of the 
+ * This function checks if there is an obstacle beneath the current
+ * mouse cursor.
+ * It takes into account the actual size of the
  * graphics and not only the geographic position of the mouse cursor on
  * the floor.
  *
@@ -206,7 +206,7 @@ int clickable_obstacle_below_mouse_cursor(level **obst_lvl, int clickable_only)
 	if(obst_lvl)
 		*obst_lvl = NULL;
 
-	// If the cursor is not inside the user rectangle, 
+	// If the cursor is not inside the user rectangle,
 	// there is no obstacle below it.
 	if (!MouseCursorIsInUserRect(GetMousePos_x(), GetMousePos_y()))
 		return -1;
@@ -257,7 +257,7 @@ int clickable_obstacle_below_mouse_cursor(level **obst_lvl, int clickable_only)
 
 /**
  * In order to perform a click-action, tux must first move to the obstacle.
- * He can either approach it from a specific direction or any direction. This 
+ * He can either approach it from a specific direction or any direction. This
  * function handles the case where direction doesn't matter, like for barrels
  * and crates. Returns 1 if tux is close enough to the obstacle.
  */
@@ -383,8 +383,8 @@ static int reach_obstacle_from_any_direction(level *obst_lvl, int obst_index) {
 
 /**
  * In order to perform a click-action, tux must first move to the obstacle.
- * He can either approach it from a specific direction or any direction. This 
- * function handles the case where direction does matter, like for chests, 
+ * He can either approach it from a specific direction or any direction. This
+ * function handles the case where direction does matter, like for chests,
  * terminals, and signs. Returns 1 if tux is close enough to the obstacle.
  */
 static int reach_obstacle_from_specific_direction(level *obst_lvl, int obst_index, int direction) {
@@ -405,7 +405,7 @@ static int reach_obstacle_from_specific_direction(level *obst_lvl, int obst_inde
 	// can retrieve the chest later (at the end the combo action)
 	//
 	DebugPrintf(2, "\nreach_obstacle_from_specific_direction:  setting up combined mouse move target!");
-		
+
 	Me.mouse_move_target.x = obst_lvl->obstacle_list[obst_index].pos.x;
 	Me.mouse_move_target.y = obst_lvl->obstacle_list[obst_index].pos.y;
 	Me.mouse_move_target.z = obst_lvl->levelnum;
@@ -556,7 +556,7 @@ static void act_sign(level *l, obstacle *o)
 	if (!message) {
 		message = _("There is nothing on this sign.");
 	}
-
+	play_read_sign_sound();
 	append_new_game_message("%s", D_(message));
 }
 
@@ -585,16 +585,16 @@ static void __obstacle_action(level *lvl, int index, enum interactive_obstacle_t
 			direction = approach(o->type);
 			break;
 		default:
-			direction = UNDEFINED; 
+			direction = UNDEFINED;
 	}
 
 	// Approach obstacle
 	if (direction == UNDEFINED) {
 		int reached = reach_obstacle_from_any_direction(lvl, index);
-		
+
 		if (!reached)
 			return;
-		
+
 		// We set a direction of facing the obstacle
 		// so that the further actions look authentic
 		pointf step_vector;
@@ -606,7 +606,7 @@ static void __obstacle_action(level *lvl, int index, enum interactive_obstacle_t
 			Me.angle += 360;
 
 	} else {
-		if (!reach_obstacle_from_specific_direction(lvl, index, direction)) 
+		if (!reach_obstacle_from_specific_direction(lvl, index, direction))
 			return;
 	}
 

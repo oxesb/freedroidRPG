@@ -1,7 +1,7 @@
 /*
  *
  *   Copyright (c) 2006 Arvid Picciani
- *   Copyright (c) 2004-2007 Arthur Huillet 
+ *   Copyright (c) 2004-2007 Arthur Huillet
  *   Copyright (c) 1994, 2002, 2003 Johannes Prix
  *   Copyright (c) 1994, 2002 Reinhard Prix
  *
@@ -28,11 +28,6 @@
 #include "struct.h"
 #include "global.h"
 #include "proto.h"
-
-void play_open_chest_sound(void)
-{
-	play_sound("effects/open_chest_sound.ogg");
-}
 
 void Play_Spell_ForceToEnergy_Sound()
 {
@@ -100,7 +95,7 @@ void Not_Enough_Dist_Sound(void)
 }
 
 /**
- * Whenever the Tux meets someone in the game for the very first time, 
+ * Whenever the Tux meets someone in the game for the very first time,
  * this enemy or friend will issue the first-time greeting.
  * Depending on whether that is typically a hostile unit or not, we play
  * the corresponding sound from preloaded memory or, if there is no combat
@@ -153,7 +148,7 @@ void play_droid_attack_sound(enemy *ThisRobot)
 
 /**
  * Whenever an item is placed or taken, we'll issue a sound attached to
- * that item. 
+ * that item.
  */
 void play_item_sound(int item_type, struct gps *item_pos)
 {
@@ -174,7 +169,7 @@ void play_item_sound(int item_type, struct gps *item_pos)
 }
 
 /**
- * This function generates a voice output stating that the influencer 
+ * This function generates a voice output stating that the influencer
  * can't carry any more right now.  Also this function will see to it,
  * that the sentence is not repeated until 4 seconds after the previous
  * cant-carry-sentence have passed.
@@ -212,8 +207,8 @@ void teleport_arrival_sound(void)
 
 /**
  * Whenever the Tux gets hit, we *might* play a sound sample for the hit,
- * depending on random results.  Since we don't want to hear the same 
- * sound sample all the time, there is a selection of possible files 
+ * depending on random results.  Since we don't want to hear the same
+ * sound sample all the time, there is a selection of possible files
  * one of which will be selected at random.
  */
 void tux_scream_sound(void)
@@ -296,13 +291,13 @@ void play_melee_weapon_missed_sound(struct gps *attacker_pos)
 		"effects/swing_then_nohit_4.ogg",
 	};
 	int SoundCode = MyRandom(sizeof(sounds) / sizeof(sounds[0]) - 1);
-	
+
 	play_sound_at_position(sounds[SoundCode], &Me.pos, attacker_pos);
 }
 
 /**
  * This function should generate the sound that belongs to a certain
- * (ranged) weapon.  
+ * (ranged) weapon.
  *
  * This does not include the Tux swinging/swinging_and_hit
  * sounds, when Tux is using melee weapons, but it does include ranged
@@ -370,4 +365,14 @@ void play_blast_sound(char *blast_sound, struct gps *blast_pos)
 void BulletReflectedSound(void)
 {
 	play_sound("effects/Bullet_Reflected_Sound_0.ogg");
+}
+
+void play_open_chest_sound(void)
+{
+	play_sound("effects/open_chest_sound.ogg");
+}
+
+void play_read_sign_sound()
+{
+	play_sound("effects/read_sign_sound.ogg");
 }
