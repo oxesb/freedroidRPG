@@ -506,7 +506,6 @@ void light_radius_update_stretched_texture(void)
 	int red = 0;
 	int blue = 0;
 	int green = 0;
-	int alpha = 0;
 	int light_strength;
 	static float alpha_factor = 255.0 / (float)NUMBER_OF_SHADOW_IMAGES;
 	// Now it's time to edit the automap texture.
@@ -515,7 +514,7 @@ void light_radius_update_stretched_texture(void)
 		for (x = 0; x < LightRadiusConfig.cells_w; x++) {
 			light_strength = get_light_strength_cell(x, y);
 
-			alpha = 255 - (alpha_factor) * ((float)light_strength);
+			int alpha = 255 - (alpha_factor) * ((float)light_strength);
 
 			sdl_put_pixel(light_radius_stretch_surface, x, y, red, green, blue, alpha);
 

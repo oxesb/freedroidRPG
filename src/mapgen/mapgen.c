@@ -84,9 +84,9 @@ void mapgen_set_floor(int x, int y, int type)
 	target_level->map[y][x].floor_values[0] = type;
 }
 
-static void split_wall(int w, int h, unsigned char *tiles) 
+static void split_wall(int w, int h, unsigned char *tiles)
 {
-	int y, x; 
+	int y, x;
 	int room;
 #define SET(X,Y,TILE) mapgen_put_tile(X, Y, TILE, room)
 
@@ -98,7 +98,7 @@ static void split_wall(int w, int h, unsigned char *tiles)
 			rooms[x].h--;
 	}
 
-	for (y = 1; y < h - 1; y++) 
+	for (y = 1; y < h - 1; y++)
 		for (x = 1; x < w - 1; x++) {
 			room = mapgen_get_room(x, y);
 			if (tiles[y * w + x] == TILE_WALL) {
@@ -132,7 +132,7 @@ static void reduce_room_space() {
 		count[0] = rooms[i].w;
 
 		point_x[1] = rooms[i].x + rooms[i].w - 1;
-		point_y[1] = rooms[i].y; 
+		point_y[1] = rooms[i].y;
 		count[1] = rooms[i].h;
 
 		point_x[2] = rooms[i].x + rooms[i].w - 1;
@@ -291,7 +291,7 @@ static void place_doors()
 						mapgen_put_tile(x1 + w, y2 - 1, TILE_FLOOR, id2);
 						mapgen_add_obstacle(x1 + w + 0.5, y2 - 0.5, ISO_PILLAR_SHORT);
 					}
-				} 
+				}
 			} else {
 				// Place vertical wall
 
@@ -440,11 +440,11 @@ static int cmp_room_surface(const void *room1, const void *room2)
 	int s1 = rooms[r1].w * rooms[r1].h;
 	int s2 = rooms[r2].w * rooms[r2].h;
 
-	if (s1 == s2) { 
+	if (s1 == s2) {
 		return 0;
 	} else if (s1 < s2) {
 		return 1;
-	} else 
+	} else
 		return -1;
 }
 
@@ -639,7 +639,7 @@ void mapgen_draw_room(int room_id)
 	mapgen_put_tile(place_x, place_y + room_h, TILE_WALL, -1);
 	mapgen_put_tile(place_x + room_w, place_y + room_h, TILE_WALL, -1);
 
-	// Walls 
+	// Walls
 	for (i = 1; i < room_w; i++) {
 		mapgen_put_tile(place_x + i, place_y + room_h, TILE_WALL, -1);
 		mapgen_put_tile(place_x + i, place_y, TILE_WALL, -1);
@@ -649,13 +649,13 @@ void mapgen_draw_room(int room_id)
 		mapgen_put_tile(place_x, place_y + i, TILE_WALL, -1);
 	}
 
-	// Floor 
+	// Floor
 	for (y = 1; y < room_h; y++)
 		for (x = 1; x < room_w; x++)
 			mapgen_put_tile(place_x + x, place_y + y, TILE_FLOOR, room_id);
 }
 
-// Check if the given cell is suitable for connections. Condition of success is that 
+// Check if the given cell is suitable for connections. Condition of success is that
 // the current cell as well as 'offset' adjacent cells are free.
 static int SuitableConnection(int x, int y, enum connection_type t, int offset)
 {
@@ -672,7 +672,7 @@ static int SuitableConnection(int x, int y, enum connection_type t, int offset)
 }
 
 /** Find the possible connections at each square on the border of the
-  given room. 
+  given room.
   Fill out the struct cplist_t array and return the number of possible
   connections.
   */
@@ -810,7 +810,7 @@ void MakeConnect(int x, int y, enum connection_type type)
 	switch (type) {
 		case UP:
 			wp_ny = y - 1;
-			wp_y = y + 1; 
+			wp_y = y + 1;
 			break;
 		case DOWN:
 			wp_ny = y + 1;
@@ -828,7 +828,7 @@ void MakeConnect(int x, int y, enum connection_type type)
 			error_message(__FUNCTION__, "Unknown connection type %d", PLEASE_INFORM | IS_FATAL, type);
 			break;
 
-	} 
+	}
 
 	room_1 = mapgen_get_room(wp_nx, wp_ny);
 	room_2 = mapgen_get_room(wp_x, wp_y);
@@ -889,10 +889,8 @@ static void connect_waypoints()
 			while (wp2 == wp1)
 				wp2 = rand() % max_wps;
 
-			if (wp1 != wp2) {
-				action_toggle_waypoint_connection(target_level, wps[wp1], wps[wp2], 0, 0);
-				action_toggle_waypoint_connection(target_level, wps[wp2], wps[wp1], 0, 0);
-			}
+			action_toggle_waypoint_connection(target_level, wps[wp1], wps[wp2], 0, 0);
+			action_toggle_waypoint_connection(target_level, wps[wp2], wps[wp1], 0, 0);
 		}
 	}
 }

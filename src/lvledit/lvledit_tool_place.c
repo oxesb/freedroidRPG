@@ -1,5 +1,5 @@
 
-/* 
+/*
  *
  *   Copyright (c) 2009 Arthur Huillet
  *
@@ -17,8 +17,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -56,7 +56,7 @@ static struct leveleditor_place {
 		int sw;
 		int ne;
 		int nw;
-	} l_type;	
+	} l_type;
 	struct list_head l_elements_head;
 
 	/* Rectangle mode */
@@ -116,9 +116,7 @@ static int do_waypoint_route(int rspawn)
 		return 1;
 	}
 
-	if (our_mode != CONNECT_WAYPOINT) {
-		our_mode = CONNECT_WAYPOINT;
-	}
+	our_mode = CONNECT_WAYPOINT;
 
 	state.startwp = wpnum;
 	return 0;
@@ -154,7 +152,7 @@ static void start_rectangle_floor(int findex)
 	state.r_len_x = 0;
 	state.r_len_y = 0;
 
-	// The tile we'll use 
+	// The tile we'll use
 	state.r_tile_used = findex;
 
 	if (state.r_start.x < 0)
@@ -167,7 +165,7 @@ static void start_rectangle_floor(int findex)
 	else if (state.r_start.y >= EditLevel()->ylen - 1)
 		state.r_start.y = EditLevel()->ylen - 1;
 
-	// Place the first tile 
+	// Place the first tile
 	action_set_floor(EditLevel(), state.r_start.x, state.r_start.y, state.r_tile_used);
 	action_push(ACT_MULTIPLE_ACTIONS, 1);
 
@@ -378,7 +376,7 @@ static void start_wall_line(int windex)
 	// Find the type of the first wall
 	int type = (horizontal_wall(windex)) ? state.l_type.h : state.l_type.v;
 
-	// Add a wall on the map and do not define the direction because it's the 
+	// Add a wall on the map and do not define the direction because it's the
 	// first wall of the line
 	add_wall(x, y, type, UNDEFINED);
 }
@@ -405,7 +403,7 @@ static void line_moving_backwards(void)
 	free(last_wall);
 
 	if (list_empty(&(state.l_elements_head))) {
-		// In case we've removed the only element in the list, 
+		// In case we've removed the only element in the list,
 		// we want to put it back in order to make sure the "base" position
 		// of the line does not change.
 
@@ -429,9 +427,9 @@ static void line_moving_backwards(void)
 		state.l_direction = (offset.y > 0) ? NORTH : SOUTH;
 	} else if (fabsf(offset.y) < fabsf(offset.x)) {
 		// Find the new direction on the horizontal axis
-		state.l_direction = (offset.x > 0) ? WEST : EAST;		
+		state.l_direction = (offset.x > 0) ? WEST : EAST;
 	} else {
-		// We have to find a right angle between the two last walls of the line 
+		// We have to find a right angle between the two last walls of the line
 		if (state.l_direction == WEST || state.l_direction == EAST) {
 			// Find the new direction on the vertical axis
 			state.l_direction = (last_pos.y < prev_wall->position.y) ? NORTH : SOUTH;

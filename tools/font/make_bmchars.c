@@ -165,7 +165,7 @@ static void create_bmfont()
 
 			char *bm_name = cs_font_char_name(font_name, codeset, i, input_path);
 			png_save_surface(bm_name, surf);
-			if (surf) SDL_FreeSurface(surf);
+			SDL_FreeSurface(surf);
 		}
 	}
 
@@ -205,10 +205,14 @@ static void create_outlined_bmfont()
 			SDL_Surface *outsurf = TTF_RenderUNICODE_Blended(outline_font, glyphs, bgcolor);
 
 			if (!surf || !bgsurf) {
+				if (surf) SDL_FreeSurface(surf);
+				if (bgsurf) SDL_FreeSurface(bgsurf);
 				fprintf(stderr, "Couldn't render glyph of code %d: %s\n", i, TTF_GetError());
 				exit(1);
 			}
 			if (!outsurf) {
+				SDL_FreeSurface(surf);
+				SDL_FreeSurface(bgsurf);
 				fprintf(stderr, "Couldn't render outline glyph of code %d: %s\n", i, TTF_GetError());
 				exit(1);
 			}
@@ -220,9 +224,9 @@ static void create_outlined_bmfont()
 
 			char *bm_name = cs_font_char_name(font_name, codeset, i, input_path);
 			png_save_surface(bm_name, outsurf);
-			if (surf) SDL_FreeSurface(surf);
-			if (bgsurf) SDL_FreeSurface(bgsurf);
-			if (outsurf) SDL_FreeSurface(outsurf);
+			SDL_FreeSurface(surf);
+			SDL_FreeSurface(bgsurf);
+			SDL_FreeSurface(outsurf);
 		}
 	}
 

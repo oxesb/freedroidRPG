@@ -1,7 +1,7 @@
-/* 
+/*
  *
  *   Copyright (c) 2002, 2003 Johannes Prix
- *   Copyright (c) 2004-2010 Arthur Huillet 
+ *   Copyright (c) 2004-2010 Arthur Huillet
  *
  *  This file is part of Freedroid
  *
@@ -16,8 +16,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -77,7 +77,7 @@ static struct image skill_level_images[NUMBER_OF_SKILL_PAGES];
 
 /**
  * This function improves a generic skill (hack melee ranged magic) by one
- * 
+ *
  */
 void ImproveSkill(int *skill)
 {
@@ -93,7 +93,7 @@ void ImproveSkill(int *skill)
  */
 int improve_program(int prog_id)
 {
-	if(prog_id < 0)
+	if(prog_id < 0 || prog_id >= MAX_NUMBER_OF_PROGRAMS)
 		return 0;
 
 	if(Me.skill_level[prog_id] >= NUMBER_OF_SKILL_LEVELS - 1)
@@ -105,7 +105,7 @@ int improve_program(int prog_id)
 
 void downgrade_program(int prog_id)
 {
-	if (prog_id < 0)
+	if(prog_id < 0 || prog_id >= MAX_NUMBER_OF_PROGRAMS)
 		return;
 
 	Me.skill_level[prog_id]--;
@@ -262,7 +262,7 @@ int TeleportHome(void)
 
 /**
  * This function handles the program the player has just activated.
- * It checks temperature (does not increase it), and makes sure a 
+ * It checks temperature (does not increase it), and makes sure a
  * busy_time is set.
  */
 void handle_currently_activated_skill()
@@ -377,11 +377,11 @@ int do_skill(int skill_index, int spell_cost)
 		return 1;
 
 	case PROGRAM_FORM_SELF:
-	
+
 		if (!strcmp(SpellSkillMap[skill_index].effect, "teleport_home"))
 			if (!TeleportHome())
 				return 0;
-		
+
 		Me.energy -= hitdmg;
 		Me.temperature += spell_cost;
 		Me.slowdown_duration += strcmp(SpellSkillMap[skill_index].effect, "slowdown") ? 0 : effdur;
@@ -424,7 +424,7 @@ int do_skill(int skill_index, int spell_cost)
 
 	case PROGRAM_FORM_RADIAL:
 		Me.temperature += spell_cost;
-		
+
 		do_radial_skill(skill_index, Me.pos.x, Me.pos.y, 1);
 
 		return 1;
@@ -439,11 +439,11 @@ int do_skill(int skill_index, int spell_cost)
 		if (!strcmp(SpellSkillMap[skill_index].effect, "weapon")) {
 			if (!MouseCursorIsInUserRect(GetMousePos_x(), GetMousePos_y()))
 				return 0;
-				
+
 			tux_wants_to_attack_now(TRUE);
 			return 1;
 		}
-		
+
 		if (!strcmp(SpellSkillMap[skill_index].effect, "repair")) {
 			if (!MouseCursorIsInInvRect(GetMousePos_x(), GetMousePos_y())
 				|| (!GameConfig.Inventory_Visible)) {
@@ -460,7 +460,7 @@ int do_skill(int skill_index, int spell_cost)
 }
 
 /**
- * This function starts a new radial skill (grenade blast, etc) from 
+ * This function starts a new radial skill (grenade blast, etc) from
  * the given x and y coordinates.
  */
 void do_radial_skill(int skill_index, int pos_x, int pos_y, int from_tux)
@@ -507,7 +507,7 @@ void do_radial_skill(int skill_index, int pos_x, int pos_y, int from_tux)
 }
 
 /**
- * This function checks if a given screen position lies within the 
+ * This function checks if a given screen position lies within the
  * one of the skill icons and returns the number of that skill icon.
  */
 int CursorIsOnWhichSkillButton(int x, int y)
@@ -553,8 +553,8 @@ int CursorIsOnWhichSkillButton(int x, int y)
 };				// int CursorIsOnWhichSkillButton( int x , int y )
 
 /**
- * This function checks if a given screen position lies within 
- * one of the spell level buttons and returns the number of that 
+ * This function checks if a given screen position lies within
+ * one of the spell level buttons and returns the number of that
  * spell level button.
  */
 static int CursorIsOnWhichSpellPageButton(int x, int y)
@@ -583,7 +583,7 @@ static int CursorIsOnWhichSpellPageButton(int x, int y)
 	return -1;
 }
 
-/** 
+/**
  *
  *
  */
@@ -617,7 +617,7 @@ static void ShowSkillsExplanationScreen(void)
 	display_text(D_(spec->description), 16, 16 + 64 + 16, &TargetSkillRect, 1.0);
 }
 
-/** 
+/**
  * We will draw only those skills to the skills inventory, that are
  * already present in the Tux.  That way the game remains open for new
  * skills to the player and he doesn't now in advance which skills there
@@ -645,7 +645,7 @@ static void establish_skill_subset_map(int *SkillSubsetMap)
 };				// void establish_skill_subset_map ( int *SkillSubsetMap );
 
 /** Activate nth skill from all skills.
- * @param skill_num is a index into all skills array. 
+ * @param skill_num is a index into all skills array.
  *        It must points an acquired skill.
  *
  */
@@ -666,7 +666,7 @@ void activate_nth_skill(int skill_num)
 };				// void activate_nth_skill ( int skill_num )
 
 /** Set quick skill to the skill on which is mouse cursor
- * @param quick_skill Index of quick skill slot 
+ * @param quick_skill Index of quick skill slot
  */
 void set_nth_quick_skill(int quick_skill)
 {
@@ -674,13 +674,13 @@ void set_nth_quick_skill(int quick_skill)
 		    CursorIsOnWhichSkillButton(GetMousePos_x(),
 					       GetMousePos_y()) +
 		    NUMBER_OF_SKILLS_PER_SKILL_PAGE * GameConfig.spell_level_visible;
-		
+
 		// Variable number is an index into already acquired skills.
 		// We change it into index into array of all skills.
 		int SkillSubsetMap[number_of_skills];
 		establish_skill_subset_map(&(SkillSubsetMap[0]));
 		ski = SkillSubsetMap[ski];
-			
+
 		if (Me.skill_level[ski] <=  0) {
 			// Invalid skill was selected
 			error_message(__FUNCTION__,
@@ -689,7 +689,7 @@ void set_nth_quick_skill(int quick_skill)
 			return;
 		}
 		int i;
-	
+
 		for (i = 0; i < 10; i++) {
 			if (Me.program_shortcuts[i] == ski && i != quick_skill)
 				Me.program_shortcuts[i] = -1;
@@ -733,7 +733,7 @@ static void load_skill_level_images_if_needed(void)
 		src.h = SKILL_LEVEL_BUTTON_HEIGHT;
 		create_subimage(&img, &skill_level_images[i], &src);
 	}
-	
+
 	// Delete the big image
 	free_image_surface(&img);
 }
@@ -765,14 +765,14 @@ void show_skills_screen(void)
 		skill_rect_locations[i].y = SkillScreenRect.y + FIRST_SKILLRECT_Y + i * (64 + INTER_SKILLRECT_DIST) + 3;
 	}
 
-	// If the log is not set to visible right now, we do not need to 
+	// If the log is not set to visible right now, we do not need to
 	// do anything more, but to restore the usual user rectangle size
 	// back to normal and to return...
 
 	if (GameConfig.SkillScreen_Visible == FALSE)
 		return;
 
-	// We will use the FPS display font, cause the small one isn't 
+	// We will use the FPS display font, cause the small one isn't
 	// very well readable on the silver background
 
 	set_current_font(FPS_Display_Font);
@@ -806,7 +806,7 @@ void show_skills_screen(void)
 	spell_level_rect.y = SkillScreenRect.y + SPELL_LEVEL_BUTTONS_Y;
 	display_image_on_screen(&skill_level_images[GameConfig.spell_level_visible], spell_level_rect.x, spell_level_rect.y, IMAGE_NO_TRANSFO);
 
-	// Now we fill in the skills available to this bot.  ( For now, these skills 
+	// Now we fill in the skills available to this bot.  ( For now, these skills
 	// are not class-specific, like in diablo or something, but this is our first
 	// approach to the topic after all.... :)
 

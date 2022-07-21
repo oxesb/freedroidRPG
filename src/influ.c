@@ -566,16 +566,17 @@ static int move_tux_towards_raw_position(float x, float y)
 		GameConfig.autorun_activated = 0;
 		planned_step.x = RemainingWay.x * TUX_WALKING_SPEED / length;
 		planned_step.y = RemainingWay.y * TUX_WALKING_SPEED / length;
-	}
-
-	if ((LeftCtrlPressed() || GameConfig.autorun_activated) &&
-		!(LeftCtrlPressed() && GameConfig.autorun_activated) && (!Me.running_must_rest)) {
-		float running_speed = get_tux_running_speed();
-		planned_step.x = RemainingWay.x * running_speed / length;
-		planned_step.y = RemainingWay.y * running_speed / length;
 	} else {
-		planned_step.x = RemainingWay.x * TUX_WALKING_SPEED / length;
-		planned_step.y = RemainingWay.y * TUX_WALKING_SPEED / length;
+		// LeftCtrlPressed() XOR GameConfig.autorun_activated (conjunctive form)
+		if ((LeftCtrlPressed() || GameConfig.autorun_activated) &&
+			(!LeftCtrlPressed() || !GameConfig.autorun_activated)) {
+			float running_speed = get_tux_running_speed();
+			planned_step.x = RemainingWay.x * running_speed / length;
+			planned_step.y = RemainingWay.y * running_speed / length;
+		} else {
+			planned_step.x = RemainingWay.x * TUX_WALKING_SPEED / length;
+			planned_step.y = RemainingWay.y * TUX_WALKING_SPEED / length;
+		}
 	}
 
 	// Now that the speed is set, we can start to make the step

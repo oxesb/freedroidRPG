@@ -18,8 +18,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -263,19 +263,19 @@ static void load_if_needed(int type)
 
 struct image *get_item_inventory_image(int type)
 {
-	load_if_needed(type);	
+	load_if_needed(type);
 	return &ItemMap[type].inventory_image;
 }
 
 struct image *get_item_shop_image(int type)
 {
-	load_if_needed(type);	
+	load_if_needed(type);
 	return &ItemMap[type].shop_image;
 }
 
 struct image *get_item_ingame_image(int type)
 {
-	load_if_needed(type);	
+	load_if_needed(type);
 	return &ItemMap[type].ingame_image;
 }
 
@@ -333,33 +333,33 @@ void Load_Mouse_Move_Cursor_Surfaces(void)
 static struct image *get_storage_for_bullet_image(const char *filename)
 {
 	int j, k;
-    char fname[PATH_MAX];
-    
-    // e.g. iso_bullet_half_pulse_04_0001.png
-    sscanf(filename, "iso_bullet_%s", &fname[0]);
-    char *p = &fname[0];
-    while (!isdigit(*p)) {
-        p++;
-    }
-    p--;
-    *p = 0;
+	char fname[1024];
 
-    for (int i = 0; i < bullet_specs.size; i++) {
+	// e.g. iso_bullet_half_pulse_04_0001.png
+	sscanf(filename, "iso_bullet_%1023s", &fname[0]);
+	char *p = &fname[0];
+	while (!isdigit(*p)) {
+		p++;
+	}
+	p--;
+	*p = 0;
+
+	for (int i = 0; i < bullet_specs.size; i++) {
 		struct bulletspec *bullet_spec = dynarray_member(&bullet_specs, i, sizeof(struct bulletspec));
 
-        if (!strcmp(fname, bullet_spec->name)) {
-            // Found bullet name, now match k and j
-            p++;
-            sscanf(p, "%02d_%04d.png", &k, &j);
-            return &bullet_spec->image[k][j-1];
-        }
+		if (!strcmp(fname, bullet_spec->name)) {
+			// Found bullet name, now match k and j
+			p++;
+			sscanf(p, "%02d_%04d.png", &k, &j);
+			return &bullet_spec->image[k][j-1];
+		}
 	}
 
 	error_message(__FUNCTION__, "Bullet texture atlas specifies element %s which is not expected.",
-		PLEASE_INFORM, filename);
+			PLEASE_INFORM, filename);
 	return NULL;
-	
-    
+
+
 }
 
 

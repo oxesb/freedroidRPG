@@ -848,7 +848,16 @@ int inflate_stream(FILE * DataFile, unsigned char **DataBuffer, int *size)
 
 	do {
 		if (!strm.avail_out) {	//out of memory? increase
-			temp_dbuffer = realloc(temp_dbuffer, cursz + 1048576);	//increase size by 1MB
+			unsigned char *realloced = realloc(temp_dbuffer, cursz + 1048576);	//increase size by 1MB
+			if (realloced == NULL) {
+				error_message(__FUNCTION__,
+						"Realloc() failed. Really ? Have you so few memory ?", PLEASE_INFORM);
+				free(temp_dbuffer);
+				free(src);
+				return -1;
+			} else {
+				temp_dbuffer = realloced;
+			}
 			strm.next_out = temp_dbuffer + cursz;
 			cursz += 1048576;
 			strm.avail_out += 1048576;

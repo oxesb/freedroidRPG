@@ -176,13 +176,14 @@ static int _extract_savegame_info(struct savegame_data *savegame, struct auto_st
 
 		char *marker = strchr(ptr, '\n');
 		*marker = '\0';
-		int nb = sscanf(ptr, "SAVEGAME: %d %d %s", &version, &revision, code_sign);
+		int nb = sscanf(ptr, "SAVEGAME: %d %d %149s", &version, &revision, code_sign);
 		*marker = '\n';
 
 		if (nb != 3) {
 			autostr_append(report,
 			               _("The SAVEGAME info can not be decoded.\n"
 			                 "Your savegame is probably corrupted."));
+			free(code_sign);
 			return FILTER_ABORT;
 		}
 
