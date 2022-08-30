@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: https://www.freedroid.org\n"
-"POT-Creation-Date: 2022-03-31 13:00+0200\n"
+"POT-Creation-Date: 2022-07-21 21:29+0200\n"
 "PO-Revision-Date: 2014-03-27 23:12+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>, 2016-2019\n"
 "Language-Team: Hungarian (http://www.transifex.com/arctic-games/freedroid-rpg/language/hu/)\n"
@@ -311,37 +311,37 @@ msgstr "%d. nap %02d:%02d"
 msgid "%s empty, reloading..."
 msgstr "%s kiürült, újratöltés…"
 
-#: src/influ.c:804
+#: src/influ.c:805
 msgid "Energy shield disabled due to overheat."
 msgstr "Energiapajzs letiltva túlmelegedés miatt."
 
-#: src/influ.c:818
+#: src/influ.c:819
 msgid "Energy shield disabled due to a risk of overheat."
 msgstr "Energiapajzs letiltva a túlmelegedés kockázata miatt."
 
-#: src/influ.c:1044 src/menu.c:1125
+#: src/influ.c:1045 src/menu.c:1125
 msgid "Load Latest"
 msgstr "Legutóbbi betöltése"
 
-#: src/influ.c:1045 src/menu.c:1126
+#: src/influ.c:1046 src/menu.c:1126
 msgid "Load Backup"
 msgstr "Tartalék betöltése"
 
-#: src/influ.c:1047 src/menu.c:1128 src/lvledit/lvledit_menu.c:959
+#: src/influ.c:1048 src/menu.c:1128 src/lvledit/lvledit_menu.c:958
 msgid "Quit to Main Menu"
 msgstr "Visszatérés a főmenübe"
 
-#: src/influ.c:1049
+#: src/influ.c:1050
 msgid "Return to Editor"
 msgstr "Visszatérés a szerkesztőbe"
 
-#: src/influ.c:1051 src/menu.c:974 src/menu.c:1131
-#: src/lvledit/lvledit_menu.c:960
+#: src/influ.c:1052 src/menu.c:974 src/menu.c:1131
+#: src/lvledit/lvledit_menu.c:959
 msgid "Exit FreedroidRPG"
 msgstr "Kilépés a FreedroidRPG-ből"
 
 #. TRANSLATORS: Out of <ammo type>
-#: src/influ.c:1496
+#: src/influ.c:1497
 #, c-format
 msgid "Out of [s]%s[v]!"
 msgstr "Kifogyott: [s]%s[v]!"
@@ -376,247 +376,247 @@ msgstr "Játék vége.\n"
 msgid "Game won.\n"
 msgstr "Játék megnyerve.\n"
 
-#: src/items.c:406
+#: src/items.c:408
 msgid "Good quality"
 msgstr "Jó minőségű"
 
-#: src/items.c:409
+#: src/items.c:411
 msgid "Bad quality"
 msgstr "Rossz minőségű"
 
-#: src/items.c:736
+#: src/items.c:738
 msgid "I can't use this item here."
 msgstr "Nem használatom ezt a tárgyat itt."
 
-#: src/items.c:742
+#: src/items.c:744
 msgid "You can not use any items while paralyzed."
 msgstr "Nem használhatsz tárgyakat amíg le vagy bénítva."
 
-#: src/items.c:750
+#: src/items.c:752
 msgid "You are drinking a potion!"
 msgstr "Egy főzetet iszol!"
 
-#: src/items.c:753
+#: src/items.c:755
 msgid "Your are waiting for your weapon to fire again!"
 msgstr "Arra vársz, hogy a fegyvered újra tüzeljen!"
 
-#: src/items.c:756
+#: src/items.c:758
 msgid "You are reloading your weapon!"
 msgstr "Újratöltöd a fegyveredet!"
 
-#: src/items.c:759
+#: src/items.c:761
 msgid "You are throwing a grenade!"
 msgstr "Egy gránátot dobsz el!"
 
-#: src/items.c:762
+#: src/items.c:764
 msgid "You are running a program!"
 msgstr "Egy programot futtatsz!"
 
-#: src/items.c:765
+#: src/items.c:767
 msgid "You are taking a pill!"
 msgstr "Beveszel egy pirulát"
 
-#: src/items.c:768
+#: src/items.c:770
 msgid "You are doing something so weird the game does not understand what it is"
 msgstr "Valami olyan furát csinálsz, amit a játék nem ért hogy micsoda"
 
 #. TRANSLATORS: the trailing %s is what the player is currently already doing (drinking, running a program, ...)
-#: src/items.c:771
+#: src/items.c:773
 #, c-format
 msgid "How do you expect to do two things at a time? %s"
 msgstr "Hogy gondolod hogy egyszerre két dolgot csinálsz? %s"
 
-#: src/items.c:822
+#: src/items.c:824
 msgid "The doctor warned you. You are now weak and sickly."
 msgstr "Az orvos figyelmeztetett. Most gyenge és beteges vagy."
 
 #. TRANSLATORS: the trailing %s is a program name
-#: src/items.c:836
+#: src/items.c:838
 #, c-format
 msgid "You have reached the maximum skill level for %s"
 msgstr "Elérted a maximális képességszintet ehhez: %s"
 
-#: src/items.c:1561
+#: src/items.c:1563
 msgid "You can not use the inventory while paralyzed."
 msgstr "Nem használhatod a felszerelésed, amíg le vagy bénítva."
 
-#: src/items.c:1641
+#: src/items.c:1643
 msgid "You cannot fight with this!"
 msgstr "Nem harcolhatsz ezzel!"
 
-#: src/items.c:1647
+#: src/items.c:1649
 msgid "You cannot yet fight with this!"
 msgstr "Még nem harcolhatsz ezzel!"
 
-#: src/items.c:1686
+#: src/items.c:1688
 msgid "Two-handed weapon requirements not met: shield bonus doesn't count."
 msgstr "A kétkezes fegyver követelmények nincsenek elérve: a pajzsbónusz nem számít."
 
-#: src/items.c:1699
+#: src/items.c:1701
 msgid "You cannot equip this!"
 msgstr "Nem szerelheted ezt fel!"
 
-#: src/items.c:1705
+#: src/items.c:1707
 msgid "You cannot equip this yet!"
 msgstr "Még nem szerelheted ezt fel!"
 
-#: src/items.c:1737
+#: src/items.c:1739
 msgid "Shield requirements not met: two-handed weapon bonus doesn't count."
 msgstr "A pajzs követelmények nincsenek elérve: a kétkezes fegyver bónusza nem számít."
 
-#: src/items.c:1878 src/items.c:2055
+#: src/items.c:1880 src/items.c:2057
 msgid "I can't carry any more."
 msgstr "Nem tudok többet cipelni."
 
 #. TRANSLATORS: Item's bonus: '10 to strength' means 'add 10 to player's strength'
 #. TRANSLATORS: (trailing %s contains a text separator)
-#: src/item_upgrades.c:249
+#: src/item_upgrades.c:250
 #, c-format
 msgid "%+d to strength%s"
 msgstr "%+d az erőhöz%s"
 
 #. TRANSLATORS: Item's bonus: '10 to dexterity' means 'add 10 to player's dexterity'
 #. TRANSLATORS: (trailing %s contains a text separator)
-#: src/item_upgrades.c:254
+#: src/item_upgrades.c:255
 #, c-format
 msgid "%+d to dexterity%s"
 msgstr "%+d az ügyességhez%s"
 
 #. TRANSLATORS: Item's bonus: '10 to cooling' means 'add 10 to player's cooling capability'
 #. TRANSLATORS: (trailing %s contains a text separator)
-#: src/item_upgrades.c:259
+#: src/item_upgrades.c:260
 #, c-format
 msgid "%+d to cooling%s"
 msgstr "%+d a hűtéshez%s"
 
 #. TRANSLATORS: Item's bonus: '10 to physique' means 'add 10 to player's physique'
 #. TRANSLATORS: (trailing %s contains a text separator)
-#: src/item_upgrades.c:264
+#: src/item_upgrades.c:265
 #, c-format
 msgid "%+d to physique%s"
 msgstr "%+d a fizikumhoz%s"
 
 #. TRANSLATORS: Item's bonus: '10 to health points' means 'add 10 to player's health'
 #. TRANSLATORS: (trailing %s contains a text separator)
-#: src/item_upgrades.c:269
+#: src/item_upgrades.c:270
 #, c-format
 msgid "%+d health points%s"
 msgstr "%+d életerő%s"
 
 #. TRANSLATORS: Item's bonus: '0.1 to health points per seconds' means 'add 0.1 to player's recovery rate'
 #. TRANSLATORS: (trailing %s contains a text separator)
-#: src/item_upgrades.c:274
+#: src/item_upgrades.c:275
 #, c-format
 msgid "%+0.1f health points per second%s"
 msgstr "%+0.1f életerő másodpercenként%s"
 
 #. TRANSLATORS: Item's bonus: '0.1 cooling per seconds' means 'add 0.1 to player's cooling rate'
 #. TRANSLATORS: (trailing %s contains a text separator)
-#: src/item_upgrades.c:280
+#: src/item_upgrades.c:281
 #, c-format
 msgid "%0.1f cooling per second%s"
 msgstr "%0.1f hűtés másodpercenként%s"
 
 #. TRANSLATORS: Item's bonus: '0.1 heating per seconds' means 'remove 0.1 to player's cooling rate'
 #. TRANSLATORS: (trailing %s contains a text separator)
-#: src/item_upgrades.c:284
+#: src/item_upgrades.c:285
 #, c-format
 msgid "%0.1f heating per second%s"
 msgstr "%0.1f melegítés másodpercenként%s"
 
 #. TRANSLATORS: Item's bonus: '10 to attacks' means 'add 10 to player's attack capability'
 #. TRANSLATORS: (trailing %s contains a text separator)
-#: src/item_upgrades.c:290
+#: src/item_upgrades.c:291
 #, c-format
 msgid "%+d%% to attack%s"
 msgstr "%+d%% a támadáshoz%s"
 
 #. TRANSLATORS: Item's bonus: '10 to all attributes' means 'add 10 to all player's capabilities'
 #. TRANSLATORS: (trailing %s contains a text separator)
-#: src/item_upgrades.c:295
+#: src/item_upgrades.c:296
 #, c-format
 msgid "%+d to all attributes%s"
 msgstr "%+d minden tulajdonsághoz%s"
 
 #. TRANSLATORS: Item's bonus: '10 to damage' means 'add 10 to player's damage'
 #. TRANSLATORS: (trailing %s contains a text separator)
-#: src/item_upgrades.c:300
+#: src/item_upgrades.c:301
 #, c-format
 msgid "%+d to damage%s"
 msgstr "%+d a sebzéshez%s"
 
 #. TRANSLATORS: Item's bonus: '10 to armor' means 'add 10 to player's armor'
 #. TRANSLATORS: (trailing %s contains a text separator)
-#: src/item_upgrades.c:305
+#: src/item_upgrades.c:306
 #, c-format
 msgid "%+d to armor%s"
 msgstr "%+d a páncélhoz%s"
 
 #. TRANSLATORS: Item's bonus: '10 to paralyze enemy' means 'add 10 to player's paralyze capability'
 #. TRANSLATORS: (trailing %s contains a text separator)
-#: src/item_upgrades.c:310
+#: src/item_upgrades.c:311
 #, c-format
 msgid "%+d to paralyze enemy%s"
 msgstr "%+d az ellenség bénításához%s"
 
 #. TRANSLATORS: Item's bonus: '10 to slow enemy' means 'add 10 to player's capability to slow an ennemy'
 #. TRANSLATORS: (trailing %s contains a text separator)
-#: src/item_upgrades.c:315
+#: src/item_upgrades.c:316
 #, c-format
 msgid "%+d to slow enemy%s"
 msgstr "%+d az ellenség lassításához%s"
 
 #. TRANSLATORS: Item's bonus: '10 to light radius' means 'add 10 to the light radius around the player'
 #. TRANSLATORS: (trailing %s contains a text separator)
-#: src/item_upgrades.c:320
+#: src/item_upgrades.c:321
 #, c-format
 msgid "%+d to light radius%s"
 msgstr "%+d a fény hatótávjához%s"
 
 #. TRANSLATORS: Item's bonus: '10 to experience gain' means 'add 10 to the player's experience multiplier'
 #. TRANSLATORS: (trailing %s contains a text separator)
-#: src/item_upgrades.c:325
+#: src/item_upgrades.c:326
 #, c-format
 msgid "%+d%% to experience gain%s"
 msgstr "%+d%% tapasztalatszerzés%s"
 
-#: src/item_upgrades.c:343
+#: src/item_upgrades.c:344
 msgid "Install to a mechanical socket\n"
 msgstr "Helyezd egy mechanikus foglalatba\n"
 
-#: src/item_upgrades.c:345
+#: src/item_upgrades.c:346
 msgid "Install to an electric socket\n"
 msgstr "Helyezd egy elektromos foglalatba\n"
 
-#: src/item_upgrades.c:347
+#: src/item_upgrades.c:348
 msgid "Install to a universal socket\n"
 msgstr "Helyezd egy univerzális foglalatba\n"
 
-#: src/item_upgrades.c:355
+#: src/item_upgrades.c:356
 msgid "Install to a melee weapon\n"
 msgstr "Helyezd egy közelharci fegyverbe\n"
 
-#: src/item_upgrades.c:357
+#: src/item_upgrades.c:358
 msgid "Install to a ranged weapon\n"
 msgstr "Helyezd egy távolsági fegyverbe\n"
 
-#: src/item_upgrades.c:359
+#: src/item_upgrades.c:360
 msgid "Install to any armor\n"
 msgstr "Helyezd bármilyen páncélba\n"
 
-#: src/item_upgrades.c:361
+#: src/item_upgrades.c:362
 msgid "Install to boots\n"
 msgstr "Helyezd cipőkbe\n"
 
-#: src/item_upgrades.c:363
+#: src/item_upgrades.c:364
 msgid "Install to a jacket\n"
 msgstr "Helyezd egy kabátba\n"
 
-#: src/item_upgrades.c:365
+#: src/item_upgrades.c:366
 msgid "Install to a shield\n"
 msgstr "Helyezd egy pajzsba\n"
 
-#: src/item_upgrades.c:367
+#: src/item_upgrades.c:368
 msgid "Install to a helmet\n"
 msgstr "Helyezd egy sisakba\n"
 
@@ -1226,8 +1226,8 @@ msgstr "Nehézség: %s"
 #: src/menu.c:1331 src/menu.c:1442 src/menu.c:1522 src/menu.c:1595
 #: src/menu.c:1750 src/menu.c:1782 src/menu.c:1807 src/menu.c:1864
 #: src/lvledit/lvledit_menu.c:121 src/lvledit/lvledit_menu.c:268
-#: src/lvledit/lvledit_menu.c:370 src/lvledit/lvledit_menu.c:590
-#: src/lvledit/lvledit_menu.c:878
+#: src/lvledit/lvledit_menu.c:370 src/lvledit/lvledit_menu.c:589
+#: src/lvledit/lvledit_menu.c:877
 msgid "Back"
 msgstr "Vissza"
 
@@ -1874,7 +1874,7 @@ msgstr "Bejegyzés : %d\n"
 
 #: src/takeover.c:231 src/lvledit/lvledit_enemy.c:263
 #: src/lvledit/lvledit_enemy.c:271 src/lvledit/lvledit_enemy.c:288
-#: src/lvledit/lvledit_menu.c:505
+#: src/lvledit/lvledit_menu.c:504
 msgid "none"
 msgstr "semmi"
 
@@ -2161,15 +2161,15 @@ msgstr ""
 
 #: src/lvledit/lvledit_enemy.c:219 src/lvledit/lvledit_enemy.c:228
 #: src/lvledit/lvledit_enemy.c:241 src/lvledit/lvledit_enemy.c:289
-#: src/lvledit/lvledit_enemy.c:302 src/lvledit/lvledit_menu.c:542
-#: src/lvledit/lvledit_menu.c:556 src/lvledit/lvledit_menu.c:586
+#: src/lvledit/lvledit_enemy.c:302 src/lvledit/lvledit_menu.c:541
+#: src/lvledit/lvledit_menu.c:555 src/lvledit/lvledit_menu.c:585
 msgid "no"
 msgstr "nem"
 
 #: src/lvledit/lvledit_enemy.c:219 src/lvledit/lvledit_enemy.c:232
 #: src/lvledit/lvledit_enemy.c:241 src/lvledit/lvledit_enemy.c:289
-#: src/lvledit/lvledit_enemy.c:298 src/lvledit/lvledit_menu.c:542
-#: src/lvledit/lvledit_menu.c:556 src/lvledit/lvledit_menu.c:584
+#: src/lvledit/lvledit_enemy.c:298 src/lvledit/lvledit_menu.c:541
+#: src/lvledit/lvledit_menu.c:555 src/lvledit/lvledit_menu.c:583
 msgid "yes"
 msgstr "igen"
 
@@ -2251,8 +2251,8 @@ msgstr "Jelenlegi szintméret X-ben: %d."
 msgid "Current level size in Y: %d."
 msgstr "Jelenlegi szintméret Y-ban: %d."
 
-#: src/lvledit/lvledit_menu.c:205 src/lvledit/lvledit_menu.c:613
-#: src/lvledit/lvledit_menu.c:990
+#: src/lvledit/lvledit_menu.c:205 src/lvledit/lvledit_menu.c:612
+#: src/lvledit/lvledit_menu.c:989
 msgid ""
 "\n"
 " Please enter new level number: \n"
@@ -2290,123 +2290,123 @@ msgstr "Új szint hozzáadása"
 msgid "Remove Current Level"
 msgstr "Jelenlegi szint eltávolítása"
 
-#: src/lvledit/lvledit_menu.c:412
+#: src/lvledit/lvledit_menu.c:411
 msgid "Reached the maximum number of levels."
 msgstr "Szintek maximális száma elérve."
 
-#: src/lvledit/lvledit_menu.c:421
+#: src/lvledit/lvledit_menu.c:420
 msgid "Cannot remove level number 0.\n"
 msgstr "A 0. szint nem távolítható el.\n"
 
-#: src/lvledit/lvledit_menu.c:490
+#: src/lvledit/lvledit_menu.c:489
 #, c-format
 msgid "Level: %d.  (<-/->)"
 msgstr "Szint: %d. (<-/->)"
 
-#: src/lvledit/lvledit_menu.c:493
+#: src/lvledit/lvledit_menu.c:492
 #, c-format
 msgid "Level name (untranslated): %s"
 msgstr "Szint neve (lefordítatlan): %s"
 
-#: src/lvledit/lvledit_menu.c:496
+#: src/lvledit/lvledit_menu.c:495
 #, c-format
 msgid "Size:  X %d  Y %d"
 msgstr "Méret: X %d Y %d"
 
-#: src/lvledit/lvledit_menu.c:499
+#: src/lvledit/lvledit_menu.c:498
 #, c-format
 msgid "Floor layers:  %d"
 msgstr "Emelet rétegek: %d"
 
-#: src/lvledit/lvledit_menu.c:502
+#: src/lvledit/lvledit_menu.c:501
 #, c-format
 msgid "Edge Interface: "
 msgstr "Perem felület:"
 
-#: src/lvledit/lvledit_menu.c:508
+#: src/lvledit/lvledit_menu.c:507
 #, c-format
 msgid " N: %d"
 msgstr "É: %d"
 
-#: src/lvledit/lvledit_menu.c:510
+#: src/lvledit/lvledit_menu.c:509
 #, c-format
 msgid " E: %d"
 msgstr "K: %d"
 
-#: src/lvledit/lvledit_menu.c:512
+#: src/lvledit/lvledit_menu.c:511
 #, c-format
 msgid " S: %d"
 msgstr "D: %d"
 
-#: src/lvledit/lvledit_menu.c:514
+#: src/lvledit/lvledit_menu.c:513
 #, c-format
 msgid " W: %d"
 msgstr "Ny: %d"
 
-#: src/lvledit/lvledit_menu.c:521
+#: src/lvledit/lvledit_menu.c:520
 #, c-format
 msgid "Random dungeon: 2 connections"
 msgstr "Véletlenszerű kazamata: 2 kapcsolat"
 
-#: src/lvledit/lvledit_menu.c:523
+#: src/lvledit/lvledit_menu.c:522
 #, c-format
 msgid "Random dungeon: 1 connection"
 msgstr "Véletlenszerű kazamata: 1 kapcsolat"
 
-#: src/lvledit/lvledit_menu.c:525
+#: src/lvledit/lvledit_menu.c:524
 #, c-format
 msgid "Random dungeon: no"
 msgstr "Véletlenszerű kazamata: nem"
 
-#: src/lvledit/lvledit_menu.c:531
+#: src/lvledit/lvledit_menu.c:530
 #, c-format
 msgid "Random droids: %d Types: "
 msgstr "Véletlenszerű droidok: %d típus:"
 
-#: src/lvledit/lvledit_menu.c:541
+#: src/lvledit/lvledit_menu.c:540
 msgid "Respawn"
 msgstr "Újraéledés"
 
-#: src/lvledit/lvledit_menu.c:549
+#: src/lvledit/lvledit_menu.c:548
 msgid "None"
 msgstr "Nincs"
 
-#: src/lvledit/lvledit_menu.c:551
+#: src/lvledit/lvledit_menu.c:550
 #, c-format
 msgid "Item drop class for obstacles: %s.  (<-/->)"
 msgstr "Tárgy dobási osztály a terepakadályokhoz: %s. (<-/->)"
 
-#: src/lvledit/lvledit_menu.c:555
+#: src/lvledit/lvledit_menu.c:554
 msgid "Teleport blockade"
 msgstr "Teleport torlasz"
 
-#: src/lvledit/lvledit_menu.c:560
+#: src/lvledit/lvledit_menu.c:559
 msgid "Teleport pair"
 msgstr "Teleport pár"
 
-#: src/lvledit/lvledit_menu.c:567 src/lvledit/lvledit_menu.c:571
-#: src/lvledit/lvledit_menu.c:574
+#: src/lvledit/lvledit_menu.c:566 src/lvledit/lvledit_menu.c:570
+#: src/lvledit/lvledit_menu.c:573
 msgid "Light:  Ambient"
 msgstr "Fény: környezeti"
 
-#: src/lvledit/lvledit_menu.c:568 src/lvledit/lvledit_menu.c:572
+#: src/lvledit/lvledit_menu.c:567 src/lvledit/lvledit_menu.c:571
 msgid "Bonus"
 msgstr "Bónusz"
 
-#: src/lvledit/lvledit_menu.c:579
+#: src/lvledit/lvledit_menu.c:578
 msgid "Background Music"
 msgstr "Háttérzene"
 
-#: src/lvledit/lvledit_menu.c:582
+#: src/lvledit/lvledit_menu.c:581
 #, c-format
 msgid "Infinite Running Stamina: "
 msgstr "Végtelen futási kitartás:"
 
-#: src/lvledit/lvledit_menu.c:589
+#: src/lvledit/lvledit_menu.c:588
 msgid "Add/Rem Level"
 msgstr "Szint hozzáadása/törlése"
 
-#: src/lvledit/lvledit_menu.c:645
+#: src/lvledit/lvledit_menu.c:644
 msgid ""
 "\n"
 " Please enter new drop class: \n"
@@ -2416,7 +2416,7 @@ msgstr ""
 " Adj meg egy új dobási osztályt: \n"
 "\n"
 
-#: src/lvledit/lvledit_menu.c:684
+#: src/lvledit/lvledit_menu.c:683
 msgid ""
 "\n"
 " Please enter new level name (in English): \n"
@@ -2426,7 +2426,7 @@ msgstr ""
 "Adjon meg egy új szint nevet (angolul):\n"
 "\n"
 
-#: src/lvledit/lvledit_menu.c:692
+#: src/lvledit/lvledit_menu.c:691
 msgid ""
 "\n"
 " Please enter new music file name: \n"
@@ -2436,7 +2436,7 @@ msgstr ""
 "Adjon meg egy új zenefájl nevet:\n"
 "\n"
 
-#: src/lvledit/lvledit_menu.c:713
+#: src/lvledit/lvledit_menu.c:712
 #, c-format
 msgid ""
 "\n"
@@ -2447,7 +2447,7 @@ msgstr ""
 "Add meg a szintrétegek számát (az érvényes érték 1 és %d között van):\n"
 "\n"
 
-#: src/lvledit/lvledit_menu.c:862
+#: src/lvledit/lvledit_menu.c:861
 msgid ""
 "Choose a game act\n"
 "[r]Warning: Unsaved changes will be lost[n]"
@@ -2455,49 +2455,49 @@ msgstr ""
 "Válassz játék fejezetet\n"
 "[r]Figyelmeztetés: A mentetlen változások elvesznek[n]"
 
-#: src/lvledit/lvledit_menu.c:940
+#: src/lvledit/lvledit_menu.c:939
 #, c-format
 msgid "Game act (untranslated): %s"
 msgstr "Játék fejezet (lefordítatlan): %s"
 
-#: src/lvledit/lvledit_menu.c:943
+#: src/lvledit/lvledit_menu.c:942
 #, c-format
 msgid "Level name (untranslated): %d - %s"
 msgstr "Szint neve (lefordítatlan): %d – %s"
 
-#: src/lvledit/lvledit_menu.c:946
+#: src/lvledit/lvledit_menu.c:945
 msgid "Level Options"
 msgstr "Szint beállítások"
 
-#: src/lvledit/lvledit_menu.c:947
+#: src/lvledit/lvledit_menu.c:946
 msgid "Run Map Level Validator"
 msgstr "Térképszint ellenőrző futtatása"
 
-#: src/lvledit/lvledit_menu.c:949
+#: src/lvledit/lvledit_menu.c:948
 msgid "Playtest Mapfile"
 msgstr "Játékteszt térképfájl"
 
-#: src/lvledit/lvledit_menu.c:950
+#: src/lvledit/lvledit_menu.c:949
 msgid "Save Mapfile"
 msgstr "Térképfájl mentése"
 
-#: src/lvledit/lvledit_menu.c:953
+#: src/lvledit/lvledit_menu.c:952
 msgid "Return to Game"
 msgstr "Visszatérés a játékhoz"
 
-#: src/lvledit/lvledit_menu.c:954
+#: src/lvledit/lvledit_menu.c:953
 msgid "Saving disabled"
 msgstr "Mentés letiltva"
 
-#: src/lvledit/lvledit_menu.c:957
+#: src/lvledit/lvledit_menu.c:956
 msgid "Continue Editing"
 msgstr "Szerkesztés folytatása"
 
-#: src/lvledit/lvledit_menu.c:958
+#: src/lvledit/lvledit_menu.c:957
 msgid "Show Help"
 msgstr "Súgó megjelenítése"
 
-#: src/lvledit/lvledit_tool_place.c:692
+#: src/lvledit/lvledit_tool_place.c:690
 msgid "Place tool does not support this type of object."
 msgstr "Az elhelyezési eszköz nem támogatja ezt az eszköztípust."
 
@@ -2850,19 +2850,19 @@ msgid ""
 "Your savegame is probably corrupted."
 msgstr ""
 
-#: src/savegame/convert.c:202
+#: src/savegame/convert.c:203
 msgid ""
 "Your savegame seems to be a pre-0.16.1 version, but the savegame_version_string can not be found.\n"
 "Your savegame is probably corrupted."
 msgstr ""
 
-#: src/savegame/convert.c:221
+#: src/savegame/convert.c:222
 msgid ""
 "Your savegame seems to be a pre-0.16.1 version, but the savegame_version_string can not be decoded.\n"
 "Your savegame is probably corrupted."
 msgstr ""
 
-#: src/savegame/convert.c:325
+#: src/savegame/convert.c:326
 msgid ""
 "-=* Savegame loading *=-\n"
 "\n"
@@ -2871,7 +2871,7 @@ msgid ""
 "We load it as is, but expect some errors or even a crash of the game."
 msgstr ""
 
-#: src/savegame/convert.c:332
+#: src/savegame/convert.c:333
 #, c-format
 msgid ""
 "-=* Savegame loading *=-\n"
@@ -2881,7 +2881,7 @@ msgid ""
 "We load it as is, but expect some errors or even a crash of the game."
 msgstr ""
 
-#: src/savegame/convert.c:340
+#: src/savegame/convert.c:341
 #, c-format
 msgid ""
 "-=* Savegame loading *=-\n"
@@ -2891,7 +2891,7 @@ msgid ""
 "Some errors or even a game crash could possibly happen."
 msgstr ""
 
-#: src/savegame/convert.c:352
+#: src/savegame/convert.c:353
 #, c-format
 msgid ""
 "-=* Savegame loading *=-\n"

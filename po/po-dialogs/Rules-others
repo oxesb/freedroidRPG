@@ -152,11 +152,11 @@ tx-update: $(DOMAIN).pot
 	      fi; \
 	    else \
 	      echo "Updating $(TXPREFIX)-$$rsrc"; \
-	      $(TX) push -S $(TXPROJ).$(TXPREFIX)-$$rsrc; \
+	      $(TX) push -s $(TXPROJ).$(TXPREFIX)-$$rsrc; \
 	    fi; \
 	  fi; \
 	done;
-	#rm -rf tx-$(TXPREFIX)
+	rm -rf tx-$(TXPREFIX)
 
 # Pull the translations from transifex.
 #
