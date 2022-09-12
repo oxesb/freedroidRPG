@@ -3,11 +3,11 @@
 # For Freedesktop compliance
 
 appstreamdir = $(datadir)/metainfo
-appstream_in_files = freedroidrpg.appdata.xml
+appstream_in_files = org.freedroid.freedroidRPG.appdata.xml
 dist_appstream_DATA = $(appstream_in_files)
 
 desktopdir = $(datadir)/applications
-desktop_in_files = freedroidrpg.desktop
+desktop_in_files = org.freedroid.freedroidRPG.desktop
 dist_desktop_DATA = $(desktop_in_files)
 
 EXTRA_DIST = icons
@@ -20,4 +20,4 @@ install-data-local:
 
 uninstall-local:
 	@find $(DESTDIR)$(datadir)/ -name freedroidrpg.png -exec rm -f {} \;
-	@find $(DESTDIR)$(datadir)/ -name freedroidRPG.svg -exec rm -f {} \;
+	@find $(DESTDIR)$(datadir)/ -name freedroidrpg.svg -exec rm -f {} \;

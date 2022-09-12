@@ -79,7 +79,14 @@ sign:
 	gpg --digest-algo SHA512  -o freedroidrpg-$(VERSION).tar.bz2.sig --detach-sign freedroidrpg-$(VERSION).tar.bz2
 	md5sum freedroidrpg-$(VERSION).tar.bz2 > freedroidrpg-$(VERSION).tar.bz2.md5
 
-## Win32 specific stuff follows here
+doc:
+	$(MAKE) -C doc $(AM_MAKEFLAGS) doc
+
+###
+# Win32 specific stuff follows here
+###
+
+# Fill the win_dir with all the stuff needed to create an installer
 
 win_txts = COPYING AUTHORS README ChangeLog
 win_dir = freedroidrpg-win32
@@ -97,13 +104,20 @@ dist-win32: src/freedroidRPG.exe
 	done
 	perl win32/pkgApp.pl $(win_dir) freedroidRPG.exe $(DLL_PATH)
 
-$(win_dir): dist-win32
+# Create a win32 installer
 
+$(win_dir): dist-win32
 package-win32: $(filter-out $(wildcard $(win_dir)), $(win_dir))
 	rm -f freedroidRPG-*-win32.exe
 	rm -f freedroidRPG.nsi
 	win32/install_file_lists.py win32/freedroidRPG.nsi.in $(win_dir) > freedroidRPG.nsi
 	makensis -V1 -DPRODUCT_VERSION="$(VERSION)" -DSRC_DIR="${win_dir}" freedroidRPG.nsi
+
+###
+# MacOSX specific stuff follows here
+###
+
+# Fill the macosx_dir with all the stuff needed to create a package
 
 macosx_dir = freedroidRPG.app
 dist-macosx: src/freedroidRPG
@@ -119,8 +133,29 @@ dist-macosx: src/freedroidRPG
 	rsync -ar --exclude='.git' --exclude='Makefile*' --exclude='*~' --exclude='.#*' data lua_modules locale $(macosx_dir)/Contents
 	perl macosx/pkgApp.pl $(macosx_dir)/Contents MacOS/freedroidRPG Frameworks
 
-doc:
-	$(MAKE) -C doc $(AM_MAKEFLAGS) doc
+###
+# AppImage specific stuff follows here
+###
+
+appimage_topdir = $(abs_top_srcdir)/pkgs
+appimage_dir = AppDir
+dist-appimage: src/freedroidRPG
+	rm -rf $(appimage_topdir)/$(appimage_dir)
+	env DESTDIR=$(appimage_topdir)/$(appimage_dir) ${MAKE} install prefix=/usr
+
+$(appimage_dir): dist-appimage
+package-appimage: $(filter-out $(wildcard $(appimage_dir)), $(appimage_dir))
+	@cd $(appimage_topdir) ; \
+	 rm -rf $(appimage_dir)/usr/share/icons/HighContrast ; \
+	 rm -f $(appimage_dir)/usr/share/icons/hicolor/128x128/apps/freedroidrpg.png ; \
+	 rm -f $(appimage_dir)/usr/share/icons/hicolor/48x48/apps/freedroidrpg.png ; \
+	 rm -f $(appimage_dir)/usr/share/icons/hicolor/96x96/apps/freedroidrpg.png ; \
+	 rm -f $(appimage_dir)/usr/share/icons/hicolor/scalable/apps/freedroidrpg.svg ; \
+	 OUTPUT=$(PACKAGE_NAME)-$(PACKAGE_VERSION)-x86_64.AppImage /usr/local/bin/linuxdeploy-x86_64.AppImage --appdir AppDir --output appimage
+
+###
+# L10N main build rules
+###
 
 update-po: update-po-@USE_NLS@
 update-po-no:

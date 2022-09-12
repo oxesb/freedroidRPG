@@ -21,6 +21,7 @@ win32/freedroidRPG.coff
 configure
 Makefile
 Makefile.in
+INSTALL
 build-aux/
 config.*
 stamp-h1
@@ -39,7 +40,8 @@ src/lua/.dirstamp
 doc/Doxyfile
 doc/manual/Doxyfile
 doc/tools/Doxyfile
-INSTALL
+pkgs/*.AppImage
+pkgs/AppDir
 
 # Helpers
 TAGS
