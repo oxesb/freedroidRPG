@@ -1,8 +1,8 @@
-/* 
+/*
  *
  *   Copyright (c) 1994, 2002, 2003 Johannes Prix
  *   Copyright (c) 1994, 2002 Reinhard Prix
- *   Copyright (c) 2004-2010 Arthur Huillet 
+ *   Copyright (c) 2004-2010 Arthur Huillet
  *
  *
  *  This file is part of Freedroid
@@ -18,8 +18,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -65,9 +65,7 @@ long Overall_Frames_Displayed = 0;
 struct data_dir data_dirs[] = {
 	[CONFIG_DIR]=      { "configdir",                   "" },
 	[DATA_ROOT]=       { "dataroot",                    "" },
-#ifdef ENABLE_NLS
-	[LOCALE_ROOT]=     { "localeroot",                  "" },
-#endif
+	[LOCALE_DIR]=      { "localedir",                   "" },
 	[GUI_DIR]=         { "data/gui",                    "" },
 	[GRAPHICS_DIR]=    { "data/graphics",               "" },
 	[FONT_DIR]=        { "data/fonts",                  "" },
@@ -79,9 +77,6 @@ struct data_dir data_dirs[] = {
 	[MAP_DIR]=         { "data/storyline/$ACT",         "" },
 	[MAP_TITLES_DIR]=  { "data/storyline/$ACT/titles",  "" },
 	[MAP_DIALOG_DIR]=  { "data/storyline/$ACT/dialogs", "" },
-#ifdef ENABLE_NLS
-	[LOCALE_DIR]=      { "locale",                      "" },
-#endif
 	[LUA_MOD_DIR]=     { "lua_modules",                 "" }
 };
 #define WELL_KNOWN_DATA_FILE "lua_modules/FDdialog.lua"
@@ -370,7 +365,7 @@ mouse_press_button AllMousePressButtons[MAX_MOUSE_PRESS_BUTTONS] = {
 	[ADDON_CRAFTING_SCROLL_DESC_DOWN_BUTTON] = { EMPTY_IMAGE, "mouse_buttons/crafting_scroll_down.png",
 	    { ADDON_CRAFTING_RECT_X + 260, ADDON_CRAFTING_RECT_Y + 350, 32, 32 }, FALSE},
 
-};				// mouse_press_button AllMousePressButtons[ MAX_MOUSE_PRESS_BUTTONS ] 
+};				// mouse_press_button AllMousePressButtons[ MAX_MOUSE_PRESS_BUTTONS ]
 
 //--------------------
 // We make these global variables here, as we might want to use
@@ -384,7 +379,7 @@ size_t backtrace_size;
 char **backtrace_strings;
 size_t backtrace_counter;
 
-/** 
+/**
  * Obtain a backtrace and print it to stdout.
  * If signum != 0, call Terminate()
  */
@@ -397,7 +392,7 @@ void print_trace(int signum)
 	// fprintf ( stderr , "print_trace:  Allowing a maximum of %d function calls on the stack!\n" , MAX_CALLS_IN_BACKTRACE );
 
 	// We attempt to get a backtrace of all function calls so far, even
-	// including the operating system (or rather libc) call to main() in 
+	// including the operating system (or rather libc) call to main() in
 	// the beginning of execution.
 	//
 	backtrace_size = backtrace(backtrace_array, MAX_CALLS_IN_BACKTRACE);
@@ -419,7 +414,7 @@ void print_trace(int signum)
 	for (backtrace_counter = 0; backtrace_counter < backtrace_size; backtrace_counter++)
 		fprintf(stderr, "%s\n", backtrace_strings[backtrace_counter]);
 
-	// The strings generated in the backtrace_symbols function need to 
+	// The strings generated in the backtrace_symbols function need to
 	// get freed.  Well, this isn't terribly important, but clean.
 	//
 	free(backtrace_strings);
@@ -445,9 +440,9 @@ void print_trace(int signum)
 };				// void print_trace ( int sig_num )
 
 /**
- * If we want the screen resolution to be a runtime option and not a 
+ * If we want the screen resolution to be a runtime option and not a
  * compile time option any more, we must not use it as a constant.  That
- * means we must adapt the button positions to the current screen 
+ * means we must adapt the button positions to the current screen
  * resolution at runtime to, so we do it in this function, which will be
  * involved at program startup.
  */
@@ -515,7 +510,7 @@ int mouse_cursor_is_on_that_image(float pos_x, float pos_y, struct image *our_im
 }
 
 /**
- * This function checks if a given screen position lies within the 
+ * This function checks if a given screen position lies within the
  * inventory screen toggle button or not.
  */
 int MouseCursorIsInRect(const SDL_Rect *our_rect, int x, int y)
@@ -540,7 +535,7 @@ int MouseCursorIsInRect(const SDL_Rect *our_rect, int x, int y)
 };				// int MouseCursorIsInRect( SDL_rect* our_rect , int x , int y )
 
 /**
- * This function checks if a given screen position lies within the 
+ * This function checks if a given screen position lies within the
  * inventory screen toggle button or not.
  */
 int MouseCursorIsOnButton(int ButtonIndex, int x, int y)
@@ -625,67 +620,107 @@ void ShowGenericButtonFromList(int ButtonIndex)
 	display_image_on_screen(img, AllMousePressButtons[ButtonIndex].button_rect.x * scale_x, AllMousePressButtons[ButtonIndex].button_rect.y * scale_y, set_image_transformation(scale_x, scale_y, 1.0, 1.0, 1.0, 1.0, 0));
 }
 
+static int set_root_dirs_path(char *datadir, char *localedir)
+{
+	struct auto_string *file_path = alloc_autostr(64);
+	autostr_printf(file_path, "%s/" WELL_KNOWN_DATA_FILE, datadir);
+
+	FILE *f = fopen(file_path->value, "r");
+	if (f == NULL) {
+		free_autostr(file_path);
+		return 0;
+	}
+
+	// File found, so now fill the data dir paths
+	strncpy(data_dirs[DATA_ROOT].path, datadir, PATH_MAX-1);
+	data_dirs[DATA_ROOT].path[PATH_MAX-1] = '\0';
+	strncpy(data_dirs[LOCALE_DIR].path, localedir, PATH_MAX-1);
+	data_dirs[LOCALE_DIR].path[PATH_MAX-1] = '\0';
+
+	fclose(f);
+	free_autostr(file_path);
+
+	return 1;
+}
+
 void init_data_dirs_path()
 {
-	char file_path[PATH_MAX];
-
-	// Directories to look for the data dirs
-	char *top_data_dir[]   = { ".", "..", TOP_DATADIR, FD_DATADIR };
-#ifdef ENABLE_NLS
-	char *top_locale_dir[] = { ".", "..", TOP_DATADIR, LOCALEDIR };
-#endif
-	int slen = sizeof(top_data_dir)/sizeof(top_data_dir[0]);
-
 	// To find the root of the data dirs, we search a well known file that is
 	// always needed for the game to work.
-	for (int i = 0; i < slen ; i++) {
-		sprintf(file_path, "%s/" WELL_KNOWN_DATA_FILE, top_data_dir[i]);
-		FILE *f = fopen(file_path, "r");
-		if (f != NULL) {
-			// File found, so now fill the data dir paths
-			strncpy(data_dirs[DATA_ROOT].path, top_data_dir[i], PATH_MAX-1);
-			data_dirs[DATA_ROOT].path[PATH_MAX-1] = '\0';
-#ifdef ENABLE_NLS
-			strncpy(data_dirs[LOCALE_ROOT].path, top_locale_dir[i], PATH_MAX-1);
-			data_dirs[LOCALE_ROOT].path[PATH_MAX-1] = '\0';
-#endif
-			fclose(f);
-			goto TOP_DIR_FOUND;
+	// When run from an AppImage, the filesystem root dir is mount under a temp
+	// directory, reported in the APPDIR envvar. We then only use FD_DATADIR
+	// and LOCALEDIR, prefixed by the APPDIR.
+
+	struct dynarray *top_data_dir = dynarray_alloc(4, sizeof(char**));
+	struct dynarray *top_locale_dir = dynarray_alloc(4, sizeof(char**));
+
+	char *appdir = getenv("APPDIR");
+	if (appdir == NULL || appdir[0] == '\0') {
+		// No APPDIR envvar, set a list of default dirs to lookup
+		char *default_data_dirs[]   = { ".",        "..",        TOP_DATADIR           };
+		char *default_locale_dirs[] = { "./locale", "../locale", TOP_DATADIR "/locale" };
+
+		for (int i = 0; i < sizeof(default_data_dirs)/sizeof(default_data_dirs[0]); i++) {
+			dynarray_add(top_data_dir, &(default_data_dirs[i]), sizeof(char**));
+			dynarray_add(top_locale_dir, &(default_locale_dirs[i]), sizeof(char**));
 		}
 	}
 
+	// Add FD_DATADIR and LOCALEDIR (prefixed by APPDIR, if the APPDIR envvar is set)
+	if (appdir == NULL) appdir = "";
+
+	struct auto_string *datadir_path = alloc_autostr(64);
+	autostr_printf(datadir_path, "%s%s", appdir, FD_DATADIR);
+	dynarray_add(top_data_dir, &(datadir_path->value), sizeof(char*));
+
+	struct auto_string *localedir_path = alloc_autostr(64);
+	autostr_printf(localedir_path, "%s%s", appdir, LOCALEDIR);
+	dynarray_add(top_locale_dir, &(localedir_path->value), sizeof(char*));
+
+	// To find the root of the data dirs, we search a well known file that is
+	// always needed for the game to work.
+	for (int i = 0; i < top_data_dir->size ; i++) {
+		char **datadir = dynarray_member(top_data_dir, i, sizeof(char**));
+		char **localedir = dynarray_member(top_locale_dir, i, sizeof(char**));
+		if (set_root_dirs_path(*datadir, *localedir)) goto TOP_DIR_FOUND;
+	}
+
 	// The searched file was not found. Complain.
-	if (getcwd(file_path, PATH_MAX)) {
+	char cwd_path[PATH_MAX];
+	if (getcwd(cwd_path, PATH_MAX)) {
 		error_message(__FUNCTION__, "Data dirs not found ! (current directory: %s)",
-	                 PLEASE_INFORM | IS_FATAL, file_path);
+					 PLEASE_INFORM | IS_FATAL, cwd_path);
 	} else {
 		error_message(__FUNCTION__, "Data dirs not found ! (and cannot find the current working directory)",
-	                 PLEASE_INFORM | IS_FATAL);
+					 PLEASE_INFORM | IS_FATAL);
 	}
+
+	dynarray_free(top_data_dir);
+	free_autostr(datadir_path);
+	dynarray_free(top_locale_dir);
+	free_autostr(localedir_path);
+
 	return;
 
 TOP_DIR_FOUND:
 	// Set the path of all subdirs ($ACT keyword is kept, until act_set_data_dirs_path() is called)
+	char *dir = data_dirs[DATA_ROOT].path;
+
 	for (int i = FIRST_DATA_DIR; i < LAST_DATA_DIR; i++) {
 		// Reset the path, as a precaution
 		data_dirs[i].path[0] = '\0';
-
-		char *dir = data_dirs[DATA_ROOT].path;
 		const char *subdir = data_dirs[i].name;
-#ifdef ENABLE_NLS
-		if (i == LOCALE_DIR) {
-			dir = data_dirs[LOCALE_ROOT].path;
-			// LOCALEDIR envvar already points to the locale subdir
-			if (!strcmp(dir, LOCALEDIR))
-				subdir = "";
-		}
-#endif
-		int nb = snprintf(data_dirs[i].path, PATH_MAX, "%s/%s", dir, subdir);
+		int nb = snprintf(data_dirs[i].path, PATH_MAX-1, "%s/%s", dir, subdir);
 		if (nb >= PATH_MAX) {
 			error_message(__FUNCTION__, "data_dirs[].path is not big enough to store the following path: %s/%s",
 			             PLEASE_INFORM | IS_FATAL, dir, data_dirs[i].name);
 		}
 	}
+
+	dynarray_free(top_data_dir);
+	free_autostr(datadir_path);
+	dynarray_free(top_locale_dir);
+	free_autostr(localedir_path);
 
 	return;
 }
@@ -862,7 +897,7 @@ int find_suffixed_file(char *fpath, int subdir_handle, const char *fname, const 
  *
  * The localized versions are to be put in subdirs, using locale names.
  * For instances, map/titles/fr ou map/titles/de.
- *             
+ *
  * As with gettext(), generalizations of the locale name are tried
  * in turn. So if the locale is 'fr_FR', but the 'fr_FR' subdir does
  * not exists, then the 'fr' subdir is checked.
@@ -953,7 +988,7 @@ int find_encoded_file(char *fpath, int subdir_handle, const char *fname, int err
 
 /**
  * This function realizes the Pause-Mode: the game process is halted,
- * while the graphics and animations are not.  This mode 
+ * while the graphics and animations are not.  This mode
  * can further be toggled from PAUSE to CHEESE, which is
  * a feature from the original program that should probably
  * allow for better screenshots.
@@ -1054,9 +1089,9 @@ void StartTakingTimeForFPSCalculation(void)
 
 /**
  * This function computes the framerate that has been experienced
- * in this frame.  It will be used to correctly calibrate all 
+ * in this frame.  It will be used to correctly calibrate all
  * movements of game objects.
- * 
+ *
  * NOTE:  To query the actual framerate a DIFFERENT function must
  *        be used, namely Frame_Time().
  */
@@ -1107,7 +1142,7 @@ float Frame_Time(void)
 }
 
 /**
- * 
+ *
  * With framerate computation, there is a problem when some interruption occurs, like e.g.
  * the options menu is called or the debug menu is called or the console or the elevator
  * is entered or a takeover game takes place.  This might cause HUGE framerates, that could
@@ -1162,10 +1197,10 @@ int MyRandom(int upper_bound)
 	pure_random = rand();
 	tmp = 1.0 * pure_random / RAND_MAX;	/* random number in [0;1] */
 
-	/* 
+	/*
 	 * we always round OFF for the resulting int, therefore
 	 * we first add 0.99999 to make sure that UpperBound has
-	 * roughly the same probablity as the other numbers 
+	 * roughly the same probablity as the other numbers
 	 */
 	dice_val = (int)(tmp * (1.0 * upper_bound + 0.99999));
 
@@ -1428,7 +1463,7 @@ int save_game_config(void)
 		return -1;
 	}
 
-	// We put the current version number of FreedroidRPG into the 
+	// We put the current version number of FreedroidRPG into the
 	// version number string.  This will be useful so that later
 	// versions of FreedroidRPG can identify old config files and decide
 	// not to use them in some cases.

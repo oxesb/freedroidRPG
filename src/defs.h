@@ -2,7 +2,7 @@
  *
  *   Copyright (c) 1994, 2002, 2003 Johannes Prix
  *   Copyright (c) 1994, 2002 Reinhard Prix
- *   Copyright (c) 2004-2010 Arthur Huillet 
+ *   Copyright (c) 2004-2010 Arthur Huillet
  *
  *
  *  This file is part of Freedroid
@@ -18,8 +18,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -230,6 +230,9 @@ enum {
 #ifndef FD_DATADIR
 #define FD_DATADIR ".."		// our local fallback
 #endif
+#ifndef TOP_DATADIR
+#define TOP_DATADIR ".."		// our local fallback
+#endif
 
 #if __WIN32__
 #define ICON_FILE "paraicon_32x32.bmp"
@@ -248,7 +251,7 @@ enum {
 #define TABCHAR 'W'
 #define TABWIDTH 8
 //--------------------
-// Startpos + dimensions of Banner-Texts 
+// Startpos + dimensions of Banner-Texts
 //
 #define LEFT_INFO_X 	(13*2)
 #define LEFT_INFO_Y	(10*2)
@@ -483,7 +486,7 @@ enum {
 				     // the players droid.  This is now measured in seconds and can be a float
 #define WAIT_AFTER_GAME_WON	2.0	// how long to show tux after the game is won
 #define WAIT_COLLISION		1	// after a little collision with Tux or another enemy, hold position for a while
-				    // this variable describes the amount of time in SECONDS 
+				    // this variable describes the amount of time in SECONDS
 #define WAIT_BEFORE_ROTATE 0.7 // Wait a bit to avoid jittering between two rotation angles
 
 #define ALLBLASTTYPES		3	/* number of different explosions */
@@ -861,7 +864,7 @@ enum obstacle_types {
 	ISO_BRICK_WALL_V,
 	ISO_BRICK_WALL_END,
 
-	ISO_BRICK_WALL_CORNER_NE,	// = 137 , 
+	ISO_BRICK_WALL_CORNER_NE,	// = 137 ,
 	ISO_BRICK_WALL_CORNER_SW,
 	ISO_BRICK_WALL_CORNER_NW,
 	ISO_BRICK_WALL_CORNER_SE,
@@ -1145,7 +1148,7 @@ enum obstacle_types {
 
 	ISO_EXIT_5,
 	ISO_EXIT_6,
-	
+
 	ISO_E_CHEST2_CLOSED,  // = 372
 	ISO_S_CHEST2_CLOSED,
 	ISO_E_CHEST2_OPEN,
@@ -1494,8 +1497,8 @@ enum {
 // Maximum and minimum distance for a melee fight
 #define SQUARED_MELEE_MAX_DIST (2.25)
 #define MELEE_MIN_DIST (1.0)
-// Distance at which a bot with a melee weapon will start to find 
-// a free place around its target 
+// Distance at which a bot with a melee weapon will start to find
+// a free place around its target
 #define SQUARED_MELEE_APPROACH_DIST (16.0)
 // Minimum distance to shoot with a range weapon
 #define SQUARED_RANGE_SHOOT_MIN_DIST (7.0)
@@ -1584,7 +1587,7 @@ enum chat_context_state {
 enum data_dir_handle {
 	CONFIG_DIR = 0,
 	DATA_ROOT,
-	LOCALE_ROOT,
+	LOCALE_DIR,
 	GUI_DIR,
 	GRAPHICS_DIR,
 	FONT_DIR,
@@ -1596,9 +1599,6 @@ enum data_dir_handle {
 	MAP_DIR,
 	MAP_TITLES_DIR,
 	MAP_DIALOG_DIR,
-#ifdef ENABLE_NLS
-	LOCALE_DIR,
-#endif
 	LUA_MOD_DIR,
 	LAST_DATA_DIR
 };

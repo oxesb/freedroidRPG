@@ -139,19 +139,23 @@ dist-macosx: src/freedroidRPG
 
 appimage_topdir = $(abs_top_srcdir)/pkgs
 appimage_dir = AppDir
-dist-appimage: src/freedroidRPG
-	rm -rf $(appimage_topdir)/$(appimage_dir)
-	env DESTDIR=$(appimage_topdir)/$(appimage_dir) ${MAKE} install prefix=/usr
+appimage_path = $(appimage_topdir)/$(appimage_dir)
+dist-appimage:
+	rm -rf $(appimage_path)
+	${MAKE} clean
+	env DESTDIR=$(appimage_path) ${MAKE} install prefix=/usr datarootdir=/usr/share
 
-$(appimage_dir): dist-appimage
-package-appimage: $(filter-out $(wildcard $(appimage_dir)), $(appimage_dir))
+$(appimage_path): dist-appimage
+package-appimage: $(filter-out $(wildcard $(appimage_path)), $(appimage_path))
 	@cd $(appimage_topdir) ; \
-	 rm -rf $(appimage_dir)/usr/share/icons/HighContrast ; \
-	 rm -f $(appimage_dir)/usr/share/icons/hicolor/128x128/apps/freedroidrpg.png ; \
-	 rm -f $(appimage_dir)/usr/share/icons/hicolor/48x48/apps/freedroidrpg.png ; \
-	 rm -f $(appimage_dir)/usr/share/icons/hicolor/96x96/apps/freedroidrpg.png ; \
-	 rm -f $(appimage_dir)/usr/share/icons/hicolor/scalable/apps/freedroidrpg.svg ; \
+	 rm -rf $(appimage_path)/usr/share/icons/HighContrast ; \
+	 rm -f $(appimage_path)/usr/share/icons/hicolor/128x128/apps/freedroidrpg.png ; \
+	 rm -f $(appimage_path)/usr/share/icons/hicolor/48x48/apps/freedroidrpg.png ; \
+	 rm -f $(appimage_path)/usr/share/icons/hicolor/96x96/apps/freedroidrpg.png ; \
+	 rm -f $(appimage_path)/usr/share/icons/hicolor/scalable/apps/freedroidrpg.svg ; \
 	 OUTPUT=$(PACKAGE_NAME)-$(PACKAGE_VERSION)-x86_64.AppImage /usr/local/bin/linuxdeploy-x86_64.AppImage --appdir AppDir --output appimage
+
+.PHONY: dist-image
 
 ###
 # L10N main build rules

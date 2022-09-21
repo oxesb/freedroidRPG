@@ -1,4 +1,4 @@
-/* 
+/*
  *
  *   Copyright (c) 2004-2010 Arthur Huillet
  *   Copyright (c) 1994, 2002, 2003 Johannes Prix
@@ -18,8 +18,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -82,7 +82,7 @@ void clear_out_arrays_for_fresh_game(void)
 	clear_npcs();
 }
 
-/** 
+/**
  * This function displays a startup status bar that shows a certain
  * percentage of loading done.
  */
@@ -164,8 +164,8 @@ void next_startup_percentage(int done)
 }
 
 /**
- * This function can be used to play a generic title file, containing 
- * 
+ * This function can be used to play a generic title file, containing
+ *
  *  1. a background picture name
  *  2. a background music to play
  *  3. some text to display in a scrolling fashion
@@ -394,7 +394,7 @@ screen_resolution hard_resolutions[] = {
 };
 
 /* -----------------------------------------------------------------
- *  parse command line arguments and set global switches 
+ *  parse command line arguments and set global switches
  *  exit on error, so we don't need to return success status
  * -----------------------------------------------------------------*/
 void parse_command_line(int argc, char *const argv[])
@@ -569,7 +569,7 @@ void parse_command_line(int argc, char *const argv[])
 
 /* -----------------------------------------------------------------
  * This function initializes a completely new game within FreedroidRPG.
- * In contrast to InitFreedroid, this function should be called 
+ * In contrast to InitFreedroid, this function should be called
  * whenever or better before any new game is started.
  * -----------------------------------------------------------------*/
 void prepare_start_of_new_game(char *start_label, int new_tux)
@@ -578,7 +578,7 @@ void prepare_start_of_new_game(char *start_label, int new_tux)
 
 	Activate_Conservative_Frame_Computation();
 
-	// We make sure we don't have garbage in our arrays from a 
+	// We make sure we don't have garbage in our arrays from a
 	// previous game or failed load-game attempt...
 	clear_active_bullets();
 	clear_out_arrays_for_fresh_game();
@@ -602,7 +602,7 @@ void prepare_start_of_new_game(char *start_label, int new_tux)
 
 	// Everything is set up, Tux can enter the game
 	start_pos = get_map_label_center(start_label);
-	
+
 	if (game_root_mode == ROOT_IS_LVLEDIT && level_exists(GameConfig.last_edited_level))
 		teleport_to_level_center(GameConfig.last_edited_level);
 	else
@@ -642,7 +642,7 @@ void prepare_level_editor(struct game_act *on_act)
 
 /**
  * This function sets the GameConfig back to the default values, NOT THE
- * VALUES STORED IN THE USERS CONFIG FILE.  This function is useful if 
+ * VALUES STORED IN THE USERS CONFIG FILE.  This function is useful if
  * no config file if found or if the config file turns out to originate
  * from a different version of FreedroidRPG, which could be dangerous as
  * well.
@@ -650,7 +650,7 @@ void prepare_level_editor(struct game_act *on_act)
 void ResetGameConfigToDefaultValues(void)
 {
 	// At first we set audio volume to maximum value.
-	// This might be replaced later with values from a 
+	// This might be replaced later with values from a
 	// private user FreedroidRPG config file.  But for now
 	// this code is good enough...
 	//
@@ -706,7 +706,7 @@ void gameconfig_clean()
 	}
 }
 
-/** 
+/**
  * Set signal handlers for SIGSEGV and SIGFPE.
  */
 static void set_signal_handlers(void)
@@ -982,8 +982,8 @@ void InitFreedroid(int argc, char **argv)
 	// Will be redone when a game is loaded
 	game_act_set_current(game_act_get_starting());
 
-	/* 
-	 * Initialize random-number generator in order to make 
+	/*
+	 * Initialize random-number generator in order to make
 	 * level-start etc really different at each program start
 	 */
 	srand(time(NULL));
@@ -1003,7 +1003,7 @@ void InitFreedroid(int argc, char **argv)
  * This function displays the last seconds of the game when the influencer
  * has actually been killed.  It generates some explosions and waits for
  * some seconds, where the user can reload his latest game, or after that
- * returns to finally quit the inner game loop and the program will 
+ * returns to finally quit the inner game loop and the program will
  * (outside this function) ask for a completely new game or loading a different
  * saved game or quit as in the very beginning of the game.
  */
@@ -1054,7 +1054,7 @@ void ThouArtDefeated(void)
 		AssembleCombatPicture(DO_SCREEN_UPDATE | SHOW_ITEMS);
 
 		UpdateCountersForThisFrame();
-		
+
 		DoAllMovementAndAnimations();
 		move_enemies();
 
@@ -1093,7 +1093,7 @@ void ThouHastWon(void)
 		AssembleCombatPicture(DO_SCREEN_UPDATE | SHOW_ITEMS);
 
 		UpdateCountersForThisFrame();
-		
+
 		DoAllMovementAndAnimations();
 		move_enemies();
 
