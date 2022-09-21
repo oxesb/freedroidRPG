@@ -703,9 +703,15 @@ void init_data_dirs_path()
 	return;
 
 TOP_DIR_FOUND:
-	// Set the path of all subdirs ($ACT keyword is kept, until act_set_data_dirs_path() is called)
+
+	dynarray_free(top_data_dir);
+	free_autostr(datadir_path);
+	dynarray_free(top_locale_dir);
+	free_autostr(localedir_path);
+
 	char *dir = data_dirs[DATA_ROOT].path;
 
+	// Set the path of all subdirs ($ACT keyword is kept, until act_set_data_dirs_path() is called)
 	for (int i = FIRST_DATA_DIR; i < LAST_DATA_DIR; i++) {
 		// Reset the path, as a precaution
 		data_dirs[i].path[0] = '\0';
@@ -716,11 +722,6 @@ TOP_DIR_FOUND:
 			             PLEASE_INFORM | IS_FATAL, dir, data_dirs[i].name);
 		}
 	}
-
-	dynarray_free(top_data_dir);
-	free_autostr(datadir_path);
-	dynarray_free(top_locale_dir);
-	free_autostr(localedir_path);
 
 	return;
 }
