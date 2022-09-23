@@ -1,4 +1,4 @@
-/* 
+/*
  *
  *   Copyright (c) 2002, 2003 Johannes Prix
  *   Copyright (c) 2004-2010 Arthur Huillet
@@ -16,8 +16,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -53,12 +53,10 @@
 #define LEFT_TXT_X 25
 #define RIGHT_TXT_X 195
 
-// x-offset for numbers in the "level / experience / next level" box
-#define LEVEL_NR_X 105
-// x-offset for numbers in the "health / temperature / stamina" box
-#define HEALTH_NR_X 125
-// x-offset for numbers in the "armor / attack / damage" box
-#define ARMOR_NR_X 260
+// x-offset for numbers
+#define LEFT_NR_X 175
+#define RIGHT_NR_X 295
+
 // x-offset for values in the skills box
 #define SKILLS_VALUE_X 198
 
@@ -142,7 +140,7 @@ static void check_for_new_experience_level_reached()
 		Me.exp_level++;
 		Me.points_to_distribute += 5;
 
-		// When a droid reaches a new experience level, all health and 
+		// When a droid reaches a new experience level, all health and
 		// force are restored to full this one time no longer.  Gothic
 		// rulez more than Diablo rulez.
 		//
@@ -253,7 +251,7 @@ static void update_damage_tux_can_do()
 {
 	if (Me.weapon_item.type != (-1)) {
 		if (ItemMap[Me.weapon_item.type].weapon_is_melee != 0) {
-			// Damage modifier in case of MELEE WEAPON is computed:  
+			// Damage modifier in case of MELEE WEAPON is computed:
 			// weapon's modifier * (100+strength)%
 			//
 			Me.base_damage = Me.weapon_item.damage * (Me.strength + 100.0) / 100.0;
@@ -266,7 +264,7 @@ static void update_damage_tux_can_do()
 			Me.damage_modifier *= MeleeDamageMultiplierTable[Me.melee_weapon_skill];
 			Me.base_damage *= MeleeDamageMultiplierTable[Me.melee_weapon_skill];
 		} else {
-			// Damage modifier in case of RANGED WEAPON is computed:  
+			// Damage modifier in case of RANGED WEAPON is computed:
 			// weapon's modifier * (100+dexterity)%
 			//
 			Me.base_damage = Me.weapon_item.damage * (Me.dexterity + 100.0) / 100.0;
@@ -298,7 +296,7 @@ void UpdateAllCharacterStats()
 {
 	// Maybe the influencer has reached a new experience level?
 	// Let's check this...
-	// 
+	//
 	check_for_new_experience_level_reached();
 
 	// The primary status must be computed/updated first, because
@@ -357,7 +355,7 @@ void UpdateAllCharacterStats()
 }
 
 /**
- * Now we print out the current skill levels in hacking skill, 
+ * Now we print out the current skill levels in hacking skill,
  * spellcasting, melee combat, ranged weapon combat and repairing things
  */
 static void show_character_screen_skills()
@@ -416,7 +414,7 @@ void ShowCharacterScreen()
 
 	DebugPrintf(2, "\n%s(): Function call confirmed.", __FUNCTION__);
 
-	// If the log is not set to visible right now, we do not need to 
+	// If the log is not set to visible right now, we do not need to
 	// do anything more, but to restore the usual user rectangle size
 	// back to normal and to return...
 	//
@@ -424,7 +422,7 @@ void ShowCharacterScreen()
 		return;
 
 	set_current_font(Messagestat_Font);
-	
+
 	// We define the right side of the user screen as the rectangle
 	// for our inventory screen.
 	//
@@ -444,25 +442,25 @@ void ShowCharacterScreen()
 	display_text(_("Level"), LEFT_TXT_X + CharacterRect.x, 73 + CharacterRect.y, &CharacterRect, 1.0);
 	set_current_font(Messagevar_Font);
 	sprintf(CharText, "%d", Me.exp_level);
-	display_text(CharText, LEVEL_NR_X + CharacterRect.x, 73 + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_right_justified(CharText, LEFT_NR_X + CharacterRect.x, 73 + CharacterRect.y, &CharacterRect, 1.0);
 
 	set_current_font(Messagestat_Font);
 	display_text(_("Experience"), LEFT_TXT_X + CharacterRect.x, 89 + CharacterRect.y, &CharacterRect, 1.0);
 	set_current_font(Messagevar_Font);
 	sprintf(CharText, "%u", Me.Experience);
-	display_text(CharText, LEVEL_NR_X + CharacterRect.x, 89 + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_right_justified(CharText, LEFT_NR_X + CharacterRect.x, 89 + CharacterRect.y, &CharacterRect, 1.0);
 
 	set_current_font(Messagestat_Font);
 	display_text(_("Next level"), LEFT_TXT_X + CharacterRect.x, 107 + CharacterRect.y, &CharacterRect, 1.0);
 	set_current_font(Messagevar_Font);
 	sprintf(CharText, "%u", get_experience_required(Me.exp_level));
-	display_text(CharText, LEVEL_NR_X + CharacterRect.x, 107 + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_right_justified(CharText, LEFT_NR_X + CharacterRect.x, 107 + CharacterRect.y, &CharacterRect, 1.0);
 
 	set_current_font(Messagestat_Font);
 	display_text(_("Circuits"), RIGHT_TXT_X + CharacterRect.x, 71 + CharacterRect.y, &CharacterRect, 1.0);
 	set_current_font(Messagevar_Font);
 	sprintf(CharText, "%6u", Me.Gold);
-	display_text(CharText, 240 + CharacterRect.x, 71 + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_right_justified(CharText, RIGHT_NR_X + CharacterRect.x, 71 + CharacterRect.y, &CharacterRect, 1.0);
 
 	set_current_font(Messagestat_Font);
 	display_text(_("Strength"), LEFT_TXT_X + CharacterRect.x, STR_Y + CharacterRect.y, &CharacterRect, 1.0);
@@ -470,7 +468,7 @@ void ShowCharacterScreen()
 	sprintf(CharText, "%d", Me.strength);
 	if (Me.strength != Me.base_strength)
 		sprintf(CharText + strlen(CharText), " (%+d)", Me.strength - Me.base_strength);
-	display_text(CharText, STR_X + CharacterRect.x, STR_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_right_justified(CharText, LEFT_NR_X + CharacterRect.x, STR_Y + CharacterRect.y, &CharacterRect, 1.0);
 
 	set_current_font(Messagestat_Font);
 	display_text(_("Dexterity"), LEFT_TXT_X + CharacterRect.x, DEX_Y + CharacterRect.y, &CharacterRect, 1.0);
@@ -478,7 +476,7 @@ void ShowCharacterScreen()
 	sprintf(CharText, "%d", Me.dexterity);
 	if (Me.dexterity != Me.base_dexterity)
 		sprintf(CharText + strlen(CharText), " (%+d)", Me.dexterity - Me.base_dexterity);
-	display_text(CharText, STR_X + CharacterRect.x, DEX_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_right_justified(CharText, LEFT_NR_X + CharacterRect.x, DEX_Y + CharacterRect.y, &CharacterRect, 1.0);
 
 	set_current_font(Messagestat_Font);
 	display_text(_("Physique"), LEFT_TXT_X + CharacterRect.x, VIT_Y + CharacterRect.y, &CharacterRect, 1.0);
@@ -486,7 +484,7 @@ void ShowCharacterScreen()
 	sprintf(CharText, "%d", Me.physique);
 	if (Me.physique != Me.base_physique)
 		sprintf(CharText + strlen(CharText), " (%+d)", Me.physique - Me.base_physique);
-	display_text(CharText, STR_X + CharacterRect.x, VIT_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_right_justified(CharText, LEFT_NR_X + CharacterRect.x, VIT_Y + CharacterRect.y, &CharacterRect, 1.0);
 
 	set_current_font(Messagestat_Font);
 	display_text(_("Cooling"), LEFT_TXT_X + CharacterRect.x, MAG_Y + CharacterRect.y, &CharacterRect, 1.0);
@@ -494,38 +492,38 @@ void ShowCharacterScreen()
 	sprintf(CharText, "%d", Me.cooling);
 	if (Me.cooling != Me.base_cooling)
 		sprintf(CharText + strlen(CharText), " (%+d)", Me.cooling - Me.base_cooling);
-	display_text(CharText, STR_X + CharacterRect.x, MAG_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_right_justified(CharText, LEFT_NR_X + CharacterRect.x, MAG_Y + CharacterRect.y, &CharacterRect, 1.0);
 
 	SDL_Rect tmprect = CharacterRect;
 	set_current_font(Messagestat_Font);
 	display_text(_("Training points"), LEFT_TXT_X + CharacterRect.x, POINTS_Y + CharacterRect.y, &tmprect, 1.0);
 	set_current_font(Messagevar_Font);
 	sprintf(CharText, "%d", Me.points_to_distribute);
-	display_text(CharText, 155 + CharacterRect.x, POINTS_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_right_justified(CharText, LEFT_NR_X + CharacterRect.x, POINTS_Y + CharacterRect.y, &CharacterRect, 1.0);
 
 	set_current_font(Messagestat_Font);
 	display_text(_("Health"), LEFT_TXT_X + CharacterRect.x, HEALTH_STAT_Y + CharacterRect.y, &tmprect, 1.0);
 	set_current_font(Messagevar_Font);
 	sprintf(CharText, "%d/%d", (int)Me.energy, (int)Me.maxenergy);
-	display_text(CharText, HEALTH_NR_X + CharacterRect.x, HEALTH_STAT_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_right_justified(CharText, LEFT_NR_X + CharacterRect.x, HEALTH_STAT_Y + CharacterRect.y, &CharacterRect, 1.0);
 
 	set_current_font(Messagestat_Font);
 	display_text(_("Temperature"), LEFT_TXT_X + CharacterRect.x, TEMP_STAT_Y + CharacterRect.y, &tmprect, 1.0);
 	set_current_font(Messagevar_Font);
 	sprintf(CharText, "%d/%d", (int)Me.temperature, (int)Me.max_temperature);
-	display_text(CharText, HEALTH_NR_X + CharacterRect.x, TEMP_STAT_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_right_justified(CharText, LEFT_NR_X + CharacterRect.x, TEMP_STAT_Y + CharacterRect.y, &CharacterRect, 1.0);
 
 	set_current_font(Messagestat_Font);
 	display_text(_("Stamina"), LEFT_TXT_X + CharacterRect.x, STAMINA_STAT_Y + CharacterRect.y, &tmprect, 1.0);
 	set_current_font(Messagevar_Font);
 	sprintf(CharText, "%d/%d", (int)Me.running_power, (int)Me.max_running_power);
-	display_text(CharText, HEALTH_NR_X + CharacterRect.x, STAMINA_STAT_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_right_justified(CharText, LEFT_NR_X + CharacterRect.x, STAMINA_STAT_Y + CharacterRect.y, &CharacterRect, 1.0);
 
 	set_current_font(Messagestat_Font);
 	display_text(_("Attack"), RIGHT_TXT_X + CharacterRect.x, TOHIT_Y + CharacterRect.y, &CharacterRect, 1.0);
 	set_current_font(Messagevar_Font);
 	sprintf(CharText, "%d%%", (int)Me.to_hit);
-	display_text(CharText, ARMOR_NR_X + CharacterRect.x, TOHIT_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_right_justified(CharText, RIGHT_NR_X + CharacterRect.x, TOHIT_Y + CharacterRect.y, &CharacterRect, 1.0);
 
 	set_current_font(Messagestat_Font);
 	display_text(_("Damage"), RIGHT_TXT_X + CharacterRect.x, DAMAGE_Y + CharacterRect.y, &CharacterRect, 1.0);
@@ -537,15 +535,15 @@ void ShowCharacterScreen()
 	else
 		sprintf(CharText, "%d", (int)Me.base_damage);
 
-	display_text(CharText, ARMOR_NR_X + CharacterRect.x, DAMAGE_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_right_justified(CharText, RIGHT_NR_X + CharacterRect.x, DAMAGE_Y + CharacterRect.y, &CharacterRect, 1.0);
 
 	set_current_font(Messagestat_Font);
 	display_text(_("Armor"), RIGHT_TXT_X + CharacterRect.x, DAMRED_Y + CharacterRect.y, &CharacterRect, 1.0);
 	set_current_font(Messagevar_Font);
 	sprintf(CharText, "%d", (int)Me.armor_class);
-	display_text(CharText, ARMOR_NR_X + CharacterRect.x, DAMRED_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_right_justified(CharText, RIGHT_NR_X + CharacterRect.x, DAMRED_Y + CharacterRect.y, &CharacterRect, 1.0);
 
-	// Now we print out the current skill levels in hacking skill, 
+	// Now we print out the current skill levels in hacking skill,
 	// spellcasting, melee combat, ranged weapon combat and repairing things
 	//
 	show_character_screen_skills();
@@ -555,7 +553,7 @@ void ShowCharacterScreen()
 		ShowGenericButtonFromList(MORE_VIT_BUTTON);
 		ShowGenericButtonFromList(MORE_MAG_BUTTON);
 	}
-};				//ShowCharacterScreen ( ) 
+};				//ShowCharacterScreen ( )
 
 /**
  * This function handles input for the character screen.

@@ -1,6 +1,6 @@
-/* 
+/*
  *
- *   Copyright (c) 2004-2007 Arthur Huillet 
+ *   Copyright (c) 2004-2007 Arthur Huillet
  *   Copyright (c) 1994, 2002, 2003 Johannes Prix
  *   Copyright (c) 1994, 2002 Reinhard Prix
  *
@@ -18,8 +18,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -119,7 +119,7 @@ int show_backgrounded_text_rectangle(const char *text, struct font *font, int x,
 	SDL_Rect t_rect;
 	t_rect.x = x;
 	t_rect.y = y;
-	
+
 	// Find out the number of lines the text will occupy. This is done by
 	// using the drawing function with drawing temporarily disabled.
 	t_rect.w = w - (IN_WINDOW_TEXT_OFFSET * 2);
@@ -134,7 +134,7 @@ int show_backgrounded_text_rectangle(const char *text, struct font *font, int x,
 	t_rect.w = w;
 	t_rect.h = r_height;
 	draw_rectangle(&t_rect, 0, 0, 0, 255);
-	
+
 	// Show the text inside our newly drawn rectangle.
 	t_rect.w -= IN_WINDOW_TEXT_OFFSET * 2;
 	t_rect.h -= IN_WINDOW_TEXT_OFFSET;
@@ -246,7 +246,7 @@ void transient_text_show(void)
 }
 
 /**
- * 
+ *
  */
 int CutDownStringToMaximalSize(char *StringToCut, int LengthInPixels)
 {
@@ -272,7 +272,7 @@ int CutDownStringToMaximalSize(char *StringToCut, int LengthInPixels)
 };				// void CutDownStringToMaximalSize ( char* StringToCut , int LengthInPixels )
 
 /**
- * This function sets a new text, that will be displayed in huge font 
+ * This function sets a new text, that will be displayed in huge font
  * directly over the combat window for a fixed duration of time, where
  * only the time in midst of combat and with no other windows opened
  * is counted.
@@ -455,7 +455,7 @@ static int display_text_with_cursor(const char *text, int startx, int starty, co
 		}
 
 		if (((*tmp == ' ') || (*tmp == '\t'))
-		    && (ImprovedCheckLineBreak(tmp, clip, line_height_factor) == 1))	// don't write over right border 
+		    && (ImprovedCheckLineBreak(tmp, clip, line_height_factor) == 1))	// don't write over right border
 		{		/*THE CALL ABOVE HAS DONE THE CARRIAGE RETURN FOR US !!! */
 			empty_lines_started++;
 			tmp++;
@@ -501,7 +501,7 @@ static int display_text_with_cursor(const char *text, int startx, int starty, co
 
 	end_image_batch(__FUNCTION__);
 
-	SDL_SetClipRect(Screen, &store_clip);	// restore previous clip-rect 
+	SDL_SetClipRect(Screen, &store_clip);	// restore previous clip-rect
 
 	if (curpos != -1) {
 		if (curpos != 0 && current_curpos == curpos) {
@@ -516,7 +516,7 @@ static int display_text_with_cursor(const char *text, int startx, int starty, co
 		cursor_rect.w = 8;
 		draw_highlight_rectangle(cursor_rect);
 	}
-	
+
 	if (use_open_gl)
 		unset_gl_clip_rect();
 
@@ -524,9 +524,9 @@ static int display_text_with_cursor(const char *text, int startx, int starty, co
 }
 
 /**
- * Prints text at given positions, automatically word-wrapping at the
+ * Prints text at given position, automatically word-wrapping at the
  * edges of clip_rect.  If clip_rect is NULL, no clipping is performed.
- *      
+ *
  * @return number of lines written (from the first text line up to the
  *         last displayed line)
  */
@@ -536,11 +536,25 @@ int display_text(const char *text, int startx, int starty, const SDL_Rect *clip,
 }
 
 /**
+ * Prints text at given position, right justified, automatically
+ * word-wrapping at the edges of clip_rect.  If clip_rect is NULL,
+ * no clipping is performed.
+ *
+ * @return number of lines written (from the first text line up to the
+ *         last displayed line)
+ */
+int display_text_right_justified(const char *text, int endx, int starty, const SDL_Rect *clip, float line_height_factor)
+{
+	int startx = endx - text_width(get_current_font(), text);
+	return display_text_with_cursor(text, startx, starty, clip, line_height_factor, -1);
+}
+
+/**
  * This function checks if the next word still fits in this line
  * of text and initiates a carriage return/line feed if not.
  * Very handy and convenient, for that means it is no longer necessary
  * to enter \n in the text every time its time for a newline. cool.
- *  
+ *
  * rp: added argument clip, which contains the text-window we're writing in
  *     (formerly known as "TextBorder")
  *
@@ -635,7 +649,7 @@ char *get_string(int max_len, const char *background_name, const char *text_for_
  * This function reads a string of "MaxLen" from User-input.
  *
  * NOTE: MaxLen is the maximal _strlen_ of the string (excl. \0 !)
- * 
+ *
  * ----------------------------------------------------------------- */
 char *get_editable_string_in_popup_window(int max_len, const char *popup_window_title, const char *default_string)
 {
@@ -756,14 +770,14 @@ char *get_editable_string_in_popup_window(int max_len, const char *popup_window_
 /* -----------------------------------------------------------------
  * behaves similarly as gl_printf() of svgalib, using the BFont
  * print function PrintString().
- *  
- *  sets current position of MyCursor[XY],  
+ *
+ *  sets current position of MyCursor[XY],
  *     if last char is '\n': to same x, next line y
  *     to end of string otherwise
  *
- * Added functionality to PrintString() is: 
+ * Added functionality to PrintString() is:
  *  o) passing -1 as coord uses previous x and next-line y for printing
- *  o) Screen is updated immediately after print, using SDL_flip()                       
+ *  o) Screen is updated immediately after print, using SDL_flip()
  *
  * ----------------------------------------------------------------- */
 void printf_SDL(SDL_Surface * screen, int x, int y, const char *fmt, ...)

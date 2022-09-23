@@ -704,6 +704,7 @@ void display_effect_countdowns(void);
 int chat_with_droid(struct enemy *);
 
 int display_text(const char *, int, int, const SDL_Rect*, float);
+int display_text_right_justified(const char *, int, int, const SDL_Rect *, float);
 
 int ImprovedCheckLineBreak(char *, const SDL_Rect*, float);
 char *get_string(int, const char *, const char *);
