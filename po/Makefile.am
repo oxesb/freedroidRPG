@@ -34,6 +34,22 @@ $(L10NSTATSDIRS):
 .PHONY: l10n-stats-no l10n-stats-yes $(L10NSTATSDIRS)
 
 #
+# Output the translators list for each language
+#
+L10NTRSLDIRS = $(SUBDIRS:%=l10ntrsl-%)
+
+l10n-translators: l10n-translators-@USE_NLS@
+l10n-translators-no:
+	@echo "NLS is disabled. Nothing to do."
+l10n-translators-yes: $(L10NTRSLDIRS)
+
+$(L10NTRSLDIRS):
+	echo "$(@:l10ntrsl-%=%):"
+	$(MAKE) -C $(@:l10ntrsl-%=%) $(AM_MAKEFLAGS) l10n-translators
+
+.PHONY: l10n-translators-no l10n-translators-yes $(L10NTRSLDIRS)
+
+#
 # Clean PO files (remove obsolete strings and clear fuzzy flags)
 #
 L10NCLEANDIRS = $(SUBDIRS:%=l10nclean-%)

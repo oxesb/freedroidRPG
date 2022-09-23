@@ -65,3 +65,10 @@ gource:
 gource_ffmpeg:
 	gource $(gourceflags) --output-ppm-stream - | ffmpeg $(ffmpegflags)
 
+list-all-authors:
+	@env GIT_PAGER=cat git shortlog -s -n --no-merges
+
+list-new-authors:
+	@last=`git describe --abbrev=0 --tags`; \
+	 env GIT_PAGER=cat git shortlog -s -n --no-merges $${last}..
+

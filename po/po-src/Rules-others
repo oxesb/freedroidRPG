@@ -13,6 +13,16 @@ l10n-stats:
 	  echo "    $$lang: $$stats"; \
 	done
 
+#== List translators
+
+l10n-translators:
+	@catalogs='$(CATALOGS)'; \
+	for cat in $$catalogs; do \
+	  lang=`basename $$cat .gmo;`; \
+	  echo " $$lang:"; \
+	  sed -n -E "/# Translators/,/msgid/s/# ([^<,]*).*/  \1/p" $$lang.po | tail -n +2 | sort -u; \
+	done
+
 #== Clean obsolete strings and clear fuzzy flags
 
 define clean_po =
@@ -209,4 +219,5 @@ tx-push:
 	done; \
 	rm -rf tx-$(TXPREFIX)
 
+.PHONY: l10n-stats l10n-translators
 .PHONY: tx-update tx-pull tx-push

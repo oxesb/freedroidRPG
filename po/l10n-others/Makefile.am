@@ -11,12 +11,17 @@ tx-push:
 EXTRA_DIST = LINGUAS Makevars
 
 .PHONY: update-pot update-po update-gmo
-.PHONY: l10n-stats
+.PHONY: l10n-stats l10n-translators
 .PHONY: tx-update tx-pull tx-push
 
 #== Output statistics
 
 l10n-stats:
+	@echo "    Not yet implemented."
+
+#== List translators
+
+l10n-translators:
 	@echo "    Not yet implemented."
 
 #== Clean obsolete strings
