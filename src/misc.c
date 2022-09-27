@@ -321,13 +321,13 @@ mouse_press_button AllMousePressButtons[MAX_MOUSE_PRESS_BUTTONS] = {
 	    {EMPTY_IMAGE, "THIS_DOESNT_NEED_BLITTING", {ARMOUR_RECT_X, ARMOUR_RECT_Y, ARMOUR_RECT_WIDTH, ARMOUR_RECT_HEIGHT}, FALSE},
 
 	[MORE_STR_BUTTON] =
-	    {EMPTY_IMAGE, "mouse_buttons/AttributePlusButton.png", {0 + STR_X + 53, STR_Y - 5, 38, 22}, FALSE},
+	    {EMPTY_IMAGE, "mouse_buttons/AttributePlusButton.png", {0 + STR_X - 30, STR_Y - 2, 33, 22}, FALSE},
 	[MORE_MAG_BUTTON] =
-	    {EMPTY_IMAGE, "mouse_buttons/AttributePlusButton.png", {0 + STR_X + 53, MAG_Y - 5, 38, 22}, FALSE},
+	    {EMPTY_IMAGE, "mouse_buttons/AttributePlusButton.png", {0 + STR_X - 30, MAG_Y - 2, 33, 22}, FALSE},
 	[MORE_DEX_BUTTON] =
-	    {EMPTY_IMAGE, "mouse_buttons/AttributePlusButton.png", {0 + STR_X + 53, DEX_Y - 5, 38, 22}, FALSE},
+	    {EMPTY_IMAGE, "mouse_buttons/AttributePlusButton.png", {0 + STR_X - 30, DEX_Y - 2, 33, 22}, FALSE},
 	[MORE_VIT_BUTTON] =
-	    {EMPTY_IMAGE, "mouse_buttons/AttributePlusButton.png", {0 + STR_X + 53, VIT_Y - 5, 38, 22}, FALSE},
+	    {EMPTY_IMAGE, "mouse_buttons/AttributePlusButton.png", {0 + STR_X - 30, VIT_Y - 2, 33, 22}, FALSE},
 
 	[DESCRIPTION_WINDOW_UP_BUTTON] = {EMPTY_IMAGE, "THIS_DOESNT_NEED_BLITTING", {607, 99, 26, 26}, TRUE},
 	[DESCRIPTION_WINDOW_DOWN_BUTTON] = {EMPTY_IMAGE, "THIS_DOESNT_NEED_BLITTING", {607, 347, 26, 26}, TRUE},

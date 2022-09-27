@@ -301,4 +301,48 @@ int limit_text_width(struct font *font, const char *text, int limit)
 	return -1;
 }
 
+int ellipsize_text(char *text, int limit)
+{
+	struct font *font = get_current_font();
+	int letter_spacing = get_letter_spacing(font);
+	int ellipsis_size = 3*font_char_width(font, '.') + 2*letter_spacing;
+
+	char *ptr = (char *)text;
+	int width = 0;
+
+	while (*ptr != '\0') {
+		if (handle_switch_font_char(&ptr)) {
+			letter_spacing = get_letter_spacing(font);
+			ellipsis_size = 3*font_char_width(font, '.') + 2*letter_spacing;
+			continue;
+		}
+		width += font_char_width(font, *ptr) + letter_spacing;
+		if ((width + ellipsis_size) >= limit)
+			break; // limit reached, cut at previous character
+		ptr++; // try an additional character
+	}
+
+	if (ptr == text) {
+		// the size limit is too narrow for even one single char...
+		return FALSE;
+	}
+
+	if (*ptr == '\0') {
+		// end of text reached, no need to cut
+		return FALSE;
+	}
+
+	int index = (ptr - text);
+	int i; // do not declare inside the for, we use it later
+	for (i=0; i<3; i++) {
+		if (text[index + i] == '\0') {
+			// can't go further, the ellipsis will not be composed of 3 dots
+			break;
+		}
+		text[index + i] = '.';
+	}
+	text[index + i] = '\0'; // 'i' is after the ellipsis
+	return TRUE;
+}
+
 #undef _bfont_c

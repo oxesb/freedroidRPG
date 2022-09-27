@@ -246,30 +246,16 @@ void transient_text_show(void)
 }
 
 /**
- *
+ * Return TRUE if the string is cut
  */
 int CutDownStringToMaximalSize(char *StringToCut, int LengthInPixels)
 {
-	int StringIndex = 0;
-	int i;
-
-	if (text_width(get_current_font(), StringToCut) <= LengthInPixels)
+	int string_index = limit_text_width(get_current_font(), StringToCut, LengthInPixels);
+	if (string_index < 0)
 		return FALSE;
 
-	StringIndex = limit_text_width(get_current_font(), StringToCut, LengthInPixels);
-	if (StringIndex < 1)
-		return FALSE;
-
-	for (i = 0; i < 3; i++) {
-		if (StringToCut[StringIndex + i] != 0) {
-			StringToCut[StringIndex + i] = '.';
-		} else
-			return TRUE;
-	}
-	StringToCut[StringIndex + 3] = 0;
-
-	return TRUE;
-};				// void CutDownStringToMaximalSize ( char* StringToCut , int LengthInPixels )
+	return ellipsize_text(StringToCut, LengthInPixels);
+}
 
 /**
  * This function sets a new text, that will be displayed in huge font
@@ -533,6 +519,23 @@ static int display_text_with_cursor(const char *text, int startx, int starty, co
 int display_text(const char *text, int startx, int starty, const SDL_Rect *clip, float line_height_factor)
 {
 	return display_text_with_cursor(text, startx, starty, clip, line_height_factor, -1);
+}
+
+/**
+ * Prints text at given position, ellipsizing the text to 'max_size' width
+ * (in pixels). Possibly, also automatically word-wraps at the edges of
+ * clip_rect.  If clip_rect is NULL, no clipping is performed.
+ *
+ * @return number of lines written (from the first text line up to the
+ *         last displayed line)
+ */
+int display_text_ellipsized(const char *text, int max_size, int startx, int starty, const SDL_Rect *clip, float line_height_factor)
+{
+	char *str = strdup(text);
+	CutDownStringToMaximalSize(str, max_size);
+	int nblines = display_text_with_cursor(str, startx, starty, clip, line_height_factor, -1);
+	free(str);
+	return nblines;
 }
 
 /**

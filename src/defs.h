@@ -443,7 +443,7 @@ enum {
 };
 
 
-#define STR_X 90
+#define STR_X 175
 #define STR_Y 140
 #define DEX_Y 165
 #define VIT_Y 190

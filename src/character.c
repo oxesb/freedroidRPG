@@ -51,10 +51,12 @@
 
 // common x-offsets for texts
 #define LEFT_TXT_X 25
+#define LEFT_TXT_MAX_SIZE 100
 #define RIGHT_TXT_X 195
+#define RIGHT_TXT_MAX_SIZE 105
 
 // x-offset for numbers
-#define LEFT_NR_X 175
+#define LEFT_NR_X STR_X
 #define RIGHT_NR_X 295
 
 // x-offset for values in the skills box
@@ -370,9 +372,9 @@ static void show_character_screen_skills()
 Error: melee weapon skill seems out of bounds.", PLEASE_INFORM | IS_FATAL);
 	}
 	set_current_font(Messagestat_Font);
-	display_text(_("Melee"), RIGHT_TXT_X + CharacterRect.x, MELEE_SKILL_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_ellipsized(_("Melee"), RIGHT_TXT_MAX_SIZE, RIGHT_TXT_X + CharacterRect.x, MELEE_SKILL_Y + CharacterRect.y, &CharacterRect, 1.0);
 	set_current_font(Messagevar_Font);
-	display_text(_(AllSkillTexts[Me.melee_weapon_skill]),
+	display_text_ellipsized(_(AllSkillTexts[Me.melee_weapon_skill]), RIGHT_TXT_MAX_SIZE,
 		    SKILLS_VALUE_X + CharacterRect.x, MELEE_SKILL_Y + 17 + CharacterRect.y, &CharacterRect, 1.0);
 
 	// We add some security against skill values out of allowed
@@ -384,9 +386,9 @@ Error: melee weapon skill seems out of bounds.", PLEASE_INFORM | IS_FATAL);
 Error: ranged weapon skill seems out of bounds.", PLEASE_INFORM | IS_FATAL);
 	}
 	set_current_font(Messagestat_Font);
-	display_text(_("Ranged"), RIGHT_TXT_X + CharacterRect.x, RANGED_SKILL_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_ellipsized(_("Ranged"), RIGHT_TXT_MAX_SIZE, RIGHT_TXT_X + CharacterRect.x, RANGED_SKILL_Y + CharacterRect.y, &CharacterRect, 1.0);
 	set_current_font(Messagevar_Font);
-	display_text(_(AllSkillTexts[Me.ranged_weapon_skill]),
+	display_text_ellipsized(_(AllSkillTexts[Me.ranged_weapon_skill]), RIGHT_TXT_MAX_SIZE,
 		    SKILLS_VALUE_X + CharacterRect.x, RANGED_SKILL_Y + 17 + CharacterRect.y, &CharacterRect, 1.0);
 
 	// We add some security against skill values out of allowed
@@ -398,9 +400,9 @@ Error: ranged weapon skill seems out of bounds.", PLEASE_INFORM | IS_FATAL);
 Error: Programming_Skill skill seems out of bounds.", PLEASE_INFORM | IS_FATAL);
 	}
 	set_current_font(Messagestat_Font);
-	display_text(_("Programming"), RIGHT_TXT_X + CharacterRect.x, SPELLCASTING_SKILL_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_ellipsized(_("Programming"), RIGHT_TXT_MAX_SIZE, RIGHT_TXT_X + CharacterRect.x, SPELLCASTING_SKILL_Y + CharacterRect.y, &CharacterRect, 1.0);
 	set_current_font(Messagevar_Font);
-	display_text(_(AllSkillTexts[Me.spellcasting_skill]),
+	display_text_ellipsized(_(AllSkillTexts[Me.spellcasting_skill]), RIGHT_TXT_MAX_SIZE,
 		    SKILLS_VALUE_X + CharacterRect.x, SPELLCASTING_SKILL_Y + 17 + CharacterRect.y, &CharacterRect, 1.0);
 
 };				// void show_character_screen_skills ( )
@@ -425,15 +427,16 @@ void ShowCharacterScreen()
 
 	// We define the right side of the user screen as the rectangle
 	// for our inventory screen.
-	//
+	// We will also limit the length of the texts, to avoid overlapping numbers
+
 	CharacterRect.x = GameConfig.screen_width - CHARACTERRECT_W;
 	CharacterRect.y = 0;
 	CharacterRect.w = CHARACTERRECT_W;
 	CharacterRect.h = CHARACTERRECT_H;
+	int left_nr_x = LEFT_NR_X - ((Me.points_to_distribute > 0) ? 34 : 0);
+	int left_str_max_size = 100 - ((Me.points_to_distribute > 0) ? 34 : 0);
 
 	blit_background("character.png");
-
-	set_current_font(Blue_Font);
 
 	set_current_font(Menu_Font);
 	display_text(Me.character_name, 20 + CharacterRect.x, 12 + CharacterRect.y, &CharacterRect, 1.0);
@@ -457,46 +460,46 @@ void ShowCharacterScreen()
 	display_text_right_justified(CharText, LEFT_NR_X + CharacterRect.x, 107 + CharacterRect.y, &CharacterRect, 1.0);
 
 	set_current_font(Messagestat_Font);
-	display_text(_("Circuits"), RIGHT_TXT_X + CharacterRect.x, 71 + CharacterRect.y, &CharacterRect, 1.0);
+	display_text(_("Circuits"), RIGHT_TXT_X + CharacterRect.x, 73 + CharacterRect.y, &CharacterRect, 1.0);
 	set_current_font(Messagevar_Font);
 	sprintf(CharText, "%6u", Me.Gold);
-	display_text_right_justified(CharText, RIGHT_NR_X + CharacterRect.x, 71 + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_right_justified(CharText, RIGHT_NR_X + CharacterRect.x, 89 + CharacterRect.y, &CharacterRect, 1.0);
 
 	set_current_font(Messagestat_Font);
-	display_text(_("Strength"), LEFT_TXT_X + CharacterRect.x, STR_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_ellipsized(_("Strength"), left_str_max_size, LEFT_TXT_X + CharacterRect.x, STR_Y + CharacterRect.y, &CharacterRect, 1.0);
 	set_current_font(Messagevar_Font);
 	sprintf(CharText, "%d", Me.strength);
 	if (Me.strength != Me.base_strength)
 		sprintf(CharText + strlen(CharText), " (%+d)", Me.strength - Me.base_strength);
-	display_text_right_justified(CharText, LEFT_NR_X + CharacterRect.x, STR_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_right_justified(CharText, left_nr_x + CharacterRect.x, STR_Y + CharacterRect.y, &CharacterRect, 1.0);
 
 	set_current_font(Messagestat_Font);
-	display_text(_("Dexterity"), LEFT_TXT_X + CharacterRect.x, DEX_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_ellipsized(_("Dexterity"), left_str_max_size, LEFT_TXT_X + CharacterRect.x, DEX_Y + CharacterRect.y, &CharacterRect, 1.0);
 	set_current_font(Messagevar_Font);
 	sprintf(CharText, "%d", Me.dexterity);
 	if (Me.dexterity != Me.base_dexterity)
 		sprintf(CharText + strlen(CharText), " (%+d)", Me.dexterity - Me.base_dexterity);
-	display_text_right_justified(CharText, LEFT_NR_X + CharacterRect.x, DEX_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_right_justified(CharText, left_nr_x + CharacterRect.x, DEX_Y + CharacterRect.y, &CharacterRect, 1.0);
 
 	set_current_font(Messagestat_Font);
-	display_text(_("Physique"), LEFT_TXT_X + CharacterRect.x, VIT_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_ellipsized(_("Physique"), left_str_max_size, LEFT_TXT_X + CharacterRect.x, VIT_Y + CharacterRect.y, &CharacterRect, 1.0);
 	set_current_font(Messagevar_Font);
 	sprintf(CharText, "%d", Me.physique);
 	if (Me.physique != Me.base_physique)
 		sprintf(CharText + strlen(CharText), " (%+d)", Me.physique - Me.base_physique);
-	display_text_right_justified(CharText, LEFT_NR_X + CharacterRect.x, VIT_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_right_justified(CharText, left_nr_x + CharacterRect.x, VIT_Y + CharacterRect.y, &CharacterRect, 1.0);
 
 	set_current_font(Messagestat_Font);
-	display_text(_("Cooling"), LEFT_TXT_X + CharacterRect.x, MAG_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_ellipsized(_("Cooling"), left_str_max_size, LEFT_TXT_X + CharacterRect.x, MAG_Y + CharacterRect.y, &CharacterRect, 1.0);
 	set_current_font(Messagevar_Font);
 	sprintf(CharText, "%d", Me.cooling);
 	if (Me.cooling != Me.base_cooling)
 		sprintf(CharText + strlen(CharText), " (%+d)", Me.cooling - Me.base_cooling);
-	display_text_right_justified(CharText, LEFT_NR_X + CharacterRect.x, MAG_Y + CharacterRect.y, &CharacterRect, 1.0);
+	display_text_right_justified(CharText, left_nr_x + CharacterRect.x, MAG_Y + CharacterRect.y, &CharacterRect, 1.0);
 
 	SDL_Rect tmprect = CharacterRect;
 	set_current_font(Messagestat_Font);
-	display_text(_("Training points"), LEFT_TXT_X + CharacterRect.x, POINTS_Y + CharacterRect.y, &tmprect, 1.0);
+	display_text_ellipsized(_("Training points"), LEFT_TXT_MAX_SIZE, LEFT_TXT_X + CharacterRect.x, POINTS_Y + CharacterRect.y, &tmprect, 1.0);
 	set_current_font(Messagevar_Font);
 	sprintf(CharText, "%d", Me.points_to_distribute);
 	display_text_right_justified(CharText, LEFT_NR_X + CharacterRect.x, POINTS_Y + CharacterRect.y, &CharacterRect, 1.0);

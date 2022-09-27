@@ -39,6 +39,7 @@ int text_width(struct font *font, const char *text);
 
 /* Returns the index of the last character than is inside the width limit, with the specified font */
 int limit_text_width(struct font *font, const char *text, int limit);
+int ellipsize_text(char *text, int limit);
 
 /* Write a string on the screen with the specified font */
 void put_string(struct font *font, int x, int y, const char *text);
