@@ -539,6 +539,89 @@ int display_text_ellipsized(const char *text, int max_size, int startx, int star
 }
 
 /**
+ * Prints text at given position, using (if needed) ellipsis and auto-scrolling
+ * to display the whole text. The 'scroller' defines the way the scrolling is executed
+ * and stores the internal state.
+ *
+ * @return TRUE if the text is scrolled.
+ */
+int display_text_autoscroll(const char *text, struct autoscroller *scroller, int startx, int starty, const SDL_Rect *clip, float line_height_factor)
+{
+	int rtn = TRUE;
+	int scroll_index = (int)floor(scroller->index);
+
+	// Protect against any buffer overflow (should not happen, unless a bug is
+	// prowling around...)
+	if (scroll_index >= strlen(text)) {
+		scroll_index = 0;
+	}
+
+	if (scroller->state == STOP) {
+		// the text was already scrolled once and is at the end,
+		// no cutting is needed, we can display the text without any
+		// further computation
+		put_string(get_current_font(), startx, starty, text + scroll_index);
+		return FALSE;
+	}
+
+	// Cut the text, display it ...
+
+	char *str = strdup(text + scroll_index);
+	int is_cut = CutDownStringToMaximalSize(str, clip->w);
+	put_string(get_current_font(), startx, starty, str);
+	free(str);
+
+	// ... and prepare the next step
+
+	if (!is_cut && (scroll_index == 0)) {
+		// No cutting was needed because the string is too small, then
+		// change the state to STOP, so that we do not try to cut it on the
+		// next frame.
+		scroller->state = STOP;
+		return FALSE;
+	}
+
+	if (!is_cut && (scroller->state == ROLL)) {
+		// We are at the end of the text, so stop scrolling if only one run is
+		// requested, else wait a bit before to scroll again
+		if (scroller->type == ONCE) {
+			scroller->state = STOP;
+		} else {
+			scroller->state = POSTROLL;
+			scroller->wait_count = 0.0f;
+		}
+		return FALSE;
+	}
+
+	switch (scroller->state) { // Increment counters and advance the state machine
+	case PREROLL:
+		if (scroller->wait_count < scroller->preroll) {
+			scroller->wait_count += Frame_Time();
+			break;
+		}
+		scroller->wait_count = 0.0f;
+		scroller->state = ROLL;
+		break;
+	case ROLL:
+		scroller->index += AUTO_SCROLL_RATE * Frame_Time();
+		break;
+	case POSTROLL:
+		if (scroller->wait_count < scroller->postroll) {
+			scroller->wait_count += Frame_Time();
+			break;
+		}
+		scroller->state = PREROLL;
+		scroller->wait_count = 0.0f;
+		scroller->index = 0.0f;
+		break;
+	default: // no default case, this is just to avoid checkers to complain
+		break;
+	}
+
+	return rtn;
+}
+
+/**
  * Prints text at given position, right justified, automatically
  * word-wrapping at the edges of clip_rect.  If clip_rect is NULL,
  * no clipping is performed.

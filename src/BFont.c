@@ -23,7 +23,7 @@ static void find_character_positions(BFont_Info *font, SDL_Rect char_rect[MAX_CH
 	unsigned int x = 0, i = 0, y = 0, max_h = 1;
 	SDL_Rect *rect;
 	SDL_Surface *font_surf = font->font_image.surface;
-	
+
 	i = FIRST_FONT_CHAR;
 	int sentry_horiz = SDL_MapRGB(font_surf->format, 255, 0, 255);
 	int sentry_vert = SDL_MapRGB(font_surf->format, 0, 255, 0);
@@ -84,7 +84,7 @@ static void find_character_positions(BFont_Info *font, SDL_Rect char_rect[MAX_CH
 		x = 0;
 
 		if (y >= font_surf->h)
-			break;	
+			break;
 
 	}
 
@@ -94,14 +94,14 @@ static void find_character_positions(BFont_Info *font, SDL_Rect char_rect[MAX_CH
 	// Set "space" character width
 	char_rect[' '].w = char_rect['!'].w;
 	char_rect[' '].h = char_rect['!'].h;
-	
+
 	// We assume a constant font height
 	font->h = char_rect['!'].h;
 	font->number_of_chars = i;
 }
 
 
-/**	
+/**
  * Prepare font for rendering: create struct image for each character in the font.
  */
 static void prepare_font(BFont_Info *font, SDL_Rect char_rect[MAX_CHARS_IN_FONT])
@@ -127,16 +127,16 @@ static void prepare_font(BFont_Info *font, SDL_Rect char_rect[MAX_CHARS_IN_FONT]
 
 		create_subimage(&font->font_image, img, &char_rect[i]);
 	}
-	
-	// Space is a special case	
+
+	// Space is a special case
 	create_subimage(&font->font_image, &font->char_image[' '], &char_rect[' ']);
-	
+
 	// Delete the now unneeded global bitmap
 	free_image_surface(&font->font_image);
 }
 
 /**
- * Load the font and stores it in the BFont_Info structure 
+ * Load the font and stores it in the BFont_Info structure
  */
 int load_bfont(const char *filepath, struct font *font)
 {
@@ -189,7 +189,7 @@ int font_char_width(struct font *font, unsigned char c)
 }
 
 /**
- * Puts a single char on the surface with the specified font 
+ * Puts a single char on the surface with the specified font
  */
 int put_char(struct font *font, int x, int y, unsigned char c)
 {

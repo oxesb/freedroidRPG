@@ -1160,4 +1160,22 @@ typedef struct event_timer {
 	list_head_t node;
 } event_timer;
 
+// Set the way display_text_autoscroll() executes text scrolling
+struct autoscroller {
+	enum {
+		ONCE, // scroll once and stop at the end of the text
+		LOOP  // roll-back at the end of the text, and scroll again
+	} type;   // select single turn or loop
+	enum {
+		PREROLL,  // wait a bit before to start scrolling
+		ROLL,     // is scrolling
+		POSTROLL, // wait a bit before to roll-back
+		STOP      // do not scroll
+	} state;      // current state of the scroller's fsm
+	float preroll;    // preroll delay, in seconds
+	float postroll;   // postroll delay, in seconds
+	float index;      // current scrolling index
+	float wait_count; // elapsed delay, for preroll or postroll
+};
+
 #endif

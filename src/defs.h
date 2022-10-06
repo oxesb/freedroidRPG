@@ -442,6 +442,12 @@ enum {
 	MAX_MOUSE_PRESS_BUTTONS
 };
 
+// Chars scrolled per second
+#define AUTO_SCROLL_RATE 5.0f
+// Seconds to wait before to start scrolling
+#define AUTO_SCROLL_PREROLL 1.0f
+// Seconds to wait before to roll-back after scrolling
+#define AUTO_SCROLL_POSTROLL 1.0f
 
 #define STR_X 175
 #define STR_Y 140

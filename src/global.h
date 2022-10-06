@@ -206,7 +206,7 @@ EXTERN point input_axis;	/* joystick (and mouse) axis values */
 #define INTERN_FOR _skills_c
 #include "extint_macros.h"
 
-EXTERN SDL_Rect SkillScreenRect;
+EXTERN SDL_Rect skill_screen_rect;
 
 //===================================================================
 #define INTERN_FOR _items_c

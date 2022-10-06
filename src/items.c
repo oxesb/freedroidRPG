@@ -1074,13 +1074,13 @@ int MouseCursorIsInSkiRect(int x, int y)
 {
 	if (!GameConfig.SkillScreen_Visible)
 		return FALSE;
-	if (x > SkillScreenRect.x + SkillScreenRect.w)
+	if (x > skill_screen_rect.x + skill_screen_rect.w)
 		return (FALSE);
-	if (x < SkillScreenRect.x)
+	if (x < skill_screen_rect.x)
 		return (FALSE);
-	if (y > SkillScreenRect.y + SkillScreenRect.h)
+	if (y > skill_screen_rect.y + skill_screen_rect.h)
 		return (FALSE);
-	if (y < SkillScreenRect.y)
+	if (y < skill_screen_rect.y)
 		return (FALSE);
 	return TRUE;
 };				// int MouseCursorIsInSkiRect( int x , int y )

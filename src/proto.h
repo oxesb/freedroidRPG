@@ -555,6 +555,7 @@ float get_player_damage_factor(void);
 void LevelEditor(void);
 
 // skills.c
+void init_skills_screen(void);
 void show_skills_screen(void);
 void handle_currently_activated_skill(void);
 int do_skill(int skill_index, int spell_cost);
@@ -704,6 +705,7 @@ void display_effect_countdowns(void);
 int chat_with_droid(struct enemy *);
 
 int display_text(const char *, int, int, const SDL_Rect*, float);
+int display_text_autoscroll(const char *, struct autoscroller *, int, int, const SDL_Rect*, float);
 int display_text_ellipsized(const char *, int, int, int, const SDL_Rect *, float);
 int display_text_right_justified(const char *, int, int, const SDL_Rect *, float);
 

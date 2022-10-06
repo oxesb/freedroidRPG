@@ -71,9 +71,20 @@
 #define SPELL_LEVEL_BUTTON_HEIGHT SPELL_LEVEL_BUTTON_WIDTH
 
 #define NUMBER_OF_SKILL_PAGES 8
+#define NB_SKILL_INFO 4
 
 static int Override_Power_Limit = 0;
 static struct image skill_level_images[NUMBER_OF_SKILL_PAGES];
+
+// Note: the [b ... e] notation is a gcc C99 designated initializers extension
+static struct autoscroller scrollers[NUMBER_OF_SKILLS_PER_SKILL_PAGE * (NB_SKILL_INFO+1)] = {
+	[0 ... (NUMBER_OF_SKILLS_PER_SKILL_PAGE*(NB_SKILL_INFO+1))-1] =
+		{
+		  .type = LOOP, .state = PREROLL,
+		  .preroll = AUTO_SCROLL_PREROLL, .postroll = AUTO_SCROLL_POSTROLL,
+		  .index = 0.0f, .wait_count = 0.0f
+		}
+};
 
 /**
  * This function improves a generic skill (hack melee ranged magic) by one
@@ -515,38 +526,38 @@ int CursorIsOnWhichSkillButton(int x, int y)
 	// First we check if the cursor is in at least horizontally
 	// in the row of the skill items
 	//
-	if (x > SkillScreenRect.x + 16 + 64)
+	if (x > skill_screen_rect.x + 16 + 64)
 		return (-1);
-	if (x < SkillScreenRect.x + 16)
+	if (x < skill_screen_rect.x + 16)
 		return (-1);
 
 	// Now we can check on which skill rectangle exactly the cursor
 	// is hovering, since we know that it is hitting, horizontally
 	// at least, the row of skill icons.
 	//
-	if (y < SkillScreenRect.y + 16 + 0 * 64)
+	if (y < skill_screen_rect.y + 16 + 0 * 64)
 		return (-1);
-	if (y < SkillScreenRect.y + 16 + 1 * 64)
+	if (y < skill_screen_rect.y + 16 + 1 * 64)
 		return (0);
 
-	if (y < SkillScreenRect.y + 16 + 1 * 64 + 16)
+	if (y < skill_screen_rect.y + 16 + 1 * 64 + 16)
 		return (-1);
-	if (y < SkillScreenRect.y + 16 + 2 * 64 + 16)
+	if (y < skill_screen_rect.y + 16 + 2 * 64 + 16)
 		return (1);
 
-	if (y < SkillScreenRect.y + 16 + 2 * 64 + 2 * 16)
+	if (y < skill_screen_rect.y + 16 + 2 * 64 + 2 * 16)
 		return (-1);
-	if (y < SkillScreenRect.y + 16 + 3 * 64 + 2 * 16)
+	if (y < skill_screen_rect.y + 16 + 3 * 64 + 2 * 16)
 		return (2);
 
-	if (y < SkillScreenRect.y + 16 + 3 * 64 + 3 * 16)
+	if (y < skill_screen_rect.y + 16 + 3 * 64 + 3 * 16)
 		return (-1);
-	if (y < SkillScreenRect.y + 16 + 4 * 64 + 3 * 16)
+	if (y < skill_screen_rect.y + 16 + 4 * 64 + 3 * 16)
 		return (3);
 
-	if (y < SkillScreenRect.y + 16 + 4 * 64 + 4 * 16)
+	if (y < skill_screen_rect.y + 16 + 4 * 64 + 4 * 16)
 		return (-1);
-	if (y < SkillScreenRect.y + 16 + 5 * 64 + 4 * 16)
+	if (y < skill_screen_rect.y + 16 + 5 * 64 + 4 * 16)
 		return (4);
 
 	return (-1);
@@ -564,11 +575,11 @@ static int CursorIsOnWhichSpellPageButton(int x, int y)
 	// First we check if the cursor is in at least horizontally
 	// and vertically in the line with the spell level buttons.
 	//
-	if (x < SkillScreenRect.x + SPELL_LEVEL_BUTTONS_X)
+	if (x < skill_screen_rect.x + SPELL_LEVEL_BUTTONS_X)
 		return (-1);
-	if (y > SkillScreenRect.y + SPELL_LEVEL_BUTTONS_Y + SPELL_LEVEL_BUTTON_HEIGHT)
+	if (y > skill_screen_rect.y + SPELL_LEVEL_BUTTONS_Y + SPELL_LEVEL_BUTTON_HEIGHT)
 		return (-1);
-	if (y < SkillScreenRect.y + SPELL_LEVEL_BUTTONS_Y)
+	if (y < skill_screen_rect.y + SPELL_LEVEL_BUTTONS_Y)
 		return (-1);
 
 	// Now we can check on which skill rectangle exactly the cursor
@@ -576,7 +587,7 @@ static int CursorIsOnWhichSpellPageButton(int x, int y)
 	// at least, the row of skill icons.
 	//
 	for (i = 0; i < NUMBER_OF_SKILL_PAGES; i++) {
-		if (x < SkillScreenRect.x + (2.0 * ((float)GameConfig.screen_width / 640.0)) + SPELL_LEVEL_BUTTONS_X + (i + 1) * SPELL_LEVEL_BUTTON_WIDTH)
+		if (x < skill_screen_rect.x + (2.0 * ((float)GameConfig.screen_width / 640.0)) + SPELL_LEVEL_BUTTONS_X + (i + 1) * SPELL_LEVEL_BUTTON_WIDTH)
 			return i;
 	}
 
@@ -738,6 +749,18 @@ static void load_skill_level_images_if_needed(void)
 	free_image_surface(&img);
 }
 
+/**
+ * Initialize some internal values before to open the skills screen
+ */
+void init_skills_screen(void)
+{
+	// Reset the scrollers
+	for (int i=0; i<NUMBER_OF_SKILLS_PER_SKILL_PAGE*(NB_SKILL_INFO+1); i++) {
+		scrollers[i].state = PREROLL;
+		scrollers[i].index = 0.0f;
+		scrollers[i].wait_count = 0.0f;
+	}
+}
 
 /**
  * This function displays the SKILLS SCREEN.  This is NOT the same as the
@@ -750,19 +773,21 @@ void show_skills_screen(void)
 #define INTER_SKILLRECT_DIST 17
 #define FIRST_SKILLRECT_Y 16
 
-	static SDL_Rect button_rect;
-	int skill_subset_map[number_of_skills];
+	skill_screen_rect.x = CHARACTERRECT_X;
+	skill_screen_rect.y = 0;
+	skill_screen_rect.w = CHARACTERRECT_W;
+	skill_screen_rect.h = CHARACTERRECT_H;
+
+	static SDL_Rect button_rect = { 0, 0, 64, 64 };
+	SDL_Rect skill_text_rect = { skill_screen_rect.x + 20 + button_rect.w + 10,
+	                             skill_screen_rect.y,
+	                             skill_screen_rect.w - (20 + button_rect.w + 10) - 20,
+	                             skill_screen_rect.h };
+
 	struct point skill_rect_locations[NUMBER_OF_SKILLS_PER_SKILL_PAGE];
-
-	SkillScreenRect.x = CHARACTERRECT_X;
-	SkillScreenRect.y = 0;
-	SkillScreenRect.w = CHARACTERRECT_W;
-	SkillScreenRect.h = CHARACTERRECT_H;
-
-	int i;
-	for (i = 0; i < NUMBER_OF_SKILLS_PER_SKILL_PAGE; i++) {
-		skill_rect_locations[i].x = SkillScreenRect.x + 20;
-		skill_rect_locations[i].y = SkillScreenRect.y + FIRST_SKILLRECT_Y + i * (64 + INTER_SKILLRECT_DIST) + 3;
+	for (int i = 0; i < NUMBER_OF_SKILLS_PER_SKILL_PAGE; i++) {
+		skill_rect_locations[i].x = skill_screen_rect.x + 20;
+		skill_rect_locations[i].y = skill_screen_rect.y + FIRST_SKILLRECT_Y + i * (64 + INTER_SKILLRECT_DIST) + 3;
 	}
 
 	// If the log is not set to visible right now, we do not need to
@@ -787,7 +812,8 @@ void show_skills_screen(void)
 	// already present in the Tux.  That way the game remains open for new
 	// skills to the player and he doesn't now in advance which skills there
 	// are, which is more interesting than complete control and overview.
-	//
+
+	int skill_subset_map[number_of_skills];
 	establish_skill_subset_map(skill_subset_map);
 
 	// At this point we know, that the skill screen is desired and must be
@@ -802,19 +828,19 @@ void show_skills_screen(void)
 	// we draw a 'button' or activation mark over the appropriate spot
 
 	SDL_Rect spell_level_rect;
-	spell_level_rect.x = SkillScreenRect.x + SPELL_LEVEL_BUTTONS_X + SPELL_LEVEL_BUTTON_WIDTH * GameConfig.spell_level_visible;
-	spell_level_rect.y = SkillScreenRect.y + SPELL_LEVEL_BUTTONS_Y;
+	spell_level_rect.x = skill_screen_rect.x + SPELL_LEVEL_BUTTONS_X + SPELL_LEVEL_BUTTON_WIDTH * GameConfig.spell_level_visible;
+	spell_level_rect.y = skill_screen_rect.y + SPELL_LEVEL_BUTTONS_Y;
 	display_image_on_screen(&skill_level_images[GameConfig.spell_level_visible], spell_level_rect.x, spell_level_rect.y, IMAGE_NO_TRANSFO);
 
 	// Now we fill in the skills available to this bot.  ( For now, these skills
 	// are not class-specific, like in diablo or something, but this is our first
 	// approach to the topic after all.... :)
 
-	for (i = 0; i < NUMBER_OF_SKILLS_PER_SKILL_PAGE; i++) {
+	for (int i = 0; i < NUMBER_OF_SKILLS_PER_SKILL_PAGE; i++) {
+		int sidx = i * (NB_SKILL_INFO+1);
+
 		button_rect.x = skill_rect_locations[i].x;
 		button_rect.y = skill_rect_locations[i].y;
-		button_rect.w = 64;
-		button_rect.h = 64;
 
 		if (i + NUMBER_OF_SKILLS_PER_SKILL_PAGE * GameConfig.spell_level_visible >= number_of_skills)
 			break;
@@ -839,24 +865,24 @@ void show_skills_screen(void)
 			// print the quick key number
 			char str[10];
 			sprintf(str, "F%d\n", 5 + sci);
-			display_text(str, button_rect.x + button_rect.w - 2 - text_width(get_current_font(), str), button_rect.y, &SkillScreenRect, 1.0);
+			display_text(str, button_rect.x + button_rect.w - 2 - text_width(get_current_font(), str), button_rect.y, &skill_screen_rect, 1.0);
 		}
-		// Name of the skill
 
-		display_text(D_(SpellSkillMap[skill_of_this_slot].name),
-			    16 + 64 + 16 + SkillScreenRect.x,
-			    FIRST_SKILLRECT_Y - 6 + i * (64 + INTER_SKILLRECT_DIST) + SkillScreenRect.y, &SkillScreenRect, 1.0);
+		// Name of the skill
+		display_text_autoscroll(D_(SpellSkillMap[skill_of_this_slot].name), &scrollers[sidx+0],
+			skill_text_rect.x, FIRST_SKILLRECT_Y - 6 + i * (64 + INTER_SKILLRECT_DIST) + skill_text_rect.y,
+			&skill_text_rect, 1.0);
 
 		set_current_font(Messagestat_Font);
 		int tmp, tmp2;
 		int nextypos =
-		    FIRST_SKILLRECT_Y - 8 + i * (64 + INTER_SKILLRECT_DIST) + SkillScreenRect.y + 2 * get_font_height(get_current_font());
+		    FIRST_SKILLRECT_Y - 8 + i * (64 + INTER_SKILLRECT_DIST) + skill_text_rect.y + 2 * get_font_height(get_current_font());
 		char char_text[1000];
 
 		// Program revision
 		sprintf(char_text, _("Program revision: %c%d%c "), font_switchto_msgvar[0], Me.skill_level[skill_of_this_slot],
 			font_switchto_msgstat[0]);
-		display_text(char_text, 16 + 64 + 16 + SkillScreenRect.x, nextypos, &SkillScreenRect, 1.0);
+		display_text_autoscroll(char_text, &scrollers[sidx+1], skill_text_rect.x, nextypos, &skill_text_rect, 1.0);
 		nextypos += get_font_height(get_current_font());
 
 		// Heat cost/cooling
@@ -866,7 +892,7 @@ void show_skills_screen(void)
 				sprintf(char_text, _("Heat produced: %c%d%c "), font_switchto_msgvar[0], tmp, font_switchto_msgstat[0]);
 			else
 				sprintf(char_text, _("Cooling: %c%d%c "), font_switchto_msgvar[0], -tmp, font_switchto_msgstat[0]);
-			display_text(char_text, 16 + 64 + 16 + SkillScreenRect.x, nextypos, &SkillScreenRect, 1.0);
+			display_text_autoscroll(char_text, &scrollers[sidx+2], skill_text_rect.x, nextypos, &skill_text_rect, 1.0);
 			nextypos += get_font_height(get_current_font());
 		}
 		// Damage/healing
@@ -886,7 +912,7 @@ void show_skills_screen(void)
 					sprintf(char_text, _("Healing: %c%d-%d%c "), font_switchto_msgvar[0], -tmp, -tmp2,
 						font_switchto_msgstat[0]);
 			}
-			display_text(char_text, 16 + 64 + 16 + SkillScreenRect.x, nextypos, &SkillScreenRect, 1.0);
+			display_text_autoscroll(char_text, &scrollers[sidx+3], skill_text_rect.x, nextypos, &skill_text_rect, 1.0);
 			nextypos += get_font_height(get_current_font());
 		}
 		// Special effect and duration
@@ -926,7 +952,7 @@ void show_skills_screen(void)
 				sprintf(char_text + strlen(char_text), _(" for %c%.1f%c seconds"), font_switchto_msgvar[0], dur,
 					font_switchto_msgstat[0]);
 
-			display_text(char_text, 16 + 64 + 16 + SkillScreenRect.x, nextypos, &SkillScreenRect, 1.0);
+			display_text_autoscroll(char_text, &scrollers[sidx+4], skill_text_rect.x, nextypos, &skill_text_rect, 1.0);
 		}
 	}
 
@@ -952,7 +978,16 @@ void show_skills_screen(void)
 
 		// Handle clicks on page numbers
 		if ((CursorIsOnWhichSpellPageButton(current_pos.x, current_pos.y) != (-1)) && MouseLeftClicked()) {
+			int current_level = GameConfig.spell_level_visible;
 			GameConfig.spell_level_visible = CursorIsOnWhichSpellPageButton(current_pos.x, current_pos.y);
+			if (GameConfig.spell_level_visible != current_level) {
+				// A new skill page is shown -> reset the autoscroll states
+				for (int i=0; i<NUMBER_OF_SKILLS_PER_SKILL_PAGE*(NB_SKILL_INFO+1); i++) {
+					scrollers[i].state = PREROLL;
+					scrollers[i].index = 0.0f;
+					scrollers[i].wait_count = 0.0f;
+				}
+			}
 		}
 	}
 }

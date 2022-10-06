@@ -704,8 +704,12 @@ void toggle_game_config_screen_visibility(int screen_visible)
 		break;
 	case GAME_CONFIG_SCREEN_VISIBLE_SKILLS:
 		GameConfig.SkillScreen_Visible = !GameConfig.SkillScreen_Visible;
-		if (!GameConfig.SkillScreen_Visible)
+		if (!GameConfig.SkillScreen_Visible) {
 			GameConfig.skill_explanation_screen_visible = FALSE;
+		} else {
+			// Some pre-display init is needed
+			init_skills_screen();
+		}
 		GameConfig.CharacterScreen_Visible = FALSE;
 		break;
 	case GAME_CONFIG_SCREEN_VISIBLE_CHARACTER:

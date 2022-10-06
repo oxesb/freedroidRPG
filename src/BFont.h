@@ -16,7 +16,7 @@
 typedef struct BFont_Info {
 	/* font height */
 	int h;
-	
+
 	struct image font_image;
 	struct image char_image[MAX_CHARS_IN_FONT];
 	unsigned int number_of_chars;

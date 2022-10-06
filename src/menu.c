@@ -1,8 +1,8 @@
-/* 
+/*
  *
  *   Copyright (c) 1994, 2002, 2003 Johannes Prix
  *   Copyright (c) 1994, 2002 Reinhard Prix
- *   Copyright (c) 2004-2010 Arthur Huillet 
+ *   Copyright (c) 2004-2010 Arthur Huillet
  *
  *
  *  This file is part of Freedroid
@@ -18,8 +18,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -46,8 +46,6 @@ int Single_Player_Menu(void);
 #define DELETE_EXISTING_HERO_STRING _("Select character to delete: ")
 
 #define MENU_SELECTION_DEBUG 1
-
-#define AUTO_SCROLL_RATE (0.02f)
 
 #define MAX_MENU_ITEMS 100
 #define MAX_SAVEGAMES_PER_PAGE 5
@@ -81,10 +79,10 @@ static int MouseCursorIsOverMenuItem(int first_menu_item_pos_y, int h)
  * This function performs a menu for the player to select from, using the
  * keyboard only, currently, sorry.
  *
- * This function EXPECTS, that MenuTexts[] is an array of strings, THE 
- * LAST OF WHICH IS AN EMPTY STRING TO DENOTE THE END OF THE ARRAY!  If 
+ * This function EXPECTS, that MenuTexts[] is an array of strings, THE
+ * LAST OF WHICH IS AN EMPTY STRING TO DENOTE THE END OF THE ARRAY!  If
  * this is not respected, segfault errors are likely.
- * 
+ *
  */
 int do_menu_selection(char *header_text, char **items_texts, int first_item_idx, const char *background_name, struct font *menu_font)
 {
@@ -320,11 +318,20 @@ int do_menu_selection(char *header_text, char **items_texts, int first_item_idx,
 	int auto_scroll_run = TRUE;
 	int ret = -1;
 
+	// Prevent distortion of framerate by the delay coming from the time spend
+	// in the menu.
+	Activate_Conservative_Frame_Computation();
+
 	for (;;) {
 		save_mouse_state();
 
+		// The scrolling of the menu texts is 'controled by speed', so we need
+		// to know the actual frame rate
+		StartTakingTimeForFPSCalculation();
+		update_frames_displayed();
+
 		// Display the background of the menu, either by doing it once more
-		// in the open_gl case or by restoring what we have saved earlier, in the 
+		// in the open_gl case or by restoring what we have saved earlier, in the
 		// SDL output case.
 
 		RestoreMenuBackground(0);
@@ -365,14 +372,13 @@ int do_menu_selection(char *header_text, char **items_texts, int first_item_idx,
 
 			// Define the actual text to display
 			// If the text is too long, handle autoscroll and clip it
-			char *str = strdup(items_texts[item_idx] + (i == selected_item_idx - 1 ? (int)auto_scroll_start : 0));
+			char *str = strdup(items_texts[item_idx] + (i == selected_item_idx - 1 ? (int)floor(auto_scroll_start) : 0));
 
 			if (!CutDownStringToMaximalSize(str, items_content_rect.w)) {
 				// if cutting was not needed, we are at the end of the text,
 				// so stop autoscroll
 				if (i == selected_item_idx - 1) {
 					auto_scroll_run = FALSE;
-					auto_scroll_start = 0.0f;
 				}
 			}
 
@@ -385,7 +391,7 @@ int do_menu_selection(char *header_text, char **items_texts, int first_item_idx,
 				draw_highlight_rectangle(highlight_rect);
 
 				if (auto_scroll_run == TRUE) {
-					auto_scroll_start += AUTO_SCROLL_RATE;
+					auto_scroll_start += AUTO_SCROLL_RATE * Frame_Time();
 				}
 			}
 
@@ -534,6 +540,8 @@ int do_menu_selection(char *header_text, char **items_texts, int first_item_idx,
 		// need to hog the CPU.  Therefore some waiting should be introduced here.
 		//
 		SDL_Delay(1);
+
+		ComputeFPSForThisFrame();
 	}
 
  out:
@@ -543,13 +551,13 @@ int do_menu_selection(char *header_text, char **items_texts, int first_item_idx,
 	input_handle();
 	game_status = old_game_status;
 	return ret;
-};				// int DoMenuSelection( ... )
+}
 
 /**
- * This function prepares the screen for the big Escape menu and 
- * its submenus.  This means usual content of the screen, i.e. the 
- * combat screen and top status bar, is "faded out", the rest of 
- * the screen is cleared.  This function resolves some redundancy 
+ * This function prepares the screen for the big Escape menu and
+ * its submenus.  This means usual content of the screen, i.e. the
+ * combat screen and top status bar, is "faded out", the rest of
+ * the screen is cleared.  This function resolves some redundancy
  * that occurred since there are so many submenus needing this.
  */
 void InitiateMenu(const char *background_name)
@@ -657,7 +665,7 @@ static void display_bot_list(int x0, int y0, int skip_dead)
 }
 
 /**
- * This function provides a convenient cheat menu, so that any 
+ * This function provides a convenient cheat menu, so that any
  * tester does not have to play all through the game again and again
  * to see if a bug in a certain position has been removed or not.
  */
@@ -668,7 +676,7 @@ void Cheatmenu(void)
 	int x0, y0;
 	item cheat_gun;
 
-	// Prevent distortion of framerate by the delay coming from 
+	// Prevent distortion of framerate by the delay coming from
 	// the time spend in the menu.
 	//
 	Activate_Conservative_Frame_Computation();
@@ -715,7 +723,7 @@ void Cheatmenu(void)
 			Me.god_mode = !Me.god_mode;
 			break;
 		case 'T':
-			Me.points_to_distribute++; 
+			Me.points_to_distribute++;
 			break;
 		case 'i':
 			if (Me.invisible_duration == 0) {
@@ -801,7 +809,7 @@ void Cheatmenu(void)
 	our_SDL_flip_wrapper();
 
 	return;
-};				// void Cheatmenu() 
+};				// void Cheatmenu()
 
 /***********************
  * Menus : Most of the menus are split into two parts
@@ -1431,7 +1439,7 @@ static void Sound_fill(char *MenuTexts[MAX_MENU_ITEMS])
 	case SOUND_OUTPUT_FMT_SURROUND51:
 		sprintf(Options[i], _("<-- Output: 5.1 Surround -->"));
 		break;
-		
+
 	default:
 		sprintf(Options[i], _("<-- Output: Error -->"));
 		break;
@@ -1704,7 +1712,7 @@ static int do_savegame_selection_and_act(int action)
 
 	InitiateMenu("title.jpg");
 
-	// We use empty strings to denote the end of any menu selection, 
+	// We use empty strings to denote the end of any menu selection,
 	// therefore also for the end of the list of saved characters.
 	//
 	char *MenuTexts[MAX_MENU_ITEMS];
@@ -1828,7 +1836,7 @@ static int Load_Existing_Hero_Menu(void)
 	return do_savegame_selection_and_act(SAVEGAME_LOAD);
 }
 
-/** 
+/**
  * Delete a savegame
  */
 static int Delete_Existing_Hero_Menu(void)
