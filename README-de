@@ -187,7 +187,7 @@ FAQ (Verschiedenes):
 	   versendet, sodass sie normalerweise nur für unsere Entwickler wichtig ist.
 	   Jedenfalls, um sich ein- oder auszutragen oder seinen Mitgliedsstatus zu ändern,
 			muss man nur folgende Webseite besuchen:
-	   http://sourceforge.net/mail/?group_id=54521
+	   https://sourceforge.net/mail/?group_id=54521
 
 
 Grafik-FAQ:
@@ -258,7 +258,7 @@ Sound-FAQ:
 		    SDL_mixer_devel installiert sind oder installiere SDL_mixer aus dem Quelltext.
 		    Die Quelltexte können hier heruntergeladen werden:
 
-		      http://www.libsdl.org/projects/SDL_mixer/
+		      https://github.com/libsdl-org/SDL_mixer
 
 		    Hast du die Quelltext-Methode benutzt, musst du auch das Spiel neu kompilieren,
 		    weil der vorherige Vorgang das Sound-Modul nicht enthält. Wenn
@@ -292,7 +292,7 @@ Level-Editor- & Entwickler-FAQ:
 
 	F: Wie komme ich an die neuste Entwicklungsversion des Spiels ran?
 	A: Für Linux-Distributionen gibt es einen einfachen Weg:
-	      git clone https://gitlab.com/freedroid/freedroid-src.git
+	      git clone https://codeberg.org/freedroid/freedroid-src.git
 	   Windowsnutzern wird hingegen folgendes Werkzeug empfohlen: 
 	      http://www.collab.net/downloads/giteye?CID=tigris
 	   Wer weiterhin Probleme hat, sollte mit den Leuten auf der
@@ -312,7 +312,7 @@ Level-Editor- & Entwickler-FAQ:
 7. Kontakt
 ===========
  Webseite       ................ https://www.freedroid.org
- Quelltext Projektseite   ........ https://gitlab.com/groups/freedroid
+ Quelltext Projektseite   ........ https://codeberg.org/freedroid
  IRC Kanal   ................ #freedroid on irc.libera.chat oder
                                 https://web.libera.chat/#freedroid
  E-Mail-Liste  ................ freedroid-discussion@lists.sourceforge.net

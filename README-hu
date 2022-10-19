@@ -187,7 +187,7 @@ Vegyes GYIK:
 	   developer server and therefore usually only interesting for developers themselves.
 	   In any case, you can subscribe, unsubscribe or change your membership options
 			from the following web page:
-	   http://sourceforge.net/mail/?group_id=54521
+	   https://sourceforge.net/mail/?group_id=54521
 
 
 Graphics FAQ:
@@ -258,7 +258,7 @@ Sound FAQ:
 		    SDL_mixer_devel packages installed or install SDL_mixer from source.
 		    You can download everything from here:
 
-		      http://www.libsdl.org/projects/SDL_mixer/
+		      https://github.com/libsdl-org/SDL_mixer
 
 		    If you compiled from source, you'll have to recompile now, because the
 		    previous compile didn't include the sound module of FreedroidRPG. If
@@ -292,7 +292,7 @@ Level Editor & Developer FAQ:
 
 	Q: How can I get the latest development version of the game?
 	A: This is very simple when using Linux:
-	      git clone https://gitlab.com/freedroid/freedroid-src.git
+	      git clone https://codeberg.org/freedroid/freedroid-src.git
 	   If you are using Windows we recommend using a tool like 
 	      http://www.collab.net/downloads/giteye?CID=tigris
 	   If you still run into problems, best again discuss it with the people on
@@ -312,7 +312,7 @@ Level Editor & Developer FAQ:
 7. Contact
 ===========
  Website       ................ https://www.freedroid.org
- Source project page   ........ https://gitlab.com/groups/freedroid
+ Source project page   ........ https://codeberg.org/freedroid
  IRC channel   ................ #freedroid on irc.libera.chat or
                                 https://web.libera.chat/#freedroid
  Mailing list  ................ freedroid-discussion@lists.sourceforge.net

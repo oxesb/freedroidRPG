@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: https://www.freedroid.org\n"
-"POT-Creation-Date: 2022-07-21 21:29+0200\n"
+"POT-Creation-Date: 2022-11-01 21:22+0100\n"
 "PO-Revision-Date: 2014-03-27 23:12+0000\n"
 "Last-Translator: fluzz <fluzz@gmx.com>, 2022\n"
 "Language-Team: Russian (http://www.transifex.com/arctic-games/freedroid-rpg/language/ru/)\n"
@@ -85,71 +85,71 @@ msgstr "Дальний бой"
 msgid "Programming"
 msgstr "Программиров."
 
-#: src/character.c:444
+#: src/character.c:445
 msgid "Level"
 msgstr "Уровень"
 
-#: src/character.c:450
+#: src/character.c:451
 msgid "Experience"
 msgstr "Опыт"
 
-#: src/character.c:456
+#: src/character.c:457
 msgid "Next level"
 msgstr "След. уров."
 
-#: src/character.c:462
+#: src/character.c:463
 msgid "Circuits"
 msgstr "Схемы"
 
-#: src/character.c:468
+#: src/character.c:469
 msgid "Strength"
 msgstr "Сила"
 
-#: src/character.c:476
+#: src/character.c:477
 msgid "Dexterity"
 msgstr "Ловкость"
 
-#: src/character.c:484
+#: src/character.c:485
 msgid "Physique"
 msgstr "Телослож."
 
-#: src/character.c:492
+#: src/character.c:493
 msgid "Cooling"
 msgstr "Охлажд."
 
-#: src/character.c:501
+#: src/character.c:502
 msgid "Training points"
 msgstr "Очки развития"
 
-#: src/character.c:507 src/game_ui.c:246
+#: src/character.c:508 src/game_ui.c:246
 msgid "Health"
 msgstr "Здоровье"
 
-#: src/character.c:513 src/game_ui.c:318
+#: src/character.c:514 src/game_ui.c:318
 msgid "Temperature"
 msgstr "Температура"
 
-#: src/character.c:519
+#: src/character.c:520
 msgid "Stamina"
 msgstr "Вынослив."
 
-#: src/character.c:525
+#: src/character.c:526
 msgid "Attack"
 msgstr "Атака"
 
-#: src/character.c:531
+#: src/character.c:532
 msgid "Damage"
 msgstr "Урон"
 
-#: src/character.c:543
+#: src/character.c:544
 msgid "Armor"
 msgstr "Броня"
 
-#: src/chat.c:547
+#: src/chat.c:546
 msgid "Click anywhere to continue..."
 msgstr "Для продолжения щёлкни в любом месте..."
 
-#: src/chat.c:705 src/chat.c:715
+#: src/chat.c:704 src/chat.c:714
 msgid "[n]--- Start of Dialog ---\n"
 msgstr "[n]--- Начало диалога ---\n"
 
@@ -325,15 +325,15 @@ msgstr "Энергощит отключён из-за перегрева."
 msgid "Energy shield disabled due to a risk of overheat."
 msgstr "Энергощит отключён из-за опасности перегрева."
 
-#: src/influ.c:1045 src/menu.c:1125
+#: src/influ.c:1045 src/menu.c:1133
 msgid "Load Latest"
 msgstr "Загрузить последнюю игру"
 
-#: src/influ.c:1046 src/menu.c:1126
+#: src/influ.c:1046 src/menu.c:1134
 msgid "Load Backup"
 msgstr "Загрузить резервную копию"
 
-#: src/influ.c:1048 src/menu.c:1128 src/lvledit/lvledit_menu.c:958
+#: src/influ.c:1048 src/menu.c:1136 src/lvledit/lvledit_menu.c:958
 msgid "Quit to Main Menu"
 msgstr "Выйти в главное меню"
 
@@ -341,7 +341,7 @@ msgstr "Выйти в главное меню"
 msgid "Return to Editor"
 msgstr "Вернуться в редактор"
 
-#: src/influ.c:1052 src/menu.c:974 src/menu.c:1131
+#: src/influ.c:1052 src/menu.c:982 src/menu.c:1139
 #: src/lvledit/lvledit_menu.c:959
 msgid "Exit FreedroidRPG"
 msgstr "Выйти из FreedroidRPG"
@@ -448,35 +448,35 @@ msgstr "Доктор тебя предупреждал. Теперь ты сла
 msgid "You have reached the maximum skill level for %s"
 msgstr "Ты достиг максимального уровня программы %s"
 
-#: src/items.c:1563
+#: src/items.c:1562
 msgid "You can not use the inventory while paralyzed."
 msgstr "Нельзя пользоваться инвентарём, когда парализован."
 
-#: src/items.c:1643
+#: src/items.c:1642
 msgid "You cannot fight with this!"
 msgstr "Нельзя сражаться этим предметом!"
 
-#: src/items.c:1649
+#: src/items.c:1648
 msgid "You cannot yet fight with this!"
 msgstr "Пока ты не можешь сражаться этим предметом!"
 
-#: src/items.c:1688
+#: src/items.c:1687
 msgid "Two-handed weapon requirements not met: shield bonus doesn't count."
 msgstr "Требования двуручного оружия не выполнены: бонус щита не учитывается."
 
-#: src/items.c:1701
+#: src/items.c:1700
 msgid "You cannot equip this!"
 msgstr "Ты не можешь это экипировать!"
 
-#: src/items.c:1707
+#: src/items.c:1706
 msgid "You cannot equip this yet!"
 msgstr "Ты пока не можешь экипировать этот предмет!"
 
-#: src/items.c:1739
+#: src/items.c:1738
 msgid "Shield requirements not met: two-handed weapon bonus doesn't count."
 msgstr "Требования щита не выполнены: бонус двуручного оружия не учитывается."
 
-#: src/items.c:1880 src/items.c:2057
+#: src/items.c:1879 src/items.c:2056
 msgid "I can't carry any more."
 msgstr "Не могу нести больше."
 
@@ -1120,20 +1120,20 @@ msgstr "Получено %d ценных схем!"
 msgid "Lost %d valuable circuits!"
 msgstr "Потеряно %d ценных схем!"
 
-#: src/main.c:362
+#: src/main.c:361
 msgid "Overheating!"
 msgstr "Перегрев!"
 
 #. TRANSLATORS: Screen message, displayed below 'Automatically shutting down'
-#: src/main.c:367
+#: src/main.c:366
 msgid "due to near lethal overheating"
 msgstr "в результате близкого к летальному перегрева"
 
-#: src/main.c:368
+#: src/main.c:367
 msgid "Automatically shutting down"
 msgstr "Производится автоматическое выключение"
 
-#: src/main.c:390
+#: src/main.c:389
 msgid "Weapon reloaded"
 msgstr "Оружие перезаряжено"
 
@@ -1161,7 +1161,7 @@ msgstr ""
 "Мы допустили такое сохранение для проверки ошибки в дальнейшем.\n"
 "См. отчёт в терминальной консоли.."
 
-#: src/menu.c:44 src/menu.c:968
+#: src/menu.c:44 src/menu.c:976
 msgid "Play"
 msgstr "Играть"
 
@@ -1173,77 +1173,77 @@ msgstr "Ваши персонажи:"
 msgid "Select character to delete: "
 msgstr "Выберите персонаж для удаления:"
 
-#: src/menu.c:277
+#: src/menu.c:275
 msgid "OpenGL support compiled: YES"
 msgstr "Встроенная поддержка OpenGL: ДА"
 
-#: src/menu.c:279
+#: src/menu.c:277
 msgid "OpenGL support compiled: NO"
 msgstr "Встроенная поддержка OpenGL: НЕТ"
 
-#: src/menu.c:284
+#: src/menu.c:282
 msgid "OpenGL output active: YES"
 msgstr "Вывод OpenGL активен: ДА"
 
-#: src/menu.c:286
+#: src/menu.c:284
 msgid "OpenGL output active: NO"
 msgstr "Вывод OpenGL активен: НЕТ"
 
-#: src/menu.c:340 src/menu.c:1743
+#: src/menu.c:347 src/menu.c:1751
 msgid "[down]"
 msgstr "[ниже]"
 
-#: src/menu.c:341 src/menu.c:1730
+#: src/menu.c:348 src/menu.c:1738
 msgid "[up]"
 msgstr "[выше]"
 
-#: src/menu.c:969
+#: src/menu.c:977
 msgid "Tutorial"
 msgstr "Обучение"
 
-#: src/menu.c:970
+#: src/menu.c:978
 msgid "Level Editor"
 msgstr "Редактор уровней"
 
-#: src/menu.c:971 src/menu.c:1124
+#: src/menu.c:979 src/menu.c:1132
 msgid "Options"
 msgstr "Настройки"
 
-#: src/menu.c:972
+#: src/menu.c:980
 msgid "Credits"
 msgstr "Титры"
 
-#: src/menu.c:973
+#: src/menu.c:981
 msgid "Contribute"
 msgstr "Помочь проекту"
 
-#: src/menu.c:1004
+#: src/menu.c:1012
 msgid "easy"
 msgstr "низкая"
 
-#: src/menu.c:1005
+#: src/menu.c:1013
 msgid "normal"
 msgstr "нормальная"
 
-#: src/menu.c:1006
+#: src/menu.c:1014
 msgid "hard"
 msgstr "высокая"
 
-#: src/menu.c:1009
+#: src/menu.c:1017
 #, c-format
 msgid "Difficulty: %s"
 msgstr "Сложность: %s"
 
-#: src/menu.c:1010 src/menu.c:1072 src/menu.c:1186 src/menu.c:1270
-#: src/menu.c:1331 src/menu.c:1442 src/menu.c:1522 src/menu.c:1595
-#: src/menu.c:1750 src/menu.c:1782 src/menu.c:1807 src/menu.c:1864
+#: src/menu.c:1018 src/menu.c:1080 src/menu.c:1194 src/menu.c:1278
+#: src/menu.c:1339 src/menu.c:1450 src/menu.c:1530 src/menu.c:1603
+#: src/menu.c:1758 src/menu.c:1790 src/menu.c:1815 src/menu.c:1872
 #: src/lvledit/lvledit_menu.c:121 src/lvledit/lvledit_menu.c:268
 #: src/lvledit/lvledit_menu.c:370 src/lvledit/lvledit_menu.c:589
 #: src/lvledit/lvledit_menu.c:877
 msgid "Back"
 msgstr "Назад"
 
-#: src/menu.c:1032
+#: src/menu.c:1040
 msgid ""
 "You need to restart FreedroidRPG for some changes to take effect.\n"
 "\n"
@@ -1253,173 +1253,173 @@ msgstr ""
 "\n"
 "Приносим извинения за неудобства."
 
-#: src/menu.c:1063
+#: src/menu.c:1071
 msgid "Gameplay"
 msgstr "Игровой процесс"
 
-#: src/menu.c:1064
+#: src/menu.c:1072
 msgid "Graphics"
 msgstr "Графика"
 
-#: src/menu.c:1065
+#: src/menu.c:1073
 msgid "Sound"
 msgstr "Звук"
 
-#: src/menu.c:1066
+#: src/menu.c:1074
 msgid "Keys"
 msgstr "Управление"
 
-#: src/menu.c:1068
+#: src/menu.c:1076
 msgid "Languages"
 msgstr "Языки"
 
-#: src/menu.c:1070
+#: src/menu.c:1078
 msgid "On-Screen displays"
 msgstr "Экранные сообщения"
 
-#: src/menu.c:1071
+#: src/menu.c:1079
 msgid "Performance tweaks"
 msgstr "Производительность"
 
-#: src/menu.c:1119
+#: src/menu.c:1127
 msgid "Resume Play"
 msgstr "Продолжить игру"
 
-#: src/menu.c:1121
+#: src/menu.c:1129
 msgid "Resume Playtest"
 msgstr "Продолжить тестирование"
 
-#: src/menu.c:1123
+#: src/menu.c:1131
 msgid "Save Hero"
 msgstr "Сохранить героя"
 
-#: src/menu.c:1130
+#: src/menu.c:1138
 msgid "Return to Level Editor"
 msgstr "Вернуться в редактор уровней"
 
-#: src/menu.c:1177
+#: src/menu.c:1185
 msgid "System default"
 msgstr "По умолчанию"
 
-#: src/menu.c:1321
+#: src/menu.c:1329
 #, c-format
 msgid "Change screen resolution"
 msgstr "Изменить разрешение экрана"
 
-#: src/menu.c:1323
+#: src/menu.c:1331
 #, c-format
 msgid "Fullscreen mode: %s"
 msgstr "Полноэкранный режим: %s"
 
-#: src/menu.c:1323
+#: src/menu.c:1331
 msgid "ON"
 msgstr "ВКЛ"
 
-#: src/menu.c:1323
+#: src/menu.c:1331
 msgid "OFF"
 msgstr "ВЫКЛ"
 
-#: src/menu.c:1327
+#: src/menu.c:1335
 #, c-format
 msgid "Show blood: %s"
 msgstr "Кровь: %s"
 
-#: src/menu.c:1327 src/menu.c:1512 src/menu.c:1515 src/menu.c:1520
-#: src/menu.c:1589 src/menu.c:1590 src/menu.c:1591 src/menu.c:1592
+#: src/menu.c:1335 src/menu.c:1520 src/menu.c:1523 src/menu.c:1528
+#: src/menu.c:1597 src/menu.c:1598 src/menu.c:1599 src/menu.c:1600
 msgid "YES"
 msgstr "ДА"
 
-#: src/menu.c:1327 src/menu.c:1512 src/menu.c:1515 src/menu.c:1520
-#: src/menu.c:1589 src/menu.c:1590 src/menu.c:1591 src/menu.c:1592
+#: src/menu.c:1335 src/menu.c:1520 src/menu.c:1523 src/menu.c:1528
+#: src/menu.c:1597 src/menu.c:1598 src/menu.c:1599 src/menu.c:1600
 msgid "NO"
 msgstr "НЕТ"
 
-#: src/menu.c:1414
+#: src/menu.c:1422
 #, c-format
 msgid "<-- Background music volume: %1.2f -->"
 msgstr "<-- Громкость музыки: %1.2f -->"
 
-#: src/menu.c:1418
+#: src/menu.c:1426
 #, c-format
 msgid "<-- Sound effects volume: %1.2f -->"
 msgstr "<-- Громкость звуковых эффектов: %1.2f -->"
 
-#: src/menu.c:1424
+#: src/menu.c:1432
 #, c-format
 msgid "<-- Output: Stereo -->"
 msgstr "<-- Формат вывода звука: Стерео -->"
 
-#: src/menu.c:1428
+#: src/menu.c:1436
 #, c-format
 msgid "<-- Output: 4.0 Surround -->"
 msgstr "<-- Формат вывода звука: 4.0 \"Звук вокруг\" -->"
 
-#: src/menu.c:1432
+#: src/menu.c:1440
 #, c-format
 msgid "<-- Output: 5.1 Surround -->"
 msgstr "<-- Формат вывода звука: 5.1 \"Звук вокруг\" -->"
 
-#: src/menu.c:1436
+#: src/menu.c:1444
 #, c-format
 msgid "<-- Output: Error -->"
 msgstr "<-- Формат вывода звука: Ошибка -->"
 
-#: src/menu.c:1507
+#: src/menu.c:1515
 #, c-format
 msgid "FPS limit: none"
 msgstr "Лимит FPS: нет"
 
-#: src/menu.c:1509
+#: src/menu.c:1517
 #, c-format
 msgid "FPS limit: %d"
 msgstr "Лимит FPS: %d"
 
-#: src/menu.c:1512
+#: src/menu.c:1520
 #, c-format
 msgid "Show light radius: %s"
 msgstr "Показывать радиус света: %s"
 
-#: src/menu.c:1515
+#: src/menu.c:1523
 #, c-format
 msgid "Show obstacle shadows: %s"
 msgstr "Показывать тени препятствий: %s"
 
-#: src/menu.c:1520
+#: src/menu.c:1528
 #, c-format
 msgid "Precache item graphics: %s"
 msgstr "Кешировать графику предметов: %s"
 
-#: src/menu.c:1589
+#: src/menu.c:1597
 #, c-format
 msgid "Show position: %s"
 msgstr "Местоположение: %s"
 
-#: src/menu.c:1590
+#: src/menu.c:1598
 #, c-format
 msgid "Show framerate: %s"
 msgstr "Частота кадров: %s"
 
-#: src/menu.c:1591
+#: src/menu.c:1599
 #, c-format
 msgid "Show enemies' energy bars: %s"
 msgstr "Уровень энергии противников: %s"
 
-#: src/menu.c:1592
+#: src/menu.c:1600
 #, c-format
 msgid "Show effect countdowns: %s"
 msgstr "Время действия эффектов: %s"
 
-#: src/menu.c:1593
+#: src/menu.c:1601
 #, c-format
 msgid "<-- Max. screen messages: %d -->"
 msgstr "<-- Максимум сообщений на экране: %d -->"
 
-#: src/menu.c:1594
+#: src/menu.c:1602
 #, c-format
 msgid "<-- Screen message lifetime: %3.1fs -->"
 msgstr "<-- Время показа сообщения на экране: %3.1fs -->"
 
-#: src/menu.c:1639
+#: src/menu.c:1647
 msgid ""
 "\n"
 "     Please enter a name\n"
@@ -1439,7 +1439,7 @@ msgstr ""
 "\n"
 "     > "
 
-#: src/menu.c:1661
+#: src/menu.c:1669
 #, c-format
 msgid ""
 "A character named \"%s\" already exists.\n"
@@ -1448,40 +1448,40 @@ msgstr ""
 "Персонаж с именем \"%s\" уже существует.\n"
 "Пожалуйста, выберите другое имя."
 
-#: src/menu.c:1785
+#: src/menu.c:1793
 msgid "No saved games found!"
 msgstr "Сохранённые игры не найдены!"
 
-#: src/menu.c:1806
+#: src/menu.c:1814
 msgid "Sure!"
 msgstr "Точно!"
 
-#: src/menu.c:1810
+#: src/menu.c:1818
 #, c-format
 msgid "Really delete hero '%s'?"
 msgstr "Действительно удалить героя \"%s\"?"
 
-#: src/menu.c:1861
+#: src/menu.c:1869
 msgid "New Hero"
 msgstr "Новый герой"
 
-#: src/menu.c:1862
+#: src/menu.c:1870
 msgid "Load existing Hero"
 msgstr "Загрузить существующего героя"
 
-#: src/menu.c:1863
+#: src/menu.c:1871
 msgid "Delete existing Hero"
 msgstr "Удалить существующего героя"
 
-#: src/misc.c:983
+#: src/misc.c:1019
 msgid "GAME PAUSED"
 msgstr "ИГРОВАЯ ПАУЗА"
 
-#: src/misc.c:984
+#: src/misc.c:1020
 msgid "press p to resume"
 msgstr "Нажмите \"p\", чтобы продолжить."
 
-#: src/misc.c:1275
+#: src/misc.c:1311
 #, c-format
 msgid "Arrived at %s."
 msgstr "Прибытие: %s."
@@ -1775,101 +1775,101 @@ msgstr "Ты не можешь позволить себе ремонт этог
 msgid "You can not afford this item."
 msgstr "Ты не можешь позволить себе этот предмет."
 
-#: src/skills.c:217
+#: src/skills.c:228
 msgid "You cannot teleport here!"
 msgstr "Здесь нельзя телепортироваться!"
 
-#: src/skills.c:857
+#: src/skills.c:883
 #, c-format
 msgid "Program revision: %c%d%c "
 msgstr "Версия программы: %c%d%c"
 
-#: src/skills.c:866
+#: src/skills.c:892
 #, c-format
 msgid "Heat produced: %c%d%c "
 msgstr "Произведённое тепло: %c%d%c"
 
-#: src/skills.c:868
+#: src/skills.c:894
 #, c-format
 msgid "Cooling: %c%d%c "
 msgstr "Охлаждение: %c%d%c"
 
-#: src/skills.c:878
+#: src/skills.c:904
 #, c-format
 msgid "Damage: %c%d%c "
 msgstr "Урон: %c%d%c"
 
-#: src/skills.c:880
+#: src/skills.c:906
 #, c-format
 msgid "Damage: %c%d-%d%c "
 msgstr "Урон: %c%d-%d%c"
 
-#: src/skills.c:884
+#: src/skills.c:910
 #, c-format
 msgid "Healing: %c%d%c "
 msgstr "Лечение: %c%d%c"
 
-#: src/skills.c:886
+#: src/skills.c:912
 #, c-format
 msgid "Healing: %c%d-%d%c "
 msgstr "Лечение: %c%d-%d%c"
 
-#: src/skills.c:895
+#: src/skills.c:921
 #, c-format
 msgid "Paralyze"
 msgstr "Паралич"
 
-#: src/skills.c:897
+#: src/skills.c:923
 #, c-format
 msgid "Slow down"
 msgstr "Замедление"
 
-#: src/skills.c:899
+#: src/skills.c:925
 #, c-format
 msgid "Invisible"
 msgstr "Невидимость"
 
-#: src/skills.c:901
+#: src/skills.c:927
 #, c-format
 msgid "Poison"
 msgstr "Яд"
 
-#: src/skills.c:904
+#: src/skills.c:930
 #, c-format
 msgid "Takeover charges: %c%d%c "
 msgstr "Зарядов захвата: %c%d%c"
 
-#: src/skills.c:906
+#: src/skills.c:932
 #, c-format
 msgid "Escape"
 msgstr "Побег"
 
-#: src/skills.c:908
+#: src/skills.c:934
 #, c-format
 msgid "Passive"
 msgstr "Пассивное"
 
-#: src/skills.c:914
+#: src/skills.c:940
 #, c-format
 msgid "Repair items, degrading them a bit"
 msgstr "Ремонт предметов, лёгкое ухудшение"
 
-#: src/skills.c:916
+#: src/skills.c:942
 #, c-format
 msgid "Detect enemies"
 msgstr "Обнаружение врагов"
 
-#: src/skills.c:918
+#: src/skills.c:944
 #, c-format
 msgid "Lighten area"
 msgstr "Подсветка области"
 
-#: src/skills.c:920
+#: src/skills.c:946
 #, c-format
 msgid "Turn damage into heat"
 msgstr "Преобразовать повреждение в тепло"
 
-#: src/skills.c:926
+#: src/skills.c:952
 #, c-format
 msgid " for %c%.1f%c seconds"
 msgstr ": %c%.1f%c секунд"
@@ -1957,23 +1957,23 @@ msgstr "Отвергнуто"
 msgid "Deadlock"
 msgstr "Тупик"
 
-#: src/text.c:363
+#: src/text.c:349
 msgid "slowed"
 msgstr "замедлен"
 
-#: src/text.c:369
+#: src/text.c:355
 msgid "paralyzed"
 msgstr "паралич:"
 
-#: src/text.c:375
+#: src/text.c:361
 msgid "invisible"
 msgstr "невидимый"
 
-#: src/text.c:381
+#: src/text.c:367
 msgid "shielded"
 msgstr "Экранировано"
 
-#: src/text.c:387
+#: src/text.c:373
 msgid "scanning"
 msgstr "сканирование"
 

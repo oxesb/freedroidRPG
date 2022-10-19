@@ -1,4 +1,283 @@
 ------------------------------------------------------------------------
+b700e731e | fluzz | 2022-10-19 18:23:44 +0200
+
+This is 1.0RC3
+------------------------------------------------------------------------
+810789398 | fluzz | 2022-11-02 16:19:24 +0100
+
+Switch from gitlab to codeberg.
+------------------------------------------------------------------------
+2b2709681 | fluzz | 2022-11-02 08:19:35 +0100
+
+Remove tx-dialog/ after 'make tx-pull'
+------------------------------------------------------------------------
+78fe0af88 | pekpek | 2022-11-01 19:18:23 +0100
+
+Act2 Grammar Fixes
+------------------------------------------------------------------------
+23aa9bba5 | lumidify | 2022-10-21 09:11:30 +0200
+
+Fix variable shadowing warnings
+------------------------------------------------------------------------
+9ff283e8a | lumidify | 2022-10-20 18:52:44 +0200
+
+Fix 'function declaration isn't a prototype' warnings
+------------------------------------------------------------------------
+b0a1fc9ef | lumidify | 2022-10-20 08:22:34 +0200
+
+Allocates enough memory to avoid a buffer overflow on a call to sscanf.
+------------------------------------------------------------------------
+812e95ee4 | Stefan Kangas | 2022-10-20 08:15:01 +0200
+
+Change some URLs to use https instead of http
+------------------------------------------------------------------------
+72684e1e0 | Stefan Kangas | 2022-10-20 08:08:47 +0200
+
+Remove a function unused parameter.
+------------------------------------------------------------------------
+55f432407 | Stefan Kangas | 2022-10-19 19:11:20 +0200
+
+Fix skangas's name in Credits.
+------------------------------------------------------------------------
+dba48b316 | Stefan Kangas | 2022-10-19 19:06:53 +0200
+
+Update Debian installation instructions, to use lua-5.3
+------------------------------------------------------------------------
+39cac751c | Stefan Kangas | 2022-10-19 19:04:11 +0200
+
+Add skangas's name to .mailmap
+------------------------------------------------------------------------
+77976ff31 | fluzz | 2022-10-19 18:58:30 +0200
+
+Add scrolling of the quest log with the 'up' and 'down' keys.
+------------------------------------------------------------------------
+a2f9702ca | fluzz | 2022-10-06 18:34:03 +0200
+
+Autoscroll texts on the skill screen
+------------------------------------------------------------------------
+1edd362c3 | fluzz | 2022-09-27 19:17:52 +0200
+
+Limit the width of the texts in the 'character screen'
+------------------------------------------------------------------------
+e3b0eed39 | Jesusaves | 2022-10-04 14:49:19 -0300
+
+There are no changes on this commit.
+------------------------------------------------------------------------
+3a81fe18a | fluzz | 2022-09-23 14:26:55 +0200
+
+Right justify numbers on the 'character screen'
+------------------------------------------------------------------------
+e9a6b589b | fluzz | 2022-09-23 12:18:44 +0200
+
+Add some helpers make targets, to help writing the CREDITS
+------------------------------------------------------------------------
+d9a2d29b7 | fluzz | 2022-09-21 18:49:44 +0200
+
+Fix build compilation on 'old' gcc.
+------------------------------------------------------------------------
+2be8df03d | fluzz | 2022-09-21 18:29:23 +0200
+
+Change the way data dirs are looked up.
+------------------------------------------------------------------------
+cc028c0d7 | fluzz | 2022-09-12 14:27:11 +0200
+
+Add 2 make targets to create an AppImage
+------------------------------------------------------------------------
+8b837df91 | fluzz | 2022-08-30 19:24:08 +0200
+
+Update translations
+------------------------------------------------------------------------
+d7830f80b | fluzz | 2022-08-01 21:06:49 +0200
+
+Fix the 'hcf.py' take-over script
+------------------------------------------------------------------------
+71bf4a490 | fluzz | 2022-07-21 21:20:02 +0200
+
+Play a sound when the player touch a sign to read it (RB 2408).
+------------------------------------------------------------------------
+7876e3e63 | fluzz | 2022-07-21 21:03:27 +0200
+
+Fix some errors, warnings and suggestions reported by cppcheck.
+------------------------------------------------------------------------
+0f99efb87 | fluzz | 2022-07-20 20:36:37 +0200
+
+Add some checks to avoid potential null pointer dereferences
+------------------------------------------------------------------------
+ce452c13d | fluzz | 2022-07-20 20:19:52 +0200
+
+Rename some vars, to avoid name shadowing (reported by cppcheck)
+------------------------------------------------------------------------
+9bf228645 | fluzz | 2022-07-20 20:02:37 +0200
+
+Initialize some vars.
+------------------------------------------------------------------------
+982b59b20 | fluzz | 2022-07-20 12:48:32 +0200
+
+Update translations
+------------------------------------------------------------------------
+2210d562f | fluzz | 2022-07-20 12:35:37 +0200
+
+Adapt the Transifex synchronization processes to their new API (v3)
+------------------------------------------------------------------------
+ff7fe033e | fluzz | 2022-07-19 11:10:41 +0200
+
+Resize a char array to fix a compilation warning.
+------------------------------------------------------------------------
+74aff2558 | pekpek | 2022-04-22 22:27:59 -0300
+
+Death sound effect for 249, 476, 493 and 711 droids. (Two files added)
+------------------------------------------------------------------------
+3d5ffe978 | fluzz | 2022-04-07 13:19:03 +0200
+
+Update translations
+------------------------------------------------------------------------
+cd14ee2b9 | fluzz | 2022-04-04 17:16:50 +0200
+
+Fix the link to the libera web client on the Contact data
+------------------------------------------------------------------------
+5d0da4928 | fluzz | 2022-03-31 13:49:49 +0200
+
+Update translations
+------------------------------------------------------------------------
+9937c9cae | fluzz | 2021-12-24 11:16:01 +0100
+
+Use a dynarray to store the items of a level.
+------------------------------------------------------------------------
+a76ed2462 | fluzz | 2021-11-14 17:08:23 +0100
+
+Update contact informations
+------------------------------------------------------------------------
+5f30f013f | fluzz | 2021-11-14 16:41:08 +0100
+
+Check map dimensions when loading a savegame.
+------------------------------------------------------------------------
+17711a426 | fluzz | 2021-11-13 23:04:47 +0100
+
+Heap overflow in loading untrusted save game
+------------------------------------------------------------------------
+918b264ce | fluzz | 2021-11-13 17:44:59 +0100
+
+No need to warn if a config parameter is missing in fdrpg.cfg
+------------------------------------------------------------------------
+2b4feaf0d | fluzz | 2021-11-05 17:51:07 +0100
+
+The 'enter' key on the keypad is not active.
+------------------------------------------------------------------------
+ee60be922 | fluzz | 2021-11-05 11:42:37 +0100
+
+Fix display of accented characters on MacOSX
+------------------------------------------------------------------------
+f4f18ecde | fluzz | 2021-10-02 22:47:19 +0200
+
+Fix the use of the 'backspace' and 'delete' keys on MacOSX
+------------------------------------------------------------------------
+4df93df57 | fluzz | 2021-10-02 18:47:33 +0200
+
+Fix some array mismatched bounds found by gcc version 11.2.1
+------------------------------------------------------------------------
+1fba948ce | pekpek | 2021-09-04 17:41:44 -0300
+
+Add a new music for Act 2 Factory.
+------------------------------------------------------------------------
+e2fd5b5d7 | Richard Lightman | 2021-09-04 17:26:05 -0300
+
+Correct typo/English in Lukas' dialog
+------------------------------------------------------------------------
+29a2023fd | Jesusaves | 2021-09-04 17:23:35 -0300
+
+Update mailmap for 1.0
+------------------------------------------------------------------------
+642f6a95a | fluzz | 2020-05-13 13:46:34 +0200
+
+gcc10 complains about possible string truncations during some strncpy
+operations.
+------------------------------------------------------------------------
+e610d4273 | fluzz | 2020-05-13 13:28:18 +0200
+
+gcc10 fails to build, due to 'multiple definition errors'.
+------------------------------------------------------------------------
+48311506d | fluzz | 2020-02-28 17:56:51 +0100
+
+Remove the need to specifically use gawk (instead of other flavors of
+awk).
+------------------------------------------------------------------------
+008d0bcf7 | fluzz | 2020-02-26 14:56:25 +0100
+
+Fix a bug on droid animations, in SDL mode, with precaching enabled.
+------------------------------------------------------------------------
+96b550282 | Arthur Huillet | 2019-02-27 13:05:26 +0100
+
+image: stop clearing requested_color
+------------------------------------------------------------------------
+e9d1eea92 | Arthur Huillet | 2017-01-07 09:31:52 +0100
+
+Use PATH_MAX strings for calls to find_file
+------------------------------------------------------------------------
+d86559726 | Arthur Huillet | 2016-09-14 17:08:53 +0200
+
+tools: add a -b mapgraph, a special mode that creates screenshots of all
+levels and a graph
+------------------------------------------------------------------------
+692a9db5b | fluzz | 2019-10-07 17:47:29 +0200
+
+Rework commit dade2a74, which was reverted by 0aa3161c.
+------------------------------------------------------------------------
+77fc063b7 | Arthur Huillet | 2019-10-05 23:58:10 +0200
+
+bullets: use a texture atlas
+------------------------------------------------------------------------
+d482b6392 | Arthur Huillet | 2019-10-05 23:15:42 +0200
+
+droid atlases: regenerate at 2048x2048
+------------------------------------------------------------------------
+ecd2de2ef | Arthur Huillet | 2019-10-05 22:23:25 +0200
+
+obstacles shadow atlas: regenerate with lower H
+------------------------------------------------------------------------
+0ce884c4f | Arthur Huillet | 2019-10-05 22:19:01 +0200
+
+obstacles atlas: regenerate with lower H
+------------------------------------------------------------------------
+89019fa34 | Arthur Huillet | 2019-10-05 22:16:44 +0200
+
+atlas: non power-of-two height
+------------------------------------------------------------------------
+0aa3161c0 | Arthur Huillet | 2019-10-05 22:00:19 +0200
+
+Revert "Prevent a crash, possibly, due to FP arithmetic accuracy
+problems when"
+------------------------------------------------------------------------
+66afd54be | fluzz | 2019-06-12 11:15:02 +0200
+
+Revert "M4 scripts : update to v2019.01.06 of the GNU Autoconf Archive."
+------------------------------------------------------------------------
+7d930dda9 | fluzz | 2019-06-11 18:35:18 +0200
+
+M4 scripts : update to v2019.01.06 of the GNU Autoconf Archive.
+------------------------------------------------------------------------
+c870efbf9 | fluzz | 2019-05-31 18:34:42 +0200
+
+[configure] Complain lately if pkg-config is not found, and stop the
+configure scriot, to avoid the user to miss the error.
+------------------------------------------------------------------------
+969b59926 | fluzz | 2019-05-31 18:14:32 +0200
+
+Alert window for Release Candidate: open it if the PACKAGE_VERSION
+contains 'RC' as well as 'rc'.
+------------------------------------------------------------------------
+de30f757c | fluzz | 2019-06-07 13:26:12 +0200
+
+Building on FreeBSD: add some infos about the packages to install and
+the explicit use of GNUmake.
+------------------------------------------------------------------------
+875d8fe3d | Arthur Huillet | 2019-06-06 18:49:26 +0200
+
+savegame: fix game loading on non-glibc platforms
+------------------------------------------------------------------------
+d05610aed | fluzz | 2019-05-12 16:51:41 +0200
+
+This is FreedroidRPG 1.0rc2
+------------------------------------------------------------------------
 7eb8f1c31 | fluzz | 2019-05-12 16:03:58 +0200
 
 [L10N] Clean PO files pulled from tx (remove obsolete entries and clear

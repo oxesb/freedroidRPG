@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: https://www.freedroid.org\n"
-"POT-Creation-Date: 2022-07-21 21:29+0200\n"
+"POT-Creation-Date: 2022-11-01 21:22+0100\n"
 "PO-Revision-Date: 2014-03-27 23:12+0000\n"
 "Last-Translator: fluzz <fluzz@gmx.com>, 2022\n"
 "Language-Team: Swedish (http://www.transifex.com/arctic-games/freedroid-rpg/language/sv/)\n"
@@ -85,71 +85,71 @@ msgstr "Skytte"
 msgid "Programming"
 msgstr "Programmering"
 
-#: src/character.c:444
+#: src/character.c:445
 msgid "Level"
 msgstr "Nivå"
 
-#: src/character.c:450
+#: src/character.c:451
 msgid "Experience"
 msgstr "Erfarenhet"
 
-#: src/character.c:456
+#: src/character.c:457
 msgid "Next level"
 msgstr "Nästa nivå"
 
-#: src/character.c:462
+#: src/character.c:463
 msgid "Circuits"
 msgstr "Kretsar"
 
-#: src/character.c:468
+#: src/character.c:469
 msgid "Strength"
 msgstr "Styrka"
 
-#: src/character.c:476
+#: src/character.c:477
 msgid "Dexterity"
 msgstr "Smidighet"
 
-#: src/character.c:484
+#: src/character.c:485
 msgid "Physique"
 msgstr "Kondition"
 
-#: src/character.c:492
+#: src/character.c:493
 msgid "Cooling"
 msgstr "Kylning"
 
-#: src/character.c:501
+#: src/character.c:502
 msgid "Training points"
 msgstr "Träningspoäng"
 
-#: src/character.c:507 src/game_ui.c:246
+#: src/character.c:508 src/game_ui.c:246
 msgid "Health"
 msgstr "Hälsa"
 
-#: src/character.c:513 src/game_ui.c:318
+#: src/character.c:514 src/game_ui.c:318
 msgid "Temperature"
 msgstr "Temeratur"
 
-#: src/character.c:519
+#: src/character.c:520
 msgid "Stamina"
 msgstr "Uthållighet"
 
-#: src/character.c:525
+#: src/character.c:526
 msgid "Attack"
 msgstr "Attack"
 
-#: src/character.c:531
+#: src/character.c:532
 msgid "Damage"
 msgstr "Skada"
 
-#: src/character.c:543
+#: src/character.c:544
 msgid "Armor"
 msgstr "Sköld"
 
-#: src/chat.c:547
+#: src/chat.c:546
 msgid "Click anywhere to continue..."
 msgstr "Klicka någonstans för att fortsätta..."
 
-#: src/chat.c:705 src/chat.c:715
+#: src/chat.c:704 src/chat.c:714
 msgid "[n]--- Start of Dialog ---\n"
 msgstr "[n]--- Samtalets början ---\n"
 
@@ -325,15 +325,15 @@ msgstr "Energisköld avstäng pga överhettning."
 msgid "Energy shield disabled due to a risk of overheat."
 msgstr "Energisköld avstäng pga risk för överhettning."
 
-#: src/influ.c:1045 src/menu.c:1125
+#: src/influ.c:1045 src/menu.c:1133
 msgid "Load Latest"
 msgstr "Ladda Senaste"
 
-#: src/influ.c:1046 src/menu.c:1126
+#: src/influ.c:1046 src/menu.c:1134
 msgid "Load Backup"
 msgstr "Ladda Säkerhetskopia"
 
-#: src/influ.c:1048 src/menu.c:1128 src/lvledit/lvledit_menu.c:958
+#: src/influ.c:1048 src/menu.c:1136 src/lvledit/lvledit_menu.c:958
 msgid "Quit to Main Menu"
 msgstr "Avsluta till Huvudmenyn"
 
@@ -341,7 +341,7 @@ msgstr "Avsluta till Huvudmenyn"
 msgid "Return to Editor"
 msgstr "Återgå till Redigeraren"
 
-#: src/influ.c:1052 src/menu.c:974 src/menu.c:1131
+#: src/influ.c:1052 src/menu.c:982 src/menu.c:1139
 #: src/lvledit/lvledit_menu.c:959
 msgid "Exit FreedroidRPG"
 msgstr "Avsluta FreedroidRPG"
@@ -448,35 +448,35 @@ msgstr "Doktorn varnade dig. Nu känner du dig svag och sjuk."
 msgid "You have reached the maximum skill level for %s"
 msgstr "Du har nått den högsta möjliga nivån i %s"
 
-#: src/items.c:1563
+#: src/items.c:1562
 msgid "You can not use the inventory while paralyzed."
 msgstr "Du kan inte använda förrådet när du är paralyserad."
 
-#: src/items.c:1643
+#: src/items.c:1642
 msgid "You cannot fight with this!"
 msgstr "Du kan inte slåss med det här!"
 
-#: src/items.c:1649
+#: src/items.c:1648
 msgid "You cannot yet fight with this!"
 msgstr "Du kan inte slåss med det här, än!"
 
-#: src/items.c:1688
+#: src/items.c:1687
 msgid "Two-handed weapon requirements not met: shield bonus doesn't count."
 msgstr "Du uppfyller inte kraven för tvåhandsvapnet: bonus från skölden räknas inte med."
 
-#: src/items.c:1701
+#: src/items.c:1700
 msgid "You cannot equip this!"
 msgstr "Du kan inte använda det här!"
 
-#: src/items.c:1707
+#: src/items.c:1706
 msgid "You cannot equip this yet!"
 msgstr "Du kan inte använda det här, än!"
 
-#: src/items.c:1739
+#: src/items.c:1738
 msgid "Shield requirements not met: two-handed weapon bonus doesn't count."
 msgstr "Du uppfyller inte sköldens krav: bonus från tvåhandsvapnet räknas inte med."
 
-#: src/items.c:1880 src/items.c:2057
+#: src/items.c:1879 src/items.c:2056
 msgid "I can't carry any more."
 msgstr "Jag kan inte bära mer."
 
@@ -1120,20 +1120,20 @@ msgstr "Tog emot %d värdefulla kretsar!"
 msgid "Lost %d valuable circuits!"
 msgstr "Förlorade %d värdefulla kretsar!"
 
-#: src/main.c:362
+#: src/main.c:361
 msgid "Overheating!"
 msgstr "Överhettning!"
 
 #. TRANSLATORS: Screen message, displayed below 'Automatically shutting down'
-#: src/main.c:367
+#: src/main.c:366
 msgid "due to near lethal overheating"
 msgstr "p.g.a. dödlig överhettning"
 
-#: src/main.c:368
+#: src/main.c:367
 msgid "Automatically shutting down"
 msgstr "Stänger av automatiskt"
 
-#: src/main.c:390
+#: src/main.c:389
 msgid "Weapon reloaded"
 msgstr "Vapnet omladdat"
 
@@ -1161,7 +1161,7 @@ msgstr ""
 "Vi lät det sparas för ytterligare felsökning.\n"
 "Se rapporten i din terminal."
 
-#: src/menu.c:44 src/menu.c:968
+#: src/menu.c:44 src/menu.c:976
 msgid "Play"
 msgstr "Spela"
 
@@ -1173,77 +1173,77 @@ msgstr "Dina karaktärer:"
 msgid "Select character to delete: "
 msgstr "Välj karaktär att radera:"
 
-#: src/menu.c:277
+#: src/menu.c:275
 msgid "OpenGL support compiled: YES"
 msgstr "Kompilerad med OpenGL-support: JA"
 
-#: src/menu.c:279
+#: src/menu.c:277
 msgid "OpenGL support compiled: NO"
 msgstr "Kompilerad med OpenGL-support: NEJ"
 
-#: src/menu.c:284
+#: src/menu.c:282
 msgid "OpenGL output active: YES"
 msgstr "OpenGL-utmatning aktiv: JA"
 
-#: src/menu.c:286
+#: src/menu.c:284
 msgid "OpenGL output active: NO"
 msgstr "OpenGL-utmatning aktiv: NEJ"
 
-#: src/menu.c:340 src/menu.c:1743
+#: src/menu.c:347 src/menu.c:1751
 msgid "[down]"
 msgstr "[ner]"
 
-#: src/menu.c:341 src/menu.c:1730
+#: src/menu.c:348 src/menu.c:1738
 msgid "[up]"
 msgstr "[upp]"
 
-#: src/menu.c:969
+#: src/menu.c:977
 msgid "Tutorial"
 msgstr "Handledning"
 
-#: src/menu.c:970
+#: src/menu.c:978
 msgid "Level Editor"
 msgstr "Kartredigerare"
 
-#: src/menu.c:971 src/menu.c:1124
+#: src/menu.c:979 src/menu.c:1132
 msgid "Options"
 msgstr "Inställningar"
 
-#: src/menu.c:972
+#: src/menu.c:980
 msgid "Credits"
 msgstr "Författare"
 
-#: src/menu.c:973
+#: src/menu.c:981
 msgid "Contribute"
 msgstr "Hjälp till"
 
-#: src/menu.c:1004
+#: src/menu.c:1012
 msgid "easy"
 msgstr "lätt"
 
-#: src/menu.c:1005
+#: src/menu.c:1013
 msgid "normal"
 msgstr "normal"
 
-#: src/menu.c:1006
+#: src/menu.c:1014
 msgid "hard"
 msgstr "svår"
 
-#: src/menu.c:1009
+#: src/menu.c:1017
 #, c-format
 msgid "Difficulty: %s"
 msgstr "Svårighetsgrad: %s"
 
-#: src/menu.c:1010 src/menu.c:1072 src/menu.c:1186 src/menu.c:1270
-#: src/menu.c:1331 src/menu.c:1442 src/menu.c:1522 src/menu.c:1595
-#: src/menu.c:1750 src/menu.c:1782 src/menu.c:1807 src/menu.c:1864
+#: src/menu.c:1018 src/menu.c:1080 src/menu.c:1194 src/menu.c:1278
+#: src/menu.c:1339 src/menu.c:1450 src/menu.c:1530 src/menu.c:1603
+#: src/menu.c:1758 src/menu.c:1790 src/menu.c:1815 src/menu.c:1872
 #: src/lvledit/lvledit_menu.c:121 src/lvledit/lvledit_menu.c:268
 #: src/lvledit/lvledit_menu.c:370 src/lvledit/lvledit_menu.c:589
 #: src/lvledit/lvledit_menu.c:877
 msgid "Back"
 msgstr "Tillbaka"
 
-#: src/menu.c:1032
+#: src/menu.c:1040
 msgid ""
 "You need to restart FreedroidRPG for some changes to take effect.\n"
 "\n"
@@ -1253,173 +1253,173 @@ msgstr ""
 "\n"
 "Vi ber om ursäkt för besväret."
 
-#: src/menu.c:1063
+#: src/menu.c:1071
 msgid "Gameplay"
 msgstr "Spelet"
 
-#: src/menu.c:1064
+#: src/menu.c:1072
 msgid "Graphics"
 msgstr "Grafik"
 
-#: src/menu.c:1065
+#: src/menu.c:1073
 msgid "Sound"
 msgstr "Ljud"
 
-#: src/menu.c:1066
+#: src/menu.c:1074
 msgid "Keys"
 msgstr "Kontroller"
 
-#: src/menu.c:1068
+#: src/menu.c:1076
 msgid "Languages"
 msgstr "Språk"
 
-#: src/menu.c:1070
+#: src/menu.c:1078
 msgid "On-Screen displays"
 msgstr "Skärmen"
 
-#: src/menu.c:1071
+#: src/menu.c:1079
 msgid "Performance tweaks"
 msgstr "Prestandajusteringar"
 
-#: src/menu.c:1119
+#: src/menu.c:1127
 msgid "Resume Play"
 msgstr "Återuppta Spel"
 
-#: src/menu.c:1121
+#: src/menu.c:1129
 msgid "Resume Playtest"
 msgstr "Återuppta Speltest"
 
-#: src/menu.c:1123
+#: src/menu.c:1131
 msgid "Save Hero"
 msgstr "Spara Hjälte"
 
-#: src/menu.c:1130
+#: src/menu.c:1138
 msgid "Return to Level Editor"
 msgstr "Återvänd till Kartredigerare"
 
-#: src/menu.c:1177
+#: src/menu.c:1185
 msgid "System default"
 msgstr "Systemets standard"
 
-#: src/menu.c:1321
+#: src/menu.c:1329
 #, c-format
 msgid "Change screen resolution"
 msgstr "Ändra skärmupplösning"
 
-#: src/menu.c:1323
+#: src/menu.c:1331
 #, c-format
 msgid "Fullscreen mode: %s"
 msgstr "Helskärmsläge: %s"
 
-#: src/menu.c:1323
+#: src/menu.c:1331
 msgid "ON"
 msgstr "PÅ"
 
-#: src/menu.c:1323
+#: src/menu.c:1331
 msgid "OFF"
 msgstr "AV"
 
-#: src/menu.c:1327
+#: src/menu.c:1335
 #, c-format
 msgid "Show blood: %s"
 msgstr "Visa blod: %s"
 
-#: src/menu.c:1327 src/menu.c:1512 src/menu.c:1515 src/menu.c:1520
-#: src/menu.c:1589 src/menu.c:1590 src/menu.c:1591 src/menu.c:1592
+#: src/menu.c:1335 src/menu.c:1520 src/menu.c:1523 src/menu.c:1528
+#: src/menu.c:1597 src/menu.c:1598 src/menu.c:1599 src/menu.c:1600
 msgid "YES"
 msgstr "JA"
 
-#: src/menu.c:1327 src/menu.c:1512 src/menu.c:1515 src/menu.c:1520
-#: src/menu.c:1589 src/menu.c:1590 src/menu.c:1591 src/menu.c:1592
+#: src/menu.c:1335 src/menu.c:1520 src/menu.c:1523 src/menu.c:1528
+#: src/menu.c:1597 src/menu.c:1598 src/menu.c:1599 src/menu.c:1600
 msgid "NO"
 msgstr "NEJ"
 
-#: src/menu.c:1414
+#: src/menu.c:1422
 #, c-format
 msgid "<-- Background music volume: %1.2f -->"
 msgstr "<-- Volym på bakgrundsmusik: %1.2f -->"
 
-#: src/menu.c:1418
+#: src/menu.c:1426
 #, c-format
 msgid "<-- Sound effects volume: %1.2f -->"
 msgstr "<-- Volym på ljudeffekter:  %1.2f -->"
 
-#: src/menu.c:1424
+#: src/menu.c:1432
 #, c-format
 msgid "<-- Output: Stereo -->"
 msgstr "<-- Ljud ut: Stereo -->"
 
-#: src/menu.c:1428
+#: src/menu.c:1436
 #, c-format
 msgid "<-- Output: 4.0 Surround -->"
 msgstr "<-- Ljud ut: 4.0 Surround -->"
 
-#: src/menu.c:1432
+#: src/menu.c:1440
 #, c-format
 msgid "<-- Output: 5.1 Surround -->"
 msgstr "<-- Ljud ut: 5.1 Surround -->"
 
-#: src/menu.c:1436
+#: src/menu.c:1444
 #, c-format
 msgid "<-- Output: Error -->"
 msgstr "<-- Ljud ut: Fel -->"
 
-#: src/menu.c:1507
+#: src/menu.c:1515
 #, c-format
 msgid "FPS limit: none"
 msgstr "FPS-gräns: ingen"
 
-#: src/menu.c:1509
+#: src/menu.c:1517
 #, c-format
 msgid "FPS limit: %d"
 msgstr "FPS-gräns: %d"
 
-#: src/menu.c:1512
+#: src/menu.c:1520
 #, c-format
 msgid "Show light radius: %s"
 msgstr "Visa ljusradie: %s"
 
-#: src/menu.c:1515
+#: src/menu.c:1523
 #, c-format
 msgid "Show obstacle shadows: %s"
 msgstr "Visa skuggor från hinder: %s"
 
-#: src/menu.c:1520
+#: src/menu.c:1528
 #, c-format
 msgid "Precache item graphics: %s"
 msgstr "Läs in grafik i cache i förväg: %s"
 
-#: src/menu.c:1589
+#: src/menu.c:1597
 #, c-format
 msgid "Show position: %s"
 msgstr "Visa position: %s"
 
-#: src/menu.c:1590
+#: src/menu.c:1598
 #, c-format
 msgid "Show framerate: %s"
 msgstr "Visa framerate: %s"
 
-#: src/menu.c:1591
+#: src/menu.c:1599
 #, c-format
 msgid "Show enemies' energy bars: %s"
 msgstr "Visa energimätare för fiender: %s"
 
-#: src/menu.c:1592
+#: src/menu.c:1600
 #, c-format
 msgid "Show effect countdowns: %s"
 msgstr "Visa nedräkningar för program: %s"
 
-#: src/menu.c:1593
+#: src/menu.c:1601
 #, c-format
 msgid "<-- Max. screen messages: %d -->"
 msgstr "<-- Max. antal meddelanden på skärmen: %d -->"
 
-#: src/menu.c:1594
+#: src/menu.c:1602
 #, c-format
 msgid "<-- Screen message lifetime: %3.1fs -->"
 msgstr "<-- Livsläng för meddelanden på skärmen: %3.1fs -->"
 
-#: src/menu.c:1639
+#: src/menu.c:1647
 msgid ""
 "\n"
 "     Please enter a name\n"
@@ -1439,7 +1439,7 @@ msgstr ""
 "\n"
 ">"
 
-#: src/menu.c:1661
+#: src/menu.c:1669
 #, c-format
 msgid ""
 "A character named \"%s\" already exists.\n"
@@ -1448,40 +1448,40 @@ msgstr ""
 "En karaktär med namnet \"%s\" finns redan.\n"
 "Var vänlig välj ett annat namn."
 
-#: src/menu.c:1785
+#: src/menu.c:1793
 msgid "No saved games found!"
 msgstr "Inga sparade spel funna!"
 
-#: src/menu.c:1806
+#: src/menu.c:1814
 msgid "Sure!"
 msgstr "Säkert!"
 
-#: src/menu.c:1810
+#: src/menu.c:1818
 #, c-format
 msgid "Really delete hero '%s'?"
 msgstr "Vill du verkligen ta bort hjälten \"%s\"?"
 
-#: src/menu.c:1861
+#: src/menu.c:1869
 msgid "New Hero"
 msgstr "Ny Hjälte"
 
-#: src/menu.c:1862
+#: src/menu.c:1870
 msgid "Load existing Hero"
 msgstr "Ladda befintlig Hjälte"
 
-#: src/menu.c:1863
+#: src/menu.c:1871
 msgid "Delete existing Hero"
 msgstr "Ta bort Hjälte"
 
-#: src/misc.c:983
+#: src/misc.c:1019
 msgid "GAME PAUSED"
 msgstr "SPELET PAUSAT"
 
-#: src/misc.c:984
+#: src/misc.c:1020
 msgid "press p to resume"
 msgstr "tryck p för att återuppta"
 
-#: src/misc.c:1275
+#: src/misc.c:1311
 #, c-format
 msgid "Arrived at %s."
 msgstr "Kom till %s."
@@ -1777,101 +1777,101 @@ msgstr "Du har inte råda att reparera det här föremålet."
 msgid "You can not afford this item."
 msgstr "Du har inte råd med det här föremålet."
 
-#: src/skills.c:217
+#: src/skills.c:228
 msgid "You cannot teleport here!"
 msgstr "Du kan inte teleportera dig här!"
 
-#: src/skills.c:857
+#: src/skills.c:883
 #, c-format
 msgid "Program revision: %c%d%c "
 msgstr "Programversion: %c%d%c"
 
-#: src/skills.c:866
+#: src/skills.c:892
 #, c-format
 msgid "Heat produced: %c%d%c "
 msgstr "Värmeutveckling: %c%d%c"
 
-#: src/skills.c:868
+#: src/skills.c:894
 #, c-format
 msgid "Cooling: %c%d%c "
 msgstr "Kylning: %c%d%c"
 
-#: src/skills.c:878
+#: src/skills.c:904
 #, c-format
 msgid "Damage: %c%d%c "
 msgstr "Skada: %c%d%c"
 
-#: src/skills.c:880
+#: src/skills.c:906
 #, c-format
 msgid "Damage: %c%d-%d%c "
 msgstr "Skada: %c%d-%d%c"
 
-#: src/skills.c:884
+#: src/skills.c:910
 #, c-format
 msgid "Healing: %c%d%c "
 msgstr "Läkning: %c%d%c"
 
-#: src/skills.c:886
+#: src/skills.c:912
 #, c-format
 msgid "Healing: %c%d-%d%c "
 msgstr "Läkning: %c%d-%d%c"
 
-#: src/skills.c:895
+#: src/skills.c:921
 #, c-format
 msgid "Paralyze"
 msgstr "Paralysera"
 
-#: src/skills.c:897
+#: src/skills.c:923
 #, c-format
 msgid "Slow down"
 msgstr "Sakta ner"
 
-#: src/skills.c:899
+#: src/skills.c:925
 #, c-format
 msgid "Invisible"
 msgstr "Osynlig"
 
-#: src/skills.c:901
+#: src/skills.c:927
 #, c-format
 msgid "Poison"
 msgstr "Brygd"
 
-#: src/skills.c:904
+#: src/skills.c:930
 #, c-format
 msgid "Takeover charges: %c%d%c "
 msgstr "Laddningar: %c%d%c"
 
-#: src/skills.c:906
+#: src/skills.c:932
 #, c-format
 msgid "Escape"
 msgstr "Fly"
 
-#: src/skills.c:908
+#: src/skills.c:934
 #, c-format
 msgid "Passive"
 msgstr "Passiv"
 
-#: src/skills.c:914
+#: src/skills.c:940
 #, c-format
 msgid "Repair items, degrading them a bit"
 msgstr "Reparera föremål, försämrar kvaliteten"
 
-#: src/skills.c:916
+#: src/skills.c:942
 #, c-format
 msgid "Detect enemies"
 msgstr "Upptäck fiender"
 
-#: src/skills.c:918
+#: src/skills.c:944
 #, c-format
 msgid "Lighten area"
 msgstr "Lys upp området"
 
-#: src/skills.c:920
+#: src/skills.c:946
 #, c-format
 msgid "Turn damage into heat"
 msgstr "Konvertera skada till värme"
 
-#: src/skills.c:926
+#: src/skills.c:952
 #, c-format
 msgid " for %c%.1f%c seconds"
 msgstr "i %c%.1f%c sekunder"
@@ -1959,23 +1959,23 @@ msgstr "Nekad"
 msgid "Deadlock"
 msgstr "Oavgjort"
 
-#: src/text.c:363
+#: src/text.c:349
 msgid "slowed"
 msgstr "långsam"
 
-#: src/text.c:369
+#: src/text.c:355
 msgid "paralyzed"
 msgstr "paralyserad"
 
-#: src/text.c:375
+#: src/text.c:361
 msgid "invisible"
 msgstr "osynlig"
 
-#: src/text.c:381
+#: src/text.c:367
 msgid "shielded"
 msgstr "skyddad"
 
-#: src/text.c:387
+#: src/text.c:373
 msgid "scanning"
 msgstr "skannar"
 

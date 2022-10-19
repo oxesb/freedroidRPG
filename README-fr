@@ -187,7 +187,7 @@ FAQ diverses :
 	   serveur de développement et par conséquent n'a d'intérêt réel que pour les développeurs.
 	   Dans tous les cas, on peut s'inscrire, se désinscrire ou modifier les options d'adhésion
 			depuis la page web suivante :
-	   http://sourceforge.net/mail/?group_id=54521
+	   https://sourceforge.net/mail/?group_id=54521
 
 
 FAQ Graphismes :
@@ -258,7 +258,7 @@ FAQ Sons :
 		    SDL_mixer_devel installés ou sinon installez SDL_mixer depuis les sources.
 		    Vous pouvez tout télécharger sur ce site :
 
-		      http://www.libsdl.org/projects/SDL_mixer/
+		      https://github.com/libsdl-org/SDL_mixer
 
 		    Si vous avez compilé le jeu depuis les sources, vous devez le recompiler maintenant, parce que
 		    la compilation précédente n'incluait pas le module son de FreedroidRPG. Si
@@ -292,7 +292,7 @@ FAQ Éditeur de Niveau & Développeur :
 
 	Q : Comment récupérer la dernière version de développement du jeu ?
 	R: C'est très simple en utilisant Linux :
-	      git clone https://gitlab.com/freedroid/freedroid-src.git
+	      git clone https://codeberg.org/freedroid/freedroid-src.git
 	   Si vous utilisez Windows, nous recommandons l'utilisation d'un outil tel que 
 	      http://www.collab.net/downloads/giteye?CID=tigris
 	   Si vous avez des problèmes, le mieux est encore d'en discuter avec les autres sur
@@ -312,7 +312,7 @@ FAQ Éditeur de Niveau & Développeur :
 7. Contact
 ===========
  Site web ................. https://www.freedroid.org
- Page des sources  ........ https://gitlab.com/groups/freedroid
+ Dépôt du code  ........ https://codeberg.org/freedroid
  Canal IRC ................ #freedroid sur irc.libera.chat ou
                                 https://web.libera.chat/#freedroid
  Liste de diffusion ....... freedroid-discussion@lists.sourceforge.net

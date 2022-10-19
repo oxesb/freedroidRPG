@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: https://www.freedroid.org\n"
-"POT-Creation-Date: 2022-07-21 21:29+0200\n"
+"POT-Creation-Date: 2022-11-01 21:22+0100\n"
 "PO-Revision-Date: 2014-03-27 23:12+0000\n"
 "Last-Translator: Zdenek Chmelar <chmelarz@gmail.com>, 2022\n"
 "Language-Team: Czech (http://www.transifex.com/arctic-games/freedroid-rpg/language/cs/)\n"
@@ -82,71 +82,71 @@ msgstr "Boj na dálku"
 msgid "Programming"
 msgstr "Programování"
 
-#: src/character.c:444
+#: src/character.c:445
 msgid "Level"
 msgstr "Úroveň"
 
-#: src/character.c:450
+#: src/character.c:451
 msgid "Experience"
 msgstr "Zkušenost"
 
-#: src/character.c:456
+#: src/character.c:457
 msgid "Next level"
 msgstr "Další úroveň"
 
-#: src/character.c:462
+#: src/character.c:463
 msgid "Circuits"
 msgstr "Obvody"
 
-#: src/character.c:468
+#: src/character.c:469
 msgid "Strength"
 msgstr "Síla"
 
-#: src/character.c:476
+#: src/character.c:477
 msgid "Dexterity"
 msgstr "Obratnost"
 
-#: src/character.c:484
+#: src/character.c:485
 msgid "Physique"
 msgstr "Fyzička"
 
-#: src/character.c:492
+#: src/character.c:493
 msgid "Cooling"
 msgstr "Chlazení"
 
-#: src/character.c:501
+#: src/character.c:502
 msgid "Training points"
 msgstr "Tréninkové body"
 
-#: src/character.c:507 src/game_ui.c:246
+#: src/character.c:508 src/game_ui.c:246
 msgid "Health"
 msgstr "Zdraví"
 
-#: src/character.c:513 src/game_ui.c:318
+#: src/character.c:514 src/game_ui.c:318
 msgid "Temperature"
 msgstr "Teplota"
 
-#: src/character.c:519
+#: src/character.c:520
 msgid "Stamina"
 msgstr "Vytrvalost"
 
-#: src/character.c:525
+#: src/character.c:526
 msgid "Attack"
 msgstr "Útok"
 
-#: src/character.c:531
+#: src/character.c:532
 msgid "Damage"
 msgstr "Poškození"
 
-#: src/character.c:543
+#: src/character.c:544
 msgid "Armor"
 msgstr "Brnění"
 
-#: src/chat.c:547
+#: src/chat.c:546
 msgid "Click anywhere to continue..."
 msgstr "Pro pokračování klikni na libovolné místo..."
 
-#: src/chat.c:705 src/chat.c:715
+#: src/chat.c:704 src/chat.c:714
 msgid "[n]--- Start of Dialog ---\n"
 msgstr "[n]--- Začátek dialogu ---\n"
 
@@ -320,15 +320,15 @@ msgstr "Energetický štít je kvůli přehřátí neaktivní."
 msgid "Energy shield disabled due to a risk of overheat."
 msgstr "Energetický štít je kvůli riziku přehřátí neaktivní."
 
-#: src/influ.c:1045 src/menu.c:1125
+#: src/influ.c:1045 src/menu.c:1133
 msgid "Load Latest"
 msgstr "Nahrát poslední"
 
-#: src/influ.c:1046 src/menu.c:1126
+#: src/influ.c:1046 src/menu.c:1134
 msgid "Load Backup"
 msgstr "Nahrát zálohu"
 
-#: src/influ.c:1048 src/menu.c:1128 src/lvledit/lvledit_menu.c:958
+#: src/influ.c:1048 src/menu.c:1136 src/lvledit/lvledit_menu.c:958
 msgid "Quit to Main Menu"
 msgstr "Odejít do hlavního menu"
 
@@ -336,7 +336,7 @@ msgstr "Odejít do hlavního menu"
 msgid "Return to Editor"
 msgstr "Návrat do editoru"
 
-#: src/influ.c:1052 src/menu.c:974 src/menu.c:1131
+#: src/influ.c:1052 src/menu.c:982 src/menu.c:1139
 #: src/lvledit/lvledit_menu.c:959
 msgid "Exit FreedroidRPG"
 msgstr "Ukončit FreedroidRPG"
@@ -443,35 +443,35 @@ msgstr "Doktor tě varoval. Teď jsi slabý a neduživý."
 msgid "You have reached the maximum skill level for %s"
 msgstr "Dosáhl jsi maximální úrovně dovednosti %s"
 
-#: src/items.c:1563
+#: src/items.c:1562
 msgid "You can not use the inventory while paralyzed."
 msgstr "Při ochromení nemůžeš použít inventář."
 
-#: src/items.c:1643
+#: src/items.c:1642
 msgid "You cannot fight with this!"
 msgstr "S tímhle nemůžeš bojovat!"
 
-#: src/items.c:1649
+#: src/items.c:1648
 msgid "You cannot yet fight with this!"
 msgstr "Ještě s tím nemůžeš bojovat!"
 
-#: src/items.c:1688
+#: src/items.c:1687
 msgid "Two-handed weapon requirements not met: shield bonus doesn't count."
 msgstr "Požadavky obouruční zbraně nesplněny: Bonus štítu se nepočítá."
 
-#: src/items.c:1701
+#: src/items.c:1700
 msgid "You cannot equip this!"
 msgstr "Tímto se nemůžeš vybavit!"
 
-#: src/items.c:1707
+#: src/items.c:1706
 msgid "You cannot equip this yet!"
 msgstr "Tímto se ještě nemůžeš vybavit!"
 
-#: src/items.c:1739
+#: src/items.c:1738
 msgid "Shield requirements not met: two-handed weapon bonus doesn't count."
 msgstr "Požadavky štítu nesplněny: Bonus obouruční zbraně se nepočítá."
 
-#: src/items.c:1880 src/items.c:2057
+#: src/items.c:1879 src/items.c:2056
 msgid "I can't carry any more."
 msgstr "Víc toho už nepoberu."
 
@@ -1115,20 +1115,20 @@ msgstr "Získáno %d cenných obvodů!"
 msgid "Lost %d valuable circuits!"
 msgstr "Ztraceno %d cenných obvodů!"
 
-#: src/main.c:362
+#: src/main.c:361
 msgid "Overheating!"
 msgstr "Přehřívání!"
 
 #. TRANSLATORS: Screen message, displayed below 'Automatically shutting down'
-#: src/main.c:367
+#: src/main.c:366
 msgid "due to near lethal overheating"
 msgstr "v důsledku blízkého smrtelného přehřátí"
 
-#: src/main.c:368
+#: src/main.c:367
 msgid "Automatically shutting down"
 msgstr "Automatické vypnutí"
 
-#: src/main.c:390
+#: src/main.c:389
 msgid "Weapon reloaded"
 msgstr "Zbraň nabita"
 
@@ -1156,7 +1156,7 @@ msgstr ""
 "Akceptujeme její uložení z důvodu další analýzy chyby.\n"
 "Viz zpráva ve vašem terminálu."
 
-#: src/menu.c:44 src/menu.c:968
+#: src/menu.c:44 src/menu.c:976
 msgid "Play"
 msgstr "Hrát"
 
@@ -1168,77 +1168,77 @@ msgstr "Vaše postavy:"
 msgid "Select character to delete: "
 msgstr "Vybrat postavu ke smazání:"
 
-#: src/menu.c:277
+#: src/menu.c:275
 msgid "OpenGL support compiled: YES"
 msgstr "Podpora OpenGL zkompilovaná: ANO"
 
-#: src/menu.c:279
+#: src/menu.c:277
 msgid "OpenGL support compiled: NO"
 msgstr "Podpora OpenGL zkompilovaná: NE"
 
-#: src/menu.c:284
+#: src/menu.c:282
 msgid "OpenGL output active: YES"
 msgstr "Výstup OpenGL aktivní: ANO"
 
-#: src/menu.c:286
+#: src/menu.c:284
 msgid "OpenGL output active: NO"
 msgstr "Výstup OpenGL aktivní: NE"
 
-#: src/menu.c:340 src/menu.c:1743
+#: src/menu.c:347 src/menu.c:1751
 msgid "[down]"
 msgstr "[dolů]"
 
-#: src/menu.c:341 src/menu.c:1730
+#: src/menu.c:348 src/menu.c:1738
 msgid "[up]"
 msgstr "[nahoru]"
 
-#: src/menu.c:969
+#: src/menu.c:977
 msgid "Tutorial"
 msgstr "Výcvik"
 
-#: src/menu.c:970
+#: src/menu.c:978
 msgid "Level Editor"
 msgstr "Editor úrovní"
 
-#: src/menu.c:971 src/menu.c:1124
+#: src/menu.c:979 src/menu.c:1132
 msgid "Options"
 msgstr "Možnosti"
 
-#: src/menu.c:972
+#: src/menu.c:980
 msgid "Credits"
 msgstr "Autoři"
 
-#: src/menu.c:973
+#: src/menu.c:981
 msgid "Contribute"
 msgstr "Přispět"
 
-#: src/menu.c:1004
+#: src/menu.c:1012
 msgid "easy"
 msgstr "jednoduchá"
 
-#: src/menu.c:1005
+#: src/menu.c:1013
 msgid "normal"
 msgstr "normální"
 
-#: src/menu.c:1006
+#: src/menu.c:1014
 msgid "hard"
 msgstr "náročná"
 
-#: src/menu.c:1009
+#: src/menu.c:1017
 #, c-format
 msgid "Difficulty: %s"
 msgstr "Obtížnost: %s"
 
-#: src/menu.c:1010 src/menu.c:1072 src/menu.c:1186 src/menu.c:1270
-#: src/menu.c:1331 src/menu.c:1442 src/menu.c:1522 src/menu.c:1595
-#: src/menu.c:1750 src/menu.c:1782 src/menu.c:1807 src/menu.c:1864
+#: src/menu.c:1018 src/menu.c:1080 src/menu.c:1194 src/menu.c:1278
+#: src/menu.c:1339 src/menu.c:1450 src/menu.c:1530 src/menu.c:1603
+#: src/menu.c:1758 src/menu.c:1790 src/menu.c:1815 src/menu.c:1872
 #: src/lvledit/lvledit_menu.c:121 src/lvledit/lvledit_menu.c:268
 #: src/lvledit/lvledit_menu.c:370 src/lvledit/lvledit_menu.c:589
 #: src/lvledit/lvledit_menu.c:877
 msgid "Back"
 msgstr "Zpět"
 
-#: src/menu.c:1032
+#: src/menu.c:1040
 msgid ""
 "You need to restart FreedroidRPG for some changes to take effect.\n"
 "\n"
@@ -1248,173 +1248,173 @@ msgstr ""
 "\n"
 "Omlouváme se za vzniklé potíže."
 
-#: src/menu.c:1063
+#: src/menu.c:1071
 msgid "Gameplay"
 msgstr "Hratelnost"
 
-#: src/menu.c:1064
+#: src/menu.c:1072
 msgid "Graphics"
 msgstr "Grafika"
 
-#: src/menu.c:1065
+#: src/menu.c:1073
 msgid "Sound"
 msgstr "Zvuk"
 
-#: src/menu.c:1066
+#: src/menu.c:1074
 msgid "Keys"
 msgstr "Klávesy"
 
-#: src/menu.c:1068
+#: src/menu.c:1076
 msgid "Languages"
 msgstr "Jazyk"
 
-#: src/menu.c:1070
+#: src/menu.c:1078
 msgid "On-Screen displays"
 msgstr "Zobrazení informací"
 
-#: src/menu.c:1071
+#: src/menu.c:1079
 msgid "Performance tweaks"
 msgstr "Ladění výkonu"
 
-#: src/menu.c:1119
+#: src/menu.c:1127
 msgid "Resume Play"
 msgstr "Pokračovat ve hře"
 
-#: src/menu.c:1121
+#: src/menu.c:1129
 msgid "Resume Playtest"
 msgstr "Pokračovat v herním testu"
 
-#: src/menu.c:1123
+#: src/menu.c:1131
 msgid "Save Hero"
 msgstr "Uložit hrdinu"
 
-#: src/menu.c:1130
+#: src/menu.c:1138
 msgid "Return to Level Editor"
 msgstr "Návrat do editoru úrovní"
 
-#: src/menu.c:1177
+#: src/menu.c:1185
 msgid "System default"
 msgstr "Výchozí nastavení"
 
-#: src/menu.c:1321
+#: src/menu.c:1329
 #, c-format
 msgid "Change screen resolution"
 msgstr "Změnit rozlišení obrazovky"
 
-#: src/menu.c:1323
+#: src/menu.c:1331
 #, c-format
 msgid "Fullscreen mode: %s"
 msgstr "Režim celé obrazovky: %s"
 
-#: src/menu.c:1323
+#: src/menu.c:1331
 msgid "ON"
 msgstr "ZAPNUT"
 
-#: src/menu.c:1323
+#: src/menu.c:1331
 msgid "OFF"
 msgstr "VYPNUT"
 
-#: src/menu.c:1327
+#: src/menu.c:1335
 #, c-format
 msgid "Show blood: %s"
 msgstr "Zobrazit krev: %s"
 
-#: src/menu.c:1327 src/menu.c:1512 src/menu.c:1515 src/menu.c:1520
-#: src/menu.c:1589 src/menu.c:1590 src/menu.c:1591 src/menu.c:1592
+#: src/menu.c:1335 src/menu.c:1520 src/menu.c:1523 src/menu.c:1528
+#: src/menu.c:1597 src/menu.c:1598 src/menu.c:1599 src/menu.c:1600
 msgid "YES"
 msgstr "ANO"
 
-#: src/menu.c:1327 src/menu.c:1512 src/menu.c:1515 src/menu.c:1520
-#: src/menu.c:1589 src/menu.c:1590 src/menu.c:1591 src/menu.c:1592
+#: src/menu.c:1335 src/menu.c:1520 src/menu.c:1523 src/menu.c:1528
+#: src/menu.c:1597 src/menu.c:1598 src/menu.c:1599 src/menu.c:1600
 msgid "NO"
 msgstr "NE"
 
-#: src/menu.c:1414
+#: src/menu.c:1422
 #, c-format
 msgid "<-- Background music volume: %1.2f -->"
 msgstr "<-- Background music volume: %1.2f -->"
 
-#: src/menu.c:1418
+#: src/menu.c:1426
 #, c-format
 msgid "<-- Sound effects volume: %1.2f -->"
 msgstr "<-- Sound effects volume: %1.2f -->"
 
-#: src/menu.c:1424
+#: src/menu.c:1432
 #, c-format
 msgid "<-- Output: Stereo -->"
 msgstr "<-- Výstup: Stereo -->"
 
-#: src/menu.c:1428
+#: src/menu.c:1436
 #, c-format
 msgid "<-- Output: 4.0 Surround -->"
 msgstr "<-- Výstup: 4.0 Surround -->"
 
-#: src/menu.c:1432
+#: src/menu.c:1440
 #, c-format
 msgid "<-- Output: 5.1 Surround -->"
 msgstr "<-- Výstup: 5.1 Surround -->"
 
-#: src/menu.c:1436
+#: src/menu.c:1444
 #, c-format
 msgid "<-- Output: Error -->"
 msgstr "<-- Výstup: Chyba -->"
 
-#: src/menu.c:1507
+#: src/menu.c:1515
 #, c-format
 msgid "FPS limit: none"
 msgstr "Omezení FPS: žádná"
 
-#: src/menu.c:1509
+#: src/menu.c:1517
 #, c-format
 msgid "FPS limit: %d"
 msgstr "Omezení FPS: %d"
 
-#: src/menu.c:1512
+#: src/menu.c:1520
 #, c-format
 msgid "Show light radius: %s"
 msgstr "Zobrazit světelnou auru: %s"
 
-#: src/menu.c:1515
+#: src/menu.c:1523
 #, c-format
 msgid "Show obstacle shadows: %s"
 msgstr "Zobrazit stíny překážek: %s"
 
-#: src/menu.c:1520
+#: src/menu.c:1528
 #, c-format
 msgid "Precache item graphics: %s"
 msgstr "Přednahrát grafiku předmětů: %s"
 
-#: src/menu.c:1589
+#: src/menu.c:1597
 #, c-format
 msgid "Show position: %s"
 msgstr "Zobrazit pozici: %s"
 
-#: src/menu.c:1590
+#: src/menu.c:1598
 #, c-format
 msgid "Show framerate: %s"
 msgstr "Zobrazit frekvenci snímků: %s"
 
-#: src/menu.c:1591
+#: src/menu.c:1599
 #, c-format
 msgid "Show enemies' energy bars: %s"
 msgstr "Zobrazit energii nepřátel: %s"
 
-#: src/menu.c:1592
+#: src/menu.c:1600
 #, c-format
 msgid "Show effect countdowns: %s"
 msgstr "Zobrazit efekt odpočítávání: %s"
 
-#: src/menu.c:1593
+#: src/menu.c:1601
 #, c-format
 msgid "<-- Max. screen messages: %d -->"
 msgstr "<-- Max. počet zpráv na obrazovku: %d -->"
 
-#: src/menu.c:1594
+#: src/menu.c:1602
 #, c-format
 msgid "<-- Screen message lifetime: %3.1fs -->"
 msgstr "<-- Doba zobrazení zpráv na obrazovce: %3.1fs -->"
 
-#: src/menu.c:1639
+#: src/menu.c:1647
 msgid ""
 "\n"
 "     Please enter a name\n"
@@ -1434,7 +1434,7 @@ msgstr ""
 "\n"
 ">"
 
-#: src/menu.c:1661
+#: src/menu.c:1669
 #, c-format
 msgid ""
 "A character named \"%s\" already exists.\n"
@@ -1443,40 +1443,40 @@ msgstr ""
 "Postava se jménem \"%s\" už existuje.\n"
 "Vyberte prosím jiné jméno."
 
-#: src/menu.c:1785
+#: src/menu.c:1793
 msgid "No saved games found!"
 msgstr "Žádné uložené hry nenalezeny!"
 
-#: src/menu.c:1806
+#: src/menu.c:1814
 msgid "Sure!"
 msgstr "Jistě!"
 
-#: src/menu.c:1810
+#: src/menu.c:1818
 #, c-format
 msgid "Really delete hero '%s'?"
 msgstr "Skutečně chcete smazat hrdinu '%s'?"
 
-#: src/menu.c:1861
+#: src/menu.c:1869
 msgid "New Hero"
 msgstr "Nový hrdina"
 
-#: src/menu.c:1862
+#: src/menu.c:1870
 msgid "Load existing Hero"
 msgstr "Nahrát existujícího hrdinu"
 
-#: src/menu.c:1863
+#: src/menu.c:1871
 msgid "Delete existing Hero"
 msgstr "Smazat existujícího hrdinu"
 
-#: src/misc.c:983
+#: src/misc.c:1019
 msgid "GAME PAUSED"
 msgstr "HRA ZASTAVENA"
 
-#: src/misc.c:984
+#: src/misc.c:1020
 msgid "press p to resume"
 msgstr "pro návrat stiskni \"p\""
 
-#: src/misc.c:1275
+#: src/misc.c:1311
 #, c-format
 msgid "Arrived at %s."
 msgstr "Dorazil k %s."
@@ -1770,101 +1770,101 @@ msgstr "Opravu tohoto předmětu si nemůžeš dovolit."
 msgid "You can not afford this item."
 msgstr "Tento předmět si nemůžeš dovolit."
 
-#: src/skills.c:217
+#: src/skills.c:228
 msgid "You cannot teleport here!"
 msgstr "Zde se nelze teleportovat!"
 
-#: src/skills.c:857
+#: src/skills.c:883
 #, c-format
 msgid "Program revision: %c%d%c "
 msgstr "Revize programu: %c%d%c"
 
-#: src/skills.c:866
+#: src/skills.c:892
 #, c-format
 msgid "Heat produced: %c%d%c "
 msgstr "Vyprodukované teplo: %c%d%c"
 
-#: src/skills.c:868
+#: src/skills.c:894
 #, c-format
 msgid "Cooling: %c%d%c "
 msgstr "Chlazení: %c%d%c"
 
-#: src/skills.c:878
+#: src/skills.c:904
 #, c-format
 msgid "Damage: %c%d%c "
 msgstr "Poškození: %c%d%c"
 
-#: src/skills.c:880
+#: src/skills.c:906
 #, c-format
 msgid "Damage: %c%d-%d%c "
 msgstr "Poškození: %c%d-%d%c"
 
-#: src/skills.c:884
+#: src/skills.c:910
 #, c-format
 msgid "Healing: %c%d%c "
 msgstr "Léčení: %c%d%c"
 
-#: src/skills.c:886
+#: src/skills.c:912
 #, c-format
 msgid "Healing: %c%d-%d%c "
 msgstr "Léčení: %c%d-%d%c"
 
-#: src/skills.c:895
+#: src/skills.c:921
 #, c-format
 msgid "Paralyze"
 msgstr "Ochromení"
 
-#: src/skills.c:897
+#: src/skills.c:923
 #, c-format
 msgid "Slow down"
 msgstr "Zpomalení"
 
-#: src/skills.c:899
+#: src/skills.c:925
 #, c-format
 msgid "Invisible"
 msgstr "Neviditelný"
 
-#: src/skills.c:901
+#: src/skills.c:927
 #, c-format
 msgid "Poison"
 msgstr "Jed"
 
-#: src/skills.c:904
+#: src/skills.c:930
 #, c-format
 msgid "Takeover charges: %c%d%c "
 msgstr "Výboje převzetí kontroly: %c%d%c"
 
-#: src/skills.c:906
+#: src/skills.c:932
 #, c-format
 msgid "Escape"
 msgstr "Únik"
 
-#: src/skills.c:908
+#: src/skills.c:934
 #, c-format
 msgid "Passive"
 msgstr "Pasivní"
 
-#: src/skills.c:914
+#: src/skills.c:940
 #, c-format
 msgid "Repair items, degrading them a bit"
 msgstr "Oprava předmětů, degraduje je"
 
-#: src/skills.c:916
+#: src/skills.c:942
 #, c-format
 msgid "Detect enemies"
 msgstr "Detekovat nepřátele"
 
-#: src/skills.c:918
+#: src/skills.c:944
 #, c-format
 msgid "Lighten area"
 msgstr "Osvětlit oblast"
 
-#: src/skills.c:920
+#: src/skills.c:946
 #, c-format
 msgid "Turn damage into heat"
 msgstr "Proměnit poškození v teplo"
 
-#: src/skills.c:926
+#: src/skills.c:952
 #, c-format
 msgid " for %c%.1f%c seconds"
 msgstr " na %c%.1f%c sekund"
@@ -1952,23 +1952,23 @@ msgstr "Odmítnutý"
 msgid "Deadlock"
 msgstr "Zablokování"
 
-#: src/text.c:363
+#: src/text.c:349
 msgid "slowed"
 msgstr "zpomalen"
 
-#: src/text.c:369
+#: src/text.c:355
 msgid "paralyzed"
 msgstr "ochromen"
 
-#: src/text.c:375
+#: src/text.c:361
 msgid "invisible"
 msgstr "neviditelný"
 
-#: src/text.c:381
+#: src/text.c:367
 msgid "shielded"
 msgstr "stíněno"
 
-#: src/text.c:387
+#: src/text.c:373
 msgid "scanning"
 msgstr "skenující"
 

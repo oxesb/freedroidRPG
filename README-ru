@@ -187,7 +187,7 @@
 	   с нашего сервера разработки, который обычно интересен только самим разработчикам.
 	   В любом случае, вы можете подписаться, отписаться или изменить членство
 			на следующей странице:
-	   http://sourceforge.net/mail/?group_id=54521
+	   https://sourceforge.net/mail/?group_id=54521
 
 
 ЧЗВ о графике:
@@ -258,7 +258,7 @@
 		    SDL_mixer_devel установлены или установить SDL_mixer из исходников.
 		    Вы можете скачать всё отсюда:
 
-		      http://www.libsdl.org/projects/SDL_mixer/
+		      https://github.com/libsdl-org/SDL_mixer
 
 		     Если вы скомпилированы из исходного кода, вам придется перекомпилировать заново, потому что
 		    предыдущая компиляция не включает в себя звуковой модуль FreedroidRPG. Если
@@ -292,7 +292,7 @@
 
 	В.: Как мне получить последнюю разрабатываемую версию игры?
 	О.: Это очень просто, когда используется Linux:
-	      git clone https://gitlab.com/freedroid/freedroid-src.git
+	      git clone https://codeberg.org/freedroid/freedroid-src.git
 	   Если же вы используете Windows, мы рекомендуем, например 
 	      http://www.collab.net/downloads/giteye?CID=tigris
 	   Если у вас всё ещё возникают проблемы, лучше снова обсудить это с людьми
@@ -312,7 +312,7 @@
 7. Контакты
 ===========
  Веб-сайт      ................ https://www.freedroid.org
- Страница с исходниками   ..... https://gitlab.com/groups/freedroid
+ Страница с исходниками   ..... https://codeberg.org/freedroid
  IRC-канал     ................ #freedroid на irc.libera.chat или
                                 https://web.libera.chat/#freedroid
  Список рассылки .............. freedroid-discussion@lists.sourceforge.net

@@ -30,7 +30,8 @@ PROGRAMACIÓN:
         Scott Furry
         Arthur Huillet
         Gregory Lozet
-        skangas
+        lumidify
+        Stefan Kangas
         Xenux
 
 CONTENIDO DEL JUEGO:
@@ -44,8 +45,10 @@ CONTENIDO DEL JUEGO:
         Robin Gareus
         Infrared
         Matthias Krüger
+        Richard Lightman
         Miles McCammon
         Jonatas L. Nogueira
+        pekpek
         Sydney
         wlan2
 
@@ -57,12 +60,17 @@ GRÁFICOS:
 MÚSICA:
 
         girix8
+        pekpek
+
+SFX:
+
+        pekpek
 
 TRADUCCIONES:
 
         cs:
           Jan Tojnar
-          Zdenek
+          Zdenek Chmelar
 
         de_DE:
           JM Franz
@@ -72,16 +80,20 @@ TRADUCCIONES:
         es:
           Pedro Arana
           Carlos Daniel Landin Montaperto
+          Luisi Nogueira
           Lua Marchante Tello
+          Valora Valenteno
 
         fr_FR:
           Sebastian Adam
           Alérion
           Benjamin Bertrand
+          Stevens D.
           Samuel Degrande
           Nicolas Fargier
           Benjamin Leduc
           Duong Khang Nguyen
+          syl_
           Xenux
 
         hu:
@@ -89,8 +101,10 @@ TRADUCCIONES:
 
         it:
           ginoingras
+          Michele Marongiu
           Silvia
           Sebastiano Pistore
+          Emanuele Sorce
 
         pt_BR:
           Anelise D. J.
@@ -99,6 +113,8 @@ TRADUCCIONES:
           Jonatas L. Nogueira
 
         ru:
+          algan011
+          listores
           Rodion
           Roman M. Yagodin
 
@@ -163,11 +179,11 @@ MÚSICA:
         Nick "Nario" Hagman
         Arvid Picciani
         "The Beginning"
-            by 4t thieves
+            de 4t thieves
         "Daybreak"
-            by realsmokers
+            de realsmokers
         "Bleostrada"
-            by stud
+            de stud
 
 MISCELÁNEA:
 

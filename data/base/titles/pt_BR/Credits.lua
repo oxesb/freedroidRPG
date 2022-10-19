@@ -30,7 +30,8 @@ PROGRAMAÇÃO:
         Scott Furry
         Arthur Huillet
         Gregory Lozet
-         skangas
+        lumidify
+        Stefan Kangas
         Xenux
 
 CONTEÚDO DO JOGO:
@@ -44,8 +45,10 @@ CONTEÚDO DO JOGO:
          Robin Gareus
         Infrared
         Matthias Krüger
+        Richard Lightman
         Miles McCammon
         Jonatas L. Nogueira
+        pekpek
          Sydney
          wlan2
 
@@ -57,12 +60,17 @@ GRÁFICOS:
 MÚSICA:
 
          girix8
+        pekpek
+
+SFX:
+
+        pekpek
 
 TRADUÇÕES:
 
         Tcheco (cs):
           Jan Tojnar
-          Zdenek
+          Zdenek Chmelar
 
         Alemão (de_DE):
           JM Franz
@@ -72,16 +80,20 @@ TRADUÇÕES:
          es:
           Pedro Arana
            Carlos Daniel Landin Montaperto
+          Luisi Nogueira
            Lua Marchante Tello
+          Valora Valenteno
 
         Francês (fr_FR):
           Sebastian Adam
           Alérion
            Benjamin Bertrand
+          Stevens D.
           Samuel Degrande
           Nicolas Fargier
           Benjamin Leduc
           Duong Khang Nguyen
+          syl_
           Xenux
 
          hu:
@@ -89,8 +101,10 @@ TRADUÇÕES:
 
          it:
            ginoingras
+          Michele Marongiu
            Silvia
            Sebastiano Pistore
+          Emanuele Sorce
 
         Português (pt_BR):
           Anelise D. J.
@@ -99,6 +113,8 @@ TRADUÇÕES:
           Jonatas L. Nogueira
 
          ru:
+          algan011
+          listores
            Rodion
            Roman M. Yagodin
 

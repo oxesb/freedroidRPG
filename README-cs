@@ -187,7 +187,7 @@ Různé často se opakující dotazy:
 	   vývojářského serveru a proto je zajímavý pouze pro vývojáře samotné.
 	   V každém případě se můžete přihlásit, odhlásit nebo změnit možnosti členství
 			z následující webové stránky:
-	   http://sourceforge.net/mail/?group_id=54521
+	   https://sourceforge.net/mail/?group_id=54521
 
 
 Časté dotazy ohledně grafiky:
@@ -258,7 +258,7 @@ Různé často se opakující dotazy:
 		    SDL_mixer_devel nebo nainstalujte SDL_mixer ze zdroje.
 		    Vše lze stáhnout odsud:
 
-		      http://www.libsdl.org/projects/SDL_mixer/
+		      https://github.com/libsdl-org/SDL_mixer
 
 		    Pokud jste kompilovali ze zdroje, musíte zkompilovat znovu, protože
 		    předchozí kompilace nezahrnovala zvukový modul hry FreedroidRPG.
@@ -292,7 +292,7 @@ Různé často se opakující dotazy:
 
 	Otázka: Jak mohu získat nejnovější vývojovou verzi hry?
 	Odpověď: Na Linuxu je to velmi jednoduché:
-	      git clone https://gitlab.com/freedroid/freedroid-src.git
+	      git clone https://codeberg.org/freedroid/freedroid-src.git
 	   Pokud používáte Windows, doporučujeme použití nástroje jako 
 	      http://www.collab.net/downloads/giteye?CID=tigris
 	   Pokud se i přesto dostanete do problémů, je opět nejlepší se obrátit na lidi na
@@ -312,7 +312,7 @@ Různé často se opakující dotazy:
 7. Kontakt
 ===========
  Webová stránka       ................ https://www.freedroid.org
- Stránka se zdrojový kódem .... https://gitlab.com/groups/freedroid
+ Stránka se zdrojový kódem .... https://codeberg.org/freedroid
  IRC kanál   ................ #freedroid na irc.libera.chat nebo
                                 https://web.libera.chat/#freedroid
  Mailová konference .......... freedroid-discussion@lists.sourceforge.net

@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: https://www.freedroid.org\n"
-"POT-Creation-Date: 2022-07-21 21:29+0200\n"
+"POT-Creation-Date: 2022-11-01 21:22+0100\n"
 "PO-Revision-Date: 2014-03-27 23:12+0000\n"
 "Last-Translator: Jesusaves <jesusalva@themanaworld.org>, 2022\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/arctic-games/freedroid-rpg/language/pt_BR/)\n"
@@ -89,71 +89,71 @@ msgstr "Longa distância"
 msgid "Programming"
 msgstr "Programação"
 
-#: src/character.c:444
+#: src/character.c:445
 msgid "Level"
 msgstr "Nível"
 
-#: src/character.c:450
+#: src/character.c:451
 msgid "Experience"
 msgstr "Experiência"
 
-#: src/character.c:456
+#: src/character.c:457
 msgid "Next level"
 msgstr "Próximo nível"
 
-#: src/character.c:462
+#: src/character.c:463
 msgid "Circuits"
 msgstr "Circuitos"
 
-#: src/character.c:468
+#: src/character.c:469
 msgid "Strength"
 msgstr "Força"
 
-#: src/character.c:476
+#: src/character.c:477
 msgid "Dexterity"
 msgstr "Habilidade"
 
-#: src/character.c:484
+#: src/character.c:485
 msgid "Physique"
 msgstr "Físico"
 
-#: src/character.c:492
+#: src/character.c:493
 msgid "Cooling"
 msgstr "Resfriar"
 
-#: src/character.c:501
+#: src/character.c:502
 msgid "Training points"
 msgstr "Pontos de Treinamento"
 
-#: src/character.c:507 src/game_ui.c:246
+#: src/character.c:508 src/game_ui.c:246
 msgid "Health"
 msgstr "Vida"
 
-#: src/character.c:513 src/game_ui.c:318
+#: src/character.c:514 src/game_ui.c:318
 msgid "Temperature"
 msgstr "Temperatura"
 
-#: src/character.c:519
+#: src/character.c:520
 msgid "Stamina"
 msgstr "Vigor"
 
-#: src/character.c:525
+#: src/character.c:526
 msgid "Attack"
 msgstr "Ataque"
 
-#: src/character.c:531
+#: src/character.c:532
 msgid "Damage"
 msgstr "Dano"
 
-#: src/character.c:543
+#: src/character.c:544
 msgid "Armor"
 msgstr "Armadura"
 
-#: src/chat.c:547
+#: src/chat.c:546
 msgid "Click anywhere to continue..."
 msgstr "Clique para continuar..."
 
-#: src/chat.c:705 src/chat.c:715
+#: src/chat.c:704 src/chat.c:714
 msgid "[n]--- Start of Dialog ---\n"
 msgstr "[n]--- Inicio de Diálogo ---\n"
 
@@ -327,15 +327,15 @@ msgstr "Escudo de energia desabilitado devido a sobreaquecimento."
 msgid "Energy shield disabled due to a risk of overheat."
 msgstr "Escudo de energia desabilitado devido a um risco de sobreaquecimento."
 
-#: src/influ.c:1045 src/menu.c:1125
+#: src/influ.c:1045 src/menu.c:1133
 msgid "Load Latest"
 msgstr "Carregar Recente"
 
-#: src/influ.c:1046 src/menu.c:1126
+#: src/influ.c:1046 src/menu.c:1134
 msgid "Load Backup"
 msgstr "Carregar Backup"
 
-#: src/influ.c:1048 src/menu.c:1128 src/lvledit/lvledit_menu.c:958
+#: src/influ.c:1048 src/menu.c:1136 src/lvledit/lvledit_menu.c:958
 msgid "Quit to Main Menu"
 msgstr "Menu Principal"
 
@@ -343,7 +343,7 @@ msgstr "Menu Principal"
 msgid "Return to Editor"
 msgstr "Retornar ao Editor"
 
-#: src/influ.c:1052 src/menu.c:974 src/menu.c:1131
+#: src/influ.c:1052 src/menu.c:982 src/menu.c:1139
 #: src/lvledit/lvledit_menu.c:959
 msgid "Exit FreedroidRPG"
 msgstr "Sair do Jogo"
@@ -450,35 +450,35 @@ msgstr "O doutor te avisou. Agora você está fraco e doente."
 msgid "You have reached the maximum skill level for %s"
 msgstr "Você alcançou o nível máximo para a habilidade %s"
 
-#: src/items.c:1563
+#: src/items.c:1562
 msgid "You can not use the inventory while paralyzed."
 msgstr "Você não pode usar o inventário enquanto estiver paralisado."
 
-#: src/items.c:1643
+#: src/items.c:1642
 msgid "You cannot fight with this!"
 msgstr "Você não pode lutar com isso!"
 
-#: src/items.c:1649
+#: src/items.c:1648
 msgid "You cannot yet fight with this!"
 msgstr "Você ainda não pode lutar com isso!"
 
-#: src/items.c:1688
+#: src/items.c:1687
 msgid "Two-handed weapon requirements not met: shield bonus doesn't count."
 msgstr "Requerimentos de arma de duas mãos não atingidos: Bônus de escudo não conta."
 
-#: src/items.c:1701
+#: src/items.c:1700
 msgid "You cannot equip this!"
 msgstr "Você não pode equipar isso!"
 
-#: src/items.c:1707
+#: src/items.c:1706
 msgid "You cannot equip this yet!"
 msgstr "Você ainda não pode equipar isso!"
 
-#: src/items.c:1739
+#: src/items.c:1738
 msgid "Shield requirements not met: two-handed weapon bonus doesn't count."
 msgstr "Requerimentos de escudo não atingidos: Bônus de arma de duas mãos não conta."
 
-#: src/items.c:1880 src/items.c:2057
+#: src/items.c:1879 src/items.c:2056
 msgid "I can't carry any more."
 msgstr "Não posso carregar mais nada."
 
@@ -1122,20 +1122,20 @@ msgstr "Ganhou %d circuitos!"
 msgid "Lost %d valuable circuits!"
 msgstr "Gastou %d circuitos!"
 
-#: src/main.c:362
+#: src/main.c:361
 msgid "Overheating!"
 msgstr "Sobreaquecendo!"
 
 #. TRANSLATORS: Screen message, displayed below 'Automatically shutting down'
-#: src/main.c:367
+#: src/main.c:366
 msgid "due to near lethal overheating"
 msgstr "devido a um sobreaquecimento quase letal"
 
-#: src/main.c:368
+#: src/main.c:367
 msgid "Automatically shutting down"
 msgstr "Automaticamente desligando"
 
-#: src/main.c:390
+#: src/main.c:389
 msgid "Weapon reloaded"
 msgstr "Arma recarregada"
 
@@ -1163,7 +1163,7 @@ msgstr ""
 "Nós iremos salva-lo para futuramente inspecionar este erro.\n"
 "Veja o relatório em sua janela de terminal."
 
-#: src/menu.c:44 src/menu.c:968
+#: src/menu.c:44 src/menu.c:976
 msgid "Play"
 msgstr "Jogar"
 
@@ -1175,77 +1175,77 @@ msgstr "Seus personagens:"
 msgid "Select character to delete: "
 msgstr "Selecione o personagem a deletar:"
 
-#: src/menu.c:277
+#: src/menu.c:275
 msgid "OpenGL support compiled: YES"
 msgstr "suporte ao OpenGL: SIM"
 
-#: src/menu.c:279
+#: src/menu.c:277
 msgid "OpenGL support compiled: NO"
 msgstr "suporte ao OpenGL: NÃO"
 
-#: src/menu.c:284
+#: src/menu.c:282
 msgid "OpenGL output active: YES"
 msgstr "saída ativa do OpenGL: SIM"
 
-#: src/menu.c:286
+#: src/menu.c:284
 msgid "OpenGL output active: NO"
 msgstr "saída ativa do OpenGL: NÃO"
 
-#: src/menu.c:340 src/menu.c:1743
+#: src/menu.c:347 src/menu.c:1751
 msgid "[down]"
 msgstr "[abaixo]"
 
-#: src/menu.c:341 src/menu.c:1730
+#: src/menu.c:348 src/menu.c:1738
 msgid "[up]"
 msgstr "[acima]"
 
-#: src/menu.c:969
+#: src/menu.c:977
 msgid "Tutorial"
 msgstr "Tutorial"
 
-#: src/menu.c:970
+#: src/menu.c:978
 msgid "Level Editor"
 msgstr "Editor de Mapas"
 
-#: src/menu.c:971 src/menu.c:1124
+#: src/menu.c:979 src/menu.c:1132
 msgid "Options"
 msgstr "Opções"
 
-#: src/menu.c:972
+#: src/menu.c:980
 msgid "Credits"
 msgstr "Créditos"
 
-#: src/menu.c:973
+#: src/menu.c:981
 msgid "Contribute"
 msgstr "Contribua"
 
-#: src/menu.c:1004
+#: src/menu.c:1012
 msgid "easy"
 msgstr "fácil"
 
-#: src/menu.c:1005
+#: src/menu.c:1013
 msgid "normal"
 msgstr "normal"
 
-#: src/menu.c:1006
+#: src/menu.c:1014
 msgid "hard"
 msgstr "difícil"
 
-#: src/menu.c:1009
+#: src/menu.c:1017
 #, c-format
 msgid "Difficulty: %s"
 msgstr "Dificuldade: %s"
 
-#: src/menu.c:1010 src/menu.c:1072 src/menu.c:1186 src/menu.c:1270
-#: src/menu.c:1331 src/menu.c:1442 src/menu.c:1522 src/menu.c:1595
-#: src/menu.c:1750 src/menu.c:1782 src/menu.c:1807 src/menu.c:1864
+#: src/menu.c:1018 src/menu.c:1080 src/menu.c:1194 src/menu.c:1278
+#: src/menu.c:1339 src/menu.c:1450 src/menu.c:1530 src/menu.c:1603
+#: src/menu.c:1758 src/menu.c:1790 src/menu.c:1815 src/menu.c:1872
 #: src/lvledit/lvledit_menu.c:121 src/lvledit/lvledit_menu.c:268
 #: src/lvledit/lvledit_menu.c:370 src/lvledit/lvledit_menu.c:589
 #: src/lvledit/lvledit_menu.c:877
 msgid "Back"
 msgstr "Voltar"
 
-#: src/menu.c:1032
+#: src/menu.c:1040
 msgid ""
 "You need to restart FreedroidRPG for some changes to take effect.\n"
 "\n"
@@ -1255,173 +1255,173 @@ msgstr ""
 "\n"
 "Lamentamos a inconveniência."
 
-#: src/menu.c:1063
+#: src/menu.c:1071
 msgid "Gameplay"
 msgstr "Jogabilidade"
 
-#: src/menu.c:1064
+#: src/menu.c:1072
 msgid "Graphics"
 msgstr "Gráficos"
 
-#: src/menu.c:1065
+#: src/menu.c:1073
 msgid "Sound"
 msgstr "Sons"
 
-#: src/menu.c:1066
+#: src/menu.c:1074
 msgid "Keys"
 msgstr "Atalhos"
 
-#: src/menu.c:1068
+#: src/menu.c:1076
 msgid "Languages"
 msgstr "Línguas"
 
-#: src/menu.c:1070
+#: src/menu.c:1078
 msgid "On-Screen displays"
 msgstr "Exibir na tela"
 
-#: src/menu.c:1071
+#: src/menu.c:1079
 msgid "Performance tweaks"
 msgstr "Ajustes de Performance"
 
-#: src/menu.c:1119
+#: src/menu.c:1127
 msgid "Resume Play"
 msgstr "Retomar Jogo"
 
-#: src/menu.c:1121
+#: src/menu.c:1129
 msgid "Resume Playtest"
 msgstr "Retomar Testes"
 
-#: src/menu.c:1123
+#: src/menu.c:1131
 msgid "Save Hero"
 msgstr "Salvar o Herói"
 
-#: src/menu.c:1130
+#: src/menu.c:1138
 msgid "Return to Level Editor"
 msgstr "Retornar ao Editor"
 
-#: src/menu.c:1177
+#: src/menu.c:1185
 msgid "System default"
 msgstr "Padrão do Sistema"
 
-#: src/menu.c:1321
+#: src/menu.c:1329
 #, c-format
 msgid "Change screen resolution"
 msgstr "Mudar a resolução"
 
-#: src/menu.c:1323
+#: src/menu.c:1331
 #, c-format
 msgid "Fullscreen mode: %s"
 msgstr "Tela cheia: %s"
 
-#: src/menu.c:1323
+#: src/menu.c:1331
 msgid "ON"
 msgstr "LIGADO"
 
-#: src/menu.c:1323
+#: src/menu.c:1331
 msgid "OFF"
 msgstr "DESLIGADO"
 
-#: src/menu.c:1327
+#: src/menu.c:1335
 #, c-format
 msgid "Show blood: %s"
 msgstr "Mostrar sangue: %s"
 
-#: src/menu.c:1327 src/menu.c:1512 src/menu.c:1515 src/menu.c:1520
-#: src/menu.c:1589 src/menu.c:1590 src/menu.c:1591 src/menu.c:1592
+#: src/menu.c:1335 src/menu.c:1520 src/menu.c:1523 src/menu.c:1528
+#: src/menu.c:1597 src/menu.c:1598 src/menu.c:1599 src/menu.c:1600
 msgid "YES"
 msgstr "SIM"
 
-#: src/menu.c:1327 src/menu.c:1512 src/menu.c:1515 src/menu.c:1520
-#: src/menu.c:1589 src/menu.c:1590 src/menu.c:1591 src/menu.c:1592
+#: src/menu.c:1335 src/menu.c:1520 src/menu.c:1523 src/menu.c:1528
+#: src/menu.c:1597 src/menu.c:1598 src/menu.c:1599 src/menu.c:1600
 msgid "NO"
 msgstr "NÃO"
 
-#: src/menu.c:1414
+#: src/menu.c:1422
 #, c-format
 msgid "<-- Background music volume: %1.2f -->"
 msgstr "<-- Volume da Música de Fundo: %1.2f -->"
 
-#: src/menu.c:1418
+#: src/menu.c:1426
 #, c-format
 msgid "<-- Sound effects volume: %1.2f -->"
 msgstr "<-- Volume dos efeitos sonoros: %1.2f -->"
 
-#: src/menu.c:1424
+#: src/menu.c:1432
 #, c-format
 msgid "<-- Output: Stereo -->"
 msgstr "<-- Saída: Estéreo -->"
 
-#: src/menu.c:1428
+#: src/menu.c:1436
 #, c-format
 msgid "<-- Output: 4.0 Surround -->"
 msgstr "<-- Saída: 4.0 Surround -->"
 
-#: src/menu.c:1432
+#: src/menu.c:1440
 #, c-format
 msgid "<-- Output: 5.1 Surround -->"
 msgstr "<-- Saída: 5.1 Surround -->"
 
-#: src/menu.c:1436
+#: src/menu.c:1444
 #, c-format
 msgid "<-- Output: Error -->"
 msgstr "<-- Saída: Erro -->"
 
-#: src/menu.c:1507
+#: src/menu.c:1515
 #, c-format
 msgid "FPS limit: none"
 msgstr "Limite de FPS: Nenhum"
 
-#: src/menu.c:1509
+#: src/menu.c:1517
 #, c-format
 msgid "FPS limit: %d"
 msgstr "Limite de FPS: %d"
 
-#: src/menu.c:1512
+#: src/menu.c:1520
 #, c-format
 msgid "Show light radius: %s"
 msgstr "Mostrar raio de luz: %s"
 
-#: src/menu.c:1515
+#: src/menu.c:1523
 #, c-format
 msgid "Show obstacle shadows: %s"
 msgstr "Mostrar sombra dos objetos: %s"
 
-#: src/menu.c:1520
+#: src/menu.c:1528
 #, c-format
 msgid "Precache item graphics: %s"
 msgstr "Pré-cachear gráficos (itens): %s"
 
-#: src/menu.c:1589
+#: src/menu.c:1597
 #, c-format
 msgid "Show position: %s"
 msgstr "Mostrar posição: %s"
 
-#: src/menu.c:1590
+#: src/menu.c:1598
 #, c-format
 msgid "Show framerate: %s"
 msgstr "Mostrar taxa de quadros: %s"
 
-#: src/menu.c:1591
+#: src/menu.c:1599
 #, c-format
 msgid "Show enemies' energy bars: %s"
 msgstr "Mostrar barra de energia dos inimigos: %s"
 
-#: src/menu.c:1592
+#: src/menu.c:1600
 #, c-format
 msgid "Show effect countdowns: %s"
 msgstr "Mostrar efeito de contagem regressiva: %s"
 
-#: src/menu.c:1593
+#: src/menu.c:1601
 #, c-format
 msgid "<-- Max. screen messages: %d -->"
 msgstr "<-- Max. mensagens na tela: %d -->"
 
-#: src/menu.c:1594
+#: src/menu.c:1602
 #, c-format
 msgid "<-- Screen message lifetime: %3.1fs -->"
 msgstr "<-- Tempo de vida de mensagem na tela: %3.1fs -->"
 
-#: src/menu.c:1639
+#: src/menu.c:1647
 msgid ""
 "\n"
 "     Please enter a name\n"
@@ -1441,7 +1441,7 @@ msgstr ""
 "\n"
 " > "
 
-#: src/menu.c:1661
+#: src/menu.c:1669
 #, c-format
 msgid ""
 "A character named \"%s\" already exists.\n"
@@ -1450,40 +1450,40 @@ msgstr ""
 "Um personagem chamado \"%s\" já existe.\n"
 "Por favor escolha outro nome."
 
-#: src/menu.c:1785
+#: src/menu.c:1793
 msgid "No saved games found!"
 msgstr "Nenhum jogo salvo encontrado!"
 
-#: src/menu.c:1806
+#: src/menu.c:1814
 msgid "Sure!"
 msgstr "Claro!"
 
-#: src/menu.c:1810
+#: src/menu.c:1818
 #, c-format
 msgid "Really delete hero '%s'?"
 msgstr "Deletar o herói '%s'?"
 
-#: src/menu.c:1861
+#: src/menu.c:1869
 msgid "New Hero"
 msgstr "Novo Herói"
 
-#: src/menu.c:1862
+#: src/menu.c:1870
 msgid "Load existing Hero"
 msgstr "Carregar Herói existente"
 
-#: src/menu.c:1863
+#: src/menu.c:1871
 msgid "Delete existing Hero"
 msgstr "Deletar Herói existente"
 
-#: src/misc.c:983
+#: src/misc.c:1019
 msgid "GAME PAUSED"
 msgstr "PAUSADO"
 
-#: src/misc.c:984
+#: src/misc.c:1020
 msgid "press p to resume"
 msgstr "p para continuar"
 
-#: src/misc.c:1275
+#: src/misc.c:1311
 #, c-format
 msgid "Arrived at %s."
 msgstr "Chegou em %s."
@@ -1777,101 +1777,101 @@ msgstr "Você não pode pagar o reparo deste item."
 msgid "You can not afford this item."
 msgstr "Você não pode comprar este item."
 
-#: src/skills.c:217
+#: src/skills.c:228
 msgid "You cannot teleport here!"
 msgstr "Você não pode teleportar-se aqui!"
 
-#: src/skills.c:857
+#: src/skills.c:883
 #, c-format
 msgid "Program revision: %c%d%c "
 msgstr "Revisão: %c%d%c"
 
-#: src/skills.c:866
+#: src/skills.c:892
 #, c-format
 msgid "Heat produced: %c%d%c "
 msgstr "Calor produzido: %c%d%c"
 
-#: src/skills.c:868
+#: src/skills.c:894
 #, c-format
 msgid "Cooling: %c%d%c "
 msgstr "Refrigeração: %c%d%c"
 
-#: src/skills.c:878
+#: src/skills.c:904
 #, c-format
 msgid "Damage: %c%d%c "
 msgstr "Dano: %c%d%c"
 
-#: src/skills.c:880
+#: src/skills.c:906
 #, c-format
 msgid "Damage: %c%d-%d%c "
 msgstr "Dano: %c%d-%d%c"
 
-#: src/skills.c:884
+#: src/skills.c:910
 #, c-format
 msgid "Healing: %c%d%c "
 msgstr "Cura: %c%d%c"
 
-#: src/skills.c:886
+#: src/skills.c:912
 #, c-format
 msgid "Healing: %c%d-%d%c "
 msgstr "Cura: %c%d-%d%c"
 
-#: src/skills.c:895
+#: src/skills.c:921
 #, c-format
 msgid "Paralyze"
 msgstr "Paralisar"
 
-#: src/skills.c:897
+#: src/skills.c:923
 #, c-format
 msgid "Slow down"
 msgstr "Desacelerar"
 
-#: src/skills.c:899
+#: src/skills.c:925
 #, c-format
 msgid "Invisible"
 msgstr "Invisível"
 
-#: src/skills.c:901
+#: src/skills.c:927
 #, c-format
 msgid "Poison"
 msgstr "Veneno"
 
-#: src/skills.c:904
+#: src/skills.c:930
 #, c-format
 msgid "Takeover charges: %c%d%c "
 msgstr "Cargas de \"Takeover\": %c%d%c"
 
-#: src/skills.c:906
+#: src/skills.c:932
 #, c-format
 msgid "Escape"
 msgstr "Escapar"
 
-#: src/skills.c:908
+#: src/skills.c:934
 #, c-format
 msgid "Passive"
 msgstr "Passivo"
 
-#: src/skills.c:914
+#: src/skills.c:940
 #, c-format
 msgid "Repair items, degrading them a bit"
 msgstr "Reparar itens, degradando-os um pouco"
 
-#: src/skills.c:916
+#: src/skills.c:942
 #, c-format
 msgid "Detect enemies"
 msgstr "Detectar inimigos"
 
-#: src/skills.c:918
+#: src/skills.c:944
 #, c-format
 msgid "Lighten area"
 msgstr "Iluminar área "
 
-#: src/skills.c:920
+#: src/skills.c:946
 #, c-format
 msgid "Turn damage into heat"
 msgstr "Transforma dano em calor"
 
-#: src/skills.c:926
+#: src/skills.c:952
 #, c-format
 msgid " for %c%.1f%c seconds"
 msgstr "por %c%.1f%c segundos"
@@ -1959,23 +1959,23 @@ msgstr "Rejeitado"
 msgid "Deadlock"
 msgstr "Empate"
 
-#: src/text.c:363
+#: src/text.c:349
 msgid "slowed"
 msgstr "lento"
 
-#: src/text.c:369
+#: src/text.c:355
 msgid "paralyzed"
 msgstr "paralisado"
 
-#: src/text.c:375
+#: src/text.c:361
 msgid "invisible"
 msgstr "invisível"
 
-#: src/text.c:381
+#: src/text.c:367
 msgid "shielded"
 msgstr "blindado"
 
-#: src/text.c:387
+#: src/text.c:373
 msgid "scanning"
 msgstr "escaneando"
 

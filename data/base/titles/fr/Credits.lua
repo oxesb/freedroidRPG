@@ -26,28 +26,31 @@ text = [[
 PROGRAMMATION :
 
         Samuel Degrande
-         Christoph Franzen
+        Christoph Franzen
         Scott Furry
         Arthur Huillet
         Gregory Lozet
-         skangas
+        lumidify
+        Stefan Kangas
         Xenux
 
 CONTENU DU JEU :
 
         alex
-         Kunjappu Abhijith
-         DroidBotAI 
-         Rafael Fontenelle
-         can-ned_food
+        Kunjappu Abhijith
+        DroidBotAI 
+        Rafael Fontenelle
+        can-ned_food
         Scott Furry
-         Robin Gareus
+        Robin Gareus
         Infrared
         Matthias Krüger
+        Richard Lightman
         Miles McCammon
         Jonatas L. Nogueira
-         Sydney
-         wlan2
+        pekpek
+        Sydney
+        wlan2
 
 GRAPHISMES :
 
@@ -56,59 +59,72 @@ GRAPHISMES :
 
 MUSIQUE :
 
-         girix8
+        girix8
+        pekpek
+
+SFX:
+
+        pekpek
 
 TRADUCTIONS :
 
         cs:
           Jan Tojnar
-          Zdenek
+          Zdenek Chmelar
 
         de_DE:
           JM Franz
           Matthias Krüger
           Link Mario
 
-         es:
+        es:
           Pedro Arana
-           Carlos Daniel Landin Montaperto
-           Lua Marchante Tello
+          Carlos Daniel Landin Montaperto
+          Luisi Nogueira
+          Lua Marchante Tello
+          Valora Valenteno
 
         fr_FR:
           Sebastian Adam
           Alérion
-           Benjamin Bertrand
+          Benjamin Bertrand
+          Stevens D.
           Samuel Degrande
           Nicolas Fargier
           Benjamin Leduc
           Duong Khang Nguyen
+          syl_
           Xenux
 
-         hu:
-           Balazs Mesko
+        hu:
+          Balazs Mesko
 
-         it:
-           ginoingras
-           Silvia
-           Sebastiano Pistore
+        it:
+          ginoingras
+          Michele Marongiu
+          Silvia
+          Sebastiano Pistore
+          Emanuele Sorce
 
         pt_BR:
           Anelise D. J.
           Luiz Phelipe Ferreira da Silva
-           Rafael Fontenelle
+          Rafael Fontenelle
           Jonatas L. Nogueira
 
-         ru:
-           Rodion
-           Roman M. Yagodin
+        ru:
+          algan011
+          listores
+          Rodion
+          Roman M. Yagodin
 
         sv_SV:
           Alexander Forsberg
-           Jonatan Nyberg
+          Jonatan Nyberg
 
 AUTRES :
 
-         Julien Puydt
+        Julien Puydt
 
 
 

@@ -30,7 +30,8 @@ PROGRAMMAZIONE:
         Scott Furry
         Arthur Huillet
         Gregory Lozet
-        skangas
+        lumidify
+        Stefan Kangas
         Xenux
 
 CONTENUTO DEL GIOCO:
@@ -44,8 +45,10 @@ CONTENUTO DEL GIOCO:
         Robin Gareus
         Infrared
         Matthias Krüger
+        Richard Lightman
         Miles McCammon
         Jonatas L. Nogueira
+        pekpek
         Sydney
         wlan2
 
@@ -57,12 +60,17 @@ GRAFICHE:
 MUSICA:
 
         girix8
+        pekpek
+
+SFX:
+
+        pekpek
 
 LOCALIZZAZIONE:
 
         cs:
           Jan Tojnar
-          Zdenek
+          Zdenek Chmelar
 
         de_DE:
           JM Franz
@@ -72,16 +80,20 @@ LOCALIZZAZIONE:
         es:
           Pedro Arana
           Carlos Daniel Landin Montaperto
+          Luisi Nogueira
           Lua Marchante Tello
+          Valora Valenteno
 
         fr_FR:
           Sebastian Adam
           Alérion
           Benjamin Bertrand
+          Stevens D.
           Samuel Degrande
           Nicolas Fargier
           Benjamin Leduc
           Duong Khang Nguyen
+          syl_
           Xenux
 
         hu:
@@ -89,8 +101,10 @@ LOCALIZZAZIONE:
 
         it:
           ginoingras
+          Michele Marongiu
           Silvia
           Sebastiano Pistore
+          Emanuele Sorce
 
         pt_BR:
           Anelise D. J.
@@ -99,6 +113,8 @@ LOCALIZZAZIONE:
           Jonatas L. Nogueira
 
         ru:
+          algan011
+          listores
           Rodion
           Roman M. Yagodin
 

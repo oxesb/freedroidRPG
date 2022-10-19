@@ -187,7 +187,7 @@ Blandade Frågor & svar:
 	   utvecklingsserver, och därför är den bara intressant för utvecklarna själva.
 	   I vilket fall, kan du gå med, ur eller ändra dina inställningar för medlemskap
 			på följande sida:
-	   http://sourceforge.net/mail/?group_id=54521
+	   https://sourceforge.net/mail/?group_id=54521
 
 
 Grafikfrågor och svar:
@@ -258,7 +258,7 @@ Ljudfrågor och svar:
 		    SDL_mixer_devel installerade, eller bygga SDL_mixer från källkod.
 		    Du kan ladda ner allting härifrån:
 
-		      http://www.libsdl.org/projects/SDL_mixer/
+		      https://github.com/libsdl-org/SDL_mixer
 
 		    Om du kompilerat från källkod, blir du tvungen att kompilera om, eftersom
 		    den förra kompileringar inte tog med ljudmodulen till FreedroidRPG. Om
@@ -292,7 +292,7 @@ Kartredigerare & Frågor och svar för utvecklare
 
 	F: Hur kan jag få tag på den senaste utvecklingsversionen av spelet?
 	S: Det är väldigt enkelt under Linux:
-	      git clone https://gitlab.com/freedroid/freedroid-src.git
+	      git clone https://codeberg.org/freedroid/freedroid-src.git
 	   Om du använder Windows rekommenderar vi ett verktyg som 
 	      http://www.collab.net/downloads/giteye?CID=tigris
 	   Om du fortfarande har problem, är det bäst att återigen ta det med folket i
@@ -312,7 +312,7 @@ Kartredigerare & Frågor och svar för utvecklare
 7. Kontakt
 ===========
  Hemsida  .................... https://www.freedroid.org
- Källkod   .................... https://gitlab.com/groups/freedroid
+ Källkod   .................... https://codeberg.org/freedroid
  IRC-kanal  .................. #freedroid på irc.libera.chat eller
                                 https://web.libera.chat/#freedroid
  Sändlista (mailing list) .... freedroid-discussion@lists.sourceforge.net

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: freedroidrpg 1.0RC2\n"
 "Report-Msgid-Bugs-To: https://www.freedroid.org\n"
-"POT-Creation-Date: 2022-03-31 13:00+0200\n"
+"POT-Creation-Date: 2022-11-01 21:22+0100\n"
 "PO-Revision-Date: 2019-02-28 09:00+0000\n"
 "Last-Translator: Michele Marongiu <michelemarongiu@gmail.com>, 2022\n"
 "Language-Team: Italian (https://www.transifex.com/arctic-games/teams/9511/it/)\n"
@@ -23676,7 +23676,7 @@ msgid "You just killed a man and a friendly bot!!"
 msgstr "Hai appena ucciso un uomo e un robot amichevole!!"
 
 #: data/storyline/act2/dialogs/Colemak.lua:76
-msgid "Well, as you aren't trying to kill me as some irrational birds I've met, I'll say to you."
+msgid "Well, as you aren't trying to kill me as some irrational birds I've met, I'll tell you."
 msgstr "Beh, siccome non stai cercando di uccidermi come alcuni uccelli irrazionali che ho incontrato, te lo dirò."
 
 #: data/storyline/act2/dialogs/Colemak.lua:78
@@ -23692,11 +23692,11 @@ msgid "There are no humans awake on RR Resorts."
 msgstr "Non ci sono umani risvegliati nei Resort RR."
 
 #: data/storyline/act2/dialogs/Colemak.lua:88
-msgid "What you think that was a human, was also a bot. It just have a different skin."
+msgid "What you thought was a human, was also a bot. It just had a different skin."
 msgstr "Quello che pensavi fosse un umano, era anche un bot. Aveva solo una pelle diversa."
 
 #: data/storyline/act2/dialogs/Colemak.lua:89
-msgid "If it could merge on the human society, the chaos would be even bigger."
+msgid "If it were able to merge with human society, the chaos would be even bigger."
 msgstr "Se potesse fondersi con la società umana, il caos sarebbe ancorapiù grande."
 
 #: data/storyline/act2/dialogs/Colemak.lua:90
@@ -23704,7 +23704,7 @@ msgid "Then how come I've never heard of bots disguised as humans?"
 msgstr "E allora come mai non mai sentito parlare di bot camuffati da umani?"
 
 #: data/storyline/act2/dialogs/Colemak.lua:91
-msgid "I don't know. I was frozen before they completed the project. Maybe it turned out too expensive?"
+msgid "I don't know. I was frozen before they completed the project. Maybe it turned out to be too expensive?"
 msgstr "Non lo so. Sono stato congelato prima che completassero il progetto. Forse si è dimostrato troppo costoso?"
 
 #: data/storyline/act2/dialogs/Colemak.lua:98
@@ -23712,15 +23712,15 @@ msgid "The ones you just murdered where mistaking me with some master..."
 msgstr "Quello che hai appena ucciso mi stava confondendo con qualche maestro..."
 
 #: data/storyline/act2/dialogs/Colemak.lua:100
-msgid "Ah yes, I've heard that from Dvorak. Apparently MS big boss was born in Linarius."
-msgstr "Ah si, l'ho sentito da Dvorak. A quanto pare il grande boss della MS è nato in Linarius."
+msgid "Ah yes, I've heard that from Dvorak. Apparently the MS big boss was born in Linarius."
+msgstr "Ah si, l'ho sentito da Dvorak. A quanto pare il grande boss della MS è nato a Linarius."
 
 #: data/storyline/act2/dialogs/Colemak.lua:101
 msgid "I've heard his nickname a few times now: [b]Agent Zero[/b]."
 msgstr "Ho sentito il suo soprannome un pò di volte ormai: [b]Agente Zero[/b]."
 
 #: data/storyline/act2/dialogs/Colemak.lua:102
-msgid "Apparently, from what I collected while I was on MS, he was one of the first agents sent by the High Council."
+msgid "Apparently, from what I collected while I was in MS, he was one of the first agents sent by the High Council."
 msgstr "A quanto pare, da ciò che ho saputo quando ero alla MS, lui è stato uno dei primi agenti inviati dall'alto consiglio."
 
 #: data/storyline/act2/dialogs/Colemak.lua:103
@@ -23736,7 +23736,7 @@ msgid "Well, as you might be aware, if you figure out too much you're cryonized.
 msgstr "Bene, come forse avrai capito, se capisci troppo vieni criogenizzato."
 
 #: data/storyline/act2/dialogs/Colemak.lua:113
-msgid "Only the ones who figures out about MS big boss are actually killed."
+msgid "Only the ones who figure out about the MS big boss are actually killed."
 msgstr "Solo quelli che hanno capito la questione del grande boss MS vengono effettivamente uccisi."
 
 #: data/storyline/act2/dialogs/Colemak.lua:114
@@ -23744,7 +23744,7 @@ msgid "The reason is simple. Killing would be too noisy, while cryonizing keeps 
 msgstr "La ragione è semplice. L'uccisione sarebbe troppo eclatante, mentre la criogenizzazione mantiene un basso profilo."
 
 #: data/storyline/act2/dialogs/Colemak.lua:115
-msgid "Thankfully they never figured out about what I truly knew. I was cryonized for figuring out that Hell Fortress Factory Boss had a teletransport network only for him which he used to grab the money and go on vacations in tropical islands."
+msgid "Thankfully they never figured out what I truly knew. I was cryonized for figuring out that the Hell Fortress Factory Boss had a teletransport network only for him which he used to grab money and go on vacations in tropical islands."
 msgstr "Per fortuna non hanno mai capito cosa so veramente. Sono stato criogenizzato per aver capito che il boss della Fabbrica della Fortezza Infernale aveva una rete di treletrasporto privata che utilizzava per arraffare soldi e andare in vacanza su isole tropicali."
 
 #: data/storyline/act2/dialogs/Colemak.lua:123
@@ -23784,7 +23784,7 @@ msgid "He will explain to you in details about Linarians, their intent, the High
 msgstr "Ti spiegerà in dettaglio dei Linariani, del loro scopo, dell'Alto Consiglio... E cosa più importante..."
 
 #: data/storyline/act2/dialogs/Colemak.lua:140
-msgid "What must be done to save the mankind."
+msgid "What must be done to save mankind."
 msgstr "Ciò che deve essere fatto per salvare l'umanità."
 
 #: data/storyline/act2/dialogs/Colemak.lua:148
@@ -23792,7 +23792,7 @@ msgid "That's too much for me. Give me a minute or two to process all this infor
 msgstr "E' troppo per me. Dammi un minuto o due per elaborare tutte queste informazioni, ti prego."
 
 #: data/storyline/act2/dialogs/Colemak.lua:150
-msgid "Don't worry my friend. Take all time you need, and then come back to talk with me."
+msgid "Don't worry, my friend. Take all the time you need, and then come back to talk with me."
 msgstr "Non ti preoccupare amico mio. Prenditi tutto il tempo necesasrio, e poi torna a parlare con me."
 
 #: data/storyline/act2/dialogs/Colemak.lua:151
@@ -24767,7 +24767,7 @@ msgid "*deep breath*"
 msgstr "*respiro profondo*"
 
 #: data/storyline/act2/dialogs/Prologue.lua:34
-msgid "No, I did not even reached the location. The stratopod started acting strangely and crashed."
+msgid "No, I did not even reach the location. The stratopod started acting strangely and crashed."
 msgstr "Non, non ho nemmeno raggiunto la posizione. Lo stratopod ha iniziato a comportarsi in maniera strana e si è schiantato."
 
 #: data/storyline/act2/dialogs/Prologue.lua:35
@@ -24775,7 +24775,7 @@ msgid "I better get up, and find out where I am."
 msgstr "Farei meglio ad alzarmi, e scoprire dove sono."
 
 #: data/storyline/act2/dialogs/Prologue.lua:36
-msgid " The pilot wasn't so experienced as he told. He only played FlightGear a couple of times. By the look of things, I must have crashed. I should explore these lands now."
+msgid " The pilot wasn't as experienced as he claimed. He only played FlightGear a couple of times. By the look of things, I must have crashed. I should explore these lands now."
 msgstr "Il pilota non era così esperto come diceva di essere. Aveva solamente giocato un paio di volte a FlightGear. A quanto sembra, deve essersi schiantato. Devo esplorare queste lande ora."
 
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:35
@@ -25403,7 +25403,7 @@ msgid "I am looking for some former allies now."
 msgstr "Sto cercando dei vecchi alleati ora."
 
 #: data/storyline/act2/dialogs/TerminalColemak.lua:150
-msgid "They'll help you when time comes."
+msgid "They'll help you when the time comes."
 msgstr "Ti aiuteranno quano arriverà il momento."
 
 #. TRANSLATORS: %s = Tux:get_player_name()
