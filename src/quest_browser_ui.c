@@ -1,8 +1,8 @@
-/* 
+/*
  *
  *   Copyright (c) 1994, 2002, 2003 Johannes Prix
  *   Copyright (c) 1994, 2002 Reinhard Prix
- *   Copyright (c) 2004-2010 Arthur Huillet 
+ *   Copyright (c) 2004-2010 Arthur Huillet
  *
  *
  *  This file is part of Freedroid
@@ -18,8 +18,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -61,7 +61,7 @@ static void quest_browser_append_mission_info(const char *mis_name, int full_des
 	struct mission *mis = (struct mission *)dynarray_member(&Me.missions, mis_num, sizeof(struct mission));
 
 	autostr_append(quest_browser_text, _("[n]Quest [r]%s\n[n]"), D_(mis->mission_name));
-	
+
 	if (!full_description)
 		return;
 
@@ -106,7 +106,7 @@ static void calculate_level_explored(int levelnum, int *num_squares_seen, int *n
 	}
 
 	*num_squares_exist = *num_squares_exist + (x * y);
-	return; 
+	return;
 }
 
 /**
@@ -242,7 +242,7 @@ static void print_statistics(void)
 	}
 
 	//This sorts the droid types by default model name (from droid_archetypes.dat):
-	//srt[] will hold the Droidmap[] indices in this order 
+	//srt[] will hold the Droidmap[] indices in this order
 	qsort(srt, Number_Of_Droid_Types, sizeof(srt[0]), cmp_droid_names);
 
 	// This is where we display statistics about each bot/human type we have interacted with:
@@ -398,7 +398,7 @@ static void quest_browser_display_mission_list(int list_type)
 				rect_long->y = rect_short->y;
 				rect_long->x = rect_short->x;
 			}
-			// Now we check if the y coordinate of the buttons are 
+			// Now we check if the y coordinate of the buttons are
 			// somewhat reasonable or not.  For those buttons that are
 			// off the screen, things are simple, because then we can
 			// skip the rest of this pass of the loop.
@@ -422,7 +422,7 @@ static void quest_browser_display_mission_list(int list_type)
 		}
 	} else {
 		const char *txt = NULL;
-		
+
 		switch (list_type) {
 			case QUEST_BROWSER_SHOW_OPEN_MISSIONS:
 				txt = _("[n]No open quests yet.[w]");
@@ -453,22 +453,6 @@ void toggle_quest_browser(void)
 		unfreeze_world();
 		input_release_keyboard();
 	}
-}
-
-/**
- * Event handler for the quest browser top level group widget.
- */
-static int quest_browser_handle_event(struct widget *w, SDL_Event *event)
-{
-	// Handle keyboard events
-	if (event->type == SDL_KEYDOWN)
-		if (event->key.keysym.sym == SDLK_q || event->key.keysym.sym == SDLK_ESCAPE) {
-			toggle_quest_browser();
-			return 1;
-		}
-
-	// Call default group widget event handler.
-	return widget_group_handle_event(w, event);
 }
 
 /**
@@ -518,7 +502,8 @@ static int can_scroll_up()
 /** Quest browser scroll up. */
 static void scroll_up(struct widget_button *wb)
 {
-	if (wb->active)
+	// Can be called 'directly' (not as a widgets's callback), with wb==NULL
+	if (!wb || wb->active)
 		mission_list_scroll_override_from_user--;
 }
 
@@ -534,7 +519,8 @@ static int can_scroll_down()
 /** Quest browser scroll down. */
 static void scroll_down(struct widget_button *wb)
 {
-	if (wb->active)
+	// Can be called 'directly' (not as a widgets's callback), with wb==NULL
+	if (!wb || wb->active)
 		mission_list_scroll_override_from_user++;
 }
 
@@ -571,6 +557,29 @@ static void _activate_if_can_scroll_up(struct widget *w)
 static void _activate_if_can_scroll_down(struct widget *w)
 {
 	WIDGET_BUTTON(w)->active = can_scroll_down();
+}
+
+/**
+ * Event handler for the quest browser top level group widget.
+ */
+static int quest_browser_handle_event(struct widget *w, SDL_Event *event)
+{
+	// Handle keyboard events
+	if (event->type == SDL_KEYDOWN) {
+		if (event->key.keysym.sym == SDLK_q || event->key.keysym.sym == SDLK_ESCAPE) {
+			toggle_quest_browser();
+			return 1;
+		}
+		if (event->key.keysym.sym == SDLK_UP) {
+			if (can_scroll_up()) scroll_up(NULL);
+		}
+		if (event->key.keysym.sym == SDLK_DOWN) {
+			if (can_scroll_down()) scroll_down(NULL);
+		}
+	}
+
+	// Call default group widget event handler.
+	return widget_group_handle_event(w, event);
 }
 
 /**
@@ -675,7 +684,7 @@ struct widget_group *create_quest_browser()
 		// Scroll down
 		{
 			{"widgets/scroll_down_off.png", NULL, "widgets/scroll_down.png"},
-			{quest_browser_x + quest_browser_w / 2 - 59, quest_browser_y + quest_browser_h, 118, 17}, 
+			{quest_browser_x + quest_browser_w / 2 - 59, quest_browser_y + quest_browser_h, 118, 17},
 			scroll_down,
 			_activate_if_can_scroll_down
 		}
