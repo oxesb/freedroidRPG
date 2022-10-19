@@ -30,7 +30,7 @@ PROGRAMMING:
         Scott Furry
         Arthur Huillet
         Gregory Lozet
-        skangas
+        Stefan Kangas
         Xenux
 
 GAME CONTENT:
