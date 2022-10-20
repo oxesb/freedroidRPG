@@ -156,10 +156,9 @@ static void chat_pop_context()
  *
  * @param partner     Pointer to the enemy to talk with
  * @param npc         Pointer to the npc containing the dialogue definition.
- * @param dialog_name Name of the dialog
  * @return Pointer to the allocated chat context.
  */
-struct chat_context *chat_create_context(enemy *partner, struct npc *npc, const char *dialog_name)
+struct chat_context *chat_create_context(enemy *partner, struct npc *npc)
 {
 	struct chat_context *new_chat_context = (struct chat_context *)MyMalloc(sizeof(struct chat_context));
 
@@ -812,7 +811,6 @@ int chat_with_droid(struct enemy *partner)
 {
 	struct npc *npc;
 	struct chat_context *chat_context;
-	char *dialog_name;
 
 	// Create a chat context.
 	// Use the partner's dialog name attribute to get the related npc
@@ -820,9 +818,8 @@ int chat_with_droid(struct enemy *partner)
 	npc = npc_get(partner->dialog_section_name);
 	if (!npc)
 		return FALSE;
-	dialog_name = partner->dialog_section_name;
 
-	chat_context = chat_create_context(partner, npc, dialog_name);
+	chat_context = chat_create_context(partner, npc);
 
 	// Push the chat context on the stack.
 	// The dialog will be run on the next loop of the chat engine.
@@ -901,7 +898,7 @@ int validate_dialogs()
 		list_for_each_entry(n, &npc_head, node) {
 			printf("Testing dialog \"%s\" from \"%s\"...\n", n->dialog_basename, act->name);
 
-			struct chat_context *dummy_context = chat_create_context(dummy_partner, n, n->dialog_basename);
+			struct chat_context *dummy_context = chat_create_context(dummy_partner, n);
 
 			// We want the dialog validator to catch all errors. It thus has to call
 			// push_dialog() itself. As a consequence, so we can not use chat_push_context().

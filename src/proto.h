@@ -806,7 +806,7 @@ int load_texture_atlas(const char *, const char *, struct image *(*get_storage_f
 
 // chat.c
 struct widget_group *create_chat_dialog(void);
-struct chat_context *chat_create_context(struct enemy *, struct npc *, const char *);
+struct chat_context *chat_create_context(struct enemy *, struct npc *);
 int chat_push_context(struct chat_context *);
 void chat_delete_context(struct chat_context *);
 void chat_push_topic(const char *topic);

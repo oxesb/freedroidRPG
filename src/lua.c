@@ -677,7 +677,6 @@ static int lua_start_chat(lua_State * L)
 	struct enemy *partner;
 	struct npc *npc;
 	struct chat_context *chat_context;
-	char *dialog_name;
 
 	// This function can be called from an event lua script or from a dialog
 	// lua script.
@@ -697,9 +696,8 @@ static int lua_start_chat(lua_State * L)
 	npc = npc_get(partner->dialog_section_name);
 	if (!npc)
 		return 0;
-	dialog_name = partner->dialog_section_name;
 
-	chat_context = chat_create_context(partner, npc, dialog_name);
+	chat_context = chat_create_context(partner, npc);
 	if (!chat_push_context(chat_context)) {
 		chat_delete_context(chat_context);
 		return 0;
