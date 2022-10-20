@@ -32,7 +32,7 @@
 struct widget_lvledit_map {
 };
 
-struct widget *widget_lvledit_map_create();
+struct widget *widget_lvledit_map_create(void);
 void widget_lvledit_map_display_cursor(void);
 
 void widget_lvledit_map_init(void);

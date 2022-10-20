@@ -202,7 +202,7 @@ item *ItemDropFromLevelEditor(void)
 };				// void ItemDropFromLevelEditor( void )
 
 
-static void leveleditor_init()
+static void leveleditor_init(void)
 {
 	level_editor_done = FALSE;
 
@@ -231,7 +231,7 @@ static void leveleditor_init()
 	SDL_EnableKeyRepeat(SDL_DEFAULT_REPEAT_DELAY, SDL_DEFAULT_REPEAT_INTERVAL);
 }
 
-void leveleditor_cleanup()
+void leveleditor_cleanup(void)
 {
 	Activate_Conservative_Frame_Computation();
 	action_freestack();
@@ -262,7 +262,7 @@ void TestMap(void)
  * escape, you can enter a new submenu where you can save the level,
  * change level name and quit from level editing.
  */
-void LevelEditor()
+void LevelEditor(void)
 {
 	leveleditor_init();
 

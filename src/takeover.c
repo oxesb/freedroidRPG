@@ -133,7 +133,7 @@ void advanced_enemy_takeover_movements(const int countdown);
 
 static void ShowPlayground(enemy *target);
 
-static void display_takeover_help()
+static void display_takeover_help(void)
 {
 	play_title_file(BASE_TITLES_DIR, "TakeoverInstructions.lua");
 }
@@ -508,11 +508,11 @@ static void PlayGame(int countdown, enemy *target)
 
 }
 
-static void show_info_up_button() {
+static void show_info_up_button(void) {
 	ShowGenericButtonFromList(UP_BUTTON);
 }
 
-static void show_info_down_button() {
+static void show_info_down_button(void) {
 	ShowGenericButtonFromList(DOWN_BUTTON);
 }
 

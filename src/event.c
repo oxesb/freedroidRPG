@@ -624,7 +624,7 @@ void dispatch_event_timer(const char *trigger_name, float dispatch_time)
 	}
 }
 
-void execute_event_timers()
+void execute_event_timers(void)
 {
 	struct event_timer *n, *next;
 
@@ -657,7 +657,7 @@ void execute_event_timers()
  * As a result, the fact that the validator finds no error does not imply there are no errors in dialogs.
  * Syntax is checked fully, but runtime validation cannot check all of the code.
  */
-int validate_events()
+int validate_events(void)
 {
 	int error_caught = FALSE;
 

@@ -70,7 +70,7 @@ static struct leveleditor_place {
 	int nbactions;
 } state;
 
-static void end_waypoint_route()
+static void end_waypoint_route(void)
 {
 	our_mode = DISABLED;
 	action_push(ACT_MULTIPLE_ACTIONS, state.nbactions);
@@ -171,7 +171,7 @@ static void start_rectangle_floor(int findex)
 
 }
 
-static void handle_rectangle_floor()
+static void handle_rectangle_floor(void)
 {
 	// If there is something to change
 	if (calc_distance(mouse_mapcoord.x, mouse_mapcoord.y,
@@ -239,7 +239,7 @@ void place_enemy(int droid_type)
 /**
  * Place a map label on the map.
  */
-static void place_map_label()
+static void place_map_label(void)
 {
 	level_editor_action_change_map_label_user(EditLevel(), mouse_mapcoord.x, mouse_mapcoord.y);
 }
@@ -313,7 +313,7 @@ static int vertical_wall(int type)
 /**
  * Returns TRUE if the currently selected wall style has corners
  */
-static int has_corners()
+static int has_corners(void)
 {
 	if (state.l_type.nw != -1)
 		return 1;
@@ -560,7 +560,7 @@ static void line_moving_forwards(pointf offset)
 /**
  * Create the freehand line drawing
  */
-static void handle_wall_line()
+static void handle_wall_line(void)
 {
 	line_element *last_wall;			// The last wall of the line
 	pointf offset;		// Difference of position since last time
@@ -713,7 +713,7 @@ int leveleditor_place_input(SDL_Event *event)
 	return 0;
 }
 
-int leveleditor_place_display()
+int leveleditor_place_display(void)
 {
 	if (our_mode == CONNECT_WAYPOINT) {
 		waypoint *wpts = EditLevel()->waypoints.arr;
@@ -725,7 +725,7 @@ int leveleditor_place_display()
 	return 0;
 }
 
-void leveleditor_place_reset()
+void leveleditor_place_reset(void)
 {
 	switch (our_mode) {
 	case LINE_WALLS:

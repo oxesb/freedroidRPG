@@ -224,7 +224,7 @@ void lang_set(const char *locale, int *encoding_changed)
  *
  * \return Pointer to the locale name, or NULL if localization is disabled.
  */
-char *lang_get()
+char *lang_get(void)
 {
 #ifdef ENABLE_NLS
 	// If GameConfig.locale is not set, then return the system default locale
@@ -244,7 +244,7 @@ char *lang_get()
  *
  * \return Pointer to the encoding.
  */
-char *lang_get_encoding()
+char *lang_get_encoding(void)
 {
 #ifdef ENABLE_NLS
 	return _current_encoding;
@@ -259,7 +259,7 @@ char *lang_get_encoding()
  * The game is started in the system default locale.
  */
 
-void lang_init()
+void lang_init(void)
 {
 #ifdef ENABLE_NLS
 	// Only use localization on messages, to avoid issues when

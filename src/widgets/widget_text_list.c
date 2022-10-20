@@ -271,7 +271,7 @@ static int text_list_handle_event(struct widget *w, SDL_Event *event)
  *
  * \return a pointer to the newly created widget_text_list.
  */
-struct widget_text_list *widget_text_list_create()
+struct widget_text_list *widget_text_list_create(void)
 {
 	char *empty_list[] = { NULL };
 

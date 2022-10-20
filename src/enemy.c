@@ -321,7 +321,7 @@ void enemy_reset(enemy *this_enemy)
  * This function prepares the droid's fabric to create a whole new
  * set of droids.
  */
-void enemy_reset_fabric()
+void enemy_reset_fabric(void)
 {
 	next_bot_id = 1;
 }

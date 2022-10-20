@@ -281,7 +281,7 @@ int widget_text_handle_mouse(struct widget_text *w)
  *
  * \return A pointer to the newly created widget_text.
  */
-struct widget_text *widget_text_create()
+struct widget_text *widget_text_create(void)
 {
 	struct widget_text *wt = MyMalloc(sizeof(struct widget_text));
 	widget_init(WIDGET(wt));

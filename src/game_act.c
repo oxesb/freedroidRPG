@@ -99,7 +99,7 @@ int game_act_validate(struct game_act *act)
  *
  * @return Pointer to a game_act struct
  */
-struct game_act *game_act_get_starting()
+struct game_act *game_act_get_starting(void)
 {
 	for (int i = 0; i < game_acts.size; i++) {
 		struct game_act *act = (struct game_act *)dynarray_member(&game_acts, i, sizeof(struct game_act));
@@ -167,7 +167,7 @@ void game_act_set_current(struct game_act *act)
  *
  * @return Pointer to a game_act struct
  */
-struct game_act *game_act_get_current()
+struct game_act *game_act_get_current(void)
 {
 	if (!current_game_act) {
 		error_message(__FUNCTION__, "Current game act is not yet set. act_set_current() must be called before. We can not continue...",
@@ -179,7 +179,7 @@ struct game_act *game_act_get_current()
 /**
  * Free the ememory used to store game acts data
  */
-void game_act_free()
+void game_act_free(void)
 {
 	for (int i = 0; i < game_acts.size; i++) {
 		struct game_act *act = (struct game_act *)dynarray_member(&game_acts, i, sizeof(struct game_act));
@@ -210,12 +210,12 @@ void game_act_set_next(const char *act_id)
 	next_game_act = next_act;
 }
 
-int game_act_finished()
+int game_act_finished(void)
 {
 	return (next_game_act != NULL);
 }
 
-void game_act_switch_to_next()
+void game_act_switch_to_next(void)
 {
 	if (!next_game_act) {
 		error_message(__FUNCTION__, "The next game act to jump to is not defined. We can not proceed.",

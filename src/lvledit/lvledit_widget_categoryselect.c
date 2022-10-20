@@ -75,7 +75,7 @@ static void categoryselect_display(struct widget *w)
 	set_current_font(PreviousFont);
 }
 
-struct widget_lvledit_categoryselect *get_current_object_type()
+struct widget_lvledit_categoryselect *get_current_object_type(void)
 {
 	return currently_selected_category;
 }

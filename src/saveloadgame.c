@@ -481,7 +481,7 @@ int load_game(void)
 /**
  * This loads the backup for the current player name
  */
-int load_backup_game()
+int load_backup_game(void)
 {
 	return load_saved_game(1);
 }

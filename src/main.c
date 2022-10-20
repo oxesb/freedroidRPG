@@ -47,7 +47,7 @@
 float LastGotIntoBlastSound = 2;
 float LastRefreshSound = 2;
 
-void UpdateCountersForThisFrame();
+void UpdateCountersForThisFrame(void);
 
 /**
  *
@@ -70,7 +70,7 @@ void DoAllMovementAndAnimations(void)
 /**
  * Run the game until it is over.
  */
-void Game()
+void Game(void)
 {
 	GameOver = FALSE;
 	reset_visible_levels();
@@ -269,7 +269,7 @@ void update_timeouts_for_bots_on_level(int level_num, float latest_frame_time)
  * is preserved because everything is weighted with the Frame_Time()
  * function.
  * ----------------------------------------------------------------- */
-void UpdateCountersForThisFrame()
+void UpdateCountersForThisFrame(void)
 {
 	int i;
 	float my_speed;

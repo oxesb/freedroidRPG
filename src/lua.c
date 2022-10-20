@@ -2061,7 +2061,7 @@ static void load_lua_module(enum lua_target target, int subdir, const char *modu
 /**
  * Initialize the Lua state used to load the config files
  */
-void init_lua()
+void init_lua(void)
 {
 	char fpath[PATH_MAX];
 
@@ -2083,7 +2083,7 @@ void init_lua()
  * Close all active lua states. To be called when the game quits, to call
  * the lua garbage collector, in order to call all Lua object 'destructors'
  */
-void close_lua()
+void close_lua(void)
 {
 	if (dialog_lua_state)
 		lua_close(dialog_lua_state);

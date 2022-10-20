@@ -150,7 +150,7 @@ static void minimap_display(struct widget *w)
 	unset_gl_clip_rect();
 }
 
-struct widget *widget_lvledit_minimap_create()
+struct widget *widget_lvledit_minimap_create(void)
 {
 	struct widget *a = MyMalloc(sizeof(struct widget));
 	widget_init(a);

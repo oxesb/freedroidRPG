@@ -852,7 +852,7 @@ static void level_options(void)
 	return;
 };				// void LevelOptions ( void );
 
-void choose_game_act()
+void choose_game_act(void)
 {
 	char **menu_texts = NULL;
 
@@ -903,7 +903,7 @@ void choose_game_act()
  *
  *
  */
-int do_level_editor_main_menu()
+int do_level_editor_main_menu(void)
 {
 	char *menu_texts[100];
 	char options[20][1000];

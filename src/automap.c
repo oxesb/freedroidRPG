@@ -320,7 +320,7 @@ void toggle_automap(void)
 	}
 }
 
-static void display_automap_compass()
+static void display_automap_compass(void)
 {
 	//load the compass if necessary
 	if (!image_loaded(&compass)) {

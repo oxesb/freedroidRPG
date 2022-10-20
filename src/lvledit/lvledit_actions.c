@@ -859,14 +859,14 @@ static void __level_editor_do_action_from_stack(struct list_head *stack)
 	}
 }
 
-void level_editor_action_undo()
+void level_editor_action_undo(void)
 {
 	push_mode = UNDO;
 	__level_editor_do_action_from_stack(&to_undo);
 	push_mode = NORMAL;
 }
 
-void level_editor_action_redo()
+void level_editor_action_redo(void)
 {
 	push_mode = REDO;
 	__level_editor_do_action_from_stack(&to_redo);

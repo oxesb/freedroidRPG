@@ -253,7 +253,7 @@ void widget_group_init(struct widget_group *wg)
  *
  * \return A pointer to the newly created widget_group.
  */
-struct widget_group *widget_group_create() 
+struct widget_group *widget_group_create(void)
 {
 	struct widget_group *wb = (struct widget_group *)MyMalloc(sizeof(struct widget_group));
 	widget_group_init(wb);

@@ -494,7 +494,7 @@ static void toggle_notes(struct widget_button *wb)
 }
 
 /** Check if the quest browser can scroll up. */
-static int can_scroll_up()
+static int can_scroll_up(void)
 {
 	return (mission_list_scroll_override_from_user > 0);
 }
@@ -508,7 +508,7 @@ static void scroll_up(struct widget_button *wb)
 }
 
 /** Check if the quest browser can scroll down. */
-static int can_scroll_down()
+static int can_scroll_down(void)
 {
 	int lines_needed = get_lines_needed(quest_browser_text->value, mission_description_rect, 1.0);
 	int visible_lines = mission_description_rect.h / (float) get_font_height(get_current_font());
@@ -585,7 +585,7 @@ static int quest_browser_handle_event(struct widget *w, SDL_Event *event)
 /**
  * This function creates and returns the quest log top level widget.
  */
-struct widget_group *create_quest_browser()
+struct widget_group *create_quest_browser(void)
 {
 	struct widget_group *quest_browser = widget_group_create();
 	widget_set_rect(WIDGET(quest_browser), 0, 0, GameConfig.screen_width, GameConfig.screen_height);

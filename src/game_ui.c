@@ -1,4 +1,4 @@
-/* 
+/*
  *
  *   Copyright (c) 2011 Catalin Badea
  *
@@ -16,8 +16,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -42,7 +42,7 @@ static void current_skill_button_click(struct widget_button *w)
 }
 
 /** Computes the tooltip text displayed when hovering the current skill button. */
-static char *get_current_skill_button_tooltip()
+static char *get_current_skill_button_tooltip(void)
 {
 	static struct auto_string *buffer = NULL;
 	if (!buffer)
@@ -72,7 +72,7 @@ static void current_weapon_button_update(struct widget *w)
 }
 
 /** Computes the tooltip text displayed when hovering the current weapon button. */
-static char *get_current_weapon_button_tooltip()
+static char *get_current_weapon_button_tooltip(void)
 {
 	static struct auto_string *buffer = NULL;
 	if (!buffer)
@@ -170,7 +170,7 @@ static void stamina_bar_display(struct widget *w)
 }
 
 /** Computes the tooltip text displayed when hovering the stamina bar. */
-static char *get_stamina_bar_tooltip()
+static char *get_stamina_bar_tooltip(void)
 {
 	static struct auto_string *buffer = NULL;
 	if (!buffer)
@@ -207,7 +207,7 @@ static void experience_bar_display(struct widget *w)
 }
 
 /** Computes the tooltip text displayed when hovering the experience bar. */
-static char *get_experience_bar_tooltip(struct widget *w)
+static char *get_experience_bar_tooltip(void)
 {
 	static struct auto_string *buffer = NULL;
 	if (!buffer)
@@ -237,7 +237,7 @@ static void health_bar_display(struct widget *w)
 }
 
 /** Computes the tooltip text displayed when hovering the health bar. */
-static char* get_health_bar_tooltip(struct widget *w)
+static char* get_health_bar_tooltip(void)
 {
 	static struct auto_string *buffer = NULL;
 	if (!buffer)
@@ -309,7 +309,7 @@ static void heat_bar_display(struct widget *w)
 }
 
 /** Computes the tooltip text displayed when hovering the heat bar. */
-static char *get_heat_bar_tooltip()
+static char *get_heat_bar_tooltip(void)
 {
 	static struct auto_string *buffer = NULL;
 	if (!buffer)
@@ -433,7 +433,7 @@ static void _enable_if_inventory_panel_open(struct widget *w)
 /**
  * This function builds the hud bar widgets.
  */
-static struct widget_group *create_hud_bar()
+static struct widget_group *create_hud_bar(void)
 {
 	struct widget_group *hud_bar = widget_group_create();
 	widget_set_rect(WIDGET(hud_bar), 0, GameConfig.screen_height - 97, GameConfig.screen_width, 97);
@@ -495,7 +495,7 @@ static struct widget_group *create_hud_bar()
 		SDL_Rect rect;
 		void (*display)(struct widget *);
 		void (*activate_button)(struct widget_button *);
-		char *(*get_tooltip_text)();
+		char *(*get_tooltip_text)(void);
 		void (*update)(struct widget *);
 	} b[] = {
 		// Current skill button
@@ -641,11 +641,11 @@ static struct widget_group *create_hud_bar()
 /**
  * This function returns the game top level widget and creates it if necessary.
  */
-struct widget_group *get_game_ui()
+struct widget_group *get_game_ui(void)
 {
 	if (game_widget_group)
 		// Widgets already initialized.
-		return game_widget_group;	
+		return game_widget_group;
 
 	game_widget_group = widget_group_create();
 	widget_set_rect(WIDGET(game_widget_group), 0, 0, GameConfig.screen_width, GameConfig.screen_height);
@@ -655,11 +655,11 @@ struct widget_group *get_game_ui()
 	// by AnalyzePlayerMouseClicks.
 	// TODO: this should definitely not be a widget_button !
 	game_map = widget_button_create();
-	widget_set_rect(WIDGET(game_map), 0, 0, GameConfig.screen_width, GameConfig.screen_height - 98); 
+	widget_set_rect(WIDGET(game_map), 0, 0, GameConfig.screen_width, GameConfig.screen_height - 98);
 	widget_group_add(game_widget_group, WIDGET(game_map));
 
 	// Create the hud bar.
-	struct widget_group *hud_bar = create_hud_bar(); 
+	struct widget_group *hud_bar = create_hud_bar();
 	widget_group_add(game_widget_group, WIDGET(hud_bar));
 
 	struct {
@@ -731,7 +731,7 @@ struct widget_group *get_game_ui()
 	return game_widget_group;
 }
 
-void free_game_ui()
+void free_game_ui(void)
 {
 	if (game_widget_group)
 	{

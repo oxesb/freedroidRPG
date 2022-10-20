@@ -151,7 +151,7 @@ static int _first_use_of_msg(int when, struct auto_string *msg)
  * Clean the alert/error message store, removing messages which are flagged as ONCE_PER_GAME
  * so that they can be redisplayed
  */
-void clean_error_msg_store()
+void clean_error_msg_store(void)
 {
 	if (!msg_store) // msg store not yet used
 		return;
@@ -183,7 +183,7 @@ void clean_error_msg_store()
 /**
  * Free all the memory slots used by the msg_store
  */
-void free_error_msg_store()
+void free_error_msg_store(void)
 {
 	if (!msg_store) // msg store was not used
 		return;

@@ -500,7 +500,7 @@ struct image *get_obstacle_shadow_image(int type, int frame_index)
 /**
  * Return a pointer towards the map label image.
  */
-struct image *get_map_label_image()
+struct image *get_map_label_image(void)
 {
 	static struct image img = EMPTY_IMAGE;
 

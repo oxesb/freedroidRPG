@@ -1160,7 +1160,7 @@ void probe_graph2D_display(struct probe *probe_base, int x, int y)
  * Activate/De-activate the real-time profiler system
  * \ingroup rtprof
  */
-void rtprof_switch_activation()
+void rtprof_switch_activation(void)
 {
 	probe_active = !probe_active;
 }
@@ -1169,7 +1169,7 @@ void rtprof_switch_activation()
  * Clear all probes' content
  * \ingroup rtprof
  */
-void rtprof_clear_probes()
+void rtprof_clear_probes(void)
 {
 	struct probe *probe;
 	list_for_each_entry(probe, &probe_list, node) {
@@ -1186,7 +1186,7 @@ void rtprof_clear_probes()
  * If the real-time profiler is active, fill the screen with the graph of each
  * probe, from top to bottom, and from left to right.
  */
-void rtprof_display()
+void rtprof_display(void)
 {
 	const int start_x = 50; // X screen position of the first report
 	const int start_y = 50; // Y screen position of the first report

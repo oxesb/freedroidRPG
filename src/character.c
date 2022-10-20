@@ -134,7 +134,7 @@ unsigned int get_experience_required(int lvl)
 /**
  * \brief Check if Tux has reached a new experience level.
  */
-static void check_for_new_experience_level_reached()
+static void check_for_new_experience_level_reached(void)
 {
 	unsigned int exp_required = get_experience_required(Me.exp_level);
 
@@ -160,7 +160,7 @@ static void check_for_new_experience_level_reached()
 /**
  * Update all primary stats.
  */
-void update_all_primary_stats()
+void update_all_primary_stats(void)
 {
 	int i;
 
@@ -218,7 +218,7 @@ void update_all_primary_stats()
  * current 'magic' modifiers from equipped items will be applied somewhere
  * else.
  */
-static void update_secondary_stats_from_primary_stats()
+static void update_secondary_stats_from_primary_stats(void)
 {
 	// The chance that this player character will score a hit on an enemy
 	//
@@ -249,7 +249,7 @@ static void update_secondary_stats_from_primary_stats()
  * character is using.  And depending on the weapon type (melee or
  * ranged weapon) some additional attributes will also play a role.
  */
-static void update_damage_tux_can_do()
+static void update_damage_tux_can_do(void)
 {
 	if (Me.weapon_item.type != (-1)) {
 		if (ItemMap[Me.weapon_item.type].weapon_is_melee != 0) {
@@ -294,7 +294,7 @@ static void update_damage_tux_can_do()
  * This function should re-compute all character stats according to the
  * currently equipped items and currently distributed stats points.
  */
-void UpdateAllCharacterStats()
+void UpdateAllCharacterStats(void)
 {
 	// Maybe the influencer has reached a new experience level?
 	// Let's check this...
@@ -360,7 +360,7 @@ void UpdateAllCharacterStats()
  * Now we print out the current skill levels in hacking skill,
  * spellcasting, melee combat, ranged weapon combat and repairing things
  */
-static void show_character_screen_skills()
+static void show_character_screen_skills(void)
 {
 
 	// We add some security against skill values out of allowed
@@ -410,7 +410,7 @@ Error: Programming_Skill skill seems out of bounds.", PLEASE_INFORM | IS_FATAL);
 /**
  * This function displays the character screen.
  */
-void ShowCharacterScreen()
+void ShowCharacterScreen(void)
 {
 	char CharText[1000];
 

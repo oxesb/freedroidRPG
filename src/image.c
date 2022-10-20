@@ -62,7 +62,7 @@ static struct dynarray *vtx;
 /**
  * Start rendering images as a batch.
  */
-void start_image_batch()
+void start_image_batch(void)
 {
 	batch_draw = TRUE;
 }

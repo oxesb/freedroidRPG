@@ -50,7 +50,7 @@ static Uint8 mouse_state_this_frame;	/* current mouse state */
 static int MouseWheelUpMovesRecorded;
 static int MouseWheelDownMovesRecorded;
 
-void init_keyboard_input_array()
+void init_keyboard_input_array(void)
 {
 	key_state_array = SDL_GetKeyState(&key_state_array_size);
 }
@@ -73,7 +73,7 @@ int GetMousePos_y(void)
  * Save the current mouse state to mouse_state_last_frame, so
  * the *Clicked functions have a point of comparison.
  */
-void save_mouse_state()
+void save_mouse_state(void)
 {
 	mouse_state_last_frame = mouse_state_this_frame;
 	mouse_state_this_frame = SDL_GetMouseState(NULL, NULL);
@@ -162,78 +162,78 @@ static int key_is_pressed(int key)
 }
 
 /* *Pressed functions return the current state of the keyboard/mouse button in question */
-int LeftPressed()
+int LeftPressed(void)
 {
 	return key_is_pressed(SDLK_LEFT);
 }
 
-int RightPressed()
+int RightPressed(void)
 {
 	return key_is_pressed(SDLK_RIGHT);
 }
 
-int UpPressed()
+int UpPressed(void)
 {
 	return key_is_pressed(SDLK_UP);
 }
 
-int DownPressed()
+int DownPressed(void)
 {
 	return key_is_pressed(SDLK_DOWN);
 }
 
-int SpacePressed()
+int SpacePressed(void)
 {
 	return key_is_pressed(SDLK_SPACE);
 }
 
-int EnterPressed()
+int EnterPressed(void)
 {
 	return key_is_pressed(SDLK_RETURN) || key_is_pressed(SDLK_KP_ENTER);
 }
 
-int EscapePressed()
+int EscapePressed(void)
 {
 	return key_is_pressed(SDLK_ESCAPE);
 }
 
-int LeftCtrlPressed()
+int LeftCtrlPressed(void)
 {
 	return key_is_pressed(SDLK_LCTRL);
 }
 
-int CtrlPressed()
+int CtrlPressed(void)
 {
 	return key_is_pressed(SDLK_LCTRL) || key_is_pressed(SDLK_RCTRL);
 }
 
-int ShiftPressed()
+int ShiftPressed(void)
 {
 	return key_is_pressed(SDLK_RSHIFT) || key_is_pressed(SDLK_LSHIFT);
 }
 
-int APressed()
+int APressed(void)
 {
 	return key_is_pressed(SDLK_a);
 }
 
-int QPressed()
+int QPressed(void)
 {
 	return key_is_pressed(SDLK_q);
 }
 
-int XPressed()
+int XPressed(void)
 {
 	return key_is_pressed(SDLK_x);
 }
 
-int MouseRightPressed()
+int MouseRightPressed(void)
 {
 	SDL_PumpEvents();
 	return ((SDL_GetMouseState(NULL, NULL)) & (SDL_BUTTON(3)));
 }
 
-int MouseLeftPressed()
+int MouseLeftPressed(void)
 {
 	SDL_PumpEvents();
 	return (SDL_GetMouseState(NULL, NULL) & SDL_BUTTON(1));
@@ -242,12 +242,12 @@ int MouseLeftPressed()
 /* *Clicked functions return non zero if the mouse button is question has just been clicked, i.e. it is pressed now and wasn't at last frame.
  * "last frame" is whenever you called save_mouse_state
  */
-int MouseRightClicked()
+int MouseRightClicked(void)
 {
 	return (!(mouse_state_last_frame & SDL_BUTTON(3)) && (mouse_state_this_frame & SDL_BUTTON(3)));
 }
 
-int MouseLeftClicked()
+int MouseLeftClicked(void)
 {
 	return (!(mouse_state_last_frame & SDL_BUTTON(1)) && (mouse_state_this_frame & SDL_BUTTON(1)));
 }
@@ -263,7 +263,7 @@ int MouseLeftClicked()
  * This function waits for a 'neutral' interaction state, and is to be used
  * before to return to the main game screen.
  */
-void WaitNoEvent()
+void WaitNoEvent(void)
 {
 	SDL_Event event;
 	int mouse_x, mouse_y;

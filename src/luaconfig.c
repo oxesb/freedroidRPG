@@ -1563,7 +1563,7 @@ static int lua_quest_list_ctor(lua_State *L)
 /**
  * Add lua constructors of new data types
  */
-void init_luaconfig()
+void init_luaconfig(void)
 {
 	int i;
 	lua_State *L = get_lua_state(LUA_CONFIG);

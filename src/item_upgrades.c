@@ -215,7 +215,7 @@ struct addon_spec *get_addon_spec(int item_type)
  * \brief Gets the list of all add-on specs.
  * \return A dynarray containing items of type addon_spec.
  */
-struct dynarray *get_addon_specs()
+struct dynarray *get_addon_specs(void)
 {
 	return addon_specs;
 }

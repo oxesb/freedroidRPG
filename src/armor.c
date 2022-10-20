@@ -33,7 +33,7 @@
  * Compute the armor class from the classes of all items.
  * Armor class is the sum of armor classes of all items, with no ponderation.
  */
-void update_player_armor_class()
+void update_player_armor_class(void)
 {
 	Me.armor_class = 0;
 
@@ -64,7 +64,7 @@ void update_player_armor_class()
  * as an exponential law of the form a * exp(-b * x),
  * this means a = 1 and b = 0.0134
  */
-float get_player_damage_factor()
+float get_player_damage_factor(void)
 {
 	float damage_reduction = exp(-0.0134 * Me.armor_class);
 	return damage_reduction;

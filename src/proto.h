@@ -81,7 +81,7 @@ void event_obstacle_action(obstacle *o);
 const char *teleporter_square_below_mouse_cursor(void);
 struct event_trigger * visible_event_at_location(int x, int y, int z);
 void dispatch_event_timer(const char *, float);
-void execute_event_timers();
+void execute_event_timers(void);
 void delete_events(void);
 int validate_events(void);
 
@@ -127,8 +127,8 @@ void start_tux_death_explosions(void);
 void init_tux(void);
 void set_movement_with_keys(int move_x, int move_y);
 void do_death_menu(void);
-void free_tux();
-void lightly_free_tux();
+void free_tux(void);
+void lightly_free_tux(void);
 
 // action.c
 void chest_open_action(level *chest_lvl, int chest_index);
@@ -314,7 +314,7 @@ void unset_gl_clip_rect(void);
 int get_opengl_quirks(void);
 
 // open_gl_debug.c
-int init_opengl_debug();
+int init_opengl_debug(void);
 void open_gl_check_error_status(const char *name_of_calling_function);
 void gl_debug_marker(const char *str);
 
@@ -399,7 +399,7 @@ void blast_obstacle(level *, obstacle *);
 int smash_obstacles_near_pos(float, float, int);
 uint16_t *get_map_brick(level *, float, float);
 void CountNumberOfDroidsOnShip(void);
-void free_current_ship();
+void free_current_ship(void);
 void free_ship_level(level*);
 int LoadShip(char *filename, int);
 int SaveShip(const char *filename, int reset_random_levels, int);
@@ -441,7 +441,7 @@ void close_audio(void);
 void set_music_volume(float);
 void set_SFX_volume(float);
 void switch_background_music(char *);
-char *get_background_music();
+char *get_background_music(void);
 int play_voice(const char *, int, float *);
 void resume_voice(int);
 void stop_voice(int);
@@ -605,7 +605,7 @@ void keychart(void);
 void input_keyboard_init(void);
 void input_hold_keyboard(void);
 void input_release_keyboard(void);
-int getchar_ascii();
+int getchar_ascii(void);
 SDLKey getchar_raw(SDLMod *);
 void input_get_keybind(const char *cmdname, SDLKey * key, SDLMod * mod);
 void input_get_keybind_string(const keybind_t *kb, char *out);
@@ -630,7 +630,7 @@ int mouse_cursor_is_on_that_image(float, float, struct image *);
 int MouseCursorIsInRect(const SDL_Rect *, int, int);
 int MouseCursorIsOnButton(int ButtonIndex, int x, int y);
 void *my_memmem(char *, size_t, char *, size_t);
-void init_data_dirs_path();
+void init_data_dirs_path(void);
 int check_directory(const char *, int, int, int);
 int find_file(char *, int, const char *, const char *, int);
 int find_suffixed_file(char *, int, const char *, const char *, int);
@@ -727,8 +727,8 @@ int get_range_from_string(const char *str, int *min, int *max, int default_value
 char *read_and_malloc_and_terminate_file(const char *, const char *);
 char *LocateStringInData(char *SearchBeginPointer, const char *SearchTextPointer);
 void DebugPrintf(int db_level, const char *fmt, ...) PRINTF_FMT_ATTRIBUTE(2,3);
-void clean_error_msg_store();
-void free_error_msg_store();
+void clean_error_msg_store(void);
+void free_error_msg_store(void);
 void error_message(const char *, const char *, int, ...) PRINTF_FMT_ATTRIBUTE(2,4) CLANG_ANALYZER_NORETURN;
 void error_once_message(int, const char *, const char *, int, ...) PRINTF_FMT_ATTRIBUTE(3,5) CLANG_ANALYZER_NORETURN;
 void alert_window(const char *text, ...) PRINTF_FMT_ATTRIBUTE(1,2);
@@ -748,14 +748,14 @@ int get_minutes_of_game_duration(float current_game_date);
 void append_new_game_message(const char *fmt, ...) PRINTF_FMT_ATTRIBUTE(1,2);
 void init_message_log(void);
 void toggle_game_config_screen_visibility(int screen_visible);
-void close_game_config_screens();
+void close_game_config_screens(void);
 int get_current_fps(void);
 void display_tooltip(const char *, int, SDL_Rect);
 void blit_vertical_status_bar(float, float, Uint32, Uint32, int, int, int, int);
 
 // game_ui.c
 struct widget_group *get_game_ui(void);
-void free_game_ui();
+void free_game_ui(void);
 
 // item_upgrades_ui.c
 int append_item_upgrade_ui_tooltip(const point *, struct auto_string *str);
@@ -767,7 +767,7 @@ int cursor_is_on_addon_crafting_ui(const point *);
 void show_addon_crafting_ui(void);
 void addon_crafting_ui(void);
 int addon_crafting_ui_visible(void);
-void addon_crafting_ui_close();
+void addon_crafting_ui_close(void);
 
 // shop.c
 void ShowItemPicture(int, int, int);
@@ -813,9 +813,9 @@ void chat_push_topic(const char *topic);
 void chat_pop_topic(void);
 void chat_add_response(const char *);
 int validate_dialogs(void);
-struct chat_context *chat_get_current_context();
-void chat_run();
-void free_chat_widgets();
+struct chat_context *chat_get_current_context(void);
+void chat_run(void);
+void free_chat_widgets(void);
 
 // title.c
 struct widget_group *title_screen_create(void);
@@ -862,7 +862,7 @@ int sparse_dynarray_member_used(struct sparse_dynarray *, int);
 void dirty_animated_obstacle_list(int lvl_num);
 void clear_animated_obstacle_list(struct visible_level *vis_lvl);
 void dirty_animated_floor_tile_list(void);
-void clear_animated_floor_tile_list();
+void clear_animated_floor_tile_list(void);
 animation_fptr get_animation_by_name(const char *animation_name);
 void animation_timeline_reset(void);
 void animation_timeline_advance(void);
@@ -910,7 +910,7 @@ float lvledit_zoomfact_inv(void);
 
 // lvledit_widgets.c
 struct widget_group *get_lvledit_ui(void);
-void free_lvledit_ui();
+void free_lvledit_ui(void);
 
 // waypoint.c
 int add_waypoint(level *, int, int, int);
@@ -955,16 +955,16 @@ int luaFD_init(lua_State *);
 
 #ifdef WITH_RTPROF
 // rtprof.c
-void rtprof_switch_activation();
-void rtprof_clear_probes();
-void rtprof_display();
+void rtprof_switch_activation(void);
+void rtprof_clear_probes(void);
+void rtprof_display(void);
 #endif
 
 // lang.c
 void lang_set(const char *, int *);
-char *lang_get();
-char *lang_get_encoding();
-void lang_init();
+char *lang_get(void);
+char *lang_get_encoding(void);
+void lang_init(void);
 
 // font.c
 void init_fonts(void);
@@ -985,9 +985,9 @@ struct game_act *game_act_get_by_name(char *);
 struct game_act *game_act_get_by_id(char *);
 void game_act_set_current(struct game_act *);
 struct game_act *game_act_get_current(void);
-void game_act_free();
+void game_act_free(void);
 void game_act_set_next(const char *);
-int game_act_finished();
-void game_act_switch_to_next();
+int game_act_finished(void);
+void game_act_switch_to_next(void);
 
 #endif

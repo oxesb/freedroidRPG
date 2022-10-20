@@ -112,7 +112,7 @@ int is_friendly(enum faction_id fact1, enum faction_id fact2)
 /**
   * Fill in faction hostility matrix with the game default values.
   */
-void init_factions()
+void init_factions(void)
 {
 	int i;
 

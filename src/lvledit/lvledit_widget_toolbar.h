@@ -30,7 +30,7 @@
 struct widget_lvledit_toolbar {
 };
 
-struct widget *widget_lvledit_toolbar_create();
+struct widget *widget_lvledit_toolbar_create(void);
 
 void widget_lvledit_toolbar_left(void);
 void widget_lvledit_toolbar_right(void);

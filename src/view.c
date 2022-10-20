@@ -525,7 +525,7 @@ void insert_one_blast_into_blitting_list(struct blast *current_blast)
  *
  *
  */
-void insert_move_cursor_into_blitting_list()
+void insert_move_cursor_into_blitting_list(void)
 {
 	float norm;
 
@@ -565,7 +565,7 @@ int level_is_visible(int level_num)
  * Also compute the distance between Tux and each level boundaries, and fill
  * the lists of animated obstacles.
  */
-void get_visible_levels()
+void get_visible_levels(void)
 {
 	struct visible_level *e, *n;
 
@@ -678,7 +678,7 @@ void get_visible_levels()
  * This function resets the visible levels list, as well as all animated
  * obstacle lists.
  */
-void reset_visible_levels()
+void reset_visible_levels(void)
 {
 	struct visible_level *e, *n;
 
@@ -723,7 +723,7 @@ void reset_visible_levels()
 #define NEIGHBOR_TRANSFORM_S(lvl)    level_neighbors_map[lvl][2][1]
 #define NEIGHBOR_TRANSFORM_SE(lvl)   level_neighbors_map[lvl][2][2]
 
-void gps_transform_map_init()
+void gps_transform_map_init(void)
 {
 	int x, y;
 	int lvl_idx, ngb_idx, diag_idx;
@@ -2079,7 +2079,7 @@ struct tux_part_render_data *tux_get_part_render_data(char *part_name)
 /**
   * Initialize Tux's part rendering specification's data structures
   */
-static void tux_rendering_init()
+static void tux_rendering_init(void)
 {
 	dynarray_init(&tux_rendering.motion_class_names, 0, 0);
 	memset(&tux_rendering.default_instances, 0, sizeof(struct tux_part_instances));
@@ -2089,7 +2089,7 @@ static void tux_rendering_init()
 /**
  * Check mandatory specifications, needed to ensure that Tux can be rendered.
  */
-static void tux_rendering_validate()
+static void tux_rendering_validate(void)
 {
 	// At least one motion_class is needed
 	if (tux_rendering.motion_class_names.size < 1) {
@@ -2198,7 +2198,7 @@ char *get_motion_class_name_by_id(int id)
  *
  * \return The current motion_class's id
  */
-int get_motion_class_id()
+int get_motion_class_id(void)
 {
 	int motion_class = 0;
 

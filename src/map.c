@@ -1297,7 +1297,7 @@ void free_ship_level(level *lvl)
 	free(lvl);
 }
 
-void free_current_ship()
+void free_current_ship(void)
 {
 	struct level *lvl;
 	BROWSE_LEVELS(lvl) {

@@ -88,7 +88,7 @@ static void background_display(struct widget *w)
  *
  * \return A pointer to the newly created widget_background.
  */
-struct widget_background *widget_background_create()
+struct widget_background *widget_background_create(void)
 {
 	struct widget_background *wb = MyMalloc(sizeof(struct widget_background));
 	widget_init(WIDGET(wb));

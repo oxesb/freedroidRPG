@@ -42,7 +42,7 @@ static struct leveleditor_tool *active_tool = NULL;
 pointf mouse_mapcoord;
 int mouse_in_level; // is the mouse cursor at an existing position on the level?
 
-void widget_lvledit_map_init()
+void widget_lvledit_map_init(void)
 {
 	leveleditor_init_tools();
 	selected_tool = &tool_select;
@@ -132,7 +132,7 @@ static int map_handle_event(struct widget *w, SDL_Event *event)
 	return 0;
 }
 
-void widget_lvledit_map_display_cursor()
+void widget_lvledit_map_display_cursor(void)
 {
 	// cppcheck-suppress variableScope
 	static int dragging = FALSE;
@@ -155,7 +155,7 @@ void widget_lvledit_map_display_cursor()
 	blit_mouse_cursor();
 }
 
-struct widget *widget_lvledit_map_create()
+struct widget *widget_lvledit_map_create(void)
 {
 	struct widget *a = MyMalloc(sizeof(struct widget));
 	widget_init(a);
@@ -169,12 +169,12 @@ struct widget *widget_lvledit_map_create()
 	return a;
 }
 
-void leveleditor_update_tool()
+void leveleditor_update_tool(void)
 {				//time-based updating if relevant
 	forward_event(NULL);
 }
 
-void lvledit_reset_tools()
+void lvledit_reset_tools(void)
 {
 	leveleditor_place_reset();
 	leveleditor_select_reset();

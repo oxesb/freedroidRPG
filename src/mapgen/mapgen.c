@@ -52,7 +52,7 @@ static void new_level(int w, int h)
 	total_rooms = 0;
 }
 
-static void free_level()
+static void free_level(void)
 {
 	int i;
 
@@ -113,7 +113,7 @@ static void split_wall(int w, int h, unsigned char *tiles)
 // room border and check whether we can shift the current wall
 // tile closer to the center of rooms. Therefore the room size
 // becomes smaller and free space between rooms increases.
-static void reduce_room_space() {
+static void reduce_room_space(void) {
 	int x, y;
 	int i, j;
 	int point_x[4];
@@ -212,7 +212,7 @@ static void place_internal_door(int x, int y, enum connection_type dir)
 		mapgen_add_obstacle(x + dx[1], y + dy[1], door);
 }
 
-static void place_doors()
+static void place_doors(void)
 {
 	int i, j, room;
 	int x, y;
@@ -870,7 +870,7 @@ static int find_waypoints(int x1, int y1, int x2, int y2, int *wps, int max)
 	return total_wps;
 }
 
-static void connect_waypoints()
+static void connect_waypoints(void)
 {
 	int rn;
 
@@ -895,7 +895,7 @@ static void connect_waypoints()
 	}
 }
 
-static void place_waypoints()
+static void place_waypoints(void)
 {
 	int rn;
 

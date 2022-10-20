@@ -74,7 +74,7 @@ void npc_add(const char *dialog_basename)
 	npc_insert(n);
 }
 
-void init_npcs()
+void init_npcs(void)
 {
 	char fpath[PATH_MAX];
 
@@ -82,7 +82,7 @@ void init_npcs()
 	run_lua_file(LUA_CONFIG, fpath);
 }
 
-void clear_npcs()
+void clear_npcs(void)
 {
 	struct npc *n, *next;
 	int i;

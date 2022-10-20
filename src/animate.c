@@ -379,7 +379,7 @@ static void generate_animated_floor_tile_list(void)
 /**
  * This function clean the animated floor tiles list
  */
-void clear_animated_floor_tile_list()
+void clear_animated_floor_tile_list(void)
 {
 	struct animated_scenery_piece *a, *next;
 
@@ -396,7 +396,7 @@ void clear_animated_floor_tile_list()
  * This function marks the animated floor tile list as being dirty, so that it
  * will be re-generated later.
  */
-void dirty_animated_floor_tile_list()
+void dirty_animated_floor_tile_list(void)
 {
 	animated_floor_tiles_dirty_flag = TRUE;
 }
@@ -437,7 +437,7 @@ animation_fptr get_animation_by_name(const char *animation_name)
 /**
  * Resets all animation timelines
  */
-void animation_timeline_reset()
+void animation_timeline_reset(void)
 {
 	autogun_timeline = 0.0;
 	door_timeline = 0.0;
@@ -447,7 +447,7 @@ void animation_timeline_reset()
 /**
  * This function advances all animation timelines to their next value
  */
-void animation_timeline_advance()
+void animation_timeline_advance(void)
 {
 	autogun_timeline += Frame_Time();
 	if (autogun_timeline >= 0.3)

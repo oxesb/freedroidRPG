@@ -56,7 +56,7 @@
 #endif
 
 void init_game_data(void);
-void UpdateCountersForThisFrame();
+void UpdateCountersForThisFrame(void);
 void DoAllMovementAndAnimations(void);
 
 struct dynarray difficulties;
@@ -281,7 +281,7 @@ void play_title_file(int subdir_handle, char *filename)
 /**
  * Load the configuration of the fdrpg "engine", that is the game independent data
  */
-static void load_fdrpg_config()
+static void load_fdrpg_config(void)
 {
 	char fpath[PATH_MAX];
 
@@ -297,7 +297,7 @@ static void load_fdrpg_config()
  * This function loads all the constant variables of the game from
  * a data file, using mainly subroutines which do the main work.
  */
-void init_game_data()
+void init_game_data(void)
 {
 	char fpath[PATH_MAX];
 
@@ -699,7 +699,7 @@ void ResetGameConfigToDefaultValues(void)
 /**
  * Release all allocated memory stored in GameConfig
  */
-void gameconfig_clean()
+void gameconfig_clean(void)
 {
 	if (GameConfig.locale) {
 		free(GameConfig.locale);

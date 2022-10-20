@@ -31,7 +31,7 @@
 
 struct leveleditor_tool {
 	int (*input_event) (SDL_Event *);
-	int (*display) ();
+	int (*display) (void);
 };
 
 EXTERN void leveleditor_init_tools(void);

@@ -185,7 +185,7 @@ static void autoscroll_text_free(struct widget *w)
  *
  * \return A pointer to the newly created widget_autoscroll_text.
  */
-struct widget_autoscroll_text *widget_autoscroll_text_create()
+struct widget_autoscroll_text *widget_autoscroll_text_create(void)
 {
 	struct widget_autoscroll_text *wat = MyMalloc(sizeof(struct widget_autoscroll_text));
 	widget_init(WIDGET(wat));

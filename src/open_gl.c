@@ -50,7 +50,7 @@ static unsigned int pbo = 0;
  * OpenGL buffer-swapping or the classic SDL flipper, depending on the
  * current output method, like OpenGL or not.
  */
-int our_SDL_flip_wrapper()
+int our_SDL_flip_wrapper(void)
 {
 #ifdef DEBUG_QUAD_BORDER
 	debug_quad_border_seed = 0;

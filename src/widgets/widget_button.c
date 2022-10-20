@@ -170,7 +170,7 @@ static void button_display(struct widget *wb)
  *
  * \return A pointer to the newly created widget_button.
  */
-struct widget_button *widget_button_create()
+struct widget_button *widget_button_create(void)
 {
 	struct widget_button *a = MyMalloc(sizeof(struct widget_button));
 	widget_init(WIDGET(a));

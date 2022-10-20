@@ -728,7 +728,7 @@ unhandled skill screen code received.  something is going VERY wrong!", PLEASE_I
 
 };				// void toggle_game_config_screen_visibility ( int screen_visible )
 
-void close_game_config_screens()
+void close_game_config_screens(void)
 {
 	GameConfig.skill_explanation_screen_visible = FALSE;
 	GameConfig.CharacterScreen_Visible = FALSE;

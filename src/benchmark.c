@@ -36,18 +36,18 @@
 static int start_stamp;
 static int stop_stamp;
 
-static void timer_start()
+static void timer_start(void)
 {
 	start_stamp = SDL_GetTicks();
 }
 
-static void timer_stop()
+static void timer_stop(void)
 {
 	stop_stamp = SDL_GetTicks();
 }
 
 /* Text rendering performance measurement */
-static int text_bench()
+static int text_bench(void)
 {
     char *str = "abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz";
 
@@ -69,7 +69,7 @@ static int text_bench()
 }
 
 /* Dialog validator (not an actual benchmark) */
-static int dialog_test()
+static int dialog_test(void)
 {
 	int failed;
 
@@ -81,7 +81,7 @@ static int dialog_test()
 }
 
 /* Event's lua code validator (not an actual benchmark) */
-static int event_test()
+static int event_test(void)
 {
 	int failed;
 
@@ -93,7 +93,7 @@ static int event_test()
 }
 
 /* LoadShip (level loading) performance test */
-static int loadship_bench()
+static int loadship_bench(void)
 {
 	int failed = TRUE;
 
@@ -118,7 +118,7 @@ static int loadship_bench()
  * To measure game loading only, loaded data are not cleared between
  * 2 calls. So expect some memory leaks !
  */
-static int loadgame_bench()
+static int loadgame_bench(void)
 {
 	int loop = 3;
 
@@ -140,7 +140,7 @@ static int loadgame_bench()
 }
 
 /* SaveGame (savegame writing) performance test */
-static int savegame_bench()
+static int savegame_bench(void)
 {
 	int loop = 10;
 
@@ -166,7 +166,7 @@ static int savegame_bench()
 }
 
 /* Test of dynamic arrays */
-static int dynarray_test()
+static int dynarray_test(void)
 {
 	int loop = 5;
 	item dummy;
@@ -197,7 +197,7 @@ static int dynarray_test()
 	return 0;
 }
 
-static int mapgen_bench()
+static int mapgen_bench(void)
 {
 	int loop = 100;
 	extern void CreateNewMapLevel(int);
@@ -221,7 +221,7 @@ static int mapgen_bench()
 }
 
 /* Levels validator (not an actual benchmark) */
-static int level_test()
+static int level_test(void)
 {
 	int failed = FALSE;
 	timer_start();
@@ -251,7 +251,7 @@ static int level_test()
  * Create a map of the levels
  */
 #include "lvledit/lvledit_display.h"
-static int map_graph()
+static int map_graph(void)
 {
 	timer_start();
 
@@ -311,7 +311,7 @@ static int map_graph()
 	return 0;
 }
 
-static int graphics_bench()
+static int graphics_bench(void)
 {
 	// Load ship
 	char fp[PATH_MAX];
@@ -336,7 +336,7 @@ static int graphics_bench()
 	return 0;
 }
 
-static int graphicsloading_bench()
+static int graphicsloading_bench(void)
 {
 	int iter = 5;
 
@@ -351,11 +351,11 @@ static int graphicsloading_bench()
 	return 0;
 }
 
-int benchmark()
+int benchmark(void)
 {
 	struct {
 		char *name;
-		int (*func)();
+		int (*func)(void);
 	} benchs[] = {
 			{ "text",            text_bench },
 			{ "dialog",          dialog_test },

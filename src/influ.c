@@ -45,8 +45,8 @@
 
 #define LEVEL_JUMP_DEBUG 1
 
-static void CheckForTuxOutOfMap();
-static void analyze_players_mouse_click();
+static void CheckForTuxOutOfMap(void);
+static void analyze_players_mouse_click(void);
 
 static int no_left_button_press_in_previous_analyze_mouse_click = FALSE;
 
@@ -82,7 +82,7 @@ static float get_tux_running_speed(void)
  *
  * This function also stops Tux from moving while fighting.
  */
-static void limit_tux_speed()
+static void limit_tux_speed(void)
 {
 	/* Stop all movement if Tux is currently inside attack animation.  This is
 	 * to stop Tux from moving without his legs animating.
@@ -181,7 +181,7 @@ void tux_wants_to_attack_now(int use_mouse_cursor_for_targeting)
  * The Tux might have cross a level's boundary. In that case, we
  * must move the Tux silently to the corresponding other level.
  */
-void correct_tux_position_according_to_jump()
+void correct_tux_position_according_to_jump(void)
 {
 	gps old_mouse_move_target;
 	gps oldpos = { Me.pos.x, Me.pos.y, Me.pos.z };
@@ -275,7 +275,7 @@ void correct_tux_position_according_to_jump()
  * to be able to track the influencers path (10000 or so positions are used
  * for that, and that's why it is a ring buffer).
  */
-void InitInfluPositionHistory()
+void InitInfluPositionHistory(void)
 {
 	int RingPosition;
 
@@ -333,7 +333,7 @@ float GetInfluPositionHistoryZ(int HowLongPast)
  * This function should check if the Tux is still ok, i.e. if he is still
  * alive or if the death sequence should be initiated.
  */
-void CheckIfCharacterIsStillOk()
+void CheckIfCharacterIsStillOk(void)
 {
 
 	// Now we check if the main character is really still ok.
@@ -350,7 +350,7 @@ void CheckIfCharacterIsStillOk()
 /**
  * Even the Tux must not leave the map!  A sanity check is done here...
  */
-static void CheckForTuxOutOfMap()
+static void CheckForTuxOutOfMap(void)
 {
 	level *MoveLevel = curShip.AllLevels[Me.pos.z];
 
@@ -448,7 +448,7 @@ void tux_get_move_target_and_attack(gps * movetgt)
 /**
  * Actually move Tux towards the target.
  */
-static void move_tux_according_to_his_speed()
+static void move_tux_according_to_his_speed(void)
 {
 
 	float planned_step_x;
@@ -695,7 +695,7 @@ static void move_tux_towards_intermediate_point(void)
  * keys pressed and also adjusts his status and current "phase" of his
  * rotation.
  */
-void move_tux()
+void move_tux(void)
 {
 	static gps last_given_course_target = { -2, -2, -2 };
 
@@ -852,7 +852,7 @@ void hit_tux(float damage)
  * between the animations, we do not reset the progress cursor's value.
  * So those animations share a common animation progress cursor (Me.walk_cycle_phase).
  */
-void animate_tux()
+void animate_tux(void)
 {
 	// cppcheck-suppress variableScope
 	static int play_step_sound = 0;
@@ -1024,7 +1024,7 @@ void start_tux_death_explosions(void)
  * player if he/she wants to load latest or backup game,
  * quit to main menu or quit the game.
  */
-void do_death_menu()
+void do_death_menu(void)
 {
 	char *menu_texts[100];
 
@@ -1135,7 +1135,7 @@ void check_tux_enemy_collision(void)
  * of the mouse any more... except maybe to exclude some bots from the start.
  *
  */
-enemy *GetLivingDroidBelowMouseCursor()
+enemy *GetLivingDroidBelowMouseCursor(void)
 {
 	gps mouse_vpos, mouse_pos;
 	int RotationIndex;
@@ -1274,7 +1274,7 @@ void perform_tux_ranged_attack(short int weapon_type, bullet *bullet_parameters,
  * might tell us, that this mouse button press was not intended as a move
  * or fire command to the Tux.  This function checks for these cases.
  */
-int ButtonPressWasNotMeantAsFire()
+int ButtonPressWasNotMeantAsFire(void)
 {
 	// If the influencer is holding something from the inventory
 	// menu via the mouse, also just return
@@ -1472,7 +1472,7 @@ int perform_tux_attack(int use_mouse_cursor_for_targeting)
  *
  */
 
-void TuxReloadWeapon()
+void TuxReloadWeapon(void)
 {
 	if (Me.weapon_item.type == -1)
 		return;		// Do not reload Tux's fists.
@@ -1514,7 +1514,7 @@ void TuxReloadWeapon()
  * In case that was so, we need to start a dialog or maybe launch an
  * attack movement.
  */
-void check_for_droids_to_attack_or_talk_with()
+void check_for_droids_to_attack_or_talk_with(void)
 {
 	/* NOTA : the call to GetLivingDroidBelowMouseCursor() does set the virt_pos attribute
 	 * of the found droid to be the bot's position relatively to Tux current level
@@ -1590,7 +1590,7 @@ void check_for_droids_to_attack_or_talk_with()
  * click and so this function analyzes the situation and decides what to
  * do.
  */
-static void analyze_players_mouse_click()
+static void analyze_players_mouse_click(void)
 {
 	// This flag avoids the mouse_move_target to change while the user presses
 	// LMB to start a combo action.
@@ -1673,7 +1673,7 @@ void set_movement_with_keys(int move_x, int move_y)
 /**
  * Clean the Tux's datum that are to be cleaned when starting a game act
  */
-void lightly_free_tux()
+void lightly_free_tux(void)
 {
 	// We mark all the big screen messages for this character
 	// as out of date, so they can be overwritten with new
@@ -1688,7 +1688,7 @@ void lightly_free_tux()
 	}
 }
 
-void free_tux()
+void free_tux(void)
 {
 	lightly_free_tux();
 
@@ -1712,7 +1712,7 @@ void free_tux()
 /**
  * Reset the data in struct tux, in order to start a new game/load a game.
  */
-void init_tux()
+void init_tux(void)
 {
 	int i;
 

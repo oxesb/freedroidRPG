@@ -116,7 +116,7 @@ static void select_recipe(int index)
 /**
  * \brief Checks which recipes the player can afford.
  */
-static void check_recipe_requirements()
+static void check_recipe_requirements(void)
 {
 	int i;
 	int j;
@@ -140,7 +140,7 @@ static void check_recipe_requirements()
 	}
 }
 
-static void craft_item()
+static void craft_item(void)
 {
 	item it;
 	struct crafting_recipe *arr = ui.recipes.arr;
@@ -178,7 +178,7 @@ static void craft_item()
  * list. For each added recipe, a test is also performed to see if the player
  * has enough materials to craft the add-on.
  */
-static void build_recipe_list()
+static void build_recipe_list(void)
 {
 	int i;
 	struct dynarray *specs = get_addon_specs();
@@ -211,22 +211,22 @@ int cursor_is_on_addon_crafting_ui(const point *cursor)
 	}
 }
 
-static int can_scroll_up()
+static int can_scroll_up(void)
 {
 	return ui.scroll_offset > 0;
 }
 
-static int can_scroll_down()
+static int can_scroll_down(void)
 {
 	return ui.scroll_offset < ui.recipes.size - RECIPE_LIST_ROWS;
 }
 
-static void draw_scroll_desc_up_button()
+static void draw_scroll_desc_up_button(void)
 {
 	ShowGenericButtonFromList(ADDON_CRAFTING_SCROLL_DESC_UP_BUTTON);
 }
 
-static void draw_scroll_desc_down_button()
+static void draw_scroll_desc_down_button(void)
 {
 	ShowGenericButtonFromList(ADDON_CRAFTING_SCROLL_DESC_DOWN_BUTTON);
 }
@@ -239,7 +239,7 @@ static void draw_scroll_desc_down_button()
  * text field that shows the description, bonuses, and other relevant information
  * about the selected add-on.
  */
-void show_addon_crafting_ui()
+void show_addon_crafting_ui(void)
 {
 	int i;
 	SDL_Rect rect;
@@ -377,12 +377,12 @@ void show_addon_crafting_ui()
 	widget_text_display(WIDGET(&ui.description));
 }
 
-int addon_crafting_ui_visible()
+int addon_crafting_ui_visible(void)
 {
 	return ui.visible;
 }
 
-static void handle_ui()
+static void handle_ui(void)
 {
 	point cursor;
 
@@ -457,7 +457,7 @@ static void handle_ui()
 /**
  * \brief Shows the add-on crafting user interface.
  */
-void addon_crafting_ui()
+void addon_crafting_ui(void)
 {
 	int old_game_status = game_status;
 	game_status = INSIDE_GAME;
@@ -506,7 +506,7 @@ void addon_crafting_ui()
 	game_status = old_game_status;
 }
 
-void addon_crafting_ui_close()
+void addon_crafting_ui_close(void)
 {
 	ui.visible = FALSE;
 }

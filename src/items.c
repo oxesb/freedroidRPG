@@ -275,7 +275,7 @@ unsigned long calculate_item_repair_price(item * repair_item)
  * \brief Returns a random quality multiplier.
  * \return a quality indicator.
  */
-static enum item_quality random_item_quality()
+static enum item_quality random_item_quality(void)
 {
 	// In order to make normal quality items more common than others, we first
 	// choose a quality level by indexing a probability distribution array.
@@ -586,7 +586,7 @@ void DamageWeapon(item * CurItem)
  * When the influencer gets hit, some of his equipment might suffer some damage.
  * This is exactly what this function does:  apply the damage.
  */
-void DamageProtectiveEquipment()
+void DamageProtectiveEquipment(void)
 {
 	int ItemHit = MyRandom(6);
 

@@ -57,7 +57,7 @@ static SDL_Rect chat_selector_inner_rect;
 /**
  * Print an error message and stop the game if too many dialogs are stacked.
  */
-static void check_chat_context_stack_size()
+static void check_chat_context_stack_size(void)
 {
 	struct auto_string *chat_stack_str = alloc_autostr(64);
 	struct chat_context *ctx;
@@ -127,7 +127,7 @@ int chat_push_context(struct chat_context *chat_context)
  * This function deletes the context at the top of the list.
  * The new top context becomes the current one.
  */
-static void chat_pop_context()
+static void chat_pop_context(void)
 {
 	struct chat_context *top_chat_context = chat_get_current_context();
 	if (top_chat_context) {
@@ -195,7 +195,7 @@ void chat_delete_context(struct chat_context *chat_context)
 /**
  * Fill the chat selector widget with the selected options of the current dialog
  */
-static void fill_chat_selector()
+static void fill_chat_selector(void)
 {
 	char *empty_entries[] = { NULL };
 	int i;
@@ -342,7 +342,7 @@ static void _enable_if_chat_selector_can_scroll_down(struct widget *w)
 /**
  * This function builds the chat interface if it hasn't already been initialized.
  */
-struct widget_group *create_chat_dialog()
+struct widget_group *create_chat_dialog(void)
 {
 	int left_padding, right_padding, top_padding, bottom_padding;
 	int font_height;
@@ -574,7 +574,7 @@ void chat_add_response(const char *response)
  * the stack, this function is invoked to handle the actual chat interaction
  * and the dialog flow.
  */
-void chat_run()
+void chat_run(void)
 {
 	 char *empty_entries[] = { NULL };
 
@@ -845,7 +845,7 @@ int chat_with_droid(struct enemy *partner)
  * As a result, the fact that the validator finds no error does not imply there are no errors in dialogs.
  * Syntax is checked fully, but runtime validation cannot check all of the code.
  */
-int validate_dialogs()
+int validate_dialogs(void)
 {
 	enemy *dummy_partner;
 	struct npc *n;
@@ -940,7 +940,7 @@ int validate_dialogs()
 	return error_caught;
 }
 
-void free_chat_widgets()
+void free_chat_widgets(void)
 {
 	if (chat_menu) {
 		struct widget *w = WIDGET(chat_menu);

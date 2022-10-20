@@ -87,7 +87,7 @@ struct image *widget_load_image_resource(char *name, int mod_flags)
 	return &res->img;
 }
 
-void widget_free_image_resources()
+void widget_free_image_resources(void)
 {
 	struct image_resource *res, *next;
 
@@ -107,7 +107,7 @@ void widget_free_image_resources()
 	INIT_LIST_HEAD(&image_resource_list);
 }
 
-void reset_ui()
+void reset_ui(void)
 {
 	free_chat_widgets();
 	free_game_ui();
@@ -165,7 +165,7 @@ void widget_set_tooltip(struct tooltip *new_tooltip, SDL_Rect *widget_rect)
  *
  * \return A pointer to the root widget of the current active GUI.
  */
-static struct widget *get_active_ui()
+static struct widget *get_active_ui(void)
 {
 	struct widget *old_ui = active_ui;
 
@@ -203,7 +203,7 @@ static struct widget *get_active_ui()
  * \n
  * TODO: reset the timer when a new tooltip is registered.
  */
-static void display_tooltips()
+static void display_tooltips(void)
 {
 	static float time_spent_on_button = 0;
 	static float previous_function_call_time = 0;
@@ -299,7 +299,7 @@ void handle_widget_event(SDL_Event *event)
  * children widgets. This allows for inactive widgets to become active on
  * update.
  */
-void update_widgets()
+void update_widgets(void)
 {
 	struct widget *ui = get_active_ui();
 
@@ -311,7 +311,7 @@ void update_widgets()
  * \brief This function displays the currently active top level widget group.
  * \ingroup gui2d_interface
  */
-void display_widgets() 
+void display_widgets(void)
 {
 	struct widget *ui = get_active_ui();
 
@@ -387,7 +387,7 @@ void widget_init(struct widget *w)
  *
  * \return A pointer to the newly created base widget.
  */
-struct widget *widget_create()
+struct widget *widget_create(void)
 {
 	struct widget *w = MyMalloc(sizeof(struct widget));
 	widget_init(w);

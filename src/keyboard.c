@@ -323,7 +323,7 @@ static int display_keychart(unsigned int startidx, unsigned int cursor, int high
  * This function simulates displaying the keychart in order to know how many keys 
  * appear per page
  */
-static int get_nb_commands_per_page()
+static int get_nb_commands_per_page(void)
 {
 	int ypos = KEYCHART_RECT_Y;
 	struct font *our_font = FPS_Display_Font;
@@ -343,7 +343,7 @@ static int get_nb_commands_per_page()
 /**
  * Display a keychart and allow modification of keys
  */
-void keychart()
+void keychart(void)
 {
 	int done = 0;
 	int startpos = 0;
@@ -863,7 +863,7 @@ int input_key_press(SDL_Event *event)
  * @return ASCII code of the pressed key, or SDL virtual keysym for 'interaction' keys
  */
 
-int getchar_ascii()
+int getchar_ascii(void)
 {
 	SDL_Event event;
 	int return_key = 0;

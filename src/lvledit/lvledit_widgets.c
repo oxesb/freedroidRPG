@@ -397,7 +397,7 @@ static void _activate_if_selection_of_map_labels(struct widget *w)
  * This function returns the editor top level widget and creates it if necessary.
  */
 
-struct widget_group *get_lvledit_ui()
+struct widget_group *get_lvledit_ui(void)
 {
 	if (level_editor_widget_group)
 		// Editor UI already initialized.
@@ -690,7 +690,7 @@ struct widget_group *get_lvledit_ui()
 	return level_editor_widget_group;
 }
 
-void free_lvledit_ui()
+void free_lvledit_ui(void)
 {
 	if (level_editor_widget_group)
 	{

@@ -73,7 +73,7 @@ static int set_random_droid_types(level *lvl, const char *input, char **droid_ty
 	return 0;
 }
 
-void get_random_droids_from_user()
+void get_random_droids_from_user(void)
 {
 	char *user_input;
 	level *lvl = EditLevel();

@@ -239,7 +239,7 @@ static void add_interpolation_values(int curr_id, int ngb_id,
  * creation of the 'darkness map'.
  * This function is called only once per frame.
  */
-static void prepare_light_interpolation()
+static void prepare_light_interpolation(void)
 {
 	struct visible_level *visible_lvl = NULL, *next_lvl = NULL;
 
@@ -403,7 +403,7 @@ static void interpolate_light_data(gps *pos, struct interpolation_data_cell *dat
 /**
  * Compute the light_radius texture size, and allocate it
  */
-void LightRadiusInit()
+void LightRadiusInit(void)
 {
 	// Divide to screen dimensions by default divisor, to compute the default
 	// number of cells in the light_radius texture
@@ -484,7 +484,7 @@ void LightRadiusInit()
 /**
  * Clean and deallocate light_radius texture
  */
-void LightRadiusClean()
+void LightRadiusClean(void)
 {
 	if (light_strength_buffer) {
 		free(light_strength_buffer);
@@ -509,7 +509,7 @@ static void add_light_source(gps pos, gps vpos, int strength)
  * low cost.  Therefore we create a reduced list of light emitters for
  * usage in the light computation code.
  */
-void update_light_list()
+void update_light_list(void)
 {
 	struct level *light_level = curShip.AllLevels[Me.pos.z];
 	struct visible_level *visible_lvl, *next_lvl;

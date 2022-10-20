@@ -169,7 +169,7 @@ void complete_mission(const char *name)
  * are already assigned, completed, failed, available and such) should
  * be reset to default state, so that no zombie mission entries can appear. 
  */
-void clear_tux_mission_info()
+void clear_tux_mission_info(void)
 {
 	for (int i = 0; i < Me.missions.size; i++) {
 		struct mission *quest = (struct mission *)dynarray_member(&Me.missions, i, sizeof(struct mission));

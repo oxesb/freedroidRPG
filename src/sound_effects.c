@@ -29,7 +29,7 @@
 #include "global.h"
 #include "proto.h"
 
-void Play_Spell_ForceToEnergy_Sound()
+void Play_Spell_ForceToEnergy_Sound(void)
 {
 	play_sound("effects/Spell_ForceToEnergy_Sound_0.ogg");
 }

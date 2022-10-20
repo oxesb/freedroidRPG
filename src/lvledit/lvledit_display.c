@@ -42,12 +42,12 @@ struct image level_editor_waypoint_cursor[2] = { EMPTY_IMAGE, EMPTY_IMAGE };
 static float lvledit_zoom_factor = DEFAULT_ZOOM_FACTOR;
 static float lvledit_zoom_factor_inv = 1.0 / DEFAULT_ZOOM_FACTOR;
 
-float lvledit_zoomfact()
+float lvledit_zoomfact(void)
 {
 	return lvledit_zoom_factor;
 }
 
-float lvledit_zoomfact_inv()
+float lvledit_zoomfact_inv(void)
 {
 	return lvledit_zoom_factor_inv;
 }
@@ -62,7 +62,7 @@ int lvledit_set_zoomfact(float zf)
 /**
  * Displays the GPS in the editor
  */
-static void gps_show() {
+static void gps_show(void) {
 	static char gps_text[200];
 	// TRANSLATORS: Used to display a GPS position (X=10.5 Y=34.3 L=12 layer=1)
 	snprintf(gps_text, sizeof(gps_text) - 1, _(" X=%3.1f Y=%3.1f L=%d layer=%d\n"), Me.pos.x, Me.pos.y, Me.pos.z, current_floor_layer);
@@ -281,7 +281,7 @@ static void show_map_labels(int must_zoom)
  * Display the cursor in the leveleditor according to the currently
  * selected tool etc.
  */
-static void display_cursor()
+static void display_cursor(void)
 {
 	struct widget *w;
 	w = get_active_widget(GetMousePos_x(), GetMousePos_y());
@@ -294,7 +294,7 @@ static void display_cursor()
 	}
 }
 
-void leveleditor_display()
+void leveleditor_display(void)
 {
 	AssembleCombatPicture(ONLY_SHOW_MAP_AND_TEXT | SHOW_ITEMS | OMIT_TUX |
 	                      GameConfig.omit_obstacles_in_level_editor * OMIT_OBSTACLES |

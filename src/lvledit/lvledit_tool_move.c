@@ -90,7 +90,7 @@ int leveleditor_move_input(SDL_Event * event)
 	return 0;
 }
 
-int leveleditor_move_display()
+int leveleditor_move_display(void)
 {
 	blit_leveleditor_point(state.origin.x, state.origin.y);
 

@@ -643,7 +643,7 @@ static int set_root_dirs_path(char *datadir, char *localedir)
 	return 1;
 }
 
-void init_data_dirs_path()
+void init_data_dirs_path(void)
 {
 	// To find the root of the data dirs, we search a well known file that is
 	// always needed for the game to work.
@@ -1040,7 +1040,7 @@ void Pause(void)
  *
  * Interaction with the user interface is unaffected.
  */
-void freeze_world()
+void freeze_world(void)
 {
 	// Because different UI elements may try to freeze the game world,
 	// it's necessary to count how many times this function has been
@@ -1053,7 +1053,7 @@ void freeze_world()
  *
  * NOTE: unfreeze_world() must be called for each call to freeze_world().
  */
-void unfreeze_world()
+void unfreeze_world(void)
 {
 	if (world_is_frozen > 0)
 		world_is_frozen--;
@@ -1063,7 +1063,7 @@ void unfreeze_world()
  * This function returns the current state of the game world.
  * @return TRUE if the game world is currently frozen.
  */
-int world_frozen()
+int world_frozen(void)
 {
 	return (world_is_frozen > 0);
 }

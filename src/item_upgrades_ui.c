@@ -92,7 +92,7 @@ static const struct upgrade_ui_rects rects = {
 	  { ITEM_UPGRADE_RECT_X + 241, ITEM_UPGRADE_RECT_Y + 181, 60, 60 } }
 };
 
-static void load_images()
+static void load_images(void)
 {
 	int i;
 	const char *fnames[IMAGE_MAX] = {
@@ -113,7 +113,7 @@ static void load_images()
 /**
  * Returns the item upgrade interface's status.
  */
-int item_upgrade_ui_visible()
+int item_upgrade_ui_visible(void)
 {
 	return ui_visible;
 }
@@ -162,7 +162,7 @@ int append_item_upgrade_ui_tooltip(const point *cursor, struct auto_string *str)
 	return FALSE;
 }
 
-static void show_socket_creation_menu()
+static void show_socket_creation_menu(void)
 {
 	const char *names[] = {
 			// TRANSLATORS: Socket's type
@@ -222,7 +222,7 @@ static void show_socket_creation_menu()
  * images aren't drawn. Instead, a two column table that contains the available buy
  * or upgrade options and their prices is drawn to the socket area.
  */
-void show_item_upgrade_ui()
+void show_item_upgrade_ui(void)
 {
 	// We're being called every time the UI of the game is drawn so we need to
 	// make sure the upgrade UI is actually active before proceeding.
@@ -614,7 +614,7 @@ static void handle_socket(int index)
 	}
 }
 
-static int handle_ui()
+static int handle_ui(void)
 {
 	// Check for quit with the escape key.
 	if (EscapePressed()) {
@@ -692,7 +692,7 @@ static int handle_ui()
 /**
  * \brief Shows the item upgrade user interface.
  */
-void item_upgrade_ui()
+void item_upgrade_ui(void)
 {
 	int i;
 	int old_game_status = game_status;

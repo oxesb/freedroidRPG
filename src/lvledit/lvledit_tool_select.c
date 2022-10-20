@@ -77,7 +77,7 @@ static LIST_HEAD(clipboard_elements);
 /**
  * Check whether the selection is currently empty.
  */
-int selection_empty()
+int selection_empty(void)
 {
 	if (list_empty(&selected_elements))
 		return 1;
@@ -287,15 +287,15 @@ static int set_floor_layers(level *lvl, struct lvledit_map_tile *tile)
 	}
 }
 
-point selection_start() {
+point selection_start(void) {
 	return state.rect_start;
 }
 
-point selection_len() {
+point selection_len(void) {
 	return state.rect_len;
 }
 
-int selection_type()
+int selection_type(void)
 {
 	struct widget_lvledit_categoryselect *cs = get_current_object_type();
 
@@ -501,7 +501,7 @@ void clear_clipboard(int nbelem)
 	__clear_selected_list(&clipboard_elements, nbelem, 1);
 }
 
-static void start_rect_select()
+static void start_rect_select(void)
 {
 	mode = FD_RECT;
 
@@ -526,7 +526,7 @@ static void start_rect_select()
 	select_object_on_tile(state.rect_start.x, state.rect_start.y);
 }
 
-static void do_rect_select()
+static void do_rect_select(void)
 {
 	// If there is something to change
 	if (((int)mouse_mapcoord.x != state.cur_drag_pos.x) || ((int)mouse_mapcoord.y != state.cur_drag_pos.y)) {
@@ -576,7 +576,7 @@ static void do_rect_select()
 	}
 }
 
-static void end_rect_select()
+static void end_rect_select(void)
 {
 	if (!list_empty(&selected_elements))
 		mode = FD_RECTDONE;
@@ -591,7 +591,7 @@ static void end_rect_select()
 	state.drag_drop_floor_undoable = 0;
 }
 
-static void start_drag_drop()
+static void start_drag_drop(void)
 {
 	if (selection_type() == OBJECT_FLOOR) {
 		// Copy the original selection in order not to change it during a drag&drop
@@ -720,7 +720,7 @@ static void do_drag_drop_waypoint(struct pointf diff)
 	}
 }
 
-static void do_drag_drop()
+static void do_drag_drop(void)
 {
 	pointf cmin, cmax, diff;
 
@@ -755,7 +755,7 @@ static void do_drag_drop()
 	}
 }
 
-static void end_drag_drop()
+static void end_drag_drop(void)
 {
 	struct selected_element *e;
 	int enb = 0;
@@ -812,7 +812,7 @@ static void end_drag_drop()
 	}
 }
 
-static int level_editor_number_of_marked_items()
+static int level_editor_number_of_marked_items(void)
 {
 	int num = 0;
 
@@ -827,7 +827,7 @@ static int level_editor_number_of_marked_items()
 	return num;
 }
 
-int level_editor_can_cycle_marked_object()
+int level_editor_can_cycle_marked_object(void)
 {
 	if (mode != FD_RECTDONE) {
 		// We get called from the outside so check mode coherency first
@@ -857,7 +857,7 @@ int level_editor_can_cycle_marked_object()
 	return 1;
 }
 
-static void level_editor_cycle_marked_obstacle()
+static void level_editor_cycle_marked_obstacle(void)
 {
 	//This function will select only one of the obstacles attached to a given tile,
 	//and browse through them for each subsequent call.
@@ -870,7 +870,7 @@ static void level_editor_cycle_marked_obstacle()
 	add_object_to_list(&selected_elements, &EditLevel()->obstacle_list[idx], OBJECT_OBSTACLE);
 }
 
-static void level_editor_cycle_marked_item()
+static void level_editor_cycle_marked_item(void)
 {
 	if (state.single_tile_mark_index >= level_editor_number_of_marked_items()) {
 		state.single_tile_mark_index = 0;
@@ -892,7 +892,7 @@ static void level_editor_cycle_marked_item()
 	}
 }
 
-void level_editor_cycle_marked_object()
+void level_editor_cycle_marked_object(void)
 {
 	if (!level_editor_can_cycle_marked_object())
 		return;
@@ -929,7 +929,7 @@ static int clear_current_floor_layers(level *lvl, int coord_x, int coord_y)
 	}
 }
 
-void level_editor_delete_selection()
+void level_editor_delete_selection(void)
 {
 	struct selected_element *e, *next;
 	int nbelem = 0;
@@ -976,7 +976,7 @@ void level_editor_delete_selection()
 	clear_selection(-1);
 }
 
-void level_editor_copy_selection()
+void level_editor_copy_selection(void)
 {
 	struct selected_element *e;
 	struct lvledit_map_tile *t;
@@ -1041,7 +1041,7 @@ void level_editor_copy_selection()
 	}
 }
 
-void level_editor_paste_selection()
+void level_editor_paste_selection(void)
 {
 	struct selected_element *e;
 	struct lvledit_map_tile *t;
@@ -1196,7 +1196,7 @@ void level_editor_paste_selection()
 	action_push(ACT_MULTIPLE_ACTIONS, nbact);
 }
 
-void level_editor_cut_selection()
+void level_editor_cut_selection(void)
 {
 	level_editor_copy_selection();
 	level_editor_delete_selection();
@@ -1252,7 +1252,7 @@ int leveleditor_select_input(SDL_Event * event)
 	return 0;
 }
 
-int leveleditor_select_display()
+int leveleditor_select_display(void)
 {
 	int r1, r2, r3, r4, c1, c2, c3, c4;
 	switch (mode) {
@@ -1273,7 +1273,7 @@ int leveleditor_select_display()
 	return 0;
 }
 
-void leveleditor_select_reset()
+void leveleditor_select_reset(void)
 {
 	switch (mode) {
 	case FD_RECT:

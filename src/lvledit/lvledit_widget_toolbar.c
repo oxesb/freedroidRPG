@@ -301,7 +301,7 @@ static void toolbar_display(struct widget *vt)
 	}
 }
 
-struct widget *widget_lvledit_toolbar_create()
+struct widget *widget_lvledit_toolbar_create(void)
 {
 	struct widget *a = MyMalloc(sizeof(struct widget));
 	widget_init(a);
@@ -316,7 +316,7 @@ struct widget *widget_lvledit_toolbar_create()
 	return a;
 }
 
-void widget_lvledit_toolbar_left()
+void widget_lvledit_toolbar_left(void)
 {
 	struct widget_lvledit_categoryselect *cs = get_current_object_type();
 
@@ -326,7 +326,7 @@ void widget_lvledit_toolbar_left()
 		cs->toolbar_first_block--;
 }
 
-void widget_lvledit_toolbar_right()
+void widget_lvledit_toolbar_right(void)
 {
 	struct widget_lvledit_categoryselect *cs = get_current_object_type();
 	int i;
@@ -340,7 +340,7 @@ void widget_lvledit_toolbar_right()
 	}
 }
 
-void widget_lvledit_toolbar_scroll_left()
+void widget_lvledit_toolbar_scroll_left(void)
 {
 	struct widget_lvledit_categoryselect *cs = get_current_object_type();
 
@@ -354,7 +354,7 @@ void widget_lvledit_toolbar_scroll_left()
 	}
 }
 
-void widget_lvledit_toolbar_scroll_right()
+void widget_lvledit_toolbar_scroll_right(void)
 {
 	struct widget_lvledit_categoryselect *cs = get_current_object_type();
 	int i;

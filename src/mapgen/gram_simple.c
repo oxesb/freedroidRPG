@@ -294,7 +294,7 @@ static void bulldozer(unsigned char *seen, int r)
 	bulldozer(seen, mapgen_get_room(x2, y2));
 }
 
-static void launch_buldo()
+static void launch_buldo(void)
 {
 	unsigned char seen[total_rooms];
 	unsigned char connected_to_room_0[total_rooms];

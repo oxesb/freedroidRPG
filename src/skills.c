@@ -276,7 +276,7 @@ int TeleportHome(void)
  * It checks temperature (does not increase it), and makes sure a
  * busy_time is set.
  */
-void handle_currently_activated_skill()
+void handle_currently_activated_skill(void)
 {
 	if (!MouseRightClicked() || Me.busy_time > 0)
 		return;

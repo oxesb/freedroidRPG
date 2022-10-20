@@ -393,7 +393,7 @@ static int print_uncaught_exceptions(char *act_name)
  * Free all the allocated memory
  */
 
-static void free_exception_lists()
+static void free_exception_lists(void)
 {
 	int v = 0;
 	struct level_validator *one_validator;
@@ -1515,7 +1515,7 @@ static void lvlval_map_labels_execute(struct level_validator *this, struct lvlva
 
 // With on screen report
 
-int level_validation()
+int level_validation(void)
 {
 	game_status = INSIDE_MENU;
 

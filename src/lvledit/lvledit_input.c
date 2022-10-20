@@ -1,4 +1,4 @@
-/* 
+/*
  *
  *   Copyright (c) 2002, 2003 Johannes Prix
  *   Copyright (c) 2004-2009 Arthur Huillet
@@ -17,8 +17,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -38,7 +38,7 @@
 #include "lvledit/lvledit_menu.h"
 #include "widgets/widgets.h"
 
-static void HandleLevelEditorCursorKeys()
+static void HandleLevelEditorCursorKeys(void)
 {
 	level *edit_level;
 
@@ -109,9 +109,9 @@ static void HandleLevelEditorCursorKeys()
 
 /**
  * This function automatically scrolls the leveleditor window when the
- * mouse reaches an edge 
+ * mouse reaches an edge
  */
-static void level_editor_auto_scroll()
+static void level_editor_auto_scroll(void)
 {
 	float chx = 0, chy = 0;	/*Value of the change to player position */
 	static int edgedate[4] = { 0, 0, 0, 0 };
@@ -180,7 +180,7 @@ static void level_editor_auto_scroll()
 		Me.pos.y = 0;
 }
 
-void leveleditor_process_input()
+void leveleditor_process_input(void)
 {
 	save_mouse_state();
 	input_handle();

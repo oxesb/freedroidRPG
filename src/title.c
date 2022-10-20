@@ -104,7 +104,7 @@ static void _exit_title_screen(struct widget_button *wb)
  * This function builds the title's screen interface if it hasn't already
  * been initialized.
  */
-struct widget_group *title_screen_create()
+struct widget_group *title_screen_create(void)
 {
 	if (title_screen)
 		return title_screen;
@@ -179,7 +179,7 @@ struct widget_group *title_screen_create()
 /**
  * Delete the title screen
  */
-void title_screen_free()
+void title_screen_free(void)
 {
 	WIDGET(title_screen)->free(WIDGET(title_screen));
 	free(title_screen);

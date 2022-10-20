@@ -85,7 +85,7 @@ static void change_opaque_floor(level *l, int x, int y, int type)
 	change_transparent_floor(l, x, y, type, ISO_FLOOR_EMPTY);
 }
 
-static void done_beautify_floor_tiles()
+static void done_beautify_floor_tiles(void)
 {
 	action_push(ACT_MULTIPLE_ACTIONS, tile_change_count);
 	tile_change_count = 0;
