@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# Script inspired by pkgApp.pl from http://www.stellarium.org/
+# Script inspired by pkgApp.pl from https://www.stellarium.org/
 # under GPL General Public License
 #
 

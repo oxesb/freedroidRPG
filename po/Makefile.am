@@ -15,7 +15,7 @@ EXTRA_DIST = xgettext-wrapper
 #
 # Should be replaced by AM_EXTRA_RECURSIVE_TARGETS in
 # top configure.ac, but this needs automake 1.13
-# Inspired by http://lackof.org/taggart/hacking/make-example/
+# Inspired by https://lackof.org/taggart/hacking/make-example/
 
 #
 # Output the stats for each language

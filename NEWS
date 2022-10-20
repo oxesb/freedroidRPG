@@ -47,7 +47,7 @@ Here is a quick list of some major changes from 0.15.1 you're likely to notice:
   Brazilian Portuguese, Czech, German, French, and Swedish.
   More languages are being worked on by volunteers, and translators (and
   proofreaders!) are always welcome to join us on Transifex:
-  http://www.transifex.com/projects/p/freedroid-rpg/
+  https://explore.transifex.com/arctic-games/freedroid-rpg/
 
 - The various interfaces of the game have been refactored and are now
   widget-based, allowing them to be displayed better in larger resolutions.

@@ -109,7 +109,7 @@ Thanks to the mingw64/msys2 projects, it is now quite as easy to build Freedroid
 on Windows than on a Linux based OS.
 
 1) Install msys2 (Use the 32b or 64b version, depending on your OS):
-   - Follow the installation guide from http://msys2.github.io/
+   - Follow the installation guide from https://msys2.github.io/
 
 2) Install some additional user and build tools:
    - Start a "Msys2 Shell" from the Windows Start Menu and type:

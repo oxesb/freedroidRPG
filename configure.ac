@@ -204,12 +204,12 @@ AC_CHECK_LIB([m], [sin],
 
 AC_CHECK_LIB([z], [compress],
 	[],
-	[AC_MSG_ERROR([zlib is needed to run FreedroidRPG! see http://www.gzip.org/zlib/])]
+	[AC_MSG_ERROR([zlib is needed to run FreedroidRPG! see https://zlib.net/])]
 )
 
 AC_CHECK_LIB([jpeg], [jpeg_start_compress],
 	[],
-	[AC_MSG_ERROR([libjpeg needed to run FreedroidRPG! see http://www.ijg.org/])]
+	[AC_MSG_ERROR([libjpeg needed to run FreedroidRPG! see https://www.ijg.org/])]
 )
 
 AC_CHECK_LIB([png], [png_read_png],
@@ -224,12 +224,12 @@ AM_PATH_SDL($SDL_VERSION,
 		AS_VAR_APPEND([FD_CFLAGS], [" $SDL_CFLAGS"])
 		AS_VAR_APPEND([FD_LIBS], [" $SDL_LIBS"])
 	],
-	[AC_MSG_ERROR([SDL version $SDL_VERSION needed to run FreedroidRPG! see http://libsdl.org/])]
+	[AC_MSG_ERROR([SDL version $SDL_VERSION needed to run FreedroidRPG! see https://libsdl.org/])]
 )
 
 AC_CHECK_LIB([SDL_image], [IMG_LoadJPG_RW],
 	[],
-	[AC_MSG_ERROR([SDL_image library needed for FreedroidRPG! see http://www.libsdl.org/])]
+	[AC_MSG_ERROR([SDL_image library needed for FreedroidRPG! see https://www.libsdl.org/])]
 )
 
 AC_CHECK_LIB([SDL_gfx], [zoomSurface],
@@ -281,7 +281,7 @@ AS_VAR_IF([want_sound], [yes],
 		AC_CHECK_LIB([SDL_mixer], [Mix_ChannelFinished],
 			[],
 			[
-				AC_MSG_WARN([libSDL_mixer not found! see http://www.libsdl.org/ -> compiling without sound support])
+				AC_MSG_WARN([libSDL_mixer not found! see https://www.libsdl.org/ -> compiling without sound support])
 				summary_sound="SDL_mixer not found"
 				with_sound="no"
 			]
