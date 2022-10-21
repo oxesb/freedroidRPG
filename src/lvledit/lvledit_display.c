@@ -255,24 +255,24 @@ static void show_map_labels(int must_zoom)
 	// Now we can draw a fine indicator at all the necessary positions ...
 	for (i = 0; i < edit_level->map_labels.size; i++) {
 		// Get the map label
-		struct map_label *map_label = &ACCESS_MAP_LABEL(edit_level->map_labels, i);
+		struct map_label *label = &ACCESS_MAP_LABEL(edit_level->map_labels, i);
 
 		// Apply disco mode when the current map label is selected
-		object_vtx_color(map_label, &r, &g, &b);
+		object_vtx_color(label, &r, &g, &b);
 
 		// Skip map labels that are not visible
-		if (map_label->pos.x < x_min || map_label->pos.x > x_max)
+		if (label->pos.x < x_min || label->pos.x > x_max)
 			continue;
-		if (map_label->pos.y < y_min || map_label->pos.y > y_max)
+		if (label->pos.y < y_min || label->pos.y > y_max)
 			continue;
 
 		struct image *img = get_map_label_image();
-		display_image_on_map(img, map_label->pos.x + 0.5, map_label->pos.y + 0.5, IMAGE_SCALE_RGB_TRANSFO(scale, r, g, b));
+		display_image_on_map(img, label->pos.x + 0.5, label->pos.y + 0.5, IMAGE_SCALE_RGB_TRANSFO(scale, r, g, b));
 
                 if (!GameConfig.omit_map_labels_in_level_editor) {
-                    show_backgrounded_label_at_map_position(map_label->label_name,
-                                                            0, map_label->pos.x,
-                                                            map_label->pos.y, must_zoom);
+                    show_backgrounded_label_at_map_position(label->label_name,
+                                                            0, label->pos.x,
+                                                            label->pos.y, must_zoom);
                 }
 	}
 }

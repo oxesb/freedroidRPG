@@ -150,7 +150,7 @@ void play_droid_attack_sound(enemy *ThisRobot)
  * Whenever an item is placed or taken, we'll issue a sound attached to
  * that item.
  */
-void play_item_sound(int item_type, struct gps *item_pos)
+void play_item_sound(item_t item_type, struct gps *item_pos)
 {
 	char final_file_name[5000];
 

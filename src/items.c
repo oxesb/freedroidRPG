@@ -119,7 +119,7 @@ void equip_item(item *new_item)
  * Gets a pointer to the currently equipped item of the
  * specified type
  */
-item *get_equipped_item_in_slot_for(int item_type)
+item *get_equipped_item_in_slot_for(item_t item_type)
 {
 	item *equipped_item;
 	itemspec *spec;
@@ -418,14 +418,14 @@ void append_item_name(item * ShowItem, struct auto_string *str)
 /**
  * This function drops an item at a given place.
  */
-item *DropItemAt(int ItemType, int level_num, float x, float y, int multiplicity)
+item *DropItemAt(item_t item_type, int level_num, float x, float y, int multiplicity)
 {
 	gps item_pos;
 
-	if (ItemType < 0 || ItemType >= Number_Of_Item_Types)
+	if (item_type < 0 || item_type >= Number_Of_Item_Types)
 		error_message(__FUNCTION__, "\
 Received item type %d that is outside the range of allowed item types.",
-			     PLEASE_INFORM | IS_FATAL, ItemType);
+			     PLEASE_INFORM | IS_FATAL, item_type);
 
 	// Fix virtual position (e.g. from a dying robot)
 	item_pos.x = x;
@@ -437,10 +437,10 @@ Received item type %d that is outside the range of allowed item types.",
 	// Construct the new item
 	item tmp_item;
 	init_item(&tmp_item);
-	tmp_item.type = ItemType;
+	tmp_item.type = item_type;
 	FillInItemProperties(&tmp_item, FALSE, multiplicity);
 
-	play_item_sound(ItemType, &item_pos);
+	play_item_sound(item_type, &item_pos);
 
 	return drop_item(&tmp_item, item_pos.x, item_pos.y, item_pos.z);
 }
@@ -693,9 +693,9 @@ void Quick_ApplyItem(int ItemKey)
  * used to match an item which its type in a flexible way (match by name instead
  * of matching by index value)
  */
-int get_item_type_by_id(const char *id)
+item_t get_item_type_by_id(const char *id)
 {
-	int cidx = 0;
+	item_t cidx = 0;
 	for (; cidx < Number_Of_Item_Types; cidx++) {
 		if (!strcmp(ItemMap[cidx].id, id))
 			return cidx;
@@ -1155,7 +1155,7 @@ int GetInventorySquare_y(int y)
  * inventory grid at location x y.  Only the space is taken into account
  * and if other items block the way or not.
  */
-int ItemCanBeDroppedInInv(int ItemType, int InvPos_x, int InvPos_y)
+int ItemCanBeDroppedInInv(item_t item_type, int InvPos_x, int InvPos_y)
 {
 	int item_height;
 	int item_width;
@@ -1165,23 +1165,22 @@ int ItemCanBeDroppedInInv(int ItemType, int InvPos_x, int InvPos_y)
 	//
 	if (InvPos_x < 0 || InvPos_y < 0)
 		return FALSE;
-	if (ItemMap[ItemType].inv_size.x - 1 + InvPos_x >= INVENTORY_GRID_WIDTH)
+	if (ItemMap[item_type].inv_size.x - 1 + InvPos_x >= INVENTORY_GRID_WIDTH)
 		return (FALSE);
-	if (ItemMap[ItemType].inv_size.y - 1 + InvPos_y >= INVENTORY_GRID_HEIGHT)
+	if (ItemMap[item_type].inv_size.y - 1 + InvPos_y >= INVENTORY_GRID_HEIGHT)
 		return (FALSE);
 
 	// Now that we know, that the desired position is at least inside the inventory
 	// grid, we can start to test for the details of the available inventory space
 	//
-	for (item_height = 0; item_height < ItemMap[ItemType].inv_size.y; item_height++) {
-		for (item_width = 0; item_width < ItemMap[ItemType].inv_size.x; item_width++) {
+	for (item_height = 0; item_height < ItemMap[item_type].inv_size.y; item_height++) {
+		for (item_width = 0; item_width < ItemMap[item_type].inv_size.x; item_width++) {
 			if (!Inv_Pos_Is_Free(InvPos_x + item_width, InvPos_y + item_height))
 				return (FALSE);
 		}
 	}
 	return TRUE;
-
-};				// int ItemCanBeDroppedInInv ( int ItemType , int InvPos_x , int InvPos_y )
+}
 
 /**
  * Drop an item to the floor in the given location.  No checks are done to

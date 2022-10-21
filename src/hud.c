@@ -107,12 +107,12 @@ void blit_vertical_status_bar(float max_value, float current_value, Uint32 fille
  *  Note: We do not want a trailing newline, since that will make text areas
  *  larger than necessary.
  */
-void append_item_description(struct auto_string *str, item *item)
+void append_item_description(struct auto_string *str, item *the_item)
 {
-	if (item == NULL)
+	if (the_item == NULL)
 		return;
 
-	if (item->type == (-1)) {
+	if (the_item->type == (-1)) {
 		error_message(__FUNCTION__, "\
 An item description was requested for an item, that does not seem to \n\
 exist really (i.e. has a type = (-1) ).", PLEASE_INFORM | IS_FATAL);
@@ -120,86 +120,86 @@ exist really (i.e. has a type = (-1) ).", PLEASE_INFORM | IS_FATAL);
 	}
 
 	// Get the pure item name, also with font changes enabled.
-	append_item_name(item, str);
+	append_item_name(the_item, str);
 
 	// We don't want any more information for Valuable Circuits
-	if (item_spec_eq_id(item->type, "Valuable Circuits"))
+	if (item_spec_eq_id(the_item->type, "Valuable Circuits"))
 		return;
 	
 	autostr_append(str, "\n");
 
 	// Weapon damage
-	if (ItemMap[item->type].slot == WEAPON_SLOT) {
-		if (item->damage_modifier) {
+	if (ItemMap[the_item->type].slot == WEAPON_SLOT) {
+		if (the_item->damage_modifier) {
 			// TRANSLATORS: On item description: range
-			autostr_append(str, _("Damage: %d to %d\n"), item->damage, item->damage_modifier + item->damage);
+			autostr_append(str, _("Damage: %d to %d\n"), the_item->damage, the_item->damage_modifier + the_item->damage);
 		} else {
 			// TRANSLATORS: On item description
-			autostr_append(str, _("Damage: %d\n"), item->damage);
+			autostr_append(str, _("Damage: %d\n"), the_item->damage);
 		}
 	}
 	// Amount
-	if (ItemMap[item->type].item_group_together_in_inventory) {
+	if (ItemMap[the_item->type].item_group_together_in_inventory) {
 		// TRANSLATORS: On item description
-		autostr_append(str, _("Amount: %d\n"), item->multiplicity);
+		autostr_append(str, _("Amount: %d\n"), the_item->multiplicity);
 	}
 	// Armor bonus
-	if (item->armor_class) {
+	if (the_item->armor_class) {
 		// TRANSLATORS: On item description: Armor bonus
-		autostr_append(str, _("Armor: %d\n"), item->armor_class);
+		autostr_append(str, _("Armor: %d\n"), the_item->armor_class);
 	}
 	// Durability or indestructible status
-	if (item->max_durability != (-1)) {
+	if (the_item->max_durability != (-1)) {
 		// TRANSLATORS: On item description: 'current' of 'maximum'
-		autostr_append(str, _("Durability: %d of %d\n"), (int)item->current_durability, (int)item->max_durability);
-	} else if (ItemMap[item->type].base_item_durability != (-1)) {
+		autostr_append(str, _("Durability: %d of %d\n"), (int)the_item->current_durability, (int)the_item->max_durability);
+	} else if (ItemMap[the_item->type].base_item_durability != (-1)) {
 		// TRANSLATORS: On item description : durability
 		autostr_append(str, _("Indestructible\n"));
 	}
 	// Ranged weapon ammunition
-	if (ItemMap[item->type].weapon_ammo_type && ItemMap[item->type].weapon_ammo_clip_size) {
+	if (ItemMap[the_item->type].weapon_ammo_type && ItemMap[the_item->type].weapon_ammo_clip_size) {
 		// TRANSLATORS: On item description: 'current' of 'maximum' amount of ammo
-		autostr_append(str, _("Ammo: %d of %d\n"), item->ammo_clip, ItemMap[item->type].weapon_ammo_clip_size);
+		autostr_append(str, _("Ammo: %d of %d\n"), the_item->ammo_clip, ItemMap[the_item->type].weapon_ammo_clip_size);
 	}
 	// Strength, dexterity or cooling requirements
-	if ((ItemMap[item->type].item_require_strength != (-1)) || (ItemMap[item->type].item_require_dexterity != (-1))) {
-		if (ItemMap[item->type].item_require_strength != (-1)) {
+	if ((ItemMap[the_item->type].item_require_strength != (-1)) || (ItemMap[the_item->type].item_require_dexterity != (-1))) {
+		if (ItemMap[the_item->type].item_require_strength != (-1)) {
 			// TRANSLATORS: On item description
-			autostr_append(str, _("Required strength: %d\n"), ItemMap[item->type].item_require_strength);
+			autostr_append(str, _("Required strength: %d\n"), ItemMap[the_item->type].item_require_strength);
 		}
-		if (ItemMap[item->type].item_require_dexterity != (-1)) {
+		if (ItemMap[the_item->type].item_require_dexterity != (-1)) {
 			// TRANSLATORS: On item description
-			autostr_append(str, _("Required dexterity: %d\n"), ItemMap[item->type].item_require_dexterity);
+			autostr_append(str, _("Required dexterity: %d\n"), ItemMap[the_item->type].item_require_dexterity);
 		}
 	}
 
 	// Usable items should say that they can be used via right-clicking on it
-	if (ItemMap[item->type].right_use.tooltip) {
+	if (ItemMap[the_item->type].right_use.tooltip) {
 		if (game_status == INSIDE_GAME) {
-			autostr_append(str, "%s\n", D_(ItemMap[item->type].right_use.tooltip));
+			autostr_append(str, "%s\n", D_(ItemMap[the_item->type].right_use.tooltip));
 
 			// Show text only if item is in inventory
-			if (item->inventory_position.x != -1) {
+			if (the_item->inventory_position.x != -1) {
 				autostr_append(str, "\n");
 				autostr_append(str, _("Right click to use\n"));
 			}
 		} else {
-			autostr_append(str, _("Item use: %s\n"), D_(ItemMap[item->type].right_use.tooltip));
+			autostr_append(str, _("Item use: %s\n"), D_(ItemMap[the_item->type].right_use.tooltip));
 		}
 	}
 
 	// Socket count
-	if (item->upgrade_sockets.size) {
+	if (the_item->upgrade_sockets.size) {
 		// TRANSLATORS: On item description: 'used sockets' / 'number of sockets'
-		autostr_append(str, _("Sockets: used %d/%d\n"), count_used_sockets(item), 
-							     item->upgrade_sockets.size);
+		autostr_append(str, _("Sockets: used %d/%d\n"), count_used_sockets(the_item),
+							     the_item->upgrade_sockets.size);
 	}
 
 	// Item bonuses
-	get_item_bonus_string(item, "\n", str);
+	get_item_bonus_string(the_item, "\n", str);
 
 	// Add-on specific information
-	struct addon_spec *addon = get_addon_spec(item->type);
+	struct addon_spec *addon = get_addon_spec(the_item->type);
 	if (addon) {
 		print_addon_description(addon, str);
 	}

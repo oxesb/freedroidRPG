@@ -39,11 +39,11 @@
 
 struct crafting_recipe {
 	int available; /// TRUE if the player has enough materials to craft the add-on.
-	int item_type; /// The type number of the add-on this recipe will craft.
+	item_t item_type; /// The type number of the add-on this recipe will craft.
 };
 
 struct material {
-	int item_type; //item type from the recipe
+	item_t item_type; //item type from the recipe
 	int available; //# of items in inventory
 	int required; // # if items required by recipe
 };

@@ -155,10 +155,10 @@ static void chat_pop_context(void)
  * Create a chat context and initialize it.
  *
  * @param partner     Pointer to the enemy to talk with
- * @param npc         Pointer to the npc containing the dialogue definition.
+ * @param used_npc    Pointer to the npc containing the dialogue definition.
  * @return Pointer to the allocated chat context.
  */
-struct chat_context *chat_create_context(enemy *partner, struct npc *npc)
+struct chat_context *chat_create_context(enemy *partner, struct npc *used_npc)
 {
 	struct chat_context *new_chat_context = (struct chat_context *)MyMalloc(sizeof(struct chat_context));
 
@@ -166,13 +166,13 @@ struct chat_context *chat_create_context(enemy *partner, struct npc *npc)
 	// MyMalloc() already zeroed the struct, so we only initialize 'non zero' fields.
 
 	new_chat_context->partner = partner;
-	new_chat_context->npc = npc;
+	new_chat_context->npc = used_npc;
 	new_chat_context->partner_started = partner->will_rush_tux;
 
 	// The first time a dialog is open, the init script has to be run first.
 	// The next times the dialog is open, directly run the startup script.
 	new_chat_context->state = LOAD_INIT_SCRIPT;
-	if (npc->chat_character_initialized) {
+	if (used_npc->chat_character_initialized) {
 		new_chat_context->state = LOAD_STARTUP_SCRIPT;
 	}
 
@@ -809,17 +809,17 @@ end_current_dialog:
  */
 int chat_with_droid(struct enemy *partner)
 {
-	struct npc *npc;
+	struct npc *used_npc;
 	struct chat_context *chat_context;
 
 	// Create a chat context.
 	// Use the partner's dialog name attribute to get the related npc
 	// and the dialog to load.
-	npc = npc_get(partner->dialog_section_name);
-	if (!npc)
+	used_npc = npc_get(partner->dialog_section_name);
+	if (!used_npc)
 		return FALSE;
 
-	chat_context = chat_create_context(partner, npc);
+	chat_context = chat_create_context(partner, used_npc);
 
 	// Push the chat context on the stack.
 	// The dialog will be run on the next loop of the chat engine.

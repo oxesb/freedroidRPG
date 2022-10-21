@@ -522,8 +522,8 @@ void read_double(lua_State *L, int index, double *data);
 void write_double(struct auto_string *strout, double *data);
 void read_string(lua_State *L, int index, string *data);
 void write_string(struct auto_string *strout, string *data);
-void read_item_type(lua_State *L, int index, item_type *data);
-void write_item_type(struct auto_string *strout, item_type *data);
+void read_item_t(lua_State *L, int index, item_t *data);
+void write_item_t(struct auto_string *strout, item_t *data);
 
 /// \defgroup userrw Read/write of 'user' types
 /// \ingroup luasaveload

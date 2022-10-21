@@ -438,8 +438,8 @@ static int lua_event_add_diary_entry(lua_State * L)
 static int lua_event_has_met(lua_State *L)
 {
 	const char *npc_name = luaL_checkstring(L, 1);
-	struct npc *npc = npc_get(npc_name);
-	lua_pushboolean(L, npc->chat_character_initialized);
+	struct npc *used_npc = npc_get(npc_name);
+	lua_pushboolean(L, used_npc->chat_character_initialized);
 	return 1;
 }
 
@@ -675,7 +675,7 @@ static int lua_start_chat(lua_State * L)
 {
 	int called_from_dialog;
 	struct enemy *partner;
-	struct npc *npc;
+	struct npc *used_npc;
 	struct chat_context *chat_context;
 
 	// This function can be called from an event lua script or from a dialog
@@ -693,11 +693,11 @@ static int lua_start_chat(lua_State * L)
 	// Get the enemy to chat with from its name, get associated npc and
 	// dialog, and create a chat context
 	partner = get_enemy_arg(L, 1);
-	npc = npc_get(partner->dialog_section_name);
-	if (!npc)
+	used_npc = npc_get(partner->dialog_section_name);
+	if (!used_npc)
 		return 0;
 
-	chat_context = chat_create_context(partner, npc);
+	chat_context = chat_create_context(partner, used_npc);
 	if (!chat_push_context(chat_context)) {
 		chat_delete_context(chat_context);
 		return 0;
@@ -1029,12 +1029,12 @@ static int lua_add_obstacle(lua_State *L)
 		error_message(__FUNCTION__, "Requested level num (%d) does not exists. Can not add the obstacle.", PLEASE_INFORM, levelnum);
 		return 0;
 	}
-	struct level *level = curShip.AllLevels[levelnum];
+	struct level *lvl = curShip.AllLevels[levelnum];
 	float x = luaL_checknumber(L, 2);
 	float y = luaL_checknumber(L, 3);
 	int type = luaL_checknumber(L, 4);
 
-	add_obstacle(level, x, y, type);
+	add_obstacle(lvl, x, y, type);
 
 	return 0;
 }
@@ -1053,13 +1053,13 @@ static int lua_add_volatile_obstacle(lua_State *L)
 		error_message(__FUNCTION__, "Requested level num (%d) does not exists. Can not add the obstacle.", PLEASE_INFORM, levelnum);
 		return 0;
 	}
-	struct level *level = curShip.AllLevels[levelnum];
+	struct level *lvl = curShip.AllLevels[levelnum];
 	float x = luaL_checknumber(L, 2);
 	float y = luaL_checknumber(L, 3);
 	int type = luaL_checknumber(L, 4);
 
 	struct obstacle_spec *obs_spec = get_obstacle_spec(type);
-	add_volatile_obstacle(level, x, y, type, obs_spec->vanish_delay + obs_spec->vanish_duration);
+	add_volatile_obstacle(lvl, x, y, type, obs_spec->vanish_delay + obs_spec->vanish_duration);
 
 	return 0;
 }
@@ -2139,7 +2139,7 @@ void reset_lua_state(void)
  * Save Lua variables as lua code.
  * Variables prefixed with '_' are omitted because these are Lua predefined variables.
  */
-void write_lua_variables(struct auto_string *savestruct_autostr)
+void write_lua_variables(struct auto_string *dst)
 {
 	int boolean;
 	const char *value;
@@ -2169,15 +2169,15 @@ void write_lua_variables(struct auto_string *savestruct_autostr)
 		{
 			case LUA_TBOOLEAN:
 				boolean = lua_toboolean(L, -1);
-				autostr_append(savestruct_autostr, "_G[\"%s\"] = %s\n", name, boolean ? "true" : "false");
+				autostr_append(dst, "_G[\"%s\"] = %s\n", name, boolean ? "true" : "false");
 				break;
 			case LUA_TSTRING:
 				value = lua_tostring(L, -1);
-				autostr_append(savestruct_autostr, "_G[\"%s\"] = \"%s\"\n", name, value);
+				autostr_append(dst, "_G[\"%s\"] = \"%s\"\n", name, value);
 				break;
 			case LUA_TNUMBER:
 				value = lua_tostring(L, -1);
-				autostr_append(savestruct_autostr, "_G[\"%s\"] = %s\n", name, value);
+				autostr_append(dst, "_G[\"%s\"] = %s\n", name, value);
 				break;
 			default:
 				break;
@@ -2186,7 +2186,7 @@ void write_lua_variables(struct auto_string *savestruct_autostr)
 		lua_pop(L, 1);
 	}
 
-	autostr_append(savestruct_autostr, "\n");
+	autostr_append(dst, "\n");
 
 	// Pop global table from the stack
 	lua_pop(L, 1);

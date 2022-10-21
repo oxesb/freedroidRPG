@@ -320,8 +320,8 @@ static int dlc_on_one_level(int x_tile_start, int x_tile_end, int y_tile_start, 
 				// If the obstacle doesn't even have a collision rectangle, then
 				// of course it's easy, cause then there can't be any collision
 				//
-				obstacle_spec *obstacle_spec = get_obstacle_spec(our_obs->type);
-				if (obstacle_spec->block_area_type == COLLISION_TYPE_NONE)
+				obstacle_spec *obs_spec = get_obstacle_spec(our_obs->type);
+				if (obs_spec->block_area_type == COLLISION_TYPE_NONE)
 					continue;
 
 				// Filter out some obstacles, if asked
@@ -331,11 +331,11 @@ static int dlc_on_one_level(int x_tile_start, int x_tile_end, int y_tile_start, 
 				// So we have our obstacle 
 
 				// Check the flags of both points against the rectangle of the object
-				pointf rect1 = { our_obs->pos.x + obstacle_spec->left_border,
-					our_obs->pos.y + obstacle_spec->upper_border
+				pointf rect1 = { our_obs->pos.x + obs_spec->left_border,
+					our_obs->pos.y + obs_spec->upper_border
 				};
-				pointf rect2 = { our_obs->pos.x + obstacle_spec->right_border,
-					our_obs->pos.y + obstacle_spec->lower_border
+				pointf rect2 = { our_obs->pos.x + obs_spec->right_border,
+					our_obs->pos.y + obs_spec->lower_border
 				};
 
 				// When DLC is called by the pathfinder, we grow a bit the obstacle's size.
@@ -564,15 +564,15 @@ int MoveOutOfObstacle(float *posX, float *posY, int posZ, obstacle * ThisObstacl
 	enum { RIGHT, DOWN, LEFT, TOP };
 	unsigned int i;
 	pointf new_pos = { 0.5, 0.5 };
-	obstacle_spec *obstacle_spec = get_obstacle_spec(ThisObstacle->type);
+	obstacle_spec *obs_spec = get_obstacle_spec(ThisObstacle->type);
 
 	// Construct a sorted list of distance between character's position and the rectangle's edges
 	//
-	pointf rect1 = { ThisObstacle->pos.x + obstacle_spec->left_border,
-		ThisObstacle->pos.y + obstacle_spec->upper_border
+	pointf rect1 = { ThisObstacle->pos.x + obs_spec->left_border,
+		ThisObstacle->pos.y + obs_spec->upper_border
 	};
-	pointf rect2 = { ThisObstacle->pos.x + obstacle_spec->right_border,
-		ThisObstacle->pos.y + obstacle_spec->lower_border
+	pointf rect2 = { ThisObstacle->pos.x + obs_spec->right_border,
+		ThisObstacle->pos.y + obs_spec->lower_border
 	};
 
 	struct dist_elt dist_arr[] = { {rect2.x - (*posX), RIGHT},
@@ -666,17 +666,17 @@ int EscapeFromObstacle(float *posX, float *posY, int posZ, colldet_filter * filt
 				// If the obstacle doesn't even have a collision rectangle, then
 				// of course it's easy, cause then there can't be any collision
 				//
-				obstacle_spec *obstacle_spec = get_obstacle_spec(our_obs->type);
-				if (obstacle_spec->block_area_type == COLLISION_TYPE_NONE)
+				obstacle_spec *obs_spec = get_obstacle_spec(our_obs->type);
+				if (obs_spec->block_area_type == COLLISION_TYPE_NONE)
 					continue;
 
 				// Now if the position lies inside the collision rectangle, then there's
 				// a collision.
 				//
-				if ((*posX > our_obs->pos.x + obstacle_spec->left_border) &&
-				    (*posX < our_obs->pos.x + obstacle_spec->right_border) &&
-				    (*posY > our_obs->pos.y + obstacle_spec->upper_border) &&
-				    (*posY < our_obs->pos.y + obstacle_spec->lower_border)) {
+				if ((*posX > our_obs->pos.x + obs_spec->left_border) &&
+				    (*posX < our_obs->pos.x + obs_spec->right_border) &&
+				    (*posY > our_obs->pos.y + obs_spec->upper_border) &&
+				    (*posY < our_obs->pos.y + obs_spec->lower_border)) {
 					// Find a new position for the character
 					return MoveOutOfObstacle(posX, posY, posZ, our_obs, filter);
 				}

@@ -34,15 +34,15 @@
  */
 void add_map_label(level *lvl, int x, int y, char *label_name)
 {
-	struct map_label map_label;
+	struct map_label label;
 
 	// Create a new map label
-	map_label.pos.x = x;
-	map_label.pos.y = y;
-	map_label.label_name = label_name;
+	label.pos.x = x;
+	label.pos.y = y;
+	label.label_name = label_name;
 
 	// Add the new map label on the map position
-	dynarray_add(&lvl->map_labels, &map_label, sizeof(struct map_label));
+	dynarray_add(&lvl->map_labels, &label, sizeof(struct map_label));
 
 	DebugPrintf(0, "\nNew map label added: label_name=%s, pos.x=%d, pos.y=%d, pos.z=%d",
 			label_name, x, y, lvl->levelnum);
@@ -59,12 +59,12 @@ void del_map_label(struct level *lvl, const char *label_name)
 
 	for (i = 0; i < lvl->map_labels.size; i++) {
 		// Get the map label on this level
-		struct map_label *map_label = &ACCESS_MAP_LABEL(lvl->map_labels, i);
+		struct map_label *label = &ACCESS_MAP_LABEL(lvl->map_labels, i);
 
-		if (!strcmp(map_label->label_name, label_name)) {
+		if (!strcmp(label->label_name, label_name)) {
 			// Delete the map label
-			free(map_label->label_name);
-			map_label->label_name = NULL;
+			free(label->label_name);
+			label->label_name = NULL;
 			dynarray_del(&lvl->map_labels, i, sizeof(struct map_label));
 			return;
 		}
@@ -77,9 +77,9 @@ void free_map_labels(struct level *lvl)
 
 	for (i = 0; i < lvl->map_labels.size; i++) {
 		// Get the map label on this level
-		struct map_label *map_label = &ACCESS_MAP_LABEL(lvl->map_labels, i);
+		struct map_label *label = &ACCESS_MAP_LABEL(lvl->map_labels, i);
 		
-		free(map_label->label_name);
+		free(label->label_name);
 	}
 
 	dynarray_free(&lvl->map_labels);
@@ -96,10 +96,10 @@ struct map_label *get_map_label(struct level *lvl, const char *label_name)
 
 	for (i = 0; i < lvl->map_labels.size; i++) {
 		// Get the map label on this level
-		struct map_label *map_label = &ACCESS_MAP_LABEL(lvl->map_labels, i);
+		struct map_label *label = &ACCESS_MAP_LABEL(lvl->map_labels, i);
 
-		if (!strcmp(map_label->label_name, label_name))
-			return map_label;
+		if (!strcmp(label->label_name, label_name))
+			return label;
 	}
 
 	return NULL;

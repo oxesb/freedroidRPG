@@ -755,14 +755,14 @@ static int buy_item(item *BuyItem, int amount)
  *
  *
  */
-void init_trade_with_character(struct npc *npc)
+void init_trade_with_character(struct npc *n)
 {
 #define NUMBER_OF_ITEMS_IN_SHOP 17
 
 	struct item *buy_pointer_list[MAX_ITEMS_IN_INVENTORY];
 	struct item *tux_items_list[MAX_ITEMS_IN_INVENTORY];
 
-	struct dynarray *sold_items = npc_get_inventory(npc);
+	struct dynarray *sold_items = npc_get_inventory(n);
 
 	int i;
 	for (i = 0; i < sold_items->size && i < sizeof(buy_pointer_list)/sizeof(buy_pointer_list[0]); i++) {
@@ -783,7 +783,7 @@ void init_trade_with_character(struct npc *npc)
 		case BUY_1_ITEM:
 			if (buy_item(buy_pointer_list[shop_order.item_selected], shop_order.number_selected) == 1) {
 				// destroy our copy of the item
-				npc_inventory_delete_item(npc, shop_order.item_selected);
+				npc_inventory_delete_item(n, shop_order.item_selected);
 			}
 			break;
 		case SELL_1_ITEM:

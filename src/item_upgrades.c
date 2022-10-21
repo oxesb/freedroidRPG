@@ -197,7 +197,7 @@ int item_can_be_installed_to_socket(struct item *dstitem, struct item *addon, in
  * \param item_type Item type number.
  * \return Add-on specification or NULL if the item isn't an add-on.
  */
-struct addon_spec *get_addon_spec(int item_type)
+struct addon_spec *get_addon_spec(item_t item_type)
 {
 	int i;
 

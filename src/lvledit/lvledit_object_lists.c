@@ -406,12 +406,12 @@ static void build_floor_tile_lists(void)
 static void build_item_lists(void)
 {
 	int i;
-	int melee   = 0;
-	int guns    = 0;
-	int defense = 0;
-	int spell   = 0;
-	int other   = 0;
-	int all     = 0;
+	int melee       = 0;
+	int guns        = 0;
+	int defense     = 0;
+	int cur_spell   = 0;
+	int other       = 0;
+	int all         = 0;
 
 	free(melee_items_list);  //MELEE WEAPONS
 	free(gun_items_list);    //GUNS
@@ -438,8 +438,8 @@ static void build_item_lists(void)
 			defense_items_list[defense] = i;
 			defense++;
 		} else if (ItemMap[i].right_use.tooltip) {
-			spell_items_list[spell] = i;
-			spell++;
+			spell_items_list[cur_spell] = i;
+			cur_spell++;
 		} else {
 			other_items_list[other] = i;
 			other++;
@@ -447,12 +447,12 @@ static void build_item_lists(void)
 		all_items_list[all] = i;
 		all++;
 	}
-	melee_items_list[melee]     = -1;
-	gun_items_list[guns]        = -1;
-	defense_items_list[defense] = -1;
-	spell_items_list[spell]     = -1;
-	other_items_list[other]     = -1;
-	all_items_list[all]           = -1;
+	melee_items_list[melee]      = -1;
+	gun_items_list[guns]         = -1;
+	defense_items_list[defense]  = -1;
+	spell_items_list[cur_spell]  = -1;
+	other_items_list[other]      = -1;
+	all_items_list[all]          = -1;
 
 }
 

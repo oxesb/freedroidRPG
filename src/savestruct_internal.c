@@ -250,7 +250,7 @@ void write_string(struct auto_string *strout, string *data)
  * \param index Lua stack index of the data
  * \param data  Pointer to the resulting data storage
  */
-void read_item_type(lua_State *L, int index, item_type *data)
+void read_item_t(lua_State *L, int index, item_t *data)
 {
 	lua_is_of_type_or_abort(L, index, LUA_TSTRING);
 	char *str = (char *)lua_tostring(L, index);
@@ -270,7 +270,7 @@ void read_item_type(lua_State *L, int index, item_type *data)
  * \param strout The auto_string to be filled
  * \param data   Pointer to the data to write
  */
-void write_item_type(struct auto_string *strout, item_type *data)
+void write_item_t(struct auto_string *strout, item_t *data)
 {
 	autostr_append(strout, "[=[%s]=]", (*data != -1) ? ItemMap[*data].id : "none");
 }
@@ -866,7 +866,7 @@ void load_freedroid_configuration(char *strin)
 		{"configuration", configuration_ctor},
 		{NULL, NULL}
 	};
-	
+
 	lua_State *L = get_lua_state(LUA_CONFIG);
 
 	int i;

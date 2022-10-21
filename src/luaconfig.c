@@ -680,7 +680,7 @@ static int lua_tuxordering_ctor(lua_State *L)
 static int lua_obstacle_ctor(lua_State *L)
 {
 	int i;
-	struct obstacle_spec obstacle;
+	struct obstacle_spec obs;
 
 	struct dynarray borders;
 	struct dynarray flags;
@@ -692,26 +692,26 @@ static int lua_obstacle_ctor(lua_State *L)
 	sprintf(default_transparency, "%d", TRANSPARENCY_FOR_WALLS);
 
 	struct data_spec data_specs[] = {
-		{ "name", NULL, STRING_TYPE, &obstacle.name },
-		{ "label", NULL, STRING_TYPE, &obstacle.label },
+		{ "name", NULL, STRING_TYPE, &obs.name },
+		{ "label", NULL, STRING_TYPE, &obs.label },
 		{ "borders", "0", FLOAT_ARRAY, &borders },
 		{ "flags", "0", INT_ARRAY, &flags },
-		{ "after_smashing", "-1", INT_TYPE, &obstacle.result_type_after_smashing_once },
-		{ "after_looting", "-1", INT_TYPE, &obstacle.result_type_after_looting },
-		{ "emitted_light_strength", "0", INT_ARRAY, &obstacle.emitted_light_strength },
+		{ "after_smashing", "-1", INT_TYPE, &obs.result_type_after_smashing_once },
+		{ "after_looting", "-1", INT_TYPE, &obs.result_type_after_looting },
+		{ "emitted_light_strength", "0", INT_ARRAY, &obs.emitted_light_strength },
 		{ "transparency", default_transparency, INT_TYPE, &transparency },
-		{ "action", NULL, STRING_TYPE, &obstacle.action },
+		{ "action", NULL, STRING_TYPE, &obs.action },
 		{ "animation", NULL, STRING_TYPE, &animation },
-		{ "animation_fps", "10", FLOAT_TYPE, &obstacle.animation_fps },
-		{ "blast_type", "1", INT_TYPE, &obstacle.blast_type },
-		{ "smashed_sound", NULL, STRING_TYPE, &obstacle.smashed_sound },
+		{ "animation_fps", "10", FLOAT_TYPE, &obs.animation_fps },
+		{ "blast_type", "1", INT_TYPE, &obs.blast_type },
+		{ "smashed_sound", NULL, STRING_TYPE, &obs.smashed_sound },
 		{ "groups", NULL, STRING_ARRAY, &groups },
-		{ "vanish_delay", "8", FLOAT_TYPE, &obstacle.vanish_delay },
-		{ "vanish_duration", "2", FLOAT_TYPE, &obstacle.vanish_duration },
+		{ "vanish_delay", "8", FLOAT_TYPE, &obs.vanish_delay },
+		{ "vanish_duration", "2", FLOAT_TYPE, &obs.vanish_duration },
 		{ NULL, NULL, 0, 0 }
 	};
 
-	if (!get_value_from_table(L, "image_filenames", STRING_ARRAY, &obstacle.filenames)) {
+	if (!get_value_from_table(L, "image_filenames", STRING_ARRAY, &obs.filenames)) {
 			error_message(__FUNCTION__, "No image filename for obstacle. At least one image filename must be given.",
 				PLEASE_INFORM | IS_FATAL);
 	}
@@ -722,50 +722,50 @@ static int lua_obstacle_ctor(lua_State *L)
 
 	// Clear obstacle structure
 	struct obstacle_graphics graphics;
-	graphics.count = obstacle.filenames.size;
+	graphics.count = obs.filenames.size;
 	graphics.images = MyMalloc(sizeof(struct image) * graphics.count);
 	graphics.shadows = MyMalloc(sizeof(struct image) * graphics.count);
 	dynarray_add(&obstacle_images, &graphics, sizeof(graphics));
-	obstacle.left_border = -DEFAULT_BORDER;
-	obstacle.right_border = DEFAULT_BORDER;
-	obstacle.upper_border = -DEFAULT_BORDER;
-	obstacle.lower_border = DEFAULT_BORDER;
+	obs.left_border = -DEFAULT_BORDER;
+	obs.right_border = DEFAULT_BORDER;
+	obs.upper_border = -DEFAULT_BORDER;
+	obs.lower_border = DEFAULT_BORDER;
 
 	// Borders
-	obstacle.block_area_type = COLLISION_TYPE_NONE;
+	obs.block_area_type = COLLISION_TYPE_NONE;
 	float *borders_array = borders.arr;
 	if (borders.size == 4) {
-		obstacle.block_area_type = COLLISION_TYPE_RECTANGLE;
-		obstacle.left_border = borders_array[0];
-		obstacle.right_border = borders_array[1];
-		obstacle.upper_border = borders_array[2];
-		obstacle.lower_border = borders_array[3];
+		obs.block_area_type = COLLISION_TYPE_RECTANGLE;
+		obs.left_border = borders_array[0];
+		obs.right_border = borders_array[1];
+		obs.upper_border = borders_array[2];
+		obs.lower_border = borders_array[3];
 	}
 	dynarray_free(&borders);
 
-	obstacle.block_area_parm_1 = obstacle.right_border - obstacle.left_border;
-	obstacle.block_area_parm_2 = obstacle.lower_border - obstacle.upper_border;
-	obstacle.diaglength = sqrt(obstacle.left_border * obstacle.left_border +
-		obstacle.upper_border * obstacle.upper_border);
+	obs.block_area_parm_1 = obs.right_border - obs.left_border;
+	obs.block_area_parm_2 = obs.lower_border - obs.upper_border;
+	obs.diaglength = sqrt(obs.left_border * obs.left_border +
+		obs.upper_border * obs.upper_border);
 
 	// Combine flags
-	obstacle.flags = 0;
+	obs.flags = 0;
 	int *flags_array = flags.arr;
 	for (i = 0; i < flags.size; i++)
-		obstacle.flags |= flags_array[i];
+		obs.flags |= flags_array[i];
 	dynarray_free(&flags);
 
-	obstacle.transparent = transparency;
+	obs.transparent = transparency;
 
 	// Parse action
-	obstacle.action_fn = get_action_by_name(obstacle.action);
+	obs.action_fn = get_action_by_name(obs.action);
 
 	// Parse animation
 	if (!animation &&
-		(obstacle.filenames.size > 1 || obstacle.emitted_light_strength.size > 1)) {
+		(obs.filenames.size > 1 || obs.emitted_light_strength.size > 1)) {
 		animation = strdup("obstacle");
 	}
-	obstacle.animation_fn = get_animation_by_name(animation);
+	obs.animation_fn = get_animation_by_name(animation);
 	free(animation);
 
 	if (groups.size > 0) {
@@ -778,7 +778,7 @@ static int lua_obstacle_ctor(lua_State *L)
 	}
 	dynarray_free(&groups);
 
-	dynarray_add(&obstacle_map, &obstacle, sizeof(obstacle_spec));
+	dynarray_add(&obstacle_map, &obs, sizeof(obstacle_spec));
 	return 0;
 }
 
@@ -805,22 +805,22 @@ static int lua_leveleditor_obstacle_category_ctor(lua_State *L)
  */
 static int get_one_bullet(lua_State *L, void *data)
 {
-	struct bulletspec *bullet = (struct bulletspec *)data;
-	char *bullet_blast_type;
+	struct bulletspec *the_bullet = (struct bulletspec *)data;
+	char *the_bullet_blast_type;
 
 	struct data_spec data_specs[] = {
-		{ "name",              NULL, STRING_TYPE, &(bullet->name)                     },
-		{ "sound",             NULL, STRING_TYPE, &(bullet->sound)                    },
-		{ "phases",            "1",  INT_TYPE,    &(bullet->phases)                   },
-		{ "phases_per_second", "1",  DOUBLE_TYPE, &(bullet->phase_changes_per_second) },
-		{ "blast_type",        NULL, STRING_TYPE, &bullet_blast_type                  },
+		{ "name",              NULL, STRING_TYPE, &(the_bullet->name)                     },
+		{ "sound",             NULL, STRING_TYPE, &(the_bullet->sound)                    },
+		{ "phases",            "1",  INT_TYPE,    &(the_bullet->phases)                   },
+		{ "phases_per_second", "1",  DOUBLE_TYPE, &(the_bullet->phase_changes_per_second) },
+		{ "blast_type",        NULL, STRING_TYPE, &the_bullet_blast_type                  },
 		{ NULL, NULL, 0, 0 }
 	};
 
 	fill_structure_from_table(L, data_specs);
 
-	bullet->blast_type = get_blast_type_by_name(bullet_blast_type);
-	free(bullet_blast_type);
+	the_bullet->blast_type = get_blast_type_by_name(the_bullet_blast_type);
+	free(the_bullet_blast_type);
 
 	return TRUE;
 }
@@ -835,21 +835,21 @@ static int lua_bullet_list_ctor(lua_State *L)
 static int lua_blast_ctor(lua_State *L)
 {
 	static int blast_index = 0;
-	blastspec* blast = &Blastmap[blast_index++];
+	blastspec* new_blast = &Blastmap[blast_index++];
 	if (blast_index > ALLBLASTTYPES)
 		error_message(__FUNCTION__, "Maximum number of blast types was exceeded.", PLEASE_INFORM | IS_FATAL);
 
 	struct data_spec data_specs[] = {
-		{ "name", NULL, STRING_TYPE, &blast->name },
-		{ "animation_time", "1.0", FLOAT_TYPE, &blast->total_animation_time },
-		{ "phases", 0, INT_TYPE, &blast->phases },
-		{ "do_damage", "0", INT_TYPE, &blast->do_damage },
-		{ "sound_file", NULL, STRING_TYPE, &blast->sound_file },
+		{ "name", NULL, STRING_TYPE, &new_blast->name },
+		{ "animation_time", "1.0", FLOAT_TYPE, &new_blast->total_animation_time },
+		{ "phases", 0, INT_TYPE, &new_blast->phases },
+		{ "do_damage", "0", INT_TYPE, &new_blast->do_damage },
+		{ "sound_file", NULL, STRING_TYPE, &new_blast->sound_file },
 		{ NULL, NULL, 0, 0 }
 	};
 
 	fill_structure_from_table(L, data_specs);
-	blast->images = MyMalloc(sizeof(struct image) * blast->phases);
+	new_blast->images = MyMalloc(sizeof(struct image) * new_blast->phases);
 	return 0;
 }
 
@@ -1019,7 +1019,7 @@ static int lua_npc_shop_ctor(lua_State *L)
  */
 static int get_one_item(lua_State *L, void *data)
 {
-	struct itemspec *item = (struct itemspec *)data;
+	struct itemspec *the_item = (struct itemspec *)data;
 	char *item_slot;
 	char *item_durability;
 	char *item_drop_class;
@@ -1031,111 +1031,111 @@ static int get_one_item(lua_State *L, void *data)
 	char *item_bullet_type;
 
 	struct data_spec data_specs[] = {
-		{"id",                      NULL,    STRING_TYPE, &item->id                               },
-		{"name",                    NULL,    STRING_TYPE, &item->name                             },
-		{"slot",                    "none",  STRING_TYPE, &item_slot                              },
-		{"weapon.damage",           NULL,    STRING_TYPE, &item_damage                            },
-		{"weapon.attack_time",      "0",     FLOAT_TYPE,  &item->weapon_attack_time               },
-		{"weapon.reloading_time",   "0",     FLOAT_TYPE,  &item->weapon_reloading_time            },
-		{"weapon.reloading_sound",  NULL,    STRING_TYPE, &item->weapon_reloading_sound           },
-		{"weapon.bullet.type",      NULL,    STRING_TYPE, &item_bullet_type                       },
-		{"weapon.bullet.speed",     "0",     FLOAT_TYPE,  &item->weapon_bullet_speed              },
-		{"weapon.bullet.lifetime",  "0",     FLOAT_TYPE,  &item->weapon_bullet_lifetime           },
-		{"weapon.ammunition.id",    NULL,    STRING_TYPE, &item->weapon_ammo_type                 },
-		{"weapon.ammunition.clip",  "0",     INT_TYPE,    &item->weapon_ammo_clip_size            },
-		{"weapon.melee",            "false", BOOL_TYPE,   &item->weapon_is_melee                  },
-		{"weapon.two_hand",         "false", BOOL_TYPE,   &item->weapon_needs_two_hands           },
-		{"weapon.motion_class",     NULL,    STRING_TYPE, &item_motion_class                      },
-		{"armor_class",             NULL,    STRING_TYPE, &item_armor_class                       },
-		{"right_use.tooltip",       NULL,    STRING_TYPE, &item->right_use.tooltip                },
-		{"right_use.skill",         NULL,    STRING_TYPE, &item->right_use.skill                  },
-		{"right_use.add_skill",     NULL,    STRING_TYPE, &item->right_use.add_skill              },
-		{"right_use.busy.type",     NULL,    STRING_TYPE, &item_right_use_busy_type               },
-		{"right_use.busy.duration", "0",     INT_TYPE,    &item->right_use.busy_time              },
-		{"requirements.strength",   "-1",    SHORT_TYPE,  &item->item_require_strength            },
-		{"requirements.dexterity",  "-1",    SHORT_TYPE,  &item->item_require_dexterity           },
-		{"requirements.cooling",    "-1",    SHORT_TYPE,  &item->item_require_cooling             },
-		{"inventory.x",             "1",     INT_TYPE,    &item->inv_size.x                       },
-		{"inventory.y",             "1",     INT_TYPE,    &item->inv_size.y                       },
-		{"inventory.stackable",     "false", BOOL_TYPE,   &item->item_group_together_in_inventory },
-		{"inventory.image",         NULL,    STRING_TYPE, &item->item_inv_file_name               },
-		{"base_price",              "-1",    INT_TYPE,    &item->base_list_price                  },
-		{"drop.class",              NULL,    STRING_TYPE, &item_drop_class                        },
-		{"drop.number",             NULL,    STRING_TYPE, &item_dropped                           },
-		{"drop.sound",              NULL,    STRING_TYPE, &item->item_drop_sound_file_name        },
-		{"durability",              NULL,    STRING_TYPE, &item_durability                        },
-		{"description",             "",      STRING_TYPE, &item->item_description                 },
-		{"tux_part",                NULL,    STRING_TYPE, &item->tux_part_instance                },
-		{"rotation_series",         NULL,    STRING_TYPE, &item->item_rotation_series_prefix      },
+		{"id",                      NULL,    STRING_TYPE, &the_item->id                                },
+		{"name",                    NULL,    STRING_TYPE, &the_item->name                              },
+		{"slot",                    "none",  STRING_TYPE, &item_slot                                   },
+		{"weapon.damage",           NULL,    STRING_TYPE, &item_damage                                 },
+		{"weapon.attack_time",      "0",     FLOAT_TYPE,  &the_item->weapon_attack_time                },
+		{"weapon.reloading_time",   "0",     FLOAT_TYPE,  &the_item->weapon_reloading_time             },
+		{"weapon.reloading_sound",  NULL,    STRING_TYPE, &the_item->weapon_reloading_sound            },
+		{"weapon.bullet.type",      NULL,    STRING_TYPE, &item_bullet_type                            },
+		{"weapon.bullet.speed",     "0",     FLOAT_TYPE,  &the_item->weapon_bullet_speed               },
+		{"weapon.bullet.lifetime",  "0",     FLOAT_TYPE,  &the_item->weapon_bullet_lifetime            },
+		{"weapon.ammunition.id",    NULL,    STRING_TYPE, &the_item->weapon_ammo_type                  },
+		{"weapon.ammunition.clip",  "0",     INT_TYPE,    &the_item->weapon_ammo_clip_size             },
+		{"weapon.melee",            "false", BOOL_TYPE,   &the_item->weapon_is_melee                   },
+		{"weapon.two_hand",         "false", BOOL_TYPE,   &the_item->weapon_needs_two_hands            },
+		{"weapon.motion_class",     NULL,    STRING_TYPE, &item_motion_class                           },
+		{"armor_class",             NULL,    STRING_TYPE, &item_armor_class                            },
+		{"right_use.tooltip",       NULL,    STRING_TYPE, &the_item->right_use.tooltip                 },
+		{"right_use.skill",         NULL,    STRING_TYPE, &the_item->right_use.skill                   },
+		{"right_use.add_skill",     NULL,    STRING_TYPE, &the_item->right_use.add_skill               },
+		{"right_use.busy.type",     NULL,    STRING_TYPE, &item_right_use_busy_type                    },
+		{"right_use.busy.duration", "0",     INT_TYPE,    &the_item->right_use.busy_time               },
+		{"requirements.strength",   "-1",    SHORT_TYPE,  &the_item->item_require_strength             },
+		{"requirements.dexterity",  "-1",    SHORT_TYPE,  &the_item->item_require_dexterity            },
+		{"requirements.cooling",    "-1",    SHORT_TYPE,  &the_item->item_require_cooling              },
+		{"inventory.x",             "1",     INT_TYPE,    &the_item->inv_size.x                        },
+		{"inventory.y",             "1",     INT_TYPE,    &the_item->inv_size.y                        },
+		{"inventory.stackable",     "false", BOOL_TYPE,   &the_item->item_group_together_in_inventory  },
+		{"inventory.image",         NULL,    STRING_TYPE, &the_item->item_inv_file_name                },
+		{"base_price",              "-1",    INT_TYPE,    &the_item->base_list_price                   },
+		{"drop.class",              NULL,    STRING_TYPE, &item_drop_class                             },
+		{"drop.number",             NULL,    STRING_TYPE, &item_dropped                                },
+		{"drop.sound",              NULL,    STRING_TYPE, &the_item->item_drop_sound_file_name         },
+		{"durability",              NULL,    STRING_TYPE, &item_durability                             },
+		{"description",             "",      STRING_TYPE, &the_item->item_description                  },
+		{"tux_part",                NULL,    STRING_TYPE, &the_item->tux_part_instance                 },
+		{"rotation_series",         NULL,    STRING_TYPE, &the_item->item_rotation_series_prefix       },
 		{ NULL, NULL, 0, 0 }
 	};
 
 	fill_structure_from_table(L, data_specs);
 
-	if (!item->id) {
+	if (!the_item->id) {
 		error_message(__FUNCTION__, "No id for item (name: %s). The id must be given. We ignore it.", PLEASE_INFORM,
-		              item->name ? item->name : "none given");
+		              the_item->name ? the_item->name : "none given");
 		return FALSE;
 	}
 
 	// Set the item slot
-	item->slot = get_slot_type_by_name(item_slot);
+	the_item->slot = get_slot_type_by_name(item_slot);
 	free(item_slot);
 
 	// Set the durability
-	get_range_from_string(item_durability, &item->base_item_durability, &item->item_durability_modifier, -1);
-	item->item_durability_modifier -= item->base_item_durability;
+	get_range_from_string(item_durability, &the_item->base_item_durability, &the_item->item_durability_modifier, -1);
+	the_item->item_durability_modifier -= the_item->base_item_durability;
 	free(item_durability);
 
 	// Set armor class
-	get_range_from_string(item_armor_class, (int *)&item->base_armor_class, &item->armor_class_modifier, 0);
-	item->armor_class_modifier -= item->base_armor_class;
+	get_range_from_string(item_armor_class, (int *)&the_item->base_armor_class, &the_item->armor_class_modifier, 0);
+	the_item->armor_class_modifier -= the_item->base_armor_class;
 	free(item_armor_class);
 
 	// Set busy type
 	if (item_right_use_busy_type) {
-		item->right_use.busy_type = get_busy_type_by_name(item_right_use_busy_type);
+		the_item->right_use.busy_type = get_busy_type_by_name(item_right_use_busy_type);
 	} else {
-		item->right_use.busy_type = NONE;
+		the_item->right_use.busy_type = NONE;
 	}
 	free(item_right_use_busy_type);
 
 	// Set the drop class
 	if (item_drop_class) {
-		get_range_from_string(item_drop_class, &item->min_drop_class, &item->max_drop_class, -1);
+		get_range_from_string(item_drop_class, &the_item->min_drop_class, &the_item->max_drop_class, -1);
 		free(item_drop_class);
 	} else {
-		item->min_drop_class = item->max_drop_class = -1;
+		the_item->min_drop_class = the_item->max_drop_class = -1;
 	}
 
-	if (item->min_drop_class != -1) {
+	if (the_item->min_drop_class != -1) {
 		// Increment the item count per drop class
 		int cc;
-		for (cc = item->min_drop_class; cc <= item->max_drop_class; cc++) {
+		for (cc = the_item->min_drop_class; cc <= the_item->max_drop_class; cc++) {
 			if (cc >= 0 && cc <= MAX_DROP_CLASS)
 				item_count_per_class[cc]++;
 		}
 
 		// Set the number of dropped item
-		get_range_from_string(item_dropped, &item->drop_amount, &item->drop_amount_max, 1);
+		get_range_from_string(item_dropped, &the_item->drop_amount, &the_item->drop_amount_max, 1);
 	}
 	free(item_dropped);
 
 	// Set damage
-	get_range_from_string(item_damage, (int *)&item->weapon_base_damage, (int *)&item->weapon_damage_modifier, 0);
-	item->weapon_damage_modifier -= item->weapon_base_damage;
+	get_range_from_string(item_damage, (int *)&the_item->weapon_base_damage, (int *)&the_item->weapon_damage_modifier, 0);
+	the_item->weapon_damage_modifier -= the_item->weapon_base_damage;
 	free(item_damage);
 
 	// Set motion class
-	item->weapon_motion_class = get_motion_class_id_by_name(item_motion_class);
+	the_item->weapon_motion_class = get_motion_class_id_by_name(item_motion_class);
 	free(item_motion_class);
 
 	// Currently, no bullet pass through bodies.
-	item->weapon_bullet_pass_through_hit_bodies = FALSE;
+	the_item->weapon_bullet_pass_through_hit_bodies = FALSE;
 
-	item->weapon_bullet_type = 0;
-	if (item->slot == WEAPON_SLOT && !item->weapon_is_melee) {
-		item->weapon_bullet_type = GetBulletByName(item_bullet_type);
+	the_item->weapon_bullet_type = 0;
+	if (the_item->slot == WEAPON_SLOT && !the_item->weapon_is_melee) {
+		the_item->weapon_bullet_type = GetBulletByName(item_bullet_type);
 	}
 
 	free(item_bullet_type);

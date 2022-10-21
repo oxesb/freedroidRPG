@@ -52,19 +52,19 @@ static int push_mode = NORMAL;
  *
  *  @brief clears an action from its list, and pointers held within the action
  */
-static void clear_action(action * action)
+static void clear_action(action * act)
 {
-	if (action->type == ACT_SET_OBSTACLE_LABEL && action->d.change_obstacle_name.new_name != NULL)
-		free(action->d.change_obstacle_name.new_name);
-	else if (action->type == ACT_SET_MAP_LABEL && action->d.change_label_name.new_name != NULL)
-		free(action->d.change_label_name.new_name);
-	else if (action->type == ACT_CREATE_MAP_LABEL && action->d.create_map_label.label_name != NULL)
-		free(action->d.create_map_label.label_name);
-	else if (action->type == ACT_CREATE_ENEMY && action->d.create_enemy != NULL)
-		enemy_free(action->d.create_enemy);
+	if (act->type == ACT_SET_OBSTACLE_LABEL && act->d.change_obstacle_name.new_name != NULL)
+		free(act->d.change_obstacle_name.new_name);
+	else if (act->type == ACT_SET_MAP_LABEL && act->d.change_label_name.new_name != NULL)
+		free(act->d.change_label_name.new_name);
+	else if (act->type == ACT_CREATE_MAP_LABEL && act->d.create_map_label.label_name != NULL)
+		free(act->d.create_map_label.label_name);
+	else if (act->type == ACT_CREATE_ENEMY && act->d.create_enemy != NULL)
+		enemy_free(act->d.create_enemy);
 
-	list_del(&action->node);	//< removes an action from a list
-	free(action);		//< frees the action
+	list_del(&act->node);	//< removes an action from a list
+	free(act);		//< frees the action
 }
 
 /**
@@ -583,13 +583,13 @@ static void action_change_map_label(level *EditLevel, int i, char *name, int x, 
 	// If the map label exist, remove it
 	if (i < EditLevel->map_labels.size) {
 		// Get the map label
-		struct map_label *map_label =  &ACCESS_MAP_LABEL(EditLevel->map_labels, i);
+		struct map_label *label =  &ACCESS_MAP_LABEL(EditLevel->map_labels, i);
 
 		// Get the old label for undoable actions
-		old_label = strdup(map_label->label_name);
+		old_label = strdup(label->label_name);
 
 		// Delete the map label
-		del_map_label(EditLevel, map_label->label_name);
+		del_map_label(EditLevel, label->label_name);
 	}
 
 	action_push(ACT_SET_MAP_LABEL, i, old_label, x, y);
@@ -604,7 +604,7 @@ static void action_change_map_label(level *EditLevel, int i, char *name, int x, 
 
 void level_editor_action_change_map_label_user(level *EditLevel, float x, float y)
 {
-	struct map_label *map_label = NULL;
+	struct map_label *label = NULL;
 	char *name;
 	char *old_name = NULL;
 	char suggested_label[200];
@@ -614,13 +614,13 @@ void level_editor_action_change_map_label_user(level *EditLevel, float x, float 
 
 	// We check if a map label already exists for this spot
 	for (i = 0; i < EditLevel->map_labels.size; i++) {
-		map_label = &ACCESS_MAP_LABEL(EditLevel->map_labels, i);
+		label = &ACCESS_MAP_LABEL(EditLevel->map_labels, i);
 
-		if ((fabs(map_label->pos.x + 0.5 - x) < 0.5) &&
-			 (fabs(map_label->pos.y + 0.5 - y) < 0.5)) {
+		if ((fabs(label->pos.x + 0.5 - x) < 0.5) &&
+			 (fabs(label->pos.y + 0.5 - y) < 0.5)) {
 
 			// Use the old label as a suggestion
-			old_name = map_label->label_name;
+			old_name = label->label_name;
 			strncpy(suggested_label, old_name, sizeof(suggested_label) - 1);
 			suggested_label[sizeof(suggested_label) - 1] = '\0';
 			break;
@@ -638,8 +638,8 @@ void level_editor_action_change_map_label_user(level *EditLevel, float x, float 
 			return;
 		}
 
-		map_label = map_label_exists(name);
-		if (!map_label) {
+		label = map_label_exists(name);
+		if (!label) {
 			// When the new name of the map label does not exist, we are done
 			break;
 		}
@@ -758,72 +758,72 @@ void action_jump_to_level_center(int level_num)
 	action_jump_to_level(level_num, x, y);
 }
 
-static void action_do(level * level, action * a)
+static void action_do(level * lvl, action * a)
 {
 	switch (a->type) {
 	case ACT_CREATE_OBSTACLE:
-		action_create_obstacle_user(level, a->d.create_obstacle.x, a->d.create_obstacle.y, a->d.create_obstacle.new_obstacle_type);
+		action_create_obstacle_user(lvl, a->d.create_obstacle.x, a->d.create_obstacle.y, a->d.create_obstacle.new_obstacle_type);
 		break;
 	case ACT_REMOVE_OBSTACLE:
-		action_remove_obstacle_user(level, a->d.delete_obstacle);
+		action_remove_obstacle_user(lvl, a->d.delete_obstacle);
 		break;
 	case ACT_MOVE_OBSTACLE:
-		action_move_obstacle(level, a->d.move_obstacle.obstacle, a->d.move_obstacle.newx, a->d.move_obstacle.newy);
+		action_move_obstacle(lvl, a->d.move_obstacle.obstacle, a->d.move_obstacle.newx, a->d.move_obstacle.newy);
 		break;
 	case ACT_CREATE_ITEM:
-		action_create_item(level, a->d.create_item.x, a->d.create_item.y, a->d.create_item.type);
+		action_create_item(lvl, a->d.create_item.x, a->d.create_item.y, a->d.create_item.type);
 		break;
 	case ACT_REMOVE_ITEM:
-		action_remove_item(level, a->d.delete_item);
+		action_remove_item(lvl, a->d.delete_item);
 		break;
 	case ACT_MOVE_ITEM:
-		action_move_item(level, a->d.move_item.item, a->d.move_item.newx, a->d.move_item.newy);
+		action_move_item(lvl, a->d.move_item.item, a->d.move_item.newx, a->d.move_item.newy);
 		break;
 	case ACT_CREATE_WAYPOINT:
-		action_create_waypoint(level, a->d.create_waypoint.x, a->d.create_waypoint.y, a->d.create_waypoint.suppress_random_spawn);
+		action_create_waypoint(lvl, a->d.create_waypoint.x, a->d.create_waypoint.y, a->d.create_waypoint.suppress_random_spawn);
 		break;
 	case ACT_REMOVE_WAYPOINT:
-		action_remove_waypoint(level, a->d.delete_waypoint.x, a->d.delete_waypoint.y);
+		action_remove_waypoint(lvl, a->d.delete_waypoint.x, a->d.delete_waypoint.y);
 		break;
 	case ACT_MOVE_WAYPOINT:
-		action_move_waypoint(level, a->d.move_waypoint.w, a->d.move_waypoint.newx, a->d.move_waypoint.newy);
+		action_move_waypoint(lvl, a->d.move_waypoint.w, a->d.move_waypoint.newx, a->d.move_waypoint.newy);
 		break;
 	case ACT_TOGGLE_WAYPOINT_RSPAWN:
-		action_toggle_waypoint_randomspawn(level, a->d.toggle_waypoint_rspawn.x, a->d.toggle_waypoint_rspawn.y);
+		action_toggle_waypoint_randomspawn(lvl, a->d.toggle_waypoint_rspawn.x, a->d.toggle_waypoint_rspawn.y);
 		break;
 	case ACT_TOGGLE_WAYPOINT_CONNECTION:
-		action_toggle_waypoint_connection(level, a->d.toggle_waypoint_connection.x, a->d.toggle_waypoint_connection.y, 1, 1);
+		action_toggle_waypoint_connection(lvl, a->d.toggle_waypoint_connection.x, a->d.toggle_waypoint_connection.y, 1, 1);
 		break;
 	case ACT_TILE_FLOOR_SET:
-		action_set_floor_layer(level, a->d.change_floor.x, a->d.change_floor.y, a->d.change_floor.layer, a->d.change_floor.type);
+		action_set_floor_layer(lvl, a->d.change_floor.x, a->d.change_floor.y, a->d.change_floor.layer, a->d.change_floor.type);
 		break;
 	case ACT_MULTIPLE_ACTIONS:
 		error_message(__FUNCTION__, "Passed a multiple actions meta-action as parameter. A real action is needed.", PLEASE_INFORM);
 		break;
 	case ACT_SET_OBSTACLE_LABEL:
-		action_change_obstacle_label(level, a->d.change_obstacle_name.obstacle, a->d.change_obstacle_name.new_name, 1);
+		action_change_obstacle_label(lvl, a->d.change_obstacle_name.obstacle, a->d.change_obstacle_name.new_name, 1);
 		break;
 	case ACT_SET_MAP_LABEL:
-		action_change_map_label(level, a->d.change_label_name.id, a->d.change_label_name.new_name, a->d.change_label_name.x, a->d.change_label_name.y);
+		action_change_map_label(lvl, a->d.change_label_name.id, a->d.change_label_name.new_name, a->d.change_label_name.x, a->d.change_label_name.y);
 		break;
 	case ACT_JUMP_TO_LEVEL:
 		action_jump_to_level(a->d.jump_to_level.target_level, a->d.jump_to_level.x, a->d.jump_to_level.y);
 		break;
 	case ACT_CHANGE_FLOOR_LAYER:
-		action_change_floor_layer(level, a->d.target_layer);
+		action_change_floor_layer(lvl, a->d.target_layer);
 		break;
 	case ACT_CREATE_MAP_LABEL:
-		action_create_map_label(level, a->d.create_map_label.x, a->d.create_map_label.y, a->d.create_map_label.label_name);
+		action_create_map_label(lvl, a->d.create_map_label.x, a->d.create_map_label.y, a->d.create_map_label.label_name);
 		break;
 	case ACT_REMOVE_MAP_LABEL:
-		action_remove_map_label(level, a->d.delete_map_label.x, a->d.delete_map_label.y);
+		action_remove_map_label(lvl, a->d.delete_map_label.x, a->d.delete_map_label.y);
 		break;
 	case ACT_CREATE_ENEMY:
-		action_create_enemy(level, a->d.create_enemy);
+		action_create_enemy(lvl, a->d.create_enemy);
 		a->d.create_enemy = NULL;
 		break;
 	case ACT_REMOVE_ENEMY:
-		action_remove_enemy(level, a->d.delete_enemy);
+		action_remove_enemy(lvl, a->d.delete_enemy);
 		break;
 	}
 }

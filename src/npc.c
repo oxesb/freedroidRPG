@@ -183,7 +183,7 @@ static int add_item(struct npc *n, const char *item_id)
 {
 	int i;
 	int stack_item = -1;
-	int item_type = get_item_type_by_id(item_id);
+	item_t item_type = get_item_type_by_id(item_id);
 	int amount = 1;
 
 	// Check to make certain we received a valid item name

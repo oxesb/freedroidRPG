@@ -182,7 +182,7 @@ void Load_Blast_Surfaces(void)
 	}
 }
 
-static void load_item_graphics(int item_type)
+static void load_item_graphics(item_t item_type)
 {
 	itemspec *spec = &ItemMap[item_type];
 	char image_filename[PATH_MAX];

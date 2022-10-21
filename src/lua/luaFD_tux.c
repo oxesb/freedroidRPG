@@ -801,7 +801,7 @@ static int _has_item_equipped(lua_State * L)
 	GET_SELF_INSTANCE_OF(struct luaFD_tux, L, "FDtux");
 
 	const char *item_name = luaL_checkstring(L, 2);
-	int item_type = get_item_type_by_id(item_name);
+	item_t item_type = get_item_type_by_id(item_name);
 	if ((self->me->weapon_item.type == item_type) || (self->me->drive_item.type == item_type) ||
 	    (self->me->armour_item.type == item_type) || (self->me->shield_item.type == item_type) ||
 	    (self->me->special_item.type == item_type)) {
@@ -830,8 +830,8 @@ static int _has_met(lua_State *L)
 	GET_SELF_INSTANCE_OF(struct luaFD_tux, L, "FDtux");
 
 	const char *npc_name = luaL_checkstring(L, 2);
-	struct npc *npc = npc_get(npc_name);
-	lua_pushboolean(L, npc->chat_character_initialized);
+	struct npc *the_npc = npc_get(npc_name);
+	lua_pushboolean(L, the_npc->chat_character_initialized);
 
 	return 1;
 }

@@ -299,7 +299,7 @@ int filter_0_16_1_convert_item_type(struct savegame_data *savegame, struct auto_
 		// Extract the item type index
 		ptr += strlen(",\ntype = ");
 		char *endptr;
-		int item_type = (int)strtol(ptr, &endptr, 0);
+		item_t item_type = (item_t)strtol(ptr, &endptr, 0);
 
 		if (endptr == ptr) {
 			autostr_append(report,

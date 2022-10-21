@@ -263,11 +263,11 @@ int clickable_obstacle_below_mouse_cursor(level **obst_lvl, int clickable_only)
  */
 static int reach_obstacle_from_any_direction(level *obst_lvl, int obst_index) {
 	gps obst_vpos;
-	obstacle_spec *obstacle_spec = get_obstacle_spec(obst_lvl->obstacle_list[obst_index].type);
+	obstacle_spec *obst_spec = get_obstacle_spec(obst_lvl->obstacle_list[obst_index].type);
 
 	update_virtual_position(&obst_vpos, &(obst_lvl->obstacle_list[obst_index].pos), Me.pos.z);
 	if (calc_distance(Me.pos.x, Me.pos.y, obst_vpos.x, obst_vpos.y)
-		<= (obstacle_spec->block_area_parm_1 * sqrt(2)) / 2.0 + 0.5) {
+		<= (obst_spec->block_area_parm_1 * sqrt(2)) / 2.0 + 0.5) {
 		// Maybe a combo_action has made us come here and open the chest.  Then of
 		// course we can remove the combo action setting now...
 		//
@@ -296,8 +296,8 @@ static int reach_obstacle_from_any_direction(level *obst_lvl, int obst_index) {
 	step_vector.y = Me.pos.y - obst_vpos.y;
 	vec_len = vect_len(step_vector);
 
-	step_vector.x *= ((obstacle_spec->block_area_parm_1 * sqrt(2)) / 2.0 + 0.05) / vec_len;
-	step_vector.y *= ((obstacle_spec->block_area_parm_1 * sqrt(2)) / 2.0 + 0.05) / vec_len;
+	step_vector.x *= ((obst_spec->block_area_parm_1 * sqrt(2)) / 2.0 + 0.05) / vec_len;
+	step_vector.y *= ((obst_spec->block_area_parm_1 * sqrt(2)) / 2.0 + 0.05) / vec_len;
 
 	for (i = 0; i < 8; i++) {
 		if (DirectLineColldet(Me.pos.x, Me.pos.y, obst_vpos.x, obst_vpos.y, Me.pos.z, &WalkablePassFilter)) {
@@ -341,8 +341,8 @@ static int reach_obstacle_from_any_direction(level *obst_lvl, int obst_index) {
 	pointf point_near_obst, point_away_from_obst;
 
 	// half-size of the barrel
-	pointf half_size = { (obstacle_spec->block_area_parm_1 * sqrt(2)) / 2.0,
-		(obstacle_spec->block_area_parm_2 * sqrt(2)) / 2.0
+	pointf half_size = { (obst_spec->block_area_parm_1 * sqrt(2)) / 2.0,
+		(obst_spec->block_area_parm_2 * sqrt(2)) / 2.0
 	};
 
 	for (i = 0; i < 8; i++) {

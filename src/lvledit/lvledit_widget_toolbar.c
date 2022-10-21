@@ -142,40 +142,40 @@ static void print_enemy_info(char *str, int en_idx)
 
 static void print_item_info(char *str, int item_idx)
 {
-	struct itemspec *item = &ItemMap[item_idx];
-	if (item->weapon_ammo_type) { // Weapons with ammunition: mostly guns, or melee weapons needing a power pack
+	struct itemspec *the_item = &ItemMap[item_idx];
+	if (the_item->weapon_ammo_type) { // Weapons with ammunition: mostly guns, or melee weapons needing a power pack
 		sprintf(str, 	_("%s (%s)\n\
 			Damage: %d-%d, Attack Time: %.2fs, Reload Time: %.2fs, Ammo: (%d/%s)\n\
 			STR: >%d\n%s"),
-				item_specs_get_name(item_idx), item->id,
-				item->weapon_base_damage, item->weapon_base_damage + item->weapon_damage_modifier,
-				item->weapon_attack_time, item->weapon_reloading_time,
-				item->weapon_ammo_clip_size, item->weapon_ammo_type,
-				item->item_require_strength,
-				item->weapon_needs_two_hands ? _("Requires two hands\n") : "" );
+				item_specs_get_name(item_idx), the_item->id,
+				the_item->weapon_base_damage, the_item->weapon_base_damage + the_item->weapon_damage_modifier,
+				the_item->weapon_attack_time, the_item->weapon_reloading_time,
+				the_item->weapon_ammo_clip_size, the_item->weapon_ammo_type,
+				the_item->item_require_strength,
+				the_item->weapon_needs_two_hands ? _("Requires two hands\n") : "" );
 
-	} else if (item->slot == WEAPON_SLOT) { // Other weapons
+	} else if (the_item->slot == WEAPON_SLOT) { // Other weapons
 		sprintf(str, 	_("%s (%s)\n\
 			Damage: %d-%d, Attack Time: %.2fs,\n\
 			STR: >%d, DEX: >%d, COOL: >%d\n%s"),
-				item_specs_get_name(item_idx), item->id,
-				item->weapon_base_damage, item->weapon_base_damage + item->weapon_damage_modifier,
-				item->weapon_attack_time,
-				item->item_require_strength, item->item_require_dexterity, item->item_require_cooling,
-				item->weapon_needs_two_hands ? _("Requires two hands\n") : "" );
+				item_specs_get_name(item_idx), the_item->id,
+				the_item->weapon_base_damage, the_item->weapon_base_damage + the_item->weapon_damage_modifier,
+				the_item->weapon_attack_time,
+				the_item->item_require_strength, the_item->item_require_dexterity, the_item->item_require_cooling,
+				the_item->weapon_needs_two_hands ? _("Requires two hands\n") : "" );
 
-	} else if (item->slot & (SHIELD_SLOT | HELM_SLOT | ARMOR_SLOT | BOOT_SLOT)) {
+	} else if (the_item->slot & (SHIELD_SLOT | HELM_SLOT | ARMOR_SLOT | BOOT_SLOT)) {
 		sprintf(str, 	_("%s (%s)\n\
 			Armor: %d-%d, Durability:  %d-%d,\n\
 			STR: >%d, DEX: >%d, COOL: >%d\n"),
-				item_specs_get_name(item_idx), item->id,
-				item->base_armor_class, item->base_armor_class + item->armor_class_modifier,
-				item->base_item_durability, item->base_item_durability + item->item_durability_modifier,
-				item->item_require_strength, item->item_require_dexterity, item->item_require_cooling);
+				item_specs_get_name(item_idx), the_item->id,
+				the_item->base_armor_class, the_item->base_armor_class + the_item->armor_class_modifier,
+				the_item->base_item_durability, the_item->base_item_durability + the_item->item_durability_modifier,
+				the_item->item_require_strength, the_item->item_require_dexterity, the_item->item_require_cooling);
 
 	} else {
 		sprintf(str, "%s (%s)\n%s",
-			item_specs_get_name(item_idx), item->id, item->item_description);
+			item_specs_get_name(item_idx), the_item->id, the_item->item_description);
 	}
 }
 

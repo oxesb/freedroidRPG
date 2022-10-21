@@ -271,7 +271,6 @@ void update_timeouts_for_bots_on_level(int level_num, float latest_frame_time)
  * ----------------------------------------------------------------- */
 void UpdateCountersForThisFrame(void)
 {
-	int i;
 	float my_speed;
 	float latest_frame_time = Frame_Time();
 	int level_num;
@@ -416,7 +415,7 @@ void UpdateCountersForThisFrame(void)
 	// enemies, we keep track to the time spent actually in the game, i.e.
 	// time actually spent passing frames...
 	//
-	for (i = 0; i < curShip.num_levels; i++) {
+	for (int i = 0; i < curShip.num_levels; i++) {
 		if (!level_exists(i))
 			continue;
 		if (Me.pos.z != i) {

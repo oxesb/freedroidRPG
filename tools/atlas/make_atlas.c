@@ -75,7 +75,7 @@ static void init_sdl(void)
 	atexit(SDL_Quit);
 }
 
-static void init_output(int atlas_num)
+static void init_output(int cur_atlas_num)
 {
 	atlas_surf = SDL_CreateRGBSurface(0, atlas_width, atlas_height, 32, 0xff, 0xff00, 0xff0000, 0xff000000);
 	if (!atlas_surf) {
@@ -94,22 +94,22 @@ static void init_output(int atlas_num)
 	if (img_dir) {
 		int img_dir_len = strlen(img_dir);
 		if (!strncmp(image_out_path, img_dir, img_dir_len)) {
-			sprintf(path, "./%s%d.png", image_out_path + img_dir_len + 1, atlas_num);
+			sprintf(path, "./%s%d.png", image_out_path + img_dir_len + 1, cur_atlas_num);
 		} else {
-			sprintf(path, "%s%d.png", image_out_path, atlas_num);
+			sprintf(path, "%s%d.png", image_out_path, cur_atlas_num);
 		}
 	} else {
-		sprintf(path, "%s%d.png", image_out_path, atlas_num);
+		sprintf(path, "%s%d.png", image_out_path, cur_atlas_num);
 	}
 	fprintf(atlas_file, "* %s size %d %d\n", path, atlas_width, atlas_height);
 
 	total_image_area = 0;
 }
 
-static void finish_output(int atlas_num)
+static void finish_output(int cur_atlas_num)
 {
 	char path[2048];
-	sprintf(path, "%s%d.png", image_out_path, atlas_num);
+	sprintf(path, "%s%d.png", image_out_path, cur_atlas_num);
 
 	// There is a possibility that a lot of space is empty in an atlas image and
 	// the height of the image can be reduced. It's especially true for the last image of texture atlas.
@@ -134,7 +134,7 @@ static void finish_output(int atlas_num)
 	png_save_surface(path, atlas_surf);
 	SDL_FreeSurface(atlas_surf);
 
-	printf("Atlas %d created. Last y position is %d. Atlas size: %dkB, images size: %dkB. Packing efficiency is %f.\n", atlas_num, last_y, (atlas_width * height * 4) / 1024, (total_image_area * 4) / 1024, (float)total_image_area/(float)(atlas_width * height));
+	printf("Atlas %d created. Last y position is %d. Atlas size: %dkB, images size: %dkB. Packing efficiency is %f.\n", cur_atlas_num, last_y, (atlas_width * height * 4) / 1024, (total_image_area * 4) / 1024, (float)total_image_area/(float)(atlas_width * height));
 }
 
 

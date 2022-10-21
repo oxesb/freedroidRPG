@@ -131,7 +131,7 @@ typedef struct mouse_press_button {
 
 /* Type definitions needed to create specific save/load functions */
 typedef char *string;
-typedef int item_type;
+typedef int item_t;
 
 typedef struct keybind {
 	string name; /**< keybinding name, taken from keybindNames */
@@ -343,7 +343,7 @@ typedef struct item {
 	gps pos;
 	gps virt_pos;
 	SDL_Rect text_slot_rectangle;
-	item_type type;
+	item_t type;
 	int max_durability;	// the maximum item durability reachable for this item
 	float current_durability;	// the currently remaining durability for this item
 	float throw_time;	// has this item just jumped out from a chest maybe or is it jumping right now?

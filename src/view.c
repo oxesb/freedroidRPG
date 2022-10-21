@@ -1303,7 +1303,7 @@ static void show_obstacle(int mask, obstacle * o, int code_number, int opacity)
 void blit_preput_objects_according_to_blitting_list(int mask)
 {
 	obstacle *our_obstacle = NULL;
-	obstacle_spec *obstacle_spec = NULL;
+	obstacle_spec *spec = NULL;
 	int item_under_cursor = -1;
 	level *item_under_cursor_lvl = NULL;
 
@@ -1329,7 +1329,7 @@ void blit_preput_objects_according_to_blitting_list(int mask)
 			}
 
 			our_obstacle = e->element_pointer;
-			obstacle_spec = get_obstacle_spec(our_obstacle->type);
+			spec = get_obstacle_spec(our_obstacle->type);
 
 			// If the obstacle has a shadow, it seems like now would be a good time
 			// to blit it.
@@ -1349,7 +1349,7 @@ void blit_preput_objects_according_to_blitting_list(int mask)
 
 			// Draw the obstacle by itself if it is a preput obstacle
 			//
-			if (obstacle_spec->flags & NEEDS_PRE_PUT) {
+			if (spec->flags & NEEDS_PRE_PUT) {
 				if (e->element_type == BLITTING_TYPE_VOLATILE_OBSTACLE)
 					show_obstacle(mask, ((obstacle *) e->element_pointer), -2, e->code_number);
 				else

@@ -261,18 +261,18 @@ static void get_excpt_list(char *section_pointer)
 
 			// Call sub-validator's parse function
 
-			struct lvlval_excpt_item *item = (struct lvlval_excpt_item *)malloc(sizeof(struct lvlval_excpt_item));
-			item->caught = FALSE;
-			ReadValueFromString(ptr, "Rule=", "%d", &(item->rule_id), NULL);
+			struct lvlval_excpt_item *the_item = (struct lvlval_excpt_item *)malloc(sizeof(struct lvlval_excpt_item));
+			the_item->caught = FALSE;
+			ReadValueFromString(ptr, "Rule=", "%d", &(the_item->rule_id), NULL);
 
-			item->opaque_data = one_validator->parse_excpt(ptr);
+			the_item->opaque_data = one_validator->parse_excpt(ptr);
 
 			// Add the retrieved data to the sub-validator's exceptions list
 
-			if (item->opaque_data == NULL)
-				free(item);
+			if (the_item->opaque_data == NULL)
+				free(the_item);
 			else
-				list_add(&(item->node), &(one_validator->excpt_list));
+				list_add(&(the_item->node), &(one_validator->excpt_list));
 
 			break;
 		}
@@ -336,14 +336,14 @@ static int lookup_exception(struct level_validator *this, void *opaque_data)
 	if (this->cmp == NULL)
 		return FALSE;
 
-	struct lvlval_excpt_item *item;
+	struct lvlval_excpt_item *the_item;
 
 	// Loop on each item in the list, and call the validator's comparator
 
-	list_for_each_entry(item, &(this->excpt_list), node) {
-		int rtn = this->cmp(item->opaque_data, opaque_data);
+	list_for_each_entry(the_item, &(this->excpt_list), node) {
+		int rtn = this->cmp(the_item->opaque_data, opaque_data);
 		if (rtn) {
-			item->caught = TRUE;	// Mark the exception has caught
+			the_item->caught = TRUE;	// Mark the exception has caught
 			return TRUE;
 		}
 	}
@@ -367,17 +367,17 @@ static int print_uncaught_exceptions(char *act_name)
 
 	while (one_validator = &(level_validators[v++]), one_validator->initial != '\0') {
 		// Loop on each item in the list, and check 'caught' value
-		struct lvlval_excpt_item *item;
+		struct lvlval_excpt_item *the_item;
 
-		list_for_each_entry(item, &(one_validator->excpt_list), node) {
-			if (!item->caught) {
+		list_for_each_entry(the_item, &(one_validator->excpt_list), node) {
+			if (!the_item->caught) {
 				if (first) {
 					putchar('\n');
 					puts(bigline);
 					printf("During execution of the validator, the following exception rules were not caught on act '%s':\n", act_name);
 					first = FALSE;
 				}
-				printf(" %d", item->rule_id);
+				printf(" %d", the_item->rule_id);
 				rtn = TRUE;
 			}
 		}
@@ -397,14 +397,14 @@ static void free_exception_lists(void)
 {
 	int v = 0;
 	struct level_validator *one_validator;
-	struct lvlval_excpt_item *item;
+	struct lvlval_excpt_item *the_item;
 	struct lvlval_excpt_item *next;
 
 	while (one_validator = &(level_validators[v++]), one_validator->initial != '\0') {
-		list_for_each_entry_safe(item, next, &(one_validator->excpt_list), node) {
-			free(item->opaque_data);
-			list_del(&(item->node));
-			free(item);
+		list_for_each_entry_safe(the_item, next, &(one_validator->excpt_list), node) {
+			free(the_item->opaque_data);
+			list_del(&(the_item->node));
+			free(the_item);
 		}
 	}
 }
@@ -1201,8 +1201,8 @@ static void lvlval_obstacles_execute(struct level_validator *this, struct lvlval
 			continue;
 		}
 
-		obstacle_spec *obstacle_spec = get_obstacle_spec(o->type);
-		border = o->pos.x + obstacle_spec->left_border;
+		obstacle_spec *obs_spec = get_obstacle_spec(o->type);
+		border = o->pos.x + obs_spec->left_border;
 		if (border < 0 && l->jump_target_west != -1) {
 			struct obstacle_excpt_data to_check =
 			    { 'W', {o->pos.x, o->pos.y, l->levelnum}, o->type, border };
@@ -1214,7 +1214,7 @@ static void lvlval_obstacles_execute(struct level_validator *this, struct lvlval
 			}
 		}
 
-		border = o->pos.x + obstacle_spec->right_border;
+		border = o->pos.x + obs_spec->right_border;
 		if (border > max_x && l->jump_target_east != -1) {
 			struct obstacle_excpt_data to_check =
 			    { 'E', {o->pos.x, o->pos.y, l->levelnum}, o->type, border };
@@ -1226,7 +1226,7 @@ static void lvlval_obstacles_execute(struct level_validator *this, struct lvlval
 			}
 		}
 
-		border = o->pos.y + obstacle_spec->upper_border;
+		border = o->pos.y + obs_spec->upper_border;
 		if (border < 0 && l->jump_target_north != -1) {
 			struct obstacle_excpt_data to_check =
 			    { 'N', {o->pos.x, o->pos.y, l->levelnum}, o->type, border };
@@ -1238,7 +1238,7 @@ static void lvlval_obstacles_execute(struct level_validator *this, struct lvlval
 			}
 		}
 
-		border = o->pos.y + obstacle_spec->lower_border;
+		border = o->pos.y + obs_spec->lower_border;
 		if (border > max_y && l->jump_target_south != -1) {
 
 			struct obstacle_excpt_data to_check =

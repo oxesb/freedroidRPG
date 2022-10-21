@@ -1070,8 +1070,8 @@ static int smash_obstacles_only_on_tile(float x, float y, int lvl, int map_x, in
 
 		struct obstacle *target_obstacle = &(box_level->obstacle_list[target_idx]);
 
-		struct obstacle_spec *obstacle_spec = get_obstacle_spec(target_obstacle->type);
-		if (!(obstacle_spec->flags & IS_SMASHABLE))
+		struct obstacle_spec *obs_spec = get_obstacle_spec(target_obstacle->type);
+		if (!(obs_spec->flags & IS_SMASHABLE))
 			continue;
 
 		// Now we check if the item really was close enough to the strike target.
@@ -1447,11 +1447,11 @@ static void encode_map_labels(struct auto_string *shipstr, struct level *lvl)
 	int i;
 	for (i = 0; i < lvl->map_labels.size; i++) {
 		// Get the map label
-		struct map_label *map_label = &ACCESS_MAP_LABEL(lvl->map_labels, i);
+		struct map_label *label = &ACCESS_MAP_LABEL(lvl->map_labels, i);
 
 		// Encode map label
-		autostr_append(shipstr, "%s%d %s%d %s%s\"\n", X_POSITION_OF_LABEL_STRING, map_label->pos.x, Y_POSITION_OF_LABEL_STRING,
-				            map_label->pos.y, LABEL_ITSELF_ANNOUNCE_STRING, map_label->label_name);
+		autostr_append(shipstr, "%s%d %s%d %s%s\"\n", X_POSITION_OF_LABEL_STRING, label->pos.x, Y_POSITION_OF_LABEL_STRING,
+				            label->pos.y, LABEL_ITSELF_ANNOUNCE_STRING, label->label_name);
 	}
 
 	autostr_append(shipstr, "%s\n", MAP_LABEL_END_STRING);
