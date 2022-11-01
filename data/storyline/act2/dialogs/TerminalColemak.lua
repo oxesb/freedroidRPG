@@ -147,7 +147,7 @@ return {
 				Npc:says(_"Do not worry. I always have a plan.", "NO_WAIT")
 				Npc:says(_"First you must rescue me. This is top priority.", "NO_WAIT")
 				Npc:says(_"I am looking for some former allies now.", "NO_WAIT")
-				Npc:says(_"They'll help you when time comes.", "NO_WAIT")
+				Npc:says(_"They'll help you when the time comes.", "NO_WAIT")
 				Npc:says("")
 				--; TRANSLATORS: %s = Tux:get_player_name()
 				Npc:says(_"Where to find me? Whoa! Not so fast, %s.", Tux:get_player_name(), "NO_WAIT")

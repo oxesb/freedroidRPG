@@ -31,9 +31,9 @@ return {
 		Tux:says(_"Ah, I remember now. I was on a flight, on my way to fight against MegaSys president.")
 		Tux:says(_"...Have I lost?")
 		cli_says(_"*deep breath*")
-		Tux:says(_"No, I did not even reached the location. The stratopod started acting strangely and crashed.")
+		Tux:says(_"No, I did not even reach the location. The stratopod started acting strangely and crashed.")
 		Tux:says(_"I better get up, and find out where I am.")
-		Tux:assign_quest("Where Am I?", _" The pilot wasn't so experienced as he told. He only played FlightGear a couple of times. By the look of things, I must have crashed. I should explore these lands now.")
+		Tux:assign_quest("Where Am I?", _" The pilot wasn't as experienced as he claimed. He only played FlightGear a couple of times. By the look of things, I must have crashed. I should explore these lands now.")
 	end,
 
 	EveryTime = function()

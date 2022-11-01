@@ -73,7 +73,7 @@ return {
 		text = _"You just killed a man and a friendly bot!!",
 		code = function()
 			if (SecurityChief:is_dead() and ProgrammingChief:is_dead()) then
-				Npc:says(_"Well, as you aren't trying to kill me as some irrational birds I've met, I'll say to you.")
+				Npc:says(_"Well, as you aren't trying to kill me as some irrational birds I've met, I'll tell you.")
 			elseif (SecurityChief:is_dead() or ProgrammingChief:is_dead()) then
 				Npc:says(_"I'll be finished soon, so don't worry. There is an important thing about them I must tell you.")
 			else
@@ -85,10 +85,10 @@ return {
 				ProgrammingChief:drop_dead()
 			end
 			Npc:says(_"There are no humans awake on RR Resorts.", "NO_WAIT") -- What about Fred and Yadda?
-			Npc:says(_"What you think that was a human, was also a bot. It just have a different skin.")
-			Npc:says(_"If it could merge on the human society, the chaos would be even bigger.")
+			Npc:says(_"What you thought was a human, was also a bot. It just had a different skin.")
+			Npc:says(_"If it were able to merge with human society, the chaos would be even bigger.")
 			Tux:says(_"Then how come I've never heard of bots disguised as humans?")
-			Npc:says(_"I don't know. I was frozen before they completed the project. Maybe it turned out too expensive?")
+			Npc:says(_"I don't know. I was frozen before they completed the project. Maybe it turned out to be too expensive?")
 			hide("guyinfo")
 		end,
 	},
@@ -97,9 +97,9 @@ return {
 		id = "bossinfo",
 		text = _"The ones you just murdered where mistaking me with some master...",
 		code = function()
-			Npc:says(_"Ah yes, I've heard that from Dvorak. Apparently MS big boss was born in Linarius.", "NO_WAIT")
+			Npc:says(_"Ah yes, I've heard that from Dvorak. Apparently the MS big boss was born in Linarius.", "NO_WAIT")
 			Npc:says(_"I've heard his nickname a few times now: [b]Agent Zero[/b].")
-			Npc:says(_"Apparently, from what I collected while I was on MS, he was one of the first agents sent by the High Council.")
+			Npc:says(_"Apparently, from what I collected while I was in MS, he was one of the first agents sent by the High Council.")
 			Npc:says(_"I'm very glad they didn't found out I learned that, or I would be dead a long time ago.")
 			hide("bossinfo") show("lhcinfo")
 		end,
@@ -110,9 +110,9 @@ return {
 		text = _"Why are you cryonized?",
 		code = function()
 			Npc:says(_"Well, as you might be aware, if you figure out too much you're cryonized.", "NO_WAIT")
-			Npc:says(_"Only the ones who figures out about MS big boss are actually killed.")
+			Npc:says(_"Only the ones who figure out about the MS big boss are actually killed.")
 			Npc:says(_"The reason is simple. Killing would be too noisy, while cryonizing keeps them undercover.")
-			Npc:says(_"Thankfully they never figured out about what I truly knew. I was cryonized for figuring out that Hell Fortress Factory Boss had a teletransport network only for him which he used to grab the money and go on vacations in tropical islands.") -- TODO: Consistency error, HF was a name given later by the Red Guard! Use the region ID, and Tux says “54xxx? That was... Yep, the Hell Fortress. Ironic.”
+			Npc:says(_"Thankfully they never figured out what I truly knew. I was cryonized for figuring out that the Hell Fortress Factory Boss had a teletransport network only for him which he used to grab money and go on vacations in tropical islands.") -- TODO: Consistency error, HF was a name given later by the Red Guard! Use the region ID, and Tux says “54xxx? That was... Yep, the Hell Fortress. Ironic.”
 			Tux:says(_"Ironic.")
 			hide("youinfo")
 		end,
@@ -137,7 +137,7 @@ return {
 			Tux:says(_"Ah, uhm, sorry. I've been cryonized for too long. I don't have memories from before awakening.")
 			Npc:says(_"In this case, you should find Dvorak first, he was a good friend of yours. Like, your guide.")
 			Npc:says(_"He will explain to you in details about Linarians, their intent, the High Council... And most importantly...")
-			Npc:says(_"What must be done to save the mankind.")
+			Npc:says(_"What must be done to save mankind.")
 			hide("lhcinfo")
 			show("node99")
 		end,
@@ -147,7 +147,7 @@ return {
 		id = "node99",
 		text = _"That's too much for me. Give me a minute or two to process all this information, please.",
 		code = function()
-			Npc:says(_"Don't worry my friend. Take all time you need, and then come back to talk with me.")
+			Npc:says(_"Don't worry, my friend. Take all the time you need, and then come back to talk with me.")
 			Tux:says(_"Thanks, Colemak. I'll talk to you as soon as I'm ready.")
 			Npc:says("", "NO_WAIT") -- White division line
 			Npc:says(_"[b]Important: Colemak locked the City Gate to prevent enemy armies from coming from the Factory.[/b]")
