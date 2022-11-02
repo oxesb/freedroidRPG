@@ -205,7 +205,7 @@ tx-pull:
 	    done; \
 	  fi; \
 	done;
-	#rm -rf tx-$(TXPREFIX)
+	rm -rf tx-$(TXPREFIX)
 
 # Push the translations to transifex.
 #
