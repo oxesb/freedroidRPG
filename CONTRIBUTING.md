@@ -37,5 +37,5 @@ Find us at :
 * `Website       ................ https://www.freedroid.org/`
 * `IRC channel   ................ #freedroid on irc.libera.chat or https://web.libera.chat/#freedroid`
 * `Mailing list  ................ freedroid-discussion@lists.sourceforge.net`
-* `Gitlab project page   ........ https://gitlab.com/freedroid/freedroid-src`
+* `Source project page   ........ https://codeberg.org/freedroid/freedroid-src`
 * `Translation   ................ https://www.transifex.com/arctic-games/freedroid-rpg/`

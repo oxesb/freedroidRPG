@@ -18,28 +18,28 @@
  *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
 
- This file provides a nice frontpage to gitlab's project.
+ This file provides a nice frontpage to git-repos's project.
  Not meant to be in the tar.gz distribution.
 -->
 
 <div>
-  <a class="no-attachment-icon" href="https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/screenshots/fighting_s.png" target="_blank">
-    <img alt="Fighting" src="https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/screenshots/fighting_s.png" width="16%">
+  <a class="no-attachment-icon" href="https://codeberg.org/freedroid/freedroid-graphics/raw/branch/master/website/assets/screenshots/fighting_s.png" target="_blank">
+    <img alt="Fighting" src="https://codeberg.org/freedroid/freedroid-graphics/raw/branch/master/website/assets/screenshots/fighting_s.png" width="16%">
   </a>
-  <a class="no-attachment-icon" href="https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/screenshots/town_bar_s.png" target="_blank">
-    <img src="https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/screenshots/town_bar_s.png" width="16%" />
+  <a class="no-attachment-icon" href="https://codeberg.org/freedroid/freedroid-graphics/raw/branch/master/website/assets/screenshots/town_bar_s.png" target="_blank">
+    <img src="https://codeberg.org/freedroid/freedroid-graphics/raw/branch/master/website/assets/screenshots/town_bar_s.png" width="16%" />
   </a>
-  <a class="no-attachment-icon" href="https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/screenshots/in_the_wild_s.png" target="_blank">
-    <img alt="In the wild" src="https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/screenshots/in_the_wild_s.png" width="16%" />
+  <a class="no-attachment-icon" href="https://codeberg.org/freedroid/freedroid-graphics/raw/branch/master/website/assets/screenshots/in_the_wild_s.png" target="_blank">
+    <img alt="In the wild" src="https://codeberg.org/freedroid/freedroid-graphics/raw/branch/master/website/assets/screenshots/in_the_wild_s.png" width="16%" />
   </a>
-  <a class="no-attachment-icon" href="https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/screenshots/fighting_s.png" target="_blank">
-    <img alt="Fighting" src="https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/screenshots/fighting_s.png" width="16%" />
+  <a class="no-attachment-icon" href="https://codeberg.org/freedroid/freedroid-graphics/raw/branch/master/website/assets/screenshots/fighting_s.png" target="_blank">
+    <img alt="Fighting" src="https://codeberg.org/freedroid/freedroid-graphics/raw/branch/master/website/assets/screenshots/fighting_s.png" width="16%" />
   </a>
-  <a class="no-attachment-icon" href="https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/screenshots/dialog_s.png" target="_blank">
-    <img alt="Dialog screen" src="https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/screenshots/dialog_s.png" width="16%" />
+  <a class="no-attachment-icon" href="https://codeberg.org/freedroid/freedroid-graphics/raw/branch/master/website/assets/screenshots/dialog_s.png" target="_blank">
+    <img alt="Dialog screen" src="https://codeberg.org/freedroid/freedroid-graphics/raw/branch/master/website/assets/screenshots/dialog_s.png" width="16%" />
   </a>
-  <a class="no-attachment-icon" href="https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/screenshots/inventory_screen_s.png" target="_blank">
-    <img alt="Inventory screen" src="https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/screenshots/inventory_screen_s.png" width="16%" />
+  <a class="no-attachment-icon" href="https://codeberg.org/freedroid/freedroid-graphics/raw/branch/master/website/assets/screenshots/inventory_screen_s.png" target="_blank">
+    <img alt="Inventory screen" src="https://codeberg.org/freedroid/freedroid-graphics/raw/branch/master/website/assets/screenshots/inventory_screen_s.png" width="16%" />
   </a>
 </div>
 
@@ -67,12 +67,12 @@ We do not accept merge requests, but we welcome you to submit all your contribut
 
 | Categories                                | License                                        | Platforms |
 | :---------------------------------------- | :--------------------------------------------- | :-------: |
-| Side-Scrolling/Arcade Games, Role-Playing | GNU General Public License version 2.0 (GPLv2) | <a><img alt="bsd" src="https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/platforms/bsd.png"></a><a><img alt="linux" src="https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/platforms/linux.png"></a><a><img alt="mac" src="https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/platforms/mac.png"></a><a><img alt="windows" src="https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/platforms/windows.png"></a>
+| Side-Scrolling/Arcade Games, Role-Playing | GNU General Public License version 2.0 (GPLv2) | <a><img alt="bsd" src="https://codeberg.org/freedroid/freedroid-graphics/raw/branch/master/website/assets/platforms/bsd.png"></a><a><img alt="linux" src="https://codeberg.org/freedroid/freedroid-graphics/raw/branch/master/website/assets/platforms/linux.png"></a><a><img alt="mac" src="https://codeberg.org/freedroid/freedroid-graphics/raw/branch/master/website/assets/platforms/mac.png"></a><a><img alt="windows" src="https://codeberg.org/freedroid/freedroid-graphics/raw/branch/master/website/assets/platforms/windows.png"></a>
 
 [WWW]: https://www.freedroid.org
 [RB]: https://rb.freedroid.org
-[BSD]: https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/platforms/bsd.png
-[LIN]: https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/platforms/linux.png
-[MAC]: https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/platforms/mac.png
-[WIN]: https://gitlab.com/freedroid/freedroid-graphics/raw/master/website/assets/platforms/windows.png
+[BSD]: https://codeberg.org/freedroid/freedroid-graphics/raw/branch/master/website/assets/platforms/bsd.png
+[LIN]: https://codeberg.org/freedroid/freedroid-graphics/raw/branch/master/website/assets/platforms/linux.png
+[MAC]: https://codeberg.org/freedroid/freedroid-graphics/raw/branch/master/website/assets/platforms/mac.png
+[WIN]: https://codeberg.org/freedroid/freedroid-graphics/raw/branch/master/website/assets/platforms/windows.png
 

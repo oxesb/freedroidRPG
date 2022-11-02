@@ -292,7 +292,7 @@ Level Editor & Developer FAQ:
 
 	Q: How can I get the latest development version of the game?
 	A: This is very simple when using Linux:
-	      git clone https://gitlab.com/freedroid/freedroid-src.git
+	      git clone https://codeberg.org/freedroid/freedroid-src.git
 	   If you are using Windows we recommend using a tool like 
 	      http://www.collab.net/downloads/giteye?CID=tigris
 	   If you still run into problems, best again discuss it with the people on
@@ -312,7 +312,7 @@ Level Editor & Developer FAQ:
 7. Contact
 ===========
  Website       ................ https://www.freedroid.org
- Source project page   ........ https://gitlab.com/groups/freedroid
+ Source project page   ........ https://codeberg.org/groups/freedroid
  IRC channel   ................ #freedroid on irc.libera.chat or
                                 https://web.libera.chat/#freedroid
  Mailing list  ................ freedroid-discussion@lists.sourceforge.net

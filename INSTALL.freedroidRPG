@@ -143,7 +143,7 @@ From now on, you have everything installed and you are ready to build the
 game using the same commands than on Linux:
 
 7) Clone freedroid-src repository:
-     git clone https://gitlab.com/freedroid/freedroid-src.git
+     git clone https://codeberg.org/freedroid/freedroid-src.git
 
 8) Build it:
      ./autogen.sh
