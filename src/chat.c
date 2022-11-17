@@ -38,7 +38,7 @@
 #include "struct.h"
 #include "proto.h"
 #include "global.h"
-#include "lua.h"
+#include "lua/lua_core.h"
 
 #include "widgets/widgets.h"
 

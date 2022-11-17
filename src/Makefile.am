@@ -26,7 +26,7 @@ freedroidRPG_SOURCES = \
 	hud.c \
 	image.c influ.c init.c input.c items.c item_upgrades.c item_upgrades_ui.c \
 	keyboard.c \
-	lang.c light.c lists.c lua.c luaconfig.c \
+	lang.c light.c lists.c \
 	main.c map.c map_label.c menu.c misc.c mission.c \
 	npc.c \
 	obstacle.c obstacle_extension.c open_gl.c open_gl_atlas.c open_gl_debug.c open_gl_shaders.c \
@@ -42,7 +42,8 @@ freedroidRPG_SOURCES = \
 	\
 	gen_savestruct.py \
 	\
-	lua/luaFD.c lua/luaFD.h lua/luaFD_bindings.h lua/luaFD_tux.c lua/luaFD_npc.c \
+	lua/config_loader.c lua/game_scripting.c lua/lua_core.c lua/lua_core.h \
+	lua/bindings/luaFD.c lua/bindings/luaFD.h lua/bindings/luaFD_bindings.h lua/bindings/luaFD_tux.c lua/bindings/luaFD_npc.c \
 	\
 	lvledit/lvledit.c lvledit/lvledit.h \
 	lvledit/lvledit_actions.c lvledit/lvledit_actions.h \

@@ -24,6 +24,12 @@
 
 /**
  * This file contains functions related to the Lua scripting interface of FreedroidRPG
+ * It contains functions bound to lua, that we call 'bfuncs' (bounded functions).
+ * They are mainly used in dialogs and event triggers.
+ * Those functions are step by step replaced by 'cfuncs' in lua bindings (see
+ * src/lua/bindings/luaFD_bindings.h, and see the bfuncs array in this file).
+ * We however keep them for backward compatibilty, but they should be considered as
+ * deprecated.
  */
 
 #include "system.h"
@@ -33,52 +39,15 @@
 #include "global.h"
 #include "proto.h"
 
+#include "lua_core.h"
+
 #include "lvledit/lvledit_actions.h"
 #include "lvledit/lvledit_map.h"
 
 #include "widgets/widgets.h"
 
-#include "lua.h"
-#include "lauxlib.h"
-#include "lualib.h"
-
-/* Lua state for dialog execution */
+/* Pointer to the Lua state for game scripting execution */
 static lua_State *dialog_lua_state;
-
-/* Lua state for config execution */
-lua_State *config_lua_state;
-
-lua_State *get_lua_state(enum lua_target target)
-{
-	if (target == LUA_CONFIG)
-		return config_lua_state;
-
-	return dialog_lua_state;
-}
-
-int lua_to_int(lua_Integer value)
-{
-	if (sizeof(lua_Integer) > sizeof(int)) {
-		if (value > (lua_Integer)INT_MAX)
-			return INT_MAX;
-		if (value < (lua_Integer)INT_MIN)
-			return INT_MIN;
-		return (int)value;
-	}
-	return (int)value;
-}
-
-short lua_to_short(lua_Integer value)
-{
-	if (sizeof(lua_Integer) > sizeof(short)) {
-		if (value > (lua_Integer)SHRT_MAX)
-			return SHRT_MAX;
-		if (value < (lua_Integer)SHRT_MIN)
-			return SHRT_MIN;
-		return (short)value;
-	}
-	return (short)value;
-}
 
 /**
  * Retrieve current chat context, and fail with error if there is no dialog
@@ -118,7 +87,11 @@ static enemy *get_enemy_arg(lua_State *L, int param_number)
 	return get_enemy_opt(L, param_number, FALSE);
 }
 
-static int lua_event_teleport(lua_State * L)
+//=====================================================================
+// bfuncs, to use in dialogs scripts
+//=====================================================================
+
+static int bfunc_teleport(lua_State * L)
 {
 	gps stop_pos = { -1, -1, -1 };
 	const char *label = luaL_checkstring(L, 1);
@@ -132,7 +105,7 @@ static int lua_event_teleport(lua_State * L)
 	return 0;
 }
 
-static int lua_event_teleport_npc(lua_State * L)
+static int bfunc_teleport_npc(lua_State * L)
 {
 	const char *label = luaL_checkstring(L, 1);
 	enemy *en = get_enemy_arg(L, 2);
@@ -141,14 +114,14 @@ static int lua_event_teleport_npc(lua_State * L)
 	return 0;
 }
 
-static int lua_event_teleport_home(lua_State * L)
+static int bfunc_teleport_home(lua_State * L)
 {
 	TeleportHome();
 
 	return 0;
 }
 
-static int lua_event_has_teleport_anchor(lua_State * L)
+static int bfunc_has_teleport_anchor(lua_State * L)
 {
 	if (Me.teleport_anchor.z != -1)
 		lua_pushboolean(L, TRUE);
@@ -158,21 +131,21 @@ static int lua_event_has_teleport_anchor(lua_State * L)
 	return 1;
 }
 
-static int lua_event_display_big_message(lua_State * L)
+static int bfunc_display_big_message(lua_State * L)
 {
 	const char *msg = luaL_checkstring(L, 1);
 	SetNewBigScreenMessage(msg);
 	return 0;
 }
 
-static int lua_event_display_console_message(lua_State * L)
+static int bfunc_display_console_message(lua_State * L)
 {
 	const char *msg = luaL_checkstring(L, 1);
 	append_new_game_message("%s", msg);
 	return 0;
 }
 
-static int lua_event_change_obstacle(lua_State * L)
+static int bfunc_change_obstacle(lua_State * L)
 {
 	const char *obslabel = luaL_checkstring(L, 1);
 	int type = lua_to_int(luaL_checkinteger(L, 2));
@@ -180,7 +153,7 @@ static int lua_event_change_obstacle(lua_State * L)
 	return 0;
 }
 
-static int lua_event_get_obstacle_type(lua_State * L)
+static int bfunc_get_obstacle_type(lua_State * L)
 {
 	const char *obslabel = luaL_checkstring(L, 1);
 
@@ -190,14 +163,14 @@ static int lua_event_get_obstacle_type(lua_State * L)
 	return 1;
 }
 
-static int lua_event_delete_obstacle(lua_State * L)
+static int bfunc_delete_obstacle(lua_State * L)
 {
 	const char *obslabel = luaL_checkstring(L, 1);
 	change_obstacle_type(obslabel, -1);
 	return 0;
 }
 
-static int lua_change_obstacle_message(lua_State *L)
+static int bfunc_obstacle_message(lua_State *L)
 {
 	const char *obslabel = luaL_checkstring(L, 1);
 	const char *message = luaL_checkstring(L, 2);
@@ -213,7 +186,7 @@ static int lua_change_obstacle_message(lua_State *L)
 	return 0;
 }
 
-static int lua_event_heal_tux(lua_State * L)
+static int bfunc_heal_tux(lua_State * L)
 {
 	if (Me.energy > 0) {
 		Me.energy = Me.maxenergy;
@@ -222,13 +195,13 @@ static int lua_event_heal_tux(lua_State * L)
 	return 0;
 }
 
-static int lua_event_kill_tux(lua_State * L)
+static int bfunc_kill_tux(lua_State * L)
 {
 	Me.energy = -100;
 	return 0;
 }
 
-static int lua_event_hurt_tux(lua_State * L)
+static int bfunc_hurt_tux(lua_State * L)
 {
 	int hp = lua_to_int(luaL_checkinteger(L, 1));
 
@@ -239,32 +212,32 @@ static int lua_event_hurt_tux(lua_State * L)
 	return 0;
 }
 
-static int lua_event_get_tux_hp(lua_State * L)
+static int bfunc_get_tux_hp(lua_State * L)
 {
 	lua_pushinteger(L, (lua_Integer)Me.energy);
 	return 1;
 }
 
-static int lua_event_get_tux_max_hp(lua_State * L)
+static int bfunc_get_tux_max_hp(lua_State * L)
 {
 	lua_pushinteger(L, (lua_Integer)Me.maxenergy);
 	return 1;
 }
 
-static int lua_event_heat_tux(lua_State * L)
+static int bfunc_heat_tux(lua_State * L)
 {
 	int temp = lua_to_int(luaL_checkinteger(L, 1));
 	Me.temperature += temp;
 	return 0;
 }
 
-static int lua_event_get_tux_cool(lua_State * L)
+static int bfunc_get_tux_cool(lua_State * L)
 {
 	lua_pushinteger(L, (lua_Integer)(Me.max_temperature - Me.temperature));
 	return 1;
 }
 
-static int lua_event_improve_skill(lua_State * L)
+static int bfunc_improve_skill(lua_State * L)
 {
 	const char *skilltype = luaL_checkstring(L, 1);
 	int *skillptr = NULL;
@@ -289,7 +262,7 @@ static int lua_event_improve_skill(lua_State * L)
 	return 0;
 }
 
-static int lua_event_get_skill(lua_State * L)
+static int bfunc_get_skill(lua_State * L)
 {
 	const char *skilltype = luaL_checkstring(L, 1);
 	int *skillptr = NULL;
@@ -313,28 +286,28 @@ static int lua_event_get_skill(lua_State * L)
 	return 1;
 }
 
-static int lua_event_improve_program(lua_State * L)
+static int bfunc_improve_program(lua_State * L)
 {
 	const char *pname = luaL_checkstring(L, 1);
 	improve_program(get_program_index_with_name(pname));
 	return 0;
 }
 
-static int lua_event_downgrade_program(lua_State * L)
+static int bfunc_downgrade_program(lua_State * L)
 {
 	const char *pname = luaL_checkstring(L, 1);
 	downgrade_program(get_program_index_with_name(pname));
 	return 0;
 }
 
-static int lua_event_get_program_revision(lua_State * L)
+static int bfunc_get_program_revision(lua_State * L)
 {
 	const char *pname = luaL_checkstring(L, 1);
 	lua_pushinteger(L, (lua_Integer)Me.skill_level[get_program_index_with_name(pname)]);
 	return 1;
 }
 
-static int lua_event_delete_item(lua_State * L)
+static int bfunc_delete_item(lua_State * L)
 {
 	const char *item_id = luaL_checkstring(L, 1);
 	int mult = lua_to_int(luaL_optinteger(L, 2, 1));
@@ -342,7 +315,7 @@ static int lua_event_delete_item(lua_State * L)
 	return 0;
 }
 
-static int lua_event_give_item(lua_State * L)
+static int bfunc_give_item(lua_State * L)
 {
 	const char *itemname = luaL_checkstring(L, 1);
 	int mult = lua_to_int(luaL_optinteger(L, 2, 1));
@@ -365,7 +338,7 @@ static int lua_event_give_item(lua_State * L)
 	return 0;
 }
 
-static int lua_event_sell_item(lua_State *L)
+static int bfunc_sell_item(lua_State *L)
 {
 	struct chat_context *current_chat_context = GET_CURRENT_CHAT_CONTEXT();
 
@@ -378,7 +351,7 @@ static int lua_event_sell_item(lua_State *L)
 	return 0;
 }
 
-static int lua_event_count_item_backpack(lua_State * L)
+static int bfunc_count_item_backpack(lua_State * L)
 {
 	const char *item_id = luaL_checkstring(L, 1);
 
@@ -387,7 +360,7 @@ static int lua_event_count_item_backpack(lua_State * L)
 	return 1;
 }
 
-static int lua_event_has_item_equipped(lua_State * L)
+static int bfunc_has_item_equipped(lua_State * L)
 {
 	const char *item_id = luaL_checkstring(L, 1);
 	int item_idx = get_item_type_by_id(item_id);
@@ -401,7 +374,7 @@ static int lua_event_has_item_equipped(lua_State * L)
 	return 1;
 }
 
-static int lua_event_equip_item(lua_State * L)
+static int bfunc_equip_item(lua_State * L)
 {
 	const char *item_name = luaL_checkstring(L, 1);
 
@@ -415,7 +388,7 @@ static int lua_event_equip_item(lua_State * L)
 	return 0;
 }
 
-static int lua_set_death_item(lua_State * L)
+static int bfunc_death_item(lua_State * L)
 {
 	const char *item_id = luaL_checkstring(L, 1);
 	enemy *en = get_enemy_arg(L, 2);
@@ -426,7 +399,7 @@ static int lua_set_death_item(lua_State * L)
 	return 0;
 }
 
-static int lua_event_add_diary_entry(lua_State * L)
+static int bfunc_add_diary_entry(lua_State * L)
 {
 	const char *mis_name = luaL_checkstring(L, 1);
 	const char *text = luaL_checkstring(L, 2);
@@ -435,7 +408,7 @@ static int lua_event_add_diary_entry(lua_State * L)
 	return 0;
 }
 
-static int lua_event_has_met(lua_State *L)
+static int bfunc_has_met(lua_State *L)
 {
 	const char *npc_name = luaL_checkstring(L, 1);
 	struct npc *used_npc = npc_get(npc_name);
@@ -443,7 +416,7 @@ static int lua_event_has_met(lua_State *L)
 	return 1;
 }
 
-static int lua_event_assign_mission(lua_State * L)
+static int bfunc_assign_mission(lua_State * L)
 {
 	const char *misname = luaL_checkstring(L, 1);
 	const char *diarytext = luaL_optstring(L, 2, NULL);
@@ -455,7 +428,7 @@ static int lua_event_assign_mission(lua_State * L)
 	return 0;
 }
 
-static int lua_event_complete_mission(lua_State * L)
+static int bfunc_complete_mission(lua_State * L)
 {
 	const char *misname = luaL_checkstring(L, 1);
 	const char *diarytext = luaL_optstring(L, 2, NULL);
@@ -467,7 +440,7 @@ static int lua_event_complete_mission(lua_State * L)
 	return 0;
 }
 
-static int lua_event_is_mission_assigned(lua_State * L)
+static int bfunc_is_mission_assigned(lua_State * L)
 {
 	const char *misname = luaL_checkstring(L, 1);
 	struct mission *quest = (struct mission *)dynarray_member(&Me.missions, get_mission_index_by_name(misname), sizeof(struct mission));
@@ -477,7 +450,7 @@ static int lua_event_is_mission_assigned(lua_State * L)
 	return 1;
 }
 
-static int lua_event_is_mission_complete(lua_State * L)
+static int bfunc_is_mission_complete(lua_State * L)
 {
 	const char *misname = luaL_checkstring(L, 1);
 	struct mission *quest = (struct mission *)dynarray_member(&Me.missions, get_mission_index_by_name(misname), sizeof(struct mission));
@@ -487,7 +460,7 @@ static int lua_event_is_mission_complete(lua_State * L)
 	return 1;
 }
 
-static int lua_event_give_xp(lua_State * L)
+static int bfunc_give_xp(lua_State * L)
 {
 	int xp = lua_to_int(luaL_checkinteger(L, 1)) * Me.experience_factor;
 	char tmpstr[150];
@@ -497,20 +470,20 @@ static int lua_event_give_xp(lua_State * L)
 	return 0;
 }
 
-static int lua_event_eat_training_points(lua_State * L)
+static int bfunc_eat_training_points(lua_State * L)
 {
 	int nb = lua_to_int(luaL_checkinteger(L, 1));
 	Me.points_to_distribute -= nb;
 	return 0;
 }
 
-static int lua_event_get_training_points(lua_State * L)
+static int bfunc_get_training_points(lua_State * L)
 {
 	lua_pushinteger(L, (lua_Integer)Me.points_to_distribute);
 	return 1;
 }
 
-static int lua_event_add_gold(lua_State * L)
+static int bfunc_add_gold(lua_State * L)
 {
 	int nb = lua_to_int(luaL_checkinteger(L, 1));
 	char tmpstr[150];
@@ -532,13 +505,13 @@ static int lua_event_add_gold(lua_State * L)
 	return 0;
 }
 
-static int lua_event_get_gold(lua_State * L)
+static int bfunc_get_gold(lua_State * L)
 {
 	lua_pushinteger(L, (lua_Integer)Me.Gold);
 	return 1;
 }
 
-static int lua_event_change_stat(lua_State * L)
+static int bfunc_change_stat(lua_State * L)
 {
 	const char *characteristic = luaL_checkstring(L, 1);
 	int nb = lua_to_int(luaL_checkinteger(L, 2));
@@ -563,7 +536,7 @@ static int lua_event_change_stat(lua_State * L)
 	return 0;
 }
 
-static int lua_event_respawn_level(lua_State * L)
+static int bfunc_respawn_level(lua_State * L)
 {
 	int lnb = lua_to_int(luaL_checkinteger(L, 1));
 
@@ -572,7 +545,7 @@ static int lua_event_respawn_level(lua_State * L)
 	return 0;
 }
 
-static int lua_event_trade_with(lua_State * L)
+static int bfunc_trade_with(lua_State * L)
 {
 	const char *cname = luaL_checkstring(L, 1);
 
@@ -582,42 +555,42 @@ static int lua_event_trade_with(lua_State * L)
 	return 0;
 }
 
-static int lua_event_upgrade_items(lua_State * L)
+static int bfunc_upgrade_items(lua_State * L)
 {
 	item_upgrade_ui();
 
 	return 0;
 }
 
-static int lua_event_craft_addons(lua_State * L)
+static int bfunc_craft_addons(lua_State * L)
 {
 	addon_crafting_ui();
 
 	return 0;
 }
 
-static int lua_event_heal_npc(lua_State * L)
+static int bfunc_heal_npc(lua_State * L)
 {
 	enemy *en = get_enemy_arg(L, 1);
 	en->energy = Droidmap[en->type].maxenergy;
 	return 0;
 }
 
-static int lua_get_npc_damage_amount(lua_State * L)
+static int bfunc_get_npc_damage_amount(lua_State * L)
 {
 	enemy *en = get_enemy_arg(L, 1);
 	lua_pushinteger(L, (lua_Integer)(Droidmap[en->type].maxenergy - en->energy));
 	return 1;
 }
 
-static int lua_get_npc_max_health(lua_State * L)
+static int bfunc_get_npc_max_health(lua_State * L)
 {
 	enemy *en = get_enemy_arg(L, 1);
 	lua_pushinteger(L, (lua_Integer)(Droidmap[en->type].maxenergy));
 	return 1;
 }
 
-static int lua_event_npc_dead(lua_State *L)
+static int bfunc_npc_dead(lua_State *L)
 {
 	const char *cname = luaL_checkstring(L, 1);
 	enemy *erot;
@@ -634,7 +607,7 @@ static int lua_event_npc_dead(lua_State *L)
 	return 1;
 }
 
-static int lua_event_freeze_tux_npc(lua_State * L)
+static int bfunc_freeze_tux_npc(lua_State * L)
 {
 	float duration = luaL_checknumber(L, 1);
 	enemy *en = get_enemy_arg(L, 2);
@@ -644,7 +617,7 @@ static int lua_event_freeze_tux_npc(lua_State * L)
 }
 
 
-static int lua_chat_player_name(lua_State * L)
+static int bfunc_get_player_name(lua_State * L)
 {
 	if (Me.character_name)
 		lua_pushstring(L, Me.character_name);
@@ -653,7 +626,7 @@ static int lua_chat_player_name(lua_State * L)
 	return 1;
 }
 
-static int lua_chat_says(lua_State * L)
+static int bfunc_chat_says(lua_State * L)
 {
 	const char *answer = luaL_checkstring(L, 1);
 	int no_wait = !strcmp(luaL_optstring(L, 2, "WAIT"), "NO_WAIT");
@@ -671,7 +644,7 @@ static int lua_chat_says(lua_State * L)
 	return lua_yield(L, 0);
 }
 
-static int lua_start_chat(lua_State * L)
+static int bfunc_start_chat(lua_State * L)
 {
 	int called_from_dialog;
 	struct enemy *partner;
@@ -715,21 +688,21 @@ static int lua_start_chat(lua_State * L)
 	return 0;
 }
 
-static int lua_chat_end_dialog(lua_State * L)
+static int bfunc_end_chat(lua_State * L)
 {
 	struct chat_context *current_chat_context = GET_CURRENT_CHAT_CONTEXT();
 	current_chat_context->end_dialog = 1;
 	return 0;
 }
 
-static int lua_chat_partner_started(lua_State * L)
+static int bfunc_partner_started(lua_State * L)
 {
 	struct chat_context *current_chat_context = GET_CURRENT_CHAT_CONTEXT();
 	lua_pushboolean(L, current_chat_context->partner_started);
 	return 1;
 }
 
-static int lua_chat_drop_dead(lua_State * L)
+static int bfunc_drop_dead(lua_State * L)
 {
 	enemy *en = get_enemy_arg(L, 1);
 	hit_enemy(en, en->energy + 1, 0, Droidmap[en->type].is_human - 2, 0);
@@ -741,7 +714,7 @@ static int lua_chat_drop_dead(lua_State * L)
 	return 0;
 }
 
-static int lua_chat_set_bot_state(lua_State * L)
+static int bfunc_set_bot_state(lua_State * L)
 {
 	const char *cmd = luaL_checkstring(L, 1);
 	enemy *en = get_enemy_arg(L, 2);
@@ -749,7 +722,7 @@ static int lua_chat_set_bot_state(lua_State * L)
 	return 0;
 }
 
-static int lua_chat_broadcast_bot_state(lua_State * L)
+static int bfunc_broadcast_bot_state(lua_State * L)
 {
 	const char *cmd = luaL_checkstring(L, 1);
 
@@ -765,7 +738,7 @@ static int lua_chat_broadcast_bot_state(lua_State * L)
 	return 0;
 }
 
-static int lua_set_bot_destination(lua_State * L)
+static int bfunc_set_bot_destination(lua_State * L)
 {
 	const char *label = luaL_checkstring(L, 1);
 	enemy *en = get_enemy_arg(L, 2);
@@ -773,7 +746,7 @@ static int lua_set_bot_destination(lua_State * L)
 	return 0;
 }
 
-static int lua_set_rush_tux(lua_State * L)
+static int bfunc_set_rush_tux(lua_State * L)
 {
 	const uint8_t cmd = (luaL_checkinteger(L, 1) != FALSE);
 	enemy *en = get_enemy_arg(L, 2);
@@ -781,14 +754,14 @@ static int lua_set_rush_tux(lua_State * L)
 	return 0;
 }
 
-static int lua_will_rush_tux(lua_State * L)
+static int bfunc_will_rush_tux(lua_State * L)
 {
 	enemy *en = get_enemy_arg(L, 1);
 	lua_pushboolean(L, en->will_rush_tux);
 	return 1;
 }
 
-static int lua_chat_takeover(lua_State * L)
+static int bfunc_takeover(lua_State * L)
 {
 	int opponent_capsules = lua_to_int(luaL_checkinteger(L, 1));
 	int player_capsules = 2 + Me.skill_level[get_program_index_with_name("Hacking")];
@@ -801,42 +774,42 @@ static int lua_chat_takeover(lua_State * L)
 	return 1;
 }
 
-static int lua_chat_bot_exists(lua_State *L)
+static int bfunc_bot_exists(lua_State *L)
 {
 	int exists = get_enemy_opt(L, 1, TRUE) != NULL;
 	lua_pushboolean(L, exists);
 	return 1;
 }
 
-static int lua_chat_get_bot_type(lua_State * L)
+static int bfunc_get_bot_type(lua_State * L)
 {
 	enemy *en = get_enemy_arg(L, 1);
 	lua_pushstring(L, Droidmap[en->type].droidname);
 	return 1;
 }
 
-static int lua_event_bot_class(lua_State * L)
+static int bfunc_get_bot_class(lua_State * L)
 {
        enemy *en = get_enemy_arg(L, 1);
        lua_pushinteger(L, (lua_Integer)Droidmap[en->type].class);
        return 1;
 }
 
-static int lua_chat_get_bot_name(lua_State * L)
+static int bfunc_get_bot_name(lua_State * L)
 {
 	enemy *en = get_enemy_arg(L, 1);
 	lua_pushstring(L, en->short_description_text);
 	return 1;
 }
 
-static int lua_chat_get_bot_translated_name(lua_State * L)
+static int bfunc_get_bot_translated_name(lua_State * L)
 {
 	enemy *en = get_enemy_arg(L, 1);
 	lua_pushstring(L, D_(en->short_description_text));
 	return 1;
 }
 
-static int lua_chat_set_bot_name(lua_State * L)
+static int bfunc_set_bot_name(lua_State * L)
 {
 	const char *bot_name = luaL_checkstring(L, 1);
 	enemy *en = get_enemy_arg(L, 2);
@@ -845,13 +818,13 @@ static int lua_chat_set_bot_name(lua_State * L)
 	return 0;
 }
 
-static int lua_difficulty_level(lua_State * L)
+static int bfunc_difficulty_level(lua_State * L)
 {
 	lua_pushnumber(L, GameConfig.difficulty_level);
 	return 1;
 }
 
-static int lua_set_npc_faction(lua_State *L)
+static int bfunc_set_npc_faction(lua_State *L)
 {
 	const char *fact = luaL_checkstring(L, 1);
 	enemy *en = get_enemy_arg(L, 2);
@@ -859,7 +832,7 @@ static int lua_set_npc_faction(lua_State *L)
 	return 0;
 }
 
-static int lua_kill_faction(lua_State *L)
+static int bfunc_kill_faction(lua_State *L)
 {
 	const char *fact = luaL_checkstring(L, 1);
 	const char *respawn = luaL_optstring(L, 2, "");
@@ -894,7 +867,7 @@ static int lua_kill_faction(lua_State *L)
 	return 0;
 }
 
-static int lua_user_input_string(lua_State *L)
+static int bfunc_user_input_string(lua_State *L)
 {
 	const char *title = luaL_checkstring(L, 1);
 	const char *default_str = luaL_optstring(L, 2, "");
@@ -910,7 +883,7 @@ static int lua_user_input_string(lua_State *L)
 	return 1;
 }
 
-static int lua_set_faction_state(lua_State *L)
+static int bfunc_set_faction_state(lua_State *L)
 {
 	const char *fact_name = luaL_checkstring(L, 1);
 	const char *state_str = luaL_checkstring(L, 2);
@@ -934,7 +907,7 @@ static int lua_set_faction_state(lua_State *L)
 	return 0;
 }
 
-static int lua_create_droid(lua_State *L)
+static int bfunc_create_droid(lua_State *L)
 {
 	const char *label = luaL_checkstring(L, 1);
 	const char *type_name = luaL_checkstring(L, 2);
@@ -953,21 +926,21 @@ static int lua_create_droid(lua_State *L)
 	en->pos.z = pos.z;
 	en->faction = get_faction_id(fact_name);
 	en->dialog_section_name = strdup(dialog);
-	if (Sensor_ID != NULL) 
+	if (Sensor_ID != NULL)
 		en->sensor_id = get_sensor_id_by_name(Sensor_ID);
 	enemy_insert_into_lists(en, TRUE);
 
 	return 0;
 }
 
-static int lua_get_game_time(lua_State *L)
+static int bfunc_get_game_time(lua_State *L)
 {
 	lua_pushinteger(L, (lua_Integer)(Me.current_game_date));
 
 	return 1;
 }
 
-static int lua_get_game_date(lua_State *L)
+static int bfunc_get_game_date(lua_State *L)
 {
 	// This function retrieves the ingame date, using C functions defined in hud.c
 	// It returns in sequence: days, hours and minutes.
@@ -978,21 +951,21 @@ static int lua_get_game_date(lua_State *L)
 	return 3;
 }
 
-static int lua_win_game(lua_State *L)
+static int bfunc_win_game(lua_State *L)
 {
 	ThouHastWon();
 
 	return 0;
 }
 
-static int lua_jump_to_game_act(lua_State *L)
+static int bfunc_jump_to_game_act(lua_State *L)
 {
 	const char *act_id = luaL_checkstring(L, 1);
 	game_act_set_next(act_id);
 	return 0;
 }
 
-static int lua_play_sound(lua_State *L)
+static int bfunc_play_sound(lua_State *L)
 {
 	const char *filename = luaL_checkstring(L, 1);
 
@@ -1000,14 +973,14 @@ static int lua_play_sound(lua_State *L)
 	return 0;
 }
 
-static int lua_event_freeze_tux(lua_State * L)
+static int bfunc_freeze_tux(lua_State * L)
 {
 	float duration = luaL_checknumber(L, 1);
 	Me.paralyze_duration = duration;
 	return 0;
 }
 
-static int lua_event_freeze_npc(lua_State * L)
+static int bfunc_freeze_npc(lua_State * L)
 {
 	float duration = luaL_checknumber(L, 1);
 	enemy *en = get_enemy_arg(L, 2);
@@ -1015,7 +988,7 @@ static int lua_event_freeze_npc(lua_State * L)
 	return 0;
 }
 
-static int lua_add_obstacle(lua_State *L)
+static int bfunc_add_obstacle(lua_State *L)
 {
 	int levelnum = lua_to_int(luaL_checkinteger(L, 1));
 
@@ -1039,7 +1012,7 @@ static int lua_add_obstacle(lua_State *L)
 	return 0;
 }
 
-static int lua_add_volatile_obstacle(lua_State *L)
+static int bfunc_add_volatile_obstacle(lua_State *L)
 {
 	int levelnum = lua_to_int(luaL_checkinteger(L, 1));
 
@@ -1064,25 +1037,25 @@ static int lua_add_volatile_obstacle(lua_State *L)
 	return 0;
 }
 
-static int lua_meters_traveled(lua_State *L)
+static int bfunc_meters_traveled(lua_State *L)
 {
 	lua_pushinteger(L, (lua_Integer)Me.meters_traveled);
 	return 1;
 }
 
-static int lua_run_from_dialog(lua_State *L)
+static int bfunc_run_from_dialog(lua_State *L)
 {
 	lua_pushboolean(L, (chat_get_current_context() != NULL));
 	return 1;
 }
 
-static int lua_running_benchmark(lua_State *L)
+static int bfunc_running_benchmark(lua_State *L)
 {
 	lua_pushboolean(L, (do_benchmark) != NULL);
 	return 1;
 }
 
-static int lua_reprogramm_bots_after_takeover(lua_State *L)
+static int bfunc_reprogramm_bots_after_takeover(lua_State *L)
 {
 	int rvat = lua_to_int(luaL_checkinteger(L, 1));
 	GameConfig.talk_to_bots_after_takeover = rvat;
@@ -1090,14 +1063,14 @@ static int lua_reprogramm_bots_after_takeover(lua_State *L)
 	return 0;
 }
 
-static int lua_switch_background_music_to(lua_State *L)
+static int bfunc_switch_background_music_to(lua_State *L)
 {
 	char *filename = (char *)luaL_checkstring(L, 1);
 	switch_background_music(filename);
 	return 0;
 }
 
-static int lua_exit_game(lua_State *L)
+static int bfunc_exit_game(lua_State *L)
 {
 	lua_Integer exit_status = luaL_checkinteger(L, 1);
 
@@ -1110,7 +1083,7 @@ static int lua_exit_game(lua_State *L)
 	}
 }
 
-static int lua_find_file(lua_State *L)
+static int bfunc_find_file(lua_State *L)
 {
 	const char *filename = (char *)luaL_checkstring(L, 1);
 	if (lua_type(L, 2) != LUA_TTABLE) {
@@ -1139,13 +1112,13 @@ static int lua_find_file(lua_State *L)
 	return 1;
 }
 
-static int lua_term_has_color_cap(lua_State *L)
+static int bfunc_term_has_color_cap(lua_State *L)
 {
 	lua_pushboolean(L, (term_has_color_cap == TRUE));
 	return 1;
 }
 
-static int lua_dir(lua_State *L)
+static int bfunc_dir(lua_State *L)
 {
 	/* Note: Code taken (and adapted) from "Programming in Lua, 2nd edition" */
 
@@ -1175,7 +1148,7 @@ static int lua_dir(lua_State *L)
 	return 1;
 }
 
-static int lua_set_mouse_move_target(lua_State *L)
+static int bfunc_set_mouse_move_target(lua_State *L)
 {
 	/* USE WITH CARE!
 	 * I made this function so we could automatize some tests on level 24
@@ -1190,34 +1163,13 @@ static int lua_set_mouse_move_target(lua_State *L)
 	return 1;
 }
 
-static int lua_src_gettext(lua_State *L)
-{
-	char *text = (char *)luaL_checkstring(L, 1);
-	lua_pushstring(L, _(text));
-	return 1;
-}
-
-static int lua_data_gettext(lua_State *L)
-{
-	char *text = (char *)luaL_checkstring(L, 1);
-	lua_pushstring(L, D_(text));
-	return 1;
-}
-
-static int lua_dialogs_gettext(lua_State *L)
-{
-	char *text = (char *)luaL_checkstring(L, 1);
-	lua_pushstring(L, L_(text));
-	return 1;
-}
-
-static int lua_get_game_version(lua_State *L)
+static int bfunc_get_game_version(lua_State *L)
 {
 	lua_pushstring(L, freedroid_version);
 	return 1;
 }
 
-static int lua_event_trigger_disable(lua_State *L)
+static int bfunc_event_trigger_disable(lua_State *L)
 {
 	char *name = (char *)luaL_checkstring(L, 1);
 	if (!event_trigger_set_enable(name, FALSE)) {
@@ -1226,7 +1178,7 @@ static int lua_event_trigger_disable(lua_State *L)
 	return 0;
 }
 
-static int lua_event_trigger_enable(lua_State *L)
+static int bfunc_event_trigger_enable(lua_State *L)
 {
 	char *name = (char *)luaL_checkstring(L, 1);
 	if (!event_trigger_set_enable(name, TRUE)) {
@@ -1235,7 +1187,7 @@ static int lua_event_trigger_enable(lua_State *L)
 	return 0;
 }
 
-static int lua_event_trigger_enabled(lua_State *L)
+static int bfunc_event_trigger_enabled(lua_State *L)
 {
 	char *name = (char *)luaL_checkstring(L, 1);
 	uint32_t state;
@@ -1248,7 +1200,7 @@ static int lua_event_trigger_enabled(lua_State *L)
 	return 1;
 }
 
-static int lua_dispatch_event(lua_State *L)
+static int bfunc_dispatch_event(lua_State *L)
 {
 	const char *trigger_name = luaL_checkstring(L, 1);
 	float time = luaL_checknumber(L, 2);
@@ -1256,54 +1208,54 @@ static int lua_dispatch_event(lua_State *L)
 	return 0;
 }
 
-luaL_Reg lfuncs[] = {
+luaL_Reg bfuncs[] = {
 	/* teleport(string map_label)
 	 * Teleports the player to the given map label.
 	 */
-	{"teleport", lua_event_teleport} // -> FDtux:teleport
+	{"teleport", bfunc_teleport} // -> FDtux:teleport
 	,
 	/* teleport_npc(string map_label, [dialog name])
 	 * Teleports the current npc, or named npc to the given map label
 	 */
-	{"teleport_npc", lua_event_teleport_npc} // -> FDnpc:teleport
+	{"teleport_npc", bfunc_teleport_npc} // -> FDnpc:teleport
 	,
 	/* teleport_home(string map_label)
 	 * Teleports the player to the home.
 	 */
-	{"teleport_home", lua_event_teleport_home} // -> FDtux:teleport_home
+	{"teleport_home", bfunc_teleport_home} // -> FDtux:teleport_home
 	,
 	/* has_teleport_anchor()
 	 * Return true if a teleport anchor is active.
 	 */
-	{"has_teleport_anchor", lua_event_has_teleport_anchor} // -> FDtux:has_teleport_anchor
+	{"has_teleport_anchor", bfunc_has_teleport_anchor} // -> FDtux:has_teleport_anchor
 	,
 	/* display_big_message(string msg)
 	 * Displays a big vanishing message on screen (seen in game, not in the dialog).
 	 */
-	{"display_big_message", lua_event_display_big_message}
+	{"display_big_message", bfunc_display_big_message}
 	,
 	/* use display_console_message(string msg), supports [b] and [/b]
 	 * Displays a message on the game console.
 	 */
-	{"event_display_console_message", lua_event_display_console_message}
+	{"event_display_console_message", bfunc_display_console_message}
 	,
 
 	/* change_obstacle_type(string obstacle_label, int obstacle_type)
 	 * Changes the obstacle to the given state.
 	 */
-	{"change_obstacle_type", lua_event_change_obstacle},
-	{"get_obstacle_type", lua_event_get_obstacle_type}
+	{"change_obstacle_type", bfunc_change_obstacle},
+	{"get_obstacle_type", bfunc_get_obstacle_type}
 	,
 	/* del_obstacle(string obstacle_label)
 	 * Delete the given obstacle
 	 */
-	{"del_obstacle", lua_event_delete_obstacle}
+	{"del_obstacle", bfunc_delete_obstacle}
 	,
 
 	/* change_obstacle_message(string obstacle_label, string message)
 	 * Change the SIGNMESSAGE of the given obstacle.
 	 */
-	{"change_obstacle_message", lua_change_obstacle_message}
+	{"change_obstacle_message", bfunc_obstacle_message}
 	,
 
 	/* kill_tux() - kills Tux
@@ -1312,25 +1264,25 @@ luaL_Reg lfuncs[] = {
 	 * 	This number can obviously be negative.
 	 * heat_tux(int amount)	- Increases temperature (=removes cooling), number can be negative.
 	 */
-	{"kill_tux", lua_event_kill_tux} // -> FDtux:kill
+	{"kill_tux", bfunc_kill_tux} // -> FDtux:kill
 	,
-	{"heal_tux", lua_event_heal_tux} // -> FDtux:heal
+	{"heal_tux", bfunc_heal_tux} // -> FDtux:heal
 	,
-	{"hurt_tux", lua_event_hurt_tux} // -> FDtux:hurt
+	{"hurt_tux", bfunc_hurt_tux} // -> FDtux:hurt
 	,
-	{"heat_tux", lua_event_heat_tux} // -> FDtux:heat
+	{"heat_tux", bfunc_heat_tux} // -> FDtux:heat
 	,
 	/* get_tux_hp()             - Returns Tux's current health
 	 * get_tux_max_hp()         - Returns Tux's current maximum health
 	 * see also: tux_hp_ratio() - Returns the ratio of the two
 	 */
-	{"get_tux_hp", lua_event_get_tux_hp} // -> FDtux:get_hp
+	{"get_tux_hp", bfunc_get_tux_hp} // -> FDtux:get_hp
 	,
-	{"get_tux_max_hp", lua_event_get_tux_max_hp} // -> FDtux:get_max_hp
+	{"get_tux_max_hp", bfunc_get_tux_max_hp} // -> FDtux:get_max_hp
 	,
 	/* get_tux_cool()		- Returns Tux's current remaining heat absorbing capabilities
 	 */
-	{"get_tux_cool", lua_event_get_tux_cool} // -> FDtux:get_cool
+	{"get_tux_cool", bfunc_get_tux_cool} // -> FDtux:get_cool
 	,
 	/* improve_skill(string skill_name)
 	 * get_skill()
@@ -1338,20 +1290,20 @@ luaL_Reg lfuncs[] = {
 	 * by one level.
 	 * get_skill returns the current level (as an integer) of one of the three skills.
 	 */
-	{"improve_skill", lua_event_improve_skill} // -> FDtux:improve_skill
+	{"improve_skill", bfunc_improve_skill} // -> FDtux:improve_skill
 	,
-	{"get_skill", lua_event_get_skill} // -> FDtux:get_skill
+	{"get_skill", bfunc_get_skill} // -> FDtux:get_skill
 	,
 
 	/* improve_program(string program_name)
 	 * Improve the program given by one level.
 	 * get_program_revision(string program_name) returns current program revision level
 	 */
-	{"improve_program", lua_event_improve_program} // -> FDtux:improve_program
+	{"improve_program", bfunc_improve_program} // -> FDtux:improve_program
 	,
-	{"downgrade_program", lua_event_downgrade_program} // -> FDtux:downgrade_program
+	{"downgrade_program", bfunc_downgrade_program} // -> FDtux:downgrade_program
 	,
-	{"get_program_revision", lua_event_get_program_revision} // -> FDtux:get_program_revision
+	{"get_program_revision", bfunc_get_program_revision} // -> FDtux:get_program_revision
 	,
 	/* del_item_backpack(string item_name[, int multiplicity = 1])
 	 * add_item(string item_name, int multiplicity)
@@ -1363,766 +1315,211 @@ luaL_Reg lfuncs[] = {
 	 * has_item_equipped(string item_name)
 	 * - returns true when the item is equipped
 	 */
-	{"del_item_backpack", lua_event_delete_item} // -> FDtux:del_item_backpack
+	{"del_item_backpack", bfunc_delete_item} // -> FDtux:del_item_backpack
 	,
-	{"add_item", lua_event_give_item} // -> FDtux:add_item
+	{"add_item", bfunc_give_item} // -> FDtux:add_item
 	,
-	{"count_item_backpack", lua_event_count_item_backpack} // -> FDtux:count_item_backpack
+	{"count_item_backpack", bfunc_count_item_backpack} // -> FDtux:count_item_backpack
 	,
-	{"has_item_equipped", lua_event_has_item_equipped} // -> FDtux:has_item_equipped
+	{"has_item_equipped", bfunc_has_item_equipped} // -> FDtux:has_item_equipped
 	,
-	{"equip_item", lua_event_equip_item} // -> FDtux:equip_item
+	{"equip_item", bfunc_equip_item} // -> FDtux:equip_item
 	,
-	{"sell_item", lua_event_sell_item}
+	{"sell_item", bfunc_sell_item}
 	,
 	/* set_death_item(string item_name [, string  npc])
 	 * changes the item dropped when the droid dies
 	*/
-	{"set_death_item", lua_set_death_item} // -> FDnpc:set_death_item
+	{"set_death_item", bfunc_death_item} // -> FDnpc:set_death_item
 	,
-	{"add_diary_entry", lua_event_add_diary_entry}
+	{"add_diary_entry", bfunc_add_diary_entry}
 	,
-	{"has_met", lua_event_has_met} // -> FDtux:has_met
+	{"has_met", bfunc_has_met} // -> FDtux:has_met
 	,
-	{"assign_quest", lua_event_assign_mission} // -> FDtux:assign_quest
+	{"assign_quest", bfunc_assign_mission} // -> FDtux:assign_quest
 	,
-	{"has_quest", lua_event_is_mission_assigned} // -> FDtux:has_quest
+	{"has_quest", bfunc_is_mission_assigned} // -> FDtux:has_quest
 	,
-	{"complete_quest", lua_event_complete_mission} // -> FDtux:complete_quest
+	{"complete_quest", bfunc_complete_mission} // -> FDtux:complete_quest
 	,
-	{"done_quest", lua_event_is_mission_complete} // -> FDtux:done_quest
+	{"done_quest", bfunc_is_mission_complete} // -> FDtux:done_quest
 	,
-	{"add_xp", lua_event_give_xp} // -> FDtux:add_xp
+	{"add_xp", bfunc_give_xp} // -> FDtux:add_xp
 	,
-	{"del_training_points", lua_event_eat_training_points} // -> FDtux:del_training_points
+	{"del_training_points", bfunc_eat_training_points} // -> FDtux:del_training_points
 	,
-	{"get_training_points", lua_event_get_training_points} // -> FDtux:get_training_points
+	{"get_training_points", bfunc_get_training_points} // -> FDtux:get_training_points
 	,
-	{"add_gold", lua_event_add_gold} // -> FDtux:add_gold
+	{"add_gold", bfunc_add_gold} // -> FDtux:add_gold
 	,
-	{"get_gold", lua_event_get_gold} // -> FDtux:get_gold
+	{"get_gold", bfunc_get_gold} // -> FDtux:get_gold
 	,
-	{"change_stat", lua_event_change_stat} // -> FDtux:change_stat
+	{"change_stat", bfunc_change_stat} // -> FDtux:change_stat
 	,
-	{"respawn_level", lua_event_respawn_level}
+	{"respawn_level", bfunc_respawn_level}
 	,
-	{"trade_with", lua_event_trade_with}
+	{"trade_with", bfunc_trade_with}
 	,
-	{"upgrade_items", lua_event_upgrade_items}
+	{"upgrade_items", bfunc_upgrade_items}
 	,
-	{"craft_addons", lua_event_craft_addons}
+	{"craft_addons", bfunc_craft_addons}
 	,
-	{"get_player_name", lua_chat_player_name} // -> FDtux:get_player_name
+	{"get_player_name", bfunc_get_player_name} // -> FDtux:get_player_name
 	,
-	{"chat_says", lua_chat_says}
+	{"chat_says", bfunc_chat_says}
 	,
-	{"start_chat", lua_start_chat}
+	{"start_chat", bfunc_start_chat}
 	,
-	{"end_dialog", lua_chat_end_dialog}
+	{"end_dialog", bfunc_end_chat}
 	,
 	/* NOTE:  if (partner_started())  will always be true
 	 * if rush_tux is 1
 	 */
-	{"partner_started", lua_chat_partner_started}
+	{"partner_started", bfunc_partner_started}
 	,
-	{"drop_dead", lua_chat_drop_dead}  // -> FDnpc:drop_dead
+	{"drop_dead", bfunc_drop_dead}  // -> FDnpc:drop_dead
 	,
-	{"bot_exists", lua_chat_bot_exists} // <Fluzz> Is that really needed ?
+	{"bot_exists", bfunc_bot_exists} // <Fluzz> Is that really needed ?
 	,
-	{"set_bot_state", lua_chat_set_bot_state} // -> FDnpc:set_state
+	{"set_bot_state", bfunc_set_bot_state} // -> FDnpc:set_state
 	,
-	{"set_bot_destination", lua_set_bot_destination} // -> FDnpc:set_destination
+	{"set_bot_destination", bfunc_set_bot_destination} // -> FDnpc:set_destination
 	,
-	{"broadcast_bot_state", lua_chat_broadcast_bot_state} // <Fluzz> Broadcast only to bots with same dialog. Intended ?
+	{"broadcast_bot_state", bfunc_broadcast_bot_state} // <Fluzz> Broadcast only to bots with same dialog. Intended ?
 	,
 	/* set_rush_tux()   - Sets or unsets if the NPC should rush and talk to Tux
 	 * will_rush_tux() - Checks if the NPC is planning on rushing Tux
 	 */
-	{"set_rush_tux", lua_set_rush_tux} // -> FDnpc:set_rush_tux
+	{"set_rush_tux", bfunc_set_rush_tux} // -> FDnpc:set_rush_tux
 	,
-	{"will_rush_tux", lua_will_rush_tux} // -> FDnpc:get_rush_tux
+	{"will_rush_tux", bfunc_will_rush_tux} // -> FDnpc:get_rush_tux
 	,
-	{"takeover", lua_chat_takeover}
+	{"takeover", bfunc_takeover}
 	,
 	/* heal_npc([dialog])			- Returns the NPC's current health
 	 * npc_damage_amount([dialog])		- Returns the current damage for the NPC
 	 * npc_max_health([dialog])		- Returns the max possible health for the NPC
 	 * see also: npc_damage_ratio([dialog]) - Returns the ratio of the two
 	 */
-	{"heal_npc", lua_event_heal_npc} // -> FDnpc:heal
+	{"heal_npc", bfunc_heal_npc} // -> FDnpc:heal
 	,
-	{"npc_damage_amount", lua_get_npc_damage_amount} // -> FDnpc:get_damage
+	{"npc_damage_amount", bfunc_get_npc_damage_amount} // -> FDnpc:get_damage
 	,
-	{"npc_max_health", lua_get_npc_max_health} // -> FDnpc:get_max_health
+	{"npc_max_health", bfunc_get_npc_max_health} // -> FDnpc:get_max_health
 	,
-	{"freeze_tux_npc", lua_event_freeze_tux_npc}
+	{"freeze_tux_npc", bfunc_freeze_tux_npc}
 	,
-	{"npc_dead", lua_event_npc_dead},  // -> FDnpc:is_dead
+	{"npc_dead", bfunc_npc_dead},  // -> FDnpc:is_dead
 	/* bot_type() tells you what model
 	   bot_class() tells you the class of a bot
 	   bot_name() tells you what name it displays
 	   set_bot_name() puts a new name in
 	 */
-	{"bot_type", lua_chat_get_bot_type}, // -> FDnpc:get_type
+	{"bot_type", bfunc_get_bot_type}, // -> FDnpc:get_type
 
-	{"bot_class", lua_event_bot_class}, // -> FDnpc:get_class
+	{"bot_class", bfunc_get_bot_class}, // -> FDnpc:get_class
 
-	{"bot_name", lua_chat_get_bot_name}, // -> FDnpc:get_name
-	{"bot_translated_name", lua_chat_get_bot_translated_name}, // -> FDnpc:get_translated_name
+	{"bot_name", bfunc_get_bot_name}, // -> FDnpc:get_name
+	{"bot_translated_name", bfunc_get_bot_translated_name}, // -> FDnpc:get_translated_name
 
-	{"set_bot_name", lua_chat_set_bot_name}, // -> FDnpc:set_name
+	{"set_bot_name", bfunc_set_bot_name}, // -> FDnpc:set_name
 
-	{"difficulty_level", lua_difficulty_level},
+	{"difficulty_level", bfunc_difficulty_level},
 
-	{"set_npc_faction", lua_set_npc_faction}, // -> FDnpc:set_faction
-	{"set_faction_state", lua_set_faction_state},
+	{"set_npc_faction", bfunc_set_npc_faction}, // -> FDnpc:set_faction
+	{"set_faction_state", bfunc_set_faction_state},
 	/*
 	  kill_faction() kills all enemies belonging
 	  to a specified faction. The second argument is
 	  optional, and specifies whether or not the faction
 	  will respawn. It can only be the string "no_respawn".
 	*/
-	{"kill_faction", lua_kill_faction},
+	{"kill_faction", bfunc_kill_faction},
 
-	{"user_input_string", lua_user_input_string},
+	{"user_input_string", bfunc_user_input_string},
 
-	{"create_droid", lua_create_droid},
+	{"create_droid", bfunc_create_droid},
 
-	{"win_game", lua_win_game},
+	{"win_game", bfunc_win_game},
 	// Finish the game.
 
 	// Record that the current game act is finished and that a new game act
 	// is to be started (will be executed once returned in the main loop)
-	{"jump_to_game_act", lua_jump_to_game_act},
+	{"jump_to_game_act", bfunc_jump_to_game_act},
 
-	{"game_time", lua_get_game_time},
-	{"game_date", lua_get_game_date},
+	{"game_time", bfunc_get_game_time},
+	{"game_date", bfunc_get_game_date},
 	/* play_sound("file")
 	 * path has to originate from /sound , e.g.
 	 * play_sound("effects/No_Ammo_Sound_0.ogg")
 	 */
-	{"play_sound", lua_play_sound},
+	{"play_sound", bfunc_play_sound},
 	// freeze_tux() freezes tux for the given amount of seconds
-	{"freeze_tux", lua_event_freeze_tux}, // -> FDtux:freeze
+	{"freeze_tux", bfunc_freeze_tux}, // -> FDtux:freeze
 	// freeze_npc() freezes the npc for the given amount of seconds
-	{"freeze_npc", lua_event_freeze_npc}, // -> FDnpc:freeze
+	{"freeze_npc", bfunc_freeze_npc}, // -> FDnpc:freeze
 	/* add_obstacle(lvl, x, y, obst_ID) add obstacles to maps at given position
 	 * add_obstacle(8, 41.4, 51.5, 100)
 	 * where 8 is the level number, x and y are the coordinates and 100
 	 * is the obstacle ID (see defs.h)
 	 */
-	{"add_obstacle", lua_add_obstacle},
-	{"add_volatile_obstacle", lua_add_volatile_obstacle},
+	{"add_obstacle", bfunc_add_obstacle},
+	{"add_volatile_obstacle", bfunc_add_volatile_obstacle},
 	// meters_traveled() returns ingame meters tux has traveled
-	{"meters_traveled", lua_meters_traveled}, // -> FDtux:get_meters_traveled
+	{"meters_traveled", bfunc_meters_traveled}, // -> FDtux:get_meters_traveled
 	// if (run_from_dialog()) then
 	// to check if certain code was run from inside a dialog or not
-	{"run_from_dialog", lua_run_from_dialog},
+	{"run_from_dialog", bfunc_run_from_dialog},
 	// returns if we are running a benchmark e.g. the dialog validator
 	// or not
 	// USE WITH CARE
-	{"running_benchmark", lua_running_benchmark},
+	{"running_benchmark", bfunc_running_benchmark},
 	/* switch_background_music("file")
 	 * path has to originate from /sound/music , e.g.
 	 * play_sound("menu.ogg")
 	 */
-	{"switch_background_music", lua_switch_background_music_to},
+	{"switch_background_music", bfunc_switch_background_music_to},
 	// 1 = true,  0 = false
-	{"reprogramm_bots_after_takeover", lua_reprogramm_bots_after_takeover},
+	{"reprogramm_bots_after_takeover", bfunc_reprogramm_bots_after_takeover},
 
-	{"exit_game", lua_exit_game},
+	{"exit_game", bfunc_exit_game},
 
-	{"find_file", lua_find_file},
-	{"dir", lua_dir},
+	{"find_file", bfunc_find_file},
+	{"dir", bfunc_dir},
 
-	{"term_has_color_cap", lua_term_has_color_cap },
+	{"term_has_color_cap", bfunc_term_has_color_cap },
 	/* USE WITH CARE!
-	 * I made this function so we could automatize some tests on level 24
+	 * This function was made so that we could automate some tests on level 24
 	 * This is not supposed to be used in the "real game"
 	 */
-	{"set_mouse_move_target", lua_set_mouse_move_target},
+	{"set_mouse_move_target", bfunc_set_mouse_move_target},
 
-	{"get_game_version", lua_get_game_version},
+	{"get_game_version", bfunc_get_game_version},
 
-	{"disable_event_trigger", lua_event_trigger_disable},
-	{"enable_event_trigger", lua_event_trigger_enable},
-	{"event_trigger_enabled", lua_event_trigger_enabled},
+	{"disable_event_trigger", bfunc_event_trigger_disable},
+	{"enable_event_trigger", bfunc_event_trigger_enable},
+	{"event_trigger_enabled", bfunc_event_trigger_enabled},
 
-	{"dispatch_event", lua_dispatch_event},
+	{"dispatch_event", bfunc_dispatch_event},
 
 	{NULL, NULL}
 };
 
-/*
- * Prepare a lua function call by pushing on the Lua stack the name of
- * the function to call and the arguments of the call (see comment of call_lua_func()).
- */
-static int push_func_and_args(lua_State *L, const char *module, const char *func, const char *sig, va_list *vl)
-{
-	 /* push function */
-	if (module) {
-		lua_getglobal(L, module);
-		lua_getfield(L, -1, func);
-		lua_remove(L, -2);
-	} else {
-		lua_getglobal(L, func);
-	}
-
-	while (sig && *sig) { /* repeat for each argument */
-		switch (*sig++) {
-		case 'f': /* double argument */
-			lua_pushnumber(L, va_arg(*vl, double));
-			break;
-		case 'd': /* int argument */
-			lua_pushinteger(L, (lua_Integer)va_arg(*vl, int));
-			break;
-		case 's': /* string argument */
-			lua_pushstring(L, va_arg(*vl, char *));
-			break;
-		case 'S': /* dynarray of strings : push a table containing the strings */
-			{
-				int i;
-				struct dynarray *array = va_arg(*vl, struct dynarray *);
-				lua_createtable(L, array->size, 0);
-				for (i=0; i<array->size; i++)
-				{
-					char *text = ((char **)(array->arr))[i];
-					lua_pushstring(L, text);
-					lua_rawseti(L, -2, i+1); // table[i+1] = text
-				}
-			}
-			break;
-		default:
-			DebugPrintf(-1, "call_lua_func: invalid input option (%c).", *(sig - 1));
-			return 0;
-		}
-	}
-
-	return 1;
-}
-
-/*
- * Retrieve the returned values of a lua function call.
- * The results are stored in the locations pointed to by the pointer arguments
- * that follow the signature string (see comment of call_lua_func()).
- */
-static int pop_results(lua_State *L, const char *sig, va_list *vl)
-{
-	if (!sig)
-		return 1;
-
-	int nres = strlen(sig);
-	int index;
-	int rc = 0;
-
-	for (index = -nres; *sig; index++) { /* repeat for each result */
-		int ltype = lua_type(L, index);
-		switch (*sig++) {
-		case 'f': /* double result */
-			if (ltype != LUA_TNUMBER) {
-				DebugPrintf(-1, "call_lua_func: wrong result type for #%d returned value (number expected)", index);
-				goto pop_and_return;
-			}
-			*va_arg(*vl, double *) = lua_tonumber(L, index);
-			break;
-		case 'd': /* int result */
-			if (ltype != LUA_TNUMBER) {
-				DebugPrintf(-1, "call_lua_func: wrong result type for #%d returned value (number expected)", index);
-				goto pop_and_return;
-			}
-			*va_arg(*vl, int *) = lua_to_int(lua_tointeger(L, index));
-			break;
-		case 's': /* string result */
-			if (ltype != LUA_TSTRING) {
-				DebugPrintf(-1, "call_lua_func: wrong result type for #%d returned value (string expected)", index);
-				goto pop_and_return;
-			}
-			*va_arg(*vl, const char **) = strdup(lua_tostring(L, index));
-			break;
-		case 'S': /* dynarray of strings result */
-			{
-				int i;
-				if (ltype != LUA_TTABLE) {
-					DebugPrintf(-1, "call_lua_func: wrong result type for #%d returned value (table expected)", index);
-					goto pop_and_return;
-				}
-				struct dynarray *array = va_arg(*vl, struct dynarray *);
-				dynarray_init(array, lua_rawlen(L, index), sizeof(char *)); // the dynarray was reset by the caller
-				for (i=1; i<=lua_rawlen(L, index); i++) {
-					lua_rawgeti(L, index, i);
-					if (!lua_isstring(L, -1)) {
-						DebugPrintf(-1, "call_lua_func: wrong result type for #%d:%d returned value (string expected).\nSkeeping that value", index, i);
-					} else {
-						char *nodename = strdup(lua_tostring(L, -1));
-						dynarray_add(array, &nodename, sizeof(string));
-					}
-					lua_pop(L, 1);
-				}
-			}
-			break;
-		default:
-			DebugPrintf(-1, "call_lua_func: invalid output option (%c)", *(sig - 1));
-			goto pop_and_return;
-		}
-	}
-
-	rc = 1;
-
-pop_and_return:
-	lua_pop(L, nres);
-	return rc;
-}
-
-/**
- * \brief Helper function to call a Lua function.
- *
- * \details Call a Lua function passing parameters and retrieving results through the
- * Lua stack.
- * (inspired from a code found in "Programming in Lua, 2ed").
- *
- * Usage:
- *
- * To execute a Lua function call such as "var1, var2 = my_module.my_func(param1)",
- * use "call_lua_func(lua_target, "my_module", "my_func", insig, outsig, param1, &var1, var2)"
- *
- * C being a strong typed language, the type of the input parameters and of the
- * returned values has to be defined, through 'insig' (for input parameters)
- * and 'outsig' (for returned values). A type is defined by a single specific
- * character, and 'insig' (resp. 'outsig') is a string containing a list of
- * those characters, one character per parameter (resp. returned value).
- *
- * Known types are:
- *   'f' for double type
- *   'd' for int type
- *   's' for string type (i.e. char*)
- *   'S' for dynarray of strings
- *
- * Following 'insig' and 'outsig' is a list of data to be used as parameters for
- * the Lua function (one data per character in 'insig'), followed by a list
- * of pointers to store the returned values (one pointer per character in 'outsig').
- * Note 1: memory of string returned values is allocated by call_lua_func().
- * Note 2: memory of string dynarray slots is allocated by call_lua_func(),
- *         and the dynarray has to be freed before the call.
- *
- * If the Lua function is not inside a module, set 'module' to NULL.
- * If the Lua function has no parameters, set 'insig' to NULL.
- * If the Lua does not return values, set 'outsig' to NULL.
- *
- * Exemples (of doubtful utility...):
- * double sine;
- * call_lua_func(LUA_DIALOG, "math", "sin", "f", "f", 3.14, &sine);
- * char *tmpname;
- * call_lua_func(LUA_DIALOG, "os", "tmpname", NULL, "s", tmpname);
- *
- * \param target A lua_target enum value defining the Lua context to use
- * \param module Name of the module containing the Lua function, or NULL if none
- * \param func   Name of the Lua function to call
- * \param insig  Signature string for the input parameters, or NULL
- * \param outsig Signature string for the returned values
- * \param ...    Input parameters data and pointers to returned value storages
- *
- * \return TRUE if the function call succeeded, else return FALSE
- */
-int call_lua_func(enum lua_target target, const char *module, const char *func, const char *insig, const char *outsig, ...)
-{
-	int narg = (insig) ? strlen(insig) : 0;   /* number of arguments */
-	int nres = (outsig) ? strlen(outsig) : 0; /* number of results */
-
-	lua_State *L = get_lua_state(target);
-
-	va_list vl;
-	va_start(vl, outsig);
-
-	/* do the call */
-	if (!push_func_and_args(L, module, func, insig, &vl)) {
-		error_message(__FUNCTION__, "Aborting lua function call.", NO_REPORT);
-		va_end(vl);
-		return FALSE;
-	}
-
-	if (lua_pcall(L, narg, nres, 0) != LUA_OK) {
-		DebugPrintf(-1, "call_lua_func: Error calling ’%s’: %s", func, lua_tostring(L, -1));
-		lua_pop(L, 1);
-		error_message(__FUNCTION__, "Aborting lua function call.", NO_REPORT);
-		va_end(vl);
-		return FALSE;
-	}
-
-	if (!pop_results(L, outsig, &vl)) {
-		error_message(__FUNCTION__, "Aborting lua function call.", NO_REPORT);
-		va_end(vl);
-		return FALSE;
-	}
-
-	va_end(vl);
-	return TRUE;
-}
-
-static void pretty_print_lua_error(lua_State* L, const char* error_msg, const char *code, int cur_line, const char *funcname)
-{
-	int err_line = 0;
-	struct auto_string *erronous_code;
-
-	erronous_code = alloc_autostr(16);
-
-	// Find which line the error is on (if there is a line number in the error message)
-	const char *error_ptr = error_msg;
-
-	while (*error_ptr != 0 && *error_ptr != ':') {
-		error_ptr++;
-	}
-	if (*error_ptr != 0) {
-		// Line number found
-		error_ptr++;
-		err_line = strtol(error_ptr, NULL, 10);
-	}
-
-	// Break up lua code by newlines then insert line numbers & error notification.
-	// Note: strtok() can not be used to split display_code, because a sequence
-	// of two or more contiguous delimiter bytes ('\n' in our case) in the parsed
-	// string is considered to be a single delimiter. So, we would miss all
-	// blank lines.
-	char *display_code = strdup(code);
-	char *ptr = display_code;
-
-	for (;;) {
-		char *line = ptr;
-
-		if (*line == '\0')
-			break;
-
-		ptr = strchr(line, '\n');
-		if (ptr)
-			*ptr = '\0';
-
-		if (err_line != cur_line) {
-			autostr_append(erronous_code, "%d  %s\n", cur_line, line);
-		} else if (term_has_color_cap) { //color highlighting for Linux/Unix terminals
-			autostr_append(erronous_code, "\033[41m>%d %s\033[0m\n", cur_line, line);
-		} else {
-			autostr_append(erronous_code, ">%d %s\n", cur_line, line);
-		}
-
-		if (!ptr) {
-			// We just inserted the last line
-			break;
-		}
-
-		// Prepare for next line output
-		*ptr = '\n';
-		ptr++;
-		cur_line++;
-	}
-
-	fflush(stdout);
-	error_message(funcname, "Error running Lua code: %s.\nErroneous LuaCode={\n%s}",
-			 PLEASE_INFORM, error_msg, erronous_code->value);
-
-	free(display_code);
-	free_autostr(erronous_code);
-}
-
-/**
- * \brief Prepare to call a lua function from a module in a coroutine
- *
- * \details Create a new lua thread, and fill the lua stack with the function to
- * call and its argument, in preparation to a call to resume_coroutine, which will
- * actually start the coroutine.
- * (See call_lua_func() for an explanation of the parameters, given that there are
- * no returned values for coroutine)
- *
- * \param target A lua_target enum value defining the Lua context to use
- * \param module Name of the module containing the Lua function, or NULL if none
- * \param func   Name of the Lua function to call
- * \param insig  Signature string for the input parameters, or NULL
- * \param ...    Input parameters data
- *
- * \return Pointer to a lua_coroutine struct holding the data needed to start (resume) the coroutine
- */
-struct lua_coroutine *prepare_lua_coroutine(enum lua_target target, const char *module, const char *func, const char *insig, ...)
-{
-	lua_State *L = get_lua_state(target);
-	lua_State *co_L = lua_newthread(L);
-
-	struct lua_coroutine *new_coroutine = (struct lua_coroutine *)MyMalloc(sizeof(struct lua_coroutine));
-	new_coroutine->thread = co_L;
-	new_coroutine->nargs = (insig) ? strlen(insig) : 0;
-
-	va_list vl;
-	va_start(vl, insig);
-
-	push_func_and_args(co_L, module, func, insig, &vl);
-
-	va_end(vl);
-
-	return new_coroutine;
-}
-
-/**
- * \brief Prepare to call a lua function, given in a source code, in a coroutine
- *
- * \details Create a new lua thread, and fill the lua stack with the function to
- * call and its argument, in preparation to a call to resume_coroutine, which will
- * actually start the coroutine.
- *
- * \param target A lua_target enum value defining the Lua context to use
- * \param code   The code of the function to execute
- *
- * \return Pointer to a lua_coroutine struct holding the data needed to start (resume) the coroutine
- */
-struct lua_coroutine *load_lua_coroutine(enum lua_target target, const char *code)
-{
-	lua_State *L = get_lua_state(target);
-	lua_State *co_L = lua_newthread(L);
-
-	if (luaL_loadstring(co_L, code)) {
-		pretty_print_lua_error(co_L, lua_tostring(co_L, -1), code, 2, __FUNCTION__);
-		lua_pop(L, -1);
-		return NULL;
-	}
-	struct lua_coroutine *new_coroutine = (struct lua_coroutine *)MyMalloc(sizeof(struct lua_coroutine));
-	new_coroutine->thread = co_L;
-	new_coroutine->nargs = 0;
-
-	return new_coroutine;
-}
-
-int resume_lua_coroutine(struct lua_coroutine *coroutine)
-{
-	int rtn = lua_resume(coroutine->thread, NULL, coroutine->nargs);
-
-	switch (rtn) {
-		case 0:
-			// The lua script has ended
-			return TRUE;
-		case LUA_YIELD:
-			// The lua script is 'pausing'. Next resume will be without arguments
-			coroutine->nargs = 0;
-			return FALSE;
-		default:
-			// Any other return code is an error.
-			break;
-	}
-
-	// On error:
-	// Use the lua debug API to get information about the code of the current script
-	char *error_msg = strdup(lua_tostring(coroutine->thread, -1));
-
-	lua_Debug ar;
-	lua_getstack(coroutine->thread, 0, &ar);
-	lua_getinfo(coroutine->thread, "nS", &ar);
-
-	if (ar.what[0] == 'C') {
-		// Error caught in a C function.
-		// Try to get the lua calling code from the call stack.
-		if (!lua_getstack(coroutine->thread, 1, &ar)) {
-			// Nothing in the call stack. Display an error msg and exit.
-			error_message(__FUNCTION__, "Error in a lua API call in function '%s()': %s.",
-					PLEASE_INFORM, ar.name, error_msg);
-			goto EXIT;
-		}
-		// Get the info of the lua calling code, and continue to display it
-		lua_getinfo(coroutine->thread, "nS", &ar);
-	}
-
-	if (ar.source[0] != '@') {
-		// ar.source contains the script code
-		pretty_print_lua_error(coroutine->thread, error_msg, ar.source, 2, __FUNCTION__);
-	} else {
-		// The script code is in an external file
-		// Extract the erroneous function's code from the source file
-		FILE *src = fopen(&ar.source[1], "r");
-
-		if (!src) {
-			error_message(__FUNCTION__,
-					"Error detected in a lua script, but we were not able to open its source file (%s).\n"
-					"This should not happen !\n"
-					"Lua error: %s",
-					PLEASE_INFORM, &ar.source[1], error_msg);
-			goto EXIT;
-		}
-
-		struct auto_string *code = alloc_autostr(256);
-		char buffer[256] = "";
-		char *ptr = buffer;
-		int lc = 1;
-		for (;;) {
-			if (*ptr == '\0') {
-				if (feof(src)) break;
-				size_t nbc = fread(buffer, 1, 255, src);
-				buffer[nbc] = '\0';
-				ptr = buffer;
-			}
-			if (lc > ar.lastlinedefined) break;
-			if (lc >= ar.linedefined) {
-				// The use of autostr_append to add a single character is
-				// not efficient, but this code is used only in case of a
-				// script error, so we do not really care of efficiency
-				autostr_append(code, "%c", *ptr);
-			}
-			if (*ptr == '\n') lc++;
-			ptr++;
-		}
-
-		pretty_print_lua_error(coroutine->thread, error_msg, code->value, ar.linedefined, __FUNCTION__);
-		free_autostr(code);
-		fclose(src);
-	}
-
-EXIT:
-	free(error_msg);
-	lua_pop(coroutine->thread, 1);
-
-	return TRUE; // Pretend the lua script has ended
-}
-
-int run_lua(enum lua_target target, const char *code)
-{
-	lua_State *L = get_lua_state(target);
-
-	int rtn = luaL_dostring(L, code);
-	if (rtn) {
-		pretty_print_lua_error(L, lua_tostring(L, -1), code, 2, __FUNCTION__);
-		lua_pop(L, -1);
-	}
-
-	return rtn;
-}
-
-void run_lua_file(enum lua_target target, const char *path)
-{
-	lua_State *L = get_lua_state(target);
-
-	if (luaL_dofile(L, path)) {
-		error_message(__FUNCTION__, "Cannot run script file %s: %s.",
-		         PLEASE_INFORM | IS_FATAL, path, lua_tostring(L, -1));
-	}
-}
-
-void set_lua_ctor_upvalue(enum lua_target target, const char *fn, void *p)
-{
-	lua_State *L = get_lua_state(target);
-
-	lua_getglobal(L, fn);
-	lua_pushlightuserdata(L, p);
-	if (!lua_setupvalue(L, -2, 1)) {
-		lua_pop(L, 2);
-		error_message(__FUNCTION__, "No upvalue defined for %s closure.",
-		             PLEASE_INFORM | IS_FATAL, fn);
-	}
-	lua_pop(L, 1);
-}
-
-/*
- * Load a lua module in a lua context.
- * The directory containing the module is added to the package.path lua global
- * variable.
- * The module is loaded by calling 'require(module)'.
- */
-static void load_lua_module(enum lua_target target, int subdir, const char *module)
-{
-	char fpath[PATH_MAX];
-	lua_State *L = get_lua_state(target);
-
-	/*
-	 * Add the module's dir to the Lua package.path
-	 */
-
-	if (find_file(fpath, subdir, module, ".lua", PLEASE_INFORM)) {
-
-		// Use the dirname of the module and add the search pattern
-		find_file(fpath, subdir, "?.lua", NULL, SILENT);
-
-		// Get current Lua package.path
-		lua_getglobal(L, "package");
-		lua_getfield(L, 1, "path");
-		const char *package_path = lua_tostring(L, -1);
-		lua_pop(L, 2);
-
-		// Add the search path, if needed
-		if (!strstr(package_path, fpath)) {
-			lua_getglobal(L, "package"); /* -> stack: package */
-			lua_getfield(L, 1, "path");  /* -> stack: package.path < package */
-			lua_pushliteral(L, ";");     /* -> stack: ";" < package.path < package */
-			lua_pushstring(L, fpath);    /* -> stack: fpath < ";" < package.path < package */
-			lua_concat(L, 3);            /* -> stack: package.path;fpath < package */
-			lua_setfield(L, 1, "path");  /* package.path = package.path;fpath -> stack: package */
-			lua_pop(L, 1);
-		}
-	}
-
-	/*
-	 * Call "require(module)" to load the module
-	 */
-
-	call_lua_func(target, NULL, "require", "s", NULL, module);
-}
-
-/**
- * Initialize the Lua state used to load the config files
- */
-void init_lua(void)
-{
-	char fpath[PATH_MAX];
-
-	dialog_lua_state = NULL;
-
-	config_lua_state = luaL_newstate();
-	luaL_openlibs(config_lua_state);
-
-	// Add a context specific lua gettext
-	luaL_Reg lua_gettexts = { "D_", lua_data_gettext };
-	lua_pushcfunction(config_lua_state, lua_gettexts.func);
-	lua_setglobal(config_lua_state, lua_gettexts.name);
-
-	find_file(fpath, LUA_MOD_DIR, "script_helpers.lua", NULL, PLEASE_INFORM | IS_FATAL);
-	run_lua_file(LUA_CONFIG, fpath);
-}
-
-/**
- * Close all active lua states. To be called when the game quits, to call
- * the lua garbage collector, in order to call all Lua object 'destructors'
- */
-void close_lua(void)
-{
-	if (dialog_lua_state)
-		lua_close(dialog_lua_state);
-	if (config_lua_state)
-		lua_close(config_lua_state);
-}
-
 /**
  * Reset (or create) the Lua state used to load and execute the dialogs
  */
-void reset_lua_state(void)
+void init_lua_game_scripting(void)
 {
-	int i;
-	char fpath[PATH_MAX];
+	dialog_lua_state = create_lua_state(LUA_DIALOG);
 
-	if (dialog_lua_state)
-		lua_close(dialog_lua_state);
-	dialog_lua_state = luaL_newstate();
-	luaL_openlibs(dialog_lua_state);
-
-	// Add context specific lua gettexts
-	luaL_Reg lua_gettext[] = {
-			{ "_",  lua_dialogs_gettext },
-			{ "S_", lua_src_gettext     },
-			{ "D_", lua_data_gettext    },
-			{ NULL, NULL }
-	};
-	for (i = 0; lua_gettext[i].name != NULL; i++) {
-		lua_pushcfunction(dialog_lua_state, lua_gettext[i].func);
-		lua_setglobal(dialog_lua_state, lua_gettext[i].name);
-	}
-
-	for (i = 0; lfuncs[i].name != NULL; i++) {
-		lua_pushcfunction(dialog_lua_state, lfuncs[i].func);
-		lua_setglobal(dialog_lua_state, lfuncs[i].name);
+	// Bind the 'out-of-module' functions
+	for (int i = 0; bfuncs[i].name != NULL; i++) {
+		lua_pushcfunction(dialog_lua_state, bfuncs[i].func);
+		lua_setglobal(dialog_lua_state, bfuncs[i].name);
 	}
 
 	// Bindings
-	luaFD_init(get_lua_state(LUA_DIALOG));
+	luaFD_init(dialog_lua_state);
 
 	// Load and initialize some Lua modules
 	load_lua_module(LUA_DIALOG, LUA_MOD_DIR, "FDutils");
@@ -2130,64 +1527,7 @@ void reset_lua_state(void)
 	call_lua_func(LUA_DIALOG, "FDdialog", "set_dialog_dirs", "dd", NULL, MAP_DIALOG_DIR, BASE_DIALOG_DIR);
 
 	// Finally load the script helpers Lua functions
+	char fpath[PATH_MAX];
 	find_file(fpath, LUA_MOD_DIR, "script_helpers.lua", NULL, PLEASE_INFORM | IS_FATAL);
 	run_lua_file(LUA_DIALOG, fpath);
-
-}
-
-/**
- * Save Lua variables as lua code.
- * Variables prefixed with '_' are omitted because these are Lua predefined variables.
- */
-void write_lua_variables(struct auto_string *dst)
-{
-	int boolean;
-	const char *value;
-	lua_State *L = get_lua_state(LUA_DIALOG);
-
-	// Push global table on the stack
-	lua_pushglobaltable(L);
-
-	// Loop over the global table content
-	lua_pushnil(L);
-	while (lua_next(L, -2) != 0) {
-		int value_type = lua_type(L, -1);
-		int key_type = lua_type(L, -2);
-
-		if (key_type != LUA_TSTRING) {
-			lua_pop(L, 1);
-			continue;
-		}
-
-		const char *name = lua_tostring(L, -2);
-		if (name[0] == '_') {
-			lua_pop(L, 1);
-			continue;
-		}
-
-		switch (value_type)
-		{
-			case LUA_TBOOLEAN:
-				boolean = lua_toboolean(L, -1);
-				autostr_append(dst, "_G[\"%s\"] = %s\n", name, boolean ? "true" : "false");
-				break;
-			case LUA_TSTRING:
-				value = lua_tostring(L, -1);
-				autostr_append(dst, "_G[\"%s\"] = \"%s\"\n", name, value);
-				break;
-			case LUA_TNUMBER:
-				value = lua_tostring(L, -1);
-				autostr_append(dst, "_G[\"%s\"] = %s\n", name, value);
-				break;
-			default:
-				break;
-		}
-
-		lua_pop(L, 1);
-	}
-
-	autostr_append(dst, "\n");
-
-	// Pop global table from the stack
-	lua_pop(L, 1);
 }

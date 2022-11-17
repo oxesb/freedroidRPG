@@ -1,7 +1,7 @@
-/* 
+/*
  *
  *   Copyright (c) 2002, 2003 Johannes Prix
- *   Copyright (c) 2004-2010 Arthur Huillet 
+ *   Copyright (c) 2004-2010 Arthur Huillet
  *
  *  This file is part of Freedroid
  *
@@ -16,8 +16,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -141,7 +141,7 @@ void load_and_show_thumbnail(char *core_filename)
 }
 
 /**
- * 
+ *
  *
  */
 void load_and_show_stats(char *core_filename)
@@ -405,7 +405,7 @@ static int load_saved_game(int use_backup)
 	// Load the savegame (lua format)
 
 	clear_out_arrays_for_fresh_game();
-	reset_lua_state();
+	reset_lua_game_scripting();
 
 	if (setjmp(saveload_jmpbuf)) {
 		// We longjump here if load_game_data() detects an error

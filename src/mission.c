@@ -1,8 +1,8 @@
-/* 
+/*
  *
  *   Copyright (c) 1994, 2002, 2003 Johannes Prix
  *   Copyright (c) 1994, 2002 Reinhard Prix
- *   Copyright (c) 2004-2010 Arthur Huillet 
+ *   Copyright (c) 2004-2010 Arthur Huillet
  *
  *
  *  This file is part of Freedroid
@@ -18,8 +18,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -35,7 +35,7 @@
 #include "proto.h"
 
 /**
- * This function is responsible for making a new quest diary entry 
+ * This function is responsible for making a new quest diary entry
  * visible inside the quest browser.
  */
 void mission_diary_add(const char *mis_name, const char *diarytext)
@@ -62,7 +62,7 @@ void mission_diary_add(const char *mis_name, const char *diarytext)
 }
 
 /*----------------------------------------------------------------------
- * This function checks, if the influencer has succeeded in his given 
+ * This function checks, if the influencer has succeeded in his given
  * mission.  If not it returns, if yes the EndTitle/Debriefing is
  * started.
  ----------------------------------------------------------------------*/
@@ -131,7 +131,7 @@ void check_if_mission_is_complete(void)
 }
 
 /**
- * This function assigns a new mission to the player, which means 
+ * This function assigns a new mission to the player, which means
  * that the status of the mission in the mission array is changed and
  * perhaps the mission log activated.
  */
@@ -167,7 +167,7 @@ void complete_mission(const char *name)
 /**
  * At the start of every new game, the mission info (i.e. which missions
  * are already assigned, completed, failed, available and such) should
- * be reset to default state, so that no zombie mission entries can appear. 
+ * be reset to default state, so that no zombie mission entries can appear.
  */
 void clear_tux_mission_info(void)
 {

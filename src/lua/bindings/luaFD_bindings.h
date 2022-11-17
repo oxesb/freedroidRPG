@@ -73,7 +73,7 @@
 ///     it the entity's \e internal \e data).
 /// \par
 ///   The definition of the FDnpc Lua binding is split in 2 files:
-///   - src/lua/luaFD_npc.c, containing:
+///   - src/lua/bindings/luaFD_npc.c, containing:
 ///     - \b struct \b luaFD_npc - this structure holds the entity's \e internal
 ///       \e data.
 ///     - the \b cfuns.
@@ -87,7 +87,7 @@
 ///     - the \b lfuns.
 /// \par
 ///   The reference to the 2 management functions, luaFD_npc_get_instance() and
-///   luaFD_npc_init(), is added into lua/luaFD_bindings.h.
+///   luaFD_npc_init(), is added into src/lua_cfuns/luaFD_bindings.h.
 ///
 /// \par Implementing a \e cfun
 ///   \n

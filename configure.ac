@@ -450,8 +450,8 @@ AS_VAR_IF([sanitize_address], [yes],
 
 AS_VAR_IF([embedded_lua], [yes],
 	[
-		AS_VAR_APPEND([FD_CPPFLAGS], [" -I\$(top_srcdir)/lua"])
-		AS_VAR_SET([FD_LIBS], ["\$(top_builddir)/lua/liblua.a $FD_LIBS"])
+		AS_VAR_APPEND([FD_CPPFLAGS], [" -I\$(top_srcdir)/externals/lua"])
+		AS_VAR_SET([FD_LIBS], ["\$(top_builddir)/externals/lua/liblua.a $FD_LIBS"])
 	],
 )
 
@@ -491,7 +491,7 @@ SILENT_BOX([Creating output files])
 
 AC_CONFIG_FILES([
 	Makefile
-	lua/Makefile
+	externals/lua/Makefile
 	src/Makefile
 	tools/Makefile
 		tools/atlas/Makefile

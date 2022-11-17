@@ -26,6 +26,7 @@
  * This file contains table constructors used to load the config files written in Lua
  */
 
+
 #include "system.h"
 
 #include "defs.h"
@@ -33,13 +34,11 @@
 #include "global.h"
 #include "proto.h"
 
-#include "lua.h"
-#include "lauxlib.h"
-
+#include "lua_core.h"
 #include "lvledit/lvledit_object_lists.h"
 
-/* Lua state for config execution (defined in lua.c) */
-extern lua_State *config_lua_state;
+/* Pointer to the Lua state for config execution */
+static lua_State *config_lua_state = NULL;
 
 /**
  * Data types that could be read from a Lua config file
@@ -940,8 +939,7 @@ static void init_obstacle_flags(void)
 		{ "WALLS_TRANSPARENCY", TRANSPARENCY_FOR_WALLS }
 	};
 
-	int i;
-	for (i = 0; i < sizeof(flags) / sizeof(flags[0]); i++) {
+	for (int i = 0; i < sizeof(flags) / sizeof(flags[0]); i++) {
 		lua_pushinteger(config_lua_state, (lua_Integer)flags[i].value);
 		lua_setglobal(config_lua_state, flags[i].name);
 	}
@@ -1563,10 +1561,15 @@ static int lua_quest_list_ctor(lua_State *L)
 /**
  * Add lua constructors of new data types
  */
-void init_luaconfig(void)
+void init_lua_config_loader(void)
 {
-	int i;
-	lua_State *L = get_lua_state(LUA_CONFIG);
+	config_lua_state = create_lua_state(LUA_CONFIG);
+
+	// Add lua script helper functions
+
+	char fpath[PATH_MAX];
+	find_file(fpath, LUA_MOD_DIR, "script_helpers.lua", NULL, PLEASE_INFORM | IS_FATAL);
+	run_lua_file(LUA_CONFIG, fpath);
 
 	// Register standard C functions
 
@@ -1594,9 +1597,9 @@ void init_luaconfig(void)
 		{NULL, NULL}
 	};
 
-	for (i = 0; lfuncs[i].name != NULL; i++) {
-		lua_pushcfunction(L, lfuncs[i].func);
-		lua_setglobal(L, lfuncs[i].name);
+	for (int i = 0; lfuncs[i].name != NULL; i++) {
+		lua_pushcfunction(config_lua_state, lfuncs[i].func);
+		lua_setglobal(config_lua_state, lfuncs[i].name);
 	}
 
 	// Register C closures
@@ -1606,11 +1609,11 @@ void init_luaconfig(void)
 		{NULL, NULL}
 	};
 
-	for (i = 0; lclos[i].name != NULL; i++) {
+	for (int i = 0; lclos[i].name != NULL; i++) {
 		 // Initialize a pointer upvalue with a NULL content
-		lua_pushlightuserdata(L, NULL);
-		lua_pushcclosure(L, lclos[i].func, 1);
-		lua_setglobal(L, lclos[i].name);
+		lua_pushlightuserdata(config_lua_state, NULL);
+		lua_pushcclosure(config_lua_state, lclos[i].func, 1);
+		lua_setglobal(config_lua_state, lclos[i].name);
 	}
 
 	// Additional initializations

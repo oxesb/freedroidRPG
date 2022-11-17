@@ -592,7 +592,7 @@ void prepare_start_of_new_game(char *start_label, int new_tux)
 	LoadShip(fp, 0);
 
 	// Reset the lua VMs and load the config stuff
-	reset_lua_state();
+	reset_lua_game_scripting();
 
 	GetEventTriggers("events.dat");
 	init_npcs();
@@ -934,10 +934,7 @@ void InitFreedroid(int argc, char **argv)
 
 	input_keyboard_init();
 	init_lua();
-	init_luaconfig();
-
 	load_fdrpg_config();
-
 	load_game_config();
 
 	if (SDL_Init(SDL_INIT_VIDEO) == -1)

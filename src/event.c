@@ -1,8 +1,8 @@
-/* 
+/*
  *
  *   Copyright (c) 1994, 2002, 2003 Johannes Prix
  *   Copyright (c) 1994, 2002 Reinhard Prix
- *   Copyright (c) 2004-2009 Arthur Huillet 
+ *   Copyright (c) 2004-2009 Arthur Huillet
  *
  *
  *  This file is part of Freedroid
@@ -18,14 +18,14 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
 
-/** 
- * This file contains functions related to events and event triggers. These functions 
+/**
+ * This file contains functions related to events and event triggers. These functions
  * check, whether the necessary conditions for an event are satisfied, and in case that
  * they are, they order the appropriate event to be executed.
  */
@@ -39,6 +39,7 @@
 #include "global.h"
 #include "proto.h"
 #include "savestruct.h"
+#include "lua/lua_core.h"
 
 struct event_trigger {
 
@@ -177,7 +178,7 @@ void delete_events(void)
 #define OBSTACLE_ACTION_TYPE "Obstacle type name=\""
 #define OBSTACLE_ACTION_LABEL "Obstacle label=\""
 
-/** 
+/**
  *
  *
  */
@@ -402,7 +403,7 @@ void read_event_triggers_dynarray(lua_State *L, int index)
 }
 
 /**
- * \brief Trigger a position-based events for the given positions. 
+ * \brief Trigger a position-based events for the given positions.
  * \param cur_pos The current position.
  * \param teleported TRUE if the event come from a teleportation, FALSE otherwise.
  */
@@ -526,7 +527,7 @@ void event_obstacle_action(obstacle *o)
 
 		if (arr[i].trigger_type != OBSTACLE_ACTION)
 			continue;
-			
+
 		if (arr[i].trigger.obstacle_action.lvl != -1)
 			if (arr[i].trigger.obstacle_action.lvl != o->pos.z)
 				continue;
@@ -536,10 +537,10 @@ void event_obstacle_action(obstacle *o)
 				continue;
 
 		if (arr[i].trigger.obstacle_action.label) {
-			
+
 			level *lvl = curShip.AllLevels[o->pos.z];
 			char *label = (char *) get_obstacle_extension(lvl, o, OBSTACLE_EXTENSION_LABEL);
-			
+
 			if (!label || strcmp(arr[i].trigger.obstacle_action.label, label))
 				continue;
 		}

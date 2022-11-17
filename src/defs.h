@@ -1561,7 +1561,8 @@ enum obstacle_extension_type {
 
 enum lua_target {
 	LUA_CONFIG,
-	LUA_DIALOG
+	LUA_DIALOG,
+	LUA_LAST
 };
 
 enum slot_type {

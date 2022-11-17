@@ -85,25 +85,17 @@ void execute_event_timers(void);
 void delete_events(void);
 int validate_events(void);
 
-// lua.c
+// 'external api' of lua/lua_core.c
 void init_lua(void);
 void close_lua(void);
-int lua_to_int(lua_Integer);
-short lua_to_short(lua_Integer);
+void reset_lua_game_scripting(void);
 lua_State *get_lua_state(enum lua_target);
-struct lua_coroutine *prepare_lua_coroutine(enum lua_target, const char *, const char *, const char *, ...);
-struct lua_coroutine *load_lua_coroutine(enum lua_target, const char *);
-int resume_lua_coroutine(struct lua_coroutine *);
 int run_lua(enum lua_target, const char *);
 void run_lua_file(enum lua_target, const char *);
-void set_lua_ctor_upvalue(enum lua_target, const char *, void *);
-int call_lua_func(enum lua_target, const char *, const char *, const char *, const char *, ...);
-void reset_lua_state(void);
+int lua_to_int(lua_Integer);
+short lua_to_short(lua_Integer);
 void write_lua_variables(struct auto_string *);
-
-// luaconfig.c
-void init_luaconfig(void);
-void lua_end_skill_init(void);
+void set_lua_ctor_upvalue(enum lua_target, const char *, void *);
 
 // influ.c
 float calc_distance(float pos1_x, float pos1_y, float pos2_x, float pos2_y);

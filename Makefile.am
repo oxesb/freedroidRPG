@@ -19,7 +19,7 @@ WIN32_PREBUILD = win32
 endif
 
 if BUILD_LUA
-MAYBE_EMBEDDED_LUA = lua
+MAYBE_EMBEDDED_LUA = externals/lua
 endif
 
 if BUILD_PO
@@ -34,7 +34,7 @@ dist_doc_DATA = README $(README_l10n) CONTRIBUTING.md NEWS
 
 freedroid_data = data lua_modules
 
-EXTRA_DIST = m4 lua $(man_MANS) $(freedroid_data) ChangeLog INSTALL.freedroidRPG
+EXTRA_DIST = m4 externals/lua $(man_MANS) $(freedroid_data) ChangeLog INSTALL.freedroidRPG
 CHECKFLAGS=env SDL_VIDEODRIVER=dummy SDL_AUDIODRIVER=dummy
 
 check:
@@ -51,9 +51,9 @@ dist-hook:
 	find $(distdir) -name ".git"         | xargs rm -rf
 	find $(distdir) -name "*~"           | xargs rm -f
 	find $(distdir) -name ".#*"          | xargs rm -f
-	find $(distdir)/lua -name "*.o"      | xargs rm -f
-	find $(distdir)/lua -name "*.a"      | xargs rm -f
-	find $(distdir)/lua -name "Makefile" | xargs rm -f
+	find $(distdir)/externals/lua -name "*.o"      | xargs rm -f
+	find $(distdir)/externals/lua -name "*.a"      | xargs rm -f
+	find $(distdir)/externals/lua -name "Makefile" | xargs rm -f
 
 install-data-local:
 	@echo "Installing the data-files ..."

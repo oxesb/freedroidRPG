@@ -1,4 +1,4 @@
-/* 
+/*
  *
  *   Copyright (c) 2009 Arthur Huillet
  *
@@ -16,8 +16,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -41,7 +41,7 @@
 #include "lvledit/lvledit_menu.h"
 #include "lvledit/lvledit_widgets.h"
 
-static struct widget_group *level_editor_widget_group = NULL; 
+static struct widget_group *level_editor_widget_group = NULL;
 static int *all_obstacles_list = NULL;
 
 typedef struct {
@@ -406,14 +406,14 @@ struct widget_group *get_lvledit_ui(void)
 	level_editor_widget_group = widget_group_create();
 	widget_set_rect(WIDGET(level_editor_widget_group), 0, 0, GameConfig.screen_width, GameConfig.screen_height);
 	lvledit_widget_list = &level_editor_widget_group->list;
-	
+
 	struct widget *map;
 
 	/* Build our interface */
 
 	/* The map (has to be the first widget in the list) */
 	map = widget_lvledit_map_create();
-	widget_group_add(level_editor_widget_group, map);	
+	widget_group_add(level_editor_widget_group, map);
 
 	/* The toolbar */
 	struct widget *widget = widget_lvledit_toolbar_create();
@@ -620,9 +620,9 @@ struct widget_group *get_lvledit_ui(void)
 		struct widget_button *button = widget_button_create();
 
 		// Set text and tooltip.
-		button->text = b[i].text; 
-		button->tooltip.text = b[i].tooltip_text; 
-		
+		button->text = b[i].text;
+		button->tooltip.text = b[i].tooltip_text;
+
 		// Set callbacks.
 		button->activate_button = b[i].activate_button;
 		button->activate_button_secondary = b[i].activate_button_secondary;
@@ -636,15 +636,15 @@ struct widget_group *get_lvledit_ui(void)
 			button->image[j][1] = NULL;												// Hovered state
 			button->image[j][2] = widget_load_image_resource(AllMousePressButtons[b[i].btn_index + j * 2 + 1].button_image_file_name, NO_MOD);	// Pressed state
 		}
-		
+
 		// Set button size.
-		SDL_Rect rect = AllMousePressButtons[b[i].btn_index].button_rect;	
+		SDL_Rect rect = AllMousePressButtons[b[i].btn_index].button_rect;
 
 		// Size can be specified in AllMousePressButtons or left to 0, meaning the actual image size must be used.
 		rect.w = (rect.w) ? rect.w : button->image[0][0]->w;
 		rect.h = (rect.h) ? rect.h : button->image[0][0]->h;
 		widget_set_rect(WIDGET(button), rect.x, rect.y, rect.w, rect.h);
-		
+
 		//Add the button to the level editor top level group.
 		widget_group_add(level_editor_widget_group, WIDGET(button));
 	}
@@ -667,7 +667,7 @@ struct widget_group *get_lvledit_ui(void)
 	}
 	all_obstacles_list[j] = -1;
 
-	// Create category selectors 
+	// Create category selectors
 	for (i = 0; i < sizeof(category_list) / sizeof(category_list[0]); i++) {
 		enum lvledit_object_type type = category_list[i].object_type;
 		object_category *categories = category_list[i].categories;
@@ -681,10 +681,10 @@ struct widget_group *get_lvledit_ui(void)
 	// Create the minimap
 	widget = widget_lvledit_minimap_create();
 	widget_group_add(level_editor_widget_group, widget);
-	
+
 	// Activate the obstacle type selector
 	lvledit_select_type(OBJECT_OBSTACLE);
-	
+
 	widget_lvledit_map_init();
 
 	return level_editor_widget_group;
@@ -735,8 +735,8 @@ void lvledit_select_type(enum lvledit_object_type type)
  			continue;
 
 		// By default, deactivate all categories
-		cs_widget->enabled = 0;		
-		
+		cs_widget->enabled = 0;
+
 		struct widget_lvledit_categoryselect *cs = cs_widget->ext;
 
 		// Activate a category if it is of the right type
