@@ -2,6 +2,7 @@
 
 # Usually the message domain is the same as the package name.
 DOMAIN = freedroidrpg
+MSGID_BUGS_ADDRESS = https://bugs.freedroid.org
 
 # Files to add in POTFILES
 POTINCLUDES = src lua_modules
@@ -17,8 +18,8 @@ top_builddir = ../..
 export AWK=@AWK@
 
 # These options get passed to xgettext.
-SYS_XGETTEXT:=${XGETTEXT}
-XGETTEXT=${top_srcdir}/po/xgettext-wrapper ${SYS_XGETTEXT}
+export SYS_XGETTEXT=@XGETTEXT@
+XGETTEXT=${top_srcdir}/po/xgettext-wrapper
 XGETTEXT_OPTIONS = --width=80 --no-wrap --keyword=_ --keyword=N_ --keyword=L_ --keyword=D_ --keyword=S_ --from-code=UTF-8
 
 # These options get passed to msgmerge.

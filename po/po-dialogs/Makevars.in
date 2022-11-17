@@ -17,8 +17,8 @@ top_builddir = ../..
 export AWK=@AWK@
 
 # These options get passed to xgettext.
-SYS_XGETTEXT:=${XGETTEXT}
-XGETTEXT=${top_srcdir}/po/xgettext-wrapper ${SYS_XGETTEXT}
+export SYS_XGETTEXT=@XGETTEXT@
+XGETTEXT=${top_srcdir}/po/xgettext-wrapper
 XGETTEXT_OPTIONS = --width=80 --no-wrap --keyword=_ --from-code=UTF-8
 
 # These options get passed to msgmerge.

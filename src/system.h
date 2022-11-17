@@ -1,7 +1,7 @@
-/* 
+/*
  *
  *   Copyright (c) 2002, 2003  Reinhard Prix
- *   Copyright (c) 2004-2007 Arthur Huillet 
+ *   Copyright (c) 2004-2007 Arthur Huillet
  *
  *
  *  This file is part of Freedroid
@@ -17,13 +17,13 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
 
-/* 
+/*
  * system.h: here we include all system-wide includes
  *           and take into account the AC-defined conditionals
  */
@@ -47,16 +47,10 @@
 #include <stdint.h>
 #endif
 
-#if TIME_WITH_SYS_TIME
+#if HAVE_SYS_TIME_H
 # include <sys/time.h>
-# include <time.h>
-#else
-# if HAVE_SYS_TIME_H
-#  include <sys/time.h>
-# else
-#  include <time.h>
-# endif
 #endif
+#include <time.h>
 
 #ifdef HAVE_UNISTD_H
 #include <unistd.h>

@@ -83,8 +83,6 @@ extract_strings()
 }
 
 if [ $# -ne 0 ] ; then
-	SYS_XGETTEXT=${1}
-	shift
 	if [ $# -ne 0 ] ; then
 		files_from=""
 		domain=""
