@@ -161,7 +161,7 @@ $(TXTARGETS):
 	                        --data '{ "data": { "attributes": $(TXPROPS), \
 	                                            "id": "o:$(TXORG):p:$(TXPREFIX):r:all_in_one", \
 	                                            "type": "resources" } \
-	                                }'`; \	           
+	                                }'`; \
 	           rtn=$$?; \
 	           if test $$rtn -ne 0 -o " $$curl_output" != " 200"; then echo "Warning. Failed to set properties: error code $$culr_output"; fi; \
 	         fi; \

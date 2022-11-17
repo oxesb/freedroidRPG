@@ -1,7 +1,7 @@
 dnl Process this file with autoconf to produce a configure script.
 dnl
-dnl Tools versions as available on Debian 7 (wheezy) [Debian 8 is still too recent]:
-dnl autoconf 2.69  automake 1.11.6  gettext 0.18.1
+dnl Tools versions as available on Debian 11 (bullseye)
+dnl autoconf 2.69  automake 1.16.3  gettext 0.21
 dnl
 dnl Note about compilation flags:
 dnl
@@ -20,6 +20,7 @@ AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([m4])
 
 dnl See src/savegame/convert.c to know how to define those values
+
 AC_DEFINE([SAVEGAME_VERSION], ["010000"], [Savegame version])
 AC_DEFINE([SAVEGAME_REVISION], ["00"], [Savegame revision])
 
@@ -96,7 +97,6 @@ dnl Checks for programs.
 SILENT_BOX([Checking compulsory programs])
 
 AC_PROG_CC
-AC_PROG_CC_STDC
 XIPH_C_COMPILER_IS_CLANG
 AC_PROG_CC_C_O
 AC_PROG_INSTALL
@@ -105,14 +105,15 @@ AC_PROG_RANLIB
 AC_PROG_MAKE_SET
 AC_PROG_AWK
 AC_PATH_PROG([LUADOX], [lua2dox], [])
-AM_PATH_PYTHON([2.6])
+AM_PATH_PYTHON([3.9])
 AC_PATH_TARGET_TOOL([WINDRES], [windres], [windres])
-AM_GNU_GETTEXT_VERSION([0.18.2])
+AM_GNU_GETTEXT_VERSION([0.21])
 AM_GNU_GETTEXT([external])
 AM_ICONV
 
 dnl AM_GNU_GETTEXT (through po.m4) does not provide a simple way to check
 dnl is the gettext tools were found. So we have to check them individually.
+
 build_locales="no"
 AS_VAR_IF([USE_NLS], [yes],
 	[
@@ -189,6 +190,7 @@ dnl Checks for libraries.
 SILENT_BOX([Checking compulsory libraries])
 
 dnl Force use of embedded lua in ASAN mode
+
 summary_lua="embedded"
 AS_VAR_IF([sanitize_address], [yes],
 	[
@@ -242,6 +244,7 @@ dnl Checking for optional libraries
 SILENT_BOX([Checking optional libraries])
 
 dnl the 'new way' to check for openGL (sets 'no_gl=yes' if not found)
+
 ACX_PTHREAD
 AX_CHECK_GL
 
@@ -399,8 +402,11 @@ dnl Checks for typedefs, structures, and compiler characteristics.
 SILENT_BOX([Checking types])
 
 AC_HEADER_DIRENT
-AC_HEADER_STDC
-AC_HEADER_TIME
+AC_CHECK_INCLUDES_DEFAULT
+AC_PROG_EGREP
+
+AC_CHECK_HEADERS_ONCE([sys/time.h])
+
 AC_TYPE_INT16_T
 AC_TYPE_INT32_T
 AC_TYPE_SIZE_T
