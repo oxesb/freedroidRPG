@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #-*- encoding: utf-8 -*-
 #
 # Set the list of files to install and uninstall in the win32 installer.
@@ -51,6 +51,6 @@ def main():
 
 	template_file.close()
 
-	print result
+	print(result)
 
 if __name__ == '__main__': main()
