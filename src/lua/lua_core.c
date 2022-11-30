@@ -602,7 +602,8 @@ static void pretty_print_lua_error(lua_State* L, const char* error_msg, const ch
 		err_line = strtol(error_ptr, NULL, 10);
 	}
 
-	// Break up lua code by newlines then insert line numbers & error notification.
+	// Break up lua code by newlines then insert line numbers & error notification,
+	// and display +/- 5 lines of code around the error.
 	// Note: strtok() can not be used to split display_code, because a sequence
 	// of two or more contiguous delimiter bytes ('\n' in our case) in the parsed
 	// string is considered to be a single delimiter. So, we would miss all
@@ -620,12 +621,14 @@ static void pretty_print_lua_error(lua_State* L, const char* error_msg, const ch
 		if (ptr)
 			*ptr = '\0';
 
-		if (err_line != cur_line) {
-			autostr_append(erronous_code, "%d  %s\n", cur_line, line);
-		} else if (term_has_color_cap) { //color highlighting for Linux/Unix terminals
-			autostr_append(erronous_code, "\033[41m>%d %s\033[0m\n", cur_line, line);
-		} else {
-			autostr_append(erronous_code, ">%d %s\n", cur_line, line);
+		if (cur_line >= (err_line-5) && cur_line <= (err_line+5)) {
+			if (err_line != cur_line) {
+				autostr_append(erronous_code, "%d  %s\n", cur_line, line);
+			} else if (term_has_color_cap) { //color highlighting for Linux/Unix terminals
+				autostr_append(erronous_code, "\033[41m>%d %s\033[0m\n", cur_line, line);
+			} else {
+				autostr_append(erronous_code, ">%d %s\n", cur_line, line);
+			}
 		}
 
 		if (!ptr) {
