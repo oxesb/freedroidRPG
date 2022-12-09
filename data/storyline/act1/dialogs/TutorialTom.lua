@@ -65,15 +65,15 @@ local function tutorial_ranged_combat()
 end
 
 local items_up = {"Entropy Inverter", "Tachyon Condensator", "Antimatter-Matter Converter", "Superconducting Relay Unit", "Plasma Transistor"}
+local TutorialTom_doors = {"TutorialEntry", "TutorialZigzag1", "TutorialZigzag2", "TutorialZigzag3", "TutorialZigzag4"}
+local ranged_combat = {"Normal Jacket", "Big kitchen knife", "Shoes", "Standard Shield", "Worker Helmet"}
 
 -- actual dialog
 
 return {
 	FirstTime = function()
 		-- initialize
-		TutorialTom_doors = {"TutorialEntry", "TutorialZigzag1", "TutorialZigzag2", "TutorialZigzag3", "TutorialZigzag4"}
 		TutorialTom_doors2 = {TutorialTom_doors[1], TutorialTom_doors[2], TutorialTom_doors[3], TutorialTom_doors[4], TutorialTom_doors[5], "TutorialEquipOut", "TutorialMeleeOut", "TutorialDoor", "TutorialGlasswallDoor", "TutorialStorage", "TutorialTakeover", "TutorialExit1"}
-		ranged_combat = {"Normal Jacket", "Big kitchen knife", "Shoes", "Standard Shield", "Worker Helmet"}
 		-- to avoid excessive map validator waypoint errors, map starts with all relevant doors open, so we need to close them here
 		for var in ipairs(TutorialTom_doors2) do
 			change_obstacle_state(TutorialTom_doors2[var], "closed")
