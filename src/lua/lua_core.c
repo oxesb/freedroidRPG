@@ -37,9 +37,10 @@
 #include "lua_core.h"
 
 // forward def
-static void pretty_print_lua_error(lua_State*, const char*, const char*, int, const char*);
+static struct auto_string *dump_pretty_lua_error(lua_State*, const char*, const char*, int);
 
 // extern defs
+extern void lua_restricted_openlibs(lua_State *);
 extern void init_lua_config_loader(void);
 extern void init_lua_game_scripting(void);
 
@@ -99,7 +100,9 @@ lua_State *create_lua_state(enum lua_target target)
 
 	delete_lua_state(target);
 	lua_states[target] = luaL_newstate();
-	luaL_openlibs(lua_states[target]);
+
+	// Fill with a restrictive set of Lua libs
+	lua_restricted_openlibs(lua_states[target]);
 
 	// Add context specific lua gettexts
 	luaL_Reg lua_gettext[] = {
@@ -139,48 +142,31 @@ lua_State *get_lua_state(enum lua_target target)
 }
 
 /*
- * Load a lua module in a Lua state.
- * The directory containing the module is added to the package.path lua global
- * variable.
- * The module is loaded by calling 'require(module)'.
+ * Helper for load_lua_module()
+ * Used as the 'openf' func of luaL_requiref()
  */
+static int load_lua_module_openf(lua_State *L)
+{
+	char *filename = (char *)luaL_checkstring(L, 1);
+	return luaL_dofile(L, filename);
+}
+
+/*
+ * Load a lua module in a Lua state.
+ * The module is loaded by calling 'luaL_requiref(module)'.
+ */
+
 void load_lua_module(enum lua_target target, int subdir, const char *module)
 {
 	char fpath[PATH_MAX];
 	lua_State *L = get_lua_state(target);
 
-	/*
-	 * Add the module's dir to the Lua package.path
-	 */
-
 	if (find_file(fpath, subdir, module, ".lua", PLEASE_INFORM)) {
-
-		// Use the dirname of the module and add the search pattern
-		find_file(fpath, subdir, "?.lua", NULL, SILENT);
-
-		// Get current Lua package.path
-		lua_getglobal(L, "package");
-		lua_getfield(L, 1, "path");
-		const char *package_path = lua_tostring(L, -1);
-		lua_pop(L, 2);
-
-		// Add the search path, if needed
-		if (!strstr(package_path, fpath)) {
-			lua_getglobal(L, "package"); /* -> stack: package */
-			lua_getfield(L, 1, "path");  /* -> stack: package.path < package */
-			lua_pushliteral(L, ";");     /* -> stack: ";" < package.path < package */
-			lua_pushstring(L, fpath);    /* -> stack: fpath < ";" < package.path < package */
-			lua_concat(L, 3);            /* -> stack: package.path;fpath < package */
-			lua_setfield(L, 1, "path");  /* package.path = package.path;fpath -> stack: package */
-			lua_pop(L, 1);
-		}
+		luaL_requiref(L, fpath, load_lua_module_openf, 0);
+		lua_pop(L, 1);
+	} else {
+		DebugPrintf(-1, "Error while trying to load a Lua module: unknown module '%s'\n", module);
 	}
-
-	/*
-	 * Call "require(module)" to load the module
-	 */
-
-	call_lua_func(target, NULL, "require", "s", NULL, module);
 }
 
 ////////////////////////////////////////////////////////////
@@ -450,7 +436,12 @@ struct lua_coroutine *load_lua_coroutine(enum lua_target target, const char *cod
 	lua_State *co_L = lua_newthread(L);
 
 	if (luaL_loadstring(co_L, code)) {
-		pretty_print_lua_error(co_L, lua_tostring(co_L, -1), code, 2, __FUNCTION__);
+		const char *error_msg = lua_tostring(co_L, -1);
+		struct auto_string *erroneous_code = dump_pretty_lua_error(co_L, error_msg, code, 2);
+		fflush(stdout);
+		error_message(__FUNCTION__, "Error running Lua code: %s.\nErroneous LuaCode={\n%s}",
+				 PLEASE_INFORM, error_msg, erroneous_code->value);
+		free_autostr(erroneous_code);
 		lua_pop(L, -1);
 		return NULL;
 	}
@@ -482,68 +473,14 @@ int resume_lua_coroutine(struct lua_coroutine *coroutine)
 	// Use the lua debug API to get information about the code of the current script
 	char *error_msg = strdup(lua_tostring(coroutine->thread, -1));
 
-	lua_Debug ar;
-	lua_getstack(coroutine->thread, 0, &ar);
-	lua_getinfo(coroutine->thread, "nS", &ar);
-
-	if (ar.what[0] == 'C') {
-		// Error caught in a C function.
-		// Try to get the lua calling code from the call stack.
-		if (!lua_getstack(coroutine->thread, 1, &ar)) {
-			// Nothing in the call stack. Display an error msg and exit.
-			error_message(__FUNCTION__, "Error in a lua API call in function '%s()': %s.",
-					PLEASE_INFORM, ar.name, error_msg);
-			goto EXIT;
-		}
-		// Get the info of the lua calling code, and continue to display it
-		lua_getinfo(coroutine->thread, "nS", &ar);
+	struct auto_string *erroneous_code = extract_lua_error_from_stack(coroutine->thread, error_msg);
+	if (erroneous_code) {
+		fflush(stdout);
+		error_message(__FUNCTION__, "Error running Lua code: %s.\nErroneous LuaCode={\n%s}",
+				 PLEASE_INFORM, error_msg, erroneous_code->value);
+		free_autostr(erroneous_code);
 	}
 
-	if (ar.source[0] != '@') {
-		// ar.source contains the script code
-		pretty_print_lua_error(coroutine->thread, error_msg, ar.source, 2, __FUNCTION__);
-	} else {
-		// The script code is in an external file
-		// Extract the erroneous function's code from the source file
-		FILE *src = fopen(&ar.source[1], "r");
-
-		if (!src) {
-			error_message(__FUNCTION__,
-					"Error detected in a lua script, but we were not able to open its source file (%s).\n"
-					"This should not happen !\n"
-					"Lua error: %s",
-					PLEASE_INFORM, &ar.source[1], error_msg);
-			goto EXIT;
-		}
-
-		struct auto_string *code = alloc_autostr(256);
-		char buffer[256] = "";
-		char *ptr = buffer;
-		int lc = 1;
-		for (;;) {
-			if (*ptr == '\0') {
-				if (feof(src)) break;
-				size_t nbc = fread(buffer, 1, 255, src);
-				buffer[nbc] = '\0';
-				ptr = buffer;
-			}
-			if (lc > ar.lastlinedefined) break;
-			if (lc >= ar.linedefined) {
-				// The use of autostr_append to add a single character is
-				// not efficient, but this code is used only in case of a
-				// script error, so we do not really care of efficiency
-				autostr_append(code, "%c", *ptr);
-			}
-			if (*ptr == '\n') lc++;
-			ptr++;
-		}
-
-		pretty_print_lua_error(coroutine->thread, error_msg, code->value, ar.linedefined, __FUNCTION__);
-		free_autostr(code);
-		fclose(src);
-	}
-
-EXIT:
 	free(error_msg);
 	lua_pop(coroutine->thread, 1);
 
@@ -561,7 +498,12 @@ int run_lua(enum lua_target target, const char *code)
 
 	int rtn = luaL_dostring(L, code);
 	if (rtn) {
-		pretty_print_lua_error(L, lua_tostring(L, -1), code, 2, __FUNCTION__);
+		const char *error_msg = lua_tostring(L, -1);
+		struct auto_string *erroneous_code = dump_pretty_lua_error(L, error_msg, code, 2);
+		fflush(stdout);
+		error_message(__FUNCTION__, "Error running Lua code: %s.\nErroneous LuaCode={\n%s}",
+				 PLEASE_INFORM, error_msg, erroneous_code->value);
+		free_autostr(erroneous_code);
 		lua_pop(L, -1);
 	}
 
@@ -583,12 +525,10 @@ void run_lua_file(enum lua_target target, const char *path)
 // Misc functions
 ////////////////////////////////////////////////////////////
 
-static void pretty_print_lua_error(lua_State* L, const char* error_msg, const char *code, int cur_line, const char *funcname)
+static struct auto_string *dump_pretty_lua_error(lua_State* L, const char* error_msg, const char *code, int cur_line)
 {
 	int err_line = 0;
-	struct auto_string *erronous_code;
-
-	erronous_code = alloc_autostr(16);
+	struct auto_string *erroneous_code = alloc_autostr(16);
 
 	// Find which line the error is on (if there is a line number in the error message)
 	const char *error_ptr = error_msg;
@@ -623,11 +563,11 @@ static void pretty_print_lua_error(lua_State* L, const char* error_msg, const ch
 
 		if (cur_line >= (err_line-5) && cur_line <= (err_line+5)) {
 			if (err_line != cur_line) {
-				autostr_append(erronous_code, "%d  %s\n", cur_line, line);
+				autostr_append(erroneous_code, "%d  %s\n", cur_line, line);
 			} else if (term_has_color_cap) { //color highlighting for Linux/Unix terminals
-				autostr_append(erronous_code, "\033[41m>%d %s\033[0m\n", cur_line, line);
+				autostr_append(erroneous_code, "\033[41m>%d %s\033[0m\n", cur_line, line);
 			} else {
-				autostr_append(erronous_code, ">%d %s\n", cur_line, line);
+				autostr_append(erroneous_code, ">%d %s\n", cur_line, line);
 			}
 		}
 
@@ -642,12 +582,107 @@ static void pretty_print_lua_error(lua_State* L, const char* error_msg, const ch
 		cur_line++;
 	}
 
-	fflush(stdout);
-	error_message(funcname, "Error running Lua code: %s.\nErroneous LuaCode={\n%s}",
-			 PLEASE_INFORM, error_msg, erronous_code->value);
-
 	free(display_code);
-	free_autostr(erronous_code);
+	return erroneous_code;
+}
+
+struct auto_string *extract_lua_error_from_stack(lua_State *L, const char *error_msg)
+{
+	struct auto_string *erroneous_code = NULL;
+	lua_Debug ar;
+	lua_getstack(L, 0, &ar);
+	lua_getinfo(L, "nS", &ar);
+
+	if (ar.what[0] == 'C') {
+		// Error caught in a C function.
+		// Try to get the lua calling code from the call stack.
+		if (!lua_getstack(L, 1, &ar)) {
+			// Nothing in the call stack. Display an error msg and exit.
+			error_message(__FUNCTION__, "Error in a lua API call in function '%s()': %s.",
+					PLEASE_INFORM, ar.name, error_msg);
+			return NULL;
+		}
+		// Get the info of the lua calling code, and continue to display it
+		lua_getinfo(L, "nS", &ar);
+	}
+
+	if (ar.source[0] != '@') {
+		// ar.source contains the script code
+		erroneous_code = dump_pretty_lua_error(L, error_msg, ar.source, 1);
+	} else {
+		// The script code is in an external file
+		// Extract the erroneous function's code from the source file
+		FILE *src = fopen(&ar.source[1], "r");
+
+		if (!src) {
+			error_message(__FUNCTION__,
+					"Error detected in a lua script, but we were not able to open its source file (%s).\n"
+					"This should not happen !\n"
+					"Lua error: %s",
+					PLEASE_INFORM, &ar.source[1], error_msg);
+			return NULL;
+		}
+
+		struct auto_string *code = alloc_autostr(256);
+		char buffer[256] = "";
+		char *ptr = buffer;
+		int lc = 1;
+		if (ar.linedefined == 0) ar.linedefined = 1;
+		for (;;) {
+			if (*ptr == '\0') {
+				if (feof(src)) break;
+				size_t nbc = fread(buffer, 1, 255, src);
+				buffer[nbc] = '\0';
+				ptr = buffer;
+			}
+			if ((ar.lastlinedefined > 0) && (lc > ar.lastlinedefined)) break;
+			if (lc >= ar.linedefined) {
+				// The use of autostr_append to add a single character is
+				// not efficient, but this code is used only in case of a
+				// script error, so we do not really care of efficiency
+				autostr_append(code, "%c", *ptr);
+			}
+			if (*ptr == '\n') lc++;
+			ptr++;
+		}
+
+		erroneous_code = dump_pretty_lua_error(L, error_msg, code->value, ar.linedefined);
+		free_autostr(code);
+		fclose(src);
+	}
+
+	return erroneous_code;
+}
+
+void dump_lua_stack(lua_State* L)
+{
+	// Simple dump, only for debug purpose
+
+	int top = lua_gettop(L);
+	DebugPrintf(-1, "----------------------------------\n");
+	DebugPrintf(-1, "Lua stack dump - total in stack %d\n", top);
+	if (top) DebugPrintf(-1, "\n");
+
+	for	(int i = -1; i >= -top; i--) {
+		int t = lua_type(L, i);
+		switch (t) {
+		case LUA_TSTRING:
+			DebugPrintf(-1, " %d - string: '%s'\n", i, lua_tostring(L, i));
+			break;
+		case LUA_TBOOLEAN:
+			DebugPrintf(-1, " %d - boolean %s\n", i, lua_toboolean(L, i)?"true":"false");
+			break;
+		case LUA_TNUMBER:
+			DebugPrintf(-1, " %d - number: %g\n", i, lua_tonumber(L, i));
+			break;
+		default:
+			DebugPrintf(-1, " %d - %s\n", i, lua_typename(L, t));
+			break;
+		}
+	}
+
+	DebugPrintf(-1, "----------------------------------\n");
+	DebugPrintf(-1, "\n");
 }
 
 int lua_to_int(lua_Integer value)

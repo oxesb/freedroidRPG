@@ -42,7 +42,7 @@ freedroidRPG_SOURCES = \
 	\
 	gen_savestruct.py \
 	\
-	lua/config_loader.c lua/game_scripting.c lua/lua_core.c lua/lua_core.h \
+	lua/config_loader.c lua/game_scripting.c lua/lua_core.c lua/lua_core.h lua/lua_restricted.c \
 	lua/bindings/luaFD.c lua/bindings/luaFD.h lua/bindings/luaFD_bindings.h lua/bindings/luaFD_tux.c lua/bindings/luaFD_npc.c \
 	\
 	lvledit/lvledit.c lvledit/lvledit.h \

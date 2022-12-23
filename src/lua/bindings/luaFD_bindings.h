@@ -222,7 +222,7 @@ const luaL_Reg luaFD_initializers[] = {
 };
 
 /**
- * List of functions available in the 'FDrpg' library (instance getters)
+ * List of functions available in the 'FDrpg' library
  */
 const luaL_Reg luaFD_instances[] = {
 		{ "get_tux", luaFD_tux_get_instance },

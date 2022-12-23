@@ -35,16 +35,19 @@
 #define _lua_core_h_
 
 #include "lua.h"
-#include "lauxlib.h"
 #include "lualib.h"
+#include "lauxlib.h"
 
 lua_State *create_lua_state(enum lua_target);
 void delete_lua_state(enum lua_target);
 
 void load_lua_module(enum lua_target, int, const char*);
-int call_lua_func(enum lua_target, const char *, const char *, const char *, const char *, ...);
-struct lua_coroutine *prepare_lua_coroutine(enum lua_target, const char *, const char *, const char *, ...);
-struct lua_coroutine *load_lua_coroutine(enum lua_target, const char *);
-int resume_lua_coroutine(struct lua_coroutine *);
+int call_lua_func(enum lua_target, const char*, const char*, const char*, const char*, ...);
+struct lua_coroutine *prepare_lua_coroutine(enum lua_target, const char*, const char*, const char*, ...);
+struct lua_coroutine *load_lua_coroutine(enum lua_target, const char*);
+int resume_lua_coroutine(struct lua_coroutine*);
+
+struct auto_string *extract_lua_error_from_stack(lua_State*, const char *);
+void dump_lua_stack(lua_State*);
 
 #endif /* _lua_core_h_ */

@@ -119,10 +119,10 @@ function FDutils.dump.value(d, indent)
 	elseif (type(d) == "function") then
 		-- Get the src file, and dump the lines defining the function
 		local finfo = debug.getinfo(d)
-		local f = io.open(finfo["source"]:sub(2, -1))
+		local source_iterator = io.lines(finfo["source"]:sub(2, -1), "*l")
 		local ln = 0
 		local skip = 1
-		for l in f:lines("*l") do
+		for l in source_iterator do
 			ln = ln + 1
 			if (ln == finfo["linedefined"]) then
 				-- Count trailing spaces and tabs to skip them in the output

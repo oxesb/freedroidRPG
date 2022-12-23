@@ -1505,9 +1505,42 @@ luaL_Reg bfuncs[] = {
 	{NULL, NULL}
 };
 
+/** Auto-create instance of NPCs binding
+ * (This avoid the need to explicitly do it in the dialog scripts)
+ * The dialog's name of the NPC is used to create the Lua instance.
+ * It must univoquely identify one single NPC. Failing to respect
+ * that constraint can lead to some strange behaviors...
+ * You were warned !
+ */
+extern int luaFD_npc_get_instance(lua_State *L);
+
+static int auto_create_npc(lua_State *L)
+{
+	// params : table ("_G"), name
+	const char *name = luaL_checkstring(L, 2);
+	lua_pop(L, 2);
+
+	// This function is called when 'name' is not known.
+	// If it is an npc, then create it, register it in the global environment,
+	// and return it.
+	// Else, return nil
+	if (get_enemy_with_dialog(name)) {
+		lua_pushstring(L, name);
+		luaFD_npc_get_instance(L);
+		lua_remove(L, -2); // remove 'name' from the stack, keep the npc
+
+		lua_pushvalue(L, -1); // setglobal will consume the npc, so we make a copy
+		lua_setglobal(L, name);
+	} else {
+		lua_pushnil(L);
+	}
+	return 1;
+}
+
 /**
  * Reset (or create) the Lua state used to load and execute the dialogs
  */
+
 void init_lua_game_scripting(void)
 {
 	dialog_lua_state = create_lua_state(LUA_DIALOG);
@@ -1525,6 +1558,16 @@ void init_lua_game_scripting(void)
 	load_lua_module(LUA_DIALOG, LUA_MOD_DIR, "FDutils");
 	load_lua_module(LUA_DIALOG, LUA_MOD_DIR, "FDdialog");
 	call_lua_func(LUA_DIALOG, "FDdialog", "set_dialog_dirs", "dd", NULL, MAP_DIALOG_DIR, BASE_DIALOG_DIR);
+
+	// Set the __index metamethod of the global environment,
+	// by adding a metatable containing a __index closure
+	// (used to auto-create NPCs, see the comment in index_metamethod())
+	lua_getglobal(dialog_lua_state, "_G");
+	lua_newtable(dialog_lua_state);
+	lua_pushcfunction(dialog_lua_state, auto_create_npc);
+	lua_setfield(dialog_lua_state, -2, "__index");
+	lua_setmetatable(dialog_lua_state, -2);
+	lua_pop(dialog_lua_state, 1);
 
 	// Finally load the script helpers Lua functions
 	char fpath[PATH_MAX];

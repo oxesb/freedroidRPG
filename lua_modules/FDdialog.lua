@@ -106,7 +106,7 @@ end
 
 function FDdialog.Stack.new()
 	local instance = {}
-	setmetatable(instance, {__index = FDdialog.Stack})
+	FDinherit(instance, FDdialog.Stack)
 	return instance
 end
 
@@ -156,8 +156,7 @@ end
 
 function FDdialog.Node.new(arg)
 	local instance = arg or {}
-	-- Check mandatory fields, before to set the metatable (and so before to
-	-- inherit from default values)
+	-- Check mandatory fields
 	if (not instance.id or instance.id == "") then
 		error(FDutils.text.red("Missing or empty node's id") .. "\n" .. FDutils.dump.table(instance, "Node content"), 0)
 	end
@@ -165,7 +164,7 @@ function FDdialog.Node.new(arg)
 		error(FDutils.text.red("Missing or non-funtion node's code") .. "\n" .. FDutils.dump.table(instance, "Node content"), 0)
 	end
 	-- Inherit from Node "interface"
-	setmetatable(instance, {__index = FDdialog.Node})
+	FDinherit(instance, FDdialog.Node)
 	-- Node's id has to be a string
 	instance.id = tostring(instance.id)
 
@@ -288,8 +287,12 @@ end
 --! \memberof Lua::FDdialog::Dialog
 
 function FDdialog.Dialog.new(name, filename)
-	local new_dialog = filename and dofile(filename) or {}
-	setmetatable(new_dialog, {__index = FDdialog.Dialog})
+	local new_dialog = filename and FDdofile(filename) or nil
+	if (not new_dialog) then
+		error("\"" .. filename .. "\" is not found or is outside the data dir.\n" ..
+		      FDutils.text.red("Are you trying to hack the game ?"), 0)
+	end
+	FDinherit(new_dialog, FDdialog.Dialog)
 
 	local function _create_node(node_def, with_topic)
 		-- Create a new node instance
@@ -437,15 +440,10 @@ function FDdialog.Dialog.validate(self)
 			return false
 		end
 		script_filename = script_filename:sub(2, -1)
-		local script_file = io.open(script_filename)
-		if (not script_file) then
-			print("\n" .. FDutils.text.red("Dialog source file not found: " .. script_filename))
-			valid = 0
-			return false
-		end
+		local script_iterator = io.lines(script_filename)
 		local buffer = ""
 		local line_number = 1
-		for line in script_file:lines() do
+		for line in script_iterator do
 			if (line_number >= info.lastlinedefined) then
 				break
 			end
@@ -454,7 +452,6 @@ function FDdialog.Dialog.validate(self)
 			end
 			line_number = line_number + 1
 		end
-		script_file:close()
 
 		-- Run the static checkers
 		return _node_names_checker(buffer)
@@ -741,7 +738,7 @@ end
 --! \memberof Lua::FDdialog
 
 function FDdialog.include(subdialog_name)
-	return dofile(find_file(subdialog_name..".lua", FDdialog.dialogs_dirs))
+	return FDdofile(find_file(subdialog_name..".lua", FDdialog.dialogs_dirs))
 end
 
 --! \fn void next_node(string nodename)
