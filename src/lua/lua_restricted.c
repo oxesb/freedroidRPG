@@ -40,6 +40,10 @@
 
 #include "lua/lua_core.h"
 
+#ifdef __WIN32__
+#define realpath(N,R) _fullpath((R),(N), _MAX_PATH)
+#endif
+
 //
 // Helper for limited_dofile(), called when the Lua code yields
 //
