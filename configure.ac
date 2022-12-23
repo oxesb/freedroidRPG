@@ -402,7 +402,7 @@ dnl Checks for typedefs, structures, and compiler characteristics.
 SILENT_BOX([Checking types])
 
 AC_HEADER_DIRENT
-AC_CHECK_INCLUDES_DEFAULT
+AC_INCLUDES_DEFAULT
 AC_PROG_EGREP
 
 AC_CHECK_HEADERS_ONCE([sys/time.h])
