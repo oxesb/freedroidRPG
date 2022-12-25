@@ -58,7 +58,7 @@ void delete_upgrade_sockets(item *it)
 
 	for (int i = 0 ; i < it->upgrade_sockets.size ; i++) {
 		struct upgrade_socket *socket = (struct upgrade_socket *)dynarray_member(&it->upgrade_sockets, i, sizeof(struct upgrade_socket));
-		free(socket->addon);
+		if (socket) free(socket->addon);
 	}
 	dynarray_free((struct dynarray *) &it->upgrade_sockets);
 }
