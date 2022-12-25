@@ -367,12 +367,21 @@ static void item_alarm_display(struct widget *w)
 		if (item_list[i]->current_durability > 5)
 			continue;
 
+		const int pos_x = w->rect.x + 64 * i;
+		const int pos_y = w->rect.y;
+
+		char durability_text[64];
+		// Note: If someday a yellow font is added, use it for warning,
+		// and use the red font for critically low durability.
+		sprintf(durability_text, "%s%d", font_switchto_red, (int)item_list[i]->current_durability);
+		display_text(durability_text, pos_x, pos_y, NULL, 1.0);
+
 		// Make critical damaged items blink.
 		if (item_list[i]->current_durability < 3 && (int)(Me.MissionTimeElapsed * 2) % 2)
 			continue;
 
 		float color_factor = (item_list[i]->current_durability - 1) / 4.0;
-		display_image_on_screen(img, w->rect.x + 64 * i, w->rect.y, set_image_transformation(1, 1, 1, color_factor, 0, 1, 0));
+		display_image_on_screen(img, pos_x, pos_y, set_image_transformation(1, 1, 1, color_factor, 0, 1, 0));
 	}
 }
 
