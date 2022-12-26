@@ -53,7 +53,7 @@ return {
 		text = _"Uhm... Hello?",
 		code = function()
 			Npc:says(_"Hello, I'm Fred. I make addons and grenades. I can craft some for you.")
-			Tux:says(_"I would like to give a look at it later, thanks.")
+			Tux:says(_"I would like to take a look at them later, thanks.")
 			hide("node0") show("addoncraft", "addonequip", "buy", "barrett")
 
 		end,
@@ -69,7 +69,7 @@ return {
 	},
 	{
 		id = "addonequip",
-		text = _"Can you assemble add-ons on my equip?",
+		text = _"Can you assemble add-ons on my equipment?",
 		code = function()
 			Npc:says(_"Of course I can assemble add-ons for my best customer.")
 			Tux:says(_"If not the only.")
@@ -81,7 +81,7 @@ return {
 		text = _"I want a grenade.",
 		code = function()
 			Npc:says_random(_"Sure, please take a look.",
-							_"They're not impressive, but get the work done!",
+							_"They're not impressive, but they get the work done!",
 							_"You won't regret them.",
 							_"VMX for humans, EMP for droids. Remember this rule.",
 							_"Nice shopping!")
@@ -92,12 +92,12 @@ return {
 		id = "barrett",
 		text = _"Do you know where to find a weapon for the .50 BMG Ammo?",
 		code = function()
-			Npc:says(_"A weapon for the .50 Browning Machine Gun Ammo. Only the Barrett M82 Sniper Rifle use that junk. I mean, they don't even stack, you need a slot on inventory for each ammo.")
-			Tux:says(_"So, if I was interested in such gun. Do you know where I could get one?")
+			Npc:says(_"A weapon for the .50 Browning Machine Gun Ammo. Only the Barrett M82 Sniper Rifle uses that junk. I mean, they don't even stack, you need a slot on inventory for each ammo.")
+			Tux:says(_"So, if I was interested in such a gun... do you know where I could get one?")
 			Npc:says(_"I have one, but I won't give it to you. You see, the Barrett is powerful enough to stop a truck, literally, and the likelihood of even a battle droid surviving more than 2 hits by this weapon is quite slim.")
-			Npc:says(_"So unless you're military or something, I won't be giving, trading, nor selling it for you.")
+			Npc:says(_"So unless you're in the military or something, I won't be giving, trading, nor selling it for you.")
 			Tux:says(_"I have many circuits, you know.")
-			Npc:says(_"And I have a Barrett M82. I bet a few direct hits from this gun, and you'll leave life to become history.")
+			Npc:says(_"And I have a Barrett M82. I bet a few direct hits from this gun, and you'll be history.")
 			Tux:says(_"...You've got a point there.")
 			hide("barrett")
 		end,
@@ -112,7 +112,7 @@ return {
 			Tux:says(_"Why?")
 			Npc:says(_"Subsonic droids won't attack until you attack them. They are powerful, fast, and have lots of armor.")
 			Npc:says(_"Plasma would be too slow, and laser too weak, so you really should use sniper rifles there.")
-			Tux:says(_"...I do not think I'll ever meet such droid, but thanks for the warning.")
+			Tux:says(_"...I do not think I'll ever meet such a droid, but thanks for the warning.")
 			Tux:add_item(".50 BMG (12.7x99mm) Ammunition", 5)
 			Npc:says(_"Here is some spare ammo. Use it wisely.")
 			Tux:end_quest("The Reapers Of MegaSys I", _"Glitch was defeated, and I obtained one of the most powerful weapon in sheer damage terms. Man, either I am THAT good, or I cheat.")
