@@ -112,6 +112,7 @@ package-win32: $(filter-out $(wildcard $(win_dir)), $(win_dir))
 	rm -f freedroidRPG.nsi
 	win32/install_file_lists.py win32/freedroidRPG.nsi.in $(win_dir) > freedroidRPG.nsi
 	makensis -V1 -DPRODUCT_VERSION="$(VERSION)" -DSRC_DIR="${win_dir}" freedroidRPG.nsi
+	tar -czf freedroidRPG-$(VERSION)-win32.tgz -C $(win_dir) --xform s:'./':: .
 
 ###
 # MacOSX specific stuff follows here
