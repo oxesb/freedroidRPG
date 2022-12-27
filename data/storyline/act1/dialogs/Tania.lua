@@ -263,7 +263,7 @@ return {
 		id = "node14",
 		text = _"It is strange to see a girl in such a beautiful dress here.",
 		code = function()
-			Npc:says(_"I'm going to spend all my life here! So forgive me some little indulgences.")
+			Npc:says(_"I'm going to spend all my life here! So forgive me for some little indulgences.")
 			hide("node14")
 		end,
 	},
