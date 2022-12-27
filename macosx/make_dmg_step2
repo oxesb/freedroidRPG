@@ -32,6 +32,8 @@ tar -C ${WORKDIR}/wc/FreedroidRPG -xzf lite-freedroidRPG.app.tgz
 tar -c -f - --exclude='.svn' --exclude='.git' --exclude='Makefile' --exclude='*~' --exclude='.#*' data locale lua_modules | (cd ${WORKDIR}/wc/FreedroidRPG/freedroidRPG.app/Contents; tar -xf -)
 cp COPYING AUTHORS README ChangeLog ${WORKDIR}/wc/FreedroidRPG
 
+tar -czf freedroidRPG.app.tgz -C ${WORKDIR}/wc/FreedroidRPG freedroid.app
+
 umount ${WORKDIR}/wc
 
 /usr/local/bin/dmg dmg ${WORKDIR}/wc.dmg FreedroidRPG.dmg > /dev/null
