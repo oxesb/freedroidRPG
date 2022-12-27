@@ -74,7 +74,11 @@ int lua_restricted_dofile(lua_State *L)
 		int can_load = TRUE;
 		char *data_root = realpath(data_dirs[DATA_ROOT].path, NULL);
 		struct auto_string *data_dir = alloc_autostr(PATH_MAX);
+#ifdef __WIN32__
+		autostr_append(data_dir, "%s\\data", data_root);
+#else
 		autostr_append(data_dir, "%s/data", data_root);
+#endif
 		if (strncmp(abs_fname, data_dir->value, data_dir->length) != 0) {
 			// The requested file is not in the data dir
 			can_load = FALSE;
