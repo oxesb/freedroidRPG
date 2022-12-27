@@ -103,6 +103,7 @@ dist-win32: src/freedroidRPG.exe
 	   sed 's/$$/\r/' $$i > $(win_dir)/$$i.txt; \
 	done
 	perl win32/pkgApp.pl $(win_dir) freedroidRPG.exe $(DLL_PATH)
+	cp $(DLL_PATH)/SDL2.dll $(win_dir)
 
 # Create a win32 installer
 
