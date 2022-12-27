@@ -234,6 +234,7 @@ return {
 			Npc:says(_"My name is Dr. Francis Spark. I am... uh... the keeper of this cryonic facility.")
 			Npc:set_name("Dr. Francis - Cryonicist")
 			Npc:says(_"Currently, there is a war raging all around the globe. One day, our once loyal bots rebelled against us and began trying to wipe us out. The beginning of this war has been dubbed 'The Great Assault.'")
+			Npc:says(_"Our other devices started playing up too, so we had to switch back to terminals. Older technology seemed to be unharmed.")
 			Npc:says(_"And it looks like humans are losing the war. Our town isn't doing so well at this point either. But there is still hope, since you were discovered here.")
 			hide("node15") show("node16", "node17")
 		end,
