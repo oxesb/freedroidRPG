@@ -762,7 +762,7 @@ void move_tux(void)
 
 	// Maybe we need to fire a bullet or set a new mouse move target
 	// for the new move-to location
-	// There are currently two different input systms in use - event based and state based.
+	// There are currently two different input systems in use - event based and state based.
 	// In order to maintain compatibility between the two, a game_map widget is added on the
 	// game main widget to detect how user input should be handled. Therefore, when the mouse
 	// is over the game_map widget (the widget is not in its DEFAULT state), no further event handling

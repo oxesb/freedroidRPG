@@ -1201,7 +1201,7 @@ int MyRandom(int upper_bound)
 	/*
 	 * we always round OFF for the resulting int, therefore
 	 * we first add 0.99999 to make sure that UpperBound has
-	 * roughly the same probablity as the other numbers
+	 * roughly the same probability as the other numbers
 	 */
 	dice_val = (int)(tmp * (1.0 * upper_bound + 0.99999));
 

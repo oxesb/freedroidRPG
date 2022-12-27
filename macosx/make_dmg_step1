@@ -5,8 +5,8 @@
 # transfer it to the linux worker that will create the final dmg.
 #
 # This 2 steps process is needed because the first step is executed
-# on a MacMini with a low internet bandwith, too low to transfer a whole
-# dmg in a reasonnable time.
+# on a MacMini with a low internet bandwidth, too low to transfer a whole
+# dmg in a reasonable time.
 
 APPDIR=freedroidRPG.app
 ARCHIVE=lite-freedroidRPG.app.tgz

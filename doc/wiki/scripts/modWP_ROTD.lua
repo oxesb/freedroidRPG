@@ -52,7 +52,7 @@ modWP_ROTD.rotdDataItem = {
 
 --	text for ROTD presentation
 --	id) key, label) text to display
---	srchPatn) text/patter to use to find data
+--	srchPatn) text/pattern to use to find data
 --	extrctPatn) how to extract found data
 modWP_ROTD.textROTD = {
 	{ id = "itemlevel",     label = "Level",                srchPatn = "Level=[%d]+",             extrctPatn="[%d]+"   },

@@ -206,7 +206,7 @@ int main(int argc, char *argv[])
  * have a 'firewait' or a normal wait or a paralysis.  Other bots have
  * a text, that is being displayed and that will timeout at some point.
  *
- * In any case those counteres must be updated, which is what this
+ * In any case those counters must be updated, which is what this
  * function is supposed to do.
  *
  * NOTE:  This whole updating business is a bit in-efficient.  It might

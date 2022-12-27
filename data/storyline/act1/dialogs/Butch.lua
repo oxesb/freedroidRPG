@@ -292,7 +292,7 @@ return {
                 Npc:says(_"I pity you, silly bird. Don't go there.")
                 Npc:says(_"But if you really want to, the door is now open. It's inside the city, north of this one.")
                 Tux:add_quest("Time to say goodnight", _"I told the arena master to let me into the master arena. He agreed. Now all that remains to do is to climb down the ladder to the north arena and wait for death herself to come on her black wings and claim my soul. You know, now that I think about it... Maybe I should stay out of there?")
-                Npc:says(_"Remember, if your teleporter don't work on the convencional arena, it won't work in the master arena either...")
+                Npc:says(_"Remember, if your teleporter don't work on the conventional arena, it won't work in the master arena either...")
                 Tux:update_quest("Time to say goodnight", _"Again, Butch warned me about possibly broken teleporter gadgets.")
                 change_obstacle_state("MasterArenaAccessTrapdoor", "opened")
             else

@@ -54,13 +54,13 @@ modWP_Quests.codemarkstart = "Completion LuaCode={"
 modWP_Quests.codemarkend = "}"
 
 --	text for Event presentation/parsing - break up file data into sections
---	id) key, srchPatn) text/patter to use to find data	extrctPatn) how to extract found data
+--	id) key, srchPatn) text/pattern to use to find data	extrctPatn) how to extract found data
 modWP_Quests.QuestSection = {
 	{ id = "missionStart", srchPatn = "Start of this mission target subsection",                                extrctPatn="[TEXT]" },
 	{ id = "missionEnd",   srchPatn = "End of this mission target subsection",                                  extrctPatn="[TEXT]" },
 }
 --	text for Event presentation/parsing - parsing each event section
---	id) key, srchPatn) text/patter to use to find data	extrctPatn) how to extract found data
+--	id) key, srchPatn) text/pattern to use to find data	extrctPatn) how to extract found data
 modWP_Quests.Triggers = {
 	{ id = "name",         srchPatn = "Mission Name=_(%b\"\")",                                                 extrctPatn="[MATCH]" },
 	{ id = "desc",         srchPatn = "+++",                                                                    extrctPatn="[EOL]"   },

@@ -188,7 +188,7 @@ void title_screen_free(void)
 
 /**
  * Set the background image of the title screen.
- * On a wide screen, the wide version of the backgound is used, if it exists.
+ * On a wide screen, the wide version of the background is used, if it exists.
  * @param bkgd_name Filename of the background image (in data/graphics/backgrounds)
  */
 void title_screen_set_background(const char *bkgd_name)

@@ -83,7 +83,7 @@ modWP_Levels.leveldata = {
 
 --	text items for Level parsing and presentation
 --	id) key, label) text to display loop) can use in loop when search for text
---	srchPatn) text/patter to use to find data
+--	srchPatn) text/pattern to use to find data
 --	extrctPatn) how to extract found data
 modWP_Levels.textLevel = {
 	{ id = "levelnumber",       label = "Level Number",           loop = true,  srchPatn = "Levelnumber:%s*[%d]+",        extrctPatn = "[%d]+",  },

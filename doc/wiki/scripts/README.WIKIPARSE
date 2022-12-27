@@ -163,5 +163,5 @@ fail or produce bad results.
 .gitignore files are used to exclude images and Doc.* files. The images are copies of items already
 under git control. Also, wiki parsing can change the contents of Doc.* files frequently.
 
-Efforts have been made to centralize the defintions of wiki text markup to a single file should
+Efforts have been made to centralize the definitions of wiki text markup to a single file should
 the decision be made to change wiki engines. This is a future proofing function.

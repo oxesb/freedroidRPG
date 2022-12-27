@@ -2,13 +2,13 @@
 #
 # This script is used by the buildbot master to create a dmg, based
 # on a 'template'. It populates the template using:
-# 1- the content of the freedroidRPG.app transfered from the 1st step
+# 1- the content of the freedroidRPG.app transferred from the 1st step
 #    buildbot worker.
 # 2- the game data from the local repo
 #
 # This 2 steps process is needed because the first step is executed
-# on a MacMini with a low internet bandwith, too low to transfer a whole
-# dmg in a reasonnable time.
+# on a MacMini with a low internet bandwidth, too low to transfer a whole
+# dmg in a reasonable time.
 
 on_exit() {
 	findmnt $WORKDIR/wc >/dev/null && umount $WORKDIR/wc

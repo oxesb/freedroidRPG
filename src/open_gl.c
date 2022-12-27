@@ -37,7 +37,7 @@
 #include "global.h"
 #include "proto.h"
 
-// 28 degress is the magic angle for our iso view
+// 28 degrees is the magic angle for our iso view
 #define COS_28 0.88294759
 #define SIN_28 0.46947156
 

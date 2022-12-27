@@ -80,7 +80,7 @@ modWP_Droid.files = {
 }
 --	text items for Droid parsing and presentation
 --	id) key, label) text to display testInLoop) when searching, test for this id in loop?
---	srchPatn) text/patter to use to find data
+--	srchPatn) text/pattern to use to find data
 --	extrctPatn) how to extract found data
 modWP_Droid.textDroid = {
 	{ id = "spec_item_start",   label = "end_of_level",                testInLoop = true,  srchPatn = "Start of new Robot:",                                  extrctPatn = "[TEXT]" },

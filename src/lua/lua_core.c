@@ -328,7 +328,7 @@ pop_and_return:
  * If the Lua function has no parameters, set 'insig' to NULL.
  * If the Lua does not return values, set 'outsig' to NULL.
  *
- * Exemples (of doubtful utility...):
+ * Examples (of doubtful utility...):
  * double sine;
  * call_lua_func(LUA_DIALOG, "math", "sin", "f", "f", 3.14, &sine);
  * char *tmpname;

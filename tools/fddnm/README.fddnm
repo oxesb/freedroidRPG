@@ -119,7 +119,7 @@ Usage:
 	(E.g. Dixon or Tania graphs produce better output with this setting enabled).\n
 
 	[-H | --extrainfo]
-	enable HTML-like dot output - includeds presentation of extra node information.
+	enable HTML-like dot output - includes presentation of extra node information.
 	See wiki pages for example for this kind of output.
 
 	[-I | \-\-individual]
@@ -179,9 +179,9 @@ the text-only parse data can be made available for examination.\n
 
 would produce text file dumps of all parsed and analyzed data stored in the default output directory.
 
---------------------
-Ouput Interpretaton:
---------------------
+----------------------
+Output Interpretation:
+----------------------
 Current implementation uses the following colour scheme:
 	blue		parent node calls "show" command on child node
 	green		parent node calls "next" command on child node
@@ -283,7 +283,7 @@ This can be verified by executing the following command:
 
 The command should report back libboost_system library linkage to either libc++ (clang)
 or libstdc++ (gcc). The solution is to either use the same compiler for FDDNM or
-rebuild boost libraries with prefered compiler. To compiler FDDNM and match compiler
+rebuild boost libraries with preferred compiler. To compiler FDDNM and match compiler
 used to build boost library, use the following during configure:
 
 	./configure ... CXX="[ g++ | clang++ ]"

@@ -327,7 +327,7 @@ return {
 
 			--; TRANSLATORS: you are $alignment, $sex, $race, $role
 			Npc:says(_"Hello, welcome to Nethack! You are %s %s %s %s.", n_alignment, n_sex, n_race, n_role, "NO_WAIT")
-			--; TRANSLATORS: boths %s represent a name of a god
+			--; TRANSLATORS: both %s represent a name of a god
 			Npc:says(_"Your goddess, [b]%s[/b] desires the Amulet of Yendor, which the evil god [b]%s[/b] has hidden at the bottom of this dungeon.", n_god, n_emgod, "NO_WAIT")
 			Npc:says(_"Return with the [b]Amulet of Yendor[/b], and you shall be rewarded!", "NO_WAIT")
 			Npc:says(_"You are all alone on the surface. There is a stairway down.", "NO_WAIT")
@@ -423,7 +423,7 @@ return {
 					n_emhp = 200 + math.random(20)
 					n_emiq = 200 + math.random(20)
 				elseif (random_var > 14) then
-					n_emtype = 5 -- extreamly difficult enemy
+					n_emtype = 5 -- extremely difficult enemy
 					n_emname = get_random(_"dragon", _"dwarf", _"basilisk", _"penguin", _"grue")
 					n_emac = 7 + math.random(3)
 					n_emhp = 150 + math.random(20)

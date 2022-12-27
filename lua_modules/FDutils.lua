@@ -30,7 +30,7 @@
 --! \namespace Lua
 
 --! \class Lua::FDutils
---! \brief Some utilities, grouped by fonctionnality
+--! \brief Some utilities, grouped by functionality
 
 FDutils = {}
 
@@ -57,7 +57,7 @@ function FDutils.system.scandir(subdir, filter, exclude)
 	local filtered = {}
 	local exclude_dict = {}
 	local files = {}
-	local subdirs = (type(subdir) == "table") and subdir or { subdir } -- Enfore subdirs to be a table
+	local subdirs = (type(subdir) == "table") and subdir or { subdir } -- Enforce subdirs to be a table
 	for i,onedir in ipairs(subdirs) do
 		local files_found = dir(onedir)
 		for j,file in ipairs(files_found) do

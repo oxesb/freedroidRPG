@@ -302,7 +302,7 @@ return {
 		text = _"Make me a sandwich.",
 		code = function()
 			if (tux_has_joined_guard) then
-				-- TODO: Make ingredient avalaible. :)
+				-- TODO: Make ingredient available. :)
 				Npc:says(_"Problem: Ingredients are not available.")
 			else
 				Npc:says(_"Refusal: Only authorized personal can give orders.")

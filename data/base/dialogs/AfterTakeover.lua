@@ -192,7 +192,7 @@ return {
 
 				Aftertakeover_repair_time_estimation = math.ceil(AfterTakeover_repair_time * 1.2)
 				Aftertakeover_repair_circuits_estimation = math.ceil(AfterTakeover_repair_time * 1.2)
-				-- Get correct plural/singluar for "second(s)" and "circuit(s)"
+				-- Get correct plural/singular for "second(s)" and "circuit(s)"
 
 				local repair_seconds = _"seconds"
 				if (Aftertakeover_repair_time_estimation == 1) then

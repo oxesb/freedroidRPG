@@ -190,7 +190,7 @@ return {
 		code = function()
 			Tux:says("finger", "NO_WAIT")
 			knows_c_net_users = true
-			--; TRANSLATORS: this reperesents the head of a table
+			--; TRANSLATORS: this represents the head of a table
 			Npc:says(_"Login Tty Name", "NO_WAIT")
 			Npc:says("bossman tty7 Spencer", "NO_WAIT")
 			Npc:says("cpain tty5 Sorenson", "NO_WAIT")

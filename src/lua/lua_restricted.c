@@ -271,7 +271,7 @@ void lua_restricted_openlibs(lua_State *L)
 	apply_white_list(L, global_whitelist);
 	lua_pop(L, 1);
 
-	// Add restricted implementation of some Lua funtions
+	// Add restricted implementation of some Lua functions
 
 	static const luaL_Reg lua_restricted_funcs[] = {
 			{ "FDdofile", lua_restricted_dofile },

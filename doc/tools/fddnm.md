@@ -85,7 +85,7 @@ Enables nodes connected to "end_dialog" to be grouped closer to "end_dialog" nod
 (E.g. Dixon or Tania graphs produce better output with this setting enabled).\n
 \n
 <strong>[-H | --extrainfo]</strong>\n
-enable HTML-like dot output - includeds presentation of extra node information.\n
+enable HTML-like dot output - includes presentation of extra node information.\n
 (See below for an example of the output produced.)\n
 \n
 <strong>[-I | \-\-individual]</strong>\n

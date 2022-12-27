@@ -205,7 +205,7 @@ int teleport_to_random_waypoint(enemy *erot, level *this_level, char *wp_used)
 void teleport_enemy(enemy *robot, int z, float x, float y)
 {
 	// Due to possible bugs in the storyline scripts, we could be requested to
-	// teleport a dead bot. This shoud not happen. So we inform the player but
+	// teleport a dead bot. This should not happen. So we inform the player but
 	// fails the teleportation
 	if (robot->energy <= 0) {
 		error_message(__FUNCTION__,
@@ -1472,7 +1472,7 @@ void update_vector_to_shot_target_for_enemy(enemy * this_robot)
 }				// void update_vector_to_shot_target_for_enemy ( ThisRobot )
 
 /**
- * This function handles the inconditional updates done to the bots by
+ * This function handles the unconditional updates done to the bots by
  * the automaton powering them. See update_enemy().
  */
 static void state_machine_inconditional_updates(enemy * ThisRobot)
@@ -1992,7 +1992,7 @@ void update_enemy(enemy * ThisRobot)
 {
 	/* New structure :
 	 *
-	 * Inconditional updates:
+	 * Unconditional updates:
 	 *    debug stuff (say state on screen)
 	 *    unstick from walls if relevant
 	 *    certain switches (cleanup to be made here)
@@ -2009,13 +2009,13 @@ void update_enemy(enemy * ThisRobot)
 	 *       do actions if appropriate (attack, talk, whatever)
 	 *       transition to a state
 	 *
-	 * Universal actions ("could" be merged with inconditional updates)
+	 * Universal actions ("could" be merged with unconditional updates)
 	 *    pathfind the new moving target if applicable (it differs from the current moving target)
 	 *    move (special case target = cur. position)
 	 *
 	 */
 
-	/* Inconditional updates */
+	/* Unconditional updates */
 	state_machine_inconditional_updates(ThisRobot);
 
 	/* Situational state changes */

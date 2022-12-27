@@ -54,7 +54,7 @@ const std::string DESC_VERBOSE_DOT
 const std::string DESC_GROUPING
 	("enable \"end_dialog\" group hint in dot output\n");
 const std::string DESC_DETAILED
-	("enable HTML-like dot output - includeds extra node information\n");
+	("enable HTML-like dot output - includes extra node information\n");
 const std::string DESC_INDIVIDUAL
 	("program is to parse and process all dialog files individually\n");
 const std::string DESC_DIR_SEARCH
@@ -650,7 +650,7 @@ void fddnm::graphivOutput(const std::string& outFileName, const std::string& dot
 	else
 	{
 		// user wants other image format output. dot-language data converted
-		// by graphviz library functions to user disired graphics format
+		// by graphviz library functions to user desired graphics format
 		// see "Graphviz Library Manual" for details
 		// www.graphviz.org/doc/libguide/libguide.pdf
 		//

@@ -26,7 +26,7 @@
 
 /**
  * This file contains all functions dealing with texts on the screen,
- * that have to be blitted somehow, using bitmaps or OpenGL texturers,
+ * that have to be blitted somehow, using bitmaps or OpenGL textures,
  * but at least strongly rely on graphics concepts, not pure internal
  * text-processing.
  */
@@ -184,7 +184,7 @@ void transient_text_set_centered_text(float duration, struct font *font, const c
 	int max_width = GameConfig.screen_width - 2 * screen_gap;
 	int max_text_width = max_width - 2 *rect_padding * font_height;
 
-	// The actual text width is defined by the width of the longuest line
+	// The actual text width is defined by the width of the longest line
 	// clamped between a quarter of the screen's width and the max screen's
 	// width minus a gap
 

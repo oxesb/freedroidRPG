@@ -56,7 +56,7 @@ Player acquires 1 million circuits.\n
 Line also displays current amount of circuits in possession.\n
 \n
 <strong>[n]</strong>\n
-Alter game mechanics to enble hidden droids.\n
+Alter game mechanics to enable hidden droids.\n
 Default is to allow droid invisibility (No Hidden Droids: OFF).\n
 \n
 <strong>[r]</strong>\n

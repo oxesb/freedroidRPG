@@ -881,7 +881,7 @@ int getchar_ascii(void)
 			if (SDLK_UP <= event.key.keysym.sym && event.key.keysym.sym <= SDLK_PAGEDOWN) {
 				return_key = (int)event.key.keysym.sym;
 			} else if (event.key.keysym.sym == SDLK_BACKSPACE || event.key.keysym.sym == SDLK_DELETE) {
-				// On MacOSX, the conversion of thse keys to unicode is buggy
+				// On MacOSX, the conversion of these keys to unicode is buggy
 				// so we directly return the keysym value
 				return_key = (int)event.key.keysym.sym;
 			} else if ((event.key.keysym.unicode & 0xFF00) != 0) {

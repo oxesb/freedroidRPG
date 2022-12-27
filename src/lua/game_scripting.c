@@ -28,7 +28,7 @@
  * They are mainly used in dialogs and event triggers.
  * Those functions are step by step replaced by 'cfuncs' in lua bindings (see
  * src/lua/bindings/luaFD_bindings.h, and see the bfuncs array in this file).
- * We however keep them for backward compatibilty, but they should be considered as
+ * We however keep them for backward compatibility, but they should be considered as
  * deprecated.
  */
 
@@ -1151,7 +1151,7 @@ static int bfunc_dir(lua_State *L)
 static int bfunc_set_mouse_move_target(lua_State *L)
 {
 	/* USE WITH CARE!
-	 * I made this function so we could automatize some tests on level 24
+	 * I made this function so we could automate some tests on level 24
 	 * This is not supposed to be used in the "real game"
 	 */
 	Me.mouse_move_target.x = luaL_checknumber(L, 1);
