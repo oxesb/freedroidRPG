@@ -91,6 +91,7 @@ return {
 			Npc:says(_"It was a handheld gaming computer, built on open-source software.")
 			Npc:says(_"The device had limited storage capabilities, so an enterprising hacker designed the data cubes.")
 			Npc:says(_"Those were the beginning days of open-source hardware. It's one of the few open-source innovations still around.")
+			hide("node10")
 		end,
 	},
 	{
