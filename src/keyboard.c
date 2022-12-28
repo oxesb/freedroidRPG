@@ -598,8 +598,14 @@ static int input_key(int keynum, int value)
 			    && CursorIsOnWhichSkillButton(GetMousePos_x(), GetMousePos_y()) != -1;
 
 			if (!assign_shortcut) {
-				if (Me.program_shortcuts[number] != -1)
-					activate_nth_skill(Me.program_shortcuts[number]);
+				if (Me.program_shortcuts[number] != -1) {
+					// Skills could have been removed since the shortcut was
+					// assigned, for example, after hacking in the tutorial.
+					if (Me.skill_level[Me.program_shortcuts[number]] > 0)
+						activate_nth_skill(Me.program_shortcuts[number]);
+					else
+						Me.program_shortcuts[number] = -1;
+				}
 			} else {
 				set_nth_quick_skill(number);
 
