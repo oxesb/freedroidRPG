@@ -1644,24 +1644,20 @@ static char *get_new_character_name(void)
 	int loop = 1;
 	while (loop) {
 		if (!skip_initial_menus)
-			str = get_string(MAX_CHARACTER_NAME_LENGTH - 1, "title.jpg", _("\n\
-     Please enter a name\n\
-     for the new hero: \n\n\
-        ENTER to accept.\n\
-        ESCAPE to cancel.\n\n\
-     > "));
+			str = get_string(MAX_CHARACTER_NAME_LENGTH - 1, "title.jpg",
+			                 _("\n"
+			                   "Please enter a name\n"
+			                   "for the new hero: \n\n"
+			                   "ENTER to accept.\n"
+			                   "ESCAPE to cancel.\n\n"
+			                   "> "),
+			                 "-");
 		else
 			str = strdup("MapEd");
 
 		// User cancelled -- abort here
 		if (!str)
 			break;
-
-		// Parse string for illegal chars
-		int i;
-		for (i = 0; i < strlen(str); i++)
-			if (!isalnum(str[i]) && str[i] != '-')
-				str[i] = '-';
 
 		// Check if name already exists
 		loop = savegame_exists(str);

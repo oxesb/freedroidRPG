@@ -702,7 +702,7 @@ int display_text_ellipsized(const char *, int, int, int, const SDL_Rect *, float
 int display_text_right_justified(const char *, int, int, const SDL_Rect *, float);
 
 int ImprovedCheckLineBreak(char *, const SDL_Rect*, float);
-char *get_string(int, const char *, const char *);
+char *get_string(int, const char *, const char *, const char *);
 void printf_SDL(SDL_Surface * screen, int x, int y, const char *fmt, ...) PRINTF_FMT_ATTRIBUTE(4,5);
 int longest_line_width(char *text);
 

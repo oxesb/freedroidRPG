@@ -674,8 +674,10 @@ int ImprovedCheckLineBreak(char *Resttext, const SDL_Rect * clip, float line_hei
 
 /**
  * Prompt the user for a string no longer than MaxLen (excluding terminating \0).
+ *
+ * Allowed chars are alphanum + the chars set in 'extra_allowed'
  */
-char *get_string(int max_len, const char *background_name, const char *text_for_overhead_promt)
+char *get_string(int max_len, const char *background_name, const char *text_for_overhead_promt, const char *extra_allowed)
 {
 	display_text(text_for_overhead_promt, 50, 50, NULL, 1.0);
 
@@ -713,10 +715,6 @@ char *get_string(int max_len, const char *background_name, const char *text_for_
 			}
 			input[curpos] = 0;
 			finished = TRUE;
-		} else if ((key < SDLK_DELETE) && isprint(key) && (curpos < max_len)) {
-			/* printable characters are entered in string */
-			input[curpos] = (char)key;
-			curpos++;
 		} else if (key == SDLK_BACKSPACE) {
 			if (curpos > 0)
 				curpos--;
@@ -725,6 +723,23 @@ char *get_string(int max_len, const char *background_name, const char *text_for_
 			free(input);
 			while (EscapePressed()) ;
 			return (NULL);
+		} else if ((key < SDLK_DELETE) && isprint(key) && (curpos < max_len)) {
+			/* allowed characters are entered in string */
+			int allowed_char = FALSE;
+			if (isalnum(key)) {
+				allowed_char = TRUE;
+			} else {
+				for (const char *ptr=extra_allowed; *ptr!= '\0'; ptr++) {
+					if ((char)key == *ptr) {
+						allowed_char = TRUE;
+						break;
+					}
+				}
+			}
+			if (allowed_char) {
+				input[curpos] = (char)key;
+				curpos++;
+			}
 		}
 	}
 
@@ -734,6 +749,7 @@ char *get_string(int max_len, const char *background_name, const char *text_for_
 /* -----------------------------------------------------------------
  * This function reads a string of "MaxLen" from User-input.
  *
+ * Allowed characters: "a-zA-Z0-9._-'!?<>: "
  * NOTE: MaxLen is the maximal _strlen_ of the string (excl. \0 !)
  *
  * ----------------------------------------------------------------- */
@@ -830,8 +846,19 @@ char *get_editable_string_in_popup_window(int max_len, const char *popup_window_
 				if ((key <= SDLK_KP9) && (key >= SDLK_KP0))
 					key = key - SDLK_KP0 + '0';
 
-				if (isprint(key)) {
-					// If a printable character has been entered, it is either appended to
+				int allowed_char = FALSE;
+				if (isalnum(key)) {
+					allowed_char = TRUE;
+				} else {
+					for (char *ptr="._-'!?<>: "; *ptr!= '\0'; ptr++) {
+						if ((char)key == *ptr) {
+							allowed_char = TRUE;
+							break;
+						}
+					}
+				}
+				if (allowed_char) {
+					// If an allowed character has been entered, it is either appended to
 					// the end of the current input string or the rest of the string is being
 					// moved and the new character inserted at the cursor position.
 					if (curpos == ((int)strlen(input))) {
