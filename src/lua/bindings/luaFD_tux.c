@@ -692,21 +692,34 @@ static int _add_item(lua_State * L)
 
 	const char *item_name = luaL_checkstring(L, 2);
 	int number = lua_to_int(luaL_optinteger(L, 3, 1));
+	item_t item_type = get_item_type_by_id(item_name);
 
+	if (item_type == -1) {
+		return luaL_error(L, "%s() Tried to give an unknown item: \"%s\"", __FUNCTION__, item_name);
+	}
 	if (number == 0) {
-		return luaL_error(L, "%s() %s", __FUNCTION__, "Tried to give item with 0 multiplicity");
+		return luaL_error(L, "%s() Tried to give item \"%s\" with 0 multiplicity", __FUNCTION__, item_name);
 	}
 
-	struct item new_item = create_item_with_id(item_name, TRUE, number);
-
-	// Either we put the new item directly into inventory or we issue a warning
-	// that there is no room and then drop the item to the floor directly under
-	// the current Tux position.  That can't fail, right?
-	char msg[1000];
-	if (!give_item(&new_item)) {
-		sprintf(msg, _("Received Item: %s (on floor)"), item_name);
+	// If the item can not be stacked, then we create as many items as requested
+	int all_in_inventory = TRUE;
+	if (ItemMap[item_type].item_group_together_in_inventory) {
+		struct item new_item = create_item_with_id(item_name, TRUE, number);
+		all_in_inventory = give_item(&new_item);
 	} else {
+		for (int i=0; i<number; i++) {
+			struct item new_item = create_item_with_id(item_name, TRUE, number);
+			all_in_inventory &= give_item(&new_item);
+		}
+	}
+
+	// Either we tell the user that the new item put into inventory or we issue
+	// a warning that the item was dropped to the floor.
+	char msg[1000];
+	if (all_in_inventory) {
 		sprintf(msg, _("Received Item: %s"), item_name);
+	} else {
+		sprintf(msg, _("Received Item: %s (on floor)"), item_name);
 	}
 	SetNewBigScreenMessage(msg);
 
