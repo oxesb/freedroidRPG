@@ -89,7 +89,8 @@ doc:
 # Fill the win_dir with all the stuff needed to create an installer
 
 win_txts = COPYING AUTHORS README ChangeLog
-win_dir = freedroidrpg-win32
+win_dir = freedroidRPG.win32
+win_app_prefix = freedroidRPG-$(VERSION)-win32-x86-64
 dist-win32: src/freedroidRPG.exe
 	@if [ "x$(DLL_PATH)" = "x" ] ; then \
 	  echo "DLL_PATH not defined. Aborting."; \
@@ -104,16 +105,21 @@ dist-win32: src/freedroidRPG.exe
 	done
 	perl win32/pkgApp.pl $(win_dir) freedroidRPG.exe $(DLL_PATH)
 	cp $(DLL_PATH)/SDL2.dll $(win_dir)
-	tar -czf freedroidRPG-$(VERSION)-win32.app.tgz -C $(win_dir) --xform s:'./':: .
+	tar -czf $(win_app_prefix).app.tgz -C $(win_dir) --xform s:'./':: .
 
 # Create a win32 installer
 
 $(win_dir): dist-win32
 package-win32: $(filter-out $(wildcard $(win_dir)), $(win_dir))
-	rm -f freedroidRPG-*-win32.exe
+	@if [ $$(file src/freedroidRPG.exe | grep " PE32+ " | grep -c "x86-64") -eq 0 ] ; then \
+	  echo "src/freedroidRPG.exe is not a 64b windows exe. Aborting."; \
+	  exit 1; \
+	 fi
+	rm -f $(win_app_prefix).exe
 	rm -f freedroidRPG.nsi
 	win32/install_file_lists.py win32/freedroidRPG.nsi.in $(win_dir) > freedroidRPG.nsi
-	makensis -V1 -DPRODUCT_VERSION="$(VERSION)" -DSRC_DIR="${win_dir}" freedroidRPG.nsi
+	makensis -V1 -DPRODUCT_VERSION="$(VERSION)" -DSRC_DIR="${win_dir}" -DOUT_FILE="$(win_app_prefix).exe" freedroidRPG.nsi
+	rm -f freedroidRPG.nsi
 
 ###
 # MacOSX specific stuff follows here
