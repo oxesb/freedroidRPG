@@ -77,7 +77,8 @@ return {
 			elseif (captcha == 6) then
 				captcha = "6"
 			end
-			response = user_input_string(string.format(_"CAPTCHA: Please write the number that answers the following: %s - %s = ?", number_one, number_two))
+
+			local response = user_input_string(string.format(_"CAPTCHA: Please write the number that answers the following: %s - %s = ?", number_one, number_two))
 			if (captcha ~= response) then
 				Npc:says(_"Non-human detected. Administering paralyzing shock.")
 				Npc:says(_"NOTE: If you are a human, try again, and make sure you enter digits and not a word.")

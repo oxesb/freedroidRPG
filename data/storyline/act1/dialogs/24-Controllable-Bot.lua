@@ -30,8 +30,8 @@ return {
 	end,
 
 	EveryTime = function()
-		ControllableBot_try_again = true
-		ControllableBot_response_is = nil
+		local ControllableBot_try_again = true
+		local ControllableBot_response_is = nil
 
 		while (ControllableBot_try_again) do
 			ControllableBot_response = user_input_string("enter target waypoint or bot state. states: follow-tux, fixed, free, home, patrol")

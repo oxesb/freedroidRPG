@@ -22,6 +22,7 @@ local Tux = FDrpg.get_tux()
 
 return {
 	EveryTime = function()
+		local response = nil
 		play_sound("effects/Menu_Item_Deselected_Sound_0.ogg") --@TODO check that the captcha works
 		--  < infrared_> The captcha code could probably be condensed into an array, at the cost of readability for non-coders; translating it shouldn't be a problem.
 		if (not MO_HFGateAccessServer_skip_captcha) then

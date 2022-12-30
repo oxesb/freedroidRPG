@@ -72,6 +72,7 @@ local ranged_combat = {"Normal Jacket", "Big kitchen knife", "Shoes", "Standard 
 
 return {
 	FirstTime = function()
+	    resp = user_input_string("enter");
 		-- initialize
 		TutorialTom_doors2 = {TutorialTom_doors[1], TutorialTom_doors[2], TutorialTom_doors[3], TutorialTom_doors[4], TutorialTom_doors[5], "TutorialEquipOut", "TutorialMeleeOut", "TutorialDoor", "TutorialGlasswallDoor", "TutorialStorage", "TutorialTakeover", "TutorialExit1"}
 		-- to avoid excessive map validator waypoint errors, map starts with all relevant doors open, so we need to close them here
