@@ -80,6 +80,7 @@ return {
 			hide("node0")
 ---------------------------------------------------------- ITEM
 			Tux:add_item("Laser Scalpel")
+			Tux:add_item(".22 Automatic")
 			Tux:add_item(".22 Automatic", 2)
 			if (Tux:has_item(".22 Automatic")) then
 				Npc:says("ADD ITEM test 1 succeeded", "NO_WAIT")
@@ -110,10 +111,16 @@ return {
 			]]--
 
 			Tux:del_item_backpack(".22 Automatic", 2)
-			if (not Tux:has_item_backpack(".22 Automatic")) then
+			if (Tux:has_item_backpack(".22 Automatic")) then
 				Npc:says("DEL ITEM test 2 succeeded", "NO_WAIT")
 			else
 				guy_fail("DEL ITEM 2")
+			end
+			Tux:del_item_backpack(".22 Automatic")
+			if (not Tux:has_item_backpack(".22 Automatic")) then
+				Npc:says("DEL ITEM test 3 succeeded", "NO_WAIT")
+			else
+				guy_fail("DEL ITEM 3")
 			end
 ---------------------------------------------------------- FACTION
 			npc_faction("self", "Guy - self")

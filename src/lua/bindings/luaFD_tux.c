@@ -708,7 +708,7 @@ static int _add_item(lua_State * L)
 		all_in_inventory = give_item(&new_item);
 	} else {
 		for (int i=0; i<number; i++) {
-			struct item new_item = create_item_with_id(item_name, TRUE, number);
+			struct item new_item = create_item_with_id(item_name, TRUE, 1);
 			all_in_inventory &= give_item(&new_item);
 		}
 	}
@@ -743,7 +743,15 @@ static int _del_item_backpack(lua_State * L)
 
 	const char *item_name = luaL_checkstring(L, 2);
 	int number = lua_to_int(luaL_optinteger(L, 3, 1));
-	DeleteInventoryItemsOfType(get_item_type_by_id(item_name), number);
+	item_t item_type = get_item_type_by_id(item_name);
+
+	if (ItemMap[item_type].item_group_together_in_inventory) {
+		DeleteInventoryItemsOfType(item_type, number);
+	} else {
+		for (int i=0; i<number; i++) {
+			DeleteInventoryItemsOfType(item_type, 1);
+		}
+	}
 
 	return 0;
 }
