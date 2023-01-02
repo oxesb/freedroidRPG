@@ -204,13 +204,10 @@ void play_title_file(int subdir_handle, char *filename)
 			                   "Error on iconv_open() (encoding: %s): %s",
 			                   NO_REPORT, lang_get_encoding(), strerror(errno));
 		} else {
-#if __FreeBSD__
-			// FreeBSD changed to its own iconv starting with 10-CURRENT
-			// Future ref: check for OS version < 10-CURRENT would allow non-const
-			const char *in_ptr = screen.text;
-#else
-			char *in_ptr = screen.text;
-#endif	//__FreeBSD__
+			// Some systems, such as FreeBSD or Win32/Mingw use, a const for
+			// the 2nd argument of inconv(). The iconv.m4 configure script
+			// set ICONV_CONST accordingly
+			ICONV_CONST char *in_ptr = screen.text;
 			size_t in_len = strlen(screen.text);
 			// We currently only have 8 bits encodings, so we should not need
 			// an output buffer larger than the input one.
