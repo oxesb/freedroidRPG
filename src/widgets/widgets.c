@@ -1,4 +1,4 @@
-/* 
+/*
  *
  *   Copyright (c) 2009 Arthur Huillet
  *
@@ -16,8 +16,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -72,7 +72,7 @@ struct image *widget_load_image_resource(char *name, int mod_flags)
 
 	if (!name)
 		return NULL;
-	
+
 	// Check if image is already loaded.
 	list_for_each_entry(res, &image_resource_list, node) {
 		if (!strcmp(name, res->name))
@@ -141,7 +141,7 @@ static struct _tooltip_info {
  * \param new_tooltip The new tooltip to be displayed.
  * \param widget_rect Rectangle of the tooltip owner (used to compute the tooltip's position).
  */
-void widget_set_tooltip(struct tooltip *new_tooltip, SDL_Rect *widget_rect)
+void widget_set_tooltip(struct tooltip *new_tooltip, const SDL_Rect *widget_rect)
 {
 	if (!new_tooltip || !widget_rect) {
 		tooltip_info.value = NULL;
@@ -235,10 +235,10 @@ static void display_tooltips(void)
 
 		if (time_spent_on_button <= 1200)
 			return;
-		
+
 		centered = 0;	// Editor tooltips are not centered.
 	}
-	
+
 	// Set the correct font before computing text width.
 	set_current_font(FPS_Display_Font);
 
@@ -250,29 +250,29 @@ static void display_tooltips(void)
 	// after which linebreaks are automatically added.
 	tooltip_rect.w = longest_line_width(buffer) + 2 * TEXT_BANNER_HORIZONTAL_MARGIN;
 	if (tooltip_rect.w > 400)
-		tooltip_rect.w = 400;	
+		tooltip_rect.w = 400;
 
 	// Compute height
 	int lines_in_text = get_lines_needed(tooltip_text, tooltip_rect, 1.0);
 	tooltip_rect.h = lines_in_text * get_font_height(FPS_Display_Font);
 
-	int center_x = tooltip_info.widget_rect.x + tooltip_info.widget_rect.w / 2;	
-	int center_y = tooltip_info.widget_rect.y + tooltip_info.widget_rect.h / 2;	
+	int center_x = tooltip_info.widget_rect.x + tooltip_info.widget_rect.w / 2;
+	int center_y = tooltip_info.widget_rect.y + tooltip_info.widget_rect.h / 2;
 
-	// The tooltip is positioned to the left or to the right (whichever is closer 
+	// The tooltip is positioned to the left or to the right (whichever is closer
 	// to the screen's center) of the widget's center.
 	if (center_x < GameConfig.screen_width / 2)
 		tooltip_rect.x = center_x;
 	else
 		tooltip_rect.x = center_x - tooltip_rect.w;
 
-	// The tooltip is positioned above or under the widget (whichever is closer 
+	// The tooltip is positioned above or under the widget (whichever is closer
 	// to the screen's center). A small offset is added for aesthetic reasons.
 	if (center_y < GameConfig.screen_height / 2)
 		tooltip_rect.y = tooltip_info.widget_rect.y + tooltip_info.widget_rect.h + 4;
 	else
 		tooltip_rect.y = tooltip_info.widget_rect.y - tooltip_rect.h - 4;
-		
+
 
 	display_tooltip(tooltip_text, centered, tooltip_rect);
 }

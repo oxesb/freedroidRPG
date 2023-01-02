@@ -1,4 +1,4 @@
-/* 
+/*
  *
  *   Copyright (c) 2009-2010 Arthur Huillet
  *   Copyright (c) 2014 Samuel Degrande
@@ -16,8 +16,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -456,7 +456,7 @@ struct tooltip {
 	string text;              /**< String used for static tooltip texts. */
 };
 
-void widget_set_tooltip(struct tooltip *, SDL_Rect *);
+void widget_set_tooltip(struct tooltip *, const SDL_Rect *);
 
 // end gui2d_tooltip submodule
 ///@}

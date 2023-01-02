@@ -802,7 +802,8 @@ static char *decode_item_section(level *loadlevel, char *data)
 	ItemPointer = ItemsSectionBegin;
 	char *NextItemPointer;
 	for (i = 0; i < NumberOfItemsInThisLevel; i++) {
-		if ((ItemPointer = strstr(ItemPointer + 1, ITEM_ID_STRING))) {
+		ItemPointer = strstr(ItemPointer + 1, ITEM_ID_STRING);
+		if (ItemPointer) {
 			NextItemPointer = strstr(ItemPointer + 1, ITEM_ID_STRING);
 			if (NextItemPointer)
 				NextItemPointer[0] = 0;
@@ -812,6 +813,11 @@ static char *decode_item_section(level *loadlevel, char *data)
 			dynarray_add(&loadlevel->item_list, &new_item, sizeof(struct item));
 			if (NextItemPointer)
 				NextItemPointer[0] = ITEM_ID_STRING[0];
+		} else {
+			error_message(__FUNCTION__,
+						  "Not enough items found for level %d: %d expected, %d found.\n",
+						  PLEASE_INFORM, loadlevel->levelnum, NumberOfItemsInThisLevel, i);
+			break;
 		}
 	}
 
@@ -1293,6 +1299,7 @@ void free_ship_level(level *lvl)
 	BROWSE_LEVEL_ITEMS(lvl, the_item, w) {
 		delete_upgrade_sockets(the_item);
 	}
+	dynarray_free(&lvl->item_list);
 
 	free(lvl);
 }

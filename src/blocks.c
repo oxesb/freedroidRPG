@@ -336,12 +336,10 @@ static struct image *get_storage_for_bullet_image(const char *filename)
 	char fname[1024];
 
 	// e.g. iso_bullet_half_pulse_04_0001.png
-	sscanf(filename, "iso_bullet_%1023s", &fname[0]);
-	char *p = &fname[0];
-	while (!isdigit(*p)) {
-		p++;
-	}
-	p--;
+	sscanf(filename, "iso_bullet_%1023s", fname);
+	char *p = fname;
+	while (!isdigit(*p)) p++;
+	if (p != fname) p--;
 	*p = 0;
 
 	for (int i = 0; i < bullet_specs.size; i++) {
@@ -358,8 +356,6 @@ static struct image *get_storage_for_bullet_image(const char *filename)
 	error_message(__FUNCTION__, "Bullet texture atlas specifies element %s which is not expected.",
 			PLEASE_INFORM, filename);
 	return NULL;
-
-
 }
 
 

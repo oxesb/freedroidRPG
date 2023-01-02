@@ -2060,7 +2060,7 @@ int give_item(item *it)
 	return FALSE;
 }
 
-int item_is_currently_equipped(item * Item)
+int item_is_currently_equipped(const item * Item)
 {
 	if ((&(Me.weapon_item) == Item) || (&(Me.drive_item) == Item) || (&(Me.armour_item) == Item)
 	    || (&(Me.shield_item) == Item) || (&(Me.special_item) == Item))

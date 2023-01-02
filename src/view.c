@@ -66,7 +66,7 @@ int amask = 0x000000FF;
 
 static int old_current_level = -1;
 
-void put_radial_blue_sparks(float, float, float, int, uint8_t[RADIAL_SPELL_DIRECTIONS], float);
+void put_radial_blue_sparks(float, float, float, int, const uint8_t[RADIAL_SPELL_DIRECTIONS], float);
 
 struct blitting_list_element {
 	int element_type;
@@ -2757,7 +2757,7 @@ void PutItem(item *CurItem, int mask, int put_thrown_items_flag, int highlight_i
 	display_image_on_map(img, CurItem->virt_pos.x - anim_throw, CurItem->virt_pos.y - anim_throw, set_image_transformation(zf, zf, r, g, b, 1.0, highlight_item));
 }
 
-void put_radial_blue_sparks(float posX, float posY, float radius, int spark_type, uint8_t active_direction[RADIAL_SPELL_DIRECTIONS], float age)
+void put_radial_blue_sparks(float posX, float posY, float radius, int spark_type, const uint8_t active_direction[RADIAL_SPELL_DIRECTIONS], float age)
 {
 #define FIXED_NUMBER_OF_SPARK_ANGLES 12
 #define FIXED_NUMBER_OF_PROTOTYPES 4

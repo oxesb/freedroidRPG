@@ -1,4 +1,4 @@
-/* 
+/*
  *
  *   Copyright (c) 2004-2010 Arthur Huillet
  *
@@ -16,8 +16,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -197,7 +197,7 @@ void action_push(int type, ...)
 {
 	va_list args;
 	va_start(args, type);
-	
+
 	action *act = action_create(type, args);
 
 	switch (push_mode) {
@@ -279,7 +279,7 @@ void action_change_obstacle_label_user(level *EditLevel, obstacle *our_obstacle)
 
 	char *old_label = get_obstacle_extension(EditLevel, our_obstacle, OBSTACLE_EXTENSION_LABEL);
 	name = get_editable_string_in_popup_window(1000, _("\nPlease enter obstacle label: \n\n"), old_label ? old_label : "");
-	
+
 	if (name) {
 		action_change_obstacle_label(EditLevel, our_obstacle, name, 1);
 		free(name);
@@ -879,8 +879,8 @@ void level_editor_action_redo(void)
  */
 void level_editor_place_aligned_object(int positionid)
 {
-	float position_offset_x[9] = { 0, 0.5, 1.0, 0, 0.5, 1.0, 0, 0.5, 1.0 };
-	float position_offset_y[9] = { 1.0, 1.0, 1.0, 0.5, 0.5, 0.5, 0, 0, 0 };
+	const float position_offset_x[9] = { 0, 0.5, 1.0, 0, 0.5, 1.0, 0, 0.5, 1.0 };
+	const float position_offset_y[9] = { 1.0, 1.0, 1.0, 0.5, 0.5, 0.5, 0, 0, 0 };
 	struct widget_lvledit_categoryselect *cs = get_current_object_type();
 	int type = cs->indices[cs->selected_tile_nb];
 	pointf pos;
@@ -922,7 +922,7 @@ void CreateNewMapLevel(int level_num)
 	level *NewLevel;
 	int i, k;
 
-	// Get the memory for one level 
+	// Get the memory for one level
 	//
 	NewLevel = (Level) MyMalloc(sizeof(level));
 
@@ -981,7 +981,7 @@ void CreateNewMapLevel(int level_num)
 
 	// Initialize waypoints
 	dynarray_init(&NewLevel->waypoints, 10, sizeof(struct waypoint));
-	
+
 	curShip.AllLevels[level_num] = NewLevel;
 }
 

@@ -177,7 +177,7 @@ struct widget_text_list {
 #define WIDGET_TEXT_LIST(x) ((struct widget_text_list *)x)
 
 struct widget_text_list *widget_text_list_create(void);
-void widget_text_list_init(struct widget_text_list *, string[], int *);
+void widget_text_list_init(struct widget_text_list *, const string[], const int *);
 void widget_text_list_add(struct widget_text_list *, string, int);
 void widget_text_list_dupadd(struct widget_text_list *, const char *, int);
 int widget_text_list_get_data(struct widget_text_list *, int);

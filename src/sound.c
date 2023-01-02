@@ -237,7 +237,7 @@ static int _SFX_cache_find_filename(const char *filename)
  * Find a cache slot given a pointer to a sound chunk, and return its index.
  * Return -1 if the slot is not found.
  */
-static int _SFX_cache_find_chunk(Mix_Chunk *chunk)
+static int _SFX_cache_find_chunk(const Mix_Chunk *chunk)
 {
 	int i;
 	for (i = 0; i < SFX_cache.next_free_slot; i++) {
@@ -367,7 +367,7 @@ void init_audio(void)
 
 	if (!sound_on)
 		return;
-	
+
 	switch (GameConfig.Current_Sound_Output_Fmt) {
 	case SOUND_OUTPUT_FMT_SURROUND40:
 		audio_channels = 4;

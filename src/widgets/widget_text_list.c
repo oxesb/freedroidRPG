@@ -310,7 +310,7 @@ struct widget_text_list *widget_text_list_create(void)
  *                 No check is done on the array size, so the user has to take
  *                 care to provide at least as many values as in the 'text_arr'.
  */
-void widget_text_list_init(struct widget_text_list *wl, string text_arr[], int *data_arr)
+void widget_text_list_init(struct widget_text_list *wl, const string text_arr[], const int *data_arr)
 {
 	int i;
 

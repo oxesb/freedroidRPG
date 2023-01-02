@@ -84,7 +84,7 @@ void mapgen_set_floor(int x, int y, int type)
 	target_level->map[y][x].floor_values[0] = type;
 }
 
-static void split_wall(int w, int h, unsigned char *tiles)
+static void split_wall(int w, int h, const unsigned char *tiles)
 {
 	int y, x;
 	int room;
@@ -461,8 +461,7 @@ void mapgen_convert(struct dungeon_info *di, int w, int h, unsigned char *tiles)
 	split_wall(w, h, tiles);
 
 	// Sort rooms by their surface
-	for (i = 0; i < di->num_rooms; i++)
-		idx[i] = i;
+	for (i = 0; i < di->num_rooms; i++)	idx[i] = i;
 	qsort(idx, di->num_rooms, sizeof(int), cmp_room_surface);
 
 	i = 0;

@@ -37,7 +37,7 @@
 
 // The Real-time profiler is a dev tool that will be rarely used. Then better to
 // avoid compiling the code if it is not used.
-
+#define WITH_RTPROF
 #ifdef WITH_RTPROF
 
 #include "rtprof.h"
@@ -311,16 +311,16 @@ static void probe_display_container(int x, int y, int width, int height, char *t
  */
 static void probe_display_bargraph(int x, int y, int width, int height, int val, float scale, int divider)
 {
-	int bar_width = val * scale;
+	int bwidth = val * scale;
 	int overflow = FALSE;
 
 	// Is there an overflow ?
-	if (bar_width > width) {
+	if (bwidth > width) {
 		overflow = TRUE;
-		bar_width = width;
+		bwidth = width;
 	}
 
-	SDL_Rect fill_rect = { x, y, bar_width, height };
+	SDL_Rect fill_rect = { x, y, bwidth, height };
 	if (!overflow)
 		draw_rectangle(&fill_rect, 0x00, 0xff, 0x00, 0x88); // green bar
 	else
@@ -329,7 +329,7 @@ static void probe_display_bargraph(int x, int y, int width, int height, int val,
 	// Textual representation at the right of the bar
 	char text[16];
 	sprintf(text, "%g", (float)val / divider);
-	put_string(get_current_font(), x + bar_width, y, text);
+	put_string(get_current_font(), x + bwidth, y, text);
 }
 
 /**

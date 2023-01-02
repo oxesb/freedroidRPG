@@ -1,4 +1,4 @@
-/* 
+/*
  *
  *   Copyright (c) 2010 Arthur Huillet
  *
@@ -15,8 +15,8 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Freedroid; see the file COPYING. If not, write to the 
- *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
+ *  along with Freedroid; see the file COPYING. If not, write to the
+ *  Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *  MA  02111-1307  USA
  *
  */
@@ -29,14 +29,14 @@
 #include "global.h"
 #include "proto.h"
 
-int get_obstacle_index(level *lvl, obstacle *o)
+int get_obstacle_index(level *lvl, const obstacle *o)
 {
 	int obstacle_index = (o - &(lvl->obstacle_list[0]));
 
 	return obstacle_index;
 }
 
-static void change_extensions(struct level *lvl, struct obstacle *from, struct obstacle *to)
+static void change_extensions(struct level *lvl, const struct obstacle *from, struct obstacle *to)
 {
 	int i;
 
@@ -49,11 +49,11 @@ static void change_extensions(struct level *lvl, struct obstacle *from, struct o
 }
 
 /**
- * Defragment the obstacle array of a level, ie. make 
+ * Defragment the obstacle array of a level, ie. make
  * its obstacle array contiguous instead of having empty
  * entries in the middle, as can appear when deleting obstacles in the editor.
  */
-void defrag_obstacle_array(level *lvl) 
+void defrag_obstacle_array(level *lvl)
 {
 	int i = MAX_OBSTACLES_ON_MAP - 1;
 	int array_end;
@@ -97,13 +97,13 @@ void defrag_obstacle_array(level *lvl)
 /**
  * Retrieve the obstacle extension of a given type associated to an obstacle.
  */
-void *get_obstacle_extension(struct level *lvl, struct obstacle *obs, enum obstacle_extension_type type)
+void *get_obstacle_extension(struct level *lvl, const struct obstacle *obs, enum obstacle_extension_type type)
 {
 	int i;
 
 	for (i = 0; i < lvl->obstacle_extensions.size; i++) {
 		struct obstacle_extension *ext = &ACCESS_OBSTACLE_EXTENSION(lvl->obstacle_extensions, i);
-		if (ext->obs == obs) 
+		if (ext->obs == obs)
 			if (ext->type == type)
 				return ext->data;
 	}
@@ -113,12 +113,12 @@ void *get_obstacle_extension(struct level *lvl, struct obstacle *obs, enum obsta
 
 /**
  * Delete the obstacle extension of a given type.
- * This function does not free the associated data - it must have been freed after a call 
+ * This function does not free the associated data - it must have been freed after a call
  * to get_obstacle_extension.
  * \param lvl Pointer towards the level where the obstacle lies
  * \param type Type of the extension to be removed
  */
-void del_obstacle_extension(struct level *lvl, struct obstacle *obs, enum obstacle_extension_type type)
+void del_obstacle_extension(struct level *lvl, const struct obstacle *obs, enum obstacle_extension_type type)
 {
 	int i;
 
@@ -138,7 +138,7 @@ void del_obstacle_extension(struct level *lvl, struct obstacle *obs, enum obstac
 	}
 }
 
-void del_obstacle_extensions(struct level *lvl, struct obstacle *obs)
+void del_obstacle_extensions(struct level *lvl, const struct obstacle *obs)
 {
 	int i;
 

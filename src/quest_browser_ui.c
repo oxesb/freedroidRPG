@@ -156,8 +156,7 @@ static void print_statistics(void)
 	int worst_capture_target = -1;
 	int worst_capture_success_rate = 100;
 
-	int i;
-	for (i = 0; i < sizeof(statistics_browser_lines_needed)/sizeof(statistics_browser_lines_needed[0]); i++)
+	for (int i = 0; i < sizeof(statistics_browser_lines_needed)/sizeof(statistics_browser_lines_needed[0]); i++)
 		statistics_browser_lines_needed[i] = -1;
 
 	// Grab information out of the statistics arrays

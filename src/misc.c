@@ -696,8 +696,10 @@ void init_data_dirs_path(void)
 	}
 
 	dynarray_free(top_data_dir);
+	free(top_data_dir);
 	free_autostr(datadir_path);
 	dynarray_free(top_locale_dir);
+	free(top_locale_dir);
 	free_autostr(localedir_path);
 
 	return;
@@ -705,8 +707,10 @@ void init_data_dirs_path(void)
 TOP_DIR_FOUND:
 
 	dynarray_free(top_data_dir);
+	free(top_data_dir);
 	free_autostr(datadir_path);
 	dynarray_free(top_locale_dir);
+	free(top_locale_dir);
 	free_autostr(localedir_path);
 
 	char *dir = data_dirs[DATA_ROOT].path;

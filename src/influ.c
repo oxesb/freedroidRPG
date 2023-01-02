@@ -697,8 +697,6 @@ static void move_tux_towards_intermediate_point(void)
  */
 void move_tux(void)
 {
-	static gps last_given_course_target = { -2, -2, -2 };
-
 	// check, if the influencer is still ok
 	CheckIfCharacterIsStillOk();
 
@@ -728,7 +726,8 @@ void move_tux(void)
 	if (move_target.x != -1) {
 		// For optimisation purposes, we'll not do anything unless a new target
 		// has been given.
-		//
+		static gps last_given_course_target = { -2, -2, -2 };
+
 		if (!((fabsf(move_target.x - last_given_course_target.x) < 0.3) &&
 		      (fabsf(move_target.y - last_given_course_target.y) < 0.3))) {
 			freeway_context frw_ctx = { FALSE, {NULL, NULL} };

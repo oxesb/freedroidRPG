@@ -143,8 +143,8 @@ void downgrade_program(int prog_id)
  * -----------------*/
 int calculate_program_heat_cost(int program_id)
 {
-//	                                           0.9^0, 0.9^1, 0.9^2 ... ...0.9^9
-	float cost_ratio[NUMBER_OF_SKILL_LEVELS] = { 1.0, 0.9, 0.81, 0.73, 0.66, 0.59, 0.53, 0.48, 0.43, 0.39 };
+	//                                               0.9^0, 0.9^1, 0.9^2 ... ...0.9^9
+	const float cost_ratio[NUMBER_OF_SKILL_LEVELS] = { 1.0, 0.9, 0.81, 0.73, 0.66, 0.59, 0.53, 0.48, 0.43, 0.39 };
 
 	if (program_id == get_program_index_with_name("Emergency shutdown") ) { //then use cost_ratio^-1
 		return (1 / cost_ratio[Me.spellcasting_skill]) * (SpellSkillMap[program_id].heat_cost +
@@ -194,7 +194,7 @@ static float calculate_program_effect_duration(int program_id)
  */
 static float calculate_program_busy_time(void)
 {
-	float busy_time[NUMBER_OF_SKILL_LEVELS] = { 1.0, 0.9, 0.81, 0.73, 0.66, 0.59, 0.53, 0.48, 0.43, 0.39 };
+	const float busy_time[NUMBER_OF_SKILL_LEVELS] = { 1.0, 0.9, 0.81, 0.73, 0.66, 0.59, 0.53, 0.48, 0.43, 0.39 };
 	return busy_time[Me.spellcasting_skill];
 }
 

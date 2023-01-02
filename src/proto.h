@@ -512,7 +512,7 @@ void CopyItem(item * SourceItem, item * DestItem);
 void DeleteItem(item *);
 void drop_random_item(int, float, float, int, int);
 int get_floor_item_index_under_mouse_cursor(level **item_lvl);
-int item_is_currently_equipped(item * Item);
+int item_is_currently_equipped(const item * Item);
 enum slot_type get_slot_type_by_name(char *name);
 const char *item_specs_get_name(int type);
 enum _busytype get_busy_type_by_name(char *name);
@@ -881,16 +881,16 @@ int is_friendly(enum faction_id, enum faction_id);
 void init_factions(void);
 
 // obstacle_extension.c
-void *get_obstacle_extension(struct level *, struct obstacle *, enum obstacle_extension_type);
-int get_obstacle_index(level *, obstacle *);
-void add_obstacle_extension(level *, obstacle *, enum obstacle_extension_type, void *);
-void del_obstacle_extension(struct level *, struct obstacle *, enum obstacle_extension_type);
-void del_obstacle_extensions(struct level *, struct obstacle *);
-void defrag_obstacle_array(level *);
+void *get_obstacle_extension(struct level *, const struct obstacle *, enum obstacle_extension_type);
+int get_obstacle_index(level *, const struct obstacle *);
+void add_obstacle_extension(struct level *, struct obstacle *, enum obstacle_extension_type, void *);
+void del_obstacle_extension(struct level *, const struct obstacle *, enum obstacle_extension_type);
+void del_obstacle_extensions(struct level *, const struct obstacle *);
+void defrag_obstacle_array(struct level *);
 void free_obstacle_extensions(struct level *);
 
 // map_label.c
-void add_map_label(level *, int, int, char *);
+void add_map_label(struct level *, int, int, char *);
 void del_map_label(struct level *, const char *);
 void free_map_labels(struct level *);
 struct map_label *get_map_label(struct level *, const char *);
