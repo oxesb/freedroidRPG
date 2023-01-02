@@ -17,7 +17,6 @@ src/items.c
 src/item_upgrades.c
 src/item_upgrades_ui.c
 src/keyboard.c
-src/lua.c
 src/main.c
 src/map.c
 src/menu.c
@@ -32,8 +31,9 @@ src/takeover.c
 src/text.c
 src/text_public.c
 src/vars.h
-src/lua/luaFD_npc.c
-src/lua/luaFD_tux.c
+src/lua/game_scripting.c
+src/lua/bindings/luaFD_npc.c
+src/lua/bindings/luaFD_tux.c
 src/lvledit/lvledit.c
 src/lvledit/lvledit_actions.c
 src/lvledit/lvledit_display.c

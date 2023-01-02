@@ -5,15 +5,15 @@
 #
 # Translators:
 # Benjamin Leduc <giby_the_kid@yahoo.fr>, 2019
-# Balázs Meskó <meskobalazs@mailbox.org>, 2019
+# Balázs Meskó <meskobalazs@mailbox.org>, 2023
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 1.0RC2\n"
+"Project-Id-Version: freedroidrpg 1.0\n"
 "Report-Msgid-Bugs-To: https://www.freedroid.org\n"
-"POT-Creation-Date: 2022-07-19 11:13+0200\n"
+"POT-Creation-Date: 2023-01-01 19:10+0100\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
-"Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>, 2019\n"
+"Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>, 2023\n"
 "Language-Team: Hungarian (https://www.transifex.com/arctic-games/teams/9511/hu/)\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -399,11 +399,11 @@ msgstr "Ez egy biztonságos terminál."
 
 #: data/base/game_config.lua:31
 msgid "-= Start of Act 1 =-"
-msgstr ""
+msgstr "-= Az 1. fejezet kezdete =-"
 
 #: data/base/game_config.lua:34
 msgid "-= Start of Act 2 =-"
-msgstr ""
+msgstr "-= A 2. fejezet kezdete =-"
 
 #: data/base/item_specs.lua:121
 msgid "The first item is VERY buggy ingame, so don't use it."
@@ -3874,127 +3874,127 @@ msgstr ""
 
 #: data/storyline/act2/events.dat:590 data/storyline/act2/npc_specs.lua:29
 msgid "Colemak"
-msgstr ""
+msgstr "Colemak"
 
 #: data/storyline/act2/levels.dat:20
 msgid "RR Resorts"
-msgstr ""
+msgstr "RR üdülők"
 
 #: data/storyline/act2/levels.dat:1119
 msgid "Visitors: This Way"
-msgstr ""
+msgstr "Látogatók: errefelé"
 
 #: data/storyline/act2/levels.dat:1143
 msgid "In case of emergency, take the Arcane Lore from the chest!"
-msgstr ""
+msgstr "Vészhelyzet esetén vedd ki a Mágikus tudást a ládából!"
 
 #: data/storyline/act2/levels.dat:1235
 msgid "Central Area"
-msgstr ""
+msgstr "Központi terület"
 
 #: data/storyline/act2/levels.dat:1971 data/storyline/act2/levels.dat:2456
 msgid "To R&R Resorts"
-msgstr ""
+msgstr "Az R&R üdülők felé"
 
 #: data/storyline/act2/levels.dat:1974
 msgid "To The Ice Pass"
-msgstr ""
+msgstr "A jeges hágó felé"
 
 #: data/storyline/act2/levels.dat:1977
 msgid "To R&R Factory"
-msgstr ""
+msgstr "Az R&R gyár felé"
 
 #: data/storyline/act2/levels.dat:1980
 msgid "To Guest Area and City Gate Control"
-msgstr ""
+msgstr "A Vendégterület és a Városkapu-vezérlés felé"
 
 #: data/storyline/act2/levels.dat:1983
 msgid "Guest Room. Please wait patiently for one of our staff pick you up."
-msgstr ""
+msgstr "Vendégszoba. Várjon türelemmel, míg az egyik alkalmazottunk felveszi."
 
 #: data/storyline/act2/levels.dat:2113
 msgid "Welcome to Act 2"
-msgstr ""
+msgstr "Üdvözlünk a 2. fejezetben"
 
 #: data/storyline/act2/levels.dat:2484
 msgid "R&R Factory"
-msgstr ""
+msgstr "R&R gyár"
 
 #: data/storyline/act2/levels.dat:4627
 msgid "Droid Research & Development Offices"
-msgstr ""
+msgstr "Droid kutatás-fejlesztési irodák"
 
 #: data/storyline/act2/levels.dat:4678
 msgid "RR Factory, Floor 2"
-msgstr ""
+msgstr "RR gyár, 2. szint"
 
 #: data/storyline/act2/levels.dat:6962
 msgid "Servant Development Office. South: Scout Development Office."
-msgstr ""
+msgstr "Szolgáló fejlesztési iroda. Délre: Felderítő fejlesztési iroda."
 
 #: data/storyline/act2/levels.dat:7138
 msgid "RR Factory, Floor 3"
-msgstr ""
+msgstr "RR gyár, 3. szint"
 
 #: data/storyline/act2/levels.dat:9508
 msgid "Scouts Development Office. Intruders will be shot without mercy."
-msgstr ""
+msgstr "Felderítő fejlesztési iroda. A betolakodókat irgalom nélkül lelőjük."
 
 #: data/storyline/act2/levels.dat:9511
 msgid "No Trespassing: Factory Core. (Shortcut to Floor 9)"
-msgstr ""
+msgstr "Tilos a bemenet: Gyármag. (Rövidítés a 9. szintre)"
 
 #: data/storyline/act2/levels.dat:9517
 msgid "Are you lost? Northeast to Maintenance Development Office."
-msgstr ""
+msgstr "Eltévedtél? A karbantartásfejlesztési iroda északkeletre van."
 
 #: data/storyline/act2/levels.dat:9695
 msgid "RR Factory, Floor 4"
-msgstr ""
+msgstr "RR gyár, 4. szint"
 
 #: data/storyline/act2/levels.dat:12216
 msgid "Maintenance Development Office & Storage. "
-msgstr ""
+msgstr "Karbantartásfejlesztési iroda és tároló. "
 
 #: data/storyline/act2/levels.dat:12219
 msgid "Crew Development Office. We're sorry that you need to go to your office by stairs."
-msgstr ""
+msgstr "Személyzetfejlesztési iroda. Sajnáljuk, hogy lépcsőn kell felmenned az irodához."
 
 #: data/storyline/act2/levels.dat:12222
 msgid "Crew Development Offices at East, in central area."
-msgstr ""
+msgstr "Személyzetfejlesztési irodák keletre, a központi területen."
 
 #: data/storyline/act2/levels.dat:12225
 msgid "If the gate to the research area is locked, please do not open it. Insane people working."
-msgstr ""
+msgstr "Ha a kutatási terület kapuja zárva van, ne nyisd ki. Őrült emberek dolgoznak odabent."
 
 #: data/storyline/act2/levels.dat:12409
 msgid "RR Factory, Floor 5"
-msgstr ""
+msgstr "RR gyár, 5. szint"
 
 #: data/storyline/act2/levels.dat:14743
 msgid "Crew & Harvesting Development Office. North-east: Security Development Office."
-msgstr ""
+msgstr "Személyzeti és betakarítási fejlesztési iroda. Északkeletre: Biztonsági fejlesztési iroda."
 
 #: data/storyline/act2/levels.dat:14932
 msgid "RR Factory, Floor 6"
-msgstr ""
+msgstr "RR gyár, 6. szint"
 
 #: data/storyline/act2/levels.dat:17301
 msgid "Dispatchment & Signman Offices. Battle droids present. Authorized Access Only!"
-msgstr ""
+msgstr "Elküldési és táblázási irodák. Harci droidokkal védve. Belépés csak engedéllyel!"
 
 #: data/storyline/act2/levels.dat:17304
 msgid "Security Development Office. Sign blinks to spare power. This way for more STAIRS."
-msgstr ""
+msgstr "Biztonsági fejlesztési iroda. A jelzés azért villog, hogy spóroljunk az árammal. Még több LÉPCSŐ errefelé."
 
 #: data/storyline/act2/levels.dat:17499
 msgid "RR Factory, Floor 7"
-msgstr ""
+msgstr "RR gyár, 7. szint"
 
 #: data/storyline/act2/levels.dat:19924
 msgid "Use this stair for Sentinel Dev. Office, Command Dev. Office, Factory Plant and Death."
-msgstr ""
+msgstr "Lépcső a következőkhöz: Őrszem fejl. iroda, parancsnoki fejl. iroda, gyárüzem és halál."
 
 #: data/storyline/act2/levels.dat:19927
 msgid "There is nothing on this sign."
@@ -4002,103 +4002,103 @@ msgstr "Nincs semmi ezen a táblán."
 
 #: data/storyline/act2/levels.dat:19930
 msgid "Sentinel and Command devs, we're sorry, but more stairs ahead."
-msgstr ""
+msgstr "Őrszem és parancsfejlesztések, sajnos még több lépcsővel."
 
 #: data/storyline/act2/levels.dat:19933
 msgid "Signman Office. Hey, it's me! You totally should visit this office, or send us a LETTER!"
-msgstr ""
+msgstr "Táblázási iroda. Hé, ez én vagyok! Feltétlenül keresd fel az irodánkat, vagy küldj LEVELET!"
 
 #: data/storyline/act2/levels.dat:20124
 msgid "RR Factory, Floor 8"
-msgstr ""
+msgstr "RR gyár, 8. szint"
 
 #: data/storyline/act2/levels.dat:22890
 msgid "RR Factory, Floor 9"
-msgstr ""
+msgstr "RR gyár, 9. szint"
 
 #: data/storyline/act2/levels.dat:25864
 msgid "Command Development Office & Factory. Complainers about stairs will be frozen without mercy. AZ."
-msgstr ""
+msgstr "Parancsfejlesztési iroda és gyár. A lépcső miatt panaszkodók irgalom nélkül le lesznek fagyasztva. AZ."
 
 #: data/storyline/act2/levels.dat:27156
 msgid "The Ice Pass - North"
-msgstr ""
+msgstr "A jeges hágó – Észak"
 
 #: data/storyline/act2/levels.dat:27281
 msgid "The Ice Pass"
-msgstr ""
+msgstr "A jeges hágó"
 
 #: data/storyline/act2/levels.dat:27413
 msgid "The Ice Pass - South"
-msgstr ""
+msgstr "A jeges hágó – Dél"
 
 #: data/storyline/act2/levels.dat:27538
 msgid "The Ice Pass - Dvorak"
-msgstr ""
+msgstr "A jeges hágó – Dvorak"
 
 #: data/storyline/act2/levels.dat:27676
 msgid "Icy Summer Artificial Island"
-msgstr ""
+msgstr "Jeges nyári mesterséges sziget"
 
 #: data/storyline/act2/levels.dat:28338
 msgid "To mainland"
-msgstr ""
+msgstr "A szárazföldre"
 
 #: data/storyline/act2/levels.dat:28881
 msgid "Search in the Darkness"
-msgstr ""
+msgstr "Keresés a sötétben"
 
 #: data/storyline/act2/levels.dat:29946
 msgid "Hey, you're quite close to the mainland underground passage. Please ensure you're bringing the keys. RR Resorts Management."
-msgstr ""
+msgstr "Hé, elég közel vagy a szárazföldre vezető földalatti átjáróhoz. Feltétlenül hozd magaddal a kulcsokat. Az RR üdülők menedzsmentje."
 
 #: data/storyline/act2/levels.dat:29949
 msgid "Blue Marker for Storage Room. Red Marker for Mainland."
-msgstr ""
+msgstr "Kék jelölés a raktár felé. Vörös jelölés a szárazföld felé."
 
 #: data/storyline/act2/levels.dat:29952
 msgid "DANGER! Due to the reckless exploration of Dilithium, the ceiling may fall anytime. DO NOT PROCEED."
-msgstr ""
+msgstr "VESZÉLY! A dilítium meggondolatlan feltárása miatt a plafon bármikor beszakadhat. NE MENJ TOVÁBB."
 
 #: data/storyline/act2/npc_specs.lua:11
 #: data/storyline/act2/ReturnOfTux.droids:123
 msgid "Master Yadda"
-msgstr ""
+msgstr "Yadda mester"
 
 #: data/storyline/act2/npc_specs.lua:15
 msgid "Mr. Stone - Shop owner"
-msgstr ""
+msgstr "Mr. Stone – bolttulajdonos"
 
 #: data/storyline/act2/npc_specs.lua:17
 msgid "RR Security Chief"
-msgstr ""
+msgstr "RR biztonsági főnök"
 
 #: data/storyline/act2/npc_specs.lua:21
 msgid "999 RR Manager"
-msgstr ""
+msgstr "999 RR menedzser"
 
 #: data/storyline/act2/npc_specs.lua:22
 msgid "Mr. Saves"
-msgstr ""
+msgstr "Mr. Saves"
 
 #: data/storyline/act2/npc_specs.lua:22
 msgid "Mr. Saves, Watcher of Stories"
-msgstr ""
+msgstr "Mr. Saves, A történetek figyelője"
 
 #: data/storyline/act2/npc_specs.lua:22
 #: data/storyline/act2/ReturnOfTux.droids:31
 msgid "Weirdo"
-msgstr ""
+msgstr "Különc"
 
 #: data/storyline/act2/npc_specs.lua:23
 #: data/storyline/act2/ReturnOfTux.droids:146
 msgid "Mike"
-msgstr ""
+msgstr "Mike"
 
 #: data/storyline/act2/npc_specs.lua:26
 #: data/storyline/act2/ReturnOfTux.droids:122
 msgid "Fred"
-msgstr ""
+msgstr "Fred"
 
 #: data/storyline/act2/npc_specs.lua:29
 msgid "Dvorak's acquittance - Colemak"

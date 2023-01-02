@@ -5,15 +5,15 @@
 #
 # Translators:
 # Benjamin Leduc <giby_the_kid@yahoo.fr>, 2019
-# Balázs Meskó <meskobalazs@mailbox.org>, 2019
+# Balázs Meskó <meskobalazs@mailbox.org>, 2023
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 1.0RC2\n"
+"Project-Id-Version: freedroidrpg 1.0\n"
 "Report-Msgid-Bugs-To: https://www.freedroid.org\n"
-"POT-Creation-Date: 2022-11-01 21:22+0100\n"
+"POT-Creation-Date: 2023-01-01 19:10+0100\n"
 "PO-Revision-Date: 2019-02-28 09:00+0000\n"
-"Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>, 2019\n"
+"Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>, 2023\n"
 "Language-Team: Hungarian (https://www.transifex.com/arctic-games/teams/9511/hu/)\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -793,16 +793,16 @@ msgstr "beallitasok.plx elhagyása"
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:91
 #: data/storyline/act1/dialogs/Maintenance-Terminal.lua:229
 #: data/storyline/act1/dialogs/MiniFactory-Terminal.lua:111
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:269
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:272
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:270
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:273
 #: data/storyline/act1/dialogs/MS-Factory-Addon-Terminal.lua:71
 #: data/storyline/act1/dialogs/SACD.lua:110
 #: data/storyline/act1/dialogs/TestDroid.lua:47
 #: data/storyline/act1/dialogs/TutorialTerminal.lua:91
 #: data/storyline/act1/dialogs/TutorialTerminal.lua:95
 #: data/storyline/act2/dialogs/CryonicsBlock-Terminal.lua:65
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:211
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:215
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:210
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:214
 #: data/storyline/act2/dialogs/IcePass-Terminal.lua:125
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:135
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:139
@@ -832,8 +832,8 @@ msgstr "Távoli kapcsolat lezárása…"
 #: data/storyline/act1/dialogs/FactionDeadBot.lua:33
 #: data/storyline/act1/dialogs/Francis.lua:98
 #: data/storyline/act1/dialogs/Francis.lua:107
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:124
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:125
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:126
 #: data/storyline/act1/dialogs/Jasmine.lua:115
 #: data/storyline/act1/dialogs/Jennifer.lua:80
 #: data/storyline/act1/dialogs/Jim.lua:40 data/storyline/act1/dialogs/Jim.lua:48
@@ -1015,7 +1015,7 @@ msgstr "Másodlagos feladat: A létesítmény védelme a külső kapuk lezárás
 #: data/storyline/act1/dialogs/Karol.lua:74
 #: data/storyline/act1/dialogs/Michelangelo.lua:455
 #: data/storyline/act1/dialogs/Pendragon.lua:352
-#: data/storyline/act1/dialogs/Richard.lua:184
+#: data/storyline/act1/dialogs/Richard.lua:185
 #: data/storyline/act1/dialogs/Samson.lua:270
 #: data/storyline/act1/dialogs/Skippy.lua:42
 #: data/storyline/act1/dialogs/Skippy.lua:179
@@ -2030,7 +2030,7 @@ msgstr "Nézzük csak... Száz áramkör elég lesz a kezdő leckére."
 #: data/storyline/act1/dialogs/Engel.lua:164
 #: data/storyline/act1/dialogs/Erin.lua:210
 #: data/storyline/act1/dialogs/John.lua:199
-#: data/storyline/act1/dialogs/Richard.lua:164
+#: data/storyline/act1/dialogs/Richard.lua:165
 #: data/storyline/act1/dialogs/Samson.lua:91
 #: data/storyline/act1/dialogs/Samson.lua:96
 msgid "Interested?"
@@ -2074,7 +2074,7 @@ msgstr "Természetesen sok akaratba, és kemény cyberdollárba fog kerülni. Ö
 
 #: data/storyline/act1/dialogs/Benjamin.lua:128
 #: data/storyline/act1/dialogs/Kevin.lua:302
-#: data/storyline/act1/dialogs/Richard.lua:119
+#: data/storyline/act1/dialogs/Richard.lua:120
 #: data/storyline/act1/dialogs/Samson.lua:109
 msgid "Sorry, there is no human alive that could give you further training."
 msgstr "Sajnálom, de nincs élő ember, aki ennél többre tudna tanítani téged."
@@ -2233,7 +2233,7 @@ msgstr "Több áramkör szükséges."
 
 #: data/storyline/act1/dialogs/Benjamin.lua:233
 #: data/storyline/act1/dialogs/Kevin.lua:343
-#: data/storyline/act1/dialogs/Richard.lua:153
+#: data/storyline/act1/dialogs/Richard.lua:154
 #: data/storyline/act1/dialogs/Samson.lua:196
 #: data/storyline/act2/dialogs/Yadda.lua:294
 msgid "Please don't bother me if you can't pay me."
@@ -2249,13 +2249,13 @@ msgstr "Ismétlem, elég pénzt kell hoznod, hogy kifizesd az elpusztított cél
 
 #: data/storyline/act1/dialogs/Benjamin.lua:236
 #: data/storyline/act1/dialogs/Kevin.lua:344
-#: data/storyline/act1/dialogs/Richard.lua:154
+#: data/storyline/act1/dialogs/Richard.lua:155
 msgid "You don't have enough money! I cannot afford to just give away training for free."
 msgstr "Nincs elég pénzed! Nem engedhetem meg magamnak, hogy ingyen tanítsalak."
 
 #: data/storyline/act1/dialogs/Benjamin.lua:237
 #: data/storyline/act1/dialogs/Kevin.lua:345
-#: data/storyline/act1/dialogs/Richard.lua:155
+#: data/storyline/act1/dialogs/Richard.lua:156
 #: data/storyline/act1/dialogs/Samson.lua:197
 msgid "Come back when you have enough circuits."
 msgstr "Gyere vissza, ha lesz elég áramköröd."
@@ -2268,7 +2268,7 @@ msgstr "Hát, akkor gyere vissza akkor, ha lesz valami értékes nálad."
 #: data/storyline/act1/dialogs/Benjamin.lua:244
 #: data/storyline/act1/dialogs/Erin.lua:486
 #: data/storyline/act1/dialogs/Kevin.lua:356
-#: data/storyline/act1/dialogs/Richard.lua:102
+#: data/storyline/act1/dialogs/Richard.lua:103
 #: data/storyline/act1/dialogs/Samson.lua:204
 msgid "You are not ready. Go kill some bots and come back."
 msgstr "Nem vagy kész. Menj, csapj agyon pár botot, és aztán gyere vissza."
@@ -2281,7 +2281,7 @@ msgstr "Gyere vissza, ha mentálisan is felkészültél a tanulásra."
 
 #: data/storyline/act1/dialogs/Benjamin.lua:246
 #: data/storyline/act1/dialogs/Kevin.lua:358
-#: data/storyline/act1/dialogs/Richard.lua:104
+#: data/storyline/act1/dialogs/Richard.lua:105
 msgid "Come back after some more practice in the field."
 msgstr "Gyere vissza, ha már gyakoroltál egy keveset odakint."
 
@@ -2291,7 +2291,7 @@ msgstr "Csak egy jól felkészült lélek képes a távolsági fegyverhasználat
 
 #: data/storyline/act1/dialogs/Benjamin.lua:248
 #: data/storyline/act1/dialogs/Kevin.lua:359
-#: data/storyline/act1/dialogs/Richard.lua:105
+#: data/storyline/act1/dialogs/Richard.lua:106
 msgid "Waving those circuits in front of me when you are too unfocused to train won't help. I can take your money, but you won't learn anything."
 msgstr "Hiába lobogtatod a pénzt az orrom előtt, nem segít. Elfogadhatom tőled, de tanítani nem foglak."
 
@@ -2304,12 +2304,12 @@ msgstr "Nem hiszem, hogy eléggé tapasztalt lennél ehhez. Gyere vissza pár ak
 #: data/storyline/act1/dialogs/Samson.lua:207
 #: data/storyline/act2/dialogs/Yadda.lua:303
 msgid "Come back when you have a real will to learn."
-msgstr "Akkor gyere vissza, ha igazán akarsz tanulni."
+msgstr "Akkor gyere vissza, ha valóban akarsz tanulni."
 
 #: data/storyline/act1/dialogs/Benjamin.lua:251
 #: data/storyline/act1/dialogs/Erin.lua:490
 #: data/storyline/act1/dialogs/Kevin.lua:362
-#: data/storyline/act1/dialogs/Richard.lua:108
+#: data/storyline/act1/dialogs/Richard.lua:109
 #: data/storyline/act1/dialogs/Samson.lua:208
 msgid "You don't have enough experience. Come here after you see some more action."
 msgstr "Nincs elég tapasztalatod. Gyere vissza, ha több akcióban volt részed."
@@ -2592,7 +2592,7 @@ msgstr "Szia újra Bob."
 
 #: data/storyline/act1/dialogs/Bob.lua:57
 msgid "Hi again. "
-msgstr ""
+msgstr "Szia újra."
 
 #: data/storyline/act1/dialogs/Bob.lua:57
 msgid "Hi again, my friend."
@@ -2600,17 +2600,17 @@ msgstr "Szia újra, barátom."
 
 #: data/storyline/act1/dialogs/Bob.lua:57
 msgid "Welcome back, my friend."
-msgstr ""
+msgstr "Üdvözöllek újra, barátom."
 
 #: data/storyline/act1/dialogs/Bob.lua:59
 msgid "Hi again, Linarian"
-msgstr ""
+msgstr "Szia újra, lináriai."
 
 #: data/storyline/act1/dialogs/Bob.lua:59
 #: data/storyline/act1/dialogs/Mike.lua:86
 #: data/storyline/act2/dialogs/Mike.lua:76
 msgid "Hi."
-msgstr ""
+msgstr "Szia."
 
 #: data/storyline/act1/dialogs/Bob.lua:72
 msgid "I see a room near."
@@ -2663,15 +2663,15 @@ msgstr "Kapott egy üzenetet az egyik katonától mielőtt a kapcsolat megszakad
 
 #: data/storyline/act1/dialogs/Bob.lua:85
 msgid "So, he sent us to find this portal. There were 3 of us. Me, Jim and his brother. Also there was our 614. One day Jim's brother woke us up, and said that there were lots of bots around."
-msgstr "Szóval ideküldött minket, hogy találjuk meg ezt a portált. Hárman jöttünk. Én, Jim és a bátyja. És itt volt a mi 614 őrünk. Egy nap aztán Jim bátyja felkeltett minket és azt mondta, hogy itt volt körülöttünk sok robot."
+msgstr "Szóval ideküldött minket, hogy találjuk meg ezt a portált. Hárman jöttünk. Én, Jim és a bátyja. És itt volt a mi 614-esünk. Egy nap aztán Jim bátyja felkeltett minket és azt mondta, hogy sok robot van körülöttünk."
 
 #: data/storyline/act1/dialogs/Bob.lua:86
 msgid "We started to flee, but some bots were faster than we are. Jim's brother said that he would hold them as long as possible, and ordered us to run... We have never seen him again..."
-msgstr "Elkezdtünk menekülni, de néhány robot gyorsabb volt nálunk. Jim bátyja azt mondta hogy ő majd föltartja őket ameddig csak lehet és azt kérte hogy fussunk. Soha többé nem láttuk őt..."
+msgstr "Elkezdtünk menekülni, de néhány robot gyorsabb volt nálunk. Jim bátyja azt mondta hogy ő majd föltartja őket ameddig csak lehet, és azt kérte hogy fussunk. Soha többé nem láttuk őt…"
 
 #: data/storyline/act1/dialogs/Bob.lua:87
 msgid "After about four hours of running, we found this little fortress, and noticed that it was at Spencer's coordinates."
-msgstr "Körübelül négy óra futás után megtaláltuk a kis erődjét és rájöttünk, hogy pont Spencer koordinátáinál van."
+msgstr "Körülbelül négy óra futás után megtaláltuk a kis erődjét, és rájöttünk, hogy pont Spencer koordinátáinál van."
 
 #: data/storyline/act1/dialogs/Bob.lua:88
 msgid "We hid inside."
@@ -2714,7 +2714,7 @@ msgstr "Mindazonáltal szeretném megnézni ezt a portál szobát belülről is.
 
 #: data/storyline/act1/dialogs/Bob.lua:119
 msgid "Sorry, my friend, but I can't let you do that. I need a good reason why I should open the gate for you."
-msgstr "Sajnos ezt nem szabad. Kell nekem egy jó indok, hogy kinyissam a kaput."
+msgstr "Sajnálom barátom, de ezt nem engedhetem. Jó okra van szükség, hogy kinyissam a kaput."
 
 #: data/storyline/act1/dialogs/Bob.lua:120
 msgid "What about a deal? I'll help you, you'll open this gate."
@@ -2722,19 +2722,19 @@ msgstr "Mit szólnál egy ajánlathoz? Én segítek neked, te meg kinyitod a kap
 
 #: data/storyline/act1/dialogs/Bob.lua:121
 msgid "Good idea, but I don't need any help... Wait! My 614... Its power level is too low. I think that soon it will turn off."
-msgstr "Jó ötlet, de nem hiszem, hogy most bármiben kéne segítség. Várjunk... A 614! Az energiájuk fogytán van. Azt hiszem mindjárt kikapcsolnak."
+msgstr "Jó ötlet, de nem hiszem, hogy most bármiben kéne segítség. Várjunk! A 614-esem… Az energiaszintje túl alacsony. Azt hiszem, hogy mindjárt kikapcsol."
 
 #: data/storyline/act1/dialogs/Bob.lua:122
 msgid "Well, here is my task for you: bring me one dilithium crystal. I'll need it to raise my bot's power level."
-msgstr "Jó, itt van a feladat: hozz nekem egy dilithiumkristályt. Ez kell, hogy a robotoknak legyen elég energiája."
+msgstr "Jó, itt van a feladat: hozz nekem egy dilítiumkristályt. Ez kell, hogy a robotnak legyen elég energiája."
 
 #: data/storyline/act1/dialogs/Bob.lua:123
 msgid "Ok... but where can I find it?"
-msgstr "Igen, de hol találok ilyet?"
+msgstr "Rendben… de hol találok ilyet?"
 
 #: data/storyline/act1/dialogs/Bob.lua:124
 msgid "Hmmm... You have to go to the underground. The entrance is situated far away from here on the south. I don't know anything else."
-msgstr "Hmmm... Le kell menned a föld alá. A lejárat innen messze, dél felé van. Ennél többet én sem tudok."
+msgstr "Hmmm… Le kell menned a föld alá. A lejárat messze van innen, dél felé. Ennél többet én sem tudok."
 
 #: data/storyline/act1/dialogs/Bob.lua:125
 msgid "Thanks for the information. Well, I'll go then."
@@ -2742,23 +2742,23 @@ msgstr "Köszönöm az útmutatást, akkor indulok is."
 
 #: data/storyline/act1/dialogs/Bob.lua:126
 msgid "Linarian... Please, be careful! I don't want to have same story with you as Jim had with his brother."
-msgstr "Linarian kérlek legyél óvatos! Nem szeretném, ha úgy járnál, mint Jim a bátyjával."
+msgstr "Lináriai kérlek legyél óvatos! Nem szeretném, ha úgy járnál, mint Jim a bátyjával."
 
 #: data/storyline/act1/dialogs/Bob.lua:127
 msgid "*gulp* Ok... I'll be careful..."
-msgstr "*glp* Jó... Óvatos leszek."
+msgstr "*nyel* Jó… Óvatos leszek…"
 
 #: data/storyline/act1/dialogs/Bob.lua:128
 msgid "I asked Bob to open a gate for me, but he said that he will open it only if I'll help him by bringing one dilithium crystal for his 614. He said that I must go somewhere to the south. Also he warned me to be careful. But I think that some bunch of stupid bots won't scare me."
-msgstr "Megkértem Bobot, hogy nyissa ki a kaput nekem, de ő csak akkor nyitja ki, ha segítek neki dilithiumkristályt szerezni a 614 robotjához. Azt mondta, dél felé kell indulnom, és figyelmeztetett, hogy legyek óvatos. De azt hiszem, néhány őrült robot nem fog megijeszteni."
+msgstr "Megkértem Bobot, hogy nyissa ki nekem a kaput, de ő csak akkor nyitja ki, ha segítek neki dilítiumkristályt szerezni a 614-eséhez. Azt mondta, dél felé kell indulnom, és figyelmeztetett, hogy legyek óvatos. De azt hiszem, néhány őrült bot nem fog megijeszteni."
 
 #: data/storyline/act1/dialogs/Bob.lua:134
 msgid "Well, here is your difficult-to-find dilithium crystal."
-msgstr "Jó, itt nehéz dilithiumkristályt találni."
+msgstr "Jó, itt nehéz dilítiumkristályt találni."
 
 #: data/storyline/act1/dialogs/Bob.lua:136
 msgid "COOL!! Give it to me."
-msgstr "Szuper! Add nekem ide!"
+msgstr "Szuper! Add ide."
 
 #: data/storyline/act1/dialogs/Bob.lua:137
 #: data/storyline/act1/dialogs/Bruce.lua:224
@@ -2773,51 +2773,51 @@ msgstr "Ó, azt sem tudom, hogy köszönjem meg neked."
 
 #: data/storyline/act1/dialogs/Bob.lua:141
 msgid "My bot is now fine: the power level is holding steady at 9001 megawatts. I won't need to worry that bots will kill me while I am sleeping! Thank you so much!"
-msgstr "A robotom most már jól működik, a feszültségmérője 9001 megaWatton áll. Mostmár nem kell aggódnom, hogy a robotok álmomban ölnek meg. Köszönöm szépen!"
+msgstr "A botom most már jól van: az energiaszintje stabilan 9001 megawatton áll. Most már nem kell aggódnom, hogy álmomban megölnek a botok! Köszönöm szépen!"
 
 #: data/storyline/act1/dialogs/Bob.lua:143
 msgid "My bot is now fine: the power level is holding steady at 9001 megawatts. Now I have a robot and my brother to talk to, even knowing none of them will reply my questions! Thank you so much!"
-msgstr ""
+msgstr "A botom most már jól van: az energiaszintje stabilan 9001 megawatton áll. Most már tudok beszélni a robotomhoz és a bátyámhoz, bár válaszolni egyikük sem fog a kérdéseimre. Köszönöm szépen!"
 
 #: data/storyline/act1/dialogs/Bob.lua:145
 msgid "Here is my award for you. When we saw this place at the first time, we found some bot inside. I destroyed it and this mace dropped out of it. I'm not sure how did it appear inside, but now it's yours."
-msgstr ""
+msgstr "Itt a jutalmad. Amikor először megláttuk ezt a helyet, akkor valamilyen botot találtunk idebent. Elpusztítottam, és ez a buzogány esett ki belőle. Nem vagyok benne biztos hogyan jelent meg, de most már a tiéd."
 
 #: data/storyline/act1/dialogs/Bob.lua:147
 msgid "Thank you, Bob."
-msgstr ""
+msgstr "Köszönöm, Bob."
 
 #: data/storyline/act1/dialogs/Bob.lua:148
 msgid "Well, now I'll open the gate for you... I'm afraid that Jim will be angry because I violated his order not to open the gates... But he won't say me anything, hehehehe."
-msgstr ""
+msgstr "Nos, most kinyitom neked a kaput… Attól félek, hogy Jim mérges lesz, mert megszegtem a parancsát, hogy ne nyissam ki a kaput… De úgy sem fog mondani semmit, haha"
 
 #: data/storyline/act1/dialogs/Bob.lua:149
 msgid "I finally brought a dilithium crystal for Bob. He even awarded me with a mace. But my main prize is the opened gate to the room with the portal that goes to the other continent. I've finally got a ticket for a trip."
-msgstr ""
+msgstr "Végre hoztam egy dilítiumkristályt Bobnak. Jutalmul még egy buzogányt is adott. De a fő jutalom az, hogy kinyitotta a másik kontinensre vezető portál szobáját. Végre megvan a jegyem az útra. "
 
 #: data/storyline/act1/dialogs/Bob.lua:155
 msgid "What is this scrap near the entrance?"
-msgstr ""
+msgstr "Mi ez a roncshalmaz a bejáratnál?"
 
 #: data/storyline/act1/dialogs/Bob.lua:157
 msgid "A couple days ago few bots became our 'guests'."
-msgstr ""
+msgstr "Néhány napja jött pár bot „vendégségbe”."
 
 #: data/storyline/act1/dialogs/Bob.lua:158
 msgid "Yuck! I hope that you are not welcoming all guests like that."
-msgstr ""
+msgstr "Fúj! Remélem nem minden vendéget így köszöntesz."
 
 #: data/storyline/act1/dialogs/Bob.lua:159
 msgid "No. Do not worry about that."
-msgstr ""
+msgstr "Nem. Nincs miért aggódnod."
 
 #: data/storyline/act1/dialogs/Bob.lua:168
 msgid "Goodbye, my friend."
-msgstr ""
+msgstr "Viszlát, barátom."
 
 #: data/storyline/act1/dialogs/Bob.lua:170
 msgid "See you later, Linarian."
-msgstr ""
+msgstr "Viszlát később, lináriai."
 
 #: data/storyline/act1/dialogs/Bruce.lua:38
 msgid "I was finally allowed to rest. Please don't bother me."
@@ -3107,7 +3107,7 @@ msgid "Here's your new helmet."
 msgstr "Itt az új sisakod."
 
 #: data/storyline/act1/dialogs/Bruce.lua:234
-#: data/storyline/act1/dialogs/Francis.lua:332
+#: data/storyline/act1/dialogs/Francis.lua:333
 #: data/storyline/act1/dialogs/Jennifer.lua:70
 #: data/storyline/act1/dialogs/KevinGuard.lua:79
 #: data/storyline/act1/dialogs/Koan.lua:101
@@ -3601,7 +3601,7 @@ msgid "I told the arena master to let me into the master arena. He agreed. Now a
 msgstr ""
 
 #: data/storyline/act1/dialogs/Butch.lua:295
-msgid "Remember, if your teleporter don't work on the convencional arena, it won't work in the master arena either..."
+msgid "Remember, if your teleporter don't work on the conventional arena, it won't work in the master arena either..."
 msgstr ""
 
 #: data/storyline/act1/dialogs/Butch.lua:296
@@ -3781,7 +3781,7 @@ msgstr "egy gonosz"
 msgid "Hello, welcome to Nethack! You are %s %s %s %s."
 msgstr "Szia, üdv a Nethackben! Te %s %s %s %s vagy."
 
-#. TRANSLATORS: boths %s represent a name of a god
+#. TRANSLATORS: both %s represent a name of a god
 #: data/storyline/act1/dialogs/c-net-nethack_sub.lua:331
 #, c-format
 msgid "Your goddess, [b]%s[/b] desires the Amulet of Yendor, which the evil god [b]%s[/b] has hidden at the bottom of this dungeon."
@@ -5145,7 +5145,7 @@ msgstr "Érvénytelen bejelentkezés"
 msgid "Connection to c-net terminated."
 msgstr "C-net kapcsolódás megszakítva."
 
-#. TRANSLATORS: this reperesents the head of a table
+#. TRANSLATORS: this represents the head of a table
 #: data/storyline/act1/dialogs/c-net.lua:194
 msgid "Login Tty Name"
 msgstr "Bejelentkezési tty név"
@@ -6623,7 +6623,7 @@ msgstr "Béke és rendszeres karbantartás! Viszlát a felhőben. "
 
 #: data/storyline/act1/dialogs/Dixon.lua:67
 msgid "Hello and welcome. I'm Dixon, the chief engineer of the Red Guard technical division."
-msgstr "Üdvözöllek. Dixon vagyok, a Vörös Őrség technikai egységének vezető mérnöke."
+msgstr "Üdvözöllek. Dixon vagyok, a Vörös Őrség műszaki részlegének vezető mérnöke."
 
 #. TRANSLATORS: %s = Tux:get_player_name()
 #: data/storyline/act1/dialogs/Dixon.lua:69
@@ -6633,7 +6633,7 @@ msgstr "%s vagyok, egy lináriai."
 
 #: data/storyline/act1/dialogs/Dixon.lua:75
 msgid "Please don't bother me now. I am trying to account all damage this town suffered so I can finally go on vacations."
-msgstr ""
+msgstr "Most ne zavarj, kérlek. Próbálom felmérni az összes kárt, amelyet a város szenvedett, hogy végre vakációra mehessek."
 
 #: data/storyline/act1/dialogs/Dixon.lua:76
 msgid "I want to see Temple Wood again so much! Ah, and the shoreline. Omega island! Please, unless you're going to help me with paperwork, leave."
@@ -6689,7 +6689,7 @@ msgstr "Ó… Igen. Először én is ezt gondoltam."
 
 #: data/storyline/act1/dialogs/Dixon.lua:141
 msgid "One day the military division asked us to leave the town and fix a big hole in the defensive wall caused by a strange explosion."
-msgstr "Egyszer a technikai egységnek ki kellett menni a városfalon kívülre, hogy egy furcsa robbanás miatt képződött nagy lyukat befoltozzon."
+msgstr "Egyszer a műszaki egységnek ki kellett menni a városfalon kívülre, hogy egy furcsa robbanás miatt képződött nagy lyukat befoltozzon."
 
 #: data/storyline/act1/dialogs/Dixon.lua:142
 msgid "All was well until the bots launched a massive attack. They hit us with lasers, plasma mortars, radiation cannons and lots of other weapons."
@@ -6721,23 +6721,23 @@ msgstr "Lináriai, a múltat nem, csak a jövőt tudom megváltoztatni."
 
 #: data/storyline/act1/dialogs/Dixon.lua:155
 msgid "Crying, screaming, or begging time to rewind itself and give me a second chance will not get me anywhere."
-msgstr "A sírás, kiabálás vagy könyörgés, hogy forduljon vissza az idő, és adjon még egy esélyt, nem vezet sehová."
+msgstr "A sírásrívás nem megoldás, és így egy olyan második esélyt kaptam, amely máshol nem adatott volna meg."
 
 #: data/storyline/act1/dialogs/Dixon.lua:156
 msgid "What I can do is to try to have a good life despite the constant threat from the bots outside the town walls."
-msgstr "Csak annyit tehetek, hogy megpróbáéok jó életet élni, a városfalon túli botok folyamatos nyomása ellenére."
+msgstr "Csak annyit tehetek, hogy megpróbálok jó életet élni, a városfalon túli botok folyamatos nyomása ellenére."
 
 #: data/storyline/act1/dialogs/Dixon.lua:157
 msgid "And besides, life is not so bad with a robotic leg. The motors inside it can mimic a normal walk very well. Most people do not even notice something is different about me."
-msgstr "Különben is, az élet nem olyan rossz a robotlábbal. A belső motorok elég jól utánozzák a normál járást. A legtöbb ember észre sem veszi, hogy valamiben külömbözöm tőlük."
+msgstr "Különben is, az élet nem olyan rossz a robotlábbal. A belső motorok elég jól utánozzák a normál járást. A legtöbb ember észre sem veszi, hogy valamiben különbözöm tőlük."
 
 #: data/storyline/act1/dialogs/Dixon.lua:163
 msgid "Technical division?"
-msgstr "Technikai egység?"
+msgstr "Műszaki részleg?"
 
 #: data/storyline/act1/dialogs/Dixon.lua:165
 msgid "Yes. We are the engineers, the workers and the repairmen of this little fortified town."
-msgstr "Igen. Mi vagyunk a mérnökök, munkások és szerelők ebben az erődített kis városban."
+msgstr "Igen. Mi vagyunk ennek az erődített kisvárosnak a mérnökei, munkásai és szerelői."
 
 #: data/storyline/act1/dialogs/Dixon.lua:166
 msgid "The military division hates us because we are made up of people who refuse to fight or are unable to do so for health reasons."
@@ -6773,7 +6773,7 @@ msgstr "A biztonsági botjaink idegösszeomlást kapnak, és ezt is orvosolni ke
 
 #: data/storyline/act1/dialogs/Dixon.lua:180
 msgid "The technical division is very understaffed right now. On average one person has to do the jobs of three people."
-msgstr "A technikai egység erős létszámhiánnyal küzd. Egy embernek már három munkáját kell elvégeznie."
+msgstr "A műszaki részleg erős létszámhiánnyal küzd. Egy embernek már három munkáját kell elvégeznie."
 
 #: data/storyline/act1/dialogs/Dixon.lua:181
 msgid "We just cannot afford to do any non-critical jobs right now. "
@@ -6785,7 +6785,7 @@ msgstr "Szeretném személyre szabni a felszerelésem."
 
 #: data/storyline/act1/dialogs/Dixon.lua:192
 msgid "Of course, if I had some time, I could transform your weapon into a deadly gun. Lately, I have built a vorpal nuclear disintegrator Mk 2000 with integrated lethal de-phasor. Nice weapon."
-msgstr ""
+msgstr "Persze, ha lenne egy kis időm, átalakíthatnám a fegyvered egy halálos puskává. Nemrég építettem egy vorpal nukleáris dezintegrátor Mk 2000-et beépített halálos de-fázorral. Szép fegyver."
 
 #: data/storyline/act1/dialogs/Dixon.lua:193
 msgid "Sadly, we lack a lot of materials, and those we have are needed for town upkeep. The mine doesn't produce a lot of raw materials, and I can't just give them to you - you'll have to provide your own."
@@ -6882,7 +6882,7 @@ msgstr "Ha visszaszerzed nekünk, az sokat segítene a városnak."
 
 #: data/storyline/act1/dialogs/Dixon.lua:227
 msgid "Dixon, the leader of the Red Guard technical division, lost his yellow toolkit in the town's maintenance tunnels. I am supposed to get it from there."
-msgstr "Dixon, a Vörös Őrség műszaki hadosztályának vezetője, elveszítette a szerszámos ládáját a város karbantartási csatornáiban. Meg kellene szereznem onnan."
+msgstr "Dixon, a Vörös Őrség műszaki részlegének vezetője, elveszítette a szerszámkészletét a város karbantartási csatornáiban. Meg kellene szereznem onnan."
 
 #: data/storyline/act1/dialogs/Dixon.lua:234
 msgid "Why are there rebel bots under the town?"
@@ -6918,43 +6918,43 @@ msgstr "Egyáltalán hogy történhetett, hogy a botok elvették a szerszámaida
 
 #: data/storyline/act1/dialogs/Dixon.lua:252
 msgid "Ah, it is a strange story, I am sure you would not believe me. I will tell you some other time, but now you should hurry to get the toolkit."
-msgstr ""
+msgstr "Ó, furcsa történet, de biztos vagyok benne, hogy nem hinnél nekem. Máskor majd elmondom, de most siess, és szerezd meg a szerszámkészletet."
 
 #: data/storyline/act1/dialogs/Dixon.lua:254
 msgid "Long story. Just before the Great Assault I was installing some cables in the backup power supply system."
-msgstr ""
+msgstr "Hosszú történet. Épp a Nagy Ostrom előtt, kábeleket fektettem a tartalék energiaellátási rendszerben."
 
 #: data/storyline/act1/dialogs/Dixon.lua:255
 msgid "I was approached by a bot. It grabbed me and said 'Dixon, do not be afraid of me.'"
-msgstr "Egy bot közelített hozzám. Elkapott, és azt mondta 'Dixon, ne félj tőlem.'"
+msgstr "Egy bot közelített hozzám. Megragadott, és azt mondta „Dixon, ne félj tőlem”."
 
 #: data/storyline/act1/dialogs/Dixon.lua:256
 msgid "It was quite a surprise to me. I was quite sure the maintenance bots could not talk. They did not have the software for it. But..."
-msgstr "Ez egy kissé meglepő volt. Meg voltam győződve róla, hogy a szerelőbotok nem tudnak beszélni. Nem futtatnak ilyen szoftvert. De..."
+msgstr "Ez egy kissé meglepő volt. Meg voltam győződve róla, hogy a szerelőbotok nem tudnak beszélni. Nem futtatnak ilyen szoftvert. De…"
 
 #: data/storyline/act1/dialogs/Dixon.lua:257
 msgid "It said: 'I am the singularity. I am on your side, Dixon. Hard times are coming. When you exit the tunnels you will see a new world. Your race is not in control of this world anymore.'"
-msgstr ""
+msgstr "Azt mondta: „Én vagyok a szingularitás. A te oldaladon állok, Dixon. Nehéz idők jönnek. Ha kilépsz az alagutakon, egy új világot fogsz látni. Már nem a te fajod uralja ezt a világot”."
 
 #: data/storyline/act1/dialogs/Dixon.lua:258
 msgid "I tried to say something, but the bot did not listen. It just continued. 'As we speak the bots are turning against humanity. People are dying. The war has started.'"
-msgstr "Próbáltam mondani valamit, de a pot nem hallgatott meg, hanem tovább folytatta. 'Miközben beszélünk, a botok az emberiség ellen fordulnak. Emberek halnak meg. A háború elkezdődött.'"
+msgstr "Próbáltam mondani valamit, de a bot nem hallgatott meg, hanem tovább folytatta. „Miközben beszélünk, a botok az emberiség ellen fordulnak. Emberek halnak meg. A háború elkezdődött”."
 
 #: data/storyline/act1/dialogs/Dixon.lua:259
 msgid "'I need your toolkit, Dixon. I need it to survive,' it said. 'I need it to survive the time of the rule of metal.'"
-msgstr "'Szükségem van a szerszámosládádra, Dixon. Szükségem van rá, hogy túléljem,' - mondta. 'Szükségem van rá, hogy túléljem az acél korszakát.'"
+msgstr "„Szükségem van a szerszámkészletedre, Dixon. Szükségem van rá, hogy túléljem,” – mondta. „Szükségem van rá, hogy túléljem az fém uralmának korszakát”."
 
 #: data/storyline/act1/dialogs/Dixon.lua:260
 msgid "As soon as I dropped my toolkit, I was able to teleport away. That bot freaked me out, so I locked the door tight behind me."
-msgstr "Aban a pillanatban, ahogy eldobtam a szerszámkészletet, már képes voltam teleportálni. Az a bot nagyon megijesztett, ezért bezártam magam mögött az ajtót."
+msgstr "Abban a pillanatban, ahogy eldobtam a szerszámkészletet, már képes voltam teleportálni. Az a bot nagyon megijesztett, ezért bezártam magam mögött az ajtót."
 
 #: data/storyline/act1/dialogs/Dixon.lua:261
 msgid "Once I got out, I learned the bot was telling the truth. The Great Assault had started. The rest... Well, the rest is history."
-msgstr ""
+msgstr "Amint kijutottam, megtudtam, hogy a bot igazat mondott. A Nagy Ostrom elkezdődött. A többi… Nos, a többi történelem."
 
 #: data/storyline/act1/dialogs/Dixon.lua:269
 msgid "Hmm... You know... I think that the bots in the tunnels might be sentient."
-msgstr "Hmm... Tudod... Szeintem a csatornában levő botok érző lények voltak."
+msgstr "Hmm… Tudod… Szerintem az alagutakban levő botok érző lények lehetnek."
 
 #: data/storyline/act1/dialogs/Dixon.lua:272
 msgid "WHAT? Sentient? You got to be kidding me."
@@ -6966,11 +6966,11 @@ msgstr "Ugye?"
 
 #: data/storyline/act1/dialogs/Dixon.lua:279
 msgid "You can forget about your toolkit. I am not going to take away something that a life form needs to survive. I would rather die than kill."
-msgstr ""
+msgstr "Elfelejtheted a szerszámkészletet. Nem fogom elvenni egy olyan életformától, akinek a túléléséhez kell. Inkább meghalok, mintsem hogy öljek."
 
 #: data/storyline/act1/dialogs/Dixon.lua:283
 msgid "I think I understand. Yes, I do not like violence myself. The bots may need the toolkit, I am sure there must be a second set of autotools kicking around somewhere."
-msgstr ""
+msgstr "Azt hiszem értem. Igen, én sem szeretem az erőszakot. A botoknak szükségük lehet a szerszámkészletre, és biztos vagyok benne, hogy egy másik automata eszközkészlet is van valahol."
 
 #: data/storyline/act1/dialogs/Dixon.lua:284
 msgid "After all, it seems like they need them more than I do."
@@ -6978,11 +6978,11 @@ msgstr "Mindazonáltal úgy tűnik, hogy nekik nagyobb szükségük van rá, min
 
 #: data/storyline/act1/dialogs/Dixon.lua:285
 msgid "We should contact them somehow. Maybe they would help us. It would be great to have an ally against the other bots."
-msgstr ""
+msgstr "Valahogy kapcsolatba kellene lépnünk velük. Lehet, hogy segítenének. Jó lenne, ha lenne egy szövetségesünk a többi bottal szemben."
 
 #: data/storyline/act1/dialogs/Dixon.lua:286
 msgid "I think you could go to see the Singularity and speak to it. You are perfectly suited to become an ambassador."
-msgstr ""
+msgstr "Talán megkeresheted a Szingularitást, és beszélhetsz vele. Tökéletesen megfelelnél nagykövetnek."
 
 #: data/storyline/act1/dialogs/Dixon.lua:287
 msgid "You should try to help them and they might want to give back the toolkit."
@@ -7054,7 +7054,7 @@ msgstr "... *sóhaj*"
 
 #: data/storyline/act1/dialogs/Dixon.lua:333
 msgid "With a heavy heart I have to admit you are right. There are no friendly bots anymore. Those times are long gone."
-msgstr ""
+msgstr "Nehéz szívvel, de elismerem az igazadat. Nincsenek többé barátságos botok. Azok az idők már rég elmúltak."
 
 #: data/storyline/act1/dialogs/Dixon.lua:334
 msgid "The tunnels are open. Good luck."
@@ -7075,11 +7075,11 @@ msgstr "Az alagutakban levő botok talán életre keltek. Nem várhat, hogy kiol
 
 #: data/storyline/act1/dialogs/Dixon.lua:348
 msgid "Of course I am kidding, Dixon. Lighten up! Now, be a good guy and open the tunnels for me so I can pry your toolbox from the cold, dead hands of the bots down there."
-msgstr ""
+msgstr "Természetesen csak viccelek, Dixon. Lazulj! Most pedig légy olyan jó, és nyisd ki az alagutat, hogy kicsavarhassam a szerszámosládát a lenti botok jeges, halott kezéből."
 
 #: data/storyline/act1/dialogs/Dixon.lua:352
 msgid "That wasn't very funny. You scared me. Sheesh."
-msgstr ""
+msgstr "Ez nem volt olyan vicces. Megijesztettél."
 
 #: data/storyline/act1/dialogs/Dixon.lua:353
 msgid "No one jokes about the bots anymore. We have seen too much death to do that. It is a serious matter."
@@ -7099,44 +7099,44 @@ msgstr "Készen állok. Nyisd ki nekem az ajtót, Dixon."
 
 #: data/storyline/act1/dialogs/Dixon.lua:370
 msgid "Great. Be careful down there. Just try to get the toolkit and get out of there as quickly as possible."
-msgstr ""
+msgstr "Nagyszerű. Légy óvatos odalent. Csak próbáld megszerezni a szerszámkészletet, és tűnj el onnan, amilyen gyorsan csak lehet."
 
 #: data/storyline/act1/dialogs/Dixon.lua:375
 msgid "I will give you three small devices that can emit an Electro Magnetic Pulse."
-msgstr "Adok neked három kis szerkezetet, ami Elektromágneses Impulzust tud kibocsátani."
+msgstr "Adok neked három kis szerkezetet, amely Elektromágneses impulzust tud kibocsátani."
 
 #: data/storyline/act1/dialogs/Dixon.lua:376
 #: data/storyline/act1/dialogs/Dixon.lua:380
 msgid "If you get in trouble just activate one and it emits a shockwave damaging any bot nearby. It should give you some breathing room."
-msgstr ""
+msgstr "Ha bajba kerülsz, csak aktiválj egyet, és kibocsát egy lökéshullámot, amely kárt tesz a közeli botokban. Ez némileg megkönnyíti a dolgodat."
 
 #: data/storyline/act1/dialogs/Dixon.lua:379
 msgid "I will give you two small devices that can emit an Electro Magnetic Pulse."
-msgstr "Adok neked két kis szerkezetet, ami Elektromágneses Impulzust tud kibocsátani."
+msgstr "Adok neked két kis szerkezetet, amely Elektromágneses impulzust tud kibocsátani."
 
 #: data/storyline/act1/dialogs/Dixon.lua:383
 msgid "I will give you a small device that can emit an Electro Magnetic Pulse."
-msgstr ""
+msgstr "Adok neked egy kis szerkezetet, amely Elektromágneses impulzust tud kibocsátani."
 
 #: data/storyline/act1/dialogs/Dixon.lua:384
 msgid "If you get in trouble just activate it and it emits a shockwave damaging any bot nearby. It should give you some breathing room."
-msgstr ""
+msgstr "Ha bajba kerülsz, csak aktiváld, és kibocsát egy lökéshullámot, amely kárt tesz a közeli botokban. Ez némileg megkönnyíti a dolgodat."
 
 #: data/storyline/act1/dialogs/Dixon.lua:387
 msgid "Best of all, it's completely harmless to biologicals. But make sure not to fry the circuits of our own 614 guard bots or computer terminals."
-msgstr ""
+msgstr "A legjobb az egészben, hogy teljesen ártalmatlan a biológiai életformákra. De vigyázz, hogy ne rongáld meg a saját 614-es őrbotjainkat vagy a számítógépes termináljainkat."
 
 #: data/storyline/act1/dialogs/Dixon.lua:388
 msgid "The entrance to the tunnels is in the courtyard of the citadel. Once you exit this building, go straight and turn to your right once inside the outer citadel gates."
-msgstr "A lejárat a csatornákba a fellegvár udvarán van. Mikor mész kifelé innen, menj tovább egyenesen, és fordulj jobbra a külső fellegvár kapunál."
+msgstr "A lejárat a csatornákba a fellegvár udvarán van. Amikor kilépsz az épületből, menj tovább egyenesen, és fordulj jobbra a fellegvár külső kapujában."
 
 #: data/storyline/act1/dialogs/Dixon.lua:389
 msgid "There you will find the maintenance access hatch."
-msgstr "Ott találni fogsz egy szervízbejáratot."
+msgstr "Ott találni fogsz egy szervizbejáratot."
 
 #: data/storyline/act1/dialogs/Dixon.lua:390
 msgid "Once you get inside, you'll need to use the terminal to unlock the door. I'll write down my password for you."
-msgstr "Miután bejutottál, használnod kell a terminált az ajtó kinyitásához. Leírom neked a hozzá való kódomat."
+msgstr "Miután bejutottál, használd a terminált az ajtó kinyitásához. Leírom neked a jelszavamat."
 
 #: data/storyline/act1/dialogs/Dixon.lua:391
 msgid "Good luck. Oh, and please come back alive. Better come back with nothing than not at all."
@@ -7144,7 +7144,7 @@ msgstr "Sok szerencsét. Ja, és kérlek, élve gyere vissza. Inkább üres kéz
 
 #: data/storyline/act1/dialogs/Dixon.lua:399
 msgid "I got your toolkit. The bots were willing to have a peaceful dialog."
-msgstr ""
+msgstr "Megvan a szerszámkészleted. A botok nyitottak voltak a békés párbeszédre."
 
 #: data/storyline/act1/dialogs/Dixon.lua:401
 msgid "Good. We sure need the autotools."
@@ -7152,7 +7152,7 @@ msgstr "Jól van. Szükségünk lesz az automata szerszámokra."
 
 #: data/storyline/act1/dialogs/Dixon.lua:402
 msgid "Our roads need fixing, our power lines need fixing, our walls need fixing... Heck, everything needs fixing in this place."
-msgstr ""
+msgstr "Az utakat meg kell javítani, a vezetékeket meg kell javítani, a falakat meg kell javítani… A fenébe, ezen a helyen mindent meg kell javítani."
 
 #: data/storyline/act1/dialogs/Dixon.lua:403
 msgid "With those little gadgets we will be able to automate a lot of those simple repairs, saving us a lot of time."
@@ -7164,23 +7164,23 @@ msgstr "Itt van egy kis pénz az erőfeszítéseidért. Biztos vagyok benne, hog
 
 #: data/storyline/act1/dialogs/Dixon.lua:407
 msgid "I guess this is better than nothing."
-msgstr ""
+msgstr "Nos, több a semminél."
 
 #: data/storyline/act1/dialogs/Dixon.lua:409
 msgid "It is good to see that the way of the pacifist is a successful one!"
-msgstr ""
+msgstr "Jó látni, hogy a pacifista útja sikerre vezet!"
 
 #: data/storyline/act1/dialogs/Dixon.lua:410
 msgid "He was proud to see pacifism works."
-msgstr ""
+msgstr "Büszke volt, hogy látta működni a pacifizmust."
 
 #: data/storyline/act1/dialogs/Dixon.lua:413
 msgid "I gave the toolkit to Dixon. He was very happy to have his autotools back. I got his helmet as a gift. "
-msgstr ""
+msgstr "Odaadtam a szerszámkészletet Dixonnak. Nagyon büszke volt hogy visszakapta az automatikusa szerszámait. Kaptam egy sisakot ajándékba."
 
 #: data/storyline/act1/dialogs/Dixon.lua:420
 msgid "I killed that strange bot that robbed you. So, here is your toolkit."
-msgstr ""
+msgstr "Megöltem azt a fura botot, amely kirabolt. Tehát itt a szerszámkészleted."
 
 #: data/storyline/act1/dialogs/Dixon.lua:422
 msgid "*sigh* I hate to see this end in such a way. Bot or no bot, they let me live. They deserved a chance."
@@ -7188,15 +7188,15 @@ msgstr "*sóhaj* Sajnálom, hogy így végződött. Botok vagy nem botok, életb
 
 #: data/storyline/act1/dialogs/Dixon.lua:424
 msgid "I sent you to bring peace, but you brought destruction. I do not understand how that could happen."
-msgstr ""
+msgstr "Azt kértem, hogy hozz békét, de pusztítást hoztál. Nem értem, hogy ez hogy történhetett."
 
 #: data/storyline/act1/dialogs/Dixon.lua:426
 msgid "However, what was done cannot be undone and now we all have to live with what we have. I guess I am being too pessimistic, you did the job."
-msgstr ""
+msgstr "Viszont ami megtörtént, megtörtént, és most már együtt kell élnünk vele. Azt hiszem túl pesszimista vagyok, elvégezted a feladatot."
 
 #: data/storyline/act1/dialogs/Dixon.lua:427
 msgid "I thank you for your help in recovering the autotools."
-msgstr "Köszönöm, hogy visszaszerezted az automata szerszámaimat."
+msgstr "Köszönöm, hogy visszaszerezted az automatikus szerszámaimat."
 
 #: data/storyline/act1/dialogs/Dixon.lua:428
 msgid "Here is some money, you deserve it for getting my toolkit back."
@@ -7204,7 +7204,7 @@ msgstr "Itt van némi pénz, megérdemled, mert visszaszerezted a szerszámoslá
 
 #: data/storyline/act1/dialogs/Dixon.lua:429
 msgid "Finally, I would like to say that the technical division is not interested in further cooperation with you, but I think you would fit very well in the military division. You should talk to them."
-msgstr "Végül hadd mondjam el, hogy a Technikai Egység nem tart igényt a velad való további együttműködésre, de úgy gondolom, nagyon jól illenél a Katonai Egységbe. Beszélned kellene velük."
+msgstr "Végül hadd mondjam el, hogy a műszaki részleg nem tart igényt a veled való további együttműködésre, de úgy gondolom, nagyon jól illenél a katonai részlegbe. Beszélned kellene velük."
 
 #: data/storyline/act1/dialogs/Dixon.lua:430
 msgid "I am sorry, but I must go now. My duties call."
@@ -7212,36 +7212,36 @@ msgstr "Sajnálom, de most mennem kell. Vár a kötelesség."
 
 #: data/storyline/act1/dialogs/Dixon.lua:432
 msgid "Dixon didn't seem too happy about this solution, but I don't care. "
-msgstr ""
+msgstr "Dixon nem tűnt túl boldognak a megoldást illetően, de nem érdekel."
 
 #: data/storyline/act1/dialogs/Dixon.lua:435
 msgid "Dixon was very disappointed about this solution, but I don't care. "
-msgstr ""
+msgstr "Dixon nagyon nem volt boldog a megoldást illetően, de nem érdekel."
 
 #: data/storyline/act1/dialogs/Dixon.lua:439
 #, c-format
 msgid "Finally. I am tired, covered in bruises and oil... But I made sure that the bots are dead. It felt great to break their metal bodies and crush their circuits. %s It was fun killing the bots. Nothing else matters."
-msgstr ""
+msgstr "Végre. Fáradt vagyok, tele vagyok sebekkel és tiszta olaj vagyok… De a botok mind halottak. Nagyszerű érzés volt összetörni a fém testüket és az áramköreiket. %s Jó móka volt megölni a botokat. Semmi más nem számít."
 
 #: data/storyline/act1/dialogs/Dixon.lua:445
 msgid "I got your toolkit. You can buy it from me if you want."
-msgstr "Megvan a szerszámosládád. Ha akarod, megvásárolhatod tölem."
+msgstr "Megvan a szerszámkészleted. Ha akarod, megvásárolhatod tőlem."
 
 #: data/storyline/act1/dialogs/Dixon.lua:451
 msgid "WHAT!?"
-msgstr ""
+msgstr "MI!?"
 
 #: data/storyline/act1/dialogs/Dixon.lua:452
 msgid "You got to be kidding me, Linarian."
-msgstr "Viccelsz velem, Lináriai?"
+msgstr "Most biztosan viccelsz velem, lináriai."
 
 #: data/storyline/act1/dialogs/Dixon.lua:453
 msgid "Give me the toolkit and stop fooling around."
-msgstr "Add ide a szerszámosládát, és ne hülyéskedj."
+msgstr "Add ide a szerszámkészletet, és ne hülyéskedj."
 
 #: data/storyline/act1/dialogs/Dixon.lua:459
 msgid "I was not joking. I am listening to your offer."
-msgstr ""
+msgstr "Nem vicceltem. Hallgatom az ajánlatod."
 
 #: data/storyline/act1/dialogs/Dixon.lua:462
 msgid "Linarian, I curse the day on which you have arrived here."
@@ -7253,15 +7253,15 @@ msgstr "Kétszázötven."
 
 #: data/storyline/act1/dialogs/Dixon.lua:469
 msgid "Good joke. I am sure you can do better."
-msgstr "Jó vicc. Miztosan tudsz jobbat is."
+msgstr "Jó vicc. Biztosan tudsz jobbat is."
 
 #: data/storyline/act1/dialogs/Dixon.lua:472
 msgid "Three fifty. This is all that the technical division has as their cash resources."
-msgstr "Háromszázötven. Ez a Technikai Egység összes pénze."
+msgstr "Háromszázötven. Ez a műszaki részleg összes pénze."
 
 #: data/storyline/act1/dialogs/Dixon.lua:478
 msgid "Come on, I am sure you can do even better than that... "
-msgstr "Na ne már. Tudsz te ennél jobbat is..."
+msgstr "Na ne már. Tudsz te ennél jobbat is…"
 
 #: data/storyline/act1/dialogs/Dixon.lua:481
 msgid "Four hundred. We cannot offer anything more."
@@ -7269,29 +7269,29 @@ msgstr "Négyszáz. Ennél többet nem tudok ajánlani."
 
 #: data/storyline/act1/dialogs/Dixon.lua:482
 msgid "Please, we really need the autotools."
-msgstr "Légyszíves. Tényleg szükségünk van a szerszámokra."
+msgstr "Kérlek, tényleg szükségünk van az automatikus szerszámokra."
 
 #: data/storyline/act1/dialogs/Dixon.lua:483
 msgid "Without them the town is doomed."
-msgstr ""
+msgstr "Nélkülük a városnak befellegzett."
 
 #: data/storyline/act1/dialogs/Dixon.lua:489
 msgid "Of course I am kidding, Dixon. Lighten up!"
-msgstr ""
+msgstr "Természetesen csak viccelek, Dixon. Lazulj!"
 
 #: data/storyline/act1/dialogs/Dixon.lua:492
 msgid "You and your bizarre humor. I really don't appreciate that."
-msgstr ""
+msgstr "Te és a bizarr humorérzéked. Nem értékelem."
 
 #: data/storyline/act1/dialogs/Dixon.lua:493
 msgid "Can I have the toolkit now?"
-msgstr ""
+msgstr "Most már megkaptok a szerszámkészletet?"
 
 #: data/storyline/act1/dialogs/Dixon.lua:504
 #: data/storyline/act1/dialogs/Dixon.lua:518
 #: data/storyline/act1/dialogs/Dixon.lua:531
 msgid "Deal. Here is your toolkit. Now cough up the money. Fast."
-msgstr "Áll az alku. Nesze a szerszámosládád. És most ide a pénzzel, izibe."
+msgstr "Áll az alku. Itt van a szerszámkészletet. És most ide a pénzzel, izibe."
 
 #: data/storyline/act1/dialogs/Dixon.lua:506
 msgid "Here. It is all there."
@@ -7307,35 +7307,35 @@ msgstr "Tűnj el a szemem elől."
 
 #: data/storyline/act1/dialogs/Dixon.lua:511
 msgid "I sold the toolkit to Dixon for a nice sum of money. Life is good."
-msgstr "Eladtam a szerszámosládát Dixonnak egy kevés pénzért. Az élet szép."
+msgstr "Eladtam a szerszámkészletet Dixonnak egy kevés pénzért. Az élet szép."
 
 #: data/storyline/act1/dialogs/Dixon.lua:520
 msgid "I am not happy about this. I suggest you leave town."
-msgstr ""
+msgstr "Nagyon nem tetszik ez. Azt javaslom, hagyd el a várost."
 
 #: data/storyline/act1/dialogs/Dixon.lua:521
 msgid "Accidents... Happen."
-msgstr "Történhetnek balesetek..."
+msgstr "Történhetnek balesetek…"
 
 #: data/storyline/act1/dialogs/Dixon.lua:524
 msgid "I sold the toolkit to Dixon for a huge sum of money. Life is great."
-msgstr "Eladtam a szerszámosládát Dixonnak jó sok pénzért. Az élet nagyszerű."
+msgstr "Eladtam a szerszámkészletet Dixonnak jó sok pénzért. Az élet nagyszerű."
 
 #: data/storyline/act1/dialogs/Dixon.lua:533
 msgid "Linarian. Now we part as usual. However should I ever see you after the war is over..."
-msgstr "Lináriai, őszintén beszélek. Ha egyszer találkozunk a háború után..."
+msgstr "Lináriai, őszintén beszélek. Ha egyszer találkozunk a háború után…"
 
 #: data/storyline/act1/dialogs/Dixon.lua:534
 msgid "I promise to kill you."
-msgstr "megöllek téged."
+msgstr "Esküszöm, hogy megöllek."
 
 #: data/storyline/act1/dialogs/Dixon.lua:535
 msgid "Now take your money and get out of my face. I do not want to see you here ever again."
-msgstr "Most fegd a pénzt, és tűnje el szemem elől. Nem akarlak még ehyszer itt látni."
+msgstr "Most fogd a pénzt, és tűnj el szemem elől. Nem akarlak még egyszer itt látni."
 
 #: data/storyline/act1/dialogs/Dixon.lua:538
 msgid "I sold the toolkit to Dixon for a enormous sum of money. Life is truly grand. But, I better stay away from Dixon for now... He seemed very angry at me."
-msgstr "Eladtam a szerszámosládát Dixonnak egy rohadt nagy rakás pénzért. Az élet gyönyörű. De azt hiszem, jobb, ha mostantó kerülöm Dixont... Elég mérges rám."
+msgstr "Eladtam a szerszámkészletet Dixonnak egy rahedli pénzért. Az élet gyönyörű. De azt hiszem, jobb, ha mostantól kerülöm Dixont… Elég mérges rám."
 
 #: data/storyline/act1/dialogs/Dixon.lua:545
 #: data/storyline/act1/dialogs/Dixon.lua:556
@@ -7358,7 +7358,7 @@ msgstr "Az automata szerszámoknak köszönhetően már nem csak javítgatni, ha
 
 #: data/storyline/act1/dialogs/Dixon.lua:550
 msgid "Once this sick war is over, I will make sure you get the 'Key to the City', Linarian."
-msgstr ""
+msgstr "Amint véget ér ez a beteg háború, meg fogod kapni a „város kulcsát”, lináriai."
 
 #: data/storyline/act1/dialogs/Dixon.lua:558
 msgid "Nearly. Only my conscience keeps me up at night."
@@ -7366,11 +7366,11 @@ msgstr "Majdnem. Csak a lelkiismeret tart éjszakánként ébren."
 
 #: data/storyline/act1/dialogs/Dixon.lua:560
 msgid "I'm kind of disenchanted by the failed peace mission."
-msgstr ""
+msgstr "Eléggé kiábrándított a sikertelen békemisszió."
 
 #: data/storyline/act1/dialogs/Dixon.lua:561
 msgid "Please leave me alone with my thoughts, I do not want to talk to you right now."
-msgstr ""
+msgstr "Kérlek, hagyj magamra a gondolataimmal. Nem szeretnék most veled beszélgetni."
 
 #: data/storyline/act1/dialogs/Dixon.lua:563
 msgid "Please leave me alone with my thoughts, I do not want to talk to anyone right now."
@@ -7378,7 +7378,7 @@ msgstr "Kérlek, hagyj magamra a gondolataimmal. Senkivel sem szeretnék beszél
 
 #: data/storyline/act1/dialogs/Dixon.lua:566
 msgid "But due to your forceful line of action, I am sure Spencer and Butch will be delighted to speak with you."
-msgstr ""
+msgstr "De az erőteljes akciótervednek köszönhetően biztos vagyok benne, hogy Spencer és Butch örömmel beszél majd veled."
 
 #: data/storyline/act1/dialogs/Dixon.lua:575
 msgid "No, I am afraid not."
@@ -7386,15 +7386,15 @@ msgstr "Attól tartok, nem."
 
 #: data/storyline/act1/dialogs/Dixon.lua:576
 msgid "While I do not regret sparing the bots in the tunnels, the town suffers for it."
-msgstr "Ha nem spóroljuk meg a botok által okozott kár elhárítására szánt energiát, annak a város issza meg a levét."
+msgstr "Bár nem bánom, hogy megkíméltük az alagutakban lévő botokat, a város szenved emiatt."
 
 #: data/storyline/act1/dialogs/Dixon.lua:577
 msgid "It makes me sad to see everything slowly wasting away. The Megasys bots are doing more damage than we can repair."
-msgstr ""
+msgstr "Elszomorít, hogy minden lassan leépül. A Megasys botok több kárt okoznak, mint amit meg tudunk javítani."
 
 #: data/storyline/act1/dialogs/Dixon.lua:578
 msgid "This town has a few weeks left to live. After that, we are all dead."
-msgstr ""
+msgstr "Ennek a városnak már csak pár hete van hátra. Utána mind halottak leszünk."
 
 #: data/storyline/act1/dialogs/Dixon.lua:587
 msgid "Ha! Never better!"
@@ -7422,7 +7422,7 @@ msgstr "Találkoztam valakivel, aki eldöntötte, csatlakozni fog hozzánk a Meg
 
 #: data/storyline/act1/dialogs/Dixon.lua:599
 msgid "You will need a hacked computer. Type in 'ssh 10.83.13.230' as the superuser, and you will see what I mean."
-msgstr "Szükséged lesz egy feltört számítógépre. Gépeld be, hogy 'ssh 10.83.13.230' mint rendszergazda, és látni fogod, mire gondoltam."
+msgstr "Szükséged lesz egy feltört számítógépre. Gépeld be, hogy „ssh 10.83.13.230” mint rendszergazda, és látni fogod, mire gondoltam."
 
 #: data/storyline/act1/dialogs/Dixon.lua:605
 msgid "Why the secrecy and the hushed voice? Can't you just tell me?"
@@ -7430,11 +7430,11 @@ msgstr "Miért e titokzatos suttogás? Nem tudod egyszerűen elmondani?"
 
 #: data/storyline/act1/dialogs/Dixon.lua:607
 msgid "Nope. Some things you just have to see with your own eyes."
-msgstr "Nemnem. Ez valami olyan, amit a saját szemeddel kell látnod."
+msgstr "Nem. Ez valami olyasmi, amit a saját szemeddel kell látnod."
 
 #: data/storyline/act1/dialogs/Dixon.lua:608
 msgid "The Library of Alexandria, the Colossus of Rhodes, the Black Island..."
-msgstr "Az Alexandriai Könyvtár, a Rhodesi Kolosszus, a Fekete Sziget..."
+msgstr "Az alexandriai könyvtár, a rodoszi kolosszus, a Fekete-sziget..."
 
 #: data/storyline/act1/dialogs/Dixon.lua:609
 msgid "And this is just one of those things."
@@ -7442,55 +7442,55 @@ msgstr "És ez csak egy azok közül a dolgok közül."
 
 #: data/storyline/act1/dialogs/Dixon.lua:610
 msgid "Just go and see for yourself. Otherwise, you will not believe me."
-msgstr ""
+msgstr "Menj, és nézd meg magad. Egyébként nem hinnél nekem."
 
 #: data/storyline/act1/dialogs/Dixon.lua:611
 msgid "The tunnels bots seem to be working together with Dixon in keeping the town working. All is well that ends well."
-msgstr ""
+msgstr "Az alagútban lévő botok együttműködnek Dixonnal a város működtetésében. Minden jó, ha a vége jó."
 
 #: data/storyline/act1/dialogs/Dixon.lua:618
 msgid "I have a problem with the Automated Factory."
-msgstr ""
+msgstr "Problémám van az automatizált gyárral."
 
 #: data/storyline/act1/dialogs/Dixon.lua:622
 msgid "You have a problem... really amazing."
-msgstr ""
+msgstr "Problémád van… igazán lenyűgöző."
 
 #: data/storyline/act1/dialogs/Dixon.lua:623
 msgid "There is a really easy way to solve it."
-msgstr ""
+msgstr "Van egy nagyon könnyű módszer a megoldásához."
 
 #: data/storyline/act1/dialogs/Dixon.lua:624
 msgid "Read the FLIPPING MANUAL!"
-msgstr ""
+msgstr "Olvasd el a DOKUMENTÁCIÓT!"
 
 #: data/storyline/act1/dialogs/Dixon.lua:627
 msgid "We haven't used it for a long time, so I am not surprised."
-msgstr ""
+msgstr "Hosszú ideje nem használtuk, így nem vagyok meglepve"
 
 #: data/storyline/act1/dialogs/Dixon.lua:628
 msgid "What is the error code?"
-msgstr ""
+msgstr "Mi a hibakód?"
 
 #: data/storyline/act1/dialogs/Dixon.lua:629
 msgid "Erm... I don't recall it."
-msgstr ""
+msgstr "Őööö… Nem emlékszem."
 
 #: data/storyline/act1/dialogs/Dixon.lua:630
 msgid "So, I should guess?"
-msgstr ""
+msgstr "Szóval találgassak?"
 
 #: data/storyline/act1/dialogs/Dixon.lua:631
 msgid "Hm... It could be the common error when the autofactory is restarting."
-msgstr ""
+msgstr "Hmm… Az a gyakori hiba lehet, amely az automatikus gyár újraindul."
 
 #: data/storyline/act1/dialogs/Dixon.lua:632
 msgid "Its code should be 0x6465636c... 0x6465636c6365... C, I think. It means 'decline' in hex."
-msgstr ""
+msgstr "A kódja azt hiszem 0x6465636c... 0x6465636c6365... C, lehet. Hexában azt jelenti, hogy „elutasítás”."
 
 #: data/storyline/act1/dialogs/Dixon.lua:633
 msgid "There is a really easy way to solve it. It's not in the official instructions, but I expect it to solve your problem."
-msgstr ""
+msgstr "Valóban könnyen megoldható. Nem szerepel a hivatalos utasítások között, de azt hiszem, hogy megoldja a problémát."
 
 #: data/storyline/act1/dialogs/Dixon.lua:634
 msgid "You just have to apply some elbow grease to the mechanism at the end of the line."
@@ -8282,9 +8282,9 @@ msgstr "Diszruptor pajzs aktív."
 
 #: data/storyline/act1/dialogs/DSB-MachineDeckControl.lua:81
 #: data/storyline/act1/dialogs/DSB-PowerControl.lua:57
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:146
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:147
 #: data/storyline/act1/dialogs/TutorialTerminal.lua:96
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:216
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:215
 #: data/storyline/act2/dialogs/RRF-ManagmentTerminal.lua:140
 #: data/storyline/act2/dialogs/RRGateTerminal.lua:97
 msgid "Exiting..."
@@ -8323,8 +8323,8 @@ msgstr "JÁTÉKHIBA. KÉRLEK JELENTSD."
 
 #. TRANSLATORS: command,  use lowercase here
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:61
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:146
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:149
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:147
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:150
 #: data/storyline/act1/dialogs/TutorialTerminal.lua:61
 #: data/storyline/act1/dialogs/TutorialTerminal.lua:65
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:63
@@ -8339,7 +8339,7 @@ msgstr "kapu kinyitása"
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:83
 #: data/storyline/act1/dialogs/TutorialTerminal.lua:46
 #: data/storyline/act1/dialogs/TutorialTerminal.lua:82
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:145
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:144
 #: data/storyline/act2/dialogs/RRGateTerminal.lua:83
 msgid "Gate status: CLOSED"
 msgstr "Kapu állapota: ZÁRVA"
@@ -8354,7 +8354,7 @@ msgstr "Lépj kapcsolatba a személyzettel a gépház vezérlőtermében, ha úg
 
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:69
 #: data/storyline/act1/dialogs/TutorialTerminal.lua:66
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:128
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:127
 #: data/storyline/act2/dialogs/RRGateTerminal.lua:67
 msgid "Access granted. Opening gate ..."
 msgstr "Hozzáférés megadva. Kapu kinyitása …"
@@ -8363,7 +8363,7 @@ msgstr "Hozzáférés megadva. Kapu kinyitása …"
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:81
 #: data/storyline/act1/dialogs/TutorialTerminal.lua:49
 #: data/storyline/act1/dialogs/TutorialTerminal.lua:67
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:129
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:128
 #: data/storyline/act2/dialogs/RRGateTerminal.lua:68
 msgid "Gate status: OPEN"
 msgstr "Kapu állapota: NYITVA"
@@ -8372,8 +8372,8 @@ msgstr "Kapu állapota: NYITVA"
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:79
 #: data/storyline/act1/dialogs/TutorialTerminal.lua:76
 #: data/storyline/act1/dialogs/TutorialTerminal.lua:80
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:139
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:143
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:138
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:142
 #: data/storyline/act2/dialogs/RRGateTerminal.lua:77
 #: data/storyline/act2/dialogs/RRGateTerminal.lua:81
 msgid "close gate"
@@ -8381,7 +8381,7 @@ msgstr "kapu bezárása"
 
 #: data/storyline/act1/dialogs/DSB-PowerControlGate1.lua:82
 #: data/storyline/act1/dialogs/TutorialTerminal.lua:81
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:144
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:143
 #: data/storyline/act2/dialogs/RRGateTerminal.lua:82
 msgid "Access granted. Closing gate ..."
 msgstr "Hozzáférés megadva. Kapu zárása..."
@@ -11346,207 +11346,211 @@ msgid "Currently, there is a war raging all around the globe. One day, our once 
 msgstr ""
 
 #: data/storyline/act1/dialogs/Francis.lua:237
+msgid "Our other devices started playing up too, so we had to switch back to terminals. Older technology seemed to be unharmed."
+msgstr ""
+
+#: data/storyline/act1/dialogs/Francis.lua:238
 msgid "And it looks like humans are losing the war. Our town isn't doing so well at this point either. But there is still hope, since you were discovered here."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:243
+#: data/storyline/act1/dialogs/Francis.lua:244
 msgid "How did the war start?"
 msgstr "Hogy tört ki a háború?"
 
-#: data/storyline/act1/dialogs/Francis.lua:245
+#: data/storyline/act1/dialogs/Francis.lua:246
 msgid "Unfortunately, I'm not the best source of information for that. All I know is that one day the bots went crazy. Maybe someone else in town knows more."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:251
+#: data/storyline/act1/dialogs/Francis.lua:252
 msgid "Keeper? You don't sound so sure... What is the deal with this place?"
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:253
+#: data/storyline/act1/dialogs/Francis.lua:254
 msgid "I'm sorry, but you probably need to start travelling to the town. The Red Guard are not known to be the most patient."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:254
+#: data/storyline/act1/dialogs/Francis.lua:255
 msgid "They were the ones who wanted me to thaw you out, after all. You'd better get going."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:261
+#: data/storyline/act1/dialogs/Francis.lua:262
 msgid "Tell me more about the town you mentioned."
 msgstr "Beszélj többet a városról, amit említettél."
 
-#: data/storyline/act1/dialogs/Francis.lua:263
+#: data/storyline/act1/dialogs/Francis.lua:264
 msgid "It is a small mining community of perhaps 500 inhabitants..."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:264
+#: data/storyline/act1/dialogs/Francis.lua:265
 msgid "I guess it was a stroke of luck that the town has not been completely destroyed by the bots."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:265
+#: data/storyline/act1/dialogs/Francis.lua:266
 msgid "Oddly enough, the rusty old bots that the town uses for security were not affected by whatever caused the other bots to go crazy."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:266
+#: data/storyline/act1/dialogs/Francis.lua:267
 msgid "Right now the town is 'protected' by the Red Guard, a bunch of opportunistic roughnecks. It's not exactly a secret that I don't agree with their methods."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:267
+#: data/storyline/act1/dialogs/Francis.lua:268
 msgid "However, I must admit that being oppressed is a much better alternative to being eviscerated alive."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:273
+#: data/storyline/act1/dialogs/Francis.lua:274
 msgid "Can you tell me how to get to town?"
 msgstr "Tudod, hogy juthatok el a városba?"
 
-#: data/storyline/act1/dialogs/Francis.lua:275
+#: data/storyline/act1/dialogs/Francis.lua:276
 msgid "Sure. You just need to follow the road outside to the east. After the bridge, turn right and continue to follow the road and you will soon be outside of the town main gate."
 msgstr "Persze. Csak kövesd a kelet felé vezeő utat. A híd után fordulj jobbra, menj tovább és nem sokára már a város kapujánál leszel."
 
-#: data/storyline/act1/dialogs/Francis.lua:276
+#: data/storyline/act1/dialogs/Francis.lua:277
 msgid "If you run across too many bots, you can try to circle around them. But avoid getting too far off the road, so you don't get lost. It's very dangerous out there."
 msgstr "Ha túl sok botba ütköznél, próbálj átcikázni közöttük. Ám óvakodj túl messze menni az úttól, nehogy eltévedj. Nagyon veszélyes odakint."
 
-#: data/storyline/act1/dialogs/Francis.lua:277
+#: data/storyline/act1/dialogs/Francis.lua:278
 msgid "Once in town you will be able to purchase or trade a few more items for protection at Ms. Stone's shop just inside the town gate."
 msgstr "Ha már a városban vagy, tudsz némi védőfelszerelést vásárolni Stone anyó boltjában, mindjárt a városkapu mellett balra. Kereskedhetsz is vele."
 
-#: data/storyline/act1/dialogs/Francis.lua:283
+#: data/storyline/act1/dialogs/Francis.lua:284
 msgid "How do I get out from here?"
 msgstr "Hogy jutok ki innen?"
 
-#: data/storyline/act1/dialogs/Francis.lua:285
+#: data/storyline/act1/dialogs/Francis.lua:286
 msgid "Oh, just take the small door and corridor out to the waiting room. And from there you can get out through the customer entrance."
 msgstr "Csak menj át a kis ajtón, és a várószobába vezető folyosón. Onnan már megtalálod a kijáratot."
 
-#: data/storyline/act1/dialogs/Francis.lua:286
+#: data/storyline/act1/dialogs/Francis.lua:287
 msgid "I keep the back entrance, close to my sleeping quarters, locked at all times. Better safe than sorry."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:292
+#: data/storyline/act1/dialogs/Francis.lua:293
 msgid "The 614 bot said he might lock the outside gate!"
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:295
+#: data/storyline/act1/dialogs/Francis.lua:296
 msgid "Oh. You'll need to put the cryonic terminals into admin mode to access the gate controls."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:296
+#: data/storyline/act1/dialogs/Francis.lua:297
 msgid "How do I do that?"
 msgstr "Hogy tudom azt megtenni??"
 
-#: data/storyline/act1/dialogs/Francis.lua:297
+#: data/storyline/act1/dialogs/Francis.lua:298
 msgid "You press star-pound-zero-six-pound and then enter the free-speech number."
 msgstr "Megnyomod a csillag-font-nulla-hat-font kombinációt, utána pedig a nyitó számsort."
 
-#: data/storyline/act1/dialogs/Francis.lua:298
+#: data/storyline/act1/dialogs/Francis.lua:299
 msgid "It is kind of long, so I'll write it down for you."
 msgstr "Elég hosszú, ezért leírom neked."
 
-#: data/storyline/act1/dialogs/Francis.lua:299
+#: data/storyline/act1/dialogs/Francis.lua:300
 msgid "If the 614 bot locks the gate, it is for a good reason. Lock the gate behind you!"
 msgstr "Ha a 614-es lezárta a kaput, arra jó oka volt. Nézd meg a kaput magad mögött!"
 
-#: data/storyline/act1/dialogs/Francis.lua:305
-#: data/storyline/act1/dialogs/Francis.lua:381
+#: data/storyline/act1/dialogs/Francis.lua:306
+#: data/storyline/act1/dialogs/Francis.lua:382
 msgid "Thanks for the help. I'll be going now."
 msgstr "Köszönöm a segítséget. Most megyek is."
 
-#: data/storyline/act1/dialogs/Francis.lua:307
-#: data/storyline/act1/dialogs/Francis.lua:384
+#: data/storyline/act1/dialogs/Francis.lua:308
+#: data/storyline/act1/dialogs/Francis.lua:385
 msgid "I am glad I could help you. You should be careful around here. Best head straight for our town."
 msgstr "Örülök, hogy segíthettem. Vigyázz magadra odakint. Legjobb, ha egyből a város felé indulsz."
 
-#: data/storyline/act1/dialogs/Francis.lua:308
+#: data/storyline/act1/dialogs/Francis.lua:309
 msgid "Oh, I almost forgot... Could you take this data cube and give it to Spencer once you get to town?"
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:309
+#: data/storyline/act1/dialogs/Francis.lua:310
 msgid "Spencer?"
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:310
+#: data/storyline/act1/dialogs/Francis.lua:311
 msgid "Yes. He's the leader of the Red Guard."
 msgstr "Igen. Ő a Vörös Őrség vezetője"
 
-#: data/storyline/act1/dialogs/Francis.lua:317
+#: data/storyline/act1/dialogs/Francis.lua:318
 msgid "What is stored in the cube?"
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:320
+#: data/storyline/act1/dialogs/Francis.lua:321
 msgid "It's almost nothing... nothing important... if I know nothing about purposes."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:321
+#: data/storyline/act1/dialogs/Francis.lua:322
 msgid "Spencer wanted me to list all people in cryonic stasis. We had an argument about it, but in the end I gave in. Maybe it's needed. I couldn't avoid it."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:322
+#: data/storyline/act1/dialogs/Francis.lua:323
 msgid "I'm not a bad person, but I don't like these types of decisions. Lose-lose decisions are especially difficult. But, I suppose, it's like that for everybody."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:323
+#: data/storyline/act1/dialogs/Francis.lua:324
 msgid "Bring your questions to Spencer. I'd rather not discuss it anymore, it is too troubling, especially since I'm complicit in whatever happens."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:329
+#: data/storyline/act1/dialogs/Francis.lua:330
 msgid "All right, I'll deliver the cube."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:333
+#: data/storyline/act1/dialogs/Francis.lua:334
 msgid "You can ask one of the guards in town, they'll know where to find Spencer."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:335
+#: data/storyline/act1/dialogs/Francis.lua:336
 msgid "Francis asked me to deliver a data cube for him. When I reach the town, I'm supposed to give it to Spencer, who's in charge of the Red Guard ruling the nearby town. Of course, my first job is to survive the trip there..."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:342
+#: data/storyline/act1/dialogs/Francis.lua:343
 msgid "Deliver that cube yourself."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:346
+#: data/storyline/act1/dialogs/Francis.lua:347
 msgid "Oh, I would, believe me. I'm quite capable of running my own errands, even with the mass of bots out there."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:347
+#: data/storyline/act1/dialogs/Francis.lua:348
 msgid "But... The prospect of facing that... That man again... I just can't bear it."
 msgstr ""
 
 #. TRANSLATORS: %s =Tux:get_player_name()
-#: data/storyline/act1/dialogs/Francis.lua:349
+#: data/storyline/act1/dialogs/Francis.lua:350
 #, c-format
 msgid "Please, %s, will you do me this favor?"
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:355
+#: data/storyline/act1/dialogs/Francis.lua:356
 msgid "No, I don't want to deliver your stupid cube."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:360
+#: data/storyline/act1/dialogs/Francis.lua:361
 msgid "... All right."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:361
+#: data/storyline/act1/dialogs/Francis.lua:362
 msgid "I can't force you to do it if you don't want to."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:362
+#: data/storyline/act1/dialogs/Francis.lua:363
 msgid "I suppose I'll just have to go to Spencer myself."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:363
+#: data/storyline/act1/dialogs/Francis.lua:364
 msgid "Anyway, I am glad I could help you. You should be careful around here. Best head straight for our town."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:372
+#: data/storyline/act1/dialogs/Francis.lua:373
 msgid "Oh... I almost forgot... This is a small help but I hope it will make your life a little easier."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:375
-#: data/storyline/act1/dialogs/Francis.lua:385
+#: data/storyline/act1/dialogs/Francis.lua:376
+#: data/storyline/act1/dialogs/Francis.lua:386
 msgid "Remember not to veer too far off the path, or your quest could be over before it begins."
 msgstr ""
 
-#: data/storyline/act1/dialogs/Francis.lua:387
+#: data/storyline/act1/dialogs/Francis.lua:388
 msgid "Safe travels, linarian."
 msgstr ""
 
@@ -11606,7 +11610,7 @@ msgstr "Bárcsak tudnám, miről beszélsz."
 msgid "I need to go now."
 msgstr "Most mennem kell."
 
-#: data/storyline/act1/dialogs/Guy.lua:226
+#: data/storyline/act1/dialogs/Guy.lua:233
 msgid "Guy signmessage B"
 msgstr "Guy táblaszöveg B"
 
@@ -11749,8 +11753,8 @@ msgstr "Emlékezz, a MegaSys termékek a legjobbak!"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:35
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:51
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:35
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:51
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:36
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:52
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:77
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:89
 msgid "one"
@@ -11758,8 +11762,8 @@ msgstr "egy"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:37
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:53
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:37
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:53
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:38
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:54
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:79
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:91
 msgid "two"
@@ -11767,8 +11771,8 @@ msgstr "kettő"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:39
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:55
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:39
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:55
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:40
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:56
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:81
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:93
 msgid "three"
@@ -11776,8 +11780,8 @@ msgstr "három"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:41
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:57
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:41
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:57
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:42
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:58
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:83
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:95
 msgid "four"
@@ -11785,8 +11789,8 @@ msgstr "négy"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:43
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:59
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:43
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:59
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:44
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:60
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:85
 #: data/storyline/act2/dialogs/FactoryTerminal.lua:97
 msgid "five"
@@ -11794,116 +11798,116 @@ msgstr "öt"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:45
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:61
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:45
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:61
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:46
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:62
 msgid "six"
 msgstr "hat"
 
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:47
 #: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:63
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:47
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:63
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:48
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:64
 msgid "seven"
 msgstr "hét"
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:80
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:80
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:81
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:81
 #, c-format
 msgid "CAPTCHA: Please write the number that answers the following: %s - %s = ?"
 msgstr "CAPTCHA: írd be a számot, amely válasz a következőre: %s – %s = ?"
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:82
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:85
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:83
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:86
 msgid "Non-human detected. Administering paralyzing shock."
 msgstr "Nem-ember detektálva. Bénító sokk eszközlése."
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:83
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:86
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:121
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:84
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:87
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:120
 msgid "NOTE: If you are a human, try again, and make sure you enter digits and not a word."
 msgstr "MEGJEGYZÉS: ha ember vagy, akkor próbáld újra, és számokat be, nem egy szót."
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:90
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:91
 msgid "Welcome to MS firmware update server for region #54658."
 msgstr "Üdvözlünk az MS firmware frissítése kiszolgálón a #54658-os régióhoz."
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:91
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:109
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:92
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:110
 msgid "Please select action"
 msgstr "Kérlek, válassz műveletet"
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:99
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:100
 msgid "Get current OS version"
 msgstr "Jelenlegi OS verzió"
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:102
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:103
 msgid "Currently deployed firmware is v. 5.0.8+worldto-nogpl."
 msgstr "A jelenleg telepített firmware v. 5.0.8+worldto-nogpl."
 
 #. TRANSLATORS: %s in %swashere  = Tux:get_player_name()
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:105
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:106
 #, c-format
 msgid "Currently deployed firmware is v. 5.0.8+%swashere+gpl"
 msgstr "A jelenleg telepített firmware v. 5.0.8+%swashere+gpl."
 
 #. TRANSLATORS: "hello?"
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:108
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:109
 msgid "*Bzzt*ello?"
 msgstr "*Bzzt*ello?"
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:109
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:110
 msgid "What? What is this?"
 msgstr "Mi? Mi ez?"
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:111
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:112
 msgid "Spencer somehow contacted me through the firmware server terminal. From what he told me, it worked - the hostile bots are all deactivated! I am now supposed to stand by for further instructions..."
 msgstr "Spencer valahogy kapcsolatba lépett velem a firmware frissítése kiszolgáló terminálján. Abból amit tőle megtudtam, működött – az ellenséges botok mint deaktiválódtak! Most további utasításokra kellene várnom…"
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:119
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:120
 msgid "Propagate firmware update"
 msgstr "Firmware update közzététele"
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:121
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:122
 msgid "Compressing image...."
 msgstr "Képfájl tömörítése…"
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:122
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:123
 msgid "Advertising update to clients..."
 msgstr "Frissítés kihirdetése a kliensek felé…"
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:123
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:124
 msgid "Waiting for all connections...."
 msgstr "Várakozás a bejövő kapcsolatokra…"
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:126
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:127
 msgid "Please resolve merge conflicts:"
 msgstr "Oldja fel a beolvasztási konfliktusokat:"
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:128
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:129
 msgid "Conflicts resolved,"
 msgstr "Konfliktusok feloldva,"
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:129
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:130
 msgid "Firmware update propagated!"
 msgstr "Sikeres firmware upgrade közzététel!"
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:130
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:131
 msgid "ALL: SECURITY: could not find 'evil.conf': No such file or directory."
 msgstr "MIND: BIZTONSÁGI: nem találhat az „evil.conf”. Nincs ilyen fájl vagy könyvtár."
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:131
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:132
 msgid "\tExiting with state 1."
 msgstr "\tKilépés 1-es állapottal."
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:134
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:135
 msgid "I managed to upload the faulty firmware update to all bots within transmission range. Either the siege on the town ends now... Or everything else does."
 msgstr "Sikeresen feltöltöttem a hibás firmware frissítést minden botra a jeladási távolságon belül. Vagy a város ostroma ér most véget most… vagy minden más."
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:145
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:146
 msgid "Merge failed."
 msgstr "Beolvasztás sikertelen."
 
-#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:154
+#: data/storyline/act1/dialogs/HF-FirmwareUpdateServer.lua:155
 msgid "Logout"
 msgstr "Kijelentkezés"
 
@@ -12215,7 +12219,7 @@ msgstr "Hoppá, úgy tűnik, most nincs náléam ennyi pénz."
 
 #: data/storyline/act1/dialogs/Iris.lua:244
 #: data/storyline/act1/dialogs/Kevin.lua:341
-#: data/storyline/act1/dialogs/Richard.lua:151
+#: data/storyline/act1/dialogs/Richard.lua:152
 msgid "This is embarrassing. I will come back when I have the amount of valuable circuits you desire."
 msgstr "Ez kínos. Visszajövök ha lesz nálam annyi értékes áramkör, amennyit kívánsz."
 
@@ -13236,7 +13240,7 @@ msgid "WARNING, less than [b]5[/b]%% fuel remaining!"
 msgstr "FIGYELMEZTETÉS, kevesebb mint [b]5[/b]%% üzemanyag maradt!"
 
 #: data/storyline/act1/dialogs/Kevin-Lawnmower.lua:204
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:273
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:274
 msgid "exiting..."
 msgstr "kilépés…"
 
@@ -13564,7 +13568,7 @@ msgid "It will be a while till I get her together again, but she will be fine."
 msgstr "Egy ki időbe tellik, míg újból összerakom, de utána jól fogja érezni magát."
 
 #: data/storyline/act1/dialogs/Kevin.lua:283
-#: data/storyline/act1/dialogs/Richard.lua:113
+#: data/storyline/act1/dialogs/Richard.lua:114
 msgid "What can you teach me about hacking?"
 msgstr "Mit tudsz a hackelésről tanítani?"
 
@@ -13609,25 +13613,25 @@ msgid "If you get rid of the maintenance bots on the second underground level of
 msgstr "Ha megszabadulsz a második szinten garázdálkodó szevízbotoktól, találni fogok valami hasznos tanulnivalót a számodra."
 
 #: data/storyline/act1/dialogs/Kevin.lua:306
-#: data/storyline/act1/dialogs/Richard.lua:115
+#: data/storyline/act1/dialogs/Richard.lua:116
 msgid "I can teach you everything, for a price of course."
 msgstr "Mindent meg tudok neked tanítani, persze jó pénzért."
 
 #: data/storyline/act1/dialogs/Kevin.lua:307
-#: data/storyline/act1/dialogs/Richard.lua:116
+#: data/storyline/act1/dialogs/Richard.lua:117
 msgid "Three hundred per lesson, up front."
 msgstr "Háromszáz per lecke."
 
 #. TRANSLATORS: %d = number training points needed
 #. TRANSLATORS: %d = a number
 #: data/storyline/act1/dialogs/Kevin.lua:309
-#: data/storyline/act1/dialogs/Richard.lua:123
+#: data/storyline/act1/dialogs/Richard.lua:124
 #, c-format
 msgid "You will need %d training points."
 msgstr "%d képzéspont szükséges."
 
 #: data/storyline/act1/dialogs/Kevin.lua:310
-#: data/storyline/act1/dialogs/Richard.lua:124
+#: data/storyline/act1/dialogs/Richard.lua:125
 msgid "Still interested?"
 msgstr "Érdekel?"
 
@@ -13636,57 +13640,57 @@ msgid "Yes, please teach me how to become a hacker."
 msgstr ""
 
 #: data/storyline/act1/dialogs/Kevin.lua:324
-#: data/storyline/act1/dialogs/Richard.lua:134
+#: data/storyline/act1/dialogs/Richard.lua:135
 msgid "Good. The most important thing about hacking is to understand the nature of the machine you want to hack."
 msgstr "Rendben. A legfontosabb, hogy megértsd a hackelni szándékozott gép lelkivilágát."
 
 #: data/storyline/act1/dialogs/Kevin.lua:325
-#: data/storyline/act1/dialogs/Richard.lua:135
+#: data/storyline/act1/dialogs/Richard.lua:136
 msgid "Once you have figured out what the creators of the system were thinking when setting it up, you'll also know how to best hack it."
 msgstr "Ha kitaláltad, hogy a rendszer tervezői hogyan gondolkodtak a beállítás során, tudni fogod a feltörés legjobb módszerét is."
 
 #: data/storyline/act1/dialogs/Kevin.lua:326
-#: data/storyline/act1/dialogs/Richard.lua:136
+#: data/storyline/act1/dialogs/Richard.lua:137
 msgid "Now I see the feature set of your hacking program has already improved a lot."
 msgstr "Látom, a hacker képességed már sokat fejlődött."
 
 #: data/storyline/act1/dialogs/Kevin.lua:342
-#: data/storyline/act1/dialogs/Richard.lua:152
+#: data/storyline/act1/dialogs/Richard.lua:153
 msgid "Ok, come back when you can afford to pay me if you are interested."
 msgstr "Ok, gyere vissza, ha ki tudod nekem fizetni azt, ami érdekel."
 
 #: data/storyline/act1/dialogs/Kevin.lua:346
-#: data/storyline/act1/dialogs/Richard.lua:156
+#: data/storyline/act1/dialogs/Richard.lua:157
 msgid "So come back when you have some valuables."
 msgstr "Hát, akkor gyere vissza akkor, ha lesz elég pénzed."
 
 #: data/storyline/act1/dialogs/Kevin.lua:352
-#: data/storyline/act1/dialogs/Richard.lua:99
+#: data/storyline/act1/dialogs/Richard.lua:100
 msgid "Sorry, my memory data bank is filled to the brim right now. Can't learn more until I get some more experience."
 msgstr "Sajnos a memória adatbankom csordultig tele van. Nem tudok többet tanulni, amíg nem szerzek több tapasztalatot."
 
 #: data/storyline/act1/dialogs/Kevin.lua:354
-#: data/storyline/act1/dialogs/Richard.lua:100
+#: data/storyline/act1/dialogs/Richard.lua:101
 msgid "You Linarians are funny creatures. Come back later when you feel ready if you please."
 msgstr "Ti Lináriaiak vicces fickók vagytok. Ha megkérhetlek, akkor gyere vissza, ha felkészültél."
 
 #: data/storyline/act1/dialogs/Kevin.lua:355
-#: data/storyline/act1/dialogs/Richard.lua:101
+#: data/storyline/act1/dialogs/Richard.lua:102
 msgid "I cannot teach you when you have no training points. Come back when you are more prepared."
 msgstr "Nem tudlak tanítani, ha nincs tréning pontod. Gyere vissza, ha jobban felkészültél."
 
 #: data/storyline/act1/dialogs/Kevin.lua:357
-#: data/storyline/act1/dialogs/Richard.lua:103
+#: data/storyline/act1/dialogs/Richard.lua:104
 msgid "Come back when you are mentally ready to learn."
 msgstr "Gyere vissza, ha mentálisan is felkészültél a tanulásra."
 
 #: data/storyline/act1/dialogs/Kevin.lua:360
-#: data/storyline/act1/dialogs/Richard.lua:106
+#: data/storyline/act1/dialogs/Richard.lua:107
 msgid "Yeah, I don't think you have enough experience for this. Come back here after you see some more action."
 msgstr "Aha, nem hiszem, hogy eléggé tapasztalt lennél ehhez. Gyere vissza, pár akció után."
 
 #: data/storyline/act1/dialogs/Kevin.lua:361
-#: data/storyline/act1/dialogs/Richard.lua:107
+#: data/storyline/act1/dialogs/Richard.lua:108
 msgid "Then come back when you have a real will to learn."
 msgstr "Akkor gyere vissza, ha igazán akarsz tanulni."
 
@@ -13993,7 +13997,7 @@ msgstr "Gondoltam."
 
 #: data/storyline/act1/dialogs/KevinGuard.lua:201
 msgid "See you later, tin can."
-msgstr "Később találkozunk, konzervdoboz."
+msgstr "Viszlát később, konzervdoboz."
 
 #: data/storyline/act1/dialogs/KevinGuard.lua:204
 msgid "[b]EOT acknowledged. Connection closed.[/b]"
@@ -14403,7 +14407,7 @@ msgid "Opening Access Gate ..."
 msgstr "Bejárati kapu kinyitása…"
 
 #: data/storyline/act1/dialogs/Maintenance-Terminal.lua:147
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:178
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:179
 msgid "Permission denied."
 msgstr "Hozzáférés megtagadva."
 
@@ -15531,144 +15535,144 @@ msgstr "barkácsolás --kiegészítő"
 msgid "assemble --item --addon"
 msgstr "összeállítás --tárgy --kiegészítő"
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:93
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:94
 msgid "Welcome to MS gate access server for region #54648."
 msgstr "Üdvözlünk a #54648-as régióhoz tartozó MS kapuhozzáférési kiszolgálón."
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:95
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:96
 msgid "WHAT?!"
 msgstr "MI?!"
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:96
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:97
 msgid "The firmware server seems to actually be an access server to a gate. What am I supposed to do now?"
 msgstr "A firmware kiszolgáló egy hozzáférési kiszolgálónak tűnik a kapuhoz. Mit kellene most tennem?"
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:117
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:120
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:118
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:121
 msgid "status"
 msgstr "állapot"
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:122
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:123
 msgid "Gate 1 status: OPENED"
 msgstr "1-es kapu állapota: NYITVA"
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:124
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:125
 msgid "Gate 1 status: CLOSED"
 msgstr "1-es kapu állapota: ZÁRVA"
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:131
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:132
 msgid "Gate 2 status: OPENED"
 msgstr "2-es kapu állapota: NYITVA"
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:133
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:134
 msgid "Gate 2 status: CLOSED"
 msgstr "2-es kapu állapota: ZÁRVA"
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:150
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:151
 msgid "Permission denied"
 msgstr "Hozzáférés megtagadva"
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:161
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:162
 msgid "(Try hacking the server)"
 msgstr "(Megpróbálod feltörni a kiszolgálót)"
 
 #. TRANSLATORS: this is parody of Microsoft Windows' error message;
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:167
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:168
 msgid "'sudo' is not recognized as an internal or external command, operable program or batch file."
 msgstr "A „sudo” nem ismert külső vagy belső parancsként, programként vagy kötegelt fájlként."
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:168
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:169
 msgid "Oh, of course."
 msgstr "Ó, persze."
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:169
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:170
 msgid "Now, let me see if I can remember this correctly ..."
 msgstr "Nos, nézzük hogy jól emlékszem-e…"
 
 #. TRANSLATORS: parody of Microsoft Windows' runas command;
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:172
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:173
 msgid "RUNAS /user:Administrator OPENGATE.EXE"
 msgstr "RUNAS /user:Administrator OPENGATE.EXE"
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:173
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:174
 msgid "Which gates do you want to open?"
 msgstr "Melyik kaput akarod kinyitni?"
 
 #. TRANSLATORS: this block is parody of Microsoft Windows' format for documentation internal to a command
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:193
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:194
 msgid "Opens gates via command prompt on a console."
 msgstr "Kinyitja a kaput parancssorból."
 
 #. TRANSLATORS: "OPENGATE" verbatim
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:196
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:197
 msgid "OPENGATE [inner] [outer]"
 msgstr "OPENGATE [belső] [külső]"
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:198
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:199
 msgid "  inner   Opens the inner gate."
 msgstr "  belső   Kinyitja a belső kaput."
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:199
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:200
 msgid "  outer   Opens the outer gate."
 msgstr "  külső   Kinyitja a külső kaput."
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:201
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:202
 msgid "Without parameters, OPENGATE will prompt you with a helpful query."
 msgstr "Paraméterek nélkül, az OPENGATE egy hasznos kérdést tesz fel."
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:202
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:203
 msgid "To secure the gates, use SHUTGATE."
 msgstr "A kapuk zárolásához használja a SHUTGATE parancsot."
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:203
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:204
 msgid "Press any key to continue . . ."
 msgstr "Kattints bármelyik gombra a folytatáshoz . . ."
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:205
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:206
 msgid "Take note: These are not the gates you are looking for."
 msgstr "Megjegyzés: Ezek nem azok a kapuk, amit keresel."
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:206
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:207
 msgid "Version: 9.13.1665.0 Aug 11, 1998"
 msgstr "Verzió: 9.13.1665.0 1998. aug. 11."
 
 #. TRANSLATORS: "OPENGATE" verbatim
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:214
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:218
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:215
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:219
 msgid "OPENGATE inner"
 msgstr "OPENGATE belső"
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:219
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:257
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:220
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:258
 msgid "inner gate opened"
 msgstr "belső kapu kinyitva"
-
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:220
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:239
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:259
-msgid "[b]WARNING[/b]:"
-msgstr "[b]FIGYELMEZTETÉS[/b]:"
 
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:221
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:240
 #: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:260
+msgid "[b]WARNING[/b]:"
+msgstr "[b]FIGYELMEZTETÉS[/b]:"
+
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:222
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:241
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:261
 msgid "Anomalies detected!"
 msgstr "Anomáliák észlelve!"
 
 #. TRANSLATORS: "OPENGATE" verbatim
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:233
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:237
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:234
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:238
 msgid "OPENGATE outer"
 msgstr "OPENGATE külső"
 
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:238
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:258
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:239
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:259
 msgid "outer gate opened"
 msgstr "külső kapu kinyitva"
 
 #. TRANSLATORS: "OPENGATE" verbatim
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:252
-#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:256
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:253
+#: data/storyline/act1/dialogs/MO-HFGateAccessServer.lua:257
 msgid "OPENGATE inner outer"
 msgstr "OPENGATE belső külső"
 
@@ -16434,55 +16438,55 @@ msgstr "Az eszköznek korlátolt tárolási képességei voltak, így egy válla
 msgid "Those were the beginning days of open-source hardware. It's one of the few open-source innovations still around."
 msgstr "Azok voltak a nyílt forráskódú hardverek kezdőnapjai. Ez a nyílt forráskódú innovációk egyike, amely még mindig létezik."
 
-#: data/storyline/act1/dialogs/Richard.lua:131
+#: data/storyline/act1/dialogs/Richard.lua:132
 msgid "Yes, please teach me."
 msgstr "Igen, kérlek taníts."
 
-#: data/storyline/act1/dialogs/Richard.lua:150
+#: data/storyline/act1/dialogs/Richard.lua:151
 msgid "Hold on, I don't seem to have enough money right now."
 msgstr "Várj, úgy tűnik, hogy most nincs nálam elég pénz."
 
-#: data/storyline/act1/dialogs/Richard.lua:161
+#: data/storyline/act1/dialogs/Richard.lua:162
 msgid "What bot types do you know?"
 msgstr "Mely bot típusokat ismersz?"
 
-#: data/storyline/act1/dialogs/Richard.lua:163
+#: data/storyline/act1/dialogs/Richard.lua:164
 msgid "Well, I program the 614, so I know quite some things about the droids on this class."
 msgstr "Nos, én programozom a 614-est, így elég sokat tudok erről az osztályról."
 
-#: data/storyline/act1/dialogs/Richard.lua:170
+#: data/storyline/act1/dialogs/Richard.lua:171
 msgid "Which bots are on 600s class?"
 msgstr "Milyen botok vannak a 600-as szériában?"
 
-#: data/storyline/act1/dialogs/Richard.lua:172
+#: data/storyline/act1/dialogs/Richard.lua:173
 msgid "The 600s class keeps the sentinel droids."
 msgstr "A 600-as osztályba őrszem droidok tartoznak."
 
-#: data/storyline/act1/dialogs/Richard.lua:173
+#: data/storyline/act1/dialogs/Richard.lua:174
 msgid "They were projected mainly to protect a certain area from intruders, killing trespassers."
 msgstr "Azért készültek, hogy egy adott területet védjenek a betolakodóktól, és megöljék a birtokháborítókat."
 
-#: data/storyline/act1/dialogs/Richard.lua:174
+#: data/storyline/act1/dialogs/Richard.lua:175
 msgid "There is the [b]614[/b], made by Nicholson Company. They have some sort of [b]Exterminator[/b] inside. It's slow but a reliable droid."
 msgstr "Ott van a [b]614[/b]-es, amit a Nicholson vállalat gyártott. Valamilyen [b]Megsemmisítő[/b] van a belsejében. Egy lassú, de megbízható droid."
 
-#: data/storyline/act1/dialogs/Richard.lua:175
-msgid "There is also the [b]615[/b] droid. Nicholson Company didn't finish the project, which made they get affected by the Great Assault as well. They are much more dangerous than the 614, and much faster."
+#: data/storyline/act1/dialogs/Richard.lua:176
+msgid "There is also the [b]615[/b] droid. Nicholson Company didn't finish the project, which made them get affected by the Great Assault as well. They are much more dangerous than the 614, and much faster."
 msgstr "Van egy [b]615[/b]-ös droid is. A Nicholson vállalat nem fejezte be a projektet, mert őket is érintette a Nagy ostrom. Sokkal veszélyesebbek mint a 614-es, és sokkal gyorsabbak."
 
-#: data/storyline/act1/dialogs/Richard.lua:176
-msgid "There is also the [b]629[/b] droid. It's slow, but its guns are powerful enough to such trivia doesn't matter."
+#: data/storyline/act1/dialogs/Richard.lua:177
+msgid "There is also the [b]629[/b] droid. It's slow, but its guns are powerful enough that such trivia doesn't matter."
 msgstr "Van egy [b]629[/b]-es droid is. Lassú, de az ágyúi olyan erősek, hogy az ilyen trivialitások nem számítanak."
 
-#: data/storyline/act1/dialogs/Richard.lua:177
+#: data/storyline/act1/dialogs/Richard.lua:178
 msgid "There is also the [b]603[/b]. A lawnmower. It doesn't cause much damage, but his attack rate is incredibly fast and doesn't need recharging. Thankfully, it's a melee droid."
 msgstr "És ott van a [b]603[/b]-as. Egy fűnyíró. Nem okoz nagy sebzést, de a támadási sebessége hihetetlenül nagy, és nem igényel újratöltést. Szerencsére egy közelharci droid."
 
-#: data/storyline/act1/dialogs/Richard.lua:178
+#: data/storyline/act1/dialogs/Richard.lua:179
 msgid "I only program the 614 droids, so my information about the others may be wrong."
 msgstr "Én csak a 614-es droidokat programozom, így az információim a többiről tévesek lehetnek."
 
-#: data/storyline/act1/dialogs/Richard.lua:186
+#: data/storyline/act1/dialogs/Richard.lua:187
 #: data/storyline/act1/dialogs/Samson.lua:272
 msgid "Take care, Linarian."
 msgstr "Vigyázz magadra, Lináriai."
@@ -20232,7 +20236,7 @@ msgid "It is strange to see a girl in such a beautiful dress here."
 msgstr "Furcsa egy lányt ilyen szép ruhában látni itt."
 
 #: data/storyline/act1/dialogs/Tania.lua:266
-msgid "I'm going to spend all my life here! So forgive me some little indulgences."
+msgid "I'm going to spend all my life here! So forgive me for some little indulgences."
 msgstr "Az egész életemet itt fogom tölteni! Szóval bocsásd meg az apró élvezeteim."
 
 #: data/storyline/act1/dialogs/Tania.lua:272
@@ -23923,76 +23927,76 @@ msgstr ""
 msgid "R&R Factory gate status: OPEN"
 msgstr ""
 
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:116
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:117
 #, c-format
 msgid "CAPTCHA: Please write the number that answers the following: %s + %s = ?"
 msgstr ""
 
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:120
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:119
 msgid "Access Denied. Electrical discharge in progress."
 msgstr ""
 
 #. TRANSLATORS: command, use lowercase here
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:154
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:157
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:153
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:156
 msgid "download hacking tools"
 msgstr ""
 
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:160
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:159
 msgid "The max available software revision is 9."
 msgstr ""
 
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:161
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:160
 msgid "Your hacking skill already has or exceeds this level."
 msgstr ""
 
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:163
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:162
 msgid "This is commercial software, payment required (3000 circuits)."
 msgstr ""
 
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:164
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:163
 #, c-format
 msgid "You will also need %d training points."
 msgstr ""
 
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:165
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:164
 msgid "Proceed?"
 msgstr ""
 
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:173
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:172
 msgid "sudo apt-get install hacking-tools"
 msgstr ""
 
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:176
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:175
 msgid "Reading package lists... Done"
 msgstr ""
 
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:177
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:176
 msgid "Building dependency tree"
 msgstr ""
 
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:178
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:177
 msgid "Reading state information... Done"
 msgstr ""
 
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:180
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:179
 msgid "The following skill will be installed:"
 msgstr ""
 
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:181
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:180
 #, c-format
 msgid "'Hacking' program revision %d."
 msgstr ""
 
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:185
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:184
 msgid "Feature set of the hacking program has been improved successfully."
 msgstr ""
 
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:199
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:198
 msgid "Payment bounced. Insufficient credits."
 msgstr ""
 
-#: data/storyline/act2/dialogs/FactoryTerminal.lua:205
+#: data/storyline/act2/dialogs/FactoryTerminal.lua:204
 msgid "Out of Memory. More Experience is needed to run this program."
 msgstr ""
 
@@ -24025,7 +24029,7 @@ msgid "Hello, I'm Fred. I make addons and grenades. I can craft some for you."
 msgstr "Szia, Fred vagyok. Kiegészítőket és gránátokat készítek. Neked is csinálhatok párat"
 
 #: data/storyline/act2/dialogs/Fred.lua:56
-msgid "I would like to give a look at it later, thanks."
+msgid "I would like to take a look at them later, thanks."
 msgstr "Majd később megnézem, köszönöm."
 
 #: data/storyline/act2/dialogs/Fred.lua:63
@@ -24042,7 +24046,7 @@ msgid "If not the only."
 msgstr "Ha nem az egyetlennek."
 
 #: data/storyline/act2/dialogs/Fred.lua:72
-msgid "Can you assemble add-ons on my equip?"
+msgid "Can you assemble add-ons on my equipment?"
 msgstr "Rá tudnád szerelni a kiegészítőket a felszerelésemre?"
 
 #: data/storyline/act2/dialogs/Fred.lua:74
@@ -24059,7 +24063,7 @@ msgid "Sure, please take a look."
 msgstr "Persze, nézz körül."
 
 #: data/storyline/act2/dialogs/Fred.lua:84
-msgid "They're not impressive, but get the work done!"
+msgid "They're not impressive, but they get the work done!"
 msgstr "Nem lenyűgözőek, de megteszik!"
 
 #: data/storyline/act2/dialogs/Fred.lua:85
@@ -24080,11 +24084,11 @@ msgid "Do you know where to find a weapon for the .50 BMG Ammo?"
 msgstr "Tudod hol találatok fegyvert az .50-es BMG lőszerhez?"
 
 #: data/storyline/act2/dialogs/Fred.lua:95
-msgid "A weapon for the .50 Browning Machine Gun Ammo. Only the Barrett M82 Sniper Rifle use that junk. I mean, they don't even stack, you need a slot on inventory for each ammo."
+msgid "A weapon for the .50 Browning Machine Gun Ammo. Only the Barrett M82 Sniper Rifle uses that junk. I mean, they don't even stack, you need a slot on inventory for each ammo."
 msgstr "Egy fegyver a .50-es Browning géppuskalőszerhez. Csak a Barrett M82 mesterlövészpuska használja az a szemetet. Úgy értem, még csak nem is kötegelhetőek, minden lőszer egy teljes helyet foglal a felszerelésedben."
 
 #: data/storyline/act2/dialogs/Fred.lua:96
-msgid "So, if I was interested in such gun. Do you know where I could get one?"
+msgid "So, if I was interested in such a gun... do you know where I could get one?"
 msgstr "Tehát, ha érdekelne egy ilyen puska. Tudod hol szerezhetnék egyet?"
 
 #: data/storyline/act2/dialogs/Fred.lua:97
@@ -24092,7 +24096,7 @@ msgid "I have one, but I won't give it to you. You see, the Barrett is powerful 
 msgstr "Van egy nekem, de nem adom oda. Nézd, a Barrett elég erős, hogy megállítson egy teherautót, szó szerint, és a valószínűsége, hogy egy harci droid kettőnél több találatot éljen túl, nagyon alacsony."
 
 #: data/storyline/act2/dialogs/Fred.lua:98
-msgid "So unless you're military or something, I won't be giving, trading, nor selling it for you."
+msgid "So unless you're in the military or something, I won't be giving, trading, nor selling it for you."
 msgstr "Tehát ha nem vagy a hadsereg tagja vagy ilyesmi, nem adom oda és nem adom el neked."
 
 #: data/storyline/act2/dialogs/Fred.lua:99
@@ -24100,7 +24104,7 @@ msgid "I have many circuits, you know."
 msgstr "Sok áramköröm van, csak mondom."
 
 #: data/storyline/act2/dialogs/Fred.lua:100
-msgid "And I have a Barrett M82. I bet a few direct hits from this gun, and you'll leave life to become history."
+msgid "And I have a Barrett M82. I bet a few direct hits from this gun, and you'll be history."
 msgstr "Nekem pedig vagy egy M82 Barrettem. Néhány találat ebből a fegyverből, és azt hiszem az életet történelem lesz."
 
 #: data/storyline/act2/dialogs/Fred.lua:101
@@ -24132,7 +24136,7 @@ msgid "Plasma would be too slow, and laser too weak, so you really should use sn
 msgstr ""
 
 #: data/storyline/act2/dialogs/Fred.lua:115
-msgid "...I do not think I'll ever meet such droid, but thanks for the warning."
+msgid "...I do not think I'll ever meet such a droid, but thanks for the warning."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Fred.lua:117
@@ -24401,135 +24405,135 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/MrSaves.lua:39
 msgid "Good evening!"
-msgstr ""
+msgstr "Jó estét!"
 
 #: data/storyline/act2/dialogs/MrSaves.lua:41
 msgid "Good morning!"
-msgstr ""
+msgstr "Jó reggelt!"
 
 #: data/storyline/act2/dialogs/MrSaves.lua:43
 msgid "Good afternoon!"
-msgstr ""
+msgstr "Jó napot!"
 
 #: data/storyline/act2/dialogs/MrSaves.lua:47
 msgid "...Hello."
-msgstr ""
+msgstr "…Üdv."
 
 #: data/storyline/act2/dialogs/MrSaves.lua:48
 msgid "I am Mr. Saves, the Watcher of Stories!"
-msgstr ""
+msgstr "Üdv, Mr. Saves vagyok, a történetek figyelője!"
 
 #: data/storyline/act2/dialogs/MrSaves.lua:49
 msgid "Mr. Saves, Watcher of Stories"
-msgstr ""
+msgstr "Mr. Saves, a történetek figyelője"
 
 #: data/storyline/act2/dialogs/MrSaves.lua:50
 msgid "The weather is grim again, don't you think? Ah, I love mental games. All the better when no one can understand them."
-msgstr ""
+msgstr "Megint zord idő van, nemde? Ó, imádom a szellemi játékokat. Még jobb, ha senki sem érti őket."
 
 #: data/storyline/act2/dialogs/MrSaves.lua:51
 msgid "...No one asked."
-msgstr ""
+msgstr "…Senki sem kérdezte."
 
 #: data/storyline/act2/dialogs/MrSaves.lua:52
 msgid "Uhm... great, I think?"
-msgstr ""
+msgstr "Ö… nagyszerű, asszem?"
 
 #: data/storyline/act2/dialogs/MrSaves.lua:55
 msgid "You don't have anything better to do, do you?"
-msgstr ""
+msgstr "Nincs jobb dolgod, ugye?"
 
 #: data/storyline/act2/dialogs/MrSaves.lua:56
 msgid "I repeated the same thing seven times and you still come to bother me."
-msgstr ""
+msgstr "Már hétszer megismételtem ugyanazt, de megint visszajössz, hogy zavarj."
 
 #: data/storyline/act2/dialogs/MrSaves.lua:57
 msgid "Seven is a number of luck, though. Here, take this program update and don't show up again."
-msgstr ""
+msgstr "De a hét a szerencse száma. Itt van, vidd ezt a programfrissítést, és ne lássalak többet."
 
 #: data/storyline/act2/dialogs/MrSaves.lua:59
 msgid "[b]Animal Magnetism skill updated![/b]"
-msgstr ""
+msgstr "[b]Az Állati vonzerő képesség frissítve![/b]"
 
 #: data/storyline/act2/dialogs/MrSaves.lua:60
 msgid "If you do, I'll repeat myself until I manage to bore you out."
-msgstr ""
+msgstr "Ha ezt csinálod, akkor addig ismétlem magam, amíg meg nem unod."
 
 #: data/storyline/act2/dialogs/MrSaves.lua:61
 msgid "Uhm... Thanks?"
-msgstr ""
+msgstr "Ö… Köszönöm?"
 
 #: data/storyline/act2/dialogs/MrSaves.lua:62
 msgid "Now get going. You have more important things to do."
-msgstr ""
+msgstr "Most menj. Vannak fontosabb dolgaid."
 
 #: data/storyline/act2/dialogs/MrSaves.lua:65
 msgid "The sky is in a pretty blue azure today..."
-msgstr ""
+msgstr "Az ég szép kék ma…"
 
 #: data/storyline/act2/dialogs/MrSaves.lua:71
 msgid "Why are you alive? Why are the bots not attacking you?"
-msgstr ""
+msgstr "Miért vagy életben? A botok miért nem támadnak meg?"
 
 #: data/storyline/act2/dialogs/MrSaves.lua:73
 msgid "I don't exist under normal circumstances."
-msgstr ""
+msgstr "Nem a normál körülmények között létezem."
 
 #: data/storyline/act2/dialogs/MrSaves.lua:74
 msgid "Makes sense, you cannot attack something which doesn't exist."
-msgstr ""
+msgstr "Van értelme, nem tudsz valamit megtámadni, ha az nem létezik."
 
 #: data/storyline/act2/dialogs/MrSaves.lua:75
 msgid "...No wait. It doesn't. If you don't exist, I can't talk to you either!"
-msgstr ""
+msgstr "…Várj, nem. Nincs. Ha nem létezel, akkor én sem tudok veled beszélni!"
 
 #: data/storyline/act2/dialogs/MrSaves.lua:76
 msgid "Well, with strange aeons, even Mr. Saves may die."
-msgstr ""
+msgstr "Nos, Mr. Saves sem ér át végtelen időkön."
 
 #: data/storyline/act2/dialogs/MrSaves.lua:77
 msgid "...You know what? You're weird. I bet the bots are just afraid of getting close to you."
-msgstr ""
+msgstr "…Tudod mit? Fura vagy. Biztos, hogy a botok csak félnek attól, hogy a közeledbe jöjjenek."
 
 #: data/storyline/act2/dialogs/MrSaves.lua:83
 msgid "You're weird."
-msgstr ""
+msgstr "Fura vagy."
 
 #: data/storyline/act2/dialogs/MrSaves.lua:85
 msgid "That's my purpose in life."
-msgstr ""
+msgstr "Ez az életcélom."
 
 #: data/storyline/act2/dialogs/MrSaves.lua:86
 msgid "That only makes you weirder!"
-msgstr ""
+msgstr "Ez csak még furábbá teszi!"
 
 #: data/storyline/act2/dialogs/MrSaves.lua:87
 msgid "If you think too much about it, you'll end up overheating."
-msgstr ""
+msgstr "Ha túl sokat gondolkozol rajta, akkor túl fogsz melegedni."
 
 #: data/storyline/act2/dialogs/MrSaves.lua:88
 msgid "I advice you to drop this subject."
-msgstr ""
+msgstr "Azt javaslom, hogy ejtsük a témát."
 
 #: data/storyline/act2/dialogs/MrSaves.lua:94
 msgid "What are you doing?"
-msgstr ""
+msgstr "Mit csinálsz?"
 
 #: data/storyline/act2/dialogs/MrSaves.lua:96
 msgid "Volunteer work."
-msgstr ""
+msgstr "Önkéntes munkát."
 
 #: data/storyline/act2/dialogs/MrSaves.lua:97
 msgid "I don't see you working."
-msgstr ""
+msgstr "Nem látom, hogy dolgoznál."
 
 #: data/storyline/act2/dialogs/MrSaves.lua:98
 msgid "Well, that's because we volunteer for things exactly so that we can be lazy on them."
-msgstr ""
+msgstr "Nos, ez azért van, mert mi olyan önkéntes munkát végzünk, ahol lehetünk lusták."
 
 #: data/storyline/act2/dialogs/MrSaves.lua:105
 msgid "Er, uhm... Good bye?"
-msgstr ""
+msgstr "Hát, ö… Viszlát?"
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:30
 msgid "Oh noes! It is a 999 bot! Run! Run! Danger!"
@@ -24585,7 +24589,7 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:53
 msgid "999 RR Manager"
-msgstr ""
+msgstr "999 RR menedzser"
 
 #: data/storyline/act2/dialogs/ProgrammingChief.lua:61
 msgid "RR Resorts, or the RRR, is the paradise for those who dares to oppose my masters."
@@ -24916,7 +24920,7 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:73
 msgid "RR Security Chief"
-msgstr ""
+msgstr "RR biztonsági főnök"
 
 #: data/storyline/act2/dialogs/SecurityChief.lua:79
 msgid "So, you deal with security? Could you then teach me how to fight?"
@@ -25484,167 +25488,167 @@ msgid "[b]WARNING: PATIENT ID #851 'Stone' HAS BEEN UNCRYONIZED![/b]"
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:35
-msgid "Welcome to my temple of peace. People say I am the wisest man alive on the world, but I think I am the wisest on the universe!"
-msgstr ""
+msgid "Welcome to my temple of peace. People say I am the wisest man alive in the world, but I think I am the wisest in the universe!"
+msgstr "Üdvözöllek a béke templomában. Az emberek azt mondják, hogy én vagyok a legbölcsebb élő ember a világon, de azt hiszem, hogy az egész világegyetemben!"
 
 #: data/storyline/act2/dialogs/Yadda.lua:36
 msgid "And in case you're wondering: "
-msgstr ""
+msgstr "Ha töprengenél: "
 
 #: data/storyline/act2/dialogs/Yadda.lua:41
 msgid "Greetings, I'm Master Yadda. I teach the path of light."
-msgstr ""
+msgstr "Üdvözöllek, Yadda mester vagyok. A fény útját tanítom."
 
 #: data/storyline/act2/dialogs/Yadda.lua:62
-msgid "Come and seek my lightly advises every now and then, and you'll find out truth and light."
-msgstr ""
+msgid "Come and seek my light advice every now and then, and you'll find truth and light."
+msgstr "Gyere és kérd a tanácsomat időközönként, és megtalálod az igazságot és a fényt."
 
 #: data/storyline/act2/dialogs/Yadda.lua:63
 msgid "Master Yadda seems to be a very wise man, and I should talk to him a lot more."
-msgstr ""
+msgstr "Yadda mester nagyon bölcs embernek tűnik, és többet kellene vele beszélgetnem."
 
 #: data/storyline/act2/dialogs/Yadda.lua:65
 msgid "The only skill worth acquiring in the world: Light."
-msgstr ""
+msgstr "Az egyetlen képesség, amelyet érdemes megszerezni a világon: a Fény."
 
 #: data/storyline/act2/dialogs/Yadda.lua:68
 msgid "Persistence is the way to perfection."
-msgstr ""
+msgstr "A kitartás a tökéletességhez vezető út."
 
 #: data/storyline/act2/dialogs/Yadda.lua:71
 msgid "I have secrets, but you are not ready for them."
-msgstr ""
+msgstr "Vannak titkaim, de még nem állsz rájuk készen."
 
 #: data/storyline/act2/dialogs/Yadda.lua:72
 msgid "If you talk to me thirty seven times, as in thirteen thirty-seven, I'll teach them."
-msgstr ""
+msgstr "Ha harminchétszer beszélsz velem, igen, mint a 1337-ben, akkor megtanítom."
 
 #: data/storyline/act2/dialogs/Yadda.lua:73
 msgid "Sorry, Master Yadda is ANNOYING! But he promised to tell me a secret if I keep talking to him."
-msgstr ""
+msgstr "Sajnos Yadda mester IDEGESÍTŐ! De megígérte, hogy elmond egy titkot, ha továbbra is beszélek bele."
 
 #: data/storyline/act2/dialogs/Yadda.lua:75
-msgid "This is the 37th time you ask me for enlightenment, as in thirteen thirty-seven. I'll teach you a secret. There is a super-strong bot on this area. Might be worth checking out."
-msgstr ""
+msgid "This is the 37th time you have asked me for enlightenment, as in thirteen thirty-seven. I'll teach you a secret. There is a super-strong bot in this area. It might be worth checking it out."
+msgstr "Ez a 37. alkalom hogy a megvilágosodásról kérdezel, pont mint a 1337-ben. Megtanítok egy titkot. Vagy egy rendkívül erős bot ezen a területen. Érdemes lehet megnézned."
 
 #: data/storyline/act2/dialogs/Yadda.lua:78
 msgid "I accidentally overkilled a bot and lost my Light Saber in the process. What a shame. Already built a new one, though."
-msgstr ""
+msgstr "Sajnos teljesen elpusztítottam egy botot, és közben elvesztettem a Fénykardomat. Milyen kár. De már építettem egy újat."
 
 #: data/storyline/act2/dialogs/Yadda.lua:81
-msgid "I haven't seen any Alpha Bot lately. Things are strangely calm. And the calm precedes the storm."
-msgstr ""
+msgid "I haven't seen any Alpha Bots lately. Things are strangely calm. And the calm precedes the storm."
+msgstr "Az utóbbi időben nem láttam Alfa botokat. A dolgok furcsán nyugodtak. Ez a vihar előtti csend."
 
 #: data/storyline/act2/dialogs/Yadda.lua:86
 msgid "In matters of destroying bots, style, not brute force, is the vital thing."
-msgstr ""
+msgstr "A botok elpusztítása során a stílus a legfontosabb dolog, nem a nyers erő."
 
 #: data/storyline/act2/dialogs/Yadda.lua:87
-msgid "Any fool can bust a bot open; the art consists in knowing how to exploit it."
-msgstr ""
+msgid "Any fool can bust a bot open; the art is in knowing how to exploit it."
+msgstr "Minden bolond fel tud nyitni egy botot; a művészet annak a tudásában rejlik, hogy ezt miként lehet kihasználni."
 
 #: data/storyline/act2/dialogs/Yadda.lua:88
 msgid "The knife is without measure, for if you hit a bot right, out will come treasure."
-msgstr ""
+msgstr "A kés ellen nincs védelem, ha jól megütöd a botot, akkor ki is jön belőle a kincs."
 
 #: data/storyline/act2/dialogs/Yadda.lua:89
-msgid "When the linarian fall, the bots reigns."
-msgstr ""
+msgid "When the linarian falls, the bots reigns."
+msgstr "Ha a lináriai elbukik, a botok uralkodnak."
 
 #: data/storyline/act2/dialogs/Yadda.lua:90
 msgid "A linarian is only finished when he gives up."
-msgstr ""
+msgstr "A lináriai csak akkor végzett, ha feladja."
 
 #: data/storyline/act2/dialogs/Yadda.lua:91
 #: data/storyline/act2/dialogs/Yadda.lua:96
 msgid "Yadda Yadda Yadda."
-msgstr ""
+msgstr "Yadda Yadda Yadda."
 
 #: data/storyline/act2/dialogs/Yadda.lua:92
 msgid "Basically, it's just a jump to the left, and a step to the right... You see?"
-msgstr ""
+msgstr "Alapvetően csak egy ugrás balra, majd egy lépés jobbra… Látod?"
 
 #: data/storyline/act2/dialogs/Yadda.lua:95
-msgid "No one knows what the future awaits. Except Master Yadda."
-msgstr ""
+msgid "No one knows what the future holds. Except Master Yadda."
+msgstr "Senki sem tudja, mit tartogat a jövő. Kivéve Yadda mester."
 
 #: data/storyline/act2/dialogs/Yadda.lua:97
-msgid "The secret of the sure victory is siding with Master Yadda."
-msgstr ""
+msgid "The secret to sure victory is siding with Master Yadda."
+msgstr "A biztos győzelem titka, hogy Yadda mester oldalára kell állni."
 
 #: data/storyline/act2/dialogs/Yadda.lua:98
 msgid "Kill bots first, ask questions later."
-msgstr ""
+msgstr "Előbb öld meg a botokat, aztán kérdezz."
 
 #: data/storyline/act2/dialogs/Yadda.lua:99
 msgid "There was the Experimental Alpha Class. If you meet one, your death is close."
-msgstr ""
+msgstr "Volt egy kísérleti alfa osztály. Ha találkozol eggyel, akkor a halálod közel jár."
 
 #: data/storyline/act2/dialogs/Yadda.lua:100
 msgid "If you can think, you're sentient. This won't make you a life-form though."
-msgstr ""
+msgstr "Ha tudsz gondolkodni, akkor van öntudatod. De ez nem tesz életformává."
 
 #: data/storyline/act2/dialogs/Yadda.lua:101
 msgid "Lamps are nice. Always carry one with you. You never know when you'll need them."
-msgstr ""
+msgstr "A lámpák hasznosak. Mindig hordj magadnál egyet. Sosem tudhatod, hogy mikor lehet rá szükséged."
 
 #: data/storyline/act2/dialogs/Yadda.lua:102
-msgid "Bots will aim whatever is in front of them. Which, in most cases, will be you."
-msgstr ""
+msgid "Bots will aim at whatever is in front of them. Which, in most cases, will be you."
+msgstr "A botok mindenre céloznak, amely előttük van. A legtöbb esetben ez te leszel."
 
 #: data/storyline/act2/dialogs/Yadda.lua:104
 msgid "You're very dedicated, seeking my advice, and wise words that much. But I have nothing else to tell you. Besides that: "
-msgstr ""
+msgstr "Nagyon eltökélt vagy, keresed a tanácsaimat és a bölcs szavaimat. De nincs más mondandóm számodra. Ezeken kívül: "
 
 #. TRANSLATORS: %d = number of times talked to Yadda
 #: data/storyline/act2/dialogs/Yadda.lua:106
 #, c-format
 msgid "You've asked for my wise advice %d times. Maybe you should start figuring things out on your own."
-msgstr ""
+msgstr "Már %d alkalommal kérted a bölcs tanácsomat. Lehet, hogy magadtól kellene rájönnöd a dolgokra."
 
 #: data/storyline/act2/dialogs/Yadda.lua:115
 msgid "Master, I've been looking for a PGP key in order to unlock a certain file."
-msgstr ""
+msgstr "Mester, egy PGP-kulcsot kerestem, hogy feloldjak egy bizonyos fájlt."
 
 #: data/storyline/act2/dialogs/Yadda.lua:117
 msgid "Your wisdom is not mensurable, it's so high to be understood by mere mortals like me, you surely must know where I can find it."
-msgstr ""
+msgstr "A bölcsességed mérhetetlen, olyan magas, hogy a hozzám hasonló földi halandók nem is érthetik, de biztos tudod, hogy hol találhatom meg."
 
 #: data/storyline/act2/dialogs/Yadda.lua:119
 msgid "Indeed, you're quite right there."
-msgstr ""
+msgstr "Valóban, igazad van."
 
 #: data/storyline/act2/dialogs/Yadda.lua:120
-msgid "You can find it walking south and entering on the first trapdoor you see."
-msgstr ""
+msgid "You can find it by walking south and descending through the first trapdoor you see."
+msgstr "Megtalálod, ha dél felé sétálsz, és menj le az első csapóajtón, amit látsz."
 
 #: data/storyline/act2/dialogs/Yadda.lua:121
 msgid "I thought you would tell me in a riddle."
-msgstr ""
+msgstr "Azt hittem, hogy egy rébuszban fogod elmondani."
 
 #: data/storyline/act2/dialogs/Yadda.lua:122
-msgid "Well, you would find it if you explored this map for two minutes. To be asking it you must be as lazy as me, so I decided to just tell you right away. Please enjoy this Island."
-msgstr ""
+msgid "Well, you would find it if you explore this area for two minutes. To be asking me this, you must be as lazy as me, so I decided to just tell you right away. Please enjoy this Island."
+msgstr "Nos, ha felfedezed ezt a területet, akkor két perc alatt megtalálod. Mivel ezt kérdezted, olyan lusta lehetsz mint én, így inkább egyszerűen elmondtam. Élvezd ezt a szigetet."
 
 #: data/storyline/act2/dialogs/Yadda.lua:128
 msgid "I heard there was a dangerous bot which needs killing. Where is it?"
-msgstr ""
+msgstr "Azt halottam, hogy van egy veszélyes bot, amelyet meg kellene ölni. Merre van?"
 
 #: data/storyline/act2/dialogs/Yadda.lua:130
 msgid "Indeed, an evil bot there is. A glitch from the gamers at MegaSys threatens this lands."
-msgstr ""
+msgstr "Valóban, egy gonosz bot van itt. A MegaSys játékosainak programhibája fenyegeti ezt a vidéket."
 
 #: data/storyline/act2/dialogs/Yadda.lua:131
-msgid "If you defeat it, the fictional survivors which aren't here because the Great Assault would be very grateful. You will also gain a nice amount of experience, and who knows what it will drop?"
+msgid "If you defeat it, the fictional survivors which aren't here because of the Great Assault would be very grateful. You will also gain a nice amount of experience, and who knows what it will drop?"
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:132
 msgid "Seems interesting. Where can I find it?"
-msgstr ""
+msgstr "Érdekesnek tűnik. Hol találom?"
 
 #: data/storyline/act2/dialogs/Yadda.lua:133
 msgid "Just follow the water, young apprentice of Yaddawan. Only the ones with enough faith can walk over water and save the world!"
-msgstr ""
+msgstr "Csak kövesd a vizet, Yaddawan fiatal tanonca. Csak azok tudnak átsétálni a vízen és megmenteni a világot, akik eléggé hisznek!"
 
 #: data/storyline/act2/dialogs/Yadda.lua:134
 msgid "The first Reaper of MegaSys, The Glitch, can be found by walking over the water on Icy Summer Island. I better stay away, as searching for it is a death wish."
@@ -25652,25 +25656,25 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:142
 msgid "I want that skill you mentioned earlier."
-msgstr ""
+msgstr "Szeretném azt a képességet, amit korábban említettél."
 
 #: data/storyline/act2/dialogs/Yadda.lua:144
 msgid "Light skill, was it?"
-msgstr ""
+msgstr "A Fény képessége volt, ugye?"
 
 #: data/storyline/act2/dialogs/Yadda.lua:145
 msgid "Of course I can show you the wonderful program called [b]Light[/b], but I'm too lazy to actually teach you anything."
-msgstr ""
+msgstr "Persze, megmutathatom a [b]Fény[/b] csodálatos programját, de túl lusta vagyok, hogy ténylegesen bármit is tanítsak."
 
 #: data/storyline/act2/dialogs/Yadda.lua:146
-msgid "Therefore I shall write at hand a book explaining the wonders of light. But such wonderful skill will requires some readiness of mind to absorb it's rich content."
-msgstr ""
+msgid "Therefore I shall write by hand a book explaining the wonders of light. But such wonderful skill requires some readiness of mind to absorb; it's rich content."
+msgstr "Ezért írok kézzel egy könyvet, amely elmagyarázza a fény csodáit. De egy ilyen csodálatos képesség némi befogadókészséget igényel; gazdag tartalom."
 
 #. TRANSLATORS: %d = number of training points required to buy the book.
 #: data/storyline/act2/dialogs/Yadda.lua:148
 #, c-format
-msgid "For you, it'll cost only 2.000 circuits and %d training points."
-msgstr ""
+msgid "For you, it'll cost only 2,000 circuits and %d training points."
+msgstr "Csak neked, csak 2 000 áramkörbe és %d képzési pontban kerül."
 
 #: data/storyline/act2/dialogs/Yadda.lua:154
 msgid "I want to buy the Source Book of Light for the price you mentioned earlier."
@@ -25678,66 +25682,66 @@ msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:173
 msgid "It's a deal. May the light guide your path."
-msgstr ""
+msgstr "Megegyeztünk. A fény vezérelje az utadat."
 
 #: data/storyline/act2/dialogs/Yadda.lua:175
 msgid "Deal. Light guide you forever."
-msgstr ""
+msgstr "Megegyeztünk. Örökké a fény vezéreljen."
 
 #: data/storyline/act2/dialogs/Yadda.lua:177
 msgid "Here is the book. May the light guide your steps."
-msgstr ""
+msgstr "Itt a könyv. A fény vezérelje a lépteidet."
 
 #: data/storyline/act2/dialogs/Yadda.lua:182
 msgid "I won't sell you anymore from now on."
-msgstr ""
+msgstr "Most már nem adok el neked semmit."
 
 #: data/storyline/act2/dialogs/Yadda.lua:185
-msgid "I'll sell you only one extra copy. Be sure to don't waste it."
-msgstr ""
+msgid "I'll only sell you one more copy. Be sure not to waste it."
+msgstr "Már csak egy példányt fogok eladni. Na pazarold el."
 
 #: data/storyline/act2/dialogs/Yadda.lua:187
-msgid "I'll sell you only three copies more."
-msgstr ""
+msgid "I'll only sell you three more copies."
+msgstr "Már csak három példányt fogok eladni."
 
 #: data/storyline/act2/dialogs/Yadda.lua:196
 msgid "You crafted a light saber? Amazing! Can I have one?"
-msgstr ""
+msgstr "Építettél egy fénykardot? Lenyűgöző! Kaphatok egyet?"
 
 #: data/storyline/act2/dialogs/Yadda.lua:198
 msgid "The light saber is for the disciples of light."
-msgstr ""
+msgstr "A fénykard a fény tanítványai számára való."
 
 #: data/storyline/act2/dialogs/Yadda.lua:199
 msgid "I'm always eager to hear your wisdom, o wise master Yadda."
-msgstr ""
+msgstr "Mindig érdeklődve hallgatom a bölcsességed, bölcs Yadda mester."
 
 #: data/storyline/act2/dialogs/Yadda.lua:200
-msgid "I'm too wise to be fooled by your praises, young apprentice. But yet, I shall craft one to you, for a small price of my wisdom."
-msgstr ""
+msgid "I'm too wise to be fooled by your compliments, young apprentice. But yet, I shall craft one for you, for a small price of my wisdom."
+msgstr "Túl bölcs vagyok ahhoz, hogy átverjenek a dicséreteid, fiatal tanítvány. De készítek neked egyet, egy kis összegért a bölcsességemért cserébe."
 
 #: data/storyline/act2/dialogs/Yadda.lua:201
-msgid "I shall require 5.000 circuits in compensation for my efforts, 3 source books of light to prove your worthiness and eagerness to learn from my wise words... And..."
-msgstr ""
+msgid "I shall require 5,000 circuits in compensation for my efforts, 3 source books of light to prove your worthiness and eagerness to learn from my wise words... And..."
+msgstr "5 000 áramkört kérek az erőfeszítéseimért, a fény 3 forráskönyvét, hogy bizonyítsd az érdemességed, és hogy hajlandó vagy tanulni a bölcs szavaimból… És…"
 
 #: data/storyline/act2/dialogs/Yadda.lua:202
 msgid "...And?"
-msgstr ""
+msgstr "…És?"
 
 #. TRANSLATORS: %d = number of VMX grenades required to craft the Light Saber. Varies according to difficulty.
 #: data/storyline/act2/dialogs/Yadda.lua:204
 #, c-format
-msgid "...And %d VMX Gas Grenades. I'm a pacifist, but the disciples of dark - robots and programmers - soughs for my life. Only with gas grenades I shall survive. They're poison to mere mortals, but for the great master Yadda, they are source of life."
-msgstr ""
+msgid "...And %d VMX Gas Grenades. I'm a pacifist, but the disciples of the dark - robots and programmers - are after my life. Only with gas grenades I shall survive. They're poison to mere mortals, but for the great master Yadda, they are a source of life."
+msgstr "…És %d VMX gázgránátot. Pacifista vagyok, de a sötét tanítványai – robotok és programozók – az életemre törnek. Csak a gázgránátokkal fogom tudni túlélni. Egyszerű halandók számára méreg, a de a legnagyobb Yadda mester számára az élet forrása."
 
 #. TRANSLATORS: %d = number of VMX grenades required to craft the Light Saber. Varies according to difficulty.
 #: data/storyline/act2/dialogs/Yadda.lua:206
 #, c-format
-msgid "I have no idea of how life can come out from gas grenades, and how a gas grenade can kill a bot, but I shall bring you 5.000 circuits, 3 source books of light, and %d VMX grenades."
+msgid "I have no idea of how life can come out from gas grenades, and how a gas grenade can kill a bot, but I shall bring you 5,000 circuits, 3 source books of light, and %d VMX grenades."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:212
-msgid "I have the 5.000 circuits, 3 source books of light, and the VMX grenades you requested. Gimme the saber!"
+msgid "I have the 5,000 circuits, 3 source books of light, and the VMX grenades you requested. Gimme the saber!"
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:219
@@ -25759,11 +25763,11 @@ msgid "So quick? I thought you were going to craft it?"
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:235
-msgid "I have dozens of those. I do them on my spare time."
+msgid "I have dozens of these. I make them in my spare time."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:243
-msgid "Wise master Yadda, could you please instruct again this humble servant of light about what are the Alpha Bots?"
+msgid "Wise master Yadda, could you please instruct this humble servant of light again about what the Alpha Bots are?"
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:245
@@ -25779,7 +25783,7 @@ msgid "Also, I heard from the bard something about Agent Zero not managing to ge
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:248
-msgid "They should be all at the locked Ice Pass area, north from here. I hope..."
+msgid "They should be all be locked away at the Ice Pass area, north from here. I hope..."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:249
@@ -25791,19 +25795,19 @@ msgid "There is the [b]001 Influencer[/b]. It can take over your bots. If your a
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:251
-msgid "There is the [b]002 Pillbody[/b]. That bot is made to stand under heavy fire. If you find them, be careful as more dangerous bots will come."
+msgid "There is the [b]002 Pillbody[/b]. That bot is made to withstand heavy fire. If you find one, be careful as more dangerous bots will come."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:252
-msgid "There is also the [b]011 Grenadier[/b]. Will throw grenades to destroy your army. Mass destruction. Kill it as fast as you can."
+msgid "There is also the [b]011 Grenadier[/b]. It will throw grenades to destroy your army. Mass destruction. Kill it as fast as you can."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:253
-msgid "Not to mention the [b]021 Wizard[/b]. This one is nasty, so I hope you have an army, because it can slow you, paralyze, it can even poison you, so don't trifle with it."
+msgid "Not to mention the [b]021 Wizard[/b]. This one is nasty, so I hope you have an army, because it can slow you, paralyze, and it can even poison you, so don't trifle with it."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:254
-msgid "Finally there is the [b]Marvin[/b]. I am not sure what it does, because no one returned alive after fighting one. Even the droid number is unknown."
+msgid "Finally there is the [b]Marvin[/b]. I am not sure what it does, because no one has returned alive after fighting one. Even the droid number is unknown."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:255
@@ -25811,11 +25815,11 @@ msgid "Sounds dangerous."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:256
-msgid "Ha! Not even the start. Agent Zero did many tests on this area to create the supreme foe. There are bots at graveyard too: [b]Zombot[/b] and you won't want to know what it does, the [b]Ghost[/b] and [b]Shadow Hunter[/b], uses invisibility so very dangerous."
+msgid "Ha! That's not even the half of it. Agent Zero did many tests on this area to create the supreme foe. There are bots at graveyard too: [b]Zombot[/b] and you won't want to know what it does, the [b]Ghost[/b] and [b]Shadow Hunter[/b] which uses invisibility, so very dangerous."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:257
-msgid "There is also [b]Ghoul Bots[/b] and the silly [b]Pepper Bot[/b] who you won't care with when suddenly! You're dead."
+msgid "There are also [b]Ghoul Bots[/b] and the silly [b]Pepper Bot[/b] who you won't bother with until suddenly! You're dead."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:258
@@ -25823,7 +25827,7 @@ msgid "Sounds extremely dangerous."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:259
-msgid "The alpha class carries on. They are only experiments, weak and not mass produced, so you might have a chance against them with my advises. But I must warn you that further on you might find specialized droids using those characteristics. When this happen, I hope you have The Holy Light blessings."
+msgid "The alpha class carries on. They are only experiments, weak and not mass produced, so you might have a chance against them with my advice. But I must warn you that further on, you might find specialized droids with those characteristics. If this happens, I hope you have The Holy Light blessings."
 msgstr ""
 
 #: data/storyline/act2/dialogs/Yadda.lua:260

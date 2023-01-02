@@ -31,6 +31,7 @@ PROGRAMMATION :
         Arthur Huillet
         Gregory Lozet
         lumidify
+        specing
         Stefan Kangas
         Xenux
 
@@ -75,12 +76,14 @@ TRADUCTIONS :
         de_DE:
           JM Franz
           Matthias Krüger
+          lumidify
           Link Mario
 
         es:
           Pedro Arana
           Carlos Daniel Landin Montaperto
           Luisi Nogueira
+          Dani Quiroz
           Lua Marchante Tello
           Valora Valenteno
 
@@ -142,7 +145,6 @@ PROGRAMMATION :
         Mike Fleischmann
         Jann Horn
         jcoral
-        Stefan Kangas
         Józef Kucia
         Pavaluca Matei
         Miles McCammon

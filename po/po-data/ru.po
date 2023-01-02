@@ -9,9 +9,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 1.0RC2\n"
+"Project-Id-Version: freedroidrpg 1.0\n"
 "Report-Msgid-Bugs-To: https://www.freedroid.org\n"
-"POT-Creation-Date: 2022-07-19 11:13+0200\n"
+"POT-Creation-Date: 2023-01-01 19:10+0100\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
 "Last-Translator: 231975d40d64bc4f68b60594f3e6fa73, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/arctic-games/teams/9511/ru/)\n"

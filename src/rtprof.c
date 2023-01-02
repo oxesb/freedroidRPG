@@ -37,7 +37,6 @@
 
 // The Real-time profiler is a dev tool that will be rarely used. Then better to
 // avoid compiling the code if it is not used.
-#define WITH_RTPROF
 #ifdef WITH_RTPROF
 
 #include "rtprof.h"

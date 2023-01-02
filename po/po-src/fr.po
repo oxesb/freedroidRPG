@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreedroidRPG\n"
 "Report-Msgid-Bugs-To: https://www.freedroid.org\n"
-"POT-Creation-Date: 2022-11-01 21:22+0100\n"
+"POT-Creation-Date: 2023-01-22 11:34+0100\n"
 "PO-Revision-Date: 2014-03-27 23:12+0000\n"
 "Last-Translator: fluzz <fluzz@gmx.com>, 2014-2016,2019,2022\n"
 "Language-Team: French (http://www.transifex.com/arctic-games/freedroid-rpg/language/fr/)\n"
@@ -27,18 +27,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: lua_modules/FDtux_lfuns.lua:239 lua_modules/script_helpers.lua:268
-#: lua_modules/script_helpers.lua:271
+#: lua_modules/FDtux_lfuns.lua:239 lua_modules/script_helpers.lua:242
+#: lua_modules/script_helpers.lua:245
 msgid "New Quest assigned: "
 msgstr "Nouvelle quête à accomplir : "
 
-#: lua_modules/FDtux_lfuns.lua:259 lua_modules/script_helpers.lua:280
-#: lua_modules/script_helpers.lua:283
+#: lua_modules/FDtux_lfuns.lua:259 lua_modules/script_helpers.lua:254
+#: lua_modules/script_helpers.lua:257
 msgid "Quest log updated: "
 msgstr "Journal des quêtes mis à jour : "
 
-#: lua_modules/FDtux_lfuns.lua:301 lua_modules/script_helpers.lua:313
-#: lua_modules/script_helpers.lua:316
+#: lua_modules/FDtux_lfuns.lua:301 lua_modules/script_helpers.lua:287
+#: lua_modules/script_helpers.lua:290
 msgid "Quest completed: "
 msgstr "Quête accomplie : "
 
@@ -320,54 +320,54 @@ msgstr "Jour %d  %02d:%02d"
 msgid "%s empty, reloading..."
 msgstr "%s vide, rechargement..."
 
-#: src/influ.c:805
+#: src/influ.c:804
 msgid "Energy shield disabled due to overheat."
 msgstr "Bouclier énergétique désactivé pour cause de surchauffe."
 
-#: src/influ.c:819
+#: src/influ.c:818
 msgid "Energy shield disabled due to a risk of overheat."
 msgstr "Bouclier énergétique désactivé par risque de surchauffe."
 
-#: src/influ.c:1045 src/menu.c:1133
+#: src/influ.c:1044 src/menu.c:1133
 msgid "Load Latest"
 msgstr "Recharger la partie"
 
-#: src/influ.c:1046 src/menu.c:1134
+#: src/influ.c:1045 src/menu.c:1134
 msgid "Load Backup"
 msgstr "Charger la sauvegarde précédente"
 
-#: src/influ.c:1048 src/menu.c:1136 src/lvledit/lvledit_menu.c:958
+#: src/influ.c:1047 src/menu.c:1136 src/lvledit/lvledit_menu.c:958
 msgid "Quit to Main Menu"
 msgstr "Retour au Menu Principal"
 
-#: src/influ.c:1050
+#: src/influ.c:1049
 msgid "Return to Editor"
 msgstr "Retour à l'éditeur"
 
-#: src/influ.c:1052 src/menu.c:982 src/menu.c:1139
+#: src/influ.c:1051 src/menu.c:982 src/menu.c:1139
 #: src/lvledit/lvledit_menu.c:959
 msgid "Exit FreedroidRPG"
 msgstr "Quitter FreedroidRPG"
 
 #. TRANSLATORS: Out of <ammo type>
-#: src/influ.c:1497
+#: src/influ.c:1496
 #, c-format
 msgid "Out of [s]%s[v]!"
 msgstr "Plus de [s]%s[v] !"
 
-#: src/init.c:619 src/saveloadgame.c:467
+#: src/init.c:616 src/saveloadgame.c:467
 msgid "--- Message Log ---"
 msgstr "--- Historique des messages ---"
 
-#: src/init.c:621
+#: src/init.c:618
 msgid "Starting tutorial."
 msgstr "Début du tutoriel."
 
-#: src/init.c:623
+#: src/init.c:620
 msgid "Starting new game act."
 msgstr "Début d'un nouvel acte du jeu."
 
-#: src/init.c:996
+#: src/init.c:990
 msgid ""
 "You are playing a Release Candidate.\n"
 "Strange bugs may still be present in the game.\n"
@@ -383,11 +383,11 @@ msgstr ""
 "\n"
 "Bonne chance !\n"
 
-#: src/init.c:1015 src/init.c:1016
+#: src/init.c:1009 src/init.c:1010
 msgid "Game over.\n"
 msgstr "Fin de la partie.\n"
 
-#: src/init.c:1082 src/init.c:1083
+#: src/init.c:1076 src/init.c:1077
 msgid "Game won.\n"
 msgstr "Tu as gagné la partie.\n"
 
@@ -1073,55 +1073,10 @@ msgstr "Configuration touches"
 msgid "ARROWS to select, ENTER to remap, ESCAPE to exit"
 msgstr "FLÈCHES pour sélectionner, ENTRÉE pour modifier, ÉCHAP pour fermer"
 
-#: src/keyboard.c:772
+#: src/keyboard.c:778
 #, c-format
 msgid "Screenshot saved to \"%s\" in your .freedroid_rpg/ directory."
 msgstr "Capture écran sauvegardée dans \"%s\" dans le répertoire .freedroid_rpg/."
-
-#: src/lua.c:91 src/lua/luaFD_npc.c:69
-msgid "No chat context available on the context stack."
-msgstr "Aucun contexte de dialogue disponible dans la pile de contexte."
-
-#: src/lua.c:273 src/lua/luaFD_tux.c:425
-msgid "Melee fighting ability improved!"
-msgstr "Capacité de combat rapproché améliorée !"
-
-#: src/lua.c:276 src/lua/luaFD_tux.c:428
-msgid "Ranged combat ability improved!"
-msgstr "Capacité de combat à distance améliorée !"
-
-#: src/lua.c:279 src/lua/luaFD_tux.c:431
-msgid "Programming ability improved!"
-msgstr "Capacité de programmation améliorée !"
-
-#: src/lua.c:360
-#, c-format
-msgid "Received item: %s (on floor)"
-msgstr "Objet reçu : %s (sur le sol)"
-
-#: src/lua.c:362
-#, c-format
-msgid "Received item: %s"
-msgstr "Objet reçu : %s"
-
-#: src/lua.c:414 src/lua/luaFD_tux.c:782
-msgid "1 item received!"
-msgstr "1 objet reçu !"
-
-#: src/lua.c:495
-#, c-format
-msgid "+%d experience points"
-msgstr "+%d points d'expérience"
-
-#: src/lua.c:527 src/lua/luaFD_tux.c:339
-#, c-format
-msgid "Gained %d valuable circuits!"
-msgstr "Gagné %d circuits de valeur !"
-
-#: src/lua.c:529 src/lua/luaFD_tux.c:341
-#, c-format
-msgid "Lost %d valuable circuits!"
-msgstr "Perdu %d circuits de valeur !"
 
 #: src/main.c:361
 msgid "Overheating!"
@@ -1140,7 +1095,7 @@ msgstr "Extinction Automatique"
 msgid "Weapon reloaded"
 msgstr "Arme rechargée"
 
-#: src/map.c:1201
+#: src/map.c:1207
 msgid ""
 "-- WARNING --\n"
 "An obstacle with invalid coords was loaded onto a map.\n"
@@ -1152,7 +1107,7 @@ msgstr ""
 "Nous le conservons en mémoire pour aider à trouver l'erreur.\n"
 "Voir le rapport dans la console du terminal."
 
-#: src/map.c:1422
+#: src/map.c:1429
 msgid ""
 "-- WARNING --\n"
 "An obstacle with invalid coords is saved to a map.\n"
@@ -1192,11 +1147,11 @@ msgstr "OpenGL activé : OUI"
 msgid "OpenGL output active: NO"
 msgstr "OpenGL activé : NON"
 
-#: src/menu.c:347 src/menu.c:1751
+#: src/menu.c:347 src/menu.c:1747
 msgid "[down]"
 msgstr "[bas]"
 
-#: src/menu.c:348 src/menu.c:1738
+#: src/menu.c:348 src/menu.c:1734
 msgid "[up]"
 msgstr "[haut]"
 
@@ -1239,7 +1194,7 @@ msgstr "Difficulté : %s"
 
 #: src/menu.c:1018 src/menu.c:1080 src/menu.c:1194 src/menu.c:1278
 #: src/menu.c:1339 src/menu.c:1450 src/menu.c:1530 src/menu.c:1603
-#: src/menu.c:1758 src/menu.c:1790 src/menu.c:1815 src/menu.c:1872
+#: src/menu.c:1754 src/menu.c:1786 src/menu.c:1811 src/menu.c:1868
 #: src/lvledit/lvledit_menu.c:121 src/lvledit/lvledit_menu.c:268
 #: src/lvledit/lvledit_menu.c:370 src/lvledit/lvledit_menu.c:589
 #: src/lvledit/lvledit_menu.c:877
@@ -1422,16 +1377,16 @@ msgstr "<-- Nb messages écran : %d -->"
 msgid "<-- Screen message lifetime: %3.1fs -->"
 msgstr "<-- Durée affichage messages écran : %3.1fs -->"
 
-#: src/menu.c:1647
+#: src/menu.c:1648
 msgid ""
 "\n"
-"     Please enter a name\n"
-"     for the new hero: \n"
+"Please enter a name\n"
+"for the new hero: \n"
 "\n"
-"        ENTER to accept.\n"
-"        ESCAPE to cancel.\n"
+"ENTER to accept.\n"
+"ESCAPE to cancel.\n"
 "\n"
-"     > "
+"> "
 msgstr ""
 "\n"
 "Entrer un nom\n"
@@ -1442,7 +1397,7 @@ msgstr ""
 "\n"
 ">"
 
-#: src/menu.c:1669
+#: src/menu.c:1665
 #, c-format
 msgid ""
 "A character named \"%s\" already exists.\n"
@@ -1451,40 +1406,40 @@ msgstr ""
 "Un personnage nommé \"%s\" existe déjà.\n"
 "Merci de choisir un autre nom."
 
-#: src/menu.c:1793
+#: src/menu.c:1789
 msgid "No saved games found!"
 msgstr "Aucune sauvegarde trouvée!"
 
-#: src/menu.c:1814
+#: src/menu.c:1810
 msgid "Sure!"
 msgstr "Bien sûr !"
 
-#: src/menu.c:1818
+#: src/menu.c:1814
 #, c-format
 msgid "Really delete hero '%s'?"
 msgstr "Veux-tu vraiment effacer le héros '%s' ?"
 
-#: src/menu.c:1869
+#: src/menu.c:1865
 msgid "New Hero"
 msgstr "Nouvel héros"
 
-#: src/menu.c:1870
+#: src/menu.c:1866
 msgid "Load existing Hero"
 msgstr "Charger un héros existant"
 
-#: src/menu.c:1871
+#: src/menu.c:1867
 msgid "Delete existing Hero"
 msgstr "Effacer un héros existant"
 
-#: src/misc.c:1019
+#: src/misc.c:1023
 msgid "GAME PAUSED"
 msgstr "JEU EN PAUSE"
 
-#: src/misc.c:1020
+#: src/misc.c:1024
 msgid "press p to resume"
 msgstr "appuyez sur p pour reprendre"
 
-#: src/misc.c:1311
+#: src/misc.c:1315
 #, c-format
 msgid "Arrived at %s."
 msgstr "Arrivé à %s."
@@ -1542,111 +1497,111 @@ msgstr "Détails :"
 msgid "Day"
 msgstr "Jour"
 
-#: src/quest_browser_ui.c:187
+#: src/quest_browser_ui.c:186
 msgid "[r]Parafunken Statistics[w]\n"
 msgstr "[r]Statistiques Parafunken[w]\n"
 
-#: src/quest_browser_ui.c:190
+#: src/quest_browser_ui.c:189
 msgid "[r]Overview[w]\n"
 msgstr "[r]Vue d'ensemble[w]\n"
 
 #. TRANSLATORS: h in %dh is for hours, m in %dm is for minutes, please also translate this :)
-#: src/quest_browser_ui.c:194
+#: src/quest_browser_ui.c:193
 #, c-format
 msgid "Time Played: [n]%dh%dm[w]\n"
 msgstr "Temps de jeu : [n]%dh%dm[w]\n"
 
 #. TRANSLATORS: m in %.1fm is for meters, please also translate this :)
-#: src/quest_browser_ui.c:198
+#: src/quest_browser_ui.c:197
 #, c-format
 msgid "Distance Traveled: [n]%.1fm[w]\n"
 msgstr "Distance parcourue : [n]%.1fm[w]\n"
 
-#: src/quest_browser_ui.c:200
+#: src/quest_browser_ui.c:199
 #, c-format
 msgid "Percentage explored: [n]%.1f%%[w]\n"
 msgstr "Pourcentage exploré : [n]%.1f%%[w]\n"
 
-#: src/quest_browser_ui.c:201
+#: src/quest_browser_ui.c:200
 #, c-format
 msgid "Destroyed Enemies: [n]%i[w]\n"
 msgstr "Ennemis détruits : [n]%i[w]\n"
 
-#: src/quest_browser_ui.c:202
+#: src/quest_browser_ui.c:201
 #, c-format
 msgid "Captured Enemies: [n]%i[w]\n"
 msgstr "Ennemis capturés : [n]%i[w]\n"
 
-#: src/quest_browser_ui.c:203
+#: src/quest_browser_ui.c:202
 #, c-format
 msgid "Damage Dealt: [n]%i[w]\n"
 msgstr "Dégâts infligés : [n]%i[w]\n"
 
-#: src/quest_browser_ui.c:211
+#: src/quest_browser_ui.c:210
 msgid "[r]Preferences[w]\n"
 msgstr "[r]Préférences[w]\n"
 
-#: src/quest_browser_ui.c:216
+#: src/quest_browser_ui.c:215
 #, c-format
 msgid "Attacking: [n]%s[w] ([n]%i[w] killed, [n]%i[w] DP)\n"
 msgstr "Attaque : [n]%s[w] ([n]%i[w] tués, [n]%i[w] dégâts)\n"
 
-#: src/quest_browser_ui.c:221
+#: src/quest_browser_ui.c:220
 #, c-format
 msgid "Attacking: [n]%s[w] ([n]%i[w] destroyed, [n]%i[w] DP)\n"
 msgstr "Attaque : [n]%s[w] ([n]%i[w] détruits, [n]%i[w] dégâts)\n"
 
-#: src/quest_browser_ui.c:226
+#: src/quest_browser_ui.c:225
 msgid "Attacking: no droids destroyed\n"
 msgstr "Attaque : aucun droïde détruit\n"
 
-#: src/quest_browser_ui.c:229
+#: src/quest_browser_ui.c:228
 #, c-format
 msgid "Takeover: [n]%s[w] ([n]%i%%[w] rate, [n]%i[w] attempts)\n"
 msgstr "Prise de contrôle : [n]%s[w] ([n]%i%%[w] taux, [n]%i[w] tentatives)\n"
 
-#: src/quest_browser_ui.c:233
+#: src/quest_browser_ui.c:232
 msgid "Takeover: none successful\n"
 msgstr "Prise de contrôle : aucune réussie\n"
 
-#: src/quest_browser_ui.c:237
+#: src/quest_browser_ui.c:236
 #, c-format
 msgid "Failed Takeover: [n]%s[w] ([n]%i%%[w] rate, [n]%i[w] attempts)\n"
 msgstr "Echec de prise de contrôle : [n]%s[w] ([n]%i%%[w] taux, [n]%i[w] tentatives)\n"
 
-#: src/quest_browser_ui.c:241
+#: src/quest_browser_ui.c:240
 msgid "Failed Takeover: no failures\n"
 msgstr "Échec de prise de contrôle : aucun échec\n"
 
-#: src/quest_browser_ui.c:261
+#: src/quest_browser_ui.c:260
 #, c-format
 msgid "Killed: [n]%d[w]\n"
 msgstr "Tués : [n]%d[w]\n"
 
-#: src/quest_browser_ui.c:263
+#: src/quest_browser_ui.c:262
 #, c-format
 msgid "Destroyed: [n]%d[w]\n"
 msgstr "Détruits : [n]%d[w]\n"
 
-#: src/quest_browser_ui.c:264
+#: src/quest_browser_ui.c:263
 #, c-format
 msgid "Takeovers: [n]%d[w]/[n]%d[w]/[n]"
 msgstr "Contrôlés : [n]%d[w]/[n]%d[w]/[n]"
 
-#: src/quest_browser_ui.c:270
+#: src/quest_browser_ui.c:269
 msgid " (success/fail/ratio)\n"
 msgstr " (succès/échec/ratio)\n"
 
-#: src/quest_browser_ui.c:272
+#: src/quest_browser_ui.c:271
 #, c-format
 msgid "Damage: [n]%d[w] (dealt)\n"
 msgstr "Dégâts : [n]%d[w] (infligés)\n"
 
-#: src/quest_browser_ui.c:428
+#: src/quest_browser_ui.c:427
 msgid "[n]No open quests yet.[w]"
 msgstr "[n]Aucune quête en cours.[w]"
 
-#: src/quest_browser_ui.c:431
+#: src/quest_browser_ui.c:430
 msgid "[n]No completed quests yet.[w]"
 msgstr "[n]Aucune quête terminée.[w]"
 
@@ -1939,24 +1894,24 @@ msgstr "Couleur-%d.%d"
 msgid "Finish-%d.%d"
 msgstr "Fin-%d.%d"
 
-#: src/takeover.c:562
+#: src/takeover.c:555
 msgid "For more information, click the help button."
 msgstr "Pour plus d'information, clique sur le bouton d'aide."
 
-#: src/takeover.c:602
+#: src/takeover.c:595
 #, c-format
 msgid "For taking control of your enemy, [s]%s[v], you receive %d experience."
 msgstr "Pour avoir pris le contrôle de ton ennemi, [s]%s[v], tu as reçu %d points d'expérience."
 
-#: src/takeover.c:891
+#: src/takeover.c:884
 msgid "Complete"
 msgstr "Effectué"
 
-#: src/takeover.c:896
+#: src/takeover.c:889
 msgid "Rejected"
 msgstr "Rejeté"
 
-#: src/takeover.c:901
+#: src/takeover.c:894
 msgid "Deadlock"
 msgstr "Impasse"
 
@@ -2024,20 +1979,65 @@ msgstr "l33t haxx0r"
 msgid "cheater"
 msgstr "tricheur"
 
-#: src/lua/luaFD_tux.c:304
+#: src/lua/game_scripting.c:60 src/lua/bindings/luaFD_npc.c:69
+msgid "No chat context available on the context stack."
+msgstr "Aucun contexte de dialogue disponible dans la pile de contexte."
+
+#: src/lua/game_scripting.c:246 src/lua/bindings/luaFD_tux.c:425
+msgid "Melee fighting ability improved!"
+msgstr "Capacité de combat rapproché améliorée !"
+
+#: src/lua/game_scripting.c:249 src/lua/bindings/luaFD_tux.c:428
+msgid "Ranged combat ability improved!"
+msgstr "Capacité de combat à distance améliorée !"
+
+#: src/lua/game_scripting.c:252 src/lua/bindings/luaFD_tux.c:431
+msgid "Programming ability improved!"
+msgstr "Capacité de programmation améliorée !"
+
+#: src/lua/game_scripting.c:333
+#, c-format
+msgid "Received item: %s (on floor)"
+msgstr "Objet reçu : %s (sur le sol)"
+
+#: src/lua/game_scripting.c:335
+#, c-format
+msgid "Received item: %s"
+msgstr "Objet reçu : %s"
+
+#: src/lua/game_scripting.c:387 src/lua/bindings/luaFD_tux.c:803
+msgid "1 item received!"
+msgstr "1 objet reçu !"
+
+#: src/lua/game_scripting.c:468
+#, c-format
+msgid "+%d experience points"
+msgstr "+%d points d'expérience"
+
+#: src/lua/game_scripting.c:500 src/lua/bindings/luaFD_tux.c:339
+#, c-format
+msgid "Gained %d valuable circuits!"
+msgstr "Gagné %d circuits de valeur !"
+
+#: src/lua/game_scripting.c:502 src/lua/bindings/luaFD_tux.c:341
+#, c-format
+msgid "Lost %d valuable circuits!"
+msgstr "Perdu %d circuits de valeur !"
+
+#: src/lua/bindings/luaFD_tux.c:304
 #, c-format
 msgid "+%d Experience Points"
 msgstr "+%d points d'expérience"
 
-#: src/lua/luaFD_tux.c:707
-#, c-format
-msgid "Received Item: %s (on floor)"
-msgstr "Objet reçu : %s (au sol)"
-
-#: src/lua/luaFD_tux.c:709
+#: src/lua/bindings/luaFD_tux.c:720
 #, c-format
 msgid "Received Item: %s"
 msgstr "Objet reçu : %s"
+
+#: src/lua/bindings/luaFD_tux.c:722
+#, c-format
+msgid "Received Item: %s (on floor)"
+msgstr "Objet reçu : %s (au sol)"
 
 #: src/lvledit/lvledit.c:152
 msgid "Cancel item drop"

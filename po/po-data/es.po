@@ -9,9 +9,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: freedroidrpg 1.0RC2\n"
+"Project-Id-Version: freedroidrpg 1.0\n"
 "Report-Msgid-Bugs-To: https://www.freedroid.org\n"
-"POT-Creation-Date: 2022-07-19 11:13+0200\n"
+"POT-Creation-Date: 2023-01-01 19:10+0100\n"
 "PO-Revision-Date: 2019-02-24 22:37+0000\n"
 "Last-Translator: Valora Valenteno <valvalenteno@gmail.com>, 2021\n"
 "Language-Team: Spanish (https://www.transifex.com/arctic-games/teams/9511/es/)\n"
@@ -139,7 +139,7 @@ msgstr "598 Ministro"
 
 #: data/base/droid_specs.lua:702 data/base/droid_specs.lua:1937
 msgid "A highly sophisticated device. Able to control the Robo-Freighter on its own."
-msgstr ""
+msgstr "Un dispositivo altamente sofisticado. Es capaz de controlar el Robo-Freighter por su cuenta."
 
 #: data/base/droid_specs.lua:747 data/storyline/act1/ReturnOfTux.droids:519
 #: data/storyline/act1/ReturnOfTux.droids:520
@@ -151,7 +151,7 @@ msgstr "603 Cortadora de césped"
 
 #: data/base/droid_specs.lua:748
 msgid "The 603 MowDown is a state-of-the-art lawnmower manufactured by the Nicholson company, and combines the functions of a regular lawnmower, a pet and a vicious guard dog in a single device."
-msgstr ""
+msgstr "El 603 Aniquilador es un cortacésped de última generación fabricado por la Compañía Nicholson. Combina las funciones de un cortacésped estándar, una mascota y un violento perro guardián en un solo dispositivo."
 
 #: data/base/droid_specs.lua:796 data/storyline/act1/ReturnOfTux.droids:284
 msgid "614 Security Bot"
@@ -159,7 +159,7 @@ msgstr "614 Robot de seguridad"
 
 #: data/base/droid_specs.lua:797
 msgid "A low security sentinel droid. Used to protect areas of the ship from intruders. A slow but sure device."
-msgstr ""
+msgstr "Un droide centinela de baja seguridad. Se usa para proteger áreas del barco de intrusos. Es un dispositivo lento pero seguro."
 
 #: data/base/droid_specs.lua:843 data/storyline/act1/ReturnOfTux.droids:285
 msgid "615 Firedevil"
@@ -167,7 +167,7 @@ msgstr "615 Demonio de Fuego"
 
 #: data/base/droid_specs.lua:844
 msgid "Sophisticated sentinel droid. Only 2000 built by the Nicholson Company. These are now very rare."
-msgstr ""
+msgstr "Droide sentinela sofisticado. La Compañía Nicholson solo fabricó 2 mil. Ahora es raro encontrar esta unidad."
 
 #: data/base/droid_specs.lua:890 data/storyline/act1/ReturnOfTux.droids:286
 #: data/storyline/act1/ReturnOfTux.droids:602
@@ -176,7 +176,7 @@ msgstr "629 Escupefuegos"
 
 #: data/base/droid_specs.lua:891
 msgid "A low sentinel droid. Lasers are built into the turret. These are mounted on a small tank body. May be fitted with an auto-cannon on-the Grillen version."
-msgstr ""
+msgstr "Un droide centinela de baja seguridad. La torreta tiene láseres integrados, que están montados en un cuerpo de tanque pequeño. Puede equiparse con un cañón automático en la versión Grillen."
 
 #: data/base/droid_specs.lua:934 data/storyline/act1/ReturnOfTux.droids:150
 #: data/storyline/act1/ReturnOfTux.droids:287
@@ -185,7 +185,7 @@ msgstr "711 Grillmeister"
 
 #: data/base/droid_specs.lua:935
 msgid "A heavy duty battle droid. Disruptor is built into the head. One of the first in service with the Military."
-msgstr ""
+msgstr "Un droide de combate pesado. El disruptor está incorporado en la cabeza. Uno de los primeros en servicio con el Ejército."
 
 #: data/base/droid_specs.lua:982 data/storyline/act1/ReturnOfTux.droids:149
 #: data/storyline/act1/ReturnOfTux.droids:288
@@ -194,7 +194,7 @@ msgstr "742 Zeus"
 
 #: data/base/droid_specs.lua:983
 msgid "This version is the one mainly used by the military."
-msgstr ""
+msgstr "Esta versión es uno de los más usados por el ejército."
 
 #: data/base/droid_specs.lua:1029 data/storyline/act1/ReturnOfTux.droids:224
 #: data/storyline/act1/ReturnOfTux.droids:289
@@ -203,7 +203,7 @@ msgstr "751 Soviético"
 
 #: data/base/droid_specs.lua:1030
 msgid "A very heavy duty battle droid. Only a few have so far entered service. These are the most powerful battle units ever built."
-msgstr ""
+msgstr "Un droide de combate pesado. Hasta ahora, solo unos pocos han entrado al servicio. Son las unidades de combate más poderosas que han sido construídas."
 
 #: data/base/droid_specs.lua:1075 data/storyline/act1/ReturnOfTux.droids:148
 #: data/storyline/act1/ReturnOfTux.droids:290
@@ -212,7 +212,7 @@ msgstr "821 Ovni"
 
 #: data/base/droid_specs.lua:1076
 msgid "A very reliable anti-grav unit is fitted into this droid. It will patrol the ship and eliminate intruders as soon as detected by powerful sensors."
-msgstr ""
+msgstr "Este droide lleva integrada una unidad antigravedad muy fiable. Patrullará la nave y eliminará a los intrusos tan pronto como poderosos sensores los detecten."
 
 #: data/base/droid_specs.lua:1122 data/storyline/act1/ReturnOfTux.droids:147
 #: data/storyline/act1/ReturnOfTux.droids:291
@@ -221,7 +221,7 @@ msgstr "834 Fuego Fatuo"
 
 #: data/base/droid_specs.lua:1123
 msgid "Early type anti-grav security droid. Fitted with an over-driven anti-grav unit. This droid is very fast but is not reliable."
-msgstr ""
+msgstr "Droide de seguridad antigravedad de tipo primitivo. Está equipado con una unidad antigravedad sobrecargada. Este droide es un rápido pero no es muy confiable."
 
 #: data/base/droid_specs.lua:1169 data/storyline/act1/ReturnOfTux.droids:292
 msgid "883 Dalex"
@@ -229,7 +229,7 @@ msgstr "883 Dalex"
 
 #: data/base/droid_specs.lua:1170 data/base/droid_specs.lua:1984
 msgid "This droid was designed from archive data. For some unknown reason it instils great fear in Human adversaries."
-msgstr ""
+msgstr "Este droide fue diseñado a partir de un archivo de datos. Por algún motivo, infunde gran temor en adversarios humanos."
 
 #: data/base/droid_specs.lua:1217 data/storyline/act1/npc_specs.lua:77
 #: data/storyline/act1/ReturnOfTux.droids:293
@@ -248,39 +248,39 @@ msgstr "El Glitch"
 
 #: data/base/droid_specs.lua:1266
 msgid "I have not failed. I've just found 10,000 ways how to NOT make a bot."
-msgstr ""
+msgstr "No he fallado. Acabo de encontrar 10.000 maneras de como NO hacer un bot."
 
 #: data/base/droid_specs.lua:1312 data/base/droid_specs.lua:1352
 msgid "Older Man"
-msgstr ""
+msgstr "Anciano"
 
 #: data/base/droid_specs.lua:1313
 msgid "This is a typical professor/sage character of some older age.  They are not armed as powerfully as e.g. the red guards."
-msgstr ""
+msgstr "Este es el típico personaje catedrático/sabio de mayor edad. No está tan poderosamente armado como, por ejemplo, la Guardia Roja."
 
 #: data/base/droid_specs.lua:1353
 msgid "Some people say that every doctor is addicted to drugs. You estimate that right now this one is high on at least four different narcotics. Doc Moore seems very happy indeed..."
-msgstr ""
+msgstr "Algunos dicen que todo doctor es adicto a las drogas. Puedes suponer que, ahora mismo, este está drogado con al menos cuatro narcóticos distintos. De hecho, el Doc Moore se ve bastante feliz..."
 
 #: data/base/droid_specs.lua:1393 data/base/droid_specs.lua:1434
 msgid "Red Guard"
-msgstr ""
+msgstr "Guardia Roja"
 
 #: data/base/droid_specs.lua:1394
 msgid "This is a typical red (male) guard/fighter character.  They are equipped with powerful PowerExterminators."
-msgstr ""
+msgstr "Es el típico personaje masculino de la Guardia Roja/luchador. Está equipado con poderosos Exterminadores de Energía."
 
 #: data/base/droid_specs.lua:1435
 msgid "This is Dixon, unlike a typical red (male) guard/fighter character, he has a knife weapon, and lowered aggression."
-msgstr ""
+msgstr "Este es Dixon. A diferencia de un típico guardia o luchador (masculino), tiene un cuchillo y menor agresividad."
 
 #: data/base/droid_specs.lua:1475
 msgid "Matron"
-msgstr ""
+msgstr "Matriarca"
 
 #: data/base/droid_specs.lua:1476
 msgid "This is the hot_mama shopkeeper character model."
-msgstr ""
+msgstr "Este es el típico personaje de mamacita comerciante."
 
 #: data/base/droid_specs.lua:1514 data/storyline/act1/ReturnOfTux.droids:214
 #: data/storyline/act1/ReturnOfTux.droids:466
@@ -289,7 +289,7 @@ msgstr "Científica"
 
 #: data/base/droid_specs.lua:1515
 msgid "This is the female scientist character model.  They are not armed as powerfully as e.g. the red guards."
-msgstr ""
+msgstr "Este es el modelo de personaje de científica. No está tan poderosamente armada como, por ejemplo, la Guardia Roja."
 
 #: data/base/droid_specs.lua:1553 data/storyline/act1/ReturnOfTux.droids:11
 msgid "Mine Worker"
@@ -301,11 +301,11 @@ msgstr ""
 
 #: data/base/droid_specs.lua:1593
 msgid "Blue Brother"
-msgstr ""
+msgstr "Hermano Azul"
 
 #: data/base/droid_specs.lua:1594
 msgid "This is a useless comment. Thanks for your attention."
-msgstr ""
+msgstr "Este es un comentario inútil. Gracias por tu atención."
 
 #: data/base/droid_specs.lua:1634 data/storyline/act1/ReturnOfTux.droids:15
 msgid "Cook"
@@ -313,55 +313,55 @@ msgstr "Cocinero"
 
 #: data/base/droid_specs.lua:1635
 msgid "This is the cook."
-msgstr ""
+msgstr "Este es el cocinero."
 
 #: data/base/droid_specs.lua:1675
 msgid "Balding Man"
-msgstr ""
+msgstr "El Calvo"
 
 #: data/base/droid_specs.lua:1676
 msgid "This is a typical professor/sage character of some older age. They are not armed as powerfully as e.g. the red guards."
-msgstr ""
+msgstr "Este es el típico personaje catedrático/sabio de mayor edad. No está tan poderosamente armado como, por ejemplo, la Guardia Roja."
 
 #: data/base/droid_specs.lua:1715
 msgid "Pretty Woman"
-msgstr ""
+msgstr "Mujer Bonita"
 
 #: data/base/droid_specs.lua:1716
 msgid "This is a typical sex bomb.  This one is even armed."
-msgstr ""
+msgstr "Es la típica \"sex symbol\". Viene bien equipada."
 
 #: data/base/droid_specs.lua:1756
 msgid "Woman"
-msgstr ""
+msgstr "Mujer"
 
 #: data/base/droid_specs.lua:1757
 msgid "This is Tania. She is human."
-msgstr ""
+msgstr "Esta es Tania. Es humana."
 
 #: data/base/droid_specs.lua:1796
 msgid "Bartender"
-msgstr ""
+msgstr "Barman"
 
 #: data/base/droid_specs.lua:1797
 msgid "This is the bartender. Care for a drink?"
-msgstr ""
+msgstr "Este es el barman. ¿Quieres un trago?"
 
 #: data/base/droid_specs.lua:1835
 msgid "Female Hunter"
-msgstr ""
+msgstr "Cazadora"
 
 #: data/base/droid_specs.lua:1836
 msgid "This hunter has fought with many robots before, and will not be scared by a mere linarian."
-msgstr ""
+msgstr "Esta cazadora ya ha luchado contra muchos robots, y no se asustará por un simple linariano."
 
 #: data/base/droid_specs.lua:1876 data/base/droid_specs.lua:2125
 msgid "ERROR: THIS IS A TERMINAL"
-msgstr ""
+msgstr "ERROR: ESTA ES UNA TERMINAL"
 
 #: data/base/droid_specs.lua:1877
 msgid "This is a terminal."
-msgstr ""
+msgstr "Esta es una terminal."
 
 #: data/base/droid_specs.lua:1887 data/storyline/act1/ReturnOfTux.droids:322
 #: data/storyline/act1/ReturnOfTux.droids:323
@@ -375,23 +375,23 @@ msgstr ""
 
 #: data/base/droid_specs.lua:1936
 msgid "598 Minister (Boss)"
-msgstr ""
+msgstr "598 Ministro (Jefe)"
 
 #: data/base/droid_specs.lua:1983
 msgid "883 Dalex (Boss)"
-msgstr ""
+msgstr "883 Dalex (Jefe)"
 
 #: data/base/droid_specs.lua:2032
 msgid "999 Cerebrum (Boss)"
-msgstr ""
+msgstr "999 Cerebrum (Jefe)"
 
 #: data/base/droid_specs.lua:2080
 msgid "Authority Figure"
-msgstr ""
+msgstr "Figura de autoridad"
 
 #: data/base/droid_specs.lua:2081
 msgid "It has long since been known that game development is the most important job in the world. Also, the coolest. We know that thanks to this guy."
-msgstr ""
+msgstr "Hace mucho sabemos que el desarrollo de juegos es el trabajo más importante (y el más genial) del mundo. Pues sabemos esto gracias a este tipo."
 
 #: data/base/droid_specs.lua:2126
 msgid "This is a secure terminal."
@@ -471,7 +471,7 @@ msgstr "Hacha grande"
 
 #: data/base/item_specs.lua:288
 msgid "While this weapon is somewhat slow and cumbersome to use, it is as good at leaving big dents in droids as it is at felling trees. A good hit is often capable of taking out lesser droids in a single hit."
-msgstr ""
+msgstr "Si bien esta arma es un poco lenta y difícil de usar, es tan buena para dejar grandes abolladuras en droides como para talar árboles. A menudo es capaz de destruir droides menores de un solo buen golpe."
 
 #: data/base/item_specs.lua:296
 msgid "Hunting Knife"
@@ -1242,7 +1242,7 @@ msgstr "Manual de Reciclado de Bots"
 
 #: data/base/item_specs.lua:1869 data/base/item_specs.lua:1873
 msgid "USE FOR CHEATING ONLY. If you see this ingame, please report the bug."
-msgstr ""
+msgstr "ESTE OBJETO ES PARA HACER TRAMPA. Si lo ves, repórtalo como un bug."
 
 #: data/base/item_specs.lua:1884
 msgid "Strength Pill"
@@ -1614,11 +1614,11 @@ msgstr ""
 
 #: data/base/item_specs.lua:2383
 msgid "Linarian Power Crank"
-msgstr ""
+msgstr "Manivela linariana"
 
 #: data/base/item_specs.lua:2387
 msgid "This mechanical crank, product of the highly advanced and sophisticated technological genius of the Linarian race, performs elaborate operations on energy and directs it towards a biochemical structure. For short, it buffs up your muscles. That's good."
-msgstr ""
+msgstr "Esta manivela mecánica, producto del genio tecnológico altamente avanzado y sofisticado de los linarianos, realiza operaciones elaboradas en energía y la dirige hacia una estructura bioquímica. En resumen, fortalece tus músculos. ¿Qué mejor?"
 
 #: data/base/item_specs.lua:2394
 msgid "Tungsten Spikes"
