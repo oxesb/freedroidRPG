@@ -542,14 +542,7 @@ int droid_takeover(struct enemy *target, float *needed_capsules_ratio)
 	// the time spent in the menu.
 	Activate_Conservative_Frame_Computation();
 
-	// We set the UserRect to full again, no matter what other windows might
-	// be open right now...
-	User_Rect.x = 0;
-	User_Rect.y = 0;
-	User_Rect.w = GameConfig.screen_width;
-	User_Rect.h = GameConfig.screen_height;
-
-	while (SpacePressed() || MouseLeftPressed()) ;	// make sure space is release before proceed 
+	while (SpacePressed() || MouseLeftPressed()) ;	// make sure space is release before proceed
 
 	switch_background_music("Bleostrada.ogg");
 
@@ -922,8 +915,8 @@ static void ShowPlayground(enemy * target)
 	int color, player;
 	int block;
 	SDL_Rect Target_Rect;
-	int xoffs = User_Rect.x + (User_Rect.w - 2 * 290) / 2;
-	int yoffs = User_Rect.y + (User_Rect.h - 2 * 140) / 2 + 40;
+	int xoffs = Full_User_Rect.x + (Full_User_Rect.w - 2 * 290) / 2;
+	int yoffs = Full_User_Rect.y + (Full_User_Rect.h - 2 * 140) / 2 + 40;
 
 	blit_background("console_bg1.jpg");
 
@@ -939,11 +932,11 @@ static void ShowPlayground(enemy * target)
 		struct droidspec *droid_spec = &Droidmap[target->type];
 		int offsetx = -droid_spec->droid_images[0][0].offset_x;
 		int offsety = -droid_spec->droid_images[0][0].offset_y;
-		Set_Rect(Target_Rect, xoffs + DroidStart[!YourColor].x + 20 + offsetx, (yoffs - 80) + offsety, User_Rect.w, User_Rect.h);
+		Set_Rect(Target_Rect, xoffs + DroidStart[!YourColor].x + 20 + offsetx, (yoffs - 80) + offsety, Full_User_Rect.w, Full_User_Rect.h);
 		PutIndividuallyShapedDroidBody(target, Target_Rect, FALSE, FALSE);
 	}
 	//  SDL_SetColorKey (Screen, 0, 0);
-	SDL_SetClipRect(Screen, &User_Rect);
+	SDL_SetClipRect(Screen, &Full_User_Rect);
 
 	struct tux_motion_class_images *current_motion_class_images = &tux_images[get_motion_class_id()];
 	int phase = tux_anim.standing_keyframe;
@@ -953,7 +946,7 @@ static void ShowPlayground(enemy * target)
 
 	blit_tux(xoffs + DroidStart[YourColor].x + 20, (yoffs - 80) + (tux_height / 2) + tux_feet_image->offset_y);
 
-	Set_Rect(Target_Rect, xoffs + LEFT_OFFS_X, yoffs + LEFT_OFFS_Y, User_Rect.w, User_Rect.h);
+	Set_Rect(Target_Rect, xoffs + LEFT_OFFS_X, yoffs + LEFT_OFFS_Y, Full_User_Rect.w, Full_User_Rect.h);
 
 	display_image_on_screen (&ToGroundBlocks[YELLOW_HIGH], Target_Rect.x, Target_Rect.y, IMAGE_NO_TRANSFO);
 
